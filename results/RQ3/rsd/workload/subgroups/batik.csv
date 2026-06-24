@@ -1,0 +1,16 @@
+rule,sg_samples,sg_coverage,rule_num_predicates,rule_features_used
+0.0 <= pdf < 1.0  AND  resolution < 2073600.0  AND  0.0 <= validate < 1.0  AND  0.0 <= onload < 1.0,128,0.06670140698280354,4,"['resolution', 'validate', 'onload', 'pdf']"
+0.0 <= validate < 1.0  AND  resolution < 2073600.0  AND  0.0 <= pdf < 1.0,256,0.13340281396560708,3,"['resolution', 'validate', 'pdf']"
+0.0 <= pdf < 1.0  AND  resolution < 2073600.0  AND  0.0 <= onload < 1.0  AND  0.0 <= tiff < 1.0,192,0.10005211047420531,4,"['resolution', 'tiff', 'onload', 'pdf']"
+0.0 <= pdf < 1.0  AND  resolution < 2073600.0  AND  onload >= 1.0,255,0.13288170922355394,3,"['resolution', 'onload', 'pdf']"
+0.0 <= pdf < 1.0  AND  resolution >= 5184000.0  AND  validate >= 1.0  AND  onload >= 1.0,128,0.06670140698280354,4,"['resolution', 'validate', 'onload', 'pdf']"
+0.0 <= validate < 1.0  AND  pdf >= 1.0  AND  0.0 <= onload < 1.0,96,0.05002605523710266,3,"['onload', 'validate', 'pdf']"
+0.0 <= validate < 1.0  AND  pdf >= 1.0,192,0.10005211047420531,2,"['validate', 'pdf']"
+0.0 <= pdf < 1.0  AND  resolution >= 5184000.0  AND  validate >= 1.0,256,0.13340281396560708,3,"['resolution', 'validate', 'pdf']"
+0.0 <= pdf < 1.0  AND  resolution >= 5184000.0  AND  dpi >= 100.0,384,0.20010422094841063,3,"['resolution', 'dpi', 'pdf']"
+0.0 <= onload < 1.0  AND  pdf >= 1.0,192,0.10005211047420531,2,"['onload', 'pdf']"
+pdf >= 1.0,384,0.20010422094841063,1,['pdf']
+0.0 <= validate < 1.0  AND  resolution < 5184000.0  AND  onload >= 1.0,320,0.16675351745700887,3,"['resolution', 'validate', 'onload']"
+0.0 <= validate < 1.0  AND  resolution < 5184000.0,640,0.33350703491401773,2,"['resolution', 'validate']"
+validate >= 1.0  AND  onload >= 1.0,479,0.24960917144346015,2,"['onload', 'validate']"
+2073600.0 <= resolution < 5184000.0,640,0.33350703491401773,1,['resolution']

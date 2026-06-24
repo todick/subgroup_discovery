@@ -1,0 +1,501 @@
+n_conditions,sg_mean,sg_cardinality,sg_rule,best_rule,best_rule_idx,f1,precision,recall,seed,runtime
+2,2.208052039434128,269,model_validate = 1 AND unsat_core = 1,unsat_core==1 AND model_validate==1,0,1.0,1.0,1.0,0,0.3528597354888916
+3,4.108212910769648,142,dump_models = 1 AND smtlib2_compliant = 1 AND unsat_core = 1,unsat_core==1 AND dump_models==1 AND smtlib2_compliant==1,0,1.0,1.0,1.0,0,0.3489601612091064
+4,3.517283643082916,106,model = 1 AND model_validate = 1 AND stats = 1 AND unsat_core = 1,unsat_core==1 AND model==1 AND model_validate==1 AND stats==1,0,1.0,1.0,1.0,0,0.4340436458587646
+5,3.6929318549450656,66,auto_config = 1 AND dump_models = 1 AND model = 1 AND model_validate = 1 AND trace = 1,model==1,3,0.2211055276381909,0.1242937853107344,1.0,0,0.1638116836547851
+6,4.53336422989852,52,auto_config = 1 AND dump_models = 1 AND model = 1 AND proof = 1 AND stats = 1 AND type_check = 1,workload==0,0,0.0979284369114877,0.0514851485148514,1.0,0,0.164271593093872
+2,3.134771938771626,276,proof = 1 AND stats = 1,proof==1 AND stats==1,0,1.0,1.0,1.0,1,0.3663074970245361
+3,2.1242796555143397,196,debug_ref_count = 1 AND stats = 1 AND type_check = 1,debug_ref_count==1 AND stats==1 AND type_check==1,0,1.0,1.0,1.0,1,0.3503949642181396
+4,4.067832749481585,71,auto_config = 1 AND model = 1 AND type_check = 1 AND well_sorted_check = 1,type_check==1,3,0.2286634460547504,0.1290909090909091,1.0,1,0.1719770431518554
+5,2.1290670676144647,66,auto_config = 1 AND debug_ref_count = 1 AND dump_models = 1 AND model_validate = 1 AND proof = 1,model==1,3,0.1608040201005025,0.0903954802259887,0.7272727272727273,1,0.1773691177368164
+6,2.2511191075428605,52,auto_config = 1 AND dump_models = 1 AND model = 1 AND proof = 1 AND stats = 1 AND type_check = 1,workload==0,0,0.0979284369114877,0.0514851485148514,1.0,1,0.1721417903900146
+2,2.784330077679612,295,auto_config = 1 AND model = 1,auto_config==1 AND model==1,0,1.0,1.0,1.0,10,0.3501965999603271
+3,4.061639289796334,153,model_validate = 1 AND proof = 1 AND type_check = 1,model_validate==1 AND proof==1 AND type_check==1,0,1.0,1.0,1.0,10,0.3606300354003906
+4,4.045596505176476,112,debug_ref_count = 1 AND stats = 1 AND trace = 1 AND type_check = 1,debug_ref_count==1 AND stats==1 AND trace==1 AND type_check==1,0,1.0,1.0,1.0,10,0.4309451580047607
+5,1.927301184264807,79,auto_config = 1 AND dump_models = 1 AND model = 1 AND model_validate = 1 AND type_check = 1,type_check==1,3,0.2511923688394277,0.1436363636363636,1.0,10,0.1683809757232666
+6,4.223511940849457,52,auto_config = 1 AND dump_models = 1 AND model = 1 AND model_validate = 1 AND stats = 1 AND type_check = 1,type_check==1,3,0.1727574750830564,0.0945454545454545,1.0,10,0.1695568561553955
+2,3.772239271452453,260,smtlib2_compliant = 1 AND trace = 1,smtlib2_compliant==1 AND trace==1,0,1.0,1.0,1.0,11,0.3565554618835449
+3,2.109166483378781,160,model_validate = 1 AND proof = 1 AND trace = 1,model_validate==1 AND proof==1 AND trace==1,0,1.0,1.0,1.0,11,0.3570549488067627
+4,3.49159616944229,104,model_validate = 1 AND proof = 1 AND trace = 1 AND type_check = 1,type_check==1,3,0.3180428134556575,0.1890909090909091,1.0,11,0.1664702892303466
+5,3.523982222388478,68,model = 1 AND model_validate = 1 AND stats = 1 AND trace = 1 AND unsat_core = 1,unsat_core==1,3,0.2229508196721311,0.1254612546125461,1.0,11,0.1654455661773681
+6,4.103099023518128,53,dump_models = 1 AND model = 1 AND model_validate = 1 AND stats = 1 AND trace = 1 AND type_check = 1,workload==0,0,0.0997177798682972,0.0524752475247524,1.0,11,0.1649534702301025
+2,4.253718973144405,297,auto_config = 1 AND type_check = 1,auto_config==1 AND type_check==1,0,1.0,1.0,1.0,12,0.3340833187103271
+3,3.265074066346477,182,debug_ref_count = 1 AND model_validate = 1 AND unsat_core = 1,unsat_core==1 AND debug_ref_count==1 AND model_validate==1,0,1.0,1.0,1.0,12,0.3685340881347656
+4,2.403756535146042,83,auto_config = 1 AND dump_models = 1 AND smtlib2_compliant = 1 AND unsat_core = 1,unsat_core==1,3,0.2656,0.1531365313653136,1.0,12,0.1731154918670654
+5,3.496157850655892,70,debug_ref_count = 1 AND model_validate = 1 AND stats = 1 AND trace = 1 AND unsat_core = 1,stats==1,3,0.231023102310231,0.1305970149253731,1.0,12,0.1671435832977295
+6,3.214532621376107,53,dump_models = 1 AND model = 1 AND model_validate = 1 AND stats = 1 AND trace = 1 AND type_check = 1,model==1,3,0.1815068493150685,0.0998116760828625,1.0,12,0.1674368381500244
+2,2.709820132455402,286,proof = 1 AND unsat_core = 1,unsat_core==1 AND proof==1,0,1.0,1.0,1.0,13,0.3298184871673584
+3,2.049535269927972,97,dump_models = 1 AND trace = 1 AND well_sorted_check = 1,workload==0,0,0.1752484191508581,0.096039603960396,1.0,13,0.164076566696167
+4,2.872285564941968,121,auto_config = 1 AND debug_ref_count = 1 AND dump_models = 1 AND model = 1,auto_config==1 AND debug_ref_count==1 AND dump_models==1 AND model==1,0,1.0,1.0,1.0,13,0.3178462982177734
+5,3.085440696586376,57,debug_ref_count = 1 AND model_validate = 1 AND proof = 1 AND stats = 1 AND unsat_core = 1,stats==1,3,0.1922428330522765,0.1063432835820895,1.0,13,0.1643872261047363
+6,4.309333791230808,52,auto_config = 1 AND dump_models = 1 AND model = 1 AND model_validate = 1 AND stats = 1 AND type_check = 1,type_check==1,3,0.1727574750830564,0.0945454545454545,1.0,13,0.1638514995574951
+2,3.9940133861522313,269,smtlib2_compliant = 1 AND type_check = 1,smtlib2_compliant==1 AND type_check==1,0,1.0,1.0,1.0,14,0.33986496925354
+3,2.8606518354911525,149,dump_models = 1 AND smtlib2_compliant = 1 AND trace = 1,dump_models==1 AND smtlib2_compliant==1 AND trace==1,0,1.0,1.0,1.0,14,0.353456974029541
+4,3.747182460017895,92,debug_ref_count = 1 AND model_validate = 1 AND smtlib2_compliant = 1 AND trace = 1,debug_ref_count==1,3,0.300163132137031,0.1765834932821497,1.0,14,0.1646540164947509
+5,4.035057687867814,76,debug_ref_count = 1 AND dump_models = 1 AND model = 1 AND model_validate = 1 AND smtlib2_compliant = 1,workload==0,0,0.1399631675874769,0.0752475247524752,1.0,14,0.1647226810455322
+6,2.7345706663395464,57,debug_ref_count = 1 AND dump_models = 1 AND model = 1 AND model_validate = 1 AND trace = 1 AND type_check = 1,type_check==1,3,0.1878088962108731,0.1036363636363636,1.0,14,0.1651558876037597
+2,3.029038379699263,173,unsat_core = 1 AND well_sorted_check = 1,unsat_core==1 AND well_sorted_check==1,0,1.0,1.0,1.0,15,0.3072397708892822
+3,2.586112665116524,172,proof = 1 AND stats = 1 AND trace = 1,proof==1 AND stats==1 AND trace==1,0,1.0,1.0,1.0,15,0.3600292205810547
+4,2.064568950702904,119,debug_ref_count = 1 AND model = 1 AND model_validate = 1 AND trace = 1,debug_ref_count==1 AND model==1 AND model_validate==1 AND trace==1,0,1.0,1.0,1.0,15,0.4361336231231689
+5,3.985624788588037,67,auto_config = 1 AND proof = 1 AND stats = 1 AND trace = 1 AND type_check = 1,type_check==1,3,0.2171799027552674,0.1218181818181818,1.0,15,0.1671688556671142
+6,2.652688804354404,53,dump_models = 1 AND model = 1 AND model_validate = 1 AND stats = 1 AND trace = 1 AND type_check = 1,type_check==1,3,0.1757877280265339,0.0963636363636363,1.0,15,0.1684699058532714
+2,4.489633145966313,283,smtlib2_compliant = 1 AND stats = 1,smtlib2_compliant==1 AND stats==1,0,1.0,1.0,1.0,16,0.3623788356781006
+3,2.8471184072153903,174,proof = 1 AND smtlib2_compliant = 1 AND stats = 1,proof==1 AND smtlib2_compliant==1 AND stats==1,0,1.0,1.0,1.0,16,0.3763368129730224
+4,2.8410513997827995,97,model = 1 AND proof = 1 AND smtlib2_compliant = 1 AND trace = 1,model==1,3,0.3089171974522293,0.1826741996233521,1.0,16,0.1731917858123779
+5,3.916727621132564,67,debug_ref_count = 1 AND model = 1 AND model_validate = 1 AND stats = 1 AND type_check = 1,type_check==1,3,0.2171799027552674,0.1218181818181818,1.0,16,0.1720166206359863
+6,2.221682265863627,52,auto_config = 1 AND dump_models = 1 AND model = 1 AND model_validate = 1 AND stats = 1 AND type_check = 1,workload==0,0,0.0979284369114877,0.0514851485148514,1.0,16,0.1729030609130859
+2,2.245728072405943,274,dump_models = 1 AND trace = 1,dump_models==1 AND trace==1,0,1.0,1.0,1.0,17,0.3731124401092529
+3,4.231118736678737,150,model_validate = 1 AND proof = 1 AND smtlib2_compliant = 1,model_validate==1 AND proof==1 AND smtlib2_compliant==1,0,1.0,1.0,1.0,17,0.3477084636688232
+4,3.2821787957314448,115,auto_config = 1 AND dump_models = 1 AND model = 1 AND stats = 1,auto_config==1 AND dump_models==1 AND model==1 AND stats==1,0,1.0,1.0,1.0,17,0.4631772041320801
+5,1.920405663714899,54,auto_config = 1 AND dump_models = 1 AND smtlib2_compliant = 1 AND trace = 1 AND unsat_core = 1,stats==1,3,0.1423728813559322,0.0783582089552238,0.7777777777777778,17,0.1681983470916748
+6,4.113040729965205,53,dump_models = 1 AND model = 1 AND model_validate = 1 AND stats = 1 AND trace = 1 AND type_check = 1,stats==1,3,0.1799660441426146,0.0988805970149253,1.0,17,0.1691689491271972
+2,2.723499177397261,293,dump_models = 1 AND type_check = 1,dump_models==1 AND type_check==1,0,1.0,1.0,1.0,18,0.3897798061370849
+3,4.338006402035813,118,debug_ref_count = 1 AND model = 1 AND well_sorted_check = 1,well_sorted_check==1 AND debug_ref_count==1 AND model==1,0,1.0,1.0,1.0,18,0.3490276336669922
+4,3.681543170606268,105,debug_ref_count = 1 AND model = 1 AND proof = 1 AND type_check = 1,debug_ref_count==1 AND model==1 AND proof==1 AND type_check==1,0,1.0,1.0,1.0,18,0.4933083057403564
+5,1.9400891061662704,74,dump_models = 1 AND model = 1 AND smtlib2_compliant = 1 AND stats = 1 AND type_check = 1,workload==0,0,0.1365313653136531,0.0732673267326732,1.0,18,0.1761183738708496
+6,3.77995911645341,57,debug_ref_count = 1 AND dump_models = 1 AND model = 1 AND model_validate = 1 AND trace = 1 AND type_check = 1,type_check==1,3,0.1878088962108731,0.1036363636363636,1.0,18,0.1764943599700927
+2,4.19889753940754,278,dump_models = 1 AND proof = 1,dump_models==1 AND proof==1,0,1.0,1.0,1.0,19,0.349360704421997
+3,4.227912273596395,170,dump_models = 1 AND proof = 1 AND type_check = 1,dump_models==1 AND proof==1 AND type_check==1,0,1.0,1.0,1.0,19,0.3539984226226806
+4,2.771693776573432,64,debug_ref_count = 1 AND proof = 1 AND unsat_core = 1 AND well_sorted_check = 1,unsat_core==1,3,0.2112211221122112,0.1180811808118081,1.0,19,0.167133092880249
+5,2.726397195969252,81,dump_models = 1 AND model = 1 AND model_validate = 1 AND stats = 1 AND type_check = 1,stats==1,3,0.2625607779578606,0.1511194029850746,1.0,19,0.1660478115081787
+6,3.326139575578969,57,debug_ref_count = 1 AND dump_models = 1 AND model = 1 AND model_validate = 1 AND trace = 1 AND type_check = 1,type_check==1,3,0.1878088962108731,0.1036363636363636,1.0,19,0.1658999919891357
+2,3.8305886568898218,270,auto_config = 1 AND debug_ref_count = 1,auto_config==1 AND debug_ref_count==1,0,1.0,1.0,1.0,2,0.3442912101745605
+3,2.990958161298402,110,model = 1 AND model_validate = 1 AND well_sorted_check = 1,well_sorted_check==1 AND model==1 AND model_validate==1,0,1.0,1.0,1.0,2,0.3599734306335449
+4,4.356032570899426,68,model = 1 AND model_validate = 1 AND proof = 1 AND well_sorted_check = 1,workload==0,0,0.1261595547309833,0.0673267326732673,1.0,2,0.1670377254486084
+5,3.143684695284474,71,debug_ref_count = 1 AND model_validate = 1 AND stats = 1 AND trace = 1 AND type_check = 1,type_check==1,3,0.2286634460547504,0.1290909090909091,1.0,2,0.1752650737762451
+6,3.115971840374623,53,dump_models = 1 AND model = 1 AND model_validate = 1 AND stats = 1 AND trace = 1 AND type_check = 1,model==1,3,0.1815068493150685,0.0998116760828625,1.0,2,0.1684579849243164
+2,2.992363958619201,246,auto_config = 1 AND smtlib2_compliant = 1,auto_config==1 AND smtlib2_compliant==1,0,1.0,1.0,1.0,20,0.3401353359222412
+3,2.142549814842278,164,debug_ref_count = 1 AND proof = 1 AND trace = 1,debug_ref_count==1 AND proof==1 AND trace==1,0,1.0,1.0,1.0,20,0.3541951179504394
+4,2.3077453985095806,60,dump_models = 1 AND model_validate = 1 AND proof = 1 AND well_sorted_check = 1,workload==0,0,0.1121495327102803,0.0594059405940594,1.0,20,0.1638758182525634
+5,3.5365499022433293,54,dump_models = 1 AND model = 1 AND model_validate = 1 AND type_check = 1 AND well_sorted_check = 1,type_check==1,3,0.1788079470198675,0.0981818181818181,1.0,20,0.1641294956207275
+6,2.97205454074038,52,auto_config = 1 AND dump_models = 1 AND model = 1 AND proof = 1 AND stats = 1 AND type_check = 1,type_check==1,3,0.1727574750830564,0.0945454545454545,1.0,20,0.1637120246887207
+2,2.52094583344934,297,debug_ref_count = 1 AND unsat_core = 1,unsat_core==1 AND debug_ref_count==1,0,1.0,1.0,1.0,21,0.3455219268798828
+3,1.970333925190619,88,dump_models = 1 AND unsat_core = 1 AND well_sorted_check = 1,unsat_core==1,3,0.2793650793650793,0.1623616236162361,1.0,21,0.1648826599121093
+4,1.908468029245792,55,proof = 1 AND trace = 1 AND unsat_core = 1 AND well_sorted_check = 1,workload==0,0,0.1032863849765258,0.0544554455445544,1.0,21,0.1643247604370117
+5,2.4121285539919146,54,debug_ref_count = 1 AND proof = 1 AND smtlib2_compliant = 1 AND trace = 1 AND type_check = 1,type_check==1,3,0.1788079470198675,0.0981818181818181,1.0,21,0.1640841960906982
+6,3.1760725035201074,53,dump_models = 1 AND model = 1 AND model_validate = 1 AND stats = 1 AND trace = 1 AND type_check = 1,type_check==1,3,0.1757877280265339,0.0963636363636363,1.0,21,0.1641466617584228
+2,2.7748681875153545,187,type_check = 1 AND well_sorted_check = 1,well_sorted_check==1 AND type_check==1,0,1.0,1.0,1.0,22,0.3268494606018066
+3,3.5760830518961284,94,auto_config = 1 AND trace = 1 AND well_sorted_check = 1,unsat_core==1,3,0.1886792452830188,0.1107011070110701,0.6382978723404256,22,0.174450397491455
+4,2.052239155504849,106,model = 1 AND model_validate = 1 AND stats = 1 AND unsat_core = 1,unsat_core==1,3,0.3271604938271604,0.1955719557195571,1.0,22,0.1742622852325439
+5,4.029959282907825,57,debug_ref_count = 1 AND dump_models = 1 AND proof = 1 AND type_check = 1 AND unsat_core = 1,unsat_core==1,3,0.1903171953255426,0.1051660516605166,1.0,22,0.1733820438385009
+6,3.82614472356222,57,debug_ref_count = 1 AND dump_models = 1 AND model = 1 AND model_validate = 1 AND trace = 1 AND type_check = 1,type_check==1,3,0.1878088962108731,0.1036363636363636,1.0,22,0.1739094257354736
+2,4.124028292638009,282,model = 1 AND trace = 1,model==1 AND trace==1,0,1.0,1.0,1.0,23,0.3802418708801269
+3,2.5083062239604392,89,trace = 1 AND unsat_core = 1 AND well_sorted_check = 1,unsat_core==1,3,0.2820919175911252,0.1642066420664206,1.0,23,0.1727068424224853
+4,3.11009249327358,59,auto_config = 1 AND model_validate = 1 AND proof = 1 AND well_sorted_check = 1,type_check==1,3,0.1247947454844006,0.069090909090909,0.6440677966101694,23,0.1840524673461914
+5,2.584653665525819,67,dump_models = 1 AND model_validate = 1 AND trace = 1 AND type_check = 1 AND unsat_core = 1,unsat_core==1,3,0.2200328407224959,0.1236162361623616,1.0,23,0.172084093093872
+6,2.5123952802908933,52,auto_config = 1 AND dump_models = 1 AND model = 1 AND model_validate = 1 AND stats = 1 AND type_check = 1,type_check==1,3,0.1727574750830564,0.0945454545454545,1.0,23,0.171450138092041
+2,2.4191825007451127,173,unsat_core = 1 AND well_sorted_check = 1,unsat_core==1 AND well_sorted_check==1,0,1.0,1.0,1.0,24,0.3031072616577148
+3,2.585952581640575,92,dump_models = 1 AND smtlib2_compliant = 1 AND well_sorted_check = 1,type_check==1,3,0.1869158878504672,0.109090909090909,0.6521739130434783,24,0.1678462028503418
+4,3.308962743349921,56,smtlib2_compliant = 1 AND trace = 1 AND type_check = 1 AND well_sorted_check = 1,type_check==1,3,0.1848184818481848,0.1018181818181818,1.0,24,0.1683070659637451
+5,4.3231654218241005,61,model_validate = 1 AND proof = 1 AND stats = 1 AND trace = 1 AND unsat_core = 1,stats==1,3,0.2043551088777219,0.1138059701492537,1.0,24,0.1682395935058593
+6,3.6621046844825473,52,auto_config = 1 AND dump_models = 1 AND model = 1 AND proof = 1 AND stats = 1 AND type_check = 1,stats==1,3,0.1768707482993197,0.0970149253731343,1.0,24,0.1696681976318359
+2,3.903573003462028,270,auto_config = 1 AND debug_ref_count = 1,auto_config==1 AND debug_ref_count==1,0,1.0,1.0,1.0,25,0.3376848697662353
+3,3.351769812111402,183,auto_config = 1 AND model = 1 AND model_validate = 1,auto_config==1 AND model==1 AND model_validate==1,0,1.0,1.0,1.0,25,0.3693845272064209
+4,2.995222336059605,118,dump_models = 1 AND smtlib2_compliant = 1 AND stats = 1 AND type_check = 1,dump_models==1 AND smtlib2_compliant==1 AND stats==1 AND type_check==1,0,1.0,1.0,1.0,25,0.4517619609832763
+5,2.7759690793792977,58,auto_config = 1 AND model_validate = 1 AND proof = 1 AND trace = 1 AND unsat_core = 1,unsat_core==1,3,0.1933333333333333,0.1070110701107011,1.0,25,0.1651062965393066
+6,3.234977541844813,53,dump_models = 1 AND model = 1 AND model_validate = 1 AND stats = 1 AND trace = 1 AND type_check = 1,stats==1,3,0.1799660441426146,0.0988805970149253,1.0,25,0.1654169559478759
+2,2.175514163525376,154,smtlib2_compliant = 1 AND well_sorted_check = 1,well_sorted_check==1 AND smtlib2_compliant==1,0,1.0,1.0,1.0,26,0.3051955699920654
+3,4.200425983227095,172,smtlib2_compliant = 1 AND trace = 1 AND type_check = 1,smtlib2_compliant==1 AND trace==1 AND type_check==1,0,1.0,1.0,1.0,26,0.3671035766601562
+4,3.615109066064072,107,model = 1 AND model_validate = 1 AND proof = 1 AND trace = 1,model==1 AND model_validate==1 AND proof==1 AND trace==1,0,1.0,1.0,1.0,26,0.4172756671905517
+5,3.820565928612569,75,auto_config = 1 AND dump_models = 1 AND model = 1 AND proof = 1 AND type_check = 1,type_check==1,3,0.24,0.1363636363636363,1.0,26,0.1639168262481689
+6,3.164751250603605,52,auto_config = 1 AND dump_models = 1 AND model = 1 AND model_validate = 1 AND stats = 1 AND type_check = 1,stats==1,3,0.1768707482993197,0.0970149253731343,1.0,26,0.1655597686767578
+2,2.091290679682528,293,auto_config = 1 AND stats = 1,auto_config==1 AND stats==1,0,1.0,1.0,1.0,27,0.3482189178466797
+3,4.195735981612828,99,dump_models = 1 AND proof = 1 AND well_sorted_check = 1,well_sorted_check==1 AND dump_models==1 AND proof==1,0,1.0,1.0,1.0,27,0.3814585208892822
+4,4.126300650722293,79,auto_config = 1 AND model = 1 AND smtlib2_compliant = 1 AND trace = 1,type_check==1,3,0.1653418124006359,0.0945454545454545,0.6582278481012658,27,0.1714298725128173
+5,2.307860880050854,54,debug_ref_count = 1 AND proof = 1 AND smtlib2_compliant = 1 AND trace = 1 AND type_check = 1,workload==0,0,0.1015037593984962,0.0534653465346534,1.0,27,0.1701900959014892
+6,4.106530943085936,53,dump_models = 1 AND model = 1 AND model_validate = 1 AND stats = 1 AND trace = 1 AND type_check = 1,workload==0,0,0.0997177798682972,0.0524752475247524,1.0,27,0.1712093353271484
+2,2.744806394318128,269,model_validate = 1 AND stats = 1,model_validate==1 AND stats==1,0,1.0,1.0,1.0,28,0.3804390430450439
+3,2.6585297004939936,151,auto_config = 1 AND dump_models = 1 AND trace = 1,auto_config==1 AND dump_models==1 AND trace==1,0,1.0,1.0,1.0,28,0.3770763874053955
+4,1.940976135962012,121,dump_models = 1 AND model = 1 AND model_validate = 1 AND trace = 1,type_check==1,3,0.2622950819672131,0.16,0.7272727272727273,28,0.1691784858703613
+5,2.936581024729782,71,debug_ref_count = 1 AND model = 1 AND proof = 1 AND trace = 1 AND type_check = 1,type_check==1,3,0.2286634460547504,0.1290909090909091,1.0,28,0.1681716442108154
+6,2.0499429501000423,57,debug_ref_count = 1 AND dump_models = 1 AND model = 1 AND model_validate = 1 AND trace = 1 AND type_check = 1,type_check==1,3,0.1878088962108731,0.1036363636363636,1.0,28,0.169008731842041
+2,3.883882270741508,283,smtlib2_compliant = 1 AND stats = 1,smtlib2_compliant==1 AND stats==1,0,1.0,1.0,1.0,29,0.3684725761413574
+3,3.395724679631187,159,dump_models = 1 AND proof = 1 AND unsat_core = 1,unsat_core==1 AND dump_models==1 AND proof==1,0,1.0,1.0,1.0,29,0.3624341487884521
+4,4.390150387231547,97,model_validate = 1 AND smtlib2_compliant = 1 AND stats = 1 AND type_check = 1,model_validate==1 AND smtlib2_compliant==1 AND stats==1 AND type_check==1,0,1.0,1.0,1.0,29,0.4684131145477295
+5,3.2175587594750086,67,debug_ref_count = 1 AND dump_models = 1 AND proof = 1 AND stats = 1 AND trace = 1,stats==1,3,0.2222222222222222,0.125,1.0,29,0.1650490760803222
+6,2.3931599259543144,52,auto_config = 1 AND dump_models = 1 AND model = 1 AND model_validate = 1 AND stats = 1 AND type_check = 1,type_check==1,3,0.1727574750830564,0.0945454545454545,1.0,29,0.1688177585601806
+2,3.519586090713793,160,trace = 1 AND well_sorted_check = 1,well_sorted_check==1 AND trace==1,0,1.0,1.0,1.0,3,0.3178424835205078
+3,2.1410595382971724,183,dump_models = 1 AND trace = 1 AND type_check = 1,dump_models==1 AND trace==1 AND type_check==1,0,1.0,1.0,1.0,3,0.3729782104492187
+4,1.9443919343607876,72,debug_ref_count = 1 AND dump_models = 1 AND stats = 1 AND well_sorted_check = 1,type_check==1,3,0.1704180064308681,0.0963636363636363,0.7361111111111112,3,0.1682610511779785
+5,2.58847686543968,62,auto_config = 1 AND debug_ref_count = 1 AND model_validate = 1 AND trace = 1 AND unsat_core = 1,unsat_core==1,3,0.2052980132450331,0.1143911439114391,1.0,3,0.1669883728027343
+6,2.263895518975509,53,dump_models = 1 AND model = 1 AND model_validate = 1 AND stats = 1 AND trace = 1 AND type_check = 1,type_check==1,3,0.1757877280265339,0.0963636363636363,1.0,3,0.1672391891479492
+2,4.144987340297829,245,model = 1 AND smtlib2_compliant = 1,model==1 AND smtlib2_compliant==1,0,1.0,1.0,1.0,30,0.3558430671691894
+3,3.764366647667225,156,smtlib2_compliant = 1 AND trace = 1 AND unsat_core = 1,unsat_core==1 AND smtlib2_compliant==1 AND trace==1,0,1.0,1.0,1.0,30,0.3616220951080322
+4,2.6641085314585924,101,debug_ref_count = 1 AND model_validate = 1 AND stats = 1 AND unsat_core = 1,unsat_core==1,3,0.3141524105754277,0.1863468634686347,1.0,30,0.1671071052551269
+5,4.015816207729142,57,debug_ref_count = 1 AND dump_models = 1 AND proof = 1 AND type_check = 1 AND unsat_core = 1,unsat_core==1,3,0.1903171953255426,0.1051660516605166,1.0,30,0.1672227382659912
+6,3.947207100472604,52,auto_config = 1 AND dump_models = 1 AND model = 1 AND model_validate = 1 AND stats = 1 AND type_check = 1,stats==1,3,0.1768707482993197,0.0970149253731343,1.0,30,0.1672494411468505
+2,3.1115923552288294,295,auto_config = 1 AND model = 1,auto_config==1 AND model==1,0,1.0,1.0,1.0,31,0.3577909469604492
+3,2.9943900353710973,169,debug_ref_count = 1 AND dump_models = 1 AND unsat_core = 1,unsat_core==1 AND debug_ref_count==1 AND dump_models==1,0,1.0,1.0,1.0,31,0.3853590488433838
+4,4.1193595905668605,66,model = 1 AND model_validate = 1 AND trace = 1 AND well_sorted_check = 1,model==1,3,0.2211055276381909,0.1242937853107344,1.0,31,0.1725058555603027
+5,3.41079072684425,51,auto_config = 1 AND dump_models = 1 AND proof = 1 AND stats = 1 AND well_sorted_check = 1,stats==1,3,0.1737649063032368,0.0951492537313432,1.0,31,0.1724193096160888
+6,3.488864482069886,53,dump_models = 1 AND model = 1 AND model_validate = 1 AND stats = 1 AND trace = 1 AND type_check = 1,type_check==1,3,0.1757877280265339,0.0963636363636363,1.0,31,0.1728641986846923
+2,3.130472485718993,270,proof = 1 AND smtlib2_compliant = 1,proof==1 AND smtlib2_compliant==1,0,1.0,1.0,1.0,32,0.3644313812255859
+3,3.3444172367456337,186,proof = 1 AND stats = 1 AND type_check = 1,proof==1 AND stats==1 AND type_check==1,0,1.0,1.0,1.0,32,0.36586594581604
+4,4.135916585211855,97,dump_models = 1 AND model_validate = 1 AND proof = 1 AND trace = 1,type_check==1,3,0.2009273570324574,0.1181818181818181,0.6701030927835051,32,0.1721432209014892
+5,4.102842855908194,55,auto_config = 1 AND model_validate = 1 AND smtlib2_compliant = 1 AND trace = 1 AND type_check = 1,type_check==1,3,0.1818181818181818,0.1,1.0,32,0.1662290096282959
+6,2.4441334490674858,53,dump_models = 1 AND model = 1 AND model_validate = 1 AND stats = 1 AND trace = 1 AND type_check = 1,type_check==1,3,0.1757877280265339,0.0963636363636363,1.0,32,0.1670691967010498
+2,3.831003240532461,160,trace = 1 AND well_sorted_check = 1,well_sorted_check==1 AND trace==1,0,1.0,1.0,1.0,33,0.3188629150390625
+3,4.004860330119079,172,debug_ref_count = 1 AND model = 1 AND trace = 1,debug_ref_count==1 AND model==1 AND trace==1,0,1.0,1.0,1.0,33,0.3733634948730469
+4,3.6223173986762816,60,auto_config = 1 AND trace = 1 AND unsat_core = 1 AND well_sorted_check = 1,type_check==1,3,0.121311475409836,0.0672727272727272,0.6166666666666667,33,0.1642532348632812
+5,3.937237725155765,65,debug_ref_count = 1 AND model_validate = 1 AND proof = 1 AND trace = 1 AND unsat_core = 1,workload==0,0,0.1209302325581395,0.0643564356435643,1.0,33,0.1644115447998047
+6,2.2237781036247117,52,auto_config = 1 AND dump_models = 1 AND model = 1 AND proof = 1 AND stats = 1 AND type_check = 1,workload==0,0,0.0979284369114877,0.0514851485148514,1.0,33,0.1641135215759277
+2,2.328955594577858,241,debug_ref_count = 1 AND smtlib2_compliant = 1,debug_ref_count==1 AND smtlib2_compliant==1,0,1.0,1.0,1.0,34,0.3363094329833984
+3,4.08460645825092,161,auto_config = 1 AND type_check = 1 AND unsat_core = 1,auto_config==1 AND unsat_core==1 AND type_check==1,0,1.0,1.0,1.0,34,0.3495090007781982
+4,2.9395410940203983,61,auto_config = 1 AND model_validate = 1 AND stats = 1 AND well_sorted_check = 1,stats==1,3,0.2043551088777219,0.1138059701492537,1.0,34,0.1669759750366211
+5,2.135948486404872,58,auto_config = 1 AND model_validate = 1 AND smtlib2_compliant = 1 AND stats = 1 AND trace = 1,unsat_core==1,3,0.1233333333333333,0.0682656826568265,0.6379310344827587,34,0.1659996509552002
+6,2.7396257282925296,53,dump_models = 1 AND model = 1 AND model_validate = 1 AND stats = 1 AND trace = 1 AND type_check = 1,type_check==1,3,0.1757877280265339,0.0963636363636363,1.0,34,0.1663029193878173
+2,2.744693127877838,160,proof = 1 AND well_sorted_check = 1,well_sorted_check==1 AND proof==1,0,1.0,1.0,1.0,35,0.3614439964294433
+3,2.9505479285982767,97,model_validate = 1 AND trace = 1 AND well_sorted_check = 1,type_check==1,3,0.2071097372488408,0.1218181818181818,0.6907216494845361,35,0.1797075271606445
+4,3.1166630354850278,107,proof = 1 AND stats = 1 AND type_check = 1 AND unsat_core = 1,stats==1,3,0.332814930015552,0.1996268656716417,1.0,35,0.1786575317382812
+5,3.5347348403751635,60,debug_ref_count = 1 AND dump_models = 1 AND model_validate = 1 AND smtlib2_compliant = 1 AND unsat_core = 1,debug_ref_count==1,3,0.2065404475043029,0.1151631477927063,1.0,35,0.1793982982635498
+6,3.0085656857664542,52,auto_config = 1 AND dump_models = 1 AND model = 1 AND proof = 1 AND stats = 1 AND type_check = 1,type_check==1,3,0.1727574750830564,0.0945454545454545,1.0,35,0.179175853729248
+2,2.2336064626870544,173,unsat_core = 1 AND well_sorted_check = 1,unsat_core==1 AND well_sorted_check==1,0,1.0,1.0,1.0,36,0.3005943298339844
+3,2.7609527227199213,162,proof = 1 AND stats = 1 AND unsat_core = 1,unsat_core==1 AND proof==1 AND stats==1,0,1.0,1.0,1.0,36,0.3542678356170654
+4,3.1242982090849694,90,auto_config = 1 AND debug_ref_count = 1 AND model = 1 AND trace = 1,auto_config==1,3,0.2975206611570248,0.174757281553398,1.0,36,0.1689245700836181
+5,4.157045298762516,51,auto_config = 1 AND model_validate = 1 AND proof = 1 AND smtlib2_compliant = 1 AND type_check = 1,workload==0,0,0.0961357210179076,0.0504950495049505,1.0,36,0.1681771278381347
+6,3.3973702616631423,57,debug_ref_count = 1 AND dump_models = 1 AND model = 1 AND model_validate = 1 AND trace = 1 AND type_check = 1,type_check==1,3,0.1878088962108731,0.1036363636363636,1.0,36,0.1695883274078369
+2,2.1128146956812017,171,dump_models = 1 AND well_sorted_check = 1,well_sorted_check==1 AND dump_models==1,0,1.0,1.0,1.0,37,0.3561990261077881
+3,2.912773001359932,163,auto_config = 1 AND smtlib2_compliant = 1 AND stats = 1,auto_config==1 AND smtlib2_compliant==1 AND stats==1,0,1.0,1.0,1.0,37,0.3772711753845215
+4,2.966697540980169,66,dump_models = 1 AND proof = 1 AND type_check = 1 AND well_sorted_check = 1,type_check==1,3,0.2142857142857142,0.12,1.0,37,0.1705162525177002
+5,3.604351189443156,61,auto_config = 1 AND debug_ref_count = 1 AND dump_models = 1 AND proof = 1 AND type_check = 1,auto_config==1,3,0.2118055555555555,0.1184466019417475,1.0,37,0.1690645217895507
+6,2.236524882972206,52,auto_config = 1 AND dump_models = 1 AND model = 1 AND model_validate = 1 AND stats = 1 AND type_check = 1,type_check==1,3,0.1727574750830564,0.0945454545454545,1.0,37,0.1706805229187011
+2,2.7744449191970872,282,model = 1 AND trace = 1,model==1 AND trace==1,0,1.0,1.0,1.0,38,0.3663008213043213
+3,3.735852869448236,201,auto_config = 1 AND stats = 1 AND type_check = 1,auto_config==1 AND stats==1 AND type_check==1,0,1.0,1.0,1.0,38,0.3559937477111816
+4,2.9951013613997004,52,model = 1 AND smtlib2_compliant = 1 AND stats = 1 AND well_sorted_check = 1,model==1,3,0.1783876500857633,0.0979284369114877,1.0,38,0.1658523082733154
+5,3.943276185150932,70,auto_config = 1 AND debug_ref_count = 1 AND dump_models = 1 AND model = 1 AND stats = 1,stats==1,3,0.231023102310231,0.1305970149253731,1.0,38,0.1658480167388916
+6,2.199307558271721,53,dump_models = 1 AND model = 1 AND model_validate = 1 AND stats = 1 AND trace = 1 AND type_check = 1,type_check==1,3,0.1757877280265339,0.0963636363636363,1.0,38,0.1664581298828125
+2,3.933011287508756,270,proof = 1 AND smtlib2_compliant = 1,proof==1 AND smtlib2_compliant==1,0,1.0,1.0,1.0,39,0.3537001609802246
+3,2.96499765690871,186,proof = 1 AND stats = 1 AND type_check = 1,proof==1 AND stats==1 AND type_check==1,0,1.0,1.0,1.0,39,0.3678929805755615
+4,3.131804665639238,53,proof = 1 AND type_check = 1 AND unsat_core = 1 AND well_sorted_check = 1,unsat_core==1,3,0.1781512605042017,0.0977859778597785,1.0,39,0.1699194908142089
+5,2.5787483243156117,61,auto_config = 1 AND debug_ref_count = 1 AND model_validate = 1 AND stats = 1 AND type_check = 1,stats==1,3,0.2043551088777219,0.1138059701492537,1.0,39,0.1698846817016601
+6,3.172842265090931,52,auto_config = 1 AND dump_models = 1 AND model = 1 AND model_validate = 1 AND stats = 1 AND type_check = 1,type_check==1,3,0.1727574750830564,0.0945454545454545,1.0,39,0.170900821685791
+2,2.2860937237626,259,auto_config = 1 AND proof = 1,auto_config==1 AND proof==1,0,1.0,1.0,1.0,4,0.3676474094390869
+3,3.719339963306602,172,debug_ref_count = 1 AND model = 1 AND trace = 1,debug_ref_count==1 AND model==1 AND trace==1,0,1.0,1.0,1.0,4,0.403052806854248
+4,3.1965750873032044,84,auto_config = 1 AND model_validate = 1 AND smtlib2_compliant = 1 AND type_check = 1,type_check==1,3,0.2649842271293375,0.1527272727272727,1.0,4,0.1758995056152343
+5,2.227345000864572,63,model = 1 AND smtlib2_compliant = 1 AND stats = 1 AND type_check = 1 AND unsat_core = 1,type_check==1,3,0.2055464926590538,0.1145454545454545,1.0,4,0.1748313903808593
+6,2.272728453145467,53,dump_models = 1 AND model = 1 AND model_validate = 1 AND stats = 1 AND trace = 1 AND type_check = 1,type_check==1,3,0.1757877280265339,0.0963636363636363,1.0,4,0.1744287014007568
+2,4.180247666843656,293,auto_config = 1 AND stats = 1,auto_config==1 AND stats==1,0,1.0,1.0,1.0,40,0.3573482036590576
+3,3.631550778328105,159,dump_models = 1 AND model = 1 AND smtlib2_compliant = 1,dump_models==1 AND model==1 AND smtlib2_compliant==1,0,1.0,1.0,1.0,40,0.3815574645996094
+4,3.1633142436888946,106,model = 1 AND model_validate = 1 AND stats = 1 AND unsat_core = 1,unsat_core==1,3,0.3271604938271604,0.1955719557195571,1.0,40,0.1706459522247314
+5,4.511063985452109,73,auto_config = 1 AND dump_models = 1 AND model = 1 AND model_validate = 1 AND proof = 1,workload==0,0,0.1348107109879963,0.0722772277227722,1.0,40,0.1695857048034668
+6,3.6968537101538015,52,auto_config = 1 AND dump_models = 1 AND model = 1 AND model_validate = 1 AND stats = 1 AND type_check = 1,type_check==1,3,0.1727574750830564,0.0945454545454545,1.0,40,0.1701900959014892
+2,3.560559639939611,276,proof = 1 AND stats = 1,proof==1 AND stats==1,0,1.0,1.0,1.0,41,0.3555035591125488
+3,3.974380723220544,156,smtlib2_compliant = 1 AND trace = 1 AND unsat_core = 1,unsat_core==1 AND smtlib2_compliant==1 AND trace==1,0,1.0,1.0,1.0,41,0.3646697998046875
+4,3.416186514048288,79,auto_config = 1 AND model_validate = 1 AND smtlib2_compliant = 1 AND trace = 1,auto_config==1,3,0.265993265993266,0.1533980582524272,1.0,41,0.1654243469238281
+5,2.82991349475142,63,auto_config = 1 AND debug_ref_count = 1 AND model = 1 AND type_check = 1 AND unsat_core = 1,unsat_core==1,3,0.2082644628099173,0.1162361623616236,1.0,41,0.1643702983856201
+6,3.74732823368324,53,dump_models = 1 AND model = 1 AND model_validate = 1 AND stats = 1 AND trace = 1 AND type_check = 1,type_check==1,3,0.1757877280265339,0.0963636363636363,1.0,41,0.1644985675811767
+2,3.8246981988732554,264,smtlib2_compliant = 1 AND unsat_core = 1,unsat_core==1 AND smtlib2_compliant==1,0,1.0,1.0,1.0,42,0.3418705463409424
+3,3.681023921077651,97,dump_models = 1 AND trace = 1 AND well_sorted_check = 1,well_sorted_check==1 AND dump_models==1 AND trace==1,0,1.0,1.0,1.0,42,0.3759717941284179
+4,2.317644336006273,108,model_validate = 1 AND trace = 1 AND type_check = 1 AND unsat_core = 1,type_check==1,3,0.3282674772036474,0.1963636363636363,1.0,42,0.1825213432312011
+5,3.91051195334998,70,model = 1 AND model_validate = 1 AND stats = 1 AND type_check = 1 AND unsat_core = 1,type_check==1,3,0.2258064516129032,0.1272727272727272,1.0,42,0.1723718643188476
+6,3.6697110255635375,57,debug_ref_count = 1 AND dump_models = 1 AND model = 1 AND model_validate = 1 AND trace = 1 AND type_check = 1,type_check==1,3,0.1878088962108731,0.1036363636363636,1.0,42,0.1723890304565429
+2,3.4972448575644144,274,dump_models = 1 AND trace = 1,dump_models==1 AND trace==1,0,1.0,1.0,1.0,43,0.3826789855957031
+3,2.767473108512239,181,auto_config = 1 AND dump_models = 1 AND model = 1,auto_config==1 AND dump_models==1 AND model==1,0,1.0,1.0,1.0,43,0.3697962760925293
+4,2.217456427374261,85,dump_models = 1 AND smtlib2_compliant = 1 AND type_check = 1 AND unsat_core = 1,unsat_core==1,3,0.2711323763955343,0.1568265682656826,1.0,43,0.1657626628875732
+5,3.322718840294953,57,auto_config = 1 AND debug_ref_count = 1 AND proof = 1 AND trace = 1 AND type_check = 1,type_check==1,3,0.1878088962108731,0.1036363636363636,1.0,43,0.1648809909820556
+6,1.9182612122842695,52,auto_config = 1 AND dump_models = 1 AND model = 1 AND proof = 1 AND stats = 1 AND type_check = 1,workload==0,0,0.0979284369114877,0.0514851485148514,1.0,43,0.1649720668792724
+2,3.3585381221580684,246,auto_config = 1 AND smtlib2_compliant = 1,auto_config==1 AND smtlib2_compliant==1,0,1.0,1.0,1.0,44,0.3436009883880615
+3,4.472953435274432,183,dump_models = 1 AND stats = 1 AND trace = 1,dump_models==1 AND stats==1 AND trace==1,0,1.0,1.0,1.0,44,0.3965332508087158
+4,4.222903729587471,91,auto_config = 1 AND model = 1 AND proof = 1 AND smtlib2_compliant = 1,workload==0,0,0.1653042688465031,0.0900990099009901,1.0,44,0.1650652885437011
+5,4.046208883418264,62,auto_config = 1 AND dump_models = 1 AND model = 1 AND type_check = 1 AND unsat_core = 1,type_check==1,3,0.2026143790849673,0.1127272727272727,1.0,44,0.1651244163513183
+6,4.320716782824022,52,auto_config = 1 AND dump_models = 1 AND model = 1 AND proof = 1 AND stats = 1 AND type_check = 1,workload==0,0,0.0979284369114877,0.0514851485148514,1.0,44,0.1649425029754638
+2,1.913792595848253,261,dump_models = 1 AND unsat_core = 1,unsat_core==1 AND dump_models==1,0,1.0,1.0,1.0,45,0.3487000465393066
+3,4.105533947218103,170,proof = 1 AND trace = 1 AND unsat_core = 1,unsat_core==1 AND proof==1 AND trace==1,0,1.0,1.0,1.0,45,0.3545515537261963
+4,1.9822065821090349,119,debug_ref_count = 1 AND model = 1 AND model_validate = 1 AND trace = 1,debug_ref_count==1,3,0.371875,0.2284069097888675,1.0,45,0.1639049053192138
+5,4.405322092861467,62,auto_config = 1 AND dump_models = 1 AND model_validate = 1 AND smtlib2_compliant = 1 AND stats = 1,unsat_core==1,3,0.1158940397350993,0.0645756457564575,0.5645161290322581,45,0.1632485389709472
+6,2.031080909714541,52,auto_config = 1 AND dump_models = 1 AND model = 1 AND proof = 1 AND stats = 1 AND type_check = 1,workload==0,0,0.0979284369114877,0.0514851485148514,1.0,45,0.1632249355316162
+2,2.55768634261944,276,debug_ref_count = 1 AND proof = 1,debug_ref_count==1 AND proof==1,0,1.0,1.0,1.0,46,0.3395774364471435
+3,3.341933131015966,180,stats = 1 AND trace = 1 AND unsat_core = 1,unsat_core==1 AND stats==1 AND trace==1,0,1.0,1.0,1.0,46,0.3516716957092285
+4,3.077222775988925,104,model = 1 AND model_validate = 1 AND proof = 1 AND smtlib2_compliant = 1,model==1,3,0.3275590551181102,0.1958568738229755,1.0,46,0.1660540103912353
+5,2.857189067157854,59,auto_config = 1 AND debug_ref_count = 1 AND model = 1 AND model_validate = 1 AND stats = 1,model==1,3,0.1999999999999999,0.1111111111111111,1.0,46,0.1680071353912353
+6,3.419326901558359,53,dump_models = 1 AND model = 1 AND model_validate = 1 AND stats = 1 AND trace = 1 AND type_check = 1,type_check==1,3,0.1757877280265339,0.0963636363636363,1.0,46,0.1735889911651611
+2,2.6039823913658693,164,model_validate = 1 AND well_sorted_check = 1,well_sorted_check==1 AND model_validate==1,0,1.0,1.0,1.0,47,0.3438796997070312
+3,4.407679381824858,104,debug_ref_count = 1 AND unsat_core = 1 AND well_sorted_check = 1,unsat_core==1,3,0.3219814241486068,0.1918819188191882,1.0,47,0.1674845218658447
+4,2.960532336989865,101,model = 1 AND proof = 1 AND smtlib2_compliant = 1 AND unsat_core = 1,model==1,3,0.3196202531645569,0.1902071563088512,1.0,47,0.1686406135559082
+5,2.708188457126226,70,model = 1 AND stats = 1 AND trace = 1 AND type_check = 1 AND unsat_core = 1,type_check==1,3,0.2258064516129032,0.1272727272727272,1.0,47,0.1666688919067382
+6,4.456089462937381,52,auto_config = 1 AND dump_models = 1 AND model = 1 AND proof = 1 AND stats = 1 AND type_check = 1,type_check==1,3,0.1727574750830564,0.0945454545454545,1.0,47,0.1669631004333496
+2,3.2070990282858824,297,auto_config = 1 AND type_check = 1,auto_config==1 AND type_check==1,0,1.0,1.0,1.0,48,0.3552243709564209
+3,2.490486210983405,142,auto_config = 1 AND dump_models = 1 AND smtlib2_compliant = 1,auto_config==1 AND dump_models==1 AND smtlib2_compliant==1,0,1.0,1.0,1.0,48,0.3711802959442138
+4,3.991261291651787,64,debug_ref_count = 1 AND proof = 1 AND unsat_core = 1 AND well_sorted_check = 1,workload==0,0,0.1191806331471136,0.0633663366336633,1.0,48,0.1697378158569336
+5,3.15539134389601,68,auto_config = 1 AND dump_models = 1 AND proof = 1 AND stats = 1 AND trace = 1,stats==1,3,0.2251655629139073,0.126865671641791,1.0,48,0.1692030429840088
+6,2.1517304063898584,57,debug_ref_count = 1 AND dump_models = 1 AND model = 1 AND model_validate = 1 AND trace = 1 AND type_check = 1,type_check==1,3,0.1878088962108731,0.1036363636363636,1.0,48,0.1695835590362548
+2,2.25972528275825,274,debug_ref_count = 1 AND trace = 1,debug_ref_count==1 AND trace==1,0,1.0,1.0,1.0,49,0.3681573867797851
+3,4.434407489545897,177,model = 1 AND proof = 1 AND unsat_core = 1,unsat_core==1 AND model==1 AND proof==1,0,1.0,1.0,1.0,49,0.3444013595581054
+4,3.654539175119124,113,auto_config = 1 AND model = 1 AND model_validate = 1 AND type_check = 1,auto_config==1 AND model==1 AND model_validate==1 AND type_check==1,0,1.0,1.0,1.0,49,0.4374198913574219
+5,4.365286041097068,64,auto_config = 1 AND model = 1 AND model_validate = 1 AND stats = 1 AND unsat_core = 1,workload==0,0,0.1191806331471136,0.0633663366336633,1.0,49,0.1681537628173828
+6,2.9255336920991963,52,auto_config = 1 AND dump_models = 1 AND model = 1 AND model_validate = 1 AND stats = 1 AND type_check = 1,type_check==1,3,0.1727574750830564,0.0945454545454545,1.0,49,0.1696171760559082
+2,3.313520676444712,282,model = 1 AND trace = 1,model==1 AND trace==1,0,1.0,1.0,1.0,5,0.4005186557769775
+3,4.253431531039558,137,auto_config = 1 AND model = 1 AND smtlib2_compliant = 1,auto_config==1 AND model==1 AND smtlib2_compliant==1,0,1.0,1.0,1.0,5,0.4002118110656738
+4,3.0263370109498564,109,debug_ref_count = 1 AND model_validate = 1 AND stats = 1 AND trace = 1,stats==1,3,0.337984496124031,0.2033582089552238,1.0,5,0.1784064769744873
+5,2.1041879643722727,51,dump_models = 1 AND proof = 1 AND stats = 1 AND type_check = 1 AND well_sorted_check = 1,type_check==1,3,0.1697171381031613,0.0927272727272727,1.0,5,0.176342487335205
+6,1.9545307864111248,53,dump_models = 1 AND model = 1 AND model_validate = 1 AND stats = 1 AND trace = 1 AND type_check = 1,type_check==1,3,0.1757877280265339,0.0963636363636363,1.0,5,0.1775000095367431
+2,2.264991776494944,295,auto_config = 1 AND unsat_core = 1,auto_config==1 AND unsat_core==1,0,1.0,1.0,1.0,50,0.3094086647033691
+3,2.566495704945664,87,model_validate = 1 AND unsat_core = 1 AND well_sorted_check = 1,unsat_core==1,3,0.2766295707472178,0.1605166051660516,1.0,50,0.1670925617218017
+4,2.6579391520080846,61,debug_ref_count = 1 AND model = 1 AND stats = 1 AND well_sorted_check = 1,stats==1,3,0.2043551088777219,0.1138059701492537,1.0,50,0.1674206256866455
+5,2.411906652625373,68,debug_ref_count = 1 AND dump_models = 1 AND model_validate = 1 AND stats = 1 AND type_check = 1,type_check==1,3,0.2200647249190938,0.1236363636363636,1.0,50,0.1771032810211181
+6,2.402901169253171,52,auto_config = 1 AND dump_models = 1 AND model = 1 AND model_validate = 1 AND stats = 1 AND type_check = 1,type_check==1,3,0.1727574750830564,0.0945454545454545,1.0,50,0.1669845581054687
+2,2.9010594368841542,297,debug_ref_count = 1 AND unsat_core = 1,unsat_core==1 AND debug_ref_count==1,0,1.0,1.0,1.0,51,0.3408241271972656
+3,2.52273830797485,155,debug_ref_count = 1 AND dump_models = 1 AND smtlib2_compliant = 1,debug_ref_count==1 AND dump_models==1 AND smtlib2_compliant==1,0,1.0,1.0,1.0,51,0.3603782653808594
+4,3.293771946075004,66,model = 1 AND model_validate = 1 AND unsat_core = 1 AND well_sorted_check = 1,model==1,3,0.2211055276381909,0.1242937853107344,1.0,51,0.1654558181762695
+5,2.595600412528104,79,auto_config = 1 AND dump_models = 1 AND model = 1 AND model_validate = 1 AND type_check = 1,type_check==1,3,0.2511923688394277,0.1436363636363636,1.0,51,0.1648957729339599
+6,2.4105558449457787,52,auto_config = 1 AND dump_models = 1 AND model = 1 AND model_validate = 1 AND stats = 1 AND type_check = 1,type_check==1,3,0.1727574750830564,0.0945454545454545,1.0,51,0.1639933586120605
+2,1.9971796291091104,256,model_validate = 1 AND proof = 1,model_validate==1 AND proof==1,0,1.0,1.0,1.0,52,0.3446404933929443
+3,2.3138063942919005,92,model_validate = 1 AND stats = 1 AND well_sorted_check = 1,type_check==1,3,0.2149532710280373,0.1254545454545454,0.75,52,0.1660599708557129
+4,2.0848415057491274,110,auto_config = 1 AND proof = 1 AND stats = 1 AND type_check = 1,auto_config==1 AND proof==1 AND stats==1 AND type_check==1,0,1.0,1.0,1.0,52,0.3239984512329101
+5,3.669599190990665,62,auto_config = 1 AND model_validate = 1 AND stats = 1 AND type_check = 1 AND unsat_core = 1,type_check==1,3,0.2026143790849673,0.1127272727272727,1.0,52,0.1652452945709228
+6,4.429918795026577,52,auto_config = 1 AND dump_models = 1 AND model = 1 AND model_validate = 1 AND stats = 1 AND type_check = 1,type_check==1,3,0.1727574750830564,0.0945454545454545,1.0,52,0.164921760559082
+2,3.865457468685399,296,trace = 1 AND unsat_core = 1,unsat_core==1 AND trace==1,0,1.0,1.0,1.0,53,0.3623876571655273
+3,3.296779336408676,153,model_validate = 1 AND proof = 1 AND type_check = 1,model_validate==1 AND proof==1 AND type_check==1,0,1.0,1.0,1.0,53,0.3922123908996582
+4,2.0872023605920456,61,debug_ref_count = 1 AND model = 1 AND stats = 1 AND well_sorted_check = 1,type_check==1,3,0.1538461538461538,0.0854545454545454,0.7704918032786885,53,0.1758928298950195
+5,3.3377248998615943,54,debug_ref_count = 1 AND model = 1 AND smtlib2_compliant = 1 AND stats = 1 AND trace = 1,debug_ref_count==1,3,0.1878260869565217,0.1036468330134357,1.0,53,0.174509048461914
+6,2.7193632995109693,52,auto_config = 1 AND dump_models = 1 AND model = 1 AND model_validate = 1 AND stats = 1 AND type_check = 1,type_check==1,3,0.1727574750830564,0.0945454545454545,1.0,53,0.176227331161499
+2,4.090366855019688,187,type_check = 1 AND well_sorted_check = 1,well_sorted_check==1 AND type_check==1,0,1.0,1.0,1.0,54,0.3472349643707275
+3,4.408513541091265,164,auto_config = 1 AND dump_models = 1 AND proof = 1,auto_config==1 AND dump_models==1 AND proof==1,0,1.0,1.0,1.0,54,0.3638734817504883
+4,4.315061972133659,88,auto_config = 1 AND model_validate = 1 AND smtlib2_compliant = 1 AND stats = 1,stats==1,3,0.282051282051282,0.1641791044776119,1.0,54,0.1705505847930908
+5,4.183459094495954,56,auto_config = 1 AND debug_ref_count = 1 AND trace = 1 AND type_check = 1 AND unsat_core = 1,type_check==1,3,0.1848184818481848,0.1018181818181818,1.0,54,0.1696615219116211
+6,3.3401221042569937,57,debug_ref_count = 1 AND dump_models = 1 AND model = 1 AND model_validate = 1 AND trace = 1 AND type_check = 1,type_check==1,3,0.1878088962108731,0.1036363636363636,1.0,54,0.1710524559020996
+2,3.948063820871385,164,model_validate = 1 AND well_sorted_check = 1,well_sorted_check==1 AND model_validate==1,0,1.0,1.0,1.0,55,0.3266925811767578
+3,3.473389472668032,185,trace = 1 AND type_check = 1 AND unsat_core = 1,unsat_core==1 AND trace==1 AND type_check==1,0,1.0,1.0,1.0,55,0.3592171669006347
+4,4.156435068424443,97,dump_models = 1 AND model_validate = 1 AND proof = 1 AND trace = 1,stats==1,3,0.1990521327014218,0.1175373134328358,0.6494845360824743,55,0.1662797927856445
+5,2.389663976097391,61,model = 1 AND proof = 1 AND stats = 1 AND trace = 1 AND unsat_core = 1,stats==1,3,0.2043551088777219,0.1138059701492537,1.0,55,0.1645960807800293
+6,2.797963771322063,52,auto_config = 1 AND dump_models = 1 AND model = 1 AND proof = 1 AND stats = 1 AND type_check = 1,type_check==1,3,0.1727574750830564,0.0945454545454545,1.0,55,0.1655812263488769
+2,2.6159569559723748,171,dump_models = 1 AND well_sorted_check = 1,well_sorted_check==1 AND dump_models==1,0,1.0,1.0,1.0,56,0.3510088920593261
+3,3.192075729137127,88,dump_models = 1 AND unsat_core = 1 AND well_sorted_check = 1,unsat_core==1,3,0.2793650793650793,0.1623616236162361,1.0,56,0.168123722076416
+4,3.155276338169927,90,model_validate = 1 AND smtlib2_compliant = 1 AND stats = 1 AND unsat_core = 1,unsat_core==1,3,0.2848101265822785,0.1660516605166051,1.0,56,0.1680011749267578
+5,3.217408864704984,58,auto_config = 1 AND model_validate = 1 AND proof = 1 AND trace = 1 AND unsat_core = 1,unsat_core==1,3,0.1933333333333333,0.1070110701107011,1.0,56,0.1671793460845947
+6,4.465241719171083,57,debug_ref_count = 1 AND dump_models = 1 AND model = 1 AND model_validate = 1 AND trace = 1 AND type_check = 1,type_check==1,3,0.1878088962108731,0.1036363636363636,1.0,56,0.1682331562042236
+2,2.117837468355983,182,debug_ref_count = 1 AND well_sorted_check = 1,well_sorted_check==1 AND debug_ref_count==1,0,1.0,1.0,1.0,57,0.3090052604675293
+3,3.620584553729018,115,dump_models = 1 AND model = 1 AND well_sorted_check = 1,well_sorted_check==1 AND dump_models==1 AND model==1,0,1.0,1.0,1.0,57,0.388378381729126
+4,2.632165962061089,100,auto_config = 1 AND debug_ref_count = 1 AND dump_models = 1 AND unsat_core = 1,unsat_core==1,3,0.3115264797507788,0.1845018450184501,1.0,57,0.1650271415710449
+5,2.995111452753681,54,auto_config = 1 AND debug_ref_count = 1 AND proof = 1 AND smtlib2_compliant = 1 AND stats = 1,stats==1,3,0.1830508474576271,0.1007462686567164,1.0,57,0.1626255512237548
+6,2.0234504644665923,52,auto_config = 1 AND dump_models = 1 AND model = 1 AND proof = 1 AND stats = 1 AND type_check = 1,workload==0,0,0.0979284369114877,0.0514851485148514,1.0,57,0.1641182899475097
+2,3.3516292991793017,269,model_validate = 1 AND stats = 1,model_validate==1 AND stats==1,0,1.0,1.0,1.0,58,0.3732914924621582
+3,2.78881816730668,189,stats = 1 AND type_check = 1 AND unsat_core = 1,unsat_core==1 AND stats==1 AND type_check==1,0,1.0,1.0,1.0,58,0.3436405658721924
+4,3.5289586488427944,89,auto_config = 1 AND dump_models = 1 AND model_validate = 1 AND smtlib2_compliant = 1,debug_ref_count==1,3,0.1934426229508196,0.1132437619961612,0.6629213483146067,58,0.1684393882751464
+5,3.2507814398849084,53,debug_ref_count = 1 AND dump_models = 1 AND stats = 1 AND type_check = 1 AND well_sorted_check = 1,type_check==1,3,0.1757877280265339,0.0963636363636363,1.0,58,0.1673533916473388
+6,2.058114426114869,52,auto_config = 1 AND dump_models = 1 AND model = 1 AND model_validate = 1 AND stats = 1 AND type_check = 1,workload==0,0,0.0979284369114877,0.0514851485148514,1.0,58,0.1679887771606445
+2,4.475674747500207,187,type_check = 1 AND well_sorted_check = 1,well_sorted_check==1 AND type_check==1,0,1.0,1.0,1.0,59,0.3459484577178955
+3,3.94200263348857,183,dump_models = 1 AND stats = 1 AND trace = 1,dump_models==1 AND stats==1 AND trace==1,0,1.0,1.0,1.0,59,0.3750262260437011
+4,2.736916614532803,102,model_validate = 1 AND smtlib2_compliant = 1 AND trace = 1 AND type_check = 1,type_check==1,3,0.312883435582822,0.1854545454545454,1.0,59,0.1758198738098144
+5,2.866882134821366,59,auto_config = 1 AND dump_models = 1 AND stats = 1 AND type_check = 1 AND well_sorted_check = 1,type_check==1,3,0.1937602627257799,0.1072727272727272,1.0,59,0.1718471050262451
+6,3.273107186190923,53,dump_models = 1 AND model = 1 AND model_validate = 1 AND stats = 1 AND trace = 1 AND type_check = 1,workload==0,0,0.0997177798682972,0.0524752475247524,1.0,59,0.1718239784240722
+2,2.6413774333938878,267,auto_config = 1 AND trace = 1,auto_config==1 AND trace==1,0,1.0,1.0,1.0,6,0.3309545516967773
+3,4.260969642941246,169,debug_ref_count = 1 AND stats = 1 AND trace = 1,debug_ref_count==1 AND stats==1 AND trace==1,0,1.0,1.0,1.0,6,0.3736708164215088
+4,2.885760480676737,116,debug_ref_count = 1 AND dump_models = 1 AND model = 1 AND unsat_core = 1,unsat_core==1 AND debug_ref_count==1 AND dump_models==1 AND model==1,0,1.0,1.0,1.0,6,0.4181630611419678
+5,4.097454318737448,76,auto_config = 1 AND smtlib2_compliant = 1 AND stats = 1 AND trace = 1 AND type_check = 1,type_check==1,3,0.242811501597444,0.1381818181818181,1.0,6,0.1722891330718994
+6,2.9173953836520097,57,debug_ref_count = 1 AND dump_models = 1 AND model = 1 AND model_validate = 1 AND trace = 1 AND type_check = 1,type_check==1,3,0.1878088962108731,0.1036363636363636,1.0,6,0.1650557518005371
+2,1.9273191793868767,283,smtlib2_compliant = 1 AND stats = 1,smtlib2_compliant==1 AND stats==1,0,1.0,1.0,1.0,60,0.3795399665832519
+3,2.642419203776031,160,auto_config = 1 AND model_validate = 1 AND stats = 1,auto_config==1 AND model_validate==1 AND stats==1,0,1.0,1.0,1.0,60,0.3691864013671875
+4,4.02499911082395,62,dump_models = 1 AND proof = 1 AND trace = 1 AND well_sorted_check = 1,debug_ref_count==1,3,0.144082332761578,0.0806142034548944,0.6774193548387096,60,0.1755318641662597
+5,3.18289412364158,71,dump_models = 1 AND proof = 1 AND stats = 1 AND trace = 1 AND type_check = 1,type_check==1,3,0.2286634460547504,0.1290909090909091,1.0,60,0.1779108047485351
+6,2.456198097504949,57,debug_ref_count = 1 AND dump_models = 1 AND model = 1 AND model_validate = 1 AND trace = 1 AND type_check = 1,type_check==1,3,0.1878088962108731,0.1036363636363636,1.0,60,0.1752386093139648
+2,2.465428066418171,276,debug_ref_count = 1 AND proof = 1,debug_ref_count==1 AND proof==1,0,1.0,1.0,1.0,61,0.3279364109039306
+3,2.8277580047145943,183,dump_models = 1 AND stats = 1 AND trace = 1,dump_models==1 AND stats==1 AND trace==1,0,1.0,1.0,1.0,61,0.3870480060577392
+4,3.364768774807962,120,debug_ref_count = 1 AND dump_models = 1 AND model = 1 AND proof = 1,debug_ref_count==1 AND dump_models==1 AND model==1 AND proof==1,0,1.0,1.0,1.0,61,0.4275081157684326
+5,2.615336480538651,68,debug_ref_count = 1 AND dump_models = 1 AND model = 1 AND type_check = 1 AND unsat_core = 1,type_check==1,3,0.2200647249190938,0.1236363636363636,1.0,61,0.1632657051086425
+6,2.724106547829824,53,dump_models = 1 AND model = 1 AND model_validate = 1 AND stats = 1 AND trace = 1 AND type_check = 1,stats==1,3,0.1799660441426146,0.0988805970149253,1.0,61,0.1635470390319824
+2,2.566823776458405,293,auto_config = 1 AND stats = 1,auto_config==1 AND stats==1,0,1.0,1.0,1.0,62,0.3528511524200439
+3,2.1540083413062043,201,auto_config = 1 AND stats = 1 AND type_check = 1,auto_config==1 AND stats==1 AND type_check==1,0,1.0,1.0,1.0,62,0.3635845184326172
+4,2.1375700923587955,101,auto_config = 1 AND model = 1 AND stats = 1 AND trace = 1,workload==0,0,0.1818181818181818,0.1,1.0,62,0.1708683967590332
+5,2.5176407083261663,63,model = 1 AND model_validate = 1 AND proof = 1 AND stats = 1 AND unsat_core = 1,unsat_core==1,3,0.2082644628099173,0.1162361623616236,1.0,62,0.1693835258483886
+6,1.9612672550245085,52,auto_config = 1 AND dump_models = 1 AND model = 1 AND model_validate = 1 AND stats = 1 AND type_check = 1,type_check==1,3,0.1727574750830564,0.0945454545454545,1.0,62,0.1704003810882568
+2,3.895274679384348,281,proof = 1 AND type_check = 1,proof==1 AND type_check==1,0,1.0,1.0,1.0,63,0.3535299301147461
+3,2.123572055290717,206,dump_models = 1 AND model = 1 AND type_check = 1,dump_models==1 AND model==1 AND type_check==1,0,1.0,1.0,1.0,63,0.356475830078125
+4,3.2647854267392185,56,model_validate = 1 AND proof = 1 AND unsat_core = 1 AND well_sorted_check = 1,unsat_core==1,3,0.1872909698996655,0.1033210332103321,1.0,63,0.1662240028381347
+5,2.3464769836203083,70,auto_config = 1 AND debug_ref_count = 1 AND dump_models = 1 AND model = 1 AND stats = 1,workload==0,0,0.1296296296296296,0.0693069306930693,1.0,63,0.1652965545654297
+6,3.733998951762711,52,auto_config = 1 AND dump_models = 1 AND model = 1 AND model_validate = 1 AND stats = 1 AND type_check = 1,model==1,3,0.1783876500857633,0.0979284369114877,1.0,63,0.1661553382873535
+2,2.004991719400242,270,proof = 1 AND smtlib2_compliant = 1,proof==1 AND smtlib2_compliant==1,0,1.0,1.0,1.0,64,0.3380663394927978
+3,3.70825811138498,189,stats = 1 AND type_check = 1 AND unsat_core = 1,unsat_core==1 AND stats==1 AND type_check==1,0,1.0,1.0,1.0,64,0.357729434967041
+4,4.136146732887156,106,auto_config = 1 AND model = 1 AND model_validate = 1 AND proof = 1,model==1,3,0.3328100470957613,0.199623352165725,1.0,64,0.1715960502624511
+5,2.492899186982398,61,model_validate = 1 AND proof = 1 AND stats = 1 AND trace = 1 AND unsat_core = 1,workload==0,0,0.1139122315592903,0.0603960396039603,1.0,64,0.1696827411651611
+6,2.246476680254219,53,dump_models = 1 AND model = 1 AND model_validate = 1 AND stats = 1 AND trace = 1 AND type_check = 1,workload==0,0,0.0997177798682972,0.0524752475247524,1.0,64,0.1704010963439941
+2,2.692956835281488,160,trace = 1 AND well_sorted_check = 1,well_sorted_check==1 AND trace==1,0,1.0,1.0,1.0,65,0.3335912227630615
+3,3.996468125953893,169,debug_ref_count = 1 AND stats = 1 AND trace = 1,debug_ref_count==1 AND stats==1 AND trace==1,0,1.0,1.0,1.0,65,0.3540055751800537
+4,3.5923345979866266,100,auto_config = 1 AND dump_models = 1 AND model_validate = 1 AND proof = 1,auto_config==1 AND dump_models==1 AND model_validate==1 AND proof==1,0,1.0,1.0,1.0,65,0.4416670799255371
+5,3.4733468066725446,51,auto_config = 1 AND debug_ref_count = 1 AND dump_models = 1 AND smtlib2_compliant = 1 AND unsat_core = 1,unsat_core==1,3,0.1720067453625632,0.0940959409594096,1.0,65,0.1677117347717285
+6,4.400787359423291,52,auto_config = 1 AND dump_models = 1 AND model = 1 AND model_validate = 1 AND stats = 1 AND type_check = 1,type_check==1,3,0.1727574750830564,0.0945454545454545,1.0,65,0.168201208114624
+2,3.552726275657879,282,model = 1 AND trace = 1,model==1 AND trace==1,0,1.0,1.0,1.0,66,0.3709278106689453
+3,3.7071280914884936,165,auto_config = 1 AND model = 1 AND stats = 1,auto_config==1 AND model==1 AND stats==1,0,1.0,1.0,1.0,66,0.346545934677124
+4,2.8874206926280146,102,model_validate = 1 AND stats = 1 AND type_check = 1 AND unsat_core = 1,unsat_core==1,3,0.3167701863354037,0.1881918819188192,1.0,66,0.165248155593872
+5,3.199204262545547,65,debug_ref_count = 1 AND dump_models = 1 AND model = 1 AND smtlib2_compliant = 1 AND type_check = 1,type_check==1,3,0.2113821138211382,0.1181818181818181,1.0,66,0.1634373664855957
+6,3.428167823672832,52,auto_config = 1 AND dump_models = 1 AND model = 1 AND proof = 1 AND stats = 1 AND type_check = 1,type_check==1,3,0.1727574750830564,0.0945454545454545,1.0,66,0.164358377456665
+2,2.219417605073017,283,smtlib2_compliant = 1 AND stats = 1,smtlib2_compliant==1 AND stats==1,0,1.0,1.0,1.0,67,0.3804404735565185
+3,3.9078127526215303,88,smtlib2_compliant = 1 AND trace = 1 AND well_sorted_check = 1,stats==1,3,0.1923076923076923,0.1119402985074626,0.6818181818181818,67,0.1718542575836181
+4,3.201872110588285,95,auto_config = 1 AND debug_ref_count = 1 AND model_validate = 1 AND trace = 1,debug_ref_count==1,3,0.3084415584415584,0.182341650671785,1.0,67,0.1710176467895507
+5,2.980313443029221,59,model = 1 AND proof = 1 AND smtlib2_compliant = 1 AND type_check = 1 AND unsat_core = 1,unsat_core==1,3,0.1963394342762063,0.1088560885608856,1.0,67,0.1712198257446289
+6,3.4232425620317715,52,auto_config = 1 AND dump_models = 1 AND model = 1 AND proof = 1 AND stats = 1 AND type_check = 1,stats==1,3,0.1768707482993197,0.0970149253731343,1.0,67,0.1717691421508789
+2,2.758378720915017,295,stats = 1 AND unsat_core = 1,unsat_core==1 AND stats==1,0,1.0,1.0,1.0,68,0.3346717357635498
+3,3.5188383760462654,161,auto_config = 1 AND debug_ref_count = 1 AND type_check = 1,auto_config==1 AND debug_ref_count==1 AND type_check==1,0,1.0,1.0,1.0,68,0.3423960208892822
+4,2.322872870251578,111,auto_config = 1 AND model_validate = 1 AND stats = 1 AND type_check = 1,auto_config==1,3,0.3546325878594249,0.2155339805825242,1.0,68,0.1645145416259765
+5,3.190485033061621,60,debug_ref_count = 1 AND dump_models = 1 AND model_validate = 1 AND smtlib2_compliant = 1 AND unsat_core = 1,unsat_core==1,3,0.1993355481727574,0.1107011070110701,1.0,68,0.1646108627319336
+6,4.0717565242043205,57,debug_ref_count = 1 AND dump_models = 1 AND model = 1 AND model_validate = 1 AND trace = 1 AND type_check = 1,type_check==1,3,0.1878088962108731,0.1036363636363636,1.0,68,0.1766791343688964
+2,3.659447114372513,261,dump_models = 1 AND unsat_core = 1,unsat_core==1 AND dump_models==1,0,1.0,1.0,1.0,69,0.3856356143951416
+3,3.5296716808954964,172,debug_ref_count = 1 AND model = 1 AND trace = 1,debug_ref_count==1 AND model==1 AND trace==1,0,1.0,1.0,1.0,69,0.3770051002502441
+4,2.74713766939369,100,auto_config = 1 AND proof = 1 AND smtlib2_compliant = 1 AND stats = 1,stats==1,3,0.3144654088050315,0.1865671641791045,1.0,69,0.1822288036346435
+5,3.510200330927754,63,model = 1 AND model_validate = 1 AND proof = 1 AND stats = 1 AND unsat_core = 1,unsat_core==1,3,0.2082644628099173,0.1162361623616236,1.0,69,0.1722438335418701
+6,3.142416617158115,52,auto_config = 1 AND dump_models = 1 AND model = 1 AND proof = 1 AND stats = 1 AND type_check = 1,type_check==1,3,0.1727574750830564,0.0945454545454545,1.0,69,0.1723017692565918
+2,3.3679195081133946,293,dump_models = 1 AND type_check = 1,dump_models==1 AND type_check==1,0,1.0,1.0,1.0,7,0.3704133033752441
+3,3.3300333399994284,184,model = 1 AND model_validate = 1 AND trace = 1,model==1 AND model_validate==1 AND trace==1,0,1.0,1.0,1.0,7,0.378795862197876
+4,2.3053584749499185,101,debug_ref_count = 1 AND model_validate = 1 AND stats = 1 AND unsat_core = 1,debug_ref_count==1,3,0.3247588424437299,0.1938579654510556,1.0,7,0.1662418842315673
+5,4.481958191060111,57,auto_config = 1 AND debug_ref_count = 1 AND proof = 1 AND trace = 1 AND type_check = 1,workload==0,0,0.1068416119962511,0.0564356435643564,1.0,7,0.1648914813995361
+6,2.580580576753906,52,auto_config = 1 AND dump_models = 1 AND model = 1 AND model_validate = 1 AND stats = 1 AND type_check = 1,model==1,3,0.1783876500857633,0.0979284369114877,1.0,7,0.1655409336090088
+2,2.965980275093417,295,auto_config = 1 AND model = 1,auto_config==1 AND model==1,0,1.0,1.0,1.0,70,0.3521666526794433
+3,3.733142596911006,145,model = 1 AND smtlib2_compliant = 1 AND unsat_core = 1,unsat_core==1 AND model==1 AND smtlib2_compliant==1,0,1.0,1.0,1.0,70,0.3742830753326416
+4,3.5250750941496314,62,dump_models = 1 AND proof = 1 AND trace = 1 AND well_sorted_check = 1,unsat_core==1,3,0.1158940397350993,0.0645756457564575,0.5645161290322581,70,0.170586347579956
+5,2.791428394744687,70,dump_models = 1 AND model = 1 AND model_validate = 1 AND proof = 1 AND stats = 1,stats==1,3,0.231023102310231,0.1305970149253731,1.0,70,0.1703507900238037
+6,3.075537998571152,52,auto_config = 1 AND dump_models = 1 AND model = 1 AND proof = 1 AND stats = 1 AND type_check = 1,type_check==1,3,0.1727574750830564,0.0945454545454545,1.0,70,0.1715900897979736
+2,3.361114853227037,282,model = 1 AND trace = 1,model==1 AND trace==1,0,1.0,1.0,1.0,71,0.3857045173645019
+3,4.402547448189632,88,auto_config = 1 AND smtlib2_compliant = 1 AND well_sorted_check = 1,workload==0,0,0.1602914389799635,0.0871287128712871,1.0,71,0.1723411083221435
+4,3.850189180259866,96,model = 1 AND smtlib2_compliant = 1 AND stats = 1 AND trace = 1,stats==1,3,0.3037974683544303,0.1791044776119403,1.0,71,0.1734833717346191
+5,2.588974539129586,61,auto_config = 1 AND debug_ref_count = 1 AND model_validate = 1 AND stats = 1 AND type_check = 1,type_check==1,3,0.1996726677577741,0.1109090909090909,1.0,71,0.1733627319335937
+6,2.166925262527497,53,dump_models = 1 AND model = 1 AND model_validate = 1 AND stats = 1 AND trace = 1 AND type_check = 1,type_check==1,3,0.1757877280265339,0.0963636363636363,1.0,71,0.1720023155212402
+2,3.5143511325708903,297,dump_models = 1 AND stats = 1,dump_models==1 AND stats==1,0,1.0,1.0,1.0,72,0.372593879699707
+3,2.761865362783131,164,debug_ref_count = 1 AND proof = 1 AND trace = 1,debug_ref_count==1 AND proof==1 AND trace==1,0,1.0,1.0,1.0,72,0.3561837673187256
+4,2.043278225294886,110,auto_config = 1 AND proof = 1 AND stats = 1 AND type_check = 1,type_check==1,3,0.3333333333333333,0.2,1.0,72,0.1692781448364257
+5,2.891916359506161,62,debug_ref_count = 1 AND model = 1 AND model_validate = 1 AND smtlib2_compliant = 1 AND type_check = 1,type_check==1,3,0.2026143790849673,0.1127272727272727,1.0,72,0.1840691566467285
+6,2.030809340180319,52,auto_config = 1 AND dump_models = 1 AND model = 1 AND model_validate = 1 AND stats = 1 AND type_check = 1,workload==0,0,0.0979284369114877,0.0514851485148514,1.0,72,0.1697607040405273
+2,2.3582106247067154,179,model = 1 AND well_sorted_check = 1,well_sorted_check==1 AND model==1,0,1.0,1.0,1.0,73,0.3274085521697998
+3,2.0184531047749616,196,debug_ref_count = 1 AND stats = 1 AND type_check = 1,debug_ref_count==1 AND stats==1 AND type_check==1,0,1.0,1.0,1.0,73,0.3144280910491943
+4,2.282738121372236,79,auto_config = 1 AND debug_ref_count = 1 AND smtlib2_compliant = 1 AND trace = 1,type_check==1,3,0.1653418124006359,0.0945454545454545,0.6582278481012658,73,0.1652216911315918
+5,4.293490292861299,58,auto_config = 1 AND debug_ref_count = 1 AND proof = 1 AND stats = 1 AND type_check = 1,workload==0,0,0.1086142322097378,0.0574257425742574,1.0,73,0.1647121906280517
+6,4.215269450591196,53,dump_models = 1 AND model = 1 AND model_validate = 1 AND stats = 1 AND trace = 1 AND type_check = 1,type_check==1,3,0.1757877280265339,0.0963636363636363,1.0,73,0.1656644344329834
+2,3.0816766932211017,296,debug_ref_count = 1 AND type_check = 1,debug_ref_count==1 AND type_check==1,0,1.0,1.0,1.0,74,0.3418669700622558
+3,4.269655680625192,189,dump_models = 1 AND model = 1 AND proof = 1,dump_models==1 AND model==1 AND proof==1,0,1.0,1.0,1.0,74,0.3600533008575439
+4,2.511861858973626,82,dump_models = 1 AND model = 1 AND type_check = 1 AND well_sorted_check = 1,type_check==1,3,0.2594936708860759,0.149090909090909,1.0,74,0.1656837463378906
+5,2.489830654263027,61,auto_config = 1 AND debug_ref_count = 1 AND model_validate = 1 AND stats = 1 AND type_check = 1,stats==1,3,0.2043551088777219,0.1138059701492537,1.0,74,0.1648645401000976
+6,3.700431052860441,53,dump_models = 1 AND model = 1 AND model_validate = 1 AND stats = 1 AND trace = 1 AND type_check = 1,stats==1,3,0.1799660441426146,0.0988805970149253,1.0,74,0.1650846004486084
+2,4.054632131539713,297,debug_ref_count = 1 AND model_validate = 1,debug_ref_count==1 AND model_validate==1,0,1.0,1.0,1.0,75,0.3568630218505859
+3,2.8054416916921467,202,model = 1 AND stats = 1 AND type_check = 1,model==1 AND stats==1 AND type_check==1,0,1.0,1.0,1.0,75,0.3665192127227783
+4,2.234079122988707,105,debug_ref_count = 1 AND model = 1 AND proof = 1 AND type_check = 1,type_check==1,3,0.3206106870229008,0.1909090909090909,1.0,75,0.1683647632598877
+5,2.8294562875287177,57,auto_config = 1 AND dump_models = 1 AND proof = 1 AND trace = 1 AND unsat_core = 1,unsat_core==1,3,0.1903171953255426,0.1051660516605166,1.0,75,0.1672356128692627
+6,1.984934276006577,52,auto_config = 1 AND dump_models = 1 AND model = 1 AND model_validate = 1 AND stats = 1 AND type_check = 1,workload==0,0,0.0979284369114877,0.0514851485148514,1.0,75,0.1672306060791015
+2,2.9170208999938483,256,model_validate = 1 AND proof = 1,model_validate==1 AND proof==1,0,1.0,1.0,1.0,76,0.3657023906707763
+3,2.9197414798027603,164,dump_models = 1 AND model_validate = 1 AND unsat_core = 1,unsat_core==1 AND dump_models==1 AND model_validate==1,0,1.0,1.0,1.0,76,0.3760659694671631
+4,2.9933945101033426,103,proof = 1 AND stats = 1 AND trace = 1 AND unsat_core = 1,unsat_core==1,3,0.3193798449612403,0.1900369003690037,1.0,76,0.167128324508667
+5,3.291609991904948,52,auto_config = 1 AND model_validate = 1 AND proof = 1 AND smtlib2_compliant = 1 AND trace = 1,type_check==1,3,0.1063122923588039,0.0581818181818181,0.6153846153846154,76,0.1670119762420654
+6,2.415495145706452,53,dump_models = 1 AND model = 1 AND model_validate = 1 AND stats = 1 AND trace = 1 AND type_check = 1,workload==0,0,0.0997177798682972,0.0524752475247524,1.0,76,0.1672227382659912
+2,2.129184223683352,294,type_check = 1 AND unsat_core = 1,unsat_core==1 AND type_check==1,0,1.0,1.0,1.0,77,0.3665816783905029
+3,2.43761393897416,149,dump_models = 1 AND smtlib2_compliant = 1 AND trace = 1,dump_models==1 AND smtlib2_compliant==1 AND trace==1,0,1.0,1.0,1.0,77,0.3815853595733642
+4,2.639032744930402,103,dump_models = 1 AND model = 1 AND stats = 1 AND unsat_core = 1,unsat_core==1,3,0.3193798449612403,0.1900369003690037,1.0,77,0.1797273159027099
+5,3.890363713065912,54,auto_config = 1 AND debug_ref_count = 1 AND smtlib2_compliant = 1 AND stats = 1 AND trace = 1,type_check==1,3,0.1291390728476821,0.0709090909090909,0.7222222222222222,77,0.1782817840576172
+6,2.1022243716179894,57,debug_ref_count = 1 AND dump_models = 1 AND model = 1 AND model_validate = 1 AND trace = 1 AND type_check = 1,workload==0,0,0.1068416119962511,0.0564356435643564,1.0,77,0.1793105602264404
+2,2.3709266154327584,283,model = 1 AND stats = 1,model==1 AND stats==1,0,1.0,1.0,1.0,78,0.3559472560882568
+3,2.966225095844268,163,model = 1 AND proof = 1 AND smtlib2_compliant = 1,model==1 AND proof==1 AND smtlib2_compliant==1,0,1.0,1.0,1.0,78,0.3628907203674316
+4,4.218037769751361,52,model = 1 AND smtlib2_compliant = 1 AND type_check = 1 AND well_sorted_check = 1,type_check==1,3,0.1727574750830564,0.0945454545454545,1.0,78,0.1665022373199463
+5,3.3770582489101257,55,debug_ref_count = 1 AND dump_models = 1 AND model = 1 AND type_check = 1 AND well_sorted_check = 1,type_check==1,3,0.1818181818181818,0.1,1.0,78,0.1657981872558593
+6,3.5341854898184053,57,debug_ref_count = 1 AND dump_models = 1 AND model = 1 AND model_validate = 1 AND trace = 1 AND type_check = 1,type_check==1,3,0.1878088962108731,0.1036363636363636,1.0,78,0.1663527488708496
+2,2.122628671331042,164,model_validate = 1 AND well_sorted_check = 1,well_sorted_check==1 AND model_validate==1,0,1.0,1.0,1.0,79,0.3194580078125
+3,4.403550560170065,97,dump_models = 1 AND trace = 1 AND well_sorted_check = 1,workload==0,0,0.1752484191508581,0.096039603960396,1.0,79,0.1621246337890625
+4,3.1184085134578368,108,debug_ref_count = 1 AND model = 1 AND type_check = 1 AND unsat_core = 1,type_check==1,3,0.3282674772036474,0.1963636363636363,1.0,79,0.1710247993469238
+5,2.273613201385046,67,auto_config = 1 AND debug_ref_count = 1 AND dump_models = 1 AND model_validate = 1 AND type_check = 1,workload==0,0,0.1244196843082637,0.0663366336633663,1.0,79,0.1636414527893066
+6,4.010177343711229,52,auto_config = 1 AND dump_models = 1 AND model = 1 AND model_validate = 1 AND stats = 1 AND type_check = 1,type_check==1,3,0.1727574750830564,0.0945454545454545,1.0,79,0.1658730506896972
+2,3.010675090411145,288,debug_ref_count = 1 AND stats = 1,debug_ref_count==1 AND stats==1,0,1.0,1.0,1.0,8,0.3461189270019531
+3,4.209713533616748,180,dump_models = 1 AND proof = 1 AND stats = 1,dump_models==1 AND proof==1 AND stats==1,0,1.0,1.0,1.0,8,0.363208532333374
+4,2.6845626693156746,96,auto_config = 1 AND model_validate = 1 AND trace = 1 AND unsat_core = 1,unsat_core==1,3,0.3009404388714733,0.1771217712177121,1.0,8,0.1645779609680175
+5,2.803886790882772,75,debug_ref_count = 1 AND dump_models = 1 AND stats = 1 AND trace = 1 AND type_check = 1,type_check==1,3,0.24,0.1363636363636363,1.0,8,0.1654253005981445
+6,2.7710602139854936,57,debug_ref_count = 1 AND dump_models = 1 AND model = 1 AND model_validate = 1 AND trace = 1 AND type_check = 1,type_check==1,3,0.1878088962108731,0.1036363636363636,1.0,8,0.1708207130432129
+2,3.6007257042226386,282,model = 1 AND trace = 1,model==1 AND trace==1,0,1.0,1.0,1.0,80,0.3683440685272217
+3,2.5527130103967743,108,auto_config = 1 AND stats = 1 AND well_sorted_check = 1,stats==1,3,0.3354037267080745,0.2014925373134328,1.0,80,0.1652226448059082
+4,3.275600721924121,104,debug_ref_count = 1 AND dump_models = 1 AND proof = 1 AND stats = 1,debug_ref_count==1,3,0.3328,0.1996161228406909,1.0,80,0.1652753353118896
+5,2.1926786709098383,62,debug_ref_count = 1 AND proof = 1 AND smtlib2_compliant = 1 AND stats = 1 AND unsat_core = 1,unsat_core==1,3,0.2052980132450331,0.1143911439114391,1.0,80,0.1654353141784668
+6,3.2786380937028974,53,dump_models = 1 AND model = 1 AND model_validate = 1 AND stats = 1 AND trace = 1 AND type_check = 1,type_check==1,3,0.1757877280265339,0.0963636363636363,1.0,80,0.164914846420288
+2,3.442125422514008,267,auto_config = 1 AND trace = 1,auto_config==1 AND trace==1,0,1.0,1.0,1.0,81,0.3492093086242676
+3,3.162127613029842,164,proof = 1 AND smtlib2_compliant = 1 AND unsat_core = 1,unsat_core==1 AND proof==1 AND smtlib2_compliant==1,0,1.0,1.0,1.0,81,0.3442199230194092
+4,2.244698017228322,53,proof = 1 AND type_check = 1 AND unsat_core = 1 AND well_sorted_check = 1,type_check==1,3,0.1757877280265339,0.0963636363636363,1.0,81,0.1804392337799072
+5,2.2800869588942305,54,auto_config = 1 AND debug_ref_count = 1 AND model = 1 AND proof = 1 AND stats = 1,workload==0,0,0.1015037593984962,0.0534653465346534,1.0,81,0.1657586097717285
+6,2.0252512717901263,53,dump_models = 1 AND model = 1 AND model_validate = 1 AND stats = 1 AND trace = 1 AND type_check = 1,type_check==1,3,0.1757877280265339,0.0963636363636363,1.0,81,0.1659488677978515
+2,2.941401249424815,280,proof = 1 AND trace = 1,proof==1 AND trace==1,0,1.0,1.0,1.0,82,0.3573536872863769
+3,2.4082984596540493,164,auto_config = 1 AND debug_ref_count = 1 AND model_validate = 1,auto_config==1 AND debug_ref_count==1 AND model_validate==1,0,1.0,1.0,1.0,82,0.364699125289917
+4,2.86280401706313,96,auto_config = 1 AND smtlib2_compliant = 1 AND stats = 1 AND unsat_core = 1,unsat_core==1,3,0.3009404388714733,0.1771217712177121,1.0,82,0.1670916080474853
+5,3.088488862611836,63,debug_ref_count = 1 AND dump_models = 1 AND model_validate = 1 AND smtlib2_compliant = 1 AND stats = 1,stats==1,3,0.2103505843071786,0.1175373134328358,1.0,82,0.1669049263000488
+6,3.381270853743939,52,auto_config = 1 AND dump_models = 1 AND model = 1 AND model_validate = 1 AND stats = 1 AND type_check = 1,type_check==1,3,0.1727574750830564,0.0945454545454545,1.0,82,0.1668546199798584
+2,2.6486885049200457,264,smtlib2_compliant = 1 AND unsat_core = 1,unsat_core==1 AND smtlib2_compliant==1,0,1.0,1.0,1.0,83,0.3318912982940674
+3,2.271331467972346,100,model = 1 AND stats = 1 AND well_sorted_check = 1,type_check==1,3,0.2369230769230769,0.14,0.77,83,0.1677920818328857
+4,2.711192707706521,107,auto_config = 1 AND model = 1 AND model_validate = 1 AND unsat_core = 1,unsat_core==1,3,0.3297380585516178,0.1974169741697417,1.0,83,0.1680250167846679
+5,2.3568089819612714,63,auto_config = 1 AND debug_ref_count = 1 AND model = 1 AND type_check = 1 AND unsat_core = 1,type_check==1,3,0.2055464926590538,0.1145454545454545,1.0,83,0.1680948734283447
+6,3.804090189610836,53,dump_models = 1 AND model = 1 AND model_validate = 1 AND stats = 1 AND trace = 1 AND type_check = 1,stats==1,3,0.1799660441426146,0.0988805970149253,1.0,83,0.1678621768951416
+2,3.294217749444593,295,dump_models = 1 AND model_validate = 1,dump_models==1 AND model_validate==1,0,1.0,1.0,1.0,84,0.368086576461792
+3,3.550946367253885,144,debug_ref_count = 1 AND smtlib2_compliant = 1 AND unsat_core = 1,unsat_core==1 AND debug_ref_count==1 AND smtlib2_compliant==1,0,1.0,1.0,1.0,84,0.3506433963775635
+4,4.436054341932228,101,debug_ref_count = 1 AND model_validate = 1 AND stats = 1 AND unsat_core = 1,unsat_core==1,3,0.3141524105754277,0.1863468634686347,1.0,84,0.1654345989227295
+5,2.394256766678588,63,debug_ref_count = 1 AND model_validate = 1 AND proof = 1 AND stats = 1 AND trace = 1,stats==1,3,0.2103505843071786,0.1175373134328358,1.0,84,0.1657385826110839
+6,2.0507750665542974,52,auto_config = 1 AND dump_models = 1 AND model = 1 AND proof = 1 AND stats = 1 AND type_check = 1,stats==1,3,0.1768707482993197,0.0970149253731343,1.0,84,0.1651568412780761
+2,3.586523085232271,276,proof = 1 AND stats = 1,proof==1 AND stats==1,0,1.0,1.0,1.0,85,0.3567886352539062
+3,2.389321639191943,174,dump_models = 1 AND model_validate = 1 AND stats = 1,dump_models==1 AND model_validate==1 AND stats==1,0,1.0,1.0,1.0,85,0.3591430187225342
+4,2.1841230759142447,69,debug_ref_count = 1 AND model = 1 AND unsat_core = 1 AND well_sorted_check = 1,unsat_core==1,3,0.2258592471358428,0.1273062730627306,1.0,85,0.1802623271942138
+5,4.029864905238796,70,model = 1 AND stats = 1 AND trace = 1 AND type_check = 1 AND unsat_core = 1,stats==1,3,0.231023102310231,0.1305970149253731,1.0,85,0.1642115116119384
+6,4.09340225380634,53,dump_models = 1 AND model = 1 AND model_validate = 1 AND stats = 1 AND trace = 1 AND type_check = 1,workload==0,0,0.0997177798682972,0.0524752475247524,1.0,85,0.16426682472229
+2,3.2595915147367203,260,smtlib2_compliant = 1 AND trace = 1,smtlib2_compliant==1 AND trace==1,0,1.0,1.0,1.0,86,0.3595395088195801
+3,3.2588590162962934,183,auto_config = 1 AND model = 1 AND model_validate = 1,auto_config==1 AND model==1 AND model_validate==1,0,1.0,1.0,1.0,86,0.3514924049377441
+4,3.3498286299945854,116,debug_ref_count = 1 AND dump_models = 1 AND model = 1 AND unsat_core = 1,unsat_core==1 AND debug_ref_count==1 AND dump_models==1 AND model==1,0,1.0,1.0,1.0,86,0.4317607879638672
+5,2.582887941138752,66,debug_ref_count = 1 AND smtlib2_compliant = 1 AND stats = 1 AND trace = 1 AND type_check = 1,type_check==1,3,0.2142857142857142,0.12,1.0,86,0.1660103797912597
+6,4.491609175693681,52,auto_config = 1 AND dump_models = 1 AND model = 1 AND model_validate = 1 AND stats = 1 AND type_check = 1,type_check==1,3,0.1727574750830564,0.0945454545454545,1.0,86,0.1666743755340576
+2,2.1225857468919647,281,proof = 1 AND type_check = 1,proof==1 AND type_check==1,0,1.0,1.0,1.0,87,0.3591036796569824
+3,4.184581524339992,160,model_validate = 1 AND proof = 1 AND trace = 1,model_validate==1 AND proof==1 AND trace==1,0,1.0,1.0,1.0,87,0.3966636657714844
+4,3.048178172357386,97,auto_config = 1 AND smtlib2_compliant = 1 AND trace = 1 AND type_check = 1,type_check==1,3,0.2998454404945904,0.1763636363636363,1.0,87,0.1795098781585693
+5,3.948836753710776,61,auto_config = 1 AND model_validate = 1 AND proof = 1 AND stats = 1 AND type_check = 1,stats==1,3,0.2043551088777219,0.1138059701492537,1.0,87,0.1779601573944091
+6,2.5120939345186075,57,debug_ref_count = 1 AND dump_models = 1 AND model = 1 AND model_validate = 1 AND trace = 1 AND type_check = 1,type_check==1,3,0.1878088962108731,0.1036363636363636,1.0,87,0.178401231765747
+2,2.187138373205488,250,dump_models = 1 AND smtlib2_compliant = 1,dump_models==1 AND smtlib2_compliant==1,0,1.0,1.0,1.0,88,0.3664736747741699
+3,3.725492108274466,155,debug_ref_count = 1 AND proof = 1 AND type_check = 1,debug_ref_count==1 AND proof==1 AND type_check==1,0,1.0,1.0,1.0,88,0.3470768928527832
+4,2.6260815186171658,53,stats = 1 AND trace = 1 AND unsat_core = 1 AND well_sorted_check = 1,type_check==1,3,0.1393034825870646,0.0763636363636363,0.7924528301886793,88,0.1673090457916259
+5,2.0513460186641312,65,debug_ref_count = 1 AND stats = 1 AND trace = 1 AND type_check = 1 AND unsat_core = 1,workload==0,0,0.1209302325581395,0.0643564356435643,1.0,88,0.1662592887878418
+6,4.237306554568797,52,auto_config = 1 AND dump_models = 1 AND model = 1 AND proof = 1 AND stats = 1 AND type_check = 1,type_check==1,3,0.1727574750830564,0.0945454545454545,1.0,88,0.1661758422851562
+2,3.412155237631247,280,proof = 1 AND trace = 1,proof==1 AND trace==1,0,1.0,1.0,1.0,89,0.3426527976989746
+3,4.313434465756785,168,debug_ref_count = 1 AND dump_models = 1 AND proof = 1,debug_ref_count==1 AND dump_models==1 AND proof==1,0,1.0,1.0,1.0,89,0.3561515808105469
+4,3.102871869540407,104,auto_config = 1 AND model_validate = 1 AND trace = 1 AND type_check = 1,type_check==1,3,0.3180428134556575,0.1890909090909091,1.0,89,0.1652224063873291
+5,4.05894508018347,59,debug_ref_count = 1 AND model = 1 AND model_validate = 1 AND proof = 1 AND stats = 1,model==1,3,0.1999999999999999,0.1111111111111111,1.0,89,0.1658499240875244
+6,2.7695989990199616,57,debug_ref_count = 1 AND dump_models = 1 AND model = 1 AND model_validate = 1 AND trace = 1 AND type_check = 1,type_check==1,3,0.1878088962108731,0.1036363636363636,1.0,89,0.1672632694244384
+2,3.600053563942482,256,model_validate = 1 AND proof = 1,model_validate==1 AND proof==1,0,1.0,1.0,1.0,9,0.3567912578582763
+3,3.8148324035423,163,auto_config = 1 AND model_validate = 1 AND type_check = 1,auto_config==1 AND model_validate==1 AND type_check==1,0,1.0,1.0,1.0,9,0.3724353313446045
+4,4.479919763008236,108,model = 1 AND model_validate = 1 AND proof = 1 AND type_check = 1,model==1,3,0.3380281690140845,0.2033898305084746,1.0,9,0.1686048507690429
+5,3.287675911356536,63,auto_config = 1 AND debug_ref_count = 1 AND model = 1 AND stats = 1 AND type_check = 1,type_check==1,3,0.2055464926590538,0.1145454545454545,1.0,9,0.1681551933288574
+6,2.824031687676093,52,auto_config = 1 AND dump_models = 1 AND model = 1 AND proof = 1 AND stats = 1 AND type_check = 1,type_check==1,3,0.1727574750830564,0.0945454545454545,1.0,9,0.1678137779235839
+2,3.777919773974284,297,debug_ref_count = 1 AND unsat_core = 1,unsat_core==1 AND debug_ref_count==1,0,1.0,1.0,1.0,90,0.341043472290039
+3,4.367957223938854,181,dump_models = 1 AND model_validate = 1 AND type_check = 1,dump_models==1 AND model_validate==1 AND type_check==1,0,1.0,1.0,1.0,90,0.3653607368469238
+4,2.3571475173251555,60,auto_config = 1 AND debug_ref_count = 1 AND stats = 1 AND well_sorted_check = 1,workload==0,0,0.1121495327102803,0.0594059405940594,1.0,90,0.1656641960144043
+5,3.121806143302874,58,auto_config = 1 AND dump_models = 1 AND trace = 1 AND type_check = 1 AND unsat_core = 1,unsat_core==1,3,0.1933333333333333,0.1070110701107011,1.0,90,0.1652755737304687
+6,3.743720892578888,57,debug_ref_count = 1 AND dump_models = 1 AND model = 1 AND model_validate = 1 AND trace = 1 AND type_check = 1,debug_ref_count==1,3,0.1972318339100346,0.109404990403071,1.0,90,0.166140079498291
+2,4.328182091733849,245,model = 1 AND smtlib2_compliant = 1,model==1 AND smtlib2_compliant==1,0,1.0,1.0,1.0,91,0.4116196632385254
+3,3.2093032710977867,88,auto_config = 1 AND smtlib2_compliant = 1 AND well_sorted_check = 1,auto_config==1,3,0.2918739635157545,0.170873786407767,1.0,91,0.1883506774902343
+4,2.112504590458953,107,debug_ref_count = 1 AND dump_models = 1 AND trace = 1 AND unsat_core = 1,unsat_core==1,3,0.3297380585516178,0.1974169741697417,1.0,91,0.1879270076751709
+5,3.226069811753125,60,debug_ref_count = 1 AND model = 1 AND model_validate = 1 AND smtlib2_compliant = 1 AND trace = 1,type_check==1,3,0.1344262295081967,0.0745454545454545,0.6833333333333333,91,0.1876900196075439
+6,2.894079620464473,53,dump_models = 1 AND model = 1 AND model_validate = 1 AND stats = 1 AND trace = 1 AND type_check = 1,model==1,3,0.1815068493150685,0.0998116760828625,1.0,91,0.1871204376220703
+2,3.145947902537877,297,auto_config = 1 AND type_check = 1,auto_config==1 AND type_check==1,0,1.0,1.0,1.0,92,0.3447482585906982
+3,4.293795474870302,164,dump_models = 1 AND model_validate = 1 AND unsat_core = 1,unsat_core==1 AND dump_models==1 AND model_validate==1,0,1.0,1.0,1.0,92,0.3628649711608886
+4,2.952544186424693,91,auto_config = 1 AND debug_ref_count = 1 AND trace = 1 AND unsat_core = 1,unsat_core==1,3,0.287519747235387,0.1678966789667896,1.0,92,0.1677496433258056
+5,4.000484201945747,70,dump_models = 1 AND model = 1 AND model_validate = 1 AND type_check = 1 AND unsat_core = 1,workload==0,0,0.1296296296296296,0.0693069306930693,1.0,92,0.1658401489257812
+6,2.507615264380784,52,auto_config = 1 AND dump_models = 1 AND model = 1 AND model_validate = 1 AND stats = 1 AND type_check = 1,type_check==1,3,0.1727574750830564,0.0945454545454545,1.0,92,0.1670587062835693
+2,2.9694847884601296,182,debug_ref_count = 1 AND well_sorted_check = 1,well_sorted_check==1 AND debug_ref_count==1,0,1.0,1.0,1.0,93,0.3142924308776855
+3,2.345042697517441,178,dump_models = 1 AND model = 1 AND trace = 1,dump_models==1 AND model==1 AND trace==1,0,1.0,1.0,1.0,93,0.3556225299835205
+4,3.4094227844730733,122,auto_config = 1 AND dump_models = 1 AND model = 1 AND type_check = 1,auto_config==1 AND dump_models==1 AND model==1 AND type_check==1,0,1.0,1.0,1.0,93,0.4564206600189209
+5,2.912790601722057,53,dump_models = 1 AND model_validate = 1 AND proof = 1 AND smtlib2_compliant = 1 AND trace = 1,type_check==1,3,0.1160862354892205,0.0636363636363636,0.660377358490566,93,0.163454532623291
+6,3.761908818458575,52,auto_config = 1 AND dump_models = 1 AND model = 1 AND model_validate = 1 AND stats = 1 AND type_check = 1,stats==1,3,0.1768707482993197,0.0970149253731343,1.0,93,0.1646900177001953
+2,3.3674479697611885,246,auto_config = 1 AND smtlib2_compliant = 1,auto_config==1 AND smtlib2_compliant==1,0,1.0,1.0,1.0,94,0.3442494869232178
+3,4.084481985021279,164,model = 1 AND stats = 1 AND unsat_core = 1,unsat_core==1 AND model==1 AND stats==1,0,1.0,1.0,1.0,94,0.3729991912841797
+4,2.6749791788998083,104,auto_config = 1 AND model = 1 AND proof = 1 AND type_check = 1,type_check==1,3,0.3180428134556575,0.1890909090909091,1.0,94,0.1693613529205322
+5,2.126809805403849,51,auto_config = 1 AND model_validate = 1 AND smtlib2_compliant = 1 AND trace = 1 AND unsat_core = 1,workload==0,0,0.0961357210179076,0.0504950495049505,1.0,94,0.1664690971374511
+6,3.652805656409488,52,auto_config = 1 AND dump_models = 1 AND model = 1 AND model_validate = 1 AND stats = 1 AND type_check = 1,type_check==1,3,0.1727574750830564,0.0945454545454545,1.0,94,0.1661915779113769
+2,3.7777263500675473,285,model_validate = 1 AND type_check = 1,model_validate==1 AND type_check==1,0,1.0,1.0,1.0,95,0.374814510345459
+3,3.834973600575921,152,debug_ref_count = 1 AND proof = 1 AND stats = 1,debug_ref_count==1 AND proof==1 AND stats==1,0,1.0,1.0,1.0,95,0.3540236949920654
+4,4.125107025405065,57,dump_models = 1 AND proof = 1 AND unsat_core = 1 AND well_sorted_check = 1,unsat_core==1,3,0.1903171953255426,0.1051660516605166,1.0,95,0.168107271194458
+5,2.621796093071951,69,debug_ref_count = 1 AND dump_models = 1 AND model_validate = 1 AND stats = 1 AND unsat_core = 1,stats==1,3,0.228099173553719,0.1287313432835821,1.0,95,0.1666371822357177
+6,4.169188661252334,57,debug_ref_count = 1 AND dump_models = 1 AND model = 1 AND model_validate = 1 AND trace = 1 AND type_check = 1,type_check==1,3,0.1878088962108731,0.1036363636363636,1.0,95,0.1682958602905273
+2,2.1292971053912697,297,debug_ref_count = 1 AND unsat_core = 1,unsat_core==1 AND debug_ref_count==1,0,1.0,1.0,1.0,96,0.3472177982330322
+3,2.65468339607292,154,model_validate = 1 AND type_check = 1 AND unsat_core = 1,unsat_core==1 AND model_validate==1 AND type_check==1,0,1.0,1.0,1.0,96,0.368354320526123
+4,2.9772404177207523,95,dump_models = 1 AND proof = 1 AND smtlib2_compliant = 1 AND trace = 1,trace==1,3,0.3156146179401993,0.1873767258382643,1.0,96,0.1715850830078125
+5,3.640064367718071,70,debug_ref_count = 1 AND dump_models = 1 AND model = 1 AND proof = 1 AND stats = 1,model==1,3,0.232945091514143,0.1318267419962335,1.0,96,0.1710655689239502
+6,4.028724702623633,52,auto_config = 1 AND dump_models = 1 AND model = 1 AND model_validate = 1 AND stats = 1 AND type_check = 1,workload==0,0,0.0979284369114877,0.0514851485148514,1.0,96,0.1705090999603271
+2,1.972458371645519,274,dump_models = 1 AND trace = 1,dump_models==1 AND trace==1,0,1.0,1.0,1.0,97,0.3678104877471924
+3,3.462014087287639,161,debug_ref_count = 1 AND type_check = 1 AND unsat_core = 1,unsat_core==1 AND debug_ref_count==1 AND type_check==1,0,1.0,1.0,1.0,97,0.3537037372589111
+4,2.0732879244053257,105,debug_ref_count = 1 AND model = 1 AND proof = 1 AND type_check = 1,type_check==1,3,0.3206106870229008,0.1909090909090909,1.0,97,0.1676926612854004
+5,2.973271736858677,65,dump_models = 1 AND model_validate = 1 AND smtlib2_compliant = 1 AND trace = 1 AND type_check = 1,type_check==1,3,0.2113821138211382,0.1181818181818181,1.0,97,0.1673383712768554
+6,3.277168727149698,52,auto_config = 1 AND dump_models = 1 AND model = 1 AND model_validate = 1 AND stats = 1 AND type_check = 1,model==1,3,0.1783876500857633,0.0979284369114877,1.0,97,0.1687288284301757
+2,4.475420045709758,173,unsat_core = 1 AND well_sorted_check = 1,unsat_core==1 AND well_sorted_check==1,0,1.0,1.0,1.0,98,0.3056678771972656
+3,4.203171667294261,115,dump_models = 1 AND stats = 1 AND well_sorted_check = 1,well_sorted_check==1 AND dump_models==1 AND stats==1,0,1.0,1.0,1.0,98,0.421138048171997
+4,2.263561799911809,69,debug_ref_count = 1 AND model = 1 AND unsat_core = 1 AND well_sorted_check = 1,unsat_core==1,3,0.2258592471358428,0.1273062730627306,1.0,98,0.1714160442352295
+5,2.440387744771443,71,dump_models = 1 AND model_validate = 1 AND stats = 1 AND trace = 1 AND unsat_core = 1,workload==0,0,0.1313598519888991,0.0702970297029703,1.0,98,0.1705739498138427
+6,2.337661695381838,52,auto_config = 1 AND dump_models = 1 AND model = 1 AND model_validate = 1 AND stats = 1 AND type_check = 1,workload==0,0,0.0979284369114877,0.0514851485148514,1.0,98,0.170565128326416
+2,2.949005743280709,295,stats = 1 AND unsat_core = 1,unsat_core==1 AND stats==1,0,1.0,1.0,1.0,99,0.355109691619873
+3,2.2919969816515997,204,dump_models = 1 AND stats = 1 AND type_check = 1,dump_models==1 AND stats==1 AND type_check==1,0,1.0,1.0,1.0,99,0.3943824768066406
+4,3.3387009966389267,109,auto_config = 1 AND dump_models = 1 AND stats = 1 AND trace = 1,auto_config==1 AND dump_models==1 AND stats==1 AND trace==1,0,1.0,1.0,1.0,99,0.4501893520355224
+5,1.9663964950967852,81,model = 1 AND model_validate = 1 AND stats = 1 AND trace = 1 AND type_check = 1,workload==0,0,0.148487626031164,0.0801980198019802,1.0,99,0.1689879894256591
+6,2.4701389474807574,57,debug_ref_count = 1 AND dump_models = 1 AND model = 1 AND model_validate = 1 AND trace = 1 AND type_check = 1,type_check==1,3,0.1878088962108731,0.1036363636363636,1.0,99,0.1692252159118652

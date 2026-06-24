@@ -1,0 +1,701 @@
+n_conditions,sg_mean,sg_cardinality,sg_rule,best_rule,best_rule_idx,f1,precision,recall,seed,runtime
+1,23.70171545797716,499,sliced-threads = 1,sliced-threads==1,0,1.0,1.0,1.0,0,0.7523360252380371
+2,85.24030648722034,265,no-dct-decimate = 1 AND sliced-threads = 1,no-dct-decimate==1 AND sliced-threads==1,0,1.0,1.0,1.0,0,0.97023606300354
+3,72.02438868576719,722,intra-refresh = 1 AND no-chroma-me = 1 AND no-weightb = 1,no-chroma-me==1 AND no-weightb==1 AND intra-refresh==1,0,1.0,1.0,1.0,0,1.3726418018341064
+4,67.19148563554356,586,intra-refresh = 1 AND no-deblock = 1 AND no-mixed-refs = 1 AND opencl = 1,no-mixed-refs==1 AND opencl==1 AND intra-refresh==1 AND no-deblock==1,0,1.0,1.0,1.0,0,1.559619426727295
+5,72.19962722191246,468,no-weightb = 1 AND no-dct-decimate = 1 AND pic-struct = 1 AND cpu-independent = 1 AND no-asm = 1,workload==0,0,0.2613795029321418,0.1503372952136203,1.0,0,0.4981188774108886
+6,58.15396224788845,396,slow-firstpass = 1 AND no-fast-pskip = 1 AND no-chroma-me = 1 AND no-mbtree = 1 AND non-deterministic = 1 AND dts-compress = 1,workload==0,0,0.225705329153605,0.127208480565371,1.0,0,0.4880115985870361
+7,60.83979631583268,295,slow-firstpass = 1 AND intra-refresh = 1 AND open-gop = 1 AND no-chroma-me = 1 AND no-mixed-refs = 1 AND cpu-independent = 1 AND no-asm = 1,workload==0,0,0.1731220657276995,0.0947638933504657,1.0,0,0.4981300830841064
+1,55.22519745266851,499,sliced-threads = 1,sliced-threads==1,0,1.0,1.0,1.0,1,0.7817554473876953
+2,53.69881157334618,815,no-fast-pskip = 1 AND cpu-independent = 1,cpu-independent==1 AND no-fast-pskip==1,0,1.0,1.0,1.0,1,1.0943982601165771
+3,53.45826680902704,631,no-fast-pskip = 1 AND no-mixed-refs = 1 AND cpu-independent = 1,no-mixed-refs==1 AND cpu-independent==1 AND no-fast-pskip==1,0,1.0,1.0,1.0,1,1.379335880279541
+4,79.74474202273568,575,no-scenecut = 1 AND no-psy = 1 AND non-deterministic = 1 AND no-asm = 1,no-psy==1 AND non-deterministic==1 AND no-scenecut==1 AND no-asm==1,0,1.0,1.0,1.0,1,1.5988945960998535
+5,12.114043420151742,524,intra-refresh = 1 AND open-gop = 1 AND tff = 1 AND no-fast-pskip = 1 AND no-8x8dct = 1,no-8x8dct==1 AND intra-refresh==1 AND open-gop==1 AND tff==1 AND no-fast-pskip==1,0,1.0,1.0,1.0,1,1.6535298824310305
+6,60.8772577375239,397,no-scenecut = 1 AND intra-refresh = 1 AND open-gop = 1 AND no-psy = 1 AND no-asm = 1 AND dts-compress = 1,workload==0,0,0.2262108262108262,0.1275297141021522,1.0,1,0.5237255096435547
+7,36.272773367693134,314,slow-firstpass = 1 AND intra-refresh = 1 AND no-cabac = 1 AND no-chroma-me = 1 AND no-mbtree = 1 AND non-deterministic = 1 AND no-asm = 1,slow-firstpass==1,3,0.3171717171717171,0.1884753901560624,1.0,1,0.5138745307922363
+1,39.33980495272595,499,sliced-threads = 1,sliced-threads==1,0,1.0,1.0,1.0,10,0.8597993850708008
+2,76.92208542575258,883,intra-refresh = 1 AND aud = 1,aud==1 AND intra-refresh==1,0,1.0,1.0,1.0,10,1.2315373420715332
+3,28.057986359698777,753,tff = 1 AND non-deterministic = 1 AND opencl = 1,non-deterministic==1 AND opencl==1 AND tff==1,0,1.0,1.0,1.0,10,1.562286376953125
+4,18.782910011633888,587,open-gop = 1 AND no-weightb = 1 AND no-mbtree = 1 AND opencl = 1,no-weightb==1 AND no-mbtree==1 AND opencl==1 AND open-gop==1,0,1.0,1.0,1.0,10,1.8677175045013428
+5,43.628731734915824,451,slow-firstpass = 1 AND constrained-intra = 1 AND no-mbtree = 1 AND no-asm = 1 AND dts-compress = 1,slow-firstpass==1 AND no-mbtree==1 AND no-asm==1 AND dts-compress==1 AND constrained-intra==1,0,1.0,1.0,1.0,10,1.6220755577087402
+6,8.921813053543566,404,slow-firstpass = 1 AND tff = 1 AND no-mixed-refs = 1 AND no-psy = 1 AND no-weightb = 1 AND no-asm = 1,pic-struct==1,3,0.3284023668639053,0.2050492610837438,0.8242574257425742,10,0.5552887916564941
+7,45.86209977035279,332,slow-firstpass = 1 AND no-scenecut = 1 AND no-weightb = 1 AND no-mbtree = 1 AND pic-struct = 1 AND no-asm = 1 AND aud = 1,non-deterministic==1,3,0.2978723404255319,0.1790499390986601,0.8855421686746988,10,0.5536892414093018
+1,74.61483926069906,499,sliced-threads = 1,sliced-threads==1,0,1.0,1.0,1.0,11,0.7873754501342773
+2,40.85575326443302,856,constrained-intra = 1 AND cpu-independent = 1,cpu-independent==1 AND constrained-intra==1,0,1.0,1.0,1.0,11,1.107332706451416
+3,23.684728496792964,722,no-8x8dct = 1 AND pic-struct = 1 AND dts-compress = 1,no-8x8dct==1 AND pic-struct==1 AND dts-compress==1,0,1.0,1.0,1.0,11,1.3926944732666016
+4,105.15651938895992,607,no-cabac = 1 AND bff = 1 AND no-mixed-refs = 1 AND non-deterministic = 1,no-mixed-refs==0,0,0.0,0.0,0.0,11,0.8214662075042725
+5,27.78807084100844,471,intra-refresh = 1 AND tff = 1 AND no-fast-pskip = 1 AND no-mixed-refs = 1 AND no-asm = 1,no-mixed-refs==1 AND no-asm==1 AND intra-refresh==1 AND tff==1 AND no-fast-pskip==1,0,1.0,1.0,1.0,11,1.6231932640075684
+6,50.782124060885,396,slow-firstpass = 1 AND no-chroma-me = 1 AND no-mixed-refs = 1 AND no-dct-decimate = 1 AND non-deterministic = 1 AND cpu-independent = 1,slow-firstpass==1,3,0.3840931134820562,0.2376950780312124,1.0,11,0.5071618556976318
+7,101.8559987812986,314,slow-firstpass = 1 AND intra-refresh = 1 AND no-cabac = 1 AND tff = 1 AND bff = 1 AND no-8x8dct = 1 AND dts-compress = 1,workload==0,0,0.1832506565509191,0.1008673305493093,1.0,11,0.5801527500152588
+1,63.4288800336856,499,sliced-threads = 1,sliced-threads==1,0,1.0,1.0,1.0,12,0.756488561630249
+2,71.94816620926179,926,no-dct-decimate = 1 AND aud = 1,no-dct-decimate==1 AND aud==1,0,1.0,1.0,1.0,12,1.0462138652801514
+3,57.593533349669656,180,tff = 1 AND bff = 1 AND sliced-threads = 1,workload==0,0,0.1093228059520194,0.0578220366206231,1.0,12,0.4916951656341553
+4,20.400768940540647,572,slow-firstpass = 1 AND intra-refresh = 1 AND no-chroma-me = 1 AND opencl = 1,slow-firstpass==1 AND no-chroma-me==1 AND opencl==1 AND intra-refresh==1,0,1.0,1.0,1.0,12,1.5928120613098145
+5,69.46889590533452,407,intra-refresh = 1 AND bff = 1 AND no-chroma-me = 1 AND cpu-independent = 1 AND dts-compress = 1,workload==0,0,0.23125,0.1307420494699646,1.0,12,0.5078639984130859
+6,31.6154537870054,376,slow-firstpass = 1 AND no-cabac = 1 AND tff = 1 AND no-fast-pskip = 1 AND no-mbtree = 1 AND pic-struct = 1,pic-struct==1,3,0.376,0.2315270935960591,1.0,12,0.4899642467498779
+7,24.712747855204007,332,slow-firstpass = 1 AND no-scenecut = 1 AND tff = 1 AND no-fast-pskip = 1 AND no-mixed-refs = 1 AND no-weightb = 1 AND no-mbtree = 1,slow-firstpass==1,3,0.3323323323323323,0.1992797118847539,1.0,12,0.4975500106811523
+1,28.59909404675399,499,sliced-threads = 1,sliced-threads==1,0,1.0,1.0,1.0,13,0.7642085552215576
+2,98.87962742580828,812,no-mixed-refs = 1 AND cpu-independent = 1,no-mixed-refs==1 AND cpu-independent==1,0,1.0,1.0,1.0,13,1.111851930618286
+3,106.00428267225304,694,no-scenecut = 1 AND no-deblock = 1 AND aud = 1,no-scenecut==1 AND aud==1 AND no-deblock==1,0,1.0,1.0,1.0,13,1.3584825992584229
+4,69.04318755772142,649,open-gop = 1 AND no-cabac = 1 AND constrained-intra = 1 AND no-dct-decimate = 1,no-dct-decimate==1 AND open-gop==1 AND no-cabac==1 AND constrained-intra==1,0,1.0,1.0,1.0,13,1.663408279418945
+5,25.09158406408351,532,no-scenecut = 1 AND intra-refresh = 1 AND open-gop = 1 AND tff = 1 AND no-psy = 1,no-psy==1 AND no-scenecut==1 AND intra-refresh==1 AND open-gop==1 AND tff==1,0,1.0,1.0,1.0,13,1.6877539157867432
+6,23.284887677745257,348,no-scenecut = 1 AND no-fast-pskip = 1 AND no-8x8dct = 1 AND no-mbtree = 1 AND no-dct-decimate = 1 AND cpu-independent = 1,no-dct-decimate==1,3,0.3589479112944816,0.2187303582652419,1.0,13,0.4925885200500488
+7,23.284887677745257,348,slow-firstpass = 1 AND intra-refresh = 1 AND no-fast-pskip = 1 AND no-8x8dct = 1 AND no-chroma-me = 1 AND no-weightb = 1 AND no-dct-decimate = 1,pic-struct==1,3,0.3042596348884381,0.1847290640394088,0.8620689655172413,13,0.4908318519592285
+1,82.02083989399871,499,sliced-threads = 1,sliced-threads==1,0,1.0,1.0,1.0,14,0.8044085502624512
+2,42.54886338112725,240,no-mixed-refs = 1 AND sliced-threads = 1,no-mixed-refs==1 AND sliced-threads==1,0,1.0,1.0,1.0,14,1.010326623916626
+3,107.3851760235244,650,no-chroma-me = 1 AND no-weightb = 1 AND aud = 1,no-chroma-me==1 AND no-weightb==1 AND aud==1,0,1.0,1.0,1.0,14,1.4128191471099854
+4,59.493636629049966,587,intra-refresh = 1 AND pic-struct = 1 AND non-deterministic = 1 AND opencl = 1,pic-struct==1 AND non-deterministic==1 AND opencl==1 AND intra-refresh==1,0,1.0,1.0,1.0,14,1.6867311000823977
+5,36.25986353885322,501,no-deblock = 1 AND no-fast-pskip = 1 AND no-8x8dct = 1 AND no-weightb = 1 AND no-mbtree = 1,no-8x8dct==1 AND no-weightb==1 AND no-mbtree==1 AND no-deblock==1 AND no-fast-pskip==1,0,1.0,1.0,1.0,14,1.6146869659423828
+6,39.78814056607749,335,intra-refresh = 1 AND open-gop = 1 AND no-deblock = 1 AND no-psy = 1 AND no-mbtree = 1 AND dts-compress = 1,open-gop==1,3,0.3495044340114762,0.2117572692793931,1.0,14,0.5247986316680908
+7,64.11739438532032,303,slow-firstpass = 1 AND open-gop = 1 AND no-8x8dct = 1 AND no-weightb = 1 AND no-dct-decimate = 1 AND aud = 1 AND dts-compress = 1,workload==0,0,0.1774004683840749,0.0973337616447157,1.0,14,0.5183064937591553
+1,86.73574332346541,499,sliced-threads = 1,sliced-threads==1,0,1.0,1.0,1.0,15,0.7540285587310791
+2,74.67059968438724,268,no-fast-pskip = 1 AND sliced-threads = 1,sliced-threads==1 AND no-fast-pskip==1,0,1.0,1.0,1.0,15,0.9674179553985596
+3,40.838373090777885,871,non-deterministic = 1 AND aud = 1 AND opencl = 1,non-deterministic==1 AND aud==1 AND opencl==1,0,1.0,1.0,1.0,15,1.444176197052002
+4,83.9038105053654,591,no-cabac = 1 AND bff = 1 AND no-chroma-me = 1 AND no-mbtree = 1,no-chroma-me==1 AND no-mbtree==1 AND no-cabac==1 AND bff==1,0,1.0,1.0,1.0,15,1.537787675857544
+5,40.920460746790965,496,intra-refresh = 1 AND open-gop = 1 AND tff = 1 AND pic-struct = 1 AND opencl = 1,pic-struct==1 AND opencl==1 AND intra-refresh==1 AND open-gop==1 AND tff==1,0,1.0,1.0,1.0,15,1.5369689464569092
+6,107.7676298572804,407,no-scenecut = 1 AND bff = 1 AND constrained-intra = 1 AND no-chroma-me = 1 AND dts-compress = 1 AND opencl = 1,dts-compress==0,0,0.0,0.0,0.0,15,0.6254661083221436
+7,55.773958027499816,247,slow-firstpass = 1 AND open-gop = 1 AND no-deblock = 1 AND no-chroma-me = 1 AND no-weightb = 1 AND cpu-independent = 1 AND dts-compress = 1,workload==0,0,0.1470238095238095,0.0793446835849662,1.0,15,0.4921290874481201
+1,88.69556931456579,499,sliced-threads = 1,sliced-threads==1,0,1.0,1.0,1.0,16,0.768195629119873
+2,39.76897491620044,917,no-psy = 1 AND dts-compress = 1,no-psy==1 AND dts-compress==1,0,1.0,1.0,1.0,16,1.0748655796051023
+3,60.878037894545,783,no-8x8dct = 1 AND no-mixed-refs = 1 AND no-weightb = 1,no-8x8dct==1 AND no-mixed-refs==1 AND no-weightb==1,0,1.0,1.0,1.0,16,1.4531335830688477
+4,12.368275703781933,490,intra-refresh = 1 AND no-deblock = 1 AND no-8x8dct = 1 AND dts-compress = 1,no-8x8dct==1 AND dts-compress==1 AND intra-refresh==1 AND no-deblock==1,0,1.0,1.0,1.0,16,1.46801495552063
+5,18.184881237480283,476,open-gop = 1 AND no-dct-decimate = 1 AND non-deterministic = 1 AND aud = 1 AND opencl = 1,no-dct-decimate==1 AND non-deterministic==1 AND aud==1 AND opencl==1 AND open-gop==1,0,1.0,1.0,1.0,16,1.544600009918213
+6,31.858861302653047,433,no-scenecut = 1 AND intra-refresh = 1 AND no-deblock = 1 AND no-mixed-refs = 1 AND no-psy = 1 AND no-dct-decimate = 1,no-mixed-refs==1 AND no-psy==1 AND no-dct-decimate==1 AND no-scenecut==1 AND intra-refresh==1 AND no-deblock==1,0,1.0,1.0,1.0,16,1.2887606620788574
+7,78.19999821702196,312,slow-firstpass = 1 AND intra-refresh = 1 AND no-deblock = 1 AND bff = 1 AND no-chroma-me = 1 AND no-dct-decimate = 1 AND opencl = 1,workload==0,0,0.1821897810218978,0.1002248634757468,1.0,16,0.4934597015380859
+1,25.80275026906084,499,sliced-threads = 1,sliced-threads==1,0,1.0,1.0,1.0,17,0.8944783210754395
+2,65.4161597079335,912,no-mbtree = 1 AND dts-compress = 1,no-mbtree==1 AND dts-compress==1,0,1.0,1.0,1.0,17,1.265530347824097
+3,52.751632480585,796,no-8x8dct = 1 AND no-mixed-refs = 1 AND non-deterministic = 1,no-8x8dct==1 AND no-mixed-refs==1 AND non-deterministic==1,0,1.0,1.0,1.0,17,1.6474037170410156
+4,24.944832917827156,481,no-chroma-me = 1 AND no-mbtree = 1 AND cpu-independent = 1 AND dts-compress = 1,no-chroma-me==1 AND no-mbtree==1 AND cpu-independent==1 AND dts-compress==1,0,1.0,1.0,1.0,17,1.8506805896759035
+5,45.81130815418848,410,bff = 1 AND no-fast-pskip = 1 AND no-weightb = 1 AND no-asm = 1 AND aud = 1,no-asm==1,3,0.4055390702274975,0.2543424317617866,1.0,17,0.5795004367828369
+6,80.88913021097119,384,no-scenecut = 1 AND open-gop = 1 AND constrained-intra = 1 AND no-weightb = 1 AND non-deterministic = 1 AND no-asm = 1,workload==0,0,0.2196168144123534,0.1233536781239961,1.0,17,0.6058404445648193
+7,39.99688415842152,262,slow-firstpass = 1 AND intra-refresh = 1 AND constrained-intra = 1 AND no-fast-pskip = 1 AND no-8x8dct = 1 AND no-mbtree = 1 AND cpu-independent = 1,non-deterministic==1,3,0.2394957983193277,0.1388550548112058,0.8702290076335878,17,0.577683687210083
+1,87.69357132935323,499,sliced-threads = 1,sliced-threads==1,0,1.0,1.0,1.0,18,0.804105281829834
+2,89.65765936544115,847,no-dct-decimate = 1 AND cpu-independent = 1,no-dct-decimate==1 AND cpu-independent==1,0,1.0,1.0,1.0,18,1.1306114196777344
+3,54.2675753227586,654,no-deblock = 1 AND no-chroma-me = 1 AND aud = 1,no-chroma-me==1 AND aud==1 AND no-deblock==1,0,1.0,1.0,1.0,18,1.3396365642547607
+4,60.3612093595791,591,no-scenecut = 1 AND intra-refresh = 1 AND no-chroma-me = 1 AND dts-compress = 1,no-chroma-me==1 AND no-scenecut==1 AND dts-compress==1 AND intra-refresh==1,0,1.0,1.0,1.0,18,1.7047274112701416
+5,75.2273015133812,449,intra-refresh = 1 AND tff = 1 AND no-chroma-me = 1 AND no-dct-decimate = 1 AND no-asm = 1,workload==0,0,0.2521055586749017,0.1442338580147767,1.0,18,0.5636522769927979
+6,25.33309198628778,317,slow-firstpass = 1 AND no-deblock = 1 AND no-chroma-me = 1 AND no-psy = 1 AND cpu-independent = 1 AND aud = 1,slow-firstpass==1,3,0.3197175995965708,0.1902761104441776,1.0,18,0.5206358432769775
+7,41.46719147934278,302,slow-firstpass = 1 AND no-scenecut = 1 AND intra-refresh = 1 AND no-chroma-me = 1 AND no-psy = 1 AND no-mbtree = 1 AND aud = 1,slow-firstpass==1,3,0.3069105691056911,0.1812725090036014,1.0,18,0.5261111259460449
+1,69.46695679179967,499,sliced-threads = 1,sliced-threads==1,0,1.0,1.0,1.0,19,0.7659435272216797
+2,14.8784505238512,916,no-mixed-refs = 1 AND aud = 1,no-mixed-refs==1 AND aud==1,0,1.0,1.0,1.0,19,1.100036859512329
+3,39.13378643264433,711,intra-refresh = 1 AND bff = 1 AND no-8x8dct = 1,no-8x8dct==1 AND intra-refresh==1 AND bff==1,0,1.0,1.0,1.0,19,1.4443914890289309
+4,89.27758851633433,508,constrained-intra = 1 AND no-weightb = 1 AND cpu-independent = 1 AND no-asm = 1,no-weightb==1 AND cpu-independent==1 AND no-asm==1 AND constrained-intra==1,0,1.0,1.0,1.0,19,1.561018943786621
+5,32.05811594541161,398,slow-firstpass = 1 AND constrained-intra = 1 AND no-mbtree = 1 AND pic-struct = 1 AND cpu-independent = 1,slow-firstpass==1 AND no-mbtree==1 AND pic-struct==1 AND cpu-independent==1 AND constrained-intra==1,0,1.0,1.0,1.0,19,1.212756633758545
+6,88.96388883955981,376,intra-refresh = 1 AND bff = 1 AND no-chroma-me = 1 AND pic-struct = 1 AND aud = 1 AND dts-compress = 1,workload==0,0,0.2155345371166523,0.1207838098297462,1.0,19,0.5448203086853027
+7,45.398403345044144,354,slow-firstpass = 1 AND no-scenecut = 1 AND intra-refresh = 1 AND bff = 1 AND no-asm = 1 AND dts-compress = 1 AND opencl = 1,slow-firstpass==1,3,0.3504950495049505,0.212484993997599,1.0,19,0.4979918003082275
+1,7.912075977571574,499,sliced-threads = 1,sliced-threads==1,0,1.0,1.0,1.0,2,0.7784271240234375
+2,62.762873743648846,266,no-weightb = 1 AND sliced-threads = 1,no-weightb==1 AND sliced-threads==1,0,1.0,1.0,1.0,2,0.9512012004852296
+3,46.48061651871871,704,no-deblock = 1 AND no-8x8dct = 1 AND no-asm = 1,no-8x8dct==1 AND no-asm==1 AND no-deblock==1,0,1.0,1.0,1.0,2,1.3486659526824951
+4,70.48984180630272,600,no-chroma-me = 1 AND no-psy = 1 AND pic-struct = 1 AND non-deterministic = 1,no-chroma-me==1 AND no-psy==1 AND pic-struct==1 AND non-deterministic==1,0,1.0,1.0,1.0,2,1.6456215381622314
+5,19.328348594754765,547,no-scenecut = 1 AND intra-refresh = 1 AND no-8x8dct = 1 AND no-chroma-me = 1 AND pic-struct = 1,no-8x8dct==1 AND no-chroma-me==1 AND pic-struct==1 AND no-scenecut==1 AND intra-refresh==1,0,1.0,1.0,1.0,2,1.6499123573303225
+6,27.008677364851764,422,no-scenecut = 1 AND open-gop = 1 AND no-cabac = 1 AND no-mixed-refs = 1 AND no-psy = 1 AND aud = 1,slow-firstpass==1,3,0.3409961685823754,0.2136854741896758,0.8436018957345972,2,0.5002233982086182
+7,15.1522726013744,307,slow-firstpass = 1 AND no-scenecut = 1 AND intra-refresh = 1 AND no-chroma-me = 1 AND no-weightb = 1 AND no-dct-decimate = 1 AND aud = 1,no-dct-decimate==1,3,0.3234984193888303,0.1929604022627278,1.0,2,0.4995572566986084
+1,91.4961428421589,499,sliced-threads = 1,sliced-threads==1,0,1.0,1.0,1.0,20,0.7682590484619141
+2,71.7676490804905,841,no-psy = 1 AND cpu-independent = 1,no-psy==1 AND cpu-independent==1,0,1.0,1.0,1.0,20,1.078358173370361
+3,69.93358836508969,776,open-gop = 1 AND tff = 1 AND opencl = 1,opencl==1 AND open-gop==1 AND tff==1,0,1.0,1.0,1.0,20,1.3819248676300049
+4,99.38752041264408,587,slow-firstpass = 1 AND no-scenecut = 1 AND no-8x8dct = 1 AND non-deterministic = 1,slow-firstpass==1 AND no-8x8dct==1 AND non-deterministic==1 AND no-scenecut==1,0,1.0,1.0,1.0,20,1.5928263664245603
+5,84.94188967156762,513,no-chroma-me = 1 AND no-psy = 1 AND no-mbtree = 1 AND no-dct-decimate = 1 AND non-deterministic = 1,no-chroma-me==1 AND no-psy==1 AND no-mbtree==1 AND no-dct-decimate==1 AND non-deterministic==1,0,1.0,1.0,1.0,20,1.524289846420288
+6,64.32367537114904,435,no-scenecut = 1 AND intra-refresh = 1 AND no-deblock = 1 AND bff = 1 AND no-mbtree = 1 AND no-dct-decimate = 1,workload==0,0,0.2452085682074408,0.1397365884998394,1.0,20,0.4973621368408203
+7,41.76696938328922,294,slow-firstpass = 1 AND intra-refresh = 1 AND no-deblock = 1 AND tff = 1 AND no-dct-decimate = 1 AND non-deterministic = 1 AND cpu-independent = 1,tff==1,3,0.3137673425827107,0.1860759493670886,1.0,20,0.4986550807952881
+1,69.97194994751212,499,sliced-threads = 1,sliced-threads==1,0,1.0,1.0,1.0,21,0.752500057220459
+2,102.44757639765878,219,no-psy = 1 AND sliced-threads = 1,workload==0,2,0.1314525810324129,0.0703501445550915,1.0,21,0.7431032657623291
+3,81.97271043073906,623,open-gop = 1 AND tff = 1 AND cpu-independent = 1,cpu-independent==1 AND open-gop==1 AND tff==1,0,1.0,1.0,1.0,21,1.302366018295288
+4,69.79521389538154,473,no-cabac = 1 AND no-fast-pskip = 1 AND no-8x8dct = 1 AND cpu-independent = 1,no-8x8dct==1 AND cpu-independent==1 AND no-cabac==1 AND no-fast-pskip==1,0,1.0,1.0,1.0,21,1.5065720081329346
+5,46.6673764765136,502,intra-refresh = 1 AND open-gop = 1 AND bff = 1 AND dts-compress = 1 AND opencl = 1,dts-compress==1 AND opencl==1 AND intra-refresh==1 AND open-gop==1 AND bff==1,0,1.0,1.0,1.0,21,1.4475018978118896
+6,25.83080900119695,476,slow-firstpass = 1 AND no-8x8dct = 1 AND no-chroma-me = 1 AND no-mixed-refs = 1 AND pic-struct = 1 AND opencl = 1,slow-firstpass==1 AND no-8x8dct==1 AND no-chroma-me==1 AND no-mixed-refs==1 AND pic-struct==1 AND opencl==1,0,1.0,1.0,1.0,21,1.3049161434173584
+7,17.83115276073285,297,slow-firstpass = 1 AND intra-refresh = 1 AND open-gop = 1 AND no-dct-decimate = 1 AND cpu-independent = 1 AND no-asm = 1 AND aud = 1,slow-firstpass==1,3,0.3025980641874681,0.1782713085234093,1.0,21,0.5008893013000488
+1,99.2063195941173,499,sliced-threads = 1,sliced-threads==1,0,1.0,1.0,1.0,22,0.7372643947601318
+2,20.95737027320711,849,no-scenecut = 1 AND cpu-independent = 1,cpu-independent==1 AND no-scenecut==1,0,1.0,1.0,1.0,22,1.0393667221069336
+3,96.18689885243664,756,no-deblock = 1 AND no-mixed-refs = 1 AND no-dct-decimate = 1,no-mixed-refs==1 AND no-dct-decimate==1 AND no-deblock==1,0,1.0,1.0,1.0,22,1.3415184020996094
+4,98.15113497421146,167,no-scenecut = 1 AND intra-refresh = 1 AND bff = 1 AND sliced-threads = 1,workload==0,2,0.1018292682926829,0.053646000642467,1.0,22,0.628288745880127
+5,99.93343070333724,478,no-scenecut = 1 AND tff = 1 AND bff = 1 AND non-deterministic = 1 AND opencl = 1,workload==0,2,0.2662211083263714,0.1535496305814327,1.0,22,0.6045331954956055
+6,93.55477031655988,336,slow-firstpass = 1 AND open-gop = 1 AND no-8x8dct = 1 AND no-chroma-me = 1 AND no-psy = 1 AND cpu-independent = 1,workload==0,0,0.1948390837924035,0.1079344683584966,1.0,22,0.5404984951019287
+7,74.15344179195465,277,slow-firstpass = 1 AND no-scenecut = 1 AND no-deblock = 1 AND no-8x8dct = 1 AND no-psy = 1 AND no-weightb = 1 AND dts-compress = 1,workload==0,0,0.1634218289085545,0.0889816896884034,1.0,22,0.4866514205932617
+1,70.67888755289214,499,sliced-threads = 1,sliced-threads==1,0,1.0,1.0,1.0,23,0.7517170906066895
+2,45.16142654892206,914,no-chroma-me = 1 AND aud = 1,no-chroma-me==1 AND aud==1,0,1.0,1.0,1.0,23,1.074188232421875
+3,50.9809004407209,711,intra-refresh = 1 AND no-chroma-me = 1 AND no-asm = 1,no-chroma-me==1 AND no-asm==1 AND intra-refresh==1,0,1.0,1.0,1.0,23,1.322929620742798
+4,64.91536245661749,559,slow-firstpass = 1 AND intra-refresh = 1 AND no-mbtree = 1 AND pic-struct = 1,slow-firstpass==1 AND no-mbtree==1 AND pic-struct==1 AND intra-refresh==1,0,1.0,1.0,1.0,23,1.4991376399993896
+5,30.394059394202998,491,no-deblock = 1 AND tff = 1 AND constrained-intra = 1 AND no-psy = 1 AND opencl = 1,no-psy==1 AND opencl==1 AND no-deblock==1 AND tff==1 AND constrained-intra==1,0,1.0,1.0,1.0,23,1.5077497959136963
+6,95.00188598367303,388,intra-refresh = 1 AND open-gop = 1 AND bff = 1 AND constrained-intra = 1 AND no-8x8dct = 1 AND aud = 1,workload==0,0,0.2216509568694658,0.1246386122711211,1.0,23,0.5703325271606445
+7,59.487350414514935,326,slow-firstpass = 1 AND open-gop = 1 AND no-mixed-refs = 1 AND no-psy = 1 AND no-mbtree = 1 AND pic-struct = 1 AND opencl = 1,workload==0,0,0.1895899970921779,0.1047221329906842,1.0,23,0.4894545078277588
+1,46.65826539076031,499,sliced-threads = 1,sliced-threads==1,0,1.0,1.0,1.0,24,0.8619568347930908
+2,104.5672377425905,933,intra-refresh = 1 AND no-8x8dct = 1,no-8x8dct==1 AND intra-refresh==1,0,1.0,1.0,1.0,24,1.276961326599121
+3,75.27049221450542,803,slow-firstpass = 1 AND open-gop = 1 AND pic-struct = 1,slow-firstpass==1 AND pic-struct==1 AND open-gop==1,0,1.0,1.0,1.0,24,1.5316479206085205
+4,44.4286369112024,534,no-8x8dct = 1 AND no-psy = 1 AND non-deterministic = 1 AND dts-compress = 1,no-8x8dct==1 AND no-psy==1 AND non-deterministic==1 AND dts-compress==1,0,1.0,1.0,1.0,24,1.622138738632202
+5,68.84994556488294,424,bff = 1 AND no-chroma-me = 1 AND no-weightb = 1 AND aud = 1 AND dts-compress = 1,workload==0,0,0.2397512015832626,0.1362030195952457,1.0,24,0.5688529014587402
+6,89.78623185607617,365,intra-refresh = 1 AND tff = 1 AND constrained-intra = 1 AND no-fast-pskip = 1 AND no-8x8dct = 1 AND aud = 1,workload==0,0,0.2098907418056354,0.1172502409251525,1.0,24,0.6161596775054932
+7,105.87455860672314,367,slow-firstpass = 1 AND no-cabac = 1 AND no-fast-pskip = 1 AND no-8x8dct = 1 AND no-mixed-refs = 1 AND no-psy = 1 AND pic-struct = 1,workload==0,4,0.210919540229885,0.117892707998715,1.0,24,0.6776857376098633
+1,17.592036343167848,499,sliced-threads = 1,sliced-threads==1,0,1.0,1.0,1.0,25,0.7523298263549805
+2,85.08484511557721,239,constrained-intra = 1 AND sliced-threads = 1,sliced-threads==1 AND constrained-intra==1,0,1.0,1.0,1.0,25,1.0433883666992188
+3,59.54254691299094,715,no-scenecut = 1 AND no-8x8dct = 1 AND no-weightb = 1,no-8x8dct==1 AND no-weightb==1 AND no-scenecut==1,0,1.0,1.0,1.0,25,1.3753886222839355
+4,101.6400505507688,554,intra-refresh = 1 AND open-gop = 1 AND constrained-intra = 1 AND cpu-independent = 1,cpu-independent==1 AND intra-refresh==1 AND open-gop==1 AND constrained-intra==1,0,1.0,1.0,1.0,25,1.6321563720703125
+5,105.96118331705206,460,bff = 1 AND no-chroma-me = 1 AND no-psy = 1 AND no-dct-decimate = 1 AND no-asm = 1,no-psy==0,0,0.0,0.0,0.0,25,0.646350622177124
+6,31.444697833064644,383,no-scenecut = 1 AND intra-refresh = 1 AND open-gop = 1 AND no-deblock = 1 AND no-dct-decimate = 1 AND aud = 1,no-cabac==1,3,0.3486146095717884,0.215980024968789,0.9033942558746736,25,0.4900455474853515
+7,7.505942180275518,327,slow-firstpass = 1 AND intra-refresh = 1 AND no-cabac = 1 AND no-8x8dct = 1 AND no-asm = 1 AND aud = 1 AND opencl = 1,workload==0,0,0.1901162790697674,0.1050433665274654,1.0,25,0.4938704967498779
+1,62.60049800864812,499,sliced-threads = 1,sliced-threads==1,0,1.0,1.0,1.0,26,0.868767499923706
+2,107.28589425216836,812,no-mixed-refs = 1 AND cpu-independent = 1,no-mixed-refs==1 AND cpu-independent==1,0,1.0,1.0,1.0,26,1.2626259326934814
+3,62.17232920935702,740,no-scenecut = 1 AND bff = 1 AND opencl = 1,no-scenecut==1 AND opencl==1 AND bff==1,0,1.0,1.0,1.0,26,1.5677945613861084
+4,84.26638359018021,601,constrained-intra = 1 AND no-dct-decimate = 1 AND non-deterministic = 1 AND no-asm = 1,no-dct-decimate==1 AND non-deterministic==1 AND no-asm==1 AND constrained-intra==1,0,1.0,1.0,1.0,26,1.7681403160095217
+5,92.36666802611268,454,slow-firstpass = 1 AND no-deblock = 1 AND no-fast-pskip = 1 AND no-chroma-me = 1 AND no-weightb = 1,workload==0,0,0.2545556490047659,0.1458400256986829,1.0,26,0.63327956199646
+6,23.472158514008527,408,slow-firstpass = 1 AND no-scenecut = 1 AND bff = 1 AND constrained-intra = 1 AND no-psy = 1 AND opencl = 1,slow-firstpass==1,3,0.3934426229508196,0.2448979591836734,1.0,26,0.5667803287506104
+7,72.85247462444578,310,slow-firstpass = 1 AND no-scenecut = 1 AND intra-refresh = 1 AND no-fast-pskip = 1 AND no-mbtree = 1 AND no-asm = 1 AND opencl = 1,workload==0,0,0.1811276657902424,0.0995823964021843,1.0,26,0.5568516254425049
+1,53.17820942824183,499,sliced-threads = 1,sliced-threads==1,0,1.0,1.0,1.0,27,0.7951397895812988
+2,100.0828305964756,799,no-mbtree = 1 AND cpu-independent = 1,no-mbtree==1 AND cpu-independent==1,0,1.0,1.0,1.0,27,1.1370368003845217
+3,42.94040578329008,687,no-scenecut = 1 AND no-weightb = 1 AND opencl = 1,no-weightb==1 AND no-scenecut==1 AND opencl==1,0,1.0,1.0,1.0,27,1.407121181488037
+4,94.62708011107748,499,slow-firstpass = 1 AND constrained-intra = 1 AND no-fast-pskip = 1 AND cpu-independent = 1,slow-firstpass==1 AND cpu-independent==1 AND constrained-intra==1 AND no-fast-pskip==1,0,1.0,1.0,1.0,27,1.601815700531006
+5,65.50961471365748,453,no-scenecut = 1 AND constrained-intra = 1 AND no-mixed-refs = 1 AND no-mbtree = 1 AND opencl = 1,workload==0,0,0.2540661805945036,0.1455187921619017,1.0,27,0.5150492191314697
+6,37.70727610762594,351,intra-refresh = 1 AND constrained-intra = 1 AND no-fast-pskip = 1 AND no-mixed-refs = 1 AND no-weightb = 1 AND aud = 1,no-weightb==1,3,0.3766094420600858,0.2319894249834765,1.0,27,0.5229771137237549
+7,58.97332478742928,337,slow-firstpass = 1 AND open-gop = 1 AND bff = 1 AND constrained-intra = 1 AND no-chroma-me = 1 AND no-psy = 1 AND non-deterministic = 1,workload==0,0,0.1953623188405797,0.1082557018952778,1.0,27,0.5149171352386475
+1,52.61556504010033,499,sliced-threads = 1,sliced-threads==1,0,1.0,1.0,1.0,28,0.759925365447998
+2,36.08670388680461,216,cpu-independent = 1 AND sliced-threads = 1,workload==0,0,0.1297686993091018,0.0693864439447478,1.0,28,0.4880199432373047
+3,100.1210262060962,814,open-gop = 1 AND no-deblock = 1 AND pic-struct = 1,pic-struct==1 AND open-gop==1 AND no-deblock==1,0,1.0,1.0,1.0,28,1.3481204509735107
+4,92.68015289053984,623,tff = 1 AND no-chroma-me = 1 AND no-weightb = 1 AND no-mbtree = 1,no-chroma-me==1 AND no-weightb==1 AND no-mbtree==1 AND tff==1,0,1.0,1.0,1.0,28,1.6375834941864014
+5,72.44618285160581,436,intra-refresh = 1 AND tff = 1 AND bff = 1 AND cpu-independent = 1 AND no-asm = 1,workload==0,0,0.2457030149337841,0.1400578220366206,1.0,28,0.5085062980651855
+6,94.36966879429964,347,slow-firstpass = 1 AND no-scenecut = 1 AND constrained-intra = 1 AND no-chroma-me = 1 AND no-mbtree = 1 AND dts-compress = 1,workload==0,0,0.2005780346820809,0.1114680372630902,1.0,28,0.5579226016998291
+7,50.46923316847948,320,slow-firstpass = 1 AND no-scenecut = 1 AND intra-refresh = 1 AND no-mixed-refs = 1 AND no-mbtree = 1 AND pic-struct = 1 AND no-asm = 1,workload==0,0,0.1864258665889892,0.1027947317699967,1.0,28,0.4970941543579101
+1,49.005015171537735,499,sliced-threads = 1,sliced-threads==1,0,1.0,1.0,1.0,29,0.7958657741546631
+2,84.19774622588594,884,no-weightb = 1 AND aud = 1,no-weightb==1 AND aud==1,0,1.0,1.0,1.0,29,1.115720510482788
+3,36.051469034928594,918,no-scenecut = 1 AND intra-refresh = 1 AND constrained-intra = 1,no-scenecut==1 AND intra-refresh==1 AND constrained-intra==1,0,1.0,1.0,1.0,29,1.4836604595184326
+4,10.876396649846251,603,open-gop = 1 AND tff = 1 AND constrained-intra = 1 AND no-psy = 1,no-psy==1 AND open-gop==1 AND tff==1 AND constrained-intra==1,0,1.0,1.0,1.0,29,1.8030877113342283
+5,37.74203689639771,405,no-chroma-me = 1 AND no-weightb = 1 AND no-mbtree = 1 AND cpu-independent = 1 AND dts-compress = 1,pic-struct==1,3,0.3440118284869393,0.2149014778325123,0.8617283950617284,29,0.5295703411102295
+6,17.766366067677787,345,no-scenecut = 1 AND no-8x8dct = 1 AND no-psy = 1 AND no-weightb = 1 AND no-asm = 1 AND dts-compress = 1,no-psy==1,3,0.3725701943844492,0.2289316522893165,1.0,29,0.5176122188568115
+7,30.948836703063986,291,slow-firstpass = 1 AND intra-refresh = 1 AND tff = 1 AND no-weightb = 1 AND pic-struct = 1 AND dts-compress = 1 AND opencl = 1,slow-firstpass==1,3,0.2973939703628002,0.1746698679471788,1.0,29,0.5163681507110596
+1,29.783391427652838,499,sliced-threads = 1,sliced-threads==1,0,1.0,1.0,1.0,3,0.7895126342773438
+2,50.7565235789072,862,open-gop = 1 AND cpu-independent = 1,cpu-independent==1 AND open-gop==1,0,1.0,1.0,1.0,3,1.1134066581726074
+3,86.63930553297931,762,open-gop = 1 AND constrained-intra = 1 AND no-mbtree = 1,no-mbtree==1 AND open-gop==1 AND constrained-intra==1,0,1.0,1.0,1.0,3,1.4117200374603271
+4,37.80974553440476,541,tff = 1 AND no-mixed-refs = 1 AND no-psy = 1 AND dts-compress = 1,no-mixed-refs==1 AND no-psy==1 AND dts-compress==1 AND tff==1,0,1.0,1.0,1.0,3,1.5477380752563477
+5,52.200305668703486,533,open-gop = 1 AND no-cabac = 1 AND constrained-intra = 1 AND no-fast-pskip = 1 AND no-psy = 1,no-psy==1 AND open-gop==1 AND no-cabac==1 AND constrained-intra==1 AND no-fast-pskip==1,0,1.0,1.0,1.0,3,1.5774316787719729
+6,56.02815131519857,373,intra-refresh = 1 AND open-gop = 1 AND bff = 1 AND no-mixed-refs = 1 AND no-asm = 1 AND aud = 1,workload==0,0,0.2139988525530694,0.1198201092194025,1.0,3,0.5025026798248291
+7,93.48697807310292,318,slow-firstpass = 1 AND open-gop = 1 AND no-mixed-refs = 1 AND cpu-independent = 1 AND no-asm = 1 AND dts-compress = 1 AND opencl = 1,workload==0,0,0.1853686971728359,0.1021522646964343,1.0,3,0.5607318878173828
+1,31.09541670550423,499,sliced-threads = 1,sliced-threads==1,0,1.0,1.0,1.0,30,0.756878137588501
+2,27.603984276127736,817,intra-refresh = 1 AND cpu-independent = 1,cpu-independent==1 AND intra-refresh==1,0,1.0,1.0,1.0,30,1.102726936340332
+3,87.70366702763164,882,open-gop = 1 AND no-cabac = 1 AND opencl = 1,opencl==1 AND open-gop==1 AND no-cabac==1,0,1.0,1.0,1.0,30,1.3806712627410889
+4,80.47424688730226,634,open-gop = 1 AND no-cabac = 1 AND constrained-intra = 1 AND aud = 1,aud==1 AND open-gop==1 AND no-cabac==1 AND constrained-intra==1,0,1.0,1.0,1.0,30,1.6504087448120115
+5,62.92124625623221,481,bff = 1 AND no-mixed-refs = 1 AND no-weightb = 1 AND no-dct-decimate = 1 AND non-deterministic = 1,no-mixed-refs==1 AND no-weightb==1 AND no-dct-decimate==1 AND non-deterministic==1 AND bff==1,0,1.0,1.0,1.0,30,1.572901487350464
+6,71.1832684753023,317,no-scenecut = 1 AND tff = 1 AND constrained-intra = 1 AND pic-struct = 1 AND cpu-independent = 1 AND aud = 1,workload==0,0,0.1848396501457726,0.101831031159653,1.0,30,0.5039129257202148
+7,84.70145680894838,305,slow-firstpass = 1 AND open-gop = 1 AND no-deblock = 1 AND bff = 1 AND constrained-intra = 1 AND no-weightb = 1 AND dts-compress = 1,workload==0,0,0.1784669397308367,0.0979762287182781,1.0,30,0.4947347640991211
+1,68.85558611378123,499,sliced-threads = 1,sliced-threads==1,0,1.0,1.0,1.0,31,0.7511599063873291
+2,100.39648436961822,268,no-fast-pskip = 1 AND sliced-threads = 1,sliced-threads==1 AND no-fast-pskip==1,0,1.0,1.0,1.0,31,1.0581090450286863
+3,19.496781056443357,837,no-deblock = 1 AND tff = 1 AND opencl = 1,opencl==1 AND no-deblock==1 AND tff==1,0,1.0,1.0,1.0,31,1.379194974899292
+4,59.90671015933628,621,open-gop = 1 AND no-mixed-refs = 1 AND non-deterministic = 1 AND opencl = 1,no-mixed-refs==1 AND non-deterministic==1 AND opencl==1 AND open-gop==1,0,1.0,1.0,1.0,31,1.5997037887573242
+5,56.69314039368284,545,slow-firstpass = 1 AND no-chroma-me = 1 AND no-mixed-refs = 1 AND non-deterministic = 1 AND opencl = 1,slow-firstpass==1 AND no-chroma-me==1 AND no-mixed-refs==1 AND non-deterministic==1 AND opencl==1,0,1.0,1.0,1.0,31,1.5421011447906494
+6,101.26872113382149,361,no-scenecut = 1 AND no-cabac = 1 AND no-deblock = 1 AND no-fast-pskip = 1 AND no-psy = 1 AND dts-compress = 1,workload==0,0,0.2078295912492804,0.1159653067780276,1.0,31,0.5863707065582275
+7,54.60785792679988,292,slow-firstpass = 1 AND no-scenecut = 1 AND bff = 1 AND no-fast-pskip = 1 AND no-mbtree = 1 AND pic-struct = 1 AND dts-compress = 1,workload==0,0,0.1715124816446402,0.093800192740122,1.0,31,0.4872019290924072
+1,10.690298134858056,499,sliced-threads = 1,sliced-threads==1,0,1.0,1.0,1.0,32,0.7481479644775391
+2,81.98804653840865,824,cpu-independent = 1 AND aud = 1,cpu-independent==1 AND aud==1,0,1.0,1.0,1.0,32,1.1296591758728027
+3,43.707491180301545,700,no-chroma-me = 1 AND no-dct-decimate = 1 AND dts-compress = 1,no-chroma-me==1 AND no-dct-decimate==1 AND dts-compress==1,0,1.0,1.0,1.0,32,1.311016321182251
+4,16.385501863625286,554,tff = 1 AND no-8x8dct = 1 AND no-psy = 1 AND pic-struct = 1,no-8x8dct==1 AND no-psy==1 AND pic-struct==1 AND tff==1,0,1.0,1.0,1.0,32,1.5944883823394775
+5,45.33602662110157,505,no-cabac = 1 AND no-chroma-me = 1 AND non-deterministic = 1 AND aud = 1 AND dts-compress = 1,no-chroma-me==1 AND non-deterministic==1 AND aud==1 AND dts-compress==1 AND no-cabac==1,0,1.0,1.0,1.0,32,1.5926947593688965
+6,89.55570098283405,347,intra-refresh = 1 AND constrained-intra = 1 AND no-mbtree = 1 AND no-dct-decimate = 1 AND pic-struct = 1 AND cpu-independent = 1,workload==0,0,0.2005780346820809,0.1114680372630902,1.0,32,0.5494277477264404
+7,16.492157445468543,281,slow-firstpass = 1 AND no-deblock = 1 AND tff = 1 AND no-chroma-me = 1 AND no-mixed-refs = 1 AND no-weightb = 1 AND cpu-independent = 1,no-asm==1,3,0.2556788166930797,0.1501240694789082,0.8612099644128114,32,0.4874184131622314
+1,94.94731000691952,499,sliced-threads = 1,sliced-threads==1,0,1.0,1.0,1.0,33,0.7887723445892334
+2,43.237139873404175,887,pic-struct = 1 AND cpu-independent = 1,pic-struct==1 AND cpu-independent==1,0,1.0,1.0,1.0,33,1.128068923950195
+3,64.78918439145798,697,no-fast-pskip = 1 AND no-dct-decimate = 1 AND dts-compress = 1,no-dct-decimate==1 AND dts-compress==1 AND no-fast-pskip==1,0,1.0,1.0,1.0,33,1.357985496520996
+4,90.09716239794052,560,intra-refresh = 1 AND tff = 1 AND no-fast-pskip = 1 AND opencl = 1,opencl==1 AND intra-refresh==1 AND tff==1 AND no-fast-pskip==1,0,1.0,1.0,1.0,33,1.571561574935913
+5,16.216845619477994,477,slow-firstpass = 1 AND tff = 1 AND no-psy = 1 AND no-dct-decimate = 1 AND pic-struct = 1,slow-firstpass==1 AND no-psy==1 AND no-dct-decimate==1 AND pic-struct==1 AND tff==1,0,1.0,1.0,1.0,33,1.5737171173095703
+6,40.20287797877914,349,slow-firstpass = 1 AND no-fast-pskip = 1 AND no-mixed-refs = 1 AND no-mbtree = 1 AND non-deterministic = 1 AND cpu-independent = 1,slow-firstpass==1,3,0.3464019851116625,0.2094837935174069,1.0,33,0.5147519111633301
+7,90.000426393431,287,slow-firstpass = 1 AND intra-refresh = 1 AND open-gop = 1 AND no-chroma-me = 1 AND cpu-independent = 1 AND no-asm = 1 AND opencl = 1,workload==0,0,0.1688235294117647,0.0921940250562158,1.0,33,0.5412514209747314
+1,78.04461006025569,499,sliced-threads = 1,sliced-threads==1,0,1.0,1.0,1.0,34,0.823997974395752
+2,24.97960220318696,268,no-fast-pskip = 1 AND sliced-threads = 1,sliced-threads==1 AND no-fast-pskip==1,0,1.0,1.0,1.0,34,1.0200691223144531
+3,73.2395715019134,770,tff = 1 AND no-mixed-refs = 1 AND no-psy = 1,no-mixed-refs==1 AND no-psy==1 AND tff==1,0,1.0,1.0,1.0,34,1.447460412979126
+4,98.72674164894376,634,no-scenecut = 1 AND no-cabac = 1 AND no-mixed-refs = 1 AND opencl = 1,no-mixed-refs==1 AND no-scenecut==1 AND opencl==1 AND no-cabac==1,0,1.0,1.0,1.0,34,1.7282395362854004
+5,76.73714271726986,451,slow-firstpass = 1 AND no-deblock = 1 AND bff = 1 AND no-dct-decimate = 1 AND dts-compress = 1,workload==0,0,0.2530864197530864,0.1448763250883392,1.0,34,0.5478265285491943
+6,67.34233638045549,318,no-scenecut = 1 AND no-deblock = 1 AND no-8x8dct = 1 AND no-mixed-refs = 1 AND no-psy = 1 AND cpu-independent = 1,workload==0,0,0.1853686971728359,0.1021522646964343,1.0,34,0.5467307567596436
+7,17.170821809861955,368,slow-firstpass = 1 AND open-gop = 1 AND no-cabac = 1 AND no-fast-pskip = 1 AND no-psy = 1 AND no-weightb = 1 AND no-mbtree = 1,no-mbtree==1,3,0.3921150772509323,0.243870112657389,1.0,34,0.5274736881256104
+1,29.631836522089166,499,sliced-threads = 1,sliced-threads==1,0,1.0,1.0,1.0,35,0.7528810501098633
+2,94.28291115750471,270,no-scenecut = 1 AND sliced-threads = 1,no-scenecut==1 AND sliced-threads==1,0,1.0,1.0,1.0,35,1.039961814880371
+3,17.072630981402455,809,no-mixed-refs = 1 AND pic-struct = 1 AND non-deterministic = 1,no-mixed-refs==1 AND pic-struct==1 AND non-deterministic==1,0,1.0,1.0,1.0,35,1.3717122077941897
+4,96.47290079620728,549,intra-refresh = 1 AND no-psy = 1 AND no-weightb = 1 AND non-deterministic = 1,intra-refresh==0,0,0.0,0.0,0.0,35,0.6641433238983154
+5,33.10918736957508,439,no-deblock = 1 AND constrained-intra = 1 AND no-fast-pskip = 1 AND non-deterministic = 1 AND dts-compress = 1,non-deterministic==1 AND dts-compress==1 AND no-deblock==1 AND constrained-intra==1 AND no-fast-pskip==1,0,1.0,1.0,1.0,35,1.3625261783599854
+6,52.07303255913335,358,slow-firstpass = 1 AND no-cabac = 1 AND tff = 1 AND no-8x8dct = 1 AND no-weightb = 1 AND non-deterministic = 1,non-deterministic==1,3,0.358,0.2180267965895249,1.0,35,0.4925146102905273
+7,22.05013849193349,257,slow-firstpass = 1 AND no-scenecut = 1 AND tff = 1 AND no-fast-pskip = 1 AND no-psy = 1 AND pic-struct = 1 AND cpu-independent = 1,slow-firstpass==1,3,0.2672906916276651,0.1542617046818727,1.0,35,0.4930932521820068
+1,36.4277690949978,499,sliced-threads = 1,sliced-threads==1,0,1.0,1.0,1.0,36,0.7575352191925049
+2,38.04937639949716,912,no-mbtree = 1 AND dts-compress = 1,no-mbtree==1 AND dts-compress==1,0,1.0,1.0,1.0,36,1.0666711330413818
+3,13.115831588120216,727,bff = 1 AND no-mixed-refs = 1 AND no-weightb = 1,no-mixed-refs==1 AND no-weightb==1 AND bff==1,0,1.0,1.0,1.0,36,1.376574993133545
+4,19.13331613123857,520,bff = 1 AND no-mbtree = 1 AND aud = 1 AND opencl = 1,no-mbtree==1 AND aud==1 AND opencl==1 AND bff==1,0,1.0,1.0,1.0,36,1.6022450923919678
+5,36.99234303229457,516,no-8x8dct = 1 AND no-mixed-refs = 1 AND no-weightb = 1 AND no-dct-decimate = 1 AND no-asm = 1,no-8x8dct==1 AND no-mixed-refs==1 AND no-weightb==1 AND no-dct-decimate==1 AND no-asm==1,0,1.0,1.0,1.0,36,1.5659267902374268
+6,100.15282129912688,420,slow-firstpass = 1 AND no-cabac = 1 AND tff = 1 AND bff = 1 AND dts-compress = 1 AND opencl = 1,workload==0,0,0.2377582790829323,0.1349180854481207,1.0,36,0.5922610759735107
+7,66.42284305754333,351,slow-firstpass = 1 AND no-scenecut = 1 AND tff = 1 AND constrained-intra = 1 AND aud = 1 AND dts-compress = 1 AND opencl = 1,workload==0,0,0.2026558891454965,0.1127529714102152,1.0,36,0.4910192489624023
+1,35.68420179438773,499,sliced-threads = 1,sliced-threads==1,0,1.0,1.0,1.0,37,0.7525217533111572
+2,101.51268057698375,266,open-gop = 1 AND sliced-threads = 1,sliced-threads==1 AND open-gop==1,0,1.0,1.0,1.0,37,1.0513572692871094
+3,50.5629464908313,735,intra-refresh = 1 AND tff = 1 AND non-deterministic = 1,non-deterministic==1 AND intra-refresh==1 AND tff==1,0,1.0,1.0,1.0,37,1.3867502212524414
+4,22.42586956280299,528,open-gop = 1 AND constrained-intra = 1 AND no-mbtree = 1 AND aud = 1,no-mbtree==1 AND aud==1 AND open-gop==1 AND constrained-intra==1,0,1.0,1.0,1.0,37,1.5058794021606443
+5,34.25226373095638,414,tff = 1 AND no-fast-pskip = 1 AND no-dct-decimate = 1 AND non-deterministic = 1 AND aud = 1,pic-struct==1,3,0.3532875368007851,0.2216748768472906,0.8695652173913043,37,0.484691858291626
+6,13.652654852965492,346,slow-firstpass = 1 AND no-fast-pskip = 1 AND pic-struct = 1 AND cpu-independent = 1 AND dts-compress = 1 AND opencl = 1,opencl==1,3,0.3484390735146022,0.2109756097560975,1.0,37,0.495542049407959
+7,47.82638132764687,334,slow-firstpass = 1 AND intra-refresh = 1 AND open-gop = 1 AND no-mbtree = 1 AND pic-struct = 1 AND non-deterministic = 1 AND no-asm = 1,pic-struct==1,3,0.3411644535240041,0.2056650246305418,1.0,37,0.487567663192749
+1,57.47757489494794,499,sliced-threads = 1,sliced-threads==1,0,1.0,1.0,1.0,38,0.8043093681335449
+2,65.39839546770573,289,pic-struct = 1 AND sliced-threads = 1,pic-struct==1 AND sliced-threads==1,0,1.0,1.0,1.0,38,0.992459774017334
+3,106.3295929864115,750,no-dct-decimate = 1 AND dts-compress = 1 AND opencl = 1,no-dct-decimate==1 AND dts-compress==1 AND opencl==1,0,1.0,1.0,1.0,38,1.4010851383209229
+4,79.75137157695077,645,slow-firstpass = 1 AND no-cabac = 1 AND no-asm = 1 AND opencl = 1,slow-firstpass==1 AND no-asm==1 AND opencl==1 AND no-cabac==1,0,1.0,1.0,1.0,38,1.7121992111206057
+5,44.95040004853,457,no-fast-pskip = 1 AND no-8x8dct = 1 AND no-mbtree = 1 AND pic-struct = 1 AND aud = 1,no-8x8dct==1 AND no-mbtree==1 AND pic-struct==1 AND aud==1 AND no-fast-pskip==1,0,1.0,1.0,1.0,38,1.5146105289459229
+6,60.73360142004908,367,intra-refresh = 1 AND open-gop = 1 AND no-psy = 1 AND no-mbtree = 1 AND dts-compress = 1 AND opencl = 1,workload==0,0,0.210919540229885,0.117892707998715,1.0,38,0.5205519199371338
+7,66.22952796161618,321,slow-firstpass = 1 AND no-cabac = 1 AND no-deblock = 1 AND bff = 1 AND no-mbtree = 1 AND pic-struct = 1 AND opencl = 1,workload==0,0,0.1869539895165987,0.103115965306778,1.0,38,0.5335202217102051
+1,32.91709555372422,499,sliced-threads = 1,sliced-threads==1,0,1.0,1.0,1.0,39,0.7627224922180176
+2,86.3658703904937,883,intra-refresh = 1 AND aud = 1,aud==1 AND intra-refresh==1,0,1.0,1.0,1.0,39,1.07027268409729
+3,67.769692164556,750,open-gop = 1 AND tff = 1 AND no-dct-decimate = 1,no-dct-decimate==1 AND open-gop==1 AND tff==1,0,1.0,1.0,1.0,39,1.361382246017456
+4,71.20128011369219,605,no-deblock = 1 AND constrained-intra = 1 AND no-mixed-refs = 1 AND no-asm = 1,no-mixed-refs==1 AND no-asm==1 AND no-deblock==1 AND constrained-intra==1,0,1.0,1.0,1.0,39,1.6181809902191162
+5,75.5264690165993,458,intra-refresh = 1 AND open-gop = 1 AND constrained-intra = 1 AND cpu-independent = 1 AND no-asm = 1,workload==0,0,0.2565107812937552,0.1471249598458079,1.0,39,0.5109615325927734
+6,69.91094070964037,369,slow-firstpass = 1 AND open-gop = 1 AND no-cabac = 1 AND bff = 1 AND no-dct-decimate = 1 AND cpu-independent = 1,workload==0,0,0.211947156806433,0.1185351750722775,1.0,39,0.509188175201416
+7,28.91547870877769,317,slow-firstpass = 1 AND no-scenecut = 1 AND no-cabac = 1 AND no-fast-pskip = 1 AND no-psy = 1 AND non-deterministic = 1 AND aud = 1,non-deterministic==1,3,0.3236345074017356,0.1930572472594397,1.0,39,0.4918229579925537
+1,93.83372698590142,499,sliced-threads = 1,sliced-threads==1,0,1.0,1.0,1.0,4,0.7678322792053223
+2,84.85876830111745,282,no-asm = 1 AND sliced-threads = 1,no-asm==1 AND sliced-threads==1,0,1.0,1.0,1.0,4,1.0323801040649414
+3,43.070872873798216,869,no-weightb = 1 AND no-mbtree = 1 AND pic-struct = 1,no-weightb==1 AND no-mbtree==1 AND pic-struct==1,0,1.0,1.0,1.0,4,1.3962056636810305
+4,67.40709530127666,676,slow-firstpass = 1 AND open-gop = 1 AND non-deterministic = 1 AND opencl = 1,slow-firstpass==1 AND non-deterministic==1 AND opencl==1 AND open-gop==1,0,1.0,1.0,1.0,4,1.6830906867980957
+5,83.40896892510263,492,slow-firstpass = 1 AND no-chroma-me = 1 AND no-psy = 1 AND non-deterministic = 1 AND no-asm = 1,workload==0,0,0.2729542302357836,0.15804690009637,1.0,4,0.5738122463226318
+6,54.77090040103718,423,intra-refresh = 1 AND no-cabac = 1 AND bff = 1 AND aud = 1 AND dts-compress = 1 AND opencl = 1,opencl==1,3,0.4100824042656326,0.2579268292682927,1.0,4,0.4950795173645019
+7,17.708175501003076,315,slow-firstpass = 1 AND open-gop = 1 AND no-cabac = 1 AND no-deblock = 1 AND no-chroma-me = 1 AND non-deterministic = 1 AND cpu-independent = 1,pic-struct==1,3,0.2702423929860753,0.1613300492610837,0.8317460317460318,4,0.4969146251678467
+1,60.043225215092754,499,sliced-threads = 1,sliced-threads==1,0,1.0,1.0,1.0,40,0.7527933120727539
+2,101.40051732048484,847,no-dct-decimate = 1 AND cpu-independent = 1,no-dct-decimate==1 AND cpu-independent==1,0,1.0,1.0,1.0,40,1.1070013046264648
+3,48.96141208587995,687,no-scenecut = 1 AND no-weightb = 1 AND opencl = 1,no-weightb==1 AND no-scenecut==1 AND opencl==1,0,1.0,1.0,1.0,40,1.3046503067016602
+4,90.01559351289261,632,open-gop = 1 AND no-deblock = 1 AND no-8x8dct = 1 AND no-mixed-refs = 1,no-8x8dct==1 AND no-mixed-refs==1 AND open-gop==1 AND no-deblock==1,0,1.0,1.0,1.0,40,1.640110969543457
+5,88.73436738640436,477,slow-firstpass = 1 AND no-scenecut = 1 AND bff = 1 AND no-mixed-refs = 1 AND no-dct-decimate = 1,workload==0,0,0.2657381615598885,0.1532283970446514,1.0,40,0.5428802967071533
+6,77.30736741614209,309,intra-refresh = 1 AND no-fast-pskip = 1 AND no-8x8dct = 1 AND cpu-independent = 1 AND aud = 1 AND opencl = 1,workload==0,0,0.1805961426066627,0.0992611628654031,1.0,40,0.5028998851776123
+7,51.12909925906365,254,slow-firstpass = 1 AND no-deblock = 1 AND tff = 1 AND no-psy = 1 AND no-mbtree = 1 AND cpu-independent = 1 AND aud = 1,workload==0,0,0.1508761508761509,0.0815933183424349,1.0,40,0.5037221908569336
+1,58.352360059230925,499,sliced-threads = 1,sliced-threads==1,0,1.0,1.0,1.0,41,0.8092763423919678
+2,27.61526271137718,249,no-mbtree = 1 AND sliced-threads = 1,no-mbtree==1 AND sliced-threads==1,0,1.0,1.0,1.0,41,1.0035197734832764
+3,57.98948460008837,727,bff = 1 AND no-mixed-refs = 1 AND no-weightb = 1,no-mixed-refs==1 AND no-weightb==1 AND bff==1,0,1.0,1.0,1.0,41,1.4228858947753906
+4,61.45794142630536,540,slow-firstpass = 1 AND no-deblock = 1 AND no-fast-pskip = 1 AND no-weightb = 1,slow-firstpass==1 AND no-weightb==1 AND no-deblock==1 AND no-fast-pskip==1,0,1.0,1.0,1.0,41,1.493147611618042
+5,89.36395806782942,468,slow-firstpass = 1 AND open-gop = 1 AND constrained-intra = 1 AND no-mixed-refs = 1 AND no-weightb = 1,workload==0,0,0.2613795029321418,0.1503372952136203,1.0,41,0.5877840518951416
+6,52.917022110025854,396,no-scenecut = 1 AND intra-refresh = 1 AND no-fast-pskip = 1 AND no-psy = 1 AND aud = 1 AND dts-compress = 1,workload==0,0,0.225705329153605,0.127208480565371,1.0,41,0.5227062702178955
+7,31.716429878765428,347,slow-firstpass = 1 AND no-deblock = 1 AND tff = 1 AND constrained-intra = 1 AND no-fast-pskip = 1 AND no-psy = 1 AND no-dct-decimate = 1,no-fast-pskip==1,3,0.3631606488749345,0.2218670076726342,1.0,41,0.5260331630706787
+1,18.750014318218074,499,sliced-threads = 1,sliced-threads==1,0,1.0,1.0,1.0,42,0.770148515701294
+2,79.08866425870025,800,no-8x8dct = 1 AND cpu-independent = 1,no-8x8dct==1 AND cpu-independent==1,0,1.0,1.0,1.0,42,1.0412209033966064
+3,85.05229466703469,697,intra-refresh = 1 AND non-deterministic = 1 AND aud = 1,non-deterministic==1 AND aud==1 AND intra-refresh==1,0,1.0,1.0,1.0,42,1.3813633918762207
+4,46.81269720381199,621,intra-refresh = 1 AND no-chroma-me = 1 AND no-dct-decimate = 1 AND pic-struct = 1,no-chroma-me==1 AND no-dct-decimate==1 AND pic-struct==1 AND intra-refresh==1,0,1.0,1.0,1.0,42,1.6825647354125977
+5,72.70359323004047,409,slow-firstpass = 1 AND intra-refresh = 1 AND no-deblock = 1 AND no-8x8dct = 1 AND aud = 1,workload==0,0,0.2322544009085746,0.1313845165435271,1.0,42,0.5088555812835693
+6,41.71269795842843,393,no-scenecut = 1 AND no-weightb = 1 AND no-mbtree = 1 AND pic-struct = 1 AND non-deterministic = 1 AND aud = 1,no-scenecut==1,3,0.3963691376701966,0.2471698113207547,1.0,42,0.4946796894073486
+7,33.19771520293783,283,slow-firstpass = 1 AND open-gop = 1 AND constrained-intra = 1 AND no-weightb = 1 AND non-deterministic = 1 AND cpu-independent = 1 AND dts-compress = 1,non-deterministic==1,3,0.294025974025974,0.1723507917174178,1.0,42,0.4923183917999267
+1,16.765614012648598,499,sliced-threads = 1,sliced-threads==1,0,1.0,1.0,1.0,43,0.7661433219909668
+2,15.652948673422788,887,pic-struct = 1 AND cpu-independent = 1,pic-struct==1 AND cpu-independent==1,0,1.0,1.0,1.0,43,1.0869133472442627
+3,66.36186417077519,181,open-gop = 1 AND aud = 1 AND sliced-threads = 1,workload==0,0,0.1098967820279295,0.0581432701574044,1.0,43,0.5244235992431641
+4,13.240728547839137,546,no-scenecut = 1 AND no-fast-pskip = 1 AND no-weightb = 1 AND no-asm = 1,no-weightb==1 AND no-scenecut==1 AND no-asm==1 AND no-fast-pskip==1,0,1.0,1.0,1.0,43,1.554006576538086
+5,21.655560475350413,453,slow-firstpass = 1 AND no-8x8dct = 1 AND no-weightb = 1 AND non-deterministic = 1 AND opencl = 1,slow-firstpass==1 AND no-8x8dct==1 AND no-weightb==1 AND non-deterministic==1 AND opencl==1,0,1.0,1.0,1.0,43,1.382887840270996
+6,107.04877232977609,382,slow-firstpass = 1 AND intra-refresh = 1 AND tff = 1 AND bff = 1 AND no-fast-pskip = 1 AND opencl = 1,workload==0,2,0.2185979971387697,0.1227112110504336,1.0,43,0.6196510791778564
+7,8.53976083340707,283,slow-firstpass = 1 AND no-scenecut = 1 AND open-gop = 1 AND no-chroma-me = 1 AND no-mixed-refs = 1 AND no-mbtree = 1 AND cpu-independent = 1,open-gop==1,3,0.3034852546916889,0.1788874841972187,1.0,43,0.4966635704040527
+1,24.470658057088283,499,sliced-threads = 1,sliced-threads==1,0,1.0,1.0,1.0,44,0.7671620845794678
+2,32.53509630335595,911,cpu-independent = 1 AND opencl = 1,cpu-independent==1 AND opencl==1,0,1.0,1.0,1.0,44,1.098681926727295
+3,34.909550086546936,706,open-gop = 1 AND no-dct-decimate = 1 AND no-asm = 1,no-dct-decimate==1 AND no-asm==1 AND open-gop==1,0,1.0,1.0,1.0,44,1.350001573562622
+4,101.9521070364303,489,no-cabac = 1 AND constrained-intra = 1 AND no-chroma-me = 1 AND cpu-independent = 1,cpu-independent==0,0,0.0,0.0,0.0,44,0.7166173458099365
+5,75.35015462392035,453,no-scenecut = 1 AND intra-refresh = 1 AND no-fast-pskip = 1 AND no-mbtree = 1 AND aud = 1,workload==0,0,0.2540661805945036,0.1455187921619017,1.0,44,0.5270161628723145
+6,51.10478996970748,392,slow-firstpass = 1 AND no-8x8dct = 1 AND no-chroma-me = 1 AND no-psy = 1 AND no-weightb = 1 AND dts-compress = 1,slow-firstpass==1,3,0.3809523809523809,0.2352941176470588,1.0,44,0.5026342868804932
+7,82.3500746606528,347,slow-firstpass = 1 AND intra-refresh = 1 AND open-gop = 1 AND pic-struct = 1 AND non-deterministic = 1 AND aud = 1 AND opencl = 1,workload==0,0,0.2005780346820809,0.1114680372630902,1.0,44,0.5228540897369385
+1,100.1967908252585,499,sliced-threads = 1,sliced-threads==1,0,1.0,1.0,1.0,45,0.7477467060089111
+2,18.130612947535703,841,no-psy = 1 AND cpu-independent = 1,no-psy==1 AND cpu-independent==1,0,1.0,1.0,1.0,45,1.0487852096557615
+3,104.73452740605364,755,no-cabac = 1 AND no-chroma-me = 1 AND opencl = 1,no-chroma-me==1 AND opencl==1 AND no-cabac==1,0,1.0,1.0,1.0,45,1.3134262561798096
+4,71.21620945387109,707,open-gop = 1 AND no-fast-pskip = 1 AND no-chroma-me = 1 AND no-mixed-refs = 1,no-chroma-me==1 AND no-mixed-refs==1 AND open-gop==1 AND no-fast-pskip==1,0,1.0,1.0,1.0,45,1.631133794784546
+5,92.28369803580198,548,constrained-intra = 1 AND no-chroma-me = 1 AND no-mixed-refs = 1 AND no-weightb = 1 AND no-mbtree = 1,no-chroma-me==1 AND no-mixed-refs==1 AND no-weightb==1 AND no-mbtree==1 AND constrained-intra==1,0,1.0,1.0,1.0,45,1.579693078994751
+6,101.07043730193332,407,no-scenecut = 1 AND no-cabac = 1 AND tff = 1 AND no-chroma-me = 1 AND no-weightb = 1 AND pic-struct = 1,workload==0,0,0.23125,0.1307420494699646,1.0,45,0.5858461856842041
+7,27.532963137736992,275,slow-firstpass = 1 AND intra-refresh = 1 AND no-8x8dct = 1 AND no-chroma-me = 1 AND cpu-independent = 1 AND aud = 1 AND dts-compress = 1,slow-firstpass==1,3,0.2833590932509016,0.1650660264105642,1.0,45,0.4821043014526367
+1,30.26575032557815,499,sliced-threads = 1,sliced-threads==1,0,1.0,1.0,1.0,46,0.8163809776306152
+2,98.1120396653708,914,no-chroma-me = 1 AND aud = 1,no-chroma-me==1 AND aud==1,0,1.0,1.0,1.0,46,1.1395366191864014
+3,72.41439194414545,807,no-mixed-refs = 1 AND non-deterministic = 1 AND no-asm = 1,no-mixed-refs==1 AND non-deterministic==1 AND no-asm==1,0,1.0,1.0,1.0,46,1.4366304874420166
+4,70.88453980103995,554,intra-refresh = 1 AND no-chroma-me = 1 AND no-mixed-refs = 1 AND aud = 1,no-chroma-me==1 AND no-mixed-refs==1 AND aud==1 AND intra-refresh==1,0,1.0,1.0,1.0,46,1.6307289600372314
+5,104.84211404699164,446,no-deblock = 1 AND tff = 1 AND no-dct-decimate = 1 AND non-deterministic = 1 AND cpu-independent = 1,cpu-independent==0,0,0.0,0.0,0.0,46,0.6865313053131104
+6,47.80116312110098,472,intra-refresh = 1 AND open-gop = 1 AND no-cabac = 1 AND no-mixed-refs = 1 AND no-weightb = 1 AND no-mbtree = 1,no-cabac==1,3,0.455159112825458,0.2946317103620474,1.0,46,0.5220756530761719
+7,101.74465200472356,322,slow-firstpass = 1 AND open-gop = 1 AND no-fast-pskip = 1 AND no-weightb = 1 AND no-mbtree = 1 AND non-deterministic = 1 AND opencl = 1,workload==0,0,0.1874818049490539,0.1034371988435592,1.0,46,0.5843548774719238
+1,31.756626291055703,499,sliced-threads = 1,sliced-threads==1,0,1.0,1.0,1.0,47,0.7808656692504883
+2,88.87022781142774,856,constrained-intra = 1 AND cpu-independent = 1,cpu-independent==1 AND constrained-intra==1,0,1.0,1.0,1.0,47,1.0913944244384766
+3,94.8016883569204,863,slow-firstpass = 1 AND no-chroma-me = 1 AND no-mixed-refs = 1,slow-firstpass==1 AND no-chroma-me==1 AND no-mixed-refs==1,0,1.0,1.0,1.0,47,1.4574198722839355
+4,89.95000669874506,639,slow-firstpass = 1 AND no-scenecut = 1 AND open-gop = 1 AND dts-compress = 1,slow-firstpass==1 AND no-scenecut==1 AND dts-compress==1 AND open-gop==1,0,1.0,1.0,1.0,47,1.669717788696289
+5,95.5117211096083,440,no-deblock = 1 AND constrained-intra = 1 AND no-chroma-me = 1 AND no-psy = 1 AND non-deterministic = 1,workload==0,0,0.2476780185758513,0.1413427561837456,1.0,47,0.5958385467529297
+6,64.5830312382377,374,slow-firstpass = 1 AND no-cabac = 1 AND tff = 1 AND no-8x8dct = 1 AND non-deterministic = 1 AND no-asm = 1,workload==0,0,0.2145110410094637,0.1201413427561837,1.0,47,0.5307235717773438
+7,105.27686190587788,358,slow-firstpass = 1 AND no-cabac = 1 AND no-chroma-me = 1 AND no-mixed-refs = 1 AND no-weightb = 1 AND no-dct-decimate = 1 AND non-deterministic = 1,workload==0,0,0.2062806107749927,0.1150016061676839,1.0,47,0.5992207527160645
+1,58.2742760414512,499,sliced-threads = 1,sliced-threads==1,0,1.0,1.0,1.0,48,0.7760088443756104
+2,64.52790617041337,819,tff = 1 AND cpu-independent = 1,cpu-independent==1 AND tff==1,0,1.0,1.0,1.0,48,1.0773112773895264
+3,37.93700955585704,760,no-scenecut = 1 AND dts-compress = 1 AND opencl = 1,no-scenecut==1 AND dts-compress==1 AND opencl==1,0,1.0,1.0,1.0,48,1.437866449356079
+4,58.79527856012504,533,open-gop = 1 AND constrained-intra = 1 AND no-dct-decimate = 1 AND aud = 1,no-dct-decimate==1 AND aud==1 AND open-gop==1 AND constrained-intra==1,0,1.0,1.0,1.0,48,1.5497093200683594
+5,27.13217005970692,447,intra-refresh = 1 AND no-deblock = 1 AND constrained-intra = 1 AND non-deterministic = 1 AND cpu-independent = 1,non-deterministic==1 AND cpu-independent==1 AND intra-refresh==1 AND no-deblock==1 AND constrained-intra==1,0,1.0,1.0,1.0,48,1.5337927341461182
+6,104.9149861735534,406,intra-refresh = 1 AND tff = 1 AND bff = 1 AND no-fast-pskip = 1 AND no-chroma-me = 1 AND opencl = 1,workload==0,2,0.230747371412333,0.1304208159331834,1.0,48,0.612473726272583
+7,37.3516491655506,270,slow-firstpass = 1 AND no-cabac = 1 AND constrained-intra = 1 AND no-psy = 1 AND no-weightb = 1 AND cpu-independent = 1 AND aud = 1,slow-firstpass==1,3,0.2789256198347107,0.1620648259303721,1.0,48,0.4996397495269775
+1,84.37339035372901,499,sliced-threads = 1,sliced-threads==1,0,1.0,1.0,1.0,49,0.8113498687744141
+2,85.82745401352156,239,constrained-intra = 1 AND sliced-threads = 1,sliced-threads==1 AND constrained-intra==1,0,1.0,1.0,1.0,49,1.0467207431793213
+3,104.02596148882152,715,no-mbtree = 1 AND non-deterministic = 1 AND aud = 1,no-mbtree==1 AND non-deterministic==1 AND aud==1,0,1.0,1.0,1.0,49,1.4311296939849854
+4,53.19738834220943,159,slow-firstpass = 1 AND no-scenecut = 1 AND no-cabac = 1 AND sliced-threads = 1,workload==0,0,0.0971882640586797,0.0510761323482171,1.0,49,0.5757420063018799
+5,37.54512274131585,434,slow-firstpass = 1 AND intra-refresh = 1 AND no-dct-decimate = 1 AND no-asm = 1 AND dts-compress = 1,slow-firstpass==1 AND no-dct-decimate==1 AND no-asm==1 AND dts-compress==1 AND intra-refresh==1,0,1.0,1.0,1.0,49,1.390794038772583
+6,32.968653235649825,353,no-scenecut = 1 AND bff = 1 AND no-mixed-refs = 1 AND no-mbtree = 1 AND no-asm = 1 AND dts-compress = 1,no-mixed-refs==1,3,0.3791621911922663,0.2339297548045062,1.0,49,0.5243287086486816
+7,19.07800972027143,326,slow-firstpass = 1 AND no-scenecut = 1 AND no-cabac = 1 AND constrained-intra = 1 AND no-fast-pskip = 1 AND no-psy = 1 AND opencl = 1,slow-firstpass==1,3,0.3273092369477912,0.1956782713085234,1.0,49,0.5270164012908936
+1,84.40575094203692,499,sliced-threads = 1,sliced-threads==1,0,1.0,1.0,1.0,5,0.8043825626373291
+2,94.50886394930842,926,intra-refresh = 1 AND dts-compress = 1,dts-compress==1 AND intra-refresh==1,0,1.0,1.0,1.0,5,1.1499834060668943
+3,38.23979990586558,783,no-scenecut = 1 AND tff = 1 AND pic-struct = 1,pic-struct==1 AND no-scenecut==1 AND tff==1,0,1.0,1.0,1.0,5,1.4469656944274902
+4,70.15961886577655,558,intra-refresh = 1 AND bff = 1 AND constrained-intra = 1 AND cpu-independent = 1,cpu-independent==1 AND intra-refresh==1 AND bff==1 AND constrained-intra==1,0,1.0,1.0,1.0,5,1.6963214874267578
+5,33.69925165229593,413,no-cabac = 1 AND no-chroma-me = 1 AND no-dct-decimate = 1 AND pic-struct = 1 AND cpu-independent = 1,no-chroma-me==1 AND no-dct-decimate==1 AND pic-struct==1 AND cpu-independent==1 AND no-cabac==1,0,1.0,1.0,1.0,5,1.4044468402862549
+6,45.59047068543077,337,no-scenecut = 1 AND no-deblock = 1 AND tff = 1 AND bff = 1 AND no-mbtree = 1 AND cpu-independent = 1,bff==1,3,0.3554852320675105,0.2161642078255292,1.0,5,0.5185666084289551
+7,64.87409108954445,333,slow-firstpass = 1 AND open-gop = 1 AND no-cabac = 1 AND no-deblock = 1 AND no-psy = 1 AND no-mbtree = 1 AND pic-struct = 1,workload==0,0,0.1932675565873476,0.1069707677481529,1.0,5,0.5213539600372314
+1,98.9519346369356,499,sliced-threads = 1,sliced-threads==1,0,1.0,1.0,1.0,50,0.7699992656707764
+2,89.53913826670717,239,constrained-intra = 1 AND sliced-threads = 1,sliced-threads==1 AND constrained-intra==1,0,1.0,1.0,1.0,50,1.0405352115631104
+3,103.48690315165484,209,no-scenecut = 1 AND intra-refresh = 1 AND sliced-threads = 1,no-scenecut==1 AND sliced-threads==1 AND intra-refresh==1,0,1.0,1.0,1.0,50,1.2953102588653564
+4,56.22186730608044,578,no-mbtree = 1 AND pic-struct = 1 AND aud = 1 AND opencl = 1,no-mbtree==1 AND pic-struct==1 AND aud==1 AND opencl==1,0,1.0,1.0,1.0,50,1.6431055068969729
+5,102.63392483762992,487,no-cabac = 1 AND no-deblock = 1 AND bff = 1 AND aud = 1 AND opencl = 1,workload==0,2,0.2705555555555555,0.1564407324124638,1.0,50,0.6446413993835449
+6,74.72480001722417,406,slow-firstpass = 1 AND bff = 1 AND no-chroma-me = 1 AND no-mixed-refs = 1 AND non-deterministic = 1 AND dts-compress = 1,workload==0,0,0.230747371412333,0.1304208159331834,1.0,50,0.5145995616912842
+7,16.629071577827283,295,slow-firstpass = 1 AND intra-refresh = 1 AND open-gop = 1 AND no-deblock = 1 AND no-8x8dct = 1 AND no-dct-decimate = 1 AND dts-compress = 1,slow-firstpass==1,3,0.3008669046404895,0.1770708283313325,1.0,50,0.5165205001831055
+1,66.59925378578336,499,sliced-threads = 1,sliced-threads==1,0,1.0,1.0,1.0,51,0.7731635570526123
+2,13.580473494920524,249,no-mbtree = 1 AND sliced-threads = 1,no-mbtree==1 AND sliced-threads==1,0,1.0,1.0,1.0,51,0.965785026550293
+3,97.7727428188854,677,intra-refresh = 1 AND no-8x8dct = 1 AND no-asm = 1,no-8x8dct==1 AND no-asm==1 AND intra-refresh==1,0,1.0,1.0,1.0,51,1.3633174896240234
+4,8.004122059672909,616,slow-firstpass = 1 AND no-mixed-refs = 1 AND no-psy = 1 AND opencl = 1,slow-firstpass==1 AND no-mixed-refs==1 AND no-psy==1 AND opencl==1,0,1.0,1.0,1.0,51,1.6889183521270752
+5,84.65659438749543,382,no-8x8dct = 1 AND no-psy = 1 AND no-dct-decimate = 1 AND cpu-independent = 1 AND aud = 1,workload==0,0,0.2185979971387697,0.1227112110504336,1.0,51,0.5464723110198975
+6,49.05352884888915,376,slow-firstpass = 1 AND intra-refresh = 1 AND no-mbtree = 1 AND no-dct-decimate = 1 AND no-asm = 1 AND aud = 1,slow-firstpass==1,3,0.3682664054848187,0.2256902761104441,1.0,51,0.5013055801391602
+7,11.163094759210304,279,slow-firstpass = 1 AND no-scenecut = 1 AND no-cabac = 1 AND constrained-intra = 1 AND no-chroma-me = 1 AND no-psy = 1 AND cpu-independent = 1,slow-firstpass==1,3,0.2868894601542416,0.1674669867947179,1.0,51,0.4982223510742187
+1,79.62196905341395,499,sliced-threads = 1,sliced-threads==1,0,1.0,1.0,1.0,52,0.7848036289215088
+2,71.18782211694901,926,no-dct-decimate = 1 AND aud = 1,no-dct-decimate==1 AND aud==1,0,1.0,1.0,1.0,52,1.1014468669891355
+3,23.309419745040543,801,no-cabac = 1 AND constrained-intra = 1 AND pic-struct = 1,pic-struct==1 AND no-cabac==1 AND constrained-intra==1,0,1.0,1.0,1.0,52,1.4458959102630615
+4,54.39705995603264,523,no-scenecut = 1 AND tff = 1 AND constrained-intra = 1 AND cpu-independent = 1,cpu-independent==1 AND no-scenecut==1 AND tff==1 AND constrained-intra==1,0,1.0,1.0,1.0,52,1.4810633659362793
+5,101.76380105537078,417,tff = 1 AND no-8x8dct = 1 AND no-chroma-me = 1 AND pic-struct = 1 AND cpu-independent = 1,cpu-independent==0,0,0.0,0.0,0.0,52,0.6797904968261719
+6,43.16979102646975,445,slow-firstpass = 1 AND open-gop = 1 AND no-deblock = 1 AND non-deterministic = 1 AND dts-compress = 1 AND opencl = 1,slow-firstpass==1 AND non-deterministic==1 AND dts-compress==1 AND opencl==1 AND open-gop==1 AND no-deblock==1,0,1.0,1.0,1.0,52,1.2070088386535645
+7,38.2465808255952,322,slow-firstpass = 1 AND no-scenecut = 1 AND no-deblock = 1 AND tff = 1 AND bff = 1 AND pic-struct = 1 AND aud = 1,no-scenecut==1,3,0.3368200836820084,0.2025157232704402,1.0,52,0.5077333450317383
+1,85.66880339994019,499,sliced-threads = 1,sliced-threads==1,0,1.0,1.0,1.0,53,0.7417004108428955
+2,10.076909296392897,933,intra-refresh = 1 AND no-8x8dct = 1,no-8x8dct==1 AND intra-refresh==1,0,1.0,1.0,1.0,53,1.0702614784240725
+3,90.46940257920808,852,no-scenecut = 1 AND open-gop = 1 AND no-chroma-me = 1,no-chroma-me==1 AND no-scenecut==1 AND open-gop==1,0,1.0,1.0,1.0,53,1.405472755432129
+4,19.81060400082102,584,no-psy = 1 AND no-asm = 1 AND dts-compress = 1 AND opencl = 1,no-psy==1 AND no-asm==1 AND dts-compress==1 AND opencl==1,0,1.0,1.0,1.0,53,1.6546671390533447
+5,84.7304504849137,474,constrained-intra = 1 AND no-8x8dct = 1 AND no-chroma-me = 1 AND no-asm = 1 AND aud = 1,workload==0,0,0.2642877056035684,0.1522646964343077,1.0,53,0.5732710361480713
+6,29.44067847681277,398,slow-firstpass = 1 AND no-scenecut = 1 AND bff = 1 AND no-chroma-me = 1 AND no-mbtree = 1 AND no-dct-decimate = 1,no-scenecut==1,3,0.4004024144869215,0.250314465408805,1.0,53,0.4813988208770752
+7,82.93213905289906,301,slow-firstpass = 1 AND no-scenecut = 1 AND intra-refresh = 1 AND no-8x8dct = 1 AND no-psy = 1 AND aud = 1 AND opencl = 1,workload==0,0,0.1763327475102519,0.0966912945711532,1.0,53,0.4981229305267334
+1,41.03377089291638,499,sliced-threads = 1,sliced-threads==1,0,1.0,1.0,1.0,54,0.7750272750854492
+2,105.81646536076478,856,constrained-intra = 1 AND cpu-independent = 1,cpu-independent==1 AND constrained-intra==1,0,1.0,1.0,1.0,54,1.1099307537078855
+3,89.29895765172444,731,bff = 1 AND no-mixed-refs = 1 AND opencl = 1,no-mixed-refs==1 AND opencl==1 AND bff==1,0,1.0,1.0,1.0,54,1.349571943283081
+4,80.62591664368918,463,open-gop = 1 AND tff = 1 AND no-8x8dct = 1 AND cpu-independent = 1,workload==0,0,0.2589485458612975,0.1487311275297141,1.0,54,0.589139461517334
+5,15.45213248447833,410,no-deblock = 1 AND constrained-intra = 1 AND no-8x8dct = 1 AND cpu-independent = 1 AND no-asm = 1,constrained-intra==1,3,0.4122674710910005,0.25965801139962,1.0,54,0.5114157199859619
+6,85.47005380474609,386,intra-refresh = 1 AND open-gop = 1 AND no-8x8dct = 1 AND no-mixed-refs = 1 AND no-asm = 1 AND dts-compress = 1,workload==0,0,0.2206344669905687,0.1239961451975586,1.0,54,0.5344765186309814
+7,90.78207333429054,339,slow-firstpass = 1 AND no-cabac = 1 AND no-deblock = 1 AND tff = 1 AND no-mixed-refs = 1 AND non-deterministic = 1 AND no-asm = 1,workload==0,0,0.1964078794901506,0.1088981689688403,1.0,54,0.5264599323272705
+1,12.35489989513319,499,sliced-threads = 1,sliced-threads==1,0,1.0,1.0,1.0,55,0.8246357440948486
+2,72.0664672154486,911,cpu-independent = 1 AND opencl = 1,cpu-independent==1 AND opencl==1,0,1.0,1.0,1.0,55,1.1618609428405762
+3,36.520510444279175,735,no-deblock = 1 AND no-asm = 1 AND dts-compress = 1,no-asm==1 AND dts-compress==1 AND no-deblock==1,0,1.0,1.0,1.0,55,1.4805192947387695
+4,87.33544842240843,579,no-psy = 1 AND no-weightb = 1 AND no-mbtree = 1 AND dts-compress = 1,no-psy==1 AND no-weightb==1 AND no-mbtree==1 AND dts-compress==1,0,1.0,1.0,1.0,55,1.699445724487305
+5,71.96755976703083,460,slow-firstpass = 1 AND no-cabac = 1 AND cpu-independent = 1 AND no-asm = 1 AND aud = 1,slow-firstpass==1 AND cpu-independent==1 AND no-asm==1 AND aud==1 AND no-cabac==1,0,1.0,1.0,1.0,55,1.6085481643676758
+6,74.19646643869014,358,slow-firstpass = 1 AND no-deblock = 1 AND bff = 1 AND no-chroma-me = 1 AND no-dct-decimate = 1 AND aud = 1,workload==0,0,0.2062806107749927,0.1150016061676839,1.0,55,0.5322246551513672
+7,90.17246364772085,327,slow-firstpass = 1 AND open-gop = 1 AND tff = 1 AND no-fast-pskip = 1 AND no-8x8dct = 1 AND no-dct-decimate = 1 AND non-deterministic = 1,workload==0,0,0.1901162790697674,0.1050433665274654,1.0,55,0.5674636363983154
+1,99.919938645894,499,sliced-threads = 1,sliced-threads==1,0,1.0,1.0,1.0,56,0.7597923278808594
+2,60.88450496152375,250,intra-refresh = 1 AND sliced-threads = 1,sliced-threads==1 AND intra-refresh==1,0,1.0,1.0,1.0,56,0.9784984588623048
+3,63.96684993443301,855,no-scenecut = 1 AND tff = 1 AND bff = 1,no-scenecut==1 AND tff==1 AND bff==1,0,1.0,1.0,1.0,56,1.4720983505249023
+4,56.74555659956724,554,no-cabac = 1 AND no-fast-pskip = 1 AND no-dct-decimate = 1 AND opencl = 1,no-dct-decimate==1 AND opencl==1 AND no-cabac==1 AND no-fast-pskip==1,0,1.0,1.0,1.0,56,1.4876086711883545
+5,39.00383631518292,416,slow-firstpass = 1 AND no-scenecut = 1 AND no-psy = 1 AND no-weightb = 1 AND cpu-independent = 1,no-scenecut==1,3,0.4147557328015952,0.2616352201257861,1.0,56,0.4887757301330566
+6,10.522127094600112,377,slow-firstpass = 1 AND no-scenecut = 1 AND no-8x8dct = 1 AND no-chroma-me = 1 AND no-mbtree = 1 AND no-asm = 1,opencl==1,3,0.3083787803668815,0.1896341463414634,0.8249336870026526,56,0.5141894817352295
+7,11.755731801884142,360,slow-firstpass = 1 AND no-scenecut = 1 AND open-gop = 1 AND no-cabac = 1 AND tff = 1 AND no-fast-pskip = 1 AND non-deterministic = 1,slow-firstpass==1,3,0.3553800592300098,0.2160864345738295,1.0,56,0.5047988891601562
+1,68.34699891791018,499,sliced-threads = 1,sliced-threads==1,0,1.0,1.0,1.0,57,0.7696290016174316
+2,47.892329394579576,883,intra-refresh = 1 AND aud = 1,aud==1 AND intra-refresh==1,0,1.0,1.0,1.0,57,1.114309787750244
+3,9.64696283612292,764,slow-firstpass = 1 AND tff = 1 AND no-asm = 1,slow-firstpass==1 AND no-asm==1 AND tff==1,0,1.0,1.0,1.0,57,1.3603224754333496
+4,25.69930949646985,657,no-fast-pskip = 1 AND no-8x8dct = 1 AND no-weightb = 1 AND no-dct-decimate = 1,no-8x8dct==1 AND no-weightb==1 AND no-dct-decimate==1 AND no-fast-pskip==1,0,1.0,1.0,1.0,57,1.7565691471099854
+5,53.22799597779268,487,slow-firstpass = 1 AND no-scenecut = 1 AND bff = 1 AND dts-compress = 1 AND opencl = 1,slow-firstpass==1 AND no-scenecut==1 AND dts-compress==1 AND opencl==1 AND bff==1,0,1.0,1.0,1.0,57,1.5045950412750244
+6,71.34128318683616,383,intra-refresh = 1 AND no-cabac = 1 AND tff = 1 AND pic-struct = 1 AND no-asm = 1 AND opencl = 1,workload==0,0,0.2191075514874142,0.1230324445872149,1.0,57,0.5000064373016357
+7,70.97258649978903,278,slow-firstpass = 1 AND no-cabac = 1 AND no-deblock = 1 AND no-weightb = 1 AND no-mbtree = 1 AND no-dct-decimate = 1 AND cpu-independent = 1,workload==0,0,0.1639634326157475,0.0893029232251847,1.0,57,0.497767686843872
+1,9.61296289080413,499,sliced-threads = 1,sliced-threads==1,0,1.0,1.0,1.0,58,0.753695011138916
+2,36.93634862285566,919,no-8x8dct = 1 AND dts-compress = 1,no-8x8dct==1 AND dts-compress==1,0,1.0,1.0,1.0,58,1.075892448425293
+3,96.91720239034686,704,no-deblock = 1 AND no-8x8dct = 1 AND no-asm = 1,no-8x8dct==1 AND no-asm==1 AND no-deblock==1,0,1.0,1.0,1.0,58,1.3122408390045166
+4,71.02452471254493,158,no-chroma-me = 1 AND no-mixed-refs = 1 AND pic-struct = 1 AND sliced-threads = 1,workload==0,0,0.0966065423417915,0.0507548988114359,1.0,58,0.5453011989593506
+5,63.29298743113489,437,no-8x8dct = 1 AND no-mixed-refs = 1 AND no-mbtree = 1 AND non-deterministic = 1 AND cpu-independent = 1,workload==0,0,0.2461971830985915,0.1403790555734018,1.0,58,0.5129044055938721
+6,105.0851077235313,390,no-scenecut = 1 AND no-cabac = 1 AND no-deblock = 1 AND no-mixed-refs = 1 AND no-dct-decimate = 1 AND opencl = 1,workload==0,0,0.2226662860405367,0.1252810793446835,1.0,58,0.601269006729126
+7,31.76966623312345,349,slow-firstpass = 1 AND no-scenecut = 1 AND intra-refresh = 1 AND open-gop = 1 AND no-deblock = 1 AND constrained-intra = 1 AND no-weightb = 1,constrained-intra==1,3,0.3620331950207469,0.2210259658011399,1.0,58,0.4891400337219238
+1,107.48127611511968,499,sliced-threads = 1,sliced-threads==1,0,1.0,1.0,1.0,59,0.7414383888244629
+2,9.543216576281337,878,cpu-independent = 1 AND dts-compress = 1,cpu-independent==1 AND dts-compress==1,0,1.0,1.0,1.0,59,1.100811243057251
+3,29.804447075941923,737,no-deblock = 1 AND no-mixed-refs = 1 AND no-weightb = 1,no-mixed-refs==1 AND no-weightb==1 AND no-deblock==1,0,1.0,1.0,1.0,59,1.3504493236541748
+4,98.07329852237052,573,no-scenecut = 1 AND tff = 1 AND non-deterministic = 1 AND opencl = 1,non-deterministic==1 AND no-scenecut==1 AND opencl==1 AND tff==1,0,1.0,1.0,1.0,59,1.4640862941741943
+5,67.3386114347253,469,no-chroma-me = 1 AND no-mbtree = 1 AND non-deterministic = 1 AND no-asm = 1 AND aud = 1,workload==0,0,0.2618648799553322,0.1506585287504015,1.0,59,0.4834713935852051
+6,50.69754878653726,383,slow-firstpass = 1 AND intra-refresh = 1 AND no-cabac = 1 AND no-psy = 1 AND no-asm = 1 AND opencl = 1,no-asm==1,3,0.3839598997493734,0.2375930521091811,1.0,59,0.5004549026489258
+7,24.115190080263787,273,slow-firstpass = 1 AND no-scenecut = 1 AND open-gop = 1 AND constrained-intra = 1 AND no-chroma-me = 1 AND no-mbtree = 1 AND cpu-independent = 1,slow-firstpass==1,3,0.2815884476534296,0.1638655462184874,1.0,59,0.4825687408447265
+1,28.37832866636036,499,sliced-threads = 1,sliced-threads==1,0,1.0,1.0,1.0,6,0.8055431842803955
+2,35.5176274950852,216,cpu-independent = 1 AND sliced-threads = 1,non-deterministic==1,3,0.201291711517761,0.1138855054811205,0.8657407407407407,6,0.5438077449798584
+3,80.11248866600532,701,slow-firstpass = 1 AND no-scenecut = 1 AND no-weightb = 1,slow-firstpass==1 AND no-weightb==1 AND no-scenecut==1,0,1.0,1.0,1.0,6,1.37451171875
+4,18.04642683375716,515,no-scenecut = 1 AND constrained-intra = 1 AND cpu-independent = 1 AND opencl = 1,cpu-independent==1 AND no-scenecut==1 AND opencl==1 AND constrained-intra==1,0,1.0,1.0,1.0,6,1.6004903316497805
+5,64.54160969814392,426,slow-firstpass = 1 AND bff = 1 AND constrained-intra = 1 AND no-fast-pskip = 1 AND cpu-independent = 1,workload==0,0,0.2407459734388245,0.1368454866688082,1.0,6,0.5343883037567139
+6,44.82415840329847,363,intra-refresh = 1 AND bff = 1 AND no-8x8dct = 1 AND no-mixed-refs = 1 AND no-weightb = 1 AND no-asm = 1,workload==0,0,0.2088607594936709,0.1166077738515901,1.0,6,0.5476419925689697
+7,9.20072966219855,335,slow-firstpass = 1 AND intra-refresh = 1 AND open-gop = 1 AND tff = 1 AND constrained-intra = 1 AND no-mixed-refs = 1 AND pic-struct = 1,slow-firstpass==1,3,0.3348325837081459,0.2010804321728691,1.0,6,0.5447995662689209
+1,63.80348655203689,499,sliced-threads = 1,sliced-threads==1,0,1.0,1.0,1.0,60,0.788750171661377
+2,22.4382694951923,847,no-dct-decimate = 1 AND cpu-independent = 1,no-dct-decimate==1 AND cpu-independent==1,0,1.0,1.0,1.0,60,1.1092677116394043
+3,88.51279924144184,796,no-cabac = 1 AND no-deblock = 1 AND no-chroma-me = 1,no-chroma-me==1 AND no-cabac==1 AND no-deblock==1,0,1.0,1.0,1.0,60,1.483617067337036
+4,78.18743752611546,559,no-scenecut = 1 AND no-chroma-me = 1 AND pic-struct = 1 AND dts-compress = 1,no-chroma-me==1 AND pic-struct==1 AND no-scenecut==1 AND dts-compress==1,0,1.0,1.0,1.0,60,1.6007838249206543
+5,82.1249107971745,451,bff = 1 AND no-dct-decimate = 1 AND no-asm = 1 AND dts-compress = 1 AND opencl = 1,workload==0,0,0.2530864197530864,0.1448763250883392,1.0,60,0.5325901508331299
+6,46.64620595013637,343,intra-refresh = 1 AND no-cabac = 1 AND no-8x8dct = 1 AND no-mbtree = 1 AND pic-struct = 1 AND aud = 1,pic-struct==1,3,0.3487544483985765,0.2112068965517241,1.0,60,0.5120418071746826
+7,98.85540599913308,317,slow-firstpass = 1 AND no-cabac = 1 AND tff = 1 AND no-fast-pskip = 1 AND non-deterministic = 1 AND no-asm = 1 AND aud = 1,workload==0,0,0.1848396501457726,0.101831031159653,1.0,60,0.5511753559112549
+1,87.55362954952729,499,sliced-threads = 1,sliced-threads==1,0,1.0,1.0,1.0,61,0.7618739604949951
+2,62.27982609115984,243,aud = 1 AND sliced-threads = 1,aud==1 AND sliced-threads==1,0,1.0,1.0,1.0,61,1.0214812755584717
+3,26.818762290431884,755,slow-firstpass = 1 AND no-deblock = 1 AND no-mixed-refs = 1,slow-firstpass==1 AND no-mixed-refs==1 AND no-deblock==1,0,1.0,1.0,1.0,61,1.3823940753936768
+4,76.02328781441854,640,intra-refresh = 1 AND no-cabac = 1 AND constrained-intra = 1 AND no-fast-pskip = 1,intra-refresh==1 AND no-cabac==1 AND constrained-intra==1 AND no-fast-pskip==1,0,1.0,1.0,1.0,61,1.6222946643829346
+5,18.177264865298547,490,intra-refresh = 1 AND open-gop = 1 AND no-8x8dct = 1 AND no-mbtree = 1 AND pic-struct = 1,no-8x8dct==1 AND no-mbtree==1 AND pic-struct==1 AND intra-refresh==1 AND open-gop==1,0,1.0,1.0,1.0,61,1.5453810691833496
+6,84.45199900319452,376,slow-firstpass = 1 AND open-gop = 1 AND no-mbtree = 1 AND no-dct-decimate = 1 AND no-asm = 1 AND dts-compress = 1,workload==0,0,0.2155345371166523,0.1207838098297462,1.0,61,0.5229752063751221
+7,92.89183074635424,360,slow-firstpass = 1 AND intra-refresh = 1 AND open-gop = 1 AND no-cabac = 1 AND no-fast-pskip = 1 AND no-chroma-me = 1 AND no-dct-decimate = 1,workload==0,0,0.2073135617621652,0.1156440732412463,1.0,61,0.5566539764404297
+1,37.23619076879481,499,sliced-threads = 1,sliced-threads==1,0,1.0,1.0,1.0,62,0.7685031890869141
+2,98.6909376240377,253,no-chroma-me = 1 AND sliced-threads = 1,no-chroma-me==1 AND sliced-threads==1,0,1.0,1.0,1.0,62,1.065598964691162
+3,64.52191225476004,166,no-fast-pskip = 1 AND no-psy = 1 AND sliced-threads = 1,workload==0,0,0.1012503812137846,0.0533247671056858,1.0,62,0.5013246536254883
+4,47.52188914391786,583,no-scenecut = 1 AND constrained-intra = 1 AND non-deterministic = 1 AND aud = 1,non-deterministic==1 AND no-scenecut==1 AND aud==1 AND constrained-intra==1,0,1.0,1.0,1.0,62,1.6132919788360596
+5,63.661978528389085,475,intra-refresh = 1 AND tff = 1 AND bff = 1 AND no-psy = 1 AND no-dct-decimate = 1,workload==0,0,0.2647714604236343,0.1525859299710889,1.0,62,0.5042777061462402
+6,11.155648828400226,399,intra-refresh = 1 AND no-cabac = 1 AND no-deblock = 1 AND tff = 1 AND no-mixed-refs = 1 AND aud = 1,no-cabac==1,3,0.3988005997001499,0.249063670411985,1.0,62,0.5060851573944092
+7,91.0120588489728,316,slow-firstpass = 1 AND open-gop = 1 AND constrained-intra = 1 AND no-8x8dct = 1 AND pic-struct = 1 AND non-deterministic = 1 AND dts-compress = 1,workload==0,0,0.184310294546515,0.1015097976228718,1.0,62,0.5155205726623535
+1,50.79341867561979,499,sliced-threads = 1,sliced-threads==1,0,1.0,1.0,1.0,63,0.7707312107086182
+2,37.595757206277376,884,no-weightb = 1 AND aud = 1,no-weightb==1 AND aud==1,0,1.0,1.0,1.0,63,1.0959439277648926
+3,19.931597717293485,800,slow-firstpass = 1 AND pic-struct = 1 AND dts-compress = 1,slow-firstpass==1 AND pic-struct==1 AND dts-compress==1,0,1.0,1.0,1.0,63,1.404935359954834
+4,96.82779436116384,619,no-scenecut = 1 AND intra-refresh = 1 AND tff = 1 AND no-weightb = 1,no-weightb==1 AND no-scenecut==1 AND intra-refresh==1 AND tff==1,0,1.0,1.0,1.0,63,1.701527118682861
+5,85.76241012872542,421,no-scenecut = 1 AND open-gop = 1 AND no-chroma-me = 1 AND cpu-independent = 1 AND no-asm = 1,workload==0,0,0.2382569326542161,0.135239318984902,1.0,63,0.5423984527587891
+6,73.03839964375071,364,no-scenecut = 1 AND tff = 1 AND constrained-intra = 1 AND no-chroma-me = 1 AND no-dct-decimate = 1 AND aud = 1,workload==0,0,0.2093758987633017,0.1169290073883713,1.0,63,0.5158281326293945
+7,107.83912385553518,304,slow-firstpass = 1 AND open-gop = 1 AND no-deblock = 1 AND tff = 1 AND no-psy = 1 AND no-dct-decimate = 1 AND aud = 1,workload==0,0,0.1779338601112086,0.0976549951814969,1.0,63,0.5795176029205322
+1,62.8702874044893,499,sliced-threads = 1,sliced-threads==1,0,1.0,1.0,1.0,64,0.7687389850616455
+2,84.44722835124989,282,no-asm = 1 AND sliced-threads = 1,no-asm==1 AND sliced-threads==1,0,1.0,1.0,1.0,64,1.062391996383667
+3,84.03191209150023,209,no-scenecut = 1 AND intra-refresh = 1 AND sliced-threads = 1,no-scenecut==1 AND sliced-threads==1 AND intra-refresh==1,0,1.0,1.0,1.0,64,1.211000680923462
+4,77.3969431709195,571,no-deblock = 1 AND tff = 1 AND non-deterministic = 1 AND cpu-independent = 1,non-deterministic==1 AND cpu-independent==1 AND no-deblock==1 AND tff==1,0,1.0,1.0,1.0,64,1.6578693389892578
+5,76.79290022023099,459,no-scenecut = 1 AND bff = 1 AND non-deterministic = 1 AND cpu-independent = 1 AND no-asm = 1,non-deterministic==1 AND cpu-independent==1 AND no-scenecut==1 AND no-asm==1 AND bff==1,0,1.0,1.0,1.0,64,1.5060195922851562
+6,55.74504408549105,352,no-scenecut = 1 AND constrained-intra = 1 AND no-mixed-refs = 1 AND no-weightb = 1 AND no-asm = 1 AND aud = 1,workload==0,0,0.2031746031746031,0.1130742049469964,1.0,64,0.4957668781280517
+7,50.3631490642525,325,slow-firstpass = 1 AND no-scenecut = 1 AND no-cabac = 1 AND no-psy = 1 AND no-mbtree = 1 AND pic-struct = 1 AND opencl = 1,workload==0,0,0.1890634089586969,0.1044008994539029,1.0,64,0.496476411819458
+1,72.63125176674716,499,sliced-threads = 1,sliced-threads==1,0,1.0,1.0,1.0,65,0.7567551136016846
+2,22.040285897256556,258,no-deblock = 1 AND sliced-threads = 1,sliced-threads==1 AND no-deblock==1,0,1.0,1.0,1.0,65,0.93011212348938
+3,40.80823055924391,728,open-gop = 1 AND tff = 1 AND no-psy = 1,no-psy==1 AND open-gop==1 AND tff==1,0,1.0,1.0,1.0,65,1.3902065753936768
+4,94.45776935729648,579,no-scenecut = 1 AND no-fast-pskip = 1 AND no-psy = 1 AND non-deterministic = 1,no-psy==1 AND non-deterministic==1 AND no-scenecut==1 AND no-fast-pskip==1,0,1.0,1.0,1.0,65,1.5188755989074707
+5,11.583424691805714,534,no-scenecut = 1 AND intra-refresh = 1 AND no-deblock = 1 AND tff = 1 AND no-psy = 1,no-psy==1 AND no-scenecut==1 AND intra-refresh==1 AND no-deblock==1 AND tff==1,0,1.0,1.0,1.0,65,1.6286022663116455
+6,82.83819799135934,448,no-scenecut = 1 AND intra-refresh = 1 AND no-cabac = 1 AND no-fast-pskip = 1 AND no-chroma-me = 1 AND no-weightb = 1,workload==0,0,0.2516147149677056,0.1439126244779955,1.0,65,0.569690465927124
+7,48.95527312563478,355,slow-firstpass = 1 AND no-scenecut = 1 AND open-gop = 1 AND no-dct-decimate = 1 AND pic-struct = 1 AND non-deterministic = 1 AND opencl = 1,slow-firstpass==1,3,0.351311232063335,0.2130852340936374,1.0,65,0.4974679946899414
+1,8.920353918960654,499,sliced-threads = 1,sliced-threads==1,0,1.0,1.0,1.0,66,0.7859830856323242
+2,27.175411866923348,253,no-chroma-me = 1 AND sliced-threads = 1,no-chroma-me==1 AND sliced-threads==1,0,1.0,1.0,1.0,66,0.9776804447174072
+3,82.29615892346713,781,no-chroma-me = 1 AND no-dct-decimate = 1 AND non-deterministic = 1,no-chroma-me==1 AND no-dct-decimate==1 AND non-deterministic==1,0,1.0,1.0,1.0,66,1.387568712234497
+4,102.38640220196557,636,intra-refresh = 1 AND open-gop = 1 AND non-deterministic = 1 AND no-asm = 1,non-deterministic==1 AND no-asm==1 AND intra-refresh==1 AND open-gop==1,0,1.0,1.0,1.0,66,1.6544454097747805
+5,89.97484854014264,515,no-chroma-me = 1 AND no-psy = 1 AND no-dct-decimate = 1 AND pic-struct = 1 AND opencl = 1,workload==0,0,0.2839029768467475,0.1654352714423385,1.0,66,0.6100554466247559
+6,44.41754593660562,387,slow-firstpass = 1 AND open-gop = 1 AND no-8x8dct = 1 AND no-chroma-me = 1 AND no-weightb = 1 AND no-asm = 1,slow-firstpass==1,3,0.3770092547491476,0.2322929171668667,1.0,66,0.5102949142456055
+7,97.6045912245608,346,slow-firstpass = 1 AND intra-refresh = 1 AND open-gop = 1 AND no-8x8dct = 1 AND no-chroma-me = 1 AND no-weightb = 1 AND no-mbtree = 1,workload==0,0,0.2000578201792425,0.111146803726309,1.0,66,0.5785577297210693
+1,10.961694046163664,499,sliced-threads = 1,sliced-threads==1,0,1.0,1.0,1.0,67,0.7508482933044434
+2,54.79073373385241,282,no-asm = 1 AND sliced-threads = 1,no-asm==1 AND sliced-threads==1,0,1.0,1.0,1.0,67,0.9530677795410156
+3,105.45839880106747,813,open-gop = 1 AND bff = 1 AND no-fast-pskip = 1,open-gop==1 AND bff==1 AND no-fast-pskip==1,0,1.0,1.0,1.0,67,1.373671531677246
+4,23.93352769685706,563,bff = 1 AND no-fast-pskip = 1 AND no-mbtree = 1 AND non-deterministic = 1,no-mbtree==1 AND non-deterministic==1 AND bff==1 AND no-fast-pskip==1,0,1.0,1.0,1.0,67,1.6003682613372805
+5,56.28745515252038,492,no-cabac = 1 AND constrained-intra = 1 AND no-dct-decimate = 1 AND pic-struct = 1 AND no-asm = 1,no-dct-decimate==1 AND pic-struct==1 AND no-asm==1 AND no-cabac==1 AND constrained-intra==1,0,1.0,1.0,1.0,67,1.452038288116455
+6,97.86182506545906,373,slow-firstpass = 1 AND open-gop = 1 AND tff = 1 AND constrained-intra = 1 AND no-fast-pskip = 1 AND dts-compress = 1,workload==0,0,0.2139988525530694,0.1198201092194025,1.0,67,0.5528767108917236
+7,21.842493761174744,348,slow-firstpass = 1 AND no-scenecut = 1 AND intra-refresh = 1 AND no-cabac = 1 AND no-fast-pskip = 1 AND no-mbtree = 1 AND no-dct-decimate = 1,slow-firstpass==1,3,0.3455809334657398,0.2088835534213685,1.0,67,0.4963397979736328
+1,37.49523798791415,499,sliced-threads = 1,sliced-threads==1,0,1.0,1.0,1.0,68,0.809227466583252
+2,17.458387030440853,877,no-weightb = 1 AND dts-compress = 1,no-weightb==1 AND dts-compress==1,0,1.0,1.0,1.0,68,1.128394603729248
+3,77.18864315423913,713,non-deterministic = 1 AND cpu-independent = 1 AND aud = 1,non-deterministic==1 AND cpu-independent==1 AND aud==1,0,1.0,1.0,1.0,68,1.459388017654419
+4,79.71276691894262,620,bff = 1 AND constrained-intra = 1 AND no-psy = 1 AND no-mbtree = 1,no-psy==1 AND no-mbtree==1 AND bff==1 AND constrained-intra==1,0,1.0,1.0,1.0,68,1.7100136280059814
+5,23.388746367397488,470,no-scenecut = 1 AND no-8x8dct = 1 AND no-mixed-refs = 1 AND pic-struct = 1 AND dts-compress = 1,no-8x8dct==1 AND no-mixed-refs==1 AND pic-struct==1 AND no-scenecut==1 AND dts-compress==1,0,1.0,1.0,1.0,68,1.619417667388916
+6,94.96470157979824,399,no-scenecut = 1 AND no-cabac = 1 AND no-deblock = 1 AND pic-struct = 1 AND aud = 1 AND opencl = 1,workload==0,0,0.2272209567198177,0.1281721811757147,1.0,68,0.6004190444946289
+7,78.45679585825265,274,slow-firstpass = 1 AND no-scenecut = 1 AND bff = 1 AND constrained-intra = 1 AND no-fast-pskip = 1 AND cpu-independent = 1 AND dts-compress = 1,workload==0,0,0.1617950989075878,0.0880179890780597,1.0,68,0.5349173545837402
+1,16.343304841328795,499,sliced-threads = 1,sliced-threads==1,0,1.0,1.0,1.0,69,0.814971923828125
+2,99.62588151246769,266,no-weightb = 1 AND sliced-threads = 1,no-weightb==1 AND sliced-threads==1,0,1.0,1.0,1.0,69,1.137248992919922
+3,29.369378818237504,708,intra-refresh = 1 AND bff = 1 AND no-weightb = 1,no-weightb==1 AND intra-refresh==1 AND bff==1,0,1.0,1.0,1.0,69,1.4903662204742432
+4,68.83913475851217,611,intra-refresh = 1 AND no-psy = 1 AND no-weightb = 1 AND pic-struct = 1,no-psy==1 AND no-weightb==1 AND pic-struct==1 AND intra-refresh==1,0,1.0,1.0,1.0,69,1.7395708560943604
+5,32.06207479733289,465,no-fast-pskip = 1 AND no-mixed-refs = 1 AND no-mbtree = 1 AND non-deterministic = 1 AND opencl = 1,no-mixed-refs==1 AND no-mbtree==1 AND non-deterministic==1 AND opencl==1 AND no-fast-pskip==1,0,1.0,1.0,1.0,69,1.4881441593170166
+6,84.0311409142967,364,slow-firstpass = 1 AND constrained-intra = 1 AND no-fast-pskip = 1 AND no-8x8dct = 1 AND no-chroma-me = 1 AND cpu-independent = 1,workload==0,0,0.2093758987633017,0.1169290073883713,1.0,69,0.5607683658599854
+7,29.68955509380762,313,slow-firstpass = 1 AND intra-refresh = 1 AND open-gop = 1 AND tff = 1 AND no-mixed-refs = 1 AND no-dct-decimate = 1 AND dts-compress = 1,slow-firstpass==1,3,0.3163213744315311,0.187875150060024,1.0,69,0.5307128429412842
+1,18.99804901323812,499,sliced-threads = 1,sliced-threads==1,0,1.0,1.0,1.0,7,0.8669064044952393
+2,53.65009731517323,266,no-weightb = 1 AND sliced-threads = 1,no-weightb==1 AND sliced-threads==1,0,1.0,1.0,1.0,7,1.098149299621582
+3,102.19933300843954,833,slow-firstpass = 1 AND no-scenecut = 1 AND no-cabac = 1,slow-firstpass==1 AND no-scenecut==1 AND no-cabac==1,0,1.0,1.0,1.0,7,1.557180881500244
+4,19.723370905035548,656,no-cabac = 1 AND no-deblock = 1 AND no-fast-pskip = 1 AND no-mixed-refs = 1,no-mixed-refs==1 AND no-cabac==1 AND no-deblock==1 AND no-fast-pskip==1,0,1.0,1.0,1.0,7,1.961089372634888
+5,64.46833196339243,446,bff = 1 AND constrained-intra = 1 AND no-weightb = 1 AND no-dct-decimate = 1 AND dts-compress = 1,workload==0,0,0.2506322000561956,0.143270157404433,1.0,7,0.5662379264831543
+6,52.10255115518594,327,intra-refresh = 1 AND tff = 1 AND no-fast-pskip = 1 AND no-mixed-refs = 1 AND pic-struct = 1 AND cpu-independent = 1,pic-struct==1,3,0.3352127114300358,0.2013546798029556,1.0,7,0.5832936763763428
+7,92.39739894024872,353,slow-firstpass = 1 AND intra-refresh = 1 AND open-gop = 1 AND no-cabac = 1 AND tff = 1 AND no-psy = 1 AND no-dct-decimate = 1,workload==0,0,0.2036930178880553,0.1133954384837777,1.0,7,0.630223274230957
+1,23.451780933853936,499,sliced-threads = 1,sliced-threads==1,0,1.0,1.0,1.0,70,0.7611465454101562
+2,79.37213215226916,262,no-cabac = 1 AND sliced-threads = 1,sliced-threads==1 AND no-cabac==1,0,1.0,1.0,1.0,70,0.9916210174560548
+3,97.19662395719452,743,no-chroma-me = 1 AND no-weightb = 1 AND no-asm = 1,no-chroma-me==1 AND no-weightb==1 AND no-asm==1,0,1.0,1.0,1.0,70,1.335491180419922
+4,77.65518635670674,457,intra-refresh = 1 AND no-weightb = 1 AND cpu-independent = 1 AND opencl = 1,workload==0,0,0.2560224089635854,0.1468037263090266,1.0,70,0.576927661895752
+5,97.18267458903166,427,no-scenecut = 1 AND no-8x8dct = 1 AND no-mixed-refs = 1 AND no-weightb = 1 AND aud = 1,workload==0,0,0.2412429378531073,0.1371667202055894,1.0,70,0.5895662307739258
+6,107.24824566922042,407,no-scenecut = 1 AND open-gop = 1 AND no-deblock = 1 AND no-mixed-refs = 1 AND pic-struct = 1 AND no-asm = 1,no-scenecut==0,0,0.0,0.0,0.0,70,0.6482470035552979
+7,12.220847262203105,313,slow-firstpass = 1 AND open-gop = 1 AND tff = 1 AND no-fast-pskip = 1 AND no-weightb = 1 AND no-mbtree = 1 AND no-asm = 1,workload==0,0,0.1827203736135434,0.1005460970125281,1.0,70,0.4985110759735107
+1,57.651015317848845,499,sliced-threads = 1,sliced-threads==1,0,1.0,1.0,1.0,71,0.7492446899414062
+2,77.56386149107874,249,no-mbtree = 1 AND sliced-threads = 1,workload==0,0,0.1481261154074955,0.0799871506585287,1.0,71,0.5643374919891357
+3,14.133554751337524,823,no-deblock = 1 AND no-dct-decimate = 1 AND pic-struct = 1,no-dct-decimate==1 AND pic-struct==1 AND no-deblock==1,0,1.0,1.0,1.0,71,1.3783349990844729
+4,18.748560522308104,577,intra-refresh = 1 AND tff = 1 AND no-weightb = 1 AND pic-struct = 1,no-weightb==1 AND pic-struct==1 AND intra-refresh==1 AND tff==1,0,1.0,1.0,1.0,71,1.5896780490875244
+5,30.20657648803286,423,no-cabac = 1 AND no-8x8dct = 1 AND no-psy = 1 AND pic-struct = 1 AND dts-compress = 1,no-8x8dct==1 AND no-psy==1 AND pic-struct==1 AND dts-compress==1 AND no-cabac==1,0,1.0,1.0,1.0,71,1.3070731163024902
+6,105.40203489900364,388,intra-refresh = 1 AND no-deblock = 1 AND bff = 1 AND no-8x8dct = 1 AND no-chroma-me = 1 AND opencl = 1,workload==0,4,0.2216509568694658,0.1246386122711211,1.0,71,0.5894169807434082
+7,34.55045441858876,334,slow-firstpass = 1 AND no-cabac = 1 AND bff = 1 AND no-fast-pskip = 1 AND no-mixed-refs = 1 AND pic-struct = 1 AND non-deterministic = 1,slow-firstpass==1,3,0.334,0.2004801920768307,1.0,71,0.4850337505340576
+1,92.48693765119644,499,sliced-threads = 1,sliced-threads==1,0,1.0,1.0,1.0,72,0.7631349563598633
+2,53.900790370306126,926,intra-refresh = 1 AND dts-compress = 1,dts-compress==1 AND intra-refresh==1,0,1.0,1.0,1.0,72,1.0888473987579346
+3,94.47761047980882,792,no-chroma-me = 1 AND no-weightb = 1 AND pic-struct = 1,no-chroma-me==1 AND no-weightb==1 AND pic-struct==1,0,1.0,1.0,1.0,72,1.4006612300872805
+4,21.67074297913648,589,open-gop = 1 AND tff = 1 AND constrained-intra = 1 AND dts-compress = 1,dts-compress==1 AND open-gop==1 AND tff==1 AND constrained-intra==1,0,1.0,1.0,1.0,72,1.7000579833984375
+5,17.542027952951695,463,tff = 1 AND no-mixed-refs = 1 AND no-weightb = 1 AND no-dct-decimate = 1 AND opencl = 1,no-mixed-refs==1 AND no-weightb==1 AND no-dct-decimate==1 AND opencl==1 AND tff==1,0,1.0,1.0,1.0,72,1.527003288269043
+6,78.07894397897476,315,intra-refresh = 1 AND no-cabac = 1 AND bff = 1 AND no-mbtree = 1 AND cpu-independent = 1 AND opencl = 1,workload==0,0,0.1837806301050175,0.1011885640860905,1.0,72,0.5283114910125732
+7,77.24997521859187,269,slow-firstpass = 1 AND open-gop = 1 AND tff = 1 AND no-fast-pskip = 1 AND no-chroma-me = 1 AND no-psy = 1 AND cpu-independent = 1,workload==0,0,0.159077468953282,0.0864118213941535,1.0,72,0.5219099521636963
+1,45.351100365472206,499,sliced-threads = 1,sliced-threads==1,0,1.0,1.0,1.0,73,0.8090066909790039
+2,102.53571644251296,252,bff = 1 AND sliced-threads = 1,sliced-threads==1 AND bff==1,0,1.0,1.0,1.0,73,1.1360340118408203
+3,83.34814523746235,690,open-gop = 1 AND no-dct-decimate = 1 AND dts-compress = 1,no-dct-decimate==1 AND dts-compress==1 AND open-gop==1,0,1.0,1.0,1.0,73,1.3966491222381592
+4,16.64638649756372,542,open-gop = 1 AND no-weightb = 1 AND aud = 1 AND opencl = 1,no-weightb==1 AND aud==1 AND opencl==1 AND open-gop==1,0,1.0,1.0,1.0,73,1.6155774593353271
+5,54.227784633732334,447,slow-firstpass = 1 AND tff = 1 AND no-dct-decimate = 1 AND no-asm = 1 AND dts-compress = 1,no-asm==1,3,0.4341913550267119,0.2772952853598014,1.0,73,0.5224344730377197
+6,10.228283958364448,402,slow-firstpass = 1 AND no-deblock = 1 AND no-mixed-refs = 1 AND non-deterministic = 1 AND aud = 1 AND opencl = 1,opencl==1,3,0.3937316356513222,0.2451219512195122,1.0,73,0.5481734275817871
+7,94.74358362918984,306,slow-firstpass = 1 AND no-scenecut = 1 AND no-fast-pskip = 1 AND no-weightb = 1 AND no-dct-decimate = 1 AND pic-struct = 1 AND dts-compress = 1,workload==0,0,0.1789997075168178,0.0982974622550594,1.0,73,0.5612070560455322
+1,55.5741465239895,499,sliced-threads = 1,sliced-threads==1,0,1.0,1.0,1.0,74,0.779289722442627
+2,18.528853256496557,812,no-mixed-refs = 1 AND cpu-independent = 1,no-mixed-refs==1 AND cpu-independent==1,0,1.0,1.0,1.0,74,1.0910923480987549
+3,55.3971761200278,747,intra-refresh = 1 AND bff = 1 AND no-mixed-refs = 1,no-mixed-refs==1 AND intra-refresh==1 AND bff==1,0,1.0,1.0,1.0,74,1.453254222869873
+4,83.74263519577524,530,intra-refresh = 1 AND no-8x8dct = 1 AND no-chroma-me = 1 AND aud = 1,no-8x8dct==1 AND no-chroma-me==1 AND aud==1 AND intra-refresh==1,0,1.0,1.0,1.0,74,1.6022627353668213
+5,22.86883871701666,440,slow-firstpass = 1 AND tff = 1 AND no-psy = 1 AND no-mbtree = 1 AND opencl = 1,slow-firstpass==1 AND no-psy==1 AND no-mbtree==1 AND opencl==1 AND tff==1,0,1.0,1.0,1.0,74,1.532215595245361
+6,72.66571391295334,388,slow-firstpass = 1 AND no-scenecut = 1 AND tff = 1 AND constrained-intra = 1 AND no-chroma-me = 1 AND no-dct-decimate = 1,workload==0,0,0.2216509568694658,0.1246386122711211,1.0,74,0.5010185241699219
+7,83.34950960564143,293,slow-firstpass = 1 AND no-scenecut = 1 AND intra-refresh = 1 AND constrained-intra = 1 AND no-chroma-me = 1 AND no-psy = 1 AND cpu-independent = 1,workload==0,0,0.1720493247210804,0.0941214262769033,1.0,74,0.5185089111328125
+1,39.10032438307135,499,sliced-threads = 1,sliced-threads==1,0,1.0,1.0,1.0,75,0.8021080493927002
+2,66.35349167595987,265,no-dct-decimate = 1 AND sliced-threads = 1,no-dct-decimate==1 AND sliced-threads==1,0,1.0,1.0,1.0,75,0.9758856296539308
+3,89.0019484534937,757,no-cabac = 1 AND no-chroma-me = 1 AND no-mbtree = 1,no-chroma-me==1 AND no-mbtree==1 AND no-cabac==1,0,1.0,1.0,1.0,75,1.4216268062591553
+4,34.317393753655764,520,bff = 1 AND no-fast-pskip = 1 AND no-mbtree = 1 AND dts-compress = 1,no-mbtree==1 AND dts-compress==1 AND bff==1 AND no-fast-pskip==1,0,1.0,1.0,1.0,75,1.614853858947754
+5,73.56317614936256,509,open-gop = 1 AND no-8x8dct = 1 AND no-chroma-me = 1 AND non-deterministic = 1 AND no-asm = 1,workload==0,0,0.2810601877415792,0.1635078702216511,1.0,75,0.5577819347381592
+6,26.408299768034613,337,no-scenecut = 1 AND intra-refresh = 1 AND no-mixed-refs = 1 AND no-weightb = 1 AND cpu-independent = 1 AND dts-compress = 1,non-deterministic==1,3,0.3082364830722587,0.1857490864799025,0.9050445103857568,75,0.5310497283935547
+7,106.86277232552835,268,slow-firstpass = 1 AND intra-refresh = 1 AND tff = 1 AND constrained-intra = 1 AND no-8x8dct = 1 AND no-mbtree = 1 AND aud = 1,workload==0,0,0.1585329784087548,0.0860905878573723,1.0,75,0.5586788654327393
+1,37.16878861287944,499,sliced-threads = 1,sliced-threads==1,0,1.0,1.0,1.0,76,0.7504401206970215
+2,76.94716360751222,298,non-deterministic = 1 AND sliced-threads = 1,non-deterministic==1 AND sliced-threads==1,0,1.0,1.0,1.0,76,0.9823336601257324
+3,19.05861194457975,180,pic-struct = 1 AND dts-compress = 1 AND sliced-threads = 1,workload==0,0,0.1093228059520194,0.0578220366206231,1.0,76,0.4947435855865478
+4,48.89706210971396,534,open-gop = 1 AND no-weightb = 1 AND no-mbtree = 1 AND aud = 1,no-weightb==1 AND no-mbtree==1 AND aud==1 AND open-gop==1,0,1.0,1.0,1.0,76,1.501232385635376
+5,74.97848384546384,445,no-dct-decimate = 1 AND cpu-independent = 1 AND no-asm = 1 AND dts-compress = 1 AND opencl = 1,workload==0,0,0.2501405283867341,0.1429489238676518,1.0,76,0.5095877647399902
+6,14.417250332061462,349,no-scenecut = 1 AND constrained-intra = 1 AND no-weightb = 1 AND non-deterministic = 1 AND aud = 1 AND opencl = 1,no-cabac==1,3,0.3126601742696053,0.1903870162297128,0.8739255014326648,76,0.4844698905944824
+7,61.52539232942973,305,slow-firstpass = 1 AND open-gop = 1 AND tff = 1 AND no-weightb = 1 AND aud = 1 AND dts-compress = 1 AND opencl = 1,workload==0,0,0.1784669397308367,0.0979762287182781,1.0,76,0.4879448413848877
+1,41.61796251732214,499,sliced-threads = 1,sliced-threads==1,0,1.0,1.0,1.0,77,0.7547562122344971
+2,85.13508779959172,847,no-dct-decimate = 1 AND cpu-independent = 1,no-dct-decimate==1 AND cpu-independent==1,0,1.0,1.0,1.0,77,1.0500807762145996
+3,29.81319289397709,615,tff = 1 AND no-dct-decimate = 1 AND cpu-independent = 1,no-dct-decimate==1 AND cpu-independent==1 AND tff==1,0,1.0,1.0,1.0,77,1.2838056087493896
+4,70.18657611792416,708,tff = 1 AND bff = 1 AND constrained-intra = 1 AND no-mixed-refs = 1,no-mixed-refs==1 AND tff==1 AND bff==1 AND constrained-intra==1,0,1.0,1.0,1.0,77,1.672764539718628
+5,57.88142429052485,556,slow-firstpass = 1 AND no-8x8dct = 1 AND no-chroma-me = 1 AND no-mixed-refs = 1 AND no-asm = 1,slow-firstpass==1 AND no-8x8dct==1 AND no-chroma-me==1 AND no-mixed-refs==1 AND no-asm==1,0,1.0,1.0,1.0,77,1.582831859588623
+6,57.68243781779751,406,no-scenecut = 1 AND intra-refresh = 1 AND constrained-intra = 1 AND no-mixed-refs = 1 AND no-asm = 1 AND dts-compress = 1,workload==0,0,0.230747371412333,0.1304208159331834,1.0,77,0.4999873638153076
+7,22.555592797435036,297,slow-firstpass = 1 AND intra-refresh = 1 AND no-deblock = 1 AND no-mixed-refs = 1 AND no-mbtree = 1 AND aud = 1 AND dts-compress = 1,slow-firstpass==1,3,0.3025980641874681,0.1782713085234093,1.0,77,0.4860737323760986
+1,9.690590398602945,499,sliced-threads = 1,sliced-threads==1,0,1.0,1.0,1.0,78,0.7959589958190918
+2,88.78226094732577,919,no-8x8dct = 1 AND dts-compress = 1,no-8x8dct==1 AND dts-compress==1,0,1.0,1.0,1.0,78,1.1254291534423828
+3,96.48725138275256,841,intra-refresh = 1 AND tff = 1 AND constrained-intra = 1,intra-refresh==1 AND tff==1 AND constrained-intra==1,0,1.0,1.0,1.0,78,1.541368007659912
+4,16.25888097840626,593,no-cabac = 1 AND no-8x8dct = 1 AND no-dct-decimate = 1 AND non-deterministic = 1,no-8x8dct==1 AND no-dct-decimate==1 AND non-deterministic==1 AND no-cabac==1,0,1.0,1.0,1.0,78,1.7237229347229004
+5,42.23233617599739,491,constrained-intra = 1 AND no-psy = 1 AND no-dct-decimate = 1 AND pic-struct = 1 AND no-asm = 1,no-psy==1 AND no-dct-decimate==1 AND pic-struct==1 AND no-asm==1 AND constrained-intra==1,0,1.0,1.0,1.0,78,1.585316181182861
+6,42.61669905280617,436,no-scenecut = 1 AND no-cabac = 1 AND no-deblock = 1 AND tff = 1 AND no-chroma-me = 1 AND no-weightb = 1,no-chroma-me==1 AND no-weightb==1 AND no-scenecut==1 AND no-cabac==1 AND no-deblock==1 AND tff==1,0,1.0,1.0,1.0,78,1.2339255809783936
+7,71.61201691690692,273,slow-firstpass = 1 AND intra-refresh = 1 AND no-fast-pskip = 1 AND no-8x8dct = 1 AND no-mbtree = 1 AND pic-struct = 1 AND cpu-independent = 1,workload==0,0,0.1612522150029533,0.0876967555412785,1.0,78,0.531646728515625
+1,96.45537931981124,499,sliced-threads = 1,sliced-threads==1,0,1.0,1.0,1.0,79,0.7386631965637207
+2,53.67294966818673,919,no-8x8dct = 1 AND dts-compress = 1,no-8x8dct==1 AND dts-compress==1,0,1.0,1.0,1.0,79,1.0394635200500488
+3,19.575120161671773,722,intra-refresh = 1 AND no-8x8dct = 1 AND no-dct-decimate = 1,no-8x8dct==1 AND no-dct-decimate==1 AND intra-refresh==1,0,1.0,1.0,1.0,79,1.41538405418396
+4,88.22735635841006,556,open-gop = 1 AND cpu-independent = 1 AND no-asm = 1 AND dts-compress = 1,cpu-independent==1 AND no-asm==1 AND dts-compress==1 AND open-gop==1,0,1.0,1.0,1.0,79,1.5819668769836426
+5,76.63992925890922,419,slow-firstpass = 1 AND no-deblock = 1 AND constrained-intra = 1 AND no-weightb = 1 AND aud = 1,workload==0,0,0.2372593431483578,0.1345968519113395,1.0,79,0.4780387878417969
+6,21.19388554633392,387,no-scenecut = 1 AND no-cabac = 1 AND bff = 1 AND no-mixed-refs = 1 AND no-weightb = 1 AND opencl = 1,no-scenecut==1,3,0.3915022761760243,0.2433962264150943,1.0,79,0.4807519912719726
+7,32.04618535768444,293,slow-firstpass = 1 AND intra-refresh = 1 AND no-chroma-me = 1 AND no-mixed-refs = 1 AND no-psy = 1 AND no-dct-decimate = 1 AND cpu-independent = 1,no-dct-decimate==1,3,0.31104033970276,0.1841609050911376,1.0,79,0.4802391529083252
+1,75.07506602311791,499,sliced-threads = 1,sliced-threads==1,0,1.0,1.0,1.0,8,0.7645590305328369
+2,62.85431258451849,819,tff = 1 AND cpu-independent = 1,cpu-independent==1 AND tff==1,0,1.0,1.0,1.0,8,1.0767664909362793
+3,11.39253767520066,797,no-fast-pskip = 1 AND no-chroma-me = 1 AND no-psy = 1,no-chroma-me==1 AND no-psy==1 AND no-fast-pskip==1,0,1.0,1.0,1.0,8,1.3569636344909668
+4,106.63551270780673,532,tff = 1 AND no-fast-pskip = 1 AND no-weightb = 1 AND non-deterministic = 1,no-weightb==0,0,0.0,0.0,0.0,8,0.7222986221313477
+5,40.18031754398184,405,open-gop = 1 AND constrained-intra = 1 AND no-psy = 1 AND no-dct-decimate = 1 AND cpu-independent = 1,open-gop==1,3,0.4076497232008051,0.2560050568900126,1.0,8,0.4899847507476806
+6,43.55353062676472,412,no-scenecut = 1 AND intra-refresh = 1 AND no-cabac = 1 AND no-8x8dct = 1 AND pic-struct = 1 AND opencl = 1,opencl==1,3,0.4015594541910331,0.2512195121951219,1.0,8,0.4922065734863281
+7,11.139126226234106,338,slow-firstpass = 1 AND intra-refresh = 1 AND no-deblock = 1 AND tff = 1 AND bff = 1 AND pic-struct = 1 AND non-deterministic = 1,bff==1,3,0.3563521349499209,0.2168056446440025,1.0,8,0.4915266036987304
+1,102.56590738325278,499,sliced-threads = 1,sliced-threads==1,0,1.0,1.0,1.0,80,0.758652925491333
+2,67.70567711406514,844,bff = 1 AND cpu-independent = 1,cpu-independent==1 AND bff==1,0,1.0,1.0,1.0,80,1.0757651329040527
+3,35.68500134861435,706,bff = 1 AND pic-struct = 1 AND dts-compress = 1,pic-struct==1 AND dts-compress==1 AND bff==1,0,1.0,1.0,1.0,80,1.356602430343628
+4,50.82231880452838,628,bff = 1 AND no-8x8dct = 1 AND no-chroma-me = 1 AND pic-struct = 1,no-8x8dct==1 AND no-chroma-me==1 AND pic-struct==1 AND bff==1,0,1.0,1.0,1.0,80,1.6723182201385498
+5,45.817623227320055,426,tff = 1 AND no-8x8dct = 1 AND pic-struct = 1 AND no-asm = 1 AND aud = 1,no-asm==1,3,0.4180569185475956,0.2642679900744417,1.0,80,0.5016322135925293
+6,98.726222190172,390,no-scenecut = 1 AND no-deblock = 1 AND bff = 1 AND no-fast-pskip = 1 AND pic-struct = 1 AND opencl = 1,workload==0,0,0.2226662860405367,0.1252810793446835,1.0,80,0.5892713069915771
+7,75.68837788262982,327,slow-firstpass = 1 AND open-gop = 1 AND no-cabac = 1 AND tff = 1 AND no-mbtree = 1 AND non-deterministic = 1 AND opencl = 1,workload==0,0,0.1901162790697674,0.1050433665274654,1.0,80,0.5079851150512695
+1,50.60794742668928,499,sliced-threads = 1,sliced-threads==1,0,1.0,1.0,1.0,81,0.8100872039794922
+2,13.91025361697418,239,constrained-intra = 1 AND sliced-threads = 1,sliced-threads==1 AND constrained-intra==1,0,1.0,1.0,1.0,81,1.0179619789123535
+3,29.79783507107969,779,bff = 1 AND no-fast-pskip = 1 AND pic-struct = 1,pic-struct==1 AND bff==1 AND no-fast-pskip==1,0,1.0,1.0,1.0,81,1.454667329788208
+4,86.79477426373649,537,tff = 1 AND constrained-intra = 1 AND no-mbtree = 1 AND aud = 1,no-mbtree==1 AND aud==1 AND tff==1 AND constrained-intra==1,0,1.0,1.0,1.0,81,1.5891942977905271
+5,26.40170329109538,503,slow-firstpass = 1 AND open-gop = 1 AND no-mixed-refs = 1 AND aud = 1 AND opencl = 1,slow-firstpass==1 AND no-mixed-refs==1 AND aud==1 AND opencl==1 AND open-gop==1,0,1.0,1.0,1.0,81,1.6450951099395752
+6,22.13461340686249,395,slow-firstpass = 1 AND no-scenecut = 1 AND no-8x8dct = 1 AND no-chroma-me = 1 AND no-asm = 1 AND opencl = 1,slow-firstpass==1,3,0.3833090732654051,0.237094837935174,1.0,81,0.5262565612792969
+7,92.76252932281233,309,slow-firstpass = 1 AND open-gop = 1 AND bff = 1 AND constrained-intra = 1 AND no-psy = 1 AND no-mbtree = 1 AND dts-compress = 1,workload==0,0,0.1805961426066627,0.0992611628654031,1.0,81,0.60386061668396
+1,57.434199774183725,499,sliced-threads = 1,sliced-threads==1,0,1.0,1.0,1.0,82,0.7427747249603271
+2,38.44311419588809,265,no-dct-decimate = 1 AND sliced-threads = 1,no-dct-decimate==1 AND sliced-threads==1,0,1.0,1.0,1.0,82,0.9451439380645752
+3,81.97343149504013,629,no-fast-pskip = 1 AND no-chroma-me = 1 AND cpu-independent = 1,no-chroma-me==1 AND cpu-independent==1 AND no-fast-pskip==1,0,1.0,1.0,1.0,82,1.2907836437225342
+4,31.25920114342786,584,no-mixed-refs = 1 AND no-psy = 1 AND no-mbtree = 1 AND no-asm = 1,no-mixed-refs==1 AND no-psy==1 AND no-mbtree==1 AND no-asm==1,0,1.0,1.0,1.0,82,1.6326923370361328
+5,15.522837677988004,487,slow-firstpass = 1 AND open-gop = 1 AND bff = 1 AND no-fast-pskip = 1 AND opencl = 1,slow-firstpass==1 AND opencl==1 AND open-gop==1 AND bff==1 AND no-fast-pskip==1,0,1.0,1.0,1.0,82,1.4049477577209473
+6,40.765413197952974,387,intra-refresh = 1 AND constrained-intra = 1 AND no-fast-pskip = 1 AND no-mixed-refs = 1 AND non-deterministic = 1 AND no-asm = 1,non-deterministic==1,3,0.3814687037949729,0.2356881851400731,1.0,82,0.4942500591278076
+7,104.1736604644188,340,slow-firstpass = 1 AND no-scenecut = 1 AND open-gop = 1 AND no-cabac = 1 AND no-deblock = 1 AND no-fast-pskip = 1 AND no-weightb = 1,workload==0,0,0.1969302056183029,0.1092194025056216,1.0,82,0.5521531105041504
+1,27.31972725100188,499,sliced-threads = 1,sliced-threads==1,0,1.0,1.0,1.0,83,0.7829194068908691
+2,26.167744513548925,289,pic-struct = 1 AND sliced-threads = 1,pic-struct==1 AND sliced-threads==1,0,1.0,1.0,1.0,83,0.9651918411254884
+3,15.61365918615873,187,open-gop = 1 AND constrained-intra = 1 AND sliced-threads = 1,workload==0,0,0.1133333333333333,0.0600706713780918,1.0,83,0.5117034912109375
+4,95.42422090198636,622,slow-firstpass = 1 AND no-fast-pskip = 1 AND pic-struct = 1 AND non-deterministic = 1,slow-firstpass==1 AND pic-struct==1 AND non-deterministic==1 AND no-fast-pskip==1,0,1.0,1.0,1.0,83,1.628326416015625
+5,34.291194714961904,435,intra-refresh = 1 AND constrained-intra = 1 AND no-mbtree = 1 AND no-dct-decimate = 1 AND dts-compress = 1,no-mbtree==1 AND no-dct-decimate==1 AND dts-compress==1 AND intra-refresh==1 AND constrained-intra==1,0,1.0,1.0,1.0,83,1.2951571941375732
+6,83.40966106239804,353,intra-refresh = 1 AND no-cabac = 1 AND no-psy = 1 AND no-dct-decimate = 1 AND no-asm = 1 AND opencl = 1,workload==0,0,0.2036930178880553,0.1133954384837777,1.0,83,0.5618462562561035
+7,53.174967242671805,316,slow-firstpass = 1 AND no-cabac = 1 AND tff = 1 AND no-mixed-refs = 1 AND no-psy = 1 AND non-deterministic = 1 AND aud = 1,workload==0,0,0.184310294546515,0.1015097976228718,1.0,83,0.5068869590759277
+1,29.101622433226897,499,sliced-threads = 1,sliced-threads==1,0,1.0,1.0,1.0,84,0.7443602085113525
+2,102.9720724228313,799,no-mbtree = 1 AND cpu-independent = 1,no-mbtree==1 AND cpu-independent==1,0,1.0,1.0,1.0,84,1.081151247024536
+3,86.07029520017615,652,bff = 1 AND no-mbtree = 1 AND dts-compress = 1,no-mbtree==1 AND dts-compress==1 AND bff==1,0,1.0,1.0,1.0,84,1.2536485195159912
+4,104.65016416604062,610,tff = 1 AND no-mixed-refs = 1 AND no-weightb = 1 AND no-dct-decimate = 1,no-mixed-refs==1 AND no-weightb==1 AND no-dct-decimate==1 AND tff==1,0,1.0,1.0,1.0,84,1.5829861164093018
+5,51.45320412716296,435,no-cabac = 1 AND no-deblock = 1 AND no-8x8dct = 1 AND no-mixed-refs = 1 AND aud = 1,slow-firstpass==1,3,0.3607805806758686,0.2274909963985594,0.871264367816092,84,0.48506760597229
+6,86.96499025992149,352,no-scenecut = 1 AND tff = 1 AND constrained-intra = 1 AND no-chroma-me = 1 AND no-mixed-refs = 1 AND cpu-independent = 1,workload==0,0,0.2031746031746031,0.1130742049469964,1.0,84,0.548302173614502
+7,68.1423101242022,338,slow-firstpass = 1 AND open-gop = 1 AND no-deblock = 1 AND tff = 1 AND no-mixed-refs = 1 AND non-deterministic = 1 AND opencl = 1,workload==0,0,0.1958852506519849,0.1085769354320591,1.0,84,0.4978241920471191
+1,63.56679698930533,499,sliced-threads = 1,sliced-threads==1,0,1.0,1.0,1.0,85,0.7525403499603271
+2,81.00821196038781,289,pic-struct = 1 AND sliced-threads = 1,pic-struct==1 AND sliced-threads==1,0,1.0,1.0,1.0,85,1.023463487625122
+3,72.39034070743045,741,tff = 1 AND non-deterministic = 1 AND dts-compress = 1,non-deterministic==1 AND dts-compress==1 AND tff==1,0,1.0,1.0,1.0,85,1.3001744747161863
+4,96.76852358143014,514,no-cabac = 1 AND no-deblock = 1 AND cpu-independent = 1 AND no-asm = 1,cpu-independent==1 AND no-asm==1 AND no-cabac==1 AND no-deblock==1,0,1.0,1.0,1.0,85,1.5772333145141602
+5,39.1341042885393,427,slow-firstpass = 1 AND no-8x8dct = 1 AND pic-struct = 1 AND cpu-independent = 1 AND no-asm = 1,slow-firstpass==1 AND no-8x8dct==1 AND pic-struct==1 AND cpu-independent==1 AND no-asm==1,0,1.0,1.0,1.0,85,1.21441912651062
+6,78.66289557050999,424,no-scenecut = 1 AND no-deblock = 1 AND bff = 1 AND no-fast-pskip = 1 AND no-8x8dct = 1 AND no-dct-decimate = 1,workload==0,0,0.2397512015832626,0.1362030195952457,1.0,85,0.5088400840759277
+7,6.884028753747036,280,slow-firstpass = 1 AND open-gop = 1 AND no-cabac = 1 AND tff = 1 AND no-psy = 1 AND cpu-independent = 1 AND dts-compress = 1,workload==0,0,0.1650456822870616,0.0899453902987472,1.0,85,0.483513593673706
+1,30.0876500892561,499,sliced-threads = 1,sliced-threads==1,0,1.0,1.0,1.0,86,0.7395546436309814
+2,102.38015252058838,270,opencl = 1 AND sliced-threads = 1,opencl==1 AND sliced-threads==1,0,1.0,1.0,1.0,86,1.032982587814331
+3,81.65275507645578,720,no-mixed-refs = 1 AND no-weightb = 1 AND opencl = 1,no-mixed-refs==1 AND no-weightb==1 AND opencl==1,0,1.0,1.0,1.0,86,1.3055214881896973
+4,21.97851007635952,614,no-scenecut = 1 AND open-gop = 1 AND no-psy = 1 AND non-deterministic = 1,no-psy==1 AND non-deterministic==1 AND no-scenecut==1 AND open-gop==1,0,1.0,1.0,1.0,86,1.5849778652191162
+5,53.87399506412006,418,no-deblock = 1 AND tff = 1 AND bff = 1 AND no-weightb = 1 AND cpu-independent = 1,no-deblock==1,3,0.4134520276953511,0.2605985037406483,1.0,86,0.4856834411621094
+6,101.71957206044176,420,slow-firstpass = 1 AND open-gop = 1 AND constrained-intra = 1 AND no-fast-pskip = 1 AND no-chroma-me = 1 AND pic-struct = 1,workload==0,0,0.2377582790829323,0.1349180854481207,1.0,86,0.6086878776550293
+7,91.0489112942221,274,slow-firstpass = 1 AND no-scenecut = 1 AND no-deblock = 1 AND constrained-intra = 1 AND no-8x8dct = 1 AND no-mbtree = 1 AND non-deterministic = 1,workload==0,0,0.1617950989075878,0.0880179890780597,1.0,86,0.4820184707641601
+1,83.8906483610127,499,sliced-threads = 1,sliced-threads==1,0,1.0,1.0,1.0,87,0.7611019611358643
+2,21.17296474237976,253,no-chroma-me = 1 AND sliced-threads = 1,no-chroma-me==1 AND sliced-threads==1,0,1.0,1.0,1.0,87,0.9435455799102784
+3,27.837368175862352,795,no-chroma-me = 1 AND no-mbtree = 1 AND pic-struct = 1,no-chroma-me==1 AND no-mbtree==1 AND pic-struct==1,0,1.0,1.0,1.0,87,1.4040358066558838
+4,103.00581443840753,547,no-scenecut = 1 AND intra-refresh = 1 AND cpu-independent = 1 AND opencl = 1,cpu-independent==1 AND no-scenecut==1 AND opencl==1 AND intra-refresh==1,0,1.0,1.0,1.0,87,1.645132541656494
+5,57.468976798877925,547,slow-firstpass = 1 AND open-gop = 1 AND no-cabac = 1 AND no-mixed-refs = 1 AND no-asm = 1,slow-firstpass==1 AND no-mixed-refs==1 AND no-asm==1 AND open-gop==1 AND no-cabac==1,0,1.0,1.0,1.0,87,1.6155657768249512
+6,104.51493395143652,396,slow-firstpass = 1 AND bff = 1 AND no-chroma-me = 1 AND no-psy = 1 AND no-weightb = 1 AND no-asm = 1,no-psy==0,0,0.0,0.0,0.0,87,0.6191880702972412
+7,49.03355470405634,313,slow-firstpass = 1 AND intra-refresh = 1 AND open-gop = 1 AND no-deblock = 1 AND no-8x8dct = 1 AND no-asm = 1 AND opencl = 1,slow-firstpass==1,3,0.3163213744315311,0.187875150060024,1.0,87,0.5052735805511475
+1,85.77290236941555,499,sliced-threads = 1,sliced-threads==1,0,1.0,1.0,1.0,88,0.8252158164978027
+2,77.79430119901504,289,pic-struct = 1 AND sliced-threads = 1,pic-struct==1 AND sliced-threads==1,0,1.0,1.0,1.0,88,1.0999817848205566
+3,33.20649832740911,675,intra-refresh = 1 AND pic-struct = 1 AND aud = 1,pic-struct==1 AND aud==1 AND intra-refresh==1,0,1.0,1.0,1.0,88,1.4520981311798096
+4,54.08854038605616,631,no-scenecut = 1 AND bff = 1 AND no-fast-pskip = 1 AND no-mixed-refs = 1,no-mixed-refs==1 AND no-scenecut==1 AND bff==1 AND no-fast-pskip==1,0,1.0,1.0,1.0,88,1.8343560695648196
+5,48.82186925228368,503,no-scenecut = 1 AND open-gop = 1 AND bff = 1 AND no-mbtree = 1 AND pic-struct = 1,no-mbtree==1 AND pic-struct==1 AND no-scenecut==1 AND open-gop==1 AND bff==1,0,1.0,1.0,1.0,88,1.626305341720581
+6,72.32606454182361,356,intra-refresh = 1 AND no-deblock = 1 AND tff = 1 AND no-weightb = 1 AND dts-compress = 1 AND opencl = 1,workload==0,0,0.2052464687229749,0.1143591390941214,1.0,88,0.5477032661437988
+7,86.4915996829467,305,slow-firstpass = 1 AND no-cabac = 1 AND bff = 1 AND constrained-intra = 1 AND no-weightb = 1 AND no-dct-decimate = 1 AND aud = 1,workload==0,0,0.1784669397308367,0.0979762287182781,1.0,88,0.5501468181610107
+1,31.796215353333658,499,sliced-threads = 1,sliced-threads==1,0,1.0,1.0,1.0,89,0.8432645797729492
+2,22.847245987155148,926,intra-refresh = 1 AND dts-compress = 1,dts-compress==1 AND intra-refresh==1,0,1.0,1.0,1.0,89,1.2352163791656494
+3,38.807367223694754,802,no-cabac = 1 AND no-deblock = 1 AND no-fast-pskip = 1,no-cabac==1 AND no-deblock==1 AND no-fast-pskip==1,0,1.0,1.0,1.0,89,1.5445237159729004
+4,46.849315050672544,614,no-scenecut = 1 AND tff = 1 AND constrained-intra = 1 AND no-8x8dct = 1,no-8x8dct==1 AND no-scenecut==1 AND tff==1 AND constrained-intra==1,0,1.0,1.0,1.0,89,1.872698783874512
+5,49.40322903084027,450,no-scenecut = 1 AND open-gop = 1 AND no-dct-decimate = 1 AND no-asm = 1 AND aud = 1,no-asm==1,3,0.4364694471387003,0.2791563275434243,1.0,89,0.5460267066955566
+6,76.17159468054001,417,slow-firstpass = 1 AND no-deblock = 1 AND tff = 1 AND bff = 1 AND no-chroma-me = 1 AND no-asm = 1,workload==0,0,0.2362606232294617,0.133954384837777,1.0,89,0.5412664413452148
+7,19.104326397810453,333,slow-firstpass = 1 AND no-scenecut = 1 AND no-mbtree = 1 AND no-dct-decimate = 1 AND non-deterministic = 1 AND no-asm = 1 AND opencl = 1,slow-firstpass==1 AND no-mbtree==1 AND no-dct-decimate==1 AND non-deterministic==1 AND no-scenecut==1 AND no-asm==1 AND opencl==1,0,1.0,1.0,1.0,89,1.1027872562408447
+1,89.85048829390034,499,sliced-threads = 1,sliced-threads==1,0,1.0,1.0,1.0,9,0.7451679706573486
+2,44.324978630905136,932,intra-refresh = 1 AND no-psy = 1,no-psy==1 AND intra-refresh==1,0,1.0,1.0,1.0,9,1.079023838043213
+3,99.35357387608896,755,no-deblock = 1 AND pic-struct = 1 AND non-deterministic = 1,pic-struct==1 AND non-deterministic==1 AND no-deblock==1,0,1.0,1.0,1.0,9,1.3238849639892578
+4,37.7755985275988,544,no-deblock = 1 AND no-mbtree = 1 AND non-deterministic = 1 AND opencl = 1,no-mbtree==1 AND non-deterministic==1 AND opencl==1 AND no-deblock==1,0,1.0,1.0,1.0,9,1.4997353553771973
+5,53.791524348572736,496,no-deblock = 1 AND no-fast-pskip = 1 AND no-chroma-me = 1 AND no-mbtree = 1 AND pic-struct = 1,no-fast-pskip==1,3,0.4815533980582524,0.3171355498721228,1.0,9,0.4824368953704834
+6,27.672691106463702,378,slow-firstpass = 1 AND no-scenecut = 1 AND no-cabac = 1 AND no-fast-pskip = 1 AND no-mbtree = 1 AND opencl = 1,slow-firstpass==1 AND no-mbtree==1 AND no-scenecut==1 AND opencl==1 AND no-cabac==1 AND no-fast-pskip==1,0,1.0,1.0,1.0,9,1.1627817153930664
+7,96.97030915674996,352,slow-firstpass = 1 AND open-gop = 1 AND no-cabac = 1 AND no-deblock = 1 AND no-chroma-me = 1 AND no-weightb = 1 AND no-dct-decimate = 1,workload==0,0,0.2031746031746031,0.1130742049469964,1.0,9,0.537177562713623
+1,100.22790580460946,499,sliced-threads = 1,sliced-threads==1,0,1.0,1.0,1.0,90,0.7614734172821045
+2,15.842157086942173,917,no-psy = 1 AND dts-compress = 1,no-psy==1 AND dts-compress==1,0,1.0,1.0,1.0,90,1.077305793762207
+3,32.68255990676858,654,no-8x8dct = 1 AND no-chroma-me = 1 AND cpu-independent = 1,no-8x8dct==1 AND no-chroma-me==1 AND cpu-independent==1,0,1.0,1.0,1.0,90,1.3649499416351318
+4,30.893157976166265,528,slow-firstpass = 1 AND no-scenecut = 1 AND cpu-independent = 1 AND opencl = 1,slow-firstpass==1 AND cpu-independent==1 AND no-scenecut==1 AND opencl==1,0,1.0,1.0,1.0,90,1.5468637943267822
+5,67.1359696147262,512,intra-refresh = 1 AND tff = 1 AND bff = 1 AND constrained-intra = 1 AND dts-compress = 1,dts-compress==1 AND intra-refresh==1 AND tff==1 AND bff==1 AND constrained-intra==1,0,1.0,1.0,1.0,90,1.495767593383789
+6,61.24869832359296,348,intra-refresh = 1 AND no-fast-pskip = 1 AND non-deterministic = 1 AND cpu-independent = 1 AND no-asm = 1 AND aud = 1,workload==0,0,0.2010979485697775,0.1117892707998715,1.0,90,0.5125274658203125
+7,81.07497895355728,356,slow-firstpass = 1 AND no-deblock = 1 AND bff = 1 AND constrained-intra = 1 AND no-asm = 1 AND dts-compress = 1 AND opencl = 1,workload==0,0,0.2052464687229749,0.1143591390941214,1.0,90,0.5161826610565186
+1,24.24491034242076,499,sliced-threads = 1,sliced-threads==1,0,1.0,1.0,1.0,91,0.7496826648712158
+2,44.70094551848113,933,intra-refresh = 1 AND no-8x8dct = 1,no-8x8dct==1 AND intra-refresh==1,0,1.0,1.0,1.0,91,1.0724241733551023
+3,33.67919855551507,697,no-8x8dct = 1 AND aud = 1 AND opencl = 1,no-8x8dct==1 AND aud==1 AND opencl==1,0,1.0,1.0,1.0,91,1.3589072227478027
+4,9.800335089416098,542,open-gop = 1 AND bff = 1 AND no-dct-decimate = 1 AND aud = 1,no-dct-decimate==1 AND aud==1 AND open-gop==1 AND bff==1,0,1.0,1.0,1.0,91,1.5597450733184814
+5,85.06486657807092,440,intra-refresh = 1 AND constrained-intra = 1 AND no-mixed-refs = 1 AND non-deterministic = 1 AND cpu-independent = 1,workload==0,0,0.2476780185758513,0.1413427561837456,1.0,91,0.5708804130554199
+6,75.6849544251977,414,slow-firstpass = 1 AND no-cabac = 1 AND constrained-intra = 1 AND no-fast-pskip = 1 AND no-8x8dct = 1 AND no-psy = 1,workload==0,0,0.2347604196200737,0.1329906842274333,1.0,91,0.5007092952728271
+7,104.57258303514908,292,slow-firstpass = 1 AND no-scenecut = 1 AND tff = 1 AND no-psy = 1 AND no-weightb = 1 AND no-asm = 1 AND dts-compress = 1,workload==0,0,0.1715124816446402,0.093800192740122,1.0,91,0.5482327938079834
+1,87.44859937866471,499,sliced-threads = 1,sliced-threads==1,0,1.0,1.0,1.0,92,0.7743957042694092
+2,50.38133836206365,912,no-mbtree = 1 AND dts-compress = 1,no-mbtree==1 AND dts-compress==1,0,1.0,1.0,1.0,92,1.107187271118164
+3,38.97950628481566,720,tff = 1 AND no-dct-decimate = 1 AND opencl = 1,no-dct-decimate==1 AND opencl==1 AND tff==1,0,1.0,1.0,1.0,92,1.3656127452850342
+4,104.87623417129936,520,no-psy = 1 AND cpu-independent = 1 AND no-asm = 1 AND aud = 1,no-psy==1 AND cpu-independent==1 AND no-asm==1 AND aud==1,0,1.0,1.0,1.0,92,1.6058874130249023
+5,15.647678553565616,468,slow-firstpass = 1 AND constrained-intra = 1 AND no-fast-pskip = 1 AND no-chroma-me = 1 AND dts-compress = 1,slow-firstpass==1 AND no-chroma-me==1 AND dts-compress==1 AND constrained-intra==1 AND no-fast-pskip==1,0,1.0,1.0,1.0,92,1.4392096996307373
+6,14.064127671504483,364,intra-refresh = 1 AND constrained-intra = 1 AND no-mixed-refs = 1 AND no-psy = 1 AND pic-struct = 1 AND dts-compress = 1,workload==0,0,0.2093758987633017,0.1169290073883713,1.0,92,0.5030398368835449
+7,39.53860085279264,254,slow-firstpass = 1 AND no-deblock = 1 AND tff = 1 AND no-fast-pskip = 1 AND no-mbtree = 1 AND cpu-independent = 1 AND opencl = 1,slow-firstpass==1,3,0.2645833333333333,0.1524609843937575,1.0,92,0.5004210472106934
+1,62.09709288445665,499,sliced-threads = 1,sliced-threads==1,0,1.0,1.0,1.0,93,0.8148677349090576
+2,34.38573737938814,883,intra-refresh = 1 AND aud = 1,aud==1 AND intra-refresh==1,0,1.0,1.0,1.0,93,1.1519434452056885
+3,21.03954434191061,763,slow-firstpass = 1 AND no-weightb = 1 AND pic-struct = 1,slow-firstpass==1 AND no-weightb==1 AND pic-struct==1,0,1.0,1.0,1.0,93,1.4924612045288086
+4,51.577581709682335,573,constrained-intra = 1 AND no-fast-pskip = 1 AND no-8x8dct = 1 AND aud = 1,no-8x8dct==1 AND aud==1 AND constrained-intra==1 AND no-fast-pskip==1,0,1.0,1.0,1.0,93,1.6685447692871094
+5,26.811115372001368,365,no-scenecut = 1 AND no-8x8dct = 1 AND no-dct-decimate = 1 AND cpu-independent = 1 AND aud = 1,no-dct-decimate==1,3,0.3732106339468303,0.2294154619736015,1.0,93,0.5238907337188721
+6,100.2264757706282,445,intra-refresh = 1 AND no-cabac = 1 AND non-deterministic = 1 AND aud = 1 AND dts-compress = 1 AND opencl = 1,workload==0,4,0.2501405283867341,0.1429489238676518,1.0,93,0.6777153015136719
+7,55.22654843943624,308,slow-firstpass = 1 AND no-cabac = 1 AND tff = 1 AND no-weightb = 1 AND no-mbtree = 1 AND no-asm = 1 AND aud = 1,workload==0,0,0.180064308681672,0.0989399293286219,1.0,93,0.5239453315734863
+1,96.09009761416092,499,sliced-threads = 1,sliced-threads==1,0,1.0,1.0,1.0,94,0.750354528427124
+2,23.1246229849716,824,cpu-independent = 1 AND aud = 1,cpu-independent==1 AND aud==1,0,1.0,1.0,1.0,94,1.133988857269287
+3,39.51020766387704,157,cpu-independent = 1 AND no-asm = 1 AND sliced-threads = 1,workload==0,0,0.0960244648318042,0.0504336652746546,1.0,94,0.4938211441040039
+4,86.87329110479442,593,no-mixed-refs = 1 AND no-dct-decimate = 1 AND non-deterministic = 1 AND opencl = 1,no-mixed-refs==1 AND no-dct-decimate==1 AND non-deterministic==1 AND opencl==1,0,1.0,1.0,1.0,94,1.5557470321655271
+5,105.98002731171314,427,open-gop = 1 AND no-psy = 1 AND no-mbtree = 1 AND no-asm = 1 AND aud = 1,no-mbtree==0,0,0.0,0.0,0.0,94,0.6138675212860107
+6,72.0247750117104,337,no-scenecut = 1 AND tff = 1 AND no-fast-pskip = 1 AND pic-struct = 1 AND no-asm = 1 AND aud = 1,workload==0,0,0.1953623188405797,0.1082557018952778,1.0,94,0.4959075450897217
+7,80.62284169731652,311,slow-firstpass = 1 AND open-gop = 1 AND no-cabac = 1 AND tff = 1 AND no-fast-pskip = 1 AND no-weightb = 1 AND dts-compress = 1,workload==0,0,0.1816588785046728,0.0999036299389656,1.0,94,0.4840552806854248
+1,8.078301692951754,499,sliced-threads = 1,sliced-threads==1,0,1.0,1.0,1.0,95,0.7673995494842529
+2,57.553837659474674,270,no-scenecut = 1 AND sliced-threads = 1,no-scenecut==1 AND sliced-threads==1,0,1.0,1.0,1.0,95,0.9553894996643066
+3,50.789321817126655,870,no-cabac = 1 AND tff = 1 AND constrained-intra = 1,no-cabac==1 AND tff==1 AND constrained-intra==1,0,1.0,1.0,1.0,95,1.4580590724945068
+4,18.663047013703427,609,no-fast-pskip = 1 AND no-mixed-refs = 1 AND dts-compress = 1 AND opencl = 1,no-mixed-refs==1 AND dts-compress==1 AND opencl==1 AND no-fast-pskip==1,0,1.0,1.0,1.0,95,1.7240688800811768
+5,84.14738244833467,485,no-scenecut = 1 AND bff = 1 AND constrained-intra = 1 AND no-mixed-refs = 1 AND dts-compress = 1,workload==0,0,0.2695942190105614,0.1557982653389013,1.0,95,0.5607831478118896
+6,75.99269689047793,344,no-scenecut = 1 AND intra-refresh = 1 AND tff = 1 AND no-chroma-me = 1 AND cpu-independent = 1 AND dts-compress = 1,workload==0,0,0.1990164882846398,0.1105043366527465,1.0,95,0.5149068832397461
+7,39.287864139660805,293,slow-firstpass = 1 AND intra-refresh = 1 AND no-deblock = 1 AND constrained-intra = 1 AND no-dct-decimate = 1 AND non-deterministic = 1 AND aud = 1,slow-firstpass==1,3,0.2991322103113834,0.1758703481392557,1.0,95,0.4908485412597656
+1,92.48894116902711,499,sliced-threads = 1,sliced-threads==1,0,1.0,1.0,1.0,96,0.8649604320526123
+2,64.68608413428666,243,aud = 1 AND sliced-threads = 1,workload==0,0,0.1448152562574493,0.0780597494378413,1.0,96,0.5708377361297607
+3,41.66176748889363,761,slow-firstpass = 1 AND no-deblock = 1 AND pic-struct = 1,slow-firstpass==1 AND pic-struct==1 AND no-deblock==1,0,1.0,1.0,1.0,96,1.5555174350738523
+4,34.46739401092226,675,no-scenecut = 1 AND no-cabac = 1 AND tff = 1 AND no-mixed-refs = 1,no-mixed-refs==1 AND no-scenecut==1 AND no-cabac==1 AND tff==1,0,1.0,1.0,1.0,96,1.9563570022583008
+5,56.2135209059764,484,open-gop = 1 AND no-cabac = 1 AND no-fast-pskip = 1 AND no-chroma-me = 1 AND aud = 1,workload==0,0,0.2691131498470948,0.1554770318021201,1.0,96,0.5551776885986328
+6,40.226777062319904,445,slow-firstpass = 1 AND intra-refresh = 1 AND open-gop = 1 AND bff = 1 AND constrained-intra = 1 AND no-mixed-refs = 1,slow-firstpass==1 AND no-mixed-refs==1 AND intra-refresh==1 AND open-gop==1 AND bff==1 AND constrained-intra==1,0,1.0,1.0,1.0,96,1.489898920059204
+7,87.73290268212922,349,slow-firstpass = 1 AND no-scenecut = 1 AND open-gop = 1 AND no-deblock = 1 AND pic-struct = 1 AND non-deterministic = 1 AND opencl = 1,workload==0,0,0.2016175621028307,0.1121105043366527,1.0,96,0.6025395393371582
+1,29.96568029301776,499,sliced-threads = 1,sliced-threads==1,0,1.0,1.0,1.0,97,0.8934531211853027
+2,59.78423153152998,265,no-dct-decimate = 1 AND sliced-threads = 1,no-dct-decimate==1 AND sliced-threads==1,0,1.0,1.0,1.0,97,1.0996432304382324
+3,79.28540403576845,758,slow-firstpass = 1 AND open-gop = 1 AND no-psy = 1,slow-firstpass==1 AND no-psy==1 AND open-gop==1,0,1.0,1.0,1.0,97,1.557952880859375
+4,32.20886385006905,591,no-scenecut = 1 AND bff = 1 AND no-weightb = 1 AND pic-struct = 1,no-weightb==1 AND pic-struct==1 AND no-scenecut==1 AND bff==1,0,1.0,1.0,1.0,97,1.8905246257781985
+5,59.81863476551314,473,open-gop = 1 AND no-fast-pskip = 1 AND no-psy = 1 AND no-dct-decimate = 1 AND non-deterministic = 1,workload==0,0,0.263803680981595,0.1519434628975265,1.0,97,0.588508129119873
+6,48.49464307492814,318,no-scenecut = 1 AND no-cabac = 1 AND no-fast-pskip = 1 AND no-psy = 1 AND cpu-independent = 1 AND dts-compress = 1,workload==0,0,0.1853686971728359,0.1021522646964343,1.0,97,0.5766422748565674
+7,92.21095541977186,265,slow-firstpass = 1 AND intra-refresh = 1 AND no-mixed-refs = 1 AND no-dct-decimate = 1 AND cpu-independent = 1 AND aud = 1 AND opencl = 1,workload==0,0,0.1568975725281231,0.0851268872470285,1.0,97,0.6147058010101318
+1,49.61040427327771,499,sliced-threads = 1,sliced-threads==1,0,1.0,1.0,1.0,98,0.8694198131561279
+2,25.463076805514632,917,no-psy = 1 AND dts-compress = 1,no-psy==1 AND dts-compress==1,0,1.0,1.0,1.0,98,1.239691972732544
+3,61.605435144982266,176,bff = 1 AND no-fast-pskip = 1 AND sliced-threads = 1,workload==0,0,0.1070234113712374,0.0565371024734982,1.0,98,0.5546560287475586
+4,30.28362703300423,531,intra-refresh = 1 AND no-fast-pskip = 1 AND no-weightb = 1 AND no-asm = 1,no-weightb==1 AND no-asm==1 AND intra-refresh==1 AND no-fast-pskip==1,0,1.0,1.0,1.0,98,1.7630085945129397
+5,32.95311052182388,460,open-gop = 1 AND no-cabac = 1 AND no-deblock = 1 AND constrained-intra = 1 AND cpu-independent = 1,cpu-independent==1 AND open-gop==1 AND no-cabac==1 AND no-deblock==1 AND constrained-intra==1,0,1.0,1.0,1.0,98,1.7530748844146729
+6,64.63283801020607,431,no-scenecut = 1 AND no-cabac = 1 AND tff = 1 AND no-mixed-refs = 1 AND no-dct-decimate = 1 AND pic-struct = 1,workload==0,0,0.2432279909706546,0.1384516543527144,1.0,98,0.55678391456604
+7,38.47831212949009,361,slow-firstpass = 1 AND no-scenecut = 1 AND open-gop = 1 AND no-deblock = 1 AND bff = 1 AND constrained-intra = 1 AND no-8x8dct = 1,open-gop==1,3,0.3715903242408646,0.2281921618204804,1.0,98,0.5556416511535645
+1,31.89066628886508,499,sliced-threads = 1,sliced-threads==1,0,1.0,1.0,1.0,99,0.7565443515777588
+2,61.97097264625358,265,no-dct-decimate = 1 AND sliced-threads = 1,no-dct-decimate==1 AND sliced-threads==1,0,1.0,1.0,1.0,99,0.932114601135254
+3,11.767428818908762,203,no-scenecut = 1 AND no-cabac = 1 AND sliced-threads = 1,workload==0,0,0.1224366706875754,0.0652104079665917,1.0,99,0.487260103225708
+4,19.69337982487503,580,slow-firstpass = 1 AND no-scenecut = 1 AND no-deblock = 1 AND no-chroma-me = 1,slow-firstpass==1 AND no-chroma-me==1 AND no-scenecut==1 AND no-deblock==1,0,1.0,1.0,1.0,99,1.5947322845458984
+5,98.67392578294314,533,constrained-intra = 1 AND no-fast-pskip = 1 AND no-mixed-refs = 1 AND no-weightb = 1 AND no-mbtree = 1,no-weightb==0,0,0.0,0.0,0.0,99,0.6177558898925781
+6,105.42164309184028,421,no-scenecut = 1 AND bff = 1 AND constrained-intra = 1 AND no-8x8dct = 1 AND no-mixed-refs = 1 AND no-asm = 1,no-8x8dct==0,0,0.0,0.0,0.0,99,0.6214087009429932
+7,90.54204288690336,306,slow-firstpass = 1 AND no-cabac = 1 AND tff = 1 AND no-8x8dct = 1 AND no-mbtree = 1 AND pic-struct = 1 AND non-deterministic = 1,workload==0,0,0.1789997075168178,0.0982974622550594,1.0,99,0.5030672550201416

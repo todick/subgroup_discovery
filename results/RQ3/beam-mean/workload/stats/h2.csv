@@ -1,0 +1,2 @@
+num_features,num_samples,sgs_unique,sgs_mean_jaccard,sgs_mean_overlap_coefficient,coverage_mean,coverage_total,rule_features_used,rule_feature_frequency,rule_num_features,rule_length_mean,rule_length_max,rule_length_min,runtime
+17,1954,1,,,0.24002047082906858,0.24002047082906858,"['MVSTORE', 'workload', 'PAGE_STORE_INTERNAL_COUNT', 'PAGE_STORE_TRIM', 'RECOMPILE_ALWAYS']","[('MVSTORE', 5), ('workload', 2), ('PAGE_STORE_INTERNAL_COUNT', 1), ('PAGE_STORE_TRIM', 2), ('RECOMPILE_ALWAYS', 5)]",5,3.0,4.0,2.0,0.5313646793365479

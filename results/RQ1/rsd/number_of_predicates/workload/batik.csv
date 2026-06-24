@@ -1,0 +1,336 @@
+n_conditions,sg_mean,sg_cardinality,sg_rule,best_rule,best_rule_idx,f1,precision,recall,seed,runtime
+1,11.70399145117719,480,dpi = 400.0,dpi >= 400.0,0,1.0,1.0,1.0,0,16.064959287643433
+2,9.380655722195566,240,anyScriptOrigin = 1 AND indexed = 4.0,anyScriptOrigin >= 1.0  AND  4.0 <= indexed < 8.0,1,1.0,1.0,1.0,0,16.763703107833862
+3,12.412627310528189,96,tiff = 1 AND dpi = 50.0 AND quality = 0.1,tiff >= 1.0  AND  dpi < 100.0,0,1.0,1.0,1.0,0,12.380466222763062
+1,12.34646324690353,480,indexed = 1.0,indexed < 2.0,1,1.0,1.0,1.0,1,20.1092267036438
+2,19.258218869028724,160,dpi = 50.0 AND resolution = 8294400.0,dpi < 100.0  AND  resolution >= 5184000.0,0,1.0,1.0,1.0,1,14.63330626487732
+3,12.34340376272361,128,jpg = 1 AND resolution = 8294400.0 AND quality = 0.9,resolution >= 8294400.0  AND  quality >= 0.9  AND  indexed < 8.0,0,0.8571428571428571,1.0,0.75,1,12.367062330245972
+1,13.241677313199212,480,dpi = 50.0,dpi < 100.0,2,1.0,1.0,1.0,10,24.78408670425415
+2,9.42989986518728,160,dpi = 50.0 AND resolution = 307200.0,dpi < 100.0  AND  resolution < 2073600.0,0,1.0,1.0,1.0,10,11.923893928527832
+3,12.082525180476328,128,resolution = 2073600.0 AND quality = 0.1 AND indexed = 1.0,2073600.0 <= resolution < 8294400.0  AND  indexed < 2.0  AND  0.1 <= quality < 0.9,0,1.0,1.0,1.0,10,11.99724578857422
+1,14.364854673549242,480,dpi = 400.0,dpi >= 400.0,0,1.0,1.0,1.0,11,13.396458864212036
+2,14.543221140705173,240,onload = 1 AND indexed = 4.0,onload >= 1.0  AND  4.0 <= indexed < 8.0,0,1.0,1.0,1.0,11,12.485354661941528
+3,18.8796158690818,119,anyScriptOrigin = 1 AND onload = 1 AND indexed = 2.0,onload >= 1.0  AND  2.0 <= indexed < 4.0  AND  anyScriptOrigin >= 1.0,0,1.0,1.0,1.0,11,12.1959810256958
+4,13.365640470473162,192,anyScriptOrigin = 1 AND validate = 1 AND onload = 1 AND quality = 0.1,validate >= 1.0  AND  onload >= 1.0  AND  0.1 <= quality < 0.9  AND  anyScriptOrigin >= 1.0,0,1.0,1.0,1.0,11,13.284772872924805
+1,11.963466973905104,480,indexed = 8.0,indexed >= 8.0,0,1.0,1.0,1.0,12,15.84806227684021
+2,12.66004864153562,128,pdf = 1 AND resolution = 307200.0,pdf >= 1.0  AND  resolution < 2073600.0,0,1.0,1.0,1.0,12,12.436858892440796
+3,9.499119827381342,128,dpi = 400.0 AND resolution = 8294400.0 AND quality = 0.1,dpi >= 400.0  AND  resolution >= 5184000.0  AND  0.1 <= quality < 0.9,0,1.0,1.0,1.0,12,12.200726509094238
+1,7.679176229673547,384,tiff = 1,tiff >= 1.0,0,1.0,1.0,1.0,13,17.394816875457764
+2,8.253823632275772,96,quality = 0.9 AND indexed = 1.0,quality >= 0.9  AND  indexed < 2.0,0,1.0,1.0,1.0,13,12.426732778549194
+3,17.542370426843775,192,anyScriptOrigin = 1 AND quality = 0.1 AND indexed = 2.0,anyScriptOrigin >= 1.0  AND  0.1 <= quality < 0.9  AND  2.0 <= indexed < 4.0,0,1.0,1.0,1.0,13,12.801264762878418
+1,12.139904375423002,480,indexed = 8.0,indexed >= 8.0,1,1.0,1.0,1.0,14,21.08475875854492
+2,12.02051085744399,96,tiff = 1 AND indexed = 1.0,tiff >= 1.0  AND  indexed < 2.0,0,1.0,1.0,1.0,14,12.76280403137207
+3,17.99918774841086,192,onload = 1 AND dpi = 400.0 AND quality = 0.1,onload >= 1.0  AND  dpi >= 400.0  AND  0.1 <= quality < 0.9,0,1.0,1.0,1.0,14,13.139193773269652
+4,16.365398910351104,96,anyScriptOrigin = 1 AND onload = 1 AND quality = 0.1 AND indexed = 8.0,anyScriptOrigin >= 1.0  AND  indexed >= 8.0  AND  onload >= 1.0  AND  0.1 <= quality < 0.9,0,1.0,1.0,1.0,14,13.507022619247437
+1,16.136526109651143,480,indexed = 8.0,0.0 <= tiff < 1.0  AND  indexed >= 8.0,1,0.888888888888889,1.0,0.8,15,20.34470558166504
+2,11.52402698541903,192,anyScriptOrigin = 1 AND png = 1,anyScriptOrigin >= 1.0  AND  png >= 1.0,0,1.0,1.0,1.0,15,13.828005313873293
+3,18.510474852749752,384,anyScriptOrigin = 1 AND onload = 1 AND quality = 0.1,anyScriptOrigin >= 1.0  AND  onload >= 1.0  AND  0.1 <= quality < 0.9,0,1.0,1.0,1.0,15,15.555099487304688
+4,9.694208236374555,128,anyScriptOrigin = 1 AND validate = 1 AND resolution = 2073600.0 AND quality = 0.1,anyScriptOrigin >= 1.0  AND  2073600.0 <= resolution < 8294400.0  AND  validate >= 1.0  AND  0.1 <= quality < 0.9,0,1.0,1.0,1.0,15,12.865990400314333
+1,11.090261648324011,479,indexed = 2.0,2.0 <= indexed < 4.0,1,1.0,1.0,1.0,16,19.363929510116577
+2,17.828497749915535,120,dpi = 50.0 AND indexed = 8.0,dpi < 100.0  AND  indexed >= 8.0,0,1.0,1.0,1.0,16,11.98718786239624
+3,14.772027521445304,192,validate = 1 AND dpi = 200.0 AND quality = 0.1,200.0 <= dpi < 400.0  AND  0.1 <= quality < 0.9  AND  validate >= 1.0,0,1.0,1.0,1.0,16,12.806704998016356
+1,11.289952288954536,479,dpi = 100.0,100.0 <= dpi < 200.0,1,1.0,1.0,1.0,17,18.704578161239624
+2,15.545173746042266,384,dpi = 50.0 AND quality = 0.1,dpi < 100.0  AND  0.1 <= quality < 0.9,0,1.0,1.0,1.0,17,14.50755786895752
+3,17.549363675919054,96,anyScriptOrigin = 1 AND onload = 1 AND pdf = 1,anyScriptOrigin >= 1.0  AND  pdf >= 1.0  AND  onload >= 1.0,0,1.0,1.0,1.0,17,13.125416994094849
+4,18.070546403140423,96,tiff = 1 AND validate = 1 AND onload = 1 AND quality = 0.1,tiff >= 1.0  AND  onload >= 1.0  AND  validate >= 1.0,0,1.0,1.0,1.0,17,13.009694576263428
+1,17.54885754351783,384,png = 1,png >= 1.0,0,1.0,1.0,1.0,18,16.900362491607666
+2,12.012139490553396,128,tiff = 1 AND resolution = 8294400.0,tiff >= 1.0  AND  resolution >= 5184000.0,0,1.0,1.0,1.0,18,12.220403671264648
+1,10.918332529765127,480,dpi = 50.0,dpi < 100.0,1,1.0,1.0,1.0,19,19.13615202903748
+2,17.417907445320736,160,resolution = 307200.0 AND indexed = 4.0,resolution < 2073600.0  AND  4.0 <= indexed < 8.0,0,1.0,1.0,1.0,19,11.77664875984192
+3,19.1760489210869,192,validate = 1 AND jpg = 1 AND quality = 0.1,jpg >= 1.0  AND  0.1 <= quality < 0.9  AND  validate >= 1.0,0,1.0,1.0,1.0,19,13.352482795715332
+1,14.209884490548175,384,png = 1,png >= 1.0,0,1.0,1.0,1.0,2,14.785356521606444
+2,13.296674560611727,128,tiff = 1 AND resolution = 8294400.0,tiff >= 1.0  AND  resolution >= 5184000.0,0,1.0,1.0,1.0,2,12.476834058761597
+3,8.363090156123745,192,tiff = 1 AND onload = 1 AND quality = 0.1,tiff >= 1.0  AND  onload >= 1.0,0,1.0,1.0,1.0,2,13.494741678237917
+1,14.217068035830282,480,indexed = 1.0,indexed < 2.0,1,1.0,1.0,1.0,20,19.67711853981018
+2,15.323928274865562,320,validate = 1 AND resolution = 8294400.0,validate >= 1.0  AND  resolution >= 5184000.0,1,1.0,1.0,1.0,20,16.596354722976685
+3,15.313572252483064,96,jpg = 1 AND onload = 1 AND dpi = 50.0,jpg >= 1.0  AND  dpi < 100.0  AND  onload >= 1.0,0,1.0,1.0,1.0,20,12.958173990249634
+1,15.87804609279055,480,dpi = 50.0,dpi < 100.0,1,1.0,1.0,1.0,21,20.824163675308228
+2,10.139690821516044,256,jpg = 1 AND resolution = 2073600.0,jpg >= 1.0  AND  2073600.0 <= resolution < 5184000.0,0,1.0,1.0,1.0,21,12.802455186843872
+3,10.814351829275545,120,anyScriptOrigin = 1 AND onload = 1 AND indexed = 8.0,onload >= 1.0  AND  indexed >= 8.0  AND  anyScriptOrigin >= 1.0,0,1.0,1.0,1.0,21,12.751161098480225
+4,19.65686923614245,96,validate = 1 AND onload = 1 AND quality = 0.1 AND indexed = 8.0,onload >= 1.0  AND  indexed >= 8.0  AND  0.1 <= quality < 0.9  AND  validate >= 1.0,0,1.0,1.0,1.0,21,12.170009136199951
+1,15.594581982777784,480,dpi = 400.0,dpi >= 400.0,1,1.0,1.0,1.0,22,19.569011449813843
+2,14.299636780686448,320,anyScriptOrigin = 1 AND resolution = 8294400.0,anyScriptOrigin >= 1.0  AND  resolution >= 5184000.0,0,1.0,1.0,1.0,22,12.55487298965454
+3,12.9434201883261,96,jpg = 1 AND dpi = 400.0 AND quality = 0.9,dpi >= 400.0  AND  quality >= 0.9,0,1.0,1.0,1.0,22,12.453339338302612
+1,12.95344785013978,384,tiff = 1,tiff >= 1.0,1,1.0,1.0,1.0,23,20.85293912887573
+2,9.955421170532285,320,validate = 1 AND resolution = 8294400.0,validate >= 1.0  AND  resolution >= 5184000.0,1,1.0,1.0,1.0,23,16.388434410095215
+3,8.17531930448825,239,anyScriptOrigin = 1 AND validate = 1 AND onload = 1,validate >= 1.0  AND  onload >= 1.0  AND  anyScriptOrigin >= 1.0,0,1.0,1.0,1.0,23,12.98546290397644
+4,15.494681761413428,128,anyScriptOrigin = 1 AND validate = 1 AND resolution = 8294400.0 AND quality = 0.1,anyScriptOrigin >= 1.0  AND  resolution >= 5184000.0  AND  0.1 <= quality < 0.9  AND  validate >= 1.0,0,1.0,1.0,1.0,23,12.7596697807312
+1,17.72791674459735,384,pdf = 1,pdf >= 1.0,1,1.0,1.0,1.0,24,26.99264240264893
+2,13.721862239494156,240,anyScriptOrigin = 1 AND dpi = 200.0,anyScriptOrigin >= 1.0  AND  200.0 <= dpi < 400.0,1,1.0,1.0,1.0,24,16.71054244041443
+3,11.464576482828592,192,validate = 1 AND pdf = 1 AND quality = 0.1,validate >= 1.0  AND  pdf >= 1.0,0,1.0,1.0,1.0,24,13.300845623016356
+1,16.578444921595647,480,dpi = 400.0,dpi >= 400.0,1,1.0,1.0,1.0,25,19.941749334335327
+2,9.32745880909884,96,png = 1 AND indexed = 1.0,png >= 1.0  AND  indexed < 2.0,0,1.0,1.0,1.0,25,12.37929081916809
+3,18.323644304113976,128,pdf = 1 AND resolution = 8294400.0 AND quality = 0.1,pdf >= 1.0  AND  resolution >= 5184000.0,0,1.0,1.0,1.0,25,12.41090726852417
+1,11.534121046714253,479,dpi = 100.0,100.0 <= dpi < 200.0,1,1.0,1.0,1.0,26,20.371642351150516
+2,14.916847350511992,120,dpi = 400.0 AND indexed = 1.0,dpi >= 400.0  AND  indexed < 2.0,0,1.0,1.0,1.0,26,12.11761212348938
+3,7.763369837728303,192,anyScriptOrigin = 1 AND quality = 0.1 AND indexed = 4.0,anyScriptOrigin >= 1.0  AND  4.0 <= indexed < 8.0  AND  0.1 <= quality < 0.9,0,1.0,1.0,1.0,26,12.795899152755736
+4,18.55534887044693,96,anyScriptOrigin = 1 AND onload = 1 AND quality = 0.1 AND indexed = 1.0,anyScriptOrigin >= 1.0  AND  indexed < 2.0  AND  0.1 <= quality < 0.9  AND  onload >= 1.0,0,1.0,1.0,1.0,26,12.6206636428833
+1,8.52227081894234,480,dpi = 50.0,dpi < 100.0,1,1.0,1.0,1.0,27,24.254880666732788
+2,9.153786358092502,160,dpi = 100.0 AND resolution = 8294400.0,100.0 <= dpi < 200.0  AND  resolution >= 5184000.0,0,1.0,1.0,1.0,27,12.536654233932495
+3,10.801829982639012,191,anyScriptOrigin = 1 AND jpg = 1 AND quality = 0.9,anyScriptOrigin >= 1.0  AND  quality >= 0.9,0,1.0,1.0,1.0,27,14.090807437896729
+1,9.351000359086406,480,dpi = 400.0,dpi >= 400.0,1,1.0,1.0,1.0,28,21.22729539871216
+2,11.275381693882537,128,png = 1 AND resolution = 8294400.0,png >= 1.0  AND  resolution >= 5184000.0,0,1.0,1.0,1.0,28,12.418662786483765
+3,15.822109822820607,192,onload = 1 AND quality = 0.1 AND indexed = 1.0,0.1 <= quality < 0.9  AND  indexed < 2.0  AND  onload >= 1.0,0,1.0,1.0,1.0,28,12.605154037475586
+1,16.229873635787307,480,dpi = 50.0,dpi < 100.0,1,1.0,1.0,1.0,29,19.318683385849
+2,14.669980638231271,319,anyScriptOrigin = 1 AND resolution = 307200.0,anyScriptOrigin >= 1.0  AND  resolution < 2073600.0,1,1.0,1.0,1.0,29,17.76341462135315
+1,13.092948838831646,479,indexed = 2.0,2.0 <= indexed < 4.0,1,1.0,1.0,1.0,3,17.6364483833313
+2,15.234513867853366,96,png = 1 AND dpi = 50.0,png >= 1.0  AND  dpi < 100.0,0,1.0,1.0,1.0,3,12.572022676467896
+1,13.291016131293537,384,tiff = 1,tiff >= 1.0,1,1.0,1.0,1.0,30,19.14082884788513
+2,16.446217643129543,96,quality = 0.9 AND indexed = 8.0,quality >= 0.9  AND  indexed >= 8.0,0,1.0,1.0,1.0,30,12.55120587348938
+3,12.250609509477252,192,tiff = 1 AND onload = 1 AND quality = 0.1,tiff >= 1.0  AND  onload >= 1.0,0,1.0,1.0,1.0,30,13.75802993774414
+4,8.152843499770137,96,tiff = 1 AND validate = 1 AND onload = 1 AND quality = 0.1,tiff >= 1.0  AND  validate >= 1.0  AND  onload >= 1.0  AND  resolution < 5184000.0,0,0.8,1.0,0.6666666666666666,30,12.95444679260254
+1,8.05297411829601,383,quality = 0.9,quality >= 0.9,1,1.0,1.0,1.0,31,19.016412258148197
+2,8.677689362412353,128,tiff = 1 AND resolution = 307200.0,tiff >= 1.0  AND  resolution < 2073600.0,0,1.0,1.0,1.0,31,12.351524114608765
+3,13.677963886900402,96,dpi = 400.0 AND quality = 0.1 AND indexed = 1.0,dpi >= 400.0  AND  indexed < 2.0  AND  0.1 <= quality < 0.9,0,1.0,1.0,1.0,31,12.058111667633057
+4,10.457695170846293,96,validate = 1 AND onload = 1 AND dpi = 200.0 AND quality = 0.1,onload >= 1.0  AND  200.0 <= dpi < 400.0  AND  validate >= 1.0  AND  0.1 <= quality < 0.9,0,1.0,1.0,1.0,31,12.575682401657104
+1,12.527665616806017,479,dpi = 100.0,100.0 <= dpi < 200.0,0,1.0,1.0,1.0,32,13.493359565734863
+2,9.535676728500144,319,anyScriptOrigin = 1 AND resolution = 307200.0,anyScriptOrigin >= 1.0  AND  resolution < 2073600.0,0,1.0,1.0,1.0,32,12.422553300857544
+3,12.428160820035492,192,onload = 1 AND dpi = 50.0 AND quality = 0.1,onload >= 1.0  AND  dpi < 100.0  AND  0.1 <= quality < 0.9,0,1.0,1.0,1.0,32,12.748536109924316
+4,18.11426668927044,128,validate = 1 AND onload = 1 AND resolution = 2073600.0 AND quality = 0.1,validate >= 1.0  AND  2073600.0 <= resolution < 5184000.0  AND  onload >= 1.0  AND  0.1 <= quality < 0.9,0,1.0,1.0,1.0,32,12.477126121520996
+1,11.517597287887725,479,indexed = 2.0,2.0 <= indexed < 4.0,2,1.0,1.0,1.0,33,22.522741556167603
+2,18.108744573457138,240,anyScriptOrigin = 1 AND dpi = 400.0,anyScriptOrigin >= 1.0  AND  dpi >= 400.0,0,1.0,1.0,1.0,33,15.294253826141356
+1,14.694883562001715,383,quality = 0.9,quality >= 0.9,0,1.0,1.0,1.0,34,14.705683946609495
+2,12.851880768652096,239,validate = 1 AND indexed = 2.0,validate >= 1.0  AND  2.0 <= indexed < 4.0,0,1.0,1.0,1.0,34,12.69137406349182
+3,18.27380699867545,128,dpi = 400.0 AND resolution = 8294400.0 AND quality = 0.1,dpi >= 400.0  AND  resolution >= 8294400.0  AND  0.0 <= jpg < 1.0,0,0.8571428571428571,1.0,0.75,34,11.858670949935911
+4,9.058479210090224,96,anyScriptOrigin = 1 AND validate = 1 AND quality = 0.1 AND indexed = 1.0,validate >= 1.0  AND  indexed < 2.0  AND  anyScriptOrigin >= 1.0  AND  0.1 <= quality < 0.9,0,1.0,1.0,1.0,34,12.684191465377808
+1,14.428253575960904,480,indexed = 1.0,indexed < 2.0,1,1.0,1.0,1.0,35,16.496947288513184
+2,13.262607451113883,384,png = 1 AND quality = 0.1,png >= 1.0,0,1.0,1.0,1.0,35,13.083796262741089
+3,17.325290263732388,96,dpi = 100.0 AND quality = 0.1 AND indexed = 1.0,100.0 <= dpi < 200.0  AND  indexed < 2.0  AND  0.1 <= quality < 0.9,0,1.0,1.0,1.0,35,11.70418119430542
+4,15.191485805957177,96,tiff = 1 AND validate = 1 AND onload = 1 AND quality = 0.1,tiff >= 1.0  AND  validate >= 1.0  AND  onload >= 1.0,0,1.0,1.0,1.0,35,13.291515350341797
+1,14.823254263384053,479,indexed = 2.0,2.0 <= indexed < 4.0,1,1.0,1.0,1.0,36,21.15788984298706
+2,16.070860487196644,159,resolution = 307200.0 AND indexed = 2.0,resolution < 2073600.0  AND  2.0 <= indexed < 4.0,0,1.0,1.0,1.0,36,11.921956539154053
+3,11.474860045212456,192,onload = 1 AND quality = 0.1 AND indexed = 2.0,0.1 <= quality < 0.9  AND  2.0 <= indexed < 4.0  AND  onload >= 1.0,0,1.0,1.0,1.0,36,12.851364374160768
+1,14.829927353306516,480,indexed = 4.0,4.0 <= indexed < 8.0,0,1.0,1.0,1.0,37,15.87874436378479
+2,10.615398002687163,160,resolution = 2073600.0 AND indexed = 8.0,2073600.0 <= resolution < 5184000.0  AND  indexed >= 8.0,0,1.0,1.0,1.0,37,11.862705707550049
+3,10.603284589173684,160,validate = 1 AND onload = 1 AND resolution = 2073600.0,onload >= 1.0  AND  2073600.0 <= resolution < 5184000.0  AND  validate >= 1.0  AND  0.0 <= pdf < 1.0,0,0.888888888888889,1.0,0.8,37,12.800968885421751
+1,18.018834888018183,479,dpi = 100.0,100.0 <= dpi < 200.0,2,1.0,1.0,1.0,38,25.702149868011475
+2,13.607013802086849,240,validate = 1 AND indexed = 1.0,validate >= 1.0  AND  indexed < 2.0,1,1.0,1.0,1.0,38,16.785569190979004
+3,16.20341285813772,192,anyScriptOrigin = 1 AND dpi = 400.0 AND quality = 0.1,dpi >= 400.0  AND  0.1 <= quality < 0.9  AND  anyScriptOrigin >= 1.0,0,1.0,1.0,1.0,38,12.899662733078005
+1,8.275966782317955,480,dpi = 50.0,dpi < 100.0,1,1.0,1.0,1.0,39,21.28282332420349
+2,18.94496435657627,240,onload = 1 AND dpi = 200.0,onload >= 1.0  AND  200.0 <= dpi < 400.0,0,1.0,1.0,1.0,39,15.369006156921388
+3,17.526740776697068,128,dpi = 100.0 AND resolution = 2073600.0 AND quality = 0.1,100.0 <= dpi < 200.0  AND  0.1 <= quality < 0.9  AND  2073600.0 <= resolution < 5184000.0,0,1.0,1.0,1.0,39,12.043773651123049
+4,8.560448866811441,96,validate = 1 AND onload = 1 AND pdf = 1 AND quality = 0.1,validate >= 1.0  AND  pdf >= 1.0  AND  onload >= 1.0,0,1.0,1.0,1.0,39,13.574846029281616
+1,8.557328888541557,480,indexed = 8.0,indexed >= 8.0,2,1.0,1.0,1.0,4,25.849578142166138
+2,19.115367766461706,192,jpg = 1 AND indexed = 8.0,jpg >= 1.0  AND  indexed >= 8.0,0,1.0,1.0,1.0,4,14.719175577163696
+3,10.020056620921627,119,anyScriptOrigin = 1 AND onload = 1 AND indexed = 2.0,anyScriptOrigin >= 1.0  AND  2.0 <= indexed < 4.0  AND  onload >= 1.0,0,1.0,1.0,1.0,4,12.890081644058228
+1,10.675925856201522,480,dpi = 200.0,200.0 <= dpi < 400.0,1,1.0,1.0,1.0,40,19.95970058441162
+2,13.360953035694004,128,pdf = 1 AND resolution = 8294400.0,pdf >= 1.0  AND  resolution >= 5184000.0,0,1.0,1.0,1.0,40,12.4718976020813
+3,15.862558562129706,96,pdf = 1 AND quality = 0.1 AND indexed = 1.0,pdf >= 1.0  AND  indexed < 2.0,0,1.0,1.0,1.0,40,12.322511911392212
+4,19.341036613422727,96,anyScriptOrigin = 1 AND validate = 1 AND pdf = 1 AND quality = 0.1,validate >= 1.0  AND  pdf >= 1.0  AND  anyScriptOrigin >= 1.0,0,1.0,1.0,1.0,40,13.1169331073761
+1,14.495749195758128,480,dpi = 400.0,dpi >= 400.0,1,1.0,1.0,1.0,41,17.66886067390442
+2,14.644488371198708,120,dpi = 400.0 AND indexed = 8.0,dpi >= 400.0  AND  indexed >= 8.0,0,1.0,1.0,1.0,41,12.405585765838625
+3,7.736265979361591,96,validate = 1 AND jpg = 1 AND indexed = 1.0,jpg >= 1.0  AND  indexed < 2.0  AND  validate >= 1.0,0,1.0,1.0,1.0,41,13.103033542633057
+4,19.338133386665437,128,anyScriptOrigin = 1 AND validate = 1 AND resolution = 2073600.0 AND quality = 0.1,validate >= 1.0  AND  2073600.0 <= resolution < 5184000.0  AND  0.1 <= quality < 0.9  AND  anyScriptOrigin >= 1.0,0,1.0,1.0,1.0,41,12.699216842651367
+1,15.2161744783751,384,tiff = 1,tiff >= 1.0,2,1.0,1.0,1.0,42,25.70344614982605
+2,10.977822891294611,159,resolution = 307200.0 AND indexed = 2.0,resolution < 2073600.0  AND  2.0 <= indexed < 4.0,0,1.0,1.0,1.0,42,12.535739183425903
+3,10.266729143711768,128,jpg = 1 AND resolution = 8294400.0 AND quality = 0.9,resolution >= 5184000.0  AND  quality >= 0.9,0,1.0,1.0,1.0,42,13.002923488616943
+1,14.467315819892177,480,dpi = 200.0,200.0 <= dpi < 400.0,2,1.0,1.0,1.0,43,21.20830726623535
+2,8.228623399988402,479,validate = 1 AND onload = 1,validate >= 1.0  AND  onload >= 1.0  AND  0.0 <= png < 1.0,1,0.888631090487239,1.0,0.7995824634655533,43,17.29031276702881
+3,12.006169423173247,96,png = 1 AND dpi = 200.0 AND quality = 0.1,png >= 1.0  AND  200.0 <= dpi < 400.0,0,1.0,1.0,1.0,43,12.769126176834106
+4,18.618456165230533,96,anyScriptOrigin = 1 AND validate = 1 AND pdf = 1 AND quality = 0.1,validate >= 1.0  AND  pdf >= 1.0  AND  anyScriptOrigin >= 1.0,0,1.0,1.0,1.0,43,13.195491790771484
+1,17.809871958573744,383,quality = 0.9,quality >= 0.9,1,1.0,1.0,1.0,44,22.42204523086548
+2,9.26862059532237,384,dpi = 100.0 AND quality = 0.1,100.0 <= dpi < 200.0  AND  0.1 <= quality < 0.9,0,1.0,1.0,1.0,44,12.438854217529297
+3,10.8245908801584,256,anyScriptOrigin = 1 AND resolution = 8294400.0 AND quality = 0.1,resolution >= 8294400.0  AND  0.1 <= quality < 0.9  AND  anyScriptOrigin >= 1.0,0,1.0,1.0,1.0,44,12.84965467453003
+4,7.798133081821709,128,anyScriptOrigin = 1 AND onload = 1 AND resolution = 2073600.0 AND quality = 0.1,onload >= 1.0  AND  2073600.0 <= resolution < 8294400.0  AND  anyScriptOrigin >= 1.0  AND  0.1 <= quality < 0.9,0,1.0,1.0,1.0,44,13.04905104637146
+1,11.43049249547688,480,indexed = 1.0,indexed < 2.0,1,1.0,1.0,1.0,45,19.53360748291016
+2,11.484846458442435,319,anyScriptOrigin = 1 AND resolution = 307200.0,anyScriptOrigin >= 1.0  AND  resolution < 2073600.0,1,1.0,1.0,1.0,45,17.617377042770386
+3,13.743446135727082,119,anyScriptOrigin = 1 AND onload = 1 AND indexed = 2.0,anyScriptOrigin >= 1.0  AND  2.0 <= indexed < 4.0  AND  onload >= 1.0  AND  resolution < 5184000.0,0,0.797979797979798,1.0,0.6638655462184874,45,12.81325387954712
+1,12.843972387021948,384,png = 1,png >= 1.0,0,1.0,1.0,1.0,46,15.156894207000732
+2,12.408656715321785,96,pdf = 1 AND indexed = 2.0,pdf >= 1.0  AND  2.0 <= indexed < 4.0,0,1.0,1.0,1.0,46,13.009849548339844
+3,13.420352941567026,96,jpg = 1 AND dpi = 200.0 AND quality = 0.9,200.0 <= dpi < 400.0  AND  quality >= 0.9,0,1.0,1.0,1.0,46,12.864927768707275
+4,10.715092564063122,96,tiff = 1 AND validate = 1 AND onload = 1 AND quality = 0.1,tiff >= 1.0  AND  onload >= 1.0  AND  validate >= 1.0,0,1.0,1.0,1.0,46,13.55770778656006
+1,14.792107547223845,480,dpi = 400.0,dpi >= 400.0,2,1.0,1.0,1.0,47,25.06291127204895
+2,9.21467661311293,320,onload = 1 AND resolution = 2073600.0,onload >= 1.0  AND  2073600.0 <= resolution < 5184000.0,0,1.0,1.0,1.0,47,13.180560827255247
+3,12.659401832046653,128,dpi = 200.0 AND resolution = 2073600.0 AND quality = 0.1,200.0 <= dpi < 400.0  AND  2073600.0 <= resolution < 5184000.0  AND  0.1 <= quality < 0.9,0,1.0,1.0,1.0,47,12.717192888259888
+1,11.341541853706763,480,dpi = 200.0,200.0 <= dpi < 400.0,2,1.0,1.0,1.0,48,24.98635315895081
+2,16.957139220573584,159,resolution = 307200.0 AND indexed = 2.0,resolution < 2073600.0  AND  2.0 <= indexed < 4.0,0,1.0,1.0,1.0,48,12.797040939331056
+1,13.714732728904846,480,indexed = 8.0,indexed >= 8.0,2,1.0,1.0,1.0,49,22.936150312423703
+2,18.646044379149565,128,png = 1 AND resolution = 307200.0,png >= 1.0  AND  resolution < 2073600.0,0,1.0,1.0,1.0,49,11.714138746261597
+3,10.807010388568573,192,tiff = 1 AND anyScriptOrigin = 1 AND quality = 0.1,tiff >= 1.0  AND  anyScriptOrigin >= 1.0,0,1.0,1.0,1.0,49,13.548668146133425
+1,12.510454441293197,479,indexed = 2.0,2.0 <= indexed < 4.0,1,1.0,1.0,1.0,5,17.1154522895813
+2,10.941231824022308,160,dpi = 200.0 AND resolution = 2073600.0,200.0 <= dpi < 400.0  AND  2073600.0 <= resolution < 5184000.0,0,1.0,1.0,1.0,5,11.90685510635376
+3,15.542957768427792,96,png = 1 AND dpi = 400.0 AND quality = 0.1,png >= 1.0  AND  dpi >= 400.0,0,1.0,1.0,1.0,5,12.610432386398315
+1,17.11386100807403,383,quality = 0.9,quality >= 0.9,1,1.0,1.0,1.0,50,22.811827421188354
+2,19.16014353417081,128,png = 1 AND resolution = 2073600.0,png >= 1.0  AND  2073600.0 <= resolution < 5184000.0,0,1.0,1.0,1.0,50,12.4226553440094
+3,16.480531794452435,96,validate = 1 AND onload = 1 AND pdf = 1,validate >= 1.0  AND  pdf >= 1.0  AND  onload >= 1.0,0,1.0,1.0,1.0,50,13.485764503479004
+4,17.6755262158989,96,tiff = 1 AND validate = 1 AND onload = 1 AND quality = 0.1,tiff >= 1.0  AND  onload >= 1.0  AND  validate >= 1.0,0,1.0,1.0,1.0,50,13.439708471298218
+1,12.524522663187694,383,quality = 0.9,quality >= 0.9,0,1.0,1.0,1.0,51,14.73012351989746
+2,12.473506083636588,192,jpg = 1 AND dpi = 200.0,jpg >= 1.0  AND  200.0 <= dpi < 400.0,0,1.0,1.0,1.0,51,12.828441381454468
+3,19.16927185506022,96,png = 1 AND dpi = 100.0 AND quality = 0.1,png >= 1.0  AND  100.0 <= dpi < 200.0,0,1.0,1.0,1.0,51,12.43998670578003
+4,8.440344492603533,96,anyScriptOrigin = 1 AND validate = 1 AND dpi = 400.0 AND quality = 0.1,anyScriptOrigin >= 1.0  AND  dpi >= 400.0  AND  validate >= 1.0  AND  0.1 <= quality < 0.9,0,1.0,1.0,1.0,51,12.63166570663452
+1,11.983114676929224,384,pdf = 1,pdf >= 1.0,0,1.0,1.0,1.0,52,18.53359866142273
+2,18.711307650703127,96,png = 1 AND indexed = 1.0,png >= 1.0  AND  indexed < 2.0,0,1.0,1.0,1.0,52,12.229487895965576
+3,9.483961298833236,96,tiff = 1 AND quality = 0.1 AND indexed = 4.0,tiff >= 1.0  AND  4.0 <= indexed < 8.0,0,1.0,1.0,1.0,52,12.615477800369264
+4,10.235952511028628,96,tiff = 1 AND anyScriptOrigin = 1 AND validate = 1 AND quality = 0.1,tiff >= 1.0  AND  validate >= 1.0  AND  anyScriptOrigin >= 1.0,0,1.0,1.0,1.0,52,12.909878969192505
+1,16.70794357101061,384,tiff = 1,tiff >= 1.0,1,1.0,1.0,1.0,53,18.86843228340149
+2,11.247468883587567,120,dpi = 400.0 AND indexed = 2.0,dpi >= 400.0  AND  2.0 <= indexed < 4.0,0,1.0,1.0,1.0,53,12.03698468208313
+3,11.105930308392956,96,dpi = 100.0 AND quality = 0.1 AND indexed = 4.0,100.0 <= dpi < 200.0  AND  4.0 <= indexed < 8.0  AND  0.1 <= quality < 0.9,0,1.0,1.0,1.0,53,12.065332174301147
+1,16.804316057535114,479,indexed = 2.0,2.0 <= indexed < 4.0,0,1.0,1.0,1.0,54,19.37041473388672
+2,11.808911671802464,160,resolution = 2073600.0 AND indexed = 4.0,2073600.0 <= resolution < 5184000.0  AND  4.0 <= indexed < 8.0,0,1.0,1.0,1.0,54,12.6513671875
+3,13.358638102380898,256,onload = 1 AND resolution = 307200.0 AND quality = 0.1,resolution < 2073600.0  AND  0.1 <= quality < 0.9  AND  onload >= 1.0,0,1.0,1.0,1.0,54,13.355369329452516
+4,16.793862182548537,128,anyScriptOrigin = 1 AND onload = 1 AND resolution = 307200.0 AND quality = 0.1,anyScriptOrigin >= 1.0  AND  resolution < 2073600.0  AND  onload >= 1.0  AND  0.1 <= quality < 0.9,0,1.0,1.0,1.0,54,13.465052843093872
+1,13.242872880779984,384,png = 1,png >= 1.0,1,1.0,1.0,1.0,55,19.97775793075561
+2,17.561615595291364,120,dpi = 400.0 AND indexed = 4.0,dpi >= 400.0  AND  4.0 <= indexed < 8.0,0,1.0,1.0,1.0,55,11.77955722808838
+3,11.659864663658796,96,dpi = 200.0 AND quality = 0.1 AND indexed = 2.0,200.0 <= dpi < 400.0  AND  2.0 <= indexed < 4.0  AND  0.1 <= quality < 0.9,0,1.0,1.0,1.0,55,12.01129388809204
+1,19.01748900612847,480,indexed = 1.0,indexed < 2.0,2,1.0,1.0,1.0,56,27.07923650741577
+2,14.712660222887507,192,tiff = 1 AND anyScriptOrigin = 1,tiff >= 1.0  AND  anyScriptOrigin >= 1.0,0,1.0,1.0,1.0,56,14.020378351211548
+3,9.999758431573143,256,anyScriptOrigin = 1 AND resolution = 8294400.0 AND quality = 0.1,anyScriptOrigin >= 1.0  AND  resolution >= 8294400.0  AND  0.1 <= quality < 0.9,0,1.0,1.0,1.0,56,12.87444233894348
+1,16.61715546660712,384,png = 1,png >= 1.0,0,1.0,1.0,1.0,57,18.84978461265564
+2,17.622097685689276,120,dpi = 100.0 AND indexed = 1.0,100.0 <= dpi < 200.0  AND  indexed < 2.0,0,1.0,1.0,1.0,57,12.529233694076538
+3,8.446875437856262,128,dpi = 50.0 AND resolution = 8294400.0 AND quality = 0.1,dpi < 100.0  AND  resolution >= 8294400.0  AND  0.1 <= quality < 0.9,0,1.0,1.0,1.0,57,12.731500387191772
+1,16.42930493645168,480,indexed = 1.0,indexed < 2.0,0,1.0,1.0,1.0,58,21.08787727355957
+2,10.980888941363531,479,validate = 1 AND onload = 1,validate >= 1.0  AND  onload >= 1.0,1,1.0,1.0,1.0,58,20.71634817123413
+1,9.449553594828428,480,indexed = 8.0,indexed >= 8.0,0,1.0,1.0,1.0,59,18.018835306167603
+2,10.601544660180972,160,resolution = 2073600.0 AND indexed = 8.0,2073600.0 <= resolution < 5184000.0  AND  indexed >= 8.0,0,1.0,1.0,1.0,59,12.07131052017212
+3,8.152414887673233,96,dpi = 100.0 AND quality = 0.1 AND indexed = 1.0,100.0 <= dpi < 200.0  AND  indexed < 2.0  AND  0.1 <= quality < 0.9,0,1.0,1.0,1.0,59,12.153719663619995
+4,9.186901993495686,96,tiff = 1 AND anyScriptOrigin = 1 AND onload = 1 AND quality = 0.1,tiff >= 1.0  AND  anyScriptOrigin >= 1.0  AND  onload >= 1.0,0,1.0,1.0,1.0,59,12.982869386672974
+1,9.874427087239464,479,indexed = 2.0,2.0 <= indexed < 4.0,1,1.0,1.0,1.0,6,21.105273246765137
+2,14.024334569443456,96,png = 1 AND dpi = 50.0,png >= 1.0  AND  dpi < 100.0,0,1.0,1.0,1.0,6,12.43091344833374
+3,16.985978195919134,128,dpi = 200.0 AND resolution = 2073600.0 AND quality = 0.1,200.0 <= dpi < 400.0  AND  2073600.0 <= resolution < 5184000.0  AND  0.1 <= quality < 0.9,0,1.0,1.0,1.0,6,12.037641286849976
+4,18.839285635146208,96,anyScriptOrigin = 1 AND onload = 1 AND quality = 0.1 AND indexed = 4.0,onload >= 1.0  AND  4.0 <= indexed < 8.0  AND  0.1 <= quality < 0.9  AND  anyScriptOrigin >= 1.0,0,1.0,1.0,1.0,6,12.57909893989563
+1,14.886922629396,479,indexed = 2.0,2.0 <= indexed < 4.0,1,1.0,1.0,1.0,60,18.713942527771
+2,13.591328889199453,256,jpg = 1 AND resolution = 2073600.0,jpg >= 1.0  AND  2073600.0 <= resolution < 5184000.0,0,1.0,1.0,1.0,60,12.73905611038208
+3,11.324738791603956,128,dpi = 200.0 AND resolution = 8294400.0 AND quality = 0.1,200.0 <= dpi < 400.0  AND  resolution >= 5184000.0  AND  0.1 <= quality < 0.9,0,1.0,1.0,1.0,60,12.09402084350586
+1,9.873096684935646,384,pdf = 1,pdf >= 1.0,1,1.0,1.0,1.0,61,19.700414896011356
+2,9.480363605891524,384,dpi = 100.0 AND quality = 0.1,100.0 <= dpi < 200.0  AND  0.1 <= quality < 0.9,1,1.0,1.0,1.0,61,16.86467409133911
+3,9.325678088391872,96,png = 1 AND quality = 0.1 AND indexed = 1.0,png >= 1.0  AND  indexed < 2.0,0,1.0,1.0,1.0,61,12.318119287490845
+1,8.055887751158373,384,pdf = 1,pdf >= 1.0,1,1.0,1.0,1.0,62,19.061564445495605
+2,18.076225791095865,192,tiff = 1 AND onload = 1,tiff >= 1.0  AND  onload >= 1.0,0,1.0,1.0,1.0,62,13.12817358970642
+3,17.272210335547086,96,jpg = 1 AND onload = 1 AND dpi = 200.0,jpg >= 1.0  AND  onload >= 1.0  AND  200.0 <= dpi < 400.0,0,1.0,1.0,1.0,62,12.85420036315918
+1,18.19030076875337,383,quality = 0.9,quality >= 0.9,0,1.0,1.0,1.0,63,17.65965509414673
+2,11.953858267616951,192,jpg = 1 AND indexed = 1.0,jpg >= 1.0  AND  indexed < 2.0,0,1.0,1.0,1.0,63,12.805532693862917
+3,15.74664051047902,192,tiff = 1 AND anyScriptOrigin = 1 AND quality = 0.1,tiff >= 1.0  AND  anyScriptOrigin >= 1.0,0,1.0,1.0,1.0,63,13.536527633666992
+4,7.673513810158624,96,anyScriptOrigin = 1 AND onload = 1 AND quality = 0.1 AND indexed = 8.0,onload >= 1.0  AND  indexed >= 8.0  AND  anyScriptOrigin >= 1.0  AND  0.1 <= quality < 0.9,0,1.0,1.0,1.0,63,12.64101791381836
+1,9.382066777634709,480,dpi = 200.0,200.0 <= dpi < 400.0,0,1.0,1.0,1.0,64,16.72281575202942
+2,12.869381891533765,96,quality = 0.9 AND indexed = 1.0,quality >= 0.9  AND  indexed < 2.0  AND  dpi >= 100.0,0,0.8571428571428571,1.0,0.75,64,11.674142360687256
+1,13.39940507610658,480,dpi = 400.0,dpi >= 400.0,1,1.0,1.0,1.0,65,18.52846384048462
+2,13.53347260095995,160,dpi = 50.0 AND resolution = 2073600.0,dpi < 100.0  AND  2073600.0 <= resolution < 5184000.0,0,1.0,1.0,1.0,65,12.171876668930054
+3,8.614667195897725,128,jpg = 1 AND resolution = 2073600.0 AND quality = 0.9,2073600.0 <= resolution < 5184000.0  AND  quality >= 0.9,0,1.0,1.0,1.0,65,12.592750549316406
+4,8.845946786667566,192,anyScriptOrigin = 1 AND validate = 1 AND onload = 1 AND quality = 0.1,validate >= 1.0  AND  onload >= 1.0  AND  indexed >= 2.0  AND  anyScriptOrigin >= 1.0  AND  0.1 <= quality < 0.9,0,0.8571428571428571,1.0,0.75,65,13.772918939590454
+1,16.53147054134074,480,indexed = 1.0,indexed < 2.0,1,1.0,1.0,1.0,66,20.234437465667725
+2,14.492073826169593,240,anyScriptOrigin = 1 AND indexed = 1.0,anyScriptOrigin >= 1.0  AND  indexed < 2.0,0,1.0,1.0,1.0,66,12.90847659111023
+3,11.590839159138335,96,pdf = 1 AND quality = 0.1 AND indexed = 8.0,pdf >= 1.0  AND  indexed >= 8.0,0,1.0,1.0,1.0,66,12.893919944763184
+1,10.165534266305889,479,dpi = 100.0,100.0 <= dpi < 200.0,1,1.0,1.0,1.0,67,20.35555410385132
+2,15.59753058948039,96,pdf = 1 AND dpi = 100.0,pdf >= 1.0  AND  100.0 <= dpi < 200.0,0,1.0,1.0,1.0,67,13.016708612442017
+3,11.619086368127792,239,anyScriptOrigin = 1 AND validate = 1 AND onload = 1,anyScriptOrigin >= 1.0  AND  validate >= 1.0  AND  onload >= 1.0,0,1.0,1.0,1.0,67,13.651954889297484
+4,8.597688943883417,96,validate = 1 AND png = 1 AND onload = 1 AND quality = 0.1,png >= 1.0  AND  onload >= 1.0  AND  validate >= 1.0,0,1.0,1.0,1.0,67,13.7464337348938
+1,16.14359491002413,480,indexed = 1.0,indexed < 2.0,2,1.0,1.0,1.0,68,23.278117179870605
+2,10.235049397386229,512,resolution = 307200.0 AND quality = 0.1,resolution < 2073600.0  AND  0.1 <= quality < 0.9,1,1.0,1.0,1.0,68,22.07636332511902
+3,13.00628229614899,120,validate = 1 AND onload = 1 AND indexed = 8.0,validate >= 1.0  AND  indexed >= 8.0  AND  onload >= 1.0  AND  0.0 <= png < 1.0,0,0.888888888888889,1.0,0.8,68,13.140083074569702
+1,17.494319727185662,480,indexed = 1.0,indexed < 2.0,1,1.0,1.0,1.0,69,24.16908311843872
+2,10.93652496165088,191,anyScriptOrigin = 1 AND quality = 0.9,anyScriptOrigin >= 1.0  AND  quality >= 0.9,0,1.0,1.0,1.0,69,14.067185401916504
+3,18.03043980598232,128,resolution = 307200.0 AND quality = 0.1 AND indexed = 8.0,0.1 <= quality < 0.9  AND  indexed >= 8.0  AND  resolution < 2073600.0,0,1.0,1.0,1.0,69,12.53175449371338
+1,9.844054529749998,479,indexed = 2.0,2.0 <= indexed < 4.0,2,1.0,1.0,1.0,7,23.80089259147644
+2,15.689817784463624,160,resolution = 2073600.0 AND indexed = 2.0,2073600.0 <= resolution < 5184000.0  AND  2.0 <= indexed < 4.0,0,1.0,1.0,1.0,7,11.9185791015625
+3,12.430761931583248,256,validate = 1 AND resolution = 2073600.0 AND quality = 0.1,validate >= 1.0  AND  2073600.0 <= resolution < 5184000.0  AND  0.1 <= quality < 0.9,0,1.0,1.0,1.0,7,12.883564233779907
+4,17.90943109825859,96,anyScriptOrigin = 1 AND validate = 1 AND pdf = 1 AND quality = 0.1,validate >= 1.0  AND  pdf >= 1.0  AND  anyScriptOrigin >= 1.0,0,1.0,1.0,1.0,7,13.27848982810974
+1,14.923469045670124,384,pdf = 1,pdf >= 1.0,0,1.0,1.0,1.0,70,14.652798175811768
+2,7.941848108262313,384,dpi = 400.0 AND quality = 0.1,dpi >= 400.0  AND  0.1 <= quality < 0.9,1,1.0,1.0,1.0,70,20.312976360321045
+3,7.853295238342095,192,tiff = 1 AND anyScriptOrigin = 1 AND quality = 0.1,tiff >= 1.0  AND  anyScriptOrigin >= 1.0,0,1.0,1.0,1.0,70,13.386474132537842
+1,12.171408620008956,384,png = 1,png >= 1.0,0,1.0,1.0,1.0,71,14.896695852279665
+2,12.30124979935351,191,validate = 1 AND quality = 0.9,validate >= 1.0  AND  quality >= 0.9,0,1.0,1.0,1.0,71,13.552152633666992
+3,11.436052303846134,96,tiff = 1 AND anyScriptOrigin = 1 AND onload = 1,tiff >= 1.0  AND  anyScriptOrigin >= 1.0  AND  onload >= 1.0,0,1.0,1.0,1.0,71,13.558100700378418
+1,14.838211270466276,384,pdf = 1,pdf >= 1.0,0,1.0,1.0,1.0,72,14.145624160766602
+2,14.948561021227544,120,dpi = 100.0 AND indexed = 4.0,100.0 <= dpi < 200.0  AND  4.0 <= indexed < 8.0,0,1.0,1.0,1.0,72,12.118526458740234
+1,14.960123415375236,384,tiff = 1,tiff >= 1.0,0,1.0,1.0,1.0,73,14.703452825546265
+2,18.180662765230487,512,resolution = 8294400.0 AND quality = 0.1,0.0 <= tiff < 1.0  AND  resolution >= 5184000.0  AND  0.1 <= quality < 0.9,0,0.8571428571428571,1.0,0.75,73,22.856924533843998
+3,18.12104760356129,128,jpg = 1 AND resolution = 8294400.0 AND quality = 0.1,jpg >= 1.0  AND  resolution >= 5184000.0  AND  0.1 <= quality < 0.9,0,1.0,1.0,1.0,73,12.442477941513062
+4,10.634248334943235,96,validate = 1 AND onload = 1 AND quality = 0.1 AND indexed = 1.0,validate >= 1.0  AND  indexed < 2.0  AND  onload >= 1.0  AND  0.1 <= quality < 0.9,0,1.0,1.0,1.0,73,12.637472867965698
+1,8.545860210407234,384,tiff = 1,tiff >= 1.0,0,1.0,1.0,1.0,74,18.141335010528564
+2,16.104354667727687,384,dpi = 200.0 AND quality = 0.1,0.0 <= pdf < 1.0  AND  200.0 <= dpi < 400.0  AND  0.1 <= quality < 0.9,0,0.8571428571428571,1.0,0.75,74,19.461486101150516
+3,16.161306583508768,192,onload = 1 AND dpi = 400.0 AND quality = 0.1,0.0 <= jpg < 1.0  AND  dpi >= 400.0  AND  onload >= 1.0,0,0.8571428571428571,1.0,0.75,74,12.643173456192017
+4,10.101450151837266,96,anyScriptOrigin = 1 AND png = 1 AND onload = 1 AND quality = 0.1,png >= 1.0  AND  onload >= 1.0  AND  anyScriptOrigin >= 1.0,0,1.0,1.0,1.0,74,13.205102443695068
+1,16.0789246490208,480,indexed = 4.0,4.0 <= indexed < 8.0,1,1.0,1.0,1.0,75,17.423371076583862
+2,15.987465810387514,96,dpi = 400.0 AND quality = 0.9,dpi >= 400.0  AND  quality >= 0.9,0,1.0,1.0,1.0,75,12.383255243301392
+3,11.788187575108646,192,anyScriptOrigin = 1 AND dpi = 50.0 AND quality = 0.1,dpi < 100.0  AND  0.1 <= quality < 0.9  AND  anyScriptOrigin >= 1.0,0,1.0,1.0,1.0,75,12.778767347335815
+4,19.37371964294934,96,anyScriptOrigin = 1 AND validate = 1 AND quality = 0.1 AND indexed = 4.0,0.1 <= quality < 0.9  AND  4.0 <= indexed < 8.0  AND  anyScriptOrigin >= 1.0  AND  validate >= 1.0,0,1.0,1.0,1.0,75,12.102998733520508
+1,8.924355944212008,480,dpi = 200.0,200.0 <= dpi < 400.0,2,1.0,1.0,1.0,76,23.530575037002563
+2,17.654973867632698,96,png = 1 AND dpi = 400.0,png >= 1.0  AND  dpi >= 400.0,0,1.0,1.0,1.0,76,12.320541143417358
+3,7.848625933695888,120,anyScriptOrigin = 1 AND onload = 1 AND indexed = 1.0,onload >= 1.0  AND  indexed < 2.0  AND  anyScriptOrigin >= 1.0,0,1.0,1.0,1.0,76,12.404114246368408
+4,17.857050644451274,96,validate = 1 AND onload = 1 AND quality = 0.1 AND indexed = 2.0,validate >= 1.0  AND  2.0 <= indexed < 4.0  AND  onload >= 1.0  AND  0.1 <= quality < 0.9,0,1.0,1.0,1.0,76,12.405924558639526
+1,9.869444075985976,479,dpi = 100.0,100.0 <= dpi < 200.0,0,1.0,1.0,1.0,77,15.696742534637451
+2,15.261686348912932,384,dpi = 400.0 AND quality = 0.1,dpi >= 400.0  AND  0.1 <= quality < 0.9  AND  0.0 <= png < 1.0,0,0.8571428571428571,1.0,0.75,77,16.821346282958984
+3,9.216795470098605,192,validate = 1 AND quality = 0.1 AND indexed = 8.0,validate >= 1.0  AND  indexed >= 8.0  AND  0.1 <= quality < 0.9,0,1.0,1.0,1.0,77,12.727768898010254
+4,18.152599011161016,128,anyScriptOrigin = 1 AND onload = 1 AND resolution = 2073600.0 AND quality = 0.1,onload >= 1.0  AND  2073600.0 <= resolution < 5184000.0  AND  0.1 <= quality < 0.9  AND  anyScriptOrigin >= 1.0,0,1.0,1.0,1.0,77,12.56648850440979
+1,13.303193025384648,480,indexed = 8.0,indexed >= 8.0,0,1.0,1.0,1.0,78,13.838495254516602
+2,16.421404115083668,120,dpi = 100.0 AND indexed = 8.0,100.0 <= dpi < 200.0  AND  indexed >= 8.0,0,1.0,1.0,1.0,78,12.062766790390016
+3,14.023491805097136,192,onload = 1 AND quality = 0.1 AND indexed = 1.0,0.1 <= quality < 0.9  AND  indexed < 2.0  AND  onload >= 1.0,0,1.0,1.0,1.0,78,12.979552984237673
+4,18.26718642354052,96,validate = 1 AND onload = 1 AND quality = 0.1 AND indexed = 4.0,onload >= 1.0  AND  4.0 <= indexed < 8.0  AND  0.1 <= quality < 0.9  AND  validate >= 1.0,0,1.0,1.0,1.0,78,12.750238180160522
+1,11.307427216233563,384,pdf = 1,pdf >= 1.0,0,1.0,1.0,1.0,79,14.724912405014038
+2,16.119715804539688,192,jpg = 1 AND indexed = 8.0,jpg >= 1.0  AND  indexed >= 8.0,0,1.0,1.0,1.0,79,12.761975765228271
+3,8.024816321803167,96,dpi = 200.0 AND quality = 0.1 AND indexed = 2.0,200.0 <= dpi < 400.0  AND  2.0 <= indexed < 4.0  AND  0.1 <= quality < 0.9,0,1.0,1.0,1.0,79,12.115490436553957
+1,8.72639295550146,480,dpi = 50.0,dpi < 100.0,1,1.0,1.0,1.0,8,18.97901463508606
+2,18.59587485082403,239,anyScriptOrigin = 1 AND dpi = 100.0,anyScriptOrigin >= 1.0  AND  100.0 <= dpi < 200.0,0,1.0,1.0,1.0,8,12.433746337890623
+3,8.064105992697767,128,anyScriptOrigin = 1 AND jpg = 1 AND resolution = 8294400.0,jpg >= 1.0  AND  resolution >= 5184000.0  AND  anyScriptOrigin >= 1.0,0,1.0,1.0,1.0,8,12.995014190673828
+1,8.626448811882808,479,indexed = 2.0,2.0 <= indexed < 4.0,1,1.0,1.0,1.0,80,21.245986223220825
+2,17.21187414553434,384,dpi = 100.0 AND quality = 0.1,100.0 <= dpi < 200.0  AND  0.1 <= quality < 0.9,1,1.0,1.0,1.0,80,19.69021487236023
+3,15.70300469920404,256,anyScriptOrigin = 1 AND resolution = 8294400.0 AND quality = 0.1,resolution >= 8294400.0  AND  0.1 <= quality < 0.9  AND  anyScriptOrigin >= 1.0  AND  0.0 <= png < 1.0,0,0.8571428571428571,1.0,0.75,80,12.980907678604126
+1,13.77419425481712,480,dpi = 50.0,dpi < 100.0,2,1.0,1.0,1.0,81,21.49240064620972
+2,15.12328501777824,240,validate = 1 AND indexed = 1.0,validate >= 1.0  AND  indexed < 2.0,1,1.0,1.0,1.0,81,17.22602081298828
+3,15.32165989408969,191,anyScriptOrigin = 1 AND jpg = 1 AND quality = 0.9,anyScriptOrigin >= 1.0  AND  quality >= 0.9,0,1.0,1.0,1.0,81,13.292848587036133
+1,10.711741230188064,480,dpi = 50.0,dpi < 100.0,2,1.0,1.0,1.0,82,24.675188064575195
+2,18.175020739059388,96,png = 1 AND indexed = 4.0,png >= 1.0  AND  4.0 <= indexed < 8.0,0,1.0,1.0,1.0,82,12.470647096633911
+3,8.331596619679656,96,png = 1 AND dpi = 50.0 AND quality = 0.1,png >= 1.0  AND  dpi < 100.0,0,1.0,1.0,1.0,82,12.400426149368286
+4,18.95429109474892,128,anyScriptOrigin = 1 AND validate = 1 AND resolution = 8294400.0 AND quality = 0.1,validate >= 1.0  AND  resolution >= 8294400.0  AND  anyScriptOrigin >= 1.0  AND  0.1 <= quality < 0.9,0,1.0,1.0,1.0,82,12.695817947387695
+1,18.785671488635217,480,dpi = 200.0,200.0 <= dpi < 400.0,1,1.0,1.0,1.0,83,23.789730072021484
+2,15.069533876879635,120,dpi = 100.0 AND indexed = 4.0,100.0 <= dpi < 200.0  AND  4.0 <= indexed < 8.0,0,1.0,1.0,1.0,83,11.975563526153564
+3,17.97740214509774,119,anyScriptOrigin = 1 AND onload = 1 AND indexed = 2.0,anyScriptOrigin >= 1.0  AND  onload >= 1.0  AND  2.0 <= indexed < 4.0,0,1.0,1.0,1.0,83,12.385418891906738
+1,17.74006146149218,384,pdf = 1,pdf >= 1.0,1,1.0,1.0,1.0,84,22.222745418548584
+2,13.90481016455958,240,anyScriptOrigin = 1 AND indexed = 4.0,anyScriptOrigin >= 1.0  AND  4.0 <= indexed < 8.0,0,1.0,1.0,1.0,84,12.94440531730652
+3,11.29241710885452,120,anyScriptOrigin = 1 AND validate = 1 AND indexed = 1.0,validate >= 1.0  AND  indexed < 2.0  AND  anyScriptOrigin >= 1.0,0,1.0,1.0,1.0,84,12.93149209022522
+4,18.80165950761043,96,validate = 1 AND onload = 1 AND pdf = 1 AND quality = 0.1,onload >= 1.0  AND  pdf >= 1.0  AND  validate >= 1.0,0,1.0,1.0,1.0,84,13.299207210540771
+1,18.838115557613648,480,dpi = 200.0,200.0 <= dpi < 400.0,0,1.0,1.0,1.0,85,15.912290811538696
+2,11.855637541726272,96,pdf = 1 AND dpi = 400.0,pdf >= 1.0  AND  dpi >= 400.0,0,1.0,1.0,1.0,85,12.680339574813845
+1,7.78507121113402,480,indexed = 8.0,indexed >= 8.0,1,1.0,1.0,1.0,86,22.154194116592407
+2,10.778142340134435,384,dpi = 100.0 AND quality = 0.1,100.0 <= dpi < 200.0  AND  0.1 <= quality < 0.9,1,1.0,1.0,1.0,86,15.69993257522583
+3,17.135720104304184,192,validate = 1 AND quality = 0.1 AND indexed = 1.0,validate >= 1.0  AND  indexed < 2.0  AND  0.1 <= quality < 0.9,0,1.0,1.0,1.0,86,12.368305683135986
+4,9.759623853288264,128,validate = 1 AND onload = 1 AND resolution = 307200.0 AND quality = 0.1,onload >= 1.0  AND  resolution < 2073600.0  AND  validate >= 1.0  AND  0.1 <= quality < 0.9,0,1.0,1.0,1.0,86,12.66849446296692
+1,16.817056922859706,384,png = 1,png >= 1.0,1,1.0,1.0,1.0,87,25.17273688316345
+2,9.2372704173627,384,quality = 0.1 AND indexed = 1.0,0.1 <= quality < 0.9  AND  indexed < 2.0,0,1.0,1.0,1.0,87,13.256027221679688
+3,17.24590095840181,120,anyScriptOrigin = 1 AND onload = 1 AND indexed = 1.0,onload >= 1.0  AND  indexed < 2.0  AND  anyScriptOrigin >= 1.0,0,1.0,1.0,1.0,87,13.43863558769226
+4,18.76557065902195,96,anyScriptOrigin = 1 AND validate = 1 AND quality = 0.1 AND indexed = 2.0,0.1 <= quality < 0.9  AND  2.0 <= indexed < 4.0  AND  anyScriptOrigin >= 1.0  AND  validate >= 1.0,0,1.0,1.0,1.0,87,12.439361095428469
+1,8.247995131499337,384,pdf = 1,pdf >= 1.0,0,1.0,1.0,1.0,88,18.591402769088745
+2,8.576602246793222,479,anyScriptOrigin = 1 AND onload = 1,anyScriptOrigin >= 1.0  AND  onload >= 1.0,0,1.0,1.0,1.0,88,15.00999927520752
+3,14.384040677725716,128,pdf = 1 AND resolution = 2073600.0 AND quality = 0.1,pdf >= 1.0  AND  2073600.0 <= resolution < 5184000.0,0,1.0,1.0,1.0,88,12.45216703414917
+4,18.28648393381937,96,anyScriptOrigin = 1 AND jpg = 1 AND onload = 1 AND quality = 0.1,anyScriptOrigin >= 1.0  AND  jpg >= 1.0  AND  onload >= 1.0  AND  0.1 <= quality < 0.9,0,1.0,1.0,1.0,88,13.381826162338257
+1,9.575431779316109,384,pdf = 1,pdf >= 1.0,0,1.0,1.0,1.0,89,14.948692083358765
+2,14.86802879265884,120,dpi = 400.0 AND indexed = 4.0,dpi >= 400.0  AND  4.0 <= indexed < 8.0,0,1.0,1.0,1.0,89,12.309778451919556
+3,10.27210631671126,96,jpg = 1 AND dpi = 400.0 AND quality = 0.9,dpi >= 400.0  AND  quality >= 0.9,0,1.0,1.0,1.0,89,12.592679023742676
+1,16.15474750608395,384,pdf = 1,pdf >= 1.0,1,1.0,1.0,1.0,9,20.96424889564514
+2,13.711861953953148,384,tiff = 1 AND quality = 0.1,tiff >= 1.0,0,1.0,1.0,1.0,9,12.763941049575806
+3,12.986622169663072,96,png = 1 AND dpi = 200.0 AND quality = 0.1,png >= 1.0  AND  200.0 <= dpi < 400.0,0,1.0,1.0,1.0,9,12.674069881439207
+4,16.075034915332395,128,anyScriptOrigin = 1 AND validate = 1 AND resolution = 2073600.0 AND quality = 0.1,validate >= 1.0  AND  2073600.0 <= resolution < 8294400.0  AND  anyScriptOrigin >= 1.0  AND  0.1 <= quality < 0.9,0,1.0,1.0,1.0,9,12.813894510269163
+1,14.866566762122332,479,indexed = 2.0,2.0 <= indexed < 4.0,0,1.0,1.0,1.0,90,16.230950117111206
+2,15.911873833795076,160,dpi = 400.0 AND resolution = 2073600.0,dpi >= 400.0  AND  2073600.0 <= resolution < 5184000.0,0,1.0,1.0,1.0,90,12.088810205459597
+3,10.249126662769076,192,validate = 1 AND quality = 0.1 AND indexed = 2.0,0.1 <= quality < 0.9  AND  2.0 <= indexed < 4.0  AND  validate >= 1.0,0,1.0,1.0,1.0,90,12.965921878814695
+1,9.78866905473924,383,quality = 0.9,quality >= 0.9,0,1.0,1.0,1.0,91,17.5151789188385
+2,19.283649485720247,191,validate = 1 AND quality = 0.9,validate >= 1.0  AND  quality >= 0.9,0,1.0,1.0,1.0,91,15.97571301460266
+3,18.35161592889768,160,anyScriptOrigin = 1 AND validate = 1 AND resolution = 2073600.0,validate >= 1.0  AND  2073600.0 <= resolution < 8294400.0  AND  anyScriptOrigin >= 1.0,0,1.0,1.0,1.0,91,12.452943801879885
+4,9.093495844384258,128,validate = 1 AND onload = 1 AND resolution = 8294400.0 AND quality = 0.1,validate >= 1.0  AND  resolution >= 5184000.0  AND  onload >= 1.0  AND  0.1 <= quality < 0.9,0,1.0,1.0,1.0,91,12.797127485275269
+1,15.844225668782144,479,dpi = 100.0,100.0 <= dpi < 200.0,0,1.0,1.0,1.0,92,13.680742502212524
+2,7.799065837148893,240,onload = 1 AND indexed = 8.0,onload >= 1.0  AND  indexed >= 8.0,0,1.0,1.0,1.0,92,12.780568599700928
+3,17.380047415446683,160,anyScriptOrigin = 1 AND onload = 1 AND resolution = 2073600.0,onload >= 1.0  AND  2073600.0 <= resolution < 5184000.0  AND  anyScriptOrigin >= 1.0,0,1.0,1.0,1.0,92,12.61697483062744
+4,18.30415010516755,96,anyScriptOrigin = 1 AND jpg = 1 AND onload = 1 AND quality = 0.1,anyScriptOrigin >= 1.0  AND  jpg >= 1.0  AND  onload >= 1.0  AND  0.1 <= quality < 0.9,0,1.0,1.0,1.0,92,13.45148468017578
+1,16.773806498115334,479,dpi = 100.0,100.0 <= dpi < 200.0,1,1.0,1.0,1.0,93,21.66278386116028
+2,15.614763315139328,319,anyScriptOrigin = 1 AND resolution = 307200.0,anyScriptOrigin >= 1.0  AND  resolution < 2073600.0,1,1.0,1.0,1.0,93,15.983931064605711
+3,18.968185416939672,128,resolution = 8294400.0 AND quality = 0.1 AND indexed = 2.0,0.1 <= quality < 0.9  AND  2.0 <= indexed < 4.0  AND  resolution >= 5184000.0,0,1.0,1.0,1.0,93,11.82906937599182
+1,9.698092214776578,384,png = 1,png >= 1.0,0,1.0,1.0,1.0,94,15.744081020355225
+2,9.088288771015916,160,resolution = 2073600.0 AND indexed = 1.0,2073600.0 <= resolution < 5184000.0  AND  indexed < 2.0,0,1.0,1.0,1.0,94,12.726123094558716
+3,13.5234212977879,96,pdf = 1 AND dpi = 50.0 AND quality = 0.1,pdf >= 1.0  AND  dpi < 100.0,0,1.0,1.0,1.0,94,13.24967360496521
+4,18.15997340376006,96,validate = 1 AND onload = 1 AND pdf = 1 AND quality = 0.1,validate >= 1.0  AND  pdf >= 1.0  AND  onload >= 1.0,0,1.0,1.0,1.0,94,14.232243776321411
+1,14.102620912564143,480,dpi = 400.0,dpi >= 400.0,1,1.0,1.0,1.0,95,18.828351259231567
+2,16.070803377832096,160,resolution = 2073600.0 AND indexed = 8.0,2073600.0 <= resolution < 5184000.0  AND  indexed >= 8.0,0,1.0,1.0,1.0,95,11.967440843582152
+1,14.993643466313952,384,tiff = 1,tiff >= 1.0,0,1.0,1.0,1.0,96,14.829527139663696
+2,14.943122789865267,240,onload = 1 AND dpi = 400.0,onload >= 1.0  AND  dpi >= 400.0,0,1.0,1.0,1.0,96,12.621227741241457
+3,9.345556368050069,128,dpi = 200.0 AND resolution = 2073600.0 AND quality = 0.1,200.0 <= dpi < 400.0  AND  2073600.0 <= resolution < 5184000.0  AND  0.0 <= tiff < 1.0  AND  0.1 <= quality < 0.9,0,0.8571428571428571,1.0,0.75,96,12.119663000106812
+1,17.41100767361456,479,indexed = 2.0,2.0 <= indexed < 4.0,0,1.0,1.0,1.0,97,19.91636967658997
+2,12.788933999057608,383,anyScriptOrigin = 1 AND jpg = 1,anyScriptOrigin >= 1.0  AND  jpg >= 1.0,0,1.0,1.0,1.0,97,13.32448387145996
+3,18.623342556007856,96,dpi = 100.0 AND quality = 0.1 AND indexed = 2.0,100.0 <= dpi < 200.0  AND  2.0 <= indexed < 4.0  AND  0.1 <= quality < 0.9,0,1.0,1.0,1.0,97,11.78104829788208
+4,19.157078175876347,192,anyScriptOrigin = 1 AND validate = 1 AND onload = 1 AND quality = 0.1,validate >= 1.0  AND  0.1 <= quality < 0.9  AND  anyScriptOrigin >= 1.0  AND  onload >= 1.0,0,1.0,1.0,1.0,97,15.467962503433228
+1,11.89539267581786,479,dpi = 100.0,100.0 <= dpi < 200.0,1,1.0,1.0,1.0,98,18.39520072937012
+2,18.543988037599384,160,dpi = 400.0 AND resolution = 8294400.0,dpi >= 400.0  AND  resolution >= 5184000.0,0,1.0,1.0,1.0,98,12.496368169784546
+3,16.427400398093514,119,anyScriptOrigin = 1 AND validate = 1 AND dpi = 100.0,validate >= 1.0  AND  100.0 <= dpi < 200.0  AND  anyScriptOrigin >= 1.0,0,1.0,1.0,1.0,98,13.63156032562256
+4,16.803520763737584,96,anyScriptOrigin = 1 AND validate = 1 AND png = 1 AND quality = 0.1,anyScriptOrigin >= 1.0  AND  png >= 1.0  AND  validate >= 1.0,0,1.0,1.0,1.0,98,14.14777660369873
+1,18.81137736500749,383,quality = 0.9,quality >= 0.9,0,1.0,1.0,1.0,99,17.26968240737915
+2,10.656725936579855,119,dpi = 100.0 AND indexed = 2.0,100.0 <= dpi < 200.0  AND  2.0 <= indexed < 4.0,0,1.0,1.0,1.0,99,12.054259538650513
+3,17.979602886321263,192,validate = 1 AND png = 1 AND quality = 0.1,validate >= 1.0  AND  png >= 1.0,0,1.0,1.0,1.0,99,13.6126070022583

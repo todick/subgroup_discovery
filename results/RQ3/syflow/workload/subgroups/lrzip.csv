@@ -1,0 +1,6 @@
+rule,sg_samples,sg_coverage,rule_num_predicates,rule_features_used
+integrityCheck AND NOT gzip AND NOT lzo AND multithreading AND NOT disableLzoCompressibilityTesting,24,0.1256544502617801,5,"['gzip', 'disableLzoCompressibilityTesting', 'integrityCheck', 'lzo', 'multithreading']"
+NOT encryption AND NOT bzip2 AND NOT gzip AND NOT nice AND NOT multithreading AND NOT unlimitedWindowSize,8,0.041884816753926704,6,"['nice', 'encryption', 'gzip', 'unlimitedWindowSize', 'multithreading', 'bzip2']"
+NOT bzip2 AND lzo AND NOT zpaq AND unlimitedWindowSize,32,0.16753926701570682,4,"['zpaq', 'unlimitedWindowSize', 'bzip2', 'lzo']"
+NOT encryption AND NOT bzip2 AND NOT zpaq AND NOT unlimitedWindowSize,32,0.16753926701570682,4,"['zpaq', 'unlimitedWindowSize', 'encryption', 'bzip2']"
+NOT zpaq AND nice AND multithreading AND unlimitedWindowSize,4,0.020942408376963352,4,"['zpaq', 'unlimitedWindowSize', 'multithreading', 'nice']"

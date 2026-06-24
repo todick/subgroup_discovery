@@ -1,0 +1,2 @@
+num_features,num_samples,sgs_unique,sgs_mean_jaccard,sgs_mean_overlap_coefficient,coverage_mean,coverage_total,rule_features_used,rule_feature_frequency,rule_num_features,rule_length_mean,rule_length_max,rule_length_min,runtime
+17,1954,5,0.17356076759061834,0.3,0.21883316274309111,0.5788126919140225,"['MVSTORE', 'PAGE_STORE_TRIM', 'RECOMPILE_ALWAYS', 'COMPRESS']","[('MVSTORE', 5), ('PAGE_STORE_TRIM', 2), ('RECOMPILE_ALWAYS', 5), ('COMPRESS', 1)]",4,2.6,3.0,2.0,0.009906291961669922

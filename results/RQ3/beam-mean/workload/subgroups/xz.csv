@@ -1,0 +1,6 @@
+rule,sg_samples,sg_coverage,rule_num_predicates,rule_features_used
+Depth==1 AND Dict==1 AND Dist==1 AND BlockSize==1 AND hc3==1,186,0.09304652326163082,5,"['Dist', 'Depth', 'Dict', 'BlockSize', 'hc3']"
+Dict==1 AND Dist==1 AND BlockSize==1 AND hc3==1,202,0.10105052526263132,4,"['Dict', 'Dist', 'hc3', 'BlockSize']"
+Dict==1 AND Dist==1 AND BlockSize==1 AND hc3==1 AND bt4==0,202,0.10105052526263132,5,"['Dist', 'bt4', 'Dict', 'BlockSize', 'hc3']"
+Dict==1 AND Dist==1 AND BlockSize==1 AND hc3==1 AND bt3==0,202,0.10105052526263132,5,"['bt3', 'Dist', 'Dict', 'BlockSize', 'hc3']"
+Dict==1 AND Dist==1 AND BlockSize==1 AND hc3==1 AND bt2==0,202,0.10105052526263132,5,"['Dist', 'bt2', 'Dict', 'BlockSize', 'hc3']"

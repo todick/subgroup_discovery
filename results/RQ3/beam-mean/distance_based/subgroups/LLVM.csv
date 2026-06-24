@@ -1,0 +1,6 @@
+rule,sg_samples,sg_coverage,rule_num_predicates,rule_features_used
+inline==1 AND licm==1,256,0.25,2,"['licm', 'inline']"
+gvn==1 AND inline==1 AND instcombine==1 AND licm==1,64,0.0625,4,"['licm', 'inline', 'instcombine', 'gvn']"
+gvn==1 AND instcombine==1 AND licm==1,128,0.125,3,"['licm', 'instcombine', 'gvn']"
+inline==1 AND instcombine==1 AND licm==1,128,0.125,3,"['licm', 'inline', 'instcombine']"
+inline==1 AND licm==1 AND sccp==1,128,0.125,3,"['sccp', 'licm', 'inline']"

@@ -1,0 +1,6 @@
+rule,sg_samples,sg_coverage,rule_num_predicates,rule_features_used
+good AND NOT lossless AND bitRate = 1500.00,10800,0.05,3,"['bitRate', 'lossless', 'good']"
+lossless,108000,0.5,1,['lossless']
+NOT lossless,108000,0.5,1,['lossless']
+lossless,108000,0.5,1,['lossless']
+NOT lossless,108000,0.5,1,['lossless']

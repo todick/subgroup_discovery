@@ -1,0 +1,6 @@
+rule,sg_samples,sg_coverage,rule_num_predicates,rule_features_used
+min AND polly AND value_based,7500,0.125,3,"['polly', 'min', 'value_based']"
+memory_based AND NOT parallel,10000,0.16666666666666666,2,"['memory_based', 'parallel']"
+memory_based AND NOT parallel,20000,0.3333333333333333,2,"['memory_based', 'parallel']"
+none AND NOT parallel,20000,0.3333333333333333,2,"['none', 'parallel']"
+none AND NOT parallel AND polly_parallel,10000,0.16666666666666666,3,"['none', 'polly_parallel', 'parallel']"

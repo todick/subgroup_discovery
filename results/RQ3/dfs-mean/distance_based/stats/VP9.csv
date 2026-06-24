@@ -1,0 +1,2 @@
+num_features,num_samples,sgs_unique,sgs_mean_jaccard,sgs_mean_overlap_coefficient,coverage_mean,coverage_total,rule_features_used,rule_feature_frequency,rule_num_features,rule_length_mean,rule_length_max,rule_length_min,runtime
+17,216000,5,0.6,0.8,0.4,0.5,"['variance', 'complexity', 'lossless', 'cyclicRefresh', 'off']","[('variance', 1), ('complexity', 1), ('lossless', 5), ('cyclicRefresh', 1), ('off', 1)]",5,1.8,2.0,1.0,3.2416017055511475

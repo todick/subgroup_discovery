@@ -1,0 +1,2 @@
+num_features,num_samples,sgs_unique,sgs_mean_jaccard,sgs_mean_overlap_coefficient,coverage_mean,coverage_total,rule_features_used,rule_feature_frequency,rule_num_features,rule_length_mean,rule_length_max,rule_length_min,runtime
+16,2560,1,,,0.1,0.1,"['HAVE_STATISTICS', 'HAVE_SEQUENCE', 'HAVE_REPLICATION', 'PAGESIZE', 'DIAGNOSTIC', 'HAVE_HASH', 'HAVE_CRYPTO']","[('HAVE_STATISTICS', 1), ('HAVE_SEQUENCE', 1), ('HAVE_REPLICATION', 1), ('PAGESIZE', 5), ('DIAGNOSTIC', 5), ('HAVE_HASH', 4), ('HAVE_CRYPTO', 5)]",7,4.4,5.0,3.0,0.10078549385070801

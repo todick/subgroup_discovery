@@ -1,0 +1,501 @@
+sg_distribution,sg_cardinality,sg_rule,best_rule,best_rule_idx,f1,precision,recall,seed
+normal,166,auto_config = 1 AND stats = 1 AND unsat_core = 1,stats AND auto_config AND type_check AND unsat_core,0,0.7883211678832116,1.0,0.6506024096385542,0
+uniform,144,debug_ref_count = 1 AND smtlib2_compliant = 1 AND unsat_core = 1,unsat_core AND debug_ref_count AND smtlib2_compliant,0,1.0,1.0,1.0,0
+bi_modal_split,169,auto_config = 1 AND model = 1 AND proof = 1,proof AND auto_config AND model,0,1.0,1.0,1.0,0
+tri_modal_split,179,debug_ref_count = 1 AND dump_models = 1 AND stats = 1,type_check AND dump_models AND debug_ref_count AND stats,0,0.7864406779661017,1.0,0.6480446927374302,0
+power_law,101,trace = 1 AND type_check = 1 AND well_sorted_check = 1,stats AND well_sorted_check,3,0.5053380782918149,0.3944444444444444,0.7029702970297029,0
+normal,153,model_validate = 1 AND proof = 1 AND type_check = 1,proof AND type_check AND model_validate,0,1.0,1.0,1.0,10
+uniform,153,model_validate = 1 AND proof = 1 AND type_check = 1,stats AND model_validate AND proof,3,0.6490066225165563,0.6577181208053692,0.6405228758169934,10
+bi_modal_split,153,model_validate = 1 AND proof = 1 AND type_check = 1,dump_models,1,0.3112480739599384,0.2036290322580645,0.6601307189542484,10
+tri_modal_split,153,model_validate = 1 AND proof = 1 AND type_check = 1,model_validate AND proof,2,0.7481662591687042,0.59765625,1.0,10
+power_law,153,model_validate = 1 AND proof = 1 AND type_check = 1,type_check AND model_validate AND proof,0,1.0,1.0,1.0,10
+normal,160,model_validate = 1 AND proof = 1 AND trace = 1,proof AND model_validate AND trace,0,1.0,1.0,1.0,11
+uniform,160,model_validate = 1 AND proof = 1 AND trace = 1,unsat_core AND proof,2,0.4394618834080717,0.3426573426573426,0.6125,11
+bi_modal_split,160,model_validate = 1 AND proof = 1 AND trace = 1,model_validate,1,0.4923076923076923,0.3265306122448979,1.0,11
+tri_modal_split,160,model_validate = 1 AND proof = 1 AND trace = 1,trace AND model,2,0.4841628959276018,0.3794326241134751,0.66875,11
+power_law,160,model_validate = 1 AND proof = 1 AND trace = 1,model_validate AND proof AND trace,0,1.0,1.0,1.0,11
+normal,182,debug_ref_count = 1 AND model_validate = 1 AND unsat_core = 1,model AND auto_config AND debug_ref_count,3,0.398876404494382,0.4080459770114942,0.3901098901098901,12
+uniform,182,debug_ref_count = 1 AND model_validate = 1 AND unsat_core = 1,debug_ref_count AND model_validate AND unsat_core,0,1.0,1.0,1.0,12
+bi_modal_split,182,debug_ref_count = 1 AND model_validate = 1 AND unsat_core = 1,model_validate AND unsat_core AND debug_ref_count,0,1.0,1.0,1.0,12
+tri_modal_split,182,debug_ref_count = 1 AND model_validate = 1 AND unsat_core = 1,proof,1,0.3074626865671642,0.2110655737704918,0.5659340659340659,12
+power_law,182,debug_ref_count = 1 AND model_validate = 1 AND unsat_core = 1,unsat_core AND model_validate AND debug_ref_count,0,1.0,1.0,1.0,12
+normal,188,model = 1 AND trace = 1 AND type_check = 1,model AND trace AND type_check,0,1.0,1.0,1.0,13
+uniform,188,model = 1 AND trace = 1 AND type_check = 1,trace AND type_check AND model,0,1.0,1.0,1.0,13
+bi_modal_split,188,model = 1 AND trace = 1 AND type_check = 1,model AND type_check AND trace,0,1.0,1.0,1.0,13
+tri_modal_split,188,model = 1 AND trace = 1 AND type_check = 1,type_check AND model AND trace,0,1.0,1.0,1.0,13
+power_law,188,model = 1 AND trace = 1 AND type_check = 1,trace AND type_check AND dump_models AND model,1,0.810126582278481,1.0,0.6808510638297872,13
+normal,149,dump_models = 1 AND smtlib2_compliant = 1 AND trace = 1,trace AND smtlib2_compliant AND dump_models,0,1.0,1.0,1.0,14
+uniform,149,dump_models = 1 AND smtlib2_compliant = 1 AND trace = 1,smtlib2_compliant AND dump_models AND trace,0,1.0,1.0,1.0,14
+bi_modal_split,149,dump_models = 1 AND smtlib2_compliant = 1 AND trace = 1,NOT well_sorted_check AND trace AND smtlib2_compliant AND dump_models,4,0.7531380753138075,1.0,0.6040268456375839,14
+tri_modal_split,149,dump_models = 1 AND smtlib2_compliant = 1 AND trace = 1,dump_models AND trace AND smtlib2_compliant,0,1.0,1.0,1.0,14
+power_law,149,dump_models = 1 AND smtlib2_compliant = 1 AND trace = 1,unsat_core AND smtlib2_compliant AND trace AND dump_models,1,0.7531380753138075,1.0,0.6040268456375839,14
+normal,172,proof = 1 AND stats = 1 AND trace = 1,trace AND stats AND proof,0,1.0,1.0,1.0,15
+uniform,172,proof = 1 AND stats = 1 AND trace = 1,dump_models,0,0.3353293413173652,0.2258064516129032,0.6511627906976745,15
+bi_modal_split,172,proof = 1 AND stats = 1 AND trace = 1,stats AND proof,1,0.7678571428571428,0.6231884057971014,1.0,15
+tri_modal_split,172,proof = 1 AND stats = 1 AND trace = 1,trace AND smtlib2_compliant,1,0.5231481481481481,0.4346153846153846,0.6569767441860465,15
+power_law,172,proof = 1 AND stats = 1 AND trace = 1,stats AND proof AND trace,0,1.0,1.0,1.0,15
+normal,174,proof = 1 AND smtlib2_compliant = 1 AND stats = 1,stats AND proof AND smtlib2_compliant,0,1.0,1.0,1.0,16
+uniform,174,proof = 1 AND smtlib2_compliant = 1 AND stats = 1,stats AND proof AND smtlib2_compliant,0,1.0,1.0,1.0,16
+bi_modal_split,174,proof = 1 AND smtlib2_compliant = 1 AND stats = 1,auto_config AND dump_models,2,0.3235955056179775,0.2656826568265683,0.4137931034482758,16
+tri_modal_split,174,proof = 1 AND smtlib2_compliant = 1 AND stats = 1,proof,0,0.525679758308157,0.3565573770491803,1.0,16
+power_law,174,proof = 1 AND smtlib2_compliant = 1 AND stats = 1,smtlib2_compliant AND proof AND stats,0,1.0,1.0,1.0,16
+normal,150,model_validate = 1 AND proof = 1 AND smtlib2_compliant = 1,smtlib2_compliant AND model_validate AND proof,0,1.0,1.0,1.0,17
+uniform,150,model_validate = 1 AND proof = 1 AND smtlib2_compliant = 1,model_validate AND dump_models AND smtlib2_compliant,3,0.608695652173913,0.610738255033557,0.6066666666666667,17
+bi_modal_split,150,model_validate = 1 AND proof = 1 AND smtlib2_compliant = 1,smtlib2_compliant AND model_validate AND proof,0,1.0,1.0,1.0,17
+tri_modal_split,150,model_validate = 1 AND proof = 1 AND smtlib2_compliant = 1,model_validate AND smtlib2_compliant AND proof,0,1.0,1.0,1.0,17
+power_law,150,model_validate = 1 AND proof = 1 AND smtlib2_compliant = 1,model_validate AND smtlib2_compliant AND proof,0,1.0,1.0,1.0,17
+normal,118,debug_ref_count = 1 AND model = 1 AND well_sorted_check = 1,well_sorted_check AND debug_ref_count AND model,0,1.0,1.0,1.0,18
+uniform,118,debug_ref_count = 1 AND model = 1 AND well_sorted_check = 1,well_sorted_check AND model AND debug_ref_count,0,1.0,1.0,1.0,18
+bi_modal_split,118,debug_ref_count = 1 AND model = 1 AND well_sorted_check = 1,well_sorted_check AND model AND debug_ref_count,0,1.0,1.0,1.0,18
+tri_modal_split,118,debug_ref_count = 1 AND model = 1 AND well_sorted_check = 1,type_check AND well_sorted_check AND debug_ref_count AND model,2,0.77720207253886,1.0,0.635593220338983,18
+power_law,118,debug_ref_count = 1 AND model = 1 AND well_sorted_check = 1,type_check,0,0.2245508982035927,0.1363636363636363,0.635593220338983,18
+normal,170,dump_models = 1 AND proof = 1 AND type_check = 1,dump_models AND proof AND type_check,0,1.0,1.0,1.0,19
+uniform,170,dump_models = 1 AND proof = 1 AND type_check = 1,model AND proof AND type_check AND dump_models,0,0.831615120274914,1.0,0.711764705882353,19
+bi_modal_split,170,dump_models = 1 AND proof = 1 AND type_check = 1,type_check AND dump_models AND proof,0,1.0,1.0,1.0,19
+tri_modal_split,170,dump_models = 1 AND proof = 1 AND type_check = 1,dump_models AND type_check AND proof,0,1.0,1.0,1.0,19
+power_law,170,dump_models = 1 AND proof = 1 AND type_check = 1,type_check AND dump_models AND stats AND proof,0,0.8275862068965517,1.0,0.7058823529411765,19
+normal,196,debug_ref_count = 1 AND stats = 1 AND type_check = 1,debug_ref_count AND stats AND type_check,0,1.0,1.0,1.0,1
+uniform,196,debug_ref_count = 1 AND stats = 1 AND type_check = 1,debug_ref_count AND type_check,1,0.7967479674796748,0.6621621621621622,1.0,1
+bi_modal_split,196,debug_ref_count = 1 AND stats = 1 AND type_check = 1,debug_ref_count AND dump_models AND type_check AND stats,2,0.7435897435897436,1.0,0.5918367346938775,1
+tri_modal_split,196,debug_ref_count = 1 AND stats = 1 AND type_check = 1,type_check AND debug_ref_count AND stats,1,1.0,1.0,1.0,1
+power_law,196,debug_ref_count = 1 AND stats = 1 AND type_check = 1,stats AND type_check AND debug_ref_count,0,1.0,1.0,1.0,1
+normal,164,debug_ref_count = 1 AND proof = 1 AND trace = 1,proof AND trace AND debug_ref_count,0,1.0,1.0,1.0,20
+uniform,164,debug_ref_count = 1 AND proof = 1 AND trace = 1,auto_config,0,0.2739322533136966,0.1805825242718446,0.5670731707317073,20
+bi_modal_split,164,debug_ref_count = 1 AND proof = 1 AND trace = 1,debug_ref_count AND trace AND proof,0,1.0,1.0,1.0,20
+tri_modal_split,164,debug_ref_count = 1 AND proof = 1 AND trace = 1,trace AND debug_ref_count AND proof,0,1.0,1.0,1.0,20
+power_law,164,debug_ref_count = 1 AND proof = 1 AND trace = 1,proof AND debug_ref_count AND trace,0,1.0,1.0,1.0,20
+normal,180,dump_models = 1 AND proof = 1 AND stats = 1,stats AND proof AND dump_models,0,1.0,1.0,1.0,21
+uniform,180,dump_models = 1 AND proof = 1 AND stats = 1,proof AND dump_models AND stats,0,1.0,1.0,1.0,21
+bi_modal_split,180,dump_models = 1 AND proof = 1 AND stats = 1,proof AND dump_models AND stats,0,1.0,1.0,1.0,21
+tri_modal_split,180,dump_models = 1 AND proof = 1 AND stats = 1,proof AND dump_models AND stats,0,1.0,1.0,1.0,21
+power_law,180,dump_models = 1 AND proof = 1 AND stats = 1,stats AND proof AND dump_models,0,1.0,1.0,1.0,21
+normal,162,debug_ref_count = 1 AND model_validate = 1 AND stats = 1,stats AND model_validate AND debug_ref_count,0,1.0,1.0,1.0,22
+uniform,162,debug_ref_count = 1 AND model_validate = 1 AND stats = 1,stats AND NOT smtlib2_compliant AND debug_ref_count AND model_validate,0,0.6556016597510373,1.0,0.4876543209876543,22
+bi_modal_split,162,debug_ref_count = 1 AND model_validate = 1 AND stats = 1,model_validate AND stats AND debug_ref_count,0,1.0,1.0,1.0,22
+tri_modal_split,162,debug_ref_count = 1 AND model_validate = 1 AND stats = 1,model,0,0.2914862914862914,0.1902071563088512,0.6234567901234568,22
+power_law,162,debug_ref_count = 1 AND model_validate = 1 AND stats = 1,debug_ref_count AND stats AND model_validate,0,1.0,1.0,1.0,22
+normal,201,auto_config = 1 AND stats = 1 AND type_check = 1,type_check AND trace AND stats,1,0.5965770171149144,0.5865384615384616,0.6069651741293532,23
+uniform,201,auto_config = 1 AND stats = 1 AND type_check = 1,stats AND auto_config AND type_check,0,1.0,1.0,1.0,23
+bi_modal_split,201,auto_config = 1 AND stats = 1 AND type_check = 1,stats,0,0.5454545454545454,0.375,1.0,23
+tri_modal_split,201,auto_config = 1 AND stats = 1 AND type_check = 1,type_check AND auto_config AND stats,4,1.0,1.0,1.0,23
+power_law,201,auto_config = 1 AND stats = 1 AND type_check = 1,debug_ref_count AND stats AND auto_config AND type_check,0,0.6990291262135923,1.0,0.5373134328358209,23
+normal,183,auto_config = 1 AND model = 1 AND model_validate = 1,model_validate AND auto_config AND model,0,1.0,1.0,1.0,24
+uniform,183,auto_config = 1 AND model = 1 AND model_validate = 1,model_validate AND model AND auto_config,0,1.0,1.0,1.0,24
+bi_modal_split,183,auto_config = 1 AND model = 1 AND model_validate = 1,model AND auto_config AND model_validate,1,1.0,1.0,1.0,24
+tri_modal_split,183,auto_config = 1 AND model = 1 AND model_validate = 1,model_validate AND auto_config AND model,0,1.0,1.0,1.0,24
+power_law,183,auto_config = 1 AND model = 1 AND model_validate = 1,stats AND auto_config,2,0.4411764705882353,0.3583617747440273,0.5737704918032787,24
+normal,183,auto_config = 1 AND model = 1 AND model_validate = 1,model_validate AND proof AND auto_config,1,0.6385542168674699,0.7114093959731543,0.5792349726775956,25
+uniform,183,auto_config = 1 AND model = 1 AND model_validate = 1,model_validate AND auto_config AND model,0,1.0,1.0,1.0,25
+bi_modal_split,183,auto_config = 1 AND model = 1 AND model_validate = 1,smtlib2_compliant,1,0.2758620689655172,0.1934065934065934,0.4808743169398907,25
+tri_modal_split,183,auto_config = 1 AND model = 1 AND model_validate = 1,model,0,0.5126050420168067,0.3446327683615819,1.0,25
+power_law,183,auto_config = 1 AND model = 1 AND model_validate = 1,auto_config AND model_validate AND model,0,1.0,1.0,1.0,25
+normal,172,smtlib2_compliant = 1 AND trace = 1 AND type_check = 1,smtlib2_compliant AND trace AND type_check,0,1.0,1.0,1.0,26
+uniform,172,smtlib2_compliant = 1 AND trace = 1 AND type_check = 1,stats AND smtlib2_compliant AND type_check,2,0.7036011080332409,0.671957671957672,0.7383720930232558,26
+bi_modal_split,172,smtlib2_compliant = 1 AND trace = 1 AND type_check = 1,smtlib2_compliant AND type_check AND trace,0,1.0,1.0,1.0,26
+tri_modal_split,172,smtlib2_compliant = 1 AND trace = 1 AND type_check = 1,smtlib2_compliant AND type_check,2,0.780045351473923,0.6394052044609665,1.0,26
+power_law,172,smtlib2_compliant = 1 AND trace = 1 AND type_check = 1,smtlib2_compliant AND trace AND type_check,0,1.0,1.0,1.0,26
+normal,182,debug_ref_count = 1 AND model = 1 AND proof = 1,trace AND model AND proof,2,0.6306818181818182,0.6529411764705882,0.6098901098901099,27
+uniform,182,debug_ref_count = 1 AND model = 1 AND proof = 1,proof AND debug_ref_count AND model,0,1.0,1.0,1.0,27
+bi_modal_split,182,debug_ref_count = 1 AND model = 1 AND proof = 1,proof AND debug_ref_count AND model,0,1.0,1.0,1.0,27
+tri_modal_split,182,debug_ref_count = 1 AND model = 1 AND proof = 1,debug_ref_count,0,0.5177809388335705,0.3493282149712092,1.0,27
+power_law,182,debug_ref_count = 1 AND model = 1 AND proof = 1,proof AND debug_ref_count AND model,0,1.0,1.0,1.0,27
+normal,151,auto_config = 1 AND dump_models = 1 AND trace = 1,dump_models AND auto_config AND trace,0,1.0,1.0,1.0,28
+uniform,151,auto_config = 1 AND dump_models = 1 AND trace = 1,trace AND auto_config AND dump_models,0,1.0,1.0,1.0,28
+bi_modal_split,151,auto_config = 1 AND dump_models = 1 AND trace = 1,dump_models AND auto_config AND trace,0,1.0,1.0,1.0,28
+tri_modal_split,151,auto_config = 1 AND dump_models = 1 AND trace = 1,NOT well_sorted_check AND debug_ref_count,3,0.2448979591836734,0.1769911504424778,0.3973509933774834,28
+power_law,151,auto_config = 1 AND dump_models = 1 AND trace = 1,auto_config AND stats AND trace,3,0.6728395061728395,0.630057803468208,0.7218543046357616,28
+normal,159,dump_models = 1 AND proof = 1 AND unsat_core = 1,trace AND proof,2,0.4555808656036447,0.3571428571428571,0.6289308176100629,29
+uniform,159,dump_models = 1 AND proof = 1 AND unsat_core = 1,proof AND dump_models AND unsat_core,0,1.0,1.0,1.0,29
+bi_modal_split,159,dump_models = 1 AND proof = 1 AND unsat_core = 1,unsat_core AND dump_models AND proof,0,1.0,1.0,1.0,29
+tri_modal_split,159,dump_models = 1 AND proof = 1 AND unsat_core = 1,smtlib2_compliant AND dump_models,2,0.4596577017114914,0.376,0.5911949685534591,29
+power_law,159,dump_models = 1 AND proof = 1 AND unsat_core = 1,model,0,0.3072463768115942,0.199623352165725,0.6666666666666666,29
+normal,110,model = 1 AND model_validate = 1 AND well_sorted_check = 1,well_sorted_check AND proof,4,0.5037037037037037,0.425,0.6181818181818182,2
+uniform,110,model = 1 AND model_validate = 1 AND well_sorted_check = 1,type_check,0,0.2181818181818182,0.1309090909090909,0.6545454545454545,2
+bi_modal_split,110,model = 1 AND model_validate = 1 AND well_sorted_check = 1,model AND well_sorted_check AND model_validate,0,1.0,1.0,1.0,2
+tri_modal_split,110,model = 1 AND model_validate = 1 AND well_sorted_check = 1,well_sorted_check AND model_validate AND model,2,1.0,1.0,1.0,2
+power_law,110,model = 1 AND model_validate = 1 AND well_sorted_check = 1,debug_ref_count AND model_validate AND model AND well_sorted_check,1,0.8481675392670157,1.0,0.7363636363636363,2
+normal,156,smtlib2_compliant = 1 AND trace = 1 AND unsat_core = 1,smtlib2_compliant AND unsat_core AND trace,0,1.0,1.0,1.0,30
+uniform,156,smtlib2_compliant = 1 AND trace = 1 AND unsat_core = 1,unsat_core AND smtlib2_compliant AND trace,0,1.0,1.0,1.0,30
+bi_modal_split,156,smtlib2_compliant = 1 AND trace = 1 AND unsat_core = 1,smtlib2_compliant AND trace AND unsat_core,0,1.0,1.0,1.0,30
+tri_modal_split,156,smtlib2_compliant = 1 AND trace = 1 AND unsat_core = 1,NOT well_sorted_check AND trace AND smtlib2_compliant,4,0.6402439024390244,0.6104651162790697,0.6730769230769231,30
+power_law,156,smtlib2_compliant = 1 AND trace = 1 AND unsat_core = 1,trace AND smtlib2_compliant,0,0.7499999999999999,0.6,1.0,30
+normal,169,debug_ref_count = 1 AND dump_models = 1 AND unsat_core = 1,dump_models,0,0.5082706766917292,0.3407258064516129,1.0,31
+uniform,169,debug_ref_count = 1 AND dump_models = 1 AND unsat_core = 1,unsat_core AND stats AND debug_ref_count,3,0.6303030303030304,0.6459627329192547,0.6153846153846154,31
+bi_modal_split,169,debug_ref_count = 1 AND dump_models = 1 AND unsat_core = 1,dump_models AND debug_ref_count AND unsat_core,0,1.0,1.0,1.0,31
+tri_modal_split,169,debug_ref_count = 1 AND dump_models = 1 AND unsat_core = 1,smtlib2_compliant,1,0.2884615384615385,0.1978021978021978,0.5325443786982249,31
+power_law,169,debug_ref_count = 1 AND dump_models = 1 AND unsat_core = 1,unsat_core AND debug_ref_count AND dump_models,0,1.0,1.0,1.0,31
+normal,186,proof = 1 AND stats = 1 AND type_check = 1,well_sorted_check,2,0.2697495183044316,0.2102102102102102,0.3763440860215054,32
+uniform,186,proof = 1 AND stats = 1 AND type_check = 1,type_check AND proof AND stats,0,1.0,1.0,1.0,32
+bi_modal_split,186,proof = 1 AND stats = 1 AND type_check = 1,model,0,0.306834030683403,0.2071563088512241,0.5913978494623656,32
+tri_modal_split,186,proof = 1 AND stats = 1 AND type_check = 1,smtlib2_compliant,0,0.3463338533541341,0.2439560439560439,0.5967741935483871,32
+power_law,186,proof = 1 AND stats = 1 AND type_check = 1,proof AND type_check,1,0.7965738758029979,0.6619217081850534,1.0,32
+normal,172,debug_ref_count = 1 AND model = 1 AND trace = 1,model AND trace AND debug_ref_count,0,1.0,1.0,1.0,33
+uniform,172,debug_ref_count = 1 AND model = 1 AND trace = 1,trace AND model AND debug_ref_count,0,1.0,1.0,1.0,33
+bi_modal_split,172,debug_ref_count = 1 AND model = 1 AND trace = 1,trace AND model AND debug_ref_count,0,1.0,1.0,1.0,33
+tri_modal_split,172,debug_ref_count = 1 AND model = 1 AND trace = 1,trace AND debug_ref_count AND model,0,1.0,1.0,1.0,33
+power_law,172,debug_ref_count = 1 AND model = 1 AND trace = 1,dump_models AND debug_ref_count,2,0.5117270788912579,0.404040404040404,0.6976744186046512,33
+normal,161,auto_config = 1 AND type_check = 1 AND unsat_core = 1,auto_config AND unsat_core AND type_check,0,1.0,1.0,1.0,34
+uniform,161,auto_config = 1 AND type_check = 1 AND unsat_core = 1,auto_config AND unsat_core AND type_check,0,1.0,1.0,1.0,34
+bi_modal_split,161,auto_config = 1 AND type_check = 1 AND unsat_core = 1,stats AND type_check,2,0.4186046511627907,0.304225352112676,0.6708074534161491,34
+tri_modal_split,161,auto_config = 1 AND type_check = 1 AND unsat_core = 1,dump_models,1,0.2709284627092846,0.1794354838709677,0.5527950310559007,34
+power_law,161,auto_config = 1 AND type_check = 1 AND unsat_core = 1,unsat_core AND type_check AND auto_config,0,1.0,1.0,1.0,34
+normal,115,dump_models = 1 AND stats = 1 AND well_sorted_check = 1,well_sorted_check AND stats AND dump_models,0,1.0,1.0,1.0,35
+uniform,115,dump_models = 1 AND stats = 1 AND well_sorted_check = 1,dump_models AND well_sorted_check AND stats,0,1.0,1.0,1.0,35
+bi_modal_split,115,dump_models = 1 AND stats = 1 AND well_sorted_check = 1,well_sorted_check AND dump_models AND stats,0,1.0,1.0,1.0,35
+tri_modal_split,115,dump_models = 1 AND stats = 1 AND well_sorted_check = 1,trace AND dump_models AND well_sorted_check AND stats,0,0.7499999999999999,1.0,0.6,35
+power_law,115,dump_models = 1 AND stats = 1 AND well_sorted_check = 1,proof AND well_sorted_check,3,0.5236363636363637,0.45,0.6260869565217392,35
+normal,162,proof = 1 AND stats = 1 AND unsat_core = 1,unsat_core AND stats AND proof,0,1.0,1.0,1.0,36
+uniform,162,proof = 1 AND stats = 1 AND unsat_core = 1,trace AND dump_models,2,0.3165137614678899,0.2518248175182482,0.4259259259259259,36
+bi_modal_split,162,proof = 1 AND stats = 1 AND unsat_core = 1,stats AND proof AND unsat_core,0,1.0,1.0,1.0,36
+tri_modal_split,162,proof = 1 AND stats = 1 AND unsat_core = 1,unsat_core AND proof AND stats,2,1.0,1.0,1.0,36
+power_law,162,proof = 1 AND stats = 1 AND unsat_core = 1,proof AND unsat_core AND stats,0,1.0,1.0,1.0,36
+normal,163,auto_config = 1 AND smtlib2_compliant = 1 AND stats = 1,auto_config AND stats AND smtlib2_compliant,0,1.0,1.0,1.0,37
+uniform,163,auto_config = 1 AND smtlib2_compliant = 1 AND stats = 1,trace AND smtlib2_compliant,2,0.5011820330969267,0.4076923076923077,0.6503067484662577,37
+bi_modal_split,163,auto_config = 1 AND smtlib2_compliant = 1 AND stats = 1,auto_config AND smtlib2_compliant AND stats,0,1.0,1.0,1.0,37
+tri_modal_split,163,auto_config = 1 AND smtlib2_compliant = 1 AND stats = 1,smtlib2_compliant AND stats AND auto_config,4,1.0,1.0,1.0,37
+power_law,163,auto_config = 1 AND smtlib2_compliant = 1 AND stats = 1,auto_config AND stats AND smtlib2_compliant,0,1.0,1.0,1.0,37
+normal,201,auto_config = 1 AND stats = 1 AND type_check = 1,stats AND type_check AND auto_config,0,1.0,1.0,1.0,38
+uniform,201,auto_config = 1 AND stats = 1 AND type_check = 1,stats AND auto_config,1,0.8137651821862348,0.6860068259385665,1.0,38
+bi_modal_split,201,auto_config = 1 AND stats = 1 AND type_check = 1,model_validate,1,0.321273516642547,0.2265306122448979,0.5522388059701493,38
+tri_modal_split,201,auto_config = 1 AND stats = 1 AND type_check = 1,auto_config AND type_check,0,0.8072289156626505,0.6767676767676768,1.0,38
+power_law,201,auto_config = 1 AND stats = 1 AND type_check = 1,type_check AND auto_config AND stats,0,1.0,1.0,1.0,38
+normal,186,proof = 1 AND stats = 1 AND type_check = 1,NOT well_sorted_check AND proof AND stats AND type_check,0,0.7682119205298014,1.0,0.6236559139784946,39
+uniform,186,proof = 1 AND stats = 1 AND type_check = 1,type_check AND proof AND stats,0,1.0,1.0,1.0,39
+bi_modal_split,186,proof = 1 AND stats = 1 AND type_check = 1,dump_models,0,0.3519061583577712,0.2419354838709677,0.6451612903225806,39
+tri_modal_split,186,proof = 1 AND stats = 1 AND type_check = 1,stats AND type_check AND proof,1,1.0,1.0,1.0,39
+power_law,186,proof = 1 AND stats = 1 AND type_check = 1,proof AND stats AND type_check,0,1.0,1.0,1.0,39
+normal,183,dump_models = 1 AND trace = 1 AND type_check = 1,dump_models AND trace AND type_check,0,1.0,1.0,1.0,3
+uniform,183,dump_models = 1 AND trace = 1 AND type_check = 1,unsat_core,0,0.2841379310344827,0.1900369003690037,0.5628415300546448,3
+bi_modal_split,183,dump_models = 1 AND trace = 1 AND type_check = 1,model_validate,1,0.362555720653789,0.2489795918367346,0.6666666666666666,3
+tri_modal_split,183,dump_models = 1 AND trace = 1 AND type_check = 1,trace AND dump_models,2,0.800875273522976,0.6678832116788321,1.0,3
+power_law,183,dump_models = 1 AND trace = 1 AND type_check = 1,dump_models AND trace AND type_check,0,1.0,1.0,1.0,3
+normal,159,dump_models = 1 AND model = 1 AND smtlib2_compliant = 1,model AND dump_models AND smtlib2_compliant,0,1.0,1.0,1.0,40
+uniform,159,dump_models = 1 AND model = 1 AND smtlib2_compliant = 1,smtlib2_compliant AND dump_models AND model,0,1.0,1.0,1.0,40
+bi_modal_split,159,dump_models = 1 AND model = 1 AND smtlib2_compliant = 1,debug_ref_count AND model,2,0.4491525423728814,0.3386581469648562,0.6666666666666666,40
+tri_modal_split,159,dump_models = 1 AND model = 1 AND smtlib2_compliant = 1,dump_models,0,0.4854961832061069,0.3205645161290322,1.0,40
+power_law,159,dump_models = 1 AND model = 1 AND smtlib2_compliant = 1,dump_models,0,0.4854961832061069,0.3205645161290322,1.0,40
+normal,156,smtlib2_compliant = 1 AND trace = 1 AND unsat_core = 1,smtlib2_compliant AND trace AND unsat_core,0,1.0,1.0,1.0,41
+uniform,156,smtlib2_compliant = 1 AND trace = 1 AND unsat_core = 1,stats,0,0.3179190751445087,0.2052238805970149,0.7051282051282052,41
+bi_modal_split,156,smtlib2_compliant = 1 AND trace = 1 AND unsat_core = 1,dump_models,1,0.2760736196319018,0.1814516129032258,0.5769230769230769,41
+tri_modal_split,156,smtlib2_compliant = 1 AND trace = 1 AND unsat_core = 1,stats AND smtlib2_compliant,2,0.501138952164009,0.3886925795053003,0.7051282051282052,41
+power_law,156,smtlib2_compliant = 1 AND trace = 1 AND unsat_core = 1,unsat_core AND trace AND smtlib2_compliant,0,1.0,1.0,1.0,41
+normal,104,model = 1 AND proof = 1 AND well_sorted_check = 1,model AND well_sorted_check AND proof,0,1.0,1.0,1.0,42
+uniform,104,model = 1 AND proof = 1 AND well_sorted_check = 1,proof AND well_sorted_check AND model,0,1.0,1.0,1.0,42
+bi_modal_split,104,model = 1 AND proof = 1 AND well_sorted_check = 1,proof AND debug_ref_count,2,0.3842105263157894,0.2644927536231884,0.7019230769230769,42
+tri_modal_split,104,model = 1 AND proof = 1 AND well_sorted_check = 1,auto_config AND well_sorted_check AND proof AND model,2,0.8045977011494253,1.0,0.6730769230769231,42
+power_law,104,model = 1 AND proof = 1 AND well_sorted_check = 1,model AND well_sorted_check AND proof,1,1.0,1.0,1.0,42
+normal,181,auto_config = 1 AND dump_models = 1 AND model = 1,auto_config AND model AND dump_models,0,1.0,1.0,1.0,43
+uniform,181,auto_config = 1 AND dump_models = 1 AND model = 1,dump_models AND auto_config AND model,0,1.0,1.0,1.0,43
+bi_modal_split,181,auto_config = 1 AND dump_models = 1 AND model = 1,proof,0,0.343796711509716,0.235655737704918,0.6353591160220995,43
+tri_modal_split,181,auto_config = 1 AND dump_models = 1 AND model = 1,model AND auto_config,2,0.7605042016806723,0.6135593220338983,1.0,43
+power_law,181,auto_config = 1 AND dump_models = 1 AND model = 1,NOT stats AND auto_config,4,0.3275434243176179,0.2972972972972973,0.3646408839779005,43
+normal,183,dump_models = 1 AND stats = 1 AND trace = 1,dump_models AND trace AND stats,0,1.0,1.0,1.0,44
+uniform,183,dump_models = 1 AND stats = 1 AND trace = 1,stats AND trace AND dump_models,0,1.0,1.0,1.0,44
+bi_modal_split,183,dump_models = 1 AND stats = 1 AND trace = 1,model AND stats,2,0.5021459227467812,0.4134275618374558,0.639344262295082,44
+tri_modal_split,183,dump_models = 1 AND stats = 1 AND trace = 1,unsat_core AND trace,3,0.4634655532359081,0.375,0.6065573770491803,44
+power_law,183,dump_models = 1 AND stats = 1 AND trace = 1,trace AND stats,1,0.7484662576687116,0.5980392156862745,1.0,44
+normal,170,proof = 1 AND trace = 1 AND unsat_core = 1,trace AND proof AND unsat_core,0,1.0,1.0,1.0,45
+uniform,170,proof = 1 AND trace = 1 AND unsat_core = 1,debug_ref_count,0,0.2923299565846599,0.1938579654510556,0.5941176470588235,45
+bi_modal_split,170,proof = 1 AND trace = 1 AND unsat_core = 1,proof AND trace AND unsat_core,0,1.0,1.0,1.0,45
+tri_modal_split,170,proof = 1 AND trace = 1 AND unsat_core = 1,stats,0,0.291784702549575,0.1921641791044776,0.6058823529411764,45
+power_law,170,proof = 1 AND trace = 1 AND unsat_core = 1,proof AND unsat_core AND trace,0,1.0,1.0,1.0,45
+normal,180,stats = 1 AND trace = 1 AND unsat_core = 1,debug_ref_count,0,0.2910128388017118,0.1957773512476007,0.5666666666666667,46
+uniform,180,stats = 1 AND trace = 1 AND unsat_core = 1,model AND stats AND trace AND unsat_core,0,0.7188612099644128,1.0,0.5611111111111111,46
+bi_modal_split,180,stats = 1 AND trace = 1 AND unsat_core = 1,stats AND trace AND unsat_core,0,1.0,1.0,1.0,46
+tri_modal_split,180,stats = 1 AND trace = 1 AND unsat_core = 1,unsat_core AND stats AND trace,0,1.0,1.0,1.0,46
+power_law,180,stats = 1 AND trace = 1 AND unsat_core = 1,trace AND unsat_core AND stats,0,1.0,1.0,1.0,46
+normal,104,debug_ref_count = 1 AND unsat_core = 1 AND well_sorted_check = 1,well_sorted_check AND unsat_core AND debug_ref_count,0,1.0,1.0,1.0,47
+uniform,104,debug_ref_count = 1 AND unsat_core = 1 AND well_sorted_check = 1,well_sorted_check AND debug_ref_count AND unsat_core,0,1.0,1.0,1.0,47
+bi_modal_split,104,debug_ref_count = 1 AND unsat_core = 1 AND well_sorted_check = 1,well_sorted_check AND model,4,0.4876325088339223,0.3854748603351955,0.6634615384615384,47
+tri_modal_split,104,debug_ref_count = 1 AND unsat_core = 1 AND well_sorted_check = 1,NOT smtlib2_compliant AND well_sorted_check,4,0.3674911660777385,0.2905027932960894,0.5,47
+power_law,104,debug_ref_count = 1 AND unsat_core = 1 AND well_sorted_check = 1,well_sorted_check AND unsat_core,2,0.7509025270758123,0.6011560693641619,1.0,47
+normal,142,auto_config = 1 AND dump_models = 1 AND smtlib2_compliant = 1,auto_config AND smtlib2_compliant AND dump_models,0,1.0,1.0,1.0,48
+uniform,142,auto_config = 1 AND dump_models = 1 AND smtlib2_compliant = 1,auto_config AND trace AND dump_models AND smtlib2_compliant,0,0.748898678414097,1.0,0.5985915492957746,48
+bi_modal_split,142,auto_config = 1 AND dump_models = 1 AND smtlib2_compliant = 1,trace,0,0.2619414483821263,0.1676528599605522,0.5985915492957746,48
+tri_modal_split,142,auto_config = 1 AND dump_models = 1 AND smtlib2_compliant = 1,stats AND dump_models AND smtlib2_compliant AND auto_config,1,0.864,1.0,0.7605633802816901,48
+power_law,142,auto_config = 1 AND dump_models = 1 AND smtlib2_compliant = 1,auto_config AND dump_models AND smtlib2_compliant,0,1.0,1.0,1.0,48
+normal,177,model = 1 AND proof = 1 AND unsat_core = 1,unsat_core AND model AND proof,0,1.0,1.0,1.0,49
+uniform,177,model = 1 AND proof = 1 AND unsat_core = 1,dump_models AND proof,2,0.4659340659340659,0.381294964028777,0.5988700564971752,49
+bi_modal_split,177,model = 1 AND proof = 1 AND unsat_core = 1,unsat_core AND model AND proof,0,1.0,1.0,1.0,49
+tri_modal_split,177,model = 1 AND proof = 1 AND unsat_core = 1,proof AND unsat_core AND model,0,1.0,1.0,1.0,49
+power_law,177,model = 1 AND proof = 1 AND unsat_core = 1,model AND unsat_core AND proof,0,1.0,1.0,1.0,49
+normal,172,debug_ref_count = 1 AND model = 1 AND trace = 1,trace AND debug_ref_count AND model,0,1.0,1.0,1.0,4
+uniform,172,debug_ref_count = 1 AND model = 1 AND trace = 1,model AND trace AND debug_ref_count,0,1.0,1.0,1.0,4
+bi_modal_split,172,debug_ref_count = 1 AND model = 1 AND trace = 1,debug_ref_count,0,0.4963924963924964,0.3301343570057581,1.0,4
+tri_modal_split,172,debug_ref_count = 1 AND model = 1 AND trace = 1,unsat_core,0,0.2969187675070028,0.1955719557195571,0.6162790697674418,4
+power_law,172,debug_ref_count = 1 AND model = 1 AND trace = 1,debug_ref_count AND model AND trace,0,1.0,1.0,1.0,4
+normal,104,debug_ref_count = 1 AND unsat_core = 1 AND well_sorted_check = 1,model AND proof,2,0.2430379746835443,0.1649484536082474,0.4615384615384615,50
+uniform,104,debug_ref_count = 1 AND unsat_core = 1 AND well_sorted_check = 1,dump_models AND unsat_core,2,0.3452054794520547,0.2413793103448276,0.6057692307692307,50
+bi_modal_split,104,debug_ref_count = 1 AND unsat_core = 1 AND well_sorted_check = 1,well_sorted_check AND debug_ref_count AND unsat_core,0,1.0,1.0,1.0,50
+tri_modal_split,104,debug_ref_count = 1 AND unsat_core = 1 AND well_sorted_check = 1,auto_config AND model,2,0.2305764411027569,0.1559322033898305,0.4423076923076923,50
+power_law,104,debug_ref_count = 1 AND unsat_core = 1 AND well_sorted_check = 1,unsat_core AND well_sorted_check AND debug_ref_count,0,1.0,1.0,1.0,50
+normal,155,debug_ref_count = 1 AND dump_models = 1 AND smtlib2_compliant = 1,debug_ref_count AND smtlib2_compliant AND dump_models,0,1.0,1.0,1.0,51
+uniform,155,debug_ref_count = 1 AND dump_models = 1 AND smtlib2_compliant = 1,smtlib2_compliant AND debug_ref_count,0,0.7828282828282829,0.6431535269709544,1.0,51
+bi_modal_split,155,debug_ref_count = 1 AND dump_models = 1 AND smtlib2_compliant = 1,stats,0,0.3096960926193921,0.1996268656716417,0.6903225806451613,51
+tri_modal_split,155,debug_ref_count = 1 AND dump_models = 1 AND smtlib2_compliant = 1,dump_models,0,0.4761904761904761,0.3125,1.0,51
+power_law,155,debug_ref_count = 1 AND dump_models = 1 AND smtlib2_compliant = 1,dump_models AND smtlib2_compliant AND debug_ref_count,0,1.0,1.0,1.0,51
+normal,166,auto_config = 1 AND stats = 1 AND unsat_core = 1,unsat_core AND auto_config AND stats,0,1.0,1.0,1.0,52
+uniform,166,auto_config = 1 AND stats = 1 AND unsat_core = 1,stats,0,0.4729344729344729,0.3097014925373134,1.0,52
+bi_modal_split,166,auto_config = 1 AND stats = 1 AND unsat_core = 1,unsat_core,0,0.4689265536723164,0.3062730627306273,1.0,52
+tri_modal_split,166,auto_config = 1 AND stats = 1 AND unsat_core = 1,stats,0,0.4729344729344729,0.3097014925373134,1.0,52
+power_law,166,auto_config = 1 AND stats = 1 AND unsat_core = 1,unsat_core AND auto_config AND stats,0,1.0,1.0,1.0,52
+normal,153,model_validate = 1 AND proof = 1 AND type_check = 1,trace,0,0.3151515151515152,0.2051282051282051,0.6797385620915033,53
+uniform,153,model_validate = 1 AND proof = 1 AND type_check = 1,model_validate AND proof AND type_check,0,1.0,1.0,1.0,53
+bi_modal_split,153,model_validate = 1 AND proof = 1 AND type_check = 1,model,0,0.3157894736842105,0.2033898305084746,0.7058823529411765,53
+tri_modal_split,153,model_validate = 1 AND proof = 1 AND type_check = 1,type_check AND model_validate AND proof,1,1.0,1.0,1.0,53
+power_law,153,model_validate = 1 AND proof = 1 AND type_check = 1,proof AND model_validate AND type_check,0,1.0,1.0,1.0,53
+normal,164,auto_config = 1 AND dump_models = 1 AND proof = 1,auto_config AND dump_models AND proof,0,1.0,1.0,1.0,54
+uniform,164,auto_config = 1 AND dump_models = 1 AND proof = 1,dump_models AND auto_config AND proof,0,1.0,1.0,1.0,54
+bi_modal_split,164,auto_config = 1 AND dump_models = 1 AND proof = 1,type_check AND model,2,0.3105590062111801,0.2351097178683385,0.4573170731707317,54
+tri_modal_split,164,auto_config = 1 AND dump_models = 1 AND proof = 1,model_validate AND proof,2,0.4761904761904761,0.390625,0.6097560975609756,54
+power_law,164,auto_config = 1 AND dump_models = 1 AND proof = 1,stats,0,0.3285714285714285,0.2145522388059701,0.7012195121951219,54
+normal,185,trace = 1 AND type_check = 1 AND unsat_core = 1,type_check,0,0.5034013605442177,0.3363636363636363,1.0,55
+uniform,185,trace = 1 AND type_check = 1 AND unsat_core = 1,unsat_core AND trace AND type_check,0,1.0,1.0,1.0,55
+bi_modal_split,185,trace = 1 AND type_check = 1 AND unsat_core = 1,trace AND unsat_core AND type_check,0,1.0,1.0,1.0,55
+tri_modal_split,185,trace = 1 AND type_check = 1 AND unsat_core = 1,type_check AND unsat_core AND trace,0,1.0,1.0,1.0,55
+power_law,185,trace = 1 AND type_check = 1 AND unsat_core = 1,unsat_core AND type_check AND trace,0,1.0,1.0,1.0,55
+normal,159,dump_models = 1 AND proof = 1 AND unsat_core = 1,dump_models AND unsat_core AND proof,0,1.0,1.0,1.0,56
+uniform,159,dump_models = 1 AND proof = 1 AND unsat_core = 1,dump_models AND proof AND unsat_core,0,1.0,1.0,1.0,56
+bi_modal_split,159,dump_models = 1 AND proof = 1 AND unsat_core = 1,dump_models,1,0.4854961832061069,0.3205645161290322,1.0,56
+tri_modal_split,159,dump_models = 1 AND proof = 1 AND unsat_core = 1,trace,1,0.3003003003003003,0.1972386587771203,0.6289308176100629,56
+power_law,159,dump_models = 1 AND proof = 1 AND unsat_core = 1,proof AND dump_models AND unsat_core,0,1.0,1.0,1.0,56
+normal,115,dump_models = 1 AND model = 1 AND well_sorted_check = 1,auto_config AND type_check,2,0.2524271844660194,0.1750841750841751,0.4521739130434782,57
+uniform,115,dump_models = 1 AND model = 1 AND well_sorted_check = 1,well_sorted_check AND model AND dump_models,0,1.0,1.0,1.0,57
+bi_modal_split,115,dump_models = 1 AND model = 1 AND well_sorted_check = 1,NOT auto_config AND well_sorted_check AND model AND dump_models,0,0.5064935064935064,1.0,0.3391304347826087,57
+tri_modal_split,115,dump_models = 1 AND model = 1 AND well_sorted_check = 1,dump_models AND well_sorted_check AND model,0,1.0,1.0,1.0,57
+power_law,115,dump_models = 1 AND model = 1 AND well_sorted_check = 1,stats,0,0.2334869431643625,0.1417910447761194,0.6608695652173913,57
+normal,189,stats = 1 AND type_check = 1 AND unsat_core = 1,stats AND unsat_core AND type_check,0,1.0,1.0,1.0,58
+uniform,189,stats = 1 AND type_check = 1 AND unsat_core = 1,stats AND unsat_core AND type_check,0,1.0,1.0,1.0,58
+bi_modal_split,189,stats = 1 AND type_check = 1 AND unsat_core = 1,type_check AND proof AND stats,2,0.5706666666666667,0.5752688172043011,0.5661375661375662,58
+tri_modal_split,189,stats = 1 AND type_check = 1 AND unsat_core = 1,stats,0,0.5213793103448275,0.3526119402985074,1.0,58
+power_law,189,stats = 1 AND type_check = 1 AND unsat_core = 1,type_check AND unsat_core,2,0.782608695652174,0.6428571428571429,1.0,58
+normal,183,dump_models = 1 AND stats = 1 AND trace = 1,dump_models AND trace AND stats,0,1.0,1.0,1.0,59
+uniform,183,dump_models = 1 AND stats = 1 AND trace = 1,trace,0,0.5304347826086956,0.3609467455621302,1.0,59
+bi_modal_split,183,dump_models = 1 AND stats = 1 AND trace = 1,dump_models AND trace AND stats,0,1.0,1.0,1.0,59
+tri_modal_split,183,dump_models = 1 AND stats = 1 AND trace = 1,stats AND trace AND dump_models,0,1.0,1.0,1.0,59
+power_law,183,dump_models = 1 AND stats = 1 AND trace = 1,NOT smtlib2_compliant AND stats AND trace AND dump_models,2,0.5476190476190476,1.0,0.3770491803278688,59
+normal,137,auto_config = 1 AND model = 1 AND smtlib2_compliant = 1,smtlib2_compliant AND model AND auto_config,0,1.0,1.0,1.0,5
+uniform,137,auto_config = 1 AND model = 1 AND smtlib2_compliant = 1,smtlib2_compliant AND model AND auto_config,0,1.0,1.0,1.0,5
+bi_modal_split,137,auto_config = 1 AND model = 1 AND smtlib2_compliant = 1,NOT well_sorted_check AND dump_models,3,0.2380952380952381,0.1692307692307692,0.4014598540145985,5
+tri_modal_split,137,auto_config = 1 AND model = 1 AND smtlib2_compliant = 1,dump_models,0,0.2843601895734597,0.1814516129032258,0.656934306569343,5
+power_law,137,auto_config = 1 AND model = 1 AND smtlib2_compliant = 1,proof,0,0.2912,0.1864754098360656,0.6642335766423357,5
+normal,160,auto_config = 1 AND model_validate = 1 AND stats = 1,model_validate AND auto_config AND stats,0,1.0,1.0,1.0,60
+uniform,160,auto_config = 1 AND model_validate = 1 AND stats = 1,auto_config AND model_validate AND stats,0,1.0,1.0,1.0,60
+bi_modal_split,160,auto_config = 1 AND model_validate = 1 AND stats = 1,stats AND model_validate AND auto_config,0,1.0,1.0,1.0,60
+tri_modal_split,160,auto_config = 1 AND model_validate = 1 AND stats = 1,auto_config AND dump_models,2,0.505800464037123,0.4022140221402214,0.68125,60
+power_law,160,auto_config = 1 AND model_validate = 1 AND stats = 1,proof AND model_validate AND model AND stats,4,0.4747081712062256,0.6288659793814433,0.38125,60
+normal,183,dump_models = 1 AND stats = 1 AND trace = 1,stats AND trace AND dump_models,0,1.0,1.0,1.0,61
+uniform,183,dump_models = 1 AND stats = 1 AND trace = 1,stats AND dump_models AND model AND trace,0,0.78,1.0,0.639344262295082,61
+bi_modal_split,183,dump_models = 1 AND stats = 1 AND trace = 1,NOT well_sorted_check AND stats,2,0.4230055658627087,0.3202247191011236,0.6229508196721312,61
+tri_modal_split,183,dump_models = 1 AND stats = 1 AND trace = 1,stats AND trace AND dump_models,0,1.0,1.0,1.0,61
+power_law,183,dump_models = 1 AND stats = 1 AND trace = 1,dump_models AND stats AND trace,0,1.0,1.0,1.0,61
+normal,201,auto_config = 1 AND stats = 1 AND type_check = 1,stats AND type_check AND auto_config,0,1.0,1.0,1.0,62
+uniform,201,auto_config = 1 AND stats = 1 AND type_check = 1,type_check AND auto_config AND stats,0,1.0,1.0,1.0,62
+bi_modal_split,201,auto_config = 1 AND stats = 1 AND type_check = 1,auto_config AND stats AND type_check,0,1.0,1.0,1.0,62
+tri_modal_split,201,auto_config = 1 AND stats = 1 AND type_check = 1,stats AND type_check AND auto_config,0,1.0,1.0,1.0,62
+power_law,201,auto_config = 1 AND stats = 1 AND type_check = 1,proof,0,0.3193033381712627,0.2254098360655737,0.5472636815920398,62
+normal,175,model = 1 AND type_check = 1 AND unsat_core = 1,type_check AND model AND unsat_core,0,1.0,1.0,1.0,63
+uniform,175,model = 1 AND type_check = 1 AND unsat_core = 1,dump_models,0,0.3159463487332339,0.2137096774193548,0.6057142857142858,63
+bi_modal_split,175,model = 1 AND type_check = 1 AND unsat_core = 1,type_check AND model AND unsat_core,0,1.0,1.0,1.0,63
+tri_modal_split,175,model = 1 AND type_check = 1 AND unsat_core = 1,type_check AND debug_ref_count AND model,4,0.5966850828729282,0.5775401069518716,0.6171428571428571,63
+power_law,175,model = 1 AND type_check = 1 AND unsat_core = 1,model AND type_check AND unsat_core,0,1.0,1.0,1.0,63
+normal,189,stats = 1 AND type_check = 1 AND unsat_core = 1,unsat_core AND type_check AND stats,0,1.0,1.0,1.0,64
+uniform,189,stats = 1 AND type_check = 1 AND unsat_core = 1,auto_config AND unsat_core AND type_check AND stats,0,0.7272727272727273,1.0,0.5714285714285714,64
+bi_modal_split,189,stats = 1 AND type_check = 1 AND unsat_core = 1,trace,0,0.3534482758620689,0.2426035502958579,0.6507936507936508,64
+tri_modal_split,189,stats = 1 AND type_check = 1 AND unsat_core = 1,dump_models,1,0.3211678832116788,0.2217741935483871,0.582010582010582,64
+power_law,189,stats = 1 AND type_check = 1 AND unsat_core = 1,type_check AND unsat_core AND stats,0,1.0,1.0,1.0,64
+normal,169,debug_ref_count = 1 AND stats = 1 AND trace = 1,trace AND debug_ref_count AND stats,0,1.0,1.0,1.0,65
+uniform,169,debug_ref_count = 1 AND stats = 1 AND trace = 1,stats AND trace AND debug_ref_count,0,1.0,1.0,1.0,65
+bi_modal_split,169,debug_ref_count = 1 AND stats = 1 AND trace = 1,stats AND trace AND debug_ref_count,0,1.0,1.0,1.0,65
+tri_modal_split,169,debug_ref_count = 1 AND stats = 1 AND trace = 1,NOT proof AND stats,3,0.344988344988345,0.2846153846153846,0.4378698224852071,65
+power_law,169,debug_ref_count = 1 AND stats = 1 AND trace = 1,NOT unsat_core AND debug_ref_count,4,0.3409669211195929,0.2991071428571428,0.3964497041420118,65
+normal,165,auto_config = 1 AND model = 1 AND stats = 1,type_check AND auto_config AND model,1,0.6782608695652174,0.65,0.7090909090909091,66
+uniform,165,auto_config = 1 AND model = 1 AND stats = 1,proof AND type_check,2,0.3094170403587443,0.2455516014234875,0.4181818181818181,66
+bi_modal_split,165,auto_config = 1 AND model = 1 AND stats = 1,type_check,0,0.3272727272727272,0.2127272727272727,0.7090909090909091,66
+tri_modal_split,165,auto_config = 1 AND model = 1 AND stats = 1,stats AND model AND auto_config,2,1.0,1.0,1.0,66
+power_law,165,auto_config = 1 AND model = 1 AND stats = 1,model AND stats AND auto_config,0,1.0,1.0,1.0,66
+normal,175,model = 1 AND proof = 1 AND type_check = 1,proof AND type_check AND model,0,1.0,1.0,1.0,67
+uniform,175,model = 1 AND proof = 1 AND type_check = 1,type_check AND proof AND model,0,1.0,1.0,1.0,67
+bi_modal_split,175,model = 1 AND proof = 1 AND type_check = 1,model AND type_check AND proof,0,1.0,1.0,1.0,67
+tri_modal_split,175,model = 1 AND proof = 1 AND type_check = 1,type_check AND proof AND model,0,1.0,1.0,1.0,67
+power_law,175,model = 1 AND proof = 1 AND type_check = 1,stats AND model AND type_check AND proof,1,0.7719298245614035,1.0,0.6285714285714286,67
+normal,161,auto_config = 1 AND debug_ref_count = 1 AND type_check = 1,auto_config AND debug_ref_count,1,0.7470997679814385,0.5962962962962963,1.0,68
+uniform,161,auto_config = 1 AND debug_ref_count = 1 AND type_check = 1,auto_config AND type_check AND debug_ref_count,0,1.0,1.0,1.0,68
+bi_modal_split,161,auto_config = 1 AND debug_ref_count = 1 AND type_check = 1,proof AND auto_config,2,0.4142857142857142,0.3359073359073359,0.5403726708074534,68
+tri_modal_split,161,auto_config = 1 AND debug_ref_count = 1 AND type_check = 1,debug_ref_count AND auto_config AND type_check,2,1.0,1.0,1.0,68
+power_law,161,auto_config = 1 AND debug_ref_count = 1 AND type_check = 1,auto_config AND type_check AND debug_ref_count,0,1.0,1.0,1.0,68
+normal,172,debug_ref_count = 1 AND model = 1 AND trace = 1,model AND trace,1,0.7577092511013216,0.6099290780141844,1.0,69
+uniform,172,debug_ref_count = 1 AND model = 1 AND trace = 1,trace AND debug_ref_count AND model,0,1.0,1.0,1.0,69
+bi_modal_split,172,debug_ref_count = 1 AND model = 1 AND trace = 1,model AND trace AND debug_ref_count,0,1.0,1.0,1.0,69
+tri_modal_split,172,debug_ref_count = 1 AND model = 1 AND trace = 1,debug_ref_count AND model AND trace,0,1.0,1.0,1.0,69
+power_law,172,debug_ref_count = 1 AND model = 1 AND trace = 1,trace AND debug_ref_count,1,0.7713004484304933,0.6277372262773723,1.0,69
+normal,169,debug_ref_count = 1 AND stats = 1 AND trace = 1,trace AND debug_ref_count AND stats,0,1.0,1.0,1.0,6
+uniform,169,debug_ref_count = 1 AND stats = 1 AND trace = 1,stats AND trace AND debug_ref_count,0,1.0,1.0,1.0,6
+bi_modal_split,169,debug_ref_count = 1 AND stats = 1 AND trace = 1,auto_config AND debug_ref_count,2,0.4100227790432802,0.3333333333333333,0.5325443786982249,6
+tri_modal_split,169,debug_ref_count = 1 AND stats = 1 AND trace = 1,smtlib2_compliant AND stats,2,0.4247787610619469,0.3392226148409894,0.5680473372781065,6
+power_law,169,debug_ref_count = 1 AND stats = 1 AND trace = 1,stats AND trace AND debug_ref_count,0,1.0,1.0,1.0,6
+normal,145,model = 1 AND smtlib2_compliant = 1 AND unsat_core = 1,smtlib2_compliant AND model AND model_validate AND unsat_core,0,0.7763713080168777,1.0,0.6344827586206897,70
+uniform,145,model = 1 AND smtlib2_compliant = 1 AND unsat_core = 1,unsat_core AND smtlib2_compliant AND model,0,1.0,1.0,1.0,70
+bi_modal_split,145,model = 1 AND smtlib2_compliant = 1 AND unsat_core = 1,trace,1,0.2699386503067484,0.1735700197238658,0.6068965517241379,70
+tri_modal_split,145,model = 1 AND smtlib2_compliant = 1 AND unsat_core = 1,auto_config AND unsat_core,2,0.3590909090909091,0.2677966101694915,0.5448275862068965,70
+power_law,145,model = 1 AND smtlib2_compliant = 1 AND unsat_core = 1,model AND smtlib2_compliant AND unsat_core,0,1.0,1.0,1.0,70
+normal,165,auto_config = 1 AND trace = 1 AND unsat_core = 1,trace AND auto_config AND unsat_core,0,1.0,1.0,1.0,71
+uniform,165,auto_config = 1 AND trace = 1 AND unsat_core = 1,trace AND unsat_core AND auto_config,0,1.0,1.0,1.0,71
+bi_modal_split,165,auto_config = 1 AND trace = 1 AND unsat_core = 1,trace AND unsat_core AND auto_config,0,1.0,1.0,1.0,71
+tri_modal_split,165,auto_config = 1 AND trace = 1 AND unsat_core = 1,NOT well_sorted_check,0,0.2494061757719715,0.155096011816839,0.6363636363636364,71
+power_law,165,auto_config = 1 AND trace = 1 AND unsat_core = 1,unsat_core AND trace AND auto_config,0,1.0,1.0,1.0,71
+normal,164,debug_ref_count = 1 AND proof = 1 AND trace = 1,trace AND proof,0,0.7387387387387387,0.5857142857142857,1.0,72
+uniform,164,debug_ref_count = 1 AND proof = 1 AND trace = 1,model_validate,0,0.3302752293577982,0.2204081632653061,0.6585365853658537,72
+bi_modal_split,164,debug_ref_count = 1 AND proof = 1 AND trace = 1,proof AND trace AND debug_ref_count,0,1.0,1.0,1.0,72
+tri_modal_split,164,debug_ref_count = 1 AND proof = 1 AND trace = 1,proof,0,0.5030674846625767,0.3360655737704918,1.0,72
+power_law,164,debug_ref_count = 1 AND proof = 1 AND trace = 1,proof AND debug_ref_count AND trace,0,1.0,1.0,1.0,72
+normal,196,debug_ref_count = 1 AND stats = 1 AND type_check = 1,stats AND debug_ref_count AND type_check,0,1.0,1.0,1.0,73
+uniform,196,debug_ref_count = 1 AND stats = 1 AND type_check = 1,model AND debug_ref_count AND type_check AND stats,0,0.7313915857605179,1.0,0.576530612244898,73
+bi_modal_split,196,debug_ref_count = 1 AND stats = 1 AND type_check = 1,NOT auto_config AND stats,3,0.4009111617312073,0.3621399176954732,0.4489795918367347,73
+tri_modal_split,196,debug_ref_count = 1 AND stats = 1 AND type_check = 1,model_validate,1,0.3002915451895044,0.210204081632653,0.5255102040816326,73
+power_law,196,debug_ref_count = 1 AND stats = 1 AND type_check = 1,type_check AND debug_ref_count AND stats,0,1.0,1.0,1.0,73
+normal,189,dump_models = 1 AND model = 1 AND proof = 1,proof AND dump_models AND model,0,1.0,1.0,1.0,74
+uniform,189,dump_models = 1 AND model = 1 AND proof = 1,model AND proof AND dump_models,0,1.0,1.0,1.0,74
+bi_modal_split,189,dump_models = 1 AND model = 1 AND proof = 1,proof AND dump_models AND model,0,1.0,1.0,1.0,74
+tri_modal_split,189,dump_models = 1 AND model = 1 AND proof = 1,model AND proof AND dump_models,0,1.0,1.0,1.0,74
+power_law,189,dump_models = 1 AND model = 1 AND proof = 1,dump_models AND model_validate AND proof,1,0.6894586894586895,0.7469135802469136,0.6402116402116402,74
+normal,202,model = 1 AND stats = 1 AND type_check = 1,model AND type_check AND stats,0,1.0,1.0,1.0,75
+uniform,202,model = 1 AND stats = 1 AND type_check = 1,model AND stats AND type_check,0,1.0,1.0,1.0,75
+bi_modal_split,202,model = 1 AND stats = 1 AND type_check = 1,NOT well_sorted_check AND type_check,1,0.4424778761061947,0.3443526170798898,0.6188118811881188,75
+tri_modal_split,202,model = 1 AND stats = 1 AND type_check = 1,model AND stats AND type_check,2,1.0,1.0,1.0,75
+power_law,202,model = 1 AND stats = 1 AND type_check = 1,type_check AND model AND stats,0,1.0,1.0,1.0,75
+normal,164,dump_models = 1 AND model_validate = 1 AND unsat_core = 1,model_validate AND unsat_core AND dump_models,0,1.0,1.0,1.0,76
+uniform,164,dump_models = 1 AND model_validate = 1 AND unsat_core = 1,model_validate AND unsat_core AND dump_models,0,1.0,1.0,1.0,76
+bi_modal_split,164,dump_models = 1 AND model_validate = 1 AND unsat_core = 1,dump_models AND model_validate AND unsat_core,0,1.0,1.0,1.0,76
+tri_modal_split,164,dump_models = 1 AND model_validate = 1 AND unsat_core = 1,model_validate AND unsat_core AND dump_models,0,1.0,1.0,1.0,76
+power_law,164,dump_models = 1 AND model_validate = 1 AND unsat_core = 1,dump_models AND model_validate AND unsat_core,0,1.0,1.0,1.0,76
+normal,149,dump_models = 1 AND smtlib2_compliant = 1 AND trace = 1,smtlib2_compliant AND dump_models AND trace,0,1.0,1.0,1.0,77
+uniform,149,dump_models = 1 AND smtlib2_compliant = 1 AND trace = 1,trace AND smtlib2_compliant AND dump_models,0,1.0,1.0,1.0,77
+bi_modal_split,149,dump_models = 1 AND smtlib2_compliant = 1 AND trace = 1,smtlib2_compliant AND dump_models AND trace,2,1.0,1.0,1.0,77
+tri_modal_split,149,dump_models = 1 AND smtlib2_compliant = 1 AND trace = 1,dump_models AND smtlib2_compliant AND trace,0,1.0,1.0,1.0,77
+power_law,149,dump_models = 1 AND smtlib2_compliant = 1 AND trace = 1,smtlib2_compliant AND trace,2,0.7286063569682151,0.573076923076923,1.0,77
+normal,163,model = 1 AND proof = 1 AND smtlib2_compliant = 1,model AND unsat_core AND smtlib2_compliant AND proof,0,0.7651515151515151,1.0,0.6196319018404908,78
+uniform,163,model = 1 AND proof = 1 AND smtlib2_compliant = 1,type_check AND model,2,0.4024896265560165,0.3040752351097178,0.5950920245398773,78
+bi_modal_split,163,model = 1 AND proof = 1 AND smtlib2_compliant = 1,model AND smtlib2_compliant AND proof,0,1.0,1.0,1.0,78
+tri_modal_split,163,model = 1 AND proof = 1 AND smtlib2_compliant = 1,unsat_core AND smtlib2_compliant,2,0.4730679156908665,0.3825757575757575,0.6196319018404908,78
+power_law,163,model = 1 AND proof = 1 AND smtlib2_compliant = 1,proof AND smtlib2_compliant AND model,0,1.0,1.0,1.0,78
+normal,169,debug_ref_count = 1 AND stats = 1 AND trace = 1,trace AND debug_ref_count AND stats,0,1.0,1.0,1.0,79
+uniform,169,debug_ref_count = 1 AND stats = 1 AND trace = 1,trace AND debug_ref_count AND stats,0,1.0,1.0,1.0,79
+bi_modal_split,169,debug_ref_count = 1 AND stats = 1 AND trace = 1,debug_ref_count AND stats AND trace,0,1.0,1.0,1.0,79
+tri_modal_split,169,debug_ref_count = 1 AND stats = 1 AND trace = 1,trace AND debug_ref_count AND stats,0,1.0,1.0,1.0,79
+power_law,169,debug_ref_count = 1 AND stats = 1 AND trace = 1,debug_ref_count AND stats AND trace,0,1.0,1.0,1.0,79
+normal,184,model = 1 AND model_validate = 1 AND trace = 1,stats AND dump_models AND trace AND model,4,0.4983388704318937,0.6410256410256411,0.4076086956521739,7
+uniform,184,model = 1 AND model_validate = 1 AND trace = 1,model AND model_validate AND trace,0,1.0,1.0,1.0,7
+bi_modal_split,184,model = 1 AND model_validate = 1 AND trace = 1,NOT proof AND model,2,0.3632075471698113,0.3208333333333333,0.4184782608695652,7
+tri_modal_split,184,model = 1 AND model_validate = 1 AND trace = 1,trace AND model AND model_validate,0,1.0,1.0,1.0,7
+power_law,184,model = 1 AND model_validate = 1 AND trace = 1,model_validate AND trace,2,0.7913978494623656,0.6548042704626335,1.0,7
+normal,108,auto_config = 1 AND stats = 1 AND well_sorted_check = 1,stats AND well_sorted_check AND auto_config,0,1.0,1.0,1.0,80
+uniform,108,auto_config = 1 AND stats = 1 AND well_sorted_check = 1,stats AND well_sorted_check AND auto_config,0,1.0,1.0,1.0,80
+bi_modal_split,108,auto_config = 1 AND stats = 1 AND well_sorted_check = 1,proof AND stats,3,0.3125,0.217391304347826,0.5555555555555556,80
+tri_modal_split,108,auto_config = 1 AND stats = 1 AND well_sorted_check = 1,NOT proof AND stats,4,0.2608695652173913,0.1846153846153846,0.4444444444444444,80
+power_law,108,auto_config = 1 AND stats = 1 AND well_sorted_check = 1,well_sorted_check AND stats AND auto_config,0,1.0,1.0,1.0,80
+normal,164,proof = 1 AND smtlib2_compliant = 1 AND unsat_core = 1,unsat_core,0,0.4645892351274788,0.3025830258302583,1.0,81
+uniform,164,proof = 1 AND smtlib2_compliant = 1 AND unsat_core = 1,stats AND unsat_core,2,0.4618736383442266,0.3593220338983051,0.6463414634146342,81
+bi_modal_split,164,proof = 1 AND smtlib2_compliant = 1 AND unsat_core = 1,unsat_core AND smtlib2_compliant AND proof,0,1.0,1.0,1.0,81
+tri_modal_split,164,proof = 1 AND smtlib2_compliant = 1 AND unsat_core = 1,smtlib2_compliant AND proof AND unsat_core,0,1.0,1.0,1.0,81
+power_law,164,proof = 1 AND smtlib2_compliant = 1 AND unsat_core = 1,smtlib2_compliant AND proof AND unsat_core,0,1.0,1.0,1.0,81
+normal,164,auto_config = 1 AND debug_ref_count = 1 AND model_validate = 1,model_validate AND auto_config AND debug_ref_count,0,1.0,1.0,1.0,82
+uniform,164,auto_config = 1 AND debug_ref_count = 1 AND model_validate = 1,model_validate AND auto_config AND debug_ref_count,0,1.0,1.0,1.0,82
+bi_modal_split,164,auto_config = 1 AND debug_ref_count = 1 AND model_validate = 1,model_validate AND auto_config AND NOT well_sorted_check AND debug_ref_count,0,0.752851711026616,1.0,0.6036585365853658,82
+tri_modal_split,164,auto_config = 1 AND debug_ref_count = 1 AND model_validate = 1,stats AND model_validate,2,0.4249422632794457,0.3420074349442379,0.5609756097560976,82
+power_law,164,auto_config = 1 AND debug_ref_count = 1 AND model_validate = 1,auto_config AND debug_ref_count AND model_validate,0,1.0,1.0,1.0,82
+normal,194,debug_ref_count = 1 AND dump_models = 1 AND model_validate = 1,dump_models AND debug_ref_count AND model_validate,0,1.0,1.0,1.0,83
+uniform,194,debug_ref_count = 1 AND dump_models = 1 AND model_validate = 1,debug_ref_count AND model_validate AND dump_models,0,1.0,1.0,1.0,83
+bi_modal_split,194,debug_ref_count = 1 AND dump_models = 1 AND model_validate = 1,debug_ref_count AND dump_models AND model_validate,0,1.0,1.0,1.0,83
+tri_modal_split,194,debug_ref_count = 1 AND dump_models = 1 AND model_validate = 1,debug_ref_count AND model_validate AND dump_models,0,1.0,1.0,1.0,83
+power_law,194,debug_ref_count = 1 AND dump_models = 1 AND model_validate = 1,debug_ref_count AND dump_models AND model_validate,0,1.0,1.0,1.0,83
+normal,144,debug_ref_count = 1 AND smtlib2_compliant = 1 AND unsat_core = 1,model_validate AND debug_ref_count AND smtlib2_compliant,2,0.6062717770034843,0.6083916083916084,0.6041666666666666,84
+uniform,144,debug_ref_count = 1 AND smtlib2_compliant = 1 AND unsat_core = 1,unsat_core AND proof,2,0.4604651162790697,0.3461538461538461,0.6875,84
+bi_modal_split,144,debug_ref_count = 1 AND smtlib2_compliant = 1 AND unsat_core = 1,smtlib2_compliant AND debug_ref_count AND unsat_core,0,1.0,1.0,1.0,84
+tri_modal_split,144,debug_ref_count = 1 AND smtlib2_compliant = 1 AND unsat_core = 1,smtlib2_compliant,1,0.4808013355592654,0.3164835164835164,1.0,84
+power_law,144,debug_ref_count = 1 AND smtlib2_compliant = 1 AND unsat_core = 1,debug_ref_count AND smtlib2_compliant AND unsat_core,0,1.0,1.0,1.0,84
+normal,174,dump_models = 1 AND model_validate = 1 AND stats = 1,model_validate AND dump_models AND stats,0,1.0,1.0,1.0,85
+uniform,174,dump_models = 1 AND model_validate = 1 AND stats = 1,stats AND model_validate AND dump_models,0,1.0,1.0,1.0,85
+bi_modal_split,174,dump_models = 1 AND model_validate = 1 AND stats = 1,debug_ref_count,0,0.3194244604316547,0.2130518234165067,0.6379310344827587,85
+tri_modal_split,174,dump_models = 1 AND model_validate = 1 AND stats = 1,model_validate AND dump_models,2,0.7420042643923241,0.5898305084745763,1.0,85
+power_law,174,dump_models = 1 AND model_validate = 1 AND stats = 1,model_validate AND stats AND dump_models,0,1.0,1.0,1.0,85
+normal,183,auto_config = 1 AND model = 1 AND model_validate = 1,dump_models,0,0.3564064801178203,0.2439516129032258,0.6612021857923497,86
+uniform,183,auto_config = 1 AND model = 1 AND model_validate = 1,auto_config AND model_validate AND model,0,1.0,1.0,1.0,86
+bi_modal_split,183,auto_config = 1 AND model = 1 AND model_validate = 1,model AND auto_config AND model_validate,0,1.0,1.0,1.0,86
+tri_modal_split,183,auto_config = 1 AND model = 1 AND model_validate = 1,auto_config AND model AND model_validate,0,1.0,1.0,1.0,86
+power_law,183,auto_config = 1 AND model = 1 AND model_validate = 1,NOT well_sorted_check AND model_validate AND auto_config AND model,1,0.7635135135135135,1.0,0.6174863387978142,86
+normal,160,model_validate = 1 AND proof = 1 AND trace = 1,model_validate AND proof AND trace,0,1.0,1.0,1.0,87
+uniform,160,model_validate = 1 AND proof = 1 AND trace = 1,model_validate AND proof AND trace,0,1.0,1.0,1.0,87
+bi_modal_split,160,model_validate = 1 AND proof = 1 AND trace = 1,stats AND model_validate,2,0.4568764568764569,0.3643122676579926,0.6125,87
+tri_modal_split,160,model_validate = 1 AND proof = 1 AND trace = 1,model_validate,0,0.4923076923076923,0.3265306122448979,1.0,87
+power_law,160,model_validate = 1 AND proof = 1 AND trace = 1,model_validate AND unsat_core AND proof AND trace,1,0.7596899224806202,1.0,0.6125,87
+normal,155,debug_ref_count = 1 AND proof = 1 AND type_check = 1,proof AND type_check AND debug_ref_count,0,1.0,1.0,1.0,88
+uniform,155,debug_ref_count = 1 AND proof = 1 AND type_check = 1,proof AND debug_ref_count AND type_check,0,1.0,1.0,1.0,88
+bi_modal_split,155,debug_ref_count = 1 AND proof = 1 AND type_check = 1,proof AND debug_ref_count AND type_check,0,1.0,1.0,1.0,88
+tri_modal_split,155,debug_ref_count = 1 AND proof = 1 AND type_check = 1,proof AND debug_ref_count AND type_check,0,1.0,1.0,1.0,88
+power_law,155,debug_ref_count = 1 AND proof = 1 AND type_check = 1,proof AND type_check,2,0.7110091743119267,0.5516014234875445,1.0,88
+normal,168,debug_ref_count = 1 AND dump_models = 1 AND proof = 1,proof AND debug_ref_count AND dump_models,0,1.0,1.0,1.0,89
+uniform,168,debug_ref_count = 1 AND dump_models = 1 AND proof = 1,proof AND debug_ref_count AND dump_models,0,1.0,1.0,1.0,89
+bi_modal_split,168,debug_ref_count = 1 AND dump_models = 1 AND proof = 1,trace AND dump_models,3,0.4705882352941176,0.3795620437956204,0.6190476190476191,89
+tri_modal_split,168,debug_ref_count = 1 AND dump_models = 1 AND proof = 1,stats,0,0.2954545454545454,0.1940298507462686,0.6190476190476191,89
+power_law,168,debug_ref_count = 1 AND dump_models = 1 AND proof = 1,model AND proof AND debug_ref_count,2,0.6857142857142857,0.6593406593406593,0.7142857142857143,89
+normal,180,dump_models = 1 AND proof = 1 AND stats = 1,proof AND stats AND dump_models,0,1.0,1.0,1.0,8
+uniform,180,dump_models = 1 AND proof = 1 AND stats = 1,smtlib2_compliant,0,0.3716535433070866,0.2593406593406593,0.6555555555555556,8
+bi_modal_split,180,dump_models = 1 AND proof = 1 AND stats = 1,unsat_core AND stats,2,0.4505263157894737,0.3627118644067796,0.5944444444444444,8
+tri_modal_split,180,dump_models = 1 AND proof = 1 AND stats = 1,model,0,0.3291139240506329,0.2203389830508474,0.65,8
+power_law,180,dump_models = 1 AND proof = 1 AND stats = 1,dump_models AND proof AND stats,0,1.0,1.0,1.0,8
+normal,181,dump_models = 1 AND model_validate = 1 AND type_check = 1,type_check AND model_validate AND dump_models,0,1.0,1.0,1.0,90
+uniform,181,dump_models = 1 AND model_validate = 1 AND type_check = 1,type_check AND dump_models AND model_validate,0,1.0,1.0,1.0,90
+bi_modal_split,181,dump_models = 1 AND model_validate = 1 AND type_check = 1,auto_config AND type_check,2,0.4435146443514643,0.3569023569023569,0.585635359116022,90
+tri_modal_split,181,dump_models = 1 AND model_validate = 1 AND type_check = 1,model_validate,1,0.5394932935916542,0.3693877551020408,1.0,90
+power_law,181,dump_models = 1 AND model_validate = 1 AND type_check = 1,type_check AND model_validate AND dump_models,0,1.0,1.0,1.0,90
+normal,197,model = 1 AND model_validate = 1 AND type_check = 1,model_validate AND debug_ref_count AND type_check,0,0.6739726027397259,0.7321428571428571,0.6243654822335025,91
+uniform,197,model = 1 AND model_validate = 1 AND type_check = 1,debug_ref_count,0,0.3426183844011142,0.236084452975048,0.6243654822335025,91
+bi_modal_split,197,model = 1 AND model_validate = 1 AND type_check = 1,model_validate,0,0.5735080058224163,0.4020408163265306,1.0,91
+tri_modal_split,197,model = 1 AND model_validate = 1 AND type_check = 1,model_validate AND type_check AND model,2,1.0,1.0,1.0,91
+power_law,197,model = 1 AND model_validate = 1 AND type_check = 1,model_validate AND type_check AND model,0,1.0,1.0,1.0,91
+normal,164,dump_models = 1 AND model_validate = 1 AND unsat_core = 1,model_validate AND unsat_core AND dump_models,0,1.0,1.0,1.0,92
+uniform,164,dump_models = 1 AND model_validate = 1 AND unsat_core = 1,model_validate AND unsat_core AND dump_models,0,1.0,1.0,1.0,92
+bi_modal_split,164,dump_models = 1 AND model_validate = 1 AND unsat_core = 1,dump_models,0,0.4969696969696969,0.3306451612903225,1.0,92
+tri_modal_split,164,dump_models = 1 AND model_validate = 1 AND unsat_core = 1,unsat_core AND dump_models,3,0.7717647058823529,0.6283524904214559,1.0,92
+power_law,164,dump_models = 1 AND model_validate = 1 AND unsat_core = 1,dump_models,0,0.4969696969696969,0.3306451612903225,1.0,92
+normal,178,dump_models = 1 AND model = 1 AND trace = 1,model AND trace AND dump_models,0,1.0,1.0,1.0,93
+uniform,178,dump_models = 1 AND model = 1 AND trace = 1,dump_models,0,0.5281899109792285,0.3588709677419355,1.0,93
+bi_modal_split,178,dump_models = 1 AND model = 1 AND trace = 1,dump_models,0,0.5281899109792285,0.3588709677419355,1.0,93
+tri_modal_split,178,dump_models = 1 AND model = 1 AND trace = 1,debug_ref_count AND type_check,2,0.3502109704641351,0.2804054054054054,0.4662921348314606,93
+power_law,178,dump_models = 1 AND model = 1 AND trace = 1,model AND dump_models AND trace,0,1.0,1.0,1.0,93
+normal,164,model = 1 AND stats = 1 AND unsat_core = 1,stats AND model AND unsat_core,0,1.0,1.0,1.0,94
+uniform,164,model = 1 AND stats = 1 AND unsat_core = 1,stats AND model,1,0.7337807606263982,0.5795053003533569,1.0,94
+bi_modal_split,164,model = 1 AND stats = 1 AND unsat_core = 1,unsat_core AND stats AND model,0,1.0,1.0,1.0,94
+tri_modal_split,164,model = 1 AND stats = 1 AND unsat_core = 1,unsat_core,0,0.4645892351274788,0.3025830258302583,1.0,94
+power_law,164,model = 1 AND stats = 1 AND unsat_core = 1,stats AND unsat_core AND model,0,1.0,1.0,1.0,94
+normal,152,debug_ref_count = 1 AND proof = 1 AND stats = 1,proof AND debug_ref_count AND stats,0,1.0,1.0,1.0,95
+uniform,152,debug_ref_count = 1 AND proof = 1 AND stats = 1,proof AND debug_ref_count AND stats,0,1.0,1.0,1.0,95
+bi_modal_split,152,debug_ref_count = 1 AND proof = 1 AND stats = 1,unsat_core AND model_validate,3,0.2707838479809976,0.2118959107806691,0.375,95
+tri_modal_split,152,debug_ref_count = 1 AND proof = 1 AND stats = 1,proof AND debug_ref_count AND stats,3,1.0,1.0,1.0,95
+power_law,152,debug_ref_count = 1 AND proof = 1 AND stats = 1,proof AND NOT unsat_core AND stats AND debug_ref_count,3,0.586046511627907,1.0,0.4144736842105263,95
+normal,154,model_validate = 1 AND type_check = 1 AND unsat_core = 1,unsat_core AND NOT debug_ref_count AND type_check AND model_validate,0,0.5120772946859904,1.0,0.3441558441558441,96
+uniform,154,model_validate = 1 AND type_check = 1 AND unsat_core = 1,model_validate AND unsat_core AND model AND type_check,0,0.8244274809160306,1.0,0.7012987012987013,96
+bi_modal_split,154,model_validate = 1 AND type_check = 1 AND unsat_core = 1,model_validate AND unsat_core AND type_check,0,1.0,1.0,1.0,96
+tri_modal_split,154,model_validate = 1 AND type_check = 1 AND unsat_core = 1,type_check AND model_validate AND unsat_core,0,1.0,1.0,1.0,96
+power_law,154,model_validate = 1 AND type_check = 1 AND unsat_core = 1,unsat_core AND dump_models AND type_check AND model_validate,1,0.7777777777777778,1.0,0.6363636363636364,96
+normal,161,debug_ref_count = 1 AND type_check = 1 AND unsat_core = 1,debug_ref_count,0,0.4721407624633431,0.3090211132437619,1.0,97
+uniform,161,debug_ref_count = 1 AND type_check = 1 AND unsat_core = 1,well_sorted_check AND type_check,4,0.3390804597701149,0.3155080213903743,0.3664596273291925,97
+bi_modal_split,161,debug_ref_count = 1 AND type_check = 1 AND unsat_core = 1,debug_ref_count AND unsat_core AND type_check,0,1.0,1.0,1.0,97
+tri_modal_split,161,debug_ref_count = 1 AND type_check = 1 AND unsat_core = 1,unsat_core,0,0.4580369843527738,0.2970479704797047,1.0,97
+power_law,161,debug_ref_count = 1 AND type_check = 1 AND unsat_core = 1,debug_ref_count AND unsat_core AND type_check,0,1.0,1.0,1.0,97
+normal,115,dump_models = 1 AND stats = 1 AND well_sorted_check = 1,well_sorted_check AND stats AND dump_models,0,1.0,1.0,1.0,98
+uniform,115,dump_models = 1 AND stats = 1 AND well_sorted_check = 1,stats AND well_sorted_check,2,0.7796610169491525,0.6388888888888888,1.0,98
+bi_modal_split,115,dump_models = 1 AND stats = 1 AND well_sorted_check = 1,stats AND well_sorted_check,4,0.7796610169491525,0.6388888888888888,1.0,98
+tri_modal_split,115,dump_models = 1 AND stats = 1 AND well_sorted_check = 1,well_sorted_check,1,0.5133928571428572,0.3453453453453453,1.0,98
+power_law,115,dump_models = 1 AND stats = 1 AND well_sorted_check = 1,well_sorted_check AND type_check AND dump_models,4,0.7719298245614037,0.7787610619469026,0.7652173913043478,98
+normal,108,debug_ref_count = 1 AND dump_models = 1 AND well_sorted_check = 1,well_sorted_check AND debug_ref_count AND dump_models,0,1.0,1.0,1.0,99
+uniform,108,debug_ref_count = 1 AND dump_models = 1 AND well_sorted_check = 1,well_sorted_check AND model_validate,4,0.5294117647058824,0.4390243902439024,0.6666666666666666,99
+bi_modal_split,108,debug_ref_count = 1 AND dump_models = 1 AND well_sorted_check = 1,well_sorted_check AND proof,4,0.4925373134328357,0.4125,0.6111111111111112,99
+tri_modal_split,108,debug_ref_count = 1 AND dump_models = 1 AND well_sorted_check = 1,unsat_core AND debug_ref_count,2,0.3111111111111111,0.2121212121212121,0.5833333333333334,99
+power_law,108,debug_ref_count = 1 AND dump_models = 1 AND well_sorted_check = 1,model AND model_validate AND debug_ref_count,3,0.3642172523961661,0.2780487804878049,0.5277777777777778,99
+normal,163,auto_config = 1 AND model_validate = 1 AND type_check = 1,auto_config AND type_check AND model_validate,0,1.0,1.0,1.0,9
+uniform,163,auto_config = 1 AND model_validate = 1 AND type_check = 1,auto_config,0,0.4808259587020648,0.316504854368932,1.0,9
+bi_modal_split,163,auto_config = 1 AND model_validate = 1 AND type_check = 1,stats AND auto_config,2,0.4868421052631578,0.378839590443686,0.6809815950920245,9
+tri_modal_split,163,auto_config = 1 AND model_validate = 1 AND type_check = 1,NOT well_sorted_check AND proof AND type_check,4,0.3112391930835735,0.2934782608695652,0.3312883435582822,9
+power_law,163,auto_config = 1 AND model_validate = 1 AND type_check = 1,auto_config AND model_validate AND type_check,0,1.0,1.0,1.0,9

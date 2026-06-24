@@ -1,0 +1,6 @@
+rule,sg_samples,sg_coverage,rule_num_predicates,rule_features_used
+BZip2 AND x <= 6.00,9152,0.13333333333333333,2,"['BZip2', 'x']"
+NOT BZip2 AND x <= 4.00,27456,0.4,2,"['BZip2', 'x']"
+NOT BZip2 AND NOT PPMd AND x >= 8.00,13728,0.2,3,"['BZip2', 'x', 'PPMd']"
+PPMd AND x <= 6.00,9152,0.13333333333333333,2,"['x', 'PPMd']"
+NOT Deflate AND NOT PPMd AND x <= 4.00,20592,0.3,3,"['Deflate', 'x', 'PPMd']"

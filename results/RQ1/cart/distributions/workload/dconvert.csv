@@ -1,0 +1,501 @@
+sg_distribution,sg_cardinality,sg_rule,best_rule,best_rule_idx,f1,precision,recall,seed
+normal,922,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND scaleIsHeightDp = 1,androidMipmapInsteadOfDrawable AND scaleIsHeightDp,0,1.0,1.0,1.0,0
+uniform,733,android = 1 AND androidIncludeLdpiTvdpi = 1 AND threads = 10,androidIncludeLdpiTvdpi AND threads <= 50.0,1,1.0,1.0,1.0,0
+bi_modal_split,885,android = 1 AND skipUpscaling = 1 AND androidIncludeLdpiTvdpi = 1,skipUpscaling AND androidIncludeLdpiTvdpi,2,1.0,1.0,1.0,0
+tri_modal_split,1045,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND threads = 90,androidMipmapInsteadOfDrawable,3,0.73410607657183,0.5799112097669257,1.0,0
+power_law,1051,android = 1 AND antiAliasing = 1 AND threads = 90,android AND antiAliasing AND threads > 50.0,2,1.0,1.0,1.0,0
+normal,699,android = 1 AND ceil = 1 AND threads = 90,android AND threads > 50.0 AND ceil,0,1.0,1.0,1.0,10
+uniform,699,android = 1 AND ceil = 1 AND threads = 90,ceil AND android AND threads > 50.0,1,1.0,1.0,1.0,10
+bi_modal_split,699,android = 1 AND ceil = 1 AND threads = 90,NOT bmp AND NOT gif AND NOT round AND android,4,0.4045138888888889,0.2903426791277259,0.6666666666666666,10
+tri_modal_split,699,android = 1 AND ceil = 1 AND threads = 90,ceil,3,0.4915611814345991,0.3258741258741259,1.0,10
+power_law,699,android = 1 AND ceil = 1 AND threads = 90,ceil AND android AND threads > 50.0,3,1.0,1.0,1.0,10
+normal,899,android = 1 AND antiAliasing = 1 AND skipUpscaling = 1,android AND skipUpscaling AND antiAliasing,0,1.0,1.0,1.0,11
+uniform,899,android = 1 AND antiAliasing = 1 AND skipUpscaling = 1,android AND antiAliasing AND skipUpscaling,0,1.0,1.0,1.0,11
+bi_modal_split,899,android = 1 AND antiAliasing = 1 AND skipUpscaling = 1,skipUpscaling AND antiAliasing AND android,0,1.0,1.0,1.0,11
+tri_modal_split,899,android = 1 AND antiAliasing = 1 AND skipUpscaling = 1,skipUpscaling AND antiAliasing AND android,0,1.0,1.0,1.0,11
+power_law,899,android = 1 AND antiAliasing = 1 AND skipUpscaling = 1,androidMipmapInsteadOfDrawable,4,0.3635690485005553,0.2724750277469478,0.5461624026696329,11
+normal,942,android = 1 AND antiAliasing = 1 AND androidIncludeLdpiTvdpi = 1,androidIncludeLdpiTvdpi AND antiAliasing,0,1.0,1.0,1.0,12
+uniform,942,android = 1 AND antiAliasing = 1 AND androidIncludeLdpiTvdpi = 1,androidIncludeLdpiTvdpi AND antiAliasing,0,1.0,1.0,1.0,12
+bi_modal_split,942,android = 1 AND antiAliasing = 1 AND androidIncludeLdpiTvdpi = 1,androidIncludeLdpiTvdpi AND antiAliasing,0,1.0,1.0,1.0,12
+tri_modal_split,942,android = 1 AND antiAliasing = 1 AND androidIncludeLdpiTvdpi = 1,androidIncludeLdpiTvdpi AND antiAliasing,0,1.0,1.0,1.0,12
+power_law,942,android = 1 AND antiAliasing = 1 AND androidIncludeLdpiTvdpi = 1,androidIncludeLdpiTvdpi AND antiAliasing,1,1.0,1.0,1.0,12
+normal,942,android = 1 AND antiAliasing = 1 AND androidIncludeLdpiTvdpi = 1,androidIncludeLdpiTvdpi AND antiAliasing,0,1.0,1.0,1.0,13
+uniform,942,android = 1 AND antiAliasing = 1 AND androidIncludeLdpiTvdpi = 1,androidIncludeLdpiTvdpi AND antiAliasing,0,1.0,1.0,1.0,13
+bi_modal_split,942,android = 1 AND antiAliasing = 1 AND androidIncludeLdpiTvdpi = 1,androidIncludeLdpiTvdpi AND antiAliasing,0,1.0,1.0,1.0,13
+tri_modal_split,942,android = 1 AND antiAliasing = 1 AND androidIncludeLdpiTvdpi = 1,androidIncludeLdpiTvdpi AND antiAliasing,0,1.0,1.0,1.0,13
+power_law,942,android = 1 AND antiAliasing = 1 AND androidIncludeLdpiTvdpi = 1,skipUpscaling,1,0.2363411619283065,0.1540444730905575,0.5074309978768577,13
+normal,1045,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND threads = 90,androidMipmapInsteadOfDrawable AND threads > 50.0,0,1.0,1.0,1.0,14
+uniform,1045,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND threads = 90,androidMipmapInsteadOfDrawable AND threads > 50.0,0,1.0,1.0,1.0,14
+bi_modal_split,1045,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND threads = 90,NOT bmp AND androidMipmapInsteadOfDrawable AND threads > 50.0,2,0.9091858037578288,1.0,0.8334928229665072,14
+tri_modal_split,1045,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND threads = 90,NOT jpeg AND androidMipmapInsteadOfDrawable,4,0.630186958504332,0.6019163763066202,0.661244019138756,14
+power_law,1045,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND threads = 90,androidMipmapInsteadOfDrawable AND threads > 50.0,4,1.0,1.0,1.0,14
+normal,949,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND antiAliasing = 1,androidMipmapInsteadOfDrawable AND antiAliasing,0,1.0,1.0,1.0,15
+uniform,949,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND antiAliasing = 1,androidMipmapInsteadOfDrawable AND antiAliasing,0,1.0,1.0,1.0,15
+bi_modal_split,949,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND antiAliasing = 1,androidMipmapInsteadOfDrawable,3,0.6899309342057434,0.5266370699223085,1.0,15
+tri_modal_split,949,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND antiAliasing = 1,androidMipmapInsteadOfDrawable AND antiAliasing,3,1.0,1.0,1.0,15
+power_law,949,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND antiAliasing = 1,androidMipmapInsteadOfDrawable,3,0.6899309342057434,0.5266370699223085,1.0,15
+normal,922,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND scaleIsHeightDp = 1,androidMipmapInsteadOfDrawable AND scaleIsHeightDp,0,1.0,1.0,1.0,16
+uniform,922,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND scaleIsHeightDp = 1,androidMipmapInsteadOfDrawable AND scaleIsHeightDp,0,1.0,1.0,1.0,16
+bi_modal_split,922,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND scaleIsHeightDp = 1,android AND scaleIsHeightDp,2,0.679439941046426,0.5145089285714286,1.0,16
+tri_modal_split,922,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND scaleIsHeightDp = 1,androidMipmapInsteadOfDrawable AND scaleIsHeightDp,4,1.0,1.0,1.0,16
+power_law,922,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND scaleIsHeightDp = 1,androidMipmapInsteadOfDrawable AND scaleIsHeightDp,2,1.0,1.0,1.0,16
+normal,1044,android = 1 AND androidIncludeLdpiTvdpi = 1 AND threads = 90,androidIncludeLdpiTvdpi AND threads > 50.0,0,1.0,1.0,1.0,17
+uniform,1044,android = 1 AND androidIncludeLdpiTvdpi = 1 AND threads = 90,androidIncludeLdpiTvdpi AND threads > 50.0,0,1.0,1.0,1.0,17
+bi_modal_split,1044,android = 1 AND androidIncludeLdpiTvdpi = 1 AND threads = 90,androidIncludeLdpiTvdpi AND threads > 50.0,2,1.0,1.0,1.0,17
+tri_modal_split,1044,android = 1 AND androidIncludeLdpiTvdpi = 1 AND threads = 90,androidIncludeLdpiTvdpi AND threads > 50.0,0,1.0,1.0,1.0,17
+power_law,1044,android = 1 AND androidIncludeLdpiTvdpi = 1 AND threads = 90,androidIncludeLdpiTvdpi,2,0.7401630627437079,0.5875070343275183,1.0,17
+normal,684,android = 1 AND round = 1 AND threads = 90,round AND android AND threads > 50.0,0,1.0,1.0,1.0,18
+uniform,684,android = 1 AND round = 1 AND threads = 90,round AND android AND threads > 50.0,0,1.0,1.0,1.0,18
+bi_modal_split,684,android = 1 AND round = 1 AND threads = 90,NOT gif AND NOT floor AND threads > 50.0,2,0.3953168044077135,0.2585585585585586,0.8391812865497076,18
+tri_modal_split,684,android = 1 AND round = 1 AND threads = 90,round,2,0.4613827993254636,0.2998684787373958,1.0,18
+power_law,684,android = 1 AND round = 1 AND threads = 90,threads > 50.0,0,0.2946370880895972,0.1727709017428643,1.0,18
+normal,844,scaleIsHeightDp = 1 AND antiAliasing = 1 AND skipUpscaling = 1,skipUpscaling AND antiAliasing AND scaleIsHeightDp,0,1.0,1.0,1.0,19
+uniform,844,scaleIsHeightDp = 1 AND antiAliasing = 1 AND skipUpscaling = 1,scaleIsHeightDp,0,0.4039243838238813,0.2530734632683658,1.0,19
+bi_modal_split,844,scaleIsHeightDp = 1 AND antiAliasing = 1 AND skipUpscaling = 1,skipUpscaling AND scaleIsHeightDp AND antiAliasing,0,1.0,1.0,1.0,19
+tri_modal_split,844,scaleIsHeightDp = 1 AND antiAliasing = 1 AND skipUpscaling = 1,antiAliasing AND skipUpscaling AND scaleIsHeightDp,0,1.0,1.0,1.0,19
+power_law,844,scaleIsHeightDp = 1 AND antiAliasing = 1 AND skipUpscaling = 1,antiAliasing AND skipUpscaling AND scaleIsHeightDp,3,1.0,1.0,1.0,19
+normal,682,scaleIsHeightDp = 1 AND skipUpscaling = 1 AND threads = 10,threads <= 50.0 AND skipUpscaling AND scaleIsHeightDp,0,1.0,1.0,1.0,1
+uniform,682,scaleIsHeightDp = 1 AND skipUpscaling = 1 AND threads = 10,skipUpscaling AND threads <= 50.0,4,0.6948548140601121,0.5323965651834505,1.0,1
+bi_modal_split,682,scaleIsHeightDp = 1 AND skipUpscaling = 1 AND threads = 10,scaleIsHeightDp AND threads <= 50.0,4,0.6595744680851063,0.492063492063492,1.0,1
+tri_modal_split,682,scaleIsHeightDp = 1 AND skipUpscaling = 1 AND threads = 10,threads <= 50.0,2,0.3911671924290221,0.2431372549019607,1.0,1
+power_law,682,scaleIsHeightDp = 1 AND skipUpscaling = 1 AND threads = 10,threads <= 50.0 AND scaleIsHeightDp,4,0.6595744680851063,0.492063492063492,1.0,1
+normal,753,android = 1 AND scaleIsHeightDp = 1 AND threads = 10,NOT ios AND skipUpscaling AND scaleIsHeightDp AND threads <= 50.0,4,0.6026541764246682,0.7310606060606061,0.5126162018592297,20
+uniform,753,android = 1 AND scaleIsHeightDp = 1 AND threads = 10,scaleIsHeightDp AND threads <= 50.0 AND android,0,1.0,1.0,1.0,20
+bi_modal_split,753,android = 1 AND scaleIsHeightDp = 1 AND threads = 10,threads <= 50.0 AND scaleIsHeightDp AND android,1,1.0,1.0,1.0,20
+tri_modal_split,753,android = 1 AND scaleIsHeightDp = 1 AND threads = 10,scaleIsHeightDp AND threads <= 50.0 AND android,0,1.0,1.0,1.0,20
+power_law,753,android = 1 AND scaleIsHeightDp = 1 AND threads = 10,threads <= 50.0,1,0.4232715008431703,0.2684491978609625,1.0,20
+normal,733,android = 1 AND androidIncludeLdpiTvdpi = 1 AND threads = 10,androidIncludeLdpiTvdpi AND threads <= 50.0,0,1.0,1.0,1.0,21
+uniform,733,android = 1 AND androidIncludeLdpiTvdpi = 1 AND threads = 10,androidIncludeLdpiTvdpi AND threads <= 50.0,1,1.0,1.0,1.0,21
+bi_modal_split,733,android = 1 AND androidIncludeLdpiTvdpi = 1 AND threads = 10,threads <= 50.0 AND androidIncludeLdpiTvdpi,0,1.0,1.0,1.0,21
+tri_modal_split,733,android = 1 AND androidIncludeLdpiTvdpi = 1 AND threads = 10,androidIncludeLdpiTvdpi AND threads <= 50.0,0,1.0,1.0,1.0,21
+power_law,733,android = 1 AND androidIncludeLdpiTvdpi = 1 AND threads = 10,androidIncludeLdpiTvdpi,3,0.5840637450199203,0.4124929656724817,1.0,21
+normal,1044,android = 1 AND androidIncludeLdpiTvdpi = 1 AND threads = 90,androidIncludeLdpiTvdpi AND threads > 50.0,0,1.0,1.0,1.0,22
+uniform,1044,android = 1 AND androidIncludeLdpiTvdpi = 1 AND threads = 90,androidIncludeLdpiTvdpi AND threads > 50.0,0,1.0,1.0,1.0,22
+bi_modal_split,1044,android = 1 AND androidIncludeLdpiTvdpi = 1 AND threads = 90,androidIncludeLdpiTvdpi AND threads > 50.0,0,1.0,1.0,1.0,22
+tri_modal_split,1044,android = 1 AND androidIncludeLdpiTvdpi = 1 AND threads = 90,androidIncludeLdpiTvdpi AND threads > 50.0,1,1.0,1.0,1.0,22
+power_law,1044,android = 1 AND androidIncludeLdpiTvdpi = 1 AND threads = 90,androidIncludeLdpiTvdpi AND threads > 50.0,4,1.0,1.0,1.0,22
+normal,1044,android = 1 AND androidIncludeLdpiTvdpi = 1 AND threads = 90,androidIncludeLdpiTvdpi AND threads > 50.0,0,1.0,1.0,1.0,23
+uniform,1044,android = 1 AND androidIncludeLdpiTvdpi = 1 AND threads = 90,androidIncludeLdpiTvdpi AND threads > 50.0,0,1.0,1.0,1.0,23
+bi_modal_split,1044,android = 1 AND androidIncludeLdpiTvdpi = 1 AND threads = 90,androidIncludeLdpiTvdpi AND threads > 50.0,0,1.0,1.0,1.0,23
+tri_modal_split,1044,android = 1 AND androidIncludeLdpiTvdpi = 1 AND threads = 90,androidIncludeLdpiTvdpi,4,0.7401630627437079,0.5875070343275183,1.0,23
+power_law,1044,android = 1 AND androidIncludeLdpiTvdpi = 1 AND threads = 90,androidIncludeLdpiTvdpi,3,0.7401630627437079,0.5875070343275183,1.0,23
+normal,1051,android = 1 AND antiAliasing = 1 AND threads = 90,antiAliasing AND android AND threads > 50.0,0,1.0,1.0,1.0,24
+uniform,1051,android = 1 AND antiAliasing = 1 AND threads = 90,antiAliasing AND android AND threads > 50.0,0,1.0,1.0,1.0,24
+bi_modal_split,1051,android = 1 AND antiAliasing = 1 AND threads = 90,antiAliasing AND threads > 50.0 AND android,0,1.0,1.0,1.0,24
+tri_modal_split,1051,android = 1 AND antiAliasing = 1 AND threads = 90,antiAliasing AND android,3,0.7339385474860335,0.5797021511307225,1.0,24
+power_law,1051,android = 1 AND antiAliasing = 1 AND threads = 90,NOT win AND NOT ios AND antiAliasing,2,0.6564647095565271,0.4886099488609949,1.0,24
+normal,972,scaleIsHeightDp = 1 AND antiAliasing = 1 AND threads = 90,antiAliasing AND scaleIsHeightDp AND threads > 50.0,0,1.0,1.0,1.0,25
+uniform,972,scaleIsHeightDp = 1 AND antiAliasing = 1 AND threads = 90,threads > 50.0 AND scaleIsHeightDp AND antiAliasing,0,1.0,1.0,1.0,25
+bi_modal_split,972,scaleIsHeightDp = 1 AND antiAliasing = 1 AND threads = 90,antiAliasing AND scaleIsHeightDp AND threads > 50.0,0,1.0,1.0,1.0,25
+tri_modal_split,972,scaleIsHeightDp = 1 AND antiAliasing = 1 AND threads = 90,scaleIsHeightDp AND antiAliasing AND threads > 50.0,0,1.0,1.0,1.0,25
+power_law,972,scaleIsHeightDp = 1 AND antiAliasing = 1 AND threads = 90,scaleIsHeightDp AND antiAliasing AND threads > 50.0,0,1.0,1.0,1.0,25
+normal,733,android = 1 AND androidIncludeLdpiTvdpi = 1 AND threads = 10,androidIncludeLdpiTvdpi AND threads <= 50.0,0,1.0,1.0,1.0,26
+uniform,733,android = 1 AND androidIncludeLdpiTvdpi = 1 AND threads = 10,jpeg,2,0.1812191103789127,0.1194613379669852,0.3751705320600272,26
+bi_modal_split,733,android = 1 AND androidIncludeLdpiTvdpi = 1 AND threads = 10,androidIncludeLdpiTvdpi,4,0.5840637450199203,0.4124929656724817,1.0,26
+tri_modal_split,733,android = 1 AND androidIncludeLdpiTvdpi = 1 AND threads = 10,NOT androidIncludeLdpiTvdpi,0,0.0,0.0,0.0,26
+power_law,733,android = 1 AND androidIncludeLdpiTvdpi = 1 AND threads = 10,androidIncludeLdpiTvdpi,3,0.5840637450199203,0.4124929656724817,1.0,26
+normal,933,android = 1 AND scaleIsHeightDp = 1 AND androidIncludeLdpiTvdpi = 1,androidIncludeLdpiTvdpi AND scaleIsHeightDp,0,1.0,1.0,1.0,27
+uniform,933,android = 1 AND scaleIsHeightDp = 1 AND androidIncludeLdpiTvdpi = 1,androidIncludeLdpiTvdpi AND scaleIsHeightDp,0,1.0,1.0,1.0,27
+bi_modal_split,933,android = 1 AND scaleIsHeightDp = 1 AND androidIncludeLdpiTvdpi = 1,NOT ios AND scaleIsHeightDp,2,0.5383727639930755,0.3683379392025266,1.0,27
+tri_modal_split,933,android = 1 AND scaleIsHeightDp = 1 AND androidIncludeLdpiTvdpi = 1,NOT androidIncludeLdpiTvdpi,0,0.0,0.0,0.0,27
+power_law,933,android = 1 AND scaleIsHeightDp = 1 AND androidIncludeLdpiTvdpi = 1,androidIncludeLdpiTvdpi AND scaleIsHeightDp,3,1.0,1.0,1.0,27
+normal,924,android = 1 AND scaleIsHeightDp = 1 AND antiAliasing = 1,antiAliasing AND android AND scaleIsHeightDp,0,1.0,1.0,1.0,28
+uniform,924,android = 1 AND scaleIsHeightDp = 1 AND antiAliasing = 1,scaleIsHeightDp AND android AND antiAliasing,0,1.0,1.0,1.0,28
+bi_modal_split,924,android = 1 AND scaleIsHeightDp = 1 AND antiAliasing = 1,scaleIsHeightDp AND NOT ios,1,0.5345675441133931,0.3647848401105408,1.0,28
+tri_modal_split,924,android = 1 AND scaleIsHeightDp = 1 AND antiAliasing = 1,antiAliasing AND scaleIsHeightDp AND android,0,1.0,1.0,1.0,28
+power_law,924,android = 1 AND scaleIsHeightDp = 1 AND antiAliasing = 1,NOT ios,0,0.3059602649006622,0.1806098514464425,1.0,28
+normal,1039,android = 1 AND scaleIsHeightDp = 1 AND threads = 90,threads > 50.0 AND scaleIsHeightDp AND android,0,1.0,1.0,1.0,29
+uniform,1039,android = 1 AND scaleIsHeightDp = 1 AND threads = 90,scaleIsHeightDp AND android AND threads > 50.0,0,1.0,1.0,1.0,29
+bi_modal_split,1039,android = 1 AND scaleIsHeightDp = 1 AND threads = 90,scaleIsHeightDp AND android AND threads > 50.0,0,1.0,1.0,1.0,29
+tri_modal_split,1039,android = 1 AND scaleIsHeightDp = 1 AND threads = 90,threads > 50.0 AND android,3,0.6690276883451384,0.5026608611514272,1.0,29
+power_law,1039,android = 1 AND scaleIsHeightDp = 1 AND threads = 90,scaleIsHeightDp AND threads > 50.0 AND android,4,1.0,1.0,1.0,29
+normal,922,antiAliasing = 1 AND skipUpscaling = 1 AND threads = 90,threads > 50.0 AND skipUpscaling AND antiAliasing,0,1.0,1.0,1.0,2
+uniform,922,antiAliasing = 1 AND skipUpscaling = 1 AND threads = 90,antiAliasing AND skipUpscaling AND threads > 50.0,0,1.0,1.0,1.0,2
+bi_modal_split,922,antiAliasing = 1 AND skipUpscaling = 1 AND threads = 90,threads > 50.0,0,0.3777914361811105,0.2328870927001768,1.0,2
+tri_modal_split,922,antiAliasing = 1 AND skipUpscaling = 1 AND threads = 90,skipUpscaling AND threads > 50.0,3,0.6720116618075802,0.5060373216245884,1.0,2
+power_law,922,antiAliasing = 1 AND skipUpscaling = 1 AND threads = 90,skipUpscaling AND threads > 50.0,4,0.6720116618075802,0.5060373216245884,1.0,2
+normal,902,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND androidIncludeLdpiTvdpi = 1,androidIncludeLdpiTvdpi AND androidMipmapInsteadOfDrawable,0,1.0,1.0,1.0,30
+uniform,902,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND androidIncludeLdpiTvdpi = 1,androidIncludeLdpiTvdpi AND androidMipmapInsteadOfDrawable,0,1.0,1.0,1.0,30
+bi_modal_split,902,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND androidIncludeLdpiTvdpi = 1,androidIncludeLdpiTvdpi AND androidMipmapInsteadOfDrawable,0,1.0,1.0,1.0,30
+tri_modal_split,902,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND androidIncludeLdpiTvdpi = 1,androidIncludeLdpiTvdpi AND androidMipmapInsteadOfDrawable,0,1.0,1.0,1.0,30
+power_law,902,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND androidIncludeLdpiTvdpi = 1,androidIncludeLdpiTvdpi AND androidMipmapInsteadOfDrawable,3,1.0,1.0,1.0,30
+normal,988,android = 1 AND skipUpscaling = 1 AND threads = 90,threads > 50.0 AND android AND skipUpscaling,0,1.0,1.0,1.0,31
+uniform,988,android = 1 AND skipUpscaling = 1 AND threads = 90,skipUpscaling AND android AND threads > 50.0,0,1.0,1.0,1.0,31
+bi_modal_split,988,android = 1 AND skipUpscaling = 1 AND threads = 90,threads > 50.0,0,0.3994340004042854,0.2495579691841374,1.0,31
+tri_modal_split,988,android = 1 AND skipUpscaling = 1 AND threads = 90,skipUpscaling AND threads > 50.0,3,0.703202846975089,0.5422612513721186,1.0,31
+power_law,988,android = 1 AND skipUpscaling = 1 AND threads = 90,NOT ceil,0,0.2329231317995363,0.1413725914700151,0.6609311740890689,31
+normal,899,android = 1 AND antiAliasing = 1 AND skipUpscaling = 1,skipUpscaling AND antiAliasing AND android,0,1.0,1.0,1.0,32
+uniform,899,android = 1 AND antiAliasing = 1 AND skipUpscaling = 1,NOT androidIncludeLdpiTvdpi AND antiAliasing AND android AND skipUpscaling,3,0.6378787878787878,1.0,0.4682981090100111,32
+bi_modal_split,899,android = 1 AND antiAliasing = 1 AND skipUpscaling = 1,antiAliasing,2,0.4227604044204091,0.2680381633870006,1.0,32
+tri_modal_split,899,android = 1 AND antiAliasing = 1 AND skipUpscaling = 1,android,1,0.4055944055944055,0.2543859649122807,1.0,32
+power_law,899,android = 1 AND antiAliasing = 1 AND skipUpscaling = 1,skipUpscaling AND antiAliasing,4,0.7166201673973696,0.5583850931677019,1.0,32
+normal,753,android = 1 AND scaleIsHeightDp = 1 AND threads = 10,threads <= 50.0 AND android AND scaleIsHeightDp,0,1.0,1.0,1.0,33
+uniform,753,android = 1 AND scaleIsHeightDp = 1 AND threads = 10,threads <= 50.0 AND scaleIsHeightDp AND android,0,1.0,1.0,1.0,33
+bi_modal_split,753,android = 1 AND scaleIsHeightDp = 1 AND threads = 10,threads <= 50.0 AND android AND scaleIsHeightDp,0,1.0,1.0,1.0,33
+tri_modal_split,753,android = 1 AND scaleIsHeightDp = 1 AND threads = 10,threads <= 50.0 AND scaleIsHeightDp,4,0.7040673211781205,0.5432900432900433,1.0,33
+power_law,753,android = 1 AND scaleIsHeightDp = 1 AND threads = 10,android AND threads <= 50.0,3,0.6783783783783784,0.5132924335378323,1.0,33
+normal,844,scaleIsHeightDp = 1 AND antiAliasing = 1 AND skipUpscaling = 1,scaleIsHeightDp AND antiAliasing AND skipUpscaling,0,1.0,1.0,1.0,34
+uniform,844,scaleIsHeightDp = 1 AND antiAliasing = 1 AND skipUpscaling = 1,skipUpscaling AND scaleIsHeightDp AND antiAliasing,0,1.0,1.0,1.0,34
+bi_modal_split,844,scaleIsHeightDp = 1 AND antiAliasing = 1 AND skipUpscaling = 1,NOT win AND threads > 50.0 AND antiAliasing,3,0.3256898561989895,0.2423366107576633,0.4964454976303317,34
+tri_modal_split,844,scaleIsHeightDp = 1 AND antiAliasing = 1 AND skipUpscaling = 1,skipUpscaling AND scaleIsHeightDp AND antiAliasing,2,1.0,1.0,1.0,34
+power_law,844,scaleIsHeightDp = 1 AND antiAliasing = 1 AND skipUpscaling = 1,NOT androidIncludeLdpiTvdpi AND NOT floor AND antiAliasing,4,0.3139198678232135,0.2409638554216867,0.4502369668246445,34
+normal,972,scaleIsHeightDp = 1 AND antiAliasing = 1 AND threads = 90,scaleIsHeightDp AND antiAliasing AND threads > 50.0,0,1.0,1.0,1.0,35
+uniform,972,scaleIsHeightDp = 1 AND antiAliasing = 1 AND threads = 90,scaleIsHeightDp AND antiAliasing AND threads > 50.0,0,1.0,1.0,1.0,35
+bi_modal_split,972,scaleIsHeightDp = 1 AND antiAliasing = 1 AND threads = 90,antiAliasing AND scaleIsHeightDp AND threads > 50.0,0,1.0,1.0,1.0,35
+tri_modal_split,972,scaleIsHeightDp = 1 AND antiAliasing = 1 AND threads = 90,scaleIsHeightDp AND threads > 50.0 AND antiAliasing,0,1.0,1.0,1.0,35
+power_law,972,scaleIsHeightDp = 1 AND antiAliasing = 1 AND threads = 90,threads > 50.0,0,0.3942405191644696,0.2455165445819651,1.0,35
+normal,712,android = 1 AND skipUpscaling = 1 AND threads = 10,skipUpscaling AND threads <= 50.0 AND android,0,1.0,1.0,1.0,36
+uniform,712,android = 1 AND skipUpscaling = 1 AND threads = 10,threads <= 50.0 AND skipUpscaling AND android,0,1.0,1.0,1.0,36
+bi_modal_split,712,android = 1 AND skipUpscaling = 1 AND threads = 10,threads <= 50.0,2,0.4048905317031561,0.2538324420677362,1.0,36
+tri_modal_split,712,android = 1 AND skipUpscaling = 1 AND threads = 10,threads <= 50.0 AND NOT web AND NOT win,4,0.5035360678925035,0.3364839319470699,1.0,36
+power_law,712,android = 1 AND skipUpscaling = 1 AND threads = 10,threads <= 50.0 AND android AND skipUpscaling,4,1.0,1.0,1.0,36
+normal,1045,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND threads = 90,androidMipmapInsteadOfDrawable AND threads > 50.0,0,1.0,1.0,1.0,37
+uniform,1045,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND threads = 90,androidMipmapInsteadOfDrawable AND threads > 50.0,0,1.0,1.0,1.0,37
+bi_modal_split,1045,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND threads = 90,androidMipmapInsteadOfDrawable AND threads > 50.0,1,1.0,1.0,1.0,37
+tri_modal_split,1045,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND threads = 90,androidMipmapInsteadOfDrawable AND threads > 50.0,0,1.0,1.0,1.0,37
+power_law,1045,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND threads = 90,androidMipmapInsteadOfDrawable AND threads > 50.0,3,1.0,1.0,1.0,37
+normal,894,android = 1 AND scaleIsHeightDp = 1 AND skipUpscaling = 1,androidMipmapInsteadOfDrawable,3,0.3531157270029674,0.2641509433962264,0.5324384787472036,38
+uniform,894,android = 1 AND scaleIsHeightDp = 1 AND skipUpscaling = 1,scaleIsHeightDp AND skipUpscaling AND android,0,1.0,1.0,1.0,38
+bi_modal_split,894,android = 1 AND scaleIsHeightDp = 1 AND skipUpscaling = 1,androidMipmapInsteadOfDrawable AND skipUpscaling AND scaleIsHeightDp,0,0.6948905109489052,1.0,0.5324384787472036,38
+tri_modal_split,894,android = 1 AND scaleIsHeightDp = 1 AND skipUpscaling = 1,scaleIsHeightDp AND skipUpscaling,3,0.7174959871589085,0.5594493116395495,1.0,38
+power_law,894,android = 1 AND scaleIsHeightDp = 1 AND skipUpscaling = 1,scaleIsHeightDp AND skipUpscaling AND android,3,1.0,1.0,1.0,38
+normal,684,android = 1 AND round = 1 AND threads = 90,round AND android AND threads > 50.0,0,1.0,1.0,1.0,39
+uniform,684,android = 1 AND round = 1 AND threads = 90,round AND threads > 50.0 AND android,0,1.0,1.0,1.0,39
+bi_modal_split,684,android = 1 AND round = 1 AND threads = 90,round,3,0.4613827993254636,0.2998684787373958,1.0,39
+tri_modal_split,684,android = 1 AND round = 1 AND threads = 90,threads > 50.0,0,0.2946370880895972,0.1727709017428643,1.0,39
+power_law,684,android = 1 AND round = 1 AND threads = 90,threads > 50.0 AND android AND round,4,1.0,1.0,1.0,39
+normal,922,antiAliasing = 1 AND skipUpscaling = 1 AND threads = 90,antiAliasing AND skipUpscaling AND threads > 50.0,0,1.0,1.0,1.0,3
+uniform,922,antiAliasing = 1 AND skipUpscaling = 1 AND threads = 90,antiAliasing AND skipUpscaling AND threads > 50.0,0,1.0,1.0,1.0,3
+bi_modal_split,922,antiAliasing = 1 AND skipUpscaling = 1 AND threads = 90,scaleIsHeightDp,1,0.2212825933756166,0.1412293853073463,0.5108459869848156,3
+tri_modal_split,922,antiAliasing = 1 AND skipUpscaling = 1 AND threads = 90,skipUpscaling,2,0.4581366459627329,0.2971318079278118,1.0,3
+power_law,922,antiAliasing = 1 AND skipUpscaling = 1 AND threads = 90,antiAliasing AND skipUpscaling AND threads > 50.0,2,1.0,1.0,1.0,3
+normal,712,android = 1 AND skipUpscaling = 1 AND threads = 10,threads <= 50.0 AND skipUpscaling AND android,0,1.0,1.0,1.0,40
+uniform,712,android = 1 AND skipUpscaling = 1 AND threads = 10,skipUpscaling AND threads <= 50.0 AND android,0,1.0,1.0,1.0,40
+bi_modal_split,712,android = 1 AND skipUpscaling = 1 AND threads = 10,skipUpscaling AND threads <= 50.0 AND android,4,1.0,1.0,1.0,40
+tri_modal_split,712,android = 1 AND skipUpscaling = 1 AND threads = 10,skipUpscaling AND NOT iosCreateImagesetFolders,4,0.4161309175920514,0.262730627306273,1.0,40
+power_law,712,android = 1 AND skipUpscaling = 1 AND threads = 10,threads <= 50.0 AND android AND skipUpscaling,3,1.0,1.0,1.0,40
+normal,1051,android = 1 AND antiAliasing = 1 AND threads = 90,antiAliasing AND android AND threads > 50.0,0,1.0,1.0,1.0,41
+uniform,1051,android = 1 AND antiAliasing = 1 AND threads = 90,threads > 50.0 AND antiAliasing AND android,0,1.0,1.0,1.0,41
+bi_modal_split,1051,android = 1 AND antiAliasing = 1 AND threads = 90,NOT iosCreateImagesetFolders AND threads > 50.0,1,0.4671111111111111,0.3047260075384169,1.0,41
+tri_modal_split,1051,android = 1 AND antiAliasing = 1 AND threads = 90,antiAliasing AND android,3,0.7339385474860335,0.5797021511307225,1.0,41
+power_law,1051,android = 1 AND antiAliasing = 1 AND threads = 90,antiAliasing AND android AND threads > 50.0,2,1.0,1.0,1.0,41
+normal,922,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND scaleIsHeightDp = 1,androidMipmapInsteadOfDrawable AND scaleIsHeightDp,0,1.0,1.0,1.0,42
+uniform,922,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND scaleIsHeightDp = 1,androidMipmapInsteadOfDrawable AND scaleIsHeightDp,0,1.0,1.0,1.0,42
+bi_modal_split,922,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND scaleIsHeightDp = 1,android AND scaleIsHeightDp AND androidMipmapInsteadOfDrawable,0,1.0,1.0,1.0,42
+tri_modal_split,922,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND scaleIsHeightDp = 1,androidMipmapInsteadOfDrawable AND scaleIsHeightDp,2,1.0,1.0,1.0,42
+power_law,922,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND scaleIsHeightDp = 1,androidMipmapInsteadOfDrawable AND scaleIsHeightDp,2,1.0,1.0,1.0,42
+normal,1044,android = 1 AND androidIncludeLdpiTvdpi = 1 AND threads = 90,androidIncludeLdpiTvdpi AND threads > 50.0,0,1.0,1.0,1.0,43
+uniform,1044,android = 1 AND androidIncludeLdpiTvdpi = 1 AND threads = 90,NOT win AND androidIncludeLdpiTvdpi,2,0.7401630627437079,0.5875070343275183,1.0,43
+bi_modal_split,1044,android = 1 AND androidIncludeLdpiTvdpi = 1 AND threads = 90,androidIncludeLdpiTvdpi AND threads > 50.0,0,1.0,1.0,1.0,43
+tri_modal_split,1044,android = 1 AND androidIncludeLdpiTvdpi = 1 AND threads = 90,threads > 50.0 AND androidIncludeLdpiTvdpi,0,1.0,1.0,1.0,43
+power_law,1044,android = 1 AND androidIncludeLdpiTvdpi = 1 AND threads = 90,androidIncludeLdpiTvdpi AND threads > 50.0,2,1.0,1.0,1.0,43
+normal,1045,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND threads = 90,androidMipmapInsteadOfDrawable AND threads > 50.0,0,1.0,1.0,1.0,44
+uniform,1045,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND threads = 90,androidMipmapInsteadOfDrawable AND threads > 50.0,0,1.0,1.0,1.0,44
+bi_modal_split,1045,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND threads = 90,androidMipmapInsteadOfDrawable AND threads > 50.0,1,1.0,1.0,1.0,44
+tri_modal_split,1045,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND threads = 90,NOT round AND NOT png AND threads > 50.0,3,0.3581164807930607,0.2647732478240953,0.55311004784689,44
+power_law,1045,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND threads = 90,NOT ios,0,0.339230644375913,0.20426114151681,1.0,44
+normal,924,android = 1 AND scaleIsHeightDp = 1 AND antiAliasing = 1,antiAliasing AND scaleIsHeightDp AND android,0,1.0,1.0,1.0,45
+uniform,924,android = 1 AND scaleIsHeightDp = 1 AND antiAliasing = 1,antiAliasing AND android AND scaleIsHeightDp,0,1.0,1.0,1.0,45
+bi_modal_split,924,android = 1 AND scaleIsHeightDp = 1 AND antiAliasing = 1,antiAliasing AND scaleIsHeightDp AND android,0,1.0,1.0,1.0,45
+tri_modal_split,924,android = 1 AND scaleIsHeightDp = 1 AND antiAliasing = 1,antiAliasing AND scaleIsHeightDp AND android,2,1.0,1.0,1.0,45
+power_law,924,android = 1 AND scaleIsHeightDp = 1 AND antiAliasing = 1,scaleIsHeightDp AND antiAliasing AND android,2,1.0,1.0,1.0,45
+normal,684,android = 1 AND floor = 1 AND threads = 90,floor AND android AND threads > 50.0,0,1.0,1.0,1.0,46
+uniform,684,android = 1 AND floor = 1 AND threads = 90,floor AND android AND threads > 50.0,0,1.0,1.0,1.0,46
+bi_modal_split,684,android = 1 AND floor = 1 AND threads = 90,floor AND android AND threads > 50.0,0,1.0,1.0,1.0,46
+tri_modal_split,684,android = 1 AND floor = 1 AND threads = 90,floor AND android AND threads > 50.0,0,1.0,1.0,1.0,46
+power_law,684,android = 1 AND floor = 1 AND threads = 90,scaleIsHeightDp AND NOT ios,2,0.2132421510724277,0.1354125542834583,0.5014619883040936,46
+normal,712,android = 1 AND skipUpscaling = 1 AND threads = 10,threads <= 50.0 AND android AND skipUpscaling,0,1.0,1.0,1.0,47
+uniform,712,android = 1 AND skipUpscaling = 1 AND threads = 10,threads <= 50.0 AND skipUpscaling AND android,0,1.0,1.0,1.0,47
+bi_modal_split,712,android = 1 AND skipUpscaling = 1 AND threads = 10,threads <= 50.0,2,0.4048905317031561,0.2538324420677362,1.0,47
+tri_modal_split,712,android = 1 AND skipUpscaling = 1 AND threads = 10,threads <= 50.0,1,0.4048905317031561,0.2538324420677362,1.0,47
+power_law,712,android = 1 AND skipUpscaling = 1 AND threads = 10,floor AND NOT ios,3,0.2123677786818551,0.1494845360824742,0.3665730337078651,47
+normal,757,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND threads = 10,androidMipmapInsteadOfDrawable AND threads <= 50.0,0,1.0,1.0,1.0,48
+uniform,757,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND threads = 10,scaleIsHeightDp,1,0.1925708699902248,0.1181409295352323,0.5204755614266843,48
+bi_modal_split,757,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND threads = 10,androidMipmapInsteadOfDrawable AND threads <= 50.0,0,1.0,1.0,1.0,48
+tri_modal_split,757,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND threads = 10,androidMipmapInsteadOfDrawable,4,0.5916373583431028,0.4200887902330744,1.0,48
+power_law,757,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND threads = 10,androidMipmapInsteadOfDrawable AND threads <= 50.0,3,1.0,1.0,1.0,48
+normal,922,antiAliasing = 1 AND skipUpscaling = 1 AND threads = 90,antiAliasing AND skipUpscaling AND threads > 50.0,0,1.0,1.0,1.0,49
+uniform,922,antiAliasing = 1 AND skipUpscaling = 1 AND threads = 90,threads > 50.0 AND antiAliasing AND skipUpscaling,0,1.0,1.0,1.0,49
+bi_modal_split,922,antiAliasing = 1 AND skipUpscaling = 1 AND threads = 90,threads > 50.0 AND skipUpscaling AND antiAliasing,0,1.0,1.0,1.0,49
+tri_modal_split,922,antiAliasing = 1 AND skipUpscaling = 1 AND threads = 90,skipUpscaling AND threads > 50.0 AND antiAliasing,0,1.0,1.0,1.0,49
+power_law,922,antiAliasing = 1 AND skipUpscaling = 1 AND threads = 90,skipUpscaling AND antiAliasing AND threads > 50.0,2,1.0,1.0,1.0,49
+normal,699,android = 1 AND ceil = 1 AND threads = 90,ceil AND android AND threads > 50.0,0,1.0,1.0,1.0,4
+uniform,699,android = 1 AND ceil = 1 AND threads = 90,ceil AND android AND threads > 50.0,1,1.0,1.0,1.0,4
+bi_modal_split,699,android = 1 AND ceil = 1 AND threads = 90,ceil,2,0.4915611814345991,0.3258741258741259,1.0,4
+tri_modal_split,699,android = 1 AND ceil = 1 AND threads = 90,NOT scaleIsHeightDp AND android,4,0.2834903727980336,0.1986222732491389,0.4949928469241774,4
+power_law,699,android = 1 AND ceil = 1 AND threads = 90,NOT ios AND ceil,2,0.5948936170212766,0.4233797698364627,1.0,4
+normal,972,scaleIsHeightDp = 1 AND antiAliasing = 1 AND threads = 90,antiAliasing AND scaleIsHeightDp AND threads > 50.0,0,1.0,1.0,1.0,50
+uniform,972,scaleIsHeightDp = 1 AND antiAliasing = 1 AND threads = 90,NOT png,0,0.2418082524271844,0.1418149466192171,0.8199588477366255,50
+bi_modal_split,972,scaleIsHeightDp = 1 AND antiAliasing = 1 AND threads = 90,antiAliasing AND threads > 50.0 AND scaleIsHeightDp,0,1.0,1.0,1.0,50
+tri_modal_split,972,scaleIsHeightDp = 1 AND antiAliasing = 1 AND threads = 90,antiAliasing AND scaleIsHeightDp AND threads > 50.0,0,1.0,1.0,1.0,50
+power_law,972,scaleIsHeightDp = 1 AND antiAliasing = 1 AND threads = 90,antiAliasing AND scaleIsHeightDp AND threads > 50.0,3,1.0,1.0,1.0,50
+normal,922,antiAliasing = 1 AND skipUpscaling = 1 AND threads = 90,NOT scaleIsHeightDp AND skipUpscaling,4,0.3716522455706634,0.2996677740863787,0.4891540130151844,51
+uniform,922,antiAliasing = 1 AND skipUpscaling = 1 AND threads = 90,antiAliasing AND skipUpscaling AND threads > 50.0,0,1.0,1.0,1.0,51
+bi_modal_split,922,antiAliasing = 1 AND skipUpscaling = 1 AND threads = 90,antiAliasing AND threads > 50.0 AND skipUpscaling,0,1.0,1.0,1.0,51
+tri_modal_split,922,antiAliasing = 1 AND skipUpscaling = 1 AND threads = 90,scaleIsHeightDp,1,0.2212825933756166,0.1412293853073463,0.5108459869848156,51
+power_law,922,antiAliasing = 1 AND skipUpscaling = 1 AND threads = 90,skipUpscaling AND antiAliasing AND threads > 50.0,4,1.0,1.0,1.0,51
+normal,762,android = 1 AND antiAliasing = 1 AND threads = 10,threads <= 50.0 AND antiAliasing AND android,0,1.0,1.0,1.0,52
+uniform,762,android = 1 AND antiAliasing = 1 AND threads = 10,threads <= 50.0 AND android AND antiAliasing,0,1.0,1.0,1.0,52
+bi_modal_split,762,android = 1 AND antiAliasing = 1 AND threads = 10,NOT win AND NOT png AND androidMipmapInsteadOfDrawable,4,0.2992056487202117,0.2253989361702127,0.4448818897637795,52
+tri_modal_split,762,android = 1 AND antiAliasing = 1 AND threads = 10,antiAliasing AND threads <= 50.0 AND android,0,1.0,1.0,1.0,52
+power_law,762,android = 1 AND antiAliasing = 1 AND threads = 10,threads <= 50.0 AND antiAliasing,4,0.7101584342963653,0.5505780346820809,1.0,52
+normal,1039,android = 1 AND scaleIsHeightDp = 1 AND threads = 90,scaleIsHeightDp AND android AND threads > 50.0,0,1.0,1.0,1.0,53
+uniform,1039,android = 1 AND scaleIsHeightDp = 1 AND threads = 90,threads > 50.0 AND android AND scaleIsHeightDp,0,1.0,1.0,1.0,53
+bi_modal_split,1039,android = 1 AND scaleIsHeightDp = 1 AND threads = 90,android AND threads > 50.0 AND scaleIsHeightDp,0,1.0,1.0,1.0,53
+tri_modal_split,1039,android = 1 AND scaleIsHeightDp = 1 AND threads = 90,scaleIsHeightDp AND android AND threads > 50.0,0,1.0,1.0,1.0,53
+power_law,1039,android = 1 AND scaleIsHeightDp = 1 AND threads = 90,NOT win AND NOT bmp AND androidIncludeLdpiTvdpi,4,0.3579030350808041,0.3030707610146863,0.436958614051973,53
+normal,753,android = 1 AND scaleIsHeightDp = 1 AND threads = 10,android AND threads <= 50.0 AND scaleIsHeightDp,0,1.0,1.0,1.0,54
+uniform,753,android = 1 AND scaleIsHeightDp = 1 AND threads = 10,NOT jpeg AND NOT iosCreateImagesetFolders,1,0.1968403074295474,0.1172729585347239,0.6122177954847278,54
+bi_modal_split,753,android = 1 AND scaleIsHeightDp = 1 AND threads = 10,NOT win AND NOT web AND NOT gif AND scaleIsHeightDp,4,0.4346076458752514,0.2907133243606998,0.8605577689243028,54
+tri_modal_split,753,android = 1 AND scaleIsHeightDp = 1 AND threads = 10,scaleIsHeightDp,1,0.3683953033268101,0.2257871064467766,1.0,54
+power_law,753,android = 1 AND scaleIsHeightDp = 1 AND threads = 10,android AND threads <= 50.0,3,0.6783783783783784,0.5132924335378323,1.0,54
+normal,933,android = 1 AND scaleIsHeightDp = 1 AND androidIncludeLdpiTvdpi = 1,androidIncludeLdpiTvdpi AND scaleIsHeightDp,0,1.0,1.0,1.0,55
+uniform,933,android = 1 AND scaleIsHeightDp = 1 AND androidIncludeLdpiTvdpi = 1,androidIncludeLdpiTvdpi AND scaleIsHeightDp,0,1.0,1.0,1.0,55
+bi_modal_split,933,android = 1 AND scaleIsHeightDp = 1 AND androidIncludeLdpiTvdpi = 1,androidIncludeLdpiTvdpi,4,0.6885608856088561,0.5250422059651098,1.0,55
+tri_modal_split,933,android = 1 AND scaleIsHeightDp = 1 AND androidIncludeLdpiTvdpi = 1,androidIncludeLdpiTvdpi AND scaleIsHeightDp,4,1.0,1.0,1.0,55
+power_law,933,android = 1 AND scaleIsHeightDp = 1 AND androidIncludeLdpiTvdpi = 1,NOT floor AND scaleIsHeightDp,2,0.3965183752417794,0.2835408022130014,0.6591639871382636,55
+normal,922,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND scaleIsHeightDp = 1,androidMipmapInsteadOfDrawable AND scaleIsHeightDp,0,1.0,1.0,1.0,56
+uniform,922,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND scaleIsHeightDp = 1,androidMipmapInsteadOfDrawable AND scaleIsHeightDp,0,1.0,1.0,1.0,56
+bi_modal_split,922,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND scaleIsHeightDp = 1,androidMipmapInsteadOfDrawable,3,0.6769456681350954,0.51165371809101,1.0,56
+tri_modal_split,922,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND scaleIsHeightDp = 1,scaleIsHeightDp,1,0.4331688982851773,0.2764617691154423,1.0,56
+power_law,922,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND scaleIsHeightDp = 1,android AND scaleIsHeightDp,2,0.679439941046426,0.5145089285714286,1.0,56
+normal,949,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND antiAliasing = 1,antiAliasing AND androidMipmapInsteadOfDrawable,0,1.0,1.0,1.0,57
+uniform,949,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND antiAliasing = 1,androidMipmapInsteadOfDrawable AND antiAliasing,0,1.0,1.0,1.0,57
+bi_modal_split,949,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND antiAliasing = 1,androidMipmapInsteadOfDrawable,3,0.6899309342057434,0.5266370699223085,1.0,57
+tri_modal_split,949,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND antiAliasing = 1,android,0,0.4233772027660049,0.2685342388228636,1.0,57
+power_law,949,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND antiAliasing = 1,antiAliasing,0,0.4410876132930513,0.2829457364341085,1.0,57
+normal,712,android = 1 AND skipUpscaling = 1 AND threads = 10,skipUpscaling AND threads <= 50.0 AND android,0,1.0,1.0,1.0,58
+uniform,712,android = 1 AND skipUpscaling = 1 AND threads = 10,threads <= 50.0 AND skipUpscaling AND android,0,1.0,1.0,1.0,58
+bi_modal_split,712,android = 1 AND skipUpscaling = 1 AND threads = 10,NOT ceil,0,0.186081410617145,0.1073825503355704,0.6966292134831461,58
+tri_modal_split,712,android = 1 AND skipUpscaling = 1 AND threads = 10,scaleIsHeightDp AND NOT ios,2,0.237904468412943,0.1523884721673904,0.5421348314606742,58
+power_law,712,android = 1 AND skipUpscaling = 1 AND threads = 10,scaleIsHeightDp,1,0.1907585866073635,0.1157421289355322,0.5421348314606742,58
+normal,911,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND skipUpscaling = 1,androidMipmapInsteadOfDrawable AND skipUpscaling,0,1.0,1.0,1.0,59
+uniform,911,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND skipUpscaling = 1,androidMipmapInsteadOfDrawable AND skipUpscaling,0,1.0,1.0,1.0,59
+bi_modal_split,911,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND skipUpscaling = 1,androidMipmapInsteadOfDrawable AND skipUpscaling,0,1.0,1.0,1.0,59
+tri_modal_split,911,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND skipUpscaling = 1,androidMipmapInsteadOfDrawable AND skipUpscaling,0,1.0,1.0,1.0,59
+power_law,911,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND skipUpscaling = 1,androidMipmapInsteadOfDrawable AND skipUpscaling,3,1.0,1.0,1.0,59
+normal,762,android = 1 AND antiAliasing = 1 AND threads = 10,threads <= 50.0 AND antiAliasing AND android,0,1.0,1.0,1.0,5
+uniform,762,android = 1 AND antiAliasing = 1 AND threads = 10,threads <= 50.0 AND antiAliasing AND android,0,1.0,1.0,1.0,5
+bi_modal_split,762,android = 1 AND antiAliasing = 1 AND threads = 10,androidMipmapInsteadOfDrawable,3,0.3190327613104524,0.2269700332963374,0.536745406824147,5
+tri_modal_split,762,android = 1 AND antiAliasing = 1 AND threads = 10,threads <= 50.0 AND android AND antiAliasing,0,1.0,1.0,1.0,5
+power_law,762,android = 1 AND antiAliasing = 1 AND threads = 10,threads <= 50.0 AND android AND antiAliasing,4,1.0,1.0,1.0,5
+normal,699,android = 1 AND ceil = 1 AND threads = 90,ceil AND threads > 50.0 AND android,0,1.0,1.0,1.0,60
+uniform,699,android = 1 AND ceil = 1 AND threads = 90,ceil AND android AND threads > 50.0,1,1.0,1.0,1.0,60
+bi_modal_split,699,android = 1 AND ceil = 1 AND threads = 90,ceil AND android AND threads > 50.0,0,1.0,1.0,1.0,60
+tri_modal_split,699,android = 1 AND ceil = 1 AND threads = 90,ceil AND android AND threads > 50.0,0,1.0,1.0,1.0,60
+power_law,699,android = 1 AND ceil = 1 AND threads = 90,ceil AND android AND threads > 50.0,4,1.0,1.0,1.0,60
+normal,902,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND androidIncludeLdpiTvdpi = 1,androidMipmapInsteadOfDrawable AND androidIncludeLdpiTvdpi,0,1.0,1.0,1.0,61
+uniform,902,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND androidIncludeLdpiTvdpi = 1,androidMipmapInsteadOfDrawable AND androidIncludeLdpiTvdpi,0,1.0,1.0,1.0,61
+bi_modal_split,902,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND androidIncludeLdpiTvdpi = 1,androidIncludeLdpiTvdpi AND androidMipmapInsteadOfDrawable,0,1.0,1.0,1.0,61
+tri_modal_split,902,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND androidIncludeLdpiTvdpi = 1,androidIncludeLdpiTvdpi AND androidMipmapInsteadOfDrawable,0,1.0,1.0,1.0,61
+power_law,902,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND androidIncludeLdpiTvdpi = 1,androidMipmapInsteadOfDrawable AND androidIncludeLdpiTvdpi,4,1.0,1.0,1.0,61
+normal,922,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND scaleIsHeightDp = 1,androidMipmapInsteadOfDrawable AND scaleIsHeightDp,0,1.0,1.0,1.0,62
+uniform,922,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND scaleIsHeightDp = 1,androidMipmapInsteadOfDrawable AND scaleIsHeightDp,0,1.0,1.0,1.0,62
+bi_modal_split,922,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND scaleIsHeightDp = 1,androidMipmapInsteadOfDrawable AND scaleIsHeightDp,0,1.0,1.0,1.0,62
+tri_modal_split,922,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND scaleIsHeightDp = 1,androidMipmapInsteadOfDrawable AND scaleIsHeightDp,0,1.0,1.0,1.0,62
+power_law,922,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND scaleIsHeightDp = 1,NOT iosCreateImagesetFolders AND androidMipmapInsteadOfDrawable,4,0.6769456681350954,0.51165371809101,1.0,62
+normal,922,antiAliasing = 1 AND skipUpscaling = 1 AND threads = 90,skipUpscaling AND antiAliasing AND threads > 50.0,0,1.0,1.0,1.0,63
+uniform,922,antiAliasing = 1 AND skipUpscaling = 1 AND threads = 90,antiAliasing AND threads > 50.0 AND skipUpscaling,0,1.0,1.0,1.0,63
+bi_modal_split,922,antiAliasing = 1 AND skipUpscaling = 1 AND threads = 90,skipUpscaling,1,0.4581366459627329,0.2971318079278118,1.0,63
+tri_modal_split,922,antiAliasing = 1 AND skipUpscaling = 1 AND threads = 90,threads > 50.0,0,0.3777914361811105,0.2328870927001768,1.0,63
+power_law,922,antiAliasing = 1 AND skipUpscaling = 1 AND threads = 90,skipUpscaling AND antiAliasing AND threads > 50.0,0,1.0,1.0,1.0,63
+normal,1045,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND threads = 90,androidMipmapInsteadOfDrawable AND threads > 50.0,0,1.0,1.0,1.0,64
+uniform,1045,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND threads = 90,androidMipmapInsteadOfDrawable AND threads > 50.0,0,1.0,1.0,1.0,64
+bi_modal_split,1045,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND threads = 90,androidMipmapInsteadOfDrawable AND threads > 50.0,0,1.0,1.0,1.0,64
+tri_modal_split,1045,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND threads = 90,androidMipmapInsteadOfDrawable AND threads > 50.0,0,1.0,1.0,1.0,64
+power_law,1045,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND threads = 90,androidMipmapInsteadOfDrawable AND threads > 50.0,4,1.0,1.0,1.0,64
+normal,753,android = 1 AND scaleIsHeightDp = 1 AND threads = 10,NOT gif AND NOT bmp AND NOT web AND NOT win,3,0.247983406314819,0.1500278862242052,0.7144754316069057,65
+uniform,753,android = 1 AND scaleIsHeightDp = 1 AND threads = 10,threads <= 50.0 AND scaleIsHeightDp AND android,0,1.0,1.0,1.0,65
+bi_modal_split,753,android = 1 AND scaleIsHeightDp = 1 AND threads = 10,threads <= 50.0 AND scaleIsHeightDp AND android,0,1.0,1.0,1.0,65
+tri_modal_split,753,android = 1 AND scaleIsHeightDp = 1 AND threads = 10,threads <= 50.0 AND scaleIsHeightDp AND android,0,1.0,1.0,1.0,65
+power_law,753,android = 1 AND scaleIsHeightDp = 1 AND threads = 10,threads <= 50.0 AND scaleIsHeightDp AND android,4,1.0,1.0,1.0,65
+normal,922,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND scaleIsHeightDp = 1,androidMipmapInsteadOfDrawable AND NOT round AND scaleIsHeightDp,0,0.8002602472348731,1.0,0.6670281995661606,66
+uniform,922,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND scaleIsHeightDp = 1,androidMipmapInsteadOfDrawable AND scaleIsHeightDp,0,1.0,1.0,1.0,66
+bi_modal_split,922,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND scaleIsHeightDp = 1,androidMipmapInsteadOfDrawable AND scaleIsHeightDp,0,1.0,1.0,1.0,66
+tri_modal_split,922,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND scaleIsHeightDp = 1,androidMipmapInsteadOfDrawable AND scaleIsHeightDp,0,1.0,1.0,1.0,66
+power_law,922,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND scaleIsHeightDp = 1,androidMipmapInsteadOfDrawable AND scaleIsHeightDp,1,1.0,1.0,1.0,66
+normal,712,android = 1 AND skipUpscaling = 1 AND threads = 10,NOT web AND skipUpscaling AND threads <= 50.0 AND android,0,1.0,1.0,1.0,67
+uniform,712,android = 1 AND skipUpscaling = 1 AND threads = 10,NOT iosCreateImagesetFolders,0,0.2143287176399759,0.1200269723533378,1.0,67
+bi_modal_split,712,android = 1 AND skipUpscaling = 1 AND threads = 10,threads <= 50.0 AND skipUpscaling AND android,0,1.0,1.0,1.0,67
+tri_modal_split,712,android = 1 AND skipUpscaling = 1 AND threads = 10,android AND threads <= 50.0 AND skipUpscaling,0,1.0,1.0,1.0,67
+power_law,712,android = 1 AND skipUpscaling = 1 AND threads = 10,threads <= 50.0,1,0.4048905317031561,0.2538324420677362,1.0,67
+normal,922,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND scaleIsHeightDp = 1,androidMipmapInsteadOfDrawable AND scaleIsHeightDp,0,1.0,1.0,1.0,68
+uniform,922,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND scaleIsHeightDp = 1,androidMipmapInsteadOfDrawable AND scaleIsHeightDp,0,1.0,1.0,1.0,68
+bi_modal_split,922,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND scaleIsHeightDp = 1,androidMipmapInsteadOfDrawable AND scaleIsHeightDp,0,1.0,1.0,1.0,68
+tri_modal_split,922,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND scaleIsHeightDp = 1,androidMipmapInsteadOfDrawable AND scaleIsHeightDp,0,1.0,1.0,1.0,68
+power_law,922,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND scaleIsHeightDp = 1,threads <= 50.0 AND NOT win,2,0.2323798289590091,0.1595787768327258,0.4273318872017353,68
+normal,916,scaleIsHeightDp = 1 AND skipUpscaling = 1 AND threads = 90,skipUpscaling AND scaleIsHeightDp AND threads > 50.0,0,1.0,1.0,1.0,69
+uniform,916,scaleIsHeightDp = 1 AND skipUpscaling = 1 AND threads = 90,skipUpscaling AND scaleIsHeightDp AND threads > 50.0,0,1.0,1.0,1.0,69
+bi_modal_split,916,scaleIsHeightDp = 1 AND skipUpscaling = 1 AND threads = 90,skipUpscaling AND scaleIsHeightDp AND threads > 50.0,0,1.0,1.0,1.0,69
+tri_modal_split,916,scaleIsHeightDp = 1 AND skipUpscaling = 1 AND threads = 90,skipUpscaling AND threads > 50.0 AND scaleIsHeightDp,0,1.0,1.0,1.0,69
+power_law,916,scaleIsHeightDp = 1 AND skipUpscaling = 1 AND threads = 90,threads > 50.0 AND skipUpscaling AND scaleIsHeightDp,4,1.0,1.0,1.0,69
+normal,1045,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND threads = 90,androidMipmapInsteadOfDrawable AND threads > 50.0,0,1.0,1.0,1.0,6
+uniform,1045,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND threads = 90,androidMipmapInsteadOfDrawable AND threads > 50.0,0,1.0,1.0,1.0,6
+bi_modal_split,1045,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND threads = 90,androidMipmapInsteadOfDrawable AND threads > 50.0,3,1.0,1.0,1.0,6
+tri_modal_split,1045,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND threads = 90,NOT jpeg AND NOT iosCreateImagesetFolders,1,0.277733118971061,0.1757822437038921,0.661244019138756,6
+power_law,1045,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND threads = 90,androidMipmapInsteadOfDrawable AND threads > 50.0,4,1.0,1.0,1.0,6
+normal,844,scaleIsHeightDp = 1 AND antiAliasing = 1 AND skipUpscaling = 1,antiAliasing AND skipUpscaling AND scaleIsHeightDp,0,1.0,1.0,1.0,70
+uniform,844,scaleIsHeightDp = 1 AND antiAliasing = 1 AND skipUpscaling = 1,scaleIsHeightDp AND skipUpscaling AND antiAliasing,0,1.0,1.0,1.0,70
+bi_modal_split,844,scaleIsHeightDp = 1 AND antiAliasing = 1 AND skipUpscaling = 1,scaleIsHeightDp AND antiAliasing AND skipUpscaling,0,1.0,1.0,1.0,70
+tri_modal_split,844,scaleIsHeightDp = 1 AND antiAliasing = 1 AND skipUpscaling = 1,skipUpscaling AND antiAliasing AND scaleIsHeightDp,0,1.0,1.0,1.0,70
+power_law,844,scaleIsHeightDp = 1 AND antiAliasing = 1 AND skipUpscaling = 1,NOT bmp,0,0.2144279368969214,0.1231310466138962,0.8293838862559242,70
+normal,762,android = 1 AND antiAliasing = 1 AND threads = 10,android AND threads <= 50.0 AND antiAliasing,0,1.0,1.0,1.0,71
+uniform,762,android = 1 AND antiAliasing = 1 AND threads = 10,threads <= 50.0 AND antiAliasing AND android,0,1.0,1.0,1.0,71
+bi_modal_split,762,android = 1 AND antiAliasing = 1 AND threads = 10,antiAliasing AND threads <= 50.0 AND android,2,1.0,1.0,1.0,71
+tri_modal_split,762,android = 1 AND antiAliasing = 1 AND threads = 10,antiAliasing AND threads <= 50.0 AND android,4,1.0,1.0,1.0,71
+power_law,762,android = 1 AND antiAliasing = 1 AND threads = 10,scaleIsHeightDp AND antiAliasing AND NOT win,4,0.3539350822587817,0.2676529926025555,0.5223097112860893,71
+normal,911,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND skipUpscaling = 1,androidMipmapInsteadOfDrawable AND skipUpscaling,0,1.0,1.0,1.0,72
+uniform,911,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND skipUpscaling = 1,androidMipmapInsteadOfDrawable AND skipUpscaling,0,1.0,1.0,1.0,72
+bi_modal_split,911,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND skipUpscaling = 1,androidMipmapInsteadOfDrawable AND skipUpscaling,0,1.0,1.0,1.0,72
+tri_modal_split,911,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND skipUpscaling = 1,androidMipmapInsteadOfDrawable AND skipUpscaling,1,1.0,1.0,1.0,72
+power_law,911,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND skipUpscaling = 1,NOT floor,0,0.2222222222222222,0.1339810212381382,0.6509330406147091,72
+normal,1039,android = 1 AND scaleIsHeightDp = 1 AND threads = 90,android AND scaleIsHeightDp AND threads > 50.0,0,1.0,1.0,1.0,73
+uniform,1039,android = 1 AND scaleIsHeightDp = 1 AND threads = 90,scaleIsHeightDp AND threads > 50.0 AND android,0,1.0,1.0,1.0,73
+bi_modal_split,1039,android = 1 AND scaleIsHeightDp = 1 AND threads = 90,android AND scaleIsHeightDp AND threads > 50.0,0,1.0,1.0,1.0,73
+tri_modal_split,1039,android = 1 AND scaleIsHeightDp = 1 AND threads = 90,androidMipmapInsteadOfDrawable AND scaleIsHeightDp AND threads > 50.0,0,0.6738991703892789,1.0,0.5081809432146295,73
+power_law,1039,android = 1 AND scaleIsHeightDp = 1 AND threads = 90,android AND scaleIsHeightDp AND threads > 50.0,0,1.0,1.0,1.0,73
+normal,972,scaleIsHeightDp = 1 AND antiAliasing = 1 AND threads = 90,antiAliasing AND scaleIsHeightDp AND threads > 50.0,0,1.0,1.0,1.0,74
+uniform,972,scaleIsHeightDp = 1 AND antiAliasing = 1 AND threads = 90,antiAliasing AND scaleIsHeightDp AND threads > 50.0,0,1.0,1.0,1.0,74
+bi_modal_split,972,scaleIsHeightDp = 1 AND antiAliasing = 1 AND threads = 90,scaleIsHeightDp AND antiAliasing AND threads > 50.0,0,1.0,1.0,1.0,74
+tri_modal_split,972,scaleIsHeightDp = 1 AND antiAliasing = 1 AND threads = 90,scaleIsHeightDp AND antiAliasing AND threads > 50.0,0,1.0,1.0,1.0,74
+power_law,972,scaleIsHeightDp = 1 AND antiAliasing = 1 AND threads = 90,NOT iosCreateImagesetFolders AND scaleIsHeightDp AND antiAliasing AND threads > 50.0,4,0.9295154185022028,1.0,0.8683127572016461,74
+normal,949,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND antiAliasing = 1,androidMipmapInsteadOfDrawable AND antiAliasing,0,1.0,1.0,1.0,75
+uniform,949,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND antiAliasing = 1,androidMipmapInsteadOfDrawable AND antiAliasing,0,1.0,1.0,1.0,75
+bi_modal_split,949,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND antiAliasing = 1,NOT web AND NOT iosCreateImagesetFolders,1,0.3096753140806004,0.1832046332046332,1.0,75
+tri_modal_split,949,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND antiAliasing = 1,androidMipmapInsteadOfDrawable,4,0.6899309342057434,0.5266370699223085,1.0,75
+power_law,949,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND antiAliasing = 1,androidMipmapInsteadOfDrawable AND antiAliasing,1,1.0,1.0,1.0,75
+normal,949,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND antiAliasing = 1,androidMipmapInsteadOfDrawable AND antiAliasing,0,1.0,1.0,1.0,76
+uniform,949,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND antiAliasing = 1,androidMipmapInsteadOfDrawable AND antiAliasing,0,1.0,1.0,1.0,76
+bi_modal_split,949,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND antiAliasing = 1,androidMipmapInsteadOfDrawable AND antiAliasing,0,1.0,1.0,1.0,76
+tri_modal_split,949,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND antiAliasing = 1,androidMipmapInsteadOfDrawable,4,0.6899309342057434,0.5266370699223085,1.0,76
+power_law,949,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND antiAliasing = 1,androidMipmapInsteadOfDrawable AND antiAliasing,4,1.0,1.0,1.0,76
+normal,712,android = 1 AND skipUpscaling = 1 AND threads = 10,threads <= 50.0 AND skipUpscaling AND android,0,1.0,1.0,1.0,77
+uniform,712,android = 1 AND skipUpscaling = 1 AND threads = 10,threads <= 50.0 AND skipUpscaling AND android,0,1.0,1.0,1.0,77
+bi_modal_split,712,android = 1 AND skipUpscaling = 1 AND threads = 10,NOT win,0,0.2142642190791454,0.1199865183687226,1.0,77
+tri_modal_split,712,android = 1 AND skipUpscaling = 1 AND threads = 10,skipUpscaling,1,0.3732634338138925,0.2294553657750564,1.0,77
+power_law,712,android = 1 AND skipUpscaling = 1 AND threads = 10,threads <= 50.0,1,0.4048905317031561,0.2538324420677362,1.0,77
+normal,922,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND scaleIsHeightDp = 1,androidMipmapInsteadOfDrawable AND scaleIsHeightDp,0,1.0,1.0,1.0,78
+uniform,922,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND scaleIsHeightDp = 1,androidMipmapInsteadOfDrawable AND scaleIsHeightDp,0,1.0,1.0,1.0,78
+bi_modal_split,922,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND scaleIsHeightDp = 1,androidMipmapInsteadOfDrawable AND scaleIsHeightDp,0,1.0,1.0,1.0,78
+tri_modal_split,922,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND scaleIsHeightDp = 1,androidMipmapInsteadOfDrawable AND scaleIsHeightDp,0,1.0,1.0,1.0,78
+power_law,922,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND scaleIsHeightDp = 1,androidMipmapInsteadOfDrawable AND scaleIsHeightDp,2,1.0,1.0,1.0,78
+normal,972,scaleIsHeightDp = 1 AND antiAliasing = 1 AND threads = 90,scaleIsHeightDp AND antiAliasing AND threads > 50.0,0,1.0,1.0,1.0,79
+uniform,972,scaleIsHeightDp = 1 AND antiAliasing = 1 AND threads = 90,antiAliasing AND scaleIsHeightDp AND threads > 50.0,0,1.0,1.0,1.0,79
+bi_modal_split,972,scaleIsHeightDp = 1 AND antiAliasing = 1 AND threads = 90,threads > 50.0 AND antiAliasing AND scaleIsHeightDp,0,1.0,1.0,1.0,79
+tri_modal_split,972,scaleIsHeightDp = 1 AND antiAliasing = 1 AND threads = 90,scaleIsHeightDp AND antiAliasing AND threads > 50.0,0,1.0,1.0,1.0,79
+power_law,972,scaleIsHeightDp = 1 AND antiAliasing = 1 AND threads = 90,scaleIsHeightDp AND threads > 50.0 AND antiAliasing,0,1.0,1.0,1.0,79
+normal,733,android = 1 AND androidIncludeLdpiTvdpi = 1 AND threads = 10,androidIncludeLdpiTvdpi AND threads <= 50.0,0,1.0,1.0,1.0,7
+uniform,733,android = 1 AND androidIncludeLdpiTvdpi = 1 AND threads = 10,androidIncludeLdpiTvdpi AND threads <= 50.0,0,1.0,1.0,1.0,7
+bi_modal_split,733,android = 1 AND androidIncludeLdpiTvdpi = 1 AND threads = 10,androidIncludeLdpiTvdpi AND threads <= 50.0,0,1.0,1.0,1.0,7
+tri_modal_split,733,android = 1 AND androidIncludeLdpiTvdpi = 1 AND threads = 10,androidIncludeLdpiTvdpi AND threads <= 50.0,0,1.0,1.0,1.0,7
+power_law,733,android = 1 AND androidIncludeLdpiTvdpi = 1 AND threads = 10,androidIncludeLdpiTvdpi AND threads <= 50.0,3,1.0,1.0,1.0,7
+normal,688,antiAliasing = 1 AND skipUpscaling = 1 AND threads = 10,antiAliasing AND threads <= 50.0 AND skipUpscaling,0,1.0,1.0,1.0,80
+uniform,688,antiAliasing = 1 AND skipUpscaling = 1 AND threads = 10,skipUpscaling AND NOT androidIncludeLdpiTvdpi AND threads <= 50.0 AND antiAliasing,2,0.8188841201716738,1.0,0.6933139534883721,80
+bi_modal_split,688,antiAliasing = 1 AND skipUpscaling = 1 AND threads = 10,threads <= 50.0 AND skipUpscaling AND antiAliasing,0,1.0,1.0,1.0,80
+tri_modal_split,688,antiAliasing = 1 AND skipUpscaling = 1 AND threads = 10,threads <= 50.0 AND skipUpscaling AND antiAliasing,0,1.0,1.0,1.0,80
+power_law,688,antiAliasing = 1 AND skipUpscaling = 1 AND threads = 10,threads <= 50.0 AND skipUpscaling AND antiAliasing,4,1.0,1.0,1.0,80
+normal,699,android = 1 AND ceil = 1 AND threads = 90,ceil AND threads > 50.0 AND android,0,1.0,1.0,1.0,81
+uniform,699,android = 1 AND ceil = 1 AND threads = 90,ceil AND android AND threads > 50.0,0,1.0,1.0,1.0,81
+bi_modal_split,699,android = 1 AND ceil = 1 AND threads = 90,ceil AND android AND threads > 50.0,0,1.0,1.0,1.0,81
+tri_modal_split,699,android = 1 AND ceil = 1 AND threads = 90,ceil,2,0.4915611814345991,0.3258741258741259,1.0,81
+power_law,699,android = 1 AND ceil = 1 AND threads = 90,NOT gif AND androidIncludeLdpiTvdpi,4,0.26854802002731,0.1969292389853137,0.4220314735336195,81
+normal,1045,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND threads = 90,androidMipmapInsteadOfDrawable AND threads > 50.0,0,1.0,1.0,1.0,82
+uniform,1045,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND threads = 90,androidMipmapInsteadOfDrawable AND threads > 50.0,0,1.0,1.0,1.0,82
+bi_modal_split,1045,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND threads = 90,androidMipmapInsteadOfDrawable AND threads > 50.0,4,1.0,1.0,1.0,82
+tri_modal_split,1045,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND threads = 90,androidMipmapInsteadOfDrawable,2,0.73410607657183,0.5799112097669257,1.0,82
+power_law,1045,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND threads = 90,androidMipmapInsteadOfDrawable,4,0.73410607657183,0.5799112097669257,1.0,82
+normal,972,scaleIsHeightDp = 1 AND antiAliasing = 1 AND threads = 90,scaleIsHeightDp AND antiAliasing AND threads > 50.0,0,1.0,1.0,1.0,83
+uniform,972,scaleIsHeightDp = 1 AND antiAliasing = 1 AND threads = 90,scaleIsHeightDp AND threads > 50.0 AND antiAliasing,0,1.0,1.0,1.0,83
+bi_modal_split,972,scaleIsHeightDp = 1 AND antiAliasing = 1 AND threads = 90,antiAliasing AND threads > 50.0 AND scaleIsHeightDp,0,1.0,1.0,1.0,83
+tri_modal_split,972,scaleIsHeightDp = 1 AND antiAliasing = 1 AND threads = 90,antiAliasing,0,0.4493758668515951,0.2898032200357782,1.0,83
+power_law,972,scaleIsHeightDp = 1 AND antiAliasing = 1 AND threads = 90,antiAliasing AND scaleIsHeightDp AND threads > 50.0,2,1.0,1.0,1.0,83
+normal,902,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND androidIncludeLdpiTvdpi = 1,androidIncludeLdpiTvdpi AND androidMipmapInsteadOfDrawable,0,1.0,1.0,1.0,84
+uniform,902,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND androidIncludeLdpiTvdpi = 1,androidMipmapInsteadOfDrawable AND androidIncludeLdpiTvdpi,0,1.0,1.0,1.0,84
+bi_modal_split,902,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND androidIncludeLdpiTvdpi = 1,androidIncludeLdpiTvdpi AND androidMipmapInsteadOfDrawable,0,1.0,1.0,1.0,84
+tri_modal_split,902,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND androidIncludeLdpiTvdpi = 1,NOT androidIncludeLdpiTvdpi,0,0.0,0.0,0.0,84
+power_law,902,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND androidIncludeLdpiTvdpi = 1,androidMipmapInsteadOfDrawable AND androidIncludeLdpiTvdpi,3,1.0,1.0,1.0,84
+normal,1051,android = 1 AND antiAliasing = 1 AND threads = 90,antiAliasing AND android AND threads > 50.0,0,1.0,1.0,1.0,85
+uniform,1051,android = 1 AND antiAliasing = 1 AND threads = 90,antiAliasing AND android AND threads > 50.0,0,1.0,1.0,1.0,85
+bi_modal_split,1051,android = 1 AND antiAliasing = 1 AND threads = 90,android AND antiAliasing AND threads > 50.0,0,1.0,1.0,1.0,85
+tri_modal_split,1051,android = 1 AND antiAliasing = 1 AND threads = 90,threads > 50.0 AND android,3,0.6741500962155228,0.5084663763909046,1.0,85
+power_law,1051,android = 1 AND antiAliasing = 1 AND threads = 90,android AND antiAliasing AND threads > 50.0,2,1.0,1.0,1.0,85
+normal,1039,android = 1 AND scaleIsHeightDp = 1 AND threads = 90,NOT jpeg,0,0.2519541901472459,0.1553115194979829,0.6669874879692012,86
+uniform,1039,android = 1 AND scaleIsHeightDp = 1 AND threads = 90,scaleIsHeightDp AND android AND threads > 50.0,0,1.0,1.0,1.0,86
+bi_modal_split,1039,android = 1 AND scaleIsHeightDp = 1 AND threads = 90,scaleIsHeightDp AND android AND threads > 50.0,3,1.0,1.0,1.0,86
+tri_modal_split,1039,android = 1 AND scaleIsHeightDp = 1 AND threads = 90,scaleIsHeightDp AND android AND threads > 50.0,1,1.0,1.0,1.0,86
+power_law,1039,android = 1 AND scaleIsHeightDp = 1 AND threads = 90,skipUpscaling,1,0.245292129406084,0.1637125362552368,0.4889316650625601,86
+normal,949,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND antiAliasing = 1,androidMipmapInsteadOfDrawable AND antiAliasing,0,1.0,1.0,1.0,87
+uniform,949,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND antiAliasing = 1,androidMipmapInsteadOfDrawable AND antiAliasing,0,1.0,1.0,1.0,87
+bi_modal_split,949,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND antiAliasing = 1,androidMipmapInsteadOfDrawable AND antiAliasing,0,1.0,1.0,1.0,87
+tri_modal_split,949,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND antiAliasing = 1,androidMipmapInsteadOfDrawable AND antiAliasing,0,1.0,1.0,1.0,87
+power_law,949,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND antiAliasing = 1,NOT bmp AND NOT scaleIsHeightDp AND NOT ios,3,0.2523214857508806,0.1812327506899724,0.4151738672286617,87
+normal,684,android = 1 AND floor = 1 AND threads = 90,floor AND android AND threads > 50.0,0,1.0,1.0,1.0,88
+uniform,684,android = 1 AND floor = 1 AND threads = 90,floor AND android AND threads > 50.0,0,1.0,1.0,1.0,88
+bi_modal_split,684,android = 1 AND floor = 1 AND threads = 90,floor AND android AND threads > 50.0,0,1.0,1.0,1.0,88
+tri_modal_split,684,android = 1 AND floor = 1 AND threads = 90,floor AND threads > 50.0 AND android,2,1.0,1.0,1.0,88
+power_law,684,android = 1 AND floor = 1 AND threads = 90,antiAliasing AND NOT web,2,0.1886486486486486,0.1157161803713527,0.5102339181286549,88
+normal,1039,android = 1 AND scaleIsHeightDp = 1 AND threads = 90,scaleIsHeightDp AND android AND threads > 50.0,0,1.0,1.0,1.0,89
+uniform,1039,android = 1 AND scaleIsHeightDp = 1 AND threads = 90,android AND scaleIsHeightDp AND threads > 50.0,0,1.0,1.0,1.0,89
+bi_modal_split,1039,android = 1 AND scaleIsHeightDp = 1 AND threads = 90,scaleIsHeightDp AND android AND threads > 50.0,0,1.0,1.0,1.0,89
+tri_modal_split,1039,android = 1 AND scaleIsHeightDp = 1 AND threads = 90,threads > 50.0 AND android,3,0.6690276883451384,0.5026608611514272,1.0,89
+power_law,1039,android = 1 AND scaleIsHeightDp = 1 AND threads = 90,NOT bmp AND androidMipmapInsteadOfDrawable,3,0.34296875,0.2886259040105194,0.4225216554379211,89
+normal,924,android = 1 AND scaleIsHeightDp = 1 AND antiAliasing = 1,android AND antiAliasing AND scaleIsHeightDp,0,1.0,1.0,1.0,8
+uniform,924,android = 1 AND scaleIsHeightDp = 1 AND antiAliasing = 1,android AND scaleIsHeightDp AND antiAliasing,0,1.0,1.0,1.0,8
+bi_modal_split,924,android = 1 AND scaleIsHeightDp = 1 AND antiAliasing = 1,scaleIsHeightDp,1,0.4339046724583236,0.2770614692653673,1.0,8
+tri_modal_split,924,android = 1 AND scaleIsHeightDp = 1 AND antiAliasing = 1,NOT ceil AND scaleIsHeightDp,2,0.3932689311311935,0.2761487964989059,0.6829004329004329,8
+power_law,924,android = 1 AND scaleIsHeightDp = 1 AND antiAliasing = 1,scaleIsHeightDp AND antiAliasing AND android,2,1.0,1.0,1.0,8
+normal,1045,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND threads = 90,androidMipmapInsteadOfDrawable AND threads > 50.0,0,1.0,1.0,1.0,90
+uniform,1045,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND threads = 90,NOT png AND androidMipmapInsteadOfDrawable AND threads > 50.0,1,0.9074751698902248,1.0,0.830622009569378,90
+bi_modal_split,1045,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND threads = 90,threads > 50.0,0,0.417665867306155,0.2639555443293761,1.0,90
+tri_modal_split,1045,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND threads = 90,NOT androidMipmapInsteadOfDrawable,0,0.0,0.0,0.0,90
+power_law,1045,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND threads = 90,androidMipmapInsteadOfDrawable AND threads > 50.0,2,1.0,1.0,1.0,90
+normal,899,android = 1 AND antiAliasing = 1 AND skipUpscaling = 1,skipUpscaling AND android AND antiAliasing,0,1.0,1.0,1.0,91
+uniform,899,android = 1 AND antiAliasing = 1 AND skipUpscaling = 1,NOT iosCreateImagesetFolders,0,0.2632118284292197,0.1515509103169251,1.0,91
+bi_modal_split,899,android = 1 AND antiAliasing = 1 AND skipUpscaling = 1,NOT iosCreateImagesetFolders AND skipUpscaling AND antiAliasing,3,0.7817391304347826,0.6416845110635261,1.0,91
+tri_modal_split,899,android = 1 AND antiAliasing = 1 AND skipUpscaling = 1,skipUpscaling,1,0.4492753623188406,0.2897196261682243,1.0,91
+power_law,899,android = 1 AND antiAliasing = 1 AND skipUpscaling = 1,skipUpscaling AND android,3,0.6918045402077722,0.5288235294117647,1.0,91
+normal,894,android = 1 AND scaleIsHeightDp = 1 AND skipUpscaling = 1,skipUpscaling AND scaleIsHeightDp AND android,0,1.0,1.0,1.0,92
+uniform,894,android = 1 AND scaleIsHeightDp = 1 AND skipUpscaling = 1,scaleIsHeightDp AND skipUpscaling AND android,0,1.0,1.0,1.0,92
+bi_modal_split,894,android = 1 AND scaleIsHeightDp = 1 AND skipUpscaling = 1,androidMipmapInsteadOfDrawable AND skipUpscaling AND scaleIsHeightDp,0,0.6948905109489052,1.0,0.5324384787472036,92
+tri_modal_split,894,android = 1 AND scaleIsHeightDp = 1 AND skipUpscaling = 1,skipUpscaling AND scaleIsHeightDp AND android,0,1.0,1.0,1.0,92
+power_law,894,android = 1 AND scaleIsHeightDp = 1 AND skipUpscaling = 1,NOT png AND NOT iosCreateImagesetFolders,1,0.2535597872705438,0.1497467071935157,0.8266219239373602,92
+normal,922,antiAliasing = 1 AND skipUpscaling = 1 AND threads = 90,skipUpscaling AND antiAliasing AND threads > 50.0,0,1.0,1.0,1.0,93
+uniform,922,antiAliasing = 1 AND skipUpscaling = 1 AND threads = 90,skipUpscaling AND antiAliasing AND threads > 50.0,0,1.0,1.0,1.0,93
+bi_modal_split,922,antiAliasing = 1 AND skipUpscaling = 1 AND threads = 90,antiAliasing AND skipUpscaling AND threads > 50.0,3,1.0,1.0,1.0,93
+tri_modal_split,922,antiAliasing = 1 AND skipUpscaling = 1 AND threads = 90,skipUpscaling AND antiAliasing AND threads > 50.0,3,1.0,1.0,1.0,93
+power_law,922,antiAliasing = 1 AND skipUpscaling = 1 AND threads = 90,skipUpscaling AND threads > 50.0 AND antiAliasing,3,1.0,1.0,1.0,93
+normal,922,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND scaleIsHeightDp = 1,androidMipmapInsteadOfDrawable AND scaleIsHeightDp,0,1.0,1.0,1.0,94
+uniform,922,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND scaleIsHeightDp = 1,androidMipmapInsteadOfDrawable AND scaleIsHeightDp,0,1.0,1.0,1.0,94
+bi_modal_split,922,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND scaleIsHeightDp = 1,androidMipmapInsteadOfDrawable AND scaleIsHeightDp,0,1.0,1.0,1.0,94
+tri_modal_split,922,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND scaleIsHeightDp = 1,androidMipmapInsteadOfDrawable AND scaleIsHeightDp,0,1.0,1.0,1.0,94
+power_law,922,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND scaleIsHeightDp = 1,NOT gif,0,0.2377684964200477,0.1378415773088896,0.8644251626898047,94
+normal,972,scaleIsHeightDp = 1 AND antiAliasing = 1 AND threads = 90,antiAliasing AND threads > 50.0 AND scaleIsHeightDp,0,1.0,1.0,1.0,95
+uniform,972,scaleIsHeightDp = 1 AND antiAliasing = 1 AND threads = 90,antiAliasing AND scaleIsHeightDp AND threads > 50.0,0,1.0,1.0,1.0,95
+bi_modal_split,972,scaleIsHeightDp = 1 AND antiAliasing = 1 AND threads = 90,antiAliasing AND scaleIsHeightDp,3,0.7335849056603774,0.5792610250297974,1.0,95
+tri_modal_split,972,scaleIsHeightDp = 1 AND antiAliasing = 1 AND threads = 90,scaleIsHeightDp AND antiAliasing,4,0.7335849056603774,0.5792610250297974,1.0,95
+power_law,972,scaleIsHeightDp = 1 AND antiAliasing = 1 AND threads = 90,scaleIsHeightDp AND antiAliasing AND threads > 50.0,2,1.0,1.0,1.0,95
+normal,924,android = 1 AND scaleIsHeightDp = 1 AND antiAliasing = 1,antiAliasing AND scaleIsHeightDp AND android,0,1.0,1.0,1.0,96
+uniform,924,android = 1 AND scaleIsHeightDp = 1 AND antiAliasing = 1,android AND antiAliasing AND scaleIsHeightDp,0,1.0,1.0,1.0,96
+bi_modal_split,924,android = 1 AND scaleIsHeightDp = 1 AND antiAliasing = 1,scaleIsHeightDp,2,0.4339046724583236,0.2770614692653673,1.0,96
+tri_modal_split,924,android = 1 AND scaleIsHeightDp = 1 AND antiAliasing = 1,android,1,0.414535666218035,0.2614601018675722,1.0,96
+power_law,924,android = 1 AND scaleIsHeightDp = 1 AND antiAliasing = 1,antiAliasing AND NOT gif AND NOT ios,3,0.5112685125563426,0.3638863428047663,0.8593073593073594,96
+normal,706,scaleIsHeightDp = 1 AND antiAliasing = 1 AND threads = 10,threads <= 50.0 AND scaleIsHeightDp AND antiAliasing,0,1.0,1.0,1.0,97
+uniform,706,scaleIsHeightDp = 1 AND antiAliasing = 1 AND threads = 10,threads <= 50.0 AND antiAliasing AND scaleIsHeightDp,0,1.0,1.0,1.0,97
+bi_modal_split,706,scaleIsHeightDp = 1 AND antiAliasing = 1 AND threads = 10,scaleIsHeightDp AND threads <= 50.0 AND antiAliasing,0,1.0,1.0,1.0,97
+tri_modal_split,706,scaleIsHeightDp = 1 AND antiAliasing = 1 AND threads = 10,threads <= 50.0 AND scaleIsHeightDp AND antiAliasing,2,1.0,1.0,1.0,97
+power_law,706,scaleIsHeightDp = 1 AND antiAliasing = 1 AND threads = 10,NOT androidMipmapInsteadOfDrawable,0,0.173606210303458,0.0991535671100362,0.6968838526912181,97
+normal,916,scaleIsHeightDp = 1 AND skipUpscaling = 1 AND threads = 90,skipUpscaling AND scaleIsHeightDp AND threads > 50.0,0,1.0,1.0,1.0,98
+uniform,916,scaleIsHeightDp = 1 AND skipUpscaling = 1 AND threads = 90,skipUpscaling AND threads > 50.0 AND scaleIsHeightDp,0,1.0,1.0,1.0,98
+bi_modal_split,916,scaleIsHeightDp = 1 AND skipUpscaling = 1 AND threads = 90,skipUpscaling,1,0.4558347847723314,0.2951981952948759,1.0,98
+tri_modal_split,916,scaleIsHeightDp = 1 AND skipUpscaling = 1 AND threads = 90,scaleIsHeightDp AND threads > 50.0 AND skipUpscaling,4,1.0,1.0,1.0,98
+power_law,916,scaleIsHeightDp = 1 AND skipUpscaling = 1 AND threads = 90,NOT gif AND scaleIsHeightDp AND skipUpscaling,4,0.6807958477508651,0.5637535816618912,0.8591703056768559,98
+normal,712,android = 1 AND skipUpscaling = 1 AND threads = 10,threads <= 50.0 AND skipUpscaling AND android,0,1.0,1.0,1.0,99
+uniform,712,android = 1 AND skipUpscaling = 1 AND threads = 10,NOT win AND skipUpscaling AND threads <= 50.0 AND NOT web,3,0.8322618351841029,0.7127127127127127,1.0,99
+bi_modal_split,712,android = 1 AND skipUpscaling = 1 AND threads = 10,scaleIsHeightDp,0,0.1907585866073635,0.1157421289355322,0.5421348314606742,99
+tri_modal_split,712,android = 1 AND skipUpscaling = 1 AND threads = 10,threads <= 50.0 AND skipUpscaling AND android,4,1.0,1.0,1.0,99
+power_law,712,android = 1 AND skipUpscaling = 1 AND threads = 10,skipUpscaling AND threads <= 50.0 AND android,3,1.0,1.0,1.0,99
+normal,885,android = 1 AND skipUpscaling = 1 AND androidIncludeLdpiTvdpi = 1,androidIncludeLdpiTvdpi AND skipUpscaling,0,1.0,1.0,1.0,9
+uniform,885,android = 1 AND skipUpscaling = 1 AND androidIncludeLdpiTvdpi = 1,androidIncludeLdpiTvdpi AND skipUpscaling,0,1.0,1.0,1.0,9
+bi_modal_split,885,android = 1 AND skipUpscaling = 1 AND androidIncludeLdpiTvdpi = 1,androidIncludeLdpiTvdpi,3,0.6649135987978964,0.498030388294879,1.0,9
+tri_modal_split,885,android = 1 AND skipUpscaling = 1 AND androidIncludeLdpiTvdpi = 1,androidIncludeLdpiTvdpi AND skipUpscaling,1,1.0,1.0,1.0,9
+power_law,885,android = 1 AND skipUpscaling = 1 AND androidIncludeLdpiTvdpi = 1,androidIncludeLdpiTvdpi,3,0.6649135987978964,0.498030388294879,1.0,9

@@ -1,0 +1,2 @@
+num_features,num_samples,sgs_unique,sgs_mean_jaccard,sgs_mean_overlap_coefficient,coverage_mean,coverage_total,rule_features_used,rule_feature_frequency,rule_num_features,rule_length_mean,rule_length_max,rule_length_min
+17,4196,3,0.18540956708317557,0.3333333333333333,0.34834763266603114,0.6949475691134414,"['SwapBytes', 'Resampling', 'Freeformat', 'Mono', 'ReplayGainAccurate']","[('SwapBytes', 2), ('Resampling', 5), ('Freeformat', 2), ('Mono', 3), ('ReplayGainAccurate', 2)]",5,2.8,4.0,2.0

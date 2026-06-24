@@ -1,0 +1,2 @@
+num_features,num_samples,sgs_unique,sgs_mean_jaccard,sgs_mean_overlap_coefficient,coverage_mean,coverage_total,rule_features_used,rule_feature_frequency,rule_num_features,rule_length_mean,rule_length_max,rule_length_min,runtime
+13,1010,3,0.24305555555555555,0.3333333333333333,0.07557755775577557,0.15742574257425743,"['proof', 'stats', 'debug_ref_count', 'trace', 'well_sorted_check', 'workload']","[('proof', 5), ('stats', 1), ('debug_ref_count', 5), ('trace', 5), ('well_sorted_check', 3), ('workload', 2)]",6,4.2,5.0,3.0,0.41858792304992676

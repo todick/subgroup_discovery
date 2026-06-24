@@ -1,0 +1,501 @@
+sg_distribution,sg_cardinality,sg_rule,best_rule,best_rule_idx,f1,precision,recall,seed
+normal,246,bt4 = 1 AND Dist = 1 AND BlockSize = 1,Dist==1 AND BlockSize==1 AND bt4==1,0,1.0,1.0,1.0,0
+uniform,232,MemoryLimit = 1 AND Dist = 1 AND PositionBits = 1,Lc2Lp0==1 AND crc64==1 AND BlockSize==0 AND bt4==1,0,0.0,0.0,0.0,0
+bi_modal_split,352,Depth = 1 AND BlockSize = 1 AND FlushTimeout = 1,Depth==1 AND BlockSize==1 AND FlushTimeout==1,0,1.0,1.0,1.0,0
+tri_modal_split,207,sha256 = 1 AND Dist = 1 AND BlockSize = 1,Dist==1 AND sha256==1 AND BlockSize==1 AND none==0,2,1.0,1.0,1.0,0
+power_law,367,MemoryLimit = 1 AND Dict = 1 AND FlushTimeout = 1,MemoryLimit==1 AND Dict==1 AND FlushTimeout==1,3,1.0,1.0,1.0,0
+normal,242,MemoryLimit = 1 AND Depth = 1 AND PositionBits = 1,MemoryLimit==1 AND Depth==1 AND PositionBits==1,0,1.0,1.0,1.0,10
+uniform,242,MemoryLimit = 1 AND Depth = 1 AND PositionBits = 1,MemoryLimit==1 AND Depth==1 AND PositionBits==1,0,1.0,1.0,1.0,10
+bi_modal_split,242,MemoryLimit = 1 AND Depth = 1 AND PositionBits = 1,MemoryLimit==1 AND Depth==1 AND PositionBits==1,0,1.0,1.0,1.0,10
+tri_modal_split,242,MemoryLimit = 1 AND Depth = 1 AND PositionBits = 1,MemoryLimit==1 AND Depth==1 AND PositionBits==1,3,1.0,1.0,1.0,10
+power_law,242,MemoryLimit = 1 AND Depth = 1 AND PositionBits = 1,Nice==0 AND Depth==1 AND Dist==0 AND hc4==1,2,0.0160642570281124,0.2857142857142857,0.0082644628099173,10
+normal,246,bt4 = 1 AND Nice = 1 AND BlockSize = 1,Nice==1 AND BlockSize==1 AND bt4==1,0,1.0,1.0,1.0,11
+uniform,246,bt4 = 1 AND Nice = 1 AND BlockSize = 1,Nice==1 AND BlockSize==1 AND bt3==0 AND bt4==1,1,1.0,1.0,1.0,11
+bi_modal_split,246,bt4 = 1 AND Nice = 1 AND BlockSize = 1,crc32==1 AND Lc1Lp0==1 AND Depth==1 AND bt3==0,1,0.0079051383399209,0.1428571428571428,0.0040650406504065,11
+tri_modal_split,246,bt4 = 1 AND Nice = 1 AND BlockSize = 1,Lc0Lp4==0 AND Nice==1 AND BlockSize==1 AND bt4==1,3,0.9663865546218486,1.0,0.934959349593496,11
+power_law,246,bt4 = 1 AND Nice = 1 AND BlockSize = 1,Lc0Lp1==1 AND Depth==1 AND sha256==1 AND hc3==0,3,0.1071428571428571,0.4411764705882353,0.0609756097560975,11
+normal,352,Depth = 1 AND BlockSize = 1 AND FlushTimeout = 1,Depth==1 AND BlockSize==1 AND FlushTimeout==1,0,1.0,1.0,1.0,12
+uniform,352,Depth = 1 AND BlockSize = 1 AND FlushTimeout = 1,Depth==1 AND BlockSize==1 AND FlushTimeout==1,0,1.0,1.0,1.0,12
+bi_modal_split,352,Depth = 1 AND BlockSize = 1 AND FlushTimeout = 1,Depth==1 AND BlockSize==1 AND FlushTimeout==1,0,1.0,1.0,1.0,12
+tri_modal_split,352,Depth = 1 AND BlockSize = 1 AND FlushTimeout = 1,Depth==1 AND BlockSize==1 AND FlushTimeout==1,0,1.0,1.0,1.0,12
+power_law,352,Depth = 1 AND BlockSize = 1 AND FlushTimeout = 1,Depth==1 AND BlockSize==1 AND FlushTimeout==1,0,1.0,1.0,1.0,12
+normal,205,none = 1 AND Dict = 1 AND BlockSize = 1,Dict==1 AND BlockSize==1 AND none==1,0,1.0,1.0,1.0,13
+uniform,205,none = 1 AND Dict = 1 AND BlockSize = 1,Dict==1 AND BlockSize==1 AND none==1,0,1.0,1.0,1.0,13
+bi_modal_split,205,none = 1 AND Dict = 1 AND BlockSize = 1,Dict==1 AND BlockSize==1 AND none==1,0,1.0,1.0,1.0,13
+tri_modal_split,205,none = 1 AND Dict = 1 AND BlockSize = 1,Dict==1 AND BlockSize==1 AND none==1,0,1.0,1.0,1.0,13
+power_law,205,none = 1 AND Dict = 1 AND BlockSize = 1,Dict==1 AND sha256==0 AND BlockSize==1 AND none==1,3,1.0,1.0,1.0,13
+normal,386,Depth = 1 AND Dict = 1 AND Multithreading = 1,Depth==1 AND Dict==1 AND Multithreading==1,0,1.0,1.0,1.0,14
+uniform,386,Depth = 1 AND Dict = 1 AND Multithreading = 1,Lc4Lp0==1 AND sha256==0 AND PositionBits==0 AND hc3==1,3,0.0199501246882793,0.2666666666666666,0.0103626943005181,14
+bi_modal_split,386,Depth = 1 AND Dict = 1 AND Multithreading = 1,Depth==1 AND Dict==1 AND Multithreading==1,0,1.0,1.0,1.0,14
+tri_modal_split,386,Depth = 1 AND Dict = 1 AND Multithreading = 1,Depth==1 AND Dict==1 AND Multithreading==1,0,1.0,1.0,1.0,14
+power_law,386,Depth = 1 AND Dict = 1 AND Multithreading = 1,MemoryLimit==1 AND Nice==0 AND FlushTimeout==1 AND bt2==1,0,0.0,0.0,0.0,14
+normal,256,crc32 = 1 AND Nice = 1 AND Depth = 1,crc32==1 AND Nice==1 AND Depth==1,0,1.0,1.0,1.0,15
+uniform,256,crc32 = 1 AND Nice = 1 AND Depth = 1,crc32==1 AND Nice==1 AND Depth==1,0,1.0,1.0,1.0,15
+bi_modal_split,256,crc32 = 1 AND Nice = 1 AND Depth = 1,crc32==1 AND Nice==1 AND Depth==1,0,1.0,1.0,1.0,15
+tri_modal_split,256,crc32 = 1 AND Nice = 1 AND Depth = 1,crc32==1 AND Nice==1 AND Depth==1,0,1.0,1.0,1.0,15
+power_law,256,crc32 = 1 AND Nice = 1 AND Depth = 1,crc32==1 AND Nice==1 AND Depth==1,0,1.0,1.0,1.0,15
+normal,214,hc3 = 1 AND Depth = 1 AND Dict = 1,Depth==1 AND Dict==1 AND hc3==1,0,1.0,1.0,1.0,16
+uniform,214,hc3 = 1 AND Depth = 1 AND Dict = 1,Depth==1 AND Dict==1 AND hc3==1,0,1.0,1.0,1.0,16
+bi_modal_split,214,hc3 = 1 AND Depth = 1 AND Dict = 1,Depth==1 AND Dict==1 AND hc3==1,0,1.0,1.0,1.0,16
+tri_modal_split,214,hc3 = 1 AND Depth = 1 AND Dict = 1,crc64==0 AND Dict==1 AND hc3==1 AND bt4==0,4,0.7989690721649485,0.8908045977011494,0.7242990654205608,16
+power_law,214,hc3 = 1 AND Depth = 1 AND Dict = 1,Dist==1 AND FlushTimeout==0 AND hc3==1 AND bt4==0,2,0.6180758017492711,0.8217054263565892,0.4953271028037383,16
+normal,212,hc3 = 1 AND Depth = 1 AND BlockSize = 1,Lc0Lp1==1 AND BlockSize==0 AND hc4==1 AND Lc0Lp0==0,0,0.0,0.0,0.0,17
+uniform,212,hc3 = 1 AND Depth = 1 AND BlockSize = 1,Depth==1 AND BlockSize==1 AND hc3==1,0,1.0,1.0,1.0,17
+bi_modal_split,212,hc3 = 1 AND Depth = 1 AND BlockSize = 1,Depth==1 AND BlockSize==1 AND hc3==1,0,1.0,1.0,1.0,17
+tri_modal_split,212,hc3 = 1 AND Depth = 1 AND BlockSize = 1,Depth==1 AND BlockSize==1 AND hc3==1,0,1.0,1.0,1.0,17
+power_law,212,hc3 = 1 AND Depth = 1 AND BlockSize = 1,Depth==1 AND BlockSize==1 AND hc3==1,0,1.0,1.0,1.0,17
+normal,201,sha256 = 1 AND Depth = 1 AND BlockSize = 1,Depth==1 AND sha256==1 AND BlockSize==1,0,1.0,1.0,1.0,18
+uniform,201,sha256 = 1 AND Depth = 1 AND BlockSize = 1,Depth==1 AND sha256==1 AND BlockSize==1 AND none==0,2,1.0,1.0,1.0,18
+bi_modal_split,201,sha256 = 1 AND Depth = 1 AND BlockSize = 1,Depth==1 AND sha256==1 AND BlockSize==1,0,1.0,1.0,1.0,18
+tri_modal_split,201,sha256 = 1 AND Depth = 1 AND BlockSize = 1,Depth==1 AND sha256==1 AND BlockSize==1,0,1.0,1.0,1.0,18
+power_law,201,sha256 = 1 AND Depth = 1 AND BlockSize = 1,Lc4Lp0==1 AND Dist==1 AND BlockSize==1 AND PositionBits==0,3,0.0803212851405622,0.2083333333333333,0.0497512437810945,18
+normal,229,crc32 = 1 AND MemoryLimit = 1 AND BlockSize = 1,crc32==1 AND MemoryLimit==1 AND BlockSize==1,0,1.0,1.0,1.0,19
+uniform,229,crc32 = 1 AND MemoryLimit = 1 AND BlockSize = 1,crc32==1 AND MemoryLimit==1 AND BlockSize==1,0,1.0,1.0,1.0,19
+bi_modal_split,229,crc32 = 1 AND MemoryLimit = 1 AND BlockSize = 1,crc32==1 AND MemoryLimit==1 AND BlockSize==1,0,1.0,1.0,1.0,19
+tri_modal_split,229,crc32 = 1 AND MemoryLimit = 1 AND BlockSize = 1,crc32==1 AND MemoryLimit==1 AND BlockSize==1,0,1.0,1.0,1.0,19
+power_law,229,crc32 = 1 AND MemoryLimit = 1 AND BlockSize = 1,crc32==1 AND MemoryLimit==1 AND BlockSize==1,0,1.0,1.0,1.0,19
+normal,216,crc32 = 1 AND MemoryLimit = 1 AND Dist = 1,crc32==1 AND MemoryLimit==1 AND Dist==1,0,1.0,1.0,1.0,1
+uniform,216,crc32 = 1 AND MemoryLimit = 1 AND Dist = 1,crc32==1 AND MemoryLimit==1 AND Dist==1,0,1.0,1.0,1.0,1
+bi_modal_split,216,crc32 = 1 AND MemoryLimit = 1 AND Dist = 1,Lc2Lp2==1 AND BlockSize==1 AND PositionBits==1 AND hc3==1,4,0.009009009009009,0.1666666666666666,0.0046296296296296,1
+tri_modal_split,216,crc32 = 1 AND MemoryLimit = 1 AND Dist = 1,crc32==1 AND MemoryLimit==1 AND Dist==1 AND none==0,4,1.0,1.0,1.0,1
+power_law,216,crc32 = 1 AND MemoryLimit = 1 AND Dist = 1,crc32==1 AND MemoryLimit==1 AND Dist==1,0,1.0,1.0,1.0,1
+normal,229,MemoryLimit = 1 AND Nice = 1 AND PositionBits = 1,MemoryLimit==1 AND Nice==1 AND PositionBits==1,0,1.0,1.0,1.0,20
+uniform,229,MemoryLimit = 1 AND Nice = 1 AND PositionBits = 1,MemoryLimit==1 AND Nice==1 AND PositionBits==1,0,1.0,1.0,1.0,20
+bi_modal_split,229,MemoryLimit = 1 AND Nice = 1 AND PositionBits = 1,Lc0Lp1==1 AND Multithreading==1 AND BlockSize==0 AND hc3==0,0,0.0,0.0,0.0,20
+tri_modal_split,229,MemoryLimit = 1 AND Nice = 1 AND PositionBits = 1,Lc2Lp2==1 AND MemoryLimit==1 AND sha256==0 AND bt4==1,4,0.0084033613445378,0.1111111111111111,0.0043668122270742,20
+power_law,229,MemoryLimit = 1 AND Nice = 1 AND PositionBits = 1,MemoryLimit==1 AND Nice==1 AND PositionBits==1,0,1.0,1.0,1.0,20
+normal,240,bt4 = 1 AND Dict = 1 AND Dist = 1,Dict==1 AND Dist==1 AND bt4==1,0,1.0,1.0,1.0,21
+uniform,240,bt4 = 1 AND Dict = 1 AND Dist = 1,Dict==1 AND Dist==1 AND bt4==1,0,1.0,1.0,1.0,21
+bi_modal_split,240,bt4 = 1 AND Dict = 1 AND Dist = 1,MemoryLimit==1 AND Dist==1 AND bt3==0 AND bt4==1,2,0.9135802469135802,0.902439024390244,0.925,21
+tri_modal_split,240,bt4 = 1 AND Dict = 1 AND Dist = 1,Dict==1 AND Dist==1 AND bt4==1,0,1.0,1.0,1.0,21
+power_law,240,bt4 = 1 AND Dict = 1 AND Dist = 1,Dict==1 AND Dist==1 AND bt4==1,0,1.0,1.0,1.0,21
+normal,269,Dict = 1 AND BlockSize = 1 AND PositionBits = 1,Dict==1 AND BlockSize==1 AND PositionBits==1,0,1.0,1.0,1.0,22
+uniform,269,Dict = 1 AND BlockSize = 1 AND PositionBits = 1,Lc0Lp4==1 AND Nice==1 AND none==0 AND hc3==1,0,0.0209059233449477,0.1666666666666666,0.0111524163568773,22
+bi_modal_split,269,Dict = 1 AND BlockSize = 1 AND PositionBits = 1,Dict==1 AND BlockSize==1 AND PositionBits==1,1,1.0,1.0,1.0,22
+tri_modal_split,269,Dict = 1 AND BlockSize = 1 AND PositionBits = 1,Lc2Lp1==0 AND Dict==1 AND BlockSize==1 AND PositionBits==1,0,0.981060606060606,1.0,0.9628252788104088,22
+power_law,269,Dict = 1 AND BlockSize = 1 AND PositionBits = 1,Lc2Lp2==1 AND Nice==0 AND BlockSize==1 AND hc4==1,3,0.0073260073260073,0.25,0.0037174721189591,22
+normal,209,hc3 = 1 AND Depth = 1 AND Dist = 1,Depth==1 AND Dist==1 AND hc3==1,0,1.0,1.0,1.0,23
+uniform,209,hc3 = 1 AND Depth = 1 AND Dist = 1,Dist==1 AND sha256==0 AND BlockSize==0 AND FlushTimeout==1,4,0.0352422907488986,0.2222222222222222,0.0191387559808612,23
+bi_modal_split,209,hc3 = 1 AND Depth = 1 AND Dist = 1,Depth==1 AND Dist==1 AND hc3==1,0,1.0,1.0,1.0,23
+tri_modal_split,209,hc3 = 1 AND Depth = 1 AND Dist = 1,Lc1Lp1==0 AND Depth==1 AND hc3==1,0,0.9023255813953488,0.8778280542986425,0.9282296650717704,23
+power_law,209,hc3 = 1 AND Depth = 1 AND Dist = 1,crc32==1 AND Lc0Lp2==1 AND PositionBits==0 AND bt4==1,0,0.0,0.0,0.0,23
+normal,201,none = 1 AND Nice = 1 AND Dict = 1,Lc1Lp3==0 AND Multithreading==1 AND sha256==1 AND bt2==0,0,0.0,0.0,0.0,24
+uniform,201,none = 1 AND Nice = 1 AND Dict = 1,Lc1Lp1==0 AND Dist==1 AND none==1,1,0.7612293144208039,0.7252252252252253,0.8009950248756219,24
+bi_modal_split,201,none = 1 AND Nice = 1 AND Dict = 1,Lc2Lp1==1 AND FlushTimeout==0 AND none==0 AND bt2==1,0,0.0,0.0,0.0,24
+tri_modal_split,201,none = 1 AND Nice = 1 AND Dict = 1,Nice==1 AND Dict==1 AND none==1,1,1.0,1.0,1.0,24
+power_law,201,none = 1 AND Nice = 1 AND Dict = 1,BlockSize==0 AND FlushTimeout==1 AND none==0 AND bt4==0,0,0.0,0.0,0.0,24
+normal,353,Nice = 1 AND Dist = 1 AND FlushTimeout = 1,Nice==1 AND Dist==1 AND FlushTimeout==1,0,1.0,1.0,1.0,25
+uniform,353,Nice = 1 AND Dist = 1 AND FlushTimeout = 1,Nice==1 AND Dist==1 AND FlushTimeout==1,0,1.0,1.0,1.0,25
+bi_modal_split,353,Nice = 1 AND Dist = 1 AND FlushTimeout = 1,Nice==1 AND Dist==1 AND FlushTimeout==1,0,1.0,1.0,1.0,25
+tri_modal_split,353,Nice = 1 AND Dist = 1 AND FlushTimeout = 1,Nice==1 AND Dist==1 AND FlushTimeout==1,0,1.0,1.0,1.0,25
+power_law,353,Nice = 1 AND Dist = 1 AND FlushTimeout = 1,Nice==1 AND BlockSize==0 AND none==1 AND bt4==0,1,0.0213903743315508,0.1904761904761904,0.0113314447592068,25
+normal,240,crc32 = 1 AND Dict = 1 AND Dist = 1,crc32==1 AND Dict==1 AND Dist==1,0,1.0,1.0,1.0,26
+uniform,240,crc32 = 1 AND Dict = 1 AND Dist = 1,Lc2Lp2==1 AND PositionBits==1 AND none==0 AND bt3==1,0,0.0081632653061224,0.2,0.0041666666666666,26
+bi_modal_split,240,crc32 = 1 AND Dict = 1 AND Dist = 1,crc64==0 AND Lc3Lp0==1 AND Dict==1 AND BlockSize==0,0,0.0,0.0,0.0,26
+tri_modal_split,240,crc32 = 1 AND Dict = 1 AND Dist = 1,Lc3Lp1==1 AND PositionBits==1 AND bt3==0 AND bt4==1,0,0.0,0.0,0.0,26
+power_law,240,crc32 = 1 AND Dict = 1 AND Dist = 1,crc32==0 AND Lc0Lp2==1 AND Multithreading==1 AND PositionBits==1,0,0.0,0.0,0.0,26
+normal,365,Nice = 1 AND Dict = 1 AND FlushTimeout = 1,Nice==1 AND Dict==1 AND FlushTimeout==1,0,1.0,1.0,1.0,27
+uniform,365,Nice = 1 AND Dict = 1 AND FlushTimeout = 1,Nice==1 AND Dict==1 AND FlushTimeout==1,0,1.0,1.0,1.0,27
+bi_modal_split,365,Nice = 1 AND Dict = 1 AND FlushTimeout = 1,Nice==1 AND Dict==1 AND Multithreading==0 AND FlushTimeout==1,4,1.0,1.0,1.0,27
+tri_modal_split,365,Nice = 1 AND Dict = 1 AND FlushTimeout = 1,Nice==1 AND Dict==1 AND FlushTimeout==1,2,1.0,1.0,1.0,27
+power_law,365,Nice = 1 AND Dict = 1 AND FlushTimeout = 1,Nice==1 AND Dict==1 AND FlushTimeout==1,3,1.0,1.0,1.0,27
+normal,389,MemoryLimit = 1 AND Dist = 1 AND Multithreading = 1,MemoryLimit==1 AND Dist==1 AND Multithreading==1,0,1.0,1.0,1.0,28
+uniform,389,MemoryLimit = 1 AND Dist = 1 AND Multithreading = 1,MemoryLimit==1 AND Dist==1 AND Multithreading==1,1,1.0,1.0,1.0,28
+bi_modal_split,389,MemoryLimit = 1 AND Dist = 1 AND Multithreading = 1,MemoryLimit==1 AND Dist==1 AND Multithreading==1,1,1.0,1.0,1.0,28
+tri_modal_split,389,MemoryLimit = 1 AND Dist = 1 AND Multithreading = 1,MemoryLimit==1 AND Dist==1 AND Multithreading==1,2,1.0,1.0,1.0,28
+power_law,389,MemoryLimit = 1 AND Dist = 1 AND Multithreading = 1,crc32==1 AND BlockSize==0 AND FlushTimeout==1 AND Lc0Lp0==0,0,0.0,0.0,0.0,28
+normal,261,bt4 = 1 AND Dict = 1 AND BlockSize = 1,crc64==1 AND Depth==1 AND BlockSize==0 AND PositionBits==1,0,0.0,0.0,0.0,29
+uniform,261,bt4 = 1 AND Dict = 1 AND BlockSize = 1,Dict==1 AND BlockSize==1 AND bt4==1,0,1.0,1.0,1.0,29
+bi_modal_split,261,bt4 = 1 AND Dict = 1 AND BlockSize = 1,Dict==1 AND BlockSize==1 AND bt4==1,0,1.0,1.0,1.0,29
+tri_modal_split,261,bt4 = 1 AND Dict = 1 AND BlockSize = 1,Dict==1 AND BlockSize==1 AND bt4==1,0,1.0,1.0,1.0,29
+power_law,261,bt4 = 1 AND Dict = 1 AND BlockSize = 1,Dict==1 AND BlockSize==1 AND bt4==1,0,1.0,1.0,1.0,29
+normal,240,bt4 = 1 AND MemoryLimit = 1 AND Depth = 1,MemoryLimit==1 AND Depth==1 AND bt4==1,0,1.0,1.0,1.0,2
+uniform,240,bt4 = 1 AND MemoryLimit = 1 AND Depth = 1,Lc3Lp1==1 AND MemoryLimit==1 AND bt3==0 AND bt4==0,0,0.0,0.0,0.0,2
+bi_modal_split,240,bt4 = 1 AND MemoryLimit = 1 AND Depth = 1,MemoryLimit==1 AND Depth==1 AND bt3==0 AND bt4==1,2,1.0,1.0,1.0,2
+tri_modal_split,240,bt4 = 1 AND MemoryLimit = 1 AND Depth = 1,MemoryLimit==1 AND Depth==1 AND bt4==1,0,1.0,1.0,1.0,2
+power_law,240,bt4 = 1 AND MemoryLimit = 1 AND Depth = 1,Lc0Lp2==1 AND Nice==1 AND Depth==1 AND Dict==0,0,0.0153256704980842,0.0952380952380952,0.0083333333333333,2
+normal,240,bt4 = 1 AND MemoryLimit = 1 AND Depth = 1,MemoryLimit==1 AND Depth==1 AND bt4==1,0,1.0,1.0,1.0,30
+uniform,240,bt4 = 1 AND MemoryLimit = 1 AND Depth = 1,MemoryLimit==1 AND Depth==1 AND bt4==1,0,1.0,1.0,1.0,30
+bi_modal_split,240,bt4 = 1 AND MemoryLimit = 1 AND Depth = 1,Lc2Lp1==1 AND Nice==1 AND Dict==0 AND bt3==1,0,0.0,0.0,0.0,30
+tri_modal_split,240,bt4 = 1 AND MemoryLimit = 1 AND Depth = 1,Lc0Lp1==0 AND MemoryLimit==1 AND Depth==0 AND hc4==1,0,0.0,0.0,0.0,30
+power_law,240,bt4 = 1 AND MemoryLimit = 1 AND Depth = 1,MemoryLimit==1 AND Depth==1 AND bt4==1,0,1.0,1.0,1.0,30
+normal,234,crc32 = 1 AND MemoryLimit = 1 AND Nice = 1,crc64==1 AND PositionBits==0 AND hc3==0 AND bt2==0,0,0.0,0.0,0.0,31
+uniform,234,crc32 = 1 AND MemoryLimit = 1 AND Nice = 1,crc32==1 AND MemoryLimit==1 AND Nice==1,1,1.0,1.0,1.0,31
+bi_modal_split,234,crc32 = 1 AND MemoryLimit = 1 AND Nice = 1,crc32==1 AND MemoryLimit==1 AND Nice==1,0,1.0,1.0,1.0,31
+tri_modal_split,234,crc32 = 1 AND MemoryLimit = 1 AND Nice = 1,crc32==1 AND MemoryLimit==1 AND Nice==1,0,1.0,1.0,1.0,31
+power_law,234,crc32 = 1 AND MemoryLimit = 1 AND Nice = 1,Lc0Lp3==1 AND FlushTimeout==0 AND PositionBits==0 AND hc3==0,4,0.0294117647058823,0.1052631578947368,0.017094017094017,31
+normal,378,Nice = 1 AND BlockSize = 1 AND FlushTimeout = 1,Nice==1 AND BlockSize==1 AND FlushTimeout==1,0,1.0,1.0,1.0,32
+uniform,378,Nice = 1 AND BlockSize = 1 AND FlushTimeout = 1,Nice==1 AND BlockSize==1 AND FlushTimeout==1,0,1.0,1.0,1.0,32
+bi_modal_split,378,Nice = 1 AND BlockSize = 1 AND FlushTimeout = 1,Lc0Lp1==0 AND Lc1Lp1==0 AND Multithreading==1 AND bt2==0,0,0.0,0.0,0.0,32
+tri_modal_split,378,Nice = 1 AND BlockSize = 1 AND FlushTimeout = 1,crc64==1 AND MemoryLimit==0 AND Dict==1 AND hc3==1,1,0.0257069408740359,0.4545454545454545,0.0132275132275132,32
+power_law,378,Nice = 1 AND BlockSize = 1 AND FlushTimeout = 1,Lc2Lp0==1 AND Multithreading==0 AND PositionBits==0 AND hc3==0,4,0.0343980343980344,0.2413793103448276,0.0185185185185185,32
+normal,365,Nice = 1 AND Dict = 1 AND FlushTimeout = 1,Nice==1 AND Dict==1 AND FlushTimeout==1,0,1.0,1.0,1.0,33
+uniform,365,Nice = 1 AND Dict = 1 AND FlushTimeout = 1,Lc2Lp2==0 AND Nice==1 AND FlushTimeout==1,0,0.9533954727030626,0.927461139896373,0.9808219178082191,33
+bi_modal_split,365,Nice = 1 AND Dict = 1 AND FlushTimeout = 1,Lc2Lp0==1 AND Dict==1 AND BlockSize==0 AND hc4==0,0,0.0,0.0,0.0,33
+tri_modal_split,365,Nice = 1 AND Dict = 1 AND FlushTimeout = 1,Lc2Lp2==1 AND Nice==1 AND Dist==0 AND hc4==0,0,0.0,0.0,0.0,33
+power_law,365,Nice = 1 AND Dict = 1 AND FlushTimeout = 1,sha256==1 AND hc4==0 AND bt3==1 AND Lc0Lp0==1,0,0.0,0.0,0.0,33
+normal,203,sha256 = 1 AND MemoryLimit = 1 AND BlockSize = 1,MemoryLimit==1 AND sha256==1 AND BlockSize==1,0,1.0,1.0,1.0,34
+uniform,203,sha256 = 1 AND MemoryLimit = 1 AND BlockSize = 1,MemoryLimit==1 AND sha256==1 AND BlockSize==1,0,1.0,1.0,1.0,34
+bi_modal_split,203,sha256 = 1 AND MemoryLimit = 1 AND BlockSize = 1,MemoryLimit==1 AND sha256==1 AND BlockSize==1,0,1.0,1.0,1.0,34
+tri_modal_split,203,sha256 = 1 AND MemoryLimit = 1 AND BlockSize = 1,MemoryLimit==1 AND sha256==1 AND BlockSize==1,0,1.0,1.0,1.0,34
+power_law,203,sha256 = 1 AND MemoryLimit = 1 AND BlockSize = 1,MemoryLimit==1 AND sha256==1 AND BlockSize==1,0,1.0,1.0,1.0,34
+normal,226,crc32 = 1 AND Depth = 1 AND Dist = 1,Lc1Lp2==1 AND Depth==0 AND Multithreading==0 AND sha256==1,0,0.0,0.0,0.0,35
+uniform,226,crc32 = 1 AND Depth = 1 AND Dist = 1,crc32==1 AND Depth==1 AND Dist==1,0,1.0,1.0,1.0,35
+bi_modal_split,226,crc32 = 1 AND Depth = 1 AND Dist = 1,crc32==1 AND Depth==1 AND Dist==1,0,1.0,1.0,1.0,35
+tri_modal_split,226,crc32 = 1 AND Depth = 1 AND Dist = 1,crc32==1 AND Depth==1 AND Dist==1,0,1.0,1.0,1.0,35
+power_law,226,crc32 = 1 AND Depth = 1 AND Dist = 1,crc32==1 AND Depth==1 AND Dist==1,0,1.0,1.0,1.0,35
+normal,246,bt4 = 1 AND Nice = 1 AND BlockSize = 1,Nice==1 AND BlockSize==1 AND bt4==1,0,1.0,1.0,1.0,36
+uniform,246,bt4 = 1 AND Nice = 1 AND BlockSize = 1,Nice==1 AND BlockSize==1 AND bt4==1,0,1.0,1.0,1.0,36
+bi_modal_split,246,bt4 = 1 AND Nice = 1 AND BlockSize = 1,Nice==1 AND BlockSize==1 AND bt4==1,0,1.0,1.0,1.0,36
+tri_modal_split,246,bt4 = 1 AND Nice = 1 AND BlockSize = 1,Nice==1 AND BlockSize==1 AND bt3==0 AND bt4==1,1,1.0,1.0,1.0,36
+power_law,246,bt4 = 1 AND Nice = 1 AND BlockSize = 1,Nice==1 AND BlockSize==1 AND bt4==1,0,1.0,1.0,1.0,36
+normal,229,crc32 = 1 AND MemoryLimit = 1 AND BlockSize = 1,crc32==1 AND MemoryLimit==1 AND BlockSize==1,0,1.0,1.0,1.0,37
+uniform,229,crc32 = 1 AND MemoryLimit = 1 AND BlockSize = 1,crc32==1 AND MemoryLimit==1 AND BlockSize==1,0,1.0,1.0,1.0,37
+bi_modal_split,229,crc32 = 1 AND MemoryLimit = 1 AND BlockSize = 1,crc32==1 AND MemoryLimit==1 AND BlockSize==1,0,1.0,1.0,1.0,37
+tri_modal_split,229,crc32 = 1 AND MemoryLimit = 1 AND BlockSize = 1,crc32==1 AND MemoryLimit==1 AND BlockSize==1 AND none==0,2,1.0,1.0,1.0,37
+power_law,229,crc32 = 1 AND MemoryLimit = 1 AND BlockSize = 1,crc32==1 AND MemoryLimit==1 AND BlockSize==1,0,1.0,1.0,1.0,37
+normal,237,bt4 = 1 AND Nice = 1 AND Depth = 1,Nice==1 AND Depth==1 AND bt4==1,0,1.0,1.0,1.0,38
+uniform,237,bt4 = 1 AND Nice = 1 AND Depth = 1,Nice==1 AND Depth==1 AND bt4==1,0,1.0,1.0,1.0,38
+bi_modal_split,237,bt4 = 1 AND Nice = 1 AND Depth = 1,Nice==1 AND Depth==1 AND bt4==1,0,1.0,1.0,1.0,38
+tri_modal_split,237,bt4 = 1 AND Nice = 1 AND Depth = 1,Nice==1 AND Depth==1 AND bt3==0 AND bt4==1,2,1.0,1.0,1.0,38
+power_law,237,bt4 = 1 AND Nice = 1 AND Depth = 1,Nice==1 AND Depth==1 AND bt3==0 AND bt4==1,1,1.0,1.0,1.0,38
+normal,246,crc32 = 1 AND MemoryLimit = 1 AND Depth = 1,crc32==1 AND MemoryLimit==1 AND Depth==1,0,1.0,1.0,1.0,39
+uniform,246,crc32 = 1 AND MemoryLimit = 1 AND Depth = 1,crc32==1 AND MemoryLimit==1 AND Depth==1,0,1.0,1.0,1.0,39
+bi_modal_split,246,crc32 = 1 AND MemoryLimit = 1 AND Depth = 1,Lc2Lp1==1 AND Dist==1 AND none==0 AND bt2==1,0,0.0,0.0,0.0,39
+tri_modal_split,246,crc32 = 1 AND MemoryLimit = 1 AND Depth = 1,crc32==0 AND Lc0Lp4==0 AND MemoryLimit==0 AND hc4==1,0,0.0,0.0,0.0,39
+power_law,246,crc32 = 1 AND MemoryLimit = 1 AND Depth = 1,crc32==1 AND MemoryLimit==1 AND Depth==1,0,1.0,1.0,1.0,39
+normal,209,hc3 = 1 AND Depth = 1 AND Dist = 1,Depth==1 AND Dist==1 AND hc3==1,0,1.0,1.0,1.0,3
+uniform,209,hc3 = 1 AND Depth = 1 AND Dist = 1,Depth==1 AND Dist==1 AND hc3==1,0,1.0,1.0,1.0,3
+bi_modal_split,209,hc3 = 1 AND Depth = 1 AND Dist = 1,Lc2Lp1==0 AND Depth==1 AND Dist==1 AND hc3==1,0,0.9878934624697336,1.0,0.9760765550239234,3
+tri_modal_split,209,hc3 = 1 AND Depth = 1 AND Dist = 1,Depth==1 AND Dist==1 AND hc3==1 AND bt4==0,2,1.0,1.0,1.0,3
+power_law,209,hc3 = 1 AND Depth = 1 AND Dist = 1,Lc2Lp1==0 AND Dist==1 AND hc3==1 AND bt4==0,4,0.9272727272727272,0.8831168831168831,0.9760765550239234,3
+normal,398,Dict = 1 AND Multithreading = 1 AND BlockSize = 1,Dict==1 AND Multithreading==1 AND BlockSize==1,0,1.0,1.0,1.0,40
+uniform,398,Dict = 1 AND Multithreading = 1 AND BlockSize = 1,Dict==1 AND Multithreading==1 AND BlockSize==1,0,1.0,1.0,1.0,40
+bi_modal_split,398,Dict = 1 AND Multithreading = 1 AND BlockSize = 1,Dict==1 AND Multithreading==1 AND BlockSize==1,0,1.0,1.0,1.0,40
+tri_modal_split,398,Dict = 1 AND Multithreading = 1 AND BlockSize = 1,Dict==1 AND Multithreading==1 AND BlockSize==1,0,1.0,1.0,1.0,40
+power_law,398,Dict = 1 AND Multithreading = 1 AND BlockSize = 1,Dict==1 AND Multithreading==1 AND BlockSize==1,0,1.0,1.0,1.0,40
+normal,383,Dist = 1 AND BlockSize = 1 AND FlushTimeout = 1,Dist==1 AND BlockSize==1 AND FlushTimeout==1,0,1.0,1.0,1.0,41
+uniform,383,Dist = 1 AND BlockSize = 1 AND FlushTimeout = 1,Dist==1 AND BlockSize==1 AND FlushTimeout==1,1,1.0,1.0,1.0,41
+bi_modal_split,383,Dist = 1 AND BlockSize = 1 AND FlushTimeout = 1,Dist==1 AND BlockSize==1 AND FlushTimeout==1,0,1.0,1.0,1.0,41
+tri_modal_split,383,Dist = 1 AND BlockSize = 1 AND FlushTimeout = 1,Dist==1 AND BlockSize==1 AND FlushTimeout==1,0,1.0,1.0,1.0,41
+power_law,383,Dist = 1 AND BlockSize = 1 AND FlushTimeout = 1,Lc2Lp2==1 AND MemoryLimit==0 AND Nice==0 AND bt3==1,3,0.0050632911392405,0.0833333333333333,0.0026109660574412,41
+normal,345,MemoryLimit = 1 AND Dist = 1 AND FlushTimeout = 1,MemoryLimit==1 AND Dist==1 AND FlushTimeout==1,0,1.0,1.0,1.0,42
+uniform,345,MemoryLimit = 1 AND Dist = 1 AND FlushTimeout = 1,MemoryLimit==1 AND Dist==1 AND FlushTimeout==1,0,1.0,1.0,1.0,42
+bi_modal_split,345,MemoryLimit = 1 AND Dist = 1 AND FlushTimeout = 1,MemoryLimit==1 AND Dist==1 AND FlushTimeout==1,0,1.0,1.0,1.0,42
+tri_modal_split,345,MemoryLimit = 1 AND Dist = 1 AND FlushTimeout = 1,MemoryLimit==1 AND Dist==1 AND FlushTimeout==1,1,1.0,1.0,1.0,42
+power_law,345,MemoryLimit = 1 AND Dist = 1 AND FlushTimeout = 1,MemoryLimit==1 AND Dist==1 AND FlushTimeout==1,1,1.0,1.0,1.0,42
+normal,330,Nice = 1 AND Depth = 1 AND FlushTimeout = 1,crc32==0 AND Lc4Lp0==1 AND PositionBits==0 AND bt2==1,3,0.0059523809523809,0.1666666666666666,0.003030303030303,43
+uniform,330,Nice = 1 AND Depth = 1 AND FlushTimeout = 1,Nice==1 AND Depth==1 AND FlushTimeout==1,0,1.0,1.0,1.0,43
+bi_modal_split,330,Nice = 1 AND Depth = 1 AND FlushTimeout = 1,Nice==1 AND Depth==1 AND FlushTimeout==1,0,1.0,1.0,1.0,43
+tri_modal_split,330,Nice = 1 AND Depth = 1 AND FlushTimeout = 1,Nice==1 AND Depth==1 AND FlushTimeout==1,2,1.0,1.0,1.0,43
+power_law,330,Nice = 1 AND Depth = 1 AND FlushTimeout = 1,Nice==1 AND Depth==1 AND FlushTimeout==1,0,1.0,1.0,1.0,43
+normal,231,MemoryLimit = 1 AND Dict = 1 AND PositionBits = 1,MemoryLimit==1 AND Dict==1 AND PositionBits==1,0,1.0,1.0,1.0,44
+uniform,231,MemoryLimit = 1 AND Dict = 1 AND PositionBits = 1,MemoryLimit==1 AND Dict==1 AND PositionBits==1,0,1.0,1.0,1.0,44
+bi_modal_split,231,MemoryLimit = 1 AND Dict = 1 AND PositionBits = 1,MemoryLimit==1 AND Dict==1 AND PositionBits==1,0,1.0,1.0,1.0,44
+tri_modal_split,231,MemoryLimit = 1 AND Dict = 1 AND PositionBits = 1,MemoryLimit==1 AND Dict==1 AND PositionBits==1,0,1.0,1.0,1.0,44
+power_law,231,MemoryLimit = 1 AND Dict = 1 AND PositionBits = 1,MemoryLimit==1 AND Dict==1 AND PositionBits==1,0,1.0,1.0,1.0,44
+normal,216,crc32 = 1 AND MemoryLimit = 1 AND Dist = 1,Lc2Lp0==1 AND crc64==1 AND hc3==0 AND bt2==0,0,0.0,0.0,0.0,45
+uniform,216,crc32 = 1 AND MemoryLimit = 1 AND Dist = 1,crc32==1 AND MemoryLimit==1 AND Dist==1,0,1.0,1.0,1.0,45
+bi_modal_split,216,crc32 = 1 AND MemoryLimit = 1 AND Dist = 1,crc32==1 AND MemoryLimit==1 AND Dist==1,1,1.0,1.0,1.0,45
+tri_modal_split,216,crc32 = 1 AND MemoryLimit = 1 AND Dist = 1,crc32==1 AND MemoryLimit==1 AND Dist==1 AND Lc0Lp0==0,3,0.953995157384988,1.0,0.9120370370370372,45
+power_law,216,crc32 = 1 AND MemoryLimit = 1 AND Dist = 1,crc32==1 AND MemoryLimit==1 AND Dist==1,1,1.0,1.0,1.0,45
+normal,240,crc32 = 1 AND Dict = 1 AND Dist = 1,crc32==1 AND Dict==1 AND Dist==1,0,1.0,1.0,1.0,46
+uniform,240,crc32 = 1 AND Dict = 1 AND Dist = 1,crc32==1 AND Dict==1 AND Dist==1,0,1.0,1.0,1.0,46
+bi_modal_split,240,crc32 = 1 AND Dict = 1 AND Dist = 1,crc32==1 AND Dict==1 AND Dist==1,0,1.0,1.0,1.0,46
+tri_modal_split,240,crc32 = 1 AND Dict = 1 AND Dist = 1,crc32==1 AND Dict==1 AND Dist==1 AND none==0,2,1.0,1.0,1.0,46
+power_law,240,crc32 = 1 AND Dict = 1 AND Dist = 1,crc32==1 AND Dict==1 AND Dist==1,1,1.0,1.0,1.0,46
+normal,207,sha256 = 1 AND Dist = 1 AND BlockSize = 1,Dist==1 AND sha256==1 AND BlockSize==1,0,1.0,1.0,1.0,47
+uniform,207,sha256 = 1 AND Dist = 1 AND BlockSize = 1,Dist==1 AND sha256==1 AND BlockSize==1,0,1.0,1.0,1.0,47
+bi_modal_split,207,sha256 = 1 AND Dist = 1 AND BlockSize = 1,Lc0Lp1==0 AND Lc3Lp0==0 AND Lc3Lp1==0 AND sha256==1,2,0.5898989898989898,0.5069444444444444,0.7053140096618358,47
+tri_modal_split,207,sha256 = 1 AND Dist = 1 AND BlockSize = 1,sha256==1 AND BlockSize==1 AND hc3==0,1,0.8407960199004973,0.8666666666666667,0.8164251207729468,47
+power_law,207,sha256 = 1 AND Dist = 1 AND BlockSize = 1,Dist==1 AND sha256==1 AND BlockSize==1,0,1.0,1.0,1.0,47
+normal,212,hc3 = 1 AND Dist = 1 AND BlockSize = 1,Dist==1 AND BlockSize==1 AND hc3==1,0,1.0,1.0,1.0,48
+uniform,212,hc3 = 1 AND Dist = 1 AND BlockSize = 1,Lc0Lp2==1 AND crc64==0 AND FlushTimeout==1 AND bt4==1,0,0.0,0.0,0.0,48
+bi_modal_split,212,hc3 = 1 AND Dist = 1 AND BlockSize = 1,Dist==1 AND BlockSize==1 AND hc3==1,0,1.0,1.0,1.0,48
+tri_modal_split,212,hc3 = 1 AND Dist = 1 AND BlockSize = 1,Dist==1 AND BlockSize==1 AND hc3==1,0,1.0,1.0,1.0,48
+power_law,212,hc3 = 1 AND Dist = 1 AND BlockSize = 1,Lc1Lp1==0 AND sha256==1 AND FlushTimeout==0 AND hc4==1,0,0.0,0.0,0.0,48
+normal,234,crc32 = 1 AND MemoryLimit = 1 AND Nice = 1,crc32==1 AND MemoryLimit==1 AND Nice==1,0,1.0,1.0,1.0,49
+uniform,234,crc32 = 1 AND MemoryLimit = 1 AND Nice = 1,crc32==1 AND MemoryLimit==1 AND Nice==1,1,1.0,1.0,1.0,49
+bi_modal_split,234,crc32 = 1 AND MemoryLimit = 1 AND Nice = 1,crc32==1 AND MemoryLimit==1 AND Nice==1,0,1.0,1.0,1.0,49
+tri_modal_split,234,crc32 = 1 AND MemoryLimit = 1 AND Nice = 1,crc32==1 AND MemoryLimit==1 AND Nice==1,1,1.0,1.0,1.0,49
+power_law,234,crc32 = 1 AND MemoryLimit = 1 AND Nice = 1,crc32==1 AND Lc1Lp0==1 AND BlockSize==1 AND FlushTimeout==1,2,0.0084388185654008,0.3333333333333333,0.0042735042735042,49
+normal,335,MemoryLimit = 1 AND Nice = 1 AND FlushTimeout = 1,Lc2Lp1==1 AND Depth==0 AND FlushTimeout==0 AND none==1,0,0.0,0.0,0.0,4
+uniform,335,MemoryLimit = 1 AND Nice = 1 AND FlushTimeout = 1,MemoryLimit==1 AND Nice==1 AND FlushTimeout==1,1,1.0,1.0,1.0,4
+bi_modal_split,335,MemoryLimit = 1 AND Nice = 1 AND FlushTimeout = 1,MemoryLimit==1 AND Nice==1 AND Multithreading==0 AND FlushTimeout==1,4,1.0,1.0,1.0,4
+tri_modal_split,335,MemoryLimit = 1 AND Nice = 1 AND FlushTimeout = 1,MemoryLimit==1 AND Nice==1 AND FlushTimeout==1,1,1.0,1.0,1.0,4
+power_law,335,MemoryLimit = 1 AND Nice = 1 AND FlushTimeout = 1,Lc1Lp1==1 AND Nice==0 AND Dist==0 AND BlockSize==1,0,0.0,0.0,0.0,4
+normal,334,MemoryLimit = 1 AND Depth = 1 AND FlushTimeout = 1,MemoryLimit==1 AND Depth==1 AND FlushTimeout==1,0,1.0,1.0,1.0,50
+uniform,334,MemoryLimit = 1 AND Depth = 1 AND FlushTimeout = 1,MemoryLimit==1 AND Depth==1 AND FlushTimeout==1,0,1.0,1.0,1.0,50
+bi_modal_split,334,MemoryLimit = 1 AND Depth = 1 AND FlushTimeout = 1,MemoryLimit==1 AND Depth==1 AND FlushTimeout==1,0,1.0,1.0,1.0,50
+tri_modal_split,334,MemoryLimit = 1 AND Depth = 1 AND FlushTimeout = 1,MemoryLimit==1 AND Depth==1 AND FlushTimeout==1,0,1.0,1.0,1.0,50
+power_law,334,MemoryLimit = 1 AND Depth = 1 AND FlushTimeout = 1,MemoryLimit==1 AND Depth==1 AND FlushTimeout==1,0,1.0,1.0,1.0,50
+normal,229,crc32 = 1 AND MemoryLimit = 1 AND BlockSize = 1,crc32==1 AND MemoryLimit==1 AND BlockSize==1,0,1.0,1.0,1.0,51
+uniform,229,crc32 = 1 AND MemoryLimit = 1 AND BlockSize = 1,crc32==1 AND MemoryLimit==1 AND BlockSize==1,0,1.0,1.0,1.0,51
+bi_modal_split,229,crc32 = 1 AND MemoryLimit = 1 AND BlockSize = 1,crc32==1 AND MemoryLimit==1 AND BlockSize==1,0,1.0,1.0,1.0,51
+tri_modal_split,229,crc32 = 1 AND MemoryLimit = 1 AND BlockSize = 1,crc32==1 AND MemoryLimit==1 AND BlockSize==1 AND none==0,2,1.0,1.0,1.0,51
+power_law,229,crc32 = 1 AND MemoryLimit = 1 AND BlockSize = 1,crc32==1 AND MemoryLimit==1 AND BlockSize==1,0,1.0,1.0,1.0,51
+normal,330,Nice = 1 AND Depth = 1 AND FlushTimeout = 1,Lc2Lp1==1 AND Nice==0 AND Dist==0 AND BlockSize==1,0,0.0,0.0,0.0,52
+uniform,330,Nice = 1 AND Depth = 1 AND FlushTimeout = 1,Nice==1 AND Depth==1 AND FlushTimeout==1,0,1.0,1.0,1.0,52
+bi_modal_split,330,Nice = 1 AND Depth = 1 AND FlushTimeout = 1,Lc2Lp2==0 AND Nice==1 AND Depth==1 AND FlushTimeout==1,3,0.9892802450229708,1.0,0.9787878787878788,52
+tri_modal_split,330,Nice = 1 AND Depth = 1 AND FlushTimeout = 1,Nice==1 AND Depth==1 AND FlushTimeout==1,2,1.0,1.0,1.0,52
+power_law,330,Nice = 1 AND Depth = 1 AND FlushTimeout = 1,Nice==1 AND Depth==1 AND FlushTimeout==1,0,1.0,1.0,1.0,52
+normal,233,Nice = 1 AND Dist = 1 AND PositionBits = 1,Lc3Lp0==1 AND Dict==0 AND sha256==0 AND hc4==1,0,0.0,0.0,0.0,53
+uniform,233,Nice = 1 AND Dist = 1 AND PositionBits = 1,Nice==1 AND Dist==1 AND PositionBits==1,0,1.0,1.0,1.0,53
+bi_modal_split,233,Nice = 1 AND Dist = 1 AND PositionBits = 1,Nice==1 AND Dist==1 AND PositionBits==1,0,1.0,1.0,1.0,53
+tri_modal_split,233,Nice = 1 AND Dist = 1 AND PositionBits = 1,Nice==1 AND Dist==1 AND PositionBits==1,0,1.0,1.0,1.0,53
+power_law,233,Nice = 1 AND Dist = 1 AND PositionBits = 1,Nice==1 AND Dist==1 AND PositionBits==1,0,1.0,1.0,1.0,53
+normal,246,bt4 = 1 AND Nice = 1 AND BlockSize = 1,Nice==1 AND BlockSize==1 AND bt4==1,0,1.0,1.0,1.0,54
+uniform,246,bt4 = 1 AND Nice = 1 AND BlockSize = 1,Nice==1 AND BlockSize==1 AND bt4==1,0,1.0,1.0,1.0,54
+bi_modal_split,246,bt4 = 1 AND Nice = 1 AND BlockSize = 1,Lc0Lp1==1 AND Nice==0 AND Depth==0 AND bt3==1,0,0.0,0.0,0.0,54
+tri_modal_split,246,bt4 = 1 AND Nice = 1 AND BlockSize = 1,Nice==1 AND BlockSize==1 AND bt3==0 AND bt4==1,4,1.0,1.0,1.0,54
+power_law,246,bt4 = 1 AND Nice = 1 AND BlockSize = 1,MemoryLimit==1 AND BlockSize==1 AND bt3==0 AND bt4==1,1,0.904,0.889763779527559,0.91869918699187,54
+normal,246,bt4 = 1 AND MemoryLimit = 1 AND Dist = 1,MemoryLimit==1 AND Dist==1 AND bt4==1,0,1.0,1.0,1.0,55
+uniform,246,bt4 = 1 AND MemoryLimit = 1 AND Dist = 1,MemoryLimit==1 AND Dist==1 AND bt3==0 AND bt4==1,1,1.0,1.0,1.0,55
+bi_modal_split,246,bt4 = 1 AND MemoryLimit = 1 AND Dist = 1,Lc1Lp1==1 AND Multithreading==1 AND sha256==1 AND PositionBits==0,0,0.0,0.0,0.0,55
+tri_modal_split,246,bt4 = 1 AND MemoryLimit = 1 AND Dist = 1,Lc1Lp3==1 AND none==0 AND bt2==0 AND Lc0Lp0==0,3,0.0961538461538461,0.2272727272727272,0.0609756097560975,55
+power_law,246,bt4 = 1 AND MemoryLimit = 1 AND Dist = 1,Dict==1 AND BlockSize==0 AND none==1 AND hc3==1,0,0.0,0.0,0.0,55
+normal,387,MemoryLimit = 1 AND Multithreading = 1 AND BlockSize = 1,MemoryLimit==1 AND Multithreading==1 AND BlockSize==1,0,1.0,1.0,1.0,56
+uniform,387,MemoryLimit = 1 AND Multithreading = 1 AND BlockSize = 1,MemoryLimit==1 AND Multithreading==1 AND BlockSize==1,0,1.0,1.0,1.0,56
+bi_modal_split,387,MemoryLimit = 1 AND Multithreading = 1 AND BlockSize = 1,MemoryLimit==1 AND Multithreading==1 AND BlockSize==1,0,1.0,1.0,1.0,56
+tri_modal_split,387,MemoryLimit = 1 AND Multithreading = 1 AND BlockSize = 1,MemoryLimit==1 AND Multithreading==1 AND BlockSize==1,2,1.0,1.0,1.0,56
+power_law,387,MemoryLimit = 1 AND Multithreading = 1 AND BlockSize = 1,Lc0Lp4==1 AND Depth==1 AND Dist==0 AND PositionBits==0,0,0.0100502512562814,0.1818181818181818,0.0051679586563307,56
+normal,214,hc3 = 1 AND Depth = 1 AND Dict = 1,MemoryLimit==1 AND Depth==0 AND none==1 AND bt4==1,0,0.0,0.0,0.0,57
+uniform,214,hc3 = 1 AND Depth = 1 AND Dict = 1,Depth==1 AND Dict==1 AND hc3==1,0,1.0,1.0,1.0,57
+bi_modal_split,214,hc3 = 1 AND Depth = 1 AND Dict = 1,Depth==1 AND Dict==1 AND hc3==1,0,1.0,1.0,1.0,57
+tri_modal_split,214,hc3 = 1 AND Depth = 1 AND Dict = 1,Lc2Lp1==0 AND Dict==1 AND hc3==1 AND bt4==0,3,0.9288888888888888,0.885593220338983,0.9766355140186916,57
+power_law,214,hc3 = 1 AND Depth = 1 AND Dict = 1,Lc4Lp0==1 AND Depth==1 AND Dist==0 AND none==0,1,0.0089686098654708,0.1111111111111111,0.0046728971962616,57
+normal,206,hc3 = 1 AND MemoryLimit = 1 AND Dist = 1,Dist==1 AND hc3==1 AND hc4==0,0,0.927927927927928,0.865546218487395,1.0,58
+uniform,206,hc3 = 1 AND MemoryLimit = 1 AND Dist = 1,MemoryLimit==1 AND Dist==1 AND hc3==1,0,1.0,1.0,1.0,58
+bi_modal_split,206,hc3 = 1 AND MemoryLimit = 1 AND Dist = 1,MemoryLimit==1 AND Dist==1 AND hc3==1,0,1.0,1.0,1.0,58
+tri_modal_split,206,hc3 = 1 AND MemoryLimit = 1 AND Dist = 1,MemoryLimit==1 AND Dist==1 AND hc3==1 AND bt4==0,2,1.0,1.0,1.0,58
+power_law,206,hc3 = 1 AND MemoryLimit = 1 AND Dist = 1,MemoryLimit==1 AND Dist==1 AND hc3==1 AND bt4==0,2,1.0,1.0,1.0,58
+normal,246,bt4 = 1 AND Dist = 1 AND BlockSize = 1,Dist==1 AND BlockSize==1 AND bt4==1,0,1.0,1.0,1.0,59
+uniform,246,bt4 = 1 AND Dist = 1 AND BlockSize = 1,Dist==1 AND BlockSize==1 AND bt4==1,0,1.0,1.0,1.0,59
+bi_modal_split,246,bt4 = 1 AND Dist = 1 AND BlockSize = 1,Dist==1 AND BlockSize==1 AND bt4==1,0,1.0,1.0,1.0,59
+tri_modal_split,246,bt4 = 1 AND Dist = 1 AND BlockSize = 1,Dist==1 AND BlockSize==1 AND bt4==1,0,1.0,1.0,1.0,59
+power_law,246,bt4 = 1 AND Dist = 1 AND BlockSize = 1,Dist==1 AND BlockSize==1 AND bt3==0 AND bt4==1,1,1.0,1.0,1.0,59
+normal,225,Depth = 1 AND Dict = 1 AND PositionBits = 1,Depth==1 AND Dict==1 AND PositionBits==1,0,1.0,1.0,1.0,5
+uniform,225,Depth = 1 AND Dict = 1 AND PositionBits = 1,Depth==1 AND Dict==1 AND PositionBits==1,0,1.0,1.0,1.0,5
+bi_modal_split,225,Depth = 1 AND Dict = 1 AND PositionBits = 1,Depth==1 AND Dict==1 AND PositionBits==1,0,1.0,1.0,1.0,5
+tri_modal_split,225,Depth = 1 AND Dict = 1 AND PositionBits = 1,Depth==1 AND Dict==1 AND PositionBits==1,2,1.0,1.0,1.0,5
+power_law,225,Depth = 1 AND Dict = 1 AND PositionBits = 1,Depth==1 AND Dict==1 AND PositionBits==1,0,1.0,1.0,1.0,5
+normal,254,crc32 = 1 AND Nice = 1 AND Dict = 1,Lc3Lp0==1 AND MemoryLimit==0 AND Dist==1 AND PositionBits==0,4,0.0074349442379182,0.0666666666666666,0.0039370078740157,60
+uniform,254,crc32 = 1 AND Nice = 1 AND Dict = 1,crc32==1 AND Nice==1 AND Dict==1,0,1.0,1.0,1.0,60
+bi_modal_split,254,crc32 = 1 AND Nice = 1 AND Dict = 1,crc32==1 AND Nice==1 AND Dict==1,0,1.0,1.0,1.0,60
+tri_modal_split,254,crc32 = 1 AND Nice = 1 AND Dict = 1,crc32==1 AND Nice==1 AND Dict==1,0,1.0,1.0,1.0,60
+power_law,254,crc32 = 1 AND Nice = 1 AND Dict = 1,crc32==1 AND Nice==1 AND Dict==1,0,1.0,1.0,1.0,60
+normal,353,Nice = 1 AND Dist = 1 AND FlushTimeout = 1,Nice==1 AND Dist==1 AND FlushTimeout==1,0,1.0,1.0,1.0,61
+uniform,353,Nice = 1 AND Dist = 1 AND FlushTimeout = 1,Nice==1 AND Dist==1 AND FlushTimeout==1,0,1.0,1.0,1.0,61
+bi_modal_split,353,Nice = 1 AND Dist = 1 AND FlushTimeout = 1,Nice==1 AND Dist==1 AND FlushTimeout==1,0,1.0,1.0,1.0,61
+tri_modal_split,353,Nice = 1 AND Dist = 1 AND FlushTimeout = 1,Nice==1 AND Dist==1 AND Multithreading==0 AND BlockSize==1,4,0.9241379310344828,0.9005376344086021,0.9490084985835694,61
+power_law,353,Nice = 1 AND Dist = 1 AND FlushTimeout = 1,Lc0Lp4==1 AND Dict==0 AND sha256==0 AND hc4==1,0,0.0,0.0,0.0,61
+normal,237,bt4 = 1 AND Nice = 1 AND Dist = 1,Nice==1 AND Dist==1 AND bt4==1,0,1.0,1.0,1.0,62
+uniform,237,bt4 = 1 AND Nice = 1 AND Dist = 1,Nice==1 AND Dist==1 AND bt4==1,0,1.0,1.0,1.0,62
+bi_modal_split,237,bt4 = 1 AND Nice = 1 AND Dist = 1,Nice==1 AND Dist==1 AND bt4==1,0,1.0,1.0,1.0,62
+tri_modal_split,237,bt4 = 1 AND Nice = 1 AND Dist = 1,Nice==1 AND Dist==1 AND bt4==1,0,1.0,1.0,1.0,62
+power_law,237,bt4 = 1 AND Nice = 1 AND Dist = 1,Nice==1 AND Dist==1 AND bt4==1,0,1.0,1.0,1.0,62
+normal,240,bt4 = 1 AND Nice = 1 AND Dict = 1,Nice==1 AND Dict==1 AND bt4==1,0,1.0,1.0,1.0,63
+uniform,240,bt4 = 1 AND Nice = 1 AND Dict = 1,Lc2Lp2==0 AND Nice==1 AND Dict==1 AND bt4==1,0,0.983050847457627,1.0,0.9666666666666668,63
+bi_modal_split,240,bt4 = 1 AND Nice = 1 AND Dict = 1,Nice==1 AND Dict==1 AND bt4==1,0,1.0,1.0,1.0,63
+tri_modal_split,240,bt4 = 1 AND Nice = 1 AND Dict = 1,Nice==1 AND Dict==1 AND bt3==0 AND bt4==1,3,1.0,1.0,1.0,63
+power_law,240,bt4 = 1 AND Nice = 1 AND Dict = 1,Lc0Lp1==1 AND Dict==0 AND none==0 AND hc3==1,0,0.0,0.0,0.0,63
+normal,231,Depth = 1 AND Dist = 1 AND PositionBits = 1,Depth==1 AND Dist==1 AND PositionBits==1,0,1.0,1.0,1.0,64
+uniform,231,Depth = 1 AND Dist = 1 AND PositionBits = 1,Nice==1 AND Dist==0 AND sha256==1 AND hc3==1,0,0.0,0.0,0.0,64
+bi_modal_split,231,Depth = 1 AND Dist = 1 AND PositionBits = 1,Depth==1 AND Dist==1 AND PositionBits==1,0,1.0,1.0,1.0,64
+tri_modal_split,231,Depth = 1 AND Dist = 1 AND PositionBits = 1,Depth==1 AND Dist==1 AND PositionBits==1,0,1.0,1.0,1.0,64
+power_law,231,Depth = 1 AND Dist = 1 AND PositionBits = 1,Depth==0 AND Multithreading==1 AND PositionBits==0 AND hc4==1,0,0.0,0.0,0.0,64
+normal,269,Dict = 1 AND BlockSize = 1 AND PositionBits = 1,Lc0Lp2==1 AND Dist==1 AND Multithreading==1 AND bt4==0,1,0.032258064516129,0.1219512195121951,0.0185873605947955,65
+uniform,269,Dict = 1 AND BlockSize = 1 AND PositionBits = 1,Dict==1 AND BlockSize==1 AND PositionBits==1,0,1.0,1.0,1.0,65
+bi_modal_split,269,Dict = 1 AND BlockSize = 1 AND PositionBits = 1,Lc1Lp2==0 AND Dict==1 AND BlockSize==1 AND PositionBits==1,2,0.99250936329588,1.0,0.9851301115241636,65
+tri_modal_split,269,Dict = 1 AND BlockSize = 1 AND PositionBits = 1,Dict==1 AND BlockSize==1 AND PositionBits==1,0,1.0,1.0,1.0,65
+power_law,269,Dict = 1 AND BlockSize = 1 AND PositionBits = 1,Dict==1 AND BlockSize==1 AND PositionBits==1,0,1.0,1.0,1.0,65
+normal,240,bt4 = 1 AND MemoryLimit = 1 AND Depth = 1,Lc2Lp1==0 AND Depth==1 AND bt3==0 AND bt4==1,1,0.8876190476190476,0.8175438596491228,0.9708333333333332,66
+uniform,240,bt4 = 1 AND MemoryLimit = 1 AND Depth = 1,MemoryLimit==1 AND Depth==1 AND bt4==1,0,1.0,1.0,1.0,66
+bi_modal_split,240,bt4 = 1 AND MemoryLimit = 1 AND Depth = 1,MemoryLimit==1 AND Depth==1 AND bt4==1,0,1.0,1.0,1.0,66
+tri_modal_split,240,bt4 = 1 AND MemoryLimit = 1 AND Depth = 1,MemoryLimit==1 AND Depth==1 AND bt4==1,0,1.0,1.0,1.0,66
+power_law,240,bt4 = 1 AND MemoryLimit = 1 AND Depth = 1,MemoryLimit==1 AND Depth==1 AND bt4==1,0,1.0,1.0,1.0,66
+normal,334,MemoryLimit = 1 AND Depth = 1 AND FlushTimeout = 1,crc32==0 AND crc64==0 AND Depth==1 AND Dict==0,3,0.0419580419580419,0.0947368421052631,0.0269461077844311,67
+uniform,334,MemoryLimit = 1 AND Depth = 1 AND FlushTimeout = 1,MemoryLimit==1 AND Depth==1 AND FlushTimeout==1,0,1.0,1.0,1.0,67
+bi_modal_split,334,MemoryLimit = 1 AND Depth = 1 AND FlushTimeout = 1,MemoryLimit==1 AND Depth==1 AND FlushTimeout==1,2,1.0,1.0,1.0,67
+tri_modal_split,334,MemoryLimit = 1 AND Depth = 1 AND FlushTimeout = 1,MemoryLimit==1 AND Depth==1 AND FlushTimeout==1,0,1.0,1.0,1.0,67
+power_law,334,MemoryLimit = 1 AND Depth = 1 AND FlushTimeout = 1,MemoryLimit==1 AND Depth==1 AND FlushTimeout==1,0,1.0,1.0,1.0,67
+normal,267,crc32 = 1 AND Nice = 1 AND BlockSize = 1,Lc3Lp1==1 AND Dist==1 AND PositionBits==1 AND bt4==0,0,0.0,0.0,0.0,68
+uniform,267,crc32 = 1 AND Nice = 1 AND BlockSize = 1,crc32==1 AND Nice==1 AND BlockSize==1,0,1.0,1.0,1.0,68
+bi_modal_split,267,crc32 = 1 AND Nice = 1 AND BlockSize = 1,crc32==1 AND Nice==1 AND BlockSize==1,0,1.0,1.0,1.0,68
+tri_modal_split,267,crc32 = 1 AND Nice = 1 AND BlockSize = 1,Lc1Lp1==1 AND Dist==1 AND PositionBits==1 AND hc3==1,0,0.0073529411764705,0.2,0.0037453183520599,68
+power_law,267,crc32 = 1 AND Nice = 1 AND BlockSize = 1,crc32==1 AND Nice==1 AND BlockSize==1,0,1.0,1.0,1.0,68
+normal,211,hc3 = 1 AND MemoryLimit = 1 AND BlockSize = 1,Lc1Lp2==1 AND BlockSize==1 AND PositionBits==1 AND hc4==1,0,0.0,0.0,0.0,69
+uniform,211,hc3 = 1 AND MemoryLimit = 1 AND BlockSize = 1,Lc1Lp0==1 AND Dist==0 AND sha256==0 AND bt3==1,0,0.0,0.0,0.0,69
+bi_modal_split,211,hc3 = 1 AND MemoryLimit = 1 AND BlockSize = 1,MemoryLimit==1 AND BlockSize==1 AND hc3==1 AND bt4==0,2,1.0,1.0,1.0,69
+tri_modal_split,211,hc3 = 1 AND MemoryLimit = 1 AND BlockSize = 1,MemoryLimit==1 AND BlockSize==1 AND hc3==1,0,1.0,1.0,1.0,69
+power_law,211,hc3 = 1 AND MemoryLimit = 1 AND BlockSize = 1,Lc2Lp1==1 AND sha256==0 AND none==0 AND bt2==1,0,0.0,0.0,0.0,69
+normal,234,crc32 = 1 AND MemoryLimit = 1 AND Nice = 1,Lc1Lp1==1 AND Depth==0 AND Dict==1 AND Multithreading==0,0,0.0,0.0,0.0,6
+uniform,234,crc32 = 1 AND MemoryLimit = 1 AND Nice = 1,Lc0Lp1==1 AND Dict==1 AND Dist==0 AND hc3==1,0,0.0163265306122449,0.1818181818181818,0.0085470085470085,6
+bi_modal_split,234,crc32 = 1 AND MemoryLimit = 1 AND Nice = 1,Dict==1 AND FlushTimeout==0 AND none==1 AND bt2==1,0,0.0,0.0,0.0,6
+tri_modal_split,234,crc32 = 1 AND MemoryLimit = 1 AND Nice = 1,crc32==1 AND MemoryLimit==1 AND Nice==1 AND none==0,4,1.0,1.0,1.0,6
+power_law,234,crc32 = 1 AND MemoryLimit = 1 AND Nice = 1,crc32==0 AND MemoryLimit==0 AND Dict==1 AND Multithreading==1,0,0.0,0.0,0.0,6
+normal,225,Depth = 1 AND Dict = 1 AND PositionBits = 1,Depth==1 AND Dict==1 AND PositionBits==1,0,1.0,1.0,1.0,70
+uniform,225,Depth = 1 AND Dict = 1 AND PositionBits = 1,Depth==1 AND Dict==1 AND PositionBits==1,0,1.0,1.0,1.0,70
+bi_modal_split,225,Depth = 1 AND Dict = 1 AND PositionBits = 1,Depth==1 AND Dict==1 AND PositionBits==1,1,1.0,1.0,1.0,70
+tri_modal_split,225,Depth = 1 AND Dict = 1 AND PositionBits = 1,Dist==1 AND BlockSize==0 AND hc4==0 AND Lc0Lp0==1,0,0.0,0.0,0.0,70
+power_law,225,Depth = 1 AND Dict = 1 AND PositionBits = 1,Depth==1 AND Dict==1 AND PositionBits==1,4,1.0,1.0,1.0,70
+normal,260,crc32 = 1 AND Dist = 1 AND BlockSize = 1,Lc0Lp1==1 AND none==1 AND hc4==0 AND bt4==0,0,0.0,0.0,0.0,71
+uniform,260,crc32 = 1 AND Dist = 1 AND BlockSize = 1,crc32==1 AND Dist==1 AND BlockSize==1 AND none==0,3,1.0,1.0,1.0,71
+bi_modal_split,260,crc32 = 1 AND Dist = 1 AND BlockSize = 1,crc32==1 AND Dist==1 AND BlockSize==1,0,1.0,1.0,1.0,71
+tri_modal_split,260,crc32 = 1 AND Dist = 1 AND BlockSize = 1,crc32==1 AND Dist==1 AND BlockSize==1,0,1.0,1.0,1.0,71
+power_law,260,crc32 = 1 AND Dist = 1 AND BlockSize = 1,Lc1Lp1==1 AND Dist==0 AND Multithreading==1 AND hc4==1,0,0.0,0.0,0.0,71
+normal,233,Nice = 1 AND Dist = 1 AND PositionBits = 1,Nice==1 AND Dist==1 AND PositionBits==1,0,1.0,1.0,1.0,72
+uniform,233,Nice = 1 AND Dist = 1 AND PositionBits = 1,Nice==1 AND Dist==1 AND PositionBits==1,1,1.0,1.0,1.0,72
+bi_modal_split,233,Nice = 1 AND Dist = 1 AND PositionBits = 1,Lc0Lp1==1 AND Nice==0 AND PositionBits==0 AND bt3==1,0,0.0,0.0,0.0,72
+tri_modal_split,233,Nice = 1 AND Dist = 1 AND PositionBits = 1,Dict==1 AND Dist==1 AND BlockSize==0 AND bt4==1,2,0.0160642570281124,0.125,0.0085836909871244,72
+power_law,233,Nice = 1 AND Dist = 1 AND PositionBits = 1,PositionBits==1 AND bt2==0 AND bt3==1 AND Lc0Lp0==1,2,0.0167364016736401,0.3333333333333333,0.0085836909871244,72
+normal,212,hc3 = 1 AND Depth = 1 AND BlockSize = 1,Nice==0 AND Dist==0 AND sha256==0 AND hc4==1,0,0.0,0.0,0.0,73
+uniform,212,hc3 = 1 AND Depth = 1 AND BlockSize = 1,Depth==1 AND BlockSize==1 AND hc3==1,0,1.0,1.0,1.0,73
+bi_modal_split,212,hc3 = 1 AND Depth = 1 AND BlockSize = 1,Depth==1 AND BlockSize==1 AND hc3==1,0,1.0,1.0,1.0,73
+tri_modal_split,212,hc3 = 1 AND Depth = 1 AND BlockSize = 1,Depth==1 AND BlockSize==1 AND hc3==1,0,1.0,1.0,1.0,73
+power_law,212,hc3 = 1 AND Depth = 1 AND BlockSize = 1,Depth==1 AND BlockSize==1 AND hc3==1,0,1.0,1.0,1.0,73
+normal,330,Nice = 1 AND Depth = 1 AND FlushTimeout = 1,Nice==1 AND Depth==1 AND FlushTimeout==1,0,1.0,1.0,1.0,74
+uniform,330,Nice = 1 AND Depth = 1 AND FlushTimeout = 1,Nice==1 AND Depth==1 AND FlushTimeout==1,0,1.0,1.0,1.0,74
+bi_modal_split,330,Nice = 1 AND Depth = 1 AND FlushTimeout = 1,Nice==1 AND Depth==1 AND FlushTimeout==1,0,1.0,1.0,1.0,74
+tri_modal_split,330,Nice = 1 AND Depth = 1 AND FlushTimeout = 1,Nice==1 AND Depth==1 AND FlushTimeout==1,0,1.0,1.0,1.0,74
+power_law,330,Nice = 1 AND Depth = 1 AND FlushTimeout = 1,Lc0Lp2==0 AND Nice==1 AND Depth==1 AND FlushTimeout==1,4,0.9846153846153848,1.0,0.9696969696969696,74
+normal,211,hc3 = 1 AND MemoryLimit = 1 AND BlockSize = 1,MemoryLimit==1 AND BlockSize==1 AND hc3==1,0,1.0,1.0,1.0,75
+uniform,211,hc3 = 1 AND MemoryLimit = 1 AND BlockSize = 1,MemoryLimit==1 AND BlockSize==1 AND hc3==1,0,1.0,1.0,1.0,75
+bi_modal_split,211,hc3 = 1 AND MemoryLimit = 1 AND BlockSize = 1,MemoryLimit==1 AND BlockSize==1 AND hc3==1,0,1.0,1.0,1.0,75
+tri_modal_split,211,hc3 = 1 AND MemoryLimit = 1 AND BlockSize = 1,MemoryLimit==1 AND BlockSize==1 AND hc3==1,0,1.0,1.0,1.0,75
+power_law,211,hc3 = 1 AND MemoryLimit = 1 AND BlockSize = 1,MemoryLimit==1 AND BlockSize==1 AND hc3==1,0,1.0,1.0,1.0,75
+normal,225,Depth = 1 AND Dict = 1 AND PositionBits = 1,Depth==1 AND Dict==1 AND PositionBits==1,0,1.0,1.0,1.0,76
+uniform,225,Depth = 1 AND Dict = 1 AND PositionBits = 1,Depth==1 AND Dict==1 AND PositionBits==1,0,1.0,1.0,1.0,76
+bi_modal_split,225,Depth = 1 AND Dict = 1 AND PositionBits = 1,crc32==1 AND Lc0Lp4==1 AND Dist==1 AND hc3==0,0,0.0161290322580645,0.0869565217391304,0.0088888888888888,76
+tri_modal_split,225,Depth = 1 AND Dict = 1 AND PositionBits = 1,Depth==1 AND Dict==1 AND PositionBits==1,4,1.0,1.0,1.0,76
+power_law,225,Depth = 1 AND Dict = 1 AND PositionBits = 1,Depth==1 AND Dict==1 AND PositionBits==1,0,1.0,1.0,1.0,76
+normal,248,bt4 = 1 AND MemoryLimit = 1 AND Dict = 1,Lc0Lp4==1 AND Nice==1 AND Dist==0 AND BlockSize==1,0,0.0,0.0,0.0,77
+uniform,248,bt4 = 1 AND MemoryLimit = 1 AND Dict = 1,Nice==1 AND Dict==1 AND bt3==0 AND bt4==1,3,0.9139344262295082,0.9291666666666668,0.8991935483870968,77
+bi_modal_split,248,bt4 = 1 AND MemoryLimit = 1 AND Dict = 1,MemoryLimit==1 AND Dict==1 AND bt4==1,0,1.0,1.0,1.0,77
+tri_modal_split,248,bt4 = 1 AND MemoryLimit = 1 AND Dict = 1,MemoryLimit==1 AND Dict==1 AND bt3==0 AND bt4==1,1,1.0,1.0,1.0,77
+power_law,248,bt4 = 1 AND MemoryLimit = 1 AND Dict = 1,Depth==1 AND Dict==0 AND FlushTimeout==0 AND Lc0Lp0==1,0,0.0,0.0,0.0,77
+normal,330,Nice = 1 AND Depth = 1 AND FlushTimeout = 1,Lc1Lp1==1 AND Depth==0 AND FlushTimeout==1 AND PositionBits==1,0,0.0,0.0,0.0,78
+uniform,330,Nice = 1 AND Depth = 1 AND FlushTimeout = 1,Lc3Lp0==1 AND Dist==1 AND PositionBits==1 AND bt3==0,4,0.0172910662824207,0.1764705882352941,0.009090909090909,78
+bi_modal_split,330,Nice = 1 AND Depth = 1 AND FlushTimeout = 1,Nice==1 AND Depth==1 AND FlushTimeout==1,0,1.0,1.0,1.0,78
+tri_modal_split,330,Nice = 1 AND Depth = 1 AND FlushTimeout = 1,Nice==1 AND Depth==1 AND FlushTimeout==1,0,1.0,1.0,1.0,78
+power_law,330,Nice = 1 AND Depth = 1 AND FlushTimeout = 1,Depth==0 AND Multithreading==1 AND sha256==0 AND hc4==0,0,0.0,0.0,0.0,78
+normal,231,Depth = 1 AND Dist = 1 AND PositionBits = 1,Depth==1 AND Dist==1 AND PositionBits==1,0,1.0,1.0,1.0,79
+uniform,231,Depth = 1 AND Dist = 1 AND PositionBits = 1,Depth==1 AND Dist==1 AND PositionBits==1,0,1.0,1.0,1.0,79
+bi_modal_split,231,Depth = 1 AND Dist = 1 AND PositionBits = 1,Depth==1 AND Dist==1 AND PositionBits==1,0,1.0,1.0,1.0,79
+tri_modal_split,231,Depth = 1 AND Dist = 1 AND PositionBits = 1,Depth==1 AND Dist==1 AND PositionBits==1,0,1.0,1.0,1.0,79
+power_law,231,Depth = 1 AND Dist = 1 AND PositionBits = 1,Depth==1 AND Dist==1 AND PositionBits==1,0,1.0,1.0,1.0,79
+normal,387,MemoryLimit = 1 AND Multithreading = 1 AND BlockSize = 1,MemoryLimit==1 AND Multithreading==1 AND BlockSize==1,0,1.0,1.0,1.0,7
+uniform,387,MemoryLimit = 1 AND Multithreading = 1 AND BlockSize = 1,MemoryLimit==1 AND Multithreading==1 AND BlockSize==1 AND bt2==0,1,0.9440654843110504,1.0,0.8940568475452196,7
+bi_modal_split,387,MemoryLimit = 1 AND Multithreading = 1 AND BlockSize = 1,Lc3Lp0==1 AND Depth==0 AND BlockSize==1 AND none==1,0,0.0,0.0,0.0,7
+tri_modal_split,387,MemoryLimit = 1 AND Multithreading = 1 AND BlockSize = 1,MemoryLimit==1 AND Multithreading==1 AND BlockSize==1,2,1.0,1.0,1.0,7
+power_law,387,MemoryLimit = 1 AND Multithreading = 1 AND BlockSize = 1,Lc1Lp2==1 AND Dist==0 AND BlockSize==1 AND PositionBits==1,3,0.0051150895140664,0.25,0.0025839793281653,7
+normal,398,Dict = 1 AND Multithreading = 1 AND BlockSize = 1,Dict==1 AND Multithreading==1 AND BlockSize==1,0,1.0,1.0,1.0,80
+uniform,398,Dict = 1 AND Multithreading = 1 AND BlockSize = 1,Dict==1 AND Multithreading==1 AND BlockSize==1,0,1.0,1.0,1.0,80
+bi_modal_split,398,Dict = 1 AND Multithreading = 1 AND BlockSize = 1,Lc4Lp0==1 AND MemoryLimit==0 AND FlushTimeout==0 AND hc4==1,2,0.0048661800486618,0.0769230769230769,0.0025125628140703,80
+tri_modal_split,398,Dict = 1 AND Multithreading = 1 AND BlockSize = 1,Dict==1 AND Multithreading==1 AND BlockSize==1,2,1.0,1.0,1.0,80
+power_law,398,Dict = 1 AND Multithreading = 1 AND BlockSize = 1,Lc0Lp1==1 AND sha256==0 AND PositionBits==1 AND hc4==1,1,0.009685230024213,0.1333333333333333,0.0050251256281407,80
+normal,238,bt4 = 1 AND Depth = 1 AND Dict = 1,Depth==1 AND Dict==1 AND bt4==1,0,1.0,1.0,1.0,81
+uniform,238,bt4 = 1 AND Depth = 1 AND Dict = 1,Depth==1 AND Dict==1 AND bt4==1,0,1.0,1.0,1.0,81
+bi_modal_split,238,bt4 = 1 AND Depth = 1 AND Dict = 1,Depth==1 AND Dict==1 AND bt3==0 AND bt4==1,4,1.0,1.0,1.0,81
+tri_modal_split,238,bt4 = 1 AND Depth = 1 AND Dict = 1,Depth==1 AND Dict==1 AND bt4==1,0,1.0,1.0,1.0,81
+power_law,238,bt4 = 1 AND Depth = 1 AND Dict = 1,Depth==1 AND Dict==1 AND bt4==1,0,1.0,1.0,1.0,81
+normal,233,Nice = 1 AND Dist = 1 AND PositionBits = 1,Nice==1 AND Dist==1 AND PositionBits==1,0,1.0,1.0,1.0,82
+uniform,233,Nice = 1 AND Dist = 1 AND PositionBits = 1,Nice==1 AND Dist==1 AND PositionBits==1,0,1.0,1.0,1.0,82
+bi_modal_split,233,Nice = 1 AND Dist = 1 AND PositionBits = 1,Nice==1 AND Dist==1 AND PositionBits==1,1,1.0,1.0,1.0,82
+tri_modal_split,233,Nice = 1 AND Dist = 1 AND PositionBits = 1,Nice==1 AND Dist==1 AND PositionBits==1,0,1.0,1.0,1.0,82
+power_law,233,Nice = 1 AND Dist = 1 AND PositionBits = 1,Nice==1 AND Dist==1 AND PositionBits==1,0,1.0,1.0,1.0,82
+normal,225,Depth = 1 AND Dict = 1 AND PositionBits = 1,Depth==1 AND Dict==1 AND PositionBits==1,0,1.0,1.0,1.0,83
+uniform,225,Depth = 1 AND Dict = 1 AND PositionBits = 1,Depth==1 AND Dict==1 AND PositionBits==1,0,1.0,1.0,1.0,83
+bi_modal_split,225,Depth = 1 AND Dict = 1 AND PositionBits = 1,Depth==1 AND Dict==1 AND PositionBits==1 AND bt3==0,1,0.9726027397260272,1.0,0.9466666666666668,83
+tri_modal_split,225,Depth = 1 AND Dict = 1 AND PositionBits = 1,Lc1Lp2==1 AND Dist==0 AND bt3==1 AND bt4==0,0,0.0,0.0,0.0,83
+power_law,225,Depth = 1 AND Dict = 1 AND PositionBits = 1,Lc0Lp3==1 AND Multithreading==1 AND none==0 AND bt4==1,2,0.025531914893617,0.3,0.0133333333333333,83
+normal,261,Dist = 1 AND BlockSize = 1 AND PositionBits = 1,Lc4Lp0==1 AND MemoryLimit==0 AND Depth==0 AND hc4==0,4,0.038095238095238,0.1111111111111111,0.0229885057471264,84
+uniform,261,Dist = 1 AND BlockSize = 1 AND PositionBits = 1,Dist==1 AND BlockSize==1 AND PositionBits==1,1,1.0,1.0,1.0,84
+bi_modal_split,261,Dist = 1 AND BlockSize = 1 AND PositionBits = 1,Lc1Lp2==0 AND Dist==1 AND BlockSize==1 AND PositionBits==1,3,0.9942196531791908,1.0,0.9885057471264368,84
+tri_modal_split,261,Dist = 1 AND BlockSize = 1 AND PositionBits = 1,Lc2Lp1==1 AND sha256==0 AND FlushTimeout==0 AND bt2==1,0,0.0,0.0,0.0,84
+power_law,261,Dist = 1 AND BlockSize = 1 AND PositionBits = 1,Lc2Lp2==0 AND BlockSize==1 AND PositionBits==1,3,0.8107202680067003,0.7202380952380952,0.9272030651340996,84
+normal,216,crc32 = 1 AND MemoryLimit = 1 AND Dist = 1,crc32==1 AND MemoryLimit==1 AND Dist==1,0,1.0,1.0,1.0,85
+uniform,216,crc32 = 1 AND MemoryLimit = 1 AND Dist = 1,Lc1Lp0==1 AND FlushTimeout==0 AND hc3==0 AND bt3==1,4,0.0173160173160173,0.1333333333333333,0.0092592592592592,85
+bi_modal_split,216,crc32 = 1 AND MemoryLimit = 1 AND Dist = 1,crc32==1 AND MemoryLimit==1 AND Dist==1,1,1.0,1.0,1.0,85
+tri_modal_split,216,crc32 = 1 AND MemoryLimit = 1 AND Dist = 1,crc32==1 AND MemoryLimit==1 AND Dist==1,0,1.0,1.0,1.0,85
+power_law,216,crc32 = 1 AND MemoryLimit = 1 AND Dist = 1,Lc2Lp2==1 AND BlockSize==1 AND PositionBits==0 AND bt3==1,0,0.0,0.0,0.0,85
+normal,335,MemoryLimit = 1 AND Nice = 1 AND FlushTimeout = 1,MemoryLimit==1 AND Nice==1 AND FlushTimeout==1,0,1.0,1.0,1.0,86
+uniform,335,MemoryLimit = 1 AND Nice = 1 AND FlushTimeout = 1,MemoryLimit==1 AND Nice==1 AND FlushTimeout==1,0,1.0,1.0,1.0,86
+bi_modal_split,335,MemoryLimit = 1 AND Nice = 1 AND FlushTimeout = 1,MemoryLimit==1 AND Nice==1 AND FlushTimeout==1,0,1.0,1.0,1.0,86
+tri_modal_split,335,MemoryLimit = 1 AND Nice = 1 AND FlushTimeout = 1,MemoryLimit==1 AND Nice==1 AND FlushTimeout==1,0,1.0,1.0,1.0,86
+power_law,335,MemoryLimit = 1 AND Nice = 1 AND FlushTimeout = 1,crc32==0 AND Lc2Lp2==0 AND Nice==1 AND Dict==1,4,0.5577142857142858,0.4518518518518518,0.7283582089552239,86
+normal,214,hc3 = 1 AND Dict = 1 AND Dist = 1,Dict==1 AND Dist==1 AND hc3==1,0,1.0,1.0,1.0,87
+uniform,214,hc3 = 1 AND Dict = 1 AND Dist = 1,Dict==1 AND Dist==1 AND hc3==1 AND bt4==0,1,1.0,1.0,1.0,87
+bi_modal_split,214,hc3 = 1 AND Dict = 1 AND Dist = 1,Dict==1 AND Dist==1 AND hc3==1,0,1.0,1.0,1.0,87
+tri_modal_split,214,hc3 = 1 AND Dict = 1 AND Dist = 1,Dict==1 AND BlockSize==1 AND hc3==1,0,0.9330254041570438,0.9223744292237442,0.9439252336448598,87
+power_law,214,hc3 = 1 AND Dict = 1 AND Dist = 1,Lc2Lp1==1 AND Multithreading==1 AND PositionBits==1 AND Lc0Lp0==0,0,0.0,0.0,0.0,87
+normal,396,Nice = 1 AND Dist = 1 AND Multithreading = 1,Nice==1 AND Dist==1 AND Multithreading==1,0,1.0,1.0,1.0,88
+uniform,396,Nice = 1 AND Dist = 1 AND Multithreading = 1,Nice==1 AND Dist==1 AND Multithreading==1,0,1.0,1.0,1.0,88
+bi_modal_split,396,Nice = 1 AND Dist = 1 AND Multithreading = 1,Lc1Lp2==1 AND Nice==0 AND Multithreading==1 AND hc4==0,0,0.0,0.0,0.0,88
+tri_modal_split,396,Nice = 1 AND Dist = 1 AND Multithreading = 1,Lc2Lp2==1 AND MemoryLimit==0 AND Dist==1 AND bt3==1,4,0.0049751243781094,0.1666666666666666,0.0025252525252525,88
+power_law,396,Nice = 1 AND Dist = 1 AND Multithreading = 1,Lc4Lp0==0 AND MemoryLimit==1 AND Multithreading==1,4,0.787515006002401,0.7505720823798627,0.8282828282828283,88
+normal,254,crc32 = 1 AND Nice = 1 AND Dict = 1,Lc0Lp4==1 AND crc64==1 AND BlockSize==0 AND hc4==0,0,0.0,0.0,0.0,89
+uniform,254,crc32 = 1 AND Nice = 1 AND Dict = 1,Lc4Lp0==1 AND Multithreading==0 AND FlushTimeout==0 AND bt4==0,2,0.0544217687074829,0.2,0.0314960629921259,89
+bi_modal_split,254,crc32 = 1 AND Nice = 1 AND Dict = 1,crc32==1 AND Nice==1 AND Dict==1 AND none==0,3,1.0,1.0,1.0,89
+tri_modal_split,254,crc32 = 1 AND Nice = 1 AND Dict = 1,crc32==1 AND Nice==1 AND Dict==1,1,1.0,1.0,1.0,89
+power_law,254,crc32 = 1 AND Nice = 1 AND Dict = 1,Lc3Lp0==1 AND Depth==1 AND Dict==0 AND BlockSize==1,0,0.0,0.0,0.0,89
+normal,214,hc3 = 1 AND Depth = 1 AND Dict = 1,Depth==1 AND Dict==1 AND hc3==1,0,1.0,1.0,1.0,8
+uniform,214,hc3 = 1 AND Depth = 1 AND Dict = 1,Depth==1 AND Dict==1 AND hc3==1,0,1.0,1.0,1.0,8
+bi_modal_split,214,hc3 = 1 AND Depth = 1 AND Dict = 1,Lc1Lp1==1 AND Depth==1 AND Dist==1 AND FlushTimeout==1,3,0.0753138075313807,0.36,0.0420560747663551,8
+tri_modal_split,214,hc3 = 1 AND Depth = 1 AND Dict = 1,Depth==1 AND Dict==1 AND hc3==1,0,1.0,1.0,1.0,8
+power_law,214,hc3 = 1 AND Depth = 1 AND Dict = 1,Depth==1 AND Dict==1 AND hc3==1,0,1.0,1.0,1.0,8
+normal,237,bt4 = 1 AND Nice = 1 AND Dist = 1,Nice==1 AND Dist==1 AND bt4==1,0,1.0,1.0,1.0,90
+uniform,237,bt4 = 1 AND Nice = 1 AND Dist = 1,Nice==1 AND Dist==1 AND bt4==1,0,1.0,1.0,1.0,90
+bi_modal_split,237,bt4 = 1 AND Nice = 1 AND Dist = 1,Lc1Lp2==1 AND Multithreading==0 AND BlockSize==0 AND none==1,0,0.0,0.0,0.0,90
+tri_modal_split,237,bt4 = 1 AND Nice = 1 AND Dist = 1,Nice==1 AND Dist==1 AND BlockSize==1 AND bt4==1,4,0.9605263157894736,1.0,0.9240506329113924,90
+power_law,237,bt4 = 1 AND Nice = 1 AND Dist = 1,Nice==1 AND Dist==1 AND bt4==1,0,1.0,1.0,1.0,90
+normal,239,Depth = 1 AND BlockSize = 1 AND PositionBits = 1,Depth==1 AND BlockSize==1 AND PositionBits==1,0,1.0,1.0,1.0,91
+uniform,239,Depth = 1 AND BlockSize = 1 AND PositionBits = 1,Depth==1 AND BlockSize==1 AND PositionBits==1,0,1.0,1.0,1.0,91
+bi_modal_split,239,Depth = 1 AND BlockSize = 1 AND PositionBits = 1,Depth==1 AND BlockSize==1 AND PositionBits==1,0,1.0,1.0,1.0,91
+tri_modal_split,239,Depth = 1 AND BlockSize = 1 AND PositionBits = 1,Depth==1 AND BlockSize==1 AND PositionBits==1,2,1.0,1.0,1.0,91
+power_law,239,Depth = 1 AND BlockSize = 1 AND PositionBits = 1,Depth==1 AND BlockSize==1 AND PositionBits==1,1,1.0,1.0,1.0,91
+normal,239,Depth = 1 AND BlockSize = 1 AND PositionBits = 1,Lc0Lp1==1 AND Nice==1 AND Multithreading==1 AND none==1,4,0.0080971659919028,0.125,0.00418410041841,92
+uniform,239,Depth = 1 AND BlockSize = 1 AND PositionBits = 1,Depth==1 AND BlockSize==1 AND PositionBits==1,0,1.0,1.0,1.0,92
+bi_modal_split,239,Depth = 1 AND BlockSize = 1 AND PositionBits = 1,Lc3Lp1==0 AND Depth==1 AND BlockSize==1 AND PositionBits==1,4,0.9872881355932204,1.0,0.9748953974895398,92
+tri_modal_split,239,Depth = 1 AND BlockSize = 1 AND PositionBits = 1,Depth==1 AND BlockSize==1 AND PositionBits==1,4,1.0,1.0,1.0,92
+power_law,239,Depth = 1 AND BlockSize = 1 AND PositionBits = 1,Depth==1 AND BlockSize==1 AND PositionBits==1,2,1.0,1.0,1.0,92
+normal,209,hc3 = 1 AND Depth = 1 AND Dist = 1,Depth==1 AND Dist==1 AND hc3==1,0,1.0,1.0,1.0,93
+uniform,209,hc3 = 1 AND Depth = 1 AND Dist = 1,Lc3Lp0==1 AND Multithreading==0 AND sha256==1 AND BlockSize==1,1,0.0091324200913242,0.1,0.0047846889952153,93
+bi_modal_split,209,hc3 = 1 AND Depth = 1 AND Dist = 1,Depth==1 AND Dist==1 AND hc3==1,0,1.0,1.0,1.0,93
+tri_modal_split,209,hc3 = 1 AND Depth = 1 AND Dist = 1,Depth==1 AND Dist==1 AND hc3==1,0,1.0,1.0,1.0,93
+power_law,209,hc3 = 1 AND Depth = 1 AND Dist = 1,Lc0Lp3==1 AND crc64==1 AND bt3==0 AND Lc0Lp0==0,1,0.0271493212669683,0.25,0.0143540669856459,93
+normal,205,none = 1 AND Dict = 1 AND BlockSize = 1,Lc1Lp3==1 AND crc64==1 AND Dict==0 AND PositionBits==0,0,0.0,0.0,0.0,94
+uniform,205,none = 1 AND Dict = 1 AND BlockSize = 1,Dict==1 AND BlockSize==1 AND none==1,0,1.0,1.0,1.0,94
+bi_modal_split,205,none = 1 AND Dict = 1 AND BlockSize = 1,Dict==1 AND BlockSize==1 AND none==1,0,1.0,1.0,1.0,94
+tri_modal_split,205,none = 1 AND Dict = 1 AND BlockSize = 1,Dict==1 AND sha256==0 AND BlockSize==1 AND none==1,2,1.0,1.0,1.0,94
+power_law,205,none = 1 AND Dict = 1 AND BlockSize = 1,Dict==1 AND BlockSize==1 AND none==1,0,1.0,1.0,1.0,94
+normal,256,crc32 = 1 AND Nice = 1 AND Depth = 1,crc32==1 AND Nice==1 AND Depth==1,0,1.0,1.0,1.0,95
+uniform,256,crc32 = 1 AND Nice = 1 AND Depth = 1,crc32==1 AND Nice==1 AND Depth==1,0,1.0,1.0,1.0,95
+bi_modal_split,256,crc32 = 1 AND Nice = 1 AND Depth = 1,crc32==1 AND Nice==1 AND Depth==1,0,1.0,1.0,1.0,95
+tri_modal_split,256,crc32 = 1 AND Nice = 1 AND Depth = 1,crc32==1 AND Lc1Lp3==0 AND Depth==1,2,0.8833034111310593,0.8172757475083057,0.9609375,95
+power_law,256,crc32 = 1 AND Nice = 1 AND Depth = 1,Lc1Lp0==1 AND Dict==0 AND Multithreading==1 AND BlockSize==1,0,0.0,0.0,0.0,95
+normal,237,bt4 = 1 AND Nice = 1 AND Depth = 1,Lc0Lp2==1 AND MemoryLimit==0 AND PositionBits==0 AND hc3==1,0,0.0,0.0,0.0,96
+uniform,237,bt4 = 1 AND Nice = 1 AND Depth = 1,Nice==1 AND Depth==1 AND bt4==1,0,1.0,1.0,1.0,96
+bi_modal_split,237,bt4 = 1 AND Nice = 1 AND Depth = 1,Nice==1 AND Depth==1 AND bt4==1,0,1.0,1.0,1.0,96
+tri_modal_split,237,bt4 = 1 AND Nice = 1 AND Depth = 1,Nice==1 AND Depth==1 AND bt4==1,0,1.0,1.0,1.0,96
+power_law,237,bt4 = 1 AND Nice = 1 AND Depth = 1,Nice==1 AND Depth==1 AND bt4==1,0,1.0,1.0,1.0,96
+normal,229,crc32 = 1 AND MemoryLimit = 1 AND BlockSize = 1,crc32==1 AND MemoryLimit==1 AND BlockSize==1,0,1.0,1.0,1.0,97
+uniform,229,crc32 = 1 AND MemoryLimit = 1 AND BlockSize = 1,crc32==1 AND MemoryLimit==1 AND BlockSize==1,0,1.0,1.0,1.0,97
+bi_modal_split,229,crc32 = 1 AND MemoryLimit = 1 AND BlockSize = 1,crc32==1 AND MemoryLimit==1 AND BlockSize==1,1,1.0,1.0,1.0,97
+tri_modal_split,229,crc32 = 1 AND MemoryLimit = 1 AND BlockSize = 1,crc32==1 AND MemoryLimit==1 AND BlockSize==1,0,1.0,1.0,1.0,97
+power_law,229,crc32 = 1 AND MemoryLimit = 1 AND BlockSize = 1,crc32==1 AND MemoryLimit==1 AND Dist==1 AND BlockSize==1,2,0.8635235732009926,1.0,0.759825327510917,97
+normal,336,Depth = 1 AND Dist = 1 AND FlushTimeout = 1,Depth==1 AND Dist==1 AND FlushTimeout==1,0,1.0,1.0,1.0,98
+uniform,336,Depth = 1 AND Dist = 1 AND FlushTimeout = 1,Depth==1 AND Dist==1 AND FlushTimeout==1,0,1.0,1.0,1.0,98
+bi_modal_split,336,Depth = 1 AND Dist = 1 AND FlushTimeout = 1,Depth==1 AND Dist==1 AND FlushTimeout==1,2,1.0,1.0,1.0,98
+tri_modal_split,336,Depth = 1 AND Dist = 1 AND FlushTimeout = 1,Depth==1 AND Dist==1 AND Multithreading==0 AND FlushTimeout==1,4,1.0,1.0,1.0,98
+power_law,336,Depth = 1 AND Dist = 1 AND FlushTimeout = 1,Depth==1 AND Dist==1 AND FlushTimeout==1,0,1.0,1.0,1.0,98
+normal,206,hc3 = 1 AND MemoryLimit = 1 AND Nice = 1,MemoryLimit==1 AND Nice==1 AND hc3==1,0,1.0,1.0,1.0,99
+uniform,206,hc3 = 1 AND MemoryLimit = 1 AND Nice = 1,MemoryLimit==1 AND Nice==1 AND hc3==1,0,1.0,1.0,1.0,99
+bi_modal_split,206,hc3 = 1 AND MemoryLimit = 1 AND Nice = 1,MemoryLimit==1 AND Nice==1 AND hc3==1 AND bt4==0,2,1.0,1.0,1.0,99
+tri_modal_split,206,hc3 = 1 AND MemoryLimit = 1 AND Nice = 1,MemoryLimit==1 AND Nice==1 AND hc3==1 AND bt4==0,1,1.0,1.0,1.0,99
+power_law,206,hc3 = 1 AND MemoryLimit = 1 AND Nice = 1,MemoryLimit==1 AND Nice==1 AND hc3==1,0,1.0,1.0,1.0,99
+normal,206,none = 1 AND Depth = 1 AND BlockSize = 1,Depth==1 AND BlockSize==1 AND none==1,0,1.0,1.0,1.0,9
+uniform,206,none = 1 AND Depth = 1 AND BlockSize = 1,Depth==1 AND BlockSize==1 AND none==1,0,1.0,1.0,1.0,9
+bi_modal_split,206,none = 1 AND Depth = 1 AND BlockSize = 1,Lc2Lp2==0 AND Depth==1 AND BlockSize==1 AND none==1,0,0.9751243781094528,1.0,0.9514563106796116,9
+tri_modal_split,206,none = 1 AND Depth = 1 AND BlockSize = 1,Lc0Lp2==0 AND Depth==1 AND BlockSize==1 AND none==1,0,0.9648241206030151,1.0,0.9320388349514565,9
+power_law,206,none = 1 AND Depth = 1 AND BlockSize = 1,Depth==1 AND BlockSize==1 AND none==1,0,1.0,1.0,1.0,9

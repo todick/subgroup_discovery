@@ -1,0 +1,501 @@
+sg_distribution,sg_cardinality,sg_rule,best_rule,best_rule_idx,f1,precision,recall,seed
+normal,128,instcombine = 1 AND print_used_types = 1 AND sccp = 1,sccp AND print_used_types AND instcombine,0,1.0,1.0,1.0,0
+uniform,128,gvn = 1 AND inline = 1 AND simplifycfg = 1,simplifycfg AND gvn AND inline,0,1.0,1.0,1.0,0
+bi_modal_split,128,gvn = 1 AND iv_users = 1 AND simplifycfg = 1,iv_users AND NOT licm AND gvn AND simplifycfg,0,0.6666666666666666,1.0,0.5,0
+tri_modal_split,128,instcombine = 1 AND ipsccp = 1 AND licm = 1,licm,1,0.4,0.25,1.0,0
+power_law,128,gvn = 1 AND ipsccp = 1 AND iv_users = 1,iv_users AND ipsccp AND gvn,0,1.0,1.0,1.0,0
+normal,128,inline = 1 AND ipsccp = 1 AND licm = 1,licm AND inline AND ipsccp,0,1.0,1.0,1.0,10
+uniform,128,inline = 1 AND ipsccp = 1 AND licm = 1,inline AND licm AND ipsccp,0,1.0,1.0,1.0,10
+bi_modal_split,128,inline = 1 AND ipsccp = 1 AND licm = 1,inline AND licm AND ipsccp,0,1.0,1.0,1.0,10
+tri_modal_split,128,inline = 1 AND ipsccp = 1 AND licm = 1,inline AND ipsccp AND licm,0,1.0,1.0,1.0,10
+power_law,128,inline = 1 AND ipsccp = 1 AND licm = 1,licm AND inline AND ipsccp,0,1.0,1.0,1.0,10
+normal,128,ipsccp = 1 AND licm = 1 AND print_used_types = 1,instcombine,0,0.2,0.125,0.5,11
+uniform,128,ipsccp = 1 AND licm = 1 AND print_used_types = 1,ipsccp AND print_used_types AND licm,0,1.0,1.0,1.0,11
+bi_modal_split,128,ipsccp = 1 AND licm = 1 AND print_used_types = 1,NOT jump_threading AND print_used_types,2,0.3333333333333333,0.25,0.5,11
+tri_modal_split,128,ipsccp = 1 AND licm = 1 AND print_used_types = 1,sccp,0,0.2,0.125,0.5,11
+power_law,128,ipsccp = 1 AND licm = 1 AND print_used_types = 1,ipsccp AND print_used_types AND licm,0,1.0,1.0,1.0,11
+normal,128,gvn = 1 AND licm = 1 AND sccp = 1,licm AND gvn AND sccp,0,1.0,1.0,1.0,12
+uniform,128,gvn = 1 AND licm = 1 AND sccp = 1,NOT ipsccp,0,0.2,0.125,0.5,12
+bi_modal_split,128,gvn = 1 AND licm = 1 AND sccp = 1,licm AND gvn AND sccp,0,1.0,1.0,1.0,12
+tri_modal_split,128,gvn = 1 AND licm = 1 AND sccp = 1,inline AND sccp,4,0.3333333333333333,0.25,0.5,12
+power_law,128,gvn = 1 AND licm = 1 AND sccp = 1,sccp AND licm AND gvn,0,1.0,1.0,1.0,12
+normal,128,inline = 1 AND iv_users = 1 AND simplifycfg = 1,inline AND iv_users AND ipsccp AND simplifycfg,0,0.6666666666666666,1.0,0.5,13
+uniform,128,inline = 1 AND iv_users = 1 AND simplifycfg = 1,inline AND simplifycfg AND iv_users,0,1.0,1.0,1.0,13
+bi_modal_split,128,inline = 1 AND iv_users = 1 AND simplifycfg = 1,inline AND iv_users AND simplifycfg,2,1.0,1.0,1.0,13
+tri_modal_split,128,inline = 1 AND iv_users = 1 AND simplifycfg = 1,inline AND iv_users AND simplifycfg,0,1.0,1.0,1.0,13
+power_law,128,inline = 1 AND iv_users = 1 AND simplifycfg = 1,iv_users AND inline AND simplifycfg,0,1.0,1.0,1.0,13
+normal,128,gvn = 1 AND inline = 1 AND simplifycfg = 1,ipsccp AND gvn,2,0.3333333333333333,0.25,0.5,14
+uniform,128,gvn = 1 AND inline = 1 AND simplifycfg = 1,simplifycfg AND inline AND gvn,0,1.0,1.0,1.0,14
+bi_modal_split,128,gvn = 1 AND inline = 1 AND simplifycfg = 1,sccp AND simplifycfg,2,0.3333333333333333,0.25,0.5,14
+tri_modal_split,128,gvn = 1 AND inline = 1 AND simplifycfg = 1,ipsccp AND simplifycfg,3,0.3333333333333333,0.25,0.5,14
+power_law,128,gvn = 1 AND inline = 1 AND simplifycfg = 1,inline AND gvn AND simplifycfg,0,1.0,1.0,1.0,14
+normal,128,iv_users = 1 AND jump_threading = 1 AND sccp = 1,iv_users AND sccp AND jump_threading,0,1.0,1.0,1.0,15
+uniform,128,iv_users = 1 AND jump_threading = 1 AND sccp = 1,jump_threading AND sccp AND iv_users,2,1.0,1.0,1.0,15
+bi_modal_split,128,iv_users = 1 AND jump_threading = 1 AND sccp = 1,NOT licm AND sccp,4,0.3333333333333333,0.25,0.5,15
+tri_modal_split,128,iv_users = 1 AND jump_threading = 1 AND sccp = 1,sccp AND iv_users AND jump_threading,4,1.0,1.0,1.0,15
+power_law,128,iv_users = 1 AND jump_threading = 1 AND sccp = 1,jump_threading AND iv_users AND sccp,0,1.0,1.0,1.0,15
+normal,128,ipsccp = 1 AND licm = 1 AND print_used_types = 1,licm AND ipsccp AND print_used_types,0,1.0,1.0,1.0,16
+uniform,128,ipsccp = 1 AND licm = 1 AND print_used_types = 1,licm AND ipsccp AND print_used_types,2,1.0,1.0,1.0,16
+bi_modal_split,128,ipsccp = 1 AND licm = 1 AND print_used_types = 1,ipsccp AND licm AND print_used_types,0,1.0,1.0,1.0,16
+tri_modal_split,128,ipsccp = 1 AND licm = 1 AND print_used_types = 1,ipsccp AND licm AND print_used_types,0,1.0,1.0,1.0,16
+power_law,128,ipsccp = 1 AND licm = 1 AND print_used_types = 1,licm AND print_used_types AND ipsccp,0,1.0,1.0,1.0,16
+normal,128,inline = 1 AND jump_threading = 1 AND print_used_types = 1,print_used_types AND inline AND jump_threading,0,1.0,1.0,1.0,17
+uniform,128,inline = 1 AND jump_threading = 1 AND print_used_types = 1,jump_threading AND print_used_types AND inline,0,1.0,1.0,1.0,17
+bi_modal_split,128,inline = 1 AND jump_threading = 1 AND print_used_types = 1,inline AND jump_threading AND print_used_types,0,1.0,1.0,1.0,17
+tri_modal_split,128,inline = 1 AND jump_threading = 1 AND print_used_types = 1,print_used_types,1,0.4,0.25,1.0,17
+power_law,128,inline = 1 AND jump_threading = 1 AND print_used_types = 1,jump_threading AND inline AND print_used_types,0,1.0,1.0,1.0,17
+normal,128,instcombine = 1 AND iv_users = 1 AND simplifycfg = 1,simplifycfg AND instcombine AND iv_users,0,1.0,1.0,1.0,18
+uniform,128,instcombine = 1 AND iv_users = 1 AND simplifycfg = 1,gvn,0,0.2,0.125,0.5,18
+bi_modal_split,128,instcombine = 1 AND iv_users = 1 AND simplifycfg = 1,iv_users AND instcombine AND simplifycfg,1,1.0,1.0,1.0,18
+tri_modal_split,128,instcombine = 1 AND iv_users = 1 AND simplifycfg = 1,simplifycfg AND instcombine AND iv_users,0,1.0,1.0,1.0,18
+power_law,128,instcombine = 1 AND iv_users = 1 AND simplifycfg = 1,iv_users AND simplifycfg AND instcombine,0,1.0,1.0,1.0,18
+normal,128,ipsccp = 1 AND jump_threading = 1 AND licm = 1,jump_threading AND licm AND ipsccp,0,1.0,1.0,1.0,19
+uniform,128,ipsccp = 1 AND jump_threading = 1 AND licm = 1,jump_threading AND ipsccp AND licm,0,1.0,1.0,1.0,19
+bi_modal_split,128,ipsccp = 1 AND jump_threading = 1 AND licm = 1,jump_threading,1,0.4,0.25,1.0,19
+tri_modal_split,128,ipsccp = 1 AND jump_threading = 1 AND licm = 1,jump_threading,1,0.4,0.25,1.0,19
+power_law,128,ipsccp = 1 AND jump_threading = 1 AND licm = 1,licm AND jump_threading AND ipsccp,0,1.0,1.0,1.0,19
+normal,128,ipsccp = 1 AND licm = 1 AND sccp = 1,sccp AND licm AND ipsccp,0,1.0,1.0,1.0,1
+uniform,128,ipsccp = 1 AND licm = 1 AND sccp = 1,ipsccp,0,0.4,0.25,1.0,1
+bi_modal_split,128,ipsccp = 1 AND licm = 1 AND sccp = 1,gvn,0,0.2,0.125,0.5,1
+tri_modal_split,128,ipsccp = 1 AND licm = 1 AND sccp = 1,licm,1,0.4,0.25,1.0,1
+power_law,128,ipsccp = 1 AND licm = 1 AND sccp = 1,licm AND sccp AND ipsccp,0,1.0,1.0,1.0,1
+normal,128,inline = 1 AND jump_threading = 1 AND licm = 1,inline AND simplifycfg AND jump_threading AND licm,0,0.6666666666666666,1.0,0.5,20
+uniform,128,inline = 1 AND jump_threading = 1 AND licm = 1,instcombine AND inline,2,0.3333333333333333,0.25,0.5,20
+bi_modal_split,128,inline = 1 AND jump_threading = 1 AND licm = 1,inline AND licm AND jump_threading,0,1.0,1.0,1.0,20
+tri_modal_split,128,inline = 1 AND jump_threading = 1 AND licm = 1,licm AND inline AND jump_threading,0,1.0,1.0,1.0,20
+power_law,128,inline = 1 AND jump_threading = 1 AND licm = 1,licm AND inline AND jump_threading,0,1.0,1.0,1.0,20
+normal,128,ipsccp = 1 AND jump_threading = 1 AND licm = 1,jump_threading AND ipsccp AND licm,0,1.0,1.0,1.0,21
+uniform,128,ipsccp = 1 AND jump_threading = 1 AND licm = 1,jump_threading AND licm AND ipsccp,1,1.0,1.0,1.0,21
+bi_modal_split,128,ipsccp = 1 AND jump_threading = 1 AND licm = 1,NOT instcombine AND licm,4,0.3333333333333333,0.25,0.5,21
+tri_modal_split,128,ipsccp = 1 AND jump_threading = 1 AND licm = 1,NOT sccp AND ipsccp,4,0.3333333333333333,0.25,0.5,21
+power_law,128,ipsccp = 1 AND jump_threading = 1 AND licm = 1,licm AND ipsccp AND jump_threading,0,1.0,1.0,1.0,21
+normal,128,gvn = 1 AND jump_threading = 1 AND licm = 1,jump_threading AND licm AND gvn,0,1.0,1.0,1.0,22
+uniform,128,gvn = 1 AND jump_threading = 1 AND licm = 1,jump_threading AND gvn AND licm,0,1.0,1.0,1.0,22
+bi_modal_split,128,gvn = 1 AND jump_threading = 1 AND licm = 1,gvn,1,0.4,0.25,1.0,22
+tri_modal_split,128,gvn = 1 AND jump_threading = 1 AND licm = 1,NOT instcombine AND gvn,3,0.3333333333333333,0.25,0.5,22
+power_law,128,gvn = 1 AND jump_threading = 1 AND licm = 1,jump_threading AND licm AND gvn,0,1.0,1.0,1.0,22
+normal,128,instcombine = 1 AND jump_threading = 1 AND simplifycfg = 1,instcombine AND jump_threading AND simplifycfg,0,1.0,1.0,1.0,23
+uniform,128,instcombine = 1 AND jump_threading = 1 AND simplifycfg = 1,instcombine AND simplifycfg,2,0.6666666666666666,0.5,1.0,23
+bi_modal_split,128,instcombine = 1 AND jump_threading = 1 AND simplifycfg = 1,jump_threading AND simplifycfg AND instcombine,0,1.0,1.0,1.0,23
+tri_modal_split,128,instcombine = 1 AND jump_threading = 1 AND simplifycfg = 1,jump_threading AND instcombine,2,0.6666666666666666,0.5,1.0,23
+power_law,128,instcombine = 1 AND jump_threading = 1 AND simplifycfg = 1,instcombine AND simplifycfg AND jump_threading,0,1.0,1.0,1.0,23
+normal,128,inline = 1 AND iv_users = 1 AND sccp = 1,sccp AND inline AND iv_users,0,1.0,1.0,1.0,24
+uniform,128,inline = 1 AND iv_users = 1 AND sccp = 1,inline AND iv_users AND sccp,0,1.0,1.0,1.0,24
+bi_modal_split,128,inline = 1 AND iv_users = 1 AND sccp = 1,sccp AND iv_users AND inline,2,1.0,1.0,1.0,24
+tri_modal_split,128,inline = 1 AND iv_users = 1 AND sccp = 1,inline AND iv_users AND sccp,0,1.0,1.0,1.0,24
+power_law,128,inline = 1 AND iv_users = 1 AND sccp = 1,inline AND iv_users AND sccp,0,1.0,1.0,1.0,24
+normal,128,gvn = 1 AND iv_users = 1 AND jump_threading = 1,gvn AND jump_threading AND iv_users,0,1.0,1.0,1.0,25
+uniform,128,gvn = 1 AND iv_users = 1 AND jump_threading = 1,NOT licm AND gvn,2,0.3333333333333333,0.25,0.5,25
+bi_modal_split,128,gvn = 1 AND iv_users = 1 AND jump_threading = 1,gvn AND iv_users AND jump_threading,0,1.0,1.0,1.0,25
+tri_modal_split,128,gvn = 1 AND iv_users = 1 AND jump_threading = 1,gvn,1,0.4,0.25,1.0,25
+power_law,128,gvn = 1 AND iv_users = 1 AND jump_threading = 1,iv_users AND gvn AND jump_threading,0,1.0,1.0,1.0,25
+normal,128,gvn = 1 AND instcombine = 1 AND ipsccp = 1,print_used_types AND gvn,4,0.3333333333333333,0.25,0.5,26
+uniform,128,gvn = 1 AND instcombine = 1 AND ipsccp = 1,ipsccp AND gvn AND instcombine,1,1.0,1.0,1.0,26
+bi_modal_split,128,gvn = 1 AND instcombine = 1 AND ipsccp = 1,iv_users,0,0.2,0.125,0.5,26
+tri_modal_split,128,gvn = 1 AND instcombine = 1 AND ipsccp = 1,iv_users AND instcombine,4,0.3333333333333333,0.25,0.5,26
+power_law,128,gvn = 1 AND instcombine = 1 AND ipsccp = 1,instcombine AND ipsccp AND gvn,0,1.0,1.0,1.0,26
+normal,128,iv_users = 1 AND jump_threading = 1 AND simplifycfg = 1,simplifycfg AND jump_threading AND iv_users,0,1.0,1.0,1.0,27
+uniform,128,iv_users = 1 AND jump_threading = 1 AND simplifycfg = 1,gvn AND iv_users,4,0.3333333333333333,0.25,0.5,27
+bi_modal_split,128,iv_users = 1 AND jump_threading = 1 AND simplifycfg = 1,simplifycfg AND iv_users AND jump_threading,0,1.0,1.0,1.0,27
+tri_modal_split,128,iv_users = 1 AND jump_threading = 1 AND simplifycfg = 1,sccp AND jump_threading,4,0.3333333333333333,0.25,0.5,27
+power_law,128,iv_users = 1 AND jump_threading = 1 AND simplifycfg = 1,jump_threading AND simplifycfg AND iv_users,0,1.0,1.0,1.0,27
+normal,128,jump_threading = 1 AND print_used_types = 1 AND sccp = 1,jump_threading AND sccp AND print_used_types,0,1.0,1.0,1.0,28
+uniform,128,jump_threading = 1 AND print_used_types = 1 AND sccp = 1,sccp,0,0.4,0.25,1.0,28
+bi_modal_split,128,jump_threading = 1 AND print_used_types = 1 AND sccp = 1,iv_users AND print_used_types,3,0.3333333333333333,0.25,0.5,28
+tri_modal_split,128,jump_threading = 1 AND print_used_types = 1 AND sccp = 1,sccp,0,0.4,0.25,1.0,28
+power_law,128,jump_threading = 1 AND print_used_types = 1 AND sccp = 1,sccp AND print_used_types AND jump_threading,0,1.0,1.0,1.0,28
+normal,128,inline = 1 AND instcombine = 1 AND sccp = 1,NOT print_used_types AND sccp,2,0.3333333333333333,0.25,0.5,29
+uniform,128,inline = 1 AND instcombine = 1 AND sccp = 1,NOT print_used_types AND inline AND sccp,4,0.5,0.5,0.5,29
+bi_modal_split,128,inline = 1 AND instcombine = 1 AND sccp = 1,instcombine AND sccp,3,0.6666666666666666,0.5,1.0,29
+tri_modal_split,128,inline = 1 AND instcombine = 1 AND sccp = 1,inline AND instcombine AND sccp,2,1.0,1.0,1.0,29
+power_law,128,inline = 1 AND instcombine = 1 AND sccp = 1,instcombine AND sccp AND inline,0,1.0,1.0,1.0,29
+normal,128,inline = 1 AND instcombine = 1 AND sccp = 1,instcombine AND inline AND sccp,0,1.0,1.0,1.0,2
+uniform,128,inline = 1 AND instcombine = 1 AND sccp = 1,instcombine AND sccp AND inline,1,1.0,1.0,1.0,2
+bi_modal_split,128,inline = 1 AND instcombine = 1 AND sccp = 1,instcombine AND sccp AND inline,0,1.0,1.0,1.0,2
+tri_modal_split,128,inline = 1 AND instcombine = 1 AND sccp = 1,gvn AND sccp,2,0.3333333333333333,0.25,0.5,2
+power_law,128,inline = 1 AND instcombine = 1 AND sccp = 1,instcombine AND sccp AND inline,0,1.0,1.0,1.0,2
+normal,128,gvn = 1 AND inline = 1 AND ipsccp = 1,inline AND gvn AND ipsccp,0,1.0,1.0,1.0,30
+uniform,128,gvn = 1 AND inline = 1 AND ipsccp = 1,inline AND gvn AND ipsccp,1,1.0,1.0,1.0,30
+bi_modal_split,128,gvn = 1 AND inline = 1 AND ipsccp = 1,inline AND ipsccp AND gvn,1,1.0,1.0,1.0,30
+tri_modal_split,128,gvn = 1 AND inline = 1 AND ipsccp = 1,gvn AND inline AND ipsccp,0,1.0,1.0,1.0,30
+power_law,128,gvn = 1 AND inline = 1 AND ipsccp = 1,ipsccp AND gvn AND inline,0,1.0,1.0,1.0,30
+normal,128,inline = 1 AND licm = 1 AND sccp = 1,inline AND sccp AND licm,0,1.0,1.0,1.0,31
+uniform,128,inline = 1 AND licm = 1 AND sccp = 1,inline AND sccp AND licm,0,1.0,1.0,1.0,31
+bi_modal_split,128,inline = 1 AND licm = 1 AND sccp = 1,print_used_types,0,0.2,0.125,0.5,31
+tri_modal_split,128,inline = 1 AND licm = 1 AND sccp = 1,licm AND sccp AND inline,2,1.0,1.0,1.0,31
+power_law,128,inline = 1 AND licm = 1 AND sccp = 1,inline AND sccp AND licm,0,1.0,1.0,1.0,31
+normal,128,gvn = 1 AND jump_threading = 1 AND sccp = 1,jump_threading AND gvn AND sccp,0,1.0,1.0,1.0,32
+uniform,128,gvn = 1 AND jump_threading = 1 AND sccp = 1,gvn AND sccp AND jump_threading,0,1.0,1.0,1.0,32
+bi_modal_split,128,gvn = 1 AND jump_threading = 1 AND sccp = 1,jump_threading AND gvn AND sccp,0,1.0,1.0,1.0,32
+tri_modal_split,128,gvn = 1 AND jump_threading = 1 AND sccp = 1,jump_threading AND gvn AND sccp,2,1.0,1.0,1.0,32
+power_law,128,gvn = 1 AND jump_threading = 1 AND sccp = 1,jump_threading AND sccp AND gvn,0,1.0,1.0,1.0,32
+normal,128,jump_threading = 1 AND print_used_types = 1 AND sccp = 1,sccp AND jump_threading AND print_used_types,0,1.0,1.0,1.0,33
+uniform,128,jump_threading = 1 AND print_used_types = 1 AND sccp = 1,print_used_types AND sccp AND jump_threading,0,1.0,1.0,1.0,33
+bi_modal_split,128,jump_threading = 1 AND print_used_types = 1 AND sccp = 1,NOT iv_users AND sccp,3,0.3333333333333333,0.25,0.5,33
+tri_modal_split,128,jump_threading = 1 AND print_used_types = 1 AND sccp = 1,instcombine,0,0.2,0.125,0.5,33
+power_law,128,jump_threading = 1 AND print_used_types = 1 AND sccp = 1,print_used_types AND sccp AND jump_threading,0,1.0,1.0,1.0,33
+normal,128,gvn = 1 AND inline = 1 AND jump_threading = 1,inline AND jump_threading AND gvn,0,1.0,1.0,1.0,34
+uniform,128,gvn = 1 AND inline = 1 AND jump_threading = 1,jump_threading,0,0.4,0.25,1.0,34
+bi_modal_split,128,gvn = 1 AND inline = 1 AND jump_threading = 1,jump_threading AND gvn AND inline,0,1.0,1.0,1.0,34
+tri_modal_split,128,gvn = 1 AND inline = 1 AND jump_threading = 1,inline AND jump_threading,2,0.6666666666666666,0.5,1.0,34
+power_law,128,gvn = 1 AND inline = 1 AND jump_threading = 1,inline AND jump_threading AND gvn,0,1.0,1.0,1.0,34
+normal,128,gvn = 1 AND instcombine = 1 AND jump_threading = 1,instcombine AND jump_threading AND gvn,0,1.0,1.0,1.0,35
+uniform,128,gvn = 1 AND instcombine = 1 AND jump_threading = 1,instcombine AND gvn,2,0.6666666666666666,0.5,1.0,35
+bi_modal_split,128,gvn = 1 AND instcombine = 1 AND jump_threading = 1,ipsccp,0,0.2,0.125,0.5,35
+tri_modal_split,128,gvn = 1 AND instcombine = 1 AND jump_threading = 1,instcombine AND gvn,4,0.6666666666666666,0.5,1.0,35
+power_law,128,gvn = 1 AND instcombine = 1 AND jump_threading = 1,instcombine AND jump_threading AND gvn,0,1.0,1.0,1.0,35
+normal,128,instcombine = 1 AND ipsccp = 1 AND licm = 1,ipsccp AND licm AND instcombine,0,1.0,1.0,1.0,36
+uniform,128,instcombine = 1 AND ipsccp = 1 AND licm = 1,NOT sccp,0,0.2,0.125,0.5,36
+bi_modal_split,128,instcombine = 1 AND ipsccp = 1 AND licm = 1,instcombine AND ipsccp AND licm,0,1.0,1.0,1.0,36
+tri_modal_split,128,instcombine = 1 AND ipsccp = 1 AND licm = 1,ipsccp AND licm AND instcombine,0,1.0,1.0,1.0,36
+power_law,128,instcombine = 1 AND ipsccp = 1 AND licm = 1,licm AND ipsccp AND instcombine,0,1.0,1.0,1.0,36
+normal,128,inline = 1 AND ipsccp = 1 AND jump_threading = 1,jump_threading AND ipsccp AND inline,0,1.0,1.0,1.0,37
+uniform,128,inline = 1 AND ipsccp = 1 AND jump_threading = 1,iv_users AND jump_threading,2,0.3333333333333333,0.25,0.5,37
+bi_modal_split,128,inline = 1 AND ipsccp = 1 AND jump_threading = 1,jump_threading,1,0.4,0.25,1.0,37
+tri_modal_split,128,inline = 1 AND ipsccp = 1 AND jump_threading = 1,ipsccp AND jump_threading AND inline,3,1.0,1.0,1.0,37
+power_law,128,inline = 1 AND ipsccp = 1 AND jump_threading = 1,inline AND jump_threading AND ipsccp,0,1.0,1.0,1.0,37
+normal,128,ipsccp = 1 AND jump_threading = 1 AND licm = 1,jump_threading AND licm AND ipsccp,0,1.0,1.0,1.0,38
+uniform,128,ipsccp = 1 AND jump_threading = 1 AND licm = 1,ipsccp AND jump_threading AND licm,0,1.0,1.0,1.0,38
+bi_modal_split,128,ipsccp = 1 AND jump_threading = 1 AND licm = 1,licm,1,0.4,0.25,1.0,38
+tri_modal_split,128,ipsccp = 1 AND jump_threading = 1 AND licm = 1,jump_threading,1,0.4,0.25,1.0,38
+power_law,128,ipsccp = 1 AND jump_threading = 1 AND licm = 1,jump_threading AND ipsccp AND licm,0,1.0,1.0,1.0,38
+normal,128,iv_users = 1 AND jump_threading = 1 AND print_used_types = 1,print_used_types AND jump_threading AND iv_users,0,1.0,1.0,1.0,39
+uniform,128,iv_users = 1 AND jump_threading = 1 AND print_used_types = 1,jump_threading AND print_used_types AND iv_users,1,1.0,1.0,1.0,39
+bi_modal_split,128,iv_users = 1 AND jump_threading = 1 AND print_used_types = 1,iv_users AND print_used_types AND jump_threading,0,1.0,1.0,1.0,39
+tri_modal_split,128,iv_users = 1 AND jump_threading = 1 AND print_used_types = 1,NOT inline AND print_used_types,3,0.3333333333333333,0.25,0.5,39
+power_law,128,iv_users = 1 AND jump_threading = 1 AND print_used_types = 1,iv_users AND jump_threading AND print_used_types,0,1.0,1.0,1.0,39
+normal,128,iv_users = 1 AND jump_threading = 1 AND simplifycfg = 1,jump_threading AND simplifycfg AND iv_users,0,1.0,1.0,1.0,3
+uniform,128,iv_users = 1 AND jump_threading = 1 AND simplifycfg = 1,iv_users AND simplifycfg AND jump_threading,2,1.0,1.0,1.0,3
+bi_modal_split,128,iv_users = 1 AND jump_threading = 1 AND simplifycfg = 1,jump_threading AND iv_users AND simplifycfg,0,1.0,1.0,1.0,3
+tri_modal_split,128,iv_users = 1 AND jump_threading = 1 AND simplifycfg = 1,jump_threading AND simplifycfg AND iv_users,0,1.0,1.0,1.0,3
+power_law,128,iv_users = 1 AND jump_threading = 1 AND simplifycfg = 1,jump_threading AND iv_users AND simplifycfg,0,1.0,1.0,1.0,3
+normal,128,instcombine = 1 AND licm = 1 AND simplifycfg = 1,NOT gvn AND simplifycfg,2,0.3333333333333333,0.25,0.5,40
+uniform,128,instcombine = 1 AND licm = 1 AND simplifycfg = 1,iv_users AND licm,2,0.3333333333333333,0.25,0.5,40
+bi_modal_split,128,instcombine = 1 AND licm = 1 AND simplifycfg = 1,licm,1,0.4,0.25,1.0,40
+tri_modal_split,128,instcombine = 1 AND licm = 1 AND simplifycfg = 1,NOT inline,0,0.2,0.125,0.5,40
+power_law,128,instcombine = 1 AND licm = 1 AND simplifycfg = 1,instcombine AND licm AND simplifycfg,0,1.0,1.0,1.0,40
+normal,128,inline = 1 AND ipsccp = 1 AND sccp = 1,ipsccp AND sccp AND inline,0,1.0,1.0,1.0,41
+uniform,128,inline = 1 AND ipsccp = 1 AND sccp = 1,NOT gvn,0,0.2,0.125,0.5,41
+bi_modal_split,128,inline = 1 AND ipsccp = 1 AND sccp = 1,NOT print_used_types AND sccp,3,0.3333333333333333,0.25,0.5,41
+tri_modal_split,128,inline = 1 AND ipsccp = 1 AND sccp = 1,inline,0,0.4,0.25,1.0,41
+power_law,128,inline = 1 AND ipsccp = 1 AND sccp = 1,sccp AND inline AND ipsccp,0,1.0,1.0,1.0,41
+normal,128,inline = 1 AND ipsccp = 1 AND jump_threading = 1,inline AND ipsccp AND jump_threading,0,1.0,1.0,1.0,42
+uniform,128,inline = 1 AND ipsccp = 1 AND jump_threading = 1,ipsccp AND jump_threading AND inline,0,1.0,1.0,1.0,42
+bi_modal_split,128,inline = 1 AND ipsccp = 1 AND jump_threading = 1,ipsccp AND jump_threading AND inline,0,1.0,1.0,1.0,42
+tri_modal_split,128,inline = 1 AND ipsccp = 1 AND jump_threading = 1,NOT licm,0,0.2,0.125,0.5,42
+power_law,128,inline = 1 AND ipsccp = 1 AND jump_threading = 1,inline AND jump_threading AND ipsccp,0,1.0,1.0,1.0,42
+normal,128,inline = 1 AND instcombine = 1 AND licm = 1,inline,0,0.4,0.25,1.0,43
+uniform,128,inline = 1 AND instcombine = 1 AND licm = 1,instcombine AND inline AND licm,0,1.0,1.0,1.0,43
+bi_modal_split,128,inline = 1 AND instcombine = 1 AND licm = 1,inline AND licm AND instcombine,0,1.0,1.0,1.0,43
+tri_modal_split,128,inline = 1 AND instcombine = 1 AND licm = 1,instcombine AND inline AND licm,2,1.0,1.0,1.0,43
+power_law,128,inline = 1 AND instcombine = 1 AND licm = 1,licm AND inline AND instcombine,1,1.0,1.0,1.0,43
+normal,128,gvn = 1 AND jump_threading = 1 AND licm = 1,jump_threading AND gvn AND licm,0,1.0,1.0,1.0,44
+uniform,128,gvn = 1 AND jump_threading = 1 AND licm = 1,licm AND gvn AND jump_threading,0,1.0,1.0,1.0,44
+bi_modal_split,128,gvn = 1 AND jump_threading = 1 AND licm = 1,jump_threading AND licm AND gvn,2,1.0,1.0,1.0,44
+tri_modal_split,128,gvn = 1 AND jump_threading = 1 AND licm = 1,inline,0,0.2,0.125,0.5,44
+power_law,128,gvn = 1 AND jump_threading = 1 AND licm = 1,gvn AND jump_threading AND licm,0,1.0,1.0,1.0,44
+normal,128,ipsccp = 1 AND iv_users = 1 AND sccp = 1,ipsccp AND iv_users AND sccp,0,1.0,1.0,1.0,45
+uniform,128,ipsccp = 1 AND iv_users = 1 AND sccp = 1,iv_users AND ipsccp AND sccp,2,1.0,1.0,1.0,45
+bi_modal_split,128,ipsccp = 1 AND iv_users = 1 AND sccp = 1,ipsccp AND iv_users AND sccp,0,1.0,1.0,1.0,45
+tri_modal_split,128,ipsccp = 1 AND iv_users = 1 AND sccp = 1,ipsccp,0,0.4,0.25,1.0,45
+power_law,128,ipsccp = 1 AND iv_users = 1 AND sccp = 1,ipsccp AND iv_users AND sccp,0,1.0,1.0,1.0,45
+normal,128,jump_threading = 1 AND licm = 1 AND simplifycfg = 1,licm AND simplifycfg AND jump_threading,0,1.0,1.0,1.0,46
+uniform,128,jump_threading = 1 AND licm = 1 AND simplifycfg = 1,jump_threading AND licm,2,0.6666666666666666,0.5,1.0,46
+bi_modal_split,128,jump_threading = 1 AND licm = 1 AND simplifycfg = 1,jump_threading AND licm AND simplifycfg,0,1.0,1.0,1.0,46
+tri_modal_split,128,jump_threading = 1 AND licm = 1 AND simplifycfg = 1,NOT sccp,0,0.2,0.125,0.5,46
+power_law,128,jump_threading = 1 AND licm = 1 AND simplifycfg = 1,jump_threading AND licm AND simplifycfg,0,1.0,1.0,1.0,46
+normal,128,ipsccp = 1 AND sccp = 1 AND simplifycfg = 1,ipsccp AND simplifycfg AND sccp,0,1.0,1.0,1.0,47
+uniform,128,ipsccp = 1 AND sccp = 1 AND simplifycfg = 1,print_used_types,0,0.2,0.125,0.5,47
+bi_modal_split,128,ipsccp = 1 AND sccp = 1 AND simplifycfg = 1,NOT licm,0,0.2,0.125,0.5,47
+tri_modal_split,128,ipsccp = 1 AND sccp = 1 AND simplifycfg = 1,simplifycfg,1,0.4,0.25,1.0,47
+power_law,128,ipsccp = 1 AND sccp = 1 AND simplifycfg = 1,sccp AND simplifycfg AND ipsccp,0,1.0,1.0,1.0,47
+normal,128,gvn = 1 AND iv_users = 1 AND sccp = 1,gvn AND iv_users AND sccp,0,1.0,1.0,1.0,48
+uniform,128,gvn = 1 AND iv_users = 1 AND sccp = 1,gvn AND iv_users AND sccp,0,1.0,1.0,1.0,48
+bi_modal_split,128,gvn = 1 AND iv_users = 1 AND sccp = 1,iv_users AND sccp,2,0.6666666666666666,0.5,1.0,48
+tri_modal_split,128,gvn = 1 AND iv_users = 1 AND sccp = 1,gvn AND sccp AND iv_users,2,1.0,1.0,1.0,48
+power_law,128,gvn = 1 AND iv_users = 1 AND sccp = 1,iv_users AND gvn AND sccp,0,1.0,1.0,1.0,48
+normal,128,gvn = 1 AND iv_users = 1 AND sccp = 1,iv_users AND sccp AND gvn,0,1.0,1.0,1.0,49
+uniform,128,gvn = 1 AND iv_users = 1 AND sccp = 1,gvn AND iv_users AND sccp,0,1.0,1.0,1.0,49
+bi_modal_split,128,gvn = 1 AND iv_users = 1 AND sccp = 1,sccp AND gvn AND iv_users,2,1.0,1.0,1.0,49
+tri_modal_split,128,gvn = 1 AND iv_users = 1 AND sccp = 1,sccp,1,0.4,0.25,1.0,49
+power_law,128,gvn = 1 AND iv_users = 1 AND sccp = 1,sccp AND iv_users AND gvn,0,1.0,1.0,1.0,49
+normal,128,gvn = 1 AND instcombine = 1 AND sccp = 1,sccp AND gvn AND instcombine,0,1.0,1.0,1.0,4
+uniform,128,gvn = 1 AND instcombine = 1 AND sccp = 1,instcombine AND sccp AND gvn,0,1.0,1.0,1.0,4
+bi_modal_split,128,gvn = 1 AND instcombine = 1 AND sccp = 1,gvn AND instcombine AND sccp,0,1.0,1.0,1.0,4
+tri_modal_split,128,gvn = 1 AND instcombine = 1 AND sccp = 1,instcombine AND gvn AND sccp,2,1.0,1.0,1.0,4
+power_law,128,gvn = 1 AND instcombine = 1 AND sccp = 1,sccp AND gvn AND instcombine,0,1.0,1.0,1.0,4
+normal,128,inline = 1 AND ipsccp = 1 AND jump_threading = 1,ipsccp AND inline AND jump_threading,0,1.0,1.0,1.0,50
+uniform,128,inline = 1 AND ipsccp = 1 AND jump_threading = 1,print_used_types AND jump_threading AND ipsccp AND inline,3,0.6666666666666666,1.0,0.5,50
+bi_modal_split,128,inline = 1 AND ipsccp = 1 AND jump_threading = 1,NOT iv_users,0,0.2,0.125,0.5,50
+tri_modal_split,128,inline = 1 AND ipsccp = 1 AND jump_threading = 1,simplifycfg,0,0.2,0.125,0.5,50
+power_law,128,inline = 1 AND ipsccp = 1 AND jump_threading = 1,inline AND ipsccp AND jump_threading,0,1.0,1.0,1.0,50
+normal,128,instcombine = 1 AND iv_users = 1 AND jump_threading = 1,instcombine AND jump_threading AND iv_users,0,1.0,1.0,1.0,51
+uniform,128,instcombine = 1 AND iv_users = 1 AND jump_threading = 1,licm AND jump_threading AND instcombine AND iv_users,4,0.6666666666666666,1.0,0.5,51
+bi_modal_split,128,instcombine = 1 AND iv_users = 1 AND jump_threading = 1,jump_threading,1,0.4,0.25,1.0,51
+tri_modal_split,128,instcombine = 1 AND iv_users = 1 AND jump_threading = 1,jump_threading,1,0.4,0.25,1.0,51
+power_law,128,instcombine = 1 AND iv_users = 1 AND jump_threading = 1,iv_users AND jump_threading AND instcombine,0,1.0,1.0,1.0,51
+normal,128,iv_users = 1 AND print_used_types = 1 AND sccp = 1,print_used_types AND sccp AND iv_users,0,1.0,1.0,1.0,52
+uniform,128,iv_users = 1 AND print_used_types = 1 AND sccp = 1,iv_users AND sccp AND print_used_types,0,1.0,1.0,1.0,52
+bi_modal_split,128,iv_users = 1 AND print_used_types = 1 AND sccp = 1,iv_users AND print_used_types AND sccp,0,1.0,1.0,1.0,52
+tri_modal_split,128,iv_users = 1 AND print_used_types = 1 AND sccp = 1,print_used_types AND sccp,2,0.6666666666666666,0.5,1.0,52
+power_law,128,iv_users = 1 AND print_used_types = 1 AND sccp = 1,print_used_types AND iv_users AND sccp,0,1.0,1.0,1.0,52
+normal,128,gvn = 1 AND inline = 1 AND instcombine = 1,instcombine AND inline AND gvn,0,1.0,1.0,1.0,53
+uniform,128,gvn = 1 AND inline = 1 AND instcombine = 1,NOT sccp,0,0.2,0.125,0.5,53
+bi_modal_split,128,gvn = 1 AND inline = 1 AND instcombine = 1,instcombine AND inline AND gvn,2,1.0,1.0,1.0,53
+tri_modal_split,128,gvn = 1 AND inline = 1 AND instcombine = 1,instcombine AND gvn AND inline,2,1.0,1.0,1.0,53
+power_law,128,gvn = 1 AND inline = 1 AND instcombine = 1,inline AND gvn AND instcombine,0,1.0,1.0,1.0,53
+normal,128,ipsccp = 1 AND jump_threading = 1 AND print_used_types = 1,NOT gvn AND print_used_types,2,0.3333333333333333,0.25,0.5,54
+uniform,128,ipsccp = 1 AND jump_threading = 1 AND print_used_types = 1,print_used_types AND ipsccp AND jump_threading,0,1.0,1.0,1.0,54
+bi_modal_split,128,ipsccp = 1 AND jump_threading = 1 AND print_used_types = 1,NOT licm,0,0.2,0.125,0.5,54
+tri_modal_split,128,ipsccp = 1 AND jump_threading = 1 AND print_used_types = 1,ipsccp,1,0.4,0.25,1.0,54
+power_law,128,ipsccp = 1 AND jump_threading = 1 AND print_used_types = 1,ipsccp AND jump_threading AND print_used_types,0,1.0,1.0,1.0,54
+normal,128,instcombine = 1 AND ipsccp = 1 AND print_used_types = 1,print_used_types AND instcombine AND ipsccp,0,1.0,1.0,1.0,55
+uniform,128,instcombine = 1 AND ipsccp = 1 AND print_used_types = 1,NOT iv_users AND ipsccp,2,0.3333333333333333,0.25,0.5,55
+bi_modal_split,128,instcombine = 1 AND ipsccp = 1 AND print_used_types = 1,print_used_types AND instcombine AND ipsccp,0,1.0,1.0,1.0,55
+tri_modal_split,128,instcombine = 1 AND ipsccp = 1 AND print_used_types = 1,NOT jump_threading AND instcombine AND print_used_types AND ipsccp,0,0.6666666666666666,1.0,0.5,55
+power_law,128,instcombine = 1 AND ipsccp = 1 AND print_used_types = 1,instcombine AND print_used_types AND ipsccp,0,1.0,1.0,1.0,55
+normal,128,gvn = 1 AND inline = 1 AND sccp = 1,gvn AND sccp AND inline,0,1.0,1.0,1.0,56
+uniform,128,gvn = 1 AND inline = 1 AND sccp = 1,sccp AND gvn AND inline,0,1.0,1.0,1.0,56
+bi_modal_split,128,gvn = 1 AND inline = 1 AND sccp = 1,sccp AND inline AND gvn,0,1.0,1.0,1.0,56
+tri_modal_split,128,gvn = 1 AND inline = 1 AND sccp = 1,sccp AND inline AND gvn,0,1.0,1.0,1.0,56
+power_law,128,gvn = 1 AND inline = 1 AND sccp = 1,sccp AND inline AND gvn,0,1.0,1.0,1.0,56
+normal,128,gvn = 1 AND sccp = 1 AND simplifycfg = 1,licm AND simplifycfg,2,0.3333333333333333,0.25,0.5,57
+uniform,128,gvn = 1 AND sccp = 1 AND simplifycfg = 1,NOT inline AND gvn AND simplifycfg,4,0.5,0.5,0.5,57
+bi_modal_split,128,gvn = 1 AND sccp = 1 AND simplifycfg = 1,sccp AND simplifycfg AND gvn,4,1.0,1.0,1.0,57
+tri_modal_split,128,gvn = 1 AND sccp = 1 AND simplifycfg = 1,simplifycfg,0,0.4,0.25,1.0,57
+power_law,128,gvn = 1 AND sccp = 1 AND simplifycfg = 1,sccp AND simplifycfg AND gvn,0,1.0,1.0,1.0,57
+normal,128,instcombine = 1 AND iv_users = 1 AND simplifycfg = 1,instcombine AND simplifycfg AND iv_users,0,1.0,1.0,1.0,58
+uniform,128,instcombine = 1 AND iv_users = 1 AND simplifycfg = 1,iv_users,0,0.4,0.25,1.0,58
+bi_modal_split,128,instcombine = 1 AND iv_users = 1 AND simplifycfg = 1,instcombine AND iv_users AND simplifycfg,0,1.0,1.0,1.0,58
+tri_modal_split,128,instcombine = 1 AND iv_users = 1 AND simplifycfg = 1,simplifycfg AND iv_users,3,0.6666666666666666,0.5,1.0,58
+power_law,128,instcombine = 1 AND iv_users = 1 AND simplifycfg = 1,simplifycfg AND iv_users AND instcombine,0,1.0,1.0,1.0,58
+normal,128,iv_users = 1 AND licm = 1 AND print_used_types = 1,licm AND iv_users AND print_used_types,0,1.0,1.0,1.0,59
+uniform,128,iv_users = 1 AND licm = 1 AND print_used_types = 1,print_used_types AND iv_users AND licm,0,1.0,1.0,1.0,59
+bi_modal_split,128,iv_users = 1 AND licm = 1 AND print_used_types = 1,jump_threading AND iv_users,3,0.3333333333333333,0.25,0.5,59
+tri_modal_split,128,iv_users = 1 AND licm = 1 AND print_used_types = 1,licm,0,0.4,0.25,1.0,59
+power_law,128,iv_users = 1 AND licm = 1 AND print_used_types = 1,iv_users AND print_used_types AND licm,0,1.0,1.0,1.0,59
+normal,128,instcombine = 1 AND iv_users = 1 AND licm = 1,NOT print_used_types,0,0.2,0.125,0.5,5
+uniform,128,instcombine = 1 AND iv_users = 1 AND licm = 1,instcombine AND iv_users,2,0.6666666666666666,0.5,1.0,5
+bi_modal_split,128,instcombine = 1 AND iv_users = 1 AND licm = 1,licm,1,0.4,0.25,1.0,5
+tri_modal_split,128,instcombine = 1 AND iv_users = 1 AND licm = 1,licm,1,0.4,0.25,1.0,5
+power_law,128,instcombine = 1 AND iv_users = 1 AND licm = 1,iv_users AND licm AND instcombine,0,1.0,1.0,1.0,5
+normal,128,gvn = 1 AND iv_users = 1 AND jump_threading = 1,jump_threading AND gvn AND iv_users,0,1.0,1.0,1.0,60
+uniform,128,gvn = 1 AND iv_users = 1 AND jump_threading = 1,gvn AND iv_users AND jump_threading,0,1.0,1.0,1.0,60
+bi_modal_split,128,gvn = 1 AND iv_users = 1 AND jump_threading = 1,iv_users AND gvn AND jump_threading,0,1.0,1.0,1.0,60
+tri_modal_split,128,gvn = 1 AND iv_users = 1 AND jump_threading = 1,jump_threading AND iv_users,3,0.6666666666666666,0.5,1.0,60
+power_law,128,gvn = 1 AND iv_users = 1 AND jump_threading = 1,gvn AND jump_threading AND iv_users,0,1.0,1.0,1.0,60
+normal,128,licm = 1 AND print_used_types = 1 AND sccp = 1,inline AND print_used_types,2,0.3333333333333333,0.25,0.5,61
+uniform,128,licm = 1 AND print_used_types = 1 AND sccp = 1,licm AND print_used_types AND sccp,0,1.0,1.0,1.0,61
+bi_modal_split,128,licm = 1 AND print_used_types = 1 AND sccp = 1,print_used_types AND sccp,3,0.6666666666666666,0.5,1.0,61
+tri_modal_split,128,licm = 1 AND print_used_types = 1 AND sccp = 1,NOT inline,0,0.2,0.125,0.5,61
+power_law,128,licm = 1 AND print_used_types = 1 AND sccp = 1,print_used_types AND licm AND sccp,0,1.0,1.0,1.0,61
+normal,128,inline = 1 AND licm = 1 AND simplifycfg = 1,inline AND NOT print_used_types AND simplifycfg AND licm,0,0.6666666666666666,1.0,0.5,62
+uniform,128,inline = 1 AND licm = 1 AND simplifycfg = 1,licm AND inline AND simplifycfg,0,1.0,1.0,1.0,62
+bi_modal_split,128,inline = 1 AND licm = 1 AND simplifycfg = 1,simplifycfg AND inline AND licm,0,1.0,1.0,1.0,62
+tri_modal_split,128,inline = 1 AND licm = 1 AND simplifycfg = 1,simplifycfg AND inline AND licm,0,1.0,1.0,1.0,62
+power_law,128,inline = 1 AND licm = 1 AND simplifycfg = 1,licm AND simplifycfg AND inline,0,1.0,1.0,1.0,62
+normal,128,instcombine = 1 AND ipsccp = 1 AND print_used_types = 1,print_used_types AND ipsccp AND instcombine,0,1.0,1.0,1.0,63
+uniform,128,instcombine = 1 AND ipsccp = 1 AND print_used_types = 1,print_used_types AND instcombine AND ipsccp,0,1.0,1.0,1.0,63
+bi_modal_split,128,instcombine = 1 AND ipsccp = 1 AND print_used_types = 1,print_used_types,0,0.4,0.25,1.0,63
+tri_modal_split,128,instcombine = 1 AND ipsccp = 1 AND print_used_types = 1,print_used_types AND sccp AND ipsccp AND instcombine,1,0.6666666666666666,1.0,0.5,63
+power_law,128,instcombine = 1 AND ipsccp = 1 AND print_used_types = 1,print_used_types AND instcombine AND ipsccp,0,1.0,1.0,1.0,63
+normal,128,inline = 1 AND iv_users = 1 AND simplifycfg = 1,iv_users AND simplifycfg AND inline,0,1.0,1.0,1.0,64
+uniform,128,inline = 1 AND iv_users = 1 AND simplifycfg = 1,instcombine AND simplifycfg,3,0.3333333333333333,0.25,0.5,64
+bi_modal_split,128,inline = 1 AND iv_users = 1 AND simplifycfg = 1,iv_users AND inline AND simplifycfg,0,1.0,1.0,1.0,64
+tri_modal_split,128,inline = 1 AND iv_users = 1 AND simplifycfg = 1,simplifycfg AND inline AND iv_users,0,1.0,1.0,1.0,64
+power_law,128,inline = 1 AND iv_users = 1 AND simplifycfg = 1,iv_users AND simplifycfg AND inline,0,1.0,1.0,1.0,64
+normal,128,instcombine = 1 AND licm = 1 AND sccp = 1,licm AND instcombine AND sccp,0,1.0,1.0,1.0,65
+uniform,128,instcombine = 1 AND licm = 1 AND sccp = 1,instcombine AND sccp AND licm,0,1.0,1.0,1.0,65
+bi_modal_split,128,instcombine = 1 AND licm = 1 AND sccp = 1,licm AND sccp AND instcombine,0,1.0,1.0,1.0,65
+tri_modal_split,128,instcombine = 1 AND licm = 1 AND sccp = 1,licm AND instcombine AND sccp,0,1.0,1.0,1.0,65
+power_law,128,instcombine = 1 AND licm = 1 AND sccp = 1,instcombine AND sccp AND licm,0,1.0,1.0,1.0,65
+normal,128,inline = 1 AND ipsccp = 1 AND iv_users = 1,NOT print_used_types,0,0.2,0.125,0.5,66
+uniform,128,inline = 1 AND ipsccp = 1 AND iv_users = 1,inline AND ipsccp AND iv_users,1,1.0,1.0,1.0,66
+bi_modal_split,128,inline = 1 AND ipsccp = 1 AND iv_users = 1,jump_threading AND ipsccp,4,0.3333333333333333,0.25,0.5,66
+tri_modal_split,128,inline = 1 AND ipsccp = 1 AND iv_users = 1,ipsccp,1,0.4,0.25,1.0,66
+power_law,128,inline = 1 AND ipsccp = 1 AND iv_users = 1,inline AND ipsccp AND iv_users,0,1.0,1.0,1.0,66
+normal,128,licm = 1 AND print_used_types = 1 AND simplifycfg = 1,licm AND print_used_types AND simplifycfg,0,1.0,1.0,1.0,67
+uniform,128,licm = 1 AND print_used_types = 1 AND simplifycfg = 1,simplifycfg AND licm AND print_used_types,0,1.0,1.0,1.0,67
+bi_modal_split,128,licm = 1 AND print_used_types = 1 AND simplifycfg = 1,print_used_types AND licm AND simplifycfg,0,1.0,1.0,1.0,67
+tri_modal_split,128,licm = 1 AND print_used_types = 1 AND simplifycfg = 1,simplifycfg AND licm AND print_used_types,0,1.0,1.0,1.0,67
+power_law,128,licm = 1 AND print_used_types = 1 AND simplifycfg = 1,licm AND print_used_types AND simplifycfg,0,1.0,1.0,1.0,67
+normal,128,gvn = 1 AND licm = 1 AND sccp = 1,sccp AND licm AND gvn,0,1.0,1.0,1.0,68
+uniform,128,gvn = 1 AND licm = 1 AND sccp = 1,sccp AND gvn AND licm,0,1.0,1.0,1.0,68
+bi_modal_split,128,gvn = 1 AND licm = 1 AND sccp = 1,gvn AND licm AND sccp,0,1.0,1.0,1.0,68
+tri_modal_split,128,gvn = 1 AND licm = 1 AND sccp = 1,gvn,1,0.4,0.25,1.0,68
+power_law,128,gvn = 1 AND licm = 1 AND sccp = 1,gvn AND licm AND sccp,0,1.0,1.0,1.0,68
+normal,128,gvn = 1 AND instcombine = 1 AND ipsccp = 1,gvn AND ipsccp AND instcombine,0,1.0,1.0,1.0,69
+uniform,128,gvn = 1 AND instcombine = 1 AND ipsccp = 1,gvn AND instcombine AND ipsccp,1,1.0,1.0,1.0,69
+bi_modal_split,128,gvn = 1 AND instcombine = 1 AND ipsccp = 1,simplifycfg AND ipsccp,2,0.3333333333333333,0.25,0.5,69
+tri_modal_split,128,gvn = 1 AND instcombine = 1 AND ipsccp = 1,gvn AND instcombine AND NOT inline AND ipsccp,0,0.6666666666666666,1.0,0.5,69
+power_law,128,gvn = 1 AND instcombine = 1 AND ipsccp = 1,ipsccp AND instcombine AND gvn,0,1.0,1.0,1.0,69
+normal,128,licm = 1 AND sccp = 1 AND simplifycfg = 1,NOT ipsccp AND simplifycfg AND licm AND sccp,0,0.6666666666666666,1.0,0.5,6
+uniform,128,licm = 1 AND sccp = 1 AND simplifycfg = 1,simplifycfg AND licm AND sccp,0,1.0,1.0,1.0,6
+bi_modal_split,128,licm = 1 AND sccp = 1 AND simplifycfg = 1,print_used_types,0,0.2,0.125,0.5,6
+tri_modal_split,128,licm = 1 AND sccp = 1 AND simplifycfg = 1,sccp,1,0.4,0.25,1.0,6
+power_law,128,licm = 1 AND sccp = 1 AND simplifycfg = 1,licm AND simplifycfg AND sccp,0,1.0,1.0,1.0,6
+normal,128,inline = 1 AND print_used_types = 1 AND sccp = 1,print_used_types AND sccp AND inline,0,1.0,1.0,1.0,70
+uniform,128,inline = 1 AND print_used_types = 1 AND sccp = 1,NOT ipsccp AND print_used_types,2,0.3333333333333333,0.25,0.5,70
+bi_modal_split,128,inline = 1 AND print_used_types = 1 AND sccp = 1,sccp AND inline AND print_used_types,0,1.0,1.0,1.0,70
+tri_modal_split,128,inline = 1 AND print_used_types = 1 AND sccp = 1,inline AND print_used_types AND sccp,0,1.0,1.0,1.0,70
+power_law,128,inline = 1 AND print_used_types = 1 AND sccp = 1,sccp AND print_used_types AND inline,0,1.0,1.0,1.0,70
+normal,128,inline = 1 AND instcombine = 1 AND ipsccp = 1,inline AND ipsccp AND instcombine,0,1.0,1.0,1.0,71
+uniform,128,inline = 1 AND instcombine = 1 AND ipsccp = 1,sccp AND ipsccp,3,0.3333333333333333,0.25,0.5,71
+bi_modal_split,128,inline = 1 AND instcombine = 1 AND ipsccp = 1,inline AND instcombine AND ipsccp,0,1.0,1.0,1.0,71
+tri_modal_split,128,inline = 1 AND instcombine = 1 AND ipsccp = 1,instcombine AND ipsccp AND inline,0,1.0,1.0,1.0,71
+power_law,128,inline = 1 AND instcombine = 1 AND ipsccp = 1,inline AND ipsccp AND instcombine,0,1.0,1.0,1.0,71
+normal,128,iv_users = 1 AND sccp = 1 AND simplifycfg = 1,iv_users AND sccp AND simplifycfg,0,1.0,1.0,1.0,72
+uniform,128,iv_users = 1 AND sccp = 1 AND simplifycfg = 1,iv_users,0,0.4,0.25,1.0,72
+bi_modal_split,128,iv_users = 1 AND sccp = 1 AND simplifycfg = 1,instcombine AND iv_users,2,0.3333333333333333,0.25,0.5,72
+tri_modal_split,128,iv_users = 1 AND sccp = 1 AND simplifycfg = 1,simplifycfg AND iv_users AND sccp,1,1.0,1.0,1.0,72
+power_law,128,iv_users = 1 AND sccp = 1 AND simplifycfg = 1,simplifycfg AND iv_users AND sccp,0,1.0,1.0,1.0,72
+normal,128,iv_users = 1 AND licm = 1 AND sccp = 1,iv_users AND sccp AND licm,0,1.0,1.0,1.0,73
+uniform,128,iv_users = 1 AND licm = 1 AND sccp = 1,NOT gvn AND sccp,2,0.3333333333333333,0.25,0.5,73
+bi_modal_split,128,iv_users = 1 AND licm = 1 AND sccp = 1,NOT jump_threading,0,0.2,0.125,0.5,73
+tri_modal_split,128,iv_users = 1 AND licm = 1 AND sccp = 1,gvn,0,0.2,0.125,0.5,73
+power_law,128,iv_users = 1 AND licm = 1 AND sccp = 1,iv_users AND sccp AND licm,0,1.0,1.0,1.0,73
+normal,128,inline = 1 AND iv_users = 1 AND print_used_types = 1,print_used_types AND inline AND iv_users,0,1.0,1.0,1.0,74
+uniform,128,inline = 1 AND iv_users = 1 AND print_used_types = 1,iv_users,0,0.4,0.25,1.0,74
+bi_modal_split,128,inline = 1 AND iv_users = 1 AND print_used_types = 1,iv_users AND print_used_types AND inline,0,1.0,1.0,1.0,74
+tri_modal_split,128,inline = 1 AND iv_users = 1 AND print_used_types = 1,inline AND iv_users,3,0.6666666666666666,0.5,1.0,74
+power_law,128,inline = 1 AND iv_users = 1 AND print_used_types = 1,inline AND iv_users AND print_used_types,0,1.0,1.0,1.0,74
+normal,128,gvn = 1 AND iv_users = 1 AND licm = 1,licm AND iv_users AND gvn,0,1.0,1.0,1.0,75
+uniform,128,gvn = 1 AND iv_users = 1 AND licm = 1,gvn AND iv_users AND licm,1,1.0,1.0,1.0,75
+bi_modal_split,128,gvn = 1 AND iv_users = 1 AND licm = 1,iv_users AND gvn AND licm,0,1.0,1.0,1.0,75
+tri_modal_split,128,gvn = 1 AND iv_users = 1 AND licm = 1,gvn AND iv_users AND licm,0,1.0,1.0,1.0,75
+power_law,128,gvn = 1 AND iv_users = 1 AND licm = 1,gvn AND licm AND iv_users,0,1.0,1.0,1.0,75
+normal,128,gvn = 1 AND licm = 1 AND print_used_types = 1,licm AND gvn AND print_used_types,0,1.0,1.0,1.0,76
+uniform,128,gvn = 1 AND licm = 1 AND print_used_types = 1,gvn,0,0.4,0.25,1.0,76
+bi_modal_split,128,gvn = 1 AND licm = 1 AND print_used_types = 1,print_used_types,1,0.4,0.25,1.0,76
+tri_modal_split,128,gvn = 1 AND licm = 1 AND print_used_types = 1,instcombine,0,0.2,0.125,0.5,76
+power_law,128,gvn = 1 AND licm = 1 AND print_used_types = 1,print_used_types AND licm AND gvn,0,1.0,1.0,1.0,76
+normal,128,gvn = 1 AND inline = 1 AND print_used_types = 1,inline AND print_used_types AND gvn,0,1.0,1.0,1.0,77
+uniform,128,gvn = 1 AND inline = 1 AND print_used_types = 1,print_used_types,0,0.4,0.25,1.0,77
+bi_modal_split,128,gvn = 1 AND inline = 1 AND print_used_types = 1,print_used_types AND inline AND gvn,0,1.0,1.0,1.0,77
+tri_modal_split,128,gvn = 1 AND inline = 1 AND print_used_types = 1,gvn,1,0.4,0.25,1.0,77
+power_law,128,gvn = 1 AND inline = 1 AND print_used_types = 1,print_used_types AND inline AND gvn,0,1.0,1.0,1.0,77
+normal,128,instcombine = 1 AND licm = 1 AND simplifycfg = 1,licm AND simplifycfg AND instcombine,0,1.0,1.0,1.0,78
+uniform,128,instcombine = 1 AND licm = 1 AND simplifycfg = 1,instcombine AND simplifycfg AND licm,0,1.0,1.0,1.0,78
+bi_modal_split,128,instcombine = 1 AND licm = 1 AND simplifycfg = 1,licm AND simplifycfg AND instcombine,0,1.0,1.0,1.0,78
+tri_modal_split,128,instcombine = 1 AND licm = 1 AND simplifycfg = 1,instcombine AND simplifycfg AND licm,2,1.0,1.0,1.0,78
+power_law,128,instcombine = 1 AND licm = 1 AND simplifycfg = 1,instcombine AND licm AND simplifycfg,0,1.0,1.0,1.0,78
+normal,128,inline = 1 AND ipsccp = 1 AND sccp = 1,sccp AND inline AND ipsccp,0,1.0,1.0,1.0,79
+uniform,128,inline = 1 AND ipsccp = 1 AND sccp = 1,inline AND ipsccp AND sccp,0,1.0,1.0,1.0,79
+bi_modal_split,128,inline = 1 AND ipsccp = 1 AND sccp = 1,inline AND sccp AND ipsccp,0,1.0,1.0,1.0,79
+tri_modal_split,128,inline = 1 AND ipsccp = 1 AND sccp = 1,inline AND ipsccp AND sccp,0,1.0,1.0,1.0,79
+power_law,128,inline = 1 AND ipsccp = 1 AND sccp = 1,sccp AND inline AND ipsccp,0,1.0,1.0,1.0,79
+normal,128,jump_threading = 1 AND licm = 1 AND simplifycfg = 1,jump_threading AND licm AND simplifycfg,0,1.0,1.0,1.0,7
+uniform,128,jump_threading = 1 AND licm = 1 AND simplifycfg = 1,licm AND jump_threading AND simplifycfg,0,1.0,1.0,1.0,7
+bi_modal_split,128,jump_threading = 1 AND licm = 1 AND simplifycfg = 1,jump_threading AND simplifycfg AND licm,1,1.0,1.0,1.0,7
+tri_modal_split,128,jump_threading = 1 AND licm = 1 AND simplifycfg = 1,licm AND jump_threading AND simplifycfg,0,1.0,1.0,1.0,7
+power_law,128,jump_threading = 1 AND licm = 1 AND simplifycfg = 1,jump_threading AND licm AND simplifycfg,0,1.0,1.0,1.0,7
+normal,128,jump_threading = 1 AND licm = 1 AND simplifycfg = 1,jump_threading AND licm AND simplifycfg,0,1.0,1.0,1.0,80
+uniform,128,jump_threading = 1 AND licm = 1 AND simplifycfg = 1,jump_threading,0,0.4,0.25,1.0,80
+bi_modal_split,128,jump_threading = 1 AND licm = 1 AND simplifycfg = 1,licm AND simplifycfg AND jump_threading,0,1.0,1.0,1.0,80
+tri_modal_split,128,jump_threading = 1 AND licm = 1 AND simplifycfg = 1,jump_threading,1,0.4,0.25,1.0,80
+power_law,128,jump_threading = 1 AND licm = 1 AND simplifycfg = 1,simplifycfg AND jump_threading AND licm,0,1.0,1.0,1.0,80
+normal,128,ipsccp = 1 AND print_used_types = 1 AND simplifycfg = 1,ipsccp AND simplifycfg AND print_used_types,0,1.0,1.0,1.0,81
+uniform,128,ipsccp = 1 AND print_used_types = 1 AND simplifycfg = 1,simplifycfg,0,0.4,0.25,1.0,81
+bi_modal_split,128,ipsccp = 1 AND print_used_types = 1 AND simplifycfg = 1,simplifycfg AND print_used_types AND ipsccp,0,1.0,1.0,1.0,81
+tri_modal_split,128,ipsccp = 1 AND print_used_types = 1 AND simplifycfg = 1,print_used_types AND simplifycfg AND ipsccp,0,1.0,1.0,1.0,81
+power_law,128,ipsccp = 1 AND print_used_types = 1 AND simplifycfg = 1,ipsccp AND print_used_types AND simplifycfg,0,1.0,1.0,1.0,81
+normal,128,gvn = 1 AND inline = 1 AND iv_users = 1,gvn AND inline AND iv_users,0,1.0,1.0,1.0,82
+uniform,128,gvn = 1 AND inline = 1 AND iv_users = 1,inline AND iv_users AND gvn,0,1.0,1.0,1.0,82
+bi_modal_split,128,gvn = 1 AND inline = 1 AND iv_users = 1,inline AND gvn AND iv_users,0,1.0,1.0,1.0,82
+tri_modal_split,128,gvn = 1 AND inline = 1 AND iv_users = 1,inline AND gvn,4,0.6666666666666666,0.5,1.0,82
+power_law,128,gvn = 1 AND inline = 1 AND iv_users = 1,gvn AND inline AND iv_users,0,1.0,1.0,1.0,82
+normal,128,inline = 1 AND ipsccp = 1 AND jump_threading = 1,jump_threading AND ipsccp AND inline,0,1.0,1.0,1.0,83
+uniform,128,inline = 1 AND ipsccp = 1 AND jump_threading = 1,inline AND ipsccp AND jump_threading,0,1.0,1.0,1.0,83
+bi_modal_split,128,inline = 1 AND ipsccp = 1 AND jump_threading = 1,jump_threading AND inline AND ipsccp,2,1.0,1.0,1.0,83
+tri_modal_split,128,inline = 1 AND ipsccp = 1 AND jump_threading = 1,jump_threading AND ipsccp AND inline,3,1.0,1.0,1.0,83
+power_law,128,inline = 1 AND ipsccp = 1 AND jump_threading = 1,inline AND ipsccp AND jump_threading,0,1.0,1.0,1.0,83
+normal,128,instcombine = 1 AND iv_users = 1 AND jump_threading = 1,instcombine AND jump_threading AND iv_users,0,1.0,1.0,1.0,84
+uniform,128,instcombine = 1 AND iv_users = 1 AND jump_threading = 1,jump_threading AND instcombine AND iv_users,0,1.0,1.0,1.0,84
+bi_modal_split,128,instcombine = 1 AND iv_users = 1 AND jump_threading = 1,iv_users AND instcombine AND jump_threading,2,1.0,1.0,1.0,84
+tri_modal_split,128,instcombine = 1 AND iv_users = 1 AND jump_threading = 1,NOT sccp,0,0.2,0.125,0.5,84
+power_law,128,instcombine = 1 AND iv_users = 1 AND jump_threading = 1,instcombine AND iv_users AND jump_threading,0,1.0,1.0,1.0,84
+normal,128,iv_users = 1 AND sccp = 1 AND simplifycfg = 1,sccp AND iv_users AND simplifycfg,0,1.0,1.0,1.0,85
+uniform,128,iv_users = 1 AND sccp = 1 AND simplifycfg = 1,simplifycfg AND sccp AND iv_users,0,1.0,1.0,1.0,85
+bi_modal_split,128,iv_users = 1 AND sccp = 1 AND simplifycfg = 1,NOT inline,0,0.2,0.125,0.5,85
+tri_modal_split,128,iv_users = 1 AND sccp = 1 AND simplifycfg = 1,print_used_types AND sccp,2,0.3333333333333333,0.25,0.5,85
+power_law,128,iv_users = 1 AND sccp = 1 AND simplifycfg = 1,simplifycfg AND sccp AND iv_users,0,1.0,1.0,1.0,85
+normal,128,gvn = 1 AND inline = 1 AND ipsccp = 1,inline AND ipsccp AND gvn,0,1.0,1.0,1.0,86
+uniform,128,gvn = 1 AND inline = 1 AND ipsccp = 1,gvn AND inline AND ipsccp,2,1.0,1.0,1.0,86
+bi_modal_split,128,gvn = 1 AND inline = 1 AND ipsccp = 1,gvn AND inline AND ipsccp,0,1.0,1.0,1.0,86
+tri_modal_split,128,gvn = 1 AND inline = 1 AND ipsccp = 1,inline AND ipsccp AND gvn,0,1.0,1.0,1.0,86
+power_law,128,gvn = 1 AND inline = 1 AND ipsccp = 1,ipsccp AND gvn AND inline,0,1.0,1.0,1.0,86
+normal,128,inline = 1 AND licm = 1 AND print_used_types = 1,licm AND print_used_types AND inline,0,1.0,1.0,1.0,87
+uniform,128,inline = 1 AND licm = 1 AND print_used_types = 1,print_used_types AND inline,2,0.6666666666666666,0.5,1.0,87
+bi_modal_split,128,inline = 1 AND licm = 1 AND print_used_types = 1,licm,1,0.4,0.25,1.0,87
+tri_modal_split,128,inline = 1 AND licm = 1 AND print_used_types = 1,inline,1,0.4,0.25,1.0,87
+power_law,128,inline = 1 AND licm = 1 AND print_used_types = 1,print_used_types AND licm AND inline,0,1.0,1.0,1.0,87
+normal,128,inline = 1 AND licm = 1 AND print_used_types = 1,licm AND inline AND print_used_types,0,1.0,1.0,1.0,88
+uniform,128,inline = 1 AND licm = 1 AND print_used_types = 1,licm,0,0.4,0.25,1.0,88
+bi_modal_split,128,inline = 1 AND licm = 1 AND print_used_types = 1,print_used_types,1,0.4,0.25,1.0,88
+tri_modal_split,128,inline = 1 AND licm = 1 AND print_used_types = 1,print_used_types AND inline,4,0.6666666666666666,0.5,1.0,88
+power_law,128,inline = 1 AND licm = 1 AND print_used_types = 1,print_used_types AND inline AND licm,0,1.0,1.0,1.0,88
+normal,128,gvn = 1 AND instcombine = 1 AND simplifycfg = 1,simplifycfg AND gvn AND instcombine,0,1.0,1.0,1.0,89
+uniform,128,gvn = 1 AND instcombine = 1 AND simplifycfg = 1,simplifycfg AND gvn AND instcombine,2,1.0,1.0,1.0,89
+bi_modal_split,128,gvn = 1 AND instcombine = 1 AND simplifycfg = 1,instcombine AND gvn AND simplifycfg,4,1.0,1.0,1.0,89
+tri_modal_split,128,gvn = 1 AND instcombine = 1 AND simplifycfg = 1,iv_users AND instcombine,3,0.3333333333333333,0.25,0.5,89
+power_law,128,gvn = 1 AND instcombine = 1 AND simplifycfg = 1,simplifycfg AND gvn AND instcombine,0,1.0,1.0,1.0,89
+normal,128,iv_users = 1 AND jump_threading = 1 AND print_used_types = 1,jump_threading AND print_used_types AND iv_users,0,1.0,1.0,1.0,8
+uniform,128,iv_users = 1 AND jump_threading = 1 AND print_used_types = 1,print_used_types AND iv_users AND jump_threading,1,1.0,1.0,1.0,8
+bi_modal_split,128,iv_users = 1 AND jump_threading = 1 AND print_used_types = 1,print_used_types AND iv_users AND jump_threading,3,1.0,1.0,1.0,8
+tri_modal_split,128,iv_users = 1 AND jump_threading = 1 AND print_used_types = 1,jump_threading,0,0.4,0.25,1.0,8
+power_law,128,iv_users = 1 AND jump_threading = 1 AND print_used_types = 1,jump_threading AND print_used_types AND iv_users,0,1.0,1.0,1.0,8
+normal,128,instcombine = 1 AND ipsccp = 1 AND iv_users = 1,iv_users AND ipsccp AND instcombine,0,1.0,1.0,1.0,90
+uniform,128,instcombine = 1 AND ipsccp = 1 AND iv_users = 1,instcombine AND iv_users AND ipsccp,1,1.0,1.0,1.0,90
+bi_modal_split,128,instcombine = 1 AND ipsccp = 1 AND iv_users = 1,iv_users AND instcombine AND ipsccp,0,1.0,1.0,1.0,90
+tri_modal_split,128,instcombine = 1 AND ipsccp = 1 AND iv_users = 1,ipsccp AND instcombine AND iv_users,0,1.0,1.0,1.0,90
+power_law,128,instcombine = 1 AND ipsccp = 1 AND iv_users = 1,iv_users AND ipsccp AND instcombine,0,1.0,1.0,1.0,90
+normal,128,iv_users = 1 AND print_used_types = 1 AND simplifycfg = 1,gvn AND print_used_types,2,0.3333333333333333,0.25,0.5,91
+uniform,128,iv_users = 1 AND print_used_types = 1 AND simplifycfg = 1,print_used_types AND simplifycfg AND iv_users,0,1.0,1.0,1.0,91
+bi_modal_split,128,iv_users = 1 AND print_used_types = 1 AND simplifycfg = 1,iv_users AND print_used_types,2,0.6666666666666666,0.5,1.0,91
+tri_modal_split,128,iv_users = 1 AND print_used_types = 1 AND simplifycfg = 1,simplifycfg AND print_used_types,2,0.6666666666666666,0.5,1.0,91
+power_law,128,iv_users = 1 AND print_used_types = 1 AND simplifycfg = 1,simplifycfg AND iv_users AND print_used_types,0,1.0,1.0,1.0,91
+normal,128,inline = 1 AND instcombine = 1 AND print_used_types = 1,instcombine AND inline AND print_used_types,0,1.0,1.0,1.0,92
+uniform,128,inline = 1 AND instcombine = 1 AND print_used_types = 1,instcombine AND inline AND print_used_types,0,1.0,1.0,1.0,92
+bi_modal_split,128,inline = 1 AND instcombine = 1 AND print_used_types = 1,print_used_types,0,0.4,0.25,1.0,92
+tri_modal_split,128,inline = 1 AND instcombine = 1 AND print_used_types = 1,print_used_types AND instcombine AND inline,2,1.0,1.0,1.0,92
+power_law,128,inline = 1 AND instcombine = 1 AND print_used_types = 1,inline AND instcombine AND print_used_types,0,1.0,1.0,1.0,92
+normal,128,instcombine = 1 AND ipsccp = 1 AND print_used_types = 1,instcombine AND ipsccp AND print_used_types,0,1.0,1.0,1.0,93
+uniform,128,instcombine = 1 AND ipsccp = 1 AND print_used_types = 1,instcombine AND ipsccp AND print_used_types,0,1.0,1.0,1.0,93
+bi_modal_split,128,instcombine = 1 AND ipsccp = 1 AND print_used_types = 1,print_used_types AND instcombine AND ipsccp,0,1.0,1.0,1.0,93
+tri_modal_split,128,instcombine = 1 AND ipsccp = 1 AND print_used_types = 1,ipsccp,1,0.4,0.25,1.0,93
+power_law,128,instcombine = 1 AND ipsccp = 1 AND print_used_types = 1,print_used_types AND instcombine AND ipsccp,0,1.0,1.0,1.0,93
+normal,128,gvn = 1 AND ipsccp = 1 AND licm = 1,gvn AND ipsccp AND NOT inline AND licm,0,0.6666666666666666,1.0,0.5,94
+uniform,128,gvn = 1 AND ipsccp = 1 AND licm = 1,licm AND ipsccp AND gvn,0,1.0,1.0,1.0,94
+bi_modal_split,128,gvn = 1 AND ipsccp = 1 AND licm = 1,gvn AND ipsccp AND licm,0,1.0,1.0,1.0,94
+tri_modal_split,128,gvn = 1 AND ipsccp = 1 AND licm = 1,ipsccp AND gvn AND licm,0,1.0,1.0,1.0,94
+power_law,128,gvn = 1 AND ipsccp = 1 AND licm = 1,ipsccp AND gvn AND licm,0,1.0,1.0,1.0,94
+normal,128,iv_users = 1 AND jump_threading = 1 AND licm = 1,jump_threading AND iv_users AND licm,0,1.0,1.0,1.0,95
+uniform,128,iv_users = 1 AND jump_threading = 1 AND licm = 1,iv_users AND licm AND jump_threading,0,1.0,1.0,1.0,95
+bi_modal_split,128,iv_users = 1 AND jump_threading = 1 AND licm = 1,iv_users AND jump_threading AND licm,0,1.0,1.0,1.0,95
+tri_modal_split,128,iv_users = 1 AND jump_threading = 1 AND licm = 1,NOT ipsccp AND iv_users,2,0.3333333333333333,0.25,0.5,95
+power_law,128,iv_users = 1 AND jump_threading = 1 AND licm = 1,jump_threading AND iv_users AND licm,0,1.0,1.0,1.0,95
+normal,128,gvn = 1 AND licm = 1 AND simplifycfg = 1,licm AND simplifycfg AND gvn,0,1.0,1.0,1.0,96
+uniform,128,gvn = 1 AND licm = 1 AND simplifycfg = 1,gvn AND licm AND simplifycfg,0,1.0,1.0,1.0,96
+bi_modal_split,128,gvn = 1 AND licm = 1 AND simplifycfg = 1,print_used_types,0,0.2,0.125,0.5,96
+tri_modal_split,128,gvn = 1 AND licm = 1 AND simplifycfg = 1,simplifycfg,1,0.4,0.25,1.0,96
+power_law,128,gvn = 1 AND licm = 1 AND simplifycfg = 1,licm AND gvn AND simplifycfg,0,1.0,1.0,1.0,96
+normal,128,ipsccp = 1 AND print_used_types = 1 AND simplifycfg = 1,ipsccp AND simplifycfg AND print_used_types,0,1.0,1.0,1.0,97
+uniform,128,ipsccp = 1 AND print_used_types = 1 AND simplifycfg = 1,print_used_types,0,0.4,0.25,1.0,97
+bi_modal_split,128,ipsccp = 1 AND print_used_types = 1 AND simplifycfg = 1,print_used_types AND ipsccp AND simplifycfg,2,1.0,1.0,1.0,97
+tri_modal_split,128,ipsccp = 1 AND print_used_types = 1 AND simplifycfg = 1,ipsccp AND simplifycfg,4,0.6666666666666666,0.5,1.0,97
+power_law,128,ipsccp = 1 AND print_used_types = 1 AND simplifycfg = 1,simplifycfg AND ipsccp AND print_used_types,0,1.0,1.0,1.0,97
+normal,128,jump_threading = 1 AND print_used_types = 1 AND simplifycfg = 1,print_used_types AND jump_threading AND simplifycfg,0,1.0,1.0,1.0,98
+uniform,128,jump_threading = 1 AND print_used_types = 1 AND simplifycfg = 1,NOT inline,0,0.2,0.125,0.5,98
+bi_modal_split,128,jump_threading = 1 AND print_used_types = 1 AND simplifycfg = 1,print_used_types AND simplifycfg,1,0.6666666666666666,0.5,1.0,98
+tri_modal_split,128,jump_threading = 1 AND print_used_types = 1 AND simplifycfg = 1,NOT iv_users AND jump_threading,2,0.3333333333333333,0.25,0.5,98
+power_law,128,jump_threading = 1 AND print_used_types = 1 AND simplifycfg = 1,simplifycfg AND jump_threading AND print_used_types,0,1.0,1.0,1.0,98
+normal,128,inline = 1 AND jump_threading = 1 AND licm = 1,iv_users,0,0.2,0.125,0.5,99
+uniform,128,inline = 1 AND jump_threading = 1 AND licm = 1,inline AND jump_threading AND licm,0,1.0,1.0,1.0,99
+bi_modal_split,128,inline = 1 AND jump_threading = 1 AND licm = 1,jump_threading AND inline AND licm,3,1.0,1.0,1.0,99
+tri_modal_split,128,inline = 1 AND jump_threading = 1 AND licm = 1,NOT print_used_types AND licm,2,0.3333333333333333,0.25,0.5,99
+power_law,128,inline = 1 AND jump_threading = 1 AND licm = 1,licm AND jump_threading AND inline,0,1.0,1.0,1.0,99
+normal,128,iv_users = 1 AND licm = 1 AND print_used_types = 1,print_used_types AND iv_users AND licm,0,1.0,1.0,1.0,9
+uniform,128,iv_users = 1 AND licm = 1 AND print_used_types = 1,NOT jump_threading AND licm,3,0.3333333333333333,0.25,0.5,9
+bi_modal_split,128,iv_users = 1 AND licm = 1 AND print_used_types = 1,licm AND print_used_types,2,0.6666666666666666,0.5,1.0,9
+tri_modal_split,128,iv_users = 1 AND licm = 1 AND print_used_types = 1,licm AND print_used_types AND iv_users,4,1.0,1.0,1.0,9
+power_law,128,iv_users = 1 AND licm = 1 AND print_used_types = 1,print_used_types AND iv_users AND licm,0,1.0,1.0,1.0,9

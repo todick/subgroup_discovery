@@ -1,0 +1,448 @@
+sg_distribution,sg_cardinality,sg_rule,best_rule,best_rule_idx,f1,precision,recall,seed
+normal,1872,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 3,CUDA AND TextureMemory AND pixelPerThread = 3.00,1,1.0,1.0,1.0,0
+uniform,2184,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 1,CUDA AND TextureMemory AND NOT bs_128x1 AND NOT bs_256x2 AND NOT bs_32x1 AND NOT bs_32x16 AND NOT bs_32x4 AND pixelPerThread = 1.00,0,0.8648648648648648,1.0,0.7619047619047619,0
+bi_modal_split,2635,CUDA = 1 AND Linear1D = 1 AND TextureMemory = 1,Linear1D,1,1.0,1.0,1.0,0
+tri_modal_split,1872,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 3,CUDA AND TextureMemory AND pixelPerThread = 3.00,1,1.0,1.0,1.0,0
+normal,2184,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 1,CUDA AND TextureMemory AND pixelPerThread = 1.00,1,1.0,1.0,1.0,10
+uniform,2184,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 1,CUDA AND TextureMemory AND pixelPerThread = 1.00,0,1.0,1.0,1.0,10
+bi_modal_split,2184,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 1,CUDA AND TextureMemory AND pixelPerThread = 1.00,1,1.0,1.0,1.0,10
+tri_modal_split,2184,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 1,CUDA AND TextureMemory AND pixelPerThread = 1.00,1,1.0,1.0,1.0,10
+power_law,2184,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 1,CUDA AND TextureMemory AND NOT bs_256x4 AND NOT bs_32x1 AND pixelPerThread = 1.00,0,0.95,1.0,0.9047619047619048,10
+normal,2132,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 2,CUDA AND TextureMemory AND pixelPerThread = 2.00,1,1.0,1.0,1.0,11
+uniform,2132,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 2,CUDA AND TextureMemory AND pixelPerThread = 2.00,0,1.0,1.0,1.0,11
+bi_modal_split,2132,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 2,CUDA AND TextureMemory AND pixelPerThread = 2.00,1,1.0,1.0,1.0,11
+tri_modal_split,2132,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 2,CUDA AND TextureMemory AND pixelPerThread = 2.00,1,1.0,1.0,1.0,11
+normal,2635,CUDA = 1 AND Linear2D = 1 AND TextureMemory = 1,CUDA AND Linear2D AND TextureMemory,1,1.0,1.0,1.0,12
+uniform,2635,CUDA = 1 AND Linear2D = 1 AND TextureMemory = 1,Linear2D,0,1.0,1.0,1.0,12
+bi_modal_split,2635,CUDA = 1 AND Linear2D = 1 AND TextureMemory = 1,Linear2D,1,1.0,1.0,1.0,12
+tri_modal_split,2635,CUDA = 1 AND Linear2D = 1 AND TextureMemory = 1,Linear2D,1,1.0,1.0,1.0,12
+power_law,2635,CUDA = 1 AND Linear2D = 1 AND TextureMemory = 1,Linear2D,0,1.0,1.0,1.0,12
+normal,2635,CUDA = 1 AND Linear1D = 1 AND TextureMemory = 1,NOT Array2D AND Linear1D,0,1.0,1.0,1.0,13
+uniform,2635,CUDA = 1 AND Linear1D = 1 AND TextureMemory = 1,Linear1D,0,1.0,1.0,1.0,13
+bi_modal_split,2635,CUDA = 1 AND Linear1D = 1 AND TextureMemory = 1,Linear1D,1,1.0,1.0,1.0,13
+tri_modal_split,2635,CUDA = 1 AND Linear1D = 1 AND TextureMemory = 1,CUDA AND Linear1D,1,1.0,1.0,1.0,13
+normal,1872,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 4,CUDA AND TextureMemory AND pixelPerThread = 4.00,1,1.0,1.0,1.0,14
+uniform,1872,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 4,CUDA AND TextureMemory AND NOT bs_32x32 AND NOT bs_64x16 AND pixelPerThread = 4.00,0,0.9714285714285714,1.0,0.9444444444444444,14
+bi_modal_split,1872,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 4,NOT Array2D AND NOT Ldg AND NOT Linear1D AND NOT Linear2D,0,0.0,0.0,0.0,14
+tri_modal_split,1872,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 4,CUDA AND TextureMemory AND NOT bs_1024x1 AND NOT bs_128x1 AND NOT bs_128x2 AND NOT bs_32x4 AND NOT bs_64x1 AND NOT bs_64x4 AND pixelPerThread = 4.00,4,0.819672131147541,1.0,0.6944444444444444,14
+power_law,1872,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 4,CUDA AND TextureMemory AND NOT bs_32x4 AND NOT bs_64x4 AND pixelPerThread = 4.00,3,0.9411764705882352,1.0,0.8888888888888888,14
+normal,2132,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 2,CUDA AND TextureMemory AND pixelPerThread = 2.00,0,1.0,1.0,1.0,15
+uniform,2132,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 2,CUDA AND TextureMemory AND pixelPerThread = 2.00,0,1.0,1.0,1.0,15
+bi_modal_split,2132,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 2,CUDA AND TextureMemory AND pixelPerThread = 2.00,1,1.0,1.0,1.0,15
+tri_modal_split,2132,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 2,CUDA AND TextureMemory AND pixelPerThread = 2.00,1,1.0,1.0,1.0,15
+power_law,2132,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 2,CUDA AND TextureMemory AND pixelPerThread = 2.00,0,1.0,1.0,1.0,15
+normal,1449,CUDA = 1 AND LocalMemory = 1 AND pixelPerThread = 1,CUDA AND LocalMemory AND pixelPerThread = 1.00,1,1.0,1.0,1.0,16
+uniform,1449,CUDA = 1 AND LocalMemory = 1 AND pixelPerThread = 1,CUDA AND LocalMemory AND NOT bs_256x2 AND NOT bs_32x1 AND NOT bs_32x16 AND NOT bs_64x2 AND NOT bs_64x4 AND pixelPerThread = 1.00,4,0.8648648648648648,1.0,0.7619047619047619,16
+tri_modal_split,1449,CUDA = 1 AND LocalMemory = 1 AND pixelPerThread = 1,CUDA AND LocalMemory AND pixelPerThread = 1.00,1,1.0,1.0,1.0,16
+normal,1872,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 3,Linear2D AND pixelPerThread = 3.00,0,0.4927536231884058,1.0,0.3269230769230769,17
+uniform,1872,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 3,CUDA AND TextureMemory AND pixelPerThread = 3.00,0,1.0,1.0,1.0,17
+bi_modal_split,1872,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 3,NOT Array2D AND CUDA AND TextureMemory AND pixelPerThread = 3.00,4,0.9902912621359222,1.0,0.9807692307692308,17
+tri_modal_split,1872,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 3,CUDA AND TextureMemory AND pixelPerThread = 3.00,1,1.0,1.0,1.0,17
+power_law,1872,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 3,CUDA AND TextureMemory AND pixelPerThread = 3.00,4,1.0,1.0,1.0,17
+normal,2635,CUDA = 1 AND Linear1D = 1 AND TextureMemory = 1,CUDA AND Linear1D AND TextureMemory,1,1.0,1.0,1.0,18
+uniform,2635,CUDA = 1 AND Linear1D = 1 AND TextureMemory = 1,NOT Array2D AND Linear1D,0,1.0,1.0,1.0,18
+bi_modal_split,2635,CUDA = 1 AND Linear1D = 1 AND TextureMemory = 1,Linear1D,1,1.0,1.0,1.0,18
+tri_modal_split,2635,CUDA = 1 AND Linear1D = 1 AND TextureMemory = 1,Linear1D AND TextureMemory AND NOT bs_128x4,1,0.9735099337748344,1.0,0.9483870967741936,18
+power_law,2635,CUDA = 1 AND Linear1D = 1 AND TextureMemory = 1,Linear1D,1,1.0,1.0,1.0,18
+normal,1380,CUDA = 1 AND LocalMemory = 1 AND pixelPerThread = 2,CUDA AND LocalMemory AND pixelPerThread = 2.00,0,1.0,1.0,1.0,19
+uniform,1380,CUDA = 1 AND LocalMemory = 1 AND pixelPerThread = 2,CUDA AND LocalMemory AND pixelPerThread = 2.00,0,1.0,1.0,1.0,19
+bi_modal_split,1380,CUDA = 1 AND LocalMemory = 1 AND pixelPerThread = 2,CUDA AND LocalMemory AND pixelPerThread = 2.00,0,1.0,1.0,1.0,19
+tri_modal_split,1380,CUDA = 1 AND LocalMemory = 1 AND pixelPerThread = 2,Linear2D AND LocalMemory AND NOT bs_1024x1 AND pixelPerThread = 2.00,0,0.3953488372093023,1.0,0.2463768115942029,19
+power_law,1380,CUDA = 1 AND LocalMemory = 1 AND pixelPerThread = 2,CUDA AND LocalMemory AND pixelPerThread = 2.00,0,1.0,1.0,1.0,19
+uniform,2184,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 1,CUDA AND TextureMemory AND pixelPerThread = 1.00,0,1.0,1.0,1.0,1
+bi_modal_split,2184,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 1,CUDA AND TextureMemory AND NOT bs_256x1 AND pixelPerThread = 1.00,1,0.975609756097561,1.0,0.9523809523809524,1
+tri_modal_split,2184,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 1,CUDA AND TextureMemory AND NOT bs_128x2 AND NOT bs_32x16 AND pixelPerThread = 1.00,1,0.95,1.0,0.9047619047619048,1
+normal,2184,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 1,CUDA AND TextureMemory AND NOT bs_32x16 AND pixelPerThread = 1.00,1,0.975609756097561,1.0,0.9523809523809524,20
+uniform,2184,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 1,CUDA AND TextureMemory AND NOT bs_128x1 AND pixelPerThread = 1.00,0,0.975609756097561,1.0,0.9523809523809524,20
+bi_modal_split,2184,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 1,CUDA AND TextureMemory AND pixelPerThread = 1.00,1,1.0,1.0,1.0,20
+tri_modal_split,2184,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 1,CUDA AND TextureMemory AND pixelPerThread = 1.00,1,1.0,1.0,1.0,20
+normal,2132,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 2,CUDA AND TextureMemory AND pixelPerThread = 2.00,1,1.0,1.0,1.0,21
+uniform,2132,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 2,CUDA AND TextureMemory AND pixelPerThread = 2.00,1,1.0,1.0,1.0,21
+bi_modal_split,2132,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 2,CUDA AND TextureMemory AND NOT bs_1024x1 AND pixelPerThread = 2.00,1,0.9876543209876544,1.0,0.975609756097561,21
+tri_modal_split,2132,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 2,TextureMemory AND pixelPerThread = 2.00,0,0.9904761904761904,0.981132075471698,1.0,21
+power_law,2132,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 2,CUDA AND TextureMemory AND pixelPerThread = 2.00,1,1.0,1.0,1.0,21
+normal,1449,CUDA = 1 AND LocalMemory = 1 AND pixelPerThread = 1,CUDA AND LocalMemory AND pixelPerThread = 1.00,1,1.0,1.0,1.0,22
+uniform,1449,CUDA = 1 AND LocalMemory = 1 AND pixelPerThread = 1,CUDA AND LocalMemory AND pixelPerThread = 1.00,0,1.0,1.0,1.0,22
+bi_modal_split,1449,CUDA = 1 AND LocalMemory = 1 AND pixelPerThread = 1,CUDA AND LocalMemory AND NOT bs_128x2 AND NOT bs_256x2 AND pixelPerThread = 1.00,1,0.95,1.0,0.9047619047619048,22
+tri_modal_split,1449,CUDA = 1 AND LocalMemory = 1 AND pixelPerThread = 1,CUDA AND LocalMemory AND pixelPerThread = 1.00,1,1.0,1.0,1.0,22
+power_law,1449,CUDA = 1 AND LocalMemory = 1 AND pixelPerThread = 1,CUDA AND LocalMemory AND pixelPerThread = 1.00,3,1.0,1.0,1.0,22
+normal,1449,CUDA = 1 AND LocalMemory = 1 AND pixelPerThread = 1,CUDA AND LocalMemory AND pixelPerThread = 1.00,1,1.0,1.0,1.0,23
+uniform,1449,CUDA = 1 AND LocalMemory = 1 AND pixelPerThread = 1,NOT Array2D AND Linear2D AND LocalMemory AND NOT bs_32x16 AND NOT bs_32x32 AND NOT bs_512x2 AND pixelPerThread = 1.00,2,0.3487179487179487,1.0,0.2111801242236025,23
+bi_modal_split,1449,CUDA = 1 AND LocalMemory = 1 AND pixelPerThread = 1,CUDA AND LocalMemory AND pixelPerThread = 1.00,1,1.0,1.0,1.0,23
+tri_modal_split,1449,CUDA = 1 AND LocalMemory = 1 AND pixelPerThread = 1,CUDA AND LocalMemory AND NOT bs_128x2 AND NOT bs_32x8 AND pixelPerThread = 1.00,1,0.95,1.0,0.9047619047619048,23
+power_law,1449,CUDA = 1 AND LocalMemory = 1 AND pixelPerThread = 1,LocalMemory AND NOT bs_256x2 AND NOT bs_32x4 AND NOT bs_64x2 AND pixelPerThread = 1.00,2,0.8238805970149252,0.7931034482758621,0.8571428571428571,23
+normal,1872,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 4,bs_128x4 AND pixelPerThread = 4.00,0,0.1016617790811339,0.5977011494252874,0.0555555555555555,24
+uniform,1872,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 4,CUDA AND TextureMemory AND NOT bs_64x16 AND pixelPerThread = 4.00,0,0.9859154929577464,1.0,0.9722222222222222,24
+bi_modal_split,1872,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 4,CUDA AND TextureMemory AND pixelPerThread = 4.00,1,1.0,1.0,1.0,24
+tri_modal_split,1872,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 4,CUDA AND TextureMemory AND NOT bs_256x4 AND pixelPerThread = 4.00,1,0.9859154929577464,1.0,0.9722222222222222,24
+power_law,1872,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 4,CUDA AND TextureMemory AND pixelPerThread = 4.00,1,1.0,1.0,1.0,24
+normal,1380,CUDA = 1 AND LocalMemory = 1 AND pixelPerThread = 2,CUDA AND LocalMemory AND NOT bs_1024x1 AND pixelPerThread = 2.00,1,1.0,1.0,1.0,25
+uniform,1380,CUDA = 1 AND LocalMemory = 1 AND pixelPerThread = 2,CUDA AND LocalMemory AND pixelPerThread = 2.00,0,1.0,1.0,1.0,25
+bi_modal_split,1380,CUDA = 1 AND LocalMemory = 1 AND pixelPerThread = 2,CUDA AND LocalMemory AND pixelPerThread = 2.00,1,1.0,1.0,1.0,25
+tri_modal_split,1380,CUDA = 1 AND LocalMemory = 1 AND pixelPerThread = 2,CUDA AND LocalMemory AND pixelPerThread = 2.00,1,1.0,1.0,1.0,25
+normal,1380,CUDA = 1 AND LocalMemory = 1 AND pixelPerThread = 2,CUDA AND LocalMemory AND pixelPerThread = 2.00,1,1.0,1.0,1.0,26
+uniform,1380,CUDA = 1 AND LocalMemory = 1 AND pixelPerThread = 2,CUDA AND LocalMemory AND pixelPerThread = 2.00,0,1.0,1.0,1.0,26
+bi_modal_split,1380,CUDA = 1 AND LocalMemory = 1 AND pixelPerThread = 2,NOT CUDA AND OpenCL,0,0.0,0.0,0.0,26
+tri_modal_split,1380,CUDA = 1 AND LocalMemory = 1 AND pixelPerThread = 2,CUDA AND LocalMemory AND NOT bs_64x16 AND pixelPerThread = 2.00,2,0.9743589743589745,1.0,0.95,26
+power_law,1380,CUDA = 1 AND LocalMemory = 1 AND pixelPerThread = 2,CUDA AND LocalMemory AND pixelPerThread = 2.00,1,1.0,1.0,1.0,26
+normal,2132,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 2,CUDA AND TextureMemory AND pixelPerThread = 2.00,1,1.0,1.0,1.0,27
+uniform,2132,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 2,CUDA AND TextureMemory AND pixelPerThread = 2.00,0,1.0,1.0,1.0,27
+bi_modal_split,2132,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 2,CUDA AND TextureMemory AND pixelPerThread = 2.00,1,1.0,1.0,1.0,27
+tri_modal_split,2132,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 2,NOT Array2D AND CUDA AND TextureMemory AND pixelPerThread = 2.00,1,0.9902912621359222,1.0,0.9807692307692308,27
+power_law,2132,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 2,CUDA AND TextureMemory AND pixelPerThread = 2.00,1,1.0,1.0,1.0,27
+normal,2184,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 1,CUDA AND NOT OpenCL AND TextureMemory AND pixelPerThread = 1.00,1,1.0,1.0,1.0,28
+uniform,2184,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 1,NOT Array2D AND CUDA AND TextureMemory AND NOT bs_128x2 AND pixelPerThread = 1.00,0,0.9659090909090908,1.0,0.934065934065934,28
+bi_modal_split,2184,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 1,CUDA AND TextureMemory AND NOT bs_128x1 AND NOT bs_32x8 AND NOT bs_512x2 AND NOT bs_64x1 AND NOT bs_64x4 AND NOT bs_64x8 AND pixelPerThread = 1.00,1,0.8333333333333333,1.0,0.7142857142857143,28
+tri_modal_split,2184,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 1,CUDA AND TextureMemory AND NOT bs_32x4 AND pixelPerThread = 1.00,1,0.975609756097561,1.0,0.9523809523809524,28
+power_law,2184,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 1,CUDA AND TextureMemory AND pixelPerThread = 1.00,1,1.0,1.0,1.0,28
+normal,2635,CUDA = 1 AND Linear2D = 1 AND TextureMemory = 1,Linear2D AND NOT bs_32x32,4,0.9802631578947368,1.0,0.9612903225806452,29
+uniform,2635,CUDA = 1 AND Linear2D = 1 AND TextureMemory = 1,Linear2D AND NOT bs_256x2 AND NOT bs_32x16 AND NOT bs_32x2 AND NOT bs_64x16 AND NOT bs_64x4,0,0.8602941176470589,1.0,0.7548387096774194,29
+bi_modal_split,2635,CUDA = 1 AND Linear2D = 1 AND TextureMemory = 1,CUDA AND NOT Ldg AND NOT Linear1D AND Linear2D AND TextureMemory,1,1.0,1.0,1.0,29
+tri_modal_split,2635,CUDA = 1 AND Linear2D = 1 AND TextureMemory = 1,CUDA AND NOT Ldg AND NOT Linear1D AND Linear2D AND TextureMemory,1,1.0,1.0,1.0,29
+normal,2132,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 2,CUDA AND TextureMemory AND pixelPerThread = 2.00,0,1.0,1.0,1.0,2
+uniform,2132,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 2,CUDA AND TextureMemory AND pixelPerThread = 2.00,0,1.0,1.0,1.0,2
+bi_modal_split,2132,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 2,CUDA AND TextureMemory AND pixelPerThread = 2.00,0,1.0,1.0,1.0,2
+tri_modal_split,2132,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 2,CUDA AND TextureMemory AND pixelPerThread = 2.00,1,1.0,1.0,1.0,2
+power_law,2132,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 2,CUDA AND TextureMemory AND pixelPerThread = 2.00,0,1.0,1.0,1.0,2
+normal,1872,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 4,CUDA AND TextureMemory AND pixelPerThread = 4.00,1,1.0,1.0,1.0,30
+bi_modal_split,1872,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 4,CUDA AND TextureMemory AND pixelPerThread = 4.00,1,1.0,1.0,1.0,30
+tri_modal_split,1872,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 4,CUDA AND TextureMemory AND pixelPerThread = 4.00,1,1.0,1.0,1.0,30
+power_law,1872,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 4,CUDA AND TextureMemory AND pixelPerThread = 4.00,1,1.0,1.0,1.0,30
+normal,2132,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 2,CUDA AND TextureMemory AND pixelPerThread = 2.00,0,1.0,1.0,1.0,31
+uniform,2132,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 2,CUDA AND TextureMemory AND pixelPerThread = 2.00,0,1.0,1.0,1.0,31
+bi_modal_split,2132,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 2,CUDA AND TextureMemory AND pixelPerThread = 2.00,1,1.0,1.0,1.0,31
+tri_modal_split,2132,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 2,CUDA AND TextureMemory AND NOT bs_1024x1 AND pixelPerThread = 2.00,1,0.9876543209876544,1.0,0.975609756097561,31
+power_law,2132,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 2,CUDA AND TextureMemory AND pixelPerThread = 2.00,0,1.0,1.0,1.0,31
+normal,1380,CUDA = 1 AND LocalMemory = 1 AND pixelPerThread = 2,CUDA AND LocalMemory AND NOT bs_1024x1 AND pixelPerThread = 2.00,4,1.0,1.0,1.0,32
+uniform,1380,CUDA = 1 AND LocalMemory = 1 AND pixelPerThread = 2,LocalMemory AND pixelPerThread = 2.00,3,0.8846153846153846,0.7931034482758621,1.0,32
+bi_modal_split,1380,CUDA = 1 AND LocalMemory = 1 AND pixelPerThread = 2,CUDA AND LocalMemory AND NOT bs_1024x1 AND pixelPerThread = 2.00,1,1.0,1.0,1.0,32
+tri_modal_split,1380,CUDA = 1 AND LocalMemory = 1 AND pixelPerThread = 2,CUDA AND LocalMemory AND bs_32x1 AND pixelPerThread = 2.00,1,0.0952380952380952,1.0,0.05,32
+power_law,1380,CUDA = 1 AND LocalMemory = 1 AND pixelPerThread = 2,CUDA AND LocalMemory AND pixelPerThread = 2.00,1,1.0,1.0,1.0,32
+uniform,1872,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 3,CUDA AND TextureMemory AND pixelPerThread = 3.00,1,1.0,1.0,1.0,33
+bi_modal_split,1872,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 3,NOT Array2D AND CUDA AND TextureMemory AND pixelPerThread = 3.00,1,0.9902912621359222,1.0,0.9807692307692308,33
+tri_modal_split,1872,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 3,CUDA AND TextureMemory AND bs_32x1 AND pixelPerThread = 3.00,1,0.1052631578947368,1.0,0.0555555555555555,33
+power_law,1872,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 3,CUDA AND TextureMemory AND pixelPerThread = 3.00,0,1.0,1.0,1.0,33
+normal,2635,CUDA = 1 AND Ldg = 1 AND TextureMemory = 1,Ldg,1,1.0,1.0,1.0,34
+uniform,2635,CUDA = 1 AND Ldg = 1 AND TextureMemory = 1,Ldg,0,1.0,1.0,1.0,34
+bi_modal_split,2635,CUDA = 1 AND Ldg = 1 AND TextureMemory = 1,Ldg,1,1.0,1.0,1.0,34
+tri_modal_split,2635,CUDA = 1 AND Ldg = 1 AND TextureMemory = 1,Ldg,1,1.0,1.0,1.0,34
+power_law,2635,CUDA = 1 AND Ldg = 1 AND TextureMemory = 1,Ldg AND NOT bs_256x4 AND NOT bs_32x2 AND NOT bs_32x8 AND NOT bs_64x16 AND NOT bs_64x4,0,0.8686131386861314,1.0,0.7677419354838709,34
+normal,1380,CUDA = 1 AND LocalMemory = 1 AND pixelPerThread = 2,CUDA AND LocalMemory AND NOT bs_1024x1 AND pixelPerThread = 2.00,0,1.0,1.0,1.0,35
+uniform,1380,CUDA = 1 AND LocalMemory = 1 AND pixelPerThread = 2,CUDA AND LocalMemory AND pixelPerThread = 2.00,1,1.0,1.0,1.0,35
+bi_modal_split,1380,CUDA = 1 AND LocalMemory = 1 AND pixelPerThread = 2,CUDA AND LocalMemory AND pixelPerThread = 2.00,0,1.0,1.0,1.0,35
+tri_modal_split,1380,CUDA = 1 AND LocalMemory = 1 AND pixelPerThread = 2,CUDA AND LocalMemory AND NOT bs_1024x1 AND pixelPerThread = 2.00,2,1.0,1.0,1.0,35
+normal,2184,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 1,CUDA AND TextureMemory AND pixelPerThread = 1.00,1,1.0,1.0,1.0,36
+uniform,2184,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 1,CUDA AND TextureMemory AND NOT bs_32x16 AND NOT bs_64x1 AND pixelPerThread = 1.00,0,0.95,1.0,0.9047619047619048,36
+bi_modal_split,2184,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 1,CUDA AND TextureMemory AND pixelPerThread = 1.00,1,1.0,1.0,1.0,36
+tri_modal_split,2184,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 1,CUDA AND TextureMemory AND pixelPerThread = 1.00,1,1.0,1.0,1.0,36
+normal,1380,CUDA = 1 AND LocalMemory = 1 AND pixelPerThread = 2,NOT Array2D AND CUDA AND LocalMemory AND NOT bs_1024x1 AND pixelPerThread = 2.00,0,0.9927007299270074,1.0,0.9855072463768116,37
+uniform,1380,CUDA = 1 AND LocalMemory = 1 AND pixelPerThread = 2,NOT Array2D AND CUDA AND LocalMemory AND NOT bs_1024x1 AND pixelPerThread = 2.00,0,0.9927007299270074,1.0,0.9855072463768116,37
+bi_modal_split,1380,CUDA = 1 AND LocalMemory = 1 AND pixelPerThread = 2,CUDA AND LocalMemory AND NOT bs_1024x1 AND pixelPerThread = 2.00,0,1.0,1.0,1.0,37
+tri_modal_split,1380,CUDA = 1 AND LocalMemory = 1 AND pixelPerThread = 2,Ldg AND LocalMemory AND NOT bs_1024x1 AND pixelPerThread = 2.00,1,0.3953488372093023,1.0,0.2463768115942029,37
+power_law,1380,CUDA = 1 AND LocalMemory = 1 AND pixelPerThread = 2,CUDA AND LocalMemory AND NOT bs_1024x1 AND pixelPerThread = 2.00,1,1.0,1.0,1.0,37
+normal,2184,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 1,CUDA AND TextureMemory AND pixelPerThread = 1.00,1,1.0,1.0,1.0,38
+uniform,2184,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 1,CUDA AND TextureMemory AND pixelPerThread = 1.00,0,1.0,1.0,1.0,38
+bi_modal_split,2184,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 1,CUDA AND TextureMemory AND NOT bs_32x2 AND NOT bs_64x4 AND pixelPerThread = 1.00,1,0.95,1.0,0.9047619047619048,38
+tri_modal_split,2184,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 1,CUDA AND TextureMemory AND NOT bs_128x4 AND NOT bs_32x8 AND NOT bs_512x1 AND NOT bs_64x4 AND pixelPerThread = 1.00,1,0.8947368421052632,1.0,0.8095238095238095,38
+normal,1872,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 3,CUDA AND TextureMemory AND NOT bs_64x16 AND pixelPerThread = 3.00,0,0.9859154929577464,1.0,0.9722222222222222,39
+uniform,1872,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 3,NOT Array2D AND CUDA AND TextureMemory AND pixelPerThread = 3.00,0,0.9902912621359222,1.0,0.9807692307692308,39
+tri_modal_split,1872,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 3,CUDA AND TextureMemory AND pixelPerThread = 3.00,1,1.0,1.0,1.0,39
+power_law,1872,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 3,Linear2D AND pixelPerThread = 3.00,0,0.4927536231884058,1.0,0.3269230769230769,39
+normal,2635,CUDA = 1 AND Ldg = 1 AND TextureMemory = 1,Ldg,1,1.0,1.0,1.0,3
+uniform,2635,CUDA = 1 AND Ldg = 1 AND TextureMemory = 1,Ldg,0,1.0,1.0,1.0,3
+bi_modal_split,2635,CUDA = 1 AND Ldg = 1 AND TextureMemory = 1,NOT Array2D AND Ldg,1,1.0,1.0,1.0,3
+tri_modal_split,2635,CUDA = 1 AND Ldg = 1 AND TextureMemory = 1,NOT Array2D AND CUDA AND Ldg AND NOT Linear1D AND NOT Linear2D AND TextureMemory AND NOT bs_256x1 AND NOT bs_256x2 AND NOT bs_256x4 AND NOT bs_32x1 AND NOT bs_32x8 AND NOT bs_512x2,1,0.8345864661654135,1.0,0.7161290322580646,3
+power_law,2635,CUDA = 1 AND Ldg = 1 AND TextureMemory = 1,Ldg,0,1.0,1.0,1.0,3
+normal,2635,CUDA = 1 AND Ldg = 1 AND TextureMemory = 1,CUDA AND Ldg,1,1.0,1.0,1.0,40
+uniform,2635,CUDA = 1 AND Ldg = 1 AND TextureMemory = 1,Ldg,0,1.0,1.0,1.0,40
+bi_modal_split,2635,CUDA = 1 AND Ldg = 1 AND TextureMemory = 1,Ldg,1,1.0,1.0,1.0,40
+tri_modal_split,2635,CUDA = 1 AND Ldg = 1 AND TextureMemory = 1,NOT Array2D AND Ldg,1,1.0,1.0,1.0,40
+power_law,2635,CUDA = 1 AND Ldg = 1 AND TextureMemory = 1,Ldg,1,1.0,1.0,1.0,40
+normal,1380,CUDA = 1 AND LocalMemory = 1 AND pixelPerThread = 2,CUDA AND LocalMemory AND pixelPerThread = 2.00,1,1.0,1.0,1.0,41
+uniform,1380,CUDA = 1 AND LocalMemory = 1 AND pixelPerThread = 2,CUDA AND LocalMemory AND pixelPerThread = 2.00,3,1.0,1.0,1.0,41
+bi_modal_split,1380,CUDA = 1 AND LocalMemory = 1 AND pixelPerThread = 2,NOT CUDA AND OpenCL,0,0.0,0.0,0.0,41
+tri_modal_split,1380,CUDA = 1 AND LocalMemory = 1 AND pixelPerThread = 2,CUDA AND LocalMemory AND pixelPerThread = 2.00,1,1.0,1.0,1.0,41
+power_law,1380,CUDA = 1 AND LocalMemory = 1 AND pixelPerThread = 2,CUDA AND LocalMemory AND pixelPerThread = 2.00,2,1.0,1.0,1.0,41
+normal,2635,CUDA = 1 AND Ldg = 1 AND TextureMemory = 1,CUDA AND Ldg,1,1.0,1.0,1.0,42
+uniform,2635,CUDA = 1 AND Ldg = 1 AND TextureMemory = 1,Ldg,0,1.0,1.0,1.0,42
+bi_modal_split,2635,CUDA = 1 AND Ldg = 1 AND TextureMemory = 1,Ldg,1,1.0,1.0,1.0,42
+tri_modal_split,2635,CUDA = 1 AND Ldg = 1 AND TextureMemory = 1,NOT Ldg,0,0.0,0.0,0.0,42
+normal,1872,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 3,CUDA AND TextureMemory AND pixelPerThread = 3.00,1,1.0,1.0,1.0,43
+uniform,1872,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 3,CUDA AND TextureMemory AND pixelPerThread = 3.00,0,1.0,1.0,1.0,43
+bi_modal_split,1872,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 3,CUDA AND TextureMemory AND pixelPerThread = 3.00,1,1.0,1.0,1.0,43
+tri_modal_split,1872,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 3,CUDA AND TextureMemory AND NOT bs_128x8 AND NOT bs_64x16 AND pixelPerThread = 3.00,1,0.9714285714285714,1.0,0.9444444444444444,43
+power_law,1872,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 3,CUDA AND TextureMemory AND pixelPerThread = 3.00,0,1.0,1.0,1.0,43
+uniform,1449,CUDA = 1 AND LocalMemory = 1 AND pixelPerThread = 1,CUDA AND LocalMemory AND pixelPerThread = 1.00,1,1.0,1.0,1.0,44
+bi_modal_split,1449,CUDA = 1 AND LocalMemory = 1 AND pixelPerThread = 1,CUDA AND LocalMemory AND NOT bs_256x1 AND NOT bs_256x2 AND NOT bs_32x4 AND NOT bs_32x8 AND NOT bs_64x8 AND pixelPerThread = 1.00,1,0.8648648648648648,1.0,0.7619047619047619,44
+tri_modal_split,1449,CUDA = 1 AND LocalMemory = 1 AND pixelPerThread = 1,CUDA AND LocalMemory AND NOT bs_128x4 AND pixelPerThread = 1.00,1,0.975609756097561,1.0,0.9523809523809524,44
+power_law,1449,CUDA = 1 AND LocalMemory = 1 AND pixelPerThread = 1,CUDA AND LocalMemory AND pixelPerThread = 1.00,1,1.0,1.0,1.0,44
+normal,1449,CUDA = 1 AND LocalMemory = 1 AND pixelPerThread = 1,CUDA AND LocalMemory AND pixelPerThread = 1.00,1,1.0,1.0,1.0,45
+uniform,1449,CUDA = 1 AND LocalMemory = 1 AND pixelPerThread = 1,CUDA AND LocalMemory AND NOT bs_128x2 AND NOT bs_32x8 AND NOT bs_512x1 AND pixelPerThread = 1.00,4,0.923076923076923,1.0,0.8571428571428571,45
+bi_modal_split,1449,CUDA = 1 AND LocalMemory = 1 AND pixelPerThread = 1,NOT Ldg AND TextureMemory AND NOT bs_128x1 AND NOT bs_128x8 AND NOT bs_256x2 AND NOT bs_32x1 AND NOT bs_32x16 AND NOT bs_32x4 AND NOT bs_512x2 AND NOT bs_64x2 AND NOT bs_64x4 AND NOT bs_64x8,4,0.1793617516887957,0.1353727144866385,0.2657004830917874,45
+tri_modal_split,1449,CUDA = 1 AND LocalMemory = 1 AND pixelPerThread = 1,CUDA AND LocalMemory AND pixelPerThread = 1.00,1,1.0,1.0,1.0,45
+normal,1872,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 4,CUDA AND TextureMemory AND pixelPerThread = 4.00,1,1.0,1.0,1.0,46
+bi_modal_split,1872,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 4,CUDA AND TextureMemory AND pixelPerThread = 4.00,1,1.0,1.0,1.0,46
+tri_modal_split,1872,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 4,Linear1D AND NOT bs_1024x1 AND NOT bs_128x8 AND NOT bs_256x4 AND pixelPerThread = 4.00,1,0.4611590628853267,1.0,0.2996794871794871,46
+power_law,1872,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 4,CUDA AND TextureMemory AND pixelPerThread = 4.00,1,1.0,1.0,1.0,46
+normal,1872,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 3,CUDA AND TextureMemory AND pixelPerThread = 3.00,1,1.0,1.0,1.0,47
+uniform,1872,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 3,NOT Array2D AND CUDA AND TextureMemory AND pixelPerThread = 3.00,0,0.9902912621359222,1.0,0.9807692307692308,47
+bi_modal_split,1872,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 3,CUDA AND TextureMemory AND NOT bs_512x2 AND pixelPerThread = 3.00,1,0.9859154929577464,1.0,0.9722222222222222,47
+tri_modal_split,1872,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 3,NOT Array2D AND NOT Ldg AND NOT Linear1D AND NOT Linear2D AND NOT TextureMemory,0,0.0,0.0,0.0,47
+power_law,1872,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 3,CUDA AND TextureMemory AND NOT bs_1024x1 AND pixelPerThread = 3.00,0,0.9859154929577464,1.0,0.9722222222222222,47
+normal,2132,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 2,CUDA AND TextureMemory AND pixelPerThread = 2.00,0,1.0,1.0,1.0,48
+uniform,2132,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 2,CUDA AND TextureMemory AND pixelPerThread = 2.00,2,1.0,1.0,1.0,48
+bi_modal_split,2132,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 2,NOT Array2D AND CUDA AND TextureMemory AND pixelPerThread = 2.00,1,0.9902912621359222,1.0,0.9807692307692308,48
+tri_modal_split,2132,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 2,NOT Array2D AND CUDA AND TextureMemory AND NOT bs_1024x1 AND pixelPerThread = 2.00,1,0.977948226270374,1.0,0.9568480300187616,48
+power_law,2132,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 2,NOT Array2D AND TextureMemory AND pixelPerThread = 2.00,3,0.9902912621359222,1.0,0.9807692307692308,48
+normal,2635,CUDA = 1 AND Linear2D = 1 AND TextureMemory = 1,Linear2D,0,1.0,1.0,1.0,49
+uniform,2635,CUDA = 1 AND Linear2D = 1 AND TextureMemory = 1,Linear2D,0,1.0,1.0,1.0,49
+bi_modal_split,2635,CUDA = 1 AND Linear2D = 1 AND TextureMemory = 1,CUDA AND Linear2D,1,1.0,1.0,1.0,49
+tri_modal_split,2635,CUDA = 1 AND Linear2D = 1 AND TextureMemory = 1,NOT Array2D AND NOT Ldg AND NOT Linear1D AND Linear2D AND TextureMemory,1,1.0,1.0,1.0,49
+power_law,2635,CUDA = 1 AND Linear2D = 1 AND TextureMemory = 1,Linear2D,1,1.0,1.0,1.0,49
+normal,2635,CUDA = 1 AND Linear2D = 1 AND TextureMemory = 1,CUDA AND Linear2D AND TextureMemory,1,1.0,1.0,1.0,4
+uniform,2635,CUDA = 1 AND Linear2D = 1 AND TextureMemory = 1,Linear2D,0,1.0,1.0,1.0,4
+bi_modal_split,2635,CUDA = 1 AND Linear2D = 1 AND TextureMemory = 1,CUDA AND Linear2D,1,1.0,1.0,1.0,4
+tri_modal_split,2635,CUDA = 1 AND Linear2D = 1 AND TextureMemory = 1,Linear2D,1,1.0,1.0,1.0,4
+power_law,2635,CUDA = 1 AND Linear2D = 1 AND TextureMemory = 1,CUDA AND Linear2D,0,1.0,1.0,1.0,4
+normal,1380,CUDA = 1 AND LocalMemory = 1 AND pixelPerThread = 2,CUDA AND LocalMemory AND pixelPerThread = 2.00,1,1.0,1.0,1.0,50
+uniform,1380,CUDA = 1 AND LocalMemory = 1 AND pixelPerThread = 2,CUDA AND LocalMemory AND pixelPerThread = 2.00,1,1.0,1.0,1.0,50
+bi_modal_split,1380,CUDA = 1 AND LocalMemory = 1 AND pixelPerThread = 2,CUDA AND LocalMemory AND NOT bs_1024x1 AND pixelPerThread = 2.00,1,1.0,1.0,1.0,50
+tri_modal_split,1380,CUDA = 1 AND LocalMemory = 1 AND pixelPerThread = 2,LocalMemory AND NOT bs_256x4 AND pixelPerThread = 2.00,4,0.864490603363007,0.7931034482758621,0.95,50
+normal,2635,CUDA = 1 AND Linear2D = 1 AND TextureMemory = 1,Linear2D,1,1.0,1.0,1.0,51
+uniform,2635,CUDA = 1 AND Linear2D = 1 AND TextureMemory = 1,Linear2D,0,1.0,1.0,1.0,51
+bi_modal_split,2635,CUDA = 1 AND Linear2D = 1 AND TextureMemory = 1,Linear2D,1,1.0,1.0,1.0,51
+tri_modal_split,2635,CUDA = 1 AND Linear2D = 1 AND TextureMemory = 1,Linear2D,1,1.0,1.0,1.0,51
+power_law,2635,CUDA = 1 AND Linear2D = 1 AND TextureMemory = 1,Linear2D AND NOT bs_128x1,0,0.9735099337748344,1.0,0.9483870967741936,51
+normal,1380,CUDA = 1 AND LocalMemory = 1 AND pixelPerThread = 2,CUDA AND LocalMemory AND pixelPerThread = 2.00,2,1.0,1.0,1.0,52
+uniform,1380,CUDA = 1 AND LocalMemory = 1 AND pixelPerThread = 2,CUDA AND LocalMemory AND NOT bs_256x4 AND pixelPerThread = 2.00,2,0.9473684210526316,1.0,0.9,52
+bi_modal_split,1380,CUDA = 1 AND LocalMemory = 1 AND pixelPerThread = 2,NOT Array2D AND CUDA AND LocalMemory AND NOT bs_512x2 AND pixelPerThread = 2.00,0,0.967065868263473,1.0,0.936231884057971,52
+tri_modal_split,1380,CUDA = 1 AND LocalMemory = 1 AND pixelPerThread = 2,CUDA AND LocalMemory AND pixelPerThread = 2.00,0,1.0,1.0,1.0,52
+power_law,1380,CUDA = 1 AND LocalMemory = 1 AND pixelPerThread = 2,NOT Array2D AND NOT Linear2D AND TextureMemory AND NOT bs_256x2 AND NOT bs_256x4 AND NOT bs_32x2 AND NOT bs_32x32 AND NOT bs_32x4 AND NOT bs_64x16 AND padding >= 192.00,4,0.1593378168649767,0.1238938053097345,0.2231884057971014,52
+normal,2635,CUDA = 1 AND Linear2D = 1 AND TextureMemory = 1,Linear2D,1,1.0,1.0,1.0,53
+uniform,2635,CUDA = 1 AND Linear2D = 1 AND TextureMemory = 1,Linear2D,0,1.0,1.0,1.0,53
+bi_modal_split,2635,CUDA = 1 AND Linear2D = 1 AND TextureMemory = 1,Linear2D,1,1.0,1.0,1.0,53
+tri_modal_split,2635,CUDA = 1 AND Linear2D = 1 AND TextureMemory = 1,NOT Array2D AND Linear2D AND NOT bs_32x2 AND NOT bs_64x4,1,0.945578231292517,1.0,0.896774193548387,53
+power_law,2635,CUDA = 1 AND Linear2D = 1 AND TextureMemory = 1,Linear2D AND NOT bs_1024x1 AND NOT bs_32x4,0,0.9562289562289564,1.0,0.9161290322580644,53
+normal,2132,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 2,CUDA AND TextureMemory AND pixelPerThread = 2.00,1,1.0,1.0,1.0,54
+uniform,2132,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 2,CUDA AND TextureMemory AND pixelPerThread = 2.00,0,1.0,1.0,1.0,54
+bi_modal_split,2132,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 2,CUDA AND TextureMemory AND pixelPerThread = 2.00,1,1.0,1.0,1.0,54
+tri_modal_split,2132,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 2,CUDA AND TextureMemory AND pixelPerThread = 2.00,1,1.0,1.0,1.0,54
+normal,2635,CUDA = 1 AND Ldg = 1 AND TextureMemory = 1,Ldg,1,1.0,1.0,1.0,55
+uniform,2635,CUDA = 1 AND Ldg = 1 AND TextureMemory = 1,CUDA AND Ldg,0,1.0,1.0,1.0,55
+bi_modal_split,2635,CUDA = 1 AND Ldg = 1 AND TextureMemory = 1,CUDA AND Ldg,1,1.0,1.0,1.0,55
+tri_modal_split,2635,CUDA = 1 AND Ldg = 1 AND TextureMemory = 1,CUDA AND Ldg,1,1.0,1.0,1.0,55
+normal,1449,CUDA = 1 AND LocalMemory = 1 AND pixelPerThread = 1,CUDA AND LocalMemory AND NOT bs_32x16 AND NOT bs_32x2 AND NOT bs_64x2 AND NOT bs_64x4 AND pixelPerThread = 1.00,0,0.8947368421052632,1.0,0.8095238095238095,56
+uniform,1449,CUDA = 1 AND LocalMemory = 1 AND pixelPerThread = 1,CUDA AND LocalMemory AND NOT bs_32x2 AND pixelPerThread = 1.00,1,0.975609756097561,1.0,0.9523809523809524,56
+bi_modal_split,1449,CUDA = 1 AND LocalMemory = 1 AND pixelPerThread = 1,Linear2D AND LocalMemory AND NOT bs_32x2 AND NOT bs_512x1 AND NOT bs_64x4 AND pixelPerThread = 1.00,1,0.3487179487179487,1.0,0.2111801242236025,56
+tri_modal_split,1449,CUDA = 1 AND LocalMemory = 1 AND pixelPerThread = 1,CUDA AND LocalMemory AND pixelPerThread = 1.00,1,1.0,1.0,1.0,56
+normal,2184,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 1,CUDA AND TextureMemory AND pixelPerThread = 1.00,0,1.0,1.0,1.0,57
+uniform,2184,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 1,CUDA AND TextureMemory AND pixelPerThread = 1.00,1,1.0,1.0,1.0,57
+bi_modal_split,2184,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 1,CUDA AND NOT OpenCL AND TextureMemory AND pixelPerThread = 1.00,1,1.0,1.0,1.0,57
+tri_modal_split,2184,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 1,CUDA AND TextureMemory AND NOT bs_256x2 AND NOT bs_32x2 AND NOT bs_32x8 AND NOT bs_64x4 AND pixelPerThread = 1.00,1,0.8947368421052632,1.0,0.8095238095238095,57
+power_law,2184,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 1,CUDA AND TextureMemory AND NOT bs_256x1 AND NOT bs_32x2 AND NOT bs_64x8 AND pixelPerThread = 1.00,0,0.923076923076923,1.0,0.8571428571428571,57
+normal,1449,CUDA = 1 AND LocalMemory = 1 AND pixelPerThread = 1,CUDA AND LocalMemory AND pixelPerThread = 1.00,1,1.0,1.0,1.0,58
+uniform,1449,CUDA = 1 AND LocalMemory = 1 AND pixelPerThread = 1,CUDA AND LocalMemory AND pixelPerThread = 1.00,1,1.0,1.0,1.0,58
+bi_modal_split,1449,CUDA = 1 AND LocalMemory = 1 AND pixelPerThread = 1,CUDA AND LocalMemory AND NOT bs_512x1 AND pixelPerThread = 1.00,0,0.975609756097561,1.0,0.9523809523809524,58
+tri_modal_split,1449,CUDA = 1 AND LocalMemory = 1 AND pixelPerThread = 1,NOT LocalMemory,0,0.0,0.0,0.0,58
+power_law,1449,CUDA = 1 AND LocalMemory = 1 AND pixelPerThread = 1,CUDA AND LocalMemory AND pixelPerThread = 1.00,1,1.0,1.0,1.0,58
+normal,2635,CUDA = 1 AND Linear2D = 1 AND TextureMemory = 1,Linear2D,1,1.0,1.0,1.0,59
+uniform,2635,CUDA = 1 AND Linear2D = 1 AND TextureMemory = 1,Linear2D,0,1.0,1.0,1.0,59
+bi_modal_split,2635,CUDA = 1 AND Linear2D = 1 AND TextureMemory = 1,Linear2D,1,1.0,1.0,1.0,59
+tri_modal_split,2635,CUDA = 1 AND Linear2D = 1 AND TextureMemory = 1,NOT Linear2D,0,0.0,0.0,0.0,59
+normal,2184,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 1,Linear2D AND NOT bs_128x1 AND pixelPerThread = 1.00,0,0.4748603351955307,1.0,0.3113553113553113,5
+uniform,2184,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 1,CUDA AND TextureMemory AND pixelPerThread = 1.00,1,1.0,1.0,1.0,5
+bi_modal_split,2184,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 1,CUDA AND TextureMemory AND NOT bs_32x1 AND pixelPerThread = 1.00,1,0.975609756097561,1.0,0.9523809523809524,5
+tri_modal_split,2184,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 1,CUDA AND TextureMemory AND pixelPerThread = 1.00,1,1.0,1.0,1.0,5
+power_law,2184,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 1,CUDA AND TextureMemory AND pixelPerThread = 1.00,1,1.0,1.0,1.0,5
+normal,2635,CUDA = 1 AND Linear2D = 1 AND TextureMemory = 1,Linear2D,3,1.0,1.0,1.0,60
+uniform,2635,CUDA = 1 AND Linear2D = 1 AND TextureMemory = 1,Linear2D,0,1.0,1.0,1.0,60
+bi_modal_split,2635,CUDA = 1 AND Linear2D = 1 AND TextureMemory = 1,CUDA AND Linear2D,1,1.0,1.0,1.0,60
+tri_modal_split,2635,CUDA = 1 AND Linear2D = 1 AND TextureMemory = 1,NOT Array2D AND NOT Ldg AND NOT Linear1D AND Linear2D AND TextureMemory AND NOT bs_64x16,1,0.9802631578947368,1.0,0.9612903225806452,60
+normal,1872,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 3,CUDA AND TextureMemory AND pixelPerThread = 3.00,0,1.0,1.0,1.0,61
+uniform,1872,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 3,CUDA AND TextureMemory AND pixelPerThread = 3.00,2,1.0,1.0,1.0,61
+bi_modal_split,1872,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 3,CUDA AND TextureMemory AND pixelPerThread = 3.00,1,1.0,1.0,1.0,61
+tri_modal_split,1872,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 3,CUDA AND TextureMemory AND pixelPerThread = 3.00,1,1.0,1.0,1.0,61
+normal,1380,CUDA = 1 AND LocalMemory = 1 AND pixelPerThread = 2,CUDA AND LocalMemory AND NOT bs_1024x1 AND pixelPerThread = 2.00,4,1.0,1.0,1.0,62
+uniform,1380,CUDA = 1 AND LocalMemory = 1 AND pixelPerThread = 2,CUDA AND LocalMemory AND pixelPerThread = 2.00,0,1.0,1.0,1.0,62
+bi_modal_split,1380,CUDA = 1 AND LocalMemory = 1 AND pixelPerThread = 2,NOT Array2D AND CUDA AND LocalMemory AND NOT bs_1024x1 AND pixelPerThread = 2.00,1,0.9927007299270074,1.0,0.9855072463768116,62
+tri_modal_split,1380,CUDA = 1 AND LocalMemory = 1 AND pixelPerThread = 2,CUDA AND LocalMemory AND NOT bs_1024x1 AND NOT bs_32x8 AND NOT bs_64x2 AND pixelPerThread = 2.00,1,0.9473684210526316,1.0,0.9,62
+normal,2132,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 2,CUDA AND TextureMemory AND pixelPerThread = 2.00,1,1.0,1.0,1.0,63
+uniform,2132,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 2,CUDA AND TextureMemory AND pixelPerThread = 2.00,0,1.0,1.0,1.0,63
+bi_modal_split,2132,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 2,CUDA AND TextureMemory AND pixelPerThread = 2.00,1,1.0,1.0,1.0,63
+tri_modal_split,2132,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 2,CUDA AND TextureMemory AND pixelPerThread = 2.00,1,1.0,1.0,1.0,63
+power_law,2132,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 2,CUDA AND TextureMemory AND pixelPerThread = 2.00,1,1.0,1.0,1.0,63
+normal,2635,CUDA = 1 AND Linear2D = 1 AND TextureMemory = 1,Linear2D,1,1.0,1.0,1.0,64
+uniform,2635,CUDA = 1 AND Linear2D = 1 AND TextureMemory = 1,Linear2D,0,1.0,1.0,1.0,64
+bi_modal_split,2635,CUDA = 1 AND Linear2D = 1 AND TextureMemory = 1,Linear2D,1,1.0,1.0,1.0,64
+tri_modal_split,2635,CUDA = 1 AND Linear2D = 1 AND TextureMemory = 1,NOT Linear2D,0,0.0,0.0,0.0,64
+power_law,2635,CUDA = 1 AND Linear2D = 1 AND TextureMemory = 1,NOT Array2D AND Linear2D AND NOT bs_128x1 AND NOT bs_128x2 AND NOT bs_512x1,0,0.916083916083916,1.0,0.8451612903225807,64
+normal,2635,CUDA = 1 AND Linear1D = 1 AND TextureMemory = 1,NOT Array2D AND Linear1D,3,1.0,1.0,1.0,65
+uniform,2635,CUDA = 1 AND Linear1D = 1 AND TextureMemory = 1,Linear1D,0,1.0,1.0,1.0,65
+bi_modal_split,2635,CUDA = 1 AND Linear1D = 1 AND TextureMemory = 1,Linear1D,1,1.0,1.0,1.0,65
+tri_modal_split,2635,CUDA = 1 AND Linear1D = 1 AND TextureMemory = 1,Linear1D,1,1.0,1.0,1.0,65
+power_law,2635,CUDA = 1 AND Linear1D = 1 AND TextureMemory = 1,Linear1D,0,1.0,1.0,1.0,65
+normal,2635,CUDA = 1 AND Linear2D = 1 AND TextureMemory = 1,Linear2D,1,1.0,1.0,1.0,66
+uniform,2635,CUDA = 1 AND Linear2D = 1 AND TextureMemory = 1,Linear2D,0,1.0,1.0,1.0,66
+bi_modal_split,2635,CUDA = 1 AND Linear2D = 1 AND TextureMemory = 1,Linear2D,1,1.0,1.0,1.0,66
+tri_modal_split,2635,CUDA = 1 AND Linear2D = 1 AND TextureMemory = 1,Linear2D AND NOT bs_128x1 AND NOT bs_256x1 AND NOT bs_256x2 AND NOT bs_256x4 AND NOT bs_64x1 AND NOT bs_64x2 AND NOT bs_64x8,1,0.7890625,1.0,0.6516129032258065,66
+power_law,2635,CUDA = 1 AND Linear2D = 1 AND TextureMemory = 1,Linear2D,1,1.0,1.0,1.0,66
+normal,2635,CUDA = 1 AND Linear1D = 1 AND TextureMemory = 1,CUDA AND Linear1D AND TextureMemory,1,1.0,1.0,1.0,67
+uniform,2635,CUDA = 1 AND Linear1D = 1 AND TextureMemory = 1,Linear1D,0,1.0,1.0,1.0,67
+bi_modal_split,2635,CUDA = 1 AND Linear1D = 1 AND TextureMemory = 1,NOT Array2D AND Linear1D,1,1.0,1.0,1.0,67
+tri_modal_split,2635,CUDA = 1 AND Linear1D = 1 AND TextureMemory = 1,Linear1D AND NOT bs_128x2 AND NOT bs_128x4 AND NOT bs_32x16 AND NOT bs_32x2 AND NOT bs_32x8 AND NOT bs_512x1,1,0.8167938931297709,1.0,0.6903225806451613,67
+normal,2184,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 1,CUDA AND TextureMemory AND pixelPerThread = 1.00,1,1.0,1.0,1.0,68
+uniform,2184,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 1,CUDA AND TextureMemory AND pixelPerThread = 1.00,1,1.0,1.0,1.0,68
+bi_modal_split,2184,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 1,CUDA AND TextureMemory AND NOT bs_128x2 AND NOT bs_32x1 AND NOT bs_32x8 AND pixelPerThread = 1.00,1,0.923076923076923,1.0,0.8571428571428571,68
+tri_modal_split,2184,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 1,CUDA AND TextureMemory AND pixelPerThread = 1.00,1,1.0,1.0,1.0,68
+power_law,2184,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 1,CUDA AND TextureMemory AND NOT bs_128x2 AND NOT bs_256x2 AND NOT bs_32x1 AND NOT bs_32x2 AND pixelPerThread = 1.00,0,0.8947368421052632,1.0,0.8095238095238095,68
+normal,2132,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 2,CUDA AND TextureMemory AND pixelPerThread = 2.00,0,1.0,1.0,1.0,69
+uniform,2132,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 2,CUDA AND TextureMemory AND pixelPerThread = 2.00,0,1.0,1.0,1.0,69
+bi_modal_split,2132,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 2,CUDA AND TextureMemory AND pixelPerThread = 2.00,1,1.0,1.0,1.0,69
+power_law,2132,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 2,CUDA AND TextureMemory AND NOT bs_1024x1 AND pixelPerThread = 2.00,3,0.9876543209876544,1.0,0.975609756097561,69
+normal,1380,CUDA = 1 AND LocalMemory = 1 AND pixelPerThread = 2,NOT Array2D AND CUDA AND LocalMemory AND pixelPerThread = 2.00,0,0.9927007299270074,1.0,0.9855072463768116,6
+uniform,1380,CUDA = 1 AND LocalMemory = 1 AND pixelPerThread = 2,CUDA AND LocalMemory AND NOT bs_1024x1 AND pixelPerThread = 2.00,1,1.0,1.0,1.0,6
+bi_modal_split,1380,CUDA = 1 AND LocalMemory = 1 AND pixelPerThread = 2,CUDA AND LocalMemory AND NOT bs_1024x1 AND pixelPerThread = 2.00,0,1.0,1.0,1.0,6
+tri_modal_split,1380,CUDA = 1 AND LocalMemory = 1 AND pixelPerThread = 2,CUDA AND LocalMemory AND NOT bs_1024x1 AND pixelPerThread = 2.00,1,1.0,1.0,1.0,6
+normal,1872,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 4,CUDA AND TextureMemory AND pixelPerThread = 4.00,1,1.0,1.0,1.0,70
+uniform,1872,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 4,CUDA AND TextureMemory AND pixelPerThread = 4.00,1,1.0,1.0,1.0,70
+tri_modal_split,1872,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 4,CUDA AND TextureMemory AND pixelPerThread = 4.00,1,1.0,1.0,1.0,70
+power_law,1872,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 4,CUDA AND TextureMemory AND NOT bs_128x4 AND NOT bs_128x8 AND NOT bs_256x4 AND NOT bs_512x2 AND NOT bs_64x16 AND pixelPerThread = 4.00,1,0.9090909090909092,1.0,0.8333333333333334,70
+normal,2132,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 2,CUDA AND TextureMemory AND pixelPerThread = 2.00,0,1.0,1.0,1.0,71
+uniform,2132,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 2,CUDA AND TextureMemory AND pixelPerThread = 2.00,0,1.0,1.0,1.0,71
+bi_modal_split,2132,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 2,CUDA AND TextureMemory AND pixelPerThread = 2.00,1,1.0,1.0,1.0,71
+tri_modal_split,2132,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 2,CUDA AND TextureMemory AND pixelPerThread = 2.00,1,1.0,1.0,1.0,71
+normal,1380,CUDA = 1 AND LocalMemory = 1 AND pixelPerThread = 2,CUDA AND LocalMemory AND pixelPerThread = 2.00,0,1.0,1.0,1.0,72
+uniform,1380,CUDA = 1 AND LocalMemory = 1 AND pixelPerThread = 2,CUDA AND LocalMemory AND NOT bs_1024x1 AND pixelPerThread = 2.00,1,1.0,1.0,1.0,72
+bi_modal_split,1380,CUDA = 1 AND LocalMemory = 1 AND pixelPerThread = 2,CUDA AND LocalMemory AND pixelPerThread = 2.00,1,1.0,1.0,1.0,72
+tri_modal_split,1380,CUDA = 1 AND LocalMemory = 1 AND pixelPerThread = 2,Linear1D AND LocalMemory AND pixelPerThread = 2.00,1,0.3953488372093023,1.0,0.2463768115942029,72
+normal,2635,CUDA = 1 AND Linear2D = 1 AND TextureMemory = 1,Linear2D,1,1.0,1.0,1.0,73
+bi_modal_split,2635,CUDA = 1 AND Linear2D = 1 AND TextureMemory = 1,CUDA AND Linear2D,1,1.0,1.0,1.0,73
+tri_modal_split,2635,CUDA = 1 AND Linear2D = 1 AND TextureMemory = 1,Linear2D,1,1.0,1.0,1.0,73
+power_law,2635,CUDA = 1 AND Linear2D = 1 AND TextureMemory = 1,Linear2D,1,1.0,1.0,1.0,73
+normal,2132,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 2,CUDA AND TextureMemory AND pixelPerThread = 2.00,1,1.0,1.0,1.0,74
+uniform,2132,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 2,CUDA AND TextureMemory AND pixelPerThread = 2.00,0,1.0,1.0,1.0,74
+bi_modal_split,2132,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 2,CUDA AND TextureMemory AND pixelPerThread = 2.00,1,1.0,1.0,1.0,74
+tri_modal_split,2132,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 2,CUDA AND TextureMemory AND pixelPerThread = 2.00,1,1.0,1.0,1.0,74
+normal,1380,CUDA = 1 AND LocalMemory = 1 AND pixelPerThread = 2,CUDA AND LocalMemory AND pixelPerThread = 2.00,4,1.0,1.0,1.0,75
+uniform,1380,CUDA = 1 AND LocalMemory = 1 AND pixelPerThread = 2,CUDA AND LocalMemory AND pixelPerThread = 2.00,4,1.0,1.0,1.0,75
+bi_modal_split,1380,CUDA = 1 AND LocalMemory = 1 AND pixelPerThread = 2,CUDA AND LocalMemory AND NOT bs_1024x1 AND pixelPerThread = 2.00,0,1.0,1.0,1.0,75
+tri_modal_split,1380,CUDA = 1 AND LocalMemory = 1 AND pixelPerThread = 2,CUDA AND LocalMemory AND pixelPerThread = 2.00,1,1.0,1.0,1.0,75
+normal,2635,CUDA = 1 AND Linear2D = 1 AND TextureMemory = 1,Linear2D,0,1.0,1.0,1.0,76
+uniform,2635,CUDA = 1 AND Linear2D = 1 AND TextureMemory = 1,Linear2D,0,1.0,1.0,1.0,76
+bi_modal_split,2635,CUDA = 1 AND Linear2D = 1 AND TextureMemory = 1,Linear2D,1,1.0,1.0,1.0,76
+tri_modal_split,2635,CUDA = 1 AND Linear2D = 1 AND TextureMemory = 1,NOT Linear2D,0,0.0,0.0,0.0,76
+power_law,2635,CUDA = 1 AND Linear2D = 1 AND TextureMemory = 1,NOT Array2D AND Linear2D,0,1.0,1.0,1.0,76
+uniform,1872,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 4,CUDA AND TextureMemory AND pixelPerThread = 4.00,1,1.0,1.0,1.0,77
+bi_modal_split,1872,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 4,CUDA AND TextureMemory AND pixelPerThread = 4.00,1,1.0,1.0,1.0,77
+power_law,1872,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 4,CUDA AND TextureMemory AND NOT bs_32x8 AND pixelPerThread = 4.00,0,0.9714285714285714,1.0,0.9444444444444444,77
+normal,2132,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 2,CUDA AND TextureMemory AND pixelPerThread = 2.00,0,1.0,1.0,1.0,78
+uniform,2132,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 2,CUDA AND TextureMemory AND pixelPerThread = 2.00,0,1.0,1.0,1.0,78
+bi_modal_split,2132,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 2,CUDA AND TextureMemory AND pixelPerThread = 2.00,1,1.0,1.0,1.0,78
+tri_modal_split,2132,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 2,NOT Array2D AND CUDA AND TextureMemory AND pixelPerThread = 2.00,1,0.9902912621359222,1.0,0.9807692307692308,78
+normal,2635,CUDA = 1 AND Ldg = 1 AND TextureMemory = 1,Ldg,1,1.0,1.0,1.0,79
+uniform,2635,CUDA = 1 AND Ldg = 1 AND TextureMemory = 1,NOT Array2D AND Ldg,0,1.0,1.0,1.0,79
+bi_modal_split,2635,CUDA = 1 AND Ldg = 1 AND TextureMemory = 1,Ldg,1,1.0,1.0,1.0,79
+tri_modal_split,2635,CUDA = 1 AND Ldg = 1 AND TextureMemory = 1,CUDA AND Ldg,1,1.0,1.0,1.0,79
+power_law,2635,CUDA = 1 AND Ldg = 1 AND TextureMemory = 1,Ldg,1,1.0,1.0,1.0,79
+normal,1449,CUDA = 1 AND LocalMemory = 1 AND pixelPerThread = 1,CUDA AND LocalMemory AND NOT bs_256x1 AND pixelPerThread = 1.00,0,0.975609756097561,1.0,0.9523809523809524,7
+uniform,1449,CUDA = 1 AND LocalMemory = 1 AND pixelPerThread = 1,CUDA AND LocalMemory AND pixelPerThread = 1.00,1,1.0,1.0,1.0,7
+bi_modal_split,1449,CUDA = 1 AND LocalMemory = 1 AND pixelPerThread = 1,CUDA AND LocalMemory AND NOT bs_128x1 AND NOT bs_128x4 AND NOT bs_32x2 AND NOT bs_512x1 AND NOT bs_64x1 AND NOT bs_64x16 AND NOT bs_64x2 AND pixelPerThread = 1.00,1,0.8,1.0,0.6666666666666666,7
+tri_modal_split,1449,CUDA = 1 AND LocalMemory = 1 AND pixelPerThread = 1,CUDA AND LocalMemory AND NOT bs_64x1 AND pixelPerThread = 1.00,1,0.975609756097561,1.0,0.9523809523809524,7
+normal,2132,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 2,CUDA AND TextureMemory AND pixelPerThread = 2.00,0,1.0,1.0,1.0,80
+uniform,2132,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 2,CUDA AND TextureMemory AND pixelPerThread = 2.00,0,1.0,1.0,1.0,80
+bi_modal_split,2132,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 2,CUDA AND TextureMemory AND pixelPerThread = 2.00,1,1.0,1.0,1.0,80
+tri_modal_split,2132,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 2,CUDA AND TextureMemory AND pixelPerThread = 2.00,1,1.0,1.0,1.0,80
+power_law,2132,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 2,CUDA AND TextureMemory AND pixelPerThread = 2.00,1,1.0,1.0,1.0,80
+bi_modal_split,2184,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 1,CUDA AND TextureMemory AND pixelPerThread = 1.00,1,1.0,1.0,1.0,81
+power_law,2184,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 1,CUDA AND TextureMemory AND NOT bs_32x1 AND NOT bs_512x1 AND pixelPerThread = 1.00,1,0.95,1.0,0.9047619047619048,81
+normal,1449,CUDA = 1 AND LocalMemory = 1 AND pixelPerThread = 1,CUDA AND LocalMemory AND NOT OpenCL AND pixelPerThread = 1.00,1,1.0,1.0,1.0,82
+uniform,1449,CUDA = 1 AND LocalMemory = 1 AND pixelPerThread = 1,CUDA AND LocalMemory AND pixelPerThread = 1.00,0,1.0,1.0,1.0,82
+bi_modal_split,1449,CUDA = 1 AND LocalMemory = 1 AND pixelPerThread = 1,NOT Array2D AND CUDA AND LocalMemory AND NOT bs_32x4 AND pixelPerThread = 1.00,1,0.968316126735493,1.0,0.9385783298826778,82
+tri_modal_split,1449,CUDA = 1 AND LocalMemory = 1 AND pixelPerThread = 1,pixelPerThread != 1.00,0,0.0,0.0,0.0,82
+power_law,1449,CUDA = 1 AND LocalMemory = 1 AND pixelPerThread = 1,CUDA AND LocalMemory AND pixelPerThread = 1.00,1,1.0,1.0,1.0,82
+normal,2184,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 1,CUDA AND TextureMemory AND pixelPerThread = 1.00,1,1.0,1.0,1.0,83
+uniform,2184,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 1,CUDA AND TextureMemory AND NOT bs_512x1 AND pixelPerThread = 1.00,1,0.975609756097561,1.0,0.9523809523809524,83
+tri_modal_split,2184,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 1,CUDA AND TextureMemory AND NOT bs_32x8 AND pixelPerThread = 1.00,1,0.975609756097561,1.0,0.9523809523809524,83
+power_law,2184,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 1,Linear1D AND NOT bs_128x1 AND NOT bs_512x1 AND pixelPerThread = 1.00,0,0.4565371024734982,1.0,0.2957875457875458,83
+normal,2184,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 1,CUDA AND TextureMemory AND pixelPerThread = 1.00,1,1.0,1.0,1.0,84
+uniform,2184,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 1,CUDA AND TextureMemory AND NOT bs_256x2 AND NOT bs_32x4 AND pixelPerThread = 1.00,0,0.95,1.0,0.9047619047619048,84
+bi_modal_split,2184,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 1,CUDA AND TextureMemory AND NOT bs_32x4 AND NOT bs_64x4 AND pixelPerThread = 1.00,1,0.95,1.0,0.9047619047619048,84
+tri_modal_split,2184,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 1,CUDA AND TextureMemory AND pixelPerThread = 1.00,1,1.0,1.0,1.0,84
+power_law,2184,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 1,CUDA AND TextureMemory AND pixelPerThread = 1.00,1,1.0,1.0,1.0,84
+normal,1872,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 4,CUDA AND TextureMemory AND pixelPerThread = 4.00,1,1.0,1.0,1.0,85
+uniform,1872,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 4,NOT Array2D AND CUDA AND TextureMemory AND NOT bs_512x2 AND pixelPerThread = 4.00,0,0.9762100082034456,1.0,0.9535256410256412,85
+bi_modal_split,1872,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 4,CUDA AND TextureMemory AND pixelPerThread = 4.00,1,1.0,1.0,1.0,85
+tri_modal_split,1872,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 4,CUDA AND TextureMemory AND pixelPerThread = 4.00,1,1.0,1.0,1.0,85
+power_law,1872,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 4,CUDA AND TextureMemory AND pixelPerThread = 4.00,0,1.0,1.0,1.0,85
+normal,2635,CUDA = 1 AND Linear2D = 1 AND TextureMemory = 1,Linear2D,1,1.0,1.0,1.0,86
+uniform,2635,CUDA = 1 AND Linear2D = 1 AND TextureMemory = 1,Linear2D,0,1.0,1.0,1.0,86
+bi_modal_split,2635,CUDA = 1 AND Linear2D = 1 AND TextureMemory = 1,Linear2D AND NOT bs_128x4 AND NOT bs_32x4 AND NOT bs_64x4,0,0.916083916083916,1.0,0.8451612903225807,86
+tri_modal_split,2635,CUDA = 1 AND Linear2D = 1 AND TextureMemory = 1,Linear2D AND NOT bs_256x2 AND NOT bs_32x16 AND NOT bs_32x2 AND NOT bs_64x1,1,0.8848920863309353,1.0,0.7935483870967742,86
+normal,2635,CUDA = 1 AND Linear1D = 1 AND TextureMemory = 1,Linear1D,1,1.0,1.0,1.0,87
+uniform,2635,CUDA = 1 AND Linear1D = 1 AND TextureMemory = 1,Linear1D,0,1.0,1.0,1.0,87
+bi_modal_split,2635,CUDA = 1 AND Linear1D = 1 AND TextureMemory = 1,NOT Array2D AND NOT Ldg AND Linear1D AND NOT Linear2D AND TextureMemory AND NOT bs_64x1,1,0.9735099337748344,1.0,0.9483870967741936,87
+tri_modal_split,2635,CUDA = 1 AND Linear1D = 1 AND TextureMemory = 1,NOT Array2D AND Linear1D AND NOT bs_128x4 AND NOT bs_256x1 AND NOT bs_256x4 AND NOT bs_32x16 AND NOT bs_32x4 AND NOT bs_32x8 AND NOT bs_512x1 AND NOT bs_64x4,1,0.7499999999999999,1.0,0.6,87
+normal,2635,CUDA = 1 AND Linear1D = 1 AND TextureMemory = 1,Linear1D AND NOT bs_64x16,0,0.9802631578947368,1.0,0.9612903225806452,88
+uniform,2635,CUDA = 1 AND Linear1D = 1 AND TextureMemory = 1,Linear1D,0,1.0,1.0,1.0,88
+bi_modal_split,2635,CUDA = 1 AND Linear1D = 1 AND TextureMemory = 1,Linear1D,1,1.0,1.0,1.0,88
+tri_modal_split,2635,CUDA = 1 AND Linear1D = 1 AND TextureMemory = 1,NOT Array2D AND Linear1D,1,1.0,1.0,1.0,88
+power_law,2635,CUDA = 1 AND Linear1D = 1 AND TextureMemory = 1,Linear1D,1,1.0,1.0,1.0,88
+normal,1872,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 4,CUDA AND TextureMemory AND pixelPerThread = 4.00,1,1.0,1.0,1.0,89
+uniform,1872,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 4,CUDA AND TextureMemory AND NOT bs_256x1 AND NOT bs_32x4 AND pixelPerThread = 4.00,4,0.9411764705882352,1.0,0.8888888888888888,89
+bi_modal_split,1872,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 4,CUDA AND TextureMemory AND pixelPerThread = 4.00,1,1.0,1.0,1.0,89
+tri_modal_split,1872,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 4,NOT Array2D AND NOT Ldg AND NOT Linear1D AND NOT Linear2D,0,0.0,0.0,0.0,89
+normal,2635,CUDA = 1 AND Linear1D = 1 AND TextureMemory = 1,Linear1D,1,1.0,1.0,1.0,8
+uniform,2635,CUDA = 1 AND Linear1D = 1 AND TextureMemory = 1,Linear1D,0,1.0,1.0,1.0,8
+bi_modal_split,2635,CUDA = 1 AND Linear1D = 1 AND TextureMemory = 1,NOT Array2D AND Linear1D AND TextureMemory,1,1.0,1.0,1.0,8
+tri_modal_split,2635,CUDA = 1 AND Linear1D = 1 AND TextureMemory = 1,NOT Array2D AND Linear1D AND NOT bs_1024x1 AND NOT bs_32x8,1,0.9562289562289564,1.0,0.9161290322580644,8
+power_law,2635,CUDA = 1 AND Linear1D = 1 AND TextureMemory = 1,Linear1D,0,1.0,1.0,1.0,8
+normal,2184,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 1,CUDA AND TextureMemory AND pixelPerThread = 1.00,1,1.0,1.0,1.0,90
+uniform,2184,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 1,CUDA AND TextureMemory AND NOT bs_128x4 AND NOT bs_256x1 AND NOT bs_256x2 AND NOT bs_512x1 AND NOT bs_64x4 AND pixelPerThread = 1.00,0,0.8648648648648648,1.0,0.7619047619047619,90
+bi_modal_split,2184,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 1,CUDA AND NOT OpenCL AND TextureMemory AND pixelPerThread = 1.00,1,1.0,1.0,1.0,90
+tri_modal_split,2184,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 1,CUDA AND NOT OpenCL AND TextureMemory AND pixelPerThread = 1.00,1,1.0,1.0,1.0,90
+power_law,2184,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 1,CUDA AND TextureMemory AND NOT bs_128x4 AND pixelPerThread = 1.00,0,0.975609756097561,1.0,0.9523809523809524,90
+normal,2635,CUDA = 1 AND Linear2D = 1 AND TextureMemory = 1,Linear2D,1,1.0,1.0,1.0,91
+uniform,2635,CUDA = 1 AND Linear2D = 1 AND TextureMemory = 1,NOT Array2D AND Linear2D AND NOT bs_128x1,0,0.9735099337748344,1.0,0.9483870967741936,91
+bi_modal_split,2635,CUDA = 1 AND Linear2D = 1 AND TextureMemory = 1,Linear2D,1,1.0,1.0,1.0,91
+tri_modal_split,2635,CUDA = 1 AND Linear2D = 1 AND TextureMemory = 1,Linear2D,1,1.0,1.0,1.0,91
+power_law,2635,CUDA = 1 AND Linear2D = 1 AND TextureMemory = 1,CUDA AND Linear2D,1,1.0,1.0,1.0,91
+normal,2132,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 2,CUDA AND TextureMemory AND pixelPerThread = 2.00,0,1.0,1.0,1.0,92
+uniform,2132,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 2,CUDA AND TextureMemory AND pixelPerThread = 2.00,0,1.0,1.0,1.0,92
+bi_modal_split,2132,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 2,CUDA AND TextureMemory AND pixelPerThread = 2.00,1,1.0,1.0,1.0,92
+tri_modal_split,2132,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 2,CUDA AND TextureMemory AND NOT bs_128x4 AND NOT bs_32x16 AND NOT bs_32x4 AND NOT bs_32x8 AND NOT bs_64x4 AND pixelPerThread = 2.00,1,0.8611111111111112,1.0,0.7560975609756098,92
+power_law,2132,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 2,CUDA AND TextureMemory AND pixelPerThread = 2.00,0,1.0,1.0,1.0,92
+normal,1380,CUDA = 1 AND LocalMemory = 1 AND pixelPerThread = 2,CUDA AND LocalMemory AND pixelPerThread = 2.00,0,1.0,1.0,1.0,93
+uniform,1380,CUDA = 1 AND LocalMemory = 1 AND pixelPerThread = 2,CUDA AND LocalMemory AND NOT bs_1024x1 AND pixelPerThread = 2.00,1,1.0,1.0,1.0,93
+bi_modal_split,1380,CUDA = 1 AND LocalMemory = 1 AND pixelPerThread = 2,NOT Array2D AND LocalMemory AND TextureMemory AND pixelPerThread = 2.00,0,0.85,1.0,0.7391304347826086,93
+power_law,1380,CUDA = 1 AND LocalMemory = 1 AND pixelPerThread = 2,CUDA AND LocalMemory AND pixelPerThread = 2.00,1,1.0,1.0,1.0,93
+normal,2184,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 1,CUDA AND NOT OpenCL AND TextureMemory AND pixelPerThread = 1.00,1,1.0,1.0,1.0,94
+uniform,2184,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 1,CUDA AND TextureMemory AND pixelPerThread = 1.00,0,1.0,1.0,1.0,94
+bi_modal_split,2184,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 1,CUDA AND NOT OpenCL AND TextureMemory AND pixelPerThread = 1.00,1,1.0,1.0,1.0,94
+tri_modal_split,2184,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 1,CUDA AND NOT OpenCL AND TextureMemory AND pixelPerThread = 1.00,1,1.0,1.0,1.0,94
+normal,1449,CUDA = 1 AND LocalMemory = 1 AND pixelPerThread = 1,CUDA AND LocalMemory AND pixelPerThread = 1.00,1,1.0,1.0,1.0,95
+uniform,1449,CUDA = 1 AND LocalMemory = 1 AND pixelPerThread = 1,CUDA AND LocalMemory AND NOT bs_128x1 AND NOT bs_128x2 AND NOT bs_256x1 AND pixelPerThread = 1.00,1,0.923076923076923,1.0,0.8571428571428571,95
+bi_modal_split,1449,CUDA = 1 AND LocalMemory = 1 AND pixelPerThread = 1,CUDA AND LocalMemory AND pixelPerThread = 1.00,1,1.0,1.0,1.0,95
+tri_modal_split,1449,CUDA = 1 AND LocalMemory = 1 AND pixelPerThread = 1,CUDA AND LocalMemory AND NOT bs_128x2 AND NOT bs_256x4 AND NOT bs_32x8 AND pixelPerThread = 1.00,1,0.923076923076923,1.0,0.8571428571428571,95
+power_law,1449,CUDA = 1 AND LocalMemory = 1 AND pixelPerThread = 1,CUDA AND LocalMemory AND pixelPerThread = 1.00,1,1.0,1.0,1.0,95
+normal,1380,CUDA = 1 AND LocalMemory = 1 AND pixelPerThread = 2,CUDA AND LocalMemory AND NOT bs_1024x1 AND pixelPerThread = 2.00,0,1.0,1.0,1.0,96
+uniform,1380,CUDA = 1 AND LocalMemory = 1 AND pixelPerThread = 2,NOT Array2D AND CUDA AND LocalMemory AND pixelPerThread = 2.00,3,0.9927007299270074,1.0,0.9855072463768116,96
+bi_modal_split,1380,CUDA = 1 AND LocalMemory = 1 AND pixelPerThread = 2,CUDA AND LocalMemory AND pixelPerThread = 2.00,2,1.0,1.0,1.0,96
+tri_modal_split,1380,CUDA = 1 AND LocalMemory = 1 AND pixelPerThread = 2,LocalMemory AND pixelPerThread = 2.00,1,0.8846153846153846,0.7931034482758621,1.0,96
+normal,2635,CUDA = 1 AND Linear1D = 1 AND TextureMemory = 1,Linear1D,1,1.0,1.0,1.0,97
+uniform,2635,CUDA = 1 AND Linear1D = 1 AND TextureMemory = 1,Linear1D,0,1.0,1.0,1.0,97
+bi_modal_split,2635,CUDA = 1 AND Linear1D = 1 AND TextureMemory = 1,NOT Array2D AND Linear1D,1,1.0,1.0,1.0,97
+tri_modal_split,2635,CUDA = 1 AND Linear1D = 1 AND TextureMemory = 1,NOT Linear1D,0,0.0,0.0,0.0,97
+normal,1872,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 3,CUDA AND TextureMemory AND pixelPerThread = 3.00,1,1.0,1.0,1.0,98
+uniform,1872,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 3,CUDA AND TextureMemory AND pixelPerThread = 3.00,0,1.0,1.0,1.0,98
+bi_modal_split,1872,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 3,CUDA AND TextureMemory AND pixelPerThread = 3.00,1,1.0,1.0,1.0,98
+tri_modal_split,1872,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 3,CUDA AND TextureMemory AND pixelPerThread = 3.00,1,1.0,1.0,1.0,98
+power_law,1872,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 3,NOT Array2D AND CUDA AND TextureMemory AND pixelPerThread = 3.00,0,0.9902912621359222,1.0,0.9807692307692308,98
+normal,2635,CUDA = 1 AND Ldg = 1 AND TextureMemory = 1,Ldg,1,1.0,1.0,1.0,99
+uniform,2635,CUDA = 1 AND Ldg = 1 AND TextureMemory = 1,Ldg,0,1.0,1.0,1.0,99
+bi_modal_split,2635,CUDA = 1 AND Ldg = 1 AND TextureMemory = 1,NOT Array2D AND Ldg,1,1.0,1.0,1.0,99
+tri_modal_split,2635,CUDA = 1 AND Ldg = 1 AND TextureMemory = 1,CUDA AND Ldg AND NOT Linear1D AND NOT Linear2D AND TextureMemory AND NOT bs_32x2 AND NOT bs_32x4,1,0.945578231292517,1.0,0.896774193548387,99
+normal,2184,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 1,CUDA AND Linear1D AND TextureMemory AND pixelPerThread = 1.00,1,0.4927536231884058,1.0,0.3269230769230769,9
+uniform,2184,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 1,CUDA AND TextureMemory AND pixelPerThread = 1.00,0,1.0,1.0,1.0,9
+bi_modal_split,2184,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 1,CUDA AND TextureMemory AND NOT bs_32x4 AND NOT bs_32x8 AND pixelPerThread = 1.00,1,0.95,1.0,0.9047619047619048,9
+tri_modal_split,2184,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 1,CUDA AND TextureMemory AND NOT bs_128x2 AND NOT bs_64x1 AND pixelPerThread = 1.00,1,0.95,1.0,0.9047619047619048,9
+power_law,2184,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 1,NOT Ldg AND NOT Linear1D AND NOT Linear2D,0,0.0108191653786707,0.0075268817204301,0.0192307692307692,9

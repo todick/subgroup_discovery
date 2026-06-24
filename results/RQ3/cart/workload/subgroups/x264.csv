@@ -1,0 +1,6 @@
+rule,sg_samples,sg_coverage,rule_num_predicates,rule_features_used
+NOT no-asm,1501,0.48217153870864116,1,['no-asm']
+NOT no-asm AND NOT cpu-independent,1171,0.376164471570832,2,"['cpu-independent', 'no-asm']"
+NOT no-asm AND NOT cpu-independent AND NOT no-psy,790,0.25377449405717956,3,"['cpu-independent', 'no-asm', 'no-psy']"
+NOT no-asm AND cpu-independent,330,0.10600706713780919,2,"['cpu-independent', 'no-asm']"
+NOT no-asm AND NOT cpu-independent AND NOT no-psy AND NOT no-mbtree,604,0.19402505621586894,4,"['cpu-independent', 'no-asm', 'no-psy', 'no-mbtree']"

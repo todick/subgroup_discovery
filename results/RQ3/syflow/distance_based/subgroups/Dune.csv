@@ -1,0 +1,6 @@
+rule,sg_samples,sg_coverage,rule_num_predicates,rule_features_used
+SeqSOR AND cells_54,192,0.08333333333333333,2,"['SeqSOR', 'cells_54']"
+SeqGS AND NOT cells_54 AND NOT cells_55 AND PostSmooting >= 2.00,560,0.24305555555555555,4,"['PostSmooting', 'SeqGS', 'cells_55', 'cells_54']"
+SeqSOR AND NOT cells_50 AND NOT cells_51 AND NOT cells_54,576,0.25,4,"['cells_50', 'cells_51', 'SeqSOR', 'cells_54']"
+NOT GradientSolver AND SeqSOR AND cells_53,144,0.0625,3,"['GradientSolver', 'cells_53', 'SeqSOR']"
+SeqGS AND cells_52,192,0.08333333333333333,2,"['SeqGS', 'cells_52']"

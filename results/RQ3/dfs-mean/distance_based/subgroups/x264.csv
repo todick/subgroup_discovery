@@ -1,0 +1,6 @@
+rule,sg_samples,sg_coverage,rule_num_predicates,rule_features_used
+no_mixed_refs==0 AND ref==9,192,0.16666666666666666,2,"['no_mixed_refs', 'ref']"
+no_fast_pskip==1 AND no_mixed_refs==0 AND ref==9,96,0.08333333333333333,3,"['no_mixed_refs', 'ref', 'no_fast_pskip']"
+no_fast_pskip==1 AND ref==9,192,0.16666666666666666,2,"['ref', 'no_fast_pskip']"
+no_mbtree==1 AND no_mixed_refs==0 AND ref==9,96,0.08333333333333333,3,"['no_mbtree', 'no_mixed_refs', 'ref']"
+ref==9,384,0.3333333333333333,1,['ref']

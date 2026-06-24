@@ -1,0 +1,6 @@
+rule,sg_samples,sg_coverage,rule_num_predicates,rule_features_used
+resolution > 5184000.0 AND NOT pdf,512,0.26680562793121415,2,"['resolution', 'pdf']"
+resolution <= 5184000.0 AND resolution <= 1190400.0 AND NOT pdf AND NOT validate,256,0.13340281396560708,4,"['resolution', 'pdf', 'validate']"
+resolution <= 5184000.0 AND resolution <= 1190400.0 AND NOT pdf,511,0.266284523189161,3,"['resolution', 'pdf']"
+resolution <= 5184000.0 AND resolution <= 1190400.0 AND NOT pdf AND validate,255,0.13288170922355394,4,"['resolution', 'pdf', 'validate']"
+resolution <= 5184000.0 AND resolution <= 1190400.0 AND NOT pdf AND NOT validate AND onload,128,0.06670140698280354,5,"['resolution', 'onload', 'pdf', 'validate']"

@@ -1,0 +1,6 @@
+rule,sg_samples,sg_coverage,rule_num_predicates,rule_features_used
+compressionLrzip AND level >= 3.00,56,0.12962962962962962,2,"['level', 'compressionLrzip']"
+NOT compressionBzip2 AND NOT compressionLrzip AND level >= 4.00,128,0.2962962962962963,3,"['compressionBzip2', 'compressionLrzip', 'level']"
+NOT compression AND NOT compressionBzip2 AND NOT encryption,36,0.08333333333333333,3,"['compressionBzip2', 'encryption', 'compression']"
+compression AND NOT compressionGzip AND NOT compressionLzo,216,0.5,3,"['compressionGzip', 'compression', 'compressionLzo']"
+compressionGzip AND level <= 7.00,56,0.12962962962962962,2,"['level', 'compressionGzip']"

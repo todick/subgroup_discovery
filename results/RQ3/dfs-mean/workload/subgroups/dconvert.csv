@@ -1,0 +1,6 @@
+rule,sg_samples,sg_coverage,rule_num_predicates,rule_features_used
+iosCreateImagesetFolders==0 AND androidIncludeLdpiTvdpi==1 AND android==1 AND ios==0,1777,0.2627143701951508,4,"['ios', 'androidIncludeLdpiTvdpi', 'iosCreateImagesetFolders', 'android']"
+iosCreateImagesetFolders==0 AND androidIncludeLdpiTvdpi==1 AND android==1 AND ios==0 AND web==0,1777,0.2627143701951508,5,"['web', 'androidIncludeLdpiTvdpi', 'android', 'iosCreateImagesetFolders', 'ios']"
+iosCreateImagesetFolders==0 AND androidIncludeLdpiTvdpi==1 AND workload==0 AND android==1 AND ios==0,1777,0.2627143701951508,5,"['workload', 'androidIncludeLdpiTvdpi', 'android', 'iosCreateImagesetFolders', 'ios']"
+iosCreateImagesetFolders==0 AND win==0 AND androidIncludeLdpiTvdpi==1 AND android==1 AND web==0,1777,0.2627143701951508,5,"['web', 'win', 'androidIncludeLdpiTvdpi', 'android', 'iosCreateImagesetFolders']"
+iosCreateImagesetFolders==0 AND win==0 AND androidIncludeLdpiTvdpi==1 AND android==1 AND ios==0,1777,0.2627143701951508,5,"['win', 'androidIncludeLdpiTvdpi', 'android', 'iosCreateImagesetFolders', 'ios']"

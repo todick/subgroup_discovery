@@ -1,0 +1,793 @@
+sampling_strategy,sample_size,sg_cardinality,sg_rule,best_rule,best_rule_idx,f1,precision,recall,seed
+full,432,54,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND unlimitedWindowSize AND encryption,0,1.0,1.0,1.0,0
+random_2,20,3,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,NOT compressionZpaq AND disableCompressibilityTesting AND NOT compressionBzip2 AND level > 6.5,3,0.4,0.5,0.3333333333333333,0
+random_5,50,4,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND level > 8.5 AND NOT compressionBzip2 AND NOT compressionLrzip,0,0.0,0.0,0.0,0
+random_10,100,13,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND encryption AND unlimitedWindowSize,3,1.0,1.0,1.0,0
+random_20,200,38,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND unlimitedWindowSize AND disableCompressibilityTesting,0,1.0,1.0,1.0,0
+2-wise,56,6,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND encryption AND disableCompressibilityTesting,2,1.0,1.0,1.0,0
+3-wise,154,18,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND unlimitedWindowSize AND encryption,1,1.0,1.0,1.0,0
+4-wise,303,34,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND disableCompressibilityTesting AND encryption,0,1.0,1.0,1.0,0
+full,432,54,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND encryption AND disableCompressibilityTesting,0,1.0,1.0,1.0,10
+random_2,20,2,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,level <= 8.0 AND NOT compressionBzip2,0,0.0,0.0,0.0,10
+random_5,50,9,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND disableCompressibilityTesting AND unlimitedWindowSize,0,1.0,1.0,1.0,10
+random_10,100,9,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND encryption AND unlimitedWindowSize,1,1.0,1.0,1.0,10
+random_20,200,29,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND unlimitedWindowSize AND encryption,0,1.0,1.0,1.0,10
+2-wise,58,8,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND encryption AND disableCompressibilityTesting,1,1.0,1.0,1.0,10
+3-wise,160,14,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND encryption AND disableCompressibilityTesting,0,1.0,1.0,1.0,10
+4-wise,291,33,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND unlimitedWindowSize AND encryption,0,1.0,1.0,1.0,10
+full,432,54,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND unlimitedWindowSize AND disableCompressibilityTesting,0,1.0,1.0,1.0,11
+random_2,20,4,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND disableCompressibilityTesting AND NOT compressionLrzip AND compression,4,0.8571428571428571,1.0,0.75,11
+random_5,50,11,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND unlimitedWindowSize AND disableCompressibilityTesting,0,1.0,1.0,1.0,11
+random_10,100,14,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND unlimitedWindowSize AND encryption,1,1.0,1.0,1.0,11
+random_20,200,21,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND encryption AND disableCompressibilityTesting,0,1.0,1.0,1.0,11
+2-wise,56,9,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,NOT encryption AND compression AND level > 2.5,0,0.0,0.0,0.0,11
+3-wise,149,18,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND encryption AND unlimitedWindowSize,0,1.0,1.0,1.0,11
+4-wise,297,38,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND encryption AND disableCompressibilityTesting,0,1.0,1.0,1.0,11
+full,432,54,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND encryption AND unlimitedWindowSize,0,1.0,1.0,1.0,12
+random_2,20,4,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,level <= 4.5 AND compression,0,0.0,0.0,0.0,12
+random_5,50,6,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,NOT encryption AND NOT compressionGzip AND compression AND NOT compressionLrzip,0,0.0,0.0,0.0,12
+random_10,100,15,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,level > 3.5 AND level <= 6.5,4,0.1702127659574468,0.125,0.2666666666666666,12
+random_20,200,30,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,NOT encryption AND level > 3.5 AND NOT compressionBzip2 AND level > 4.5,0,0.0,0.0,0.0,12
+2-wise,55,11,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,level > 1.5 AND NOT compressionLrzip AND NOT disableCompressibilityTesting AND level <= 6.5,0,0.0,0.0,0.0,12
+3-wise,156,29,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND unlimitedWindowSize AND encryption,1,1.0,1.0,1.0,12
+4-wise,299,38,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND encryption AND level > 2.5 AND disableCompressibilityTesting,2,0.8656716417910448,1.0,0.7631578947368421,12
+full,432,54,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND unlimitedWindowSize AND disableCompressibilityTesting,0,1.0,1.0,1.0,13
+random_2,20,5,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,NOT disableCompressibilityTesting AND NOT compressionLzo AND NOT unlimitedWindowSize,0,0.0,0.0,0.0,13
+random_5,50,7,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,NOT compressionLrzip AND NOT disableCompressibilityTesting AND level > 3.5,0,0.0,0.0,0.0,13
+random_10,100,13,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,level <= 2.5 AND compressionLrzip AND NOT unlimitedWindowSize AND NOT encryption,0,0.0,0.0,0.0,13
+random_20,200,18,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,level <= 8.5,4,0.1546391752577319,0.0852272727272727,0.8333333333333334,13
+2-wise,56,10,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,level > 5.5 AND compressionZpaq AND level <= 7.5,2,0.3333333333333333,1.0,0.2,13
+3-wise,149,21,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,NOT disableCompressibilityTesting AND level <= 2.5 AND level <= 1.5 AND NOT compressionGzip,0,0.0,0.0,0.0,13
+4-wise,297,37,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND disableCompressibilityTesting AND unlimitedWindowSize,1,1.0,1.0,1.0,13
+full,432,54,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND encryption AND disableCompressibilityTesting,0,1.0,1.0,1.0,14
+random_5,50,10,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND disableCompressibilityTesting AND encryption,2,1.0,1.0,1.0,14
+random_10,100,8,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND encryption AND disableCompressibilityTesting,4,1.0,1.0,1.0,14
+random_20,200,19,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND disableCompressibilityTesting AND encryption,0,1.0,1.0,1.0,14
+2-wise,59,6,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND encryption AND disableCompressibilityTesting,4,1.0,1.0,1.0,14
+3-wise,159,28,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND encryption AND disableCompressibilityTesting,0,1.0,1.0,1.0,14
+4-wise,305,37,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND encryption AND unlimitedWindowSize,0,1.0,1.0,1.0,14
+full,432,54,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND unlimitedWindowSize AND encryption,0,1.0,1.0,1.0,15
+random_2,20,4,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,NOT compressionLrzip AND disableCompressibilityTesting AND unlimitedWindowSize AND NOT compressionBzip2,3,0.8571428571428571,1.0,0.75,15
+random_5,50,11,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND encryption AND unlimitedWindowSize,3,1.0,1.0,1.0,15
+random_10,100,7,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND unlimitedWindowSize AND encryption,0,1.0,1.0,1.0,15
+random_20,200,19,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND level > 4.5 AND encryption AND disableCompressibilityTesting,0,0.8823529411764706,1.0,0.7894736842105263,15
+2-wise,54,12,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND disableCompressibilityTesting AND unlimitedWindowSize,3,1.0,1.0,1.0,15
+3-wise,158,25,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND disableCompressibilityTesting AND encryption,0,1.0,1.0,1.0,15
+4-wise,316,36,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND disableCompressibilityTesting AND unlimitedWindowSize,0,1.0,1.0,1.0,15
+full,432,54,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND unlimitedWindowSize AND encryption,0,1.0,1.0,1.0,16
+random_2,20,1,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,level <= 2.5 AND NOT encryption AND NOT compressionBzip2 AND NOT disableCompressibilityTesting,0,0.0,0.0,0.0,16
+random_5,50,7,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,level <= 1.5 AND encryption AND disableCompressibilityTesting,3,0.6,1.0,0.4285714285714285,16
+random_10,100,15,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND encryption AND disableCompressibilityTesting,1,1.0,1.0,1.0,16
+random_20,200,24,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND disableCompressibilityTesting AND encryption,0,1.0,1.0,1.0,16
+2-wise,54,9,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND disableCompressibilityTesting AND unlimitedWindowSize,0,1.0,1.0,1.0,16
+3-wise,149,20,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND unlimitedWindowSize AND disableCompressibilityTesting,0,1.0,1.0,1.0,16
+4-wise,299,34,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND encryption AND disableCompressibilityTesting,0,1.0,1.0,1.0,16
+full,432,54,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND disableCompressibilityTesting AND unlimitedWindowSize,0,1.0,1.0,1.0,17
+random_2,20,1,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compressionBzip2 AND level <= 8.0 AND NOT unlimitedWindowSize,0,0.0,0.0,0.0,17
+random_5,50,3,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND disableCompressibilityTesting AND encryption AND compression,3,0.8,1.0,0.6666666666666666,17
+random_10,100,14,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND level > 4.5 AND disableCompressibilityTesting AND encryption,2,0.6666666666666666,1.0,0.5,17
+random_20,200,23,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND disableCompressibilityTesting AND encryption,0,1.0,1.0,1.0,17
+2-wise,56,3,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,level <= 5.5 AND level > 3.5,0,0.0,0.0,0.0,17
+3-wise,154,14,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND unlimitedWindowSize AND disableCompressibilityTesting,2,1.0,1.0,1.0,17
+4-wise,293,31,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,NOT compressionGzip AND disableCompressibilityTesting AND unlimitedWindowSize AND encryption,0,0.8727272727272727,1.0,0.7741935483870968,17
+full,432,54,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND encryption AND disableCompressibilityTesting,0,1.0,1.0,1.0,18
+random_2,20,2,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,level <= 8.5 AND NOT compressionLzo AND NOT compression AND level <= 2.0,0,0.0,0.0,0.0,18
+random_5,50,7,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND unlimitedWindowSize AND encryption,3,1.0,1.0,1.0,18
+random_10,100,10,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND unlimitedWindowSize AND disableCompressibilityTesting,1,1.0,1.0,1.0,18
+random_20,200,26,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND disableCompressibilityTesting AND encryption,0,1.0,1.0,1.0,18
+2-wise,56,6,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,level > 8.5 AND unlimitedWindowSize AND disableCompressibilityTesting,4,0.2222222222222222,0.3333333333333333,0.1666666666666666,18
+3-wise,154,11,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND unlimitedWindowSize AND encryption,1,1.0,1.0,1.0,18
+4-wise,291,37,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND disableCompressibilityTesting AND unlimitedWindowSize,0,1.0,1.0,1.0,18
+full,432,54,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND encryption AND disableCompressibilityTesting,0,1.0,1.0,1.0,19
+random_2,20,3,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND NOT compressionLzo AND level <= 8.5 AND encryption,4,0.8,1.0,0.6666666666666666,19
+random_5,50,5,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,NOT encryption AND unlimitedWindowSize,0,0.0,0.0,0.0,19
+random_10,100,7,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND encryption AND unlimitedWindowSize,0,1.0,1.0,1.0,19
+random_20,200,22,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND encryption AND unlimitedWindowSize,0,1.0,1.0,1.0,19
+2-wise,56,8,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND encryption AND unlimitedWindowSize AND NOT compressionGzip,4,0.8571428571428571,1.0,0.75,19
+3-wise,149,16,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND encryption AND unlimitedWindowSize,0,1.0,1.0,1.0,19
+4-wise,295,34,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND disableCompressibilityTesting AND encryption,0,1.0,1.0,1.0,19
+full,432,54,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,NOT compressionLrzip AND encryption AND unlimitedWindowSize AND disableCompressibilityTesting,0,0.9090909090909092,1.0,0.8333333333333334,1
+random_2,20,2,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,level > 6.5 AND NOT compressionBzip2 AND NOT compressionLrzip AND encryption,0,0.0,0.0,0.0,1
+random_5,50,6,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,level > 5.5 AND level <= 6.5 AND NOT encryption,0,0.0,0.0,0.0,1
+random_10,100,19,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,level > 3.5 AND NOT compressionLrzip,3,0.3170731707317072,0.2063492063492063,0.6842105263157895,1
+random_20,200,22,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,level > 2.5 AND encryption AND NOT compressionBzip2 AND NOT compressionGzip,3,0.2972972972972972,0.2115384615384615,0.5,1
+2-wise,56,7,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,NOT compressionBzip2 AND NOT compressionZpaq,4,0.1818181818181818,0.1081081081081081,0.5714285714285714,1
+3-wise,153,26,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,NOT disableCompressibilityTesting AND unlimitedWindowSize AND level <= 2.5 AND compressionLrzip,0,0.0,0.0,0.0,1
+4-wise,296,34,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND encryption AND unlimitedWindowSize,2,1.0,1.0,1.0,1
+full,432,54,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND disableCompressibilityTesting AND encryption,0,1.0,1.0,1.0,20
+random_2,20,3,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND NOT compressionLzo AND NOT compressionGzip AND NOT compressionZpaq,0,0.0,0.0,0.0,20
+random_5,50,5,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND unlimitedWindowSize AND disableCompressibilityTesting,4,1.0,1.0,1.0,20
+random_10,100,11,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND unlimitedWindowSize AND encryption,0,1.0,1.0,1.0,20
+random_20,200,24,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND disableCompressibilityTesting AND unlimitedWindowSize,0,1.0,1.0,1.0,20
+2-wise,58,9,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND unlimitedWindowSize AND encryption,4,1.0,1.0,1.0,20
+3-wise,153,19,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND unlimitedWindowSize AND disableCompressibilityTesting,0,1.0,1.0,1.0,20
+4-wise,281,37,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND encryption AND unlimitedWindowSize,0,1.0,1.0,1.0,20
+full,432,54,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND encryption AND unlimitedWindowSize,0,1.0,1.0,1.0,21
+random_2,20,4,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,NOT compressionGzip AND disableCompressibilityTesting AND unlimitedWindowSize AND NOT compressionZpaq,1,0.6666666666666666,1.0,0.5,21
+random_5,50,9,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,NOT unlimitedWindowSize AND level <= 8.5,0,0.0,0.0,0.0,21
+random_10,100,11,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND encryption AND unlimitedWindowSize,4,1.0,1.0,1.0,21
+random_20,200,25,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,NOT unlimitedWindowSize AND compressionBzip2 AND level <= 5.5 AND encryption,0,0.0,0.0,0.0,21
+2-wise,56,12,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,NOT compressionGzip AND NOT unlimitedWindowSize AND NOT compressionLzo AND NOT compressionLrzip,0,0.0,0.0,0.0,21
+3-wise,152,20,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,NOT compressionLrzip AND level <= 5.5 AND NOT unlimitedWindowSize AND NOT compressionZpaq,0,0.0,0.0,0.0,21
+4-wise,303,39,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND unlimitedWindowSize AND disableCompressibilityTesting,0,1.0,1.0,1.0,21
+full,432,54,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND encryption AND disableCompressibilityTesting,0,1.0,1.0,1.0,22
+random_2,20,3,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,NOT disableCompressibilityTesting AND NOT compressionZpaq,0,0.0,0.0,0.0,22
+random_5,50,6,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,NOT unlimitedWindowSize AND NOT disableCompressibilityTesting AND NOT encryption AND compressionLzo,0,0.0,0.0,0.0,22
+random_10,100,12,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND encryption AND unlimitedWindowSize,2,1.0,1.0,1.0,22
+random_20,200,30,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND encryption AND unlimitedWindowSize,0,1.0,1.0,1.0,22
+2-wise,56,5,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compressionLzo AND NOT disableCompressibilityTesting AND level <= 6.5 AND unlimitedWindowSize,0,0.0,0.0,0.0,22
+3-wise,156,23,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND encryption AND unlimitedWindowSize,1,1.0,1.0,1.0,22
+4-wise,304,38,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND unlimitedWindowSize AND encryption,0,1.0,1.0,1.0,22
+full,432,54,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND disableCompressibilityTesting AND unlimitedWindowSize,0,1.0,1.0,1.0,23
+random_5,50,4,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND encryption AND disableCompressibilityTesting,3,1.0,1.0,1.0,23
+random_10,100,9,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND disableCompressibilityTesting AND encryption,0,1.0,1.0,1.0,23
+random_20,200,24,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND encryption AND disableCompressibilityTesting,0,1.0,1.0,1.0,23
+2-wise,55,2,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,level <= 6.5 AND compressionLzo AND NOT disableCompressibilityTesting AND level > 1.5,0,0.0,0.0,0.0,23
+3-wise,159,16,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND encryption AND disableCompressibilityTesting,0,1.0,1.0,1.0,23
+4-wise,304,42,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND unlimitedWindowSize AND disableCompressibilityTesting,0,1.0,1.0,1.0,23
+full,432,54,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND disableCompressibilityTesting AND unlimitedWindowSize,0,1.0,1.0,1.0,24
+random_5,50,4,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND disableCompressibilityTesting AND encryption,0,1.0,1.0,1.0,24
+random_10,100,9,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND encryption AND disableCompressibilityTesting,4,1.0,1.0,1.0,24
+random_20,200,27,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND disableCompressibilityTesting AND encryption,0,1.0,1.0,1.0,24
+2-wise,59,3,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND unlimitedWindowSize AND disableCompressibilityTesting,1,1.0,1.0,1.0,24
+3-wise,159,11,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND disableCompressibilityTesting AND unlimitedWindowSize,0,1.0,1.0,1.0,24
+4-wise,302,30,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND encryption AND disableCompressibilityTesting,0,1.0,1.0,1.0,24
+full,432,54,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND encryption AND unlimitedWindowSize,0,1.0,1.0,1.0,25
+random_2,20,2,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,NOT compressionZpaq AND NOT disableCompressibilityTesting AND NOT compressionLrzip,0,0.0,0.0,0.0,25
+random_5,50,7,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,NOT encryption AND NOT compressionLrzip,0,0.0,0.0,0.0,25
+random_10,100,10,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND encryption AND level > 2.5 AND unlimitedWindowSize,3,1.0,1.0,1.0,25
+random_20,200,23,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND unlimitedWindowSize AND encryption,1,1.0,1.0,1.0,25
+2-wise,56,3,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,NOT unlimitedWindowSize AND level > 3.5 AND NOT compressionGzip,0,0.0,0.0,0.0,25
+3-wise,149,10,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND encryption AND disableCompressibilityTesting,4,1.0,1.0,1.0,25
+4-wise,308,42,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND encryption AND disableCompressibilityTesting,0,1.0,1.0,1.0,25
+full,432,54,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND encryption AND disableCompressibilityTesting,0,1.0,1.0,1.0,26
+random_2,20,3,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,NOT compressionBzip2 AND NOT unlimitedWindowSize AND level > 3.5 AND compression,0,0.0,0.0,0.0,26
+random_5,50,10,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND disableCompressibilityTesting AND encryption,1,1.0,1.0,1.0,26
+random_10,100,16,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND encryption AND unlimitedWindowSize,0,1.0,1.0,1.0,26
+random_20,200,27,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND unlimitedWindowSize AND encryption,0,1.0,1.0,1.0,26
+2-wise,55,12,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND disableCompressibilityTesting AND encryption,4,1.0,1.0,1.0,26
+3-wise,153,22,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND unlimitedWindowSize AND disableCompressibilityTesting,0,1.0,1.0,1.0,26
+4-wise,296,38,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND unlimitedWindowSize AND encryption,0,1.0,1.0,1.0,26
+full,432,54,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND encryption AND unlimitedWindowSize,0,1.0,1.0,1.0,27
+random_2,20,5,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,NOT disableCompressibilityTesting AND compressionLzo AND level <= 4.0,0,0.0,0.0,0.0,27
+random_5,50,11,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND unlimitedWindowSize AND disableCompressibilityTesting,0,1.0,1.0,1.0,27
+random_10,100,16,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND unlimitedWindowSize AND disableCompressibilityTesting,0,1.0,1.0,1.0,27
+random_20,200,24,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND unlimitedWindowSize AND disableCompressibilityTesting,0,1.0,1.0,1.0,27
+2-wise,55,9,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compressionLzo AND encryption,4,0.5714285714285714,0.8,0.4444444444444444,27
+3-wise,163,27,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND unlimitedWindowSize AND encryption,0,1.0,1.0,1.0,27
+4-wise,291,37,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND disableCompressibilityTesting AND unlimitedWindowSize,0,1.0,1.0,1.0,27
+full,432,54,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND disableCompressibilityTesting AND encryption,0,1.0,1.0,1.0,28
+random_2,20,2,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,NOT unlimitedWindowSize AND level <= 7.5 AND NOT compressionLrzip,0,0.0,0.0,0.0,28
+random_5,50,7,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND unlimitedWindowSize AND disableCompressibilityTesting,3,1.0,1.0,1.0,28
+random_10,100,20,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND encryption AND disableCompressibilityTesting,1,1.0,1.0,1.0,28
+random_20,200,23,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND encryption AND disableCompressibilityTesting,0,1.0,1.0,1.0,28
+2-wise,56,9,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND unlimitedWindowSize AND disableCompressibilityTesting AND NOT compressionLrzip,1,0.8,1.0,0.6666666666666666,28
+3-wise,149,19,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,NOT compressionZpaq AND encryption AND disableCompressibilityTesting AND unlimitedWindowSize,0,0.9444444444444444,1.0,0.8947368421052632,28
+4-wise,302,34,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND unlimitedWindowSize AND encryption,0,1.0,1.0,1.0,28
+full,432,54,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND disableCompressibilityTesting AND unlimitedWindowSize,0,1.0,1.0,1.0,29
+random_2,20,2,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compression AND level <= 6.5 AND NOT compressionGzip AND NOT disableCompressibilityTesting,0,0.0,0.0,0.0,29
+random_5,50,6,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND encryption AND disableCompressibilityTesting AND level > 5.5,1,0.5,1.0,0.3333333333333333,29
+random_10,100,14,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND encryption AND unlimitedWindowSize,1,1.0,1.0,1.0,29
+random_20,200,24,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND unlimitedWindowSize AND disableCompressibilityTesting,0,1.0,1.0,1.0,29
+2-wise,55,7,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,NOT disableCompressibilityTesting AND level > 2.5 AND compression,0,0.0,0.0,0.0,29
+3-wise,154,21,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND disableCompressibilityTesting AND encryption,1,1.0,1.0,1.0,29
+4-wise,302,38,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND disableCompressibilityTesting AND encryption,0,1.0,1.0,1.0,29
+full,432,54,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND unlimitedWindowSize AND encryption,0,1.0,1.0,1.0,2
+random_2,20,1,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,level > 5.0 AND NOT compressionZpaq AND NOT disableCompressibilityTesting AND encryption,0,0.0,0.0,0.0,2
+random_5,50,6,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,NOT unlimitedWindowSize AND NOT compressionLzo AND level <= 3.5 AND NOT compressionBzip2,0,0.0,0.0,0.0,2
+random_10,100,13,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND unlimitedWindowSize AND disableCompressibilityTesting,2,1.0,1.0,1.0,2
+random_20,200,24,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND unlimitedWindowSize AND disableCompressibilityTesting,0,1.0,1.0,1.0,2
+2-wise,55,10,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND disableCompressibilityTesting AND encryption,1,1.0,1.0,1.0,2
+3-wise,153,20,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND disableCompressibilityTesting AND unlimitedWindowSize,0,1.0,1.0,1.0,2
+4-wise,294,36,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND encryption AND unlimitedWindowSize,0,1.0,1.0,1.0,2
+full,432,54,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND disableCompressibilityTesting AND encryption,0,1.0,1.0,1.0,30
+random_5,50,4,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND disableCompressibilityTesting AND encryption,1,1.0,1.0,1.0,30
+random_10,100,14,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND encryption AND disableCompressibilityTesting,0,1.0,1.0,1.0,30
+random_20,200,24,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND encryption AND unlimitedWindowSize,0,1.0,1.0,1.0,30
+2-wise,56,5,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND unlimitedWindowSize AND disableCompressibilityTesting,0,1.0,1.0,1.0,30
+3-wise,157,19,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND unlimitedWindowSize AND encryption,0,1.0,1.0,1.0,30
+4-wise,291,40,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND encryption AND unlimitedWindowSize,0,1.0,1.0,1.0,30
+full,432,54,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND disableCompressibilityTesting AND encryption,0,1.0,1.0,1.0,31
+random_2,20,2,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,NOT compressionLzo AND NOT disableCompressibilityTesting AND level > 5.5 AND NOT compressionZpaq,0,0.0,0.0,0.0,31
+random_5,50,6,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND encryption AND unlimitedWindowSize,1,1.0,1.0,1.0,31
+random_10,100,11,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND encryption AND disableCompressibilityTesting,0,1.0,1.0,1.0,31
+random_20,200,26,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND disableCompressibilityTesting AND encryption,0,1.0,1.0,1.0,31
+2-wise,56,7,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND unlimitedWindowSize AND encryption,0,1.0,1.0,1.0,31
+3-wise,155,16,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND disableCompressibilityTesting AND unlimitedWindowSize,0,1.0,1.0,1.0,31
+4-wise,295,36,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND disableCompressibilityTesting AND encryption,0,1.0,1.0,1.0,31
+full,432,54,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND unlimitedWindowSize AND disableCompressibilityTesting,0,1.0,1.0,1.0,32
+random_2,20,4,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,level > 6.5 AND compressionLzo,3,0.6666666666666666,1.0,0.5,32
+random_5,50,6,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND encryption AND disableCompressibilityTesting,1,1.0,1.0,1.0,32
+random_10,100,10,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND disableCompressibilityTesting AND unlimitedWindowSize,0,1.0,1.0,1.0,32
+random_20,200,24,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND unlimitedWindowSize AND disableCompressibilityTesting,0,1.0,1.0,1.0,32
+2-wise,55,8,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND unlimitedWindowSize AND disableCompressibilityTesting,0,1.0,1.0,1.0,32
+3-wise,151,17,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND unlimitedWindowSize AND disableCompressibilityTesting,0,1.0,1.0,1.0,32
+4-wise,302,40,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND encryption AND unlimitedWindowSize,0,1.0,1.0,1.0,32
+full,432,54,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,NOT compressionBzip2 AND disableCompressibilityTesting AND level > 3.5 AND unlimitedWindowSize,2,0.5263157894736842,0.5,0.5555555555555556,33
+random_2,20,3,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,level <= 8.5 AND NOT compressionLrzip AND NOT compressionZpaq AND encryption,3,0.2222222222222222,0.1666666666666666,0.3333333333333333,33
+random_5,50,6,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,level > 2.5 AND disableCompressibilityTesting AND encryption AND unlimitedWindowSize,3,0.9090909090909092,1.0,0.8333333333333334,33
+random_10,100,14,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,level <= 6.5 AND NOT compressionZpaq AND NOT compressionLrzip AND NOT compressionBzip2,3,0.1538461538461538,0.1052631578947368,0.2857142857142857,33
+random_20,200,23,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,level > 2.5,4,0.2057142857142856,0.1184210526315789,0.782608695652174,33
+2-wise,57,6,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,level > 1.5 AND NOT compressionLrzip AND level <= 7.5,3,0.2702702702702702,0.1612903225806451,0.8333333333333334,33
+3-wise,161,13,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,level <= 2.5 AND NOT compressionGzip AND disableCompressibilityTesting AND NOT compressionBzip2,2,0.2222222222222222,0.2142857142857142,0.2307692307692307,33
+4-wise,295,37,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND disableCompressibilityTesting AND level <= 8.5 AND unlimitedWindowSize,0,0.927536231884058,1.0,0.8648648648648649,33
+full,432,54,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND unlimitedWindowSize AND disableCompressibilityTesting,0,1.0,1.0,1.0,34
+random_2,20,2,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,NOT unlimitedWindowSize AND level > 3.5 AND NOT compressionGzip AND compression,0,0.0,0.0,0.0,34
+random_5,50,9,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND encryption AND disableCompressibilityTesting,1,1.0,1.0,1.0,34
+random_10,100,12,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND encryption AND disableCompressibilityTesting,0,1.0,1.0,1.0,34
+random_20,200,24,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND unlimitedWindowSize AND encryption,0,1.0,1.0,1.0,34
+2-wise,57,11,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND encryption AND disableCompressibilityTesting,2,1.0,1.0,1.0,34
+3-wise,164,23,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND unlimitedWindowSize AND disableCompressibilityTesting,0,1.0,1.0,1.0,34
+4-wise,296,40,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND disableCompressibilityTesting AND unlimitedWindowSize,0,1.0,1.0,1.0,34
+full,432,54,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND disableCompressibilityTesting AND unlimitedWindowSize,0,1.0,1.0,1.0,35
+random_2,20,5,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND unlimitedWindowSize AND NOT compressionBzip2,0,0.6,0.6,0.6,35
+random_5,50,7,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,NOT unlimitedWindowSize AND level <= 6.5 AND level <= 1.5,0,0.0,0.0,0.0,35
+random_10,100,9,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,NOT disableCompressibilityTesting AND NOT compressionZpaq AND compression AND compressionGzip,0,0.0,0.0,0.0,35
+random_20,200,30,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND unlimitedWindowSize AND encryption,0,1.0,1.0,1.0,35
+2-wise,57,11,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND disableCompressibilityTesting AND level <= 8.5 AND encryption,2,1.0,1.0,1.0,35
+3-wise,156,24,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND encryption AND disableCompressibilityTesting,2,1.0,1.0,1.0,35
+4-wise,292,42,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND unlimitedWindowSize AND disableCompressibilityTesting,0,1.0,1.0,1.0,35
+full,432,54,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,NOT compressionGzip,3,0.217391304347826,0.125,0.8333333333333334,36
+random_2,20,3,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,NOT compressionLzo AND compression,0,0.375,0.2307692307692307,1.0,36
+random_5,50,5,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,NOT compressionLrzip AND NOT compressionGzip AND level <= 5.5 AND level > 1.5,3,0.2105263157894736,0.1428571428571428,0.4,36
+random_10,100,16,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compressionLzo AND level <= 2.0 AND unlimitedWindowSize,3,0.1111111111111111,0.5,0.0625,36
+random_20,200,28,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND level > 4.5,2,0.3414634146341463,0.2592592592592592,0.5,36
+2-wise,58,8,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,NOT compressionLzo AND NOT compressionBzip2,3,0.217391304347826,0.131578947368421,0.625,36
+3-wise,152,17,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,level <= 8.5 AND NOT compressionZpaq AND unlimitedWindowSize AND encryption,2,0.608695652173913,0.4827586206896552,0.8235294117647058,36
+4-wise,289,37,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,NOT compressionZpaq AND level > 7.5,4,0.0879120879120879,0.074074074074074,0.1081081081081081,36
+full,432,54,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND unlimitedWindowSize AND encryption,0,1.0,1.0,1.0,37
+random_2,20,3,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND level > 3.0 AND level <= 7.5 AND NOT compressionZpaq,2,0.8,1.0,0.6666666666666666,37
+random_5,50,5,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND encryption AND unlimitedWindowSize,0,1.0,1.0,1.0,37
+random_10,100,13,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND encryption AND unlimitedWindowSize,0,1.0,1.0,1.0,37
+random_20,200,23,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND unlimitedWindowSize AND disableCompressibilityTesting,0,1.0,1.0,1.0,37
+2-wise,55,2,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND disableCompressibilityTesting AND unlimitedWindowSize,1,1.0,1.0,1.0,37
+3-wise,155,15,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND unlimitedWindowSize AND disableCompressibilityTesting,0,1.0,1.0,1.0,37
+4-wise,299,38,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND unlimitedWindowSize AND encryption,0,1.0,1.0,1.0,37
+full,432,54,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND encryption AND unlimitedWindowSize,0,1.0,1.0,1.0,38
+random_2,20,2,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND compressionLzo,0,0.0,0.0,0.0,38
+random_5,50,4,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,level <= 8.5 AND NOT encryption AND unlimitedWindowSize AND level <= 6.5,0,0.0,0.0,0.0,38
+random_10,100,12,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND unlimitedWindowSize AND disableCompressibilityTesting,0,1.0,1.0,1.0,38
+random_20,200,24,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND encryption AND unlimitedWindowSize,0,1.0,1.0,1.0,38
+2-wise,56,2,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,NOT compressionLrzip AND NOT disableCompressibilityTesting AND NOT compressionGzip,0,0.0,0.0,0.0,38
+3-wise,162,16,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND encryption AND disableCompressibilityTesting,0,1.0,1.0,1.0,38
+4-wise,302,36,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND unlimitedWindowSize AND disableCompressibilityTesting,0,1.0,1.0,1.0,38
+full,432,54,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND unlimitedWindowSize AND disableCompressibilityTesting,0,1.0,1.0,1.0,39
+random_2,20,5,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND encryption AND unlimitedWindowSize,0,1.0,1.0,1.0,39
+random_5,50,7,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND unlimitedWindowSize AND compressionLzo AND NOT disableCompressibilityTesting,0,0.0,0.0,0.0,39
+random_10,100,15,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND NOT compressionLrzip AND encryption AND unlimitedWindowSize,2,0.9655172413793104,1.0,0.9333333333333332,39
+random_20,200,23,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND encryption AND NOT compressionGzip AND disableCompressibilityTesting,2,0.85,1.0,0.7391304347826086,39
+2-wise,54,6,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compression AND disableCompressibilityTesting AND NOT encryption,0,0.0,0.0,0.0,39
+3-wise,162,21,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND encryption AND unlimitedWindowSize,0,1.0,1.0,1.0,39
+4-wise,286,33,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compression,3,0.1851851851851852,0.1054852320675105,0.7575757575757576,39
+full,432,54,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND disableCompressibilityTesting AND encryption,0,1.0,1.0,1.0,3
+random_5,50,9,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND unlimitedWindowSize AND encryption,0,1.0,1.0,1.0,3
+random_10,100,11,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND unlimitedWindowSize AND disableCompressibilityTesting,3,1.0,1.0,1.0,3
+random_20,200,32,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND unlimitedWindowSize AND encryption,0,1.0,1.0,1.0,3
+2-wise,56,8,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND disableCompressibilityTesting AND encryption,2,1.0,1.0,1.0,3
+3-wise,160,18,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND disableCompressibilityTesting AND unlimitedWindowSize,0,1.0,1.0,1.0,3
+4-wise,297,37,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND unlimitedWindowSize AND disableCompressibilityTesting,0,1.0,1.0,1.0,3
+full,432,54,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND unlimitedWindowSize AND disableCompressibilityTesting,0,1.0,1.0,1.0,40
+random_2,20,2,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compressionBzip2 AND unlimitedWindowSize,4,1.0,1.0,1.0,40
+random_5,50,5,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND unlimitedWindowSize AND disableCompressibilityTesting,3,1.0,1.0,1.0,40
+random_10,100,10,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND disableCompressibilityTesting AND unlimitedWindowSize,2,1.0,1.0,1.0,40
+random_20,200,28,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND disableCompressibilityTesting AND encryption,0,1.0,1.0,1.0,40
+2-wise,55,5,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND encryption AND unlimitedWindowSize,2,1.0,1.0,1.0,40
+3-wise,164,16,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND encryption AND unlimitedWindowSize,1,1.0,1.0,1.0,40
+4-wise,302,40,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND unlimitedWindowSize AND encryption,0,1.0,1.0,1.0,40
+full,432,54,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND disableCompressibilityTesting AND unlimitedWindowSize,0,1.0,1.0,1.0,41
+random_2,20,2,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,NOT compressionBzip2,3,0.0952380952380952,0.0526315789473684,0.5,41
+random_5,50,8,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND encryption AND disableCompressibilityTesting,2,1.0,1.0,1.0,41
+random_10,100,15,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND unlimitedWindowSize AND disableCompressibilityTesting,1,1.0,1.0,1.0,41
+random_20,200,23,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND disableCompressibilityTesting AND encryption,0,1.0,1.0,1.0,41
+2-wise,55,7,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,level > 2.5 AND NOT encryption AND compression AND level <= 8.5,0,0.0,0.0,0.0,41
+3-wise,159,24,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND unlimitedWindowSize AND disableCompressibilityTesting,0,1.0,1.0,1.0,41
+4-wise,297,34,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND encryption AND unlimitedWindowSize,0,1.0,1.0,1.0,41
+full,432,54,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND disableCompressibilityTesting AND unlimitedWindowSize,0,1.0,1.0,1.0,42
+random_2,20,2,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,NOT compressionLrzip AND level <= 8.5,4,0.125,0.0714285714285714,0.5,42
+random_5,50,5,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,NOT unlimitedWindowSize AND level <= 4.5 AND NOT compressionGzip AND NOT encryption,0,0.0,0.0,0.0,42
+random_10,100,15,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND encryption AND disableCompressibilityTesting,0,1.0,1.0,1.0,42
+random_20,200,25,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND unlimitedWindowSize AND disableCompressibilityTesting,2,1.0,1.0,1.0,42
+2-wise,55,5,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,NOT compression AND encryption AND level > 4.0 AND NOT unlimitedWindowSize,0,0.0,0.0,0.0,42
+3-wise,154,17,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND disableCompressibilityTesting AND encryption,3,1.0,1.0,1.0,42
+4-wise,301,34,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND encryption AND disableCompressibilityTesting,0,1.0,1.0,1.0,42
+full,432,54,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND unlimitedWindowSize AND disableCompressibilityTesting,0,1.0,1.0,1.0,43
+random_2,20,1,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,NOT compressionLrzip AND NOT compressionZpaq AND NOT compressionLzo AND NOT compressionBzip2,0,0.0,0.0,0.0,43
+random_5,50,9,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND unlimitedWindowSize AND encryption,2,1.0,1.0,1.0,43
+random_10,100,10,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND unlimitedWindowSize AND disableCompressibilityTesting,2,1.0,1.0,1.0,43
+random_20,200,25,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND encryption AND disableCompressibilityTesting,1,1.0,1.0,1.0,43
+2-wise,54,10,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND encryption AND unlimitedWindowSize,0,1.0,1.0,1.0,43
+3-wise,147,19,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND disableCompressibilityTesting AND unlimitedWindowSize,0,1.0,1.0,1.0,43
+4-wise,310,40,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND unlimitedWindowSize AND encryption,0,1.0,1.0,1.0,43
+full,432,54,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND disableCompressibilityTesting AND unlimitedWindowSize,0,1.0,1.0,1.0,44
+random_2,20,2,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,NOT compressionLzo AND compressionZpaq AND level <= 5.5 AND unlimitedWindowSize,0,0.0,0.0,0.0,44
+random_5,50,9,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND unlimitedWindowSize AND disableCompressibilityTesting,1,1.0,1.0,1.0,44
+random_10,100,12,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND disableCompressibilityTesting AND encryption,2,1.0,1.0,1.0,44
+random_20,200,23,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND disableCompressibilityTesting AND unlimitedWindowSize,0,1.0,1.0,1.0,44
+2-wise,54,10,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND encryption AND disableCompressibilityTesting,1,1.0,1.0,1.0,44
+3-wise,160,19,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND disableCompressibilityTesting AND encryption,1,1.0,1.0,1.0,44
+4-wise,294,34,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND unlimitedWindowSize AND disableCompressibilityTesting,0,1.0,1.0,1.0,44
+full,432,54,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND unlimitedWindowSize AND disableCompressibilityTesting,0,1.0,1.0,1.0,45
+random_2,20,1,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,level > 4.5 AND NOT compressionLrzip AND unlimitedWindowSize AND level <= 8.5,0,0.0,0.0,0.0,45
+random_5,50,2,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,NOT encryption AND compression AND level > 1.5,0,0.0,0.0,0.0,45
+random_10,100,11,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,NOT encryption AND level > 6.5,0,0.0,0.0,0.0,45
+random_20,200,31,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND unlimitedWindowSize AND encryption,0,1.0,1.0,1.0,45
+2-wise,55,4,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,NOT unlimitedWindowSize AND NOT compressionLzo,0,0.0,0.0,0.0,45
+3-wise,152,18,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,level <= 8.5 AND encryption AND disableCompressibilityTesting AND unlimitedWindowSize,1,0.9411764705882352,1.0,0.8888888888888888,45
+4-wise,289,34,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND disableCompressibilityTesting AND unlimitedWindowSize,1,1.0,1.0,1.0,45
+full,432,54,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND disableCompressibilityTesting AND encryption,0,1.0,1.0,1.0,46
+random_2,20,1,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,NOT unlimitedWindowSize AND NOT encryption AND level <= 7.0 AND NOT compressionLrzip,0,0.0,0.0,0.0,46
+random_5,50,4,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,level <= 2.5 AND level > 1.5 AND NOT compressionLrzip,0,0.6666666666666666,1.0,0.5,46
+random_10,100,13,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND unlimitedWindowSize AND encryption,2,1.0,1.0,1.0,46
+random_20,200,25,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND disableCompressibilityTesting AND unlimitedWindowSize,3,1.0,1.0,1.0,46
+2-wise,56,5,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND compressionLrzip AND level <= 6.0 AND level <= 4.0,0,0.0,0.0,0.0,46
+3-wise,149,14,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND NOT encryption AND NOT compressionLzo AND level > 5.5,0,0.0,0.0,0.0,46
+4-wise,303,37,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND encryption AND unlimitedWindowSize,0,1.0,1.0,1.0,46
+full,432,54,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND unlimitedWindowSize AND encryption,0,1.0,1.0,1.0,47
+random_2,20,2,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compression AND compressionLzo AND disableCompressibilityTesting,4,0.5,0.5,0.5,47
+random_5,50,4,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compressionLrzip AND level <= 2.5,3,0.6666666666666666,1.0,0.5,47
+random_10,100,16,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND disableCompressibilityTesting AND unlimitedWindowSize,0,1.0,1.0,1.0,47
+random_20,200,21,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND disableCompressibilityTesting AND encryption,0,1.0,1.0,1.0,47
+2-wise,56,7,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compressionZpaq AND disableCompressibilityTesting AND encryption,1,0.8333333333333333,1.0,0.7142857142857143,47
+3-wise,161,17,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND unlimitedWindowSize AND encryption,2,1.0,1.0,1.0,47
+4-wise,295,38,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND disableCompressibilityTesting AND encryption,0,1.0,1.0,1.0,47
+full,432,54,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND unlimitedWindowSize AND disableCompressibilityTesting,1,1.0,1.0,1.0,48
+random_2,20,1,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,NOT compressionBzip2 AND NOT unlimitedWindowSize AND compressionZpaq,0,0.0,0.0,0.0,48
+random_5,50,5,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,level > 5.5 AND NOT encryption AND NOT compressionBzip2,0,0.0,0.0,0.0,48
+random_10,100,14,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND disableCompressibilityTesting AND unlimitedWindowSize,3,1.0,1.0,1.0,48
+random_20,200,30,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND disableCompressibilityTesting AND encryption,0,1.0,1.0,1.0,48
+2-wise,55,4,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,NOT encryption AND level <= 8.5 AND NOT compressionZpaq AND level <= 6.5,0,0.0,0.0,0.0,48
+3-wise,155,14,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,level > 3.5 AND NOT unlimitedWindowSize AND NOT compressionBzip2 AND encryption,0,0.0,0.0,0.0,48
+4-wise,301,37,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND encryption AND unlimitedWindowSize,0,1.0,1.0,1.0,48
+full,432,54,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND encryption AND unlimitedWindowSize,0,1.0,1.0,1.0,49
+random_2,20,2,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,level > 1.5 AND NOT encryption AND level <= 5.5 AND NOT compressionLzo,0,0.0,0.0,0.0,49
+random_5,50,3,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,level <= 1.5 AND NOT compressionLzo,1,0.4,0.5,0.3333333333333333,49
+random_10,100,10,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND disableCompressibilityTesting AND encryption,0,1.0,1.0,1.0,49
+random_20,200,28,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND encryption AND unlimitedWindowSize,0,1.0,1.0,1.0,49
+2-wise,55,5,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND disableCompressibilityTesting AND unlimitedWindowSize,1,1.0,1.0,1.0,49
+3-wise,162,26,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND encryption AND unlimitedWindowSize,0,1.0,1.0,1.0,49
+4-wise,311,42,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND unlimitedWindowSize AND encryption,0,1.0,1.0,1.0,49
+full,432,54,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND disableCompressibilityTesting AND encryption,0,1.0,1.0,1.0,4
+random_2,20,4,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,level > 1.5 AND disableCompressibilityTesting AND encryption AND unlimitedWindowSize,4,1.0,1.0,1.0,4
+random_5,50,9,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,NOT unlimitedWindowSize AND NOT compressionZpaq AND NOT compressionBzip2 AND NOT compressionLrzip,0,0.0,0.0,0.0,4
+random_10,100,16,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND encryption AND disableCompressibilityTesting,0,1.0,1.0,1.0,4
+random_20,200,26,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND disableCompressibilityTesting AND encryption,0,1.0,1.0,1.0,4
+2-wise,55,13,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,NOT encryption AND NOT compressionLrzip AND NOT compressionLzo,0,0.0,0.0,0.0,4
+3-wise,162,28,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND encryption AND unlimitedWindowSize,0,1.0,1.0,1.0,4
+4-wise,286,38,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND disableCompressibilityTesting AND encryption,0,1.0,1.0,1.0,4
+full,432,54,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND encryption AND unlimitedWindowSize,0,1.0,1.0,1.0,50
+random_2,20,2,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compressionLzo AND disableCompressibilityTesting,2,1.0,1.0,1.0,50
+random_5,50,9,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND unlimitedWindowSize AND encryption,2,1.0,1.0,1.0,50
+random_10,100,9,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND disableCompressibilityTesting AND unlimitedWindowSize,2,1.0,1.0,1.0,50
+random_20,200,27,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND encryption AND unlimitedWindowSize,0,1.0,1.0,1.0,50
+2-wise,55,7,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND unlimitedWindowSize AND encryption,4,1.0,1.0,1.0,50
+3-wise,154,14,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND encryption AND disableCompressibilityTesting,0,1.0,1.0,1.0,50
+4-wise,301,36,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND disableCompressibilityTesting AND encryption,0,1.0,1.0,1.0,50
+full,432,54,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND unlimitedWindowSize AND disableCompressibilityTesting,0,1.0,1.0,1.0,51
+random_2,20,2,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,NOT compressionLrzip,4,0.2105263157894736,0.1176470588235294,1.0,51
+random_5,50,7,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,level > 5.5 AND NOT unlimitedWindowSize AND compressionZpaq AND disableCompressibilityTesting,0,0.0,0.0,0.0,51
+random_10,100,11,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,level > 7.5 AND NOT compressionLrzip,4,0.064516129032258,0.05,0.0909090909090909,51
+random_20,200,25,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,NOT compressionLrzip AND encryption AND disableCompressibilityTesting AND unlimitedWindowSize,2,0.8372093023255813,1.0,0.72,51
+2-wise,56,7,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compressionGzip AND level <= 8.5 AND level <= 3.5 AND encryption,0,0.0,0.0,0.0,51
+3-wise,150,20,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND unlimitedWindowSize AND disableCompressibilityTesting,3,1.0,1.0,1.0,51
+4-wise,301,38,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND disableCompressibilityTesting AND unlimitedWindowSize,0,1.0,1.0,1.0,51
+full,432,54,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND disableCompressibilityTesting AND unlimitedWindowSize,0,1.0,1.0,1.0,52
+random_2,20,6,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND disableCompressibilityTesting,3,1.0,1.0,1.0,52
+random_5,50,7,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND encryption AND unlimitedWindowSize,1,1.0,1.0,1.0,52
+random_10,100,10,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND unlimitedWindowSize AND disableCompressibilityTesting,1,1.0,1.0,1.0,52
+random_20,200,31,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND unlimitedWindowSize AND disableCompressibilityTesting,0,1.0,1.0,1.0,52
+2-wise,57,8,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND encryption AND unlimitedWindowSize,0,1.0,1.0,1.0,52
+3-wise,150,20,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND encryption AND unlimitedWindowSize,1,1.0,1.0,1.0,52
+4-wise,291,38,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND disableCompressibilityTesting AND unlimitedWindowSize,0,1.0,1.0,1.0,52
+full,432,54,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND disableCompressibilityTesting AND unlimitedWindowSize,0,1.0,1.0,1.0,53
+random_2,20,2,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,NOT unlimitedWindowSize AND NOT compressionBzip2 AND level <= 8.5 AND level > 4.5,0,0.0,0.0,0.0,53
+random_5,50,4,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND unlimitedWindowSize AND disableCompressibilityTesting,3,1.0,1.0,1.0,53
+random_10,100,14,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND unlimitedWindowSize AND disableCompressibilityTesting,0,1.0,1.0,1.0,53
+random_20,200,26,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND unlimitedWindowSize AND encryption,0,1.0,1.0,1.0,53
+2-wise,56,8,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND encryption AND disableCompressibilityTesting,2,1.0,1.0,1.0,53
+3-wise,155,18,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compression AND encryption AND disableCompressibilityTesting AND unlimitedWindowSize,1,0.8,1.0,0.6666666666666666,53
+4-wise,301,37,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND encryption AND disableCompressibilityTesting,0,1.0,1.0,1.0,53
+full,432,54,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND disableCompressibilityTesting AND encryption,0,1.0,1.0,1.0,54
+random_2,20,4,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,NOT encryption,0,0.0,0.0,0.0,54
+random_5,50,1,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compressionBzip2 AND level <= 6.0 AND level > 2.5 AND NOT unlimitedWindowSize,0,0.0,0.0,0.0,54
+random_10,100,13,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND disableCompressibilityTesting AND encryption,1,1.0,1.0,1.0,54
+random_20,200,25,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND encryption AND unlimitedWindowSize,0,1.0,1.0,1.0,54
+2-wise,54,6,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,NOT disableCompressibilityTesting AND compressionZpaq AND level > 5.5,0,0.0,0.0,0.0,54
+3-wise,160,21,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND unlimitedWindowSize AND encryption,0,1.0,1.0,1.0,54
+4-wise,300,38,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND disableCompressibilityTesting AND encryption,0,1.0,1.0,1.0,54
+full,432,54,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND encryption AND disableCompressibilityTesting,0,1.0,1.0,1.0,55
+random_2,20,2,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,level > 2.5 AND compressionLzo AND NOT encryption,0,0.0,0.0,0.0,55
+random_5,50,4,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND unlimitedWindowSize AND encryption,3,1.0,1.0,1.0,55
+random_10,100,6,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND disableCompressibilityTesting AND unlimitedWindowSize,1,1.0,1.0,1.0,55
+random_20,200,22,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND encryption AND unlimitedWindowSize,0,1.0,1.0,1.0,55
+2-wise,55,5,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,level > 2.5 AND disableCompressibilityTesting AND encryption AND unlimitedWindowSize,4,1.0,1.0,1.0,55
+3-wise,158,12,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND encryption AND unlimitedWindowSize,0,1.0,1.0,1.0,55
+4-wise,299,35,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND unlimitedWindowSize AND encryption,0,1.0,1.0,1.0,55
+full,432,54,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND disableCompressibilityTesting AND encryption,0,1.0,1.0,1.0,56
+random_2,20,3,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,NOT unlimitedWindowSize AND NOT compressionZpaq AND NOT compressionLrzip AND encryption,0,0.0,0.0,0.0,56
+random_5,50,10,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND unlimitedWindowSize AND disableCompressibilityTesting,3,1.0,1.0,1.0,56
+random_10,100,13,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND disableCompressibilityTesting AND unlimitedWindowSize,0,1.0,1.0,1.0,56
+random_20,200,25,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND unlimitedWindowSize AND disableCompressibilityTesting,0,1.0,1.0,1.0,56
+2-wise,56,9,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND unlimitedWindowSize AND disableCompressibilityTesting,4,1.0,1.0,1.0,56
+3-wise,157,18,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND encryption AND unlimitedWindowSize,1,1.0,1.0,1.0,56
+4-wise,301,33,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND unlimitedWindowSize AND encryption,0,1.0,1.0,1.0,56
+full,432,54,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND disableCompressibilityTesting AND encryption,0,1.0,1.0,1.0,57
+random_2,20,1,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,NOT encryption AND NOT compressionLzo AND compression AND level > 6.0,0,0.0,0.0,0.0,57
+random_5,50,8,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,NOT encryption AND level <= 8.5 AND NOT compressionZpaq AND NOT disableCompressibilityTesting,0,0.0,0.0,0.0,57
+random_10,100,11,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND encryption AND unlimitedWindowSize,4,1.0,1.0,1.0,57
+random_20,200,24,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND disableCompressibilityTesting AND encryption,2,1.0,1.0,1.0,57
+2-wise,57,8,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,NOT compressionGzip AND NOT compressionLrzip AND level <= 8.5,3,0.1463414634146341,0.0909090909090909,0.375,57
+3-wise,154,18,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,NOT unlimitedWindowSize AND level > 2.5 AND NOT compressionLrzip AND compressionBzip2,0,0.0,0.0,0.0,57
+4-wise,301,35,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND disableCompressibilityTesting AND unlimitedWindowSize,0,1.0,1.0,1.0,57
+full,432,54,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND unlimitedWindowSize AND encryption,0,1.0,1.0,1.0,58
+random_2,20,5,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND compression AND NOT compressionLrzip AND level <= 6.0,4,0.888888888888889,1.0,0.8,58
+random_5,50,8,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND NOT compressionLrzip AND disableCompressibilityTesting AND unlimitedWindowSize,4,0.9333333333333332,1.0,0.875,58
+random_10,100,10,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND unlimitedWindowSize AND encryption,0,1.0,1.0,1.0,58
+random_20,200,25,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND unlimitedWindowSize AND encryption,0,1.0,1.0,1.0,58
+2-wise,59,11,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND disableCompressibilityTesting AND encryption,2,1.0,1.0,1.0,58
+3-wise,158,28,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND disableCompressibilityTesting AND encryption,0,1.0,1.0,1.0,58
+4-wise,297,40,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND disableCompressibilityTesting AND unlimitedWindowSize,0,1.0,1.0,1.0,58
+full,432,54,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND NOT compressionBzip2 AND encryption AND disableCompressibilityTesting,0,0.9090909090909092,1.0,0.8333333333333334,59
+random_2,20,4,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND unlimitedWindowSize AND NOT compressionLrzip,3,0.8571428571428571,1.0,0.75,59
+random_5,50,6,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,level <= 8.5 AND compressionLzo,0,0.0,0.0,0.0,59
+random_10,100,11,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,NOT encryption AND level <= 4.5 AND NOT compressionLzo,0,0.0,0.0,0.0,59
+random_20,200,27,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND encryption AND disableCompressibilityTesting,0,1.0,1.0,1.0,59
+2-wise,55,6,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,NOT compressionBzip2 AND level > 6.5 AND compression AND unlimitedWindowSize,0,0.0,0.0,0.0,59
+3-wise,152,20,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND NOT compressionBzip2 AND NOT disableCompressibilityTesting AND level > 8.5,0,0.0,0.0,0.0,59
+4-wise,304,40,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND disableCompressibilityTesting AND unlimitedWindowSize,1,1.0,1.0,1.0,59
+full,432,54,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND unlimitedWindowSize AND encryption,0,1.0,1.0,1.0,5
+random_2,20,2,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,level > 4.5 AND NOT compressionLrzip AND disableCompressibilityTesting AND NOT compressionGzip,4,1.0,1.0,1.0,5
+random_5,50,6,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,NOT disableCompressibilityTesting AND NOT compressionZpaq,0,0.0,0.0,0.0,5
+random_10,100,13,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,NOT compression AND level <= 3.5 AND encryption AND level <= 2.5,0,0.0,0.0,0.0,5
+random_20,200,30,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND NOT compressionBzip2 AND NOT compressionGzip,4,0.4086021505376344,0.3015873015873015,0.6333333333333333,5
+2-wise,55,7,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,NOT compressionGzip AND NOT compressionLzo,3,0.0909090909090909,0.054054054054054,0.2857142857142857,5
+3-wise,153,20,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,NOT disableCompressibilityTesting AND level <= 5.5 AND level <= 3.5 AND level <= 2.5,0,0.0,0.0,0.0,5
+4-wise,294,32,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,level > 1.5,2,0.1843003412969283,0.1034482758620689,0.84375,5
+full,432,54,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND encryption AND unlimitedWindowSize,0,1.0,1.0,1.0,60
+random_2,20,9,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND encryption,3,1.0,1.0,1.0,60
+random_5,50,11,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,NOT compressionLrzip AND encryption AND disableCompressibilityTesting AND unlimitedWindowSize,3,0.8421052631578948,1.0,0.7272727272727273,60
+random_10,100,14,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND disableCompressibilityTesting AND encryption,1,1.0,1.0,1.0,60
+random_20,200,31,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND encryption AND disableCompressibilityTesting,0,1.0,1.0,1.0,60
+2-wise,55,12,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND disableCompressibilityTesting AND unlimitedWindowSize,1,1.0,1.0,1.0,60
+3-wise,161,23,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND disableCompressibilityTesting AND encryption,0,1.0,1.0,1.0,60
+4-wise,305,41,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND disableCompressibilityTesting AND unlimitedWindowSize,0,1.0,1.0,1.0,60
+full,432,54,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND disableCompressibilityTesting AND encryption,0,1.0,1.0,1.0,61
+random_2,20,3,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND encryption AND disableCompressibilityTesting,4,1.0,1.0,1.0,61
+random_5,50,9,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND encryption AND disableCompressibilityTesting,1,1.0,1.0,1.0,61
+random_10,100,10,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND encryption AND disableCompressibilityTesting,0,1.0,1.0,1.0,61
+random_20,200,22,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND disableCompressibilityTesting AND encryption,0,1.0,1.0,1.0,61
+2-wise,57,7,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND encryption AND disableCompressibilityTesting,0,1.0,1.0,1.0,61
+3-wise,155,22,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND unlimitedWindowSize AND disableCompressibilityTesting,0,1.0,1.0,1.0,61
+4-wise,300,37,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND unlimitedWindowSize AND encryption,0,1.0,1.0,1.0,61
+full,432,54,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND unlimitedWindowSize AND encryption,0,1.0,1.0,1.0,62
+random_2,20,2,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compressionBzip2 AND level > 5.0,2,1.0,1.0,1.0,62
+random_5,50,3,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,NOT encryption AND compression AND NOT compressionLrzip AND level <= 8.5,0,0.0,0.0,0.0,62
+random_10,100,13,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND disableCompressibilityTesting AND encryption,0,1.0,1.0,1.0,62
+random_20,200,20,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND disableCompressibilityTesting AND encryption,0,1.0,1.0,1.0,62
+2-wise,55,3,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND disableCompressibilityTesting AND encryption,0,1.0,1.0,1.0,62
+3-wise,158,16,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND encryption AND unlimitedWindowSize,0,1.0,1.0,1.0,62
+4-wise,310,36,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND disableCompressibilityTesting AND encryption,0,1.0,1.0,1.0,62
+full,432,54,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND disableCompressibilityTesting AND encryption,0,1.0,1.0,1.0,63
+random_2,20,4,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,level > 5.5 AND NOT compressionLzo AND level <= 7.5 AND NOT compressionBzip2,0,0.0,0.0,0.0,63
+random_5,50,6,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND encryption AND unlimitedWindowSize AND NOT compressionGzip,3,0.9090909090909092,1.0,0.8333333333333334,63
+random_10,100,15,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND disableCompressibilityTesting AND unlimitedWindowSize,2,1.0,1.0,1.0,63
+random_20,200,26,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND unlimitedWindowSize AND encryption,0,1.0,1.0,1.0,63
+2-wise,56,6,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,level <= 8.5 AND encryption AND disableCompressibilityTesting AND unlimitedWindowSize,4,0.8,1.0,0.6666666666666666,63
+3-wise,166,22,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND unlimitedWindowSize AND encryption,0,1.0,1.0,1.0,63
+4-wise,313,40,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND unlimitedWindowSize AND disableCompressibilityTesting,0,1.0,1.0,1.0,63
+full,432,54,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND unlimitedWindowSize AND encryption,0,1.0,1.0,1.0,64
+random_2,20,4,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,level <= 8.5 AND compressionBzip2 AND unlimitedWindowSize,2,0.6666666666666666,1.0,0.5,64
+random_5,50,9,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,level <= 3.5 AND NOT compressionGzip AND NOT encryption AND level <= 2.5,0,0.0,0.0,0.0,64
+random_10,100,16,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND disableCompressibilityTesting AND unlimitedWindowSize,3,1.0,1.0,1.0,64
+random_20,200,26,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND unlimitedWindowSize AND disableCompressibilityTesting,2,1.0,1.0,1.0,64
+2-wise,56,7,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND unlimitedWindowSize AND level > 3.5 AND disableCompressibilityTesting,4,0.7272727272727273,1.0,0.5714285714285714,64
+3-wise,152,14,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND level > 1.5 AND encryption AND disableCompressibilityTesting,2,0.8333333333333333,1.0,0.7142857142857143,64
+4-wise,297,39,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND disableCompressibilityTesting AND unlimitedWindowSize,0,1.0,1.0,1.0,64
+full,432,54,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND encryption AND unlimitedWindowSize,0,1.0,1.0,1.0,65
+random_2,20,4,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND unlimitedWindowSize AND level <= 8.5 AND NOT compressionBzip2,3,0.8571428571428571,1.0,0.75,65
+random_5,50,4,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND compressionLrzip AND level > 3.5 AND encryption,4,0.6666666666666666,1.0,0.5,65
+random_10,100,12,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND unlimitedWindowSize AND encryption,1,1.0,1.0,1.0,65
+random_20,200,24,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND disableCompressibilityTesting AND encryption,0,1.0,1.0,1.0,65
+2-wise,55,7,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND unlimitedWindowSize AND disableCompressibilityTesting,3,1.0,1.0,1.0,65
+3-wise,163,23,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND unlimitedWindowSize AND encryption,3,1.0,1.0,1.0,65
+4-wise,304,43,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND encryption AND disableCompressibilityTesting,0,1.0,1.0,1.0,65
+full,432,54,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND disableCompressibilityTesting AND encryption,0,1.0,1.0,1.0,66
+random_2,20,4,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compressionBzip2,4,0.8571428571428571,1.0,0.75,66
+random_5,50,6,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND encryption AND unlimitedWindowSize,0,1.0,1.0,1.0,66
+random_10,100,17,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND disableCompressibilityTesting AND encryption,0,1.0,1.0,1.0,66
+random_20,200,23,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND encryption AND unlimitedWindowSize,0,1.0,1.0,1.0,66
+2-wise,57,8,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND encryption AND unlimitedWindowSize,4,1.0,1.0,1.0,66
+3-wise,153,21,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND unlimitedWindowSize AND disableCompressibilityTesting,1,1.0,1.0,1.0,66
+4-wise,300,41,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND encryption AND disableCompressibilityTesting,0,1.0,1.0,1.0,66
+full,432,54,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND encryption AND unlimitedWindowSize,0,1.0,1.0,1.0,67
+random_2,20,1,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND NOT unlimitedWindowSize AND encryption AND NOT compressionBzip2,0,0.0,0.0,0.0,67
+random_5,50,5,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,NOT compressionLrzip AND level <= 6.5 AND level <= 3.5 AND NOT compressionBzip2,2,0.2352941176470588,0.1666666666666666,0.4,67
+random_10,100,10,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,NOT encryption AND NOT compressionLzo AND unlimitedWindowSize AND level > 2.5,0,0.0,0.0,0.0,67
+random_20,200,29,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,NOT encryption AND compression AND level <= 4.5,0,0.0,0.0,0.0,67
+2-wise,55,2,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,NOT compressionLzo AND level <= 6.5 AND NOT compressionLrzip AND level > 1.5,0,0.0,0.0,0.0,67
+3-wise,163,13,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND level <= 4.5 AND compressionLzo AND level <= 1.5,0,0.0,0.0,0.0,67
+4-wise,301,35,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND level > 5.5 AND encryption AND unlimitedWindowSize,1,0.6274509803921569,1.0,0.4571428571428571,67
+full,432,54,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND encryption AND disableCompressibilityTesting,0,1.0,1.0,1.0,68
+random_2,20,4,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,level > 6.5 AND NOT compressionZpaq,4,0.8571428571428571,1.0,0.75,68
+random_5,50,6,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND disableCompressibilityTesting AND unlimitedWindowSize,4,1.0,1.0,1.0,68
+random_10,100,11,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND unlimitedWindowSize AND encryption,2,1.0,1.0,1.0,68
+random_20,200,26,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND disableCompressibilityTesting AND unlimitedWindowSize,0,1.0,1.0,1.0,68
+2-wise,59,7,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND encryption AND unlimitedWindowSize,2,1.0,1.0,1.0,68
+3-wise,155,18,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND encryption AND disableCompressibilityTesting,2,1.0,1.0,1.0,68
+4-wise,300,37,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND disableCompressibilityTesting AND encryption,0,1.0,1.0,1.0,68
+full,432,54,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND disableCompressibilityTesting AND unlimitedWindowSize,0,1.0,1.0,1.0,69
+random_5,50,6,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND disableCompressibilityTesting AND level > 2.0 AND NOT compressionLzo,3,0.7142857142857143,0.625,0.8333333333333334,69
+random_10,100,11,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND unlimitedWindowSize AND encryption,1,1.0,1.0,1.0,69
+random_20,200,22,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND disableCompressibilityTesting AND unlimitedWindowSize,0,1.0,1.0,1.0,69
+2-wise,56,6,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND encryption AND disableCompressibilityTesting,0,1.0,1.0,1.0,69
+3-wise,158,15,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND disableCompressibilityTesting AND encryption,0,1.0,1.0,1.0,69
+4-wise,288,32,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND disableCompressibilityTesting AND encryption,0,1.0,1.0,1.0,69
+full,432,54,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND NOT compressionZpaq AND unlimitedWindowSize AND disableCompressibilityTesting,0,0.9090909090909092,1.0,0.8333333333333334,6
+random_2,20,2,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,level <= 8.5 AND NOT unlimitedWindowSize AND encryption AND level <= 6.5,0,0.0,0.0,0.0,6
+random_5,50,5,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,level > 1.5 AND level <= 2.5 AND unlimitedWindowSize AND NOT compressionLrzip,4,0.4444444444444445,0.5,0.4,6
+random_10,100,14,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,NOT disableCompressibilityTesting AND NOT compressionZpaq AND level > 2.5,0,0.0,0.0,0.0,6
+random_20,200,22,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND encryption AND unlimitedWindowSize,4,1.0,1.0,1.0,6
+2-wise,56,7,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,NOT encryption AND NOT compressionZpaq AND level > 3.5 AND NOT disableCompressibilityTesting,0,0.0,0.0,0.0,6
+3-wise,154,20,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND disableCompressibilityTesting AND NOT compressionZpaq AND encryption,4,0.9743589743589745,1.0,0.95,6
+4-wise,306,33,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,level > 4.5 AND disableCompressibilityTesting AND encryption AND unlimitedWindowSize,3,0.7547169811320755,1.0,0.6060606060606061,6
+full,432,54,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND encryption AND unlimitedWindowSize,0,1.0,1.0,1.0,70
+random_2,20,1,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,NOT compressionLzo AND compressionBzip2 AND unlimitedWindowSize AND NOT disableCompressibilityTesting,0,0.0,0.0,0.0,70
+random_5,50,4,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,level <= 1.5 AND NOT compressionGzip AND compression AND encryption,0,0.0,0.0,0.0,70
+random_10,100,12,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND NOT compressionLzo AND unlimitedWindowSize AND encryption,1,0.9565217391304348,1.0,0.9166666666666666,70
+random_20,200,28,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND encryption AND unlimitedWindowSize,0,1.0,1.0,1.0,70
+2-wise,56,3,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,level <= 7.5 AND NOT compressionLzo AND NOT compressionLrzip,3,0.0625,0.0344827586206896,0.3333333333333333,70
+3-wise,157,21,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND disableCompressibilityTesting AND encryption,0,1.0,1.0,1.0,70
+4-wise,310,41,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND disableCompressibilityTesting AND unlimitedWindowSize,0,1.0,1.0,1.0,70
+full,432,54,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND disableCompressibilityTesting AND unlimitedWindowSize,0,1.0,1.0,1.0,71
+random_2,20,3,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compression AND disableCompressibilityTesting AND unlimitedWindowSize,4,0.8,1.0,0.6666666666666666,71
+random_5,50,9,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND disableCompressibilityTesting AND unlimitedWindowSize,2,1.0,1.0,1.0,71
+random_10,100,13,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND disableCompressibilityTesting AND unlimitedWindowSize,3,1.0,1.0,1.0,71
+random_20,200,26,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND encryption AND disableCompressibilityTesting,0,1.0,1.0,1.0,71
+2-wise,56,9,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND disableCompressibilityTesting AND unlimitedWindowSize,3,1.0,1.0,1.0,71
+3-wise,153,24,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND unlimitedWindowSize AND encryption,0,1.0,1.0,1.0,71
+4-wise,304,41,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND unlimitedWindowSize AND disableCompressibilityTesting,0,1.0,1.0,1.0,71
+full,432,54,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND unlimitedWindowSize AND encryption,0,1.0,1.0,1.0,72
+random_2,20,3,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND disableCompressibilityTesting AND unlimitedWindowSize AND NOT compressionLzo,3,0.8,1.0,0.6666666666666666,72
+random_5,50,7,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,level > 2.5 AND level > 7.5 AND encryption,0,0.0,0.0,0.0,72
+random_10,100,10,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,level <= 2.5 AND compression AND NOT compressionLrzip,0,0.0,0.0,0.0,72
+random_20,200,25,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND unlimitedWindowSize AND NOT compressionBzip2 AND disableCompressibilityTesting,3,0.8636363636363636,1.0,0.76,72
+2-wise,55,7,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,NOT compressionLzo,4,0.1509433962264151,0.0869565217391304,0.5714285714285714,72
+3-wise,156,21,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND encryption AND unlimitedWindowSize,1,1.0,1.0,1.0,72
+4-wise,291,41,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND disableCompressibilityTesting AND unlimitedWindowSize,0,1.0,1.0,1.0,72
+full,432,54,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND disableCompressibilityTesting AND encryption,0,1.0,1.0,1.0,73
+random_2,20,2,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,level <= 8.5 AND NOT compressionGzip AND level > 5.5,0,0.0,0.0,0.0,73
+random_5,50,8,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,NOT encryption,0,0.0,0.0,0.0,73
+random_10,100,15,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND disableCompressibilityTesting AND unlimitedWindowSize,3,1.0,1.0,1.0,73
+random_20,200,27,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND unlimitedWindowSize AND disableCompressibilityTesting,0,1.0,1.0,1.0,73
+2-wise,57,4,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND encryption AND disableCompressibilityTesting,3,1.0,1.0,1.0,73
+3-wise,162,17,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND disableCompressibilityTesting AND encryption,2,1.0,1.0,1.0,73
+4-wise,291,37,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND unlimitedWindowSize AND encryption,0,1.0,1.0,1.0,73
+full,432,54,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,NOT compressionLrzip AND disableCompressibilityTesting AND encryption AND unlimitedWindowSize,0,0.9090909090909092,1.0,0.8333333333333334,74
+random_2,20,3,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,level <= 7.5 AND NOT compressionZpaq AND NOT compressionLzo AND level > 5.5,0,0.0,0.0,0.0,74
+random_5,50,6,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,NOT disableCompressibilityTesting AND level > 1.5 AND level > 3.5,0,0.0,0.0,0.0,74
+random_10,100,16,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND level > 1.5 AND encryption AND disableCompressibilityTesting,3,0.9333333333333332,1.0,0.875,74
+random_20,200,24,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,level <= 3.5 AND encryption AND unlimitedWindowSize AND disableCompressibilityTesting,4,0.6666666666666666,1.0,0.5,74
+2-wise,54,8,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,NOT compressionLzo AND level > 3.5,4,0.2631578947368421,0.1666666666666666,0.625,74
+3-wise,154,19,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,NOT unlimitedWindowSize AND compression AND NOT compressionGzip AND compressionLzo,0,0.0,0.0,0.0,74
+4-wise,302,35,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,level > 4.5 AND disableCompressibilityTesting AND unlimitedWindowSize AND encryption,3,0.7719298245614035,1.0,0.6285714285714286,74
+full,432,54,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND unlimitedWindowSize AND disableCompressibilityTesting,0,1.0,1.0,1.0,75
+random_2,20,5,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND encryption,4,1.0,1.0,1.0,75
+random_5,50,6,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,level <= 4.5 AND compression,3,0.0869565217391304,0.0588235294117647,0.1666666666666666,75
+random_10,100,10,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND NOT compressionBzip2 AND encryption AND disableCompressibilityTesting,3,0.9473684210526316,1.0,0.9,75
+random_20,200,23,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND disableCompressibilityTesting AND encryption,0,1.0,1.0,1.0,75
+2-wise,57,9,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,NOT compressionLrzip AND disableCompressibilityTesting AND level <= 8.5,4,0.2580645161290322,0.1818181818181818,0.4444444444444444,75
+3-wise,150,18,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND encryption AND level > 1.5 AND unlimitedWindowSize,0,0.9411764705882352,1.0,0.8888888888888888,75
+4-wise,301,39,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND unlimitedWindowSize AND disableCompressibilityTesting,0,1.0,1.0,1.0,75
+full,432,54,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,NOT compressionZpaq,3,0.217391304347826,0.125,0.8333333333333334,76
+random_2,20,5,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,NOT disableCompressibilityTesting AND level <= 6.5 AND NOT compressionZpaq,0,0.0,0.0,0.0,76
+random_5,50,9,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,level > 1.5 AND compressionBzip2 AND unlimitedWindowSize AND level <= 3.5,4,0.3333333333333333,0.6666666666666666,0.2222222222222222,76
+random_10,100,17,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,level <= 8.5,3,0.2718446601941747,0.1627906976744186,0.8235294117647058,76
+random_20,200,25,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,level <= 1.5 AND NOT compressionBzip2 AND NOT compressionLrzip AND compression,0,0.0,0.0,0.0,76
+2-wise,55,8,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,level > 5.5 AND level > 7.5,2,0.2,0.1666666666666666,0.25,76
+3-wise,148,20,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND level > 4.5 AND unlimitedWindowSize AND encryption,3,0.6666666666666666,1.0,0.5,76
+4-wise,298,34,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,NOT encryption AND NOT compressionLzo AND level > 3.5,0,0.0,0.0,0.0,76
+full,432,54,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND encryption AND unlimitedWindowSize,0,1.0,1.0,1.0,77
+random_2,20,3,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,NOT encryption AND compressionZpaq AND level <= 5.5,0,0.0,0.0,0.0,77
+random_5,50,5,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,NOT unlimitedWindowSize,0,0.0,0.0,0.0,77
+random_10,100,13,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND unlimitedWindowSize AND encryption,1,1.0,1.0,1.0,77
+random_20,200,23,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND encryption AND disableCompressibilityTesting,0,1.0,1.0,1.0,77
+2-wise,55,5,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,NOT compressionGzip AND NOT encryption AND disableCompressibilityTesting AND NOT compressionLzo,0,0.0,0.0,0.0,77
+3-wise,158,21,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND encryption AND unlimitedWindowSize,0,1.0,1.0,1.0,77
+4-wise,295,30,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND disableCompressibilityTesting AND encryption,0,1.0,1.0,1.0,77
+full,432,54,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND disableCompressibilityTesting AND level > 1.5 AND unlimitedWindowSize,0,0.9411764705882352,1.0,0.8888888888888888,78
+random_2,20,1,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,NOT compressionBzip2 AND level > 3.5 AND NOT compressionLrzip AND NOT compressionGzip,0,0.0,0.0,0.0,78
+random_5,50,4,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,level > 2.5 AND NOT unlimitedWindowSize AND level > 3.5 AND level <= 7.5,0,0.0,0.0,0.0,78
+random_10,100,13,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,NOT compressionZpaq AND NOT disableCompressibilityTesting AND level <= 8.5 AND NOT compressionBzip2,0,0.0,0.0,0.0,78
+random_20,200,23,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,level > 7.5 AND NOT compressionZpaq,4,0.109090909090909,0.09375,0.1304347826086956,78
+2-wise,57,6,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,NOT compressionLrzip AND level > 4.5 AND level > 6.5 AND compressionZpaq,0,0.0,0.0,0.0,78
+3-wise,156,21,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,level > 3.5 AND unlimitedWindowSize AND encryption AND disableCompressibilityTesting,4,0.6875000000000001,1.0,0.5238095238095238,78
+4-wise,303,35,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND unlimitedWindowSize AND level <= 5.5 AND encryption,4,0.6792452830188679,1.0,0.5142857142857142,78
+full,432,54,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND unlimitedWindowSize AND encryption,0,1.0,1.0,1.0,79
+random_2,20,4,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND NOT compressionBzip2 AND level > 6.5 AND level <= 7.5,2,0.6666666666666666,1.0,0.5,79
+random_5,50,11,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND encryption AND disableCompressibilityTesting,2,1.0,1.0,1.0,79
+random_10,100,11,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND unlimitedWindowSize AND disableCompressibilityTesting,0,1.0,1.0,1.0,79
+random_20,200,22,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND encryption AND disableCompressibilityTesting,0,1.0,1.0,1.0,79
+2-wise,57,12,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND encryption AND disableCompressibilityTesting,0,1.0,1.0,1.0,79
+3-wise,154,28,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND disableCompressibilityTesting AND encryption,0,1.0,1.0,1.0,79
+4-wise,299,38,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND unlimitedWindowSize AND disableCompressibilityTesting,0,1.0,1.0,1.0,79
+full,432,54,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND encryption AND unlimitedWindowSize,0,1.0,1.0,1.0,7
+random_2,20,2,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND unlimitedWindowSize AND compression AND level > 2.5,2,0.5,0.5,0.5,7
+random_5,50,4,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compressionGzip AND level <= 4.5 AND level > 2.0 AND NOT disableCompressibilityTesting,0,0.0,0.0,0.0,7
+random_10,100,18,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compressionBzip2 AND level <= 5.5 AND NOT unlimitedWindowSize AND level > 2.5,0,0.0,0.0,0.0,7
+random_20,200,28,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND NOT compression AND NOT disableCompressibilityTesting AND level <= 8.5,0,0.0,0.0,0.0,7
+2-wise,56,7,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,NOT unlimitedWindowSize AND compression AND NOT compressionGzip,0,0.0,0.0,0.0,7
+3-wise,157,18,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND disableCompressibilityTesting AND encryption,1,1.0,1.0,1.0,7
+4-wise,307,36,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND encryption AND disableCompressibilityTesting,0,1.0,1.0,1.0,7
+full,432,54,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,level > 1.5 AND unlimitedWindowSize AND level <= 8.5,4,0.3783783783783784,0.25,0.7777777777777778,80
+random_5,50,2,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,level > 1.5 AND NOT compressionZpaq,3,0.1052631578947368,0.0555555555555555,1.0,80
+random_10,100,18,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,NOT unlimitedWindowSize AND NOT compressionLzo AND level > 5.5 AND NOT disableCompressibilityTesting,0,0.0,0.0,0.0,80
+random_20,200,28,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,level <= 4.5,4,0.2142857142857142,0.1428571428571428,0.4285714285714285,80
+2-wise,55,5,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,level > 8.5 AND compression AND NOT disableCompressibilityTesting,0,0.0,0.0,0.0,80
+3-wise,153,17,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compressionGzip AND level <= 7.5,0,0.0,0.0,0.0,80
+4-wise,299,35,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,NOT compressionLrzip,4,0.2027972027972027,0.1155378486055776,0.8285714285714286,80
+full,432,54,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND disableCompressibilityTesting AND unlimitedWindowSize,0,1.0,1.0,1.0,81
+random_2,20,2,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,level > 3.5 AND encryption AND disableCompressibilityTesting,4,1.0,1.0,1.0,81
+random_5,50,7,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compressionGzip AND level <= 6.0 AND encryption,0,0.0,0.0,0.0,81
+random_10,100,13,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,level > 2.5 AND level <= 8.5,4,0.1538461538461538,0.0923076923076923,0.4615384615384615,81
+random_20,200,30,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND unlimitedWindowSize AND disableCompressibilityTesting,2,1.0,1.0,1.0,81
+2-wise,55,7,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,level > 3.5 AND compression,3,0.1578947368421052,0.0967741935483871,0.4285714285714285,81
+3-wise,162,28,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,NOT compressionLzo AND encryption AND unlimitedWindowSize AND disableCompressibilityTesting,1,0.9433962264150944,1.0,0.8928571428571429,81
+4-wise,296,38,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND disableCompressibilityTesting AND encryption,1,1.0,1.0,1.0,81
+full,432,54,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND disableCompressibilityTesting AND unlimitedWindowSize,0,1.0,1.0,1.0,82
+random_2,20,6,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND encryption AND NOT compressionGzip AND unlimitedWindowSize,4,0.9090909090909092,1.0,0.8333333333333334,82
+random_5,50,6,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,NOT encryption AND level <= 8.5 AND NOT compressionZpaq AND level <= 7.0,0,0.0,0.0,0.0,82
+random_10,100,14,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND disableCompressibilityTesting AND encryption,1,1.0,1.0,1.0,82
+random_20,200,30,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND unlimitedWindowSize AND encryption,0,1.0,1.0,1.0,82
+2-wise,58,4,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compression AND level > 5.5 AND level <= 7.5 AND encryption,0,0.0,0.0,0.0,82
+3-wise,158,11,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND disableCompressibilityTesting AND encryption,0,1.0,1.0,1.0,82
+4-wise,288,35,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND encryption AND unlimitedWindowSize,0,1.0,1.0,1.0,82
+full,432,54,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND encryption AND unlimitedWindowSize,0,1.0,1.0,1.0,83
+random_2,20,1,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,level > 1.5 AND NOT compressionBzip2 AND level > 4.5,0,0.0,0.0,0.0,83
+random_5,50,4,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,NOT compression AND level > 2.5 AND level <= 8.0 AND NOT disableCompressibilityTesting,0,0.0,0.0,0.0,83
+random_10,100,11,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND encryption AND unlimitedWindowSize,2,1.0,1.0,1.0,83
+random_20,200,22,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND disableCompressibilityTesting AND encryption,0,1.0,1.0,1.0,83
+2-wise,56,6,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND disableCompressibilityTesting AND encryption,4,1.0,1.0,1.0,83
+3-wise,155,16,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND disableCompressibilityTesting AND unlimitedWindowSize,0,1.0,1.0,1.0,83
+4-wise,309,37,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND encryption AND unlimitedWindowSize,0,1.0,1.0,1.0,83
+full,432,54,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND unlimitedWindowSize AND disableCompressibilityTesting,0,1.0,1.0,1.0,84
+random_2,20,4,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,NOT compressionGzip AND NOT compressionZpaq,4,0.3529411764705882,0.2307692307692307,0.75,84
+random_5,50,6,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,NOT encryption AND level <= 8.5 AND NOT compressionGzip,0,0.0,0.0,0.0,84
+random_10,100,15,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,NOT compressionLrzip AND disableCompressibilityTesting AND level > 8.5 AND unlimitedWindowSize,0,0.0,0.0,0.0,84
+random_20,200,21,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND NOT compressionBzip2 AND compression AND level <= 8.5,4,0.4,0.2777777777777778,0.7142857142857143,84
+2-wise,56,7,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,level <= 6.5 AND NOT disableCompressibilityTesting AND level > 5.5 AND compression,0,0.0,0.0,0.0,84
+3-wise,153,22,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,level > 5.5 AND NOT disableCompressibilityTesting AND NOT compressionGzip AND compression,0,0.0,0.0,0.0,84
+4-wise,306,42,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND unlimitedWindowSize AND encryption,3,1.0,1.0,1.0,84
+full,432,54,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND disableCompressibilityTesting AND encryption,0,1.0,1.0,1.0,85
+random_2,20,1,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,level <= 8.5 AND level > 1.5 AND compression,0,0.0,0.0,0.0,85
+random_5,50,6,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,NOT compressionZpaq AND encryption AND disableCompressibilityTesting AND unlimitedWindowSize,3,0.8,1.0,0.6666666666666666,85
+random_10,100,10,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,NOT compressionLzo AND encryption AND unlimitedWindowSize AND disableCompressibilityTesting,1,0.8235294117647058,1.0,0.7,85
+random_20,200,21,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND disableCompressibilityTesting AND encryption,0,1.0,1.0,1.0,85
+2-wise,54,7,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND encryption AND disableCompressibilityTesting AND level > 3.5,4,0.8333333333333333,1.0,0.7142857142857143,85
+3-wise,159,16,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND disableCompressibilityTesting AND unlimitedWindowSize,0,1.0,1.0,1.0,85
+4-wise,304,34,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND encryption AND unlimitedWindowSize,0,1.0,1.0,1.0,85
+full,432,54,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND disableCompressibilityTesting AND encryption,0,1.0,1.0,1.0,86
+random_2,20,3,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND encryption AND NOT compressionLzo,2,0.8,1.0,0.6666666666666666,86
+random_5,50,7,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,level <= 8.5 AND level > 1.5,3,0.2608695652173913,0.1538461538461538,0.8571428571428571,86
+random_10,100,7,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,level > 2.5 AND compression,3,0.1388888888888889,0.0769230769230769,0.7142857142857143,86
+random_20,200,28,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND unlimitedWindowSize AND level <= 4.5 AND encryption,0,0.6341463414634146,1.0,0.4642857142857143,86
+2-wise,55,7,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,NOT compressionZpaq AND NOT unlimitedWindowSize AND level > 1.5,0,0.0,0.0,0.0,86
+3-wise,159,22,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,level <= 3.5 AND level > 1.5,4,0.1428571428571428,0.1176470588235294,0.1818181818181818,86
+4-wise,302,41,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND encryption AND disableCompressibilityTesting,0,1.0,1.0,1.0,86
+full,432,54,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND NOT compressionZpaq AND encryption AND disableCompressibilityTesting,0,0.9090909090909092,1.0,0.8333333333333334,87
+random_5,50,5,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,level > 2.5 AND NOT encryption AND level > 3.5 AND NOT compressionLzo,0,0.0,0.0,0.0,87
+random_10,100,18,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND disableCompressibilityTesting AND unlimitedWindowSize,3,1.0,1.0,1.0,87
+random_20,200,24,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,NOT encryption AND level > 5.5 AND NOT compressionGzip,0,0.0,0.0,0.0,87
+2-wise,57,6,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compressionBzip2 AND disableCompressibilityTesting AND level <= 4.5,0,0.0,0.0,0.0,87
+3-wise,159,18,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND encryption AND level <= 6.5 AND disableCompressibilityTesting,4,0.7142857142857143,1.0,0.5555555555555556,87
+4-wise,299,35,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND compression AND encryption AND unlimitedWindowSize,1,0.955223880597015,1.0,0.9142857142857144,87
+full,432,54,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND NOT compressionZpaq AND encryption AND disableCompressibilityTesting,0,0.9090909090909092,1.0,0.8333333333333334,88
+random_2,20,2,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,NOT compression AND level <= 5.5,0,0.0,0.0,0.0,88
+random_5,50,8,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,NOT compressionZpaq AND compressionLzo AND level > 1.5,0,0.0,0.0,0.0,88
+random_10,100,15,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,NOT encryption AND compression AND level <= 6.5 AND NOT compressionLrzip,0,0.0,0.0,0.0,88
+random_20,200,24,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND encryption AND disableCompressibilityTesting,1,1.0,1.0,1.0,88
+2-wise,54,8,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compressionZpaq AND disableCompressibilityTesting AND level > 3.5 AND encryption,0,0.0,0.0,0.0,88
+3-wise,151,18,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,NOT compressionBzip2 AND NOT encryption AND level <= 3.5 AND compression,0,0.0,0.0,0.0,88
+4-wise,303,36,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND unlimitedWindowSize AND NOT compressionBzip2 AND encryption,0,0.8923076923076924,1.0,0.8055555555555556,88
+full,432,54,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND disableCompressibilityTesting AND encryption,0,1.0,1.0,1.0,89
+random_2,20,1,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,NOT compressionLrzip AND NOT compressionLzo AND NOT encryption AND NOT compressionBzip2,0,0.0,0.0,0.0,89
+random_5,50,6,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,level <= 6.5 AND NOT compression AND level > 3.5,0,0.0,0.0,0.0,89
+random_10,100,10,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,NOT compression AND NOT unlimitedWindowSize AND NOT encryption,0,0.0,0.0,0.0,89
+random_20,200,29,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND disableCompressibilityTesting AND unlimitedWindowSize,0,1.0,1.0,1.0,89
+2-wise,59,7,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,NOT compression AND NOT disableCompressibilityTesting AND level > 4.0 AND encryption,0,0.0,0.0,0.0,89
+3-wise,160,23,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,level <= 1.5 AND compressionLzo AND NOT encryption AND NOT unlimitedWindowSize,0,0.0,0.0,0.0,89
+4-wise,304,39,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND unlimitedWindowSize AND NOT compressionGzip AND disableCompressibilityTesting,2,0.9166666666666666,1.0,0.8461538461538461,89
+full,432,54,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND unlimitedWindowSize AND encryption,0,1.0,1.0,1.0,8
+random_2,20,3,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,NOT disableCompressibilityTesting AND encryption AND unlimitedWindowSize AND level > 5.5,0,0.0,0.0,0.0,8
+random_5,50,5,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,level <= 8.5 AND disableCompressibilityTesting AND NOT compressionLrzip AND level <= 1.5,2,0.5714285714285715,1.0,0.4,8
+random_10,100,15,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND disableCompressibilityTesting AND unlimitedWindowSize,1,1.0,1.0,1.0,8
+random_20,200,23,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND disableCompressibilityTesting AND unlimitedWindowSize,0,1.0,1.0,1.0,8
+2-wise,57,7,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compressionLzo AND disableCompressibilityTesting AND unlimitedWindowSize AND encryption,4,0.6,1.0,0.4285714285714285,8
+3-wise,155,17,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND unlimitedWindowSize AND disableCompressibilityTesting,3,1.0,1.0,1.0,8
+4-wise,305,35,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND disableCompressibilityTesting AND unlimitedWindowSize,0,1.0,1.0,1.0,8
+full,432,54,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND disableCompressibilityTesting AND unlimitedWindowSize,0,1.0,1.0,1.0,90
+random_2,20,1,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,level <= 6.5 AND NOT compressionLrzip AND level > 1.5,0,0.0,0.0,0.0,90
+random_5,50,7,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,NOT disableCompressibilityTesting AND level <= 7.5 AND NOT compressionZpaq AND NOT encryption,0,0.0,0.0,0.0,90
+random_10,100,18,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND level > 4.5 AND unlimitedWindowSize AND disableCompressibilityTesting,3,0.7586206896551725,1.0,0.6111111111111112,90
+random_20,200,20,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND encryption AND unlimitedWindowSize,0,1.0,1.0,1.0,90
+2-wise,55,5,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND encryption AND disableCompressibilityTesting,0,1.0,1.0,1.0,90
+3-wise,162,17,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND disableCompressibilityTesting AND unlimitedWindowSize,1,1.0,1.0,1.0,90
+4-wise,292,36,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND disableCompressibilityTesting AND encryption,0,1.0,1.0,1.0,90
+full,432,54,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND disableCompressibilityTesting AND unlimitedWindowSize,0,1.0,1.0,1.0,91
+random_2,20,4,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compressionLrzip,2,0.8571428571428571,1.0,0.75,91
+random_5,50,4,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,level <= 8.5 AND level <= 4.5,3,0.074074074074074,0.0434782608695652,0.25,91
+random_10,100,13,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND unlimitedWindowSize AND disableCompressibilityTesting,1,1.0,1.0,1.0,91
+random_20,200,25,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND encryption AND unlimitedWindowSize,0,1.0,1.0,1.0,91
+2-wise,56,7,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND disableCompressibilityTesting AND encryption,2,1.0,1.0,1.0,91
+3-wise,161,25,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND unlimitedWindowSize AND encryption,0,1.0,1.0,1.0,91
+4-wise,304,41,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND unlimitedWindowSize AND encryption,0,1.0,1.0,1.0,91
+full,432,54,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND unlimitedWindowSize AND encryption,0,1.0,1.0,1.0,92
+random_2,20,1,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compressionLzo AND level > 5.5,0,0.0,0.0,0.0,92
+random_5,50,6,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compressionZpaq AND unlimitedWindowSize AND disableCompressibilityTesting AND level <= 7.0,4,0.6666666666666666,1.0,0.5,92
+random_10,100,24,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND encryption AND unlimitedWindowSize,0,1.0,1.0,1.0,92
+random_20,200,28,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND encryption AND unlimitedWindowSize,0,1.0,1.0,1.0,92
+2-wise,56,6,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND unlimitedWindowSize AND disableCompressibilityTesting,4,1.0,1.0,1.0,92
+3-wise,156,25,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND disableCompressibilityTesting AND encryption,1,1.0,1.0,1.0,92
+4-wise,302,42,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND disableCompressibilityTesting AND encryption,0,1.0,1.0,1.0,92
+full,432,54,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,NOT compressionLrzip,3,0.217391304347826,0.125,0.8333333333333334,93
+random_2,20,5,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compression AND compressionLzo AND unlimitedWindowSize AND disableCompressibilityTesting,3,0.5714285714285715,1.0,0.4,93
+random_5,50,14,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,NOT encryption AND NOT unlimitedWindowSize AND NOT compressionBzip2 AND level <= 6.5,0,0.0,0.0,0.0,93
+random_10,100,11,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,NOT compressionLzo AND compression,3,0.2051282051282051,0.1194029850746268,0.7272727272727273,93
+random_20,200,19,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND NOT compressionLzo AND unlimitedWindowSize AND disableCompressibilityTesting,1,0.9444444444444444,1.0,0.8947368421052632,93
+2-wise,59,14,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,NOT compressionZpaq AND NOT compressionLrzip AND level <= 3.5,4,0.1538461538461538,0.1666666666666666,0.1428571428571428,93
+3-wise,156,21,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compressionGzip,4,0.1702127659574468,0.1538461538461538,0.1904761904761904,93
+4-wise,304,44,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,NOT compressionGzip AND compression AND unlimitedWindowSize AND NOT compressionLzo,1,0.3529411764705883,0.28,0.4772727272727273,93
+full,432,54,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND unlimitedWindowSize AND disableCompressibilityTesting,0,1.0,1.0,1.0,94
+random_2,20,3,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,level <= 7.5 AND compression AND unlimitedWindowSize,4,0.3333333333333333,0.2222222222222222,0.6666666666666666,94
+random_5,50,5,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND unlimitedWindowSize AND encryption,3,1.0,1.0,1.0,94
+random_10,100,11,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND unlimitedWindowSize AND disableCompressibilityTesting,2,1.0,1.0,1.0,94
+random_20,200,26,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND disableCompressibilityTesting AND unlimitedWindowSize,0,1.0,1.0,1.0,94
+2-wise,55,6,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,NOT compressionLrzip AND NOT unlimitedWindowSize AND NOT compressionBzip2,0,0.0,0.0,0.0,94
+3-wise,152,21,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND disableCompressibilityTesting AND unlimitedWindowSize,0,1.0,1.0,1.0,94
+4-wise,306,37,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND disableCompressibilityTesting AND unlimitedWindowSize,0,1.0,1.0,1.0,94
+full,432,54,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND disableCompressibilityTesting AND encryption,0,1.0,1.0,1.0,95
+random_2,20,2,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,NOT disableCompressibilityTesting AND level <= 8.5 AND level <= 5.5 AND compressionBzip2,0,0.0,0.0,0.0,95
+random_5,50,7,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND disableCompressibilityTesting AND unlimitedWindowSize,1,1.0,1.0,1.0,95
+random_10,100,13,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND encryption AND disableCompressibilityTesting,2,1.0,1.0,1.0,95
+random_20,200,24,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND encryption AND unlimitedWindowSize,0,1.0,1.0,1.0,95
+2-wise,57,4,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,NOT disableCompressibilityTesting AND NOT compressionLzo AND level <= 7.5 AND compression,0,0.0,0.0,0.0,95
+3-wise,160,20,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND encryption AND unlimitedWindowSize,0,1.0,1.0,1.0,95
+4-wise,295,34,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND disableCompressibilityTesting AND unlimitedWindowSize,0,1.0,1.0,1.0,95
+full,432,54,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND unlimitedWindowSize AND disableCompressibilityTesting,0,1.0,1.0,1.0,96
+random_2,20,4,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,level > 8.5 AND NOT compressionZpaq AND NOT encryption,0,0.0,0.0,0.0,96
+random_5,50,7,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,NOT unlimitedWindowSize AND level <= 6.5 AND level > 2.5 AND NOT compressionLrzip,0,0.0,0.0,0.0,96
+random_10,100,9,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND disableCompressibilityTesting AND encryption,2,1.0,1.0,1.0,96
+random_20,200,27,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND disableCompressibilityTesting AND unlimitedWindowSize,1,1.0,1.0,1.0,96
+2-wise,56,7,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND encryption AND unlimitedWindowSize,1,1.0,1.0,1.0,96
+3-wise,159,17,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND encryption AND unlimitedWindowSize,2,1.0,1.0,1.0,96
+4-wise,305,36,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND disableCompressibilityTesting AND encryption,0,1.0,1.0,1.0,96
+full,432,54,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND encryption AND disableCompressibilityTesting,1,1.0,1.0,1.0,97
+random_2,20,2,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compressionLzo AND level > 4.5,4,0.5,0.5,0.5,97
+random_5,50,12,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compressionZpaq AND level > 1.5 AND level <= 8.5 AND NOT disableCompressibilityTesting,0,0.0,0.0,0.0,97
+random_10,100,11,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,level <= 8.5,3,0.2222222222222222,0.125,1.0,97
+random_20,200,27,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,NOT unlimitedWindowSize AND level <= 5.5 AND NOT compressionZpaq AND NOT encryption,0,0.0,0.0,0.0,97
+2-wise,54,8,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND encryption AND disableCompressibilityTesting AND level > 6.5,1,0.4,1.0,0.25,97
+3-wise,154,28,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND disableCompressibilityTesting AND unlimitedWindowSize,2,1.0,1.0,1.0,97
+4-wise,295,43,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND encryption AND disableCompressibilityTesting,0,1.0,1.0,1.0,97
+full,432,54,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND encryption AND unlimitedWindowSize,0,1.0,1.0,1.0,98
+random_2,20,3,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND encryption AND unlimitedWindowSize AND NOT compressionBzip2,4,0.8,1.0,0.6666666666666666,98
+random_5,50,8,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,level <= 5.5 AND level <= 3.5 AND NOT compressionGzip AND NOT compressionBzip2,0,0.0,0.0,0.0,98
+random_10,100,9,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND disableCompressibilityTesting AND unlimitedWindowSize,0,1.0,1.0,1.0,98
+random_20,200,31,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND encryption AND disableCompressibilityTesting,0,1.0,1.0,1.0,98
+2-wise,55,5,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND NOT encryption AND NOT compressionBzip2 AND NOT compressionZpaq,0,0.0,0.0,0.0,98
+3-wise,157,23,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND unlimitedWindowSize AND encryption,0,1.0,1.0,1.0,98
+4-wise,301,38,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND encryption AND disableCompressibilityTesting,0,1.0,1.0,1.0,98
+full,432,54,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND unlimitedWindowSize AND encryption,0,1.0,1.0,1.0,99
+random_2,20,5,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,level > 1.5 AND compressionLzo,2,0.7499999999999999,1.0,0.6,99
+random_5,50,11,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND unlimitedWindowSize AND disableCompressibilityTesting,2,1.0,1.0,1.0,99
+random_10,100,15,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND disableCompressibilityTesting AND unlimitedWindowSize,1,1.0,1.0,1.0,99
+random_20,200,21,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND encryption AND disableCompressibilityTesting,2,1.0,1.0,1.0,99
+2-wise,56,8,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND encryption AND unlimitedWindowSize,3,1.0,1.0,1.0,99
+3-wise,157,17,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND encryption AND unlimitedWindowSize,1,1.0,1.0,1.0,99
+4-wise,298,34,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND disableCompressibilityTesting AND unlimitedWindowSize,0,1.0,1.0,1.0,99
+full,432,54,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND disableCompressibilityTesting AND unlimitedWindowSize,0,1.0,1.0,1.0,9
+random_2,20,5,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,level <= 4.5 AND encryption AND unlimitedWindowSize AND disableCompressibilityTesting,4,0.7499999999999999,1.0,0.6,9
+random_5,50,10,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,NOT encryption AND NOT unlimitedWindowSize AND NOT compressionGzip AND compression,0,0.0,0.0,0.0,9
+random_10,100,15,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND encryption AND disableCompressibilityTesting,1,1.0,1.0,1.0,9
+random_20,200,25,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,unlimitedWindowSize AND disableCompressibilityTesting AND encryption,0,1.0,1.0,1.0,9
+2-wise,58,14,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting AND unlimitedWindowSize AND encryption,4,1.0,1.0,1.0,9
+3-wise,153,21,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND disableCompressibilityTesting AND unlimitedWindowSize,0,1.0,1.0,1.0,9
+4-wise,294,38,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,encryption AND unlimitedWindowSize AND disableCompressibilityTesting,0,1.0,1.0,1.0,9

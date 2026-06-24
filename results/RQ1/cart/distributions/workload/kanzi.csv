@@ -1,0 +1,501 @@
+sg_distribution,sg_cardinality,sg_rule,best_rule,best_rule_idx,f1,precision,recall,seed
+normal,688,skip = 1 AND checksum = 1 AND RLT = 1,skip AND RLT AND checksum,0,1.0,1.0,1.0,0
+uniform,451,LZP = 1 AND TEXT = 1 AND checksum = 1,TEXT AND LZP AND checksum,3,1.0,1.0,1.0,0
+bi_modal_split,464,TEXT = 1 AND BWTS = 1 AND SRT = 1,TEXT AND SRT AND BWTS,0,1.0,1.0,1.0,0
+tri_modal_split,423,LZP = 1 AND SRT = 1 AND RLT = 1,LZP AND RLT AND SRT,0,1.0,1.0,1.0,0
+power_law,451,LZP = 1 AND TEXT = 1 AND checksum = 1,LZP AND TEXT AND checksum,0,1.0,1.0,1.0,0
+normal,433,LZP = 1 AND BWTS = 1 AND ROLZ = 1,ROLZ,3,0.500578034682081,0.3338473400154202,1.0,10
+uniform,433,LZP = 1 AND BWTS = 1 AND ROLZ = 1,ROLZ AND LZP AND BWTS,4,1.0,1.0,1.0,10
+bi_modal_split,433,LZP = 1 AND BWTS = 1 AND ROLZ = 1,ROLZ AND LZP AND BWTS,0,1.0,1.0,1.0,10
+tri_modal_split,433,LZP = 1 AND BWTS = 1 AND ROLZ = 1,ROLZ AND LZP AND BWTS,0,1.0,1.0,1.0,10
+power_law,433,LZP = 1 AND BWTS = 1 AND ROLZ = 1,ROLZ,4,0.500578034682081,0.3338473400154202,1.0,10
+normal,671,BWTS = 1 AND LZ = 1 AND checksum = 1,LZ AND checksum AND BWTS,0,1.0,1.0,1.0,11
+uniform,671,BWTS = 1 AND LZ = 1 AND checksum = 1,checksum AND LZ AND BWTS,0,1.0,1.0,1.0,11
+bi_modal_split,671,BWTS = 1 AND LZ = 1 AND checksum = 1,checksum AND LZ AND BWTS,0,1.0,1.0,1.0,11
+tri_modal_split,671,BWTS = 1 AND LZ = 1 AND checksum = 1,checksum AND LZ AND BWTS,0,1.0,1.0,1.0,11
+power_law,671,BWTS = 1 AND LZ = 1 AND checksum = 1,checksum AND LZ AND BWTS,0,1.0,1.0,1.0,11
+normal,495,skip = 1 AND LZ = 1 AND MTFT = 1,MTFT AND LZ AND skip,0,1.0,1.0,1.0,12
+uniform,495,skip = 1 AND LZ = 1 AND MTFT = 1,skip AND MTFT AND LZ,2,1.0,1.0,1.0,12
+bi_modal_split,495,skip = 1 AND LZ = 1 AND MTFT = 1,MTFT AND skip AND LZ,0,1.0,1.0,1.0,12
+tri_modal_split,495,skip = 1 AND LZ = 1 AND MTFT = 1,MTFT AND LZ AND skip,1,1.0,1.0,1.0,12
+power_law,495,skip = 1 AND LZ = 1 AND MTFT = 1,MTFT,3,0.5043301069791136,0.3371934604904632,1.0,12
+normal,608,LZ = 1 AND X86 = 1 AND checksum = 1,LZ AND X86 AND checksum,0,1.0,1.0,1.0,13
+uniform,608,LZ = 1 AND X86 = 1 AND checksum = 1,checksum AND X86 AND LZ,0,1.0,1.0,1.0,13
+bi_modal_split,608,LZ = 1 AND X86 = 1 AND checksum = 1,checksum AND X86 AND LZ,0,1.0,1.0,1.0,13
+tri_modal_split,608,LZ = 1 AND X86 = 1 AND checksum = 1,checksum AND X86 AND LZ,0,1.0,1.0,1.0,13
+power_law,608,LZ = 1 AND X86 = 1 AND checksum = 1,checksum AND LZ AND X86,1,1.0,1.0,1.0,13
+normal,487,LZ = 1 AND SRT = 1 AND RLT = 1,RLT AND LZ AND SRT,0,1.0,1.0,1.0,14
+uniform,487,LZ = 1 AND SRT = 1 AND RLT = 1,SRT AND LZ AND RLT,0,1.0,1.0,1.0,14
+bi_modal_split,487,LZ = 1 AND SRT = 1 AND RLT = 1,RLT AND SRT AND LZ,0,1.0,1.0,1.0,14
+tri_modal_split,487,LZ = 1 AND SRT = 1 AND RLT = 1,RLT AND SRT AND LZ,0,1.0,1.0,1.0,14
+power_law,487,LZ = 1 AND SRT = 1 AND RLT = 1,SRT AND RLT AND LZ,0,1.0,1.0,1.0,14
+normal,449,skip = 1 AND MTFT = 1 AND SRT = 1,skip AND MTFT AND SRT,0,1.0,1.0,1.0,15
+uniform,449,skip = 1 AND MTFT = 1 AND SRT = 1,MTFT AND SRT AND skip,0,1.0,1.0,1.0,15
+bi_modal_split,449,skip = 1 AND MTFT = 1 AND SRT = 1,skip AND SRT AND MTFT,0,1.0,1.0,1.0,15
+tri_modal_split,449,skip = 1 AND MTFT = 1 AND SRT = 1,SRT AND MTFT AND skip,0,1.0,1.0,1.0,15
+power_law,449,skip = 1 AND MTFT = 1 AND SRT = 1,MTFT AND SRT AND skip,0,1.0,1.0,1.0,15
+normal,443,ROLZX = 1 AND BWTS = 1 AND checksum = 1,ROLZX AND checksum AND BWTS,0,1.0,1.0,1.0,16
+uniform,443,ROLZX = 1 AND BWTS = 1 AND checksum = 1,ROLZX AND BWTS AND checksum,0,1.0,1.0,1.0,16
+bi_modal_split,443,ROLZX = 1 AND BWTS = 1 AND checksum = 1,ZRLT AND BWTS AND ROLZX,4,0.5914718019257221,0.7570422535211268,0.4853273137697517,16
+tri_modal_split,443,ROLZX = 1 AND BWTS = 1 AND checksum = 1,ROLZX AND checksum AND BWTS,4,1.0,1.0,1.0,16
+power_law,443,ROLZX = 1 AND BWTS = 1 AND checksum = 1,ROLZX AND BWTS AND checksum,0,1.0,1.0,1.0,16
+normal,475,BWTS = 1 AND LZ = 1 AND MTFT = 1,MTFT AND LZ AND BWTS,0,1.0,1.0,1.0,17
+uniform,475,BWTS = 1 AND LZ = 1 AND MTFT = 1,MTFT AND LZ AND BWTS,0,1.0,1.0,1.0,17
+bi_modal_split,475,BWTS = 1 AND LZ = 1 AND MTFT = 1,LZ AND NOT ANS0 AND RLT,4,0.4301587301587301,0.3452229299363057,0.5705263157894737,17
+tri_modal_split,475,BWTS = 1 AND LZ = 1 AND MTFT = 1,MTFT AND LZ AND BWTS,4,1.0,1.0,1.0,17
+power_law,475,BWTS = 1 AND LZ = 1 AND MTFT = 1,MTFT AND LZ AND BWTS,0,1.0,1.0,1.0,17
+normal,453,LZP = 1 AND checksum = 1 AND ROLZ = 1,LZP AND ROLZ AND checksum,0,1.0,1.0,1.0,18
+uniform,453,LZP = 1 AND checksum = 1 AND ROLZ = 1,LZP AND ROLZ AND checksum,0,1.0,1.0,1.0,18
+bi_modal_split,453,LZP = 1 AND checksum = 1 AND ROLZ = 1,NOT Huffman AND SRT,2,0.1894510226049515,0.1252669039145907,0.3885209713024282,18
+tri_modal_split,453,LZP = 1 AND checksum = 1 AND ROLZ = 1,LZP,3,0.4868350349274583,0.3217329545454545,1.0,18
+power_law,453,LZP = 1 AND checksum = 1 AND ROLZ = 1,ROLZ AND LZP AND checksum,0,1.0,1.0,1.0,18
+normal,426,LZP = 1 AND LZ = 1 AND SRT = 1,LZP AND SRT AND LZ,0,1.0,1.0,1.0,19
+uniform,426,LZP = 1 AND LZ = 1 AND SRT = 1,LZP AND LZ AND SRT,0,1.0,1.0,1.0,19
+bi_modal_split,426,LZP = 1 AND LZ = 1 AND SRT = 1,LZP AND SRT AND LZ,0,1.0,1.0,1.0,19
+tri_modal_split,426,LZP = 1 AND LZ = 1 AND SRT = 1,LZP AND SRT AND LZ,1,1.0,1.0,1.0,19
+power_law,426,LZP = 1 AND LZ = 1 AND SRT = 1,LZP AND SRT AND LZ,0,1.0,1.0,1.0,19
+normal,571,BWTS = 1 AND LZ = 1 AND SRT = 1,SRT AND LZ AND BWTS,0,1.0,1.0,1.0,1
+uniform,571,BWTS = 1 AND LZ = 1 AND SRT = 1,SRT AND LZ AND BWTS,0,1.0,1.0,1.0,1
+bi_modal_split,571,BWTS = 1 AND LZ = 1 AND SRT = 1,SRT AND LZ AND BWTS,0,1.0,1.0,1.0,1
+tri_modal_split,571,BWTS = 1 AND LZ = 1 AND SRT = 1,SRT AND LZ AND BWTS,0,1.0,1.0,1.0,1
+power_law,571,BWTS = 1 AND LZ = 1 AND SRT = 1,SRT AND LZ AND BWTS,3,1.0,1.0,1.0,1
+normal,463,BWTS = 1 AND X86 = 1 AND jobs = 8,jobs > 6.0 AND X86 AND BWTS,0,1.0,1.0,1.0,20
+uniform,463,BWTS = 1 AND X86 = 1 AND jobs = 8,jobs > 6.0 AND X86 AND BWTS,0,1.0,1.0,1.0,20
+bi_modal_split,463,BWTS = 1 AND X86 = 1 AND jobs = 8,jobs > 6.0 AND X86 AND BWTS,2,1.0,1.0,1.0,20
+tri_modal_split,463,BWTS = 1 AND X86 = 1 AND jobs = 8,jobs > 6.0,1,0.4460500963391137,0.287042777433354,1.0,20
+power_law,463,BWTS = 1 AND X86 = 1 AND jobs = 8,jobs > 6.0 AND BWTS AND X86,0,1.0,1.0,1.0,20
+normal,609,BWTS = 1 AND LZ = 1 AND RLT = 1,RLT AND LZ AND BWTS,0,1.0,1.0,1.0,21
+uniform,609,BWTS = 1 AND LZ = 1 AND RLT = 1,RLT AND LZ AND BWTS,0,1.0,1.0,1.0,21
+bi_modal_split,609,BWTS = 1 AND LZ = 1 AND RLT = 1,RLT AND LZ AND BWTS,4,1.0,1.0,1.0,21
+tri_modal_split,609,BWTS = 1 AND LZ = 1 AND RLT = 1,RLT AND LZ AND BWTS,3,1.0,1.0,1.0,21
+power_law,609,BWTS = 1 AND LZ = 1 AND RLT = 1,LZ,1,0.5004108463434676,0.3336986301369863,1.0,21
+normal,505,BWTS = 1 AND RLT = 1 AND blocksize = 1000000,RLT AND Huffman AND blocksize <= 500500000.0 AND blocksize > 500500.0,0,0.6666666666666666,0.9807692307692308,0.504950495049505,22
+uniform,505,BWTS = 1 AND RLT = 1 AND blocksize = 1000000,RLT AND BWTS AND blocksize <= 500500000.0 AND blocksize > 500500.0,0,1.0,1.0,1.0,22
+bi_modal_split,505,BWTS = 1 AND RLT = 1 AND blocksize = 1000000,RLT AND BWTS AND blocksize <= 500500000.0 AND blocksize > 500500.0,0,1.0,1.0,1.0,22
+tri_modal_split,505,BWTS = 1 AND RLT = 1 AND blocksize = 1000000,RLT AND Huffman AND blocksize <= 500500000.0 AND blocksize > 500500.0,0,0.6666666666666666,0.9807692307692308,0.504950495049505,22
+power_law,505,BWTS = 1 AND RLT = 1 AND blocksize = 1000000,BWTS AND RLT,4,0.6596995427824951,0.4922027290448343,1.0,22
+normal,437,LZP = 1 AND LZ = 1 AND X86 = 1,LZP AND LZ AND X86,0,1.0,1.0,1.0,23
+uniform,437,LZP = 1 AND LZ = 1 AND X86 = 1,LZP AND LZ AND X86,0,1.0,1.0,1.0,23
+bi_modal_split,437,LZP = 1 AND LZ = 1 AND X86 = 1,LZP AND X86 AND LZ,0,1.0,1.0,1.0,23
+tri_modal_split,437,LZP = 1 AND LZ = 1 AND X86 = 1,LZP AND X86 AND LZ,0,1.0,1.0,1.0,23
+power_law,437,LZP = 1 AND LZ = 1 AND X86 = 1,LZP AND LZ AND X86,0,1.0,1.0,1.0,23
+normal,561,LZP = 1 AND BWTS = 1 AND RLT = 1,LZP AND RLT AND BWTS,0,1.0,1.0,1.0,24
+uniform,561,LZP = 1 AND BWTS = 1 AND RLT = 1,LZP AND RLT AND BWTS,0,1.0,1.0,1.0,24
+bi_modal_split,561,LZP = 1 AND BWTS = 1 AND RLT = 1,LZP AND RLT AND BWTS,0,1.0,1.0,1.0,24
+tri_modal_split,561,LZP = 1 AND BWTS = 1 AND RLT = 1,LZP AND RLT AND BWTS,2,1.0,1.0,1.0,24
+power_law,561,LZP = 1 AND BWTS = 1 AND RLT = 1,LZP AND RLT AND BWTS,0,1.0,1.0,1.0,24
+normal,574,skip = 1 AND LZ = 1 AND RLT = 1,skip AND LZ AND RLT,0,1.0,1.0,1.0,25
+uniform,574,skip = 1 AND LZ = 1 AND RLT = 1,skip AND LZ AND RLT,0,1.0,1.0,1.0,25
+bi_modal_split,574,skip = 1 AND LZ = 1 AND RLT = 1,skip AND LZ AND RLT,2,1.0,1.0,1.0,25
+tri_modal_split,574,skip = 1 AND LZ = 1 AND RLT = 1,skip AND RLT AND LZ,0,1.0,1.0,1.0,25
+power_law,574,skip = 1 AND LZ = 1 AND RLT = 1,RLT AND LZ AND skip,0,1.0,1.0,1.0,25
+normal,608,LZ = 1 AND X86 = 1 AND checksum = 1,checksum AND LZ AND X86,0,1.0,1.0,1.0,26
+uniform,608,LZ = 1 AND X86 = 1 AND checksum = 1,checksum AND X86 AND LZ,0,1.0,1.0,1.0,26
+bi_modal_split,608,LZ = 1 AND X86 = 1 AND checksum = 1,checksum AND X86 AND LZ,0,1.0,1.0,1.0,26
+tri_modal_split,608,LZ = 1 AND X86 = 1 AND checksum = 1,checksum AND X86 AND LZ,0,1.0,1.0,1.0,26
+power_law,608,LZ = 1 AND X86 = 1 AND checksum = 1,checksum AND X86 AND LZ,0,1.0,1.0,1.0,26
+normal,496,BWTS = 1 AND ROLZ = 1 AND blocksize = 1000000,ROLZ AND blocksize <= 500500000.0 AND BWTS AND blocksize > 500500.0,0,1.0,1.0,1.0,27
+uniform,496,BWTS = 1 AND ROLZ = 1 AND blocksize = 1000000,ROLZ AND BWTS AND blocksize <= 500500000.0 AND blocksize > 500500.0,0,1.0,1.0,1.0,27
+bi_modal_split,496,BWTS = 1 AND ROLZ = 1 AND blocksize = 1000000,ROLZ AND BWTS AND blocksize > 500500.0 AND blocksize <= 500500000.0,1,1.0,1.0,1.0,27
+tri_modal_split,496,BWTS = 1 AND ROLZ = 1 AND blocksize = 1000000,ROLZ AND BWTS AND blocksize <= 500500000.0 AND blocksize > 500500.0,0,1.0,1.0,1.0,27
+power_law,496,BWTS = 1 AND ROLZ = 1 AND blocksize = 1000000,ROLZ AND BWTS AND blocksize <= 500500000.0 AND blocksize > 500500.0,0,1.0,1.0,1.0,27
+normal,477,skip = 1 AND BWTS = 1 AND MTFT = 1,skip AND MTFT AND BWTS,0,1.0,1.0,1.0,28
+uniform,477,skip = 1 AND BWTS = 1 AND MTFT = 1,MTFT AND skip AND BWTS,0,1.0,1.0,1.0,28
+bi_modal_split,477,skip = 1 AND BWTS = 1 AND MTFT = 1,MTFT AND BWTS AND skip,0,1.0,1.0,1.0,28
+tri_modal_split,477,skip = 1 AND BWTS = 1 AND MTFT = 1,ROLZX AND MTFT AND BWTS AND skip,0,0.6582278481012659,1.0,0.490566037735849,28
+power_law,477,skip = 1 AND BWTS = 1 AND MTFT = 1,skip AND MTFT AND BWTS,0,1.0,1.0,1.0,28
+normal,570,skip = 1 AND checksum = 1 AND ROLZ = 1,ROLZ AND skip AND checksum,0,1.0,1.0,1.0,29
+uniform,570,skip = 1 AND checksum = 1 AND ROLZ = 1,ROLZ AND skip AND checksum,1,1.0,1.0,1.0,29
+bi_modal_split,570,skip = 1 AND checksum = 1 AND ROLZ = 1,ROLZ AND skip AND checksum,0,1.0,1.0,1.0,29
+tri_modal_split,570,skip = 1 AND checksum = 1 AND ROLZ = 1,ROLZ AND skip AND checksum,0,1.0,1.0,1.0,29
+power_law,570,skip = 1 AND checksum = 1 AND ROLZ = 1,ROLZ,3,0.6106052490626673,0.4394757131842714,1.0,29
+normal,412,X86 = 1 AND RLT = 1 AND blocksize = 1000000,RLT AND X86 AND blocksize <= 500500000.0 AND blocksize > 500500.0,0,1.0,1.0,1.0,2
+uniform,412,X86 = 1 AND RLT = 1 AND blocksize = 1000000,RLT AND X86 AND blocksize <= 500500000.0 AND blocksize > 500500.0,0,1.0,1.0,1.0,2
+bi_modal_split,412,X86 = 1 AND RLT = 1 AND blocksize = 1000000,checksum,2,0.2924710424710424,0.1825301204819277,0.7354368932038835,2
+tri_modal_split,412,X86 = 1 AND RLT = 1 AND blocksize = 1000000,RLT,2,0.3967260471834376,0.2474474474474474,1.0,2
+power_law,412,X86 = 1 AND RLT = 1 AND blocksize = 1000000,RLT AND X86 AND blocksize <= 500500000.0 AND blocksize > 500500.0,0,1.0,1.0,1.0,2
+normal,464,LZP = 1 AND MTFT = 1 AND checksum = 1,LZP AND MTFT AND checksum,0,1.0,1.0,1.0,30
+uniform,464,LZP = 1 AND MTFT = 1 AND checksum = 1,LZP AND MTFT AND checksum,0,1.0,1.0,1.0,30
+bi_modal_split,464,LZP = 1 AND MTFT = 1 AND checksum = 1,MTFT AND LZP AND checksum,4,1.0,1.0,1.0,30
+tri_modal_split,464,LZP = 1 AND MTFT = 1 AND checksum = 1,LZP AND MTFT AND checksum,2,1.0,1.0,1.0,30
+power_law,464,LZP = 1 AND MTFT = 1 AND checksum = 1,LZP AND MTFT AND checksum,1,1.0,1.0,1.0,30
+normal,542,LZP = 1 AND BWTS = 1 AND LZ = 1,LZP AND LZ AND BWTS,0,1.0,1.0,1.0,31
+uniform,542,LZP = 1 AND BWTS = 1 AND LZ = 1,LZP AND LZ AND BWTS,0,1.0,1.0,1.0,31
+bi_modal_split,542,LZP = 1 AND BWTS = 1 AND LZ = 1,LZP AND LZ AND BWTS,2,1.0,1.0,1.0,31
+tri_modal_split,542,LZP = 1 AND BWTS = 1 AND LZ = 1,LZP AND LZ AND BWTS,0,1.0,1.0,1.0,31
+power_law,542,LZP = 1 AND BWTS = 1 AND LZ = 1,LZP AND LZ AND BWTS,0,1.0,1.0,1.0,31
+normal,599,skip = 1 AND X86 = 1 AND RLT = 1,RLT AND X86 AND skip,0,1.0,1.0,1.0,32
+uniform,599,skip = 1 AND X86 = 1 AND RLT = 1,skip AND X86 AND RLT,0,1.0,1.0,1.0,32
+bi_modal_split,599,skip = 1 AND X86 = 1 AND RLT = 1,skip AND X86 AND RLT,0,1.0,1.0,1.0,32
+tri_modal_split,599,skip = 1 AND X86 = 1 AND RLT = 1,skip AND X86 AND RLT,0,1.0,1.0,1.0,32
+power_law,599,skip = 1 AND X86 = 1 AND RLT = 1,skip AND X86 AND RLT,0,1.0,1.0,1.0,32
+normal,688,skip = 1 AND checksum = 1 AND RLT = 1,skip AND RLT AND checksum,0,1.0,1.0,1.0,33
+uniform,688,skip = 1 AND checksum = 1 AND RLT = 1,skip AND RLT AND checksum,0,1.0,1.0,1.0,33
+bi_modal_split,688,skip = 1 AND checksum = 1 AND RLT = 1,skip AND RLT AND checksum,3,1.0,1.0,1.0,33
+tri_modal_split,688,skip = 1 AND checksum = 1 AND RLT = 1,skip AND RLT AND checksum,3,1.0,1.0,1.0,33
+power_law,688,skip = 1 AND checksum = 1 AND RLT = 1,skip AND RLT AND checksum,0,1.0,1.0,1.0,33
+normal,688,skip = 1 AND checksum = 1 AND RLT = 1,skip AND RLT AND checksum,0,1.0,1.0,1.0,34
+uniform,688,skip = 1 AND checksum = 1 AND RLT = 1,skip AND RLT AND checksum,0,1.0,1.0,1.0,34
+bi_modal_split,688,skip = 1 AND checksum = 1 AND RLT = 1,ZRLT AND RLT AND skip AND checksum,0,0.4961748633879781,1.0,0.3299418604651162,34
+tri_modal_split,688,skip = 1 AND checksum = 1 AND RLT = 1,RLT AND checksum AND skip,4,1.0,1.0,1.0,34
+power_law,688,skip = 1 AND checksum = 1 AND RLT = 1,RLT AND skip AND checksum,0,1.0,1.0,1.0,34
+normal,526,LZ = 1 AND SRT = 1 AND X86 = 1,SRT AND LZ AND X86,0,1.0,1.0,1.0,35
+uniform,526,LZ = 1 AND SRT = 1 AND X86 = 1,SRT AND X86 AND LZ,0,1.0,1.0,1.0,35
+bi_modal_split,526,LZ = 1 AND SRT = 1 AND X86 = 1,SRT AND LZ AND X86,0,1.0,1.0,1.0,35
+tri_modal_split,526,LZ = 1 AND SRT = 1 AND X86 = 1,LZ AND X86 AND SRT,0,1.0,1.0,1.0,35
+power_law,526,LZ = 1 AND SRT = 1 AND X86 = 1,SRT,2,0.4808043875685557,0.3164861612515042,1.0,35
+normal,432,BWTS = 1 AND MTFT = 1 AND blocksize = 1000000,MTFT AND BWTS AND blocksize <= 500500000.0 AND blocksize > 500500.0,0,1.0,1.0,1.0,36
+uniform,432,BWTS = 1 AND MTFT = 1 AND blocksize = 1000000,MTFT AND BWTS AND blocksize <= 500500000.0 AND blocksize > 500500.0,0,1.0,1.0,1.0,36
+bi_modal_split,432,BWTS = 1 AND MTFT = 1 AND blocksize = 1000000,MTFT AND BWTS AND blocksize <= 500500000.0 AND blocksize > 500500.0,0,1.0,1.0,1.0,36
+tri_modal_split,432,BWTS = 1 AND MTFT = 1 AND blocksize = 1000000,MTFT AND BWTS AND blocksize <= 500500000.0 AND blocksize > 500500.0,0,1.0,1.0,1.0,36
+power_law,432,BWTS = 1 AND MTFT = 1 AND blocksize = 1000000,MTFT AND BWTS AND blocksize <= 500500000.0 AND blocksize > 500500.0,1,1.0,1.0,1.0,36
+normal,438,LZP = 1 AND SRT = 1 AND X86 = 1,LZP AND SRT AND X86,0,1.0,1.0,1.0,37
+uniform,438,LZP = 1 AND SRT = 1 AND X86 = 1,LZP AND SRT AND X86,0,1.0,1.0,1.0,37
+bi_modal_split,438,LZP = 1 AND SRT = 1 AND X86 = 1,LZP,3,0.4745395449620802,0.3110795454545454,1.0,37
+tri_modal_split,438,LZP = 1 AND SRT = 1 AND X86 = 1,LZP AND X86 AND SRT,3,1.0,1.0,1.0,37
+power_law,438,LZP = 1 AND SRT = 1 AND X86 = 1,SRT AND LZP AND X86,4,1.0,1.0,1.0,37
+normal,589,BWTS = 1 AND LZ = 1 AND X86 = 1,NOT ROLZX AND NOT BWT AND NOT FPAQ,2,0.2566995768688293,0.1775032509752926,0.4634974533106961,38
+uniform,589,BWTS = 1 AND LZ = 1 AND X86 = 1,BWTS AND LZ AND X86,0,1.0,1.0,1.0,38
+bi_modal_split,589,BWTS = 1 AND LZ = 1 AND X86 = 1,LZ AND X86 AND BWTS,0,1.0,1.0,1.0,38
+tri_modal_split,589,BWTS = 1 AND LZ = 1 AND X86 = 1,X86 AND LZ AND BWTS,1,1.0,1.0,1.0,38
+power_law,589,BWTS = 1 AND LZ = 1 AND X86 = 1,LZ AND BWTS AND X86,1,1.0,1.0,1.0,38
+normal,481,skip = 1 AND MTFT = 1 AND X86 = 1,MTFT AND X86 AND skip,0,1.0,1.0,1.0,39
+uniform,481,skip = 1 AND MTFT = 1 AND X86 = 1,MTFT AND X86 AND skip,0,1.0,1.0,1.0,39
+bi_modal_split,481,skip = 1 AND MTFT = 1 AND X86 = 1,skip AND MTFT AND X86,2,1.0,1.0,1.0,39
+tri_modal_split,481,skip = 1 AND MTFT = 1 AND X86 = 1,skip AND MTFT AND X86,1,1.0,1.0,1.0,39
+power_law,481,skip = 1 AND MTFT = 1 AND X86 = 1,MTFT AND X86 AND skip,3,1.0,1.0,1.0,39
+normal,481,skip = 1 AND MTFT = 1 AND X86 = 1,skip AND MTFT AND X86,0,1.0,1.0,1.0,3
+uniform,481,skip = 1 AND MTFT = 1 AND X86 = 1,MTFT AND X86 AND skip,1,1.0,1.0,1.0,3
+bi_modal_split,481,skip = 1 AND MTFT = 1 AND X86 = 1,MTFT AND X86 AND skip,1,1.0,1.0,1.0,3
+tri_modal_split,481,skip = 1 AND MTFT = 1 AND X86 = 1,MTFT AND X86 AND skip,1,1.0,1.0,1.0,3
+power_law,481,skip = 1 AND MTFT = 1 AND X86 = 1,NOT TEXT,0,0.1911812037335049,0.1130997715156131,0.6174636174636174,3
+normal,475,BWTS = 1 AND RLT = 1 AND jobs = 8,jobs > 6.0 AND RLT AND BWTS,0,1.0,1.0,1.0,40
+uniform,475,BWTS = 1 AND RLT = 1 AND jobs = 8,jobs > 6.0 AND RLT AND BWTS,1,1.0,1.0,1.0,40
+bi_modal_split,475,BWTS = 1 AND RLT = 1 AND jobs = 8,jobs > 6.0,1,0.4549808429118774,0.2944823310601364,1.0,40
+tri_modal_split,475,BWTS = 1 AND RLT = 1 AND jobs = 8,RLT AND jobs > 6.0 AND BWTS,2,1.0,1.0,1.0,40
+power_law,475,BWTS = 1 AND RLT = 1 AND jobs = 8,NOT ZRLT,0,0.1591734152471376,0.0917578879587894,0.6,40
+normal,444,skip = 1 AND MTFT = 1 AND BWT = 1,MTFT AND BWT AND skip,0,1.0,1.0,1.0,41
+uniform,444,skip = 1 AND MTFT = 1 AND BWT = 1,MTFT AND BWT AND skip,3,1.0,1.0,1.0,41
+bi_modal_split,444,skip = 1 AND MTFT = 1 AND BWT = 1,MTFT AND BWT AND skip,0,1.0,1.0,1.0,41
+tri_modal_split,444,skip = 1 AND MTFT = 1 AND BWT = 1,MTFT AND BWT AND skip,0,1.0,1.0,1.0,41
+power_law,444,skip = 1 AND MTFT = 1 AND BWT = 1,NOT RANK AND NOT ZRLT AND NOT ANS1 AND jobs <= 6.0,4,0.1555130656469088,0.1084444444444444,0.2747747747747748,41
+normal,609,BWTS = 1 AND LZ = 1 AND RLT = 1,RLT AND LZ AND BWTS,0,1.0,1.0,1.0,42
+uniform,609,BWTS = 1 AND LZ = 1 AND RLT = 1,RLT AND LZ AND BWTS,0,1.0,1.0,1.0,42
+bi_modal_split,609,BWTS = 1 AND LZ = 1 AND RLT = 1,RLT AND LZ AND BWTS,0,1.0,1.0,1.0,42
+tri_modal_split,609,BWTS = 1 AND LZ = 1 AND RLT = 1,RLT AND LZ AND BWTS,0,1.0,1.0,1.0,42
+power_law,609,BWTS = 1 AND LZ = 1 AND RLT = 1,RLT AND LZ AND BWTS,0,1.0,1.0,1.0,42
+normal,610,skip = 1 AND LZ = 1 AND X86 = 1,skip AND X86 AND LZ,0,1.0,1.0,1.0,43
+uniform,610,skip = 1 AND LZ = 1 AND X86 = 1,skip AND X86 AND LZ,0,1.0,1.0,1.0,43
+bi_modal_split,610,skip = 1 AND LZ = 1 AND X86 = 1,skip AND X86 AND LZ,4,1.0,1.0,1.0,43
+tri_modal_split,610,skip = 1 AND LZ = 1 AND X86 = 1,skip AND X86 AND LZ,1,1.0,1.0,1.0,43
+power_law,610,skip = 1 AND LZ = 1 AND X86 = 1,skip,3,0.5560619872379216,0.3851010101010101,1.0,43
+normal,557,LZP = 1 AND SRT = 1 AND checksum = 1,LZP AND SRT AND checksum,0,1.0,1.0,1.0,44
+uniform,557,LZP = 1 AND SRT = 1 AND checksum = 1,LZP AND SRT AND checksum,0,1.0,1.0,1.0,44
+bi_modal_split,557,LZP = 1 AND SRT = 1 AND checksum = 1,LZP AND SRT AND checksum,0,1.0,1.0,1.0,44
+tri_modal_split,557,LZP = 1 AND SRT = 1 AND checksum = 1,LZP AND SRT AND checksum,0,1.0,1.0,1.0,44
+power_law,557,LZP = 1 AND SRT = 1 AND checksum = 1,LZP,3,0.5669211195928753,0.3955965909090909,1.0,44
+normal,467,BWT = 1 AND ROLZ = 1 AND blocksize = 1000000,ROLZ AND BWT AND blocksize <= 500500000.0 AND blocksize > 500500.0,0,1.0,1.0,1.0,45
+uniform,467,BWT = 1 AND ROLZ = 1 AND blocksize = 1000000,ROLZ AND BWT AND blocksize <= 500500000.0 AND blocksize > 500500.0,0,1.0,1.0,1.0,45
+bi_modal_split,467,BWT = 1 AND ROLZ = 1 AND blocksize = 1000000,ROLZ AND BWT AND blocksize <= 500500000.0 AND blocksize > 500500.0,0,1.0,1.0,1.0,45
+tri_modal_split,467,BWT = 1 AND ROLZ = 1 AND blocksize = 1000000,ROLZ AND BWT AND blocksize <= 500500000.0 AND blocksize > 500500.0,0,1.0,1.0,1.0,45
+power_law,467,BWT = 1 AND ROLZ = 1 AND blocksize = 1000000,ROLZ AND BWT AND blocksize <= 500500000.0 AND blocksize > 500500.0,0,1.0,1.0,1.0,45
+normal,685,LZP = 1 AND skip = 1 AND checksum = 1,LZP AND skip AND checksum,0,1.0,1.0,1.0,46
+uniform,685,LZP = 1 AND skip = 1 AND checksum = 1,LZP AND skip AND checksum,0,1.0,1.0,1.0,46
+bi_modal_split,685,LZP = 1 AND skip = 1 AND checksum = 1,LZP AND skip AND checksum,0,1.0,1.0,1.0,46
+tri_modal_split,685,LZP = 1 AND skip = 1 AND checksum = 1,LZP AND skip AND checksum,0,1.0,1.0,1.0,46
+power_law,685,LZP = 1 AND skip = 1 AND checksum = 1,LZP AND skip AND checksum,0,1.0,1.0,1.0,46
+normal,574,skip = 1 AND LZ = 1 AND RLT = 1,skip AND LZ AND RLT,0,1.0,1.0,1.0,47
+uniform,574,skip = 1 AND LZ = 1 AND RLT = 1,skip AND LZ AND RLT,0,1.0,1.0,1.0,47
+bi_modal_split,574,skip = 1 AND LZ = 1 AND RLT = 1,skip AND LZ AND RLT,0,1.0,1.0,1.0,47
+tri_modal_split,574,skip = 1 AND LZ = 1 AND RLT = 1,skip AND LZ AND RLT,0,1.0,1.0,1.0,47
+power_law,574,skip = 1 AND LZ = 1 AND RLT = 1,RLT AND LZ AND skip,2,1.0,1.0,1.0,47
+normal,492,skip = 1 AND LZ = 1 AND BWT = 1,skip AND BWT AND LZ,0,1.0,1.0,1.0,48
+uniform,492,skip = 1 AND LZ = 1 AND BWT = 1,skip AND BWT AND LZ,0,1.0,1.0,1.0,48
+bi_modal_split,492,skip = 1 AND LZ = 1 AND BWT = 1,skip AND BWT AND LZ,0,1.0,1.0,1.0,48
+tri_modal_split,492,skip = 1 AND LZ = 1 AND BWT = 1,skip AND BWT AND LZ,0,1.0,1.0,1.0,48
+power_law,492,skip = 1 AND LZ = 1 AND BWT = 1,skip AND BWT AND LZ,0,1.0,1.0,1.0,48
+normal,412,skip = 1 AND X86 = 1 AND ROLZ = 1,ROLZ AND skip AND X86,0,1.0,1.0,1.0,49
+uniform,412,skip = 1 AND X86 = 1 AND ROLZ = 1,ROLZ AND skip AND X86,0,1.0,1.0,1.0,49
+bi_modal_split,412,skip = 1 AND X86 = 1 AND ROLZ = 1,ROLZ AND skip AND X86,0,1.0,1.0,1.0,49
+tri_modal_split,412,skip = 1 AND X86 = 1 AND ROLZ = 1,ROLZ AND skip AND X86,0,1.0,1.0,1.0,49
+power_law,412,skip = 1 AND X86 = 1 AND ROLZ = 1,NOT ROLZ,0,0.0,0.0,0.0,49
+normal,441,BWTS = 1 AND LZ = 1 AND ROLZ = 1,ROLZ AND LZ AND BWTS,0,1.0,1.0,1.0,4
+uniform,441,BWTS = 1 AND LZ = 1 AND ROLZ = 1,ROLZ AND LZ AND BWTS,0,1.0,1.0,1.0,4
+bi_modal_split,441,BWTS = 1 AND LZ = 1 AND ROLZ = 1,ROLZ AND LZ AND BWTS,0,1.0,1.0,1.0,4
+tri_modal_split,441,BWTS = 1 AND LZ = 1 AND ROLZ = 1,ROLZ AND LZ AND BWTS,1,1.0,1.0,1.0,4
+power_law,441,BWTS = 1 AND LZ = 1 AND ROLZ = 1,ROLZ AND LZ AND BWTS,2,1.0,1.0,1.0,4
+normal,443,ROLZX = 1 AND BWTS = 1 AND checksum = 1,ROLZX AND BWTS AND checksum,0,1.0,1.0,1.0,50
+uniform,443,ROLZX = 1 AND BWTS = 1 AND checksum = 1,ROLZX AND BWTS AND checksum,0,1.0,1.0,1.0,50
+bi_modal_split,443,ROLZX = 1 AND BWTS = 1 AND checksum = 1,ROLZX AND BWTS AND checksum,1,1.0,1.0,1.0,50
+tri_modal_split,443,ROLZX = 1 AND BWTS = 1 AND checksum = 1,ROLZX AND BWTS AND checksum,0,1.0,1.0,1.0,50
+power_law,443,ROLZX = 1 AND BWTS = 1 AND checksum = 1,ROLZX AND BWTS AND checksum,0,1.0,1.0,1.0,50
+normal,448,BWTS = 1 AND SRT = 1 AND blocksize = 1000000,SRT AND BWTS AND blocksize > 500500.0 AND blocksize <= 500500000.0,0,1.0,1.0,1.0,51
+uniform,448,BWTS = 1 AND SRT = 1 AND blocksize = 1000000,SRT AND BWTS AND blocksize <= 500500000.0 AND blocksize > 500500.0,0,1.0,1.0,1.0,51
+bi_modal_split,448,BWTS = 1 AND SRT = 1 AND blocksize = 1000000,SRT AND BWTS AND blocksize <= 500500000.0 AND blocksize > 500500.0,0,1.0,1.0,1.0,51
+tri_modal_split,448,BWTS = 1 AND SRT = 1 AND blocksize = 1000000,SRT AND BWTS AND blocksize <= 500500000.0 AND blocksize > 500500.0,0,1.0,1.0,1.0,51
+power_law,448,BWTS = 1 AND SRT = 1 AND blocksize = 1000000,BWTS AND SRT AND blocksize <= 500500000.0 AND blocksize > 500500.0,1,1.0,1.0,1.0,51
+normal,451,LZP = 1 AND TEXT = 1 AND checksum = 1,LZP AND TEXT AND checksum,0,1.0,1.0,1.0,52
+uniform,451,LZP = 1 AND TEXT = 1 AND checksum = 1,TEXT AND LZP AND checksum,0,1.0,1.0,1.0,52
+bi_modal_split,451,LZP = 1 AND TEXT = 1 AND checksum = 1,LZP AND TEXT AND checksum,2,1.0,1.0,1.0,52
+tri_modal_split,451,LZP = 1 AND TEXT = 1 AND checksum = 1,LZP AND TEXT AND checksum,2,1.0,1.0,1.0,52
+power_law,451,LZP = 1 AND TEXT = 1 AND checksum = 1,LZP AND TEXT AND checksum,2,1.0,1.0,1.0,52
+normal,653,skip = 1 AND SRT = 1 AND checksum = 1,skip AND SRT AND checksum,0,1.0,1.0,1.0,53
+uniform,653,skip = 1 AND SRT = 1 AND checksum = 1,skip AND SRT AND checksum,3,1.0,1.0,1.0,53
+bi_modal_split,653,skip = 1 AND SRT = 1 AND checksum = 1,SRT AND skip AND checksum,0,1.0,1.0,1.0,53
+tri_modal_split,653,skip = 1 AND SRT = 1 AND checksum = 1,skip AND SRT AND checksum,0,1.0,1.0,1.0,53
+power_law,653,skip = 1 AND SRT = 1 AND checksum = 1,LZP,3,0.4085395439107229,0.2990056818181818,0.6447166921898928,53
+normal,525,LZP = 1 AND skip = 1 AND BWTS = 1,skip AND LZP AND BWTS,0,1.0,1.0,1.0,54
+uniform,525,LZP = 1 AND skip = 1 AND BWTS = 1,LZP AND skip AND BWTS,0,1.0,1.0,1.0,54
+bi_modal_split,525,LZP = 1 AND skip = 1 AND BWTS = 1,LZP,4,0.5431971029487843,0.3728693181818182,1.0,54
+tri_modal_split,525,LZP = 1 AND skip = 1 AND BWTS = 1,LZP AND skip AND BWTS,1,1.0,1.0,1.0,54
+power_law,525,LZP = 1 AND skip = 1 AND BWTS = 1,LZP AND skip AND BWTS,1,1.0,1.0,1.0,54
+normal,513,TEXT = 1 AND BWTS = 1 AND checksum = 1,TEXT AND checksum AND BWTS,0,1.0,1.0,1.0,55
+uniform,513,TEXT = 1 AND BWTS = 1 AND checksum = 1,checksum AND TEXT AND BWTS,1,1.0,1.0,1.0,55
+bi_modal_split,513,TEXT = 1 AND BWTS = 1 AND checksum = 1,TEXT AND BWTS AND checksum,3,1.0,1.0,1.0,55
+tri_modal_split,513,TEXT = 1 AND BWTS = 1 AND checksum = 1,SRT,4,0.2648275862068965,0.1732851985559566,0.5614035087719298,55
+power_law,513,TEXT = 1 AND BWTS = 1 AND checksum = 1,NOT TPAQX AND NOT FPAQ,1,0.2330473290893994,0.1358064516129032,0.8206627680311891,55
+normal,429,LZ = 1 AND checksum = 1 AND jobs = 8,jobs > 6.0 AND checksum AND LZ,0,1.0,1.0,1.0,56
+uniform,429,LZ = 1 AND checksum = 1 AND jobs = 8,jobs > 6.0 AND LZ AND checksum,0,1.0,1.0,1.0,56
+bi_modal_split,429,LZ = 1 AND checksum = 1 AND jobs = 8,checksum AND jobs > 6.0 AND LZ,0,1.0,1.0,1.0,56
+tri_modal_split,429,LZ = 1 AND checksum = 1 AND jobs = 8,checksum AND jobs > 6.0 AND LZ,0,1.0,1.0,1.0,56
+power_law,429,LZ = 1 AND checksum = 1 AND jobs = 8,LZ,3,0.380656610470275,0.2350684931506849,1.0,56
+normal,468,LZP = 1 AND checksum = 1 AND jobs = 8,LZP AND jobs > 6.0 AND checksum,0,1.0,1.0,1.0,57
+uniform,468,LZP = 1 AND checksum = 1 AND jobs = 8,LZP AND jobs > 6.0 AND checksum,0,1.0,1.0,1.0,57
+bi_modal_split,468,LZP = 1 AND checksum = 1 AND jobs = 8,LZP AND jobs > 6.0 AND checksum,0,1.0,1.0,1.0,57
+tri_modal_split,468,LZP = 1 AND checksum = 1 AND jobs = 8,LZP AND jobs > 6.0 AND checksum,0,1.0,1.0,1.0,57
+power_law,468,LZP = 1 AND checksum = 1 AND jobs = 8,LZP AND jobs > 6.0 AND checksum,0,1.0,1.0,1.0,57
+normal,429,LZ = 1 AND checksum = 1 AND jobs = 8,jobs > 6.0 AND checksum AND LZ,0,1.0,1.0,1.0,58
+uniform,429,LZ = 1 AND checksum = 1 AND jobs = 8,jobs > 6.0 AND LZ AND checksum,1,1.0,1.0,1.0,58
+bi_modal_split,429,LZ = 1 AND checksum = 1 AND jobs = 8,checksum AND jobs > 6.0 AND LZ,0,1.0,1.0,1.0,58
+tri_modal_split,429,LZ = 1 AND checksum = 1 AND jobs = 8,jobs > 6.0 AND LZ AND checksum,0,1.0,1.0,1.0,58
+power_law,429,LZ = 1 AND checksum = 1 AND jobs = 8,checksum,2,0.4107228338918142,0.258433734939759,1.0,58
+normal,594,LZP = 1 AND LZ = 1 AND checksum = 1,LZP AND LZ AND checksum,0,1.0,1.0,1.0,59
+uniform,594,LZP = 1 AND LZ = 1 AND checksum = 1,LZP AND LZ AND checksum,0,1.0,1.0,1.0,59
+bi_modal_split,594,LZP = 1 AND LZ = 1 AND checksum = 1,LZP AND LZ AND checksum,0,1.0,1.0,1.0,59
+tri_modal_split,594,LZP = 1 AND LZ = 1 AND checksum = 1,LZP AND LZ AND checksum,0,1.0,1.0,1.0,59
+power_law,594,LZP = 1 AND LZ = 1 AND checksum = 1,LZP AND LZ AND checksum,0,1.0,1.0,1.0,59
+normal,542,LZP = 1 AND BWTS = 1 AND LZ = 1,LZP AND LZ AND BWTS,0,1.0,1.0,1.0,5
+uniform,542,LZP = 1 AND BWTS = 1 AND LZ = 1,LZP AND LZ AND BWTS,0,1.0,1.0,1.0,5
+bi_modal_split,542,LZP = 1 AND BWTS = 1 AND LZ = 1,LZP AND LZ AND BWTS,0,1.0,1.0,1.0,5
+tri_modal_split,542,LZP = 1 AND BWTS = 1 AND LZ = 1,LZP AND LZ AND BWTS,0,1.0,1.0,1.0,5
+power_law,542,LZP = 1 AND BWTS = 1 AND LZ = 1,LZP AND LZ AND BWTS,0,1.0,1.0,1.0,5
+normal,529,BWTS = 1 AND MTFT = 1 AND checksum = 1,MTFT AND checksum AND BWTS,0,1.0,1.0,1.0,60
+uniform,529,BWTS = 1 AND MTFT = 1 AND checksum = 1,MTFT AND checksum AND BWTS,1,1.0,1.0,1.0,60
+bi_modal_split,529,BWTS = 1 AND MTFT = 1 AND checksum = 1,MTFT AND checksum AND BWTS,4,1.0,1.0,1.0,60
+tri_modal_split,529,BWTS = 1 AND MTFT = 1 AND checksum = 1,MTFT AND BWTS AND checksum,2,1.0,1.0,1.0,60
+power_law,529,BWTS = 1 AND MTFT = 1 AND checksum = 1,BWTS,2,0.4344969199178645,0.2775445960125918,1.0,60
+normal,604,skip = 1 AND MTFT = 1 AND checksum = 1,MTFT AND skip AND checksum,0,1.0,1.0,1.0,61
+uniform,604,skip = 1 AND MTFT = 1 AND checksum = 1,MTFT AND skip AND checksum,0,1.0,1.0,1.0,61
+bi_modal_split,604,skip = 1 AND MTFT = 1 AND checksum = 1,MTFT AND skip AND checksum,0,1.0,1.0,1.0,61
+tri_modal_split,604,skip = 1 AND MTFT = 1 AND checksum = 1,MTFT AND skip AND checksum,0,1.0,1.0,1.0,61
+power_law,604,skip = 1 AND MTFT = 1 AND checksum = 1,MTFT AND skip AND checksum,0,1.0,1.0,1.0,61
+normal,488,RLT = 1 AND BWT = 1 AND blocksize = 1000000,RLT AND BWT AND blocksize <= 500500000.0 AND blocksize > 500500.0,0,1.0,1.0,1.0,62
+uniform,488,RLT = 1 AND BWT = 1 AND blocksize = 1000000,BWT AND RLT AND blocksize <= 500500000.0 AND blocksize > 500500.0,0,1.0,1.0,1.0,62
+bi_modal_split,488,RLT = 1 AND BWT = 1 AND blocksize = 1000000,RLT AND BWT AND blocksize <= 500500000.0 AND blocksize > 500500.0,0,1.0,1.0,1.0,62
+tri_modal_split,488,RLT = 1 AND BWT = 1 AND blocksize = 1000000,RLT,4,0.4533209475150953,0.2930930930930931,1.0,62
+power_law,488,RLT = 1 AND BWT = 1 AND blocksize = 1000000,BWT,4,0.4571428571428571,0.2962962962962963,1.0,62
+normal,421,BWTS = 1 AND MTFT = 1 AND SRT = 1,MTFT AND SRT AND BWTS,0,1.0,1.0,1.0,63
+uniform,421,BWTS = 1 AND MTFT = 1 AND SRT = 1,MTFT AND SRT AND BWTS,0,1.0,1.0,1.0,63
+bi_modal_split,421,BWTS = 1 AND MTFT = 1 AND SRT = 1,MTFT AND SRT AND BWTS,0,1.0,1.0,1.0,63
+tri_modal_split,421,BWTS = 1 AND MTFT = 1 AND SRT = 1,MTFT AND SRT AND BWTS,0,1.0,1.0,1.0,63
+power_law,421,BWTS = 1 AND MTFT = 1 AND SRT = 1,MTFT AND SRT AND BWTS,0,1.0,1.0,1.0,63
+normal,513,checksum = 1 AND RLT = 1 AND ROLZ = 1,ROLZ AND RLT AND checksum,0,1.0,1.0,1.0,64
+uniform,513,checksum = 1 AND RLT = 1 AND ROLZ = 1,ROLZ AND RLT AND checksum,0,1.0,1.0,1.0,64
+bi_modal_split,513,checksum = 1 AND RLT = 1 AND ROLZ = 1,ROLZ AND RLT AND checksum,0,1.0,1.0,1.0,64
+tri_modal_split,513,checksum = 1 AND RLT = 1 AND ROLZ = 1,ROLZ AND RLT AND checksum,0,1.0,1.0,1.0,64
+power_law,513,checksum = 1 AND RLT = 1 AND ROLZ = 1,ROLZ,4,0.5668508287292817,0.3955281418658442,1.0,64
+normal,422,skip = 1 AND LZ = 1 AND ROLZ = 1,ROLZ AND LZ AND skip,0,1.0,1.0,1.0,65
+uniform,422,skip = 1 AND LZ = 1 AND ROLZ = 1,ROLZ AND skip AND LZ,0,1.0,1.0,1.0,65
+bi_modal_split,422,skip = 1 AND LZ = 1 AND ROLZ = 1,ROLZ AND LZ AND skip,0,1.0,1.0,1.0,65
+tri_modal_split,422,skip = 1 AND LZ = 1 AND ROLZ = 1,skip AND ROLZ AND LZ,3,1.0,1.0,1.0,65
+power_law,422,skip = 1 AND LZ = 1 AND ROLZ = 1,ROLZ AND LZ AND skip,1,1.0,1.0,1.0,65
+normal,622,BWTS = 1 AND X86 = 1 AND checksum = 1,checksum AND X86 AND BWTS,0,1.0,1.0,1.0,66
+uniform,622,BWTS = 1 AND X86 = 1 AND checksum = 1,X86 AND checksum AND BWTS,1,1.0,1.0,1.0,66
+bi_modal_split,622,BWTS = 1 AND X86 = 1 AND checksum = 1,X86 AND checksum AND BWTS,0,1.0,1.0,1.0,66
+tri_modal_split,622,BWTS = 1 AND X86 = 1 AND checksum = 1,checksum AND BWTS AND X86,0,1.0,1.0,1.0,66
+power_law,622,BWTS = 1 AND X86 = 1 AND checksum = 1,NOT TPAQX AND checksum,2,0.5263157894736842,0.3732347007397444,0.8922829581993569,66
+normal,462,MTFT = 1 AND SRT = 1 AND checksum = 1,MTFT AND SRT AND checksum,0,1.0,1.0,1.0,67
+uniform,462,MTFT = 1 AND SRT = 1 AND checksum = 1,MTFT AND SRT AND checksum,0,1.0,1.0,1.0,67
+bi_modal_split,462,MTFT = 1 AND SRT = 1 AND checksum = 1,MTFT AND SRT AND checksum,0,1.0,1.0,1.0,67
+tri_modal_split,462,MTFT = 1 AND SRT = 1 AND checksum = 1,MTFT AND SRT AND checksum,0,1.0,1.0,1.0,67
+power_law,462,MTFT = 1 AND SRT = 1 AND checksum = 1,MTFT AND SRT AND checksum,0,1.0,1.0,1.0,67
+normal,571,BWTS = 1 AND LZ = 1 AND SRT = 1,SRT AND LZ AND BWTS,0,1.0,1.0,1.0,68
+uniform,571,BWTS = 1 AND LZ = 1 AND SRT = 1,SRT AND LZ AND BWTS,0,1.0,1.0,1.0,68
+bi_modal_split,571,BWTS = 1 AND LZ = 1 AND SRT = 1,BWTS AND LZ,4,0.6984709480122324,0.5366541353383458,1.0,68
+tri_modal_split,571,BWTS = 1 AND LZ = 1 AND SRT = 1,SRT AND LZ AND BWTS,2,1.0,1.0,1.0,68
+power_law,571,BWTS = 1 AND LZ = 1 AND SRT = 1,SRT AND LZ AND BWTS,0,1.0,1.0,1.0,68
+normal,428,BWTS = 1 AND MTFT = 1 AND X86 = 1,MTFT AND X86 AND BWTS,0,1.0,1.0,1.0,69
+uniform,428,BWTS = 1 AND MTFT = 1 AND X86 = 1,MTFT AND X86 AND BWTS,0,1.0,1.0,1.0,69
+bi_modal_split,428,BWTS = 1 AND MTFT = 1 AND X86 = 1,MTFT AND X86 AND BWTS,0,1.0,1.0,1.0,69
+tri_modal_split,428,BWTS = 1 AND MTFT = 1 AND X86 = 1,MTFT AND X86 AND BWTS,0,1.0,1.0,1.0,69
+power_law,428,BWTS = 1 AND MTFT = 1 AND X86 = 1,MTFT AND X86 AND BWTS,0,1.0,1.0,1.0,69
+normal,551,skip = 1 AND LZ = 1 AND SRT = 1,skip AND SRT AND LZ,0,1.0,1.0,1.0,6
+uniform,551,skip = 1 AND LZ = 1 AND SRT = 1,SRT AND LZ AND skip,2,1.0,1.0,1.0,6
+bi_modal_split,551,skip = 1 AND LZ = 1 AND SRT = 1,skip AND SRT AND LZ,0,1.0,1.0,1.0,6
+tri_modal_split,551,skip = 1 AND LZ = 1 AND SRT = 1,skip AND SRT AND LZ,0,1.0,1.0,1.0,6
+power_law,551,skip = 1 AND LZ = 1 AND SRT = 1,NOT ANS0 AND NOT ZRLT AND RANK,4,0.2596991290577989,0.2303370786516854,0.2976406533575317,6
+normal,419,checksum = 1 AND BWT = 1 AND blocksize = 1000000,BWT AND checksum AND blocksize <= 500500000.0 AND blocksize > 500500.0,0,1.0,1.0,1.0,70
+uniform,419,checksum = 1 AND BWT = 1 AND blocksize = 1000000,BWT AND checksum AND blocksize <= 500500000.0 AND blocksize > 500500.0,0,1.0,1.0,1.0,70
+bi_modal_split,419,checksum = 1 AND BWT = 1 AND blocksize = 1000000,checksum AND BWT AND blocksize <= 500500000.0 AND blocksize > 500500.0,0,1.0,1.0,1.0,70
+tri_modal_split,419,checksum = 1 AND BWT = 1 AND blocksize = 1000000,checksum AND BWT AND blocksize <= 500500000.0 AND blocksize > 500500.0,0,1.0,1.0,1.0,70
+power_law,419,checksum = 1 AND BWT = 1 AND blocksize = 1000000,checksum,3,0.4030784030784031,0.2524096385542169,1.0,70
+normal,449,skip = 1 AND checksum = 1 AND jobs = 8,jobs > 6.0 AND skip AND checksum,0,1.0,1.0,1.0,71
+uniform,449,skip = 1 AND checksum = 1 AND jobs = 8,jobs > 6.0 AND skip AND checksum,0,1.0,1.0,1.0,71
+bi_modal_split,449,skip = 1 AND checksum = 1 AND jobs = 8,checksum AND jobs > 6.0 AND skip,0,1.0,1.0,1.0,71
+tri_modal_split,449,skip = 1 AND checksum = 1 AND jobs = 8,jobs > 6.0 AND skip AND checksum,0,1.0,1.0,1.0,71
+power_law,449,skip = 1 AND checksum = 1 AND jobs = 8,skip AND jobs > 6.0 AND checksum,1,1.0,1.0,1.0,71
+normal,438,LZP = 1 AND SRT = 1 AND X86 = 1,SRT AND LZP AND X86,0,1.0,1.0,1.0,72
+uniform,438,LZP = 1 AND SRT = 1 AND X86 = 1,LZP AND SRT AND X86,0,1.0,1.0,1.0,72
+bi_modal_split,438,LZP = 1 AND SRT = 1 AND X86 = 1,LZP AND SRT AND X86,0,1.0,1.0,1.0,72
+tri_modal_split,438,LZP = 1 AND SRT = 1 AND X86 = 1,LZP AND SRT AND X86,1,1.0,1.0,1.0,72
+power_law,438,LZP = 1 AND SRT = 1 AND X86 = 1,LZP AND SRT AND X86,3,1.0,1.0,1.0,72
+normal,476,MTFT = 1 AND checksum = 1 AND RLT = 1,RLT AND MTFT AND checksum,0,1.0,1.0,1.0,73
+uniform,476,MTFT = 1 AND checksum = 1 AND RLT = 1,RLT AND MTFT AND checksum,0,1.0,1.0,1.0,73
+bi_modal_split,476,MTFT = 1 AND checksum = 1 AND RLT = 1,MTFT AND RLT AND checksum,2,1.0,1.0,1.0,73
+tri_modal_split,476,MTFT = 1 AND checksum = 1 AND RLT = 1,MTFT AND RLT AND checksum,1,1.0,1.0,1.0,73
+power_law,476,MTFT = 1 AND checksum = 1 AND RLT = 1,MTFT AND RLT AND checksum,3,1.0,1.0,1.0,73
+normal,450,X86 = 1 AND checksum = 1 AND BWT = 1,BWT AND X86 AND checksum,0,1.0,1.0,1.0,74
+uniform,450,X86 = 1 AND checksum = 1 AND BWT = 1,BWT AND X86 AND checksum,0,1.0,1.0,1.0,74
+bi_modal_split,450,X86 = 1 AND checksum = 1 AND BWT = 1,BWT AND checksum AND X86,0,1.0,1.0,1.0,74
+tri_modal_split,450,X86 = 1 AND checksum = 1 AND BWT = 1,BWT AND checksum AND X86,0,1.0,1.0,1.0,74
+power_law,450,X86 = 1 AND checksum = 1 AND BWT = 1,checksum AND BWT AND X86,0,1.0,1.0,1.0,74
+normal,476,MTFT = 1 AND checksum = 1 AND RLT = 1,MTFT AND RLT AND checksum,0,1.0,1.0,1.0,75
+uniform,476,MTFT = 1 AND checksum = 1 AND RLT = 1,MTFT AND RLT AND checksum,1,1.0,1.0,1.0,75
+bi_modal_split,476,MTFT = 1 AND checksum = 1 AND RLT = 1,MTFT AND RLT AND checksum,0,1.0,1.0,1.0,75
+tri_modal_split,476,MTFT = 1 AND checksum = 1 AND RLT = 1,MTFT AND RLT AND checksum,1,1.0,1.0,1.0,75
+power_law,476,MTFT = 1 AND checksum = 1 AND RLT = 1,MTFT,2,0.4897119341563786,0.3242506811989101,1.0,75
+normal,479,RANK = 1 AND skip = 1 AND X86 = 1,RANK AND X86 AND skip,0,1.0,1.0,1.0,76
+uniform,479,RANK = 1 AND skip = 1 AND X86 = 1,RANK AND X86 AND skip,0,1.0,1.0,1.0,76
+bi_modal_split,479,RANK = 1 AND skip = 1 AND X86 = 1,RANK AND X86 AND skip,0,1.0,1.0,1.0,76
+tri_modal_split,479,RANK = 1 AND skip = 1 AND X86 = 1,RANK AND X86 AND skip,0,1.0,1.0,1.0,76
+power_law,479,RANK = 1 AND skip = 1 AND X86 = 1,RANK AND X86 AND skip,0,1.0,1.0,1.0,76
+normal,508,LZP = 1 AND BWTS = 1 AND SRT = 1,LZP AND SRT AND BWTS,0,1.0,1.0,1.0,77
+uniform,508,LZP = 1 AND BWTS = 1 AND SRT = 1,LZP AND SRT AND BWTS,4,1.0,1.0,1.0,77
+bi_modal_split,508,LZP = 1 AND BWTS = 1 AND SRT = 1,LZP AND SRT AND BWTS,2,1.0,1.0,1.0,77
+tri_modal_split,508,LZP = 1 AND BWTS = 1 AND SRT = 1,LZP AND SRT AND BWTS,1,1.0,1.0,1.0,77
+power_law,508,LZP = 1 AND BWTS = 1 AND SRT = 1,NOT ANS1 AND checksum,4,0.3324510322922181,0.2273714699493121,0.6181102362204725,77
+normal,456,RANK = 1 AND checksum = 1 AND BWT = 1,RANK AND checksum AND BWT,0,1.0,1.0,1.0,78
+uniform,456,RANK = 1 AND checksum = 1 AND BWT = 1,RANK AND checksum AND BWT,4,1.0,1.0,1.0,78
+bi_modal_split,456,RANK = 1 AND checksum = 1 AND BWT = 1,RANK AND checksum AND BWT,0,1.0,1.0,1.0,78
+tri_modal_split,456,RANK = 1 AND checksum = 1 AND BWT = 1,RANK AND checksum AND BWT,0,1.0,1.0,1.0,78
+power_law,456,RANK = 1 AND checksum = 1 AND BWT = 1,blocksize > 500500.0,0,0.2211316397228637,0.1273271276595744,0.8399122807017544,78
+normal,527,LZP = 1 AND BWTS = 1 AND X86 = 1,LZP AND X86 AND BWTS,0,1.0,1.0,1.0,79
+uniform,527,LZP = 1 AND BWTS = 1 AND X86 = 1,LZP AND X86 AND BWTS,0,1.0,1.0,1.0,79
+bi_modal_split,527,LZP = 1 AND BWTS = 1 AND X86 = 1,LZP AND X86 AND BWTS,0,1.0,1.0,1.0,79
+tri_modal_split,527,LZP = 1 AND BWTS = 1 AND X86 = 1,LZP AND X86 AND BWTS,0,1.0,1.0,1.0,79
+power_law,527,LZP = 1 AND BWTS = 1 AND X86 = 1,LZP,2,0.544702842377261,0.3742897727272727,1.0,79
+normal,437,TEXT = 1 AND skip = 1 AND RLT = 1,RLT AND TEXT AND skip,0,1.0,1.0,1.0,7
+uniform,437,TEXT = 1 AND skip = 1 AND RLT = 1,TEXT AND skip AND RLT,0,1.0,1.0,1.0,7
+bi_modal_split,437,TEXT = 1 AND skip = 1 AND RLT = 1,TEXT AND RLT AND skip,0,1.0,1.0,1.0,7
+tri_modal_split,437,TEXT = 1 AND skip = 1 AND RLT = 1,TEXT AND skip AND RLT,0,1.0,1.0,1.0,7
+power_law,437,TEXT = 1 AND skip = 1 AND RLT = 1,skip,2,0.4324591786244433,0.2758838383838384,1.0,7
+normal,512,SRT = 1 AND X86 = 1 AND RLT = 1,SRT AND RLT AND X86,0,1.0,1.0,1.0,80
+uniform,512,SRT = 1 AND X86 = 1 AND RLT = 1,RLT AND SRT AND X86,2,1.0,1.0,1.0,80
+bi_modal_split,512,SRT = 1 AND X86 = 1 AND RLT = 1,SRT AND X86 AND RLT,0,1.0,1.0,1.0,80
+tri_modal_split,512,SRT = 1 AND X86 = 1 AND RLT = 1,SRT AND X86 AND RLT,0,1.0,1.0,1.0,80
+power_law,512,SRT = 1 AND X86 = 1 AND RLT = 1,SRT,3,0.4710211591536338,0.3080625752105896,1.0,80
+normal,573,LZ = 1 AND SRT = 1 AND checksum = 1,LZ AND SRT AND checksum,0,1.0,1.0,1.0,81
+uniform,573,LZ = 1 AND SRT = 1 AND checksum = 1,SRT AND LZ AND checksum,3,1.0,1.0,1.0,81
+bi_modal_split,573,LZ = 1 AND SRT = 1 AND checksum = 1,SRT AND LZ AND checksum,3,1.0,1.0,1.0,81
+tri_modal_split,573,LZ = 1 AND SRT = 1 AND checksum = 1,SRT AND LZ AND checksum,4,1.0,1.0,1.0,81
+power_law,573,LZ = 1 AND SRT = 1 AND checksum = 1,TEXT,4,0.2642059252064109,0.1830417227456258,0.4746945898778359,81
+normal,497,RANK = 1 AND skip = 1 AND LZ = 1,RANK AND LZ AND skip,0,1.0,1.0,1.0,82
+uniform,497,RANK = 1 AND skip = 1 AND LZ = 1,RANK AND LZ AND skip,0,1.0,1.0,1.0,82
+bi_modal_split,497,RANK = 1 AND skip = 1 AND LZ = 1,RANK AND LZ AND skip,0,1.0,1.0,1.0,82
+tri_modal_split,497,RANK = 1 AND skip = 1 AND LZ = 1,RANK AND LZ AND skip,2,1.0,1.0,1.0,82
+power_law,497,RANK = 1 AND skip = 1 AND LZ = 1,RANK AND LZ AND skip,0,1.0,1.0,1.0,82
+normal,412,skip = 1 AND X86 = 1 AND ROLZ = 1,ROLZ AND skip AND X86,0,1.0,1.0,1.0,83
+uniform,412,skip = 1 AND X86 = 1 AND ROLZ = 1,skip AND ROLZ AND X86,0,1.0,1.0,1.0,83
+bi_modal_split,412,skip = 1 AND X86 = 1 AND ROLZ = 1,ROLZ AND X86 AND skip,0,1.0,1.0,1.0,83
+tri_modal_split,412,skip = 1 AND X86 = 1 AND ROLZ = 1,ROLZ AND X86 AND skip,1,1.0,1.0,1.0,83
+power_law,412,skip = 1 AND X86 = 1 AND ROLZ = 1,ROLZ,3,0.4821533060269163,0.3176561295296838,1.0,83
+normal,417,SRT = 1 AND checksum = 1 AND blocksize = 1000000,SRT AND checksum AND blocksize <= 500500000.0 AND blocksize > 500500.0,0,1.0,1.0,1.0,84
+uniform,417,SRT = 1 AND checksum = 1 AND blocksize = 1000000,SRT AND checksum AND blocksize <= 500500000.0 AND blocksize > 500500.0,0,1.0,1.0,1.0,84
+bi_modal_split,417,SRT = 1 AND checksum = 1 AND blocksize = 1000000,SRT AND checksum AND blocksize <= 500500000.0 AND blocksize > 500500.0,0,1.0,1.0,1.0,84
+tri_modal_split,417,SRT = 1 AND checksum = 1 AND blocksize = 1000000,checksum AND SRT AND blocksize <= 500500000.0 AND blocksize > 500500.0,0,1.0,1.0,1.0,84
+power_law,417,SRT = 1 AND checksum = 1 AND blocksize = 1000000,checksum AND SRT AND blocksize <= 500500000.0 AND blocksize > 500500.0,2,1.0,1.0,1.0,84
+normal,574,skip = 1 AND LZ = 1 AND RLT = 1,RLT AND LZ AND skip,0,1.0,1.0,1.0,85
+uniform,574,skip = 1 AND LZ = 1 AND RLT = 1,skip AND LZ AND RLT,0,1.0,1.0,1.0,85
+bi_modal_split,574,skip = 1 AND LZ = 1 AND RLT = 1,skip AND LZ AND RLT,0,1.0,1.0,1.0,85
+tri_modal_split,574,skip = 1 AND LZ = 1 AND RLT = 1,skip AND LZ AND RLT,0,1.0,1.0,1.0,85
+power_law,574,skip = 1 AND LZ = 1 AND RLT = 1,skip AND LZ AND RLT,4,1.0,1.0,1.0,85
+normal,708,skip = 1 AND BWTS = 1 AND checksum = 1,skip AND BWTS AND checksum,0,1.0,1.0,1.0,86
+uniform,708,skip = 1 AND BWTS = 1 AND checksum = 1,checksum AND BWTS AND skip,2,1.0,1.0,1.0,86
+bi_modal_split,708,skip = 1 AND BWTS = 1 AND checksum = 1,skip AND BWTS AND checksum,0,1.0,1.0,1.0,86
+tri_modal_split,708,skip = 1 AND BWTS = 1 AND checksum = 1,skip AND BWTS AND checksum,0,1.0,1.0,1.0,86
+power_law,708,skip = 1 AND BWTS = 1 AND checksum = 1,skip,3,0.6178010471204188,0.4469696969696969,1.0,86
+normal,417,SRT = 1 AND checksum = 1 AND blocksize = 1000000,checksum AND SRT AND blocksize <= 500500000.0 AND blocksize > 500500.0,0,1.0,1.0,1.0,87
+uniform,417,SRT = 1 AND checksum = 1 AND blocksize = 1000000,SRT AND checksum AND blocksize <= 500500000.0 AND blocksize > 500500.0,0,1.0,1.0,1.0,87
+bi_modal_split,417,SRT = 1 AND checksum = 1 AND blocksize = 1000000,checksum AND SRT AND blocksize <= 500500000.0 AND blocksize > 500500.0,3,1.0,1.0,1.0,87
+tri_modal_split,417,SRT = 1 AND checksum = 1 AND blocksize = 1000000,checksum AND SRT AND blocksize <= 500500000.0 AND blocksize > 500500.0,0,1.0,1.0,1.0,87
+power_law,417,SRT = 1 AND checksum = 1 AND blocksize = 1000000,SRT AND checksum AND blocksize <= 500500000.0 AND blocksize > 500500.0,0,1.0,1.0,1.0,87
+normal,412,X86 = 1 AND RLT = 1 AND blocksize = 1000000,X86 AND RLT AND blocksize <= 500500000.0 AND blocksize > 500500.0,0,1.0,1.0,1.0,88
+uniform,412,X86 = 1 AND RLT = 1 AND blocksize = 1000000,RLT AND X86 AND blocksize <= 500500000.0 AND blocksize > 500500.0,0,1.0,1.0,1.0,88
+bi_modal_split,412,X86 = 1 AND RLT = 1 AND blocksize = 1000000,RLT AND X86 AND blocksize <= 500500000.0 AND blocksize > 500500.0,0,1.0,1.0,1.0,88
+tri_modal_split,412,X86 = 1 AND RLT = 1 AND blocksize = 1000000,RLT AND X86 AND blocksize <= 500500000.0 AND blocksize > 500500.0,1,1.0,1.0,1.0,88
+power_law,412,X86 = 1 AND RLT = 1 AND blocksize = 1000000,RLT AND X86 AND blocksize <= 500500000.0 AND blocksize > 500500.0,0,1.0,1.0,1.0,88
+normal,424,TEXT = 1 AND X86 = 1 AND checksum = 1,TEXT AND checksum AND X86,0,1.0,1.0,1.0,89
+uniform,424,TEXT = 1 AND X86 = 1 AND checksum = 1,TEXT AND checksum AND X86,0,1.0,1.0,1.0,89
+bi_modal_split,424,TEXT = 1 AND X86 = 1 AND checksum = 1,TEXT AND checksum AND X86,0,1.0,1.0,1.0,89
+tri_modal_split,424,TEXT = 1 AND X86 = 1 AND checksum = 1,checksum AND TEXT AND X86,0,1.0,1.0,1.0,89
+power_law,424,TEXT = 1 AND X86 = 1 AND checksum = 1,TEXT AND checksum AND X86,0,1.0,1.0,1.0,89
+normal,453,LZP = 1 AND checksum = 1 AND ROLZ = 1,ROLZ AND LZP AND checksum,0,1.0,1.0,1.0,8
+uniform,453,LZP = 1 AND checksum = 1 AND ROLZ = 1,ROLZ AND LZP AND checksum,1,1.0,1.0,1.0,8
+bi_modal_split,453,LZP = 1 AND checksum = 1 AND ROLZ = 1,ROLZ AND LZP AND checksum,0,1.0,1.0,1.0,8
+tri_modal_split,453,LZP = 1 AND checksum = 1 AND ROLZ = 1,LZP AND ROLZ AND checksum,2,1.0,1.0,1.0,8
+power_law,453,LZP = 1 AND checksum = 1 AND ROLZ = 1,ROLZ,3,0.5177142857142858,0.3492675404780262,1.0,8
+normal,475,TEXT = 1 AND BWTS = 1 AND X86 = 1,TEXT AND X86 AND BWTS,0,1.0,1.0,1.0,90
+uniform,475,TEXT = 1 AND BWTS = 1 AND X86 = 1,TEXT AND X86 AND BWTS,0,1.0,1.0,1.0,90
+bi_modal_split,475,TEXT = 1 AND BWTS = 1 AND X86 = 1,TEXT AND X86 AND BWTS,0,1.0,1.0,1.0,90
+tri_modal_split,475,TEXT = 1 AND BWTS = 1 AND X86 = 1,TEXT AND X86 AND BWTS,0,1.0,1.0,1.0,90
+power_law,475,TEXT = 1 AND BWTS = 1 AND X86 = 1,TEXT AND X86 AND BWTS,1,1.0,1.0,1.0,90
+normal,417,LZP = 1 AND X86 = 1 AND RLT = 1,LZP AND X86 AND RLT,0,1.0,1.0,1.0,91
+uniform,417,LZP = 1 AND X86 = 1 AND RLT = 1,LZP AND RLT AND X86,0,1.0,1.0,1.0,91
+bi_modal_split,417,LZP = 1 AND X86 = 1 AND RLT = 1,LZP AND RLT AND X86,0,1.0,1.0,1.0,91
+tri_modal_split,417,LZP = 1 AND X86 = 1 AND RLT = 1,LZP AND RLT AND X86,0,1.0,1.0,1.0,91
+power_law,417,LZP = 1 AND X86 = 1 AND RLT = 1,LZP AND RLT AND X86,0,1.0,1.0,1.0,91
+normal,462,X86 = 1 AND checksum = 1 AND ROLZ = 1,ROLZ AND X86 AND checksum,0,1.0,1.0,1.0,92
+uniform,462,X86 = 1 AND checksum = 1 AND ROLZ = 1,ROLZ AND X86 AND checksum,0,1.0,1.0,1.0,92
+bi_modal_split,462,X86 = 1 AND checksum = 1 AND ROLZ = 1,ROLZ,4,0.5252984650369528,0.3562066306861989,1.0,92
+tri_modal_split,462,X86 = 1 AND checksum = 1 AND ROLZ = 1,ROLZ,3,0.5252984650369528,0.3562066306861989,1.0,92
+power_law,462,X86 = 1 AND checksum = 1 AND ROLZ = 1,ROLZ AND X86 AND checksum,0,1.0,1.0,1.0,92
+normal,418,MTFT = 1 AND RLT = 1 AND BWT = 1,MTFT AND RLT AND BWT,0,1.0,1.0,1.0,93
+uniform,418,MTFT = 1 AND RLT = 1 AND BWT = 1,BWT AND MTFT AND RLT,0,1.0,1.0,1.0,93
+bi_modal_split,418,MTFT = 1 AND RLT = 1 AND BWT = 1,RLT AND MTFT AND BWT,0,1.0,1.0,1.0,93
+tri_modal_split,418,MTFT = 1 AND RLT = 1 AND BWT = 1,NOT MTFT,0,0.0,0.0,0.0,93
+power_law,418,MTFT = 1 AND RLT = 1 AND BWT = 1,MTFT AND BWT AND RLT,3,1.0,1.0,1.0,93
+normal,437,TEXT = 1 AND skip = 1 AND RLT = 1,RLT AND TEXT AND skip,0,1.0,1.0,1.0,94
+uniform,437,TEXT = 1 AND skip = 1 AND RLT = 1,TEXT AND skip AND RLT,0,1.0,1.0,1.0,94
+bi_modal_split,437,TEXT = 1 AND skip = 1 AND RLT = 1,TEXT AND skip AND RLT,0,1.0,1.0,1.0,94
+tri_modal_split,437,TEXT = 1 AND skip = 1 AND RLT = 1,TEXT AND RLT AND skip,1,1.0,1.0,1.0,94
+power_law,437,TEXT = 1 AND skip = 1 AND RLT = 1,TEXT AND skip AND RLT,1,1.0,1.0,1.0,94
+normal,425,BWTS = 1 AND X86 = 1 AND ROLZ = 1,ROLZ AND X86 AND BWTS,0,1.0,1.0,1.0,95
+uniform,425,BWTS = 1 AND X86 = 1 AND ROLZ = 1,ROLZ AND X86 AND BWTS,0,1.0,1.0,1.0,95
+bi_modal_split,425,BWTS = 1 AND X86 = 1 AND ROLZ = 1,ROLZ AND X86 AND BWTS,1,1.0,1.0,1.0,95
+tri_modal_split,425,BWTS = 1 AND X86 = 1 AND ROLZ = 1,ROLZ AND X86 AND BWTS,1,1.0,1.0,1.0,95
+power_law,425,BWTS = 1 AND X86 = 1 AND ROLZ = 1,ROLZ AND X86 AND BWTS,3,1.0,1.0,1.0,95
+normal,708,skip = 1 AND BWTS = 1 AND checksum = 1,checksum AND BWTS AND skip,0,1.0,1.0,1.0,96
+uniform,708,skip = 1 AND BWTS = 1 AND checksum = 1,skip AND BWTS AND checksum,0,1.0,1.0,1.0,96
+bi_modal_split,708,skip = 1 AND BWTS = 1 AND checksum = 1,skip AND BWTS AND checksum,0,1.0,1.0,1.0,96
+tri_modal_split,708,skip = 1 AND BWTS = 1 AND checksum = 1,skip AND BWTS AND checksum,1,1.0,1.0,1.0,96
+power_law,708,skip = 1 AND BWTS = 1 AND checksum = 1,skip AND BWTS AND checksum,0,1.0,1.0,1.0,96
+normal,470,LZ = 1 AND checksum = 1 AND ROLZ = 1,ROLZ AND LZ AND checksum,0,1.0,1.0,1.0,97
+uniform,470,LZ = 1 AND checksum = 1 AND ROLZ = 1,ROLZ AND LZ AND checksum,0,1.0,1.0,1.0,97
+bi_modal_split,470,LZ = 1 AND checksum = 1 AND ROLZ = 1,ROLZ AND LZ AND checksum,0,1.0,1.0,1.0,97
+tri_modal_split,470,LZ = 1 AND checksum = 1 AND ROLZ = 1,ROLZ AND LZ AND checksum,0,1.0,1.0,1.0,97
+power_law,470,LZ = 1 AND checksum = 1 AND ROLZ = 1,ROLZ AND LZ AND checksum,1,1.0,1.0,1.0,97
+normal,455,TEXT = 1 AND LZ = 1 AND checksum = 1,TEXT AND checksum AND LZ,0,1.0,1.0,1.0,98
+uniform,455,TEXT = 1 AND LZ = 1 AND checksum = 1,TEXT AND checksum AND LZ,0,1.0,1.0,1.0,98
+bi_modal_split,455,TEXT = 1 AND LZ = 1 AND checksum = 1,TEXT AND checksum AND LZ,0,1.0,1.0,1.0,98
+tri_modal_split,455,TEXT = 1 AND LZ = 1 AND checksum = 1,TEXT AND checksum AND LZ,0,1.0,1.0,1.0,98
+power_law,455,TEXT = 1 AND LZ = 1 AND checksum = 1,TEXT AND checksum AND LZ,4,1.0,1.0,1.0,98
+normal,481,TEXT = 1 AND BWTS = 1 AND RLT = 1,TEXT AND RLT AND BWTS,0,1.0,1.0,1.0,99
+uniform,481,TEXT = 1 AND BWTS = 1 AND RLT = 1,TEXT AND RLT AND BWTS,2,1.0,1.0,1.0,99
+bi_modal_split,481,TEXT = 1 AND BWTS = 1 AND RLT = 1,TEXT AND RLT AND BWTS,0,1.0,1.0,1.0,99
+tri_modal_split,481,TEXT = 1 AND BWTS = 1 AND RLT = 1,TEXT AND RLT AND BWTS,0,1.0,1.0,1.0,99
+power_law,481,TEXT = 1 AND BWTS = 1 AND RLT = 1,NOT FPAQ AND BWTS,2,0.4078014184397163,0.2591549295774648,0.9563409563409564,99
+normal,417,X86 = 1 AND checksum = 1 AND jobs = 8,checksum AND jobs > 6.0 AND X86,0,1.0,1.0,1.0,9
+uniform,417,X86 = 1 AND checksum = 1 AND jobs = 8,jobs > 6.0 AND checksum AND X86,0,1.0,1.0,1.0,9
+bi_modal_split,417,X86 = 1 AND checksum = 1 AND jobs = 8,checksum AND jobs > 6.0 AND X86,0,1.0,1.0,1.0,9
+tri_modal_split,417,X86 = 1 AND checksum = 1 AND jobs = 8,checksum AND jobs > 6.0 AND X86,2,1.0,1.0,1.0,9
+power_law,417,X86 = 1 AND checksum = 1 AND jobs = 8,checksum AND jobs > 6.0 AND X86,2,1.0,1.0,1.0,9

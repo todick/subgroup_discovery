@@ -1,0 +1,6 @@
+rule,sg_samples,sg_coverage,rule_num_predicates,rule_features_used
+NOT iosCreateImagesetFolders AND NOT ios AND NOT web AND NOT win AND threads = 10.00,1467,0.21688350088704908,5,"['ios', 'threads', 'web', 'iosCreateImagesetFolders', 'win']"
+NOT android AND ios AND NOT androidMipmapInsteadOfDrawable AND NOT androidIncludeLdpiTvdpi,1648,0.2436428149024246,4,"['androidIncludeLdpiTvdpi', 'android', 'androidMipmapInsteadOfDrawable', 'ios']"
+NOT iosCreateImagesetFolders AND NOT android AND NOT ios AND NOT androidMipmapInsteadOfDrawable AND NOT androidIncludeLdpiTvdpi,1582,0.23388527498521586,5,"['androidIncludeLdpiTvdpi', 'ios', 'iosCreateImagesetFolders', 'android', 'androidMipmapInsteadOfDrawable']"
+NOT iosCreateImagesetFolders AND android AND NOT ios AND NOT web AND NOT win,3534,0.5224719101123596,5,"['ios', 'web', 'iosCreateImagesetFolders', 'win', 'android']"
+NOT android AND NOT androidMipmapInsteadOfDrawable AND NOT androidIncludeLdpiTvdpi,3230,0.47752808988764045,3,"['androidIncludeLdpiTvdpi', 'android', 'androidMipmapInsteadOfDrawable']"

@@ -1,0 +1,28 @@
+\documentclass{article}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{adjustbox}
+\begin{document}
+
+\begin{table}[ht]
+\begin{adjustbox}{max width=1.1\textwidth,center}
+\begin{tabular}{l r r r}
+\toprule
+Sample Set & \# Features & \# Samples & Target Variables\\
+\midrule
+7z & 43 & 68640 & Time elapsed, Size \\
+BerkeleyDBC & 25 & 2560 & Avg. Latency \\
+Dune & 31 & 2304 & Time elapsed \\
+Hipacc & 107 & 13485 & Time elapsed \\
+JavaGC & 38 & 193536 & Time spent in garbage collection \\
+LLVM & 11 & 1024 & Compile time \\
+lrzip & 19 & 432 & Time elapsed \\
+Polly & 39 & 60000 & Performance, Time elapsed \\
+VP9 & 41 & 216000 & ElapsedTime, Size, PSNR Average, PSNR Overall \\
+x264 & 16 & 1152 & Time elapsed \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\end{table}
+
+\end{document}

@@ -1,0 +1,735 @@
+sampling_strategy,sample_size,sg_cardinality,sg_rule,best_rule,best_rule_idx,f1,precision,recall,seed
+random_2,24,1,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,NOT BZip2 AND NOT Deflate AND Files <= 70.00 AND tmOff,1,0.25,0.1428571428571428,1.0,0
+random_5,60,6,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,NOT BZip2 AND BlockSize >= 2.00 AND filterOff AND mtOff,3,0.6666666666666667,0.5555555555555556,0.8333333333333334,0
+random_10,120,13,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,NOT LZMA2 AND NOT mtOff AND x >= 4.00,3,0.4347826086956521,0.303030303030303,0.7692307692307693,0
+random_20,240,31,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff AND filterOff AND NOT tmOff,2,1.0,1.0,1.0,0
+2-wise,165,21,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,HeaderCompressionOff AND mtOff AND tmOff,1,1.0,1.0,1.0,0
+3-wise,1121,136,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff AND filterOff AND mtOff,0,1.0,1.0,1.0,0
+4-wise,4875,628,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff AND NOT filterOff AND NOT tmOff,0,1.0,1.0,1.0,0
+random_2,24,1,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,BZip2 AND Files <= 40.00 AND HeaderCompressionOff,1,1.0,1.0,1.0,10
+random_5,60,2,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,Files != 0.00 AND HeaderCompressionOff AND x != 0.00,0,0.1818181818181818,0.1,1.0,10
+random_10,120,8,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,HeaderCompressionOff AND NOT PPMd AND mtOff AND tmOff,1,1.0,1.0,1.0,10
+random_20,240,25,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,BlockSize != 4096.00 AND HeaderCompressionOff AND mtOff AND tmOff,0,0.9583333333333334,1.0,0.92,10
+2-wise,172,19,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,HeaderCompressionOff AND mtOff AND tmOff,2,1.0,1.0,1.0,10
+3-wise,1106,154,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,HeaderCompressionOff AND mtOff AND tmOff,0,1.0,1.0,1.0,10
+4-wise,4855,612,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,HeaderCompressionOff AND mtOff AND tmOff,0,1.0,1.0,1.0,10
+full,68640,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff AND filterOff AND tmOff,0,1.0,1.0,1.0,11
+random_2,24,5,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,NOT Deflate AND HeaderCompressionOff AND tmOff,1,0.7692307692307693,0.625,1.0,11
+random_5,60,11,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff AND filterOff AND tmOff,1,1.0,1.0,1.0,11
+random_10,120,22,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff AND filterOff AND tmOff,3,1.0,1.0,1.0,11
+random_20,240,38,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff AND filterOff AND tmOff,1,1.0,1.0,1.0,11
+2-wise,169,32,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff AND filterOff AND tmOff,1,1.0,1.0,1.0,11
+3-wise,1135,129,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,NOT HeaderCompressionOff AND filterOff AND tmOff,0,1.0,1.0,1.0,11
+4-wise,4883,580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff AND filterOff AND tmOff,1,1.0,1.0,1.0,11
+full,68640,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff AND filterOff AND tmOff,1,1.0,1.0,1.0,12
+random_2,24,5,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,Files >= 10.00 AND NOT LZMA2 AND x >= 4.00,2,0.5333333333333333,0.4,0.8,12
+random_5,60,7,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,BlockSize >= 2.00 AND Files <= 70.00 AND NOT LZMA AND NOT PPMd AND tmOff,0,0.3478260869565217,0.25,0.5714285714285714,12
+random_10,120,17,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff AND filterOff AND tmOff,2,1.0,1.0,1.0,12
+random_20,240,41,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff AND filterOff AND tmOff,0,1.0,1.0,1.0,12
+2-wise,174,24,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff AND filterOff AND tmOff,1,1.0,1.0,1.0,12
+3-wise,1128,166,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff AND filterOff AND tmOff,1,1.0,1.0,1.0,12
+4-wise,4909,623,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff AND filterOff AND tmOff,1,1.0,1.0,1.0,12
+full,68640,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff AND filterOff AND tmOff,1,1.0,1.0,1.0,13
+random_2,24,4,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,NOT BZip2 AND BlockSize <= 512.00 AND NOT LZMA AND NOT mtOff AND NOT tmOff,0,0.0,0.0,0.0,13
+random_5,60,9,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,BlockSize != 4096.00 AND HeaderCompressionOff AND NOT LZMA2 AND filterOff AND tmOff,1,1.0,1.0,1.0,13
+random_10,120,14,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff AND NOT LZMA2 AND filterOff AND tmOff,3,1.0,1.0,1.0,13
+random_20,240,26,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff AND NOT LZMA2 AND filterOff AND tmOff,1,1.0,1.0,1.0,13
+2-wise,172,24,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff AND filterOff AND tmOff,0,1.0,1.0,1.0,13
+3-wise,1112,130,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff AND filterOff AND tmOff,2,1.0,1.0,1.0,13
+4-wise,4890,594,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff AND filterOff AND tmOff,1,1.0,1.0,1.0,13
+full,68640,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff AND filterOff AND tmOff,1,1.0,1.0,1.0,14
+random_2,24,4,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,BlockSize != 4096.00 AND HeaderCompressionOff AND filterOff AND tmOff AND x >= 6.00,3,1.0,1.0,1.0,14
+random_5,60,10,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff AND filterOff AND NOT tmOff,0,1.0,1.0,1.0,14
+random_10,120,16,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff AND filterOff AND tmOff,2,1.0,1.0,1.0,14
+random_20,240,37,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff AND filterOff AND tmOff,1,1.0,1.0,1.0,14
+2-wise,168,19,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,LZMA2 AND filterOff AND NOT mtOff,1,0.2222222222222221,0.375,0.1578947368421052,14
+3-wise,1126,158,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff AND filterOff AND tmOff,1,1.0,1.0,1.0,14
+4-wise,4862,568,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff AND filterOff AND tmOff,1,1.0,1.0,1.0,14
+full,68640,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff AND filterOff AND tmOff,1,1.0,1.0,1.0,15
+random_2,24,6,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,BlockSize <= 1024.00 AND NOT Deflate AND Files != 0.00 AND tmOff,2,0.8333333333333334,0.8333333333333334,0.8333333333333334,15
+random_5,60,12,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,NOT Deflate AND Files >= 10.00 AND NOT PPMd AND filterOff AND x != 10.00,2,0.5217391304347826,0.5454545454545454,0.5,15
+random_10,120,21,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff AND filterOff AND tmOff,3,1.0,1.0,1.0,15
+random_20,240,32,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,NOT BZip2 AND NOT HeaderCompressionOff AND filterOff AND tmOff,2,0.4,1.0,0.25,15
+2-wise,166,23,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff AND filterOff AND tmOff,1,1.0,1.0,1.0,15
+3-wise,1094,146,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff AND filterOff AND tmOff,0,1.0,1.0,1.0,15
+4-wise,4850,618,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff AND filterOff AND tmOff,1,1.0,1.0,1.0,15
+full,68640,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff AND mtOff AND tmOff,0,1.0,1.0,1.0,16
+random_2,24,1,filterOff = 1 AND mtOff = 1 AND tmOff = 1,NOT BZip2 AND BlockSize != 4096.00 AND NOT LZMA AND x >= 4.00,0,0.0,0.0,0.0,16
+random_5,60,4,filterOff = 1 AND mtOff = 1 AND tmOff = 1,BZip2 AND Files <= 60.00 AND NOT HeaderCompressionOff,4,0.5,0.5,0.5,16
+random_10,120,11,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff AND mtOff AND tmOff,1,1.0,1.0,1.0,16
+random_20,240,27,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff AND mtOff AND tmOff,0,1.0,1.0,1.0,16
+2-wise,167,23,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff AND mtOff AND tmOff,1,1.0,1.0,1.0,16
+3-wise,1112,134,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff AND mtOff AND tmOff,2,1.0,1.0,1.0,16
+4-wise,4893,640,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff AND mtOff AND tmOff,0,1.0,1.0,1.0,16
+full,68640,8580,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,HeaderCompressionOff AND mtOff AND tmOff,1,1.0,1.0,1.0,17
+random_5,60,4,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,NOT BZip2 AND BlockSize >= 1024.00 AND filterOff AND mtOff AND tmOff,2,0.6666666666666665,0.6,0.75,17
+random_10,120,11,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,HeaderCompressionOff AND mtOff AND tmOff,1,1.0,1.0,1.0,17
+random_20,240,27,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,HeaderCompressionOff AND mtOff AND NOT tmOff,4,1.0,1.0,1.0,17
+2-wise,164,20,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,HeaderCompressionOff AND mtOff AND tmOff,1,1.0,1.0,1.0,17
+3-wise,1122,158,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,NOT HeaderCompressionOff AND mtOff AND NOT tmOff,1,1.0,1.0,1.0,17
+4-wise,4887,611,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,HeaderCompressionOff AND mtOff AND tmOff,1,1.0,1.0,1.0,17
+full,68640,8580,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,HeaderCompressionOff AND mtOff AND tmOff,1,1.0,1.0,1.0,18
+random_2,24,1,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,NOT Deflate AND NOT LZMA2 AND NOT filterOff AND x = 2.00,0,0.0,0.0,0.0,18
+random_5,60,4,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,BlockSize != 4096.00 AND Files <= 50.00 AND HeaderCompressionOff AND NOT LZMA AND mtOff,0,0.5,0.375,0.75,18
+random_10,120,8,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,HeaderCompressionOff AND mtOff AND tmOff,1,1.0,1.0,1.0,18
+random_20,240,23,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,BlockSize >= 2.00 AND Files != 0.00 AND HeaderCompressionOff AND NOT mtOff,2,0.6,0.4468085106382978,0.9130434782608696,18
+2-wise,170,15,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,NOT Deflate AND HeaderCompressionOff AND NOT tmOff,4,0.6122448979591837,0.4411764705882353,1.0,18
+3-wise,1127,149,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,BZip2 AND HeaderCompressionOff AND mtOff AND tmOff,1,0.3715846994535519,1.0,0.2281879194630872,18
+4-wise,4853,635,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,HeaderCompressionOff AND mtOff AND tmOff,1,1.0,1.0,1.0,18
+random_2,24,3,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,BlockSize >= 2.00 AND NOT PPMd AND x >= 4.00,4,0.3076923076923076,0.2,0.6666666666666666,19
+random_5,60,4,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,HeaderCompressionOff AND mtOff AND tmOff,4,1.0,1.0,1.0,19
+random_10,120,10,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,HeaderCompressionOff AND NOT LZMA AND NOT mtOff AND tmOff,2,1.0,1.0,1.0,19
+random_20,240,23,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,HeaderCompressionOff AND mtOff AND tmOff,0,1.0,1.0,1.0,19
+2-wise,164,13,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,BlockSize >= 2.00 AND NOT filterOff AND mtOff AND x != 10.00,0,0.3428571428571428,0.2727272727272727,0.4615384615384615,19
+4-wise,4869,636,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,HeaderCompressionOff AND mtOff AND tmOff,0,1.0,1.0,1.0,19
+full,68640,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff AND mtOff AND tmOff,1,1.0,1.0,1.0,1
+random_2,24,1,filterOff = 1 AND mtOff = 1 AND tmOff = 1,NOT PPMd AND mtOff AND tmOff,4,0.6666666666666666,0.5,1.0,1
+random_5,60,4,filterOff = 1 AND mtOff = 1 AND tmOff = 1,BZip2 AND Files >= 30.00,2,0.2,0.1666666666666666,0.25,1
+random_10,120,10,filterOff = 1 AND mtOff = 1 AND tmOff = 1,LZMA AND mtOff,4,0.1904761904761905,0.1818181818181818,0.2,1
+random_20,240,22,filterOff = 1 AND mtOff = 1 AND tmOff = 1,NOT mtOff AND tmOff,3,0.5499999999999999,0.3793103448275862,1.0,1
+2-wise,171,20,filterOff = 1 AND mtOff = 1 AND tmOff = 1,BlockSize <= 1024.00 AND NOT Deflate AND NOT filterOff AND tmOff,0,0.7804878048780488,0.7619047619047619,0.8,1
+3-wise,1108,132,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff AND mtOff AND tmOff,1,1.0,1.0,1.0,1
+4-wise,4907,604,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff AND mtOff AND tmOff,1,1.0,1.0,1.0,1
+random_2,24,3,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,NOT BZip2 AND NOT LZMA2 AND NOT PPMd AND filterOff AND NOT mtOff,1,1.0,1.0,1.0,20
+random_5,60,4,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,NOT BZip2 AND NOT LZMA2 AND NOT mtOff AND tmOff AND x != 10.00,0,0.4285714285714285,0.3,0.75,20
+random_10,120,15,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff AND filterOff AND tmOff,4,1.0,1.0,1.0,20
+random_20,240,27,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff AND filterOff AND tmOff,4,1.0,1.0,1.0,20
+2-wise,166,23,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff AND NOT PPMd AND filterOff AND tmOff,0,1.0,1.0,1.0,20
+3-wise,1115,135,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff AND filterOff AND tmOff,0,1.0,1.0,1.0,20
+4-wise,4898,603,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff AND filterOff AND tmOff,0,1.0,1.0,1.0,20
+random_2,24,2,filterOff = 1 AND mtOff = 1 AND tmOff = 1,BlockSize >= 2.00 AND NOT Deflate AND mtOff AND tmOff AND x >= 6.00,4,0.4,0.3333333333333333,0.5,21
+random_5,60,8,filterOff = 1 AND mtOff = 1 AND tmOff = 1,NOT PPMd AND filterOff AND mtOff AND tmOff,1,1.0,1.0,1.0,21
+random_10,120,21,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff AND NOT mtOff AND tmOff,3,1.0,1.0,1.0,21
+random_20,240,38,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff AND mtOff AND tmOff,2,1.0,1.0,1.0,21
+2-wise,168,26,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff AND mtOff AND tmOff,0,1.0,1.0,1.0,21
+3-wise,1115,134,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff AND mtOff AND tmOff,1,1.0,1.0,1.0,21
+4-wise,4889,595,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff AND mtOff AND tmOff,0,1.0,1.0,1.0,21
+full,68640,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff AND mtOff AND tmOff,1,1.0,1.0,1.0,22
+random_2,24,4,filterOff = 1 AND mtOff = 1 AND tmOff = 1,NOT PPMd AND filterOff AND tmOff,1,0.8,0.6666666666666666,1.0,22
+random_5,60,9,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff AND mtOff AND tmOff,4,1.0,1.0,1.0,22
+random_10,120,14,filterOff = 1 AND mtOff = 1 AND tmOff = 1,NOT filterOff AND mtOff AND tmOff,1,1.0,1.0,1.0,22
+random_20,240,35,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff AND mtOff AND tmOff,1,1.0,1.0,1.0,22
+2-wise,167,20,filterOff = 1 AND mtOff = 1 AND tmOff = 1,NOT LZMA AND filterOff AND mtOff AND tmOff,2,1.0,1.0,1.0,22
+3-wise,1115,128,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff AND mtOff AND tmOff,1,1.0,1.0,1.0,22
+4-wise,4901,621,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff AND mtOff AND tmOff,1,1.0,1.0,1.0,22
+full,68640,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff AND filterOff AND mtOff,0,1.0,1.0,1.0,23
+random_2,24,2,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,BlockSize != 4096.00 AND Files >= 50.00 AND NOT PPMd AND NOT filterOff AND NOT tmOff,0,0.0,0.0,0.0,23
+random_5,60,4,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,BlockSize >= 2.00 AND NOT Deflate AND NOT LZMA2 AND filterOff AND NOT tmOff,3,0.3076923076923076,0.2222222222222222,0.5,23
+random_10,120,20,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff AND filterOff AND mtOff,2,1.0,1.0,1.0,23
+random_20,240,35,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff AND filterOff AND mtOff,1,1.0,1.0,1.0,23
+2-wise,161,25,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff AND filterOff AND mtOff,1,1.0,1.0,1.0,23
+3-wise,1109,137,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff AND filterOff AND NOT mtOff,1,1.0,1.0,1.0,23
+4-wise,4915,611,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff AND filterOff AND mtOff,1,1.0,1.0,1.0,23
+full,68640,8580,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,HeaderCompressionOff AND mtOff AND tmOff,0,1.0,1.0,1.0,24
+random_5,60,4,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,NOT BZip2 AND BlockSize != 4096.00 AND NOT PPMd AND filterOff,2,0.1176470588235294,0.0769230769230769,0.25,24
+random_10,120,13,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,HeaderCompressionOff AND mtOff AND tmOff,1,1.0,1.0,1.0,24
+random_20,240,33,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,HeaderCompressionOff AND mtOff AND tmOff,1,1.0,1.0,1.0,24
+2-wise,171,28,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,HeaderCompressionOff AND NOT mtOff AND tmOff,1,1.0,1.0,1.0,24
+3-wise,1085,131,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,HeaderCompressionOff AND mtOff AND tmOff,1,1.0,1.0,1.0,24
+4-wise,4881,597,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,HeaderCompressionOff AND mtOff AND tmOff,2,1.0,1.0,1.0,24
+full,68640,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff AND filterOff AND mtOff,0,1.0,1.0,1.0,25
+random_2,24,5,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,BlockSize != 4096.00 AND LZMA2 AND NOT filterOff,3,0.7499999999999999,1.0,0.6,25
+random_5,60,7,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,filterOff AND mtOff AND tmOff,1,0.75,0.6666666666666666,0.8571428571428571,25
+random_10,120,11,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff AND filterOff AND mtOff,1,1.0,1.0,1.0,25
+random_20,240,19,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff AND filterOff AND mtOff,1,1.0,1.0,1.0,25
+2-wise,171,8,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,Files >= 20.00 AND filterOff AND mtOff,1,0.4848484848484848,0.32,1.0,25
+3-wise,1125,164,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff AND filterOff AND mtOff,1,1.0,1.0,1.0,25
+4-wise,4901,588,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff AND filterOff AND NOT mtOff,1,1.0,1.0,1.0,25
+random_2,24,2,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,HeaderCompressionOff AND NOT LZMA2 AND x <= 6.00,2,0.5714285714285715,0.4,1.0,26
+random_5,60,7,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,HeaderCompressionOff AND mtOff AND tmOff,1,1.0,1.0,1.0,26
+random_10,120,16,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,HeaderCompressionOff AND mtOff AND tmOff,0,1.0,1.0,1.0,26
+random_20,240,33,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,HeaderCompressionOff AND mtOff AND tmOff,1,1.0,1.0,1.0,26
+2-wise,170,24,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,NOT BZip2 AND BlockSize >= 2.00 AND Files >= 40.00 AND NOT filterOff,1,0.0952380952380952,0.0769230769230769,0.125,26
+3-wise,1109,146,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,HeaderCompressionOff AND mtOff AND tmOff,0,1.0,1.0,1.0,26
+4-wise,4926,582,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,HeaderCompressionOff AND mtOff AND tmOff,0,1.0,1.0,1.0,26
+full,68640,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff AND mtOff AND tmOff,1,1.0,1.0,1.0,27
+random_2,24,6,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff AND tmOff,1,0.8571428571428571,0.75,1.0,27
+random_5,60,10,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff AND mtOff AND tmOff,1,1.0,1.0,1.0,27
+random_10,120,16,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff AND mtOff AND tmOff,2,1.0,1.0,1.0,27
+random_20,240,30,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff AND mtOff AND tmOff,1,1.0,1.0,1.0,27
+2-wise,173,17,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff AND mtOff AND tmOff,1,1.0,1.0,1.0,27
+3-wise,1116,130,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff AND mtOff AND tmOff,1,1.0,1.0,1.0,27
+4-wise,4842,607,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff AND mtOff AND tmOff,1,1.0,1.0,1.0,27
+full,68640,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff AND mtOff AND tmOff,0,1.0,1.0,1.0,28
+random_5,60,5,filterOff = 1 AND mtOff = 1 AND tmOff = 1,Files <= 80.00 AND NOT LZMA AND mtOff AND tmOff AND x != 10.00,3,0.4705882352941176,0.3333333333333333,0.8,28
+random_10,120,14,filterOff = 1 AND mtOff = 1 AND tmOff = 1,Files >= 20.00 AND NOT HeaderCompressionOff AND NOT PPMd AND mtOff AND x >= 4.00,3,0.4827586206896552,0.4666666666666667,0.5,28
+random_20,240,30,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff AND mtOff AND tmOff,1,1.0,1.0,1.0,28
+2-wise,166,20,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff AND mtOff AND tmOff,2,1.0,1.0,1.0,28
+3-wise,1124,140,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff AND mtOff AND tmOff,1,1.0,1.0,1.0,28
+4-wise,4914,634,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff AND mtOff AND tmOff,2,1.0,1.0,1.0,28
+random_2,24,4,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,NOT Deflate AND NOT LZMA,1,0.4444444444444445,0.4,0.5,29
+random_5,60,9,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,BlockSize <= 1024.00 AND HeaderCompressionOff AND filterOff,0,0.9,0.8181818181818182,1.0,29
+random_10,120,18,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff AND filterOff AND mtOff,0,1.0,1.0,1.0,29
+random_20,240,33,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff AND filterOff AND mtOff,1,1.0,1.0,1.0,29
+2-wise,169,23,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff AND filterOff AND mtOff,2,1.0,1.0,1.0,29
+3-wise,1105,156,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,NOT HeaderCompressionOff AND filterOff AND mtOff,0,1.0,1.0,1.0,29
+full,68640,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff AND mtOff AND tmOff,0,1.0,1.0,1.0,2
+random_2,24,2,filterOff = 1 AND mtOff = 1 AND tmOff = 1,NOT Deflate AND NOT LZMA2 AND x >= 4.00,0,0.0,0.0,0.0,2
+random_5,60,8,filterOff = 1 AND mtOff = 1 AND tmOff = 1,BlockSize >= 2.00 AND filterOff AND NOT mtOff AND tmOff,2,1.0,1.0,1.0,2
+random_10,120,18,filterOff = 1 AND mtOff = 1 AND tmOff = 1,NOT LZMA AND filterOff AND mtOff AND tmOff,2,0.9714285714285714,1.0,0.9444444444444444,2
+random_20,240,24,filterOff = 1 AND mtOff = 1 AND tmOff = 1,BlockSize != 4096.00 AND filterOff AND mtOff AND tmOff,2,1.0,1.0,1.0,2
+2-wise,169,23,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff AND mtOff AND tmOff,1,1.0,1.0,1.0,2
+3-wise,1098,145,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff AND mtOff AND tmOff,1,1.0,1.0,1.0,2
+4-wise,4856,616,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff AND mtOff AND tmOff,1,1.0,1.0,1.0,2
+full,68640,8580,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,HeaderCompressionOff AND mtOff AND tmOff,0,1.0,1.0,1.0,30
+random_2,24,5,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff AND NOT mtOff AND tmOff,0,0.9090909090909092,0.8333333333333334,1.0,30
+random_5,60,11,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,LZMA AND mtOff AND tmOff,2,0.5882352941176471,0.8333333333333334,0.4545454545454545,30
+random_10,120,20,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,HeaderCompressionOff AND mtOff AND tmOff,0,1.0,1.0,1.0,30
+random_20,240,30,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,HeaderCompressionOff AND mtOff AND tmOff,0,1.0,1.0,1.0,30
+2-wise,168,21,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,HeaderCompressionOff AND mtOff AND tmOff,3,1.0,1.0,1.0,30
+3-wise,1125,155,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,HeaderCompressionOff AND mtOff AND tmOff,0,1.0,1.0,1.0,30
+4-wise,4854,594,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,HeaderCompressionOff AND mtOff AND tmOff,0,1.0,1.0,1.0,30
+random_2,24,2,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,NOT BZip2 AND NOT LZMA2 AND NOT filterOff,4,0.5,0.3333333333333333,1.0,31
+random_5,60,8,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,BlockSize >= 2.00 AND Files >= 30.00 AND filterOff AND mtOff AND tmOff,0,0.6666666666666665,0.6,0.75,31
+random_10,120,21,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff AND filterOff AND mtOff,0,1.0,1.0,1.0,31
+random_20,240,38,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,BlockSize != 4096.00 AND HeaderCompressionOff AND NOT LZMA2 AND filterOff,0,0.6976744186046512,0.625,0.7894736842105263,31
+2-wise,166,31,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,BZip2 AND filterOff AND NOT tmOff,4,0.25,0.5555555555555556,0.1612903225806451,31
+3-wise,1119,135,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff AND NOT LZMA AND NOT LZMA2 AND filterOff AND mtOff,3,0.7499999999999999,1.0,0.6,31
+4-wise,4896,594,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff AND filterOff AND mtOff,0,1.0,1.0,1.0,31
+full,68640,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff AND filterOff AND mtOff,2,1.0,1.0,1.0,32
+random_2,24,3,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,Files != 100.00 AND NOT LZMA AND filterOff AND mtOff,3,0.8571428571428571,0.75,1.0,32
+random_5,60,8,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff AND NOT filterOff AND mtOff,1,1.0,1.0,1.0,32
+random_10,120,18,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,NOT HeaderCompressionOff AND filterOff AND mtOff,1,1.0,1.0,1.0,32
+random_20,240,32,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff AND filterOff AND mtOff,1,1.0,1.0,1.0,32
+2-wise,159,22,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff AND NOT filterOff AND mtOff,1,1.0,1.0,1.0,32
+3-wise,1112,140,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff AND filterOff AND mtOff,1,1.0,1.0,1.0,32
+4-wise,4847,591,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff AND filterOff AND mtOff,1,1.0,1.0,1.0,32
+full,68640,8580,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,HeaderCompressionOff AND mtOff AND tmOff,3,1.0,1.0,1.0,33
+random_2,24,4,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,NOT Deflate AND Files >= 20.00 AND HeaderCompressionOff AND x != 0.00,3,0.6666666666666665,0.6,0.75,33
+random_5,60,8,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,NOT BZip2 AND HeaderCompressionOff AND mtOff AND tmOff,1,0.9333333333333332,1.0,0.875,33
+random_10,120,22,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,HeaderCompressionOff AND mtOff AND tmOff,0,1.0,1.0,1.0,33
+random_20,240,33,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,HeaderCompressionOff AND mtOff AND tmOff,1,1.0,1.0,1.0,33
+2-wise,161,25,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,HeaderCompressionOff AND mtOff AND tmOff,0,1.0,1.0,1.0,33
+3-wise,1110,131,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,NOT HeaderCompressionOff AND mtOff AND tmOff,1,1.0,1.0,1.0,33
+full,68640,8580,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,HeaderCompressionOff AND mtOff AND tmOff,0,1.0,1.0,1.0,34
+random_2,24,1,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,BlockSize <= 256.00 AND NOT LZMA2 AND mtOff AND tmOff,1,0.6666666666666666,0.5,1.0,34
+random_10,120,15,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,HeaderCompressionOff AND mtOff AND tmOff,0,1.0,1.0,1.0,34
+random_20,240,31,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,HeaderCompressionOff AND mtOff AND tmOff,0,1.0,1.0,1.0,34
+2-wise,169,27,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,HeaderCompressionOff AND mtOff AND tmOff,2,1.0,1.0,1.0,34
+3-wise,1119,125,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,HeaderCompressionOff AND mtOff AND tmOff,0,1.0,1.0,1.0,34
+full,68640,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff AND mtOff AND tmOff,1,1.0,1.0,1.0,35
+random_2,24,2,filterOff = 1 AND mtOff = 1 AND tmOff = 1,NOT HeaderCompressionOff AND NOT LZMA AND filterOff AND tmOff,3,1.0,1.0,1.0,35
+random_5,60,7,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff AND mtOff AND tmOff,2,1.0,1.0,1.0,35
+random_10,120,12,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff AND mtOff AND tmOff,1,1.0,1.0,1.0,35
+random_20,240,24,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff AND mtOff AND tmOff,1,1.0,1.0,1.0,35
+2-wise,170,18,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff AND NOT mtOff AND tmOff,1,1.0,1.0,1.0,35
+3-wise,1113,139,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff AND mtOff AND tmOff,1,1.0,1.0,1.0,35
+4-wise,4894,620,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff AND mtOff AND tmOff,1,1.0,1.0,1.0,35
+full,68640,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff AND filterOff AND tmOff,1,1.0,1.0,1.0,36
+random_2,24,5,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,BlockSize != 4096.00 AND LZMA2 AND filterOff,0,0.5,0.6666666666666666,0.4,36
+random_5,60,12,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,BlockSize >= 2.00 AND HeaderCompressionOff AND filterOff AND tmOff,1,1.0,1.0,1.0,36
+random_10,120,22,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff AND filterOff AND tmOff,3,1.0,1.0,1.0,36
+random_20,240,31,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,Files >= 10.00 AND HeaderCompressionOff AND NOT tmOff,3,0.7209302325581396,0.5636363636363636,1.0,36
+2-wise,166,22,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff AND filterOff AND tmOff,1,1.0,1.0,1.0,36
+3-wise,1097,143,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff AND filterOff AND tmOff,1,1.0,1.0,1.0,36
+4-wise,4904,630,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff AND filterOff AND tmOff,1,1.0,1.0,1.0,36
+full,68640,8580,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,HeaderCompressionOff AND mtOff AND tmOff,0,1.0,1.0,1.0,37
+random_2,24,2,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,BlockSize != 4096.00 AND Files >= 10.00 AND HeaderCompressionOff AND x >= 2.00,2,0.5714285714285715,0.4,1.0,37
+random_5,60,10,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,HeaderCompressionOff AND mtOff AND tmOff,1,1.0,1.0,1.0,37
+random_10,120,18,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,BZip2 AND BlockSize != 4096.00 AND mtOff,2,0.3333333333333333,0.4166666666666667,0.2777777777777778,37
+random_20,240,33,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,HeaderCompressionOff AND mtOff AND tmOff,1,1.0,1.0,1.0,37
+2-wise,169,25,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,HeaderCompressionOff AND mtOff AND tmOff,1,1.0,1.0,1.0,37
+3-wise,1103,139,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,HeaderCompressionOff AND mtOff AND tmOff,0,1.0,1.0,1.0,37
+random_2,24,3,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,BlockSize != 4096.00 AND NOT Deflate AND Files <= 40.00 AND HeaderCompressionOff AND NOT LZMA,1,0.5714285714285715,0.5,0.6666666666666666,38
+random_5,60,10,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,NOT BZip2 AND BlockSize != 4096.00 AND NOT Deflate AND HeaderCompressionOff AND filterOff AND mtOff,0,1.0,1.0,1.0,38
+random_10,120,19,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff AND NOT LZMA AND filterOff,0,0.6842105263157895,0.6842105263157895,0.6842105263157895,38
+random_20,240,33,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff AND filterOff AND mtOff,2,1.0,1.0,1.0,38
+2-wise,170,22,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff AND filterOff AND mtOff,0,1.0,1.0,1.0,38
+3-wise,1128,156,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff AND filterOff AND mtOff,0,1.0,1.0,1.0,38
+random_2,24,6,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,LZMA AND NOT LZMA2 AND filterOff AND mtOff,1,0.4444444444444444,0.6666666666666666,0.3333333333333333,39
+random_5,60,13,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff AND filterOff AND mtOff,1,1.0,1.0,1.0,39
+random_10,120,19,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,BlockSize != 4096.00 AND NOT LZMA2 AND NOT PPMd AND filterOff AND mtOff,4,0.7567567567567567,0.7777777777777778,0.7368421052631579,39
+random_20,240,35,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff AND filterOff AND mtOff,4,1.0,1.0,1.0,39
+2-wise,164,22,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,NOT BZip2 AND BlockSize != 4096.00 AND NOT LZMA AND mtOff AND x != 10.00,2,0.4615384615384615,0.4,0.5454545454545454,39
+3-wise,1123,143,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff AND filterOff AND NOT mtOff,0,1.0,1.0,1.0,39
+4-wise,4858,610,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff AND filterOff AND mtOff,0,1.0,1.0,1.0,39
+full,68640,8580,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,HeaderCompressionOff AND mtOff AND tmOff,0,1.0,1.0,1.0,3
+random_2,24,3,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,BlockSize >= 2.00 AND HeaderCompressionOff AND NOT LZMA2 AND NOT tmOff,1,0.8,1.0,0.6666666666666666,3
+random_5,60,7,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,NOT PPMd AND NOT filterOff AND mtOff AND tmOff,1,0.75,0.6666666666666666,0.8571428571428571,3
+random_10,120,15,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,Files >= 80.00 AND HeaderCompressionOff AND LZMA AND NOT filterOff AND mtOff,1,0.3157894736842105,0.75,0.2,3
+random_20,240,32,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,NOT Deflate AND HeaderCompressionOff AND mtOff AND tmOff,1,1.0,1.0,1.0,3
+2-wise,169,24,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,NOT BZip2 AND NOT Deflate AND HeaderCompressionOff AND tmOff,4,0.7727272727272727,0.85,0.7083333333333334,3
+3-wise,1116,133,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,NOT HeaderCompressionOff AND mtOff AND tmOff,1,1.0,1.0,1.0,3
+4-wise,4866,615,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,HeaderCompressionOff AND mtOff AND tmOff,1,1.0,1.0,1.0,3
+full,68640,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff AND mtOff AND tmOff,1,1.0,1.0,1.0,40
+random_2,24,4,filterOff = 1 AND mtOff = 1 AND tmOff = 1,NOT LZMA AND NOT PPMd AND mtOff AND NOT tmOff,0,0.7272727272727273,0.5714285714285714,1.0,40
+random_5,60,8,filterOff = 1 AND mtOff = 1 AND tmOff = 1,BlockSize != 4096.00 AND NOT Deflate AND NOT LZMA AND NOT PPMd AND mtOff AND x <= 6.00,2,0.4545454545454545,0.3571428571428571,0.625,40
+random_10,120,12,filterOff = 1 AND mtOff = 1 AND tmOff = 1,NOT Deflate AND Files >= 20.00 AND NOT LZMA AND mtOff AND x >= 4.00,2,0.4117647058823529,0.3181818181818182,0.5833333333333334,40
+random_20,240,31,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff AND mtOff AND tmOff,1,1.0,1.0,1.0,40
+2-wise,163,18,filterOff = 1 AND mtOff = 1 AND tmOff = 1,BlockSize >= 2.00 AND filterOff AND mtOff AND tmOff,2,1.0,1.0,1.0,40
+3-wise,1115,133,filterOff = 1 AND mtOff = 1 AND tmOff = 1,Files != 0.00 AND NOT LZMA AND LZMA2 AND filterOff,1,0.1946902654867256,0.2365591397849462,0.1654135338345864,40
+4-wise,4868,630,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff AND mtOff AND tmOff,1,1.0,1.0,1.0,40
+full,68640,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff AND filterOff AND mtOff,0,1.0,1.0,1.0,41
+random_2,24,1,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,BlockSize != 4096.00 AND NOT LZMA AND NOT filterOff AND tmOff,0,0.0,0.0,0.0,41
+random_5,60,4,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,BlockSize != 4096.00 AND HeaderCompressionOff AND NOT filterOff AND NOT mtOff AND x >= 6.00,1,1.0,1.0,1.0,41
+random_10,120,12,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff AND filterOff AND NOT mtOff,2,1.0,1.0,1.0,41
+random_20,240,33,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff AND filterOff AND mtOff,0,1.0,1.0,1.0,41
+2-wise,172,21,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff AND filterOff AND mtOff,2,1.0,1.0,1.0,41
+3-wise,1129,122,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff AND filterOff AND mtOff,1,1.0,1.0,1.0,41
+4-wise,4896,555,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff AND filterOff AND mtOff,2,1.0,1.0,1.0,41
+random_2,24,3,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,NOT BZip2 AND BlockSize <= 1024.00 AND NOT PPMd AND filterOff,4,0.4444444444444444,0.3333333333333333,0.6666666666666666,42
+random_5,60,9,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,NOT LZMA2 AND filterOff AND mtOff,1,0.5714285714285714,0.8,0.4444444444444444,42
+random_10,120,17,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff AND filterOff AND mtOff,0,1.0,1.0,1.0,42
+random_20,240,30,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff AND filterOff AND mtOff,0,1.0,1.0,1.0,42
+2-wise,166,25,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff AND filterOff AND mtOff,2,1.0,1.0,1.0,42
+3-wise,1130,136,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff AND NOT filterOff AND mtOff,0,1.0,1.0,1.0,42
+4-wise,4862,638,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff AND filterOff AND mtOff,0,1.0,1.0,1.0,42
+random_2,24,3,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,NOT Deflate AND filterOff,0,0.4,0.5,0.3333333333333333,43
+random_5,60,10,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,Files != 100.00 AND NOT PPMd AND NOT mtOff AND tmOff,3,0.3703703703703703,0.2941176470588235,0.5,43
+random_10,120,14,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff AND NOT filterOff AND tmOff,2,1.0,1.0,1.0,43
+random_20,240,24,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff AND filterOff,3,0.6575342465753424,0.4897959183673469,1.0,43
+2-wise,164,23,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff AND filterOff AND tmOff,1,1.0,1.0,1.0,43
+3-wise,1111,137,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff AND filterOff AND tmOff,0,1.0,1.0,1.0,43
+4-wise,4883,615,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff AND filterOff AND tmOff,0,1.0,1.0,1.0,43
+full,68640,8580,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,HeaderCompressionOff AND mtOff AND tmOff,0,1.0,1.0,1.0,44
+random_2,24,2,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,PPMd,0,0.0,0.0,0.0,44
+random_5,60,14,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,BlockSize != 4096.00 AND HeaderCompressionOff AND mtOff AND tmOff,1,1.0,1.0,1.0,44
+random_10,120,26,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,HeaderCompressionOff AND mtOff AND tmOff,1,1.0,1.0,1.0,44
+random_20,240,40,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,HeaderCompressionOff AND mtOff AND tmOff,2,1.0,1.0,1.0,44
+2-wise,166,29,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,HeaderCompressionOff AND mtOff AND tmOff,0,1.0,1.0,1.0,44
+3-wise,1128,159,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,HeaderCompressionOff AND mtOff AND tmOff,0,1.0,1.0,1.0,44
+4-wise,4888,654,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,HeaderCompressionOff AND mtOff AND tmOff,0,1.0,1.0,1.0,44
+full,68640,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff AND filterOff AND tmOff,0,1.0,1.0,1.0,45
+random_2,24,6,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,filterOff,2,0.923076923076923,0.8571428571428571,1.0,45
+random_5,60,7,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,NOT Deflate AND NOT LZMA AND NOT filterOff AND tmOff,1,0.8750000000000001,0.7777777777777778,1.0,45
+random_10,120,14,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,BZip2 AND HeaderCompressionOff AND filterOff,0,0.5217391304347826,0.6666666666666666,0.4285714285714285,45
+random_20,240,28,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff AND filterOff AND tmOff,0,1.0,1.0,1.0,45
+2-wise,165,17,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff AND filterOff AND NOT tmOff,1,1.0,1.0,1.0,45
+3-wise,1114,115,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff AND filterOff AND tmOff,0,1.0,1.0,1.0,45
+4-wise,4846,572,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff AND filterOff AND tmOff,0,1.0,1.0,1.0,45
+random_2,24,3,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,NOT PPMd AND NOT filterOff AND NOT mtOff,0,0.0,0.0,0.0,46
+random_5,60,7,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,NOT LZMA AND mtOff AND x != 0.00,0,0.3846153846153846,0.2631578947368421,0.7142857142857143,46
+random_10,120,18,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff AND filterOff AND mtOff,0,1.0,1.0,1.0,46
+random_20,240,38,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,filterOff AND mtOff,4,0.6785714285714285,0.5135135135135135,1.0,46
+2-wise,171,31,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff AND filterOff AND mtOff,0,1.0,1.0,1.0,46
+4-wise,4889,616,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff AND filterOff AND mtOff,0,1.0,1.0,1.0,46
+full,68640,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff AND mtOff AND tmOff,1,1.0,1.0,1.0,47
+random_2,24,2,filterOff = 1 AND mtOff = 1 AND tmOff = 1,NOT Deflate AND Files <= 70.00 AND tmOff,2,0.3636363636363636,0.2222222222222222,1.0,47
+random_5,60,8,filterOff = 1 AND mtOff = 1 AND tmOff = 1,NOT filterOff AND NOT mtOff AND tmOff,1,1.0,1.0,1.0,47
+random_10,120,15,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff AND mtOff AND tmOff,1,1.0,1.0,1.0,47
+random_20,240,35,filterOff = 1 AND mtOff = 1 AND tmOff = 1,BlockSize != 4096.00 AND Files >= 10.00 AND filterOff AND mtOff,2,0.7160493827160495,0.6304347826086957,0.8285714285714286,47
+2-wise,170,24,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff AND mtOff AND tmOff,1,1.0,1.0,1.0,47
+3-wise,1131,124,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff AND NOT mtOff AND tmOff,0,1.0,1.0,1.0,47
+4-wise,4898,627,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff AND mtOff AND tmOff,1,1.0,1.0,1.0,47
+full,68640,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff AND filterOff AND mtOff,0,1.0,1.0,1.0,48
+random_2,24,4,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,NOT BZip2 AND NOT Deflate AND HeaderCompressionOff AND NOT LZMA2,1,1.0,1.0,1.0,48
+random_5,60,9,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff AND filterOff AND mtOff,1,1.0,1.0,1.0,48
+random_10,120,15,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,NOT BZip2 AND NOT HeaderCompressionOff AND NOT LZMA2 AND filterOff,3,0.7741935483870969,0.75,0.8,48
+random_20,240,24,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff AND NOT LZMA2 AND filterOff AND NOT mtOff,1,0.9565217391304348,1.0,0.9166666666666666,48
+2-wise,167,15,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,NOT HeaderCompressionOff AND NOT filterOff AND mtOff,1,1.0,1.0,1.0,48
+3-wise,1125,140,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff AND filterOff AND mtOff,2,1.0,1.0,1.0,48
+4-wise,4908,630,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff AND filterOff AND mtOff,1,1.0,1.0,1.0,48
+random_2,24,4,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,NOT BZip2 AND NOT LZMA2 AND NOT filterOff,4,0.6666666666666666,0.5,1.0,49
+random_5,60,9,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,BlockSize != 4096.00 AND mtOff AND tmOff,1,0.6153846153846153,0.4705882352941176,0.8888888888888888,49
+random_10,120,16,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,BlockSize <= 1024.00 AND NOT LZMA2 AND mtOff AND x >= 4.00,4,0.2553191489361701,0.1935483870967742,0.375,49
+random_20,240,34,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff AND filterOff AND mtOff,0,1.0,1.0,1.0,49
+2-wise,165,20,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,BlockSize != 4096.00 AND filterOff AND mtOff AND x >= 6.00,0,0.6956521739130435,0.6153846153846154,0.8,49
+3-wise,1129,131,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff AND filterOff AND mtOff,0,1.0,1.0,1.0,49
+4-wise,4870,587,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff AND filterOff AND mtOff,0,1.0,1.0,1.0,49
+full,68640,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff AND filterOff AND tmOff,0,1.0,1.0,1.0,4
+random_5,60,6,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,BlockSize >= 2.00 AND NOT Deflate AND filterOff AND tmOff,3,0.5263157894736842,0.3846153846153846,0.8333333333333334,4
+random_10,120,11,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff AND filterOff AND tmOff,1,1.0,1.0,1.0,4
+random_20,240,29,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff AND filterOff AND tmOff,0,1.0,1.0,1.0,4
+2-wise,163,21,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,BlockSize >= 2.00 AND HeaderCompressionOff AND NOT PPMd AND filterOff AND tmOff,0,1.0,1.0,1.0,4
+full,68640,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff AND filterOff AND mtOff,0,1.0,1.0,1.0,50
+random_2,24,3,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff AND tmOff AND x >= 4.00,2,0.4444444444444444,0.3333333333333333,0.6666666666666666,50
+random_5,60,6,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,NOT BZip2 AND HeaderCompressionOff AND mtOff AND tmOff,0,0.4705882352941177,0.3636363636363636,0.6666666666666666,50
+random_10,120,9,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,NOT HeaderCompressionOff AND NOT LZMA2 AND NOT filterOff AND mtOff,1,0.9411764705882352,1.0,0.8888888888888888,50
+random_20,240,20,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff AND filterOff AND mtOff,0,1.0,1.0,1.0,50
+2-wise,170,13,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,NOT HeaderCompressionOff AND filterOff AND mtOff,2,1.0,1.0,1.0,50
+3-wise,1119,131,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff AND filterOff AND NOT mtOff,0,1.0,1.0,1.0,50
+4-wise,4881,621,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff AND filterOff AND mtOff,0,1.0,1.0,1.0,50
+full,68640,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff AND filterOff AND tmOff,0,1.0,1.0,1.0,51
+random_2,24,4,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,BlockSize != 4096.00 AND HeaderCompressionOff AND NOT PPMd AND filterOff AND tmOff,2,1.0,1.0,1.0,51
+random_5,60,11,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,NOT HeaderCompressionOff AND filterOff AND tmOff,2,1.0,1.0,1.0,51
+random_10,120,19,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,NOT HeaderCompressionOff AND filterOff AND tmOff,3,1.0,1.0,1.0,51
+random_20,240,38,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff AND filterOff AND NOT tmOff,1,1.0,1.0,1.0,51
+2-wise,167,24,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff AND filterOff AND tmOff,1,1.0,1.0,1.0,51
+3-wise,1113,166,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff AND filterOff AND tmOff,0,1.0,1.0,1.0,51
+full,68640,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff AND mtOff AND tmOff,0,1.0,1.0,1.0,52
+random_2,24,3,filterOff = 1 AND mtOff = 1 AND tmOff = 1,Deflate AND Files <= 60.00 AND filterOff AND mtOff,2,0.3333333333333333,0.3333333333333333,0.3333333333333333,52
+random_5,60,4,filterOff = 1 AND mtOff = 1 AND tmOff = 1,NOT filterOff AND NOT tmOff AND x >= 4.00,2,0.6153846153846153,0.4444444444444444,1.0,52
+random_10,120,13,filterOff = 1 AND mtOff = 1 AND tmOff = 1,NOT Deflate AND Files >= 20.00 AND NOT HeaderCompressionOff AND NOT LZMA2 AND x != 10.00,3,0.2105263157894737,0.16,0.3076923076923077,52
+random_20,240,21,filterOff = 1 AND mtOff = 1 AND tmOff = 1,NOT BZip2 AND NOT filterOff AND mtOff AND tmOff,2,0.95,1.0,0.9047619047619048,52
+2-wise,161,18,filterOff = 1 AND mtOff = 1 AND tmOff = 1,LZMA2 AND mtOff,0,0.2352941176470588,0.25,0.2222222222222222,52
+3-wise,1110,131,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff AND NOT mtOff AND NOT tmOff,0,1.0,1.0,1.0,52
+4-wise,4900,579,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff AND mtOff AND tmOff,0,1.0,1.0,1.0,52
+random_2,24,2,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,filterOff AND mtOff AND tmOff,0,0.6666666666666666,0.5,1.0,53
+random_5,60,11,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff AND filterOff AND tmOff,4,1.0,1.0,1.0,53
+random_10,120,16,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,BlockSize >= 2.00 AND NOT LZMA AND NOT LZMA2 AND NOT PPMd AND NOT mtOff AND tmOff AND x != 0.00,0,0.3076923076923077,0.4,0.25,53
+random_20,240,31,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff AND filterOff AND tmOff,1,1.0,1.0,1.0,53
+2-wise,171,20,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff AND filterOff AND NOT tmOff,0,1.0,1.0,1.0,53
+3-wise,1115,130,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff AND filterOff AND tmOff,2,1.0,1.0,1.0,53
+4-wise,4868,620,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff AND filterOff AND tmOff,0,1.0,1.0,1.0,53
+random_2,24,2,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,NOT Deflate AND NOT LZMA2 AND NOT filterOff AND mtOff AND tmOff,2,0.6666666666666666,0.5,1.0,54
+random_5,60,7,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,BlockSize >= 2.00 AND HeaderCompressionOff AND LZMA AND mtOff AND tmOff,2,0.7272727272727273,1.0,0.5714285714285714,54
+random_10,120,10,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,Files >= 40.00 AND LZMA AND tmOff AND x <= 4.00,4,0.2666666666666666,0.4,0.2,54
+random_20,240,23,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,BlockSize != 4096.00 AND HeaderCompressionOff AND mtOff AND tmOff,2,1.0,1.0,1.0,54
+2-wise,171,19,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,NOT LZMA2 AND NOT filterOff AND mtOff AND tmOff,1,0.6046511627906976,0.5416666666666666,0.6842105263157895,54
+3-wise,1129,157,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,HeaderCompressionOff AND mtOff AND tmOff,1,1.0,1.0,1.0,54
+full,68640,8580,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,HeaderCompressionOff AND mtOff AND tmOff,1,1.0,1.0,1.0,55
+random_2,24,2,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,NOT BZip2 AND BlockSize >= 256.00 AND NOT Deflate AND filterOff AND NOT mtOff,3,0.5714285714285715,0.4,1.0,55
+random_5,60,9,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,BlockSize != 4096.00 AND HeaderCompressionOff AND mtOff AND tmOff,1,1.0,1.0,1.0,55
+random_10,120,17,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,HeaderCompressionOff AND NOT mtOff AND tmOff,3,1.0,1.0,1.0,55
+random_20,240,33,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,HeaderCompressionOff AND mtOff AND tmOff,0,1.0,1.0,1.0,55
+2-wise,165,24,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,HeaderCompressionOff AND mtOff AND tmOff,2,1.0,1.0,1.0,55
+3-wise,1110,139,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,NOT HeaderCompressionOff AND mtOff AND tmOff,1,1.0,1.0,1.0,55
+4-wise,4910,608,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,HeaderCompressionOff AND mtOff AND tmOff,1,1.0,1.0,1.0,55
+full,68640,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff AND filterOff AND tmOff,1,1.0,1.0,1.0,56
+random_2,24,4,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,PPMd AND filterOff AND tmOff,1,0.6666666666666666,1.0,0.5,56
+random_5,60,6,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,NOT BZip2 AND BlockSize != 4096.00 AND NOT Deflate AND Files >= 10.00 AND NOT HeaderCompressionOff,0,0.6153846153846153,0.5714285714285714,0.6666666666666666,56
+random_10,120,16,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,BlockSize >= 2.00 AND HeaderCompressionOff AND filterOff AND tmOff,1,1.0,1.0,1.0,56
+random_20,240,34,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff AND filterOff AND tmOff,1,1.0,1.0,1.0,56
+2-wise,165,25,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff AND filterOff AND tmOff,0,1.0,1.0,1.0,56
+3-wise,1100,135,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff AND filterOff AND tmOff,1,1.0,1.0,1.0,56
+4-wise,4853,632,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff AND filterOff AND tmOff,2,1.0,1.0,1.0,56
+random_2,24,1,filterOff = 1 AND mtOff = 1 AND tmOff = 1,BlockSize >= 4.00 AND NOT Deflate AND Files >= 20.00 AND NOT PPMd AND NOT mtOff,2,0.2857142857142857,0.1666666666666666,1.0,57
+random_5,60,8,filterOff = 1 AND mtOff = 1 AND tmOff = 1,BlockSize != 4096.00 AND NOT LZMA2 AND filterOff AND mtOff,0,0.7272727272727273,0.5714285714285714,1.0,57
+random_20,240,33,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff AND mtOff AND tmOff,2,1.0,1.0,1.0,57
+2-wise,168,26,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff AND mtOff AND tmOff,0,1.0,1.0,1.0,57
+full,68640,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff AND filterOff AND mtOff,1,1.0,1.0,1.0,58
+random_2,24,1,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,NOT BZip2 AND BlockSize <= 1024.00 AND NOT LZMA2 AND NOT tmOff,2,0.2857142857142857,0.1666666666666666,1.0,58
+random_5,60,8,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff AND NOT PPMd AND filterOff AND x != 10.00,1,1.0,1.0,1.0,58
+random_10,120,14,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff AND filterOff AND mtOff,1,1.0,1.0,1.0,58
+random_20,240,29,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff AND filterOff AND mtOff,1,1.0,1.0,1.0,58
+2-wise,172,26,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff AND filterOff AND mtOff,0,1.0,1.0,1.0,58
+3-wise,1112,154,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff AND filterOff AND mtOff,1,1.0,1.0,1.0,58
+4-wise,4913,637,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff AND filterOff AND mtOff,1,1.0,1.0,1.0,58
+full,68640,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff AND filterOff AND mtOff,0,1.0,1.0,1.0,59
+random_2,24,4,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,NOT Deflate AND Files >= 10.00 AND NOT LZMA2 AND mtOff,3,0.5,0.5,0.5,59
+random_5,60,8,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff AND filterOff AND mtOff,2,1.0,1.0,1.0,59
+random_10,120,13,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff AND filterOff AND NOT mtOff,0,1.0,1.0,1.0,59
+random_20,240,25,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,NOT HeaderCompressionOff AND NOT filterOff AND NOT mtOff,0,1.0,1.0,1.0,59
+2-wise,173,24,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff AND filterOff AND mtOff,0,1.0,1.0,1.0,59
+3-wise,1133,122,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff AND filterOff AND NOT mtOff,0,1.0,1.0,1.0,59
+4-wise,4872,637,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff AND filterOff AND mtOff,0,1.0,1.0,1.0,59
+random_2,24,3,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,BlockSize != 4096.00 AND LZMA2 AND mtOff,4,0.3333333333333333,0.3333333333333333,0.3333333333333333,5
+random_5,60,7,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,NOT filterOff AND mtOff AND x != 0.00,0,0.3,0.2307692307692307,0.4285714285714285,5
+random_10,120,17,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,HeaderCompressionOff AND mtOff AND tmOff,2,1.0,1.0,1.0,5
+random_20,240,36,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,HeaderCompressionOff AND mtOff AND tmOff,0,1.0,1.0,1.0,5
+2-wise,169,23,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,HeaderCompressionOff AND mtOff AND tmOff,0,1.0,1.0,1.0,5
+3-wise,1124,126,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,HeaderCompressionOff AND mtOff AND tmOff,0,1.0,1.0,1.0,5
+full,68640,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff AND mtOff AND tmOff,1,1.0,1.0,1.0,60
+random_2,24,7,filterOff = 1 AND mtOff = 1 AND tmOff = 1,NOT BZip2 AND Files >= 20.00 AND tmOff,3,0.7142857142857143,0.7142857142857143,0.7142857142857143,60
+random_5,60,12,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff AND mtOff AND tmOff,1,1.0,1.0,1.0,60
+random_10,120,21,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff AND mtOff AND tmOff,1,1.0,1.0,1.0,60
+random_20,240,40,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff AND mtOff AND tmOff,1,1.0,1.0,1.0,60
+2-wise,171,29,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff AND mtOff AND tmOff,1,1.0,1.0,1.0,60
+3-wise,1120,127,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff AND mtOff AND tmOff,1,1.0,1.0,1.0,60
+4-wise,4869,558,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff AND mtOff AND tmOff,1,1.0,1.0,1.0,60
+full,68640,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff AND filterOff AND tmOff,0,1.0,1.0,1.0,61
+random_2,24,3,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,NOT Deflate AND HeaderCompressionOff AND NOT LZMA2,3,0.6666666666666666,0.6666666666666666,0.6666666666666666,61
+random_5,60,6,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,NOT BZip2 AND filterOff AND tmOff,3,0.631578947368421,0.4615384615384615,1.0,61
+random_10,120,14,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff AND filterOff AND tmOff,0,1.0,1.0,1.0,61
+random_20,240,31,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff AND filterOff AND tmOff,0,1.0,1.0,1.0,61
+2-wise,173,22,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff AND filterOff AND tmOff,0,1.0,1.0,1.0,61
+3-wise,1118,141,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff AND filterOff AND tmOff,0,1.0,1.0,1.0,61
+4-wise,4868,613,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff AND filterOff AND tmOff,0,1.0,1.0,1.0,61
+random_2,24,1,filterOff = 1 AND mtOff = 1 AND tmOff = 1,Files >= 50.00 AND LZMA AND NOT tmOff,0,0.0,0.0,0.0,62
+random_5,60,2,filterOff = 1 AND mtOff = 1 AND tmOff = 1,BlockSize >= 2.00 AND Files >= 30.00 AND NOT HeaderCompressionOff AND NOT LZMA2 AND NOT PPMd,1,0.2857142857142857,0.1666666666666666,1.0,62
+random_10,120,10,filterOff = 1 AND mtOff = 1 AND tmOff = 1,Files <= 30.00 AND LZMA AND filterOff AND tmOff,1,0.4615384615384615,1.0,0.3,62
+random_20,240,25,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff AND NOT mtOff AND tmOff,1,1.0,1.0,1.0,62
+2-wise,169,17,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff AND mtOff AND tmOff,0,1.0,1.0,1.0,62
+3-wise,1123,140,filterOff = 1 AND mtOff = 1 AND tmOff = 1,NOT filterOff AND mtOff AND tmOff,1,1.0,1.0,1.0,62
+4-wise,4853,593,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff AND mtOff AND tmOff,0,1.0,1.0,1.0,62
+random_2,24,7,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff AND filterOff AND mtOff,0,1.0,1.0,1.0,63
+random_5,60,12,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,NOT HeaderCompressionOff AND filterOff AND mtOff,2,1.0,1.0,1.0,63
+random_10,120,21,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff AND filterOff AND mtOff,0,1.0,1.0,1.0,63
+random_20,240,35,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff AND filterOff AND mtOff,1,1.0,1.0,1.0,63
+2-wise,166,23,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff AND filterOff AND mtOff,4,1.0,1.0,1.0,63
+3-wise,1121,138,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff AND filterOff AND mtOff,0,1.0,1.0,1.0,63
+random_2,24,1,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,NOT Deflate AND HeaderCompressionOff AND NOT LZMA AND NOT PPMd,1,0.5,0.3333333333333333,1.0,64
+random_5,60,7,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff AND NOT LZMA2 AND NOT filterOff AND tmOff,2,0.923076923076923,1.0,0.8571428571428571,64
+random_10,120,18,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff AND NOT filterOff AND tmOff,0,1.0,1.0,1.0,64
+2-wise,167,22,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff AND filterOff AND tmOff,0,1.0,1.0,1.0,64
+3-wise,1116,133,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff AND filterOff AND tmOff,0,1.0,1.0,1.0,64
+4-wise,4903,627,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff AND filterOff AND tmOff,0,1.0,1.0,1.0,64
+full,68640,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff AND mtOff AND tmOff,0,1.0,1.0,1.0,65
+random_2,24,6,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff AND tmOff AND x >= 4.00,1,0.8571428571428571,0.75,1.0,65
+random_5,60,11,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff AND mtOff AND tmOff,2,1.0,1.0,1.0,65
+random_10,120,20,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff AND mtOff AND tmOff,0,1.0,1.0,1.0,65
+random_20,240,31,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff AND mtOff AND tmOff,1,1.0,1.0,1.0,65
+2-wise,169,20,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff AND NOT mtOff AND tmOff,2,1.0,1.0,1.0,65
+3-wise,1104,150,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff AND mtOff AND tmOff,0,1.0,1.0,1.0,65
+4-wise,4871,640,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff AND mtOff AND tmOff,1,1.0,1.0,1.0,65
+full,68640,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff AND filterOff AND mtOff,1,1.0,1.0,1.0,66
+random_2,24,4,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff AND filterOff AND NOT mtOff,1,1.0,1.0,1.0,66
+random_5,60,8,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,BlockSize >= 2.00 AND HeaderCompressionOff AND filterOff AND mtOff,1,1.0,1.0,1.0,66
+random_10,120,20,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff AND filterOff AND mtOff,0,1.0,1.0,1.0,66
+random_20,240,38,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff AND NOT filterOff AND mtOff,3,1.0,1.0,1.0,66
+2-wise,170,23,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff AND filterOff AND mtOff,0,1.0,1.0,1.0,66
+3-wise,1110,130,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff AND filterOff AND NOT mtOff,0,1.0,1.0,1.0,66
+4-wise,4850,575,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff AND filterOff AND mtOff,1,1.0,1.0,1.0,66
+full,68640,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff AND mtOff AND tmOff,0,1.0,1.0,1.0,67
+random_2,24,2,filterOff = 1 AND mtOff = 1 AND tmOff = 1,NOT PPMd AND tmOff,2,0.3333333333333333,0.25,0.5,67
+random_5,60,4,filterOff = 1 AND mtOff = 1 AND tmOff = 1,BlockSize >= 512.00 AND NOT Deflate AND HeaderCompressionOff AND filterOff AND NOT mtOff AND x != 0.00,4,0.5714285714285715,0.6666666666666666,0.5,67
+random_10,120,17,filterOff = 1 AND mtOff = 1 AND tmOff = 1,BlockSize != 4096.00 AND filterOff AND mtOff AND tmOff,0,1.0,1.0,1.0,67
+random_20,240,32,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff AND mtOff AND tmOff,1,1.0,1.0,1.0,67
+2-wise,167,23,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff AND mtOff AND tmOff,1,1.0,1.0,1.0,67
+3-wise,1131,131,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff AND mtOff AND NOT tmOff,1,1.0,1.0,1.0,67
+4-wise,4904,620,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff AND mtOff AND tmOff,0,1.0,1.0,1.0,67
+random_2,24,2,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,BlockSize != 4096.00 AND Files <= 40.00 AND NOT tmOff,0,0.25,0.1666666666666666,0.5,68
+random_5,60,8,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,NOT Deflate AND HeaderCompressionOff AND NOT filterOff AND mtOff,1,1.0,1.0,1.0,68
+random_10,120,19,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff AND filterOff AND mtOff,2,1.0,1.0,1.0,68
+random_20,240,31,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff AND filterOff AND mtOff,0,1.0,1.0,1.0,68
+2-wise,163,21,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff AND filterOff AND mtOff,1,1.0,1.0,1.0,68
+3-wise,1129,125,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff AND filterOff AND mtOff,1,1.0,1.0,1.0,68
+full,68640,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff AND filterOff AND tmOff,1,1.0,1.0,1.0,69
+random_2,24,4,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,BlockSize != 4096.00 AND NOT Deflate AND HeaderCompressionOff AND NOT PPMd AND filterOff AND NOT tmOff,3,1.0,1.0,1.0,69
+random_5,60,7,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,BlockSize <= 1024.00 AND HeaderCompressionOff AND NOT LZMA AND NOT PPMd AND NOT tmOff,3,1.0,1.0,1.0,69
+random_10,120,9,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,BlockSize <= 1024.00 AND Files >= 20.00 AND HeaderCompressionOff AND NOT LZMA AND filterOff,1,0.5,0.4545454545454545,0.5555555555555556,69
+random_20,240,25,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff AND filterOff AND tmOff,1,1.0,1.0,1.0,69
+2-wise,166,20,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff AND filterOff AND tmOff,1,1.0,1.0,1.0,69
+3-wise,1118,150,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff AND filterOff AND tmOff,1,1.0,1.0,1.0,69
+4-wise,4886,622,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff AND filterOff AND tmOff,1,1.0,1.0,1.0,69
+full,68640,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff AND mtOff AND tmOff,0,1.0,1.0,1.0,6
+random_2,24,3,filterOff = 1 AND mtOff = 1 AND tmOff = 1,NOT BZip2 AND filterOff AND mtOff AND x != 10.00,2,0.7499999999999999,0.6,1.0,6
+random_5,60,6,filterOff = 1 AND mtOff = 1 AND tmOff = 1,NOT BZip2 AND NOT HeaderCompressionOff AND mtOff,0,0.6666666666666666,0.5,1.0,6
+random_10,120,10,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff AND NOT mtOff AND tmOff,0,1.0,1.0,1.0,6
+2-wise,165,16,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff AND mtOff AND tmOff,2,1.0,1.0,1.0,6
+3-wise,1116,150,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff AND mtOff AND tmOff,0,1.0,1.0,1.0,6
+4-wise,4883,592,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff AND mtOff AND tmOff,0,1.0,1.0,1.0,6
+full,68640,8580,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,HeaderCompressionOff AND mtOff AND tmOff,1,1.0,1.0,1.0,70
+random_2,24,1,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,BlockSize != 2048.00 AND NOT Deflate AND NOT LZMA2 AND NOT PPMd AND NOT tmOff,0,0.0,0.0,0.0,70
+random_5,60,4,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,BlockSize != 4096.00 AND Files <= 80.00 AND NOT mtOff AND x >= 4.00,0,0.0,0.0,0.0,70
+random_10,120,13,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,Files != 100.00 AND NOT LZMA2 AND NOT tmOff AND x <= 4.00,3,0.5499999999999999,0.4074074074074074,0.8461538461538461,70
+random_20,240,27,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,NOT HeaderCompressionOff AND mtOff AND tmOff,1,1.0,1.0,1.0,70
+2-wise,170,20,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,HeaderCompressionOff AND NOT LZMA2 AND tmOff AND x != 10.00,2,0.7346938775510204,0.6206896551724138,0.9,70
+3-wise,1110,122,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,HeaderCompressionOff AND mtOff AND tmOff,0,1.0,1.0,1.0,70
+4-wise,4890,603,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,HeaderCompressionOff AND mtOff AND tmOff,1,1.0,1.0,1.0,70
+random_2,24,3,filterOff = 1 AND mtOff = 1 AND tmOff = 1,BlockSize >= 2.00 AND Files <= 50.00 AND HeaderCompressionOff AND x != 0.00,1,0.3076923076923076,0.2,0.6666666666666666,71
+random_5,60,9,filterOff = 1 AND mtOff = 1 AND tmOff = 1,Files != 0.00 AND mtOff AND tmOff,1,0.6956521739130435,0.5714285714285714,0.8888888888888888,71
+random_10,120,19,filterOff = 1 AND mtOff = 1 AND tmOff = 1,NOT filterOff AND mtOff AND tmOff,1,1.0,1.0,1.0,71
+random_20,240,34,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff AND mtOff AND tmOff,2,1.0,1.0,1.0,71
+2-wise,164,32,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff AND mtOff AND tmOff,2,1.0,1.0,1.0,71
+3-wise,1120,120,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff AND NOT mtOff AND tmOff,0,1.0,1.0,1.0,71
+4-wise,4868,611,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff AND mtOff AND tmOff,0,1.0,1.0,1.0,71
+full,68640,8580,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,HeaderCompressionOff AND mtOff AND tmOff,1,1.0,1.0,1.0,72
+random_2,24,1,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,NOT BZip2 AND Files >= 30.00,0,0.1999999999999999,0.1111111111111111,1.0,72
+random_5,60,7,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,LZMA AND mtOff AND tmOff,4,0.6,1.0,0.4285714285714285,72
+random_10,120,13,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,NOT Deflate AND HeaderCompressionOff AND mtOff AND NOT tmOff,1,0.96,1.0,0.9230769230769232,72
+random_20,240,25,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,HeaderCompressionOff AND NOT mtOff AND tmOff,1,1.0,1.0,1.0,72
+2-wise,176,21,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,HeaderCompressionOff AND mtOff AND tmOff,0,1.0,1.0,1.0,72
+3-wise,1127,128,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,HeaderCompressionOff AND NOT mtOff AND NOT tmOff,1,1.0,1.0,1.0,72
+4-wise,4870,602,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,HeaderCompressionOff AND mtOff AND tmOff,0,1.0,1.0,1.0,72
+random_2,24,3,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,BlockSize != 4096.00 AND HeaderCompressionOff AND NOT filterOff,3,0.5,0.4,0.6666666666666666,73
+random_5,60,12,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff AND filterOff AND tmOff,1,1.0,1.0,1.0,73
+random_10,120,16,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff AND filterOff AND NOT tmOff,1,1.0,1.0,1.0,73
+random_20,240,44,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,BlockSize >= 2.00 AND HeaderCompressionOff AND filterOff AND tmOff,0,1.0,1.0,1.0,73
+2-wise,169,28,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff AND filterOff AND tmOff,0,1.0,1.0,1.0,73
+3-wise,1112,137,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff AND filterOff AND tmOff,0,1.0,1.0,1.0,73
+full,68640,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff AND mtOff AND tmOff,0,1.0,1.0,1.0,74
+random_2,24,2,filterOff = 1 AND mtOff = 1 AND tmOff = 1,NOT Deflate AND NOT HeaderCompressionOff AND NOT LZMA2 AND filterOff AND x <= 6.00,1,0.4,0.3333333333333333,0.5,74
+random_5,60,5,filterOff = 1 AND mtOff = 1 AND tmOff = 1,NOT Deflate AND Files >= 10.00 AND HeaderCompressionOff AND filterOff AND tmOff,1,0.8000000000000002,0.8,0.8,74
+random_10,120,12,filterOff = 1 AND mtOff = 1 AND tmOff = 1,BlockSize <= 1024.00 AND filterOff AND mtOff AND tmOff,1,1.0,1.0,1.0,74
+random_20,240,27,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff AND mtOff AND tmOff,1,1.0,1.0,1.0,74
+2-wise,172,19,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff AND mtOff AND tmOff,2,1.0,1.0,1.0,74
+3-wise,1134,144,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff AND mtOff AND tmOff,0,1.0,1.0,1.0,74
+4-wise,4871,603,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff AND mtOff AND tmOff,0,1.0,1.0,1.0,74
+random_2,24,5,filterOff = 1 AND mtOff = 1 AND tmOff = 1,Files >= 10.00 AND NOT LZMA AND NOT PPMd AND tmOff,2,0.6666666666666666,0.5714285714285714,0.8,75
+random_5,60,10,filterOff = 1 AND mtOff = 1 AND tmOff = 1,NOT PPMd AND NOT filterOff AND mtOff AND tmOff,4,1.0,1.0,1.0,75
+random_10,120,20,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff AND mtOff AND tmOff,2,1.0,1.0,1.0,75
+random_20,240,26,filterOff = 1 AND mtOff = 1 AND tmOff = 1,BlockSize != 4096.00 AND filterOff AND mtOff AND tmOff,0,1.0,1.0,1.0,75
+2-wise,161,21,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff AND mtOff AND tmOff,1,1.0,1.0,1.0,75
+3-wise,1140,126,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff AND NOT mtOff AND tmOff,0,1.0,1.0,1.0,75
+4-wise,4852,602,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff AND mtOff AND tmOff,0,1.0,1.0,1.0,75
+full,68640,8580,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,HeaderCompressionOff AND mtOff AND tmOff,1,1.0,1.0,1.0,76
+random_2,24,3,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,NOT BZip2 AND Files <= 10.00 AND NOT LZMA AND x = 10.00,1,0.5,1.0,0.3333333333333333,76
+random_5,60,5,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,Files <= 60.00 AND NOT PPMd,4,0.1111111111111111,0.064516129032258,0.4,76
+random_10,120,11,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,NOT BZip2 AND BlockSize <= 1024.00 AND Files >= 10.00 AND NOT PPMd AND tmOff,3,0.4,0.2758620689655172,0.7272727272727273,76
+random_20,240,29,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,HeaderCompressionOff AND mtOff AND tmOff,1,1.0,1.0,1.0,76
+2-wise,170,22,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,HeaderCompressionOff AND NOT mtOff AND tmOff,2,1.0,1.0,1.0,76
+3-wise,1111,131,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,HeaderCompressionOff AND mtOff AND NOT tmOff,2,1.0,1.0,1.0,76
+4-wise,4862,629,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,HeaderCompressionOff AND mtOff AND tmOff,0,1.0,1.0,1.0,76
+full,68640,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff AND filterOff AND mtOff,2,1.0,1.0,1.0,77
+random_2,24,6,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff AND NOT PPMd AND filterOff AND mtOff,1,1.0,1.0,1.0,77
+random_5,60,10,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,NOT PPMd AND filterOff AND mtOff,1,0.8333333333333333,0.7142857142857143,1.0,77
+random_10,120,15,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,BlockSize >= 2.00 AND HeaderCompressionOff AND filterOff AND mtOff,1,1.0,1.0,1.0,77
+random_20,240,27,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff AND filterOff AND NOT mtOff,1,1.0,1.0,1.0,77
+2-wise,170,20,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff AND filterOff AND NOT mtOff,2,1.0,1.0,1.0,77
+3-wise,1124,145,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff AND filterOff AND mtOff,2,1.0,1.0,1.0,77
+4-wise,4886,597,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff AND NOT filterOff AND mtOff,0,1.0,1.0,1.0,77
+full,68640,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff AND filterOff AND mtOff,0,1.0,1.0,1.0,78
+random_2,24,2,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,NOT Deflate AND HeaderCompressionOff AND mtOff,0,0.5714285714285715,0.4,1.0,78
+random_5,60,6,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,NOT BZip2 AND NOT Deflate AND filterOff AND NOT mtOff,0,0.8,0.6666666666666666,1.0,78
+random_10,120,12,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff AND NOT filterOff AND mtOff,2,1.0,1.0,1.0,78
+random_20,240,27,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff AND filterOff AND mtOff,0,1.0,1.0,1.0,78
+2-wise,171,21,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff AND filterOff AND mtOff,0,1.0,1.0,1.0,78
+3-wise,1112,148,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,NOT HeaderCompressionOff AND filterOff AND mtOff,0,1.0,1.0,1.0,78
+4-wise,4898,611,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff AND filterOff AND mtOff,0,1.0,1.0,1.0,78
+full,68640,8580,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,HeaderCompressionOff AND mtOff AND tmOff,1,1.0,1.0,1.0,79
+random_2,24,2,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,NOT Deflate AND Files >= 90.00 AND x >= 4.00,4,0.6666666666666666,1.0,0.5,79
+random_5,60,3,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,BZip2 AND NOT PPMd AND filterOff,1,0.1818181818181818,0.125,0.3333333333333333,79
+random_10,120,9,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,HeaderCompressionOff AND NOT LZMA AND mtOff AND tmOff,2,1.0,1.0,1.0,79
+random_20,240,31,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,HeaderCompressionOff AND mtOff AND tmOff,1,1.0,1.0,1.0,79
+2-wise,172,17,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,BlockSize != 4096.00 AND HeaderCompressionOff AND mtOff AND tmOff,2,1.0,1.0,1.0,79
+3-wise,1130,134,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,HeaderCompressionOff AND mtOff AND tmOff,2,1.0,1.0,1.0,79
+4-wise,4865,589,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,HeaderCompressionOff AND mtOff AND tmOff,1,1.0,1.0,1.0,79
+full,68640,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff AND filterOff AND tmOff,2,1.0,1.0,1.0,7
+random_2,24,4,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,NOT mtOff,1,0.1666666666666666,0.125,0.25,7
+random_5,60,10,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,NOT HeaderCompressionOff AND filterOff AND tmOff,1,1.0,1.0,1.0,7
+random_10,120,17,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff AND filterOff AND tmOff,4,1.0,1.0,1.0,7
+random_20,240,29,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff AND filterOff AND tmOff,4,1.0,1.0,1.0,7
+2-wise,167,18,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff AND filterOff AND tmOff,1,1.0,1.0,1.0,7
+3-wise,1124,141,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff AND filterOff AND tmOff,0,1.0,1.0,1.0,7
+4-wise,4878,625,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff AND filterOff AND tmOff,0,1.0,1.0,1.0,7
+random_2,24,2,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,PPMd AND NOT mtOff,2,0.5,0.5,0.5,80
+random_5,60,8,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,HeaderCompressionOff AND mtOff AND tmOff,1,1.0,1.0,1.0,80
+random_10,120,14,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,HeaderCompressionOff AND mtOff AND tmOff,1,1.0,1.0,1.0,80
+random_20,240,28,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,HeaderCompressionOff AND tmOff,2,0.6913580246913581,0.5283018867924528,1.0,80
+2-wise,166,21,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,BlockSize >= 2.00 AND HeaderCompressionOff AND mtOff AND tmOff,2,1.0,1.0,1.0,80
+3-wise,1116,138,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,NOT HeaderCompressionOff AND mtOff AND NOT tmOff,0,1.0,1.0,1.0,80
+4-wise,4868,594,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,HeaderCompressionOff AND mtOff AND tmOff,0,1.0,1.0,1.0,80
+full,68640,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff AND filterOff AND mtOff,0,1.0,1.0,1.0,81
+random_2,24,3,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff AND filterOff,1,0.7499999999999999,0.6,1.0,81
+random_5,60,9,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,NOT BZip2 AND HeaderCompressionOff AND filterOff AND mtOff,1,1.0,1.0,1.0,81
+random_10,120,18,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff AND filterOff AND mtOff,2,1.0,1.0,1.0,81
+random_20,240,31,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff AND filterOff AND mtOff,2,1.0,1.0,1.0,81
+2-wise,162,17,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,BlockSize != 4096.00 AND HeaderCompressionOff AND filterOff AND mtOff,1,1.0,1.0,1.0,81
+3-wise,1126,129,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,NOT HeaderCompressionOff AND filterOff AND mtOff,0,1.0,1.0,1.0,81
+4-wise,4903,602,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff AND filterOff AND mtOff,0,1.0,1.0,1.0,81
+full,68640,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff AND filterOff AND tmOff,0,1.0,1.0,1.0,82
+random_2,24,2,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff AND filterOff,3,0.8,0.6666666666666666,1.0,82
+random_5,60,8,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff AND filterOff AND tmOff,1,1.0,1.0,1.0,82
+random_10,120,19,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff AND NOT filterOff AND tmOff,2,1.0,1.0,1.0,82
+random_20,240,37,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff AND filterOff AND tmOff,0,1.0,1.0,1.0,82
+2-wise,167,23,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff AND filterOff AND tmOff,2,1.0,1.0,1.0,82
+3-wise,1122,125,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff AND filterOff AND tmOff,0,1.0,1.0,1.0,82
+4-wise,4865,617,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff AND filterOff AND tmOff,1,1.0,1.0,1.0,82
+full,68640,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff AND filterOff AND tmOff,1,1.0,1.0,1.0,83
+random_2,24,4,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff AND filterOff AND NOT tmOff,2,1.0,1.0,1.0,83
+random_5,60,9,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,Files >= 20.00 AND HeaderCompressionOff AND tmOff,1,0.8181818181818181,0.6923076923076923,1.0,83
+random_10,120,10,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,NOT BZip2 AND HeaderCompressionOff AND NOT PPMd,0,0.2631578947368421,0.1785714285714285,0.5,83
+random_20,240,21,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,BlockSize >= 2.00 AND NOT HeaderCompressionOff AND NOT LZMA AND filterOff AND NOT tmOff,1,0.6,1.0,0.4285714285714285,83
+2-wise,171,19,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff AND filterOff AND tmOff,1,1.0,1.0,1.0,83
+3-wise,1112,122,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff AND filterOff AND tmOff,1,1.0,1.0,1.0,83
+4-wise,4878,612,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff AND filterOff AND tmOff,1,1.0,1.0,1.0,83
+random_5,60,5,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,HeaderCompressionOff AND mtOff AND tmOff,4,1.0,1.0,1.0,84
+random_10,120,17,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,mtOff AND tmOff AND x != 0.00,0,0.85,0.7391304347826086,1.0,84
+2-wise,173,25,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,HeaderCompressionOff AND mtOff AND tmOff,1,1.0,1.0,1.0,84
+3-wise,1125,160,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,HeaderCompressionOff AND mtOff AND tmOff,0,1.0,1.0,1.0,84
+4-wise,4879,603,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,HeaderCompressionOff AND mtOff AND tmOff,0,1.0,1.0,1.0,84
+full,68640,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff AND mtOff AND tmOff,0,1.0,1.0,1.0,85
+random_2,24,3,filterOff = 1 AND mtOff = 1 AND tmOff = 1,NOT Deflate AND NOT HeaderCompressionOff AND NOT mtOff,1,0.5,0.4,0.6666666666666666,85
+random_5,60,6,filterOff = 1 AND mtOff = 1 AND tmOff = 1,NOT LZMA2 AND mtOff AND tmOff,1,0.5882352941176471,0.4545454545454545,0.8333333333333334,85
+random_10,120,17,filterOff = 1 AND mtOff = 1 AND tmOff = 1,NOT Deflate AND Files >= 80.00 AND NOT tmOff,3,0.4137931034482758,0.5,0.3529411764705882,85
+random_20,240,38,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff AND mtOff AND tmOff,1,1.0,1.0,1.0,85
+2-wise,165,22,filterOff = 1 AND mtOff = 1 AND tmOff = 1,Files >= 10.00 AND filterOff AND mtOff,1,0.6885245901639344,0.5384615384615384,0.9545454545454546,85
+3-wise,1122,160,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff AND mtOff AND tmOff,0,1.0,1.0,1.0,85
+4-wise,4868,606,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff AND NOT mtOff AND tmOff,0,1.0,1.0,1.0,85
+full,68640,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff AND filterOff AND mtOff,0,1.0,1.0,1.0,86
+random_2,24,3,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,NOT BZip2 AND NOT LZMA AND NOT PPMd,0,0.0,0.0,0.0,86
+random_5,60,8,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff AND NOT LZMA2 AND filterOff AND mtOff,2,0.9333333333333332,1.0,0.875,86
+random_10,120,15,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,Files >= 30.00 AND HeaderCompressionOff AND NOT LZMA2 AND x != 10.00,2,0.3076923076923077,0.25,0.4,86
+random_20,240,27,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff AND filterOff AND mtOff,0,1.0,1.0,1.0,86
+2-wise,165,21,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff AND filterOff AND mtOff,1,1.0,1.0,1.0,86
+3-wise,1119,130,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff AND filterOff AND mtOff,1,1.0,1.0,1.0,86
+4-wise,4824,604,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff AND filterOff AND mtOff,0,1.0,1.0,1.0,86
+full,68640,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff AND filterOff AND mtOff,3,1.0,1.0,1.0,87
+random_2,24,3,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,LZMA,0,0.4,0.5,0.3333333333333333,87
+random_5,60,6,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,LZMA AND filterOff AND mtOff,1,0.6666666666666666,1.0,0.5,87
+random_10,120,11,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,BlockSize >= 2.00 AND HeaderCompressionOff AND filterOff AND mtOff,4,1.0,1.0,1.0,87
+random_20,240,26,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff AND filterOff AND mtOff,1,1.0,1.0,1.0,87
+2-wise,169,22,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff AND filterOff AND mtOff,0,1.0,1.0,1.0,87
+3-wise,1136,130,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,NOT HeaderCompressionOff AND filterOff AND mtOff,2,1.0,1.0,1.0,87
+4-wise,4886,636,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff AND filterOff AND mtOff,2,1.0,1.0,1.0,87
+full,68640,8580,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,HeaderCompressionOff AND mtOff AND tmOff,0,1.0,1.0,1.0,88
+random_5,60,5,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,HeaderCompressionOff AND mtOff AND tmOff,3,1.0,1.0,1.0,88
+random_10,120,9,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,BlockSize != 4096.00 AND Deflate AND Files != 100.00 AND NOT filterOff AND x >= 6.00,2,0.3529411764705882,0.375,0.3333333333333333,88
+random_20,240,23,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,HeaderCompressionOff AND mtOff AND tmOff,2,1.0,1.0,1.0,88
+2-wise,160,16,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,HeaderCompressionOff AND mtOff AND tmOff,1,1.0,1.0,1.0,88
+3-wise,1117,142,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,HeaderCompressionOff AND mtOff AND tmOff,0,1.0,1.0,1.0,88
+4-wise,4893,610,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,HeaderCompressionOff AND mtOff AND tmOff,0,1.0,1.0,1.0,88
+full,68640,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff AND mtOff AND tmOff,1,1.0,1.0,1.0,89
+random_2,24,5,filterOff = 1 AND mtOff = 1 AND tmOff = 1,NOT BZip2 AND BlockSize <= 512.00 AND NOT LZMA AND mtOff AND tmOff,0,1.0,1.0,1.0,89
+random_5,60,8,filterOff = 1 AND mtOff = 1 AND tmOff = 1,BlockSize >= 2.00 AND NOT LZMA AND mtOff AND tmOff,2,0.6666666666666665,0.6,0.75,89
+random_10,120,16,filterOff = 1 AND mtOff = 1 AND tmOff = 1,NOT PPMd AND filterOff AND tmOff,0,0.6521739130434783,0.5,0.9375,89
+random_20,240,25,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff AND NOT mtOff AND NOT tmOff,2,1.0,1.0,1.0,89
+2-wise,173,20,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff AND mtOff AND tmOff,1,1.0,1.0,1.0,89
+3-wise,1101,136,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff AND mtOff AND tmOff,0,1.0,1.0,1.0,89
+4-wise,4864,600,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff AND mtOff AND NOT tmOff,3,1.0,1.0,1.0,89
+full,68640,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff AND filterOff AND tmOff,0,1.0,1.0,1.0,8
+random_2,24,3,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,NOT Deflate AND HeaderCompressionOff AND NOT LZMA2 AND filterOff,3,0.6,0.4285714285714285,1.0,8
+random_5,60,12,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,Files <= 80.00 AND HeaderCompressionOff AND filterOff,1,0.8571428571428571,0.75,1.0,8
+random_20,240,27,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff AND filterOff AND tmOff,2,1.0,1.0,1.0,8
+2-wise,167,16,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff AND NOT PPMd AND tmOff,0,0.653061224489796,0.4848484848484848,1.0,8
+3-wise,1117,130,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff AND filterOff AND tmOff,1,1.0,1.0,1.0,8
+4-wise,4886,608,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff AND filterOff AND tmOff,0,1.0,1.0,1.0,8
+full,68640,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff AND filterOff AND tmOff,0,1.0,1.0,1.0,90
+random_2,24,2,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,NOT Deflate AND HeaderCompressionOff AND filterOff AND NOT mtOff,1,0.3333333333333333,0.25,0.5,90
+random_5,60,4,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,NOT LZMA2 AND filterOff AND x <= 4.00,1,0.4615384615384615,0.3333333333333333,0.75,90
+random_10,120,10,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,BlockSize >= 2.00 AND filterOff AND mtOff,3,0.3870967741935483,0.2857142857142857,0.6,90
+random_20,240,22,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,BlockSize != 4096.00 AND HeaderCompressionOff AND filterOff AND tmOff,2,1.0,1.0,1.0,90
+2-wise,163,12,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,NOT HeaderCompressionOff AND filterOff AND tmOff,1,1.0,1.0,1.0,90
+3-wise,1116,159,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff AND filterOff AND tmOff,0,1.0,1.0,1.0,90
+4-wise,4868,594,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff AND filterOff AND tmOff,0,1.0,1.0,1.0,90
+full,68640,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff AND mtOff AND tmOff,1,1.0,1.0,1.0,91
+random_2,24,2,filterOff = 1 AND mtOff = 1 AND tmOff = 1,BlockSize >= 512.00 AND NOT Deflate AND Files != 0.00 AND NOT PPMd,0,0.0,0.0,0.0,91
+random_5,60,8,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff AND mtOff AND tmOff,1,1.0,1.0,1.0,91
+random_10,120,12,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff AND mtOff AND tmOff,1,1.0,1.0,1.0,91
+random_20,240,26,filterOff = 1 AND mtOff = 1 AND tmOff = 1,NOT filterOff AND mtOff AND tmOff,2,1.0,1.0,1.0,91
+2-wise,168,19,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff AND mtOff AND tmOff,1,1.0,1.0,1.0,91
+3-wise,1111,143,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff AND mtOff AND tmOff,2,1.0,1.0,1.0,91
+4-wise,4886,635,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff AND mtOff AND tmOff,1,1.0,1.0,1.0,91
+random_2,24,2,filterOff = 1 AND mtOff = 1 AND tmOff = 1,NOT LZMA2 AND mtOff AND x >= 4.00,0,0.4,0.3333333333333333,0.5,92
+random_5,60,9,filterOff = 1 AND mtOff = 1 AND tmOff = 1,BlockSize != 4096.00 AND NOT LZMA2 AND mtOff AND tmOff,1,0.7000000000000001,0.6363636363636364,0.7777777777777778,92
+random_10,120,21,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff AND mtOff AND tmOff,1,1.0,1.0,1.0,92
+random_20,240,35,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff AND mtOff AND tmOff,0,1.0,1.0,1.0,92
+2-wise,169,21,filterOff = 1 AND mtOff = 1 AND tmOff = 1,NOT LZMA2 AND NOT PPMd AND mtOff,2,0.4556962025316455,0.3103448275862069,0.8571428571428571,92
+3-wise,1105,149,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff AND mtOff AND tmOff,0,1.0,1.0,1.0,92
+full,68640,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff AND filterOff AND mtOff,3,1.0,1.0,1.0,93
+random_2,24,4,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,NOT BZip2 AND BlockSize >= 4.00 AND Files >= 20.00 AND mtOff,2,0.5714285714285715,0.4,1.0,93
+random_5,60,12,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,NOT BZip2 AND BlockSize != 4096.00 AND HeaderCompressionOff AND filterOff AND mtOff,2,1.0,1.0,1.0,93
+random_10,120,25,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff AND filterOff AND mtOff,2,1.0,1.0,1.0,93
+random_20,240,35,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff AND filterOff AND mtOff,1,1.0,1.0,1.0,93
+2-wise,167,32,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff AND filterOff AND mtOff,0,1.0,1.0,1.0,93
+3-wise,1127,124,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff AND filterOff AND mtOff,2,1.0,1.0,1.0,93
+4-wise,4848,587,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff AND filterOff AND NOT mtOff,1,1.0,1.0,1.0,93
+random_2,24,1,filterOff = 1 AND mtOff = 1 AND tmOff = 1,NOT BZip2 AND BlockSize != 4096.00 AND NOT mtOff,2,1.0,1.0,1.0,94
+random_5,60,5,filterOff = 1 AND mtOff = 1 AND tmOff = 1,NOT PPMd AND filterOff AND mtOff,2,0.8333333333333333,0.7142857142857143,1.0,94
+random_10,120,14,filterOff = 1 AND mtOff = 1 AND tmOff = 1,NOT PPMd AND filterOff AND tmOff,3,0.6511627906976745,0.4827586206896552,1.0,94
+random_20,240,31,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff AND mtOff AND tmOff,0,1.0,1.0,1.0,94
+2-wise,165,19,filterOff = 1 AND mtOff = 1 AND tmOff = 1,BlockSize != 4096.00 AND NOT filterOff AND NOT mtOff AND tmOff,1,1.0,1.0,1.0,94
+4-wise,4885,612,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff AND mtOff AND tmOff,0,1.0,1.0,1.0,94
+full,68640,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff AND mtOff AND tmOff,0,1.0,1.0,1.0,95
+random_2,24,2,filterOff = 1 AND mtOff = 1 AND tmOff = 1,HeaderCompressionOff AND LZMA2,3,0.6666666666666666,1.0,0.5,95
+random_5,60,7,filterOff = 1 AND mtOff = 1 AND tmOff = 1,BZip2 AND NOT Deflate AND mtOff AND tmOff,1,0.5714285714285714,0.5714285714285714,0.5714285714285714,95
+random_10,120,13,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff AND mtOff AND tmOff,1,1.0,1.0,1.0,95
+random_20,240,26,filterOff = 1 AND mtOff = 1 AND tmOff = 1,BZip2 AND BlockSize >= 2.00 AND filterOff AND mtOff AND tmOff,1,0.5142857142857142,1.0,0.3461538461538461,95
+2-wise,179,21,filterOff = 1 AND mtOff = 1 AND tmOff = 1,BlockSize >= 2.00 AND NOT Deflate AND Files >= 10.00 AND HeaderCompressionOff AND NOT LZMA AND x != 0.00,1,0.2105263157894736,0.2352941176470588,0.1904761904761904,95
+3-wise,1128,144,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff AND mtOff AND tmOff,2,1.0,1.0,1.0,95
+4-wise,4901,623,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff AND mtOff AND tmOff,0,1.0,1.0,1.0,95
+random_2,24,1,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,NOT LZMA2 AND mtOff AND NOT tmOff,0,0.5,0.3333333333333333,1.0,96
+random_5,60,3,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,PPMd AND filterOff AND tmOff,3,0.4,0.5,0.3333333333333333,96
+random_10,120,11,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff AND filterOff AND NOT tmOff,0,1.0,1.0,1.0,96
+random_20,240,37,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff AND NOT filterOff AND tmOff,4,1.0,1.0,1.0,96
+3-wise,1116,134,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff AND filterOff AND tmOff,0,1.0,1.0,1.0,96
+4-wise,4896,591,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff AND filterOff AND tmOff,0,1.0,1.0,1.0,96
+random_2,24,4,filterOff = 1 AND mtOff = 1 AND tmOff = 1,Files >= 30.00 AND mtOff,4,0.6666666666666665,0.6,0.75,97
+random_5,60,6,filterOff = 1 AND mtOff = 1 AND tmOff = 1,Files >= 20.00 AND NOT HeaderCompressionOff AND tmOff,1,0.3809523809523809,0.2666666666666666,0.6666666666666666,97
+random_10,120,14,filterOff = 1 AND mtOff = 1 AND tmOff = 1,NOT BZip2 AND filterOff AND mtOff AND tmOff,3,1.0,1.0,1.0,97
+random_20,240,28,filterOff = 1 AND mtOff = 1 AND tmOff = 1,NOT BZip2 AND filterOff AND mtOff AND tmOff,2,1.0,1.0,1.0,97
+2-wise,165,19,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff AND mtOff AND tmOff,3,1.0,1.0,1.0,97
+3-wise,1103,126,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff AND mtOff AND tmOff,0,1.0,1.0,1.0,97
+full,68640,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff AND filterOff AND tmOff,2,1.0,1.0,1.0,98
+random_2,24,5,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff AND filterOff AND tmOff,4,1.0,1.0,1.0,98
+random_5,60,12,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff AND filterOff AND tmOff,2,1.0,1.0,1.0,98
+random_10,120,22,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff AND filterOff AND tmOff,1,1.0,1.0,1.0,98
+random_20,240,36,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff AND filterOff AND tmOff,1,1.0,1.0,1.0,98
+2-wise,161,19,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff AND filterOff AND tmOff,1,1.0,1.0,1.0,98
+3-wise,1110,138,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff AND filterOff AND tmOff,2,1.0,1.0,1.0,98
+4-wise,4886,617,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff AND filterOff AND NOT tmOff,0,1.0,1.0,1.0,98
+full,68640,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff AND filterOff AND mtOff,1,1.0,1.0,1.0,99
+random_2,24,2,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,NOT BZip2 AND Files <= 60.00 AND NOT LZMA AND filterOff AND x >= 2.00,1,0.5714285714285715,0.4,1.0,99
+random_5,60,6,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,NOT BZip2 AND NOT HeaderCompressionOff AND NOT PPMd AND NOT tmOff,1,0.4285714285714285,0.375,0.5,99
+random_10,120,11,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,NOT BZip2 AND Files >= 10.00 AND NOT LZMA AND filterOff,0,0.5,0.4117647058823529,0.6363636363636364,99
+random_20,240,25,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,filterOff AND mtOff,1,0.5813953488372093,0.4098360655737705,1.0,99
+2-wise,164,18,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,BlockSize != 4096.00 AND Deflate AND HeaderCompressionOff AND filterOff AND NOT tmOff,1,0.2857142857142857,1.0,0.1666666666666666,99
+3-wise,1120,157,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff AND filterOff AND mtOff,1,1.0,1.0,1.0,99
+4-wise,4888,576,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff AND filterOff AND mtOff,1,1.0,1.0,1.0,99
+random_2,24,2,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,NOT BZip2 AND HeaderCompressionOff AND NOT mtOff AND x >= 8.00,1,1.0,1.0,1.0,9
+random_5,60,6,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,NOT LZMA2 AND NOT PPMd AND filterOff AND mtOff,4,0.923076923076923,0.8571428571428571,1.0,9
+random_10,120,13,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,BlockSize != 4096.00 AND HeaderCompressionOff AND NOT LZMA AND NOT LZMA2 AND mtOff AND x != 0.00,0,0.6666666666666667,0.5217391304347826,0.9230769230769232,9
+random_20,240,31,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff AND filterOff AND mtOff,2,1.0,1.0,1.0,9
+2-wise,168,21,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff AND NOT LZMA AND filterOff AND mtOff,0,1.0,1.0,1.0,9
+3-wise,1111,145,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff AND filterOff AND mtOff,0,1.0,1.0,1.0,9

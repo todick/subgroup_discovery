@@ -1,0 +1,6 @@
+rule,sg_samples,sg_coverage,rule_num_predicates,rule_features_used
+debug_ref_count AND proof,276,0.2732673267326733,2,"['proof', 'debug_ref_count']"
+NOT debug_ref_count AND NOT proof,277,0.2742574257425743,2,"['proof', 'debug_ref_count']"
+debug_ref_count AND NOT proof,245,0.24257425742574257,2,"['proof', 'debug_ref_count']"
+NOT debug_ref_count AND proof,212,0.2099009900990099,2,"['proof', 'debug_ref_count']"
+debug_ref_count AND proof,276,0.2732673267326733,2,"['proof', 'debug_ref_count']"

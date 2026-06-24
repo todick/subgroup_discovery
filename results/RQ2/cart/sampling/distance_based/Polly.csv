@@ -1,0 +1,800 @@
+sampling_strategy,sample_size,sg_cardinality,sg_rule,best_rule,best_rule_idx,f1,precision,recall,seed
+full,60000,10000,polly = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,NOT none AND polly_opt_simplify_deps AND polly_parallel,0,1.0,1.0,1.0,0
+random_2,46,8,polly = 1 AND polly_no_tiling = 1 AND polly_parallel = 1,NOT polly_opt_simplify_deps AND NOT polly_no_tiling AND pollyrtcmaxparameters <= 3.0 AND pollydefaulttilesize <= 136.0,0,0.0,0.0,0.0,0
+random_5,115,18,min = 1 AND polly_no_tiling = 1 AND polly_opt_simplify_deps = 1,polly_no_tiling AND polly_opt_simplify_deps AND min,0,1.0,1.0,1.0,0
+random_10,230,30,memory_based = 1 AND none = 1 AND polly_no_tiling = 1,polly_no_tiling AND pollydefaulttilesize > 160.0 AND NOT value_based AND none,4,0.5,1.0,0.3333333333333333,0
+random_20,460,63,max = 1 AND polly = 1 AND polly_no_tiling = 1,NOT none AND polly_no_tiling AND NOT min,0,1.0,1.0,1.0,0
+2-wise,54,15,min = 1 AND polly_no_tiling = 1 AND polly_parallel = 1,NOT polly_opt_simplify_deps AND pollydefaulttilesize <= 40.0 AND NOT none AND NOT pollyoptmaxconstantterm_1000,0,0.0,0.0,0.0,0
+3-wise,257,43,polly_no_tiling = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,NOT pollyoptmaxconstantterm_1000 AND pollyrtcmaxparameters <= 1.5 AND NOT parallel_force AND NOT pollyoptmaxcoefficient_1000,3,0.03125,0.0476190476190476,0.0232558139534883,0
+4-wise,943,118,polly = 1 AND polly_opt_simplify_deps = 1 AND value_based = 1,polly AND value_based AND polly_opt_simplify_deps,0,1.0,1.0,1.0,0
+full,60000,7500,none = 1 AND polly_no_tiling = 1 AND value_based = 1,NOT memory_based AND none AND polly_no_tiling,0,1.0,1.0,1.0,10
+random_2,46,5,none = 1 AND polly_no_tiling = 1 AND value_based = 1,pollydefaulttilesize <= 40.0 AND pollyrtcmaxparameters > 3.0 AND NOT polly_opt_simplify_deps AND NOT pollyoptmaxcoefficient_1000,4,0.6,0.6,0.6,10
+random_5,115,12,none = 1 AND polly_no_tiling = 1 AND value_based = 1,value_based AND none AND polly_no_tiling,1,1.0,1.0,1.0,10
+random_10,230,21,none = 1 AND polly_no_tiling = 1 AND value_based = 1,pollydefaulttilesize <= 640.0 AND NOT polly AND NOT memory_based AND polly_no_tiling,0,0.8333333333333333,1.0,0.7142857142857143,10
+random_20,460,53,none = 1 AND polly_no_tiling = 1 AND value_based = 1,NOT polly AND value_based AND polly_no_tiling,0,1.0,1.0,1.0,10
+2-wise,52,5,none = 1 AND polly_no_tiling = 1 AND value_based = 1,pollydefaulttilesize > 160.0 AND pollyoptmaxconstantterm_1000 AND NOT pollyoptmaxcoefficient_100 AND NOT polly,4,0.5714285714285715,1.0,0.4,10
+3-wise,247,33,none = 1 AND polly_no_tiling = 1 AND value_based = 1,NOT polly AND value_based AND polly_no_tiling,0,1.0,1.0,1.0,10
+4-wise,960,135,none = 1 AND polly_no_tiling = 1 AND value_based = 1,NOT polly AND value_based AND polly_no_tiling,0,1.0,1.0,1.0,10
+full,60000,7500,min = 1 AND polly_opt_simplify_deps = 1 AND value_based = 1,polly_opt_simplify_deps AND NOT max AND NOT memory_based,0,1.0,1.0,1.0,11
+random_2,46,4,min = 1 AND polly_opt_simplify_deps = 1 AND value_based = 1,NOT pollyoptmaxconstantterm_10 AND parallel AND NOT memory_based AND NOT polly_no_tiling,0,0.0,0.0,0.0,11
+random_5,115,12,min = 1 AND polly_opt_simplify_deps = 1 AND value_based = 1,max AND pollydefaulttilesize <= 40.0 AND pollyoptmaxconstantterm_100 AND NOT polly_no_tiling,0,0.0,0.0,0.0,11
+random_10,230,27,min = 1 AND polly_opt_simplify_deps = 1 AND value_based = 1,polly_opt_simplify_deps AND NOT max AND value_based,0,1.0,1.0,1.0,11
+random_20,460,65,min = 1 AND polly_opt_simplify_deps = 1 AND value_based = 1,value_based AND polly_opt_simplify_deps AND min,0,1.0,1.0,1.0,11
+2-wise,60,4,min = 1 AND polly_opt_simplify_deps = 1 AND value_based = 1,polly AND NOT pollyoptmaxconstantterm_10,0,0.0,0.0,0.0,11
+3-wise,250,26,min = 1 AND polly_opt_simplify_deps = 1 AND value_based = 1,value_based AND polly_opt_simplify_deps AND min,0,1.0,1.0,1.0,11
+4-wise,952,109,min = 1 AND polly_opt_simplify_deps = 1 AND value_based = 1,value_based AND polly_opt_simplify_deps AND NOT max,0,1.0,1.0,1.0,11
+full,60000,10000,parallel = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,parallel AND polly_opt_simplify_deps,0,1.0,1.0,1.0,12
+random_2,46,6,parallel = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,pollyrtcmaxparameters > 1.5 AND pollydefaulttilesize > 160.0,3,0.1818181818181818,0.125,0.3333333333333333,12
+random_5,115,19,parallel = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,pollyrtcmaxparameters <= 1.5 AND min AND pollyoptmaxcoefficient_10000 AND parallel,2,0.1904761904761905,1.0,0.1052631578947368,12
+random_10,230,36,parallel = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,polly_opt_simplify_deps AND NOT pollyoptmaxconstantterm_10 AND memory_based AND parallel,1,0.5306122448979591,1.0,0.3611111111111111,12
+random_20,460,90,parallel = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,parallel AND NOT pollyoptmaxcoefficient_100 AND pollyrtcmaxparameters <= 1.5 AND polly_opt_simplify_deps,0,0.2857142857142857,1.0,0.1666666666666666,12
+2-wise,55,9,parallel = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,pollydefaulttilesize > 10.0 AND polly_parallel AND polly_opt_simplify_deps AND NOT parallel_force,2,0.8750000000000001,1.0,0.7777777777777778,12
+3-wise,252,41,parallel = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,parallel AND NOT value_based AND polly_opt_simplify_deps,4,0.7575757575757575,1.0,0.6097560975609756,12
+4-wise,945,160,parallel = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,value_based AND parallel AND polly_opt_simplify_deps,0,0.7148594377510041,1.0,0.55625,12
+full,60000,10000,max = 1 AND polly_parallel = 1 AND value_based = 1,value_based AND NOT min AND polly_parallel,0,1.0,1.0,1.0,13
+random_2,46,11,max = 1 AND polly_parallel = 1 AND value_based = 1,value_based AND max AND NOT pollyoptmaxcoefficient_10 AND polly_parallel,0,1.0,1.0,1.0,13
+random_5,115,25,max = 1 AND polly_parallel = 1 AND value_based = 1,max AND value_based AND polly_parallel,0,1.0,1.0,1.0,13
+random_10,230,38,max = 1 AND polly_parallel = 1 AND value_based = 1,polly_parallel AND value_based AND max,0,1.0,1.0,1.0,13
+random_20,460,80,max = 1 AND polly_parallel = 1 AND value_based = 1,max AND NOT memory_based AND polly_parallel,0,1.0,1.0,1.0,13
+2-wise,48,10,max = 1 AND polly_parallel = 1 AND value_based = 1,value_based AND polly_parallel AND max,1,1.0,1.0,1.0,13
+3-wise,256,35,max = 1 AND polly_parallel = 1 AND value_based = 1,value_based AND max AND polly_parallel,0,1.0,1.0,1.0,13
+4-wise,986,167,max = 1 AND polly_parallel = 1 AND value_based = 1,max AND NOT memory_based AND polly_parallel,0,1.0,1.0,1.0,13
+full,60000,7500,max = 1 AND polly_no_tiling = 1 AND value_based = 1,polly_no_tiling AND value_based AND max,0,1.0,1.0,1.0,14
+random_2,46,4,max = 1 AND polly_no_tiling = 1 AND value_based = 1,min AND NOT pollyoptmaxcoefficient_10000 AND NOT pollyoptmaxconstantterm_1,0,0.0,0.0,0.0,14
+random_5,115,16,max = 1 AND polly_no_tiling = 1 AND value_based = 1,polly_no_tiling AND max AND NOT memory_based,0,1.0,1.0,1.0,14
+random_10,230,30,max = 1 AND polly_no_tiling = 1 AND value_based = 1,NOT memory_based AND polly_no_tiling AND max,0,1.0,1.0,1.0,14
+random_20,460,50,max = 1 AND polly_no_tiling = 1 AND value_based = 1,polly_no_tiling AND NOT min AND NOT memory_based,0,1.0,1.0,1.0,14
+2-wise,53,7,max = 1 AND polly_no_tiling = 1 AND value_based = 1,pollyoptmaxcoefficient_1000 AND NOT polly_opt_simplify_deps AND value_based,4,0.4444444444444445,1.0,0.2857142857142857,14
+3-wise,237,29,max = 1 AND polly_no_tiling = 1 AND value_based = 1,NOT memory_based AND polly_no_tiling AND max,0,1.0,1.0,1.0,14
+4-wise,956,124,max = 1 AND polly_no_tiling = 1 AND value_based = 1,NOT memory_based AND polly_no_tiling AND max,0,1.0,1.0,1.0,14
+full,60000,7500,memory_based = 1 AND min = 1 AND none = 1,NOT max AND none AND NOT value_based,0,1.0,1.0,1.0,15
+random_5,115,10,memory_based = 1 AND min = 1 AND none = 1,NOT value_based AND NOT polly AND NOT max,0,1.0,1.0,1.0,15
+random_10,230,25,memory_based = 1 AND min = 1 AND none = 1,NOT value_based AND min AND none,0,1.0,1.0,1.0,15
+random_20,460,49,memory_based = 1 AND min = 1 AND none = 1,NOT max AND NOT value_based AND none,0,1.0,1.0,1.0,15
+2-wise,56,9,memory_based = 1 AND min = 1 AND none = 1,polly_opt_simplify_deps AND NOT value_based AND NOT max,0,0.8888888888888888,0.8888888888888888,0.8888888888888888,15
+3-wise,265,44,memory_based = 1 AND min = 1 AND none = 1,NOT max AND none AND memory_based,0,1.0,1.0,1.0,15
+4-wise,967,125,memory_based = 1 AND min = 1 AND none = 1,NOT value_based AND NOT max AND none,0,1.0,1.0,1.0,15
+full,60000,10000,polly = 1 AND polly_no_tiling = 1 AND polly_parallel = 1,polly AND polly_no_tiling AND polly_parallel,0,1.0,1.0,1.0,16
+random_2,46,9,polly = 1 AND polly_no_tiling = 1 AND polly_parallel = 1,polly_no_tiling AND NOT none AND polly_parallel,0,1.0,1.0,1.0,16
+random_5,115,17,polly = 1 AND polly_no_tiling = 1 AND polly_parallel = 1,polly_no_tiling AND polly AND polly_parallel,0,1.0,1.0,1.0,16
+random_10,230,39,polly = 1 AND polly_no_tiling = 1 AND polly_parallel = 1,polly_no_tiling AND polly AND polly_parallel,0,1.0,1.0,1.0,16
+random_20,460,97,polly = 1 AND polly_no_tiling = 1 AND polly_parallel = 1,polly_no_tiling AND NOT none AND polly_parallel,0,1.0,1.0,1.0,16
+2-wise,48,10,polly = 1 AND polly_no_tiling = 1 AND polly_parallel = 1,polly_no_tiling AND NOT none AND polly_parallel,2,1.0,1.0,1.0,16
+3-wise,250,44,polly = 1 AND polly_no_tiling = 1 AND polly_parallel = 1,polly AND polly_no_tiling AND polly_parallel,0,1.0,1.0,1.0,16
+4-wise,960,165,polly = 1 AND polly_no_tiling = 1 AND polly_parallel = 1,polly_no_tiling AND NOT none AND polly_parallel,0,1.0,1.0,1.0,16
+full,60000,10000,polly_no_tiling = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,polly_no_tiling AND polly_opt_simplify_deps AND polly_parallel,0,1.0,1.0,1.0,17
+random_2,46,11,polly_no_tiling = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,polly_opt_simplify_deps AND polly_no_tiling AND polly_parallel,0,1.0,1.0,1.0,17
+random_5,115,14,polly_no_tiling = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,polly_no_tiling AND polly_opt_simplify_deps AND polly_parallel,0,1.0,1.0,1.0,17
+random_10,230,32,polly_no_tiling = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,polly_no_tiling AND polly_opt_simplify_deps AND polly_parallel,0,1.0,1.0,1.0,17
+random_20,460,83,polly_no_tiling = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,polly_opt_simplify_deps AND polly_no_tiling AND polly_parallel,0,1.0,1.0,1.0,17
+2-wise,49,10,polly_no_tiling = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,polly_opt_simplify_deps AND polly_no_tiling AND polly_parallel,1,1.0,1.0,1.0,17
+3-wise,255,42,polly_no_tiling = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,polly_opt_simplify_deps AND polly_parallel AND polly_no_tiling,0,1.0,1.0,1.0,17
+4-wise,942,163,polly_no_tiling = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,polly_no_tiling AND polly_opt_simplify_deps AND polly_parallel,0,1.0,1.0,1.0,17
+full,60000,7500,min = 1 AND none = 1 AND polly_no_tiling = 1,none AND min AND polly_no_tiling,0,1.0,1.0,1.0,18
+random_2,46,2,min = 1 AND none = 1 AND polly_no_tiling = 1,NOT parallel AND pollydefaulttilesize <= 640.0,0,0.0,0.0,0.0,18
+random_5,115,17,min = 1 AND none = 1 AND polly_no_tiling = 1,NOT max AND none AND polly_no_tiling,0,1.0,1.0,1.0,18
+random_10,230,31,min = 1 AND none = 1 AND polly_no_tiling = 1,none AND polly_no_tiling AND min,0,1.0,1.0,1.0,18
+random_20,460,69,min = 1 AND none = 1 AND polly_no_tiling = 1,none AND polly_no_tiling AND min,0,1.0,1.0,1.0,18
+2-wise,54,5,min = 1 AND none = 1 AND polly_no_tiling = 1,NOT polly_opt_simplify_deps AND NOT polly_no_tiling AND NOT pollyoptmaxcoefficient_100,0,0.0,0.0,0.0,18
+3-wise,250,30,min = 1 AND none = 1 AND polly_no_tiling = 1,polly_no_tiling AND NOT max AND none,0,1.0,1.0,1.0,18
+4-wise,956,116,min = 1 AND none = 1 AND polly_no_tiling = 1,NOT max AND polly_no_tiling AND NOT polly,0,1.0,1.0,1.0,18
+full,60000,10000,none = 1 AND polly_parallel = 1 AND value_based = 1,NOT polly AND NOT memory_based AND polly_parallel,0,1.0,1.0,1.0,19
+random_2,46,11,none = 1 AND polly_parallel = 1 AND value_based = 1,value_based AND polly_parallel AND NOT polly,0,1.0,1.0,1.0,19
+random_5,115,20,none = 1 AND polly_parallel = 1 AND value_based = 1,value_based AND NOT polly AND polly_parallel,0,1.0,1.0,1.0,19
+random_10,230,40,none = 1 AND polly_parallel = 1 AND value_based = 1,polly_parallel AND value_based AND NOT polly,0,1.0,1.0,1.0,19
+random_20,460,84,none = 1 AND polly_parallel = 1 AND value_based = 1,NOT polly AND value_based AND polly_parallel,0,1.0,1.0,1.0,19
+2-wise,57,13,none = 1 AND polly_parallel = 1 AND value_based = 1,value_based AND polly_parallel AND none,0,1.0,1.0,1.0,19
+3-wise,245,50,none = 1 AND polly_parallel = 1 AND value_based = 1,NOT polly AND value_based AND polly_parallel,0,1.0,1.0,1.0,19
+4-wise,966,178,none = 1 AND polly_parallel = 1 AND value_based = 1,none AND value_based AND polly_parallel,0,1.0,1.0,1.0,19
+full,60000,10000,parallel_force = 1 AND polly_no_tiling = 1 AND polly_parallel = 1,parallel_force AND polly_no_tiling,0,1.0,1.0,1.0,1
+random_2,46,5,parallel_force = 1 AND polly_no_tiling = 1 AND polly_parallel = 1,polly_parallel AND polly_no_tiling AND parallel_force,2,1.0,1.0,1.0,1
+random_5,115,23,parallel_force = 1 AND polly_no_tiling = 1 AND polly_parallel = 1,parallel_force AND polly_no_tiling,0,1.0,1.0,1.0,1
+random_10,230,40,parallel_force = 1 AND polly_no_tiling = 1 AND polly_parallel = 1,parallel_force AND polly_no_tiling,0,1.0,1.0,1.0,1
+random_20,460,69,parallel_force = 1 AND polly_no_tiling = 1 AND polly_parallel = 1,parallel_force AND polly_no_tiling,0,1.0,1.0,1.0,1
+2-wise,56,8,parallel_force = 1 AND polly_no_tiling = 1 AND polly_parallel = 1,parallel_force AND polly_no_tiling,2,1.0,1.0,1.0,1
+3-wise,261,44,parallel_force = 1 AND polly_no_tiling = 1 AND polly_parallel = 1,parallel_force AND polly_no_tiling,0,1.0,1.0,1.0,1
+4-wise,978,159,parallel_force = 1 AND polly_no_tiling = 1 AND polly_parallel = 1,parallel_force AND polly_no_tiling,0,1.0,1.0,1.0,1
+full,60000,7500,memory_based = 1 AND min = 1 AND polly_opt_simplify_deps = 1,min AND memory_based AND polly_opt_simplify_deps,0,1.0,1.0,1.0,20
+random_2,46,7,memory_based = 1 AND min = 1 AND polly_opt_simplify_deps = 1,pollydefaulttilesize > 40.0 AND NOT min AND pollyoptmaxconstantterm_1 AND NOT parallel_force,0,0.0,0.0,0.0,20
+random_5,115,16,memory_based = 1 AND min = 1 AND polly_opt_simplify_deps = 1,polly_opt_simplify_deps AND pollyoptmaxconstantterm_10000 AND pollyrtcmaxparameters <= 12.0 AND NOT value_based,2,0.4,1.0,0.25,20
+random_10,230,31,memory_based = 1 AND min = 1 AND polly_opt_simplify_deps = 1,pollyoptmaxcoefficient_10 AND NOT parallel_force,4,0.1333333333333333,0.1379310344827586,0.1290322580645161,20
+random_20,460,60,memory_based = 1 AND min = 1 AND polly_opt_simplify_deps = 1,memory_based AND polly_opt_simplify_deps AND pollyrtcmaxparameters > 1.5 AND NOT max,0,0.9285714285714286,1.0,0.8666666666666667,20
+2-wise,51,3,memory_based = 1 AND min = 1 AND polly_opt_simplify_deps = 1,pollyoptmaxcoefficient_10000 AND max AND pollyrtcmaxparameters > 1.5 AND pollydefaulttilesize <= 130.0,0,0.0,0.0,0.0,20
+3-wise,256,33,memory_based = 1 AND min = 1 AND polly_opt_simplify_deps = 1,NOT value_based AND NOT parallel AND NOT max AND polly_opt_simplify_deps,1,0.8,1.0,0.6666666666666666,20
+4-wise,957,137,memory_based = 1 AND min = 1 AND polly_opt_simplify_deps = 1,polly_opt_simplify_deps AND memory_based AND NOT max,0,1.0,1.0,1.0,20
+full,60000,7500,memory_based = 1 AND min = 1 AND polly_opt_simplify_deps = 1,min AND memory_based AND polly_opt_simplify_deps,0,1.0,1.0,1.0,21
+random_2,46,7,memory_based = 1 AND min = 1 AND polly_opt_simplify_deps = 1,NOT pollyoptmaxcoefficient_10000 AND pollydefaulttilesize <= 160.0 AND NOT min AND pollyoptmaxconstantterm_1000,0,0.0,0.0,0.0,21
+random_5,115,14,memory_based = 1 AND min = 1 AND polly_opt_simplify_deps = 1,NOT min AND pollydefaulttilesize <= 640.0 AND pollyrtcmaxparameters <= 12.0 AND pollyrtcmaxparameters > 1.5,0,0.0,0.0,0.0,21
+random_10,230,32,memory_based = 1 AND min = 1 AND polly_opt_simplify_deps = 1,value_based AND parallel_force AND NOT pollyoptmaxcoefficient_10,0,0.0,0.0,0.0,21
+random_20,460,56,memory_based = 1 AND min = 1 AND polly_opt_simplify_deps = 1,NOT value_based AND NOT max AND polly_opt_simplify_deps,0,1.0,1.0,1.0,21
+2-wise,55,10,memory_based = 1 AND min = 1 AND polly_opt_simplify_deps = 1,polly_opt_simplify_deps AND memory_based AND min,1,1.0,1.0,1.0,21
+3-wise,252,33,memory_based = 1 AND min = 1 AND polly_opt_simplify_deps = 1,pollydefaulttilesize > 640.0 AND NOT polly_no_tiling,0,0.0,0.0,0.0,21
+4-wise,949,112,memory_based = 1 AND min = 1 AND polly_opt_simplify_deps = 1,NOT value_based AND min AND polly_opt_simplify_deps,0,1.0,1.0,1.0,21
+full,60000,10000,min = 1 AND none = 1 AND polly_parallel = 1,none AND NOT max AND polly_parallel,0,1.0,1.0,1.0,22
+random_2,46,8,min = 1 AND none = 1 AND polly_parallel = 1,polly AND pollyoptmaxcoefficient_100 AND pollydefaulttilesize > 10.0 AND pollyrtcmaxparameters > 3.0,0,0.0,0.0,0.0,22
+random_5,115,18,min = 1 AND none = 1 AND polly_parallel = 1,NOT none AND NOT polly_opt_simplify_deps AND pollyrtcmaxparameters <= 1.5 AND pollydefaulttilesize <= 160.0,0,0.0,0.0,0.0,22
+random_10,230,33,min = 1 AND none = 1 AND polly_parallel = 1,NOT polly AND NOT max AND polly_parallel,0,1.0,1.0,1.0,22
+random_20,460,76,min = 1 AND none = 1 AND polly_parallel = 1,none AND min AND polly_parallel,0,1.0,1.0,1.0,22
+2-wise,57,7,min = 1 AND none = 1 AND polly_parallel = 1,polly_opt_simplify_deps AND pollyoptmaxconstantterm_1000 AND polly AND pollyrtcmaxparameters > 9.0,0,0.0,0.0,0.0,22
+3-wise,258,36,min = 1 AND none = 1 AND polly_parallel = 1,NOT max AND NOT polly AND polly_parallel,0,1.0,1.0,1.0,22
+4-wise,960,160,min = 1 AND none = 1 AND polly_parallel = 1,none AND NOT max AND polly_parallel,0,1.0,1.0,1.0,22
+full,60000,10000,max = 1 AND none = 1 AND polly_parallel = 1,NOT min AND NOT polly AND polly_parallel,0,1.0,1.0,1.0,23
+random_2,46,6,max = 1 AND none = 1 AND polly_parallel = 1,NOT pollyoptmaxcoefficient_1000 AND NOT pollyoptmaxconstantterm_10000 AND polly_no_tiling,1,0.2399999999999999,0.1578947368421052,0.5,23
+random_5,115,16,max = 1 AND none = 1 AND polly_parallel = 1,NOT pollyoptmaxcoefficient_100 AND pollyoptmaxconstantterm_10000 AND NOT polly_opt_simplify_deps,1,0.0833333333333333,0.125,0.0625,23
+random_10,230,27,max = 1 AND none = 1 AND polly_parallel = 1,pollyrtcmaxparameters > 6.0 AND NOT polly_opt_simplify_deps,3,0.1463414634146341,0.109090909090909,0.2222222222222222,23
+random_20,460,74,max = 1 AND none = 1 AND polly_parallel = 1,memory_based AND NOT pollyoptmaxconstantterm_10000,3,0.1940298507462686,0.134020618556701,0.3513513513513513,23
+2-wise,56,9,max = 1 AND none = 1 AND polly_parallel = 1,pollyoptmaxcoefficient_10 AND pollyrtcmaxparameters > 1.5 AND pollydefaulttilesize <= 640.0 AND memory_based,0,0.0,0.0,0.0,23
+3-wise,254,40,max = 1 AND none = 1 AND polly_parallel = 1,NOT pollyoptmaxconstantterm_10000 AND NOT memory_based AND NOT polly,1,0.3191489361702128,0.2777777777777778,0.375,23
+4-wise,979,149,max = 1 AND none = 1 AND polly_parallel = 1,pollydefaulttilesize > 10.0,0,0.2537960954446854,0.1513583441138421,0.785234899328859,23
+full,60000,10000,memory_based = 1 AND min = 1 AND polly_parallel = 1,min AND memory_based AND polly_parallel,0,1.0,1.0,1.0,24
+random_2,46,6,memory_based = 1 AND min = 1 AND polly_parallel = 1,NOT max AND NOT value_based AND polly_parallel,0,1.0,1.0,1.0,24
+random_5,115,24,memory_based = 1 AND min = 1 AND polly_parallel = 1,memory_based AND polly_parallel AND min,0,1.0,1.0,1.0,24
+random_10,230,42,memory_based = 1 AND min = 1 AND polly_parallel = 1,NOT value_based AND NOT max AND polly_parallel,0,1.0,1.0,1.0,24
+random_20,460,74,memory_based = 1 AND min = 1 AND polly_parallel = 1,NOT value_based AND NOT max AND polly_parallel,0,1.0,1.0,1.0,24
+2-wise,51,8,memory_based = 1 AND min = 1 AND polly_parallel = 1,NOT max AND NOT value_based AND pollydefaulttilesize <= 640.0,2,1.0,1.0,1.0,24
+3-wise,256,48,memory_based = 1 AND min = 1 AND polly_parallel = 1,min AND NOT value_based AND polly_parallel,0,1.0,1.0,1.0,24
+4-wise,955,156,memory_based = 1 AND min = 1 AND polly_parallel = 1,NOT value_based AND NOT max AND polly_parallel,0,1.0,1.0,1.0,24
+full,60000,7500,none = 1 AND polly_no_tiling = 1 AND polly_opt_simplify_deps = 1,polly_opt_simplify_deps AND polly_no_tiling AND none,0,1.0,1.0,1.0,25
+random_2,46,5,none = 1 AND polly_no_tiling = 1 AND polly_opt_simplify_deps = 1,none AND polly_opt_simplify_deps AND polly_no_tiling,0,1.0,1.0,1.0,25
+random_5,115,17,none = 1 AND polly_no_tiling = 1 AND polly_opt_simplify_deps = 1,polly_no_tiling AND none AND polly_opt_simplify_deps,1,1.0,1.0,1.0,25
+random_10,230,21,none = 1 AND polly_no_tiling = 1 AND polly_opt_simplify_deps = 1,none AND polly_opt_simplify_deps AND polly_no_tiling,0,1.0,1.0,1.0,25
+random_20,460,69,none = 1 AND polly_no_tiling = 1 AND polly_opt_simplify_deps = 1,polly_opt_simplify_deps AND NOT polly AND polly_no_tiling,0,1.0,1.0,1.0,25
+2-wise,56,12,none = 1 AND polly_no_tiling = 1 AND polly_opt_simplify_deps = 1,none AND polly_opt_simplify_deps AND polly_no_tiling,0,1.0,1.0,1.0,25
+3-wise,260,39,none = 1 AND polly_no_tiling = 1 AND polly_opt_simplify_deps = 1,NOT polly AND polly_no_tiling AND polly_opt_simplify_deps,0,1.0,1.0,1.0,25
+4-wise,944,113,none = 1 AND polly_no_tiling = 1 AND polly_opt_simplify_deps = 1,polly_opt_simplify_deps AND NOT polly AND polly_no_tiling,0,1.0,1.0,1.0,25
+full,60000,7500,max = 1 AND polly = 1 AND polly_opt_simplify_deps = 1,NOT none AND polly_opt_simplify_deps AND NOT min,0,1.0,1.0,1.0,26
+random_2,46,8,max = 1 AND polly = 1 AND polly_opt_simplify_deps = 1,polly_opt_simplify_deps AND NOT min AND none AND pollyrtcmaxparameters > 1.5,0,0.0,0.0,0.0,26
+random_5,115,17,max = 1 AND polly = 1 AND polly_opt_simplify_deps = 1,NOT none AND pollydefaulttilesize <= 10.0 AND pollyrtcmaxparameters <= 12.0 AND polly_opt_simplify_deps,3,0.3846153846153846,0.5555555555555556,0.2941176470588235,26
+random_10,230,32,max = 1 AND polly = 1 AND polly_opt_simplify_deps = 1,NOT pollyoptmaxcoefficient_10 AND pollyrtcmaxparameters <= 12.0 AND polly_opt_simplify_deps,2,0.3302752293577982,0.2337662337662337,0.5625,26
+random_20,460,56,max = 1 AND polly = 1 AND polly_opt_simplify_deps = 1,pollydefaulttilesize > 160.0 AND polly AND polly_opt_simplify_deps AND memory_based,3,0.345679012345679,0.56,0.25,26
+2-wise,55,7,max = 1 AND polly = 1 AND polly_opt_simplify_deps = 1,NOT value_based AND NOT pollyoptmaxcoefficient_1,1,0.2285714285714286,0.1428571428571428,0.5714285714285714,26
+3-wise,262,25,max = 1 AND polly = 1 AND polly_opt_simplify_deps = 1,parallel_force AND pollyoptmaxconstantterm_100,2,0.1428571428571428,0.1764705882352941,0.12,26
+4-wise,959,117,max = 1 AND polly = 1 AND polly_opt_simplify_deps = 1,polly_opt_simplify_deps AND NOT none AND NOT min,0,1.0,1.0,1.0,26
+full,60000,7500,min = 1 AND polly_no_tiling = 1 AND value_based = 1,polly_no_tiling AND NOT memory_based AND min,0,1.0,1.0,1.0,27
+random_2,46,6,min = 1 AND polly_no_tiling = 1 AND value_based = 1,NOT max AND pollyoptmaxconstantterm_10 AND NOT pollyoptmaxcoefficient_100 AND value_based,1,0.6666666666666666,1.0,0.5,27
+random_5,115,13,min = 1 AND polly_no_tiling = 1 AND value_based = 1,NOT memory_based AND NOT max AND polly_no_tiling,0,1.0,1.0,1.0,27
+random_10,230,36,min = 1 AND polly_no_tiling = 1 AND value_based = 1,NOT max AND polly_no_tiling AND NOT memory_based,0,1.0,1.0,1.0,27
+random_20,460,60,min = 1 AND polly_no_tiling = 1 AND value_based = 1,NOT memory_based AND polly_no_tiling AND min,0,1.0,1.0,1.0,27
+2-wise,56,4,min = 1 AND polly_no_tiling = 1 AND value_based = 1,NOT max AND polly_no_tiling AND NOT memory_based,0,1.0,1.0,1.0,27
+3-wise,253,28,min = 1 AND polly_no_tiling = 1 AND value_based = 1,min AND value_based AND polly_no_tiling,0,1.0,1.0,1.0,27
+4-wise,960,123,min = 1 AND polly_no_tiling = 1 AND value_based = 1,NOT max AND polly_no_tiling AND value_based,0,1.0,1.0,1.0,27
+full,60000,7500,memory_based = 1 AND min = 1 AND polly_no_tiling = 1,polly_no_tiling AND NOT value_based AND NOT max,0,1.0,1.0,1.0,28
+random_2,46,4,memory_based = 1 AND min = 1 AND polly_no_tiling = 1,memory_based AND pollyoptmaxcoefficient_1000 AND polly_parallel AND pollydefaulttilesize <= 160.0,3,0.6666666666666666,1.0,0.5,28
+random_5,115,22,memory_based = 1 AND min = 1 AND polly_no_tiling = 1,min AND NOT value_based AND polly_no_tiling,0,1.0,1.0,1.0,28
+random_10,230,27,memory_based = 1 AND min = 1 AND polly_no_tiling = 1,polly_no_tiling AND NOT value_based AND min,0,1.0,1.0,1.0,28
+random_20,460,58,memory_based = 1 AND min = 1 AND polly_no_tiling = 1,min AND memory_based AND polly_no_tiling,0,1.0,1.0,1.0,28
+2-wise,55,14,memory_based = 1 AND min = 1 AND polly_no_tiling = 1,polly_no_tiling AND min AND NOT value_based,0,1.0,1.0,1.0,28
+3-wise,257,28,memory_based = 1 AND min = 1 AND polly_no_tiling = 1,polly_no_tiling AND memory_based AND NOT max,0,1.0,1.0,1.0,28
+4-wise,947,120,memory_based = 1 AND min = 1 AND polly_no_tiling = 1,NOT max AND polly_no_tiling AND memory_based,0,1.0,1.0,1.0,28
+full,60000,7500,max = 1 AND memory_based = 1 AND polly_opt_simplify_deps = 1,NOT value_based AND max AND polly_opt_simplify_deps,0,1.0,1.0,1.0,29
+random_2,46,6,max = 1 AND memory_based = 1 AND polly_opt_simplify_deps = 1,NOT pollyoptmaxconstantterm_10000 AND max AND polly_opt_simplify_deps AND memory_based,1,0.8,1.0,0.6666666666666666,29
+random_5,115,10,max = 1 AND memory_based = 1 AND polly_opt_simplify_deps = 1,memory_based AND NOT min AND polly_opt_simplify_deps,0,1.0,1.0,1.0,29
+random_10,230,20,max = 1 AND memory_based = 1 AND polly_opt_simplify_deps = 1,polly_opt_simplify_deps AND max AND memory_based,0,1.0,1.0,1.0,29
+random_20,460,68,max = 1 AND memory_based = 1 AND polly_opt_simplify_deps = 1,max AND NOT value_based AND polly_opt_simplify_deps,0,1.0,1.0,1.0,29
+2-wise,54,7,max = 1 AND memory_based = 1 AND polly_opt_simplify_deps = 1,polly_opt_simplify_deps AND memory_based AND max,1,1.0,1.0,1.0,29
+3-wise,250,30,max = 1 AND memory_based = 1 AND polly_opt_simplify_deps = 1,memory_based AND polly_opt_simplify_deps AND NOT min,0,1.0,1.0,1.0,29
+4-wise,950,105,max = 1 AND memory_based = 1 AND polly_opt_simplify_deps = 1,memory_based AND NOT min AND polly_opt_simplify_deps,0,1.0,1.0,1.0,29
+full,60000,7500,max = 1 AND polly = 1 AND value_based = 1,max AND NOT memory_based AND NOT none,0,1.0,1.0,1.0,2
+random_2,46,6,max = 1 AND polly = 1 AND value_based = 1,pollyrtcmaxparameters > 3.0 AND NOT pollyoptmaxconstantterm_10000 AND pollyrtcmaxparameters > 6.0 AND NOT min,2,0.3636363636363636,0.4,0.3333333333333333,2
+random_5,115,15,max = 1 AND polly = 1 AND value_based = 1,NOT pollyoptmaxconstantterm_1 AND NOT pollyoptmaxcoefficient_1,2,0.2222222222222221,0.1363636363636363,0.6,2
+random_10,230,35,max = 1 AND polly = 1 AND value_based = 1,polly AND pollyrtcmaxparameters <= 12.0 AND NOT min,1,0.6666666666666666,0.5245901639344263,0.9142857142857144,2
+random_20,460,50,max = 1 AND polly = 1 AND value_based = 1,max AND pollydefaulttilesize <= 40.0,2,0.2985074626865672,0.238095238095238,0.4,2
+2-wise,55,5,max = 1 AND polly = 1 AND value_based = 1,NOT pollyoptmaxcoefficient_100 AND NOT parallel_force AND pollyoptmaxconstantterm_1 AND NOT pollyoptmaxcoefficient_10,3,0.2222222222222222,0.25,0.2,2
+3-wise,256,29,max = 1 AND polly = 1 AND value_based = 1,max AND NOT parallel AND pollydefaulttilesize <= 640.0 AND NOT none,2,0.3870967741935484,0.3636363636363636,0.4137931034482758,2
+4-wise,966,123,max = 1 AND polly = 1 AND value_based = 1,polly AND max AND NOT memory_based,0,1.0,1.0,1.0,2
+full,60000,10000,none = 1 AND polly_no_tiling = 1 AND polly_parallel = 1,polly_no_tiling AND NOT polly AND polly_parallel,0,1.0,1.0,1.0,30
+random_2,46,8,none = 1 AND polly_no_tiling = 1 AND polly_parallel = 1,pollyoptmaxconstantterm_1000 AND pollyrtcmaxparameters <= 3.0 AND value_based AND NOT parallel_force,0,0.0,0.0,0.0,30
+random_5,115,19,none = 1 AND polly_no_tiling = 1 AND polly_parallel = 1,pollyoptmaxcoefficient_1 AND NOT pollyoptmaxconstantterm_10,4,0.0526315789473684,0.0526315789473684,0.0526315789473684,30
+random_10,230,38,none = 1 AND polly_no_tiling = 1 AND polly_parallel = 1,NOT polly_parallel AND none AND NOT value_based,0,0.0,0.0,0.0,30
+random_20,460,85,none = 1 AND polly_no_tiling = 1 AND polly_parallel = 1,none AND polly_no_tiling AND polly_parallel,0,1.0,1.0,1.0,30
+2-wise,54,4,none = 1 AND polly_no_tiling = 1 AND polly_parallel = 1,NOT pollyoptmaxcoefficient_10 AND polly_opt_simplify_deps AND NOT parallel AND NOT pollyoptmaxconstantterm_100,4,0.1111111111111111,0.0714285714285714,0.25,30
+3-wise,247,36,none = 1 AND polly_no_tiling = 1 AND polly_parallel = 1,NOT pollyoptmaxconstantterm_10000 AND pollydefaulttilesize > 10.0,3,0.2256410256410256,0.1383647798742138,0.6111111111111112,30
+4-wise,953,162,none = 1 AND polly_no_tiling = 1 AND polly_parallel = 1,pollyrtcmaxparameters > 1.5 AND NOT polly AND polly_parallel AND polly_no_tiling,0,0.8671328671328672,1.0,0.7654320987654321,30
+full,60000,7500,none = 1 AND polly_no_tiling = 1 AND value_based = 1,none AND value_based AND polly_no_tiling,0,1.0,1.0,1.0,31
+random_2,46,2,none = 1 AND polly_no_tiling = 1 AND value_based = 1,NOT parallel,3,0.1379310344827586,0.074074074074074,1.0,31
+random_5,115,19,none = 1 AND polly_no_tiling = 1 AND value_based = 1,NOT parallel_force AND NOT pollyoptmaxcoefficient_10000,4,0.1333333333333333,0.0892857142857142,0.2631578947368421,31
+random_10,230,20,none = 1 AND polly_no_tiling = 1 AND value_based = 1,NOT pollyoptmaxcoefficient_10000 AND NOT min AND pollydefaulttilesize <= 160.0,0,0.1234567901234567,0.081967213114754,0.25,31
+random_20,460,52,none = 1 AND polly_no_tiling = 1 AND value_based = 1,NOT pollyoptmaxcoefficient_1,4,0.1809744779582366,0.1029023746701846,0.75,31
+2-wise,54,7,none = 1 AND polly_no_tiling = 1 AND value_based = 1,NOT parallel AND NOT pollyoptmaxcoefficient_10000,4,0.1621621621621621,0.1,0.4285714285714285,31
+3-wise,254,25,none = 1 AND polly_no_tiling = 1 AND value_based = 1,pollydefaulttilesize <= 640.0,3,0.1842105263157895,0.1034482758620689,0.84,31
+4-wise,956,115,none = 1 AND polly_no_tiling = 1 AND value_based = 1,polly_no_tiling AND NOT pollyoptmaxconstantterm_1000 AND NOT pollyoptmaxconstantterm_1 AND none,4,0.5519999999999999,0.5111111111111111,0.6,31
+full,60000,7500,max = 1 AND memory_based = 1 AND polly_opt_simplify_deps = 1,NOT min AND memory_based AND polly_opt_simplify_deps,0,1.0,1.0,1.0,32
+random_2,46,6,max = 1 AND memory_based = 1 AND polly_opt_simplify_deps = 1,polly_opt_simplify_deps AND pollyrtcmaxparameters <= 6.0 AND pollyoptmaxconstantterm_10000 AND NOT pollyoptmaxcoefficient_10000,0,0.0,0.0,0.0,32
+random_5,115,8,max = 1 AND memory_based = 1 AND polly_opt_simplify_deps = 1,NOT pollyoptmaxcoefficient_1 AND pollyoptmaxconstantterm_1,3,0.0769230769230769,0.0555555555555555,0.125,32
+random_10,230,39,max = 1 AND memory_based = 1 AND polly_opt_simplify_deps = 1,parallel AND NOT pollyoptmaxcoefficient_10,4,0.1981981981981982,0.1527777777777778,0.282051282051282,32
+random_20,460,64,max = 1 AND memory_based = 1 AND polly_opt_simplify_deps = 1,NOT polly_no_tiling AND NOT pollyoptmaxcoefficient_1,3,0.2023346303501945,0.1347150259067357,0.40625,32
+2-wise,54,5,max = 1 AND memory_based = 1 AND polly_opt_simplify_deps = 1,pollyoptmaxcoefficient_10 AND parallel_force AND pollyrtcmaxparameters <= 12.0 AND pollyrtcmaxparameters <= 6.0,0,0.0,0.0,0.0,32
+3-wise,254,35,max = 1 AND memory_based = 1 AND polly_opt_simplify_deps = 1,parallel_force AND pollydefaulttilesize > 40.0,4,0.238095238095238,0.2040816326530612,0.2857142857142857,32
+4-wise,958,120,max = 1 AND memory_based = 1 AND polly_opt_simplify_deps = 1,memory_based,2,0.3980099502487562,0.2484472049689441,1.0,32
+full,60000,10000,polly_no_tiling = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,polly_no_tiling AND polly_opt_simplify_deps AND polly_parallel,0,1.0,1.0,1.0,33
+random_2,46,11,polly_no_tiling = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,NOT min AND NOT parallel,4,0.2068965517241379,0.1666666666666666,0.2727272727272727,33
+random_5,115,21,polly_no_tiling = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,pollydefaulttilesize > 40.0 AND polly_parallel AND polly_opt_simplify_deps AND polly_no_tiling,1,0.7647058823529412,1.0,0.6190476190476191,33
+random_10,230,36,polly_no_tiling = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,polly_opt_simplify_deps AND polly_no_tiling AND polly_parallel,0,1.0,1.0,1.0,33
+random_20,460,75,polly_no_tiling = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,polly_no_tiling AND polly_opt_simplify_deps AND polly_parallel,0,1.0,1.0,1.0,33
+2-wise,56,7,polly_no_tiling = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,NOT polly_no_tiling AND pollydefaulttilesize > 160.0 AND NOT min AND pollyrtcmaxparameters <= 12.0,0,0.0,0.0,0.0,33
+3-wise,251,42,polly_no_tiling = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,polly_opt_simplify_deps AND polly_no_tiling AND polly_parallel,0,1.0,1.0,1.0,33
+4-wise,960,169,polly_no_tiling = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,polly_no_tiling AND polly_opt_simplify_deps AND polly_parallel,0,1.0,1.0,1.0,33
+full,60000,10000,min = 1 AND polly = 1 AND polly_parallel = 1,NOT max AND polly AND polly_parallel,0,1.0,1.0,1.0,34
+random_2,46,9,min = 1 AND polly = 1 AND polly_parallel = 1,NOT parallel_force AND min AND parallel AND NOT pollyoptmaxconstantterm_10,0,0.6153846153846153,1.0,0.4444444444444444,34
+random_5,115,17,min = 1 AND polly = 1 AND polly_parallel = 1,polly AND NOT max AND polly_parallel,0,1.0,1.0,1.0,34
+random_10,230,38,min = 1 AND polly = 1 AND polly_parallel = 1,polly AND NOT max AND polly_parallel,0,1.0,1.0,1.0,34
+random_20,460,76,min = 1 AND polly = 1 AND polly_parallel = 1,NOT max AND polly AND polly_parallel,0,1.0,1.0,1.0,34
+2-wise,52,10,min = 1 AND polly = 1 AND polly_parallel = 1,polly AND min AND NOT pollyoptmaxconstantterm_10 AND polly_parallel,1,0.9473684210526316,1.0,0.9,34
+3-wise,262,41,min = 1 AND polly = 1 AND polly_parallel = 1,polly_parallel AND NOT max AND polly,0,1.0,1.0,1.0,34
+4-wise,943,170,min = 1 AND polly = 1 AND polly_parallel = 1,NOT max AND NOT none AND polly_parallel,0,1.0,1.0,1.0,34
+full,60000,7500,none = 1 AND polly_no_tiling = 1 AND value_based = 1,value_based AND NOT polly AND polly_no_tiling,0,1.0,1.0,1.0,35
+random_2,46,5,none = 1 AND polly_no_tiling = 1 AND value_based = 1,pollyoptmaxcoefficient_1 AND pollydefaulttilesize <= 640.0 AND NOT polly AND pollydefaulttilesize > 10.0,1,0.5714285714285715,1.0,0.4,35
+random_5,115,16,none = 1 AND polly_no_tiling = 1 AND value_based = 1,value_based AND NOT polly AND polly_no_tiling,0,1.0,1.0,1.0,35
+random_10,230,21,none = 1 AND polly_no_tiling = 1 AND value_based = 1,polly_no_tiling AND NOT memory_based AND NOT polly,1,1.0,1.0,1.0,35
+random_20,460,60,none = 1 AND polly_no_tiling = 1 AND value_based = 1,none AND polly_no_tiling AND NOT memory_based,0,1.0,1.0,1.0,35
+2-wise,55,6,none = 1 AND polly_no_tiling = 1 AND value_based = 1,value_based AND pollyrtcmaxparameters > 12.0 AND pollydefaulttilesize > 160.0 AND none,2,0.5,1.0,0.3333333333333333,35
+3-wise,256,35,none = 1 AND polly_no_tiling = 1 AND value_based = 1,none AND value_based AND polly_no_tiling,0,1.0,1.0,1.0,35
+4-wise,965,108,none = 1 AND polly_no_tiling = 1 AND value_based = 1,polly_no_tiling AND none AND NOT memory_based,0,1.0,1.0,1.0,35
+full,60000,10000,none = 1 AND polly_no_tiling = 1 AND polly_parallel = 1,polly_no_tiling AND NOT polly AND polly_parallel,0,1.0,1.0,1.0,36
+random_2,46,6,none = 1 AND polly_no_tiling = 1 AND polly_parallel = 1,polly_no_tiling AND memory_based AND pollydefaulttilesize <= 640.0 AND NOT pollyoptmaxcoefficient_10000,0,0.0,0.0,0.0,36
+random_5,115,18,none = 1 AND polly_no_tiling = 1 AND polly_parallel = 1,polly_parallel AND none AND polly_no_tiling,0,1.0,1.0,1.0,36
+random_10,230,29,none = 1 AND polly_no_tiling = 1 AND polly_parallel = 1,polly_parallel AND none AND polly_no_tiling,1,1.0,1.0,1.0,36
+random_20,460,73,none = 1 AND polly_no_tiling = 1 AND polly_parallel = 1,polly_no_tiling AND NOT polly AND polly_parallel,0,1.0,1.0,1.0,36
+2-wise,62,13,none = 1 AND polly_no_tiling = 1 AND polly_parallel = 1,none AND pollyrtcmaxparameters > 6.0 AND polly_parallel AND polly_no_tiling,3,0.7000000000000001,1.0,0.5384615384615384,36
+3-wise,262,40,none = 1 AND polly_no_tiling = 1 AND polly_parallel = 1,polly_no_tiling AND NOT polly AND polly_parallel,0,1.0,1.0,1.0,36
+4-wise,970,169,none = 1 AND polly_no_tiling = 1 AND polly_parallel = 1,polly_no_tiling AND none AND polly_parallel,0,1.0,1.0,1.0,36
+full,60000,10000,none = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,polly_opt_simplify_deps AND none AND polly_parallel,0,1.0,1.0,1.0,37
+random_2,46,9,none = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,pollyoptmaxconstantterm_1 AND polly_opt_simplify_deps AND NOT pollyoptmaxcoefficient_10000,3,0.5,1.0,0.3333333333333333,37
+random_5,115,17,none = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,NOT polly AND polly_opt_simplify_deps AND polly_parallel,0,1.0,1.0,1.0,37
+random_10,230,38,none = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,polly_opt_simplify_deps AND none AND polly_parallel,0,1.0,1.0,1.0,37
+random_20,460,69,none = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,polly_opt_simplify_deps AND none AND polly_parallel,0,1.0,1.0,1.0,37
+2-wise,57,7,none = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,NOT memory_based AND polly_parallel AND pollyoptmaxcoefficient_10 AND NOT parallel,4,0.6,1.0,0.4285714285714285,37
+3-wise,255,50,none = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,none AND polly_opt_simplify_deps AND polly_parallel,0,1.0,1.0,1.0,37
+4-wise,957,165,none = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,NOT polly AND polly_opt_simplify_deps AND polly_parallel,0,1.0,1.0,1.0,37
+full,60000,7500,max = 1 AND memory_based = 1 AND none = 1,max AND memory_based AND none,0,1.0,1.0,1.0,38
+random_2,46,8,max = 1 AND memory_based = 1 AND none = 1,NOT parallel AND pollyoptmaxcoefficient_10000 AND value_based,0,0.0,0.0,0.0,38
+random_5,115,13,max = 1 AND memory_based = 1 AND none = 1,NOT pollyoptmaxconstantterm_1000 AND NOT pollyoptmaxcoefficient_100,4,0.1463414634146341,0.0869565217391304,0.4615384615384615,38
+random_10,230,39,max = 1 AND memory_based = 1 AND none = 1,NOT pollyoptmaxcoefficient_1 AND memory_based AND NOT pollyoptmaxconstantterm_10 AND pollydefaulttilesize <= 640.0,3,0.4077669902912621,0.328125,0.5384615384615384,38
+random_20,460,56,max = 1 AND memory_based = 1 AND none = 1,pollydefaulttilesize <= 160.0,3,0.2118380062305296,0.1283018867924528,0.6071428571428571,38
+2-wise,51,6,max = 1 AND memory_based = 1 AND none = 1,NOT pollyoptmaxconstantterm_100 AND NOT min AND pollydefaulttilesize <= 640.0 AND pollyrtcmaxparameters > 1.5,3,0.2352941176470588,0.1818181818181818,0.3333333333333333,38
+3-wise,257,34,max = 1 AND memory_based = 1 AND none = 1,pollydefaulttilesize > 40.0,3,0.1847826086956522,0.1133333333333333,0.5,38
+4-wise,945,124,max = 1 AND memory_based = 1 AND none = 1,pollyrtcmaxparameters > 1.5,0,0.2355605889014722,0.1370223978919631,0.8387096774193549,38
+full,60000,10000,none = 1 AND polly_parallel = 1 AND value_based = 1,value_based AND none AND polly_parallel,0,1.0,1.0,1.0,39
+random_2,46,7,none = 1 AND polly_parallel = 1 AND value_based = 1,value_based AND NOT pollyoptmaxconstantterm_10 AND NOT polly AND polly_parallel,3,1.0,1.0,1.0,39
+random_5,115,24,none = 1 AND polly_parallel = 1 AND value_based = 1,NOT polly AND value_based AND polly_parallel,0,1.0,1.0,1.0,39
+random_10,230,45,none = 1 AND polly_parallel = 1 AND value_based = 1,value_based AND none AND polly_parallel,0,1.0,1.0,1.0,39
+random_20,460,61,none = 1 AND polly_parallel = 1 AND value_based = 1,NOT memory_based AND polly_parallel AND none,0,1.0,1.0,1.0,39
+2-wise,52,7,none = 1 AND polly_parallel = 1 AND value_based = 1,NOT polly_parallel AND NOT pollyoptmaxconstantterm_1000 AND NOT pollyoptmaxconstantterm_100 AND NOT pollyoptmaxcoefficient_1000,0,0.0,0.0,0.0,39
+3-wise,248,42,none = 1 AND polly_parallel = 1 AND value_based = 1,value_based AND NOT polly AND polly_parallel,0,1.0,1.0,1.0,39
+4-wise,953,165,none = 1 AND polly_parallel = 1 AND value_based = 1,none AND NOT memory_based AND polly_parallel,0,1.0,1.0,1.0,39
+full,60000,10000,max = 1 AND polly_no_tiling = 1 AND polly_parallel = 1,polly_no_tiling AND max AND polly_parallel,0,1.0,1.0,1.0,3
+random_2,46,6,max = 1 AND polly_no_tiling = 1 AND polly_parallel = 1,NOT pollyoptmaxconstantterm_1000 AND pollydefaulttilesize > 10.0 AND NOT pollyoptmaxcoefficient_10 AND polly_opt_simplify_deps,0,0.0,0.0,0.0,3
+random_5,115,14,max = 1 AND polly_no_tiling = 1 AND polly_parallel = 1,max AND value_based AND NOT pollyoptmaxcoefficient_10000,4,0.3684210526315789,0.2916666666666667,0.5,3
+random_10,230,27,max = 1 AND polly_no_tiling = 1 AND polly_parallel = 1,memory_based AND NOT parallel AND polly_opt_simplify_deps AND polly_parallel,3,0.2641509433962264,0.2692307692307692,0.2592592592592592,3
+random_20,460,88,max = 1 AND polly_no_tiling = 1 AND polly_parallel = 1,pollydefaulttilesize > 10.0,2,0.3049327354260089,0.1899441340782122,0.7727272727272727,3
+2-wise,55,10,max = 1 AND polly_no_tiling = 1 AND polly_parallel = 1,NOT polly_no_tiling AND NOT pollyoptmaxconstantterm_10000,0,0.0,0.0,0.0,3
+3-wise,257,46,max = 1 AND polly_no_tiling = 1 AND polly_parallel = 1,NOT parallel_force AND pollydefaulttilesize > 40.0 AND pollyrtcmaxparameters <= 12.0,2,0.1574803149606299,0.1234567901234567,0.217391304347826,3
+4-wise,950,170,max = 1 AND polly_no_tiling = 1 AND polly_parallel = 1,NOT pollyoptmaxconstantterm_1000,1,0.2902881536819637,0.1773142112125163,0.8,3
+full,60000,10000,min = 1 AND parallel = 1 AND polly_parallel = 1,parallel AND min,0,1.0,1.0,1.0,40
+random_2,46,10,min = 1 AND parallel = 1 AND polly_parallel = 1,pollydefaulttilesize > 640.0 AND NOT pollyoptmaxcoefficient_10 AND min,3,0.5714285714285715,1.0,0.4,40
+random_5,115,16,min = 1 AND parallel = 1 AND polly_parallel = 1,NOT parallel_force AND NOT max AND polly_parallel,1,1.0,1.0,1.0,40
+random_10,230,29,min = 1 AND parallel = 1 AND polly_parallel = 1,parallel AND NOT max,0,1.0,1.0,1.0,40
+random_20,460,61,min = 1 AND parallel = 1 AND polly_parallel = 1,parallel AND min,0,1.0,1.0,1.0,40
+2-wise,54,7,min = 1 AND parallel = 1 AND polly_parallel = 1,parallel AND min,1,1.0,1.0,1.0,40
+3-wise,252,41,min = 1 AND parallel = 1 AND polly_parallel = 1,parallel AND min,0,1.0,1.0,1.0,40
+4-wise,952,162,min = 1 AND parallel = 1 AND polly_parallel = 1,parallel AND NOT max,0,1.0,1.0,1.0,40
+full,60000,10000,max = 1 AND polly_no_tiling = 1 AND polly_parallel = 1,max AND polly_no_tiling AND polly_parallel,0,1.0,1.0,1.0,41
+random_2,46,6,max = 1 AND polly_no_tiling = 1 AND polly_parallel = 1,parallel_force AND NOT min AND polly_no_tiling,0,1.0,1.0,1.0,41
+random_5,115,19,max = 1 AND polly_no_tiling = 1 AND polly_parallel = 1,NOT min AND polly_no_tiling AND polly_parallel,0,1.0,1.0,1.0,41
+random_10,230,32,max = 1 AND polly_no_tiling = 1 AND polly_parallel = 1,polly_no_tiling AND NOT min AND polly_parallel,0,1.0,1.0,1.0,41
+random_20,460,82,max = 1 AND polly_no_tiling = 1 AND polly_parallel = 1,max AND polly_no_tiling AND polly_parallel,0,1.0,1.0,1.0,41
+2-wise,55,9,max = 1 AND polly_no_tiling = 1 AND polly_parallel = 1,pollyrtcmaxparameters > 12.0 AND max AND polly_parallel AND NOT pollyoptmaxconstantterm_100,2,0.6153846153846153,1.0,0.4444444444444444,41
+3-wise,248,41,max = 1 AND polly_no_tiling = 1 AND polly_parallel = 1,polly_no_tiling AND NOT min AND polly_parallel,0,1.0,1.0,1.0,41
+4-wise,948,158,max = 1 AND polly_no_tiling = 1 AND polly_parallel = 1,polly_no_tiling AND max AND polly_parallel,0,1.0,1.0,1.0,41
+full,60000,7500,min = 1 AND none = 1 AND polly_opt_simplify_deps = 1,none AND polly_opt_simplify_deps AND NOT max,0,1.0,1.0,1.0,42
+random_2,46,5,min = 1 AND none = 1 AND polly_opt_simplify_deps = 1,NOT pollyoptmaxconstantterm_10000 AND NOT pollyoptmaxcoefficient_10,3,0.1818181818181818,0.1071428571428571,0.6,42
+random_5,115,11,min = 1 AND none = 1 AND polly_opt_simplify_deps = 1,none AND min AND NOT pollyoptmaxcoefficient_10000 AND polly_opt_simplify_deps,3,0.9,1.0,0.8181818181818182,42
+random_10,230,29,min = 1 AND none = 1 AND polly_opt_simplify_deps = 1,NOT pollyoptmaxcoefficient_10,3,0.1938325991189427,0.1111111111111111,0.7586206896551724,42
+random_20,460,58,min = 1 AND none = 1 AND polly_opt_simplify_deps = 1,NOT polly AND polly_opt_simplify_deps AND min,0,1.0,1.0,1.0,42
+2-wise,51,7,min = 1 AND none = 1 AND polly_opt_simplify_deps = 1,pollydefaulttilesize > 640.0 AND pollyoptmaxcoefficient_1000,0,0.0,0.0,0.0,42
+3-wise,249,43,min = 1 AND none = 1 AND polly_opt_simplify_deps = 1,pollydefaulttilesize <= 640.0 AND none AND polly_opt_simplify_deps AND NOT max,0,0.868421052631579,1.0,0.7674418604651163,42
+4-wise,969,130,min = 1 AND none = 1 AND polly_opt_simplify_deps = 1,NOT polly AND NOT max AND polly_opt_simplify_deps,0,1.0,1.0,1.0,42
+full,60000,10000,max = 1 AND polly_no_tiling = 1 AND polly_parallel = 1,polly_no_tiling AND NOT min AND polly_parallel,0,1.0,1.0,1.0,43
+random_2,46,6,max = 1 AND polly_no_tiling = 1 AND polly_parallel = 1,pollydefaulttilesize > 10.0 AND NOT pollyoptmaxconstantterm_100 AND NOT none AND pollyoptmaxconstantterm_1000,4,0.2,0.25,0.1666666666666666,43
+random_5,115,16,max = 1 AND polly_no_tiling = 1 AND polly_parallel = 1,NOT pollyoptmaxcoefficient_100 AND pollyrtcmaxparameters > 12.0 AND NOT none AND NOT pollyoptmaxconstantterm_10,4,0.0869565217391304,0.1428571428571428,0.0625,43
+random_10,230,29,max = 1 AND polly_no_tiling = 1 AND polly_parallel = 1,NOT pollyoptmaxcoefficient_1000 AND pollyoptmaxcoefficient_10 AND NOT pollyoptmaxconstantterm_10000,0,0.1791044776119402,0.1578947368421052,0.2068965517241379,43
+random_20,460,77,max = 1 AND polly_no_tiling = 1 AND polly_parallel = 1,pollyoptmaxcoefficient_10 AND NOT none AND NOT polly_opt_simplify_deps,3,0.196078431372549,0.4,0.1298701298701298,43
+2-wise,52,8,max = 1 AND polly_no_tiling = 1 AND polly_parallel = 1,NOT pollyoptmaxcoefficient_1 AND parallel_force AND NOT pollyoptmaxconstantterm_10000 AND NOT polly_opt_simplify_deps,1,0.3999999999999999,0.4285714285714285,0.375,43
+3-wise,265,54,max = 1 AND polly_no_tiling = 1 AND polly_parallel = 1,max AND polly_no_tiling,3,0.8571428571428571,0.75,1.0,43
+4-wise,954,166,max = 1 AND polly_no_tiling = 1 AND polly_parallel = 1,polly_no_tiling AND max AND polly_parallel,0,1.0,1.0,1.0,43
+full,60000,10000,polly_no_tiling = 1 AND polly_parallel = 1 AND value_based = 1,NOT memory_based AND polly_no_tiling AND polly_parallel,0,1.0,1.0,1.0,44
+random_2,46,9,polly_no_tiling = 1 AND polly_parallel = 1 AND value_based = 1,NOT pollyoptmaxconstantterm_10 AND NOT pollyoptmaxconstantterm_1000,4,0.2777777777777778,0.1851851851851851,0.5555555555555556,44
+random_5,115,18,polly_no_tiling = 1 AND polly_parallel = 1 AND value_based = 1,pollyoptmaxconstantterm_10000 AND pollyrtcmaxparameters <= 12.0,4,0.0526315789473684,0.05,0.0555555555555555,44
+random_10,230,33,polly_no_tiling = 1 AND polly_parallel = 1 AND value_based = 1,NOT polly AND polly_no_tiling AND pollydefaulttilesize > 640.0 AND NOT min,0,0.0,0.0,0.0,44
+random_20,460,77,polly_no_tiling = 1 AND polly_parallel = 1 AND value_based = 1,value_based AND polly_no_tiling AND pollydefaulttilesize <= 160.0 AND polly_parallel,0,0.7058823529411764,1.0,0.5454545454545454,44
+2-wise,55,8,polly_no_tiling = 1 AND polly_parallel = 1 AND value_based = 1,NOT pollyoptmaxcoefficient_100 AND pollyoptmaxconstantterm_1000 AND NOT pollyoptmaxcoefficient_10 AND pollydefaulttilesize <= 136.0,0,0.0,0.0,0.0,44
+3-wise,250,45,polly_no_tiling = 1 AND polly_parallel = 1 AND value_based = 1,NOT polly_no_tiling AND pollydefaulttilesize <= 640.0 AND pollyoptmaxcoefficient_10 AND pollydefaulttilesize > 10.0,0,0.0,0.0,0.0,44
+4-wise,956,170,polly_no_tiling = 1 AND polly_parallel = 1 AND value_based = 1,polly_no_tiling AND value_based AND polly_parallel,0,1.0,1.0,1.0,44
+full,60000,7500,min = 1 AND polly = 1 AND polly_no_tiling = 1,polly_no_tiling AND min AND NOT none,0,1.0,1.0,1.0,45
+random_2,46,5,min = 1 AND polly = 1 AND polly_no_tiling = 1,pollyrtcmaxparameters > 6.0 AND pollydefaulttilesize > 10.0,4,0.1,0.0666666666666666,0.2,45
+random_5,115,13,min = 1 AND polly = 1 AND polly_no_tiling = 1,pollyoptmaxconstantterm_10000,2,0.0526315789473684,0.04,0.0769230769230769,45
+random_10,230,35,min = 1 AND polly = 1 AND polly_no_tiling = 1,NOT min AND pollyrtcmaxparameters <= 3.0 AND NOT pollyoptmaxcoefficient_100 AND pollydefaulttilesize <= 640.0,0,0.0,0.0,0.0,45
+random_20,460,61,min = 1 AND polly = 1 AND polly_no_tiling = 1,polly_no_tiling AND polly AND parallel AND NOT max,0,0.5301204819277109,1.0,0.360655737704918,45
+2-wise,53,5,min = 1 AND polly = 1 AND polly_no_tiling = 1,pollyrtcmaxparameters > 3.0 AND pollydefaulttilesize <= 640.0 AND NOT polly_no_tiling,0,0.0,0.0,0.0,45
+3-wise,244,28,min = 1 AND polly = 1 AND polly_no_tiling = 1,pollyrtcmaxparameters > 3.0,4,0.188235294117647,0.1126760563380281,0.5714285714285714,45
+4-wise,969,136,min = 1 AND polly = 1 AND polly_no_tiling = 1,min AND polly_no_tiling AND NOT parallel AND polly,0,0.817391304347826,1.0,0.6911764705882353,45
+full,60000,10000,max = 1 AND polly_parallel = 1 AND value_based = 1,max AND value_based AND polly_parallel,0,1.0,1.0,1.0,46
+random_2,46,7,max = 1 AND polly_parallel = 1 AND value_based = 1,NOT memory_based AND polly_parallel AND NOT min,0,1.0,1.0,1.0,46
+random_5,115,10,max = 1 AND polly_parallel = 1 AND value_based = 1,NOT parallel_force AND max AND parallel AND NOT memory_based,2,0.8235294117647058,1.0,0.7,46
+random_10,230,39,max = 1 AND polly_parallel = 1 AND value_based = 1,max AND NOT memory_based AND polly_parallel,0,1.0,1.0,1.0,46
+random_20,460,81,max = 1 AND polly_parallel = 1 AND value_based = 1,max AND NOT memory_based AND polly_parallel,0,1.0,1.0,1.0,46
+2-wise,57,11,max = 1 AND polly_parallel = 1 AND value_based = 1,pollyrtcmaxparameters <= 3.0 AND NOT value_based AND NOT none AND pollydefaulttilesize <= 640.0,0,0.0,0.0,0.0,46
+3-wise,253,44,max = 1 AND polly_parallel = 1 AND value_based = 1,NOT min AND value_based AND polly_parallel,0,1.0,1.0,1.0,46
+4-wise,959,141,max = 1 AND polly_parallel = 1 AND value_based = 1,NOT memory_based AND max AND polly_parallel,0,1.0,1.0,1.0,46
+full,60000,7500,max = 1 AND polly_opt_simplify_deps = 1 AND value_based = 1,value_based AND polly_opt_simplify_deps AND max,0,1.0,1.0,1.0,47
+random_2,46,9,max = 1 AND polly_opt_simplify_deps = 1 AND value_based = 1,max AND polly_opt_simplify_deps AND NOT memory_based,2,1.0,1.0,1.0,47
+random_5,115,17,max = 1 AND polly_opt_simplify_deps = 1 AND value_based = 1,value_based AND max AND polly_opt_simplify_deps,0,1.0,1.0,1.0,47
+random_10,230,29,max = 1 AND polly_opt_simplify_deps = 1 AND value_based = 1,value_based AND polly_opt_simplify_deps AND NOT min,0,1.0,1.0,1.0,47
+random_20,460,47,max = 1 AND polly_opt_simplify_deps = 1 AND value_based = 1,polly_opt_simplify_deps AND NOT min AND value_based,0,1.0,1.0,1.0,47
+2-wise,53,9,max = 1 AND polly_opt_simplify_deps = 1 AND value_based = 1,pollyoptmaxconstantterm_10 AND pollyrtcmaxparameters <= 12.0 AND NOT pollyoptmaxcoefficient_10 AND NOT min,2,0.6153846153846153,1.0,0.4444444444444444,47
+3-wise,255,30,max = 1 AND polly_opt_simplify_deps = 1 AND value_based = 1,polly_opt_simplify_deps AND NOT memory_based AND max,0,1.0,1.0,1.0,47
+4-wise,944,126,max = 1 AND polly_opt_simplify_deps = 1 AND value_based = 1,value_based AND polly_opt_simplify_deps AND max,0,1.0,1.0,1.0,47
+full,60000,10000,min = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,min AND polly_opt_simplify_deps AND polly_parallel,0,1.0,1.0,1.0,48
+random_2,46,13,min = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,polly_opt_simplify_deps AND polly_parallel AND min,0,1.0,1.0,1.0,48
+random_5,115,24,min = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,polly_opt_simplify_deps AND NOT max AND polly_parallel,0,1.0,1.0,1.0,48
+random_10,230,34,min = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,polly_parallel AND min AND polly_opt_simplify_deps,0,1.0,1.0,1.0,48
+random_20,460,86,min = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,polly_opt_simplify_deps AND NOT max AND polly_parallel,0,1.0,1.0,1.0,48
+2-wise,56,7,min = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,polly_opt_simplify_deps AND NOT max AND polly_parallel,0,1.0,1.0,1.0,48
+3-wise,256,51,min = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,min AND polly_opt_simplify_deps AND polly_parallel,0,1.0,1.0,1.0,48
+4-wise,961,154,min = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,min AND polly_opt_simplify_deps AND polly_parallel,0,1.0,1.0,1.0,48
+full,60000,10000,memory_based = 1 AND min = 1 AND polly_parallel = 1,memory_based AND min AND polly_parallel,0,1.0,1.0,1.0,49
+random_2,46,7,memory_based = 1 AND min = 1 AND polly_parallel = 1,memory_based AND pollyoptmaxconstantterm_100 AND max AND NOT pollyoptmaxcoefficient_10,0,0.0,0.0,0.0,49
+random_5,115,19,memory_based = 1 AND min = 1 AND polly_parallel = 1,min AND NOT value_based AND polly_parallel,0,1.0,1.0,1.0,49
+random_10,230,42,memory_based = 1 AND min = 1 AND polly_parallel = 1,min AND memory_based AND polly_parallel,0,1.0,1.0,1.0,49
+random_20,460,75,memory_based = 1 AND min = 1 AND polly_parallel = 1,NOT max AND NOT value_based AND polly_parallel,0,1.0,1.0,1.0,49
+2-wise,53,9,memory_based = 1 AND min = 1 AND polly_parallel = 1,min AND memory_based AND pollyrtcmaxparameters <= 12.0,1,1.0,1.0,1.0,49
+3-wise,253,42,memory_based = 1 AND min = 1 AND polly_parallel = 1,min AND memory_based AND polly_parallel,0,1.0,1.0,1.0,49
+4-wise,961,151,memory_based = 1 AND min = 1 AND polly_parallel = 1,min AND memory_based AND polly_parallel,0,1.0,1.0,1.0,49
+full,60000,10000,parallel_force = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,parallel_force AND polly_opt_simplify_deps,0,1.0,1.0,1.0,4
+random_2,46,7,parallel_force = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,parallel_force AND NOT pollyoptmaxcoefficient_10 AND polly_opt_simplify_deps,1,1.0,1.0,1.0,4
+random_5,115,11,parallel_force = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,polly_opt_simplify_deps AND parallel_force,0,1.0,1.0,1.0,4
+random_10,230,47,parallel_force = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,parallel_force AND polly_opt_simplify_deps,0,1.0,1.0,1.0,4
+random_20,460,71,parallel_force = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,parallel_force AND polly_opt_simplify_deps,0,1.0,1.0,1.0,4
+2-wise,55,8,parallel_force = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,parallel_force AND polly_opt_simplify_deps,2,1.0,1.0,1.0,4
+3-wise,246,37,parallel_force = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,parallel_force AND polly_opt_simplify_deps,0,1.0,1.0,1.0,4
+4-wise,945,169,parallel_force = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,parallel_force AND polly_opt_simplify_deps,0,1.0,1.0,1.0,4
+full,60000,10000,none = 1 AND parallel_force = 1 AND polly_parallel = 1,parallel_force AND none,0,1.0,1.0,1.0,50
+random_2,46,5,none = 1 AND parallel_force = 1 AND polly_parallel = 1,parallel_force AND NOT polly,3,1.0,1.0,1.0,50
+random_5,115,26,none = 1 AND parallel_force = 1 AND polly_parallel = 1,parallel_force AND NOT polly,0,1.0,1.0,1.0,50
+random_10,230,37,none = 1 AND parallel_force = 1 AND polly_parallel = 1,parallel_force AND NOT polly,0,1.0,1.0,1.0,50
+random_20,460,66,none = 1 AND parallel_force = 1 AND polly_parallel = 1,parallel_force AND NOT polly,0,1.0,1.0,1.0,50
+2-wise,57,8,none = 1 AND parallel_force = 1 AND polly_parallel = 1,parallel_force AND NOT polly,2,1.0,1.0,1.0,50
+3-wise,244,46,none = 1 AND parallel_force = 1 AND polly_parallel = 1,parallel_force AND NOT polly,0,1.0,1.0,1.0,50
+4-wise,943,172,none = 1 AND parallel_force = 1 AND polly_parallel = 1,parallel_force AND NOT polly,0,1.0,1.0,1.0,50
+full,60000,10000,parallel = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,parallel AND polly_opt_simplify_deps,0,1.0,1.0,1.0,51
+random_2,46,8,parallel = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,parallel AND polly_opt_simplify_deps,3,1.0,1.0,1.0,51
+random_5,115,18,parallel = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,parallel AND polly_opt_simplify_deps,0,1.0,1.0,1.0,51
+random_10,230,34,parallel = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,parallel AND polly_opt_simplify_deps,0,1.0,1.0,1.0,51
+random_20,460,69,parallel = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,parallel AND polly_opt_simplify_deps,0,1.0,1.0,1.0,51
+2-wise,56,12,parallel = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,parallel AND polly_opt_simplify_deps,0,1.0,1.0,1.0,51
+3-wise,261,43,parallel = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,parallel AND polly_opt_simplify_deps,0,1.0,1.0,1.0,51
+4-wise,954,163,parallel = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,parallel AND polly_opt_simplify_deps,0,1.0,1.0,1.0,51
+full,60000,7500,max = 1 AND polly = 1 AND polly_opt_simplify_deps = 1,polly_opt_simplify_deps AND NOT none AND NOT min,0,1.0,1.0,1.0,52
+random_2,46,5,max = 1 AND polly = 1 AND polly_opt_simplify_deps = 1,NOT value_based AND pollyrtcmaxparameters > 3.0 AND NOT pollyoptmaxcoefficient_10000 AND polly,0,0.0,0.0,0.0,52
+random_5,115,16,max = 1 AND polly = 1 AND polly_opt_simplify_deps = 1,max AND polly_opt_simplify_deps AND polly,0,1.0,1.0,1.0,52
+random_10,230,27,max = 1 AND polly = 1 AND polly_opt_simplify_deps = 1,polly_opt_simplify_deps AND max AND NOT none,0,1.0,1.0,1.0,52
+random_20,460,65,max = 1 AND polly = 1 AND polly_opt_simplify_deps = 1,max AND NOT none AND polly_opt_simplify_deps,0,1.0,1.0,1.0,52
+2-wise,57,10,max = 1 AND polly = 1 AND polly_opt_simplify_deps = 1,NOT min AND NOT pollyoptmaxconstantterm_100 AND NOT none AND polly_opt_simplify_deps,3,0.9473684210526316,1.0,0.9,52
+3-wise,264,25,max = 1 AND polly = 1 AND polly_opt_simplify_deps = 1,NOT none AND NOT min AND polly_opt_simplify_deps,0,1.0,1.0,1.0,52
+4-wise,963,128,max = 1 AND polly = 1 AND polly_opt_simplify_deps = 1,polly AND max AND polly_opt_simplify_deps,0,1.0,1.0,1.0,52
+full,60000,7500,max = 1 AND none = 1 AND polly_opt_simplify_deps = 1,polly_opt_simplify_deps AND none AND max,0,1.0,1.0,1.0,53
+random_2,46,8,max = 1 AND none = 1 AND polly_opt_simplify_deps = 1,polly_opt_simplify_deps AND NOT polly AND NOT min,0,1.0,1.0,1.0,53
+random_5,115,13,max = 1 AND none = 1 AND polly_opt_simplify_deps = 1,polly_opt_simplify_deps AND none AND NOT min,0,1.0,1.0,1.0,53
+random_10,230,24,max = 1 AND none = 1 AND polly_opt_simplify_deps = 1,none AND max AND polly_opt_simplify_deps,0,1.0,1.0,1.0,53
+random_20,460,63,max = 1 AND none = 1 AND polly_opt_simplify_deps = 1,none AND polly_opt_simplify_deps AND NOT min,0,1.0,1.0,1.0,53
+2-wise,53,5,max = 1 AND none = 1 AND polly_opt_simplify_deps = 1,NOT parallel AND min,0,0.0,0.0,0.0,53
+3-wise,252,29,max = 1 AND none = 1 AND polly_opt_simplify_deps = 1,polly_opt_simplify_deps AND NOT polly AND max,0,1.0,1.0,1.0,53
+4-wise,945,109,max = 1 AND none = 1 AND polly_opt_simplify_deps = 1,polly_opt_simplify_deps AND NOT polly AND max,0,1.0,1.0,1.0,53
+full,60000,7500,memory_based = 1 AND min = 1 AND polly_no_tiling = 1,NOT value_based AND polly_no_tiling AND NOT max,0,1.0,1.0,1.0,54
+random_2,46,4,memory_based = 1 AND min = 1 AND polly_no_tiling = 1,NOT polly_opt_simplify_deps AND NOT pollyoptmaxconstantterm_100,3,0.0869565217391304,0.0526315789473684,0.25,54
+random_5,115,26,memory_based = 1 AND min = 1 AND polly_no_tiling = 1,NOT polly_parallel AND NOT pollyoptmaxcoefficient_100 AND NOT value_based AND NOT max,1,0.5405405405405405,0.9090909090909092,0.3846153846153846,54
+random_10,230,39,memory_based = 1 AND min = 1 AND polly_no_tiling = 1,NOT pollyoptmaxcoefficient_10 AND pollyrtcmaxparameters <= 6.0 AND memory_based AND pollydefaulttilesize > 10.0,2,0.2558139534883721,0.2340425531914893,0.282051282051282,54
+random_20,460,56,memory_based = 1 AND min = 1 AND polly_no_tiling = 1,none,3,0.2198581560283687,0.1371681415929203,0.5535714285714286,54
+2-wise,58,5,memory_based = 1 AND min = 1 AND polly_no_tiling = 1,pollydefaulttilesize <= 640.0 AND pollydefaulttilesize <= 40.0 AND NOT pollyoptmaxcoefficient_10000,2,0.0869565217391304,0.0555555555555555,0.2,54
+3-wise,246,31,memory_based = 1 AND min = 1 AND polly_no_tiling = 1,NOT polly_parallel AND NOT pollyoptmaxcoefficient_10000 AND pollyoptmaxcoefficient_1,4,0.1632653061224489,0.2222222222222222,0.1290322580645161,54
+4-wise,959,118,memory_based = 1 AND min = 1 AND polly_no_tiling = 1,min AND memory_based AND pollydefaulttilesize > 10.0 AND polly_no_tiling,0,0.9023255813953488,1.0,0.8220338983050848,54
+full,60000,10000,min = 1 AND none = 1 AND polly_parallel = 1,min AND none AND polly_parallel,0,1.0,1.0,1.0,55
+random_2,46,7,min = 1 AND none = 1 AND polly_parallel = 1,NOT max AND NOT polly AND polly_parallel,1,1.0,1.0,1.0,55
+random_5,115,18,min = 1 AND none = 1 AND polly_parallel = 1,NOT max AND NOT polly AND polly_parallel,0,1.0,1.0,1.0,55
+random_10,230,33,min = 1 AND none = 1 AND polly_parallel = 1,NOT max AND NOT polly AND polly_parallel,0,1.0,1.0,1.0,55
+random_20,460,69,min = 1 AND none = 1 AND polly_parallel = 1,NOT max AND none AND polly_parallel,0,1.0,1.0,1.0,55
+2-wise,57,16,min = 1 AND none = 1 AND polly_parallel = 1,none AND min AND polly_parallel,1,1.0,1.0,1.0,55
+3-wise,256,47,min = 1 AND none = 1 AND polly_parallel = 1,NOT max AND NOT polly AND polly_parallel,0,1.0,1.0,1.0,55
+4-wise,981,158,min = 1 AND none = 1 AND polly_parallel = 1,NOT polly AND min AND polly_parallel,0,1.0,1.0,1.0,55
+full,60000,10000,max = 1 AND parallel = 1 AND polly_parallel = 1,parallel AND max,0,1.0,1.0,1.0,56
+random_2,46,9,max = 1 AND parallel = 1 AND polly_parallel = 1,NOT memory_based AND pollydefaulttilesize > 10.0,4,0.1428571428571428,0.1052631578947368,0.2222222222222222,56
+random_5,115,13,max = 1 AND parallel = 1 AND polly_parallel = 1,pollydefaulttilesize > 40.0 AND NOT pollyoptmaxconstantterm_10000,4,0.1176470588235294,0.0727272727272727,0.3076923076923077,56
+random_10,230,33,max = 1 AND parallel = 1 AND polly_parallel = 1,none AND NOT pollyoptmaxcoefficient_10 AND parallel AND NOT min,1,0.625,1.0,0.4545454545454545,56
+random_20,460,82,max = 1 AND parallel = 1 AND polly_parallel = 1,parallel AND NOT min,0,1.0,1.0,1.0,56
+2-wise,57,10,max = 1 AND parallel = 1 AND polly_parallel = 1,parallel AND pollyrtcmaxparameters <= 12.0 AND NOT min,1,0.9473684210526316,1.0,0.9,56
+3-wise,260,38,max = 1 AND parallel = 1 AND polly_parallel = 1,NOT pollyoptmaxcoefficient_10000 AND parallel_force AND pollydefaulttilesize <= 40.0,0,0.0,0.0,0.0,56
+4-wise,973,170,max = 1 AND parallel = 1 AND polly_parallel = 1,parallel AND max,0,1.0,1.0,1.0,56
+full,60000,7500,max = 1 AND polly = 1 AND value_based = 1,value_based AND max AND NOT none,0,1.0,1.0,1.0,57
+random_2,46,5,max = 1 AND polly = 1 AND value_based = 1,pollydefaulttilesize > 40.0 AND pollydefaulttilesize > 160.0 AND NOT pollyoptmaxconstantterm_10000,1,0.1818181818181818,0.1176470588235294,0.4,57
+random_5,115,17,max = 1 AND polly = 1 AND value_based = 1,pollyrtcmaxparameters <= 1.5 AND NOT pollyoptmaxconstantterm_10000 AND polly AND NOT pollyoptmaxcoefficient_10,4,0.2666666666666666,0.3076923076923077,0.2352941176470588,57
+random_10,230,23,max = 1 AND polly = 1 AND value_based = 1,polly_no_tiling AND pollydefaulttilesize <= 160.0 AND NOT pollyoptmaxconstantterm_10000 AND pollyrtcmaxparameters <= 12.0,0,0.2388059701492537,0.1818181818181818,0.3478260869565217,57
+random_20,460,60,max = 1 AND polly = 1 AND value_based = 1,NOT pollyoptmaxcoefficient_1 AND NOT pollyoptmaxcoefficient_10,2,0.226865671641791,0.1381818181818181,0.6333333333333333,57
+2-wise,54,6,max = 1 AND polly = 1 AND value_based = 1,pollyoptmaxconstantterm_100 AND NOT parallel,4,0.1333333333333333,0.1111111111111111,0.1666666666666666,57
+3-wise,263,32,max = 1 AND polly = 1 AND value_based = 1,NOT pollyoptmaxconstantterm_1000 AND pollyrtcmaxparameters > 3.0 AND NOT polly_no_tiling,1,0.1041666666666666,0.078125,0.15625,57
+4-wise,960,117,max = 1 AND polly = 1 AND value_based = 1,NOT pollyoptmaxcoefficient_10 AND pollyrtcmaxparameters > 1.5 AND polly,3,0.3205741626794258,0.2225913621262458,0.5726495726495726,57
+full,60000,10000,memory_based = 1 AND parallel_force = 1 AND polly_parallel = 1,parallel_force AND memory_based,0,1.0,1.0,1.0,58
+random_2,46,5,memory_based = 1 AND parallel_force = 1 AND polly_parallel = 1,parallel_force AND NOT value_based,0,1.0,1.0,1.0,58
+random_5,115,28,memory_based = 1 AND parallel_force = 1 AND polly_parallel = 1,parallel_force AND memory_based,0,1.0,1.0,1.0,58
+random_10,230,45,memory_based = 1 AND parallel_force = 1 AND polly_parallel = 1,parallel_force AND NOT value_based,0,1.0,1.0,1.0,58
+random_20,460,69,memory_based = 1 AND parallel_force = 1 AND polly_parallel = 1,parallel_force AND memory_based,0,1.0,1.0,1.0,58
+2-wise,56,10,memory_based = 1 AND parallel_force = 1 AND polly_parallel = 1,parallel_force AND NOT value_based,1,1.0,1.0,1.0,58
+3-wise,255,44,memory_based = 1 AND parallel_force = 1 AND polly_parallel = 1,parallel_force AND NOT value_based,0,1.0,1.0,1.0,58
+4-wise,971,170,memory_based = 1 AND parallel_force = 1 AND polly_parallel = 1,parallel_force AND memory_based,0,1.0,1.0,1.0,58
+full,60000,7500,polly = 1 AND polly_no_tiling = 1 AND polly_opt_simplify_deps = 1,polly_opt_simplify_deps AND polly AND polly_no_tiling,0,1.0,1.0,1.0,59
+random_2,46,10,polly = 1 AND polly_no_tiling = 1 AND polly_opt_simplify_deps = 1,polly_opt_simplify_deps AND polly_no_tiling AND NOT none,3,1.0,1.0,1.0,59
+random_5,115,20,polly = 1 AND polly_no_tiling = 1 AND polly_opt_simplify_deps = 1,NOT polly AND NOT pollyoptmaxcoefficient_1 AND pollydefaulttilesize <= 40.0,0,0.0,0.0,0.0,59
+random_10,230,32,polly = 1 AND polly_no_tiling = 1 AND polly_opt_simplify_deps = 1,polly_no_tiling AND polly_opt_simplify_deps AND polly,0,1.0,1.0,1.0,59
+random_20,460,58,polly = 1 AND polly_no_tiling = 1 AND polly_opt_simplify_deps = 1,polly_opt_simplify_deps AND polly_no_tiling AND polly,0,1.0,1.0,1.0,59
+2-wise,58,3,polly = 1 AND polly_no_tiling = 1 AND polly_opt_simplify_deps = 1,pollyrtcmaxparameters > 1.5 AND pollydefaulttilesize <= 10.0 AND NOT parallel AND none,0,0.0,0.0,0.0,59
+3-wise,256,33,polly = 1 AND polly_no_tiling = 1 AND polly_opt_simplify_deps = 1,NOT none AND polly_opt_simplify_deps AND polly_no_tiling,0,1.0,1.0,1.0,59
+4-wise,976,112,polly = 1 AND polly_no_tiling = 1 AND polly_opt_simplify_deps = 1,polly_no_tiling AND polly AND polly_opt_simplify_deps,0,1.0,1.0,1.0,59
+full,60000,7500,min = 1 AND none = 1 AND polly_no_tiling = 1,NOT polly AND NOT max AND polly_no_tiling,0,1.0,1.0,1.0,5
+random_2,46,5,min = 1 AND none = 1 AND polly_no_tiling = 1,pollydefaulttilesize <= 10.0 AND pollyrtcmaxparameters > 1.5 AND NOT pollyoptmaxconstantterm_1,2,0.2222222222222222,0.25,0.2,5
+random_5,115,13,min = 1 AND none = 1 AND polly_no_tiling = 1,NOT pollyoptmaxcoefficient_100 AND pollyoptmaxconstantterm_10000 AND polly_opt_simplify_deps AND memory_based,4,0.2352941176470588,0.5,0.1538461538461538,5
+random_10,230,19,min = 1 AND none = 1 AND polly_no_tiling = 1,NOT min AND pollydefaulttilesize <= 10.0 AND parallel_force AND pollyoptmaxcoefficient_100,0,0.0,0.0,0.0,5
+random_20,460,67,min = 1 AND none = 1 AND polly_no_tiling = 1,NOT pollyoptmaxconstantterm_1000,3,0.2577777777777778,0.1514360313315927,0.8656716417910447,5
+2-wise,56,10,min = 1 AND none = 1 AND polly_no_tiling = 1,polly_parallel AND pollydefaulttilesize <= 640.0 AND NOT pollyoptmaxcoefficient_10000 AND NOT pollyoptmaxconstantterm_1000,2,0.3703703703703703,0.2941176470588235,0.5,5
+3-wise,257,35,min = 1 AND none = 1 AND polly_no_tiling = 1,NOT pollyoptmaxconstantterm_10000 AND NOT pollyoptmaxcoefficient_1000,3,0.2626262626262626,0.1595092024539877,0.7428571428571429,5
+4-wise,961,123,min = 1 AND none = 1 AND polly_no_tiling = 1,min AND NOT parallel_force,4,0.3698630136986301,0.2571428571428571,0.6585365853658537,5
+full,60000,10000,max = 1 AND memory_based = 1 AND polly_parallel = 1,NOT min AND NOT value_based AND polly_parallel,0,1.0,1.0,1.0,60
+random_2,46,3,max = 1 AND memory_based = 1 AND polly_parallel = 1,NOT pollyoptmaxconstantterm_100 AND polly_opt_simplify_deps AND NOT pollyoptmaxconstantterm_1 AND NOT pollyoptmaxcoefficient_1,0,0.0,0.0,0.0,60
+random_5,115,17,max = 1 AND memory_based = 1 AND polly_parallel = 1,max AND memory_based AND polly_parallel,0,1.0,1.0,1.0,60
+random_10,230,36,max = 1 AND memory_based = 1 AND polly_parallel = 1,NOT value_based AND NOT min AND polly_parallel,0,1.0,1.0,1.0,60
+random_20,460,69,max = 1 AND memory_based = 1 AND polly_parallel = 1,memory_based AND max AND polly_parallel,0,1.0,1.0,1.0,60
+2-wise,52,5,max = 1 AND memory_based = 1 AND polly_parallel = 1,NOT polly_no_tiling AND pollydefaulttilesize > 40.0 AND NOT memory_based,0,0.0,0.0,0.0,60
+3-wise,259,47,max = 1 AND memory_based = 1 AND polly_parallel = 1,memory_based AND polly_parallel AND NOT min,0,1.0,1.0,1.0,60
+4-wise,960,167,max = 1 AND memory_based = 1 AND polly_parallel = 1,NOT value_based AND NOT min AND polly_parallel,0,1.0,1.0,1.0,60
+full,60000,10000,min = 1 AND parallel = 1 AND polly_parallel = 1,parallel AND NOT max,0,1.0,1.0,1.0,61
+random_2,46,4,min = 1 AND parallel = 1 AND polly_parallel = 1,polly_opt_simplify_deps AND NOT parallel AND pollydefaulttilesize <= 640.0,0,0.0,0.0,0.0,61
+random_5,115,24,min = 1 AND parallel = 1 AND polly_parallel = 1,parallel AND NOT max,0,1.0,1.0,1.0,61
+random_10,230,38,min = 1 AND parallel = 1 AND polly_parallel = 1,NOT polly AND pollyrtcmaxparameters > 6.0 AND NOT parallel,0,0.0,0.0,0.0,61
+random_20,460,58,min = 1 AND parallel = 1 AND polly_parallel = 1,parallel AND min,0,1.0,1.0,1.0,61
+2-wise,53,9,min = 1 AND parallel = 1 AND polly_parallel = 1,NOT pollyoptmaxcoefficient_1000 AND pollyrtcmaxparameters > 6.0,3,0.08,0.0625,0.1111111111111111,61
+3-wise,254,41,min = 1 AND parallel = 1 AND polly_parallel = 1,parallel AND pollydefaulttilesize <= 640.0 AND min,0,0.8767123287671234,1.0,0.7804878048780488,61
+4-wise,971,169,min = 1 AND parallel = 1 AND polly_parallel = 1,parallel AND NOT max,0,1.0,1.0,1.0,61
+full,60000,7500,memory_based = 1 AND polly = 1 AND polly_no_tiling = 1,polly_no_tiling AND NOT none AND memory_based,0,1.0,1.0,1.0,62
+random_2,46,8,memory_based = 1 AND polly = 1 AND polly_no_tiling = 1,polly AND polly_no_tiling AND NOT value_based,0,1.0,1.0,1.0,62
+random_5,115,14,memory_based = 1 AND polly = 1 AND polly_no_tiling = 1,polly_no_tiling AND NOT pollyoptmaxconstantterm_1000 AND memory_based AND NOT none,0,0.7272727272727273,1.0,0.5714285714285714,62
+random_10,230,35,memory_based = 1 AND polly = 1 AND polly_no_tiling = 1,memory_based AND polly_no_tiling AND polly,0,1.0,1.0,1.0,62
+random_20,460,65,memory_based = 1 AND polly = 1 AND polly_no_tiling = 1,polly_no_tiling AND NOT value_based AND NOT none,0,1.0,1.0,1.0,62
+2-wise,57,8,memory_based = 1 AND polly = 1 AND polly_no_tiling = 1,NOT polly_no_tiling AND pollydefaulttilesize > 10.0,0,0.0,0.0,0.0,62
+3-wise,249,37,memory_based = 1 AND polly = 1 AND polly_no_tiling = 1,polly_no_tiling AND polly AND NOT value_based,0,1.0,1.0,1.0,62
+4-wise,940,123,memory_based = 1 AND polly = 1 AND polly_no_tiling = 1,polly AND polly_no_tiling AND memory_based,0,1.0,1.0,1.0,62
+full,60000,7500,min = 1 AND polly = 1 AND value_based = 1,min AND polly AND NOT memory_based,0,1.0,1.0,1.0,63
+random_2,46,4,min = 1 AND polly = 1 AND value_based = 1,pollydefaulttilesize > 10.0 AND polly_opt_simplify_deps AND pollyrtcmaxparameters > 1.5 AND pollyrtcmaxparameters <= 6.0,0,0.0,0.0,0.0,63
+random_5,115,12,min = 1 AND polly = 1 AND value_based = 1,value_based AND polly AND NOT max,1,1.0,1.0,1.0,63
+random_10,230,32,min = 1 AND polly = 1 AND value_based = 1,NOT max AND NOT memory_based AND polly,0,1.0,1.0,1.0,63
+random_20,460,61,min = 1 AND polly = 1 AND value_based = 1,NOT memory_based AND NOT none AND min,0,1.0,1.0,1.0,63
+2-wise,57,6,min = 1 AND polly = 1 AND value_based = 1,polly_opt_simplify_deps AND NOT pollyoptmaxcoefficient_100,0,0.0,0.0,0.0,63
+3-wise,256,29,min = 1 AND polly = 1 AND value_based = 1,polly AND value_based AND min,0,1.0,1.0,1.0,63
+4-wise,970,134,min = 1 AND polly = 1 AND value_based = 1,NOT max AND NOT memory_based AND polly,0,1.0,1.0,1.0,63
+full,60000,7500,polly_no_tiling = 1 AND polly_opt_simplify_deps = 1 AND value_based = 1,value_based AND polly_no_tiling AND polly_opt_simplify_deps,0,1.0,1.0,1.0,64
+random_2,46,10,polly_no_tiling = 1 AND polly_opt_simplify_deps = 1 AND value_based = 1,value_based AND pollydefaulttilesize <= 160.0 AND polly,2,0.8235294117647058,1.0,0.7,64
+random_5,115,13,polly_no_tiling = 1 AND polly_opt_simplify_deps = 1 AND value_based = 1,polly_opt_simplify_deps AND value_based AND polly_no_tiling,0,1.0,1.0,1.0,64
+random_10,230,34,polly_no_tiling = 1 AND polly_opt_simplify_deps = 1 AND value_based = 1,polly_no_tiling AND NOT memory_based AND polly_opt_simplify_deps,0,1.0,1.0,1.0,64
+random_20,460,60,polly_no_tiling = 1 AND polly_opt_simplify_deps = 1 AND value_based = 1,polly_opt_simplify_deps AND polly_no_tiling AND NOT memory_based,0,1.0,1.0,1.0,64
+2-wise,57,7,polly_no_tiling = 1 AND polly_opt_simplify_deps = 1 AND value_based = 1,pollyoptmaxconstantterm_10000 AND NOT value_based AND none AND NOT parallel_force,0,0.0,0.0,0.0,64
+3-wise,261,21,polly_no_tiling = 1 AND polly_opt_simplify_deps = 1 AND value_based = 1,value_based AND polly_no_tiling AND polly_opt_simplify_deps,0,1.0,1.0,1.0,64
+4-wise,953,124,polly_no_tiling = 1 AND polly_opt_simplify_deps = 1 AND value_based = 1,polly_no_tiling AND value_based AND polly_opt_simplify_deps,0,1.0,1.0,1.0,64
+full,60000,7500,min = 1 AND polly = 1 AND polly_no_tiling = 1,min AND NOT none AND polly_no_tiling,0,1.0,1.0,1.0,65
+random_2,46,5,min = 1 AND polly = 1 AND polly_no_tiling = 1,NOT min AND pollydefaulttilesize > 640.0 AND NOT parallel_force,0,0.0,0.0,0.0,65
+random_5,115,9,min = 1 AND polly = 1 AND polly_no_tiling = 1,polly_no_tiling AND polly AND min,0,1.0,1.0,1.0,65
+random_10,230,39,min = 1 AND polly = 1 AND polly_no_tiling = 1,polly_no_tiling AND NOT max AND polly,0,1.0,1.0,1.0,65
+random_20,460,52,min = 1 AND polly = 1 AND polly_no_tiling = 1,NOT max AND polly AND polly_no_tiling,0,1.0,1.0,1.0,65
+2-wise,51,8,min = 1 AND polly = 1 AND polly_no_tiling = 1,pollyrtcmaxparameters > 6.0 AND NOT pollyoptmaxcoefficient_1 AND polly_no_tiling AND NOT max,2,0.6666666666666666,1.0,0.5,65
+3-wise,256,26,min = 1 AND polly = 1 AND polly_no_tiling = 1,NOT none AND min AND polly_no_tiling,0,1.0,1.0,1.0,65
+4-wise,970,125,min = 1 AND polly = 1 AND polly_no_tiling = 1,NOT none AND polly_no_tiling AND NOT max,0,1.0,1.0,1.0,65
+full,60000,7500,memory_based = 1 AND none = 1 AND polly_no_tiling = 1,none AND memory_based AND polly_no_tiling,0,1.0,1.0,1.0,66
+random_2,46,4,memory_based = 1 AND none = 1 AND polly_no_tiling = 1,polly_no_tiling AND NOT min AND pollyoptmaxcoefficient_1 AND memory_based,1,0.6666666666666666,1.0,0.5,66
+random_5,115,13,memory_based = 1 AND none = 1 AND polly_no_tiling = 1,NOT value_based AND none AND polly_no_tiling,1,1.0,1.0,1.0,66
+random_10,230,25,memory_based = 1 AND none = 1 AND polly_no_tiling = 1,NOT polly AND polly_no_tiling AND NOT value_based,0,1.0,1.0,1.0,66
+random_20,460,59,memory_based = 1 AND none = 1 AND polly_no_tiling = 1,NOT polly AND polly_no_tiling AND NOT value_based,0,1.0,1.0,1.0,66
+2-wise,52,9,memory_based = 1 AND none = 1 AND polly_no_tiling = 1,NOT pollyoptmaxcoefficient_1 AND NOT pollyoptmaxconstantterm_10,4,0.3333333333333333,0.2121212121212121,0.7777777777777778,66
+3-wise,261,34,memory_based = 1 AND none = 1 AND polly_no_tiling = 1,polly_no_tiling AND memory_based AND NOT polly,0,1.0,1.0,1.0,66
+4-wise,954,140,memory_based = 1 AND none = 1 AND polly_no_tiling = 1,NOT polly AND polly_no_tiling AND memory_based,0,1.0,1.0,1.0,66
+full,60000,10000,parallel = 1 AND polly_no_tiling = 1 AND polly_parallel = 1,parallel AND polly_no_tiling,0,1.0,1.0,1.0,67
+random_2,46,9,parallel = 1 AND polly_no_tiling = 1 AND polly_parallel = 1,NOT polly_no_tiling AND max AND NOT none AND pollyrtcmaxparameters <= 1.5,0,0.0,0.0,0.0,67
+random_5,115,14,parallel = 1 AND polly_no_tiling = 1 AND polly_parallel = 1,NOT pollyoptmaxconstantterm_10000 AND parallel AND pollyrtcmaxparameters > 3.0 AND polly_no_tiling,2,0.782608695652174,1.0,0.6428571428571429,67
+random_10,230,39,parallel = 1 AND polly_no_tiling = 1 AND polly_parallel = 1,pollyoptmaxconstantterm_1 AND NOT pollyoptmaxcoefficient_10 AND NOT polly_no_tiling,0,0.0,0.0,0.0,67
+random_20,460,84,parallel = 1 AND polly_no_tiling = 1 AND polly_parallel = 1,parallel AND polly_no_tiling,0,1.0,1.0,1.0,67
+2-wise,55,7,parallel = 1 AND polly_no_tiling = 1 AND polly_parallel = 1,NOT pollyoptmaxconstantterm_10 AND polly_parallel AND NOT pollyoptmaxcoefficient_1000 AND NOT polly_no_tiling,0,0.0,0.0,0.0,67
+3-wise,259,45,parallel = 1 AND polly_no_tiling = 1 AND polly_parallel = 1,polly_no_tiling AND parallel,0,1.0,1.0,1.0,67
+4-wise,957,174,parallel = 1 AND polly_no_tiling = 1 AND polly_parallel = 1,parallel AND polly_no_tiling,0,1.0,1.0,1.0,67
+full,60000,10000,max = 1 AND parallel_force = 1 AND polly_parallel = 1,parallel_force AND NOT min,0,1.0,1.0,1.0,68
+random_2,46,7,max = 1 AND parallel_force = 1 AND polly_parallel = 1,max AND parallel_force,1,1.0,1.0,1.0,68
+random_5,115,17,max = 1 AND parallel_force = 1 AND polly_parallel = 1,parallel_force AND NOT min,0,1.0,1.0,1.0,68
+random_10,230,42,max = 1 AND parallel_force = 1 AND polly_parallel = 1,parallel_force AND max,0,1.0,1.0,1.0,68
+random_20,460,82,max = 1 AND parallel_force = 1 AND polly_parallel = 1,parallel_force AND max,0,1.0,1.0,1.0,68
+2-wise,52,9,max = 1 AND parallel_force = 1 AND polly_parallel = 1,parallel_force AND NOT min,2,1.0,1.0,1.0,68
+3-wise,253,41,max = 1 AND parallel_force = 1 AND polly_parallel = 1,parallel_force AND NOT min,0,1.0,1.0,1.0,68
+4-wise,953,161,max = 1 AND parallel_force = 1 AND polly_parallel = 1,parallel_force AND max,0,1.0,1.0,1.0,68
+full,60000,7500,max = 1 AND memory_based = 1 AND polly_no_tiling = 1,NOT value_based AND polly_no_tiling AND max,0,1.0,1.0,1.0,69
+random_2,46,6,max = 1 AND memory_based = 1 AND polly_no_tiling = 1,NOT parallel AND polly_no_tiling AND memory_based AND NOT min,2,0.6666666666666666,1.0,0.5,69
+random_5,115,9,max = 1 AND memory_based = 1 AND polly_no_tiling = 1,pollydefaulttilesize > 640.0 AND pollyoptmaxconstantterm_100 AND value_based,0,0.0,0.0,0.0,69
+random_10,230,26,max = 1 AND memory_based = 1 AND polly_no_tiling = 1,NOT value_based AND pollyoptmaxcoefficient_1 AND NOT polly_parallel AND polly_no_tiling,4,0.1428571428571428,1.0,0.0769230769230769,69
+random_20,460,65,max = 1 AND memory_based = 1 AND polly_no_tiling = 1,NOT max AND pollyoptmaxconstantterm_1000,0,0.0,0.0,0.0,69
+2-wise,52,7,max = 1 AND memory_based = 1 AND polly_no_tiling = 1,pollyoptmaxconstantterm_1000 AND polly_opt_simplify_deps AND NOT polly AND NOT polly_no_tiling,0,0.0,0.0,0.0,69
+3-wise,242,29,max = 1 AND memory_based = 1 AND polly_no_tiling = 1,value_based AND pollyoptmaxcoefficient_10000,0,0.0,0.0,0.0,69
+4-wise,964,125,max = 1 AND memory_based = 1 AND polly_no_tiling = 1,NOT min AND NOT pollyoptmaxconstantterm_1 AND polly_no_tiling AND memory_based,0,0.8789237668161435,1.0,0.784,69
+full,60000,7500,max = 1 AND none = 1 AND value_based = 1,max AND value_based AND none,0,1.0,1.0,1.0,6
+random_2,46,3,max = 1 AND none = 1 AND value_based = 1,NOT pollyoptmaxconstantterm_10 AND NOT pollyoptmaxcoefficient_10000,4,0.125,0.0689655172413793,0.6666666666666666,6
+random_5,115,23,max = 1 AND none = 1 AND value_based = 1,NOT memory_based AND NOT polly AND max,0,1.0,1.0,1.0,6
+random_10,230,24,max = 1 AND none = 1 AND value_based = 1,NOT memory_based AND pollydefaulttilesize > 10.0 AND NOT polly AND NOT min,1,0.9565217391304348,1.0,0.9166666666666666,6
+random_20,460,67,max = 1 AND none = 1 AND value_based = 1,none AND NOT min AND value_based,0,1.0,1.0,1.0,6
+2-wise,57,5,max = 1 AND none = 1 AND value_based = 1,pollyoptmaxcoefficient_10 AND NOT pollyoptmaxconstantterm_100 AND max AND pollyrtcmaxparameters <= 10.0,0,0.0,0.0,0.0,6
+3-wise,248,37,max = 1 AND none = 1 AND value_based = 1,NOT min AND NOT memory_based AND NOT pollyoptmaxconstantterm_10000 AND none,2,0.8787878787878788,1.0,0.7837837837837838,6
+4-wise,942,114,max = 1 AND none = 1 AND value_based = 1,value_based AND NOT min AND none,0,1.0,1.0,1.0,6
+full,60000,7500,max = 1 AND polly_no_tiling = 1 AND value_based = 1,NOT memory_based AND polly_no_tiling AND max,0,1.0,1.0,1.0,70
+random_2,46,6,max = 1 AND polly_no_tiling = 1 AND value_based = 1,NOT pollyoptmaxcoefficient_100 AND pollyoptmaxcoefficient_1 AND NOT min AND value_based,0,0.5,1.0,0.3333333333333333,70
+random_5,115,13,max = 1 AND polly_no_tiling = 1 AND value_based = 1,memory_based AND pollyrtcmaxparameters <= 1.5,0,0.0,0.0,0.0,70
+random_10,230,22,max = 1 AND polly_no_tiling = 1 AND value_based = 1,polly_opt_simplify_deps AND pollyrtcmaxparameters > 1.5,4,0.16,0.1025641025641025,0.3636363636363636,70
+random_20,460,77,max = 1 AND polly_no_tiling = 1 AND value_based = 1,NOT memory_based AND NOT min AND polly_no_tiling,0,1.0,1.0,1.0,70
+2-wise,51,8,max = 1 AND polly_no_tiling = 1 AND value_based = 1,NOT pollyoptmaxcoefficient_10 AND pollydefaulttilesize > 10.0 AND pollyrtcmaxparameters > 6.0 AND NOT pollyoptmaxconstantterm_1,0,0.0,0.0,0.0,70
+3-wise,274,36,max = 1 AND polly_no_tiling = 1 AND value_based = 1,NOT pollyoptmaxcoefficient_1000 AND NOT polly_opt_simplify_deps AND pollyrtcmaxparameters > 12.0,3,0.125,0.1428571428571428,0.1111111111111111,70
+4-wise,955,136,max = 1 AND polly_no_tiling = 1 AND value_based = 1,pollydefaulttilesize > 10.0 AND NOT min AND polly_no_tiling AND NOT memory_based,0,0.8987854251012146,1.0,0.8161764705882353,70
+full,60000,10000,min = 1 AND polly = 1 AND polly_parallel = 1,NOT max AND polly AND polly_parallel,0,1.0,1.0,1.0,71
+random_2,46,7,min = 1 AND polly = 1 AND polly_parallel = 1,NOT polly_opt_simplify_deps AND NOT pollyoptmaxcoefficient_10,0,0.0952380952380952,0.0714285714285714,0.1428571428571428,71
+random_5,115,20,min = 1 AND polly = 1 AND polly_parallel = 1,NOT pollyoptmaxcoefficient_10 AND pollydefaulttilesize > 40.0 AND pollyrtcmaxparameters > 3.0,1,0.2105263157894737,0.1621621621621621,0.3,71
+random_10,230,45,min = 1 AND polly = 1 AND polly_parallel = 1,NOT pollyoptmaxcoefficient_1 AND polly_parallel AND NOT none,0,0.6422018348623854,0.546875,0.7777777777777778,71
+random_20,460,76,min = 1 AND polly = 1 AND polly_parallel = 1,polly AND pollyrtcmaxparameters > 3.0,4,0.4205128205128205,0.3445378151260504,0.5394736842105263,71
+2-wise,51,9,min = 1 AND polly = 1 AND polly_parallel = 1,polly AND pollyrtcmaxparameters <= 3.0 AND pollydefaulttilesize > 10.0 AND NOT pollyoptmaxcoefficient_1000,3,0.4761904761904762,0.4166666666666667,0.5555555555555556,71
+3-wise,261,50,min = 1 AND polly = 1 AND polly_parallel = 1,pollydefaulttilesize > 10.0 AND parallel_force AND NOT pollyoptmaxconstantterm_1000,0,0.2803738317757009,0.2631578947368421,0.3,71
+4-wise,965,159,min = 1 AND polly = 1 AND polly_parallel = 1,polly AND polly_parallel,4,0.6694736842105263,0.5031645569620253,1.0,71
+full,60000,7500,min = 1 AND polly = 1 AND value_based = 1,NOT none AND min AND NOT memory_based,0,1.0,1.0,1.0,72
+random_2,46,3,min = 1 AND polly = 1 AND value_based = 1,NOT polly_parallel AND NOT memory_based AND NOT min AND NOT pollyoptmaxcoefficient_10,0,0.0,0.0,0.0,72
+random_5,115,13,min = 1 AND polly = 1 AND value_based = 1,NOT pollyoptmaxconstantterm_100 AND NOT value_based AND pollydefaulttilesize > 10.0 AND NOT max,0,0.0,0.0,0.0,72
+random_10,230,30,min = 1 AND polly = 1 AND value_based = 1,polly_parallel,4,0.213903743315508,0.1273885350318471,0.6666666666666666,72
+random_20,460,74,min = 1 AND polly = 1 AND value_based = 1,polly AND NOT pollyoptmaxconstantterm_1 AND NOT pollyoptmaxconstantterm_10 AND pollydefaulttilesize > 160.0,1,0.291970802919708,0.3174603174603174,0.2702702702702703,72
+2-wise,54,3,min = 1 AND polly = 1 AND value_based = 1,pollydefaulttilesize > 10.0 AND pollyoptmaxcoefficient_1000 AND pollyoptmaxconstantterm_100,0,0.0,0.0,0.0,72
+3-wise,260,28,min = 1 AND polly = 1 AND value_based = 1,pollydefaulttilesize > 160.0 AND pollyrtcmaxparameters <= 6.0,2,0.0638297872340425,0.0454545454545454,0.1071428571428571,72
+4-wise,958,114,min = 1 AND polly = 1 AND value_based = 1,pollyrtcmaxparameters > 1.5 AND NOT memory_based,3,0.3618677042801557,0.2325,0.8157894736842105,72
+full,60000,7500,memory_based = 1 AND polly_no_tiling = 1 AND polly_opt_simplify_deps = 1,memory_based AND polly_no_tiling AND polly_opt_simplify_deps,0,1.0,1.0,1.0,73
+random_2,46,6,memory_based = 1 AND polly_no_tiling = 1 AND polly_opt_simplify_deps = 1,polly_no_tiling AND polly_opt_simplify_deps AND memory_based,2,1.0,1.0,1.0,73
+random_5,115,13,memory_based = 1 AND polly_no_tiling = 1 AND polly_opt_simplify_deps = 1,polly_no_tiling AND polly_opt_simplify_deps AND memory_based,0,1.0,1.0,1.0,73
+random_10,230,34,memory_based = 1 AND polly_no_tiling = 1 AND polly_opt_simplify_deps = 1,polly_no_tiling AND polly_opt_simplify_deps AND NOT value_based,0,1.0,1.0,1.0,73
+random_20,460,58,memory_based = 1 AND polly_no_tiling = 1 AND polly_opt_simplify_deps = 1,polly_no_tiling AND polly_opt_simplify_deps AND memory_based,0,1.0,1.0,1.0,73
+2-wise,51,10,memory_based = 1 AND polly_no_tiling = 1 AND polly_opt_simplify_deps = 1,polly_opt_simplify_deps AND polly_no_tiling AND memory_based,0,1.0,1.0,1.0,73
+3-wise,260,37,memory_based = 1 AND polly_no_tiling = 1 AND polly_opt_simplify_deps = 1,polly_no_tiling AND NOT value_based AND polly_opt_simplify_deps,0,1.0,1.0,1.0,73
+4-wise,947,122,memory_based = 1 AND polly_no_tiling = 1 AND polly_opt_simplify_deps = 1,polly_opt_simplify_deps AND NOT value_based AND polly_no_tiling,0,1.0,1.0,1.0,73
+full,60000,7500,min = 1 AND polly_no_tiling = 1 AND value_based = 1,NOT memory_based AND NOT max AND polly_no_tiling,0,1.0,1.0,1.0,74
+random_2,46,4,min = 1 AND polly_no_tiling = 1 AND value_based = 1,NOT polly_no_tiling AND polly_parallel AND NOT polly AND pollyoptmaxcoefficient_1,0,0.0,0.0,0.0,74
+random_5,115,12,min = 1 AND polly_no_tiling = 1 AND value_based = 1,NOT max AND NOT memory_based AND NOT pollyoptmaxconstantterm_10000 AND pollydefaulttilesize <= 640.0,0,0.8333333333333334,0.8333333333333334,0.8333333333333334,74
+random_10,230,26,min = 1 AND polly_no_tiling = 1 AND value_based = 1,NOT memory_based AND polly_no_tiling AND NOT max,1,1.0,1.0,1.0,74
+random_20,460,56,min = 1 AND polly_no_tiling = 1 AND value_based = 1,min AND polly_no_tiling AND NOT memory_based,0,1.0,1.0,1.0,74
+2-wise,54,8,min = 1 AND polly_no_tiling = 1 AND value_based = 1,NOT max AND polly_no_tiling AND NOT memory_based,0,1.0,1.0,1.0,74
+3-wise,252,36,min = 1 AND polly_no_tiling = 1 AND value_based = 1,min AND polly_no_tiling AND value_based,0,1.0,1.0,1.0,74
+4-wise,953,117,min = 1 AND polly_no_tiling = 1 AND value_based = 1,polly_no_tiling AND value_based AND NOT max,0,1.0,1.0,1.0,74
+full,60000,7500,min = 1 AND polly_opt_simplify_deps = 1 AND value_based = 1,polly_opt_simplify_deps AND NOT memory_based AND NOT max,0,1.0,1.0,1.0,75
+random_2,46,1,min = 1 AND polly_opt_simplify_deps = 1 AND value_based = 1,pollyoptmaxcoefficient_10 AND pollyrtcmaxparameters > 3.0 AND pollydefaulttilesize > 40.0,0,0.0,0.0,0.0,75
+random_5,115,16,min = 1 AND polly_opt_simplify_deps = 1 AND value_based = 1,NOT pollyoptmaxcoefficient_10000 AND NOT none AND NOT max,1,0.4444444444444445,0.3448275862068966,0.625,75
+random_10,230,25,min = 1 AND polly_opt_simplify_deps = 1 AND value_based = 1,polly_opt_simplify_deps AND NOT polly_no_tiling,2,0.3529411764705882,0.25,0.6,75
+random_20,460,55,min = 1 AND polly_opt_simplify_deps = 1 AND value_based = 1,NOT max AND pollyrtcmaxparameters > 3.0 AND NOT memory_based AND polly_opt_simplify_deps,0,0.7499999999999999,1.0,0.6,75
+2-wise,56,9,min = 1 AND polly_opt_simplify_deps = 1 AND value_based = 1,NOT memory_based AND NOT pollyoptmaxconstantterm_1000 AND NOT pollyoptmaxconstantterm_100,3,0.5714285714285714,0.4210526315789473,0.8888888888888888,75
+3-wise,247,33,min = 1 AND polly_opt_simplify_deps = 1 AND value_based = 1,NOT pollyoptmaxcoefficient_1 AND NOT pollyoptmaxconstantterm_1000 AND NOT pollyoptmaxconstantterm_10,4,0.2105263157894736,0.134453781512605,0.4848484848484848,75
+4-wise,959,129,min = 1 AND polly_opt_simplify_deps = 1 AND value_based = 1,value_based,2,0.4350758853288364,0.2780172413793103,1.0,75
+full,60000,10000,min = 1 AND parallel = 1 AND polly_parallel = 1,NOT parallel_force,0,0.4,0.25,1.0,76
+random_2,46,9,min = 1 AND parallel = 1 AND polly_parallel = 1,pollydefaulttilesize > 640.0 AND NOT parallel_force AND NOT pollyoptmaxcoefficient_1,4,0.25,0.2857142857142857,0.2222222222222222,76
+random_5,115,19,min = 1 AND parallel = 1 AND polly_parallel = 1,NOT pollyoptmaxconstantterm_1000 AND NOT none AND NOT polly_opt_simplify_deps AND NOT parallel_force,3,0.1621621621621621,0.1666666666666666,0.1578947368421052,76
+random_10,230,35,min = 1 AND parallel = 1 AND polly_parallel = 1,NOT pollyoptmaxconstantterm_10,3,0.2555066079295154,0.1510416666666666,0.8285714285714286,76
+random_20,460,82,min = 1 AND parallel = 1 AND polly_parallel = 1,NOT value_based AND NOT pollyoptmaxconstantterm_10000 AND pollyrtcmaxparameters > 6.0,4,0.1383647798742138,0.1428571428571428,0.1341463414634146,76
+2-wise,58,13,min = 1 AND parallel = 1 AND polly_parallel = 1,polly_parallel AND pollyoptmaxcoefficient_1 AND NOT max AND parallel,0,0.375,1.0,0.2307692307692307,76
+3-wise,245,41,min = 1 AND parallel = 1 AND polly_parallel = 1,parallel AND NOT pollyoptmaxcoefficient_10 AND NOT pollyoptmaxcoefficient_100 AND min,0,0.7761194029850745,1.0,0.6341463414634146,76
+4-wise,951,172,min = 1 AND parallel = 1 AND polly_parallel = 1,pollydefaulttilesize <= 640.0,0,0.2987012987012987,0.1835106382978723,0.8023255813953488,76
+full,60000,7500,max = 1 AND polly_opt_simplify_deps = 1 AND value_based = 1,polly_opt_simplify_deps AND value_based AND max,0,1.0,1.0,1.0,77
+random_2,46,6,max = 1 AND polly_opt_simplify_deps = 1 AND value_based = 1,pollyrtcmaxparameters <= 12.0 AND pollyrtcmaxparameters > 3.0,1,0.3333333333333333,0.2083333333333333,0.8333333333333334,77
+random_5,115,20,max = 1 AND polly_opt_simplify_deps = 1 AND value_based = 1,polly_parallel AND pollyrtcmaxparameters > 3.0 AND NOT pollyoptmaxcoefficient_1 AND value_based,3,0.4090909090909091,0.375,0.45,77
+random_10,230,33,max = 1 AND polly_opt_simplify_deps = 1 AND value_based = 1,max AND NOT pollyoptmaxcoefficient_1000 AND NOT pollyoptmaxconstantterm_10000 AND NOT pollyoptmaxcoefficient_1,4,0.4893617021276595,0.3770491803278688,0.696969696969697,77
+random_20,460,71,max = 1 AND polly_opt_simplify_deps = 1 AND value_based = 1,NOT pollyoptmaxconstantterm_1000 AND pollydefaulttilesize > 10.0 AND NOT pollyoptmaxconstantterm_10 AND polly_opt_simplify_deps,0,0.3886255924170616,0.2928571428571428,0.5774647887323944,77
+2-wise,51,4,max = 1 AND polly_opt_simplify_deps = 1 AND value_based = 1,NOT polly_opt_simplify_deps AND pollydefaulttilesize > 10.0,0,0.0,0.0,0.0,77
+3-wise,246,36,max = 1 AND polly_opt_simplify_deps = 1 AND value_based = 1,pollyrtcmaxparameters <= 1.5 AND NOT min AND NOT parallel AND NOT memory_based,4,0.3043478260869565,0.7,0.1944444444444444,77
+4-wise,961,118,max = 1 AND polly_opt_simplify_deps = 1 AND value_based = 1,NOT pollyoptmaxcoefficient_1000,2,0.213393870601589,0.1231979030144167,0.7966101694915254,77
+full,60000,10000,max = 1 AND none = 1 AND polly_parallel = 1,max AND NOT polly AND polly_parallel,0,1.0,1.0,1.0,78
+random_2,46,6,max = 1 AND none = 1 AND polly_parallel = 1,pollydefaulttilesize <= 10.0,4,0.0952380952380952,0.0666666666666666,0.1666666666666666,78
+random_5,115,18,max = 1 AND none = 1 AND polly_parallel = 1,pollyoptmaxconstantterm_1000 AND parallel_force AND NOT min AND NOT polly_opt_simplify_deps,3,0.2857142857142857,1.0,0.1666666666666666,78
+random_10,230,32,max = 1 AND none = 1 AND polly_parallel = 1,polly_parallel AND NOT pollyoptmaxconstantterm_10 AND none AND NOT min,0,0.896551724137931,1.0,0.8125,78
+random_20,460,79,max = 1 AND none = 1 AND polly_parallel = 1,NOT polly_opt_simplify_deps AND max AND NOT polly AND polly_parallel,0,0.6722689075630253,1.0,0.5063291139240507,78
+2-wise,53,5,max = 1 AND none = 1 AND polly_parallel = 1,pollyrtcmaxparameters > 3.0 AND polly_no_tiling AND NOT pollyoptmaxcoefficient_10,4,0.0869565217391304,0.0555555555555555,0.2,78
+3-wise,258,52,max = 1 AND none = 1 AND polly_parallel = 1,none AND pollydefaulttilesize <= 640.0 AND NOT min AND polly_parallel,0,0.8314606741573033,1.0,0.7115384615384616,78
+4-wise,961,149,max = 1 AND none = 1 AND polly_parallel = 1,none AND NOT min AND polly_parallel,0,1.0,1.0,1.0,78
+full,60000,7500,memory_based = 1 AND polly_no_tiling = 1 AND polly_opt_simplify_deps = 1,polly_opt_simplify_deps AND NOT value_based AND polly_no_tiling,0,1.0,1.0,1.0,79
+random_2,46,3,memory_based = 1 AND polly_no_tiling = 1 AND polly_opt_simplify_deps = 1,polly_opt_simplify_deps AND pollydefaulttilesize > 160.0 AND NOT pollyoptmaxconstantterm_1000 AND NOT pollyoptmaxconstantterm_10000,2,0.5,0.4,0.6666666666666666,79
+random_5,115,18,memory_based = 1 AND polly_no_tiling = 1 AND polly_opt_simplify_deps = 1,memory_based AND polly_no_tiling AND polly_opt_simplify_deps,0,1.0,1.0,1.0,79
+random_10,230,24,memory_based = 1 AND polly_no_tiling = 1 AND polly_opt_simplify_deps = 1,polly_no_tiling AND polly_opt_simplify_deps AND NOT value_based,0,1.0,1.0,1.0,79
+random_20,460,66,memory_based = 1 AND polly_no_tiling = 1 AND polly_opt_simplify_deps = 1,polly_no_tiling AND polly_opt_simplify_deps AND NOT value_based,0,1.0,1.0,1.0,79
+2-wise,54,3,memory_based = 1 AND polly_no_tiling = 1 AND polly_opt_simplify_deps = 1,polly_opt_simplify_deps AND min AND NOT pollyoptmaxconstantterm_10000 AND polly,2,0.7499999999999999,0.6,1.0,79
+3-wise,246,31,memory_based = 1 AND polly_no_tiling = 1 AND polly_opt_simplify_deps = 1,memory_based AND polly_no_tiling AND polly_opt_simplify_deps,0,1.0,1.0,1.0,79
+4-wise,969,130,memory_based = 1 AND polly_no_tiling = 1 AND polly_opt_simplify_deps = 1,polly_opt_simplify_deps AND memory_based AND polly_no_tiling,0,1.0,1.0,1.0,79
+full,60000,7500,min = 1 AND polly = 1 AND polly_no_tiling = 1,polly_no_tiling AND NOT none AND NOT max,0,1.0,1.0,1.0,7
+random_2,46,3,min = 1 AND polly = 1 AND polly_no_tiling = 1,polly_parallel AND NOT pollyoptmaxcoefficient_1 AND NOT pollyoptmaxconstantterm_1000,4,0.0952380952380952,0.0555555555555555,0.3333333333333333,7
+random_5,115,12,min = 1 AND polly = 1 AND polly_no_tiling = 1,pollyrtcmaxparameters <= 12.0 AND pollyrtcmaxparameters <= 1.5 AND min AND polly_no_tiling,0,0.0,0.0,0.0,7
+random_10,230,23,min = 1 AND polly = 1 AND polly_no_tiling = 1,NOT pollyoptmaxconstantterm_10,4,0.1327014218009478,0.0744680851063829,0.6086956521739131,7
+random_20,460,48,min = 1 AND polly = 1 AND polly_no_tiling = 1,pollydefaulttilesize <= 10.0 AND parallel_force,3,0.0476190476190476,0.0555555555555555,0.0416666666666666,7
+2-wise,57,6,min = 1 AND polly = 1 AND polly_no_tiling = 1,NOT memory_based AND pollyoptmaxconstantterm_10 AND polly_no_tiling,4,0.5,1.0,0.3333333333333333,7
+3-wise,249,35,min = 1 AND polly = 1 AND polly_no_tiling = 1,polly_no_tiling AND min AND NOT none,1,1.0,1.0,1.0,7
+4-wise,953,122,min = 1 AND polly = 1 AND polly_no_tiling = 1,polly_parallel AND polly_no_tiling AND polly AND min,0,0.8039215686274509,1.0,0.6721311475409836,7
+full,60000,10000,memory_based = 1 AND polly = 1 AND polly_parallel = 1,NOT none AND NOT value_based AND polly_parallel,0,1.0,1.0,1.0,80
+random_2,46,6,memory_based = 1 AND polly = 1 AND polly_parallel = 1,pollyrtcmaxparameters <= 6.0 AND NOT pollyoptmaxcoefficient_1 AND NOT parallel,4,0.0714285714285714,0.0454545454545454,0.1666666666666666,80
+random_5,115,21,memory_based = 1 AND polly = 1 AND polly_parallel = 1,polly AND memory_based AND polly_parallel,1,1.0,1.0,1.0,80
+random_10,230,40,memory_based = 1 AND polly = 1 AND polly_parallel = 1,parallel_force AND NOT value_based AND polly,0,0.7499999999999999,1.0,0.6,80
+random_20,460,76,memory_based = 1 AND polly = 1 AND polly_parallel = 1,polly_parallel AND NOT value_based AND NOT none,0,1.0,1.0,1.0,80
+2-wise,57,6,memory_based = 1 AND polly = 1 AND polly_parallel = 1,NOT polly_parallel AND pollyoptmaxcoefficient_1000 AND NOT polly AND NOT pollyoptmaxconstantterm_10000,0,0.0,0.0,0.0,80
+3-wise,260,49,memory_based = 1 AND polly = 1 AND polly_parallel = 1,memory_based AND polly_parallel AND polly,0,1.0,1.0,1.0,80
+4-wise,959,175,memory_based = 1 AND polly = 1 AND polly_parallel = 1,polly AND memory_based AND polly_parallel,0,1.0,1.0,1.0,80
+full,60000,10000,parallel_force = 1 AND polly_no_tiling = 1 AND polly_parallel = 1,parallel_force AND polly_no_tiling,0,1.0,1.0,1.0,81
+random_2,46,6,parallel_force = 1 AND polly_no_tiling = 1 AND polly_parallel = 1,pollyoptmaxconstantterm_10000 AND pollydefaulttilesize > 10.0 AND NOT max AND polly_parallel,0,0.0,0.0,0.0,81
+random_5,115,11,parallel_force = 1 AND polly_no_tiling = 1 AND polly_parallel = 1,pollyoptmaxcoefficient_1 AND pollydefaulttilesize > 10.0 AND NOT pollyoptmaxconstantterm_10,0,0.0,0.0,0.0,81
+random_10,230,28,parallel_force = 1 AND polly_no_tiling = 1 AND polly_parallel = 1,NOT pollyoptmaxcoefficient_10000 AND pollyoptmaxconstantterm_10000 AND parallel_force AND polly_no_tiling,4,0.25,1.0,0.1428571428571428,81
+random_20,460,53,parallel_force = 1 AND polly_no_tiling = 1 AND polly_parallel = 1,parallel_force AND polly_no_tiling,0,1.0,1.0,1.0,81
+2-wise,57,8,parallel_force = 1 AND polly_no_tiling = 1 AND polly_parallel = 1,NOT parallel_force AND polly_opt_simplify_deps,0,0.0,0.0,0.0,81
+3-wise,259,45,parallel_force = 1 AND polly_no_tiling = 1 AND polly_parallel = 1,pollyrtcmaxparameters > 3.0 AND polly_no_tiling AND parallel_force,0,0.732394366197183,1.0,0.5777777777777777,81
+4-wise,967,152,parallel_force = 1 AND polly_no_tiling = 1 AND polly_parallel = 1,parallel_force AND polly_no_tiling,0,1.0,1.0,1.0,81
+full,60000,7500,min = 1 AND polly_no_tiling = 1 AND polly_opt_simplify_deps = 1,polly_opt_simplify_deps AND min AND polly_no_tiling,0,1.0,1.0,1.0,82
+random_2,46,2,min = 1 AND polly_no_tiling = 1 AND polly_opt_simplify_deps = 1,NOT pollyoptmaxconstantterm_100 AND NOT polly_opt_simplify_deps AND pollydefaulttilesize > 160.0 AND NOT pollyoptmaxconstantterm_1000,0,0.0,0.0,0.0,82
+random_5,115,14,min = 1 AND polly_no_tiling = 1 AND polly_opt_simplify_deps = 1,pollydefaulttilesize > 40.0 AND NOT parallel_force AND pollyrtcmaxparameters <= 6.0 AND NOT pollyoptmaxconstantterm_100,2,0.3243243243243243,0.2608695652173913,0.4285714285714285,82
+random_10,230,30,min = 1 AND polly_no_tiling = 1 AND polly_opt_simplify_deps = 1,polly_no_tiling AND NOT pollyoptmaxconstantterm_10000 AND NOT max AND polly_opt_simplify_deps,0,1.0,1.0,1.0,82
+random_20,460,48,min = 1 AND polly_no_tiling = 1 AND polly_opt_simplify_deps = 1,NOT pollyoptmaxconstantterm_1000 AND NOT pollyoptmaxcoefficient_1,3,0.1666666666666666,0.0966666666666666,0.6041666666666666,82
+2-wise,54,8,min = 1 AND polly_no_tiling = 1 AND polly_opt_simplify_deps = 1,pollyrtcmaxparameters > 1.5 AND NOT pollyoptmaxcoefficient_100 AND pollyrtcmaxparameters <= 12.0 AND pollyoptmaxconstantterm_10000,4,0.3636363636363636,0.6666666666666666,0.25,82
+3-wise,255,35,min = 1 AND polly_no_tiling = 1 AND polly_opt_simplify_deps = 1,pollyoptmaxcoefficient_10,3,0.1839080459770115,0.1538461538461538,0.2285714285714285,82
+4-wise,952,109,min = 1 AND polly_no_tiling = 1 AND polly_opt_simplify_deps = 1,NOT pollyoptmaxcoefficient_1000,0,0.2137931034482758,0.1222076215505913,0.8532110091743119,82
+full,60000,10000,memory_based = 1 AND parallel = 1 AND polly_parallel = 1,parallel AND memory_based,0,1.0,1.0,1.0,83
+random_2,46,7,memory_based = 1 AND parallel = 1 AND polly_parallel = 1,parallel AND memory_based,2,1.0,1.0,1.0,83
+random_5,115,17,memory_based = 1 AND parallel = 1 AND polly_parallel = 1,parallel AND NOT value_based,0,1.0,1.0,1.0,83
+random_10,230,40,memory_based = 1 AND parallel = 1 AND polly_parallel = 1,parallel AND NOT value_based,0,1.0,1.0,1.0,83
+random_20,460,62,memory_based = 1 AND parallel = 1 AND polly_parallel = 1,parallel AND memory_based,0,1.0,1.0,1.0,83
+2-wise,55,12,memory_based = 1 AND parallel = 1 AND polly_parallel = 1,parallel AND memory_based,0,1.0,1.0,1.0,83
+3-wise,256,42,memory_based = 1 AND parallel = 1 AND polly_parallel = 1,parallel AND memory_based,0,1.0,1.0,1.0,83
+4-wise,938,154,memory_based = 1 AND parallel = 1 AND polly_parallel = 1,parallel AND NOT value_based,0,1.0,1.0,1.0,83
+full,60000,7500,memory_based = 1 AND none = 1 AND polly_opt_simplify_deps = 1,memory_based AND polly_opt_simplify_deps AND NOT polly,0,1.0,1.0,1.0,84
+random_2,46,6,memory_based = 1 AND none = 1 AND polly_opt_simplify_deps = 1,polly_opt_simplify_deps AND NOT value_based AND none,2,1.0,1.0,1.0,84
+random_5,115,14,memory_based = 1 AND none = 1 AND polly_opt_simplify_deps = 1,NOT value_based AND none AND polly_opt_simplify_deps,0,1.0,1.0,1.0,84
+random_10,230,30,memory_based = 1 AND none = 1 AND polly_opt_simplify_deps = 1,memory_based AND polly_opt_simplify_deps AND none,1,1.0,1.0,1.0,84
+random_20,460,51,memory_based = 1 AND none = 1 AND polly_opt_simplify_deps = 1,NOT polly AND NOT value_based AND polly_opt_simplify_deps,0,1.0,1.0,1.0,84
+2-wise,51,6,memory_based = 1 AND none = 1 AND polly_opt_simplify_deps = 1,pollydefaulttilesize > 40.0 AND polly_opt_simplify_deps AND none AND NOT value_based,3,0.6666666666666666,1.0,0.5,84
+3-wise,252,26,memory_based = 1 AND none = 1 AND polly_opt_simplify_deps = 1,none AND polly_opt_simplify_deps AND memory_based,0,1.0,1.0,1.0,84
+4-wise,967,123,memory_based = 1 AND none = 1 AND polly_opt_simplify_deps = 1,NOT value_based AND polly_opt_simplify_deps AND NOT polly,0,1.0,1.0,1.0,84
+full,60000,10000,parallel = 1 AND polly_parallel = 1 AND value_based = 1,parallel AND value_based,0,1.0,1.0,1.0,85
+random_2,46,7,parallel = 1 AND polly_parallel = 1 AND value_based = 1,NOT memory_based AND parallel AND NOT pollyoptmaxconstantterm_10,2,0.923076923076923,1.0,0.8571428571428571,85
+random_5,115,23,parallel = 1 AND polly_parallel = 1 AND value_based = 1,parallel AND value_based,0,1.0,1.0,1.0,85
+random_10,230,49,parallel = 1 AND polly_parallel = 1 AND value_based = 1,parallel AND value_based,0,1.0,1.0,1.0,85
+random_20,460,73,parallel = 1 AND polly_parallel = 1 AND value_based = 1,parallel AND NOT memory_based,0,1.0,1.0,1.0,85
+2-wise,54,8,parallel = 1 AND polly_parallel = 1 AND value_based = 1,value_based AND parallel,3,1.0,1.0,1.0,85
+3-wise,256,42,parallel = 1 AND polly_parallel = 1 AND value_based = 1,parallel AND NOT memory_based,0,1.0,1.0,1.0,85
+4-wise,954,155,parallel = 1 AND polly_parallel = 1 AND value_based = 1,parallel AND value_based,0,1.0,1.0,1.0,85
+full,60000,7500,min = 1 AND none = 1 AND polly_opt_simplify_deps = 1,none AND min AND polly_opt_simplify_deps,0,1.0,1.0,1.0,86
+random_2,46,4,min = 1 AND none = 1 AND polly_opt_simplify_deps = 1,NOT pollyoptmaxcoefficient_100 AND NOT pollyoptmaxcoefficient_1,2,0.2222222222222221,0.1304347826086956,0.75,86
+random_5,115,9,min = 1 AND none = 1 AND polly_opt_simplify_deps = 1,NOT pollyoptmaxcoefficient_1000 AND NOT max AND pollyrtcmaxparameters <= 6.0,1,0.0930232558139534,0.0588235294117647,0.2222222222222222,86
+random_10,230,29,min = 1 AND none = 1 AND polly_opt_simplify_deps = 1,pollyoptmaxconstantterm_1 AND min AND NOT polly AND polly_opt_simplify_deps,4,0.2424242424242424,1.0,0.1379310344827586,86
+random_20,460,61,min = 1 AND none = 1 AND polly_opt_simplify_deps = 1,pollyrtcmaxparameters > 6.0 AND NOT pollyoptmaxcoefficient_10 AND pollyrtcmaxparameters <= 12.0,3,0.2068965517241379,0.1785714285714285,0.2459016393442623,86
+2-wise,58,6,min = 1 AND none = 1 AND polly_opt_simplify_deps = 1,pollydefaulttilesize <= 640.0 AND NOT pollyoptmaxconstantterm_100 AND max,0,0.0,0.0,0.0,86
+3-wise,250,29,min = 1 AND none = 1 AND polly_opt_simplify_deps = 1,NOT pollyoptmaxconstantterm_1000 AND pollydefaulttilesize > 160.0 AND pollyrtcmaxparameters <= 6.0,2,0.1728395061728395,0.1346153846153846,0.2413793103448276,86
+4-wise,946,116,min = 1 AND none = 1 AND polly_opt_simplify_deps = 1,pollydefaulttilesize > 10.0,1,0.2158438576349024,0.1245033112582781,0.8103448275862069,86
+full,60000,7500,max = 1 AND none = 1 AND polly_no_tiling = 1,max AND none AND polly_no_tiling,0,1.0,1.0,1.0,87
+random_2,46,6,max = 1 AND none = 1 AND polly_no_tiling = 1,NOT pollyoptmaxcoefficient_1 AND polly AND NOT pollyoptmaxconstantterm_1 AND pollydefaulttilesize > 640.0,0,0.0,0.0,0.0,87
+random_5,115,12,max = 1 AND none = 1 AND polly_no_tiling = 1,NOT none AND NOT pollyoptmaxcoefficient_10000,0,0.0,0.0,0.0,87
+random_10,230,26,max = 1 AND none = 1 AND polly_no_tiling = 1,polly_opt_simplify_deps AND pollydefaulttilesize > 10.0,3,0.1526717557251908,0.0952380952380952,0.3846153846153846,87
+random_20,460,61,max = 1 AND none = 1 AND polly_no_tiling = 1,polly_no_tiling AND parallel AND min AND pollyrtcmaxparameters <= 12.0,0,0.0,0.0,0.0,87
+2-wise,56,6,max = 1 AND none = 1 AND polly_no_tiling = 1,NOT pollyoptmaxcoefficient_10 AND polly_parallel,2,0.1290322580645161,0.08,0.3333333333333333,87
+3-wise,251,25,max = 1 AND none = 1 AND polly_no_tiling = 1,pollyrtcmaxparameters <= 3.0 AND NOT parallel_force,2,0.1333333333333333,0.0923076923076923,0.24,87
+4-wise,972,120,max = 1 AND none = 1 AND polly_no_tiling = 1,polly_no_tiling AND max AND none,0,1.0,1.0,1.0,87
+full,60000,10000,memory_based = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,polly_opt_simplify_deps AND memory_based AND polly_parallel,0,1.0,1.0,1.0,88
+random_2,46,10,memory_based = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,NOT max AND NOT value_based AND polly_opt_simplify_deps,3,0.7499999999999999,1.0,0.6,88
+random_5,115,16,memory_based = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,NOT polly_opt_simplify_deps AND NOT pollyoptmaxconstantterm_10 AND pollyrtcmaxparameters > 3.0,0,0.0,0.0,0.0,88
+random_10,230,42,memory_based = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,memory_based AND polly_opt_simplify_deps AND polly_parallel,0,1.0,1.0,1.0,88
+random_20,460,83,memory_based = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,NOT value_based AND polly_opt_simplify_deps AND polly_parallel,0,1.0,1.0,1.0,88
+2-wise,55,9,memory_based = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,pollydefaulttilesize > 160.0 AND pollyoptmaxconstantterm_1000 AND NOT pollyoptmaxcoefficient_10000 AND pollyrtcmaxparameters <= 1.5,0,0.0,0.0,0.0,88
+3-wise,256,41,memory_based = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,memory_based AND polly_opt_simplify_deps AND polly_parallel,0,1.0,1.0,1.0,88
+4-wise,961,180,memory_based = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,memory_based AND polly_opt_simplify_deps AND polly_parallel,0,1.0,1.0,1.0,88
+full,60000,10000,min = 1 AND polly = 1 AND polly_parallel = 1,min AND polly AND polly_parallel,0,1.0,1.0,1.0,89
+random_2,46,6,min = 1 AND polly = 1 AND polly_parallel = 1,min AND pollyoptmaxconstantterm_1000 AND pollydefaulttilesize > 130.0 AND NOT pollyoptmaxcoefficient_10,0,0.0,0.0,0.0,89
+random_5,115,22,min = 1 AND polly = 1 AND polly_parallel = 1,NOT max AND NOT none AND polly_parallel,0,1.0,1.0,1.0,89
+random_10,230,41,min = 1 AND polly = 1 AND polly_parallel = 1,NOT none AND polly_parallel AND min,0,1.0,1.0,1.0,89
+random_20,460,65,min = 1 AND polly = 1 AND polly_parallel = 1,NOT max AND polly AND polly_parallel,0,1.0,1.0,1.0,89
+2-wise,58,6,min = 1 AND polly = 1 AND polly_parallel = 1,none AND pollydefaulttilesize <= 160.0 AND NOT pollyoptmaxcoefficient_10000,0,0.0,0.0,0.0,89
+3-wise,259,46,min = 1 AND polly = 1 AND polly_parallel = 1,NOT none AND min AND polly_parallel,0,1.0,1.0,1.0,89
+4-wise,964,181,min = 1 AND polly = 1 AND polly_parallel = 1,NOT none AND NOT max AND polly_parallel,0,1.0,1.0,1.0,89
+full,60000,10000,memory_based = 1 AND parallel = 1 AND polly_parallel = 1,parallel AND memory_based,0,1.0,1.0,1.0,8
+random_2,46,12,memory_based = 1 AND parallel = 1 AND polly_parallel = 1,pollyoptmaxcoefficient_1000 AND NOT value_based,2,0.2857142857142857,1.0,0.1666666666666666,8
+random_5,115,11,memory_based = 1 AND parallel = 1 AND polly_parallel = 1,pollyoptmaxcoefficient_10000 AND pollyrtcmaxparameters > 12.0 AND NOT memory_based AND NOT pollyoptmaxconstantterm_1000,0,0.0,0.0,0.0,8
+random_10,230,40,memory_based = 1 AND parallel = 1 AND polly_parallel = 1,pollyrtcmaxparameters <= 12.0 AND pollyoptmaxcoefficient_1000 AND pollyrtcmaxparameters > 1.5,3,0.0666666666666666,0.1,0.05,8
+random_20,460,93,memory_based = 1 AND parallel = 1 AND polly_parallel = 1,parallel AND NOT pollyoptmaxcoefficient_1 AND NOT pollyoptmaxcoefficient_100 AND NOT value_based,0,0.7922077922077922,1.0,0.6559139784946236,8
+2-wise,53,9,memory_based = 1 AND parallel = 1 AND polly_parallel = 1,pollydefaulttilesize > 10.0,2,0.2641509433962264,0.1590909090909091,0.7777777777777778,8
+3-wise,255,49,memory_based = 1 AND parallel = 1 AND polly_parallel = 1,NOT pollyoptmaxcoefficient_1 AND polly_parallel AND pollyrtcmaxparameters > 6.0,4,0.3773584905660377,0.3508771929824561,0.4081632653061224,8
+4-wise,979,179,memory_based = 1 AND parallel = 1 AND polly_parallel = 1,polly_parallel AND NOT none AND NOT parallel_force,2,0.5423728813559322,0.5485714285714286,0.5363128491620112,8
+full,60000,10000,polly = 1 AND polly_parallel = 1 AND value_based = 1,value_based AND NOT none AND polly_parallel,0,1.0,1.0,1.0,90
+random_2,46,2,polly = 1 AND polly_parallel = 1 AND value_based = 1,NOT none AND value_based AND NOT pollyoptmaxconstantterm_10000,1,1.0,1.0,1.0,90
+random_5,115,21,polly = 1 AND polly_parallel = 1 AND value_based = 1,value_based AND NOT none AND polly_parallel,1,1.0,1.0,1.0,90
+random_10,230,34,polly = 1 AND polly_parallel = 1 AND value_based = 1,NOT none AND value_based AND polly_parallel,0,1.0,1.0,1.0,90
+random_20,460,86,polly = 1 AND polly_parallel = 1 AND value_based = 1,value_based AND polly AND polly_parallel,0,1.0,1.0,1.0,90
+2-wise,52,9,polly = 1 AND polly_parallel = 1 AND value_based = 1,polly AND NOT memory_based AND polly_parallel,0,1.0,1.0,1.0,90
+3-wise,258,46,polly = 1 AND polly_parallel = 1 AND value_based = 1,NOT memory_based AND NOT none AND polly_parallel,0,1.0,1.0,1.0,90
+4-wise,961,162,polly = 1 AND polly_parallel = 1 AND value_based = 1,NOT memory_based AND NOT none AND polly_parallel,0,1.0,1.0,1.0,90
+full,60000,10000,min = 1 AND polly = 1 AND polly_parallel = 1,min AND NOT none AND polly_parallel,0,1.0,1.0,1.0,91
+random_2,46,11,min = 1 AND polly = 1 AND polly_parallel = 1,NOT parallel_force AND pollyrtcmaxparameters > 3.0 AND pollydefaulttilesize > 640.0,0,0.0,0.0,0.0,91
+random_5,115,26,min = 1 AND polly = 1 AND polly_parallel = 1,NOT pollyoptmaxconstantterm_100 AND NOT none AND min AND polly_parallel,2,0.8444444444444443,1.0,0.7307692307692307,91
+random_10,230,36,min = 1 AND polly = 1 AND polly_parallel = 1,NOT pollyoptmaxconstantterm_10000,4,0.2331838565022421,0.1390374331550802,0.7222222222222222,91
+random_20,460,70,min = 1 AND polly = 1 AND polly_parallel = 1,pollydefaulttilesize <= 10.0 AND memory_based,0,0.1333333333333333,0.16,0.1142857142857142,91
+2-wise,55,6,min = 1 AND polly = 1 AND polly_parallel = 1,pollyrtcmaxparameters > 1.5,3,0.1538461538461538,0.0869565217391304,0.6666666666666666,91
+3-wise,255,42,min = 1 AND polly = 1 AND polly_parallel = 1,NOT parallel,4,0.1714285714285714,0.1071428571428571,0.4285714285714285,91
+4-wise,938,175,min = 1 AND polly = 1 AND polly_parallel = 1,parallel_force AND NOT none AND min,0,0.6842105263157895,1.0,0.52,91
+full,60000,10000,min = 1 AND parallel = 1 AND polly_parallel = 1,parallel AND NOT max,0,1.0,1.0,1.0,92
+random_2,46,11,min = 1 AND parallel = 1 AND polly_parallel = 1,pollyrtcmaxparameters <= 3.0 AND pollyoptmaxconstantterm_1,0,0.0,0.0,0.0,92
+random_5,115,22,min = 1 AND parallel = 1 AND polly_parallel = 1,parallel AND min,0,1.0,1.0,1.0,92
+random_10,230,43,min = 1 AND parallel = 1 AND polly_parallel = 1,parallel AND NOT max,0,1.0,1.0,1.0,92
+random_20,460,67,min = 1 AND parallel = 1 AND polly_parallel = 1,NOT pollyoptmaxconstantterm_10 AND NOT max AND parallel,0,0.9105691056910568,1.0,0.835820895522388,92
+2-wise,55,10,min = 1 AND parallel = 1 AND polly_parallel = 1,min AND parallel AND NOT pollyoptmaxconstantterm_100,4,0.9473684210526316,1.0,0.9,92
+3-wise,244,38,min = 1 AND parallel = 1 AND polly_parallel = 1,parallel AND min,0,1.0,1.0,1.0,92
+4-wise,970,160,min = 1 AND parallel = 1 AND polly_parallel = 1,parallel AND min,0,1.0,1.0,1.0,92
+full,60000,10000,parallel = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,parallel AND polly_opt_simplify_deps,0,1.0,1.0,1.0,93
+random_2,46,15,parallel = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,parallel AND polly_opt_simplify_deps,0,1.0,1.0,1.0,93
+random_5,115,22,parallel = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,polly_opt_simplify_deps AND parallel,0,1.0,1.0,1.0,93
+random_10,230,33,parallel = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,parallel AND polly_opt_simplify_deps,0,1.0,1.0,1.0,93
+random_20,460,86,parallel = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,parallel AND polly_opt_simplify_deps,0,1.0,1.0,1.0,93
+2-wise,59,10,parallel = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,parallel AND polly_opt_simplify_deps,0,1.0,1.0,1.0,93
+3-wise,245,46,parallel = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,parallel AND polly_opt_simplify_deps,0,1.0,1.0,1.0,93
+4-wise,971,154,parallel = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,parallel AND polly_opt_simplify_deps,0,1.0,1.0,1.0,93
+full,60000,10000,min = 1 AND polly_parallel = 1 AND value_based = 1,NOT max AND value_based AND polly_parallel,0,1.0,1.0,1.0,94
+random_2,46,11,min = 1 AND polly_parallel = 1 AND value_based = 1,NOT pollyoptmaxcoefficient_10000 AND pollydefaulttilesize <= 640.0 AND NOT pollyoptmaxconstantterm_10 AND NOT pollyoptmaxconstantterm_1,1,0.3076923076923076,0.2666666666666666,0.3636363636363636,94
+random_5,115,16,min = 1 AND polly_parallel = 1 AND value_based = 1,NOT pollyoptmaxcoefficient_1000 AND min AND none AND pollyrtcmaxparameters <= 3.0,3,0.1538461538461538,0.2,0.125,94
+random_10,230,52,min = 1 AND polly_parallel = 1 AND value_based = 1,NOT pollyoptmaxcoefficient_1 AND NOT pollyoptmaxcoefficient_1000 AND pollyrtcmaxparameters > 1.5 AND NOT memory_based,4,0.4117647058823529,0.42,0.4038461538461538,94
+random_20,460,85,min = 1 AND polly_parallel = 1 AND value_based = 1,pollyoptmaxcoefficient_100 AND NOT max AND polly_parallel AND NOT memory_based,2,0.4684684684684685,1.0,0.3058823529411765,94
+2-wise,54,11,min = 1 AND polly_parallel = 1 AND value_based = 1,NOT polly_opt_simplify_deps,2,0.3783783783783783,0.2692307692307692,0.6363636363636364,94
+3-wise,256,38,min = 1 AND polly_parallel = 1 AND value_based = 1,pollydefaulttilesize > 160.0 AND NOT pollyoptmaxcoefficient_1 AND pollyrtcmaxparameters <= 6.0 AND value_based,2,0.2105263157894736,0.3157894736842105,0.1578947368421052,94
+4-wise,962,155,min = 1 AND polly_parallel = 1 AND value_based = 1,pollydefaulttilesize > 10.0,1,0.2610571736785329,0.1567357512953368,0.7806451612903226,94
+full,60000,10000,none = 1 AND polly_parallel = 1 AND value_based = 1,value_based AND none AND polly_parallel,0,1.0,1.0,1.0,95
+random_2,46,14,none = 1 AND polly_parallel = 1 AND value_based = 1,NOT memory_based AND NOT polly AND polly_parallel,2,1.0,1.0,1.0,95
+random_5,115,17,none = 1 AND polly_parallel = 1 AND value_based = 1,NOT memory_based AND polly_parallel AND none,0,1.0,1.0,1.0,95
+random_10,230,46,none = 1 AND polly_parallel = 1 AND value_based = 1,NOT memory_based AND NOT polly AND polly_parallel,0,1.0,1.0,1.0,95
+random_20,460,80,none = 1 AND polly_parallel = 1 AND value_based = 1,NOT memory_based AND polly_parallel AND none,0,1.0,1.0,1.0,95
+2-wise,52,10,none = 1 AND polly_parallel = 1 AND value_based = 1,pollyrtcmaxparameters > 12.0 AND polly_no_tiling AND pollydefaulttilesize <= 640.0 AND parallel_force,1,0.4615384615384615,1.0,0.3,95
+3-wise,253,47,none = 1 AND polly_parallel = 1 AND value_based = 1,NOT polly AND NOT memory_based AND polly_parallel,0,1.0,1.0,1.0,95
+4-wise,962,172,none = 1 AND polly_parallel = 1 AND value_based = 1,NOT polly AND value_based AND polly_parallel,0,1.0,1.0,1.0,95
+full,60000,10000,parallel = 1 AND polly = 1 AND polly_parallel = 1,parallel AND polly,0,1.0,1.0,1.0,96
+random_2,46,6,parallel = 1 AND polly = 1 AND polly_parallel = 1,parallel AND NOT none,1,1.0,1.0,1.0,96
+random_5,115,21,parallel = 1 AND polly = 1 AND polly_parallel = 1,parallel AND polly,0,1.0,1.0,1.0,96
+random_10,230,30,parallel = 1 AND polly = 1 AND polly_parallel = 1,parallel AND polly,0,1.0,1.0,1.0,96
+random_20,460,77,parallel = 1 AND polly = 1 AND polly_parallel = 1,parallel AND NOT none,0,1.0,1.0,1.0,96
+2-wise,51,8,parallel = 1 AND polly = 1 AND polly_parallel = 1,parallel AND NOT none,1,1.0,1.0,1.0,96
+3-wise,254,42,parallel = 1 AND polly = 1 AND polly_parallel = 1,parallel AND polly,0,1.0,1.0,1.0,96
+4-wise,956,182,parallel = 1 AND polly = 1 AND polly_parallel = 1,parallel AND polly,0,1.0,1.0,1.0,96
+full,60000,10000,memory_based = 1 AND parallel_force = 1 AND polly_parallel = 1,parallel_force AND NOT value_based,0,1.0,1.0,1.0,97
+random_2,46,2,memory_based = 1 AND parallel_force = 1 AND polly_parallel = 1,pollydefaulttilesize > 160.0 AND NOT min AND pollyrtcmaxparameters <= 3.0,0,0.0,0.0,0.0,97
+random_5,115,15,memory_based = 1 AND parallel_force = 1 AND polly_parallel = 1,polly_parallel AND memory_based AND NOT parallel,0,1.0,1.0,1.0,97
+random_10,230,31,memory_based = 1 AND parallel_force = 1 AND polly_parallel = 1,parallel_force AND memory_based,0,1.0,1.0,1.0,97
+random_20,460,64,memory_based = 1 AND parallel_force = 1 AND polly_parallel = 1,parallel_force AND NOT value_based,0,1.0,1.0,1.0,97
+2-wise,57,7,memory_based = 1 AND parallel_force = 1 AND polly_parallel = 1,NOT pollyoptmaxcoefficient_1000 AND NOT pollyoptmaxconstantterm_10000 AND parallel_force AND memory_based,3,1.0,1.0,1.0,97
+3-wise,260,50,memory_based = 1 AND parallel_force = 1 AND polly_parallel = 1,parallel_force AND NOT value_based,0,1.0,1.0,1.0,97
+4-wise,961,161,memory_based = 1 AND parallel_force = 1 AND polly_parallel = 1,NOT value_based AND parallel_force,0,1.0,1.0,1.0,97
+full,60000,10000,max = 1 AND polly = 1 AND polly_parallel = 1,max AND polly AND polly_parallel,0,1.0,1.0,1.0,98
+random_2,46,6,max = 1 AND polly = 1 AND polly_parallel = 1,polly_opt_simplify_deps AND pollyrtcmaxparameters > 6.0 AND NOT polly_no_tiling AND NOT polly_parallel,0,0.0,0.0,0.0,98
+random_5,115,19,max = 1 AND polly = 1 AND polly_parallel = 1,polly AND NOT min AND polly_parallel,1,1.0,1.0,1.0,98
+random_10,230,48,max = 1 AND polly = 1 AND polly_parallel = 1,polly AND max AND polly_parallel,0,1.0,1.0,1.0,98
+random_20,460,68,max = 1 AND polly = 1 AND polly_parallel = 1,NOT parallel AND NOT pollyoptmaxconstantterm_10 AND pollydefaulttilesize > 160.0,3,0.081081081081081,0.075,0.088235294117647,98
+2-wise,58,8,max = 1 AND polly = 1 AND polly_parallel = 1,NOT polly_opt_simplify_deps AND pollyrtcmaxparameters > 6.0 AND NOT pollyoptmaxcoefficient_100 AND none,0,0.0,0.0,0.0,98
+3-wise,255,44,max = 1 AND polly = 1 AND polly_parallel = 1,NOT parallel_force,3,0.2105263157894737,0.1333333333333333,0.5,98
+4-wise,948,163,max = 1 AND polly = 1 AND polly_parallel = 1,NOT min AND polly_parallel AND polly,0,1.0,1.0,1.0,98
+full,60000,7500,min = 1 AND polly_no_tiling = 1 AND value_based = 1,min AND polly_no_tiling AND value_based,0,1.0,1.0,1.0,99
+random_2,46,4,min = 1 AND polly_no_tiling = 1 AND value_based = 1,pollyrtcmaxparameters > 1.5 AND NOT polly_no_tiling AND NOT pollyoptmaxconstantterm_100,0,0.0,0.0,0.0,99
+random_5,115,17,min = 1 AND polly_no_tiling = 1 AND value_based = 1,polly_no_tiling AND value_based AND min,0,1.0,1.0,1.0,99
+random_10,230,26,min = 1 AND polly_no_tiling = 1 AND value_based = 1,NOT max AND polly_no_tiling AND NOT memory_based,0,1.0,1.0,1.0,99
+random_20,460,49,min = 1 AND polly_no_tiling = 1 AND value_based = 1,NOT max AND NOT memory_based AND polly_no_tiling,0,1.0,1.0,1.0,99
+2-wise,53,4,min = 1 AND polly_no_tiling = 1 AND value_based = 1,NOT pollyoptmaxconstantterm_10 AND NOT pollyoptmaxconstantterm_1000 AND NOT pollyoptmaxcoefficient_10,0,0.0,0.0,0.0,99
+3-wise,249,39,min = 1 AND polly_no_tiling = 1 AND value_based = 1,NOT memory_based AND min AND polly_no_tiling,0,1.0,1.0,1.0,99
+4-wise,965,128,min = 1 AND polly_no_tiling = 1 AND value_based = 1,value_based AND min AND polly_no_tiling,0,1.0,1.0,1.0,99
+full,60000,7500,min = 1 AND polly = 1 AND polly_no_tiling = 1,min AND polly AND polly_no_tiling,0,1.0,1.0,1.0,9
+random_2,46,5,min = 1 AND polly = 1 AND polly_no_tiling = 1,pollyoptmaxcoefficient_10000 AND pollyrtcmaxparameters > 1.5 AND pollydefaulttilesize <= 160.0 AND polly_parallel,0,0.0,0.0,0.0,9
+random_5,115,16,min = 1 AND polly = 1 AND polly_no_tiling = 1,NOT max AND polly_no_tiling AND polly,1,1.0,1.0,1.0,9
+random_10,230,21,min = 1 AND polly = 1 AND polly_no_tiling = 1,NOT max AND polly_no_tiling AND polly,0,1.0,1.0,1.0,9
+random_20,460,46,min = 1 AND polly = 1 AND polly_no_tiling = 1,NOT none AND polly_no_tiling AND NOT max,0,1.0,1.0,1.0,9
+2-wise,56,7,min = 1 AND polly = 1 AND polly_no_tiling = 1,pollyrtcmaxparameters > 1.5 AND NOT polly_no_tiling AND NOT pollyoptmaxcoefficient_1 AND NOT pollyoptmaxcoefficient_10000,0,0.0,0.0,0.0,9
+3-wise,253,29,min = 1 AND polly = 1 AND polly_no_tiling = 1,polly_no_tiling AND NOT max AND NOT none,0,1.0,1.0,1.0,9
+4-wise,959,112,min = 1 AND polly = 1 AND polly_no_tiling = 1,min AND polly_no_tiling AND NOT none,0,1.0,1.0,1.0,9

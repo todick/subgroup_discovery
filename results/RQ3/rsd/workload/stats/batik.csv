@@ -1,0 +1,2 @@
+num_features,num_samples,sgs_unique,sgs_mean_jaccard,sgs_mean_overlap_coefficient,coverage_mean,coverage_total,rule_features_used,rule_feature_frequency,rule_num_features,rule_length_mean,rule_length_max,rule_length_min,runtime
+12,1919,15,0.0951092101524311,0.22337730917001453,0.15779051589369464,0.9499739447628973,"['validate', 'tiff', 'dpi', 'onload', 'resolution', 'pdf']","[('validate', 9), ('tiff', 1), ('dpi', 1), ('onload', 8), ('resolution', 10), ('pdf', 11)]",6,2.6666666666666665,4.0,1.0,25.196571826934814

@@ -1,0 +1,2 @@
+num_features,num_samples,sgs_unique,sgs_mean_jaccard,sgs_mean_overlap_coefficient,coverage_mean,coverage_total,rule_features_used,rule_feature_frequency,rule_num_features,rule_length_mean,rule_length_max,rule_length_min,runtime
+14,2304,5,0.20000000000000004,0.6,0.00625,0.015625,"['cells_55', 'CGSolver', 'PreSmoothing', 'PostSmooting']","[('cells_55', 2), ('CGSolver', 5), ('PreSmoothing', 5), ('PostSmooting', 5)]",4,4.4,5.0,3.0,0.011698246002197266

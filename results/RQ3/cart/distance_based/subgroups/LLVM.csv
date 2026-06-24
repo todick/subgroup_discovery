@@ -1,0 +1,6 @@
+rule,sg_samples,sg_coverage,rule_num_predicates,rule_features_used
+NOT licm AND NOT gvn AND NOT instcombine AND NOT inline,64,0.0625,4,"['instcombine', 'inline', 'licm', 'gvn']"
+NOT licm AND NOT gvn AND NOT instcombine AND NOT inline AND sccp,32,0.03125,5,"['inline', 'licm', 'gvn', 'sccp', 'instcombine']"
+NOT licm AND NOT gvn AND NOT instcombine,128,0.125,3,"['instcombine', 'licm', 'gvn']"
+NOT licm AND NOT gvn AND NOT instcombine AND NOT inline AND NOT sccp,32,0.03125,5,"['inline', 'licm', 'gvn', 'sccp', 'instcombine']"
+NOT licm AND NOT gvn AND NOT instcombine AND inline,64,0.0625,4,"['instcombine', 'inline', 'licm', 'gvn']"

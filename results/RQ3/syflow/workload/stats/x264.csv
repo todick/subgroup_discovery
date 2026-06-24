@@ -1,0 +1,2 @@
+num_features,num_samples,sgs_unique,sgs_mean_jaccard,sgs_mean_overlap_coefficient,coverage_mean,coverage_total,rule_features_used,rule_feature_frequency,rule_num_features,rule_length_mean,rule_length_max,rule_length_min
+26,3113,5,0.17915451775147884,0.38857142857142857,0.34134275618374554,1.0,"['no-asm', 'intra-refresh', 'no-psy', 'non-deterministic', 'cpu-independent']","[('no-asm', 3), ('intra-refresh', 3), ('no-psy', 3), ('non-deterministic', 1), ('cpu-independent', 1)]",5,2.2,4.0,1.0

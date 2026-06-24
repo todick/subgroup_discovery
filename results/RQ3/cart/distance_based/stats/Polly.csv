@@ -1,0 +1,2 @@
+num_features,num_samples,sgs_unique,sgs_mean_jaccard,sgs_mean_overlap_coefficient,coverage_mean,coverage_total,rule_features_used,rule_feature_frequency,rule_num_features,rule_length_mean,rule_length_max,rule_length_min,runtime
+23,60000,5,0.05,0.1,0.14333333333333334,0.6333333333333333,"['memory_based', 'polly', 'parallel', 'pollydefaulttilesize', 'max', 'polly_no_tiling']","[('memory_based', 5), ('polly', 1), ('parallel', 4), ('pollydefaulttilesize', 1), ('max', 3), ('polly_no_tiling', 1)]",6,3.0,5.0,2.0,0.12030577659606934

@@ -1,0 +1,501 @@
+sg_distribution,sg_cardinality,sg_rule,best_rule,best_rule_idx,f1,precision,recall,seed
+normal,267,crc32 = 1 AND Nice = 1 AND BlockSize = 1,workload==0,0,0.2356575463371579,0.1335667833916958,1.0,0
+uniform,234,crc32 = 1 AND MemoryLimit = 1 AND Nice = 1,Lc2Lp0==0,3,0.2103303862261517,0.1180156657963446,0.9658119658119658,0
+bi_modal_split,225,crc32 = 1 AND Depth = 1 AND Dict = 1,Lc2Lp0==0,1,0.2037383177570093,0.1138381201044386,0.9688888888888888,0
+tri_modal_split,205,none = 1 AND Dict = 1 AND BlockSize = 1,workload==0,0,0.1860254083484573,0.1025512756378189,1.0,0
+power_law,258,Nice = 1 AND BlockSize = 1 AND PositionBits = 1,Lc1Lp2==0,1,0.2325367647058823,0.1319082377476538,0.9806201550387597,0
+normal,242,MemoryLimit = 1 AND Depth = 1 AND PositionBits = 1,Lc1Lp2==0,1,0.2166666666666666,0.1220020855057351,0.9669421487603306,10
+uniform,242,MemoryLimit = 1 AND Depth = 1 AND PositionBits = 1,Lc3Lp1==0,3,0.2193308550185873,0.1235602094240837,0.975206611570248,10
+bi_modal_split,242,MemoryLimit = 1 AND Depth = 1 AND PositionBits = 1,MemoryLimit==1 AND Depth==1 AND PositionBits==1,0,1.0,1.0,1.0,10
+tri_modal_split,242,MemoryLimit = 1 AND Depth = 1 AND PositionBits = 1,Lc1Lp2==0,1,0.2166666666666666,0.1220020855057351,0.9669421487603306,10
+power_law,242,MemoryLimit = 1 AND Depth = 1 AND PositionBits = 1,Lc2Lp1==0,1,0.2168450442066077,0.1221814368117462,0.962809917355372,10
+normal,246,bt4 = 1 AND Nice = 1 AND BlockSize = 1,workload==0,0,0.2191536748329621,0.1230615307653826,1.0,11
+uniform,246,bt4 = 1 AND Nice = 1 AND BlockSize = 1,Lc4Lp0==0,3,0.2216890595009597,0.1256800870511425,0.9390243902439024,11
+bi_modal_split,246,bt4 = 1 AND Nice = 1 AND BlockSize = 1,Lc3Lp1==0,1,0.2198515769944341,0.1240837696335078,0.9634146341463414,11
+tri_modal_split,246,bt4 = 1 AND Nice = 1 AND BlockSize = 1,Lc3Lp1==0,1,0.2198515769944341,0.1240837696335078,0.9634146341463414,11
+power_law,246,bt4 = 1 AND Nice = 1 AND BlockSize = 1,Lc2Lp1==0,1,0.220157919182536,0.124278972207656,0.9634146341463414,11
+normal,352,Depth = 1 AND BlockSize = 1 AND FlushTimeout = 1,Depth==1 AND BlockSize==1 AND FlushTimeout==1,0,1.0,1.0,1.0,12
+uniform,352,Depth = 1 AND BlockSize = 1 AND FlushTimeout = 1,Depth==1 AND BlockSize==1 AND FlushTimeout==1,0,1.0,1.0,1.0,12
+bi_modal_split,352,Depth = 1 AND BlockSize = 1 AND FlushTimeout = 1,Depth==1 AND BlockSize==1 AND FlushTimeout==1,0,1.0,1.0,1.0,12
+tri_modal_split,352,Depth = 1 AND BlockSize = 1 AND FlushTimeout = 1,Depth==1 AND BlockSize==1 AND FlushTimeout==1,0,1.0,1.0,1.0,12
+power_law,352,Depth = 1 AND BlockSize = 1 AND FlushTimeout = 1,Depth==1 AND BlockSize==1 AND FlushTimeout==1,1,1.0,1.0,1.0,12
+normal,205,none = 1 AND Dict = 1 AND BlockSize = 1,Dict==1 AND BlockSize==1 AND none==1,0,1.0,1.0,1.0,13
+uniform,205,none = 1 AND Dict = 1 AND BlockSize = 1,workload==0,0,0.1860254083484573,0.1025512756378189,1.0,13
+bi_modal_split,205,none = 1 AND Dict = 1 AND BlockSize = 1,Dict==1 AND BlockSize==1 AND none==1,0,1.0,1.0,1.0,13
+tri_modal_split,205,none = 1 AND Dict = 1 AND BlockSize = 1,workload==0,0,0.1860254083484573,0.1025512756378189,1.0,13
+power_law,205,none = 1 AND Dict = 1 AND BlockSize = 1,workload==0,0,0.1860254083484573,0.1025512756378189,1.0,13
+normal,386,Depth = 1 AND Dict = 1 AND Multithreading = 1,Depth==1 AND Dict==1 AND Multithreading==1,0,1.0,1.0,1.0,14
+uniform,386,Depth = 1 AND Dict = 1 AND Multithreading = 1,Lc2Lp1==0,1,0.3296990841692107,0.1982170949134766,0.9792746113989638,14
+bi_modal_split,386,Depth = 1 AND Dict = 1 AND Multithreading = 1,workload==0,0,0.3236897274633123,0.193096548274137,1.0,14
+tri_modal_split,386,Depth = 1 AND Dict = 1 AND Multithreading = 1,workload==0,0,0.3236897274633123,0.193096548274137,1.0,14
+power_law,386,Depth = 1 AND Dict = 1 AND Multithreading = 1,workload==0,0,0.3236897274633123,0.193096548274137,1.0,14
+normal,256,crc32 = 1 AND Nice = 1 AND Depth = 1,crc32==1 AND Nice==1 AND Depth==1,0,1.0,1.0,1.0,15
+uniform,256,crc32 = 1 AND Nice = 1 AND Depth = 1,Lc3Lp1==0,3,0.2289935364727608,0.1298429319371727,0.96875,15
+bi_modal_split,256,crc32 = 1 AND Nice = 1 AND Depth = 1,Lc3Lp1==0,1,0.2289935364727608,0.1298429319371727,0.96875,15
+tri_modal_split,256,crc32 = 1 AND Nice = 1 AND Depth = 1,Lc2Lp0==0,3,0.2284661446338093,0.1295039164490861,0.96875,15
+power_law,256,crc32 = 1 AND Nice = 1 AND Depth = 1,Lc1Lp3==0,1,0.2289436947417403,0.1299524564183835,0.9609375,15
+normal,214,hc3 = 1 AND Depth = 1 AND Dict = 1,Depth==1 AND Dict==1 AND hc3==1,0,1.0,1.0,1.0,16
+uniform,214,hc3 = 1 AND Depth = 1 AND Dict = 1,workload==0,0,0.193402620876638,0.1070535267633816,1.0,16
+bi_modal_split,214,hc3 = 1 AND Depth = 1 AND Dict = 1,workload==0,0,0.193402620876638,0.1070535267633816,1.0,16
+tri_modal_split,214,hc3 = 1 AND Depth = 1 AND Dict = 1,Lc2Lp1==0,3,0.197076850542197,0.1095962244362873,0.9766355140186916,16
+power_law,214,hc3 = 1 AND Depth = 1 AND Dict = 1,workload==0,0,0.193402620876638,0.1070535267633816,1.0,16
+normal,212,hc3 = 1 AND Depth = 1 AND BlockSize = 1,Depth==1 AND BlockSize==1 AND hc3==1,0,1.0,1.0,1.0,17
+uniform,212,hc3 = 1 AND Depth = 1 AND BlockSize = 1,Depth==1 AND BlockSize==1 AND hc3==1,0,1.0,1.0,1.0,17
+bi_modal_split,212,hc3 = 1 AND Depth = 1 AND BlockSize = 1,workload==0,0,0.1917684305744007,0.1060530265132566,1.0,17
+tri_modal_split,212,hc3 = 1 AND Depth = 1 AND BlockSize = 1,Depth==1 AND BlockSize==1 AND hc3==1,0,1.0,1.0,1.0,17
+power_law,212,hc3 = 1 AND Depth = 1 AND BlockSize = 1,Lc2Lp1==0,3,0.195375176970269,0.1085474567383324,0.9764150943396226,17
+normal,201,sha256 = 1 AND Depth = 1 AND BlockSize = 1,Depth==1 AND sha256==1 AND BlockSize==1,0,1.0,1.0,1.0,18
+uniform,201,sha256 = 1 AND Depth = 1 AND BlockSize = 1,Lc2Lp1==0,3,0.1850094876660341,0.102254850550603,0.9701492537313432,18
+bi_modal_split,201,sha256 = 1 AND Depth = 1 AND BlockSize = 1,Depth==1 AND sha256==1 AND BlockSize==1,0,1.0,1.0,1.0,18
+tri_modal_split,201,sha256 = 1 AND Depth = 1 AND BlockSize = 1,Depth==1 AND sha256==1 AND BlockSize==1,0,1.0,1.0,1.0,18
+power_law,201,sha256 = 1 AND Depth = 1 AND BlockSize = 1,Lc1Lp2==0,3,0.1849929211892402,0.1021897810218978,0.9751243781094528,18
+normal,229,crc32 = 1 AND MemoryLimit = 1 AND BlockSize = 1,workload==0,0,0.2055655296229802,0.1145572786393196,1.0,19
+uniform,229,crc32 = 1 AND MemoryLimit = 1 AND BlockSize = 1,Lc2Lp1==0,1,0.2069288389513108,0.1158888306240167,0.965065502183406,19
+bi_modal_split,229,crc32 = 1 AND MemoryLimit = 1 AND BlockSize = 1,workload==0,0,0.2055655296229802,0.1145572786393196,1.0,19
+tri_modal_split,229,crc32 = 1 AND MemoryLimit = 1 AND BlockSize = 1,Lc3Lp1==0,3,0.2057035998129967,0.1151832460732984,0.960698689956332,19
+power_law,229,crc32 = 1 AND MemoryLimit = 1 AND BlockSize = 1,Lc2Lp0==0,3,0.2061567164179104,0.1154046997389034,0.965065502183406,19
+normal,216,crc32 = 1 AND MemoryLimit = 1 AND Dist = 1,Lc2Lp0==0,1,0.1952135147817926,0.1086161879895561,0.9629629629629628,1
+uniform,216,crc32 = 1 AND MemoryLimit = 1 AND Dist = 1,Lc3Lp1==0,3,0.1956726246472248,0.1089005235602094,0.9629629629629628,1
+bi_modal_split,216,crc32 = 1 AND MemoryLimit = 1 AND Dist = 1,Lc2Lp0==0,3,0.1952135147817926,0.1086161879895561,0.9629629629629628,1
+tri_modal_split,216,crc32 = 1 AND MemoryLimit = 1 AND Dist = 1,Lc3Lp1==0,1,0.1956726246472248,0.1089005235602094,0.9629629629629628,1
+power_law,216,crc32 = 1 AND MemoryLimit = 1 AND Dist = 1,Lc3Lp1==0,1,0.1956726246472248,0.1089005235602094,0.9629629629629628,1
+normal,229,MemoryLimit = 1 AND Nice = 1 AND PositionBits = 1,Lc1Lp2==0,1,0.2058686539357242,0.1152241918665276,0.965065502183406,20
+uniform,229,MemoryLimit = 1 AND Nice = 1 AND PositionBits = 1,Lc2Lp1==0,3,0.2059925093632958,0.1153644467750393,0.960698689956332,20
+bi_modal_split,229,MemoryLimit = 1 AND Nice = 1 AND PositionBits = 1,Lc3Lp1==0,1,0.2085086489013558,0.1167539267015706,0.9737991266375546,20
+tri_modal_split,229,MemoryLimit = 1 AND Nice = 1 AND PositionBits = 1,Lc3Lp1==0,1,0.2085086489013558,0.1167539267015706,0.9737991266375546,20
+power_law,229,MemoryLimit = 1 AND Nice = 1 AND PositionBits = 1,Lc2Lp1==0,3,0.2059925093632958,0.1153644467750393,0.960698689956332,20
+normal,240,bt4 = 1 AND Dict = 1 AND Dist = 1,Lc3Lp1==0,3,0.2148837209302325,0.1209424083769633,0.9625,21
+uniform,240,bt4 = 1 AND Dict = 1 AND Dist = 1,Lc3Lp1==0,3,0.2148837209302325,0.1209424083769633,0.9625,21
+bi_modal_split,240,bt4 = 1 AND Dict = 1 AND Dist = 1,Lc3Lp1==0,3,0.2148837209302325,0.1209424083769633,0.9625,21
+tri_modal_split,240,bt4 = 1 AND Dict = 1 AND Dist = 1,workload==0,0,0.2143814202769093,0.1200600300150075,1.0,21
+power_law,240,bt4 = 1 AND Dict = 1 AND Dist = 1,workload==0,0,0.2143814202769093,0.1200600300150075,1.0,21
+normal,269,Dict = 1 AND BlockSize = 1 AND PositionBits = 1,Dict==1 AND BlockSize==1 AND PositionBits==1,0,1.0,1.0,1.0,22
+uniform,269,Dict = 1 AND BlockSize = 1 AND PositionBits = 1,Lc1Lp2==0,1,0.2423411065386373,0.1381647549530761,0.9851301115241636,22
+bi_modal_split,269,Dict = 1 AND BlockSize = 1 AND PositionBits = 1,Lc2Lp1==0,1,0.2380514705882353,0.1358154168851599,0.9628252788104088,22
+tri_modal_split,269,Dict = 1 AND BlockSize = 1 AND PositionBits = 1,Lc1Lp2==0,1,0.2423411065386373,0.1381647549530761,0.9851301115241636,22
+power_law,269,Dict = 1 AND BlockSize = 1 AND PositionBits = 1,Lc1Lp2==0,1,0.2423411065386373,0.1381647549530761,0.9851301115241636,22
+normal,209,hc3 = 1 AND Depth = 1 AND Dist = 1,Depth==1 AND Dist==1 AND hc3==1,0,1.0,1.0,1.0,23
+uniform,209,hc3 = 1 AND Depth = 1 AND Dist = 1,Lc2Lp1==0,1,0.1928166351606805,0.1069743051914001,0.9760765550239234,23
+bi_modal_split,209,hc3 = 1 AND Depth = 1 AND Dist = 1,Lc2Lp1==0,3,0.1928166351606805,0.1069743051914001,0.9760765550239234,23
+tri_modal_split,209,hc3 = 1 AND Depth = 1 AND Dist = 1,workload==0,0,0.1893115942028985,0.104552276138069,1.0,23
+power_law,209,hc3 = 1 AND Depth = 1 AND Dist = 1,workload==0,0,0.1893115942028985,0.104552276138069,1.0,23
+normal,201,none = 1 AND Nice = 1 AND Dict = 1,Nice==1 AND Dict==1 AND none==1,0,1.0,1.0,1.0,24
+uniform,201,none = 1 AND Nice = 1 AND Dict = 1,workload==0,0,0.1827272727272727,0.1005502751375687,1.0,24
+bi_modal_split,201,none = 1 AND Nice = 1 AND Dict = 1,workload==0,0,0.1827272727272727,0.1005502751375687,1.0,24
+tri_modal_split,201,none = 1 AND Nice = 1 AND Dict = 1,workload==0,0,0.1827272727272727,0.1005502751375687,1.0,24
+power_law,201,none = 1 AND Nice = 1 AND Dict = 1,workload==0,0,0.1827272727272727,0.1005502751375687,1.0,24
+normal,353,Nice = 1 AND Dist = 1 AND FlushTimeout = 1,Nice==1 AND Dist==1 AND FlushTimeout==1,0,1.0,1.0,1.0,25
+uniform,353,Nice = 1 AND Dist = 1 AND FlushTimeout = 1,workload==0,0,0.3001700680272108,0.1765882941470735,1.0,25
+bi_modal_split,353,Nice = 1 AND Dist = 1 AND FlushTimeout = 1,Nice==1 AND Dist==1 AND FlushTimeout==1,0,1.0,1.0,1.0,25
+tri_modal_split,353,Nice = 1 AND Dist = 1 AND FlushTimeout = 1,Nice==1 AND Dist==1 AND FlushTimeout==1,0,1.0,1.0,1.0,25
+power_law,353,Nice = 1 AND Dist = 1 AND FlushTimeout = 1,workload==0,0,0.3001700680272108,0.1765882941470735,1.0,25
+normal,240,crc32 = 1 AND Dict = 1 AND Dist = 1,Lc2Lp0==0,1,0.2162412993039443,0.1216710182767624,0.9708333333333332,26
+uniform,240,crc32 = 1 AND Dict = 1 AND Dist = 1,workload==0,0,0.2143814202769093,0.1200600300150075,1.0,26
+bi_modal_split,240,crc32 = 1 AND Dict = 1 AND Dist = 1,Lc2Lp0==0,1,0.2162412993039443,0.1216710182767624,0.9708333333333332,26
+tri_modal_split,240,crc32 = 1 AND Dict = 1 AND Dist = 1,Lc2Lp0==0,1,0.2162412993039443,0.1216710182767624,0.9708333333333332,26
+power_law,240,crc32 = 1 AND Dict = 1 AND Dist = 1,Lc3Lp1==0,1,0.2167441860465116,0.1219895287958115,0.9708333333333332,26
+normal,365,Nice = 1 AND Dict = 1 AND FlushTimeout = 1,Nice==1 AND Dict==1 AND FlushTimeout==1,0,1.0,1.0,1.0,27
+uniform,365,Nice = 1 AND Dict = 1 AND FlushTimeout = 1,Nice==1 AND Dict==1 AND FlushTimeout==1,0,1.0,1.0,1.0,27
+bi_modal_split,365,Nice = 1 AND Dict = 1 AND FlushTimeout = 1,workload==0,4,0.3087986463620981,0.1825912956478239,1.0,27
+tri_modal_split,365,Nice = 1 AND Dict = 1 AND FlushTimeout = 1,FlushTimeout==0,0,0.0,0.0,0.0,27
+power_law,365,Nice = 1 AND Dict = 1 AND FlushTimeout = 1,workload==0,0,0.3087986463620981,0.1825912956478239,1.0,27
+normal,389,MemoryLimit = 1 AND Dist = 1 AND Multithreading = 1,MemoryLimit==1 AND Dist==1 AND Multithreading==1,0,1.0,1.0,1.0,28
+uniform,389,MemoryLimit = 1 AND Dist = 1 AND Multithreading = 1,Lc2Lp1==0,1,0.3310104529616725,0.1992658626114315,0.9768637532133676,28
+bi_modal_split,389,MemoryLimit = 1 AND Dist = 1 AND Multithreading = 1,workload==0,0,0.3257956448911222,0.1945972986493246,1.0,28
+tri_modal_split,389,MemoryLimit = 1 AND Dist = 1 AND Multithreading = 1,workload==0,0,0.3257956448911222,0.1945972986493246,1.0,28
+power_law,389,MemoryLimit = 1 AND Dist = 1 AND Multithreading = 1,Lc3Lp1==0,1,0.3270987385819922,0.1968586387434555,0.9665809768637532,28
+normal,261,bt4 = 1 AND Dict = 1 AND BlockSize = 1,Dict==1 AND BlockSize==1 AND bt4==1,0,1.0,1.0,1.0,29
+uniform,261,bt4 = 1 AND Dict = 1 AND BlockSize = 1,workload==0,0,0.2309734513274336,0.1305652826413206,1.0,29
+bi_modal_split,261,bt4 = 1 AND Dict = 1 AND BlockSize = 1,Lc3Lp1==0,1,0.2321510824504836,0.1319371727748691,0.9655172413793104,29
+tri_modal_split,261,bt4 = 1 AND Dict = 1 AND BlockSize = 1,Dict==1 AND BlockSize==1 AND bt4==1,0,1.0,1.0,1.0,29
+power_law,261,bt4 = 1 AND Dict = 1 AND BlockSize = 1,workload==0,0,0.2309734513274336,0.1305652826413206,1.0,29
+normal,240,bt4 = 1 AND MemoryLimit = 1 AND Depth = 1,workload==0,0,0.2143814202769093,0.1200600300150075,1.0,2
+uniform,240,bt4 = 1 AND MemoryLimit = 1 AND Depth = 1,workload==0,0,0.2143814202769093,0.1200600300150075,1.0,2
+bi_modal_split,240,bt4 = 1 AND MemoryLimit = 1 AND Depth = 1,workload==0,0,0.2143814202769093,0.1200600300150075,1.0,2
+tri_modal_split,240,bt4 = 1 AND MemoryLimit = 1 AND Depth = 1,workload==0,0,0.2143814202769093,0.1200600300150075,1.0,2
+power_law,240,bt4 = 1 AND MemoryLimit = 1 AND Depth = 1,Lc2Lp1==0,3,0.2170470423847229,0.1221814368117462,0.9708333333333332,2
+normal,240,bt4 = 1 AND MemoryLimit = 1 AND Depth = 1,MemoryLimit==1 AND Depth==1 AND bt4==1,0,1.0,1.0,1.0,30
+uniform,240,bt4 = 1 AND MemoryLimit = 1 AND Depth = 1,workload==0,0,0.2143814202769093,0.1200600300150075,1.0,30
+bi_modal_split,240,bt4 = 1 AND MemoryLimit = 1 AND Depth = 1,MemoryLimit==1 AND Depth==1 AND bt4==1,0,1.0,1.0,1.0,30
+tri_modal_split,240,bt4 = 1 AND MemoryLimit = 1 AND Depth = 1,Lc2Lp1==0,3,0.2170470423847229,0.1221814368117462,0.9708333333333332,30
+power_law,240,bt4 = 1 AND MemoryLimit = 1 AND Depth = 1,workload==0,0,0.2143814202769093,0.1200600300150075,1.0,30
+normal,234,crc32 = 1 AND MemoryLimit = 1 AND Nice = 1,Lc3Lp1==0,1,0.210820895522388,0.1183246073298429,0.9658119658119658,31
+uniform,234,crc32 = 1 AND MemoryLimit = 1 AND Nice = 1,Lc2Lp0==0,1,0.2103303862261517,0.1180156657963446,0.9658119658119658,31
+bi_modal_split,234,crc32 = 1 AND MemoryLimit = 1 AND Nice = 1,workload==0,0,0.2095835199283475,0.1170585292646323,1.0,31
+tri_modal_split,234,crc32 = 1 AND MemoryLimit = 1 AND Nice = 1,Lc2Lp0==0,3,0.2103303862261517,0.1180156657963446,0.9658119658119658,31
+power_law,234,crc32 = 1 AND MemoryLimit = 1 AND Nice = 1,Lc2Lp0==0,3,0.2103303862261517,0.1180156657963446,0.9658119658119658,31
+normal,378,Nice = 1 AND BlockSize = 1 AND FlushTimeout = 1,Nice==1 AND BlockSize==1 AND FlushTimeout==1,0,1.0,1.0,1.0,32
+uniform,378,Nice = 1 AND BlockSize = 1 AND FlushTimeout = 1,Nice==1 AND BlockSize==1 AND FlushTimeout==1,0,1.0,1.0,1.0,32
+bi_modal_split,378,Nice = 1 AND BlockSize = 1 AND FlushTimeout = 1,Nice==1 AND BlockSize==1 AND FlushTimeout==1,0,1.0,1.0,1.0,32
+tri_modal_split,378,Nice = 1 AND BlockSize = 1 AND FlushTimeout = 1,workload==0,0,0.3180479596129575,0.1890945472736368,1.0,32
+power_law,378,Nice = 1 AND BlockSize = 1 AND FlushTimeout = 1,Lc1Lp3==0,3,0.3196829590488771,0.1917591125198098,0.9603174603174603,32
+normal,365,Nice = 1 AND Dict = 1 AND FlushTimeout = 1,Nice==1 AND Dict==1 AND FlushTimeout==1,0,1.0,1.0,1.0,33
+uniform,365,Nice = 1 AND Dict = 1 AND FlushTimeout = 1,Nice==1 AND Dict==1 AND FlushTimeout==1,0,1.0,1.0,1.0,33
+bi_modal_split,365,Nice = 1 AND Dict = 1 AND FlushTimeout = 1,Nice==1 AND Dict==1 AND FlushTimeout==1,0,1.0,1.0,1.0,33
+tri_modal_split,365,Nice = 1 AND Dict = 1 AND FlushTimeout = 1,Nice==1 AND Dict==1 AND FlushTimeout==1,0,1.0,1.0,1.0,33
+power_law,365,Nice = 1 AND Dict = 1 AND FlushTimeout = 1,workload==0,0,0.3087986463620981,0.1825912956478239,1.0,33
+normal,203,sha256 = 1 AND MemoryLimit = 1 AND BlockSize = 1,MemoryLimit==1 AND sha256==1 AND BlockSize==1,0,1.0,1.0,1.0,34
+uniform,203,sha256 = 1 AND MemoryLimit = 1 AND BlockSize = 1,Lc1Lp2==0,1,0.1857614332861857,0.102711157455683,0.9704433497536946,34
+bi_modal_split,203,sha256 = 1 AND MemoryLimit = 1 AND BlockSize = 1,MemoryLimit==1 AND sha256==1 AND BlockSize==1,0,1.0,1.0,1.0,34
+tri_modal_split,203,sha256 = 1 AND MemoryLimit = 1 AND BlockSize = 1,workload==0,2,0.184377838328792,0.1015507753876938,1.0,34
+power_law,203,sha256 = 1 AND MemoryLimit = 1 AND BlockSize = 1,Lc2Lp1==0,3,0.185781990521327,0.1027792343995804,0.9655172413793104,34
+normal,226,crc32 = 1 AND Depth = 1 AND Dist = 1,Lc3Lp1==0,1,0.2041198501872659,0.1141361256544502,0.9646017699115044,35
+uniform,226,crc32 = 1 AND Depth = 1 AND Dist = 1,Lc3Lp1==0,3,0.2041198501872659,0.1141361256544502,0.9646017699115044,35
+bi_modal_split,226,crc32 = 1 AND Depth = 1 AND Dist = 1,workload==0,0,0.2031460674157303,0.113056528264132,1.0,35
+tri_modal_split,226,crc32 = 1 AND Depth = 1 AND Dist = 1,Lc2Lp0==0,1,0.2036431574030826,0.1138381201044386,0.9646017699115044,35
+power_law,226,crc32 = 1 AND Depth = 1 AND Dist = 1,workload==0,0,0.2031460674157303,0.113056528264132,1.0,35
+normal,246,bt4 = 1 AND Nice = 1 AND BlockSize = 1,Nice==1 AND BlockSize==1 AND bt4==1,0,1.0,1.0,1.0,36
+uniform,246,bt4 = 1 AND Nice = 1 AND BlockSize = 1,Lc3Lp1==0,1,0.2198515769944341,0.1240837696335078,0.9634146341463414,36
+bi_modal_split,246,bt4 = 1 AND Nice = 1 AND BlockSize = 1,Lc2Lp1==0,3,0.220157919182536,0.124278972207656,0.9634146341463414,36
+tri_modal_split,246,bt4 = 1 AND Nice = 1 AND BlockSize = 1,workload==0,0,0.2191536748329621,0.1230615307653826,1.0,36
+power_law,246,bt4 = 1 AND Nice = 1 AND BlockSize = 1,workload==0,0,0.2191536748329621,0.1230615307653826,1.0,36
+normal,229,crc32 = 1 AND MemoryLimit = 1 AND BlockSize = 1,Lc2Lp0==0,3,0.2061567164179104,0.1154046997389034,0.965065502183406,37
+uniform,229,crc32 = 1 AND MemoryLimit = 1 AND BlockSize = 1,workload==0,0,0.2055655296229802,0.1145572786393196,1.0,37
+bi_modal_split,229,crc32 = 1 AND MemoryLimit = 1 AND BlockSize = 1,workload==0,0,0.2055655296229802,0.1145572786393196,1.0,37
+tri_modal_split,229,crc32 = 1 AND MemoryLimit = 1 AND BlockSize = 1,Lc2Lp0==0,3,0.2061567164179104,0.1154046997389034,0.965065502183406,37
+power_law,229,crc32 = 1 AND MemoryLimit = 1 AND BlockSize = 1,workload==0,0,0.2055655296229802,0.1145572786393196,1.0,37
+normal,237,bt4 = 1 AND Nice = 1 AND Depth = 1,workload==0,0,0.2119856887298747,0.1185592796398199,1.0,38
+uniform,237,bt4 = 1 AND Nice = 1 AND Depth = 1,Lc2Lp1==0,3,0.2136194029850746,0.1200839014158363,0.9662447257383966,38
+bi_modal_split,237,bt4 = 1 AND Nice = 1 AND Depth = 1,Lc2Lp1==0,3,0.2136194029850746,0.1200839014158363,0.9662447257383966,38
+tri_modal_split,237,bt4 = 1 AND Nice = 1 AND Depth = 1,workload==0,0,0.2119856887298747,0.1185592796398199,1.0,38
+power_law,237,bt4 = 1 AND Nice = 1 AND Depth = 1,workload==0,0,0.2119856887298747,0.1185592796398199,1.0,38
+normal,246,crc32 = 1 AND MemoryLimit = 1 AND Depth = 1,crc32==1 AND MemoryLimit==1 AND Depth==1,0,1.0,1.0,1.0,39
+uniform,246,crc32 = 1 AND MemoryLimit = 1 AND Depth = 1,Lc2Lp0==0,1,0.2202683942619157,0.1242819843342036,0.967479674796748,39
+bi_modal_split,246,crc32 = 1 AND MemoryLimit = 1 AND Depth = 1,Lc2Lp0==0,1,0.2202683942619157,0.1242819843342036,0.967479674796748,39
+tri_modal_split,246,crc32 = 1 AND MemoryLimit = 1 AND Depth = 1,Lc2Lp0==0,3,0.2202683942619157,0.1242819843342036,0.967479674796748,39
+power_law,246,crc32 = 1 AND MemoryLimit = 1 AND Depth = 1,Lc2Lp0==0,3,0.2202683942619157,0.1242819843342036,0.967479674796748,39
+normal,209,hc3 = 1 AND Depth = 1 AND Dist = 1,Depth==1 AND Dist==1 AND hc3==1,0,1.0,1.0,1.0,3
+uniform,209,hc3 = 1 AND Depth = 1 AND Dist = 1,workload==0,0,0.1893115942028985,0.104552276138069,1.0,3
+bi_modal_split,209,hc3 = 1 AND Depth = 1 AND Dist = 1,workload==0,2,0.1893115942028985,0.104552276138069,1.0,3
+tri_modal_split,209,hc3 = 1 AND Depth = 1 AND Dist = 1,workload==0,0,0.1893115942028985,0.104552276138069,1.0,3
+power_law,209,hc3 = 1 AND Depth = 1 AND Dist = 1,Lc2Lp1==0,3,0.1928166351606805,0.1069743051914001,0.9760765550239234,3
+normal,398,Dict = 1 AND Multithreading = 1 AND BlockSize = 1,Dict==1 AND Multithreading==1 AND BlockSize==1,0,1.0,1.0,1.0,40
+uniform,398,Dict = 1 AND Multithreading = 1 AND BlockSize = 1,Dict==1 AND Multithreading==1 AND BlockSize==1,0,1.0,1.0,1.0,40
+bi_modal_split,398,Dict = 1 AND Multithreading = 1 AND BlockSize = 1,workload==0,0,0.3320817688777638,0.1990995497748874,1.0,40
+tri_modal_split,398,Dict = 1 AND Multithreading = 1 AND BlockSize = 1,workload==0,0,0.3320817688777638,0.1990995497748874,1.0,40
+power_law,398,Dict = 1 AND Multithreading = 1 AND BlockSize = 1,workload==0,0,0.3320817688777638,0.1990995497748874,1.0,40
+normal,383,Dist = 1 AND BlockSize = 1 AND FlushTimeout = 1,Dist==1 AND BlockSize==1 AND FlushTimeout==1,0,1.0,1.0,1.0,41
+uniform,383,Dist = 1 AND BlockSize = 1 AND FlushTimeout = 1,Dist==1 AND BlockSize==1 AND FlushTimeout==1,0,1.0,1.0,1.0,41
+bi_modal_split,383,Dist = 1 AND BlockSize = 1 AND FlushTimeout = 1,workload==0,0,0.3215785054575986,0.1915957978989494,1.0,41
+tri_modal_split,383,Dist = 1 AND BlockSize = 1 AND FlushTimeout = 1,Dist==1 AND BlockSize==1 AND FlushTimeout==1,0,1.0,1.0,1.0,41
+power_law,383,Dist = 1 AND BlockSize = 1 AND FlushTimeout = 1,Lc1Lp3==0,3,0.3233743409490334,0.1944004226096143,0.9608355091383812,41
+normal,345,MemoryLimit = 1 AND Dist = 1 AND FlushTimeout = 1,MemoryLimit==1 AND Dist==1 AND FlushTimeout==1,0,1.0,1.0,1.0,42
+uniform,345,MemoryLimit = 1 AND Dist = 1 AND FlushTimeout = 1,MemoryLimit==1 AND Dist==1 AND FlushTimeout==1,0,1.0,1.0,1.0,42
+bi_modal_split,345,MemoryLimit = 1 AND Dist = 1 AND FlushTimeout = 1,workload==0,0,0.2943686006825938,0.1725862931465732,1.0,42
+tri_modal_split,345,MemoryLimit = 1 AND Dist = 1 AND FlushTimeout = 1,workload==0,0,0.2943686006825938,0.1725862931465732,1.0,42
+power_law,345,MemoryLimit = 1 AND Dist = 1 AND FlushTimeout = 1,workload==0,0,0.2943686006825938,0.1725862931465732,1.0,42
+normal,330,Nice = 1 AND Depth = 1 AND FlushTimeout = 1,Nice==1 AND Depth==1 AND FlushTimeout==1,0,1.0,1.0,1.0,43
+uniform,330,Nice = 1 AND Depth = 1 AND FlushTimeout = 1,Nice==1 AND Depth==1 AND FlushTimeout==1,0,1.0,1.0,1.0,43
+bi_modal_split,330,Nice = 1 AND Depth = 1 AND FlushTimeout = 1,Nice==1 AND Depth==1 AND FlushTimeout==1,0,1.0,1.0,1.0,43
+tri_modal_split,330,Nice = 1 AND Depth = 1 AND FlushTimeout = 1,workload==0,0,0.283383426363246,0.1650825412706353,1.0,43
+power_law,330,Nice = 1 AND Depth = 1 AND FlushTimeout = 1,workload==0,0,0.283383426363246,0.1650825412706353,1.0,43
+normal,231,MemoryLimit = 1 AND Dict = 1 AND PositionBits = 1,workload==0,0,0.2071748878923767,0.1155577788894447,1.0,44
+uniform,231,MemoryLimit = 1 AND Dict = 1 AND PositionBits = 1,workload==0,0,0.2071748878923767,0.1155577788894447,1.0,44
+bi_modal_split,231,MemoryLimit = 1 AND Dict = 1 AND PositionBits = 1,Lc1Lp2==0,3,0.2103303862261517,0.1178310740354535,0.9783549783549784,44
+tri_modal_split,231,MemoryLimit = 1 AND Dict = 1 AND PositionBits = 1,Lc2Lp1==0,3,0.2104770813844714,0.1179863660199265,0.974025974025974,44
+power_law,231,MemoryLimit = 1 AND Dict = 1 AND PositionBits = 1,Lc2Lp1==0,3,0.2104770813844714,0.1179863660199265,0.974025974025974,44
+normal,216,crc32 = 1 AND MemoryLimit = 1 AND Dist = 1,Lc1Lp0==0,3,0.1981042654028436,0.1103484688489968,0.9675925925925926,45
+uniform,216,crc32 = 1 AND MemoryLimit = 1 AND Dist = 1,workload==0,0,0.1950338600451467,0.1080540270135067,1.0,45
+bi_modal_split,216,crc32 = 1 AND MemoryLimit = 1 AND Dist = 1,Lc3Lp1==0,3,0.1956726246472248,0.1089005235602094,0.9629629629629628,45
+tri_modal_split,216,crc32 = 1 AND MemoryLimit = 1 AND Dist = 1,Lc1Lp0==0,1,0.1981042654028436,0.1103484688489968,0.9675925925925926,45
+power_law,216,crc32 = 1 AND MemoryLimit = 1 AND Dist = 1,Lc2Lp0==0,1,0.1952135147817926,0.1086161879895561,0.9629629629629628,45
+normal,240,crc32 = 1 AND Dict = 1 AND Dist = 1,Lc2Lp0==0,1,0.2162412993039443,0.1216710182767624,0.9708333333333332,46
+uniform,240,crc32 = 1 AND Dict = 1 AND Dist = 1,Lc3Lp1==0,1,0.2167441860465116,0.1219895287958115,0.9708333333333332,46
+bi_modal_split,240,crc32 = 1 AND Dict = 1 AND Dist = 1,Lc2Lp0==0,1,0.2162412993039443,0.1216710182767624,0.9708333333333332,46
+tri_modal_split,240,crc32 = 1 AND Dict = 1 AND Dist = 1,Lc2Lp0==0,3,0.2162412993039443,0.1216710182767624,0.9708333333333332,46
+power_law,240,crc32 = 1 AND Dict = 1 AND Dist = 1,Lc3Lp1==0,1,0.2167441860465116,0.1219895287958115,0.9708333333333332,46
+normal,207,sha256 = 1 AND Dist = 1 AND BlockSize = 1,Dist==1 AND sha256==1 AND BlockSize==1,0,1.0,1.0,1.0,47
+uniform,207,sha256 = 1 AND Dist = 1 AND BlockSize = 1,workload==0,0,0.1876699909338168,0.1035517758879439,1.0,47
+bi_modal_split,207,sha256 = 1 AND Dist = 1 AND BlockSize = 1,workload==0,0,0.1876699909338168,0.1035517758879439,1.0,47
+tri_modal_split,207,sha256 = 1 AND Dist = 1 AND BlockSize = 1,Lc1Lp2==0,1,0.1891764705882352,0.1047966631908237,0.9710144927536232,47
+power_law,207,sha256 = 1 AND Dist = 1 AND BlockSize = 1,workload==0,0,0.1876699909338168,0.1035517758879439,1.0,47
+normal,212,hc3 = 1 AND Dist = 1 AND BlockSize = 1,Dist==1 AND BlockSize==1 AND hc3==1,0,1.0,1.0,1.0,48
+uniform,212,hc3 = 1 AND Dist = 1 AND BlockSize = 1,workload==0,0,0.1917684305744007,0.1060530265132566,1.0,48
+bi_modal_split,212,hc3 = 1 AND Dist = 1 AND BlockSize = 1,Dist==1 AND BlockSize==1 AND hc3==1,0,1.0,1.0,1.0,48
+tri_modal_split,212,hc3 = 1 AND Dist = 1 AND BlockSize = 1,Dist==1 AND BlockSize==1 AND hc3==1,0,1.0,1.0,1.0,48
+power_law,212,hc3 = 1 AND Dist = 1 AND BlockSize = 1,workload==0,0,0.1917684305744007,0.1060530265132566,1.0,48
+normal,234,crc32 = 1 AND MemoryLimit = 1 AND Nice = 1,workload==0,0,0.2095835199283475,0.1170585292646323,1.0,49
+uniform,234,crc32 = 1 AND MemoryLimit = 1 AND Nice = 1,Lc2Lp0==0,3,0.2103303862261517,0.1180156657963446,0.9658119658119658,49
+bi_modal_split,234,crc32 = 1 AND MemoryLimit = 1 AND Nice = 1,Lc2Lp0==0,3,0.2103303862261517,0.1180156657963446,0.9658119658119658,49
+tri_modal_split,234,crc32 = 1 AND MemoryLimit = 1 AND Nice = 1,Lc2Lp0==0,3,0.2103303862261517,0.1180156657963446,0.9658119658119658,49
+power_law,234,crc32 = 1 AND MemoryLimit = 1 AND Nice = 1,Lc2Lp0==0,1,0.2103303862261517,0.1180156657963446,0.9658119658119658,49
+normal,335,MemoryLimit = 1 AND Nice = 1 AND FlushTimeout = 1,MemoryLimit==1 AND Nice==1 AND FlushTimeout==1,0,1.0,1.0,1.0,4
+uniform,335,MemoryLimit = 1 AND Nice = 1 AND FlushTimeout = 1,workload==0,0,0.2870608397600685,0.1675837918959479,1.0,4
+bi_modal_split,335,MemoryLimit = 1 AND Nice = 1 AND FlushTimeout = 1,workload==0,0,0.2870608397600685,0.1675837918959479,1.0,4
+tri_modal_split,335,MemoryLimit = 1 AND Nice = 1 AND FlushTimeout = 1,workload==0,0,0.2870608397600685,0.1675837918959479,1.0,4
+power_law,335,MemoryLimit = 1 AND Nice = 1 AND FlushTimeout = 1,workload==0,0,0.2870608397600685,0.1675837918959479,1.0,4
+normal,334,MemoryLimit = 1 AND Depth = 1 AND FlushTimeout = 1,MemoryLimit==1 AND Depth==1 AND FlushTimeout==1,0,1.0,1.0,1.0,50
+uniform,334,MemoryLimit = 1 AND Depth = 1 AND FlushTimeout = 1,MemoryLimit==1 AND Depth==1 AND FlushTimeout==1,0,1.0,1.0,1.0,50
+bi_modal_split,334,MemoryLimit = 1 AND Depth = 1 AND FlushTimeout = 1,MemoryLimit==1 AND Depth==1 AND FlushTimeout==1,0,1.0,1.0,1.0,50
+tri_modal_split,334,MemoryLimit = 1 AND Depth = 1 AND FlushTimeout = 1,MemoryLimit==1 AND Depth==1 AND FlushTimeout==1,0,1.0,1.0,1.0,50
+power_law,334,MemoryLimit = 1 AND Depth = 1 AND FlushTimeout = 1,MemoryLimit==1 AND Depth==1 AND FlushTimeout==1,0,1.0,1.0,1.0,50
+normal,229,crc32 = 1 AND MemoryLimit = 1 AND BlockSize = 1,Lc2Lp0==0,3,0.2061567164179104,0.1154046997389034,0.965065502183406,51
+uniform,229,crc32 = 1 AND MemoryLimit = 1 AND BlockSize = 1,Lc3Lp1==0,1,0.2057035998129967,0.1151832460732984,0.960698689956332,51
+bi_modal_split,229,crc32 = 1 AND MemoryLimit = 1 AND BlockSize = 1,Lc2Lp0==0,3,0.2061567164179104,0.1154046997389034,0.965065502183406,51
+tri_modal_split,229,crc32 = 1 AND MemoryLimit = 1 AND BlockSize = 1,workload==0,0,0.2055655296229802,0.1145572786393196,1.0,51
+power_law,229,crc32 = 1 AND MemoryLimit = 1 AND BlockSize = 1,Lc2Lp0==0,3,0.2061567164179104,0.1154046997389034,0.965065502183406,51
+normal,330,Nice = 1 AND Depth = 1 AND FlushTimeout = 1,Nice==1 AND Depth==1 AND FlushTimeout==1,0,1.0,1.0,1.0,52
+uniform,330,Nice = 1 AND Depth = 1 AND FlushTimeout = 1,Nice==1 AND Depth==1 AND FlushTimeout==1,0,1.0,1.0,1.0,52
+bi_modal_split,330,Nice = 1 AND Depth = 1 AND FlushTimeout = 1,workload==0,0,0.283383426363246,0.1650825412706353,1.0,52
+tri_modal_split,330,Nice = 1 AND Depth = 1 AND FlushTimeout = 1,workload==0,0,0.283383426363246,0.1650825412706353,1.0,52
+power_law,330,Nice = 1 AND Depth = 1 AND FlushTimeout = 1,workload==0,0,0.283383426363246,0.1650825412706353,1.0,52
+normal,233,Nice = 1 AND Dist = 1 AND PositionBits = 1,Lc1Lp2==0,1,0.2119944211994421,0.1188738269030239,0.9785407725321889,53
+uniform,233,Nice = 1 AND Dist = 1 AND PositionBits = 1,Lc1Lp2==0,1,0.2119944211994421,0.1188738269030239,0.9785407725321889,53
+bi_modal_split,233,Nice = 1 AND Dist = 1 AND PositionBits = 1,Lc1Lp2==0,3,0.2119944211994421,0.1188738269030239,0.9785407725321889,53
+tri_modal_split,233,Nice = 1 AND Dist = 1 AND PositionBits = 1,Lc1Lp2==0,3,0.2119944211994421,0.1188738269030239,0.9785407725321889,53
+power_law,233,Nice = 1 AND Dist = 1 AND PositionBits = 1,workload==0,0,0.2087813620071684,0.1165582791395697,1.0,53
+normal,246,bt4 = 1 AND Nice = 1 AND BlockSize = 1,Lc3Lp1==0,3,0.2198515769944341,0.1240837696335078,0.9634146341463414,54
+uniform,246,bt4 = 1 AND Nice = 1 AND BlockSize = 1,Lc2Lp1==0,1,0.220157919182536,0.124278972207656,0.9634146341463414,54
+bi_modal_split,246,bt4 = 1 AND Nice = 1 AND BlockSize = 1,workload==0,0,0.2191536748329621,0.1230615307653826,1.0,54
+tri_modal_split,246,bt4 = 1 AND Nice = 1 AND BlockSize = 1,workload==0,0,0.2191536748329621,0.1230615307653826,1.0,54
+power_law,246,bt4 = 1 AND Nice = 1 AND BlockSize = 1,Lc2Lp1==0,3,0.220157919182536,0.124278972207656,0.9634146341463414,54
+normal,246,bt4 = 1 AND MemoryLimit = 1 AND Dist = 1,MemoryLimit==1 AND Dist==1 AND bt4==1,0,1.0,1.0,1.0,55
+uniform,246,bt4 = 1 AND MemoryLimit = 1 AND Dist = 1,workload==0,0,0.2191536748329621,0.1230615307653826,1.0,55
+bi_modal_split,246,bt4 = 1 AND MemoryLimit = 1 AND Dist = 1,workload==0,0,0.2191536748329621,0.1230615307653826,1.0,55
+tri_modal_split,246,bt4 = 1 AND MemoryLimit = 1 AND Dist = 1,workload==0,0,0.2191536748329621,0.1230615307653826,1.0,55
+power_law,246,bt4 = 1 AND MemoryLimit = 1 AND Dist = 1,workload==0,0,0.2191536748329621,0.1230615307653826,1.0,55
+normal,387,MemoryLimit = 1 AND Multithreading = 1 AND BlockSize = 1,MemoryLimit==1 AND Multithreading==1 AND BlockSize==1,0,1.0,1.0,1.0,56
+uniform,387,MemoryLimit = 1 AND Multithreading = 1 AND BlockSize = 1,Lc3Lp1==0,1,0.3247714410100131,0.1952879581151832,0.9638242894056848,56
+bi_modal_split,387,MemoryLimit = 1 AND Multithreading = 1 AND BlockSize = 1,Lc3Lp1==0,1,0.3247714410100131,0.1952879581151832,0.9638242894056848,56
+tri_modal_split,387,MemoryLimit = 1 AND Multithreading = 1 AND BlockSize = 1,workload==0,0,0.3243922883487007,0.1935967983991996,1.0,56
+power_law,387,MemoryLimit = 1 AND Multithreading = 1 AND BlockSize = 1,Lc3Lp1==0,3,0.3247714410100131,0.1952879581151832,0.9638242894056848,56
+normal,214,hc3 = 1 AND Depth = 1 AND Dict = 1,Depth==1 AND Dict==1 AND hc3==1,0,1.0,1.0,1.0,57
+uniform,214,hc3 = 1 AND Depth = 1 AND Dict = 1,workload==0,0,0.193402620876638,0.1070535267633816,1.0,57
+bi_modal_split,214,hc3 = 1 AND Depth = 1 AND Dict = 1,workload==0,0,0.193402620876638,0.1070535267633816,1.0,57
+tri_modal_split,214,hc3 = 1 AND Depth = 1 AND Dict = 1,Lc2Lp1==0,1,0.197076850542197,0.1095962244362873,0.9766355140186916,57
+power_law,214,hc3 = 1 AND Depth = 1 AND Dict = 1,workload==0,0,0.193402620876638,0.1070535267633816,1.0,57
+normal,206,hc3 = 1 AND MemoryLimit = 1 AND Dist = 1,MemoryLimit==1 AND Dist==1 AND hc3==1,0,1.0,1.0,1.0,58
+uniform,206,hc3 = 1 AND MemoryLimit = 1 AND Dist = 1,Lc2Lp1==0,3,0.1893043066729768,0.1048767697954903,0.970873786407767,58
+bi_modal_split,206,hc3 = 1 AND MemoryLimit = 1 AND Dist = 1,MemoryLimit==1 AND Dist==1 AND hc3==1,0,1.0,1.0,1.0,58
+tri_modal_split,206,hc3 = 1 AND MemoryLimit = 1 AND Dist = 1,Lc3Lp1==0,3,0.1871455576559546,0.1036649214659685,0.9611650485436892,58
+power_law,206,hc3 = 1 AND MemoryLimit = 1 AND Dist = 1,workload==0,0,0.1868480725623582,0.1030515257628814,1.0,58
+normal,246,bt4 = 1 AND Dist = 1 AND BlockSize = 1,workload==0,0,0.2191536748329621,0.1230615307653826,1.0,59
+uniform,246,bt4 = 1 AND Dist = 1 AND BlockSize = 1,workload==0,0,0.2191536748329621,0.1230615307653826,1.0,59
+bi_modal_split,246,bt4 = 1 AND Dist = 1 AND BlockSize = 1,Dist==1 AND BlockSize==1 AND bt4==1,0,1.0,1.0,1.0,59
+tri_modal_split,246,bt4 = 1 AND Dist = 1 AND BlockSize = 1,workload==0,0,0.2191536748329621,0.1230615307653826,1.0,59
+power_law,246,bt4 = 1 AND Dist = 1 AND BlockSize = 1,workload==0,0,0.2191536748329621,0.1230615307653826,1.0,59
+normal,225,Depth = 1 AND Dict = 1 AND PositionBits = 1,Lc1Lp2==0,3,0.2053196453569762,0.1147028154327424,0.9777777777777776,5
+uniform,225,Depth = 1 AND Dict = 1 AND PositionBits = 1,Lc3Lp1==0,3,0.2051522248243559,0.1146596858638743,0.9733333333333334,5
+bi_modal_split,225,Depth = 1 AND Dict = 1 AND PositionBits = 1,Lc1Lp2==0,1,0.2053196453569762,0.1147028154327424,0.9777777777777776,5
+tri_modal_split,225,Depth = 1 AND Dict = 1 AND PositionBits = 1,Lc2Lp1==0,3,0.2054409005628517,0.1148400629260618,0.9733333333333334,5
+power_law,225,Depth = 1 AND Dict = 1 AND PositionBits = 1,Lc2Lp1==0,3,0.2054409005628517,0.1148400629260618,0.9733333333333334,5
+normal,254,crc32 = 1 AND Nice = 1 AND Dict = 1,Lc3Lp1==0,0,0.2282809611829944,0.1293193717277486,0.9724409448818898,60
+uniform,254,crc32 = 1 AND Nice = 1 AND Dict = 1,workload==0,0,0.2254771415889924,0.1270635317658829,1.0,60
+bi_modal_split,254,crc32 = 1 AND Nice = 1 AND Dict = 1,workload==0,0,0.2254771415889924,0.1270635317658829,1.0,60
+tri_modal_split,254,crc32 = 1 AND Nice = 1 AND Dict = 1,workload==0,0,0.2254771415889924,0.1270635317658829,1.0,60
+power_law,254,crc32 = 1 AND Nice = 1 AND Dict = 1,Lc2Lp0==0,3,0.2277547256800369,0.1289817232375979,0.9724409448818898,60
+normal,353,Nice = 1 AND Dist = 1 AND FlushTimeout = 1,Nice==1 AND Dist==1 AND FlushTimeout==1,0,1.0,1.0,1.0,61
+uniform,353,Nice = 1 AND Dist = 1 AND FlushTimeout = 1,workload==0,0,0.3001700680272108,0.1765882941470735,1.0,61
+bi_modal_split,353,Nice = 1 AND Dist = 1 AND FlushTimeout = 1,Nice==1 AND Dist==1 AND FlushTimeout==1,0,1.0,1.0,1.0,61
+tri_modal_split,353,Nice = 1 AND Dist = 1 AND FlushTimeout = 1,Nice==1 AND Dist==1 AND FlushTimeout==1,0,1.0,1.0,1.0,61
+power_law,353,Nice = 1 AND Dist = 1 AND FlushTimeout = 1,workload==0,0,0.3001700680272108,0.1765882941470735,1.0,61
+normal,237,bt4 = 1 AND Nice = 1 AND Dist = 1,workload==0,0,0.2119856887298747,0.1185592796398199,1.0,62
+uniform,237,bt4 = 1 AND Nice = 1 AND Dist = 1,workload==0,0,0.2119856887298747,0.1185592796398199,1.0,62
+bi_modal_split,237,bt4 = 1 AND Nice = 1 AND Dist = 1,workload==0,0,0.2119856887298747,0.1185592796398199,1.0,62
+tri_modal_split,237,bt4 = 1 AND Nice = 1 AND Dist = 1,workload==0,0,0.2119856887298747,0.1185592796398199,1.0,62
+power_law,237,bt4 = 1 AND Nice = 1 AND Dist = 1,Lc2Lp2==0,3,0.2192436572522738,0.1236501079913607,0.9662447257383966,62
+normal,240,bt4 = 1 AND Nice = 1 AND Dict = 1,Nice==1 AND Dict==1 AND bt4==1,0,1.0,1.0,1.0,63
+uniform,240,bt4 = 1 AND Nice = 1 AND Dict = 1,Lc3Lp1==0,3,0.2158139534883721,0.1214659685863874,0.9666666666666668,63
+bi_modal_split,240,bt4 = 1 AND Nice = 1 AND Dict = 1,workload==0,0,0.2143814202769093,0.1200600300150075,1.0,63
+tri_modal_split,240,bt4 = 1 AND Nice = 1 AND Dict = 1,Lc3Lp1==0,3,0.2158139534883721,0.1214659685863874,0.9666666666666668,63
+power_law,240,bt4 = 1 AND Nice = 1 AND Dict = 1,Lc3Lp1==0,3,0.2158139534883721,0.1214659685863874,0.9666666666666668,63
+normal,231,Depth = 1 AND Dist = 1 AND PositionBits = 1,Lc3Lp1==0,3,0.2101821578701541,0.1178010471204188,0.974025974025974,64
+uniform,231,Depth = 1 AND Dist = 1 AND PositionBits = 1,Lc1Lp2==0,1,0.2103303862261517,0.1178310740354535,0.9783549783549784,64
+bi_modal_split,231,Depth = 1 AND Dist = 1 AND PositionBits = 1,Lc1Lp2==0,3,0.2103303862261517,0.1178310740354535,0.9783549783549784,64
+tri_modal_split,231,Depth = 1 AND Dist = 1 AND PositionBits = 1,Lc3Lp1==0,1,0.2101821578701541,0.1178010471204188,0.974025974025974,64
+power_law,231,Depth = 1 AND Dist = 1 AND PositionBits = 1,Lc1Lp2==0,3,0.2103303862261517,0.1178310740354535,0.9783549783549784,64
+normal,269,Dict = 1 AND BlockSize = 1 AND PositionBits = 1,Lc3Lp1==0,3,0.2413951353832033,0.137696335078534,0.9776951672862454,65
+uniform,269,Dict = 1 AND BlockSize = 1 AND PositionBits = 1,workload==0,0,0.2372134038800705,0.1345672836418209,1.0,65
+bi_modal_split,269,Dict = 1 AND BlockSize = 1 AND PositionBits = 1,Lc2Lp1==0,3,0.2380514705882353,0.1358154168851599,0.9628252788104088,65
+tri_modal_split,269,Dict = 1 AND BlockSize = 1 AND PositionBits = 1,workload==0,0,0.2372134038800705,0.1345672836418209,1.0,65
+power_law,269,Dict = 1 AND BlockSize = 1 AND PositionBits = 1,Lc1Lp2==0,3,0.2423411065386373,0.1381647549530761,0.9851301115241636,65
+normal,240,bt4 = 1 AND MemoryLimit = 1 AND Depth = 1,workload==0,0,0.2143814202769093,0.1200600300150075,1.0,66
+uniform,240,bt4 = 1 AND MemoryLimit = 1 AND Depth = 1,workload==0,0,0.2143814202769093,0.1200600300150075,1.0,66
+bi_modal_split,240,bt4 = 1 AND MemoryLimit = 1 AND Depth = 1,workload==0,0,0.2143814202769093,0.1200600300150075,1.0,66
+tri_modal_split,240,bt4 = 1 AND MemoryLimit = 1 AND Depth = 1,workload==0,0,0.2143814202769093,0.1200600300150075,1.0,66
+power_law,240,bt4 = 1 AND MemoryLimit = 1 AND Depth = 1,Lc2Lp1==0,3,0.2170470423847229,0.1221814368117462,0.9708333333333332,66
+normal,334,MemoryLimit = 1 AND Depth = 1 AND FlushTimeout = 1,MemoryLimit==1 AND Depth==1 AND FlushTimeout==1,0,1.0,1.0,1.0,67
+uniform,334,MemoryLimit = 1 AND Depth = 1 AND FlushTimeout = 1,MemoryLimit==1 AND Depth==1 AND FlushTimeout==1,0,1.0,1.0,1.0,67
+bi_modal_split,334,MemoryLimit = 1 AND Depth = 1 AND FlushTimeout = 1,MemoryLimit==1 AND Depth==1 AND FlushTimeout==1,0,1.0,1.0,1.0,67
+tri_modal_split,334,MemoryLimit = 1 AND Depth = 1 AND FlushTimeout = 1,workload==0,0,0.2863266180882983,0.1670835417708854,1.0,67
+power_law,334,MemoryLimit = 1 AND Depth = 1 AND FlushTimeout = 1,workload==0,0,0.2863266180882983,0.1670835417708854,1.0,67
+normal,267,crc32 = 1 AND Nice = 1 AND BlockSize = 1,Lc3Lp1==0,1,0.2379421221864952,0.1356020942408377,0.9700374531835206,68
+uniform,267,crc32 = 1 AND Nice = 1 AND BlockSize = 1,workload==0,0,0.2356575463371579,0.1335667833916958,1.0,68
+bi_modal_split,267,crc32 = 1 AND Nice = 1 AND BlockSize = 1,Lc3Lp1==0,3,0.2379421221864952,0.1356020942408377,0.9700374531835206,68
+tri_modal_split,267,crc32 = 1 AND Nice = 1 AND BlockSize = 1,Lc3Lp1==0,3,0.2379421221864952,0.1356020942408377,0.9700374531835206,68
+power_law,267,crc32 = 1 AND Nice = 1 AND BlockSize = 1,workload==0,0,0.2356575463371579,0.1335667833916958,1.0,68
+normal,211,hc3 = 1 AND MemoryLimit = 1 AND BlockSize = 1,MemoryLimit==1 AND BlockSize==1 AND hc3==1,0,1.0,1.0,1.0,69
+uniform,211,hc3 = 1 AND MemoryLimit = 1 AND BlockSize = 1,Lc2Lp2==0,1,0.1919534658264663,0.1069114470842332,0.9383886255924172,69
+bi_modal_split,211,hc3 = 1 AND MemoryLimit = 1 AND BlockSize = 1,Lc1Lp2==0,3,0.1925786754344762,0.1068821689259645,0.971563981042654,69
+tri_modal_split,211,hc3 = 1 AND MemoryLimit = 1 AND BlockSize = 1,Lc2Lp1==0,3,0.19452313503305,0.108023072889355,0.976303317535545,69
+power_law,211,hc3 = 1 AND MemoryLimit = 1 AND BlockSize = 1,Lc2Lp1==0,3,0.19452313503305,0.108023072889355,0.976303317535545,69
+normal,234,crc32 = 1 AND MemoryLimit = 1 AND Nice = 1,Lc3Lp1==0,3,0.210820895522388,0.1183246073298429,0.9658119658119658,6
+uniform,234,crc32 = 1 AND MemoryLimit = 1 AND Nice = 1,Lc2Lp0==0,3,0.2103303862261517,0.1180156657963446,0.9658119658119658,6
+bi_modal_split,234,crc32 = 1 AND MemoryLimit = 1 AND Nice = 1,Lc2Lp0==0,1,0.2103303862261517,0.1180156657963446,0.9658119658119658,6
+tri_modal_split,234,crc32 = 1 AND MemoryLimit = 1 AND Nice = 1,Lc3Lp1==0,1,0.210820895522388,0.1183246073298429,0.9658119658119658,6
+power_law,234,crc32 = 1 AND MemoryLimit = 1 AND Nice = 1,Lc2Lp0==0,3,0.2103303862261517,0.1180156657963446,0.9658119658119658,6
+normal,225,Depth = 1 AND Dict = 1 AND PositionBits = 1,Lc1Lp2==0,1,0.2053196453569762,0.1147028154327424,0.9777777777777776,70
+uniform,225,Depth = 1 AND Dict = 1 AND PositionBits = 1,Lc3Lp1==0,3,0.2051522248243559,0.1146596858638743,0.9733333333333334,70
+bi_modal_split,225,Depth = 1 AND Dict = 1 AND PositionBits = 1,Lc1Lp2==0,1,0.2053196453569762,0.1147028154327424,0.9777777777777776,70
+tri_modal_split,225,Depth = 1 AND Dict = 1 AND PositionBits = 1,workload==0,0,0.2023381294964029,0.1125562781390695,1.0,70
+power_law,225,Depth = 1 AND Dict = 1 AND PositionBits = 1,workload==0,0,0.2023381294964029,0.1125562781390695,1.0,70
+normal,260,crc32 = 1 AND Dist = 1 AND BlockSize = 1,Lc2Lp0==0,3,0.2317241379310345,0.1315926892950391,0.9692307692307692,71
+uniform,260,crc32 = 1 AND Dist = 1 AND BlockSize = 1,Lc2Lp0==0,1,0.2317241379310345,0.1315926892950391,0.9692307692307692,71
+bi_modal_split,260,crc32 = 1 AND Dist = 1 AND BlockSize = 1,crc32==1 AND Dist==1 AND BlockSize==1,0,1.0,1.0,1.0,71
+tri_modal_split,260,crc32 = 1 AND Dist = 1 AND BlockSize = 1,Lc2Lp0==0,1,0.2317241379310345,0.1315926892950391,0.9692307692307692,71
+power_law,260,crc32 = 1 AND Dist = 1 AND BlockSize = 1,Lc3Lp1==0,3,0.232258064516129,0.1319371727748691,0.9692307692307692,71
+normal,233,Nice = 1 AND Dist = 1 AND PositionBits = 1,Lc1Lp2==0,3,0.2119944211994421,0.1188738269030239,0.9785407725321889,72
+uniform,233,Nice = 1 AND Dist = 1 AND PositionBits = 1,Lc3Lp1==0,3,0.211852543163789,0.118848167539267,0.9742489270386266,72
+bi_modal_split,233,Nice = 1 AND Dist = 1 AND PositionBits = 1,Lc3Lp1==0,1,0.211852543163789,0.118848167539267,0.9742489270386266,72
+tri_modal_split,233,Nice = 1 AND Dist = 1 AND PositionBits = 1,Lc3Lp1==0,1,0.211852543163789,0.118848167539267,0.9742489270386266,72
+power_law,233,Nice = 1 AND Dist = 1 AND PositionBits = 1,Lc1Lp2==0,1,0.2119944211994421,0.1188738269030239,0.9785407725321889,72
+normal,212,hc3 = 1 AND Depth = 1 AND BlockSize = 1,Depth==1 AND BlockSize==1 AND hc3==1,0,1.0,1.0,1.0,73
+uniform,212,hc3 = 1 AND Depth = 1 AND BlockSize = 1,workload==0,0,0.1917684305744007,0.1060530265132566,1.0,73
+bi_modal_split,212,hc3 = 1 AND Depth = 1 AND BlockSize = 1,workload==0,0,0.1917684305744007,0.1060530265132566,1.0,73
+tri_modal_split,212,hc3 = 1 AND Depth = 1 AND BlockSize = 1,workload==0,0,0.1917684305744007,0.1060530265132566,1.0,73
+power_law,212,hc3 = 1 AND Depth = 1 AND BlockSize = 1,Lc2Lp1==0,1,0.195375176970269,0.1085474567383324,0.9764150943396226,73
+normal,330,Nice = 1 AND Depth = 1 AND FlushTimeout = 1,Nice==1 AND Depth==1 AND FlushTimeout==1,0,1.0,1.0,1.0,74
+uniform,330,Nice = 1 AND Depth = 1 AND FlushTimeout = 1,workload==0,0,0.283383426363246,0.1650825412706353,1.0,74
+bi_modal_split,330,Nice = 1 AND Depth = 1 AND FlushTimeout = 1,Nice==1 AND Depth==1 AND FlushTimeout==1,0,1.0,1.0,1.0,74
+tri_modal_split,330,Nice = 1 AND Depth = 1 AND FlushTimeout = 1,Nice==1 AND Depth==1 AND FlushTimeout==1,0,1.0,1.0,1.0,74
+power_law,330,Nice = 1 AND Depth = 1 AND FlushTimeout = 1,workload==0,0,0.283383426363246,0.1650825412706353,1.0,74
+normal,211,hc3 = 1 AND MemoryLimit = 1 AND BlockSize = 1,MemoryLimit==1 AND BlockSize==1 AND hc3==1,0,1.0,1.0,1.0,75
+uniform,211,hc3 = 1 AND MemoryLimit = 1 AND BlockSize = 1,Lc3Lp1==0,3,0.1914191419141914,0.106282722513089,0.962085308056872,75
+bi_modal_split,211,hc3 = 1 AND MemoryLimit = 1 AND BlockSize = 1,MemoryLimit==1 AND BlockSize==1 AND hc3==1,0,1.0,1.0,1.0,75
+tri_modal_split,211,hc3 = 1 AND MemoryLimit = 1 AND BlockSize = 1,MemoryLimit==1 AND BlockSize==1 AND hc3==1,0,1.0,1.0,1.0,75
+power_law,211,hc3 = 1 AND MemoryLimit = 1 AND BlockSize = 1,Lc2Lp1==0,1,0.19452313503305,0.108023072889355,0.976303317535545,75
+normal,225,Depth = 1 AND Dict = 1 AND PositionBits = 1,Lc2Lp1==0,3,0.2054409005628517,0.1148400629260618,0.9733333333333334,76
+uniform,225,Depth = 1 AND Dict = 1 AND PositionBits = 1,Lc1Lp2==0,1,0.2053196453569762,0.1147028154327424,0.9777777777777776,76
+bi_modal_split,225,Depth = 1 AND Dict = 1 AND PositionBits = 1,Lc2Lp1==0,3,0.2054409005628517,0.1148400629260618,0.9733333333333334,76
+tri_modal_split,225,Depth = 1 AND Dict = 1 AND PositionBits = 1,Lc2Lp1==0,1,0.2054409005628517,0.1148400629260618,0.9733333333333334,76
+power_law,225,Depth = 1 AND Dict = 1 AND PositionBits = 1,Lc2Lp1==0,1,0.2054409005628517,0.1148400629260618,0.9733333333333334,76
+normal,248,bt4 = 1 AND MemoryLimit = 1 AND Dict = 1,workload==0,0,0.2207387627948375,0.1240620310155077,1.0,77
+uniform,248,bt4 = 1 AND MemoryLimit = 1 AND Dict = 1,workload==0,0,0.2207387627948375,0.1240620310155077,1.0,77
+bi_modal_split,248,bt4 = 1 AND MemoryLimit = 1 AND Dict = 1,workload==0,0,0.2207387627948375,0.1240620310155077,1.0,77
+tri_modal_split,248,bt4 = 1 AND MemoryLimit = 1 AND Dict = 1,workload==0,0,0.2207387627948375,0.1240620310155077,1.0,77
+power_law,248,bt4 = 1 AND MemoryLimit = 1 AND Dict = 1,Lc2Lp1==0,1,0.222737819025522,0.1258521237545883,0.967741935483871,77
+normal,330,Nice = 1 AND Depth = 1 AND FlushTimeout = 1,Nice==1 AND Depth==1 AND FlushTimeout==1,0,1.0,1.0,1.0,78
+uniform,330,Nice = 1 AND Depth = 1 AND FlushTimeout = 1,workload==0,0,0.283383426363246,0.1650825412706353,1.0,78
+bi_modal_split,330,Nice = 1 AND Depth = 1 AND FlushTimeout = 1,Nice==1 AND Depth==1 AND FlushTimeout==1,0,1.0,1.0,1.0,78
+tri_modal_split,330,Nice = 1 AND Depth = 1 AND FlushTimeout = 1,Nice==1 AND Depth==1 AND FlushTimeout==1,0,1.0,1.0,1.0,78
+power_law,330,Nice = 1 AND Depth = 1 AND FlushTimeout = 1,workload==0,0,0.283383426363246,0.1650825412706353,1.0,78
+normal,231,Depth = 1 AND Dist = 1 AND PositionBits = 1,Lc3Lp1==0,3,0.2101821578701541,0.1178010471204188,0.974025974025974,79
+uniform,231,Depth = 1 AND Dist = 1 AND PositionBits = 1,Lc3Lp1==0,1,0.2101821578701541,0.1178010471204188,0.974025974025974,79
+bi_modal_split,231,Depth = 1 AND Dist = 1 AND PositionBits = 1,Lc1Lp2==0,1,0.2103303862261517,0.1178310740354535,0.9783549783549784,79
+tri_modal_split,231,Depth = 1 AND Dist = 1 AND PositionBits = 1,workload==0,0,0.2071748878923767,0.1155577788894447,1.0,79
+power_law,231,Depth = 1 AND Dist = 1 AND PositionBits = 1,Lc3Lp1==0,3,0.2101821578701541,0.1178010471204188,0.974025974025974,79
+normal,387,MemoryLimit = 1 AND Multithreading = 1 AND BlockSize = 1,MemoryLimit==1 AND Multithreading==1 AND BlockSize==1,0,1.0,1.0,1.0,7
+uniform,387,MemoryLimit = 1 AND Multithreading = 1 AND BlockSize = 1,Lc3Lp1==0,3,0.3247714410100131,0.1952879581151832,0.9638242894056848,7
+bi_modal_split,387,MemoryLimit = 1 AND Multithreading = 1 AND BlockSize = 1,Lc3Lp1==0,3,0.3247714410100131,0.1952879581151832,0.9638242894056848,7
+tri_modal_split,387,MemoryLimit = 1 AND Multithreading = 1 AND BlockSize = 1,workload==0,0,0.3243922883487007,0.1935967983991996,1.0,7
+power_law,387,MemoryLimit = 1 AND Multithreading = 1 AND BlockSize = 1,Lc2Lp1==0,1,0.3312990409764603,0.1992658626114315,0.9819121447028424,7
+normal,398,Dict = 1 AND Multithreading = 1 AND BlockSize = 1,Dict==1 AND Multithreading==1 AND BlockSize==1,0,1.0,1.0,1.0,80
+uniform,398,Dict = 1 AND Multithreading = 1 AND BlockSize = 1,workload==0,0,0.3320817688777638,0.1990995497748874,1.0,80
+bi_modal_split,398,Dict = 1 AND Multithreading = 1 AND BlockSize = 1,Dict==1 AND Multithreading==1 AND BlockSize==1,0,1.0,1.0,1.0,80
+tri_modal_split,398,Dict = 1 AND Multithreading = 1 AND BlockSize = 1,workload==0,0,0.3320817688777638,0.1990995497748874,1.0,80
+power_law,398,Dict = 1 AND Multithreading = 1 AND BlockSize = 1,workload==0,0,0.3320817688777638,0.1990995497748874,1.0,80
+normal,238,bt4 = 1 AND Depth = 1 AND Dict = 1,workload==0,0,0.2127849798837729,0.1190595297648824,1.0,81
+uniform,238,bt4 = 1 AND Depth = 1 AND Dict = 1,Lc3Lp1==0,1,0.2132216014897579,0.1198952879581151,0.96218487394958,81
+bi_modal_split,238,bt4 = 1 AND Depth = 1 AND Dict = 1,Lc3Lp1==0,3,0.2132216014897579,0.1198952879581151,0.96218487394958,81
+tri_modal_split,238,bt4 = 1 AND Depth = 1 AND Dict = 1,Lc3Lp1==0,1,0.2132216014897579,0.1198952879581151,0.96218487394958,81
+power_law,238,bt4 = 1 AND Depth = 1 AND Dict = 1,workload==0,0,0.2127849798837729,0.1190595297648824,1.0,81
+normal,233,Nice = 1 AND Dist = 1 AND PositionBits = 1,Nice==1 AND Dist==1 AND PositionBits==1,0,1.0,1.0,1.0,82
+uniform,233,Nice = 1 AND Dist = 1 AND PositionBits = 1,Lc3Lp1==0,1,0.211852543163789,0.118848167539267,0.9742489270386266,82
+bi_modal_split,233,Nice = 1 AND Dist = 1 AND PositionBits = 1,Lc1Lp2==0,3,0.2119944211994421,0.1188738269030239,0.9785407725321889,82
+tri_modal_split,233,Nice = 1 AND Dist = 1 AND PositionBits = 1,workload==0,0,0.2087813620071684,0.1165582791395697,1.0,82
+power_law,233,Nice = 1 AND Dist = 1 AND PositionBits = 1,Lc3Lp1==0,1,0.211852543163789,0.118848167539267,0.9742489270386266,82
+normal,225,Depth = 1 AND Dict = 1 AND PositionBits = 1,Lc2Lp1==0,1,0.2054409005628517,0.1148400629260618,0.9733333333333334,83
+uniform,225,Depth = 1 AND Dict = 1 AND PositionBits = 1,Lc1Lp2==0,1,0.2053196453569762,0.1147028154327424,0.9777777777777776,83
+bi_modal_split,225,Depth = 1 AND Dict = 1 AND PositionBits = 1,Lc2Lp1==0,1,0.2054409005628517,0.1148400629260618,0.9733333333333334,83
+tri_modal_split,225,Depth = 1 AND Dict = 1 AND PositionBits = 1,Lc3Lp1==0,1,0.2051522248243559,0.1146596858638743,0.9733333333333334,83
+power_law,225,Depth = 1 AND Dict = 1 AND PositionBits = 1,Lc3Lp1==0,1,0.2051522248243559,0.1146596858638743,0.9733333333333334,83
+normal,261,Dist = 1 AND BlockSize = 1 AND PositionBits = 1,Dist==1 AND BlockSize==1 AND PositionBits==1,0,1.0,1.0,1.0,84
+uniform,261,Dist = 1 AND BlockSize = 1 AND PositionBits = 1,Lc2Lp1==0,3,0.2324723247232472,0.1321447299423177,0.9655172413793104,84
+bi_modal_split,261,Dist = 1 AND BlockSize = 1 AND PositionBits = 1,workload==0,0,0.2309734513274336,0.1305652826413206,1.0,84
+tri_modal_split,261,Dist = 1 AND BlockSize = 1 AND PositionBits = 1,Lc1Lp2==0,1,0.236805874254245,0.1345151199165797,0.9885057471264368,84
+power_law,261,Dist = 1 AND BlockSize = 1 AND PositionBits = 1,Lc1Lp2==0,1,0.236805874254245,0.1345151199165797,0.9885057471264368,84
+normal,216,crc32 = 1 AND MemoryLimit = 1 AND Dist = 1,Lc2Lp0==0,3,0.1952135147817926,0.1086161879895561,0.9629629629629628,85
+uniform,216,crc32 = 1 AND MemoryLimit = 1 AND Dist = 1,Lc2Lp0==0,3,0.1952135147817926,0.1086161879895561,0.9629629629629628,85
+bi_modal_split,216,crc32 = 1 AND MemoryLimit = 1 AND Dist = 1,Lc3Lp1==0,3,0.1956726246472248,0.1089005235602094,0.9629629629629628,85
+tri_modal_split,216,crc32 = 1 AND MemoryLimit = 1 AND Dist = 1,Lc2Lp0==0,3,0.1952135147817926,0.1086161879895561,0.9629629629629628,85
+power_law,216,crc32 = 1 AND MemoryLimit = 1 AND Dist = 1,Lc3Lp1==0,1,0.1956726246472248,0.1089005235602094,0.9629629629629628,85
+normal,335,MemoryLimit = 1 AND Nice = 1 AND FlushTimeout = 1,MemoryLimit==1 AND Nice==1 AND FlushTimeout==1,0,1.0,1.0,1.0,86
+uniform,335,MemoryLimit = 1 AND Nice = 1 AND FlushTimeout = 1,workload==0,0,0.2870608397600685,0.1675837918959479,1.0,86
+bi_modal_split,335,MemoryLimit = 1 AND Nice = 1 AND FlushTimeout = 1,workload==0,0,0.2870608397600685,0.1675837918959479,1.0,86
+tri_modal_split,335,MemoryLimit = 1 AND Nice = 1 AND FlushTimeout = 1,workload==0,0,0.2870608397600685,0.1675837918959479,1.0,86
+power_law,335,MemoryLimit = 1 AND Nice = 1 AND FlushTimeout = 1,workload==0,0,0.2870608397600685,0.1675837918959479,1.0,86
+normal,214,hc3 = 1 AND Dict = 1 AND Dist = 1,Dict==1 AND Dist==1 AND hc3==1,0,1.0,1.0,1.0,87
+uniform,214,hc3 = 1 AND Dict = 1 AND Dist = 1,workload==0,0,0.193402620876638,0.1070535267633816,1.0,87
+bi_modal_split,214,hc3 = 1 AND Dict = 1 AND Dist = 1,workload==0,0,0.193402620876638,0.1070535267633816,1.0,87
+tri_modal_split,214,hc3 = 1 AND Dict = 1 AND Dist = 1,Lc2Lp1==0,3,0.1951909476661952,0.1085474567383324,0.9672897196261684,87
+power_law,214,hc3 = 1 AND Dict = 1 AND Dist = 1,Lc2Lp1==0,3,0.1951909476661952,0.1085474567383324,0.9672897196261684,87
+normal,396,Nice = 1 AND Dist = 1 AND Multithreading = 1,Nice==1 AND Dist==1 AND Multithreading==1,0,1.0,1.0,1.0,88
+uniform,396,Nice = 1 AND Dist = 1 AND Multithreading = 1,workload==0,0,0.3306889352818372,0.1980990495247623,1.0,88
+bi_modal_split,396,Nice = 1 AND Dist = 1 AND Multithreading = 1,Lc3Lp1==0,1,0.3330442324371205,0.2010471204188481,0.9696969696969696,88
+tri_modal_split,396,Nice = 1 AND Dist = 1 AND Multithreading = 1,Lc3Lp1==0,3,0.3330442324371205,0.2010471204188481,0.9696969696969696,88
+power_law,396,Nice = 1 AND Dist = 1 AND Multithreading = 1,Lc3Lp1==0,3,0.3330442324371205,0.2010471204188481,0.9696969696969696,88
+normal,254,crc32 = 1 AND Nice = 1 AND Dict = 1,Lc1Lp3==0,3,0.2300884955752212,0.1304807184363444,0.9724409448818898,89
+uniform,254,crc32 = 1 AND Nice = 1 AND Dict = 1,Lc1Lp3==0,1,0.2300884955752212,0.1304807184363444,0.9724409448818898,89
+bi_modal_split,254,crc32 = 1 AND Nice = 1 AND Dict = 1,Lc2Lp0==0,3,0.2277547256800369,0.1289817232375979,0.9724409448818898,89
+tri_modal_split,254,crc32 = 1 AND Nice = 1 AND Dict = 1,Lc3Lp1==0,3,0.2282809611829944,0.1293193717277486,0.9724409448818898,89
+power_law,254,crc32 = 1 AND Nice = 1 AND Dict = 1,Lc3Lp1==0,1,0.2282809611829944,0.1293193717277486,0.9724409448818898,89
+normal,214,hc3 = 1 AND Depth = 1 AND Dict = 1,Depth==1 AND Dict==1 AND hc3==1,0,1.0,1.0,1.0,8
+uniform,214,hc3 = 1 AND Depth = 1 AND Dict = 1,Depth==1 AND Dict==1 AND hc3==1,0,1.0,1.0,1.0,8
+bi_modal_split,214,hc3 = 1 AND Depth = 1 AND Dict = 1,workload==0,0,0.193402620876638,0.1070535267633816,1.0,8
+tri_modal_split,214,hc3 = 1 AND Depth = 1 AND Dict = 1,workload==0,0,0.193402620876638,0.1070535267633816,1.0,8
+power_law,214,hc3 = 1 AND Depth = 1 AND Dict = 1,workload==0,0,0.193402620876638,0.1070535267633816,1.0,8
+normal,237,bt4 = 1 AND Nice = 1 AND Dist = 1,Nice==1 AND Dist==1 AND bt4==1,0,1.0,1.0,1.0,90
+uniform,237,bt4 = 1 AND Nice = 1 AND Dist = 1,Lc3Lp1==0,3,0.2123893805309734,0.1193717277486911,0.9620253164556962,90
+bi_modal_split,237,bt4 = 1 AND Nice = 1 AND Dist = 1,workload==0,0,0.2119856887298747,0.1185592796398199,1.0,90
+tri_modal_split,237,bt4 = 1 AND Nice = 1 AND Dist = 1,workload==0,0,0.2119856887298747,0.1185592796398199,1.0,90
+power_law,237,bt4 = 1 AND Nice = 1 AND Dist = 1,workload==0,0,0.2119856887298747,0.1185592796398199,1.0,90
+normal,239,Depth = 1 AND BlockSize = 1 AND PositionBits = 1,Lc1Lp2==0,3,0.2169680111265647,0.1220020855057351,0.9790794979079498,91
+uniform,239,Depth = 1 AND BlockSize = 1 AND PositionBits = 1,Lc1Lp2==0,1,0.2169680111265647,0.1220020855057351,0.9790794979079498,91
+bi_modal_split,239,Depth = 1 AND BlockSize = 1 AND PositionBits = 1,Lc1Lp2==0,1,0.2169680111265647,0.1220020855057351,0.9790794979079498,91
+tri_modal_split,239,Depth = 1 AND BlockSize = 1 AND PositionBits = 1,Lc3Lp1==0,3,0.2168450442066077,0.1219895287958115,0.9748953974895398,91
+power_law,239,Depth = 1 AND BlockSize = 1 AND PositionBits = 1,Lc1Lp3==0,3,0.2138836772983114,0.1204437400950871,0.9539748953974896,91
+normal,239,Depth = 1 AND BlockSize = 1 AND PositionBits = 1,Depth==1 AND BlockSize==1 AND PositionBits==1,0,1.0,1.0,1.0,92
+uniform,239,Depth = 1 AND BlockSize = 1 AND PositionBits = 1,workload==0,0,0.2135835567470956,0.1195597798899449,1.0,92
+bi_modal_split,239,Depth = 1 AND BlockSize = 1 AND PositionBits = 1,Lc2Lp1==0,1,0.217148182665424,0.1221814368117462,0.9748953974895398,92
+tri_modal_split,239,Depth = 1 AND BlockSize = 1 AND PositionBits = 1,workload==0,0,0.2135835567470956,0.1195597798899449,1.0,92
+power_law,239,Depth = 1 AND BlockSize = 1 AND PositionBits = 1,Lc1Lp3==0,3,0.2138836772983114,0.1204437400950871,0.9539748953974896,92
+normal,209,hc3 = 1 AND Depth = 1 AND Dist = 1,Depth==1 AND Dist==1 AND hc3==1,0,1.0,1.0,1.0,93
+uniform,209,hc3 = 1 AND Depth = 1 AND Dist = 1,workload==0,0,0.1893115942028985,0.104552276138069,1.0,93
+bi_modal_split,209,hc3 = 1 AND Depth = 1 AND Dist = 1,workload==0,0,0.1893115942028985,0.104552276138069,1.0,93
+tri_modal_split,209,hc3 = 1 AND Depth = 1 AND Dist = 1,Depth==1 AND Dist==1 AND hc3==1,0,1.0,1.0,1.0,93
+power_law,209,hc3 = 1 AND Depth = 1 AND Dist = 1,workload==0,0,0.1893115942028985,0.104552276138069,1.0,93
+normal,205,none = 1 AND Dict = 1 AND BlockSize = 1,Dict==1 AND BlockSize==1 AND none==1,0,1.0,1.0,1.0,94
+uniform,205,none = 1 AND Dict = 1 AND BlockSize = 1,workload==0,0,0.1860254083484573,0.1025512756378189,1.0,94
+bi_modal_split,205,none = 1 AND Dict = 1 AND BlockSize = 1,Dict==1 AND BlockSize==1 AND none==1,0,1.0,1.0,1.0,94
+tri_modal_split,205,none = 1 AND Dict = 1 AND BlockSize = 1,workload==0,0,0.1860254083484573,0.1025512756378189,1.0,94
+power_law,205,none = 1 AND Dict = 1 AND BlockSize = 1,workload==0,0,0.1860254083484573,0.1025512756378189,1.0,94
+normal,256,crc32 = 1 AND Nice = 1 AND Depth = 1,workload==0,0,0.227050997782705,0.128064032016008,1.0,95
+uniform,256,crc32 = 1 AND Nice = 1 AND Depth = 1,Lc1Lp0==0,3,0.2316279069767442,0.131467793030623,0.97265625,95
+bi_modal_split,256,crc32 = 1 AND Nice = 1 AND Depth = 1,Lc3Lp1==0,1,0.2289935364727608,0.1298429319371727,0.96875,95
+tri_modal_split,256,crc32 = 1 AND Nice = 1 AND Depth = 1,Lc3Lp1==0,1,0.2289935364727608,0.1298429319371727,0.96875,95
+power_law,256,crc32 = 1 AND Nice = 1 AND Depth = 1,Lc3Lp1==0,1,0.2289935364727608,0.1298429319371727,0.96875,95
+normal,237,bt4 = 1 AND Nice = 1 AND Depth = 1,Lc3Lp1==0,1,0.2123893805309734,0.1193717277486911,0.9620253164556962,96
+uniform,237,bt4 = 1 AND Nice = 1 AND Depth = 1,workload==0,0,0.2119856887298747,0.1185592796398199,1.0,96
+bi_modal_split,237,bt4 = 1 AND Nice = 1 AND Depth = 1,Lc3Lp1==0,3,0.2123893805309734,0.1193717277486911,0.9620253164556962,96
+tri_modal_split,237,bt4 = 1 AND Nice = 1 AND Depth = 1,workload==0,0,0.2119856887298747,0.1185592796398199,1.0,96
+power_law,237,bt4 = 1 AND Nice = 1 AND Depth = 1,Lc2Lp1==0,1,0.2136194029850746,0.1200839014158363,0.9662447257383966,96
+normal,229,crc32 = 1 AND MemoryLimit = 1 AND BlockSize = 1,crc32==1 AND MemoryLimit==1 AND BlockSize==1,0,1.0,1.0,1.0,97
+uniform,229,crc32 = 1 AND MemoryLimit = 1 AND BlockSize = 1,Lc2Lp1==0,1,0.2069288389513108,0.1158888306240167,0.965065502183406,97
+bi_modal_split,229,crc32 = 1 AND MemoryLimit = 1 AND BlockSize = 1,Lc2Lp1==0,3,0.2069288389513108,0.1158888306240167,0.965065502183406,97
+tri_modal_split,229,crc32 = 1 AND MemoryLimit = 1 AND BlockSize = 1,Lc2Lp0==0,3,0.2061567164179104,0.1154046997389034,0.965065502183406,97
+power_law,229,crc32 = 1 AND MemoryLimit = 1 AND BlockSize = 1,Lc2Lp0==0,1,0.2061567164179104,0.1154046997389034,0.965065502183406,97
+normal,336,Depth = 1 AND Dist = 1 AND FlushTimeout = 1,Depth==1 AND Dist==1 AND FlushTimeout==1,0,1.0,1.0,1.0,98
+uniform,336,Depth = 1 AND Dist = 1 AND FlushTimeout = 1,Depth==1 AND Dist==1 AND FlushTimeout==1,0,1.0,1.0,1.0,98
+bi_modal_split,336,Depth = 1 AND Dist = 1 AND FlushTimeout = 1,workload==0,2,0.2877944325481799,0.1680840420210105,1.0,98
+tri_modal_split,336,Depth = 1 AND Dist = 1 AND FlushTimeout = 1,workload==0,0,0.2877944325481799,0.1680840420210105,1.0,98
+power_law,336,Depth = 1 AND Dist = 1 AND FlushTimeout = 1,Lc1Lp2==0,3,0.2883762200532386,0.1694473409801876,0.9672619047619048,98
+normal,206,hc3 = 1 AND MemoryLimit = 1 AND Nice = 1,MemoryLimit==1 AND Nice==1 AND hc3==1,0,1.0,1.0,1.0,99
+uniform,206,hc3 = 1 AND MemoryLimit = 1 AND Nice = 1,workload==0,0,0.1868480725623582,0.1030515257628814,1.0,99
+bi_modal_split,206,hc3 = 1 AND MemoryLimit = 1 AND Nice = 1,Lc2Lp1==0,1,0.1902508282063417,0.1054011536444677,0.9757281553398058,99
+tri_modal_split,206,hc3 = 1 AND MemoryLimit = 1 AND Nice = 1,workload==0,0,0.1868480725623582,0.1030515257628814,1.0,99
+power_law,206,hc3 = 1 AND MemoryLimit = 1 AND Nice = 1,workload==0,0,0.1868480725623582,0.1030515257628814,1.0,99
+normal,206,none = 1 AND Depth = 1 AND BlockSize = 1,Depth==1 AND BlockSize==1 AND none==1,0,1.0,1.0,1.0,9
+uniform,206,none = 1 AND Depth = 1 AND BlockSize = 1,workload==0,0,0.1868480725623582,0.1030515257628814,1.0,9
+bi_modal_split,206,none = 1 AND Depth = 1 AND BlockSize = 1,workload==0,0,0.1868480725623582,0.1030515257628814,1.0,9
+tri_modal_split,206,none = 1 AND Depth = 1 AND BlockSize = 1,Lc2Lp1==0,1,0.1893043066729768,0.1048767697954903,0.970873786407767,9
+power_law,206,none = 1 AND Depth = 1 AND BlockSize = 1,Lc2Lp1==0,3,0.1893043066729768,0.1048767697954903,0.970873786407767,9

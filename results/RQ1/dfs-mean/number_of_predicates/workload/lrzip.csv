@@ -1,0 +1,401 @@
+n_conditions,sg_mean,sg_cardinality,sg_rule,best_rule,best_rule_idx,f1,precision,recall,seed,runtime
+1,23.928835043048284,31,disableLzoCompressibilityTesting = 1,disableLzoCompressibilityTesting==1 AND bzip2==0 AND gzip==0 AND lzo==1 AND zpaq==0,0,1.0,1.0,1.0,0,0.1084485054016113
+2,6.42206265515615,47,encryption = 1 AND nice = 1,encryption==1 AND integrityCheck==0 AND bzip2==1 AND gzip==0 AND nice==0 AND unlimitedWindowSize==1,0,0.0,0.0,0.0,0,0.5692682266235352
+3,15.44485714372082,24,encryption = 1 AND integrityCheck = 1 AND multithreading = 1,encryption==1 AND integrityCheck==1 AND multithreading==1,0,1.0,1.0,1.0,0,0.288348913192749
+4,16.443828885643278,12,integrityCheck = 1 AND nice = 1 AND multithreading = 1 AND unlimitedWindowSize = 1,integrityCheck==1 AND nice==1 AND multithreading==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,0,0.6711647510528564
+1,17.14388132695109,32,bzip2 = 1,bzip2==1,0,1.0,1.0,1.0,1,0.3123476505279541
+2,7.200999670784867,16,gzip = 1 AND nice = 1,encryption==1 AND disableLzoCompressibilityTesting==1 AND bzip2==0 AND gzip==0 AND multithreading==0 AND unlimitedWindowSize==1,0,0.0,0.0,0.0,1,0.5742955207824707
+3,13.50256547747886,24,integrityCheck = 1 AND multithreading = 1 AND unlimitedWindowSize = 1,encryption==1 AND disableLzoCompressibilityTesting==1 AND integrityCheck==1 AND bzip2==0 AND nice==0 AND unlimitedWindowSize==0,0,0.0,0.0,0.0,1,0.5048873424530029
+4,22.84361642746198,12,encryption = 1 AND integrityCheck = 1 AND nice = 1 AND unlimitedWindowSize = 1,encryption==1 AND integrityCheck==1 AND nice==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,1,0.3196732997894287
+1,8.371778929454319,32,bzip2 = 1,encryption==1 AND disableLzoCompressibilityTesting==1 AND bzip2==0 AND nice==0 AND multithreading==0 AND unlimitedWindowSize==1,0,0.0,0.0,0.0,10,0.4007744789123535
+2,24.04903634680356,31,encryption = 1 AND lzo = 1,encryption==1 AND bzip2==0 AND gzip==0 AND lzo==1,0,1.0,1.0,1.0,10,0.2079629898071289
+3,24.771539629987902,16,integrityCheck = 1 AND lzo = 1 AND multithreading = 1,integrityCheck==1 AND bzip2==0 AND gzip==0 AND lzo==1 AND zpaq==0 AND multithreading==1,0,1.0,1.0,1.0,10,0.2036778926849365
+4,18.389097805983653,12,encryption = 1 AND nice = 1 AND multithreading = 1 AND unlimitedWindowSize = 1,encryption==1 AND nice==1 AND multithreading==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,10,0.3034818172454834
+1,22.04579671185249,32,zpaq = 1,bzip2==0 AND gzip==0 AND lzo==0 AND noBackend==0,0,1.0,1.0,1.0,11,0.1098387241363525
+2,4.732152636912214,16,noBackend = 1 AND multithreading = 1,disableLzoCompressibilityTesting==0 AND integrityCheck==1 AND lzo==1 AND nice==1 AND multithreading==1 AND unlimitedWindowSize==1,0,0.0,0.0,0.0,11,0.8049948215484619
+3,17.576608760342772,16,integrityCheck = 1 AND lzo = 1 AND multithreading = 1,integrityCheck==1 AND bzip2==0 AND gzip==0 AND lzo==1 AND zpaq==0 AND multithreading==1,1,1.0,1.0,1.0,11,0.4488577842712402
+4,26.223247136915592,12,encryption = 1 AND nice = 1 AND multithreading = 1 AND unlimitedWindowSize = 1,encryption==1 AND nice==1 AND multithreading==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,11,0.304642915725708
+1,20.47247081356132,31,disableLzoCompressibilityTesting = 1,disableLzoCompressibilityTesting==1 AND bzip2==0 AND gzip==0 AND lzo==1 AND zpaq==0,0,1.0,1.0,1.0,12,0.202247142791748
+2,10.197421853707556,16,multithreading = 1 AND disableLzoCompressibilityTesting = 1,integrityCheck==0 AND bzip2==0 AND zpaq==1 AND nice==1 AND multithreading==0 AND unlimitedWindowSize==0,0,0.0,0.0,0.0,12,0.7305147647857666
+3,17.55515984361282,23,encryption = 1 AND integrityCheck = 1 AND nice = 1,encryption==1 AND integrityCheck==1 AND nice==1,0,1.0,1.0,1.0,12,0.3301601409912109
+4,11.65993827548465,12,integrityCheck = 1 AND nice = 1 AND multithreading = 1 AND unlimitedWindowSize = 1,encryption==0 AND integrityCheck==1 AND gzip==0 AND noBackend==0 AND zpaq==0 AND nice==1 AND multithreading==1,2,0.3333333333333333,0.5,0.25,12,0.541752815246582
+1,10.866285758685652,32,gzip = 1,encryption==1 AND disableLzoCompressibilityTesting==1 AND integrityCheck==0 AND bzip2==0 AND nice==1 AND unlimitedWindowSize==1,0,0.0,0.0,0.0,13,0.4750676155090332
+2,26.708682606745867,16,encryption = 1 AND noBackend = 1,encryption==1 AND bzip2==0 AND gzip==0 AND lzo==0 AND noBackend==1,0,1.0,1.0,1.0,13,0.229712963104248
+3,20.33779458686693,24,integrityCheck = 1 AND multithreading = 1 AND unlimitedWindowSize = 1,integrityCheck==1 AND multithreading==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,13,0.2112846374511718
+4,5.454127074938143,12,encryption = 1 AND integrityCheck = 1 AND multithreading = 1 AND unlimitedWindowSize = 1,encryption==1 AND disableLzoCompressibilityTesting==0 AND lzo==1 AND nice==1 AND multithreading==1 AND unlimitedWindowSize==0,0,0.0,0.0,0.0,13,0.535780668258667
+1,11.197758527891834,32,gzip = 1,encryption==1 AND bzip2==0 AND zpaq==1 AND nice==0 AND multithreading==1 AND unlimitedWindowSize==1,0,0.0,0.0,0.0,14,0.4890270233154297
+2,6.097609357390571,47,encryption = 1 AND nice = 1,encryption==0 AND integrityCheck==0 AND bzip2==0 AND zpaq==1 AND multithreading==1 AND unlimitedWindowSize==0,0,0.0,0.0,0.0,14,0.3492116928100586
+3,10.033465436986257,16,lzo = 1 AND nice = 1 AND unlimitedWindowSize = 1,encryption==0 AND integrityCheck==0 AND bzip2==0 AND gzip==1 AND multithreading==0 AND unlimitedWindowSize==0,0,0.0,0.0,0.0,14,0.3168516159057617
+4,21.24159868538452,12,encryption = 1 AND nice = 1 AND multithreading = 1 AND unlimitedWindowSize = 1,encryption==1 AND nice==1 AND multithreading==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,14,0.3749673366546631
+1,6.742353332180005,32,bzip2 = 1,encryption==1 AND disableLzoCompressibilityTesting==1 AND bzip2==0 AND gzip==0 AND nice==1 AND multithreading==0,0,0.0,0.0,0.0,15,0.6627247333526611
+2,4.082801895947778,31,lzo = 1 AND nice = 1,encryption==0 AND integrityCheck==1 AND lzo==0 AND noBackend==0 AND zpaq==0 AND nice==1 AND multithreading==0,0,0.0,0.0,0.0,15,0.364577054977417
+3,20.24214326546714,15,integrityCheck = 1 AND lzo = 1 AND disableLzoCompressibilityTesting = 1,disableLzoCompressibilityTesting==1 AND integrityCheck==1 AND bzip2==0 AND gzip==0 AND lzo==1 AND zpaq==0,0,1.0,1.0,1.0,15,0.2977423667907715
+4,18.557191164624445,12,encryption = 1 AND integrityCheck = 1 AND nice = 1 AND unlimitedWindowSize = 1,encryption==1 AND integrityCheck==1 AND nice==1 AND unlimitedWindowSize==1,2,1.0,1.0,1.0,15,0.4170618057250976
+1,22.223889494885626,32,zpaq = 1,bzip2==0 AND gzip==0 AND lzo==0 AND noBackend==0,0,1.0,1.0,1.0,16,0.1054623126983642
+2,7.126645381420589,31,encryption = 1 AND lzo = 1,encryption==1 AND integrityCheck==0 AND bzip2==0 AND zpaq==1 AND nice==1 AND multithreading==1,0,0.0,0.0,0.0,16,0.4505221843719482
+3,23.924368623062303,24,encryption = 1 AND integrityCheck = 1 AND unlimitedWindowSize = 1,encryption==1 AND integrityCheck==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,16,0.3009748458862304
+4,23.69345419757118,12,encryption = 1 AND integrityCheck = 1 AND nice = 1 AND multithreading = 1,encryption==1 AND integrityCheck==1 AND nice==1 AND multithreading==1,0,1.0,1.0,1.0,16,0.3934931755065918
+1,20.921957225030297,32,bzip2 = 1,bzip2==1,0,1.0,1.0,1.0,17,0.1756658554077148
+2,26.4120281906915,15,encryption = 1 AND disableLzoCompressibilityTesting = 1,encryption==1 AND disableLzoCompressibilityTesting==1 AND bzip2==0 AND gzip==0 AND lzo==1 AND zpaq==0,0,1.0,1.0,1.0,17,0.2398040294647216
+3,4.774481872926258,16,lzo = 1 AND nice = 1 AND unlimitedWindowSize = 1,encryption==1 AND disableLzoCompressibilityTesting==0 AND integrityCheck==0 AND bzip2==0 AND nice==1 AND multithreading==1 AND unlimitedWindowSize==0,0,0.0,0.0,0.0,17,0.4880514144897461
+4,21.10762849383384,12,encryption = 1 AND nice = 1 AND multithreading = 1 AND unlimitedWindowSize = 1,encryption==1 AND nice==1 AND multithreading==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,17,0.326256513595581
+1,23.993025637611783,32,bzip2 = 1,bzip2==1,0,1.0,1.0,1.0,18,0.1288771629333496
+2,15.779797311040104,31,integrityCheck = 1 AND lzo = 1,integrityCheck==1 AND bzip2==0 AND gzip==0 AND lzo==1,0,1.0,1.0,1.0,18,0.272524356842041
+3,21.07372073135537,24,encryption = 1 AND nice = 1 AND multithreading = 1,encryption==1 AND nice==1 AND multithreading==1,0,1.0,1.0,1.0,18,0.2544901371002197
+4,19.441782253331294,12,encryption = 1 AND integrityCheck = 1 AND nice = 1 AND multithreading = 1,encryption==1 AND integrityCheck==1 AND nice==1 AND multithreading==1,0,1.0,1.0,1.0,18,0.3085718154907226
+1,9.243829350242793,32,zpaq = 1,integrityCheck==0 AND bzip2==0 AND noBackend==0 AND zpaq==0 AND nice==0 AND multithreading==0 AND unlimitedWindowSize==0,0,0.0,0.0,0.0,19,0.480989933013916
+2,11.99139317979476,47,encryption = 1 AND nice = 1,disableLzoCompressibilityTesting==0 AND integrityCheck==0 AND bzip2==0 AND gzip==0 AND noBackend==0 AND nice==0 AND multithreading==0,0,0.0,0.0,0.0,19,0.3581538200378418
+3,10.69412280871486,15,lzo = 1 AND nice = 1 AND disableLzoCompressibilityTesting = 1,encryption==1 AND integrityCheck==0 AND gzip==0 AND lzo==0 AND nice==1 AND multithreading==0 AND unlimitedWindowSize==0,0,0.0,0.0,0.0,19,0.6055140495300293
+4,11.543818852474509,12,integrityCheck = 1 AND nice = 1 AND multithreading = 1 AND unlimitedWindowSize = 1,encryption==0 AND bzip2==1 AND gzip==0 AND nice==0 AND multithreading==1 AND unlimitedWindowSize==0,0,0.0,0.0,0.0,19,0.573150634765625
+1,26.05649636640224,32,noBackend = 1,bzip2==0 AND gzip==0 AND lzo==0 AND noBackend==1,0,1.0,1.0,1.0,2,0.089942455291748
+2,25.888800220738045,16,gzip = 1 AND unlimitedWindowSize = 1,bzip2==0 AND gzip==1 AND lzo==0 AND noBackend==0 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,2,0.1692473888397216
+3,16.659612442494133,24,encryption = 1 AND multithreading = 1 AND unlimitedWindowSize = 1,encryption==1 AND multithreading==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,2,0.2907543182373047
+4,20.4689098852002,12,encryption = 1 AND integrityCheck = 1 AND nice = 1 AND multithreading = 1,encryption==1 AND integrityCheck==1 AND nice==1 AND multithreading==1,0,1.0,1.0,1.0,2,0.2814686298370361
+1,9.856666960676366,32,noBackend = 1,encryption==1 AND integrityCheck==0 AND bzip2==0 AND gzip==1 AND multithreading==0 AND unlimitedWindowSize==0,0,0.0,0.0,0.0,20,0.4423398971557617
+2,21.86455620978206,16,encryption = 1 AND noBackend = 1,encryption==1 AND bzip2==0 AND gzip==0 AND lzo==0 AND noBackend==1,0,1.0,1.0,1.0,20,0.2426338195800781
+3,9.16766793261504,16,integrityCheck = 1 AND lzo = 1 AND unlimitedWindowSize = 1,integrityCheck==1 AND bzip2==0 AND noBackend==0 AND zpaq==0 AND nice==1 AND multithreading==1 AND unlimitedWindowSize==0,0,0.0,0.0,0.0,20,0.5157678127288818
+4,26.883942935416,12,encryption = 1 AND integrityCheck = 1 AND multithreading = 1 AND unlimitedWindowSize = 1,encryption==1 AND integrityCheck==1 AND multithreading==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,20,0.2366371154785156
+1,24.364464514216458,31,disableLzoCompressibilityTesting = 1,disableLzoCompressibilityTesting==1 AND bzip2==0 AND gzip==0 AND lzo==1 AND zpaq==0,0,1.0,1.0,1.0,21,0.1282598972320556
+2,25.089507385581346,48,encryption = 1 AND multithreading = 1,encryption==1 AND multithreading==1,0,1.0,1.0,1.0,21,0.2084767818450927
+3,22.502093691949156,24,encryption = 1 AND multithreading = 1 AND unlimitedWindowSize = 1,encryption==1 AND multithreading==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,21,0.2557916641235351
+4,25.019676501514947,12,encryption = 1 AND integrityCheck = 1 AND nice = 1 AND multithreading = 1,encryption==1 AND integrityCheck==1 AND nice==1 AND multithreading==1,0,1.0,1.0,1.0,21,0.2822592258453369
+1,20.597508245549022,32,bzip2 = 1,bzip2==1,0,1.0,1.0,1.0,22,0.1541666984558105
+2,19.687941848206314,32,lzo = 1 AND multithreading = 1,bzip2==0 AND gzip==0 AND lzo==1 AND zpaq==0 AND multithreading==1,0,1.0,1.0,1.0,22,0.1631929874420166
+3,18.292185261159737,15,lzo = 1 AND nice = 1 AND disableLzoCompressibilityTesting = 1,disableLzoCompressibilityTesting==1 AND bzip2==0 AND gzip==0 AND lzo==1 AND zpaq==0 AND nice==1,0,1.0,1.0,1.0,22,0.3615968227386474
+4,19.461726393067654,12,encryption = 1 AND integrityCheck = 1 AND nice = 1 AND multithreading = 1,encryption==1 AND integrityCheck==1 AND nice==1 AND multithreading==1,0,1.0,1.0,1.0,22,0.3075857162475586
+1,21.963384441688465,32,noBackend = 1,bzip2==0 AND gzip==0 AND lzo==0 AND noBackend==1,0,1.0,1.0,1.0,23,0.0947861671447753
+2,23.08058984276188,16,bzip2 = 1 AND multithreading = 1,bzip2==1 AND gzip==0 AND lzo==0 AND noBackend==0 AND multithreading==1,0,1.0,1.0,1.0,23,0.2339990139007568
+3,22.173466887782823,24,nice = 1 AND multithreading = 1 AND unlimitedWindowSize = 1,nice==1 AND multithreading==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,23,0.209634780883789
+4,16.87141476968441,12,encryption = 1 AND nice = 1 AND multithreading = 1 AND unlimitedWindowSize = 1,encryption==1 AND nice==1 AND multithreading==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,23,0.6044461727142334
+1,7.136225513050666,31,disableLzoCompressibilityTesting = 1,encryption==0 AND integrityCheck==0 AND gzip==0 AND lzo==0 AND zpaq==0 AND multithreading==0,0,0.0,0.0,0.0,24,0.3468985557556152
+2,10.56070703155142,16,noBackend = 1 AND multithreading = 1,encryption==1 AND integrityCheck==0 AND bzip2==1 AND gzip==0 AND multithreading==1 AND unlimitedWindowSize==1,0,0.0,0.0,0.0,24,0.477557897567749
+3,18.974429476707886,15,encryption = 1 AND lzo = 1 AND nice = 1,encryption==1 AND bzip2==0 AND gzip==0 AND lzo==1 AND zpaq==0 AND nice==1,0,1.0,1.0,1.0,24,0.3417284488677978
+4,18.63204274422644,12,encryption = 1 AND integrityCheck = 1 AND nice = 1 AND unlimitedWindowSize = 1,encryption==1 AND integrityCheck==1 AND nice==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,24,0.4176983833312988
+1,25.88037915631297,32,gzip = 1,bzip2==0 AND gzip==1,0,1.0,1.0,1.0,25,0.0971553325653076
+2,14.310717841435096,16,integrityCheck = 1 AND zpaq = 1,encryption==0 AND integrityCheck==0 AND bzip2==0 AND noBackend==1 AND multithreading==0 AND unlimitedWindowSize==1,0,0.0,0.0,0.0,25,0.3616533279418945
+3,18.07445066265544,24,encryption = 1 AND multithreading = 1 AND unlimitedWindowSize = 1,encryption==1 AND multithreading==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,25,0.2412269115447998
+4,25.19904655741868,12,integrityCheck = 1 AND nice = 1 AND multithreading = 1 AND unlimitedWindowSize = 1,integrityCheck==1 AND nice==1 AND multithreading==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,25,0.2672517299652099
+1,5.7791808817158525,31,disableLzoCompressibilityTesting = 1,encryption==1 AND integrityCheck==1 AND bzip2==1 AND gzip==0 AND multithreading==1 AND unlimitedWindowSize==0,0,0.0,0.0,0.0,26,0.4510021209716797
+2,20.0096503507956,15,encryption = 1 AND disableLzoCompressibilityTesting = 1,encryption==1 AND disableLzoCompressibilityTesting==1 AND bzip2==0 AND gzip==0 AND lzo==1 AND zpaq==0,0,1.0,1.0,1.0,26,0.4388201236724853
+3,7.18147257090517,16,lzo = 1 AND multithreading = 1 AND unlimitedWindowSize = 1,encryption==0 AND integrityCheck==0 AND bzip2==0 AND noBackend==1 AND nice==0 AND multithreading==1,0,0.0,0.0,0.0,26,0.4644777774810791
+4,22.290777787020986,12,encryption = 1 AND nice = 1 AND multithreading = 1 AND unlimitedWindowSize = 1,encryption==1 AND nice==1 AND multithreading==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,26,0.430586576461792
+1,18.048550806055346,32,bzip2 = 1,bzip2==1,0,1.0,1.0,1.0,27,0.2122952938079834
+2,14.807367942353984,15,integrityCheck = 1 AND disableLzoCompressibilityTesting = 1,integrityCheck==1 AND bzip2==0 AND gzip==0 AND lzo==1 AND zpaq==0 AND unlimitedWindowSize==0,0,0.4666666666666667,0.4666666666666667,0.4666666666666667,27,0.4761583805084228
+3,26.18246365651668,24,integrityCheck = 1 AND nice = 1 AND unlimitedWindowSize = 1,integrityCheck==1 AND nice==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,27,0.1964387893676757
+4,8.998118976227802,12,integrityCheck = 1 AND nice = 1 AND multithreading = 1 AND unlimitedWindowSize = 1,integrityCheck==0 AND bzip2==0 AND noBackend==0 AND zpaq==0 AND nice==0 AND multithreading==0 AND unlimitedWindowSize==0,0,0.0,0.0,0.0,27,0.5476081371307373
+1,11.281373129484551,31,disableLzoCompressibilityTesting = 1,encryption==1 AND integrityCheck==0 AND bzip2==0 AND noBackend==0 AND zpaq==0 AND multithreading==1 AND unlimitedWindowSize==1,0,0.1081081081081081,0.3333333333333333,0.064516129032258,28,0.3387820720672607
+2,7.4652917957523,16,gzip = 1 AND multithreading = 1,encryption==0 AND bzip2==1 AND gzip==0 AND nice==0 AND multithreading==0 AND unlimitedWindowSize==0,0,0.0,0.0,0.0,28,0.4492959976196289
+3,22.544243876926213,24,integrityCheck = 1 AND multithreading = 1 AND unlimitedWindowSize = 1,integrityCheck==1 AND multithreading==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,28,0.2025470733642578
+4,11.605848414484766,12,encryption = 1 AND integrityCheck = 1 AND multithreading = 1 AND unlimitedWindowSize = 1,encryption==0 AND integrityCheck==0 AND lzo==0 AND nice==0 AND multithreading==0 AND unlimitedWindowSize==0,0,0.0,0.0,0.0,28,0.4601376056671142
+1,10.927642974615464,32,zpaq = 1,encryption==0 AND disableLzoCompressibilityTesting==1 AND bzip2==0 AND gzip==0 AND multithreading==1 AND unlimitedWindowSize==1,0,0.0,0.0,0.0,29,0.3679850101470947
+2,16.529229253439908,31,lzo = 1 AND disableLzoCompressibilityTesting = 1,disableLzoCompressibilityTesting==1 AND bzip2==0 AND gzip==0 AND lzo==1 AND zpaq==0,0,1.0,1.0,1.0,29,0.3598172664642334
+3,23.620807880146295,24,encryption = 1 AND nice = 1 AND multithreading = 1,encryption==1 AND nice==1 AND multithreading==1,0,1.0,1.0,1.0,29,0.3196215629577636
+4,23.57098909782631,12,encryption = 1 AND nice = 1 AND multithreading = 1 AND unlimitedWindowSize = 1,encryption==1 AND nice==1 AND multithreading==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,29,0.3106782436370849
+1,10.315220895070636,32,noBackend = 1,encryption==1 AND bzip2==0 AND gzip==0 AND zpaq==1 AND nice==0 AND multithreading==1,0,0.0,0.0,0.0,3,0.561957836151123
+2,4.245376849940317,31,integrityCheck = 1 AND lzo = 1,encryption==1 AND bzip2==0 AND lzo==0 AND nice==1 AND multithreading==0 AND unlimitedWindowSize==1,0,0.0,0.0,0.0,3,0.506493091583252
+3,12.22063495557105,24,encryption = 1 AND integrityCheck = 1 AND multithreading = 1,disableLzoCompressibilityTesting==0 AND integrityCheck==1 AND noBackend==0 AND nice==1 AND multithreading==1 AND unlimitedWindowSize==1,2,0.25,0.5,0.1666666666666666,3,0.3743302822113037
+4,15.10770801699181,12,encryption = 1 AND integrityCheck = 1 AND nice = 1 AND unlimitedWindowSize = 1,integrityCheck==0 AND bzip2==0 AND zpaq==1 AND nice==1 AND multithreading==1 AND unlimitedWindowSize==1,0,0.0,0.0,0.0,3,0.5237319469451904
+1,6.12804731692645,32,zpaq = 1,encryption==1 AND disableLzoCompressibilityTesting==0 AND integrityCheck==0 AND gzip==0 AND zpaq==0 AND multithreading==1 AND unlimitedWindowSize==0,0,0.0,0.0,0.0,30,0.4722781181335449
+2,4.913802287668805,16,gzip = 1 AND multithreading = 1,encryption==1 AND integrityCheck==1 AND bzip2==1 AND gzip==0 AND nice==1 AND multithreading==1,0,0.0,0.0,0.0,30,0.5430397987365723
+3,23.737171716399043,24,encryption = 1 AND nice = 1 AND unlimitedWindowSize = 1,encryption==1 AND nice==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,30,0.1971111297607422
+4,12.182233691724372,12,integrityCheck = 1 AND nice = 1 AND multithreading = 1 AND unlimitedWindowSize = 1,encryption==1 AND integrityCheck==1 AND bzip2==0 AND unlimitedWindowSize==1,4,0.3125,0.25,0.4166666666666667,30,0.5234851837158203
+1,15.3272748161118,32,noBackend = 1,bzip2==0 AND gzip==0 AND lzo==0 AND noBackend==1,0,1.0,1.0,1.0,31,0.370413064956665
+2,7.249412362005774,16,encryption = 1 AND gzip = 1,encryption==1 AND disableLzoCompressibilityTesting==1 AND integrityCheck==0 AND bzip2==0 AND nice==1 AND unlimitedWindowSize==1,0,0.0,0.0,0.0,31,0.4984333515167236
+3,4.776514504189839,16,integrityCheck = 1 AND lzo = 1 AND unlimitedWindowSize = 1,integrityCheck==1 AND bzip2==0 AND gzip==1 AND nice==1 AND multithreading==1 AND unlimitedWindowSize==1,0,0.0,0.0,0.0,31,0.4794456958770752
+4,7.141047013903829,12,encryption = 1 AND integrityCheck = 1 AND multithreading = 1 AND unlimitedWindowSize = 1,encryption==1 AND integrityCheck==1 AND bzip2==0 AND gzip==0 AND noBackend==0 AND multithreading==0 AND unlimitedWindowSize==0,0,0.0,0.0,0.0,31,0.3538756370544433
+1,12.741330605272744,31,disableLzoCompressibilityTesting = 1,disableLzoCompressibilityTesting==1 AND bzip2==0 AND gzip==0 AND lzo==1 AND zpaq==0,0,1.0,1.0,1.0,32,0.4701089859008789
+2,25.611652044795168,16,noBackend = 1 AND nice = 1,bzip2==0 AND gzip==0 AND lzo==0 AND noBackend==1 AND nice==1,0,1.0,1.0,1.0,32,0.161184549331665
+3,12.627635590649843,16,encryption = 1 AND lzo = 1 AND unlimitedWindowSize = 1,encryption==0 AND integrityCheck==0 AND gzip==0 AND lzo==0 AND nice==0 AND unlimitedWindowSize==1,0,0.0,0.0,0.0,32,0.4309992790222168
+4,3.716561581982421,12,encryption = 1 AND nice = 1 AND multithreading = 1 AND unlimitedWindowSize = 1,integrityCheck==1 AND lzo==0 AND zpaq==0 AND nice==0 AND unlimitedWindowSize==0,0,0.0,0.0,0.0,32,0.6424000263214111
+1,20.825879702950843,31,disableLzoCompressibilityTesting = 1,disableLzoCompressibilityTesting==1 AND bzip2==0 AND gzip==0 AND lzo==1 AND zpaq==0,0,1.0,1.0,1.0,33,0.1661784648895263
+2,10.363414349189949,16,noBackend = 1 AND nice = 1,encryption==0 AND integrityCheck==0 AND bzip2==0 AND lzo==0 AND nice==1 AND multithreading==1,1,0.1818181818181818,0.3333333333333333,0.125,33,0.3646218776702881
+3,5.867532343137857,15,encryption = 1 AND lzo = 1 AND disableLzoCompressibilityTesting = 1,encryption==1 AND gzip==0 AND lzo==0 AND zpaq==0 AND nice==0 AND multithreading==1 AND unlimitedWindowSize==0,0,0.0,0.0,0.0,33,0.5600948333740234
+4,16.85745722566259,12,encryption = 1 AND nice = 1 AND multithreading = 1 AND unlimitedWindowSize = 1,integrityCheck==0 AND bzip2==0 AND gzip==0 AND zpaq==1 AND nice==1 AND multithreading==1,0,0.125,0.25,0.0833333333333333,33,0.3807225227355957
+1,21.258487233493717,31,disableLzoCompressibilityTesting = 1,disableLzoCompressibilityTesting==1 AND bzip2==0 AND gzip==0 AND lzo==1 AND zpaq==0,0,1.0,1.0,1.0,34,0.1353561878204345
+2,15.492144904772662,16,encryption = 1 AND bzip2 = 1,encryption==1 AND bzip2==1,0,1.0,1.0,1.0,34,0.3812026977539062
+3,14.674350525532304,15,encryption = 1 AND integrityCheck = 1 AND lzo = 1,encryption==1 AND bzip2==0 AND gzip==0 AND lzo==1 AND zpaq==0 AND unlimitedWindowSize==1,0,0.5161290322580646,0.5,0.5333333333333333,34,0.3796474933624267
+4,17.95154354535733,12,integrityCheck = 1 AND nice = 1 AND multithreading = 1 AND unlimitedWindowSize = 1,integrityCheck==1 AND nice==1 AND multithreading==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,34,0.5021350383758545
+1,18.0471225972633,32,noBackend = 1,bzip2==0 AND gzip==0 AND lzo==0 AND noBackend==1,0,1.0,1.0,1.0,35,0.1974751949310302
+2,25.43652399057272,48,encryption = 1 AND multithreading = 1,encryption==1 AND multithreading==1,0,1.0,1.0,1.0,35,0.2223703861236572
+3,4.243066824368253,24,nice = 1 AND multithreading = 1 AND unlimitedWindowSize = 1,encryption==1 AND disableLzoCompressibilityTesting==1 AND bzip2==0 AND nice==0 AND multithreading==1 AND unlimitedWindowSize==1,0,0.0,0.0,0.0,35,0.5075123310089111
+4,13.366890294383987,12,encryption = 1 AND integrityCheck = 1 AND nice = 1 AND unlimitedWindowSize = 1,encryption==0 AND bzip2==0 AND lzo==0 AND noBackend==0 AND nice==1 AND multithreading==1 AND unlimitedWindowSize==0,0,0.0,0.0,0.0,35,0.362666368484497
+1,25.89648237384912,31,disableLzoCompressibilityTesting = 1,disableLzoCompressibilityTesting==1 AND bzip2==0 AND gzip==0 AND lzo==1 AND zpaq==0,0,1.0,1.0,1.0,36,0.1409242153167724
+2,15.899509710294696,31,integrityCheck = 1 AND lzo = 1,integrityCheck==1 AND bzip2==0 AND gzip==0 AND lzo==1,0,1.0,1.0,1.0,36,0.2660644054412842
+3,20.818619871291084,16,lzo = 1 AND nice = 1 AND unlimitedWindowSize = 1,bzip2==0 AND gzip==0 AND lzo==1 AND zpaq==0 AND nice==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,36,0.3609962463378906
+4,17.28832609129312,12,encryption = 1 AND integrityCheck = 1 AND multithreading = 1 AND unlimitedWindowSize = 1,encryption==1 AND integrityCheck==1 AND multithreading==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,36,0.4827022552490234
+1,16.7728704413677,31,disableLzoCompressibilityTesting = 1,disableLzoCompressibilityTesting==1 AND bzip2==0 AND gzip==0 AND lzo==1 AND zpaq==0,0,1.0,1.0,1.0,37,0.3392567634582519
+2,14.174431832415666,15,encryption = 1 AND disableLzoCompressibilityTesting = 1,encryption==1 AND integrityCheck==1 AND bzip2==0 AND zpaq==0 AND nice==1 AND multithreading==0 AND unlimitedWindowSize==1,3,0.1052631578947368,0.25,0.0666666666666666,37,0.4518778324127197
+3,24.01428485822558,24,encryption = 1 AND integrityCheck = 1 AND multithreading = 1,encryption==1 AND integrityCheck==1 AND multithreading==1,0,1.0,1.0,1.0,37,0.2680106163024902
+4,9.618175977889264,12,encryption = 1 AND integrityCheck = 1 AND nice = 1 AND multithreading = 1,integrityCheck==0 AND bzip2==0 AND lzo==0 AND zpaq==0 AND nice==1 AND multithreading==1 AND unlimitedWindowSize==0,0,0.0,0.0,0.0,37,0.3617997169494629
+1,13.258579610161274,32,zpaq = 1,encryption==0 AND bzip2==0 AND gzip==0 AND noBackend==1 AND nice==0 AND unlimitedWindowSize==0,0,0.0,0.0,0.0,38,0.3678953647613525
+2,19.5841345421334,16,zpaq = 1 AND unlimitedWindowSize = 1,bzip2==0 AND gzip==0 AND lzo==0 AND noBackend==0 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,38,0.4127407073974609
+3,8.25648087892018,16,lzo = 1 AND unlimitedWindowSize = 1 AND disableLzoCompressibilityTesting = 1,integrityCheck==1 AND bzip2==1 AND gzip==0 AND nice==1 AND multithreading==0 AND unlimitedWindowSize==1,0,0.0,0.0,0.0,38,0.6646316051483154
+4,13.027897981563251,12,encryption = 1 AND integrityCheck = 1 AND multithreading = 1 AND unlimitedWindowSize = 1,encryption==1 AND disableLzoCompressibilityTesting==0 AND integrityCheck==0 AND lzo==1 AND nice==0 AND unlimitedWindowSize==0,0,0.0,0.0,0.0,38,0.659456729888916
+1,22.78215615974128,32,bzip2 = 1,bzip2==1,0,1.0,1.0,1.0,39,0.132516860961914
+2,11.846000621453443,16,encryption = 1 AND gzip = 1,integrityCheck==1 AND bzip2==0 AND zpaq==1 AND nice==0 AND multithreading==1 AND unlimitedWindowSize==1,0,0.0,0.0,0.0,39,0.6633436679840088
+3,7.252294259772904,16,lzo = 1 AND multithreading = 1 AND disableLzoCompressibilityTesting = 1,encryption==1 AND integrityCheck==1 AND bzip2==0 AND lzo==0 AND nice==1 AND multithreading==0 AND unlimitedWindowSize==0,0,0.0,0.0,0.0,39,0.5274472236633301
+4,20.519682325913152,12,integrityCheck = 1 AND nice = 1 AND multithreading = 1 AND unlimitedWindowSize = 1,integrityCheck==1 AND nice==1 AND multithreading==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,39,0.4711074829101562
+1,16.60876109698867,32,gzip = 1,bzip2==0 AND gzip==1,0,1.0,1.0,1.0,4,0.2685303688049316
+2,12.74373857527127,16,encryption = 1 AND noBackend = 1,encryption==1 AND integrityCheck==0 AND bzip2==0 AND zpaq==1 AND multithreading==1 AND unlimitedWindowSize==1,0,0.0,0.0,0.0,4,0.4198248386383056
+3,7.978149611414905,16,integrityCheck = 1 AND lzo = 1 AND unlimitedWindowSize = 1,encryption==0 AND integrityCheck==0 AND lzo==0 AND zpaq==0 AND multithreading==0 AND unlimitedWindowSize==0,0,0.0,0.0,0.0,4,0.5933465957641602
+4,17.65574807041499,12,integrityCheck = 1 AND nice = 1 AND multithreading = 1 AND unlimitedWindowSize = 1,integrityCheck==1 AND nice==1 AND multithreading==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,4,0.4152472019195556
+1,4.280790691145465,32,gzip = 1,integrityCheck==0 AND gzip==0 AND noBackend==0 AND zpaq==0 AND nice==0 AND multithreading==0 AND unlimitedWindowSize==0,0,0.0,0.0,0.0,40,0.6145257949829102
+2,7.052148344637775,32,lzo = 1 AND unlimitedWindowSize = 1,integrityCheck==0 AND bzip2==0 AND gzip==1 AND nice==0 AND multithreading==0 AND unlimitedWindowSize==0,0,0.0,0.0,0.0,40,0.5829687118530273
+3,13.3323112858051,16,lzo = 1 AND nice = 1 AND multithreading = 1,bzip2==0 AND noBackend==0 AND zpaq==0 AND nice==1 AND multithreading==1,2,0.8,0.6666666666666666,1.0,40,0.4668691158294678
+4,11.25076954105237,12,encryption = 1 AND integrityCheck = 1 AND multithreading = 1 AND unlimitedWindowSize = 1,encryption==1 AND integrityCheck==1 AND gzip==0 AND lzo==0 AND zpaq==0 AND multithreading==1 AND unlimitedWindowSize==0,0,0.0,0.0,0.0,40,0.5212445259094238
+1,21.58135552464301,32,noBackend = 1,bzip2==0 AND gzip==0 AND lzo==0 AND noBackend==1,0,1.0,1.0,1.0,41,0.1001234054565429
+2,7.425773031995113,15,encryption = 1 AND disableLzoCompressibilityTesting = 1,integrityCheck==1 AND bzip2==0 AND lzo==0 AND noBackend==0 AND nice==0 AND multithreading==1 AND unlimitedWindowSize==0,0,0.0,0.0,0.0,41,0.6138424873352051
+3,12.029972283516251,16,lzo = 1 AND nice = 1 AND multithreading = 1,encryption==1 AND disableLzoCompressibilityTesting==0 AND integrityCheck==1 AND bzip2==0 AND gzip==0 AND zpaq==0 AND unlimitedWindowSize==0,4,0.0833333333333333,0.125,0.0625,41,0.4867644309997558
+4,17.679195776415877,12,encryption = 1 AND nice = 1 AND multithreading = 1 AND unlimitedWindowSize = 1,encryption==1 AND nice==1 AND multithreading==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,41,0.4216477870941162
+1,15.719250272044956,32,noBackend = 1,bzip2==0 AND gzip==0 AND lzo==0 AND noBackend==1,0,1.0,1.0,1.0,42,0.2579264640808105
+2,10.333802143129386,16,gzip = 1 AND multithreading = 1,encryption==0 AND integrityCheck==1 AND bzip2==0 AND lzo==1 AND nice==1 AND multithreading==0,0,0.0,0.0,0.0,42,0.2553856372833252
+3,11.46517493130175,15,encryption = 1 AND lzo = 1 AND disableLzoCompressibilityTesting = 1,encryption==1 AND zpaq==0 AND nice==0 AND multithreading==1 AND unlimitedWindowSize==0,3,0.16,0.2,0.1333333333333333,42,0.459796667098999
+4,22.588898183167803,12,encryption = 1 AND integrityCheck = 1 AND multithreading = 1 AND unlimitedWindowSize = 1,encryption==1 AND integrityCheck==1 AND multithreading==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,42,0.4622154235839844
+1,25.06925715250569,31,disableLzoCompressibilityTesting = 1,disableLzoCompressibilityTesting==1 AND bzip2==0 AND gzip==0 AND lzo==1 AND zpaq==0,0,1.0,1.0,1.0,43,0.1152784824371337
+2,3.8103576995002784,16,gzip = 1 AND multithreading = 1,encryption==0 AND integrityCheck==1 AND bzip2==0 AND noBackend==1 AND nice==1 AND unlimitedWindowSize==0,0,0.0,0.0,0.0,43,0.4234530925750732
+3,22.528417852507992,15,integrityCheck = 1 AND lzo = 1 AND nice = 1,integrityCheck==1 AND bzip2==0 AND gzip==0 AND lzo==1 AND zpaq==0 AND nice==1,0,1.0,1.0,1.0,43,0.2674188613891601
+4,23.379763349975637,12,encryption = 1 AND integrityCheck = 1 AND nice = 1 AND multithreading = 1,encryption==1 AND integrityCheck==1 AND nice==1 AND multithreading==1,0,1.0,1.0,1.0,43,0.3888838291168213
+1,24.124740316040302,32,bzip2 = 1,bzip2==1,0,1.0,1.0,1.0,44,0.1278049945831298
+2,24.22445357630965,16,noBackend = 1 AND nice = 1,bzip2==0 AND gzip==0 AND lzo==0 AND noBackend==1 AND nice==1,0,1.0,1.0,1.0,44,0.1714863777160644
+3,14.769547217200715,24,integrityCheck = 1 AND nice = 1 AND unlimitedWindowSize = 1,encryption==1 AND gzip==0 AND zpaq==0 AND nice==1 AND multithreading==1 AND unlimitedWindowSize==1,3,0.25,0.5,0.1666666666666666,44,0.4125277996063232
+4,9.226449344535975,12,encryption = 1 AND integrityCheck = 1 AND multithreading = 1 AND unlimitedWindowSize = 1,encryption==0 AND disableLzoCompressibilityTesting==0 AND integrityCheck==0 AND gzip==0 AND noBackend==0 AND multithreading==1 AND unlimitedWindowSize==1,0,0.0,0.0,0.0,44,0.3819794654846191
+1,12.514071619457452,32,bzip2 = 1,encryption==1 AND bzip2==0 AND gzip==1 AND nice==0 AND multithreading==1 AND unlimitedWindowSize==1,0,0.0,0.0,0.0,45,0.498215913772583
+2,18.60621350496298,16,zpaq = 1 AND nice = 1,bzip2==0 AND gzip==0 AND lzo==0 AND noBackend==0 AND nice==1,0,1.0,1.0,1.0,45,0.4136848449707031
+3,16.283790798463745,15,lzo = 1 AND nice = 1 AND disableLzoCompressibilityTesting = 1,disableLzoCompressibilityTesting==1 AND bzip2==0 AND gzip==0 AND lzo==1 AND zpaq==0 AND nice==1,0,1.0,1.0,1.0,45,0.4335396289825439
+4,6.225245436184359,12,encryption = 1 AND integrityCheck = 1 AND multithreading = 1 AND unlimitedWindowSize = 1,integrityCheck==0 AND bzip2==0 AND lzo==0 AND nice==1 AND multithreading==1 AND unlimitedWindowSize==0,0,0.0,0.0,0.0,45,0.4392218589782715
+1,13.77526408658756,31,disableLzoCompressibilityTesting = 1,disableLzoCompressibilityTesting==1 AND bzip2==0 AND gzip==0 AND lzo==1 AND zpaq==0,0,1.0,1.0,1.0,46,0.4528334140777588
+2,13.518792559346132,16,bzip2 = 1 AND unlimitedWindowSize = 1,disableLzoCompressibilityTesting==0 AND bzip2==0 AND lzo==1 AND nice==1 AND multithreading==1 AND unlimitedWindowSize==1,0,0.0,0.0,0.0,46,0.4099311828613281
+3,27.17487165661521,15,integrityCheck = 1 AND lzo = 1 AND nice = 1,integrityCheck==1 AND bzip2==0 AND gzip==0 AND lzo==1 AND zpaq==0 AND nice==1,0,1.0,1.0,1.0,46,0.2073218822479248
+4,21.50165673204755,12,encryption = 1 AND integrityCheck = 1 AND multithreading = 1 AND unlimitedWindowSize = 1,encryption==1 AND integrityCheck==1 AND multithreading==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,46,0.2658779621124267
+1,7.977878874232376,32,bzip2 = 1,encryption==0 AND disableLzoCompressibilityTesting==0 AND lzo==1 AND nice==0 AND multithreading==0 AND unlimitedWindowSize==1,0,0.0,0.0,0.0,47,0.4391176700592041
+2,7.647321661303597,16,zpaq = 1 AND nice = 1,integrityCheck==1 AND noBackend==0 AND zpaq==0 AND nice==0 AND multithreading==1 AND unlimitedWindowSize==1,0,0.0,0.0,0.0,47,0.4732811450958252
+3,4.45440615893922,16,integrityCheck = 1 AND lzo = 1 AND multithreading = 1,encryption==1 AND integrityCheck==0 AND bzip2==0 AND gzip==1 AND lzo==0 AND nice==1,0,0.0,0.0,0.0,47,0.6118919849395752
+4,11.685274899834674,12,encryption = 1 AND integrityCheck = 1 AND multithreading = 1 AND unlimitedWindowSize = 1,encryption==1 AND integrityCheck==0 AND lzo==0 AND zpaq==0 AND nice==0 AND multithreading==0 AND unlimitedWindowSize==0,0,0.0,0.0,0.0,47,0.8517730236053467
+1,18.775196743421542,32,zpaq = 1,bzip2==0 AND gzip==0 AND lzo==0 AND noBackend==0,0,1.0,1.0,1.0,48,0.1665570735931396
+2,22.42387769823829,16,encryption = 1 AND bzip2 = 1,encryption==1 AND bzip2==1,0,1.0,1.0,1.0,48,0.2984316349029541
+3,21.829646748100103,15,integrityCheck = 1 AND lzo = 1 AND nice = 1,integrityCheck==1 AND bzip2==0 AND gzip==0 AND lzo==1 AND zpaq==0 AND nice==1,0,1.0,1.0,1.0,48,0.2243921756744384
+4,3.761857931043125,12,encryption = 1 AND integrityCheck = 1 AND nice = 1 AND unlimitedWindowSize = 1,encryption==0 AND disableLzoCompressibilityTesting==0 AND integrityCheck==0 AND gzip==0 AND zpaq==0 AND nice==1 AND unlimitedWindowSize==0,0,0.0,0.0,0.0,48,0.5679261684417725
+1,8.023521181233933,32,gzip = 1,encryption==1 AND integrityCheck==0 AND bzip2==0 AND gzip==0 AND zpaq==0 AND nice==1 AND multithreading==1,0,0.0,0.0,0.0,49,0.6098201274871826
+2,12.754652569272375,48,integrityCheck = 1 AND unlimitedWindowSize = 1,integrityCheck==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,49,0.3466432094573974
+3,11.82319362937119,16,lzo = 1 AND nice = 1 AND multithreading = 1,integrityCheck==1 AND bzip2==0 AND zpaq==1 AND nice==1 AND multithreading==0 AND unlimitedWindowSize==1,0,0.0,0.0,0.0,49,0.4394197463989258
+4,11.880758927765052,12,encryption = 1 AND nice = 1 AND multithreading = 1 AND unlimitedWindowSize = 1,encryption==0 AND integrityCheck==0 AND gzip==0 AND lzo==0 AND noBackend==0 AND nice==0 AND multithreading==1,0,0.0,0.0,0.0,49,0.3549513816833496
+1,14.641537511464424,32,noBackend = 1,bzip2==0 AND gzip==0 AND lzo==0 AND noBackend==1,0,1.0,1.0,1.0,5,0.3201477527618408
+2,26.202856731699768,48,integrityCheck = 1 AND unlimitedWindowSize = 1,integrityCheck==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,5,0.1263239383697509
+3,24.30108670547663,24,encryption = 1 AND nice = 1 AND unlimitedWindowSize = 1,encryption==1 AND nice==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,5,0.180419921875
+4,20.2615986942882,12,encryption = 1 AND integrityCheck = 1 AND multithreading = 1 AND unlimitedWindowSize = 1,encryption==1 AND integrityCheck==1 AND multithreading==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,5,0.2692599296569824
+1,4.6691058068288775,32,gzip = 1,integrityCheck==0 AND gzip==0 AND lzo==0 AND zpaq==0 AND nice==0 AND multithreading==0 AND unlimitedWindowSize==0,0,0.0,0.0,0.0,50,0.4440374374389648
+2,23.455447391732317,16,noBackend = 1 AND unlimitedWindowSize = 1,bzip2==0 AND gzip==0 AND lzo==0 AND noBackend==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,50,0.1593263149261474
+3,13.106837045255954,16,lzo = 1 AND nice = 1 AND unlimitedWindowSize = 1,encryption==0 AND gzip==0 AND lzo==0 AND noBackend==0 AND nice==1,0,0.0,0.0,0.0,50,0.4078884124755859
+4,25.921449741805784,12,encryption = 1 AND integrityCheck = 1 AND nice = 1 AND unlimitedWindowSize = 1,encryption==1 AND integrityCheck==1 AND nice==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,50,0.2017099857330322
+1,25.901217676369065,32,bzip2 = 1,bzip2==1,0,1.0,1.0,1.0,51,0.1240050792694091
+2,5.697732441188738,47,encryption = 1 AND integrityCheck = 1,integrityCheck==0 AND lzo==0 AND noBackend==0 AND zpaq==0 AND multithreading==1 AND unlimitedWindowSize==1,0,0.0,0.0,0.0,51,0.3726668357849121
+3,19.337584469294654,24,encryption = 1 AND integrityCheck = 1 AND unlimitedWindowSize = 1,encryption==1 AND integrityCheck==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,51,0.2733311653137207
+4,21.289514892580893,12,encryption = 1 AND integrityCheck = 1 AND nice = 1 AND multithreading = 1,encryption==1 AND integrityCheck==1 AND nice==1 AND multithreading==1,0,1.0,1.0,1.0,51,0.3457963466644287
+1,20.306475397544745,32,gzip = 1,bzip2==0 AND gzip==1,0,1.0,1.0,1.0,52,0.1282720565795898
+2,23.626684660839874,32,lzo = 1 AND unlimitedWindowSize = 1,bzip2==0 AND gzip==0 AND lzo==1 AND zpaq==0 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,52,0.1506509780883789
+3,21.113400083588942,24,integrityCheck = 1 AND nice = 1 AND unlimitedWindowSize = 1,integrityCheck==1 AND nice==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,52,0.225579023361206
+4,23.503093312288275,12,encryption = 1 AND integrityCheck = 1 AND multithreading = 1 AND unlimitedWindowSize = 1,encryption==1 AND integrityCheck==1 AND multithreading==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,52,0.2041547298431396
+1,11.71307955626541,32,bzip2 = 1,encryption==0 AND disableLzoCompressibilityTesting==0 AND lzo==1 AND nice==1 AND multithreading==1 AND unlimitedWindowSize==0,0,0.0,0.0,0.0,53,0.4528448581695556
+2,7.537725648976392,16,encryption = 1 AND gzip = 1,encryption==1 AND integrityCheck==0 AND gzip==0 AND lzo==0 AND zpaq==0 AND nice==0 AND unlimitedWindowSize==0,0,0.0,0.0,0.0,53,0.5109093189239502
+3,18.19682839635891,16,lzo = 1 AND nice = 1 AND multithreading = 1,bzip2==0 AND gzip==0 AND lzo==1 AND zpaq==0 AND nice==1 AND multithreading==1,0,1.0,1.0,1.0,53,0.4879870414733886
+4,7.734023933383561,12,encryption = 1 AND integrityCheck = 1 AND nice = 1 AND multithreading = 1,encryption==0 AND bzip2==0 AND noBackend==1 AND nice==1 AND multithreading==1 AND unlimitedWindowSize==0,0,0.0,0.0,0.0,53,0.5328106880187988
+1,5.953957825404556,31,disableLzoCompressibilityTesting = 1,integrityCheck==0 AND lzo==0 AND noBackend==0 AND zpaq==0 AND nice==0 AND multithreading==0,0,0.0,0.0,0.0,54,0.4834680557250976
+2,24.220326179150117,16,zpaq = 1 AND nice = 1,bzip2==0 AND gzip==0 AND lzo==0 AND noBackend==0 AND nice==1,0,1.0,1.0,1.0,54,0.193521499633789
+3,19.66478120135312,15,encryption = 1 AND lzo = 1 AND disableLzoCompressibilityTesting = 1,encryption==1 AND disableLzoCompressibilityTesting==1 AND bzip2==0 AND gzip==0 AND lzo==1 AND zpaq==0,0,1.0,1.0,1.0,54,0.2782022953033447
+4,12.70545587223279,12,encryption = 1 AND integrityCheck = 1 AND multithreading = 1 AND unlimitedWindowSize = 1,encryption==0 AND bzip2==0 AND lzo==1 AND nice==1 AND multithreading==0 AND unlimitedWindowSize==1,0,0.0,0.0,0.0,54,0.4167182445526123
+1,10.150952294505997,32,bzip2 = 1,encryption==1 AND integrityCheck==0 AND bzip2==0 AND noBackend==1 AND nice==0 AND unlimitedWindowSize==1,0,0.0,0.0,0.0,55,0.5977790355682373
+2,20.586085480961334,31,encryption = 1 AND lzo = 1,encryption==1 AND bzip2==0 AND gzip==0 AND lzo==1,0,1.0,1.0,1.0,55,0.2217812538146972
+3,20.910372880826834,16,integrityCheck = 1 AND lzo = 1 AND unlimitedWindowSize = 1,integrityCheck==1 AND bzip2==0 AND gzip==0 AND lzo==1 AND zpaq==0 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,55,0.2835826873779297
+4,21.261385979445656,12,encryption = 1 AND integrityCheck = 1 AND multithreading = 1 AND unlimitedWindowSize = 1,encryption==1 AND integrityCheck==1 AND multithreading==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,55,0.4154882431030273
+1,4.483611356906804,31,disableLzoCompressibilityTesting = 1,encryption==1 AND lzo==0 AND zpaq==0 AND nice==1 AND multithreading==1 AND unlimitedWindowSize==0,0,0.0,0.0,0.0,56,0.5009989738464355
+2,3.9528920338925833,16,gzip = 1 AND unlimitedWindowSize = 1,encryption==0 AND bzip2==0 AND gzip==1 AND nice==0 AND multithreading==0 AND unlimitedWindowSize==0,0,0.0,0.0,0.0,56,0.4337413311004638
+3,7.510425516804285,24,encryption = 1 AND integrityCheck = 1 AND multithreading = 1,encryption==0 AND disableLzoCompressibilityTesting==1 AND integrityCheck==0 AND bzip2==0 AND gzip==0 AND multithreading==0,0,0.0,0.0,0.0,56,0.3350880146026611
+4,15.243695699186745,12,encryption = 1 AND integrityCheck = 1 AND nice = 1 AND multithreading = 1,encryption==0 AND integrityCheck==1 AND bzip2==0 AND lzo==1 AND nice==0 AND multithreading==1,0,0.0,0.0,0.0,56,0.5093669891357422
+1,19.346615398913933,32,gzip = 1,bzip2==0 AND gzip==1,0,1.0,1.0,1.0,57,0.1344990730285644
+2,26.759276267372154,48,nice = 1 AND unlimitedWindowSize = 1,nice==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,57,0.1106185913085937
+3,16.470785685673047,16,lzo = 1 AND unlimitedWindowSize = 1 AND disableLzoCompressibilityTesting = 1,bzip2==1 AND gzip==0 AND lzo==0 AND nice==0 AND multithreading==0 AND unlimitedWindowSize==1,0,0.0,0.0,0.0,57,0.5355744361877441
+4,13.297691803943216,12,encryption = 1 AND nice = 1 AND multithreading = 1 AND unlimitedWindowSize = 1,encryption==1 AND integrityCheck==0 AND bzip2==0 AND gzip==0 AND zpaq==0 AND nice==1 AND multithreading==0,0,0.0,0.0,0.0,57,0.6210741996765137
+1,8.510099430789126,32,bzip2 = 1,encryption==1 AND disableLzoCompressibilityTesting==1 AND integrityCheck==1 AND bzip2==0 AND nice==0 AND unlimitedWindowSize==0,0,0.0,0.0,0.0,58,0.4948239326477051
+2,21.293838565178785,16,integrityCheck = 1 AND bzip2 = 1,integrityCheck==1 AND bzip2==1,0,1.0,1.0,1.0,58,0.2413578033447265
+3,3.689191886411466,15,encryption = 1 AND lzo = 1 AND nice = 1,encryption==0 AND integrityCheck==1 AND lzo==0 AND nice==0 AND multithreading==1 AND unlimitedWindowSize==0,0,0.0,0.0,0.0,58,0.2387170791625976
+4,9.24724245473439,12,integrityCheck = 1 AND nice = 1 AND multithreading = 1 AND unlimitedWindowSize = 1,encryption==1 AND integrityCheck==0 AND lzo==0 AND zpaq==0 AND nice==1 AND multithreading==0 AND unlimitedWindowSize==0,0,0.0,0.0,0.0,58,0.4539337158203125
+1,14.307596767889514,32,bzip2 = 1,bzip2==1,0,1.0,1.0,1.0,59,0.4713737964630127
+2,6.499442489959996,48,integrityCheck = 1 AND multithreading = 1,encryption==1 AND integrityCheck==0 AND lzo==0 AND noBackend==0 AND zpaq==0 AND nice==0 AND multithreading==0,0,0.0,0.0,0.0,59,0.393803596496582
+3,18.090625727168263,16,lzo = 1 AND nice = 1 AND multithreading = 1,bzip2==0 AND gzip==0 AND lzo==1 AND zpaq==0 AND nice==1 AND multithreading==1,2,1.0,1.0,1.0,59,0.3966310024261474
+4,12.757252729743398,12,encryption = 1 AND integrityCheck = 1 AND nice = 1 AND unlimitedWindowSize = 1,integrityCheck==1 AND bzip2==0 AND gzip==0 AND zpaq==1 AND nice==0 AND multithreading==0,0,0.0,0.0,0.0,59,0.6593782901763916
+1,22.688792316259946,32,zpaq = 1,bzip2==0 AND gzip==0 AND lzo==0 AND noBackend==0,0,1.0,1.0,1.0,6,0.1036357879638671
+2,23.526719540624864,16,unlimitedWindowSize = 1 AND disableLzoCompressibilityTesting = 1,disableLzoCompressibilityTesting==1 AND bzip2==0 AND gzip==0 AND lzo==1 AND zpaq==0 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,6,0.2239339351654052
+3,7.990051283525699,24,encryption = 1 AND integrityCheck = 1 AND multithreading = 1,integrityCheck==0 AND bzip2==0 AND lzo==0 AND noBackend==0 AND nice==1 AND multithreading==1 AND unlimitedWindowSize==0,0,0.0,0.0,0.0,6,0.4367892742156982
+4,24.57395383654088,12,encryption = 1 AND integrityCheck = 1 AND nice = 1 AND multithreading = 1,encryption==1 AND integrityCheck==1 AND nice==1 AND multithreading==1,0,1.0,1.0,1.0,6,0.2725560665130615
+1,22.17993137066217,32,noBackend = 1,bzip2==0 AND gzip==0 AND lzo==0 AND noBackend==1,0,1.0,1.0,1.0,60,0.1060030460357666
+2,9.165294258058788,48,nice = 1 AND multithreading = 1,disableLzoCompressibilityTesting==0 AND bzip2==0 AND noBackend==0 AND zpaq==0 AND nice==0 AND multithreading==0 AND unlimitedWindowSize==0,0,0.0,0.0,0.0,60,0.5830409526824951
+3,18.288977182213788,24,encryption = 1 AND multithreading = 1 AND unlimitedWindowSize = 1,encryption==1 AND multithreading==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,60,0.2669105529785156
+4,14.25152841251094,12,encryption = 1 AND integrityCheck = 1 AND nice = 1 AND multithreading = 1,encryption==1 AND integrityCheck==0 AND bzip2==0 AND noBackend==0 AND multithreading==1 AND unlimitedWindowSize==0,0,0.0,0.0,0.0,60,0.4314122200012207
+1,22.1985775700996,32,noBackend = 1,bzip2==0 AND gzip==0 AND lzo==0 AND noBackend==1,0,1.0,1.0,1.0,61,0.1030306816101074
+2,4.51780273698767,16,integrityCheck = 1 AND gzip = 1,integrityCheck==1 AND bzip2==0 AND gzip==0 AND nice==1 AND multithreading==0 AND unlimitedWindowSize==0,0,0.0,0.0,0.0,61,0.5220053195953369
+3,23.22379128880477,15,encryption = 1 AND lzo = 1 AND disableLzoCompressibilityTesting = 1,encryption==1 AND disableLzoCompressibilityTesting==1 AND bzip2==0 AND gzip==0 AND lzo==1 AND zpaq==0,0,1.0,1.0,1.0,61,0.2712087631225586
+4,5.963276023005421,12,encryption = 1 AND integrityCheck = 1 AND multithreading = 1 AND unlimitedWindowSize = 1,encryption==1 AND integrityCheck==0 AND bzip2==0 AND noBackend==1 AND nice==1 AND unlimitedWindowSize==1,0,0.0,0.0,0.0,61,0.4452061653137207
+1,23.46404222919826,32,noBackend = 1,bzip2==0 AND gzip==0 AND lzo==0 AND noBackend==1,0,1.0,1.0,1.0,62,0.0903165340423584
+2,15.780851073578852,32,lzo = 1 AND unlimitedWindowSize = 1,bzip2==0 AND gzip==0 AND lzo==1 AND zpaq==0 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,62,0.3597385883331299
+3,22.75633431928021,15,integrityCheck = 1 AND lzo = 1 AND disableLzoCompressibilityTesting = 1,disableLzoCompressibilityTesting==1 AND integrityCheck==1 AND bzip2==0 AND gzip==0 AND lzo==1 AND zpaq==0,0,1.0,1.0,1.0,62,0.2240324020385742
+4,11.44135556786035,12,encryption = 1 AND integrityCheck = 1 AND multithreading = 1 AND unlimitedWindowSize = 1,encryption==1 AND integrityCheck==0 AND bzip2==0 AND gzip==1 AND multithreading==0 AND unlimitedWindowSize==1,0,0.0,0.0,0.0,62,0.4455354213714599
+1,25.798287800459065,32,noBackend = 1,bzip2==0 AND gzip==0 AND lzo==0 AND noBackend==1,0,1.0,1.0,1.0,63,0.0899560451507568
+2,26.15723299650619,16,multithreading = 1 AND disableLzoCompressibilityTesting = 1,disableLzoCompressibilityTesting==1 AND bzip2==0 AND gzip==0 AND lzo==1 AND zpaq==0 AND multithreading==1,0,1.0,1.0,1.0,63,0.208850622177124
+3,25.378331539645977,16,lzo = 1 AND unlimitedWindowSize = 1 AND disableLzoCompressibilityTesting = 1,disableLzoCompressibilityTesting==1 AND bzip2==0 AND gzip==0 AND lzo==1 AND zpaq==0 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,63,0.1902649402618408
+4,8.408253234107876,12,integrityCheck = 1 AND nice = 1 AND multithreading = 1 AND unlimitedWindowSize = 1,integrityCheck==1 AND bzip2==0 AND lzo==0 AND noBackend==0 AND nice==0 AND multithreading==0 AND unlimitedWindowSize==1,0,0.0,0.0,0.0,63,0.5930681228637695
+1,24.608936667087622,32,bzip2 = 1,bzip2==1,0,1.0,1.0,1.0,64,0.1347858905792236
+2,16.586648707638275,16,noBackend = 1 AND unlimitedWindowSize = 1,bzip2==0 AND gzip==0 AND lzo==0 AND noBackend==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,64,0.5264599323272705
+3,23.249236990150568,15,encryption = 1 AND lzo = 1 AND disableLzoCompressibilityTesting = 1,encryption==1 AND disableLzoCompressibilityTesting==1 AND bzip2==0 AND gzip==0 AND lzo==1 AND zpaq==0,0,1.0,1.0,1.0,64,0.3011744022369385
+4,20.42548469710923,12,encryption = 1 AND integrityCheck = 1 AND nice = 1 AND multithreading = 1,encryption==1 AND integrityCheck==1 AND nice==1 AND multithreading==1,0,1.0,1.0,1.0,64,0.585878849029541
+1,18.402369708413215,32,gzip = 1,bzip2==0 AND gzip==1,0,1.0,1.0,1.0,65,0.2088274955749511
+2,9.093071948308488,16,integrityCheck = 1 AND zpaq = 1,bzip2==0 AND gzip==1 AND lzo==0 AND nice==0 AND multithreading==0 AND unlimitedWindowSize==1,0,0.0,0.0,0.0,65,0.640211820602417
+3,16.69381218259271,16,encryption = 1 AND lzo = 1 AND unlimitedWindowSize = 1,encryption==1 AND bzip2==0 AND gzip==0 AND lzo==1 AND zpaq==0 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,65,0.4073166847229004
+4,16.252860607986662,12,integrityCheck = 1 AND nice = 1 AND multithreading = 1 AND unlimitedWindowSize = 1,gzip==0 AND lzo==0 AND noBackend==0 AND nice==1 AND multithreading==1,3,0.2857142857142857,0.25,0.3333333333333333,65,0.5629050731658936
+1,19.56975228326568,31,disableLzoCompressibilityTesting = 1,disableLzoCompressibilityTesting==1 AND bzip2==0 AND gzip==0 AND lzo==1 AND zpaq==0,0,1.0,1.0,1.0,66,0.2179510593414306
+2,18.341519116613757,16,gzip = 1 AND nice = 1,bzip2==0 AND lzo==0 AND noBackend==0 AND nice==1,0,0.6666666666666666,0.5,1.0,66,0.2585334777832031
+3,17.49463634882236,16,lzo = 1 AND nice = 1 AND unlimitedWindowSize = 1,bzip2==0 AND gzip==0 AND lzo==1 AND zpaq==0 AND nice==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,66,0.522284746170044
+4,13.043086019506012,12,encryption = 1 AND nice = 1 AND multithreading = 1 AND unlimitedWindowSize = 1,encryption==0 AND integrityCheck==0 AND bzip2==0 AND noBackend==1 AND nice==1 AND unlimitedWindowSize==1,0,0.0,0.0,0.0,66,0.3600170612335205
+1,23.22687200812046,32,bzip2 = 1,bzip2==1,0,1.0,1.0,1.0,67,0.1398773193359375
+2,11.800817172247282,32,lzo = 1 AND multithreading = 1,integrityCheck==0 AND bzip2==0 AND zpaq==1 AND nice==1 AND multithreading==0 AND unlimitedWindowSize==1,0,0.0,0.0,0.0,67,0.4741849899291992
+3,15.739379569363496,24,integrityCheck = 1 AND multithreading = 1 AND unlimitedWindowSize = 1,integrityCheck==1 AND multithreading==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,67,0.5814316272735596
+4,8.154941129898114,12,encryption = 1 AND integrityCheck = 1 AND nice = 1 AND multithreading = 1,encryption==0 AND disableLzoCompressibilityTesting==0 AND integrityCheck==0 AND bzip2==0 AND gzip==0 AND nice==0 AND unlimitedWindowSize==0,0,0.0,0.0,0.0,67,0.4787864685058594
+1,7.628182969647629,32,gzip = 1,encryption==0 AND disableLzoCompressibilityTesting==0 AND lzo==1 AND nice==1 AND multithreading==1 AND unlimitedWindowSize==0,0,0.0,0.0,0.0,68,0.3705313205718994
+2,7.097036471902698,47,encryption = 1 AND nice = 1,encryption==1 AND bzip2==0 AND gzip==1 AND nice==0 AND multithreading==0 AND unlimitedWindowSize==1,0,0.0,0.0,0.0,68,0.4675815105438232
+3,7.350538867681173,16,encryption = 1 AND lzo = 1 AND unlimitedWindowSize = 1,encryption==0 AND disableLzoCompressibilityTesting==0 AND integrityCheck==1 AND gzip==0 AND nice==1 AND multithreading==1 AND unlimitedWindowSize==0,0,0.0,0.0,0.0,68,0.4257252216339111
+4,23.5267214017454,12,encryption = 1 AND integrityCheck = 1 AND nice = 1 AND multithreading = 1,encryption==1 AND integrityCheck==1 AND nice==1 AND multithreading==1,0,1.0,1.0,1.0,68,0.2676138877868652
+1,22.41256091807013,32,gzip = 1,bzip2==0 AND gzip==1,0,1.0,1.0,1.0,69,0.1023831367492675
+2,11.464694616710933,16,bzip2 = 1 AND unlimitedWindowSize = 1,encryption==1 AND lzo==0 AND noBackend==0 AND zpaq==0 AND nice==1 AND unlimitedWindowSize==0,0,0.0,0.0,0.0,69,0.4408860206604004
+3,16.97147266750085,16,lzo = 1 AND unlimitedWindowSize = 1 AND disableLzoCompressibilityTesting = 1,disableLzoCompressibilityTesting==1 AND bzip2==0 AND gzip==0 AND lzo==1 AND zpaq==0 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,69,0.5664479732513428
+4,22.40994658989344,12,encryption = 1 AND integrityCheck = 1 AND nice = 1 AND unlimitedWindowSize = 1,encryption==1 AND integrityCheck==1 AND nice==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,69,0.3515639305114746
+1,11.949466382843838,32,noBackend = 1,encryption==1 AND disableLzoCompressibilityTesting==0 AND integrityCheck==1 AND zpaq==0 AND nice==1 AND multithreading==0 AND unlimitedWindowSize==1,0,0.0555555555555555,0.25,0.03125,7,0.4065213203430176
+2,24.265854333665565,47,integrityCheck = 1 AND nice = 1,integrityCheck==1 AND nice==1,0,1.0,1.0,1.0,7,0.1180682182312011
+3,19.86947021584764,16,integrityCheck = 1 AND lzo = 1 AND multithreading = 1,integrityCheck==1 AND bzip2==0 AND gzip==0 AND lzo==1 AND zpaq==0 AND multithreading==1,0,1.0,1.0,1.0,7,0.3181400299072265
+4,18.42657095463809,12,integrityCheck = 1 AND nice = 1 AND multithreading = 1 AND unlimitedWindowSize = 1,integrityCheck==1 AND nice==1 AND multithreading==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,7,0.5296444892883301
+1,24.55556806369799,32,noBackend = 1,bzip2==0 AND gzip==0 AND lzo==0 AND noBackend==1,0,1.0,1.0,1.0,70,0.0929706096649169
+2,18.362015618642182,16,noBackend = 1 AND multithreading = 1,bzip2==0 AND gzip==0 AND lzo==0 AND noBackend==1 AND multithreading==1,0,1.0,1.0,1.0,70,0.3985722064971924
+3,6.304521373110724,24,encryption = 1 AND integrityCheck = 1 AND unlimitedWindowSize = 1,integrityCheck==1 AND gzip==0 AND lzo==0 AND nice==1 AND multithreading==0 AND unlimitedWindowSize==0,0,0.0,0.0,0.0,70,0.5537126064300537
+4,21.864048120505718,12,encryption = 1 AND integrityCheck = 1 AND multithreading = 1 AND unlimitedWindowSize = 1,encryption==1 AND integrityCheck==1 AND multithreading==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,70,0.3702044486999511
+1,16.881599668259813,32,gzip = 1,bzip2==0 AND gzip==1,0,1.0,1.0,1.0,71,0.236459732055664
+2,16.472161875382643,47,encryption = 1 AND nice = 1,encryption==1 AND nice==1,0,1.0,1.0,1.0,71,0.1973469257354736
+3,12.656139596990252,15,integrityCheck = 1 AND lzo = 1 AND disableLzoCompressibilityTesting = 1,encryption==0 AND integrityCheck==1 AND lzo==0 AND noBackend==0 AND zpaq==0 AND nice==0 AND multithreading==0,0,0.0,0.0,0.0,71,0.5781354904174805
+4,5.225198798500327,12,encryption = 1 AND integrityCheck = 1 AND nice = 1 AND unlimitedWindowSize = 1,bzip2==0 AND gzip==0 AND noBackend==1 AND zpaq==0 AND nice==1 AND multithreading==0 AND unlimitedWindowSize==1,2,0.125,0.25,0.0833333333333333,71,0.6256625652313232
+1,14.089668789360978,32,bzip2 = 1,bzip2==1,0,1.0,1.0,1.0,72,0.5030117034912109
+2,5.4444881846143,15,nice = 1 AND disableLzoCompressibilityTesting = 1,encryption==0 AND disableLzoCompressibilityTesting==1 AND bzip2==0 AND nice==0 AND multithreading==1 AND unlimitedWindowSize==0,0,0.0,0.0,0.0,72,0.5061969757080078
+3,8.997441337323217,15,integrityCheck = 1 AND lzo = 1 AND nice = 1,integrityCheck==0 AND bzip2==0 AND gzip==1 AND nice==0 AND multithreading==1 AND unlimitedWindowSize==0,0,0.0,0.0,0.0,72,0.6261343955993652
+4,11.559840778448043,12,encryption = 1 AND integrityCheck = 1 AND multithreading = 1 AND unlimitedWindowSize = 1,encryption==0 AND integrityCheck==1 AND bzip2==0 AND lzo==0 AND zpaq==0 AND multithreading==1 AND unlimitedWindowSize==0,0,0.0,0.0,0.0,72,0.4514904022216797
+1,19.211001310014765,32,noBackend = 1,bzip2==0 AND gzip==0 AND lzo==0 AND noBackend==1,0,1.0,1.0,1.0,73,0.1342153549194336
+2,4.390214887585323,48,nice = 1 AND unlimitedWindowSize = 1,encryption==1 AND disableLzoCompressibilityTesting==0 AND integrityCheck==0 AND lzo==1 AND nice==0 AND unlimitedWindowSize==1,0,0.0,0.0,0.0,73,0.4170355796813965
+3,19.00124836485021,16,integrityCheck = 1 AND lzo = 1 AND multithreading = 1,integrityCheck==1 AND bzip2==0 AND gzip==0 AND lzo==1 AND zpaq==0 AND multithreading==1,0,1.0,1.0,1.0,73,0.3308219909667969
+4,14.936153092048809,12,encryption = 1 AND integrityCheck = 1 AND nice = 1 AND unlimitedWindowSize = 1,integrityCheck==0 AND lzo==0 AND noBackend==0 AND zpaq==0 AND nice==0 AND multithreading==0 AND unlimitedWindowSize==0,0,0.0,0.0,0.0,73,0.5408718585968018
+1,26.3916143878511,32,noBackend = 1,bzip2==0 AND gzip==0 AND lzo==0 AND noBackend==1,0,1.0,1.0,1.0,74,0.0920815467834472
+2,24.02978811695936,48,nice = 1 AND unlimitedWindowSize = 1,nice==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,74,0.1201684474945068
+3,26.60324502587177,16,integrityCheck = 1 AND lzo = 1 AND multithreading = 1,integrityCheck==1 AND bzip2==0 AND gzip==0 AND lzo==1 AND zpaq==0 AND multithreading==1,0,1.0,1.0,1.0,74,0.1700763702392578
+4,22.88852169119161,12,integrityCheck = 1 AND nice = 1 AND multithreading = 1 AND unlimitedWindowSize = 1,integrityCheck==1 AND nice==1 AND multithreading==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,74,0.3398630619049072
+1,4.0535457643258885,32,noBackend = 1,integrityCheck==1 AND gzip==0 AND noBackend==0 AND zpaq==0 AND nice==0 AND multithreading==1 AND unlimitedWindowSize==0,0,0.0,0.0,0.0,75,0.5188541412353516
+2,13.57685259929777,16,encryption = 1 AND zpaq = 1,encryption==1 AND bzip2==0 AND lzo==0 AND noBackend==0 AND nice==0 AND multithreading==0,0,0.3333333333333333,0.5,0.25,75,0.7214193344116211
+3,15.023769809484913,15,integrityCheck = 1 AND lzo = 1 AND nice = 1,integrityCheck==1 AND bzip2==0 AND lzo==0 AND zpaq==0 AND nice==0 AND multithreading==0 AND unlimitedWindowSize==1,0,0.0,0.0,0.0,75,0.4475367069244385
+4,25.41034643812161,12,integrityCheck = 1 AND nice = 1 AND multithreading = 1 AND unlimitedWindowSize = 1,integrityCheck==1 AND nice==1 AND multithreading==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,75,0.2439022064208984
+1,6.729406079807928,32,noBackend = 1,encryption==0 AND integrityCheck==0 AND noBackend==0 AND nice==0 AND multithreading==0,0,0.0,0.0,0.0,76,0.1974222660064697
+2,24.57070626760204,15,encryption = 1 AND disableLzoCompressibilityTesting = 1,encryption==1 AND disableLzoCompressibilityTesting==1 AND bzip2==0 AND gzip==0 AND lzo==1 AND zpaq==0,0,1.0,1.0,1.0,76,0.2623023986816406
+3,22.60069886928773,24,integrityCheck = 1 AND nice = 1 AND multithreading = 1,integrityCheck==1 AND nice==1 AND multithreading==1,0,1.0,1.0,1.0,76,0.2085683345794677
+4,22.37212712319462,12,integrityCheck = 1 AND nice = 1 AND multithreading = 1 AND unlimitedWindowSize = 1,integrityCheck==1 AND nice==1 AND multithreading==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,76,0.3333461284637451
+1,16.381005895238182,32,bzip2 = 1,bzip2==1,0,1.0,1.0,1.0,77,0.3129374980926513
+2,15.657376167304886,16,noBackend = 1 AND multithreading = 1,bzip2==0 AND gzip==0 AND lzo==0 AND noBackend==1 AND multithreading==1,0,1.0,1.0,1.0,77,0.4426367282867431
+3,9.923572457270366,15,encryption = 1 AND lzo = 1 AND nice = 1,encryption==0 AND disableLzoCompressibilityTesting==0 AND integrityCheck==0 AND lzo==1 AND nice==0 AND multithreading==1,0,0.0,0.0,0.0,77,0.5637922286987305
+4,22.517957466260413,12,encryption = 1 AND integrityCheck = 1 AND nice = 1 AND unlimitedWindowSize = 1,encryption==1 AND integrityCheck==1 AND nice==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,77,0.3128280639648437
+1,16.77695706623239,32,gzip = 1,bzip2==0 AND gzip==1,0,1.0,1.0,1.0,78,0.2207920551300048
+2,25.48595044066886,32,lzo = 1 AND multithreading = 1,bzip2==0 AND gzip==0 AND lzo==1 AND zpaq==0 AND multithreading==1,0,1.0,1.0,1.0,78,0.1356475353240966
+3,27.00653104888713,24,encryption = 1 AND integrityCheck = 1 AND unlimitedWindowSize = 1,encryption==1 AND integrityCheck==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,78,0.2624146938323974
+4,14.502001314982447,12,integrityCheck = 1 AND nice = 1 AND multithreading = 1 AND unlimitedWindowSize = 1,encryption==0 AND disableLzoCompressibilityTesting==0 AND integrityCheck==0 AND noBackend==0 AND zpaq==0 AND nice==0 AND multithreading==0,0,0.0,0.0,0.0,78,0.5926051139831543
+1,13.669903398014876,32,noBackend = 1,bzip2==0 AND gzip==0 AND lzo==0 AND nice==1,4,0.5,0.5,0.5,79,0.4416804313659668
+2,17.560077007243933,16,multithreading = 1 AND disableLzoCompressibilityTesting = 1,disableLzoCompressibilityTesting==1 AND bzip2==0 AND gzip==0 AND lzo==1 AND zpaq==0 AND multithreading==1,0,1.0,1.0,1.0,79,0.2518823146820068
+3,12.078560539907798,24,encryption = 1 AND nice = 1 AND multithreading = 1,integrityCheck==1 AND bzip2==1 AND gzip==0 AND nice==1 AND multithreading==0 AND unlimitedWindowSize==1,0,0.0,0.0,0.0,79,0.5320417881011963
+4,18.15628794500656,12,integrityCheck = 1 AND nice = 1 AND multithreading = 1 AND unlimitedWindowSize = 1,disableLzoCompressibilityTesting==0 AND integrityCheck==1 AND bzip2==0 AND nice==1 AND unlimitedWindowSize==1,4,0.5714285714285715,0.5,0.6666666666666666,79,0.263174295425415
+1,13.958526662760118,32,zpaq = 1,bzip2==0 AND gzip==0 AND lzo==0 AND noBackend==0,0,1.0,1.0,1.0,8,0.4562649726867676
+2,17.203102212860617,31,lzo = 1 AND nice = 1,bzip2==0 AND gzip==0 AND lzo==1 AND zpaq==0 AND nice==1,0,1.0,1.0,1.0,8,0.3091137409210205
+3,14.744522552973391,16,lzo = 1 AND nice = 1 AND unlimitedWindowSize = 1,bzip2==0 AND gzip==1 AND lzo==0 AND nice==0 AND multithreading==1 AND unlimitedWindowSize==1,0,0.0,0.0,0.0,8,0.4102134704589844
+4,5.642004157885453,12,encryption = 1 AND integrityCheck = 1 AND nice = 1 AND multithreading = 1,encryption==0 AND integrityCheck==0 AND gzip==0 AND noBackend==0 AND zpaq==0 AND nice==0 AND unlimitedWindowSize==1,0,0.0,0.0,0.0,8,0.3996450901031494
+1,24.80306305296899,32,noBackend = 1,bzip2==0 AND gzip==0 AND lzo==0 AND noBackend==1,0,1.0,1.0,1.0,80,0.099869966506958
+2,19.87282190354082,16,integrityCheck = 1 AND gzip = 1,integrityCheck==1 AND bzip2==0 AND gzip==1,0,1.0,1.0,1.0,80,0.270158052444458
+3,8.30074924224547,23,encryption = 1 AND integrityCheck = 1 AND nice = 1,integrityCheck==1 AND bzip2==0 AND zpaq==1 AND nice==0 AND multithreading==0 AND unlimitedWindowSize==0,0,0.0,0.0,0.0,80,0.4713368415832519
+4,5.099588608012441,12,encryption = 1 AND integrityCheck = 1 AND nice = 1 AND multithreading = 1,encryption==0 AND disableLzoCompressibilityTesting==0 AND integrityCheck==1 AND noBackend==0 AND zpaq==0 AND multithreading==0 AND unlimitedWindowSize==0,0,0.0,0.0,0.0,80,0.4296000003814697
+1,7.351703137786982,32,bzip2 = 1,encryption==1 AND integrityCheck==1 AND bzip2==0 AND gzip==1 AND lzo==0 AND unlimitedWindowSize==1,0,0.0,0.0,0.0,81,0.565356969833374
+2,16.05339743335348,48,encryption = 1 AND unlimitedWindowSize = 1,encryption==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,81,0.2820031642913818
+3,23.007554688868225,16,lzo = 1 AND unlimitedWindowSize = 1 AND disableLzoCompressibilityTesting = 1,disableLzoCompressibilityTesting==1 AND bzip2==0 AND gzip==0 AND lzo==1 AND zpaq==0 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,81,0.2065358161926269
+4,13.159202065730817,12,integrityCheck = 1 AND nice = 1 AND multithreading = 1 AND unlimitedWindowSize = 1,encryption==0 AND integrityCheck==0 AND lzo==1 AND nice==1 AND multithreading==1 AND unlimitedWindowSize==1,0,0.0,0.0,0.0,81,0.4380393028259277
+1,9.13890128818736,32,zpaq = 1,encryption==0 AND lzo==0 AND noBackend==0 AND zpaq==0 AND nice==0 AND multithreading==0 AND unlimitedWindowSize==0,0,0.0,0.0,0.0,82,0.3900551795959472
+2,26.68988268300892,32,lzo = 1 AND multithreading = 1,bzip2==0 AND gzip==0 AND lzo==1 AND zpaq==0 AND multithreading==1,0,1.0,1.0,1.0,82,0.1339221000671386
+3,21.18229916920308,24,encryption = 1 AND integrityCheck = 1 AND unlimitedWindowSize = 1,encryption==1 AND integrityCheck==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,82,0.2604613304138183
+4,16.9780971541246,12,encryption = 1 AND nice = 1 AND multithreading = 1 AND unlimitedWindowSize = 1,encryption==1 AND nice==1 AND multithreading==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,82,0.5282316207885742
+1,21.16161017523607,31,disableLzoCompressibilityTesting = 1,disableLzoCompressibilityTesting==1 AND bzip2==0 AND gzip==0 AND lzo==1 AND zpaq==0,0,1.0,1.0,1.0,83,0.1493804454803466
+2,20.41909936175198,32,lzo = 1 AND unlimitedWindowSize = 1,bzip2==0 AND gzip==0 AND lzo==1 AND zpaq==0 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,83,0.1930475234985351
+3,6.992904468000825,15,encryption = 1 AND lzo = 1 AND nice = 1,encryption==1 AND integrityCheck==1 AND bzip2==0 AND noBackend==0 AND nice==0 AND multithreading==1 AND unlimitedWindowSize==0,0,0.0,0.0,0.0,83,0.5525021553039551
+4,18.2858088822689,12,integrityCheck = 1 AND nice = 1 AND multithreading = 1 AND unlimitedWindowSize = 1,integrityCheck==1 AND nice==1 AND multithreading==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,83,0.5887138843536377
+1,14.80253839622958,32,gzip = 1,bzip2==0 AND gzip==1,0,1.0,1.0,1.0,84,0.3383970260620117
+2,21.804730112747205,48,multithreading = 1 AND unlimitedWindowSize = 1,multithreading==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,84,0.1056373119354248
+3,22.424261139892767,24,integrityCheck = 1 AND nice = 1 AND multithreading = 1,integrityCheck==1 AND nice==1 AND multithreading==1,0,1.0,1.0,1.0,84,0.1758344173431396
+4,5.853571557206411,12,encryption = 1 AND integrityCheck = 1 AND nice = 1 AND multithreading = 1,encryption==1 AND gzip==0 AND zpaq==0 AND nice==0 AND multithreading==0 AND unlimitedWindowSize==0,0,0.0,0.0,0.0,84,0.5668115615844727
+1,13.411814967888644,32,zpaq = 1,bzip2==0 AND gzip==0 AND lzo==0 AND noBackend==0,0,1.0,1.0,1.0,85,0.4440672397613525
+2,21.96634867280596,16,encryption = 1 AND bzip2 = 1,encryption==1 AND bzip2==1,0,1.0,1.0,1.0,85,0.1511480808258056
+3,14.50373611595588,24,integrityCheck = 1 AND nice = 1 AND multithreading = 1,integrityCheck==1 AND nice==1 AND multithreading==1,0,1.0,1.0,1.0,85,0.5182030200958252
+4,10.249744563648106,12,integrityCheck = 1 AND nice = 1 AND multithreading = 1 AND unlimitedWindowSize = 1,encryption==1 AND integrityCheck==1 AND lzo==0 AND noBackend==0 AND nice==1 AND multithreading==0 AND unlimitedWindowSize==0,0,0.0,0.0,0.0,85,0.4464156627655029
+1,25.67982814426866,32,noBackend = 1,bzip2==0 AND gzip==0 AND lzo==0 AND noBackend==1,0,1.0,1.0,1.0,86,0.0923995971679687
+2,22.53638810096203,32,lzo = 1 AND unlimitedWindowSize = 1,bzip2==0 AND gzip==0 AND lzo==1 AND zpaq==0 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,86,0.1261403560638427
+3,9.006262991692385,16,lzo = 1 AND nice = 1 AND unlimitedWindowSize = 1,encryption==1 AND integrityCheck==1 AND lzo==0 AND noBackend==0 AND zpaq==0 AND multithreading==0,0,0.0,0.0,0.0,86,0.4398424625396728
+4,19.054264645908837,12,integrityCheck = 1 AND nice = 1 AND multithreading = 1 AND unlimitedWindowSize = 1,integrityCheck==1 AND nice==1 AND multithreading==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,86,0.5729742050170898
+1,9.073368550008931,32,bzip2 = 1,disableLzoCompressibilityTesting==1 AND integrityCheck==0 AND bzip2==0 AND gzip==0 AND nice==1 AND unlimitedWindowSize==0,0,0.0,0.0,0.0,87,0.4042794704437256
+2,8.280596403680539,48,integrityCheck = 1 AND multithreading = 1,encryption==0 AND disableLzoCompressibilityTesting==1 AND integrityCheck==0 AND bzip2==0 AND nice==1 AND unlimitedWindowSize==1,0,0.0,0.0,0.0,87,0.302652359008789
+3,14.2629363140746,24,encryption = 1 AND integrityCheck = 1 AND unlimitedWindowSize = 1,encryption==1 AND integrityCheck==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,87,0.4745302200317383
+4,25.943610971994104,12,encryption = 1 AND nice = 1 AND multithreading = 1 AND unlimitedWindowSize = 1,encryption==1 AND nice==1 AND multithreading==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,87,0.2347965240478515
+1,9.313612462716367,32,gzip = 1,integrityCheck==1 AND gzip==0 AND lzo==0 AND zpaq==0 AND nice==0 AND multithreading==0 AND unlimitedWindowSize==1,0,0.0,0.0,0.0,88,0.4621498584747314
+2,6.0349054285125305,16,noBackend = 1 AND unlimitedWindowSize = 1,encryption==1 AND disableLzoCompressibilityTesting==0 AND integrityCheck==0 AND noBackend==0 AND zpaq==0 AND nice==1 AND unlimitedWindowSize==0,0,0.0,0.0,0.0,88,0.3970303535461426
+3,15.222779816962976,24,encryption = 1 AND nice = 1 AND multithreading = 1,encryption==1 AND nice==1 AND multithreading==1,0,1.0,1.0,1.0,88,0.4718594551086426
+4,25.993024019766978,12,encryption = 1 AND integrityCheck = 1 AND nice = 1 AND multithreading = 1,encryption==1 AND integrityCheck==1 AND nice==1 AND multithreading==1,0,1.0,1.0,1.0,88,0.2192962169647216
+1,21.99166493012271,32,bzip2 = 1,bzip2==1,0,1.0,1.0,1.0,89,0.1318073272705078
+2,18.050864347581545,16,bzip2 = 1 AND unlimitedWindowSize = 1,bzip2==1 AND gzip==0 AND lzo==0 AND noBackend==0 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,89,0.3930635452270508
+3,13.33750503366815,23,encryption = 1 AND integrityCheck = 1 AND nice = 1,encryption==1 AND bzip2==0 AND nice==1 AND unlimitedWindowSize==1,1,0.4651162790697674,0.5,0.4347826086956521,89,0.4706928730010986
+4,21.117171338811698,12,encryption = 1 AND integrityCheck = 1 AND multithreading = 1 AND unlimitedWindowSize = 1,encryption==1 AND integrityCheck==1 AND multithreading==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,89,0.3269414901733398
+1,24.00719776378912,32,bzip2 = 1,bzip2==1,0,1.0,1.0,1.0,9,0.1315562725067138
+2,15.026620871977451,48,encryption = 1 AND multithreading = 1,encryption==1 AND multithreading==1,0,1.0,1.0,1.0,9,0.3546175956726074
+3,23.48503968358391,24,encryption = 1 AND nice = 1 AND multithreading = 1,encryption==1 AND nice==1 AND multithreading==1,0,1.0,1.0,1.0,9,0.2623515129089355
+4,20.2349479318415,12,encryption = 1 AND integrityCheck = 1 AND nice = 1 AND unlimitedWindowSize = 1,encryption==1 AND integrityCheck==1 AND nice==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,9,0.3929688930511474
+1,19.01656424744818,32,zpaq = 1,bzip2==0 AND gzip==0 AND lzo==0 AND noBackend==0,0,1.0,1.0,1.0,90,0.2073769569396972
+2,17.7883133377983,16,noBackend = 1 AND multithreading = 1,bzip2==0 AND gzip==0 AND lzo==0 AND noBackend==1 AND multithreading==1,0,1.0,1.0,1.0,90,0.6076123714447021
+3,12.33493811869609,16,integrityCheck = 1 AND lzo = 1 AND multithreading = 1,encryption==1 AND integrityCheck==0 AND bzip2==0 AND zpaq==1 AND nice==1 AND multithreading==0,0,0.0,0.0,0.0,90,0.6043744087219238
+4,13.678093013166563,12,encryption = 1 AND nice = 1 AND multithreading = 1 AND unlimitedWindowSize = 1,disableLzoCompressibilityTesting==0 AND integrityCheck==0 AND lzo==1 AND nice==0 AND multithreading==1 AND unlimitedWindowSize==1,0,0.0,0.0,0.0,90,0.669217586517334
+1,10.710919024722724,32,gzip = 1,encryption==1 AND disableLzoCompressibilityTesting==0 AND integrityCheck==1 AND lzo==1 AND multithreading==1 AND unlimitedWindowSize==1,0,0.0,0.0,0.0,91,0.517859935760498
+2,9.794829514806947,15,encryption = 1 AND disableLzoCompressibilityTesting = 1,encryption==0 AND integrityCheck==0 AND gzip==0 AND zpaq==0 AND nice==1 AND multithreading==1 AND unlimitedWindowSize==1,0,0.0,0.0,0.0,91,0.3557972908020019
+3,17.014906287796002,24,integrityCheck = 1 AND nice = 1 AND multithreading = 1,integrityCheck==1 AND nice==1 AND multithreading==1,0,1.0,1.0,1.0,91,0.3977091312408447
+4,10.078101804082085,12,encryption = 1 AND integrityCheck = 1 AND nice = 1 AND unlimitedWindowSize = 1,encryption==0 AND disableLzoCompressibilityTesting==0 AND integrityCheck==1 AND lzo==1 AND multithreading==0 AND unlimitedWindowSize==0,0,0.0,0.0,0.0,91,0.5702667236328125
+1,10.468813347149233,32,noBackend = 1,encryption==1 AND disableLzoCompressibilityTesting==0 AND integrityCheck==0 AND lzo==1 AND nice==1 AND unlimitedWindowSize==1,0,0.0,0.0,0.0,92,0.4247195720672607
+2,12.152244722117524,16,unlimitedWindowSize = 1 AND disableLzoCompressibilityTesting = 1,encryption==0 AND integrityCheck==1 AND bzip2==0 AND gzip==0 AND lzo==0 AND nice==1 AND multithreading==1,0,0.0,0.0,0.0,92,0.3462004661560058
+3,20.480778199228062,16,lzo = 1 AND multithreading = 1 AND unlimitedWindowSize = 1,bzip2==0 AND gzip==0 AND lzo==1 AND zpaq==0 AND multithreading==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,92,0.3099403381347656
+4,16.557613417028843,12,encryption = 1 AND integrityCheck = 1 AND multithreading = 1 AND unlimitedWindowSize = 1,encryption==1 AND disableLzoCompressibilityTesting==1 AND integrityCheck==1 AND bzip2==0 AND gzip==0 AND multithreading==0,0,0.0,0.0,0.0,92,0.5019090175628662
+1,24.55539364115408,32,bzip2 = 1,bzip2==1,0,1.0,1.0,1.0,93,0.1178336143493652
+2,20.923950518601323,16,noBackend = 1 AND unlimitedWindowSize = 1,bzip2==0 AND gzip==0 AND lzo==0 AND noBackend==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,93,0.1938118934631347
+3,5.629308343307447,16,lzo = 1 AND multithreading = 1 AND unlimitedWindowSize = 1,integrityCheck==0 AND bzip2==0 AND gzip==0 AND noBackend==0 AND nice==1 AND multithreading==1 AND unlimitedWindowSize==0,0,0.0,0.0,0.0,93,0.4742145538330078
+4,5.392448740384851,12,integrityCheck = 1 AND nice = 1 AND multithreading = 1 AND unlimitedWindowSize = 1,encryption==0 AND integrityCheck==1 AND bzip2==1 AND gzip==0 AND nice==1 AND unlimitedWindowSize==0,0,0.0,0.0,0.0,93,0.466724157333374
+1,8.785335896483257,32,zpaq = 1,encryption==0 AND disableLzoCompressibilityTesting==0 AND integrityCheck==1 AND gzip==0 AND noBackend==0 AND multithreading==1 AND unlimitedWindowSize==0,1,0.1052631578947368,0.3333333333333333,0.0625,94,0.5996744632720947
+2,14.3719252082964,16,encryption = 1 AND zpaq = 1,encryption==1 AND integrityCheck==0 AND bzip2==0 AND gzip==1 AND nice==0 AND unlimitedWindowSize==1,0,0.0,0.0,0.0,94,0.4896039962768554
+3,25.38070943419542,24,integrityCheck = 1 AND nice = 1 AND multithreading = 1,integrityCheck==1 AND nice==1 AND multithreading==1,0,1.0,1.0,1.0,94,0.1922283172607422
+4,17.931984803777798,12,encryption = 1 AND integrityCheck = 1 AND multithreading = 1 AND unlimitedWindowSize = 1,encryption==1 AND integrityCheck==1 AND multithreading==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,94,0.4800786972045898
+1,9.316925896955691,32,bzip2 = 1,encryption==1 AND disableLzoCompressibilityTesting==0 AND integrityCheck==1 AND zpaq==0 AND nice==1 AND multithreading==0 AND unlimitedWindowSize==1,0,0.0555555555555555,0.25,0.03125,95,0.6270639896392822
+2,9.311192379645911,31,lzo = 1 AND disableLzoCompressibilityTesting = 1,encryption==0 AND integrityCheck==0 AND bzip2==0 AND zpaq==1 AND nice==1 AND multithreading==1,0,0.0,0.0,0.0,95,0.3835606575012207
+3,16.652124218987986,15,integrityCheck = 1 AND lzo = 1 AND disableLzoCompressibilityTesting = 1,disableLzoCompressibilityTesting==1 AND integrityCheck==1 AND bzip2==0 AND gzip==0 AND lzo==1 AND zpaq==0,0,1.0,1.0,1.0,95,0.3639047145843506
+4,25.864053062428766,12,encryption = 1 AND integrityCheck = 1 AND nice = 1 AND multithreading = 1,encryption==1 AND integrityCheck==1 AND nice==1 AND multithreading==1,0,1.0,1.0,1.0,95,0.3784279823303222
+1,14.825091436832498,32,noBackend = 1,bzip2==0 AND gzip==0 AND lzo==0 AND noBackend==1,0,1.0,1.0,1.0,96,0.404080867767334
+2,9.26389209261266,16,bzip2 = 1 AND nice = 1,encryption==1 AND disableLzoCompressibilityTesting==0 AND gzip==0 AND noBackend==0 AND nice==1 AND multithreading==0,4,0.2857142857142857,0.3333333333333333,0.25,96,0.3838028907775879
+3,13.559812641068476,15,encryption = 1 AND lzo = 1 AND nice = 1,encryption==1 AND bzip2==0 AND noBackend==1 AND nice==1 AND multithreading==0 AND unlimitedWindowSize==0,0,0.0,0.0,0.0,96,0.3673415184020996
+4,16.19979782825416,12,encryption = 1 AND integrityCheck = 1 AND nice = 1 AND unlimitedWindowSize = 1,encryption==1 AND integrityCheck==1 AND nice==1 AND unlimitedWindowSize==1,1,1.0,1.0,1.0,96,0.4569032192230224
+1,6.08161027661464,32,bzip2 = 1,encryption==1 AND integrityCheck==0 AND bzip2==0 AND lzo==0 AND nice==0 AND multithreading==1 AND unlimitedWindowSize==1,0,0.0,0.0,0.0,97,0.3935983180999756
+2,24.85027221754268,48,encryption = 1 AND unlimitedWindowSize = 1,encryption==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,97,0.2013113498687744
+3,17.820795129479507,24,integrityCheck = 1 AND nice = 1 AND unlimitedWindowSize = 1,integrityCheck==1 AND nice==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,97,0.3702998161315918
+4,9.123134131008712,12,integrityCheck = 1 AND nice = 1 AND multithreading = 1 AND unlimitedWindowSize = 1,encryption==1 AND integrityCheck==1 AND lzo==1 AND nice==0 AND multithreading==0 AND unlimitedWindowSize==1,0,0.0,0.0,0.0,97,0.4794340133666992
+1,10.083913753829988,32,noBackend = 1,encryption==0 AND integrityCheck==1 AND bzip2==0 AND lzo==1 AND nice==1 AND multithreading==1,0,0.0,0.0,0.0,98,0.380415678024292
+2,16.027494884394766,16,gzip = 1 AND unlimitedWindowSize = 1,bzip2==0 AND gzip==1 AND lzo==0 AND noBackend==0 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,98,0.4302895069122314
+3,23.64018912783289,24,integrityCheck = 1 AND nice = 1 AND multithreading = 1,integrityCheck==1 AND nice==1 AND multithreading==1,0,1.0,1.0,1.0,98,0.201575756072998
+4,8.670448299668186,12,encryption = 1 AND nice = 1 AND multithreading = 1 AND unlimitedWindowSize = 1,encryption==0 AND integrityCheck==0 AND bzip2==0 AND zpaq==1 AND nice==0 AND unlimitedWindowSize==0,0,0.0,0.0,0.0,98,0.3590304851531982
+1,12.305158427348845,32,noBackend = 1,encryption==0 AND disableLzoCompressibilityTesting==0 AND integrityCheck==0 AND gzip==0 AND zpaq==0 AND nice==0 AND unlimitedWindowSize==0,4,0.1052631578947368,0.3333333333333333,0.0625,99,0.3039336204528808
+2,21.96564936377477,47,encryption = 1 AND nice = 1,encryption==1 AND nice==1,0,1.0,1.0,1.0,99,0.1878256797790527
+3,5.827854682176184,15,lzo = 1 AND nice = 1 AND disableLzoCompressibilityTesting = 1,encryption==1 AND integrityCheck==1 AND noBackend==0 AND nice==1 AND multithreading==0 AND unlimitedWindowSize==1,3,0.1,0.2,0.0666666666666666,99,0.5387403964996338
+4,10.716066351118394,12,integrityCheck = 1 AND nice = 1 AND multithreading = 1 AND unlimitedWindowSize = 1,disableLzoCompressibilityTesting==0 AND integrityCheck==1 AND lzo==1 AND nice==0 AND multithreading==0 AND unlimitedWindowSize==0,0,0.0,0.0,0.0,99,0.6657249927520752

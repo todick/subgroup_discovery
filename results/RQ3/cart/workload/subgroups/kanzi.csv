@@ -1,0 +1,6 @@
+rule,sg_samples,sg_coverage,rule_num_predicates,rule_features_used
+TPAQX AND blocksize <= 500500.0 AND ROLZX AND ROLZ AND jobs > 6.0,19,0.004620622568093385,5,"['ROLZ', 'ROLZX', 'TPAQX', 'blocksize', 'jobs']"
+TPAQX AND blocksize <= 500500.0 AND ROLZX AND ROLZ,44,0.010700389105058366,4,"['ROLZ', 'ROLZX', 'TPAQX', 'blocksize']"
+TPAQX AND blocksize <= 500500.0 AND ROLZX,114,0.02772373540856031,3,"['ROLZX', 'TPAQX', 'blocksize']"
+TPAQX AND blocksize <= 500500.0,219,0.05325875486381323,2,"['TPAQX', 'blocksize']"
+NOT TPAQX AND blocksize > 500500.0 AND blocksize <= 500500000.0 AND NOT ROLZ AND NOT TPAQ,746,0.181420233463035,5,"['TPAQ', 'ROLZ', 'TPAQX', 'blocksize']"

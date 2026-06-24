@@ -1,0 +1,6 @@
+rule,sg_samples,sg_coverage,rule_num_predicates,rule_features_used
+pdf,384,0.20010422094841063,1,['pdf']
+NOT validate AND NOT pdf,768,0.40020844189682125,2,"['validate', 'pdf']"
+validate AND NOT pdf AND resolution != 8294400.00,511,0.266284523189161,3,"['resolution', 'validate', 'pdf']"
+NOT pdf AND resolution = 8294400.00,512,0.26680562793121415,2,"['pdf', 'resolution']"
+pdf,384,0.20010422094841063,1,['pdf']

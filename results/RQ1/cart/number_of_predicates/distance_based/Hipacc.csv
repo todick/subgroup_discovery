@@ -1,0 +1,401 @@
+n_conditions,sg_mean,sg_cardinality,sg_rule,best_rule,best_rule_idx,f1,precision,recall,seed,runtime
+1,29.887339957738973,696,bs_256x2 = 1,bs_256x2,0,1.0,1.0,1.0,0,0.1350903511047363
+2,55.07977951834015,697,Linear1D = 1 AND pixelPerThread = 2,Linear1D AND pixelPerThread <= 2.5 AND pixelPerThread > 1.5,0,1.0,1.0,1.0,0,0.1856172084808349
+3,103.35373608190991,697,CUDA = 1 AND Linear2D = 1 AND pixelPerThread = 2,Linear2D AND pixelPerThread <= 2.5 AND pixelPerThread > 1.5,0,1.0,1.0,1.0,0,0.137315034866333
+4,42.80248714784676,1040,CUDA = 1 AND LocalMemory = 1 AND TextureMemory = 1 AND pixelPerThread = 2,TextureMemory AND pixelPerThread <= 2.5 AND LocalMemory AND pixelPerThread > 1.5 AND CUDA,0,1.0,1.0,1.0,0,0.1399474143981933
+1,47.7814647109009,2635,Linear2D = 1,Linear2D,0,1.0,1.0,1.0,1,0.1303927898406982
+2,65.39570558412142,697,Linear1D = 1 AND pixelPerThread = 2,Linear1D AND pixelPerThread <= 2.5 AND pixelPerThread > 1.5,0,1.0,1.0,1.0,1,0.1846621036529541
+3,97.43425634504251,1060,LocalMemory = 1 AND TextureMemory = 1 AND pixelPerThread = 2,LocalMemory AND pixelPerThread <= 2.5 AND pixelPerThread > 1.5 AND TextureMemory,0,1.0,1.0,1.0,1,0.1214549541473388
+4,106.12361499529368,780,CUDA = 1 AND LocalMemory = 1 AND TextureMemory = 1 AND pixelPerThread = 4,pixelPerThread > 3.5 AND LocalMemory AND TextureMemory AND CUDA,0,1.0,1.0,1.0,1,0.1296651363372802
+1,73.35062868643115,775,padding = 288,padding > 272.0 AND padding <= 304.0,0,1.0,1.0,1.0,10,0.1456773281097412
+2,77.71000120200516,1908,TextureMemory = 1 AND pixelPerThread = 4,pixelPerThread > 3.5 AND TextureMemory,0,1.0,1.0,1.0,10,0.1986956596374511
+3,91.06246875954793,714,CUDA = 1 AND Linear2D = 1 AND pixelPerThread = 1,Linear2D AND pixelPerThread <= 1.5,0,1.0,1.0,1.0,10,0.1413702964782714
+4,45.60620234916878,1092,CUDA = 1 AND LocalMemory = 1 AND TextureMemory = 1 AND pixelPerThread = 1,pixelPerThread <= 1.5 AND TextureMemory AND LocalMemory AND CUDA,0,1.0,1.0,1.0,10,0.1375553607940673
+1,71.94340034507839,775,padding = 320,padding > 304.0 AND padding <= 336.0,0,1.0,1.0,1.0,11,0.137770414352417
+2,76.94948281100204,1908,TextureMemory = 1 AND pixelPerThread = 4,pixelPerThread > 3.5 AND TextureMemory,0,1.0,1.0,1.0,11,0.194291353225708
+3,95.21534554628656,697,Linear2D = 1 AND TextureMemory = 1 AND pixelPerThread = 2,Linear2D AND pixelPerThread <= 2.5 AND pixelPerThread > 1.5,0,1.0,1.0,1.0,11,0.1456542015075683
+4,78.23474939062044,780,CUDA = 1 AND LocalMemory = 1 AND TextureMemory = 1 AND pixelPerThread = 3,pixelPerThread > 2.5 AND LocalMemory AND pixelPerThread <= 3.5 AND TextureMemory AND NOT OpenCL,0,1.0,1.0,1.0,11,0.1474452018737793
+1,53.002248500899725,775,padding = 384,padding > 368.0 AND padding <= 400.0,0,1.0,1.0,1.0,12,0.1410331726074218
+2,84.47424611562103,775,TextureMemory = 1 AND padding = 0,padding <= 16.0 AND TextureMemory,0,1.0,1.0,1.0,12,0.1822600364685058
+3,81.869092498325,2184,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 1,pixelPerThread <= 1.5 AND TextureMemory AND CUDA,0,1.0,1.0,1.0,12,0.1300344467163086
+4,83.41135574211208,714,CUDA = 1 AND Ldg = 1 AND TextureMemory = 1 AND pixelPerThread = 1,Ldg AND pixelPerThread <= 1.5,0,1.0,1.0,1.0,12,0.1343169212341308
+1,77.54063128379127,775,padding = 288,padding > 272.0 AND padding <= 304.0,0,1.0,1.0,1.0,13,0.1359684467315673
+2,41.41412366468319,697,Linear2D = 1 AND pixelPerThread = 2,Linear2D AND pixelPerThread <= 2.5 AND pixelPerThread > 1.5,0,1.0,1.0,1.0,13,0.1942038536071777
+3,37.14364109438915,1035,CUDA = 1 AND LocalMemory = 1 AND pixelPerThread = 4,NOT bs_128x1 AND pixelPerThread > 3.5 AND NOT bs_32x32 AND LocalMemory AND NOT Array2D AND NOT OpenCL,0,0.9582284851534978,1.0,0.9198067632850242,13,0.1398656368255615
+4,88.92713638588245,697,CUDA = 1 AND Linear2D = 1 AND TextureMemory = 1 AND pixelPerThread = 2,Linear2D AND pixelPerThread <= 2.5 AND pixelPerThread > 1.5,0,1.0,1.0,1.0,13,0.1457831859588623
+1,74.75596127538263,3132,pixelPerThread = 3,pixelPerThread > 2.5 AND pixelPerThread <= 3.5,0,1.0,1.0,1.0,14,0.1259803771972656
+2,108.17658830254214,1207,Ldg = 1 AND LocalMemory = 1,Ldg AND LocalMemory,0,1.0,1.0,1.0,14,0.1977264881134033
+3,115.33471919266772,697,CUDA = 1 AND Linear2D = 1 AND pixelPerThread = 2,Linear2D AND pixelPerThread <= 2.5 AND pixelPerThread > 1.5,0,1.0,1.0,1.0,14,0.1316287517547607
+4,78.11852978554131,714,CUDA = 1 AND Linear2D = 1 AND TextureMemory = 1 AND pixelPerThread = 1,Linear2D AND pixelPerThread <= 1.5,0,1.0,1.0,1.0,14,0.1344945430755615
+1,69.62855459474324,2635,Linear2D = 1,Linear2D,0,1.0,1.0,1.0,15,0.1458749771118164
+2,99.25813541257908,2898,CUDA = 1 AND pixelPerThread = 1,pixelPerThread <= 1.5 AND CUDA,0,1.0,1.0,1.0,15,0.1968016624450683
+3,93.482844970239,714,Ldg = 1 AND TextureMemory = 1 AND pixelPerThread = 1,Ldg AND pixelPerThread <= 1.5,0,1.0,1.0,1.0,15,0.1412234306335449
+4,50.61283514682355,1207,CUDA = 1 AND Linear2D = 1 AND LocalMemory = 1 AND TextureMemory = 1,Linear2D AND LocalMemory,0,1.0,1.0,1.0,15,0.1375665664672851
+1,112.09268769302996,696,bs_32x4 = 1,bs_32x4,0,1.0,1.0,1.0,16,0.1519367694854736
+2,84.06910096615285,697,Linear2D = 1 AND pixelPerThread = 2,Linear2D AND pixelPerThread <= 2.5 AND pixelPerThread > 1.5,0,1.0,1.0,1.0,16,0.1924548149108886
+3,81.970039155896,1872,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 3,pixelPerThread > 2.5 AND pixelPerThread <= 3.5 AND TextureMemory AND NOT OpenCL,0,1.0,1.0,1.0,16,0.132850170135498
+4,107.2503260742126,1207,CUDA = 1 AND Linear1D = 1 AND LocalMemory = 1 AND TextureMemory = 1,Linear1D AND LocalMemory,0,1.0,1.0,1.0,16,0.1440565586090088
+1,61.981686414824026,3654,pixelPerThread = 1,pixelPerThread <= 1.5,0,1.0,1.0,1.0,17,0.1420502662658691
+2,99.49580561499948,1827,LocalMemory = 1 AND pixelPerThread = 1,pixelPerThread <= 1.5 AND LocalMemory,0,1.0,1.0,1.0,17,0.1968157291412353
+3,106.69025876126751,1207,Linear1D = 1 AND LocalMemory = 1 AND TextureMemory = 1,Linear1D AND LocalMemory,0,1.0,1.0,1.0,17,0.1413342952728271
+4,38.53557182619906,1207,CUDA = 1 AND Linear1D = 1 AND LocalMemory = 1 AND TextureMemory = 1,Linear1D AND LocalMemory,0,1.0,1.0,1.0,17,0.1299598217010498
+1,80.55589315013793,696,bs_32x8 = 1,bs_32x8,0,1.0,1.0,1.0,18,0.130723237991333
+2,40.01566007656344,2635,CUDA = 1 AND Ldg = 1,Ldg,0,1.0,1.0,1.0,18,0.2000329494476318
+3,28.75410408163231,1060,LocalMemory = 1 AND TextureMemory = 1 AND pixelPerThread = 2,LocalMemory AND TextureMemory AND pixelPerThread <= 2.5 AND pixelPerThread > 1.5,0,1.0,1.0,1.0,18,0.1440227031707763
+4,73.65879256784898,714,CUDA = 1 AND Linear1D = 1 AND TextureMemory = 1 AND pixelPerThread = 1,Linear1D AND pixelPerThread <= 1.5,0,1.0,1.0,1.0,18,0.1374435424804687
+1,94.70656979751024,696,bs_32x2 = 1,bs_32x2,0,1.0,1.0,1.0,19,0.1302783489227295
+2,94.42442162478886,3763,LocalMemory = 1 AND TextureMemory = 1,LocalMemory AND TextureMemory,0,1.0,1.0,1.0,19,0.19307541847229
+3,59.056371638404784,1207,Ldg = 1 AND LocalMemory = 1 AND TextureMemory = 1,Ldg AND LocalMemory,0,1.0,1.0,1.0,19,0.1271162033081054
+4,43.90520842004075,697,CUDA = 1 AND Linear1D = 1 AND TextureMemory = 1 AND pixelPerThread = 2,Linear1D AND pixelPerThread <= 2.5 AND pixelPerThread > 1.5,0,1.0,1.0,1.0,19,0.1508893966674804
+1,35.89037729748381,775,padding = 160,padding > 16.0,0,0.1176470588235294,0.0625,1.0,2,0.1191859245300293
+2,84.6188659246386,1740,LocalMemory = 1 AND pixelPerThread = 2,LocalMemory AND pixelPerThread <= 2.5 AND pixelPerThread > 1.5,0,1.0,1.0,1.0,2,0.1846706867218017
+3,100.338967371343,1207,Ldg = 1 AND LocalMemory = 1 AND TextureMemory = 1,Ldg AND LocalMemory,0,1.0,1.0,1.0,2,0.1264059543609619
+4,80.35346728201836,714,CUDA = 1 AND Ldg = 1 AND TextureMemory = 1 AND pixelPerThread = 1,Ldg AND pixelPerThread <= 1.5,0,1.0,1.0,1.0,2,0.1280803680419922
+1,81.50173138166548,696,bs_512x1 = 1,bs_512x1,0,1.0,1.0,1.0,20,0.1338188648223877
+2,67.64562686624137,2635,Ldg = 1 AND TextureMemory = 1,Ldg,0,1.0,1.0,1.0,20,0.1910195350646972
+3,60.23384735794648,1207,Ldg = 1 AND LocalMemory = 1 AND TextureMemory = 1,Ldg AND LocalMemory,0,1.0,1.0,1.0,20,0.1282603740692138
+4,60.17209108271612,780,CUDA = 1 AND LocalMemory = 1 AND TextureMemory = 1 AND pixelPerThread = 4,pixelPerThread > 3.5 AND LocalMemory AND TextureMemory AND NOT OpenCL,0,1.0,1.0,1.0,20,0.1437387466430664
+1,27.06723565844434,775,padding = 160,padding <= 176.0 AND padding > 144.0,0,1.0,1.0,1.0,21,0.1432206630706787
+2,50.98828878054588,714,Linear1D = 1 AND pixelPerThread = 1,Linear1D AND pixelPerThread <= 1.5,0,1.0,1.0,1.0,21,0.1885454654693603
+3,82.51891427009846,1035,CUDA = 1 AND LocalMemory = 1 AND pixelPerThread = 3,LocalMemory AND pixelPerThread > 2.5 AND pixelPerThread <= 3.5 AND NOT OpenCL,0,1.0,1.0,1.0,21,0.1440980434417724
+4,66.40183272621205,780,CUDA = 1 AND LocalMemory = 1 AND TextureMemory = 1 AND pixelPerThread = 3,LocalMemory AND pixelPerThread > 2.5 AND pixelPerThread <= 3.5 AND TextureMemory AND NOT OpenCL,0,1.0,1.0,1.0,21,0.1468572616577148
+1,40.23083235851248,3132,pixelPerThread = 3,pixelPerThread > 2.5 AND pixelPerThread <= 3.5,0,1.0,1.0,1.0,22,0.1341257095336914
+2,48.038019458195656,714,Linear1D = 1 AND pixelPerThread = 1,Linear1D AND pixelPerThread <= 1.5,0,1.0,1.0,1.0,22,0.1910243034362793
+3,50.674913872827744,1113,LocalMemory = 1 AND TextureMemory = 1 AND pixelPerThread = 1,pixelPerThread <= 1.5 AND LocalMemory AND TextureMemory,0,1.0,1.0,1.0,22,0.1213634014129638
+4,100.79372055601728,697,CUDA = 1 AND Ldg = 1 AND TextureMemory = 1 AND pixelPerThread = 2,Ldg AND pixelPerThread <= 2.5 AND pixelPerThread > 1.5,0,1.0,1.0,1.0,22,0.153043508529663
+1,43.07717562535976,1085,padding = 0,padding <= 16.0,0,1.0,1.0,1.0,23,0.1179602146148681
+2,74.5898250519413,1908,TextureMemory = 1 AND pixelPerThread = 3,pixelPerThread > 2.5 AND pixelPerThread <= 3.5 AND TextureMemory,0,1.0,1.0,1.0,23,0.1811323165893554
+3,59.72912973607795,697,Linear1D = 1 AND TextureMemory = 1 AND pixelPerThread = 2,Linear1D AND pixelPerThread <= 2.5 AND pixelPerThread > 1.5,0,1.0,1.0,1.0,23,0.1205110549926757
+4,94.46068825308905,1040,CUDA = 1 AND LocalMemory = 1 AND TextureMemory = 1 AND pixelPerThread = 2,LocalMemory AND pixelPerThread <= 2.5 AND pixelPerThread > 1.5 AND TextureMemory AND CUDA,0,1.0,1.0,1.0,23,0.1443402767181396
+1,90.67285695104792,775,padding = 64,padding <= 80.0 AND padding > 48.0,0,1.0,1.0,1.0,24,0.1412925720214843
+2,33.268425681327784,714,Linear2D = 1 AND pixelPerThread = 1,Linear2D AND pixelPerThread <= 2.5 AND NOT bs_64x2 AND NOT bs_32x8 AND pixelPerThread <= 1.5,0,0.95,1.0,0.9047619047619048,24,0.201570987701416
+3,113.77281328148634,1872,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 4,pixelPerThread > 3.5 AND TextureMemory AND NOT OpenCL,0,1.0,1.0,1.0,24,0.1360321044921875
+4,96.59145371800896,714,CUDA = 1 AND Linear1D = 1 AND TextureMemory = 1 AND pixelPerThread = 1,Linear1D AND pixelPerThread <= 1.5,0,1.0,1.0,1.0,24,0.1456713676452636
+1,80.01460479631419,775,padding = 512,padding > 496.0,0,1.0,1.0,1.0,25,0.1207170486450195
+2,27.83554410323346,1278,LocalMemory = 1 AND OpenCL = 1,OpenCL AND LocalMemory,0,1.0,1.0,1.0,25,0.1954543590545654
+3,27.969829549960963,2184,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 1,pixelPerThread <= 1.5 AND TextureMemory AND NOT OpenCL,0,1.0,1.0,1.0,25,0.1273984909057617
+4,73.00861368644264,1207,CUDA = 1 AND Ldg = 1 AND LocalMemory = 1 AND TextureMemory = 1,Ldg AND LocalMemory,0,1.0,1.0,1.0,25,0.1287934780120849
+1,63.762352644110926,775,padding = 224,padding <= 240.0 AND padding > 208.0,0,1.0,1.0,1.0,26,0.1347036361694336
+2,52.31400265902942,1207,Linear2D = 1 AND LocalMemory = 1,Linear2D AND LocalMemory,0,1.0,1.0,1.0,26,0.1828908920288086
+3,92.53456772678572,697,CUDA = 1 AND Linear1D = 1 AND pixelPerThread = 2,Linear1D AND pixelPerThread <= 2.5 AND pixelPerThread > 1.5,0,1.0,1.0,1.0,26,0.1217374801635742
+4,92.19472816820208,714,CUDA = 1 AND Linear1D = 1 AND TextureMemory = 1 AND pixelPerThread = 1,Linear1D AND pixelPerThread <= 1.5,0,1.0,1.0,1.0,26,0.1352062225341797
+1,75.17004556124257,696,bs_32x2 = 1,bs_32x2,0,1.0,1.0,1.0,27,0.1252315044403076
+2,107.08938448080008,2635,Linear1D = 1 AND TextureMemory = 1,Linear1D,0,1.0,1.0,1.0,27,0.1772842407226562
+3,64.77603906448734,1449,CUDA = 1 AND LocalMemory = 1 AND pixelPerThread = 1,pixelPerThread <= 1.5 AND LocalMemory AND NOT OpenCL,0,1.0,1.0,1.0,27,0.1189138889312744
+4,84.77588560244993,1092,CUDA = 1 AND LocalMemory = 1 AND TextureMemory = 1 AND pixelPerThread = 1,pixelPerThread <= 1.5 AND LocalMemory AND TextureMemory AND CUDA,0,1.0,1.0,1.0,27,0.1328380107879638
+1,99.79395132610142,696,bs_64x8 = 1,bs_64x8,0,1.0,1.0,1.0,28,0.1433990001678466
+2,45.350310231121966,2898,CUDA = 1 AND pixelPerThread = 1,pixelPerThread <= 1.5 AND NOT OpenCL,0,1.0,1.0,1.0,28,0.1884548664093017
+3,72.05490422432572,1872,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 4,pixelPerThread > 3.5 AND TextureMemory AND NOT OpenCL,0,1.0,1.0,1.0,28,0.1345374584197998
+4,46.77766051812703,1207,CUDA = 1 AND Linear1D = 1 AND LocalMemory = 1 AND TextureMemory = 1,Linear1D AND LocalMemory,0,1.0,1.0,1.0,28,0.139355182647705
+1,56.48379185800688,696,bs_512x1 = 1,bs_512x1,0,1.0,1.0,1.0,29,0.132066011428833
+2,91.65930450864268,1827,LocalMemory = 1 AND pixelPerThread = 1,pixelPerThread <= 1.5 AND LocalMemory,0,1.0,1.0,1.0,29,0.1868903636932373
+3,61.48710409279506,1207,Ldg = 1 AND LocalMemory = 1 AND TextureMemory = 1,Ldg AND LocalMemory,0,1.0,1.0,1.0,29,0.14036226272583
+4,93.51573184730144,1092,CUDA = 1 AND LocalMemory = 1 AND TextureMemory = 1 AND pixelPerThread = 1,pixelPerThread <= 1.5 AND LocalMemory AND TextureMemory AND NOT OpenCL,0,1.0,1.0,1.0,29,0.1305172443389892
+1,84.94627875399344,775,padding = 256,padding > 240.0 AND padding <= 272.0,0,1.0,1.0,1.0,3,0.1291382312774658
+2,85.42055878162179,2484,CUDA = 1 AND pixelPerThread = 4,pixelPerThread > 3.5 AND NOT OpenCL,0,1.0,1.0,1.0,3,0.1657116413116455
+3,27.956550920703886,1207,Linear2D = 1 AND LocalMemory = 1 AND TextureMemory = 1,Linear2D AND LocalMemory,0,1.0,1.0,1.0,3,0.1221256256103515
+4,34.33801550010448,1092,CUDA = 1 AND LocalMemory = 1 AND TextureMemory = 1 AND pixelPerThread = 1,NOT Linear2D,0,0.123094958968347,0.0677419354838709,0.6730769230769231,3,0.1270215511322021
+1,72.11666075325616,775,padding = 448,padding > 432.0 AND padding <= 464.0,0,1.0,1.0,1.0,30,0.1401448249816894
+2,61.8806977950734,714,Linear2D = 1 AND pixelPerThread = 1,Linear2D AND pixelPerThread <= 1.5,0,1.0,1.0,1.0,30,0.200575590133667
+3,114.16903886712036,1207,Linear2D = 1 AND LocalMemory = 1 AND TextureMemory = 1,Linear2D AND LocalMemory,0,1.0,1.0,1.0,30,0.1494200229644775
+4,86.17404162871793,714,CUDA = 1 AND Linear2D = 1 AND TextureMemory = 1 AND pixelPerThread = 1,Linear2D AND pixelPerThread <= 1.5,0,1.0,1.0,1.0,30,0.1375026702880859
+1,44.39849629863235,696,bs_64x2 = 1,bs_64x2,0,1.0,1.0,1.0,31,0.1454982757568359
+2,107.5434555720994,2635,CUDA = 1 AND Linear2D = 1,Linear2D,0,1.0,1.0,1.0,31,0.2006216049194336
+3,45.96030623161765,1207,Linear2D = 1 AND LocalMemory = 1 AND TextureMemory = 1,Linear2D AND LocalMemory,0,1.0,1.0,1.0,31,0.1444222927093505
+4,102.8997132553855,714,CUDA = 1 AND Linear2D = 1 AND TextureMemory = 1 AND pixelPerThread = 1,Linear2D AND pixelPerThread <= 1.5,0,1.0,1.0,1.0,31,0.1389088630676269
+1,60.00464280669654,775,padding = 192,padding <= 208.0 AND padding > 176.0,0,1.0,1.0,1.0,32,0.1408846378326416
+2,102.88053052437844,1305,LocalMemory = 1 AND pixelPerThread = 4,pixelPerThread > 3.5 AND LocalMemory,0,1.0,1.0,1.0,32,0.192244291305542
+3,29.245461964619015,1872,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 3,pixelPerThread > 2.5 AND pixelPerThread <= 3.5 AND TextureMemory AND NOT OpenCL,0,1.0,1.0,1.0,32,0.13486909866333
+4,88.2343368808355,1207,CUDA = 1 AND Linear2D = 1 AND LocalMemory = 1 AND TextureMemory = 1,Linear2D AND LocalMemory,0,1.0,1.0,1.0,32,0.1314241886138916
+1,116.28503351809422,2790,OpenCL = 1,OpenCL,0,1.0,1.0,1.0,33,0.1351311206817627
+2,82.55935082306073,2173,TextureMemory = 1 AND pixelPerThread = 2,pixelPerThread <= 2.5 AND pixelPerThread > 1.5 AND TextureMemory,0,1.0,1.0,1.0,33,0.1868007183074951
+3,92.68815793784434,697,Linear1D = 1 AND TextureMemory = 1 AND pixelPerThread = 2,Linear1D AND pixelPerThread <= 2.5 AND pixelPerThread > 1.5,0,1.0,1.0,1.0,33,0.1426303386688232
+4,79.87608202718548,714,CUDA = 1 AND Linear1D = 1 AND TextureMemory = 1 AND pixelPerThread = 1,Linear1D AND pixelPerThread <= 1.5,0,1.0,1.0,1.0,33,0.1343679428100586
+1,61.01317480563807,775,padding = 448,padding > 432.0 AND padding <= 464.0,0,1.0,1.0,1.0,34,0.1250152587890625
+2,69.87415907743787,3763,LocalMemory = 1 AND TextureMemory = 1,LocalMemory AND TextureMemory,0,1.0,1.0,1.0,34,0.1922035217285156
+3,70.25942311417539,1380,CUDA = 1 AND LocalMemory = 1 AND pixelPerThread = 2,LocalMemory AND pixelPerThread <= 2.5 AND pixelPerThread > 1.5 AND NOT OpenCL,0,1.0,1.0,1.0,34,0.144197940826416
+4,113.78099671470518,1092,CUDA = 1 AND LocalMemory = 1 AND TextureMemory = 1 AND pixelPerThread = 1,pixelPerThread <= 1.5 AND LocalMemory AND TextureMemory AND NOT OpenCL,0,1.0,1.0,1.0,34,0.1365253925323486
+1,90.49998879811132,1085,padding = 0,padding <= 16.0,0,1.0,1.0,1.0,35,0.1239705085754394
+2,68.6279127891222,1827,LocalMemory = 1 AND pixelPerThread = 1,pixelPerThread <= 1.5 AND LocalMemory,0,1.0,1.0,1.0,35,0.1885995864868164
+3,38.18125264694757,1207,CUDA = 1 AND Ldg = 1 AND LocalMemory = 1,Ldg AND LocalMemory,0,1.0,1.0,1.0,35,0.1466104984283447
+4,56.310317479358574,1092,CUDA = 1 AND LocalMemory = 1 AND TextureMemory = 1 AND pixelPerThread = 1,pixelPerThread <= 1.5 AND LocalMemory AND TextureMemory AND NOT OpenCL,0,1.0,1.0,1.0,35,0.1266417503356933
+1,43.18012398103038,775,padding = 96,padding <= 112.0 AND padding > 80.0,0,1.0,1.0,1.0,36,0.1408529281616211
+2,49.83106395906078,1908,TextureMemory = 1 AND pixelPerThread = 4,pixelPerThread > 3.5 AND TextureMemory,0,1.0,1.0,1.0,36,0.1789684295654297
+3,109.22004397519896,1035,CUDA = 1 AND LocalMemory = 1 AND pixelPerThread = 3,LocalMemory AND pixelPerThread > 2.5 AND pixelPerThread <= 3.5 AND NOT OpenCL,0,1.0,1.0,1.0,36,0.1436679363250732
+4,93.67300938253292,1092,CUDA = 1 AND LocalMemory = 1 AND TextureMemory = 1 AND pixelPerThread = 1,pixelPerThread <= 1.5 AND LocalMemory AND TextureMemory AND NOT OpenCL,0,1.0,1.0,1.0,36,0.129568338394165
+1,94.20127164925388,696,bs_32x16 = 1,bs_32x16,0,1.0,1.0,1.0,37,0.1340136528015136
+2,76.94517539072817,2635,CUDA = 1 AND Ldg = 1,Ldg,0,1.0,1.0,1.0,37,0.1889312267303466
+3,63.38569586909014,697,Linear1D = 1 AND TextureMemory = 1 AND pixelPerThread = 2,Linear1D AND pixelPerThread <= 2.5 AND pixelPerThread > 1.5,0,1.0,1.0,1.0,37,0.1401848793029785
+4,57.81408577248647,697,CUDA = 1 AND Linear2D = 1 AND TextureMemory = 1 AND pixelPerThread = 2,Linear2D AND pixelPerThread <= 2.5 AND pixelPerThread > 1.5,0,1.0,1.0,1.0,37,0.1346433162689209
+1,67.4543468792743,775,padding = 512,padding > 496.0,0,1.0,1.0,1.0,38,0.116746187210083
+2,84.32272211718323,1908,TextureMemory = 1 AND pixelPerThread = 4,pixelPerThread > 3.5 AND TextureMemory,0,1.0,1.0,1.0,38,0.1750295162200927
+3,69.72600006745385,1207,Linear1D = 1 AND LocalMemory = 1 AND TextureMemory = 1,Linear1D AND LocalMemory,0,1.0,1.0,1.0,38,0.1302266120910644
+4,88.91737840918199,697,CUDA = 1 AND Linear2D = 1 AND TextureMemory = 1 AND pixelPerThread = 2,Linear2D AND pixelPerThread <= 2.5 AND pixelPerThread > 1.5,0,1.0,1.0,1.0,38,0.1382327079772949
+1,92.88049359665158,2635,Linear2D = 1,Linear2D,0,1.0,1.0,1.0,39,0.1303844451904297
+2,89.764602645407,775,CUDA = 1 AND padding = 0,padding <= 16.0 AND NOT OpenCL,0,1.0,1.0,1.0,39,0.1819279193878173
+3,113.27627096631892,697,CUDA = 1 AND Linear2D = 1 AND pixelPerThread = 2,Linear2D AND pixelPerThread <= 2.5 AND pixelPerThread > 1.5,0,1.0,1.0,1.0,39,0.1259365081787109
+4,85.59977879667952,780,CUDA = 1 AND LocalMemory = 1 AND TextureMemory = 1 AND pixelPerThread = 3,pixelPerThread > 2.5 AND LocalMemory AND pixelPerThread <= 3.5 AND TextureMemory AND CUDA,0,1.0,1.0,1.0,39,0.1520607471466064
+1,87.99155037740009,775,padding = 288,padding > 272.0 AND padding <= 304.0,0,1.0,1.0,1.0,4,0.1340632438659668
+2,108.77648330060848,3763,LocalMemory = 1 AND TextureMemory = 1,LocalMemory AND TextureMemory,0,1.0,1.0,1.0,4,0.1988439559936523
+3,31.82012401028021,1380,CUDA = 1 AND LocalMemory = 1 AND pixelPerThread = 2,LocalMemory AND pixelPerThread <= 2.5 AND pixelPerThread > 1.5 AND NOT OpenCL,0,1.0,1.0,1.0,4,0.1408336162567138
+4,61.74289682217542,1040,CUDA = 1 AND LocalMemory = 1 AND TextureMemory = 1 AND pixelPerThread = 2,LocalMemory AND pixelPerThread <= 2.5 AND pixelPerThread > 1.5 AND TextureMemory AND CUDA,0,1.0,1.0,1.0,4,0.1343662738800048
+1,111.56776174705789,696,bs_256x2 = 1,bs_256x2,0,1.0,1.0,1.0,40,0.1461002826690673
+2,81.7881244639659,2635,CUDA = 1 AND Ldg = 1,Ldg,0,1.0,1.0,1.0,40,0.1924471855163574
+3,28.731899144817135,714,Linear1D = 1 AND TextureMemory = 1 AND pixelPerThread = 1,Linear1D AND pixelPerThread <= 1.5,0,1.0,1.0,1.0,40,0.1434628963470459
+4,69.02002179875154,1207,CUDA = 1 AND Ldg = 1 AND LocalMemory = 1 AND TextureMemory = 1,Ldg AND LocalMemory,0,1.0,1.0,1.0,40,0.1476943492889404
+1,88.85148137887963,696,bs_32x2 = 1,bs_32x2,0,1.0,1.0,1.0,41,0.1344165802001953
+2,87.76548920170751,775,TextureMemory = 1 AND padding = 0,padding <= 16.0 AND TextureMemory,0,1.0,1.0,1.0,41,0.1781284809112548
+3,79.89797500462218,714,CUDA = 1 AND Linear2D = 1 AND pixelPerThread = 1,Linear2D AND pixelPerThread <= 1.5,0,1.0,1.0,1.0,41,0.1318004131317138
+4,107.08742160982034,697,CUDA = 1 AND Ldg = 1 AND TextureMemory = 1 AND pixelPerThread = 2,Ldg AND pixelPerThread <= 2.5 AND pixelPerThread > 1.5,0,1.0,1.0,1.0,41,0.134284496307373
+1,61.92459574175142,775,padding = 480,padding > 464.0 AND padding <= 496.0,0,1.0,1.0,1.0,42,0.131352424621582
+2,109.499807986349,2829,CUDA = 1 AND pixelPerThread = 2,pixelPerThread <= 2.5 AND pixelPerThread > 1.5 AND CUDA,0,1.0,1.0,1.0,42,0.1882781982421875
+3,93.4509005025384,714,CUDA = 1 AND Ldg = 1 AND pixelPerThread = 1,Ldg AND pixelPerThread <= 1.5,0,1.0,1.0,1.0,42,0.115689992904663
+4,86.65857346809912,1207,CUDA = 1 AND Ldg = 1 AND LocalMemory = 1 AND TextureMemory = 1,Ldg AND LocalMemory,0,1.0,1.0,1.0,42,0.138340950012207
+1,29.42833450861145,775,padding = 416,padding > 400.0 AND padding <= 432.0,0,1.0,1.0,1.0,43,0.1399135589599609
+2,89.39201974940582,738,OpenCL = 1 AND pixelPerThread = 2,NOT CUDA AND pixelPerThread <= 2.5 AND pixelPerThread > 1.5,0,1.0,1.0,1.0,43,0.1922361850738525
+3,45.7465263633709,1207,CUDA = 1 AND Linear1D = 1 AND LocalMemory = 1,Linear1D AND LocalMemory,0,1.0,1.0,1.0,43,0.1347212791442871
+4,45.44032581370025,1040,CUDA = 1 AND LocalMemory = 1 AND TextureMemory = 1 AND pixelPerThread = 2,LocalMemory AND pixelPerThread > 1.5 AND pixelPerThread <= 2.5 AND TextureMemory AND CUDA,0,1.0,1.0,1.0,43,0.1391894817352295
+1,37.39806759900973,775,padding = 64,NOT bs_512x1 AND padding <= 144.0 AND padding > 48.0 AND NOT bs_256x4 AND NOT LocalMemory AND TextureMemory AND padding <= 80.0,1,0.4546360917248255,1.0,0.2941935483870967,44,0.1338193416595459
+2,49.286356414230255,1207,Linear2D = 1 AND LocalMemory = 1,Linear2D AND LocalMemory,0,1.0,1.0,1.0,44,0.1891648769378662
+3,91.38269819610356,1060,LocalMemory = 1 AND TextureMemory = 1 AND pixelPerThread = 2,LocalMemory AND pixelPerThread <= 2.5 AND pixelPerThread > 1.5 AND TextureMemory,0,1.0,1.0,1.0,44,0.1373853683471679
+4,45.95647890738408,714,CUDA = 1 AND Ldg = 1 AND TextureMemory = 1 AND pixelPerThread = 1,Ldg AND pixelPerThread <= 1.5,0,1.0,1.0,1.0,44,0.135923147201538
+1,29.323039654961786,696,bs_128x1 = 1,bs_128x1,0,1.0,1.0,1.0,45,0.1199216842651367
+2,88.83749881040865,1278,LocalMemory = 1 AND OpenCL = 1,NOT CUDA AND LocalMemory,0,1.0,1.0,1.0,45,0.1850917339324951
+3,61.55186075007232,1207,CUDA = 1 AND Linear2D = 1 AND LocalMemory = 1,Linear2D AND LocalMemory,0,1.0,1.0,1.0,45,0.1314945220947265
+4,74.29921449508052,714,CUDA = 1 AND Ldg = 1 AND TextureMemory = 1 AND pixelPerThread = 1,Ldg AND pixelPerThread <= 1.5,0,1.0,1.0,1.0,45,0.1468198299407959
+1,37.99442508168637,2635,Linear2D = 1,Linear2D,0,1.0,1.0,1.0,46,0.134221076965332
+2,35.796701453989705,697,Linear1D = 1 AND pixelPerThread = 2,NOT Linear1D,0,0.0,0.0,0.0,46,0.1842780113220214
+3,77.0331540488038,1207,CUDA = 1 AND Linear2D = 1 AND LocalMemory = 1,Linear2D AND LocalMemory,0,1.0,1.0,1.0,46,0.132723331451416
+4,106.09362189916835,697,CUDA = 1 AND Linear2D = 1 AND TextureMemory = 1 AND pixelPerThread = 2,Linear2D AND pixelPerThread <= 2.5 AND pixelPerThread > 1.5,0,1.0,1.0,1.0,46,0.140221357345581
+1,35.20891624791785,696,bs_512x1 = 1,NOT Linear2D AND pixelPerThread > 1.5 AND padding > 16.0 AND NOT bs_128x4,3,0.1018027571580063,0.0560747663551401,0.5517241379310345,47,0.1308865547180175
+2,112.10301657576584,1827,LocalMemory = 1 AND pixelPerThread = 1,pixelPerThread <= 1.5 AND LocalMemory,0,1.0,1.0,1.0,47,0.1942479610443115
+3,79.64829085613917,1872,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 3,pixelPerThread > 2.5 AND pixelPerThread <= 3.5 AND TextureMemory AND CUDA,0,1.0,1.0,1.0,47,0.1474354267120361
+4,89.72236841589348,697,CUDA = 1 AND Ldg = 1 AND TextureMemory = 1 AND pixelPerThread = 2,Ldg AND pixelPerThread <= 2.5 AND pixelPerThread > 1.5,0,1.0,1.0,1.0,47,0.1432423591613769
+1,80.50472804267991,775,padding = 320,padding > 304.0 AND padding <= 336.0,0,1.0,1.0,1.0,48,0.136784553527832
+2,40.79473321161056,697,Linear2D = 1 AND pixelPerThread = 2,Linear2D AND pixelPerThread <= 2.5 AND pixelPerThread > 1.5,0,1.0,1.0,1.0,48,0.1901743412017822
+3,55.30645027750159,1207,CUDA = 1 AND Linear2D = 1 AND LocalMemory = 1,Linear2D AND LocalMemory,0,1.0,1.0,1.0,48,0.1513631343841552
+4,86.06753968958012,697,CUDA = 1 AND Linear1D = 1 AND TextureMemory = 1 AND pixelPerThread = 2,Linear1D AND pixelPerThread <= 2.5 AND pixelPerThread > 1.5,0,1.0,1.0,1.0,48,0.1434781551361084
+1,31.08629237659207,775,padding = 96,padding <= 112.0 AND padding > 80.0,0,1.0,1.0,1.0,49,0.1430253982543945
+2,54.7310838776807,697,Linear2D = 1 AND pixelPerThread = 2,Linear2D AND pixelPerThread <= 2.5 AND pixelPerThread > 1.5,0,1.0,1.0,1.0,49,0.1996064186096191
+3,80.44548927957173,714,CUDA = 1 AND Ldg = 1 AND pixelPerThread = 1,Ldg AND pixelPerThread <= 1.5,0,1.0,1.0,1.0,49,0.1430790424346923
+4,34.8673882418442,697,CUDA = 1 AND Ldg = 1 AND TextureMemory = 1 AND pixelPerThread = 2,NOT bs_32x16 AND NOT bs_128x2 AND pixelPerThread <= 3.5 AND padding > 16.0,3,0.1279032083828454,0.0691588785046729,0.8493543758967002,49,0.139413833618164
+1,59.25416834383416,775,padding = 192,padding <= 208.0 AND padding > 176.0,0,1.0,1.0,1.0,5,0.1403677463531494
+2,78.91104556612065,697,Linear2D = 1 AND pixelPerThread = 2,Linear2D AND pixelPerThread <= 2.5 AND pixelPerThread > 1.5,0,1.0,1.0,1.0,5,0.2020392417907714
+3,115.88741886776454,1207,CUDA = 1 AND Linear1D = 1 AND LocalMemory = 1,Linear1D AND LocalMemory,0,1.0,1.0,1.0,5,0.1291930675506591
+4,80.30578498467416,780,CUDA = 1 AND LocalMemory = 1 AND TextureMemory = 1 AND pixelPerThread = 4,pixelPerThread > 3.5 AND LocalMemory AND TextureMemory AND CUDA,0,1.0,1.0,1.0,5,0.1215925216674804
+1,88.38194419070555,2635,Ldg = 1,Ldg,0,1.0,1.0,1.0,50,0.1372003555297851
+2,99.36027581954778,2635,Ldg = 1 AND TextureMemory = 1,Ldg,0,1.0,1.0,1.0,50,0.194354772567749
+3,73.0746098296538,1449,CUDA = 1 AND LocalMemory = 1 AND pixelPerThread = 1,pixelPerThread <= 1.5 AND LocalMemory AND CUDA,0,1.0,1.0,1.0,50,0.138416051864624
+4,58.27727773431626,697,CUDA = 1 AND Linear1D = 1 AND TextureMemory = 1 AND pixelPerThread = 2,Linear1D AND pixelPerThread <= 2.5 AND pixelPerThread > 1.5,0,1.0,1.0,1.0,50,0.1412580013275146
+1,94.4427279252013,3132,pixelPerThread = 3,pixelPerThread > 2.5 AND pixelPerThread <= 3.5,0,1.0,1.0,1.0,51,0.1529216766357422
+2,35.03395880458921,2635,Linear2D = 1 AND TextureMemory = 1,Linear2D,0,1.0,1.0,1.0,51,0.1860623359680175
+3,95.75119414723017,714,CUDA = 1 AND Linear1D = 1 AND pixelPerThread = 1,Linear1D AND pixelPerThread <= 1.5,0,1.0,1.0,1.0,51,0.1353082656860351
+4,27.91571699013663,1092,CUDA = 1 AND LocalMemory = 1 AND TextureMemory = 1 AND pixelPerThread = 1,pixelPerThread <= 1.5 AND TextureMemory AND LocalMemory AND NOT OpenCL,0,1.0,1.0,1.0,51,0.1289713382720947
+1,97.95281495077636,2635,Linear2D = 1,Linear2D,0,1.0,1.0,1.0,52,0.1246790885925293
+2,90.473829509376,714,Linear1D = 1 AND pixelPerThread = 1,Linear1D AND pixelPerThread <= 1.5,0,1.0,1.0,1.0,52,0.1894147396087646
+3,28.531818584434067,3692,CUDA = 1 AND LocalMemory = 1 AND TextureMemory = 1,LocalMemory AND TextureMemory AND CUDA,0,1.0,1.0,1.0,52,0.1346230506896972
+4,56.89171219776277,697,CUDA = 1 AND Linear2D = 1 AND TextureMemory = 1 AND pixelPerThread = 2,Linear2D AND pixelPerThread <= 2.5 AND pixelPerThread > 1.5,0,1.0,1.0,1.0,52,0.1359829902648925
+1,26.407376412460145,775,padding = 512,padding > 496.0,0,1.0,1.0,1.0,53,0.1271939277648925
+2,37.965328160975744,2635,Linear1D = 1 AND TextureMemory = 1,Linear1D,0,1.0,1.0,1.0,53,0.1984915733337402
+3,26.843002791152184,714,Linear1D = 1 AND TextureMemory = 1 AND pixelPerThread = 1,Linear1D AND pixelPerThread <= 1.5,0,1.0,1.0,1.0,53,0.1276524066925048
+4,51.57826927521032,1040,CUDA = 1 AND LocalMemory = 1 AND TextureMemory = 1 AND pixelPerThread = 2,LocalMemory AND pixelPerThread <= 2.5 AND pixelPerThread > 1.5 AND TextureMemory AND CUDA,0,1.0,1.0,1.0,53,0.1316711902618408
+1,58.41788864030413,775,padding = 224,padding <= 240.0 AND padding > 208.0,0,1.0,1.0,1.0,54,0.1404521465301513
+2,59.63667503096813,3763,LocalMemory = 1 AND TextureMemory = 1,LocalMemory AND TextureMemory,0,1.0,1.0,1.0,54,0.1983118057250976
+3,79.10919891200012,697,CUDA = 1 AND Linear1D = 1 AND pixelPerThread = 2,Linear1D AND pixelPerThread <= 2.5 AND pixelPerThread > 1.5,0,1.0,1.0,1.0,54,0.136279821395874
+4,36.07601923873837,697,CUDA = 1 AND Linear1D = 1 AND TextureMemory = 1 AND pixelPerThread = 2,NOT bs_512x2,0,0.0970717423133235,0.0511455681555195,0.951219512195122,54,0.1294445991516113
+1,109.04327894957896,696,bs_64x4 = 1,bs_64x4,0,1.0,1.0,1.0,55,0.141146183013916
+2,85.79602742380679,1908,TextureMemory = 1 AND pixelPerThread = 3,pixelPerThread > 2.5 AND pixelPerThread <= 3.5 AND TextureMemory,0,1.0,1.0,1.0,55,0.1994690895080566
+3,112.76645145872035,714,Linear1D = 1 AND TextureMemory = 1 AND pixelPerThread = 1,Linear1D AND pixelPerThread <= 1.5,0,1.0,1.0,1.0,55,0.1406137943267822
+4,55.10832764596164,780,CUDA = 1 AND LocalMemory = 1 AND TextureMemory = 1 AND pixelPerThread = 4,pixelPerThread > 3.5 AND LocalMemory AND TextureMemory AND CUDA,0,1.0,1.0,1.0,55,0.1282482147216797
+1,72.57615187560337,696,bs_128x1 = 1,bs_128x1,0,1.0,1.0,1.0,56,0.1367952823638916
+2,101.0837945299781,1207,Linear2D = 1 AND LocalMemory = 1,Linear2D AND LocalMemory,0,1.0,1.0,1.0,56,0.1946518421173095
+3,56.148860355409646,714,Linear1D = 1 AND TextureMemory = 1 AND pixelPerThread = 1,Linear1D AND pixelPerThread <= 1.5,0,1.0,1.0,1.0,56,0.135632038116455
+4,28.82655400510805,697,CUDA = 1 AND Linear1D = 1 AND TextureMemory = 1 AND pixelPerThread = 2,Linear1D AND pixelPerThread <= 2.5 AND pixelPerThread > 1.5,0,1.0,1.0,1.0,56,0.1407873630523681
+1,111.74241207063451,696,bs_256x1 = 1,bs_256x1,0,1.0,1.0,1.0,57,0.1342732906341552
+2,34.22712147274171,756,OpenCL = 1 AND pixelPerThread = 1,NOT bs_1024x1 AND NOT bs_256x4 AND padding <= 304.0 AND pixelPerThread <= 3.5,3,0.1290920321185917,0.073076923076923,0.5529100529100529,57,0.1719558238983154
+3,70.5660755244459,1207,Linear2D = 1 AND LocalMemory = 1 AND TextureMemory = 1,Linear2D AND LocalMemory,0,1.0,1.0,1.0,57,0.1190986633300781
+4,115.7600831126022,697,CUDA = 1 AND Linear2D = 1 AND TextureMemory = 1 AND pixelPerThread = 2,Linear2D AND pixelPerThread <= 2.5 AND pixelPerThread > 1.5,0,1.0,1.0,1.0,57,0.14752197265625
+1,55.34490864562283,2790,OpenCL = 1,OpenCL,0,1.0,1.0,1.0,58,0.1316463947296142
+2,30.422678243438646,1305,LocalMemory = 1 AND pixelPerThread = 3,LocalMemory AND pixelPerThread > 2.5 AND pixelPerThread <= 3.5,0,1.0,1.0,1.0,58,0.1909501552581787
+3,53.38258998902664,697,CUDA = 1 AND Linear2D = 1 AND pixelPerThread = 2,Linear2D AND pixelPerThread <= 2.5 AND pixelPerThread > 1.5,0,1.0,1.0,1.0,58,0.1190266609191894
+4,62.00578697771181,1092,CUDA = 1 AND LocalMemory = 1 AND TextureMemory = 1 AND pixelPerThread = 1,pixelPerThread <= 1.5 AND LocalMemory AND TextureMemory AND NOT OpenCL,0,1.0,1.0,1.0,58,0.1365699768066406
+1,47.52123273118664,775,padding = 416,padding > 400.0 AND padding <= 432.0,0,1.0,1.0,1.0,59,0.1454863548278808
+2,58.636593964749295,714,Linear2D = 1 AND pixelPerThread = 1,Linear2D AND pixelPerThread <= 1.5,0,1.0,1.0,1.0,59,0.1985177993774414
+3,28.889753856655112,1035,CUDA = 1 AND LocalMemory = 1 AND pixelPerThread = 4,pixelPerThread > 3.5 AND LocalMemory AND NOT OpenCL,0,1.0,1.0,1.0,59,0.1432604789733886
+4,28.477059234552144,1207,CUDA = 1 AND Ldg = 1 AND LocalMemory = 1 AND TextureMemory = 1,Ldg AND LocalMemory,0,1.0,1.0,1.0,59,0.1443789005279541
+1,47.12338196694777,3132,pixelPerThread = 3,pixelPerThread > 2.5 AND pixelPerThread <= 3.5,0,1.0,1.0,1.0,6,0.1404840946197509
+2,87.52156594775676,1827,LocalMemory = 1 AND pixelPerThread = 1,pixelPerThread <= 1.5 AND LocalMemory,0,1.0,1.0,1.0,6,0.1975867748260498
+3,68.32060493591543,1872,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 3,pixelPerThread > 2.5 AND pixelPerThread <= 3.5 AND TextureMemory AND CUDA,0,1.0,1.0,1.0,6,0.1420326232910156
+4,112.20140561055518,697,CUDA = 1 AND Linear1D = 1 AND TextureMemory = 1 AND pixelPerThread = 2,Linear1D AND pixelPerThread <= 2.5 AND pixelPerThread > 1.5,0,1.0,1.0,1.0,6,0.1299951076507568
+1,49.93519513748886,696,bs_128x1 = 1,bs_128x1,0,1.0,1.0,1.0,60,0.1307165622711181
+2,107.46287266418096,1740,LocalMemory = 1 AND pixelPerThread = 2,LocalMemory AND pixelPerThread <= 2.5 AND pixelPerThread > 1.5,0,1.0,1.0,1.0,60,0.1856818199157714
+3,92.64491357678824,1872,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 4,pixelPerThread > 3.5 AND TextureMemory AND NOT OpenCL,0,1.0,1.0,1.0,60,0.1216194629669189
+4,88.99088548381204,697,CUDA = 1 AND Linear2D = 1 AND TextureMemory = 1 AND pixelPerThread = 2,Linear2D AND pixelPerThread <= 2.5 AND pixelPerThread > 1.5,0,1.0,1.0,1.0,60,0.144932746887207
+1,100.36261893851818,775,padding = 128,padding <= 144.0 AND padding > 112.0,0,1.0,1.0,1.0,61,0.1407692432403564
+2,42.25337683149251,2635,CUDA = 1 AND Linear1D = 1,Linear1D,0,1.0,1.0,1.0,61,0.1823542118072509
+3,56.12107285771744,1449,CUDA = 1 AND LocalMemory = 1 AND pixelPerThread = 1,pixelPerThread <= 1.5 AND LocalMemory AND CUDA,0,1.0,1.0,1.0,61,0.1268157958984375
+4,115.07942875077686,780,CUDA = 1 AND LocalMemory = 1 AND TextureMemory = 1 AND pixelPerThread = 4,pixelPerThread > 3.5 AND LocalMemory AND TextureMemory AND NOT OpenCL,0,1.0,1.0,1.0,61,0.1387534141540527
+1,43.0523344441206,775,padding = 512,padding > 496.0,0,1.0,1.0,1.0,62,0.1275570392608642
+2,73.8712741344478,697,Ldg = 1 AND pixelPerThread = 2,Ldg AND pixelPerThread <= 2.5 AND pixelPerThread > 1.5,0,1.0,1.0,1.0,62,0.1868808269500732
+3,86.57325014738527,1207,CUDA = 1 AND Linear1D = 1 AND LocalMemory = 1,Linear1D AND LocalMemory,0,1.0,1.0,1.0,62,0.1457056999206543
+4,91.09124697621928,1207,CUDA = 1 AND Linear1D = 1 AND LocalMemory = 1 AND TextureMemory = 1,Linear1D AND LocalMemory,0,1.0,1.0,1.0,62,0.1511635780334472
+1,42.59624804935535,1085,padding = 0,padding <= 16.0,0,1.0,1.0,1.0,63,0.1319470405578613
+2,34.93571037307919,2635,CUDA = 1 AND Linear2D = 1,Linear2D,0,1.0,1.0,1.0,63,0.1831851005554199
+3,76.28797930160687,714,CUDA = 1 AND Linear1D = 1 AND pixelPerThread = 1,Linear1D AND pixelPerThread <= 1.5,0,1.0,1.0,1.0,63,0.1409456729888916
+4,57.51783188314453,714,CUDA = 1 AND Linear1D = 1 AND TextureMemory = 1 AND pixelPerThread = 1,Linear1D AND pixelPerThread <= 1.5,0,1.0,1.0,1.0,63,0.1422228813171386
+1,38.28043811061426,775,padding = 128,NOT LocalMemory AND padding <= 144.0 AND padding > 112.0,0,0.7029288702928871,1.0,0.5419354838709678,64,0.134871244430542
+2,57.951116665745765,775,TextureMemory = 1 AND padding = 0,padding <= 16.0 AND TextureMemory,0,1.0,1.0,1.0,64,0.1695802211761474
+3,109.8385979188176,2184,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 1,pixelPerThread <= 1.5 AND TextureMemory AND NOT OpenCL,0,1.0,1.0,1.0,64,0.1142799854278564
+4,94.99282190472968,780,CUDA = 1 AND LocalMemory = 1 AND TextureMemory = 1 AND pixelPerThread = 3,pixelPerThread > 2.5 AND LocalMemory AND pixelPerThread <= 3.5 AND TextureMemory AND NOT OpenCL,0,1.0,1.0,1.0,64,0.1422455310821533
+1,68.04135400631736,696,bs_512x1 = 1,bs_512x1,0,1.0,1.0,1.0,65,0.1293010711669922
+2,59.941752626838486,738,OpenCL = 1 AND pixelPerThread = 2,NOT CUDA AND pixelPerThread <= 2.5 AND pixelPerThread > 1.5,0,1.0,1.0,1.0,65,0.1887385845184326
+3,113.37578803958394,697,CUDA = 1 AND Ldg = 1 AND pixelPerThread = 2,Ldg AND pixelPerThread <= 2.5 AND pixelPerThread > 1.5,0,1.0,1.0,1.0,65,0.1319072246551513
+4,63.60116996182577,780,CUDA = 1 AND LocalMemory = 1 AND TextureMemory = 1 AND pixelPerThread = 3,pixelPerThread > 2.5 AND LocalMemory AND pixelPerThread <= 3.5 AND TextureMemory AND CUDA,0,1.0,1.0,1.0,65,0.1434495449066162
+1,74.81386229422873,2790,OpenCL = 1,OpenCL,0,1.0,1.0,1.0,66,0.1311819553375244
+2,111.68563049729336,1908,TextureMemory = 1 AND pixelPerThread = 4,pixelPerThread > 3.5 AND TextureMemory,0,1.0,1.0,1.0,66,0.1842725276947021
+3,28.104114472976,1872,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 4,pixelPerThread > 3.5 AND TextureMemory AND NOT OpenCL,0,1.0,1.0,1.0,66,0.1316533088684082
+4,96.2045351823837,1207,CUDA = 1 AND Ldg = 1 AND LocalMemory = 1 AND TextureMemory = 1,Ldg AND LocalMemory,0,1.0,1.0,1.0,66,0.1353638172149658
+1,59.80536026547784,775,padding = 64,padding <= 80.0 AND padding > 48.0,0,1.0,1.0,1.0,67,0.1411030292510986
+2,95.66938824996942,775,TextureMemory = 1 AND padding = 0,padding <= 16.0 AND TextureMemory,0,1.0,1.0,1.0,67,0.1828861236572265
+3,43.90534900008508,1872,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 3,pixelPerThread > 2.5 AND pixelPerThread <= 3.5 AND TextureMemory AND NOT OpenCL,0,1.0,1.0,1.0,67,0.1270098686218261
+4,92.80089602797732,714,CUDA = 1 AND Linear1D = 1 AND TextureMemory = 1 AND pixelPerThread = 1,Linear1D AND pixelPerThread <= 1.5,0,1.0,1.0,1.0,67,0.1510119438171386
+1,69.8237343945369,775,padding = 96,padding <= 112.0 AND padding > 80.0,0,1.0,1.0,1.0,68,0.1421196460723877
+2,88.5090869749003,738,OpenCL = 1 AND pixelPerThread = 2,NOT CUDA AND pixelPerThread <= 2.5 AND pixelPerThread > 1.5,0,1.0,1.0,1.0,68,0.1999974250793457
+3,50.79570616341549,1207,Ldg = 1 AND LocalMemory = 1 AND TextureMemory = 1,Ldg AND LocalMemory,0,1.0,1.0,1.0,68,0.1189100742340087
+4,115.86363776074272,697,CUDA = 1 AND Linear1D = 1 AND TextureMemory = 1 AND pixelPerThread = 2,Linear1D AND pixelPerThread <= 2.5 AND pixelPerThread > 1.5,0,1.0,1.0,1.0,68,0.1436696052551269
+1,72.96018543701342,775,padding = 32,padding <= 48.0 AND padding > 16.0,0,1.0,1.0,1.0,69,0.1405057907104492
+2,74.69096443424536,1305,LocalMemory = 1 AND pixelPerThread = 4,pixelPerThread > 3.5 AND LocalMemory,0,1.0,1.0,1.0,69,0.1813211441040039
+3,35.69793090022883,795,LocalMemory = 1 AND TextureMemory = 1 AND pixelPerThread = 3,padding <= 304.0 AND NOT bs_1024x1,1,0.1116928446771378,0.0615384615384615,0.6037735849056604,69,0.1519944667816162
+4,38.06857076507676,780,CUDA = 1 AND LocalMemory = 1 AND TextureMemory = 1 AND pixelPerThread = 4,padding > 48.0 AND NOT bs_32x16 AND NOT bs_32x8 AND pixelPerThread > 2.5,4,0.2096774193548387,0.121875,0.75,69,0.1293470859527588
+1,79.40935683752328,696,bs_64x4 = 1,bs_64x4,0,1.0,1.0,1.0,7,0.1310796737670898
+2,95.84183639396572,697,Linear2D = 1 AND pixelPerThread = 2,Linear2D AND pixelPerThread <= 2.5 AND pixelPerThread > 1.5,0,1.0,1.0,1.0,7,0.1979436874389648
+3,81.26651020925613,3692,CUDA = 1 AND LocalMemory = 1 AND TextureMemory = 1,LocalMemory AND TextureMemory AND NOT OpenCL,0,1.0,1.0,1.0,7,0.1348247528076172
+4,53.68865178917575,714,CUDA = 1 AND Linear2D = 1 AND TextureMemory = 1 AND pixelPerThread = 1,Linear2D AND pixelPerThread <= 1.5,0,1.0,1.0,1.0,7,0.1378774642944336
+1,115.24257060107068,696,bs_512x1 = 1,bs_512x1,0,1.0,1.0,1.0,70,0.1468243598937988
+2,29.48468810373371,697,Linear2D = 1 AND pixelPerThread = 2,Linear2D AND pixelPerThread <= 2.5 AND pixelPerThread > 1.5,0,1.0,1.0,1.0,70,0.2031502723693847
+3,87.45671599537184,1872,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 3,pixelPerThread > 2.5 AND pixelPerThread <= 3.5 AND TextureMemory AND NOT OpenCL,0,1.0,1.0,1.0,70,0.1385438442230224
+4,41.07867969449991,697,CUDA = 1 AND Linear2D = 1 AND TextureMemory = 1 AND pixelPerThread = 2,Linear2D AND pixelPerThread <= 2.5 AND pixelPerThread > 1.5,0,1.0,1.0,1.0,70,0.1328358650207519
+1,92.78773746197032,696,bs_64x8 = 1,bs_64x8,0,1.0,1.0,1.0,71,0.1497313976287841
+2,92.75633854469736,2173,TextureMemory = 1 AND pixelPerThread = 2,pixelPerThread <= 2.5 AND pixelPerThread > 1.5 AND TextureMemory,0,1.0,1.0,1.0,71,0.197357177734375
+3,74.13012779670987,3692,CUDA = 1 AND LocalMemory = 1 AND TextureMemory = 1,LocalMemory AND TextureMemory AND NOT OpenCL,0,1.0,1.0,1.0,71,0.1343896389007568
+4,30.92315777739551,714,CUDA = 1 AND Ldg = 1 AND TextureMemory = 1 AND pixelPerThread = 1,Ldg AND pixelPerThread <= 1.5,0,1.0,1.0,1.0,71,0.1419527530670166
+1,94.58683147316924,696,bs_512x1 = 1,bs_512x1,0,1.0,1.0,1.0,72,0.1192226409912109
+2,35.016110467191986,714,Linear1D = 1 AND pixelPerThread = 1,padding > 48.0 AND pixelPerThread <= 2.5,1,0.1815823605706874,0.1012048192771084,0.8823529411764706,72,0.1871628761291504
+3,112.01949728366368,1207,Ldg = 1 AND LocalMemory = 1 AND TextureMemory = 1,Ldg AND LocalMemory,0,1.0,1.0,1.0,72,0.140167236328125
+4,37.606672270996285,1092,CUDA = 1 AND LocalMemory = 1 AND TextureMemory = 1 AND pixelPerThread = 1,NOT bs_256x2 AND NOT Array2D AND NOT bs_512x2 AND pixelPerThread <= 3.5 AND TextureMemory,4,0.2936363636363636,0.1759259259259259,0.8873626373626373,72,0.1149563789367675
+1,67.6641048249404,2635,Linear1D = 1,Linear1D,0,1.0,1.0,1.0,73,0.1471867561340332
+2,63.035343994857726,2226,TextureMemory = 1 AND pixelPerThread = 1,pixelPerThread <= 1.5 AND TextureMemory,0,1.0,1.0,1.0,73,0.1915843486785888
+3,104.67511203893126,1872,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 4,pixelPerThread > 3.5 AND TextureMemory AND CUDA,0,1.0,1.0,1.0,73,0.1300408840179443
+4,112.8303990044132,714,CUDA = 1 AND Ldg = 1 AND TextureMemory = 1 AND pixelPerThread = 1,Ldg AND pixelPerThread <= 1.5,0,1.0,1.0,1.0,73,0.1436274051666259
+1,37.79660390929873,3132,pixelPerThread = 3,pixelPerThread > 2.5 AND pixelPerThread <= 3.5,0,1.0,1.0,1.0,74,0.1278505325317382
+2,65.98014270096532,756,OpenCL = 1 AND pixelPerThread = 1,NOT CUDA AND pixelPerThread <= 1.5,0,1.0,1.0,1.0,74,0.1830384731292724
+3,88.10484017168285,1207,Ldg = 1 AND LocalMemory = 1 AND TextureMemory = 1,Ldg AND LocalMemory,0,1.0,1.0,1.0,74,0.1472535133361816
+4,110.50050422275709,780,CUDA = 1 AND LocalMemory = 1 AND TextureMemory = 1 AND pixelPerThread = 3,pixelPerThread > 2.5 AND LocalMemory AND pixelPerThread <= 3.5 AND TextureMemory AND NOT OpenCL,0,1.0,1.0,1.0,74,0.1361761093139648
+1,79.8758108928813,696,bs_64x1 = 1,bs_64x1,0,1.0,1.0,1.0,75,0.1535584926605224
+2,81.2983142606804,775,CUDA = 1 AND padding = 0,padding <= 16.0 AND NOT OpenCL,0,1.0,1.0,1.0,75,0.17962646484375
+3,44.31807083760307,697,CUDA = 1 AND Linear2D = 1 AND pixelPerThread = 2,Linear2D AND pixelPerThread <= 2.5 AND pixelPerThread > 1.5,0,1.0,1.0,1.0,75,0.1425795555114746
+4,64.63418143716918,697,CUDA = 1 AND Linear2D = 1 AND TextureMemory = 1 AND pixelPerThread = 2,Linear2D AND pixelPerThread <= 2.5 AND pixelPerThread > 1.5,0,1.0,1.0,1.0,75,0.1390180587768554
+1,48.06800592740972,775,padding = 96,padding <= 112.0 AND padding > 80.0,0,1.0,1.0,1.0,76,0.1287734508514404
+2,57.80892818071385,2635,CUDA = 1 AND Ldg = 1,Ldg,0,1.0,1.0,1.0,76,0.1966617107391357
+3,39.06249196345649,1872,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 4,pixelPerThread > 3.5 AND TextureMemory AND CUDA,0,1.0,1.0,1.0,76,0.122446060180664
+4,38.71460248155227,697,CUDA = 1 AND Ldg = 1 AND TextureMemory = 1 AND pixelPerThread = 2,NOT Linear2D AND NOT bs_128x8 AND Ldg AND pixelPerThread > 1.5 AND pixelPerThread <= 2.5,0,0.975,1.0,0.951219512195122,76,0.1446659564971923
+1,46.01386197827654,696,bs_64x1 = 1,bs_64x1,0,1.0,1.0,1.0,77,0.1245291233062744
+2,104.56247224499226,697,Ldg = 1 AND pixelPerThread = 2,Ldg AND pixelPerThread <= 2.5 AND pixelPerThread > 1.5,0,1.0,1.0,1.0,77,0.1906583309173584
+3,97.35770357528506,2132,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 2,pixelPerThread <= 2.5 AND pixelPerThread > 1.5 AND TextureMemory AND NOT OpenCL,0,1.0,1.0,1.0,77,0.1271097660064697
+4,53.65621303043888,780,CUDA = 1 AND LocalMemory = 1 AND TextureMemory = 1 AND pixelPerThread = 3,LocalMemory AND pixelPerThread > 2.5 AND pixelPerThread <= 3.5 AND TextureMemory AND NOT OpenCL,0,1.0,1.0,1.0,77,0.1360077857971191
+1,27.23505048163967,696,bs_128x1 = 1,bs_128x1,0,1.0,1.0,1.0,78,0.1394481658935547
+2,93.27637625757173,1908,TextureMemory = 1 AND pixelPerThread = 3,pixelPerThread > 2.5 AND pixelPerThread <= 3.5 AND TextureMemory,0,1.0,1.0,1.0,78,0.2028043270111084
+3,88.9305532454008,2635,CUDA = 1 AND Ldg = 1 AND TextureMemory = 1,Ldg,0,1.0,1.0,1.0,78,0.1360995769500732
+4,54.97822602848955,780,CUDA = 1 AND LocalMemory = 1 AND TextureMemory = 1 AND pixelPerThread = 4,pixelPerThread > 3.5 AND LocalMemory AND TextureMemory AND CUDA,0,1.0,1.0,1.0,78,0.1334011554718017
+1,106.31296308739918,775,padding = 192,padding <= 208.0 AND padding > 176.0,0,1.0,1.0,1.0,79,0.1300458908081054
+2,64.82620735264082,775,CUDA = 1 AND padding = 0,padding <= 16.0 AND CUDA,0,1.0,1.0,1.0,79,0.1765902042388916
+3,85.5482229857102,1060,LocalMemory = 1 AND TextureMemory = 1 AND pixelPerThread = 2,LocalMemory AND pixelPerThread <= 2.5 AND pixelPerThread > 1.5 AND TextureMemory,0,1.0,1.0,1.0,79,0.1232001781463623
+4,101.6696922915594,1207,CUDA = 1 AND Ldg = 1 AND LocalMemory = 1 AND TextureMemory = 1,Ldg AND LocalMemory,0,1.0,1.0,1.0,79,0.1352159976959228
+1,59.36448156753052,775,padding = 512,padding > 496.0,0,1.0,1.0,1.0,8,0.1215910911560058
+2,59.96322453922664,2484,CUDA = 1 AND pixelPerThread = 4,pixelPerThread > 3.5 AND NOT OpenCL,0,1.0,1.0,1.0,8,0.1913230419158935
+3,99.53125812761432,2635,CUDA = 1 AND Linear1D = 1 AND TextureMemory = 1,Linear1D,0,1.0,1.0,1.0,8,0.1399433612823486
+4,51.61150479730655,714,CUDA = 1 AND Ldg = 1 AND TextureMemory = 1 AND pixelPerThread = 1,Ldg AND pixelPerThread <= 1.5,0,1.0,1.0,1.0,8,0.1301150321960449
+1,50.336726843539175,696,bs_64x8 = 1,bs_64x8,0,1.0,1.0,1.0,80,0.1291306018829345
+2,91.56451186547972,714,Linear2D = 1 AND pixelPerThread = 1,Linear2D AND pixelPerThread <= 1.5,0,1.0,1.0,1.0,80,0.1897697448730468
+3,48.7021072082696,714,Linear2D = 1 AND TextureMemory = 1 AND pixelPerThread = 1,Linear2D AND pixelPerThread <= 1.5,0,1.0,1.0,1.0,80,0.1342899799346923
+4,97.0221498727424,1207,CUDA = 1 AND Linear1D = 1 AND LocalMemory = 1 AND TextureMemory = 1,Linear1D AND LocalMemory,0,1.0,1.0,1.0,80,0.1398506164550781
+1,95.10671044906076,775,padding = 192,padding <= 208.0 AND padding > 176.0,0,1.0,1.0,1.0,81,0.1476588249206543
+2,79.72880007031898,2484,CUDA = 1 AND pixelPerThread = 3,pixelPerThread > 2.5 AND pixelPerThread <= 3.5 AND CUDA,0,1.0,1.0,1.0,81,0.190922737121582
+3,74.73914837345802,1035,CUDA = 1 AND LocalMemory = 1 AND pixelPerThread = 4,pixelPerThread > 3.5 AND LocalMemory AND CUDA,0,1.0,1.0,1.0,81,0.1312172412872314
+4,97.39194358086792,1040,CUDA = 1 AND LocalMemory = 1 AND TextureMemory = 1 AND pixelPerThread = 2,LocalMemory AND pixelPerThread <= 2.5 AND pixelPerThread > 1.5 AND TextureMemory AND NOT OpenCL,0,1.0,1.0,1.0,81,0.1477184295654297
+1,103.24432402453444,3132,pixelPerThread = 3,pixelPerThread > 2.5 AND pixelPerThread <= 3.5,0,1.0,1.0,1.0,82,0.1515073776245117
+2,53.30000077651109,1305,LocalMemory = 1 AND pixelPerThread = 4,pixelPerThread > 3.5 AND LocalMemory,0,1.0,1.0,1.0,82,0.1970841884613037
+3,66.5574269917938,1207,Linear1D = 1 AND LocalMemory = 1 AND TextureMemory = 1,Linear1D AND LocalMemory,0,1.0,1.0,1.0,82,0.1375660896301269
+4,83.40090398361532,780,CUDA = 1 AND LocalMemory = 1 AND TextureMemory = 1 AND pixelPerThread = 3,pixelPerThread > 2.5 AND LocalMemory AND pixelPerThread <= 3.5 AND TextureMemory AND NOT OpenCL,0,1.0,1.0,1.0,82,0.14835786819458
+1,109.63473850761316,696,bs_256x1 = 1,bs_256x1,0,1.0,1.0,1.0,83,0.1325833797454834
+2,96.58328780848132,775,TextureMemory = 1 AND padding = 0,padding <= 16.0 AND TextureMemory,0,1.0,1.0,1.0,83,0.1774482727050781
+3,58.31986684551921,1207,Linear2D = 1 AND LocalMemory = 1 AND TextureMemory = 1,Linear2D AND LocalMemory,0,1.0,1.0,1.0,83,0.1269843578338623
+4,27.67321641461097,780,CUDA = 1 AND LocalMemory = 1 AND TextureMemory = 1 AND pixelPerThread = 4,pixelPerThread > 3.5 AND LocalMemory AND TextureMemory AND NOT OpenCL,0,1.0,1.0,1.0,83,0.1300468444824218
+1,50.76172367057255,696,bs_256x2 = 1,bs_256x2,0,1.0,1.0,1.0,84,0.1309375762939453
+2,112.64835980310504,1740,LocalMemory = 1 AND pixelPerThread = 2,LocalMemory AND pixelPerThread <= 2.5 AND pixelPerThread > 1.5,0,1.0,1.0,1.0,84,0.1871769428253173
+3,75.96441029094792,2132,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 2,pixelPerThread <= 2.5 AND pixelPerThread > 1.5 AND TextureMemory AND NOT OpenCL,0,1.0,1.0,1.0,84,0.1306345462799072
+4,63.25065370435883,714,CUDA = 1 AND Linear1D = 1 AND TextureMemory = 1 AND pixelPerThread = 1,Linear1D AND pixelPerThread <= 1.5,0,1.0,1.0,1.0,84,0.144540786743164
+1,29.175882327274024,696,bs_32x2 = 1,bs_32x2,0,1.0,1.0,1.0,85,0.1400489807128906
+2,106.37234225123936,697,Linear1D = 1 AND pixelPerThread = 2,Linear1D AND pixelPerThread <= 2.5 AND pixelPerThread > 1.5,0,1.0,1.0,1.0,85,0.2056310176849365
+3,29.065683583929133,1035,CUDA = 1 AND LocalMemory = 1 AND pixelPerThread = 3,pixelPerThread > 2.5 AND LocalMemory AND pixelPerThread <= 3.5 AND CUDA,0,1.0,1.0,1.0,85,0.1449887752532959
+4,97.90528768109236,1040,CUDA = 1 AND LocalMemory = 1 AND TextureMemory = 1 AND pixelPerThread = 2,LocalMemory AND pixelPerThread <= 2.5 AND pixelPerThread > 1.5 AND TextureMemory AND CUDA,0,1.0,1.0,1.0,85,0.1569581031799316
+1,85.19651869979027,3132,pixelPerThread = 3,pixelPerThread > 2.5 AND pixelPerThread <= 3.5,0,1.0,1.0,1.0,86,0.1531705856323242
+2,54.58569894710423,2226,TextureMemory = 1 AND pixelPerThread = 1,pixelPerThread <= 1.5 AND TextureMemory,0,1.0,1.0,1.0,86,0.2011656761169433
+3,106.20193634589282,697,Linear1D = 1 AND TextureMemory = 1 AND pixelPerThread = 2,Linear1D AND pixelPerThread <= 2.5 AND pixelPerThread > 1.5,0,1.0,1.0,1.0,86,0.1584541797637939
+4,72.49499697004809,1092,CUDA = 1 AND LocalMemory = 1 AND TextureMemory = 1 AND pixelPerThread = 1,pixelPerThread <= 1.5 AND LocalMemory AND TextureMemory AND NOT OpenCL,0,1.0,1.0,1.0,86,0.1526737213134765
+1,98.3750281765606,775,padding = 224,padding <= 240.0 AND padding > 208.0,0,1.0,1.0,1.0,87,0.1386651992797851
+2,36.80239095098712,1207,Linear2D = 1 AND LocalMemory = 1,padding > 16.0 AND CUDA,1,0.2041880111440639,0.114516129032258,0.9411764705882352,87,0.1873476505279541
+3,59.86528374023896,1872,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 4,pixelPerThread > 3.5 AND TextureMemory AND CUDA,0,1.0,1.0,1.0,87,0.1329805850982666
+4,64.65729956564344,780,CUDA = 1 AND LocalMemory = 1 AND TextureMemory = 1 AND pixelPerThread = 3,LocalMemory AND pixelPerThread > 2.5 AND pixelPerThread <= 3.5 AND TextureMemory AND CUDA,0,1.0,1.0,1.0,87,0.1533293724060058
+1,88.00892862486494,3567,pixelPerThread = 2,pixelPerThread <= 2.5 AND pixelPerThread > 1.5,0,1.0,1.0,1.0,88,0.1439380645751953
+2,44.19585940234533,1908,TextureMemory = 1 AND pixelPerThread = 3,TextureMemory AND pixelPerThread > 2.5 AND pixelPerThread <= 3.5,0,1.0,1.0,1.0,88,0.2093300819396972
+3,60.90045731166294,1380,CUDA = 1 AND LocalMemory = 1 AND pixelPerThread = 2,LocalMemory AND pixelPerThread <= 2.5 AND pixelPerThread > 1.5 AND CUDA,0,1.0,1.0,1.0,88,0.1497275829315185
+4,99.12066964685796,1207,CUDA = 1 AND Ldg = 1 AND LocalMemory = 1 AND TextureMemory = 1,Ldg AND LocalMemory,0,1.0,1.0,1.0,88,0.1595139503479004
+1,107.806979570199,775,padding = 160,padding <= 176.0 AND padding > 144.0,0,1.0,1.0,1.0,89,0.1410956382751464
+2,112.4755969626321,714,Linear2D = 1 AND pixelPerThread = 1,Linear2D AND pixelPerThread <= 1.5,0,1.0,1.0,1.0,89,0.2053391933441162
+3,86.54300106250061,1060,LocalMemory = 1 AND TextureMemory = 1 AND pixelPerThread = 2,LocalMemory AND pixelPerThread <= 2.5 AND pixelPerThread > 1.5 AND TextureMemory,0,1.0,1.0,1.0,89,0.1469535827636718
+4,35.518602830497656,697,CUDA = 1 AND Ldg = 1 AND TextureMemory = 1 AND pixelPerThread = 2,NOT bs_128x4,0,0.0983241880468634,0.0518414262256626,0.951219512195122,89,0.1535367965698242
+1,36.01663391434267,775,padding = 128,NOT LocalMemory AND padding <= 496.0,1,0.1096176432206707,0.0609756097560975,0.5419354838709678,9,0.1399660110473632
+2,59.09357123143815,2829,CUDA = 1 AND pixelPerThread = 2,pixelPerThread <= 2.5 AND pixelPerThread > 1.5 AND NOT OpenCL,0,1.0,1.0,1.0,9,0.196864366531372
+3,115.56857783449784,697,CUDA = 1 AND Linear2D = 1 AND pixelPerThread = 2,Linear2D AND pixelPerThread <= 2.5 AND pixelPerThread > 1.5,0,1.0,1.0,1.0,9,0.1405150890350341
+4,43.02347934861312,1207,CUDA = 1 AND Linear1D = 1 AND LocalMemory = 1 AND TextureMemory = 1,Linear1D AND LocalMemory,0,1.0,1.0,1.0,9,0.1353139877319336
+1,66.19220331850318,696,bs_512x1 = 1,bs_512x1,0,1.0,1.0,1.0,90,0.140657901763916
+2,75.2687320376413,2635,CUDA = 1 AND Linear1D = 1,Linear1D,0,1.0,1.0,1.0,90,0.1883659362792968
+3,38.44391233460176,1207,CUDA = 1 AND Linear2D = 1 AND LocalMemory = 1,Linear2D AND LocalMemory,0,1.0,1.0,1.0,90,0.134937047958374
+4,102.91570111763744,1092,CUDA = 1 AND LocalMemory = 1 AND TextureMemory = 1 AND pixelPerThread = 1,pixelPerThread <= 1.5 AND LocalMemory AND TextureMemory AND CUDA,0,1.0,1.0,1.0,90,0.1454803943634033
+1,69.2909810181541,775,padding = 256,padding <= 272.0 AND padding > 240.0,0,1.0,1.0,1.0,91,0.1435284614562988
+2,72.32424301018887,2173,TextureMemory = 1 AND pixelPerThread = 2,pixelPerThread <= 2.5 AND pixelPerThread > 1.5 AND TextureMemory,0,1.0,1.0,1.0,91,0.2059516906738281
+3,100.5770313011124,1207,CUDA = 1 AND Ldg = 1 AND LocalMemory = 1,Ldg AND LocalMemory,0,1.0,1.0,1.0,91,0.1398990154266357
+4,78.67499901543762,697,CUDA = 1 AND Linear2D = 1 AND TextureMemory = 1 AND pixelPerThread = 2,Linear2D AND pixelPerThread <= 2.5 AND pixelPerThread > 1.5,0,1.0,1.0,1.0,91,0.155221939086914
+1,109.54106074184828,775,padding = 64,padding <= 80.0 AND padding > 48.0,0,1.0,1.0,1.0,92,0.1402735710144043
+2,33.89901704605878,1207,Linear1D = 1 AND LocalMemory = 1,Linear1D AND LocalMemory,0,1.0,1.0,1.0,92,0.1960337162017822
+3,75.60460112686044,1207,Ldg = 1 AND LocalMemory = 1 AND TextureMemory = 1,Ldg AND LocalMemory,0,1.0,1.0,1.0,92,0.1406326293945312
+4,72.51810427828067,697,CUDA = 1 AND Ldg = 1 AND TextureMemory = 1 AND pixelPerThread = 2,Ldg AND pixelPerThread <= 2.5 AND pixelPerThread > 1.5,0,1.0,1.0,1.0,92,0.1557655334472656
+1,27.957605845826954,775,padding = 416,padding > 400.0 AND padding <= 432.0,0,1.0,1.0,1.0,93,0.1397895812988281
+2,63.18520342368037,714,Linear1D = 1 AND pixelPerThread = 1,Linear1D AND pixelPerThread <= 1.5,0,1.0,1.0,1.0,93,0.1940770149230957
+3,30.124210483537603,2635,CUDA = 1 AND Linear2D = 1 AND TextureMemory = 1,Linear2D,0,1.0,1.0,1.0,93,0.1438241004943847
+4,29.862773811364374,697,CUDA = 1 AND Ldg = 1 AND TextureMemory = 1 AND pixelPerThread = 2,Ldg AND pixelPerThread > 1.5 AND pixelPerThread <= 2.5,0,1.0,1.0,1.0,93,0.1465909481048584
+1,83.39304592683807,3132,pixelPerThread = 4,pixelPerThread > 3.5,0,1.0,1.0,1.0,94,0.1386265754699707
+2,28.43269556723904,2635,Linear2D = 1 AND TextureMemory = 1,Linear2D,0,1.0,1.0,1.0,94,0.208961009979248
+3,90.31399791845604,2132,CUDA = 1 AND TextureMemory = 1 AND pixelPerThread = 2,pixelPerThread <= 2.5 AND pixelPerThread > 1.5 AND TextureMemory AND NOT OpenCL,0,1.0,1.0,1.0,94,0.1346516609191894
+4,116.20967538627818,1207,CUDA = 1 AND Ldg = 1 AND LocalMemory = 1 AND TextureMemory = 1,Ldg AND LocalMemory,0,1.0,1.0,1.0,94,0.1570124626159668
+1,85.84744843314803,696,bs_128x4 = 1,bs_128x4,0,1.0,1.0,1.0,95,0.1522893905639648
+2,81.51953626324003,1207,Linear1D = 1 AND LocalMemory = 1,Linear1D AND LocalMemory,0,1.0,1.0,1.0,95,0.199784517288208
+3,113.57510139591884,3692,CUDA = 1 AND LocalMemory = 1 AND TextureMemory = 1,LocalMemory AND TextureMemory AND NOT OpenCL,0,1.0,1.0,1.0,95,0.1344788074493408
+4,74.36160727738772,780,CUDA = 1 AND LocalMemory = 1 AND TextureMemory = 1 AND pixelPerThread = 4,pixelPerThread > 3.5 AND LocalMemory AND TextureMemory AND NOT OpenCL,0,1.0,1.0,1.0,95,0.1467490196228027
+1,50.152797236117536,696,bs_256x2 = 1,bs_256x2,0,1.0,1.0,1.0,96,0.1325080394744873
+2,48.66001311443403,2173,TextureMemory = 1 AND pixelPerThread = 2,pixelPerThread <= 2.5 AND pixelPerThread > 1.5 AND TextureMemory,0,1.0,1.0,1.0,96,0.200688362121582
+3,31.776824743829614,714,Linear2D = 1 AND TextureMemory = 1 AND pixelPerThread = 1,Linear2D AND pixelPerThread <= 1.5,0,1.0,1.0,1.0,96,0.141650915145874
+4,88.10417279960653,714,CUDA = 1 AND Linear1D = 1 AND TextureMemory = 1 AND pixelPerThread = 1,Linear1D AND pixelPerThread <= 1.5,0,1.0,1.0,1.0,96,0.1432256698608398
+1,113.06407877609222,2635,Linear1D = 1,Linear1D,0,1.0,1.0,1.0,97,0.1410760879516601
+2,42.34690763141585,1207,Linear2D = 1 AND LocalMemory = 1,Linear2D AND LocalMemory,0,1.0,1.0,1.0,97,0.1845836639404297
+3,47.13029969893592,714,Linear1D = 1 AND TextureMemory = 1 AND pixelPerThread = 1,pixelPerThread <= 1.5 AND Linear1D,0,1.0,1.0,1.0,97,0.1232826709747314
+4,88.18726583883952,697,CUDA = 1 AND Linear1D = 1 AND TextureMemory = 1 AND pixelPerThread = 2,Linear1D AND pixelPerThread <= 2.5 AND pixelPerThread > 1.5,0,1.0,1.0,1.0,97,0.1397159099578857
+1,77.71461361483847,696,bs_32x8 = 1,bs_32x8,0,1.0,1.0,1.0,98,0.1348631381988525
+2,82.68550051020662,2226,TextureMemory = 1 AND pixelPerThread = 1,pixelPerThread <= 1.5 AND TextureMemory,0,1.0,1.0,1.0,98,0.1775071620941162
+3,80.24330063758299,1060,LocalMemory = 1 AND TextureMemory = 1 AND pixelPerThread = 2,LocalMemory AND pixelPerThread <= 2.5 AND pixelPerThread > 1.5 AND TextureMemory,0,1.0,1.0,1.0,98,0.144554853439331
+4,56.84216860866543,780,CUDA = 1 AND LocalMemory = 1 AND TextureMemory = 1 AND pixelPerThread = 3,pixelPerThread > 2.5 AND LocalMemory AND pixelPerThread <= 3.5 AND TextureMemory AND NOT OpenCL,0,1.0,1.0,1.0,98,0.13069748878479
+1,33.987038930954235,775,padding = 512,padding > 496.0,0,1.0,1.0,1.0,99,0.1166636943817138
+2,98.9539229538477,1207,Linear1D = 1 AND LocalMemory = 1,Linear1D AND LocalMemory,0,1.0,1.0,1.0,99,0.1948800086975097
+3,90.86355534018242,1207,Ldg = 1 AND LocalMemory = 1 AND TextureMemory = 1,Ldg AND LocalMemory,0,1.0,1.0,1.0,99,0.1460888385772705
+4,36.21583705449713,714,CUDA = 1 AND Ldg = 1 AND TextureMemory = 1 AND pixelPerThread = 1,NOT Linear2D,0,0.1234866828087167,0.0658064516129032,1.0,99,0.1398408412933349

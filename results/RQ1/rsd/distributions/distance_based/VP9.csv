@@ -1,0 +1,501 @@
+sg_distribution,sg_cardinality,sg_rule,best_rule,best_rule_idx,f1,precision,recall,seed
+normal,27000,good = 1 AND AutoAltRef = 1 AND lossless = 1,lossless >= 1.0  AND  AutoAltRef >= 1.0  AND  0.0 <= realtime < 1.0  AND  0.0 <= FrameBoost < 1.0,4.0,0.6666666666666666,1.0,0.5,0
+uniform,27000,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,0.0 <= good < 1.0  AND  AutoAltRef >= 1.0  AND  lossless >= 1.0  AND  0.0 <= constrainedQuality < 0.5,1.0,0.8,1.0,0.6666666666666666,0
+bi_modal_split,27000,good = 1 AND AutoAltRef = 1 AND lossless = 1,0.0 <= realtime < 1.0  AND  AutoAltRef >= 1.0  AND  lossless >= 1.0  AND  TileColumns < 4.5,1.0,0.8,1.0,0.6666666666666666,0
+tri_modal_split,27000,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,AutoAltRef >= 1.0  AND  0.0 <= good < 1.0  AND  FrameBoost >= 1.0  AND  Threads >= 4.0,4.0,0.888888888888889,1.0,0.8,0
+power_law,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,lossless >= 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= good < 1.0  AND  cpuUsed < 4.0,3.0,0.5714285714285715,1.0,0.4,0
+normal,27000,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,0.0 <= good < 1.0  AND  lossless >= 1.0  AND  bitRate < 1500.0  AND  Threads >= 4.0,4.0,0.5614035087719298,0.5,0.64,10
+uniform,27000,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,0.0 <= good < 1.0  AND  AutoAltRef >= 1.0  AND  lossless >= 1.0  AND  0.0 <= variance < 1.0,3.0,0.8571428571428571,1.0,0.75,10
+bi_modal_split,27000,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,0.0 <= constantBitrate < 1.0  AND  lossless >= 1.0  AND  AutoAltRef >= 1.0  AND  0.0 <= good < 1.0,0.0,0.8,1.0,0.6666666666666666,10
+tri_modal_split,27000,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,AutoAltRef >= 1.0  AND  lossless >= 1.0  AND  0.0 <= good < 1.0  AND  cpuUsed >= 2.0,3.0,0.888888888888889,1.0,0.8,10
+power_law,27000,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,AutoAltRef >= 1.0  AND  lossless >= 1.0  AND  0.0 <= constrainedQuality < 0.5  AND  cpuUsed >= 2.0,4.0,0.5161290322580646,0.5,0.5333333333333333,10
+normal,27000,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,0.0 <= good < 1.0  AND  AutoAltRef >= 1.0  AND  lossless >= 1.0  AND  constantBitrate >= 0.5,2.0,0.5,1.0,0.3333333333333333,11
+uniform,27000,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,0.0 <= good < 1.0  AND  AutoAltRef >= 1.0  AND  lossless >= 1.0  AND  bitRate < 1200.0,1.0,0.7499999999999999,1.0,0.6,11
+bi_modal_split,27000,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,AutoAltRef >= 1.0  AND  lossless >= 1.0  AND  0.0 <= good < 1.0,0.0,1.0,1.0,1.0,11
+tri_modal_split,27000,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,0.0 <= good < 1.0  AND  AutoAltRef >= 1.0  AND  lossless >= 1.0  AND  lagInFrames < 12.0,4.0,0.8,1.0,0.6666666666666666,11
+power_law,27000,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,AutoAltRef >= 1.0  AND  lossless >= 1.0  AND  0.0 <= good < 1.0  AND  Threads < 6.0,3.0,0.5714285714285715,1.0,0.4,11
+normal,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  lossless >= 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= AutoAltRef < 1.0,1.0,0.6666666666666666,1.0,0.5,12
+uniform,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,lossless >= 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= good < 1.0  AND  cpuUsed < 8.0,1.0,0.888888888888889,1.0,0.8,12
+bi_modal_split,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  FrameBoost >= 1.0  AND  lossless >= 1.0,2.0,1.0,1.0,1.0,12
+tri_modal_split,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  FrameBoost >= 1.0  AND  lossless >= 1.0  AND  lagInFrames < 4.0,0.0,0.5,1.0,0.3333333333333333,12
+power_law,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,lossless >= 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= good < 1.0  AND  1.5 <= TileColumns < 4.5,0.0,0.5,1.0,0.3333333333333333,12
+normal,27000,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,AutoAltRef >= 1.0  AND  FrameBoost >= 1.0,4.0,0.6666666666666666,0.5,1.0,13
+uniform,27000,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,AutoAltRef >= 1.0  AND  bitRate < 900.0  AND  0.0 <= realtime < 1.0  AND  FrameBoost >= 1.0,1.0,0.5714285714285715,1.0,0.4,13
+bi_modal_split,27000,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,FrameBoost >= 1.0  AND  0.0 <= off < 1.0  AND  0.0 <= realtime < 1.0  AND  AutoAltRef >= 1.0,4.0,0.8571428571428571,1.0,0.75,13
+tri_modal_split,27000,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,AutoAltRef >= 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= realtime < 1.0  AND  0.0 <= variance < 1.0,2.0,0.8571428571428571,1.0,0.75,13
+power_law,27000,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,AutoAltRef >= 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= realtime < 1.0  AND  0.0 <= complexity < 1.0,3.0,0.8571428571428571,1.0,0.75,13
+normal,27000,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,AutoAltRef >= 1.0  AND  lossless >= 1.0  AND  FrameBoost >= 1.0  AND  variableBitrate >= 0.5,3.0,0.5,1.0,0.3333333333333333,14
+uniform,27000,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,AutoAltRef >= 1.0  AND  lossless >= 1.0  AND  FrameBoost >= 1.0  AND  Threads >= 8.0,0.0,0.5714285714285715,1.0,0.4,14
+bi_modal_split,27000,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,AutoAltRef >= 1.0  AND  FrameBoost >= 1.0  AND  lossless >= 1.0,4.0,1.0,1.0,1.0,14
+tri_modal_split,27000,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,AutoAltRef >= 1.0  AND  lossless >= 1.0  AND  FrameBoost >= 1.0,0.0,1.0,1.0,1.0,14
+power_law,27000,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,AutoAltRef >= 1.0  AND  FrameBoost >= 1.0  AND  lossless >= 1.0  AND  0.0 <= constrainedQuality < 0.5,4.0,0.8,1.0,0.6666666666666666,14
+normal,27000,good = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= realtime < 1.0  AND  lossless >= 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= AutoAltRef < 1.0,3.0,0.6666666666666666,1.0,0.5,15
+uniform,27000,good = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= realtime < 1.0  AND  FrameBoost >= 1.0  AND  lossless >= 1.0  AND  TileColumns < 4.5,3.0,0.8,1.0,0.6666666666666666,15
+bi_modal_split,0,good = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,15
+tri_modal_split,27000,good = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= realtime < 1.0  AND  lossless >= 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= cyclicRefresh < 1.0,1.0,0.8571428571428571,1.0,0.75,15
+power_law,27000,good = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= realtime < 1.0  AND  lossless >= 1.0  AND  bitRate < 1500.0  AND  0.0 <= variableBitrate < 0.5,4.0,0.5161290322580646,0.5,0.5333333333333333,15
+normal,27000,good = 1 AND AutoAltRef = 1 AND lossless = 1,0.0 <= realtime < 1.0  AND  lossless >= 1.0  AND  lagInFrames >= 8.0  AND  AutoAltRef >= 1.0,1.0,0.8,1.0,0.6666666666666666,16
+uniform,27000,good = 1 AND AutoAltRef = 1 AND lossless = 1,0.0 <= realtime < 1.0  AND  lossless >= 1.0  AND  AutoAltRef >= 1.0  AND  bitRate < 1500.0,2.0,0.888888888888889,1.0,0.8,16
+bi_modal_split,27000,good = 1 AND AutoAltRef = 1 AND lossless = 1,AutoAltRef >= 1.0  AND  0.0 <= realtime < 1.0  AND  lossless >= 1.0  AND  0.0 <= complexity < 1.0,3.0,0.8571428571428571,1.0,0.75,16
+tri_modal_split,27000,good = 1 AND AutoAltRef = 1 AND lossless = 1,0.0 <= realtime < 1.0  AND  AutoAltRef >= 1.0  AND  lossless >= 1.0,0.0,1.0,1.0,1.0,16
+power_law,27000,good = 1 AND AutoAltRef = 1 AND lossless = 1,AutoAltRef >= 1.0  AND  lossless >= 1.0  AND  0.0 <= realtime < 1.0  AND  FrameBoost >= 1.0,3.0,0.6666666666666666,1.0,0.5,16
+normal,27000,good = 1 AND AutoAltRef = 1 AND lossless = 1,0.0 <= realtime < 1.0  AND  lossless >= 1.0  AND  AutoAltRef >= 1.0  AND  0.0 <= constrainedQuality < 0.5,1.0,0.8,1.0,0.6666666666666666,17
+uniform,27000,good = 1 AND AutoAltRef = 1 AND lossless = 1,AutoAltRef >= 1.0  AND  lossless >= 1.0  AND  0.0 <= variance < 1.0  AND  0.0 <= realtime < 1.0,4.0,0.8571428571428571,1.0,0.75,17
+bi_modal_split,27000,good = 1 AND AutoAltRef = 1 AND lossless = 1,AutoAltRef >= 1.0  AND  lossless >= 1.0  AND  0.0 <= realtime < 1.0  AND  2.0 <= cpuUsed < 8.0,1.0,0.7499999999999999,1.0,0.6,17
+tri_modal_split,27000,good = 1 AND AutoAltRef = 1 AND lossless = 1,0.0 <= realtime < 1.0  AND  lossless >= 1.0  AND  TileColumns >= 1.5  AND  AutoAltRef >= 1.0,1.0,0.8,1.0,0.6666666666666666,17
+power_law,27000,good = 1 AND AutoAltRef = 1 AND lossless = 1,AutoAltRef >= 1.0  AND  lossless >= 1.0  AND  900.0 <= bitRate < 1500.0  AND  0.0 <= realtime < 1.0,4.0,0.5714285714285715,1.0,0.4,17
+normal,27000,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,AutoAltRef >= 1.0  AND  FrameBoost >= 1.0  AND  lossless >= 1.0  AND  cpuUsed >= 4.0,3.0,0.7499999999999999,1.0,0.6,18
+uniform,27000,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,lossless >= 1.0  AND  FrameBoost >= 1.0  AND  600.0 <= bitRate < 1500.0  AND  AutoAltRef >= 1.0,1.0,0.7499999999999999,1.0,0.6,18
+bi_modal_split,27000,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= off < 1.0  AND  lossless >= 1.0  AND  AutoAltRef >= 1.0  AND  FrameBoost >= 1.0,0.0,0.8571428571428571,1.0,0.75,18
+tri_modal_split,27000,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,AutoAltRef >= 1.0  AND  lossless >= 1.0  AND  FrameBoost >= 1.0  AND  lagInFrames >= 4.0,0.0,0.8,1.0,0.6666666666666666,18
+power_law,27000,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,lossless >= 1.0  AND  cpuUsed < 6.0  AND  FrameBoost >= 1.0,4.0,0.5454545454545454,0.5,0.6,18
+normal,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  FrameBoost >= 1.0  AND  lossless >= 1.0  AND  0.0 <= complexity < 1.0,3.0,0.8571428571428571,1.0,0.75,19
+uniform,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  FrameBoost >= 1.0  AND  lossless >= 1.0  AND  6.0 <= Threads < 10.0,0.0,0.5714285714285715,1.0,0.4,19
+bi_modal_split,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  FrameBoost >= 1.0  AND  lossless >= 1.0,4.0,1.0,1.0,1.0,19
+tri_modal_split,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  lossless >= 1.0  AND  FrameBoost >= 1.0  AND  AutoAltRef >= 1.0,0.0,0.6666666666666666,1.0,0.5,19
+power_law,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,FrameBoost >= 1.0  AND  lossless >= 1.0  AND  0.0 <= good < 1.0  AND  lagInFrames >= 4.0,4.0,0.8,1.0,0.6666666666666666,19
+normal,27000,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  FrameBoost >= 1.0  AND  AutoAltRef >= 1.0  AND  lossless >= 1.0,0.0,0.6666666666666666,1.0,0.5,1
+uniform,27000,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  FrameBoost >= 1.0  AND  AutoAltRef >= 1.0  AND  0.0 <= off < 1.0,1.0,0.8571428571428571,1.0,0.75,1
+bi_modal_split,27000,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  FrameBoost >= 1.0  AND  AutoAltRef >= 1.0,0.0,1.0,1.0,1.0,1
+tri_modal_split,27000,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,AutoAltRef >= 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= good < 1.0  AND  lossless >= 1.0,0.0,0.6666666666666666,1.0,0.5,1
+power_law,27000,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,AutoAltRef >= 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= good < 1.0  AND  4.0 <= lagInFrames < 12.0,3.0,0.5,1.0,0.3333333333333333,1
+normal,27000,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,AutoAltRef >= 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= good < 1.0  AND  lossless >= 1.0,3.0,0.6666666666666666,1.0,0.5,20
+uniform,27000,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,AutoAltRef >= 1.0  AND  lossless >= 1.0  AND  cpuUsed >= 2.0  AND  FrameBoost >= 1.0,2.0,0.888888888888889,1.0,0.8,20
+bi_modal_split,27000,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,AutoAltRef >= 1.0  AND  FrameBoost >= 1.0  AND  lossless >= 1.0,0.0,1.0,1.0,1.0,20
+tri_modal_split,27000,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,AutoAltRef >= 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= good < 1.0  AND  lossless >= 1.0,0.0,0.6666666666666666,1.0,0.5,20
+power_law,27000,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,lossless >= 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= realtime < 1.0  AND  AutoAltRef >= 1.0,3.0,0.6666666666666666,1.0,0.5,20
+normal,27000,good = 1 AND lossless = 1 AND FrameBoost = 1,lossless >= 1.0  AND  FrameBoost >= 1.0  AND  bitRate >= 1200.0  AND  0.0 <= realtime < 1.0,1.0,0.5714285714285715,1.0,0.4,21
+uniform,27000,good = 1 AND lossless = 1 AND FrameBoost = 1,lossless >= 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= realtime < 1.0  AND  0.0 <= cyclicRefresh < 1.0,2.0,0.8571428571428571,1.0,0.75,21
+bi_modal_split,27000,good = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= realtime < 1.0  AND  lossless >= 1.0  AND  FrameBoost >= 1.0  AND  600.0 <= bitRate < 1500.0,3.0,0.7499999999999999,1.0,0.6,21
+tri_modal_split,27000,good = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= realtime < 1.0  AND  FrameBoost >= 1.0,4.0,0.6666666666666666,0.5,1.0,21
+power_law,27000,good = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= realtime < 1.0  AND  lossless >= 1.0  AND  FrameBoost >= 1.0  AND  4.0 <= cpuUsed < 8.0,3.0,0.5714285714285715,1.0,0.4,21
+normal,27000,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= realtime < 1.0  AND  FrameBoost >= 1.0  AND  AutoAltRef >= 1.0  AND  900.0 <= bitRate < 1500.0,0.0,0.5714285714285715,1.0,0.4,22
+uniform,27000,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,AutoAltRef >= 1.0  AND  FrameBoost >= 1.0  AND  lagInFrames < 12.0  AND  0.0 <= realtime < 1.0,3.0,0.8,1.0,0.6666666666666666,22
+bi_modal_split,27000,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= realtime < 1.0  AND  Threads < 10.0  AND  AutoAltRef >= 1.0  AND  FrameBoost >= 1.0,0.0,0.888888888888889,1.0,0.8,22
+tri_modal_split,27000,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= realtime < 1.0  AND  AutoAltRef >= 1.0  AND  600.0 <= bitRate < 1500.0  AND  FrameBoost >= 1.0,0.0,0.7499999999999999,1.0,0.6,22
+power_law,27000,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,AutoAltRef >= 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= realtime < 1.0  AND  cpuUsed >= 6.0,1.0,0.5714285714285715,1.0,0.4,22
+normal,27000,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= realtime < 1.0  AND  FrameBoost >= 1.0  AND  AutoAltRef >= 1.0  AND  cpuUsed >= 6.0,3.0,0.5714285714285715,1.0,0.4,23
+uniform,27000,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= realtime < 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= lossless < 1.0  AND  AutoAltRef >= 1.0,0.0,0.6666666666666666,1.0,0.5,23
+bi_modal_split,27000,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,AutoAltRef >= 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= cyclicRefresh < 1.0  AND  0.0 <= realtime < 1.0,0.0,0.8571428571428571,1.0,0.75,23
+tri_modal_split,27000,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= realtime < 1.0  AND  AutoAltRef >= 1.0  AND  FrameBoost >= 1.0,4.0,1.0,1.0,1.0,23
+power_law,27000,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,AutoAltRef >= 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= realtime < 1.0  AND  Threads < 10.0,4.0,0.888888888888889,1.0,0.8,23
+normal,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  lossless >= 1.0  AND  FrameBoost >= 1.0  AND  lagInFrames < 12.0,4.0,0.8,1.0,0.6666666666666666,24
+uniform,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  FrameBoost >= 1.0  AND  lossless >= 1.0  AND  lagInFrames < 12.0,1.0,0.8,1.0,0.6666666666666666,24
+bi_modal_split,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,lossless >= 1.0  AND  FrameBoost >= 1.0  AND  lagInFrames < 12.0  AND  0.0 <= good < 1.0,4.0,0.8,1.0,0.6666666666666666,24
+tri_modal_split,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,lossless >= 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= good < 1.0  AND  Threads < 10.0,2.0,0.888888888888889,1.0,0.8,24
+power_law,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,FrameBoost >= 1.0  AND  0.0 <= good < 1.0  AND  lossless >= 1.0  AND  AutoAltRef >= 1.0,2.0,0.6666666666666666,1.0,0.5,24
+normal,27000,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,lossless >= 1.0  AND  FrameBoost >= 1.0  AND  3.0 <= TileColumns < 6.0  AND  AutoAltRef >= 1.0,1.0,0.5,1.0,0.3333333333333333,25
+uniform,27000,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,AutoAltRef >= 1.0  AND  lossless >= 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= complexity < 1.0,0.0,0.8571428571428571,1.0,0.75,25
+bi_modal_split,27000,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,AutoAltRef >= 1.0  AND  lossless >= 1.0  AND  900.0 <= bitRate < 1500.0  AND  FrameBoost >= 1.0,1.0,0.5714285714285715,1.0,0.4,25
+tri_modal_split,27000,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,lossless >= 1.0  AND  FrameBoost >= 1.0  AND  AutoAltRef >= 1.0  AND  0.0 <= off < 1.0,1.0,0.8571428571428571,1.0,0.75,25
+power_law,27000,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,AutoAltRef >= 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= off < 1.0,4.0,0.6,0.5,0.75,25
+normal,27000,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,AutoAltRef >= 1.0  AND  lossless >= 1.0  AND  cpuUsed < 4.0  AND  FrameBoost >= 1.0,0.0,0.5714285714285715,1.0,0.4,26
+uniform,27000,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,AutoAltRef >= 1.0  AND  lossless >= 1.0  AND  0.0 <= variableBitrate < 1.0  AND  FrameBoost >= 1.0,1.0,0.8,1.0,0.6666666666666666,26
+bi_modal_split,27000,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,lossless >= 1.0  AND  FrameBoost >= 1.0  AND  AutoAltRef >= 1.0  AND  TileColumns >= 1.5,1.0,0.8,1.0,0.6666666666666666,26
+tri_modal_split,27000,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,AutoAltRef >= 1.0  AND  lossless >= 1.0  AND  FrameBoost >= 1.0  AND  bitRate >= 1200.0,1.0,0.5714285714285715,1.0,0.4,26
+power_law,27000,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,AutoAltRef >= 1.0  AND  FrameBoost >= 1.0  AND  lossless >= 1.0  AND  0.0 <= off < 1.0,4.0,0.8571428571428571,1.0,0.75,26
+normal,27000,good = 1 AND AutoAltRef = 1 AND lossless = 1,lossless >= 1.0  AND  0.0 <= realtime < 1.0  AND  AutoAltRef >= 1.0  AND  0.0 <= cyclicRefresh < 1.0,3.0,0.8571428571428571,1.0,0.75,27
+uniform,27000,good = 1 AND AutoAltRef = 1 AND lossless = 1,AutoAltRef >= 1.0  AND  lossless >= 1.0,4.0,0.6666666666666666,0.5,1.0,27
+bi_modal_split,27000,good = 1 AND AutoAltRef = 1 AND lossless = 1,0.0 <= realtime < 1.0  AND  AutoAltRef >= 1.0  AND  lossless >= 1.0  AND  0.0 <= FrameBoost < 1.0,0.0,0.6666666666666666,1.0,0.5,27
+tri_modal_split,27000,good = 1 AND AutoAltRef = 1 AND lossless = 1,0.0 <= realtime < 1.0  AND  lossless >= 1.0  AND  AutoAltRef >= 1.0  AND  0.0 <= constantBitrate < 0.5,2.0,0.8,1.0,0.6666666666666666,27
+power_law,27000,good = 1 AND AutoAltRef = 1 AND lossless = 1,0.0 <= realtime < 1.0  AND  AutoAltRef >= 1.0  AND  lossless >= 1.0  AND  constrainedQuality >= 0.5,1.0,0.5,1.0,0.3333333333333333,27
+normal,27000,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,0.0 <= good < 1.0  AND  lossless >= 1.0  AND  AutoAltRef >= 1.0  AND  constantBitrate >= 0.5,1.0,0.5,1.0,0.3333333333333333,28
+uniform,27000,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,0.0 <= good < 1.0  AND  AutoAltRef >= 1.0  AND  lossless >= 1.0  AND  4.0 <= cpuUsed < 8.0,0.0,0.5714285714285715,1.0,0.4,28
+bi_modal_split,27000,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,0.0 <= good < 1.0  AND  lossless >= 1.0  AND  AutoAltRef >= 1.0,0.0,1.0,1.0,1.0,28
+tri_modal_split,27000,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,0.0 <= good < 1.0  AND  lossless >= 1.0  AND  AutoAltRef >= 1.0  AND  bitRate < 1500.0,2.0,0.888888888888889,1.0,0.8,28
+power_law,27000,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,AutoAltRef >= 1.0  AND  lossless >= 1.0  AND  0.0 <= good < 1.0  AND  constrainedQuality >= 0.5,2.0,0.5,1.0,0.3333333333333333,28
+normal,27000,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,AutoAltRef >= 1.0  AND  FrameBoost >= 1.0  AND  bitRate >= 900.0  AND  0.0 <= realtime < 1.0,3.0,0.7499999999999999,1.0,0.6,29
+uniform,27000,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= realtime < 1.0  AND  AutoAltRef >= 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= complexity < 1.0,1.0,0.8571428571428571,1.0,0.75,29
+bi_modal_split,27000,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,AutoAltRef >= 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= realtime < 1.0  AND  lagInFrames < 12.0,0.0,0.8,1.0,0.6666666666666666,29
+tri_modal_split,27000,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= realtime < 1.0  AND  FrameBoost >= 1.0  AND  AutoAltRef >= 1.0  AND  4.0 <= Threads < 10.0,1.0,0.7499999999999999,1.0,0.6,29
+power_law,27000,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,AutoAltRef >= 1.0  AND  FrameBoost >= 1.0  AND  cpuUsed < 4.0  AND  0.0 <= realtime < 1.0,4.0,0.5714285714285715,1.0,0.4,29
+normal,27000,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,0.0 <= good < 1.0  AND  lossless >= 1.0  AND  0.0 <= cyclicRefresh < 1.0,4.0,0.6,0.5,0.75,2
+uniform,27000,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,0.0 <= good < 1.0  AND  lossless >= 1.0  AND  AutoAltRef >= 1.0  AND  6.0 <= Threads < 10.0,3.0,0.5714285714285715,1.0,0.4,2
+bi_modal_split,27000,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,AutoAltRef >= 1.0  AND  lossless >= 1.0  AND  0.0 <= good < 1.0  AND  Threads >= 6.0,0.0,0.7499999999999999,1.0,0.6,2
+tri_modal_split,27000,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,0.0 <= good < 1.0  AND  lossless >= 1.0  AND  AutoAltRef >= 1.0  AND  0.0 <= complexity < 1.0,0.0,0.8571428571428571,1.0,0.75,2
+power_law,27000,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,AutoAltRef >= 1.0  AND  lossless >= 1.0  AND  lagInFrames >= 4.0,4.0,0.5714285714285715,0.5,0.6666666666666666,2
+normal,27000,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  FrameBoost >= 1.0  AND  AutoAltRef >= 1.0  AND  Threads >= 6.0,3.0,0.7499999999999999,1.0,0.6,30
+uniform,27000,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,AutoAltRef >= 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= complexity < 1.0  AND  0.0 <= good < 1.0,4.0,0.8571428571428571,1.0,0.75,30
+bi_modal_split,27000,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,AutoAltRef >= 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= good < 1.0,2.0,1.0,1.0,1.0,30
+tri_modal_split,27000,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  FrameBoost >= 1.0  AND  AutoAltRef >= 1.0,3.0,1.0,1.0,1.0,30
+power_law,27000,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,AutoAltRef >= 1.0  AND  FrameBoost >= 1.0  AND  lagInFrames < 8.0  AND  0.0 <= good < 1.0,0.0,0.5,1.0,0.3333333333333333,30
+normal,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  lossless >= 1.0  AND  0.0 <= constantBitrate < 0.5  AND  cpuUsed < 8.0,4.0,0.5161290322580646,0.5,0.5333333333333333,31
+uniform,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  FrameBoost >= 1.0,4.0,0.6666666666666666,0.5,1.0,31
+bi_modal_split,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,lossless >= 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= good < 1.0  AND  600.0 <= bitRate < 1500.0,0.0,0.7499999999999999,1.0,0.6,31
+tri_modal_split,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  FrameBoost >= 1.0  AND  lossless >= 1.0,4.0,1.0,1.0,1.0,31
+power_law,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  FrameBoost >= 1.0  AND  lossless >= 1.0  AND  cpuUsed < 4.0,1.0,0.5714285714285715,1.0,0.4,31
+normal,27000,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,lossless >= 1.0  AND  Threads < 10.0  AND  AutoAltRef >= 1.0  AND  0.0 <= complexity < 1.0,4.0,0.5454545454545454,0.5,0.6,32
+uniform,27000,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,AutoAltRef >= 1.0  AND  FrameBoost >= 1.0  AND  lossless >= 1.0  AND  bitRate < 1200.0,0.0,0.7499999999999999,1.0,0.6,32
+bi_modal_split,27000,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,AutoAltRef >= 1.0  AND  lossless >= 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= complexity < 1.0,0.0,0.8571428571428571,1.0,0.75,32
+tri_modal_split,27000,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,FrameBoost >= 1.0  AND  AutoAltRef >= 1.0  AND  lossless >= 1.0  AND  0.0 <= cyclicRefresh < 1.0,4.0,0.8571428571428571,1.0,0.75,32
+power_law,27000,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,AutoAltRef >= 1.0  AND  lossless >= 1.0  AND  FrameBoost >= 1.0  AND  2.0 <= cpuUsed < 6.0,3.0,0.5714285714285715,1.0,0.4,32
+normal,27000,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,AutoAltRef >= 1.0  AND  FrameBoost >= 1.0  AND  Threads >= 8.0  AND  lossless >= 1.0,0.0,0.5714285714285715,1.0,0.4,33
+uniform,27000,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,AutoAltRef >= 1.0  AND  lossless >= 1.0  AND  FrameBoost >= 1.0  AND  Threads < 6.0,0.0,0.5714285714285715,1.0,0.4,33
+bi_modal_split,27000,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,AutoAltRef >= 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= cyclicRefresh < 1.0  AND  lossless >= 1.0,0.0,0.8571428571428571,1.0,0.75,33
+tri_modal_split,27000,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,AutoAltRef >= 1.0  AND  lossless >= 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= complexity < 1.0,4.0,0.8571428571428571,1.0,0.75,33
+power_law,27000,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,AutoAltRef >= 1.0  AND  lossless >= 1.0  AND  0.0 <= variableBitrate < 0.5,4.0,0.5714285714285715,0.5,0.6666666666666666,33
+normal,27000,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= realtime < 1.0  AND  FrameBoost >= 1.0  AND  lagInFrames >= 4.0,4.0,0.5714285714285715,0.5,0.6666666666666666,34
+uniform,27000,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= realtime < 1.0  AND  AutoAltRef >= 1.0  AND  FrameBoost >= 1.0  AND  4.0 <= cpuUsed < 8.0,0.0,0.5714285714285715,1.0,0.4,34
+bi_modal_split,27000,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= realtime < 1.0  AND  AutoAltRef >= 1.0  AND  FrameBoost >= 1.0,2.0,1.0,1.0,1.0,34
+tri_modal_split,27000,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= realtime < 1.0  AND  AutoAltRef >= 1.0  AND  FrameBoost >= 1.0  AND  4.0 <= Threads < 8.0,0.0,0.5714285714285715,1.0,0.4,34
+power_law,27000,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,AutoAltRef >= 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= realtime < 1.0  AND  0.0 <= variableBitrate < 0.5,4.0,0.8,1.0,0.6666666666666666,34
+normal,27000,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,lossless >= 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= cyclicRefresh < 1.0,4.0,0.6,0.5,0.75,35
+uniform,27000,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,lossless >= 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= cyclicRefresh < 1.0  AND  AutoAltRef >= 1.0,1.0,0.8571428571428571,1.0,0.75,35
+bi_modal_split,27000,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,AutoAltRef >= 1.0  AND  FrameBoost >= 1.0  AND  Threads < 10.0  AND  lossless >= 1.0,0.0,0.888888888888889,1.0,0.8,35
+tri_modal_split,27000,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,FrameBoost >= 1.0  AND  bitRate >= 1200.0  AND  AutoAltRef >= 1.0  AND  lossless >= 1.0,1.0,0.5714285714285715,1.0,0.4,35
+power_law,27000,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,lossless >= 1.0  AND  FrameBoost >= 1.0  AND  AutoAltRef >= 1.0  AND  4.0 <= Threads < 8.0,2.0,0.5714285714285715,1.0,0.4,35
+normal,27000,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,AutoAltRef >= 1.0  AND  lossless >= 1.0  AND  0.0 <= good < 1.0  AND  900.0 <= bitRate < 1500.0,3.0,0.5714285714285715,1.0,0.4,36
+uniform,27000,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,0.0 <= good < 1.0  AND  lossless >= 1.0  AND  AutoAltRef >= 1.0  AND  FrameBoost >= 1.0,1.0,0.6666666666666666,1.0,0.5,36
+bi_modal_split,27000,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,0.0 <= good < 1.0  AND  lossless >= 1.0  AND  AutoAltRef >= 1.0,0.0,1.0,1.0,1.0,36
+tri_modal_split,27000,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,AutoAltRef >= 1.0  AND  lossless >= 1.0  AND  0.0 <= good < 1.0  AND  TileColumns >= 1.5,1.0,0.8,1.0,0.6666666666666666,36
+power_law,27000,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,AutoAltRef >= 1.0  AND  0.0 <= good < 1.0  AND  lossless >= 1.0  AND  cpuUsed >= 6.0,2.0,0.5714285714285715,1.0,0.4,36
+normal,27000,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= realtime < 1.0  AND  FrameBoost >= 1.0  AND  AutoAltRef >= 1.0  AND  900.0 <= bitRate < 1500.0,2.0,0.5714285714285715,1.0,0.4,37
+uniform,27000,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,AutoAltRef >= 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= realtime < 1.0  AND  Threads < 6.0,1.0,0.5714285714285715,1.0,0.4,37
+bi_modal_split,27000,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= realtime < 1.0  AND  AutoAltRef >= 1.0  AND  FrameBoost >= 1.0,0.0,1.0,1.0,1.0,37
+tri_modal_split,27000,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= realtime < 1.0  AND  FrameBoost >= 1.0  AND  AutoAltRef >= 1.0  AND  cpuUsed < 8.0,1.0,0.888888888888889,1.0,0.8,37
+power_law,27000,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,AutoAltRef >= 1.0  AND  FrameBoost >= 1.0  AND  TileColumns < 4.5,4.0,0.5714285714285715,0.5,0.6666666666666666,37
+normal,27000,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= realtime < 1.0  AND  AutoAltRef >= 1.0  AND  FrameBoost >= 1.0  AND  2.0 <= cpuUsed < 8.0,4.0,0.7499999999999999,1.0,0.6,38
+uniform,27000,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= realtime < 1.0  AND  FrameBoost >= 1.0,4.0,0.6666666666666666,0.5,1.0,38
+bi_modal_split,27000,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= realtime < 1.0  AND  AutoAltRef >= 1.0  AND  FrameBoost >= 1.0  AND  TileColumns >= 1.5,0.0,0.8,1.0,0.6666666666666666,38
+tri_modal_split,27000,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= realtime < 1.0  AND  AutoAltRef >= 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= cyclicRefresh < 1.0,2.0,0.8571428571428571,1.0,0.75,38
+power_law,27000,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= realtime < 1.0  AND  AutoAltRef >= 1.0  AND  FrameBoost >= 1.0  AND  lagInFrames < 4.0,2.0,0.5,1.0,0.3333333333333333,38
+normal,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,FrameBoost >= 1.0  AND  lossless >= 1.0  AND  0.0 <= good < 1.0  AND  0.0 <= AutoAltRef < 1.0,4.0,0.6666666666666666,1.0,0.5,39
+uniform,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  lossless >= 1.0  AND  FrameBoost >= 1.0,3.0,1.0,1.0,1.0,39
+bi_modal_split,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  FrameBoost >= 1.0  AND  lossless >= 1.0  AND  0.0 <= cyclicRefresh < 1.0,0.0,0.8571428571428571,1.0,0.75,39
+tri_modal_split,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  lossless >= 1.0  AND  FrameBoost >= 1.0  AND  lagInFrames < 12.0,0.0,0.8,1.0,0.6666666666666666,39
+power_law,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,lossless >= 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= good < 1.0  AND  6.0 <= Threads < 10.0,1.0,0.5714285714285715,1.0,0.4,39
+normal,27000,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,FrameBoost >= 1.0  AND  0.0 <= realtime < 1.0  AND  AutoAltRef >= 1.0  AND  cpuUsed >= 4.0,3.0,0.7499999999999999,1.0,0.6,3
+uniform,27000,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,AutoAltRef >= 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= cyclicRefresh < 1.0  AND  0.0 <= realtime < 1.0,2.0,0.8571428571428571,1.0,0.75,3
+bi_modal_split,27000,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= realtime < 1.0  AND  AutoAltRef >= 1.0  AND  FrameBoost >= 1.0,0.0,1.0,1.0,1.0,3
+tri_modal_split,27000,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= realtime < 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= off < 1.0  AND  AutoAltRef >= 1.0,1.0,0.8571428571428571,1.0,0.75,3
+power_law,27000,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,AutoAltRef >= 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= realtime < 1.0  AND  lossless >= 1.0,3.0,0.6666666666666666,1.0,0.5,3
+normal,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  lossless >= 1.0  AND  FrameBoost >= 1.0  AND  4.0 <= cpuUsed < 8.0,0.0,0.5714285714285715,1.0,0.4,40
+uniform,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  FrameBoost >= 1.0  AND  lossless >= 1.0  AND  Threads < 6.0,0.0,0.5714285714285715,1.0,0.4,40
+bi_modal_split,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  lossless >= 1.0  AND  0.0 <= variance < 1.0  AND  FrameBoost >= 1.0,0.0,0.8571428571428571,1.0,0.75,40
+tri_modal_split,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  lossless >= 1.0  AND  FrameBoost >= 1.0  AND  cpuUsed >= 6.0,1.0,0.5714285714285715,1.0,0.4,40
+power_law,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,lossless >= 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= good < 1.0  AND  0.0 <= variableBitrate < 0.5,3.0,0.8,1.0,0.6666666666666666,40
+normal,27000,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= realtime < 1.0  AND  AutoAltRef >= 1.0  AND  FrameBoost >= 1.0  AND  Threads < 6.0,0.0,0.5714285714285715,1.0,0.4,41
+uniform,27000,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,AutoAltRef >= 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= cyclicRefresh < 1.0,4.0,0.6,0.5,0.75,41
+bi_modal_split,27000,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= realtime < 1.0  AND  FrameBoost >= 1.0  AND  AutoAltRef >= 1.0,4.0,1.0,1.0,1.0,41
+tri_modal_split,27000,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= realtime < 1.0  AND  FrameBoost >= 1.0  AND  AutoAltRef >= 1.0  AND  0.0 <= off < 1.0,1.0,0.8571428571428571,1.0,0.75,41
+power_law,27000,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,FrameBoost >= 1.0  AND  0.0 <= realtime < 1.0  AND  AutoAltRef >= 1.0  AND  Threads < 8.0,3.0,0.7499999999999999,1.0,0.6,41
+normal,27000,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,AutoAltRef >= 1.0  AND  0.0 <= realtime < 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= variance < 1.0,2.0,0.8571428571428571,1.0,0.75,42
+uniform,27000,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= realtime < 1.0  AND  AutoAltRef >= 1.0  AND  FrameBoost >= 1.0  AND  Threads < 6.0,0.0,0.5714285714285715,1.0,0.4,42
+bi_modal_split,27000,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= realtime < 1.0  AND  FrameBoost >= 1.0  AND  AutoAltRef >= 1.0  AND  lossless >= 1.0,1.0,0.6666666666666666,1.0,0.5,42
+tri_modal_split,27000,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= realtime < 1.0  AND  AutoAltRef >= 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= constrainedQuality < 0.5,0.0,0.8,1.0,0.6666666666666666,42
+power_law,27000,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= realtime < 1.0  AND  FrameBoost >= 1.0  AND  AutoAltRef >= 1.0  AND  Threads >= 6.0,4.0,0.7499999999999999,1.0,0.6,42
+normal,27000,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  FrameBoost >= 1.0  AND  AutoAltRef >= 1.0  AND  Threads < 8.0,3.0,0.7499999999999999,1.0,0.6,43
+uniform,27000,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  AutoAltRef >= 1.0  AND  FrameBoost >= 1.0  AND  lossless >= 1.0,0.0,0.6666666666666666,1.0,0.5,43
+bi_modal_split,27000,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  FrameBoost >= 1.0  AND  2.0 <= cpuUsed < 8.0  AND  AutoAltRef >= 1.0,4.0,0.7499999999999999,1.0,0.6,43
+tri_modal_split,27000,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,AutoAltRef >= 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= good < 1.0  AND  TileColumns >= 1.5,1.0,0.8,1.0,0.6666666666666666,43
+power_law,27000,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,FrameBoost >= 1.0  AND  AutoAltRef >= 1.0  AND  0.0 <= good < 1.0  AND  0.0 <= complexity < 1.0,4.0,0.8571428571428571,1.0,0.75,43
+normal,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  lossless >= 1.0  AND  FrameBoost >= 1.0  AND  6.0 <= Threads < 10.0,2.0,0.5714285714285715,1.0,0.4,44
+uniform,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  lossless >= 1.0  AND  0.0 <= complexity < 1.0  AND  FrameBoost >= 1.0,0.0,0.8571428571428571,1.0,0.75,44
+bi_modal_split,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  lossless >= 1.0  AND  FrameBoost >= 1.0,0.0,1.0,1.0,1.0,44
+tri_modal_split,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,lossless >= 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= good < 1.0,2.0,1.0,1.0,1.0,44
+power_law,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= off < 1.0  AND  bitRate < 1500.0,4.0,0.5454545454545454,0.5,0.6,44
+normal,27000,good = 1 AND lossless = 1 AND FrameBoost = 1,lossless >= 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= realtime < 1.0  AND  0.0 <= off < 1.0,4.0,0.8571428571428571,1.0,0.75,45
+uniform,27000,good = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= realtime < 1.0  AND  lossless >= 1.0  AND  0.0 <= complexity < 1.0,4.0,0.6,0.5,0.75,45
+bi_modal_split,27000,good = 1 AND lossless = 1 AND FrameBoost = 1,lossless >= 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= realtime < 1.0,2.0,1.0,1.0,1.0,45
+tri_modal_split,27000,good = 1 AND lossless = 1 AND FrameBoost = 1,lossless >= 1.0  AND  FrameBoost >= 1.0  AND  bitRate < 1200.0  AND  0.0 <= realtime < 1.0,0.0,0.7499999999999999,1.0,0.6,45
+power_law,27000,good = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= realtime < 1.0  AND  lossless >= 1.0  AND  4.0 <= cpuUsed < 8.0  AND  FrameBoost >= 1.0,1.0,0.5714285714285715,1.0,0.4,45
+normal,27000,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= realtime < 1.0  AND  AutoAltRef >= 1.0  AND  cpuUsed < 8.0,4.0,0.6153846153846154,0.5,0.8,46
+uniform,27000,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,AutoAltRef >= 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= realtime < 1.0  AND  0.0 <= variableBitrate < 0.5,1.0,0.8,1.0,0.6666666666666666,46
+bi_modal_split,27000,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= realtime < 1.0  AND  AutoAltRef >= 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= variance < 1.0,0.0,0.8571428571428571,1.0,0.75,46
+tri_modal_split,27000,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= realtime < 1.0  AND  0.0 <= complexity < 1.0  AND  AutoAltRef >= 1.0  AND  FrameBoost >= 1.0,2.0,0.8571428571428571,1.0,0.75,46
+power_law,27000,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,AutoAltRef >= 1.0  AND  0.0 <= realtime < 1.0  AND  FrameBoost >= 1.0  AND  TileColumns >= 1.5,4.0,0.8,1.0,0.6666666666666666,46
+normal,27000,good = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= realtime < 1.0  AND  FrameBoost >= 1.0  AND  lossless >= 1.0  AND  600.0 <= bitRate < 1500.0,1.0,0.7499999999999999,1.0,0.6,47
+uniform,27000,good = 1 AND lossless = 1 AND FrameBoost = 1,lossless >= 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= realtime < 1.0  AND  bitRate < 1200.0,0.0,0.7499999999999999,1.0,0.6,47
+bi_modal_split,27000,good = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= realtime < 1.0  AND  lossless >= 1.0  AND  600.0 <= bitRate < 1500.0  AND  FrameBoost >= 1.0,1.0,0.7499999999999999,1.0,0.6,47
+tri_modal_split,27000,good = 1 AND lossless = 1 AND FrameBoost = 1,lossless >= 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= realtime < 1.0,3.0,1.0,1.0,1.0,47
+power_law,27000,good = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= realtime < 1.0  AND  FrameBoost >= 1.0  AND  8.0 <= lagInFrames < 12.0  AND  lossless >= 1.0,1.0,0.5,1.0,0.3333333333333333,47
+normal,27000,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,lossless >= 1.0  AND  FrameBoost >= 1.0  AND  AutoAltRef >= 1.0  AND  1.5 <= TileColumns < 4.5,3.0,0.5,1.0,0.3333333333333333,48
+uniform,27000,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,lossless >= 1.0  AND  FrameBoost >= 1.0  AND  AutoAltRef >= 1.0  AND  2.0 <= cpuUsed < 6.0,0.0,0.5714285714285715,1.0,0.4,48
+bi_modal_split,27000,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,AutoAltRef >= 1.0  AND  FrameBoost >= 1.0  AND  lossless >= 1.0,0.0,1.0,1.0,1.0,48
+tri_modal_split,27000,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,AutoAltRef >= 1.0  AND  lossless >= 1.0  AND  0.0 <= complexity < 1.0,4.0,0.6,0.5,0.75,48
+power_law,27000,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,lossless >= 1.0  AND  FrameBoost >= 1.0  AND  AutoAltRef >= 1.0  AND  6.0 <= Threads < 10.0,4.0,0.5714285714285715,1.0,0.4,48
+normal,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,lossless >= 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= good < 1.0  AND  AutoAltRef >= 1.0,1.0,0.6666666666666666,1.0,0.5,49
+uniform,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  lossless >= 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= off < 1.0,0.0,0.8571428571428571,1.0,0.75,49
+bi_modal_split,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  lossless >= 1.0  AND  FrameBoost >= 1.0  AND  bitRate >= 600.0,3.0,0.888888888888889,1.0,0.8,49
+tri_modal_split,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  lossless >= 1.0  AND  FrameBoost >= 1.0  AND  bitRate >= 900.0,1.0,0.7499999999999999,1.0,0.6,49
+power_law,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,lossless >= 1.0  AND  FrameBoost >= 1.0  AND  600.0 <= bitRate < 1200.0  AND  0.0 <= good < 1.0,3.0,0.5714285714285715,1.0,0.4,49
+normal,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,lossless >= 1.0  AND  FrameBoost >= 1.0  AND  cpuUsed >= 4.0  AND  0.0 <= good < 1.0,3.0,0.7499999999999999,1.0,0.6,4
+uniform,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,lossless >= 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= good < 1.0  AND  0.0 <= AutoAltRef < 1.0,1.0,0.6666666666666666,1.0,0.5,4
+bi_modal_split,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,lossless >= 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= good < 1.0  AND  Threads >= 4.0,4.0,0.888888888888889,1.0,0.8,4
+tri_modal_split,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,lossless >= 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= good < 1.0,2.0,1.0,1.0,1.0,4
+power_law,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,lossless >= 1.0  AND  bitRate >= 600.0  AND  0.0 <= good < 1.0  AND  0.0 <= off < 1.0,4.0,0.5454545454545454,0.5,0.6,4
+normal,27000,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  FrameBoost >= 1.0  AND  AutoAltRef >= 1.0  AND  constantBitrate >= 0.5,2.0,0.5,1.0,0.3333333333333333,50
+uniform,27000,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  FrameBoost >= 1.0  AND  AutoAltRef >= 1.0  AND  0.0 <= cyclicRefresh < 1.0,1.0,0.8571428571428571,1.0,0.75,50
+bi_modal_split,27000,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  FrameBoost >= 1.0  AND  AutoAltRef >= 1.0  AND  cpuUsed >= 2.0,0.0,0.888888888888889,1.0,0.8,50
+tri_modal_split,27000,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  FrameBoost >= 1.0  AND  AutoAltRef >= 1.0  AND  0.0 <= off < 1.0,1.0,0.8571428571428571,1.0,0.75,50
+power_law,27000,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,FrameBoost >= 1.0  AND  AutoAltRef >= 1.0  AND  0.0 <= good < 1.0  AND  TileColumns < 1.5,2.0,0.5,1.0,0.3333333333333333,50
+normal,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,lossless >= 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= good < 1.0  AND  cpuUsed < 4.0,1.0,0.5714285714285715,1.0,0.4,51
+uniform,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= off < 1.0,4.0,0.6,0.5,0.75,51
+bi_modal_split,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  lossless >= 1.0  AND  FrameBoost >= 1.0,0.0,1.0,1.0,1.0,51
+tri_modal_split,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  FrameBoost >= 1.0  AND  lossless >= 1.0  AND  0.0 <= constantBitrate < 0.5,0.0,0.8,1.0,0.6666666666666666,51
+power_law,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,FrameBoost >= 1.0  AND  0.0 <= good < 1.0  AND  lossless >= 1.0  AND  Threads >= 8.0,3.0,0.5714285714285715,1.0,0.4,51
+normal,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  FrameBoost >= 1.0  AND  lossless >= 1.0  AND  lagInFrames < 12.0,4.0,0.8,1.0,0.6666666666666666,52
+uniform,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,lossless >= 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= good < 1.0  AND  cpuUsed >= 2.0,3.0,0.888888888888889,1.0,0.8,52
+bi_modal_split,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  lossless >= 1.0  AND  FrameBoost >= 1.0,1.0,1.0,1.0,1.0,52
+tri_modal_split,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,lossless >= 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= good < 1.0,4.0,1.0,1.0,1.0,52
+power_law,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  lossless >= 1.0  AND  2.0 <= cpuUsed < 6.0  AND  FrameBoost >= 1.0,4.0,0.5714285714285715,1.0,0.4,52
+normal,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  lossless >= 1.0  AND  FrameBoost >= 1.0  AND  variableBitrate >= 0.5,2.0,0.5,1.0,0.3333333333333333,53
+uniform,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,lossless >= 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= good < 1.0,3.0,1.0,1.0,1.0,53
+bi_modal_split,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  lossless >= 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= constrainedQuality < 0.5,0.0,0.8,1.0,0.6666666666666666,53
+tri_modal_split,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,lossless >= 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= good < 1.0  AND  0.0 <= AutoAltRef < 1.0,1.0,0.6666666666666666,1.0,0.5,53
+power_law,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  FrameBoost >= 1.0  AND  lagInFrames < 12.0  AND  lossless >= 1.0,4.0,0.8,1.0,0.6666666666666666,53
+normal,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  FrameBoost >= 1.0  AND  lossless >= 1.0  AND  cpuUsed >= 6.0,1.0,0.5714285714285715,1.0,0.4,54
+uniform,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  FrameBoost >= 1.0  AND  lossless >= 1.0  AND  4.0 <= Threads < 8.0,0.0,0.5714285714285715,1.0,0.4,54
+bi_modal_split,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  lossless >= 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= constantBitrate < 0.5,0.0,0.8,1.0,0.6666666666666666,54
+tri_modal_split,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,lossless >= 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= good < 1.0  AND  0.0 <= constantBitrate < 0.5,4.0,0.8,1.0,0.6666666666666666,54
+power_law,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  lossless >= 1.0  AND  FrameBoost >= 1.0  AND  Threads >= 6.0,4.0,0.7499999999999999,1.0,0.6,54
+normal,27000,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  AutoAltRef >= 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= variableBitrate < 0.5,3.0,0.8,1.0,0.6666666666666666,55
+uniform,27000,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  AutoAltRef >= 1.0  AND  FrameBoost >= 1.0  AND  600.0 <= bitRate < 1500.0,2.0,0.7499999999999999,1.0,0.6,55
+bi_modal_split,27000,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  FrameBoost >= 1.0  AND  AutoAltRef >= 1.0,3.0,1.0,1.0,1.0,55
+tri_modal_split,27000,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  FrameBoost >= 1.0  AND  AutoAltRef >= 1.0,2.0,1.0,1.0,1.0,55
+power_law,27000,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  AutoAltRef >= 1.0  AND  cpuUsed < 4.0  AND  FrameBoost >= 1.0,3.0,0.5714285714285715,1.0,0.4,55
+normal,27000,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,AutoAltRef >= 1.0  AND  lossless >= 1.0  AND  FrameBoost >= 1.0  AND  6.0 <= Threads < 8.0,0.0,0.3333333333333333,1.0,0.2,56
+uniform,27000,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,FrameBoost >= 1.0  AND  AutoAltRef >= 1.0  AND  lossless >= 1.0  AND  cpuUsed >= 4.0,2.0,0.7499999999999999,1.0,0.6,56
+bi_modal_split,27000,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,AutoAltRef >= 1.0  AND  FrameBoost >= 1.0  AND  lossless >= 1.0,0.0,1.0,1.0,1.0,56
+tri_modal_split,27000,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,lossless >= 1.0  AND  FrameBoost >= 1.0  AND  AutoAltRef >= 1.0,1.0,1.0,1.0,1.0,56
+power_law,27000,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,AutoAltRef >= 1.0  AND  FrameBoost >= 1.0  AND  lossless >= 1.0  AND  TileColumns >= 4.5,2.0,0.5,1.0,0.3333333333333333,56
+normal,27000,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,AutoAltRef >= 1.0  AND  FrameBoost >= 1.0  AND  bitRate >= 600.0  AND  0.0 <= realtime < 1.0,4.0,0.888888888888889,1.0,0.8,57
+uniform,27000,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= realtime < 1.0  AND  FrameBoost >= 1.0  AND  AutoAltRef >= 1.0  AND  0.0 <= variance < 1.0,2.0,0.8571428571428571,1.0,0.75,57
+bi_modal_split,27000,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= realtime < 1.0  AND  FrameBoost >= 1.0  AND  AutoAltRef >= 1.0,0.0,1.0,1.0,1.0,57
+tri_modal_split,27000,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,AutoAltRef >= 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= realtime < 1.0  AND  bitRate >= 600.0,3.0,0.888888888888889,1.0,0.8,57
+power_law,27000,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,AutoAltRef >= 1.0  AND  FrameBoost >= 1.0  AND  lossless >= 1.0  AND  0.0 <= realtime < 1.0,4.0,0.6666666666666666,1.0,0.5,57
+normal,27000,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,AutoAltRef >= 1.0  AND  lossless >= 1.0  AND  0.0 <= good < 1.0  AND  cpuUsed < 4.0,1.0,0.5714285714285715,1.0,0.4,58
+uniform,27000,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,0.0 <= good < 1.0  AND  AutoAltRef >= 1.0  AND  lossless >= 1.0  AND  constantBitrate >= 0.5,1.0,0.5,1.0,0.3333333333333333,58
+bi_modal_split,27000,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,AutoAltRef >= 1.0  AND  lossless >= 1.0  AND  bitRate < 1200.0  AND  0.0 <= good < 1.0,2.0,0.7499999999999999,1.0,0.6,58
+tri_modal_split,27000,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,AutoAltRef >= 1.0  AND  lossless >= 1.0  AND  0.0 <= good < 1.0  AND  bitRate < 900.0,0.0,0.5714285714285715,1.0,0.4,58
+power_law,27000,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,0.0 <= good < 1.0  AND  AutoAltRef >= 1.0  AND  lossless >= 1.0  AND  2.0 <= cpuUsed < 8.0,3.0,0.7499999999999999,1.0,0.6,58
+normal,27000,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,lossless >= 1.0  AND  FrameBoost >= 1.0  AND  AutoAltRef >= 1.0  AND  lagInFrames < 12.0,4.0,0.8,1.0,0.6666666666666666,59
+uniform,27000,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,AutoAltRef >= 1.0  AND  lossless >= 1.0  AND  Threads >= 6.0  AND  FrameBoost >= 1.0,0.0,0.7499999999999999,1.0,0.6,59
+bi_modal_split,27000,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,AutoAltRef >= 1.0  AND  lossless >= 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= constantBitrate < 0.5,4.0,0.8,1.0,0.6666666666666666,59
+tri_modal_split,27000,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,AutoAltRef >= 1.0  AND  FrameBoost >= 1.0  AND  bitRate < 1200.0  AND  lossless >= 1.0,1.0,0.7499999999999999,1.0,0.6,59
+power_law,27000,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,lossless >= 1.0  AND  FrameBoost >= 1.0  AND  AutoAltRef >= 1.0  AND  0.0 <= constrainedQuality < 0.5,3.0,0.8,1.0,0.6666666666666666,59
+normal,27000,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= realtime < 1.0  AND  AutoAltRef >= 1.0  AND  FrameBoost >= 1.0  AND  lossless >= 1.0,4.0,0.6666666666666666,1.0,0.5,5
+uniform,27000,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= realtime < 1.0  AND  FrameBoost >= 1.0  AND  AutoAltRef >= 1.0  AND  0.0 <= variance < 1.0,1.0,0.8571428571428571,1.0,0.75,5
+bi_modal_split,27000,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,AutoAltRef >= 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= realtime < 1.0,1.0,1.0,1.0,1.0,5
+tri_modal_split,27000,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= realtime < 1.0  AND  AutoAltRef >= 1.0  AND  FrameBoost >= 1.0  AND  TileColumns < 4.5,0.0,0.8,1.0,0.6666666666666666,5
+power_law,27000,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,AutoAltRef >= 1.0  AND  FrameBoost >= 1.0  AND  TileColumns >= 1.5  AND  cpuUsed >= 2.0,4.0,0.5161290322580646,0.5,0.5333333333333333,5
+normal,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,lossless >= 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= good < 1.0  AND  600.0 <= bitRate < 1500.0,1.0,0.7499999999999999,1.0,0.6,60
+uniform,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  lossless >= 1.0  AND  FrameBoost >= 1.0  AND  bitRate < 1200.0,2.0,0.7499999999999999,1.0,0.6,60
+bi_modal_split,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,lossless >= 1.0  AND  0.0 <= good < 1.0  AND  FrameBoost >= 1.0,1.0,1.0,1.0,1.0,60
+tri_modal_split,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  lossless >= 1.0  AND  FrameBoost >= 1.0  AND  2.0 <= cpuUsed < 6.0,0.0,0.5714285714285715,1.0,0.4,60
+power_law,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  FrameBoost >= 1.0  AND  lossless >= 1.0  AND  4.0 <= cpuUsed < 8.0,1.0,0.5714285714285715,1.0,0.4,60
+normal,27000,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,AutoAltRef >= 1.0  AND  FrameBoost >= 1.0  AND  TileColumns < 4.5  AND  0.0 <= good < 1.0,3.0,0.8,1.0,0.6666666666666666,61
+uniform,27000,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,AutoAltRef >= 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= good < 1.0  AND  lagInFrames < 12.0,1.0,0.8,1.0,0.6666666666666666,61
+bi_modal_split,27000,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,FrameBoost >= 1.0  AND  AutoAltRef >= 1.0  AND  0.0 <= good < 1.0  AND  0.0 <= variableBitrate < 0.5,1.0,0.8,1.0,0.6666666666666666,61
+tri_modal_split,27000,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  FrameBoost >= 1.0,3.0,0.6666666666666666,0.5,1.0,61
+power_law,27000,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,FrameBoost >= 1.0  AND  AutoAltRef >= 1.0  AND  0.0 <= good < 1.0  AND  0.0 <= lossless < 1.0,3.0,0.6666666666666666,1.0,0.5,61
+normal,27000,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,AutoAltRef >= 1.0  AND  lossless >= 1.0  AND  lagInFrames >= 4.0  AND  0.0 <= good < 1.0,2.0,0.8,1.0,0.6666666666666666,62
+uniform,27000,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,0.0 <= good < 1.0  AND  lossless >= 1.0  AND  AutoAltRef >= 1.0  AND  cpuUsed >= 6.0,0.0,0.5714285714285715,1.0,0.4,62
+bi_modal_split,27000,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,AutoAltRef >= 1.0  AND  lossless >= 1.0  AND  0.0 <= good < 1.0,0.0,1.0,1.0,1.0,62
+tri_modal_split,27000,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,AutoAltRef >= 1.0  AND  lossless >= 1.0  AND  0.0 <= good < 1.0  AND  0.0 <= constrainedQuality < 0.5,1.0,0.8,1.0,0.6666666666666666,62
+power_law,27000,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,lossless >= 1.0  AND  AutoAltRef >= 1.0  AND  0.0 <= good < 1.0  AND  600.0 <= bitRate < 1200.0,3.0,0.5714285714285715,1.0,0.4,62
+normal,27000,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= realtime < 1.0  AND  AutoAltRef >= 1.0  AND  FrameBoost >= 1.0  AND  constantBitrate >= 0.5,1.0,0.5,1.0,0.3333333333333333,63
+uniform,27000,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,AutoAltRef >= 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= realtime < 1.0  AND  2.0 <= cpuUsed < 6.0,0.0,0.5714285714285715,1.0,0.4,63
+bi_modal_split,27000,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= realtime < 1.0  AND  AutoAltRef >= 1.0  AND  FrameBoost >= 1.0,0.0,1.0,1.0,1.0,63
+tri_modal_split,27000,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,AutoAltRef >= 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= realtime < 1.0  AND  0.0 <= constantBitrate < 0.5,1.0,0.8,1.0,0.6666666666666666,63
+power_law,27000,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,AutoAltRef >= 1.0  AND  FrameBoost >= 1.0  AND  cpuUsed < 6.0  AND  0.0 <= realtime < 1.0,4.0,0.7499999999999999,1.0,0.6,63
+normal,27000,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,0.0 <= good < 1.0  AND  AutoAltRef >= 1.0  AND  lossless >= 1.0  AND  FrameBoost >= 1.0,3.0,0.6666666666666666,1.0,0.5,64
+uniform,27000,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,0.0 <= good < 1.0  AND  lossless >= 1.0  AND  AutoAltRef >= 1.0  AND  0.0 <= constantBitrate < 0.5,3.0,0.8,1.0,0.6666666666666666,64
+bi_modal_split,27000,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,AutoAltRef >= 1.0  AND  lossless >= 1.0  AND  0.0 <= good < 1.0,3.0,1.0,1.0,1.0,64
+tri_modal_split,27000,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,0.0 <= good < 1.0  AND  AutoAltRef >= 1.0  AND  lossless >= 1.0  AND  lagInFrames >= 4.0,1.0,0.8,1.0,0.6666666666666666,64
+power_law,27000,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,AutoAltRef >= 1.0  AND  lossless >= 1.0  AND  0.0 <= good < 1.0  AND  cpuUsed < 6.0,3.0,0.7499999999999999,1.0,0.6,64
+normal,27000,good = 1 AND lossless = 1 AND FrameBoost = 1,lossless >= 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= realtime < 1.0  AND  AutoAltRef >= 1.0,1.0,0.6666666666666666,1.0,0.5,65
+uniform,27000,good = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= realtime < 1.0  AND  FrameBoost >= 1.0  AND  lossless >= 1.0  AND  4.0 <= Threads < 8.0,1.0,0.5714285714285715,1.0,0.4,65
+bi_modal_split,27000,good = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= realtime < 1.0  AND  FrameBoost >= 1.0  AND  lossless >= 1.0,2.0,1.0,1.0,1.0,65
+tri_modal_split,27000,good = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= realtime < 1.0  AND  FrameBoost >= 1.0  AND  lossless >= 1.0  AND  0.0 <= complexity < 1.0,1.0,0.8571428571428571,1.0,0.75,65
+power_law,27000,good = 1 AND lossless = 1 AND FrameBoost = 1,lossless >= 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= realtime < 1.0  AND  bitRate < 900.0,1.0,0.5714285714285715,1.0,0.4,65
+normal,27000,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,lossless >= 1.0  AND  AutoAltRef >= 1.0  AND  FrameBoost >= 1.0  AND  Threads < 8.0,1.0,0.7499999999999999,1.0,0.6,66
+uniform,27000,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,lossless >= 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= variance < 1.0,3.0,0.6,0.5,0.75,66
+bi_modal_split,27000,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,AutoAltRef >= 1.0  AND  FrameBoost >= 1.0  AND  lossless >= 1.0  AND  0.0 <= complexity < 1.0,0.0,0.8571428571428571,1.0,0.75,66
+tri_modal_split,27000,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,AutoAltRef >= 1.0  AND  0.0 <= variance < 1.0  AND  lossless >= 1.0  AND  FrameBoost >= 1.0,0.0,0.8571428571428571,1.0,0.75,66
+power_law,27000,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,lossless >= 1.0  AND  AutoAltRef >= 1.0  AND  FrameBoost >= 1.0  AND  TileColumns < 1.5,2.0,0.5,1.0,0.3333333333333333,66
+normal,27000,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  FrameBoost >= 1.0  AND  AutoAltRef >= 1.0  AND  lossless >= 1.0,3.0,0.6666666666666666,1.0,0.5,67
+uniform,27000,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,AutoAltRef >= 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= constantBitrate < 1.0  AND  0.0 <= good < 1.0,0.0,0.8,1.0,0.6666666666666666,67
+bi_modal_split,27000,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  FrameBoost >= 1.0  AND  AutoAltRef >= 1.0,0.0,1.0,1.0,1.0,67
+tri_modal_split,27000,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,AutoAltRef >= 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= good < 1.0  AND  bitRate >= 600.0,1.0,0.888888888888889,1.0,0.8,67
+power_law,27000,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,FrameBoost >= 1.0  AND  AutoAltRef >= 1.0  AND  0.0 <= good < 1.0  AND  2.0 <= cpuUsed < 6.0,3.0,0.5714285714285715,1.0,0.4,67
+normal,27000,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,0.0 <= good < 1.0  AND  lossless >= 1.0  AND  AutoAltRef >= 1.0  AND  cpuUsed >= 2.0,1.0,0.888888888888889,1.0,0.8,68
+uniform,27000,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,0.0 <= good < 1.0  AND  lossless >= 1.0  AND  AutoAltRef >= 1.0  AND  0.0 <= off < 1.0,1.0,0.8571428571428571,1.0,0.75,68
+bi_modal_split,27000,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,0.0 <= good < 1.0  AND  lossless >= 1.0  AND  AutoAltRef >= 1.0,0.0,1.0,1.0,1.0,68
+tri_modal_split,27000,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,AutoAltRef >= 1.0  AND  lossless >= 1.0  AND  0.0 <= variance < 1.0,3.0,0.6,0.5,0.75,68
+power_law,27000,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,AutoAltRef >= 1.0  AND  lossless >= 1.0  AND  0.0 <= good < 1.0  AND  2.0 <= cpuUsed < 6.0,1.0,0.5714285714285715,1.0,0.4,68
+normal,27000,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= realtime < 1.0  AND  FrameBoost >= 1.0  AND  AutoAltRef >= 1.0,4.0,1.0,1.0,1.0,69
+uniform,27000,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= realtime < 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= off < 1.0,4.0,0.6,0.5,0.75,69
+bi_modal_split,27000,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,FrameBoost >= 1.0  AND  0.0 <= realtime < 1.0  AND  AutoAltRef >= 1.0  AND  Threads >= 4.0,4.0,0.888888888888889,1.0,0.8,69
+tri_modal_split,27000,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= realtime < 1.0  AND  AutoAltRef >= 1.0  AND  0.0 <= constrainedQuality < 1.0  AND  FrameBoost >= 1.0,1.0,0.8,1.0,0.6666666666666666,69
+power_law,27000,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,FrameBoost >= 1.0  AND  AutoAltRef >= 1.0  AND  0.0 <= realtime < 1.0  AND  600.0 <= bitRate < 1200.0,3.0,0.5714285714285715,1.0,0.4,69
+normal,27000,good = 1 AND AutoAltRef = 1 AND lossless = 1,lossless >= 1.0  AND  0.0 <= realtime < 1.0  AND  AutoAltRef >= 1.0  AND  0.0 <= constantBitrate < 0.5,4.0,0.8,1.0,0.6666666666666666,6
+uniform,27000,good = 1 AND AutoAltRef = 1 AND lossless = 1,AutoAltRef >= 1.0  AND  lossless >= 1.0  AND  0.0 <= realtime < 1.0  AND  0.0 <= variableBitrate < 0.5,1.0,0.8,1.0,0.6666666666666666,6
+bi_modal_split,27000,good = 1 AND AutoAltRef = 1 AND lossless = 1,0.0 <= realtime < 1.0  AND  AutoAltRef >= 1.0  AND  lossless >= 1.0,0.0,1.0,1.0,1.0,6
+tri_modal_split,27000,good = 1 AND AutoAltRef = 1 AND lossless = 1,AutoAltRef >= 1.0  AND  lossless >= 1.0  AND  0.0 <= realtime < 1.0,2.0,1.0,1.0,1.0,6
+power_law,27000,good = 1 AND AutoAltRef = 1 AND lossless = 1,AutoAltRef >= 1.0  AND  lossless >= 1.0  AND  0.0 <= realtime < 1.0  AND  0.0 <= FrameBoost < 1.0,2.0,0.6666666666666666,1.0,0.5,6
+normal,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  FrameBoost >= 1.0  AND  lossless >= 1.0  AND  Threads < 6.0,3.0,0.5714285714285715,1.0,0.4,70
+uniform,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,lossless >= 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= good < 1.0  AND  cpuUsed >= 6.0,1.0,0.5714285714285715,1.0,0.4,70
+bi_modal_split,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,lossless >= 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= good < 1.0  AND  bitRate >= 1200.0,1.0,0.5714285714285715,1.0,0.4,70
+tri_modal_split,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  FrameBoost >= 1.0  AND  lossless >= 1.0  AND  bitRate < 1200.0,1.0,0.7499999999999999,1.0,0.6,70
+power_law,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  FrameBoost >= 1.0  AND  lossless >= 1.0  AND  0.0 <= constrainedQuality < 0.5,4.0,0.8,1.0,0.6666666666666666,70
+normal,27000,good = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= realtime < 1.0  AND  lossless >= 1.0  AND  FrameBoost >= 1.0  AND  6.0 <= Threads < 10.0,0.0,0.5714285714285715,1.0,0.4,71
+uniform,27000,good = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= realtime < 1.0  AND  lossless >= 1.0  AND  FrameBoost >= 1.0  AND  cpuUsed >= 4.0,0.0,0.7499999999999999,1.0,0.6,71
+bi_modal_split,27000,good = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= realtime < 1.0  AND  FrameBoost >= 1.0  AND  lossless >= 1.0,0.0,1.0,1.0,1.0,71
+tri_modal_split,27000,good = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= realtime < 1.0  AND  FrameBoost >= 1.0  AND  lossless >= 1.0  AND  0.0 <= complexity < 1.0,2.0,0.8571428571428571,1.0,0.75,71
+power_law,27000,good = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= realtime < 1.0  AND  FrameBoost >= 1.0  AND  lossless >= 1.0  AND  Threads >= 4.0,4.0,0.888888888888889,1.0,0.8,71
+normal,27000,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,AutoAltRef >= 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= variance < 1.0,4.0,0.6,0.5,0.75,72
+uniform,27000,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,FrameBoost >= 1.0  AND  lossless >= 1.0  AND  AutoAltRef >= 1.0  AND  0.0 <= cyclicRefresh < 1.0,1.0,0.8571428571428571,1.0,0.75,72
+bi_modal_split,27000,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,AutoAltRef >= 1.0  AND  lossless >= 1.0  AND  FrameBoost >= 1.0  AND  lagInFrames < 12.0,1.0,0.8,1.0,0.6666666666666666,72
+tri_modal_split,27000,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,lossless >= 1.0  AND  FrameBoost >= 1.0  AND  AutoAltRef >= 1.0  AND  TileColumns < 4.5,1.0,0.8,1.0,0.6666666666666666,72
+power_law,27000,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,lossless >= 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= off < 1.0,4.0,0.6,0.5,0.75,72
+normal,27000,good = 1 AND lossless = 1 AND FrameBoost = 1,lossless >= 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= variableBitrate < 1.0  AND  0.0 <= realtime < 1.0,3.0,0.8,1.0,0.6666666666666666,73
+uniform,27000,good = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= realtime < 1.0  AND  lossless >= 1.0  AND  FrameBoost >= 1.0  AND  bitRate >= 600.0,1.0,0.888888888888889,1.0,0.8,73
+bi_modal_split,27000,good = 1 AND lossless = 1 AND FrameBoost = 1,FrameBoost >= 1.0  AND  0.0 <= realtime < 1.0  AND  lossless >= 1.0,2.0,1.0,1.0,1.0,73
+tri_modal_split,27000,good = 1 AND lossless = 1 AND FrameBoost = 1,lossless >= 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= realtime < 1.0  AND  0.0 <= variableBitrate < 0.5,0.0,0.8,1.0,0.6666666666666666,73
+power_law,27000,good = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= realtime < 1.0  AND  lossless >= 1.0  AND  FrameBoost >= 1.0  AND  TileColumns < 1.5,3.0,0.5,1.0,0.3333333333333333,73
+normal,27000,good = 1 AND AutoAltRef = 1 AND lossless = 1,0.0 <= realtime < 1.0  AND  lossless >= 1.0  AND  AutoAltRef >= 1.0  AND  bitRate < 900.0,1.0,0.5714285714285715,1.0,0.4,74
+uniform,27000,good = 1 AND AutoAltRef = 1 AND lossless = 1,0.0 <= realtime < 1.0  AND  lossless >= 1.0  AND  AutoAltRef >= 1.0  AND  0.0 <= FrameBoost < 1.0,1.0,0.6666666666666666,1.0,0.5,74
+bi_modal_split,27000,good = 1 AND AutoAltRef = 1 AND lossless = 1,0.0 <= realtime < 1.0  AND  lossless >= 1.0  AND  AutoAltRef >= 1.0,0.0,1.0,1.0,1.0,74
+tri_modal_split,27000,good = 1 AND AutoAltRef = 1 AND lossless = 1,0.0 <= realtime < 1.0  AND  lossless >= 1.0  AND  AutoAltRef >= 1.0  AND  cpuUsed < 8.0,1.0,0.888888888888889,1.0,0.8,74
+power_law,27000,good = 1 AND AutoAltRef = 1 AND lossless = 1,AutoAltRef >= 1.0  AND  lossless >= 1.0  AND  lagInFrames < 12.0,4.0,0.5714285714285715,0.5,0.6666666666666666,74
+normal,27000,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  AutoAltRef >= 1.0  AND  FrameBoost >= 1.0  AND  bitRate < 900.0,3.0,0.5714285714285715,1.0,0.4,75
+uniform,27000,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,AutoAltRef >= 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= good < 1.0  AND  0.0 <= lossless < 1.0,0.0,0.6666666666666666,1.0,0.5,75
+bi_modal_split,27000,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  AutoAltRef >= 1.0  AND  FrameBoost >= 1.0  AND  600.0 <= bitRate < 1500.0,1.0,0.7499999999999999,1.0,0.6,75
+tri_modal_split,27000,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,AutoAltRef >= 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= variance < 1.0,4.0,0.6,0.5,0.75,75
+power_law,27000,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,AutoAltRef >= 1.0  AND  FrameBoost >= 1.0  AND  4.0 <= cpuUsed < 8.0  AND  0.0 <= good < 1.0,3.0,0.5714285714285715,1.0,0.4,75
+normal,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  FrameBoost >= 1.0  AND  lossless >= 1.0  AND  0.0 <= AutoAltRef < 1.0,3.0,0.6666666666666666,1.0,0.5,76
+uniform,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,lossless >= 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= good < 1.0,4.0,1.0,1.0,1.0,76
+bi_modal_split,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  lossless >= 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= constrainedQuality < 0.5,4.0,0.8,1.0,0.6666666666666666,76
+tri_modal_split,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,lossless >= 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= good < 1.0  AND  bitRate < 1500.0,2.0,0.888888888888889,1.0,0.8,76
+power_law,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= off < 1.0,4.0,0.6,0.5,0.75,76
+normal,27000,good = 1 AND AutoAltRef = 1 AND lossless = 1,0.0 <= realtime < 1.0  AND  lagInFrames < 12.0  AND  AutoAltRef >= 1.0  AND  bitRate >= 600.0,4.0,0.5161290322580646,0.5,0.5333333333333333,77
+uniform,27000,good = 1 AND AutoAltRef = 1 AND lossless = 1,0.0 <= realtime < 1.0  AND  AutoAltRef >= 1.0  AND  cpuUsed < 8.0  AND  bitRate >= 600.0,3.0,0.5614035087719298,0.5,0.64,77
+bi_modal_split,27000,good = 1 AND AutoAltRef = 1 AND lossless = 1,AutoAltRef >= 1.0  AND  lossless >= 1.0  AND  0.0 <= realtime < 1.0  AND  0.0 <= complexity < 1.0,0.0,0.8571428571428571,1.0,0.75,77
+tri_modal_split,27000,good = 1 AND AutoAltRef = 1 AND lossless = 1,0.0 <= realtime < 1.0  AND  lossless >= 1.0  AND  cpuUsed >= 6.0  AND  AutoAltRef >= 1.0,0.0,0.5714285714285715,1.0,0.4,77
+power_law,27000,good = 1 AND AutoAltRef = 1 AND lossless = 1,0.0 <= realtime < 1.0  AND  lossless >= 1.0  AND  AutoAltRef >= 1.0  AND  0.0 <= cyclicRefresh < 1.0,4.0,0.8571428571428571,1.0,0.75,77
+normal,27000,good = 1 AND lossless = 1 AND FrameBoost = 1,FrameBoost >= 1.0  AND  lossless >= 1.0  AND  0.0 <= realtime < 1.0  AND  variableBitrate >= 0.5,2.0,0.5,1.0,0.3333333333333333,78
+uniform,27000,good = 1 AND lossless = 1 AND FrameBoost = 1,lossless >= 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= realtime < 1.0  AND  2.0 <= cpuUsed < 6.0,1.0,0.5714285714285715,1.0,0.4,78
+bi_modal_split,27000,good = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= realtime < 1.0  AND  lossless >= 1.0  AND  FrameBoost >= 1.0,0.0,1.0,1.0,1.0,78
+tri_modal_split,27000,good = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= realtime < 1.0  AND  FrameBoost >= 1.0  AND  lossless >= 1.0  AND  lagInFrames >= 12.0,1.0,0.5,1.0,0.3333333333333333,78
+power_law,27000,good = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= realtime < 1.0  AND  lossless >= 1.0  AND  FrameBoost >= 1.0  AND  Threads < 8.0,3.0,0.7499999999999999,1.0,0.6,78
+normal,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,lossless >= 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= good < 1.0  AND  cpuUsed >= 6.0,3.0,0.5714285714285715,1.0,0.4,79
+uniform,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  FrameBoost >= 1.0  AND  lossless >= 1.0  AND  bitRate < 1500.0,2.0,0.888888888888889,1.0,0.8,79
+bi_modal_split,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,lossless >= 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= AutoAltRef < 1.0  AND  0.0 <= good < 1.0,1.0,0.6666666666666666,1.0,0.5,79
+tri_modal_split,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,lossless >= 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= good < 1.0  AND  0.0 <= constrainedQuality < 0.5,2.0,0.8,1.0,0.6666666666666666,79
+power_law,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  FrameBoost >= 1.0  AND  Threads >= 4.0  AND  0.0 <= variableBitrate < 0.5,3.0,0.5161290322580646,0.5,0.5333333333333333,79
+normal,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  FrameBoost >= 1.0  AND  lossless >= 1.0  AND  0.0 <= complexity < 1.0,1.0,0.8571428571428571,1.0,0.75,7
+uniform,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,lossless >= 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= good < 1.0  AND  0.0 <= AutoAltRef < 1.0,0.0,0.6666666666666666,1.0,0.5,7
+bi_modal_split,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  FrameBoost >= 1.0  AND  lossless >= 1.0,0.0,1.0,1.0,1.0,7
+tri_modal_split,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  lossless >= 1.0  AND  FrameBoost >= 1.0  AND  Threads >= 6.0,0.0,0.7499999999999999,1.0,0.6,7
+power_law,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  lossless >= 1.0  AND  FrameBoost >= 1.0  AND  cpuUsed >= 6.0,3.0,0.5714285714285715,1.0,0.4,7
+normal,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  lossless >= 1.0  AND  FrameBoost >= 1.0  AND  900.0 <= bitRate < 1500.0,0.0,0.5714285714285715,1.0,0.4,80
+uniform,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  lossless >= 1.0  AND  cpuUsed >= 2.0  AND  FrameBoost >= 1.0,4.0,0.888888888888889,1.0,0.8,80
+bi_modal_split,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  lossless >= 1.0  AND  FrameBoost >= 1.0  AND  TileColumns >= 1.5,1.0,0.8,1.0,0.6666666666666666,80
+tri_modal_split,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,FrameBoost >= 1.0  AND  lossless >= 1.0  AND  0.0 <= good < 1.0  AND  0.0 <= variableBitrate < 0.5,3.0,0.8,1.0,0.6666666666666666,80
+power_law,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,FrameBoost >= 1.0  AND  bitRate >= 600.0  AND  lossless >= 1.0  AND  Threads < 10.0,4.0,0.5614035087719298,0.5,0.64,80
+normal,27000,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,AutoAltRef >= 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= realtime < 1.0  AND  bitRate >= 900.0,1.0,0.7499999999999999,1.0,0.6,81
+uniform,27000,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,AutoAltRef >= 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= realtime < 1.0  AND  0.0 <= cyclicRefresh < 1.0,2.0,0.8571428571428571,1.0,0.75,81
+bi_modal_split,27000,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= realtime < 1.0  AND  FrameBoost >= 1.0  AND  AutoAltRef >= 1.0,0.0,1.0,1.0,1.0,81
+tri_modal_split,27000,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,AutoAltRef >= 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= realtime < 1.0  AND  0.0 <= lossless < 1.0,0.0,0.6666666666666666,1.0,0.5,81
+power_law,27000,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,FrameBoost >= 1.0  AND  AutoAltRef >= 1.0  AND  0.0 <= realtime < 1.0  AND  constantBitrate >= 0.5,2.0,0.5,1.0,0.3333333333333333,81
+normal,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,lossless >= 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= good < 1.0  AND  lagInFrames >= 12.0,1.0,0.5,1.0,0.3333333333333333,82
+uniform,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  FrameBoost >= 1.0  AND  lossless >= 1.0  AND  AutoAltRef >= 1.0,1.0,0.6666666666666666,1.0,0.5,82
+bi_modal_split,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  lossless >= 1.0  AND  FrameBoost >= 1.0,1.0,1.0,1.0,1.0,82
+tri_modal_split,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  FrameBoost >= 1.0  AND  lossless >= 1.0  AND  0.0 <= cyclicRefresh < 1.0,3.0,0.8571428571428571,1.0,0.75,82
+power_law,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  lossless >= 1.0  AND  FrameBoost >= 1.0  AND  Threads >= 8.0,2.0,0.5714285714285715,1.0,0.4,82
+normal,27000,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,AutoAltRef >= 1.0  AND  lossless >= 1.0  AND  FrameBoost >= 1.0  AND  600.0 <= bitRate < 1200.0,1.0,0.5714285714285715,1.0,0.4,83
+uniform,27000,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,lossless >= 1.0  AND  FrameBoost >= 1.0  AND  AutoAltRef >= 1.0  AND  Threads < 6.0,0.0,0.5714285714285715,1.0,0.4,83
+bi_modal_split,27000,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,AutoAltRef >= 1.0  AND  FrameBoost >= 1.0  AND  lossless >= 1.0  AND  0.0 <= variance < 1.0,0.0,0.8571428571428571,1.0,0.75,83
+tri_modal_split,27000,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= realtime < 1.0  AND  AutoAltRef >= 1.0  AND  lossless >= 1.0  AND  FrameBoost >= 1.0,0.0,0.6666666666666666,1.0,0.5,83
+power_law,27000,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,lossless >= 1.0  AND  FrameBoost >= 1.0  AND  AutoAltRef >= 1.0  AND  constrainedQuality >= 0.5,2.0,0.5,1.0,0.3333333333333333,83
+normal,27000,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,0.0 <= good < 1.0  AND  AutoAltRef >= 1.0  AND  lossless >= 1.0  AND  Threads < 10.0,3.0,0.888888888888889,1.0,0.8,84
+uniform,27000,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,0.0 <= good < 1.0  AND  lossless >= 1.0  AND  0.0 <= constantBitrate < 1.0  AND  AutoAltRef >= 1.0,1.0,0.8,1.0,0.6666666666666666,84
+bi_modal_split,27000,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,AutoAltRef >= 1.0  AND  lossless >= 1.0  AND  0.0 <= good < 1.0,0.0,1.0,1.0,1.0,84
+tri_modal_split,27000,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,AutoAltRef >= 1.0  AND  lossless >= 1.0  AND  0.0 <= complexity < 1.0  AND  0.0 <= good < 1.0,4.0,0.8571428571428571,1.0,0.75,84
+power_law,27000,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,0.0 <= good < 1.0  AND  lossless >= 1.0  AND  AutoAltRef >= 1.0  AND  cpuUsed >= 6.0,1.0,0.5714285714285715,1.0,0.4,84
+normal,27000,good = 1 AND AutoAltRef = 1 AND lossless = 1,0.0 <= realtime < 1.0  AND  AutoAltRef >= 1.0  AND  bitRate >= 600.0  AND  TileColumns >= 1.5,4.0,0.5161290322580646,0.5,0.5333333333333333,85
+uniform,27000,good = 1 AND AutoAltRef = 1 AND lossless = 1,0.0 <= variance < 1.0  AND  lossless >= 1.0  AND  AutoAltRef >= 1.0,3.0,0.6,0.5,0.75,85
+bi_modal_split,27000,good = 1 AND AutoAltRef = 1 AND lossless = 1,0.0 <= realtime < 1.0  AND  AutoAltRef >= 1.0  AND  lossless >= 1.0,0.0,1.0,1.0,1.0,85
+tri_modal_split,27000,good = 1 AND AutoAltRef = 1 AND lossless = 1,0.0 <= realtime < 1.0  AND  AutoAltRef >= 1.0  AND  lossless >= 1.0  AND  Threads < 8.0,1.0,0.7499999999999999,1.0,0.6,85
+power_law,27000,good = 1 AND AutoAltRef = 1 AND lossless = 1,0.0 <= realtime < 1.0  AND  lossless >= 1.0  AND  TileColumns >= 1.5  AND  cpuUsed < 6.0,4.0,0.4444444444444445,0.5,0.4,85
+normal,27000,good = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= realtime < 1.0  AND  lossless >= 1.0  AND  Threads < 10.0,4.0,0.6153846153846154,0.5,0.8,86
+uniform,27000,good = 1 AND lossless = 1 AND FrameBoost = 1,lossless >= 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= realtime < 1.0  AND  cpuUsed < 4.0,0.0,0.5714285714285715,1.0,0.4,86
+bi_modal_split,27000,good = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= realtime < 1.0  AND  lossless >= 1.0  AND  FrameBoost >= 1.0  AND  Threads < 10.0,4.0,0.888888888888889,1.0,0.8,86
+tri_modal_split,27000,good = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= realtime < 1.0  AND  0.0 <= constantBitrate < 0.5  AND  lossless >= 1.0  AND  FrameBoost >= 1.0,0.0,0.8,1.0,0.6666666666666666,86
+power_law,27000,good = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= realtime < 1.0  AND  FrameBoost >= 1.0  AND  lossless >= 1.0  AND  1200.0 <= bitRate < 1500.0,0.0,0.3333333333333333,1.0,0.2,86
+normal,27000,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  FrameBoost >= 1.0  AND  AutoAltRef >= 1.0  AND  constrainedQuality >= 0.5,0.0,0.5,1.0,0.3333333333333333,87
+uniform,27000,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  AutoAltRef >= 1.0  AND  FrameBoost >= 1.0  AND  bitRate >= 900.0,1.0,0.7499999999999999,1.0,0.6,87
+bi_modal_split,27000,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  FrameBoost >= 1.0  AND  AutoAltRef >= 1.0,0.0,1.0,1.0,1.0,87
+tri_modal_split,27000,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,AutoAltRef >= 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= good < 1.0  AND  0.0 <= cyclicRefresh < 1.0,1.0,0.8571428571428571,1.0,0.75,87
+power_law,27000,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  0.0 <= variableBitrate < 0.5  AND  FrameBoost >= 1.0  AND  0.0 <= cyclicRefresh < 1.0,3.0,0.5,0.5,0.5,87
+normal,27000,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,AutoAltRef >= 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= realtime < 1.0  AND  0.0 <= lossless < 1.0,0.0,0.6666666666666666,1.0,0.5,88
+uniform,27000,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,FrameBoost >= 1.0  AND  AutoAltRef >= 1.0  AND  0.0 <= realtime < 1.0  AND  0.0 <= constrainedQuality < 0.5,2.0,0.8,1.0,0.6666666666666666,88
+bi_modal_split,27000,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= realtime < 1.0  AND  FrameBoost >= 1.0  AND  AutoAltRef >= 1.0  AND  0.0 <= complexity < 1.0,1.0,0.8571428571428571,1.0,0.75,88
+tri_modal_split,27000,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= realtime < 1.0  AND  AutoAltRef >= 1.0  AND  FrameBoost >= 1.0,1.0,1.0,1.0,1.0,88
+power_law,27000,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= realtime < 1.0  AND  AutoAltRef >= 1.0  AND  0.0 <= constrainedQuality < 0.5,4.0,0.5714285714285715,0.5,0.6666666666666666,88
+normal,27000,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,AutoAltRef >= 1.0  AND  FrameBoost >= 1.0  AND  TileColumns >= 1.5  AND  cpuUsed < 8.0,3.0,0.5161290322580646,0.5,0.5333333333333333,89
+uniform,27000,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= realtime < 1.0  AND  FrameBoost >= 1.0  AND  AutoAltRef >= 1.0  AND  0.0 <= lossless < 1.0,2.0,0.6666666666666666,1.0,0.5,89
+bi_modal_split,27000,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= realtime < 1.0  AND  FrameBoost >= 1.0  AND  AutoAltRef >= 1.0  AND  0.0 <= constantBitrate < 0.5,0.0,0.8,1.0,0.6666666666666666,89
+tri_modal_split,27000,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= realtime < 1.0  AND  AutoAltRef >= 1.0  AND  bitRate >= 900.0  AND  FrameBoost >= 1.0,0.0,0.7499999999999999,1.0,0.6,89
+power_law,27000,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= realtime < 1.0  AND  FrameBoost >= 1.0  AND  AutoAltRef >= 1.0  AND  bitRate >= 1200.0,1.0,0.5714285714285715,1.0,0.4,89
+normal,27000,good = 1 AND AutoAltRef = 1 AND lossless = 1,0.0 <= realtime < 1.0  AND  AutoAltRef >= 1.0  AND  lossless >= 1.0  AND  FrameBoost >= 1.0,4.0,0.6666666666666666,1.0,0.5,8
+uniform,27000,good = 1 AND AutoAltRef = 1 AND lossless = 1,0.0 <= realtime < 1.0  AND  AutoAltRef >= 1.0  AND  lossless >= 1.0,2.0,1.0,1.0,1.0,8
+bi_modal_split,27000,good = 1 AND AutoAltRef = 1 AND lossless = 1,0.0 <= realtime < 1.0  AND  lossless >= 1.0  AND  AutoAltRef >= 1.0,0.0,1.0,1.0,1.0,8
+tri_modal_split,27000,good = 1 AND AutoAltRef = 1 AND lossless = 1,AutoAltRef >= 1.0  AND  lossless >= 1.0  AND  0.0 <= realtime < 1.0  AND  bitRate >= 600.0,2.0,0.888888888888889,1.0,0.8,8
+power_law,27000,good = 1 AND AutoAltRef = 1 AND lossless = 1,0.0 <= realtime < 1.0  AND  lossless >= 1.0  AND  AutoAltRef >= 1.0  AND  cpuUsed < 4.0,1.0,0.5714285714285715,1.0,0.4,8
+normal,27000,good = 1 AND AutoAltRef = 1 AND lossless = 1,AutoAltRef >= 1.0  AND  lossless >= 1.0  AND  0.0 <= cyclicRefresh < 1.0  AND  0.0 <= realtime < 1.0,3.0,0.8571428571428571,1.0,0.75,90
+uniform,27000,good = 1 AND AutoAltRef = 1 AND lossless = 1,0.0 <= realtime < 1.0  AND  lossless >= 1.0  AND  AutoAltRef >= 1.0  AND  variableBitrate >= 0.5,1.0,0.5,1.0,0.3333333333333333,90
+bi_modal_split,27000,good = 1 AND AutoAltRef = 1 AND lossless = 1,0.0 <= realtime < 1.0  AND  AutoAltRef >= 1.0  AND  lossless >= 1.0  AND  2.0 <= cpuUsed < 8.0,1.0,0.7499999999999999,1.0,0.6,90
+tri_modal_split,27000,good = 1 AND AutoAltRef = 1 AND lossless = 1,AutoAltRef >= 1.0  AND  lossless >= 1.0  AND  0.0 <= realtime < 1.0,2.0,1.0,1.0,1.0,90
+power_law,27000,good = 1 AND AutoAltRef = 1 AND lossless = 1,0.0 <= realtime < 1.0  AND  lossless >= 1.0  AND  AutoAltRef >= 1.0  AND  constrainedQuality >= 0.5,2.0,0.5,1.0,0.3333333333333333,90
+normal,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  FrameBoost >= 1.0  AND  lossless >= 1.0  AND  TileColumns >= 1.5,3.0,0.8,1.0,0.6666666666666666,91
+uniform,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  lossless >= 1.0,4.0,0.6666666666666666,0.5,1.0,91
+bi_modal_split,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  FrameBoost >= 1.0  AND  lossless >= 1.0,4.0,1.0,1.0,1.0,91
+tri_modal_split,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  lossless >= 1.0  AND  FrameBoost >= 1.0,2.0,1.0,1.0,1.0,91
+power_law,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  lossless >= 1.0  AND  FrameBoost >= 1.0  AND  600.0 <= bitRate < 1200.0,1.0,0.5714285714285715,1.0,0.4,91
+normal,27000,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,AutoAltRef >= 1.0  AND  lossless >= 1.0  AND  0.0 <= good < 1.0  AND  lagInFrames < 12.0,4.0,0.8,1.0,0.6666666666666666,92
+uniform,27000,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,AutoAltRef >= 1.0  AND  0.0 <= good < 1.0  AND  lossless >= 1.0,3.0,1.0,1.0,1.0,92
+bi_modal_split,27000,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,AutoAltRef >= 1.0  AND  0.0 <= good < 1.0  AND  lossless >= 1.0,2.0,1.0,1.0,1.0,92
+tri_modal_split,27000,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,0.0 <= good < 1.0  AND  lossless >= 1.0  AND  AutoAltRef >= 1.0  AND  TileColumns < 4.5,4.0,0.8,1.0,0.6666666666666666,92
+power_law,27000,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,0.0 <= good < 1.0  AND  AutoAltRef >= 1.0  AND  lossless >= 1.0  AND  cpuUsed < 4.0,1.0,0.5714285714285715,1.0,0.4,92
+normal,27000,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,0.0 <= good < 1.0  AND  AutoAltRef >= 1.0  AND  lossless >= 1.0  AND  0.0 <= cyclicRefresh < 1.0,3.0,0.8571428571428571,1.0,0.75,93
+uniform,27000,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,0.0 <= good < 1.0  AND  lossless >= 1.0  AND  AutoAltRef >= 1.0  AND  cpuUsed >= 2.0,3.0,0.888888888888889,1.0,0.8,93
+bi_modal_split,27000,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,0.0 <= good < 1.0  AND  lossless >= 1.0  AND  Threads >= 6.0  AND  AutoAltRef >= 1.0,1.0,0.7499999999999999,1.0,0.6,93
+tri_modal_split,27000,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,AutoAltRef >= 1.0  AND  lossless >= 1.0  AND  0.0 <= good < 1.0  AND  0.0 <= FrameBoost < 1.0,1.0,0.6666666666666666,1.0,0.5,93
+power_law,27000,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,0.0 <= good < 1.0  AND  lossless >= 1.0  AND  AutoAltRef >= 1.0  AND  FrameBoost >= 1.0,1.0,0.6666666666666666,1.0,0.5,93
+normal,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  FrameBoost >= 1.0  AND  lossless >= 1.0  AND  bitRate >= 600.0,1.0,0.888888888888889,1.0,0.8,94
+uniform,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,lossless >= 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= good < 1.0,4.0,1.0,1.0,1.0,94
+bi_modal_split,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  FrameBoost >= 1.0  AND  lossless >= 1.0,2.0,1.0,1.0,1.0,94
+tri_modal_split,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  FrameBoost >= 1.0,3.0,0.6666666666666666,0.5,1.0,94
+power_law,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  FrameBoost >= 1.0  AND  lossless >= 1.0  AND  0.0 <= AutoAltRef < 1.0,4.0,0.6666666666666666,1.0,0.5,94
+normal,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,lossless >= 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= good < 1.0  AND  600.0 <= bitRate < 1200.0,3.0,0.5714285714285715,1.0,0.4,95
+uniform,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= cyclicRefresh < 1.0  AND  lossless >= 1.0  AND  FrameBoost >= 1.0,3.0,0.6,0.5,0.75,95
+bi_modal_split,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  lossless >= 1.0  AND  FrameBoost >= 1.0,0.0,1.0,1.0,1.0,95
+tri_modal_split,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  lossless >= 1.0  AND  FrameBoost >= 1.0  AND  bitRate < 1200.0,1.0,0.7499999999999999,1.0,0.6,95
+power_law,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,lossless >= 1.0  AND  FrameBoost >= 1.0  AND  bitRate >= 900.0  AND  0.0 <= good < 1.0,3.0,0.7499999999999999,1.0,0.6,95
+normal,27000,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,lossless >= 1.0  AND  FrameBoost >= 1.0  AND  AutoAltRef >= 1.0  AND  4.0 <= Threads < 8.0,3.0,0.5714285714285715,1.0,0.4,96
+uniform,27000,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,AutoAltRef >= 1.0  AND  FrameBoost >= 1.0  AND  lossless >= 1.0  AND  0.0 <= good < 1.0,1.0,0.6666666666666666,1.0,0.5,96
+bi_modal_split,27000,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,AutoAltRef >= 1.0  AND  lossless >= 1.0  AND  FrameBoost >= 1.0  AND  bitRate >= 900.0,0.0,0.7499999999999999,1.0,0.6,96
+tri_modal_split,27000,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,AutoAltRef >= 1.0  AND  FrameBoost >= 1.0  AND  lossless >= 1.0  AND  TileColumns >= 1.5,0.0,0.8,1.0,0.6666666666666666,96
+power_law,27000,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,lossless >= 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= variance < 1.0,4.0,0.6,0.5,0.75,96
+normal,27000,good = 1 AND AutoAltRef = 1 AND lossless = 1,0.0 <= realtime < 1.0  AND  lossless >= 1.0  AND  AutoAltRef >= 1.0  AND  6.0 <= Threads < 10.0,2.0,0.5714285714285715,1.0,0.4,97
+uniform,27000,good = 1 AND AutoAltRef = 1 AND lossless = 1,AutoAltRef >= 1.0  AND  lossless >= 1.0  AND  0.0 <= realtime < 1.0  AND  bitRate >= 600.0,4.0,0.888888888888889,1.0,0.8,97
+bi_modal_split,27000,good = 1 AND AutoAltRef = 1 AND lossless = 1,0.0 <= realtime < 1.0  AND  lossless >= 1.0  AND  AutoAltRef >= 1.0  AND  TileColumns >= 1.5,0.0,0.8,1.0,0.6666666666666666,97
+tri_modal_split,27000,good = 1 AND AutoAltRef = 1 AND lossless = 1,AutoAltRef >= 1.0  AND  lossless >= 1.0  AND  0.0 <= realtime < 1.0  AND  cpuUsed >= 4.0,0.0,0.7499999999999999,1.0,0.6,97
+power_law,27000,good = 1 AND AutoAltRef = 1 AND lossless = 1,lossless >= 1.0  AND  0.0 <= realtime < 1.0  AND  AutoAltRef >= 1.0  AND  2.0 <= cpuUsed < 6.0,2.0,0.5714285714285715,1.0,0.4,97
+normal,27000,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  FrameBoost >= 1.0  AND  AutoAltRef >= 1.0  AND  TileColumns < 4.5,1.0,0.8,1.0,0.6666666666666666,98
+uniform,27000,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  AutoAltRef >= 1.0  AND  bitRate >= 600.0  AND  0.0 <= cyclicRefresh < 1.0,3.0,0.5454545454545454,0.5,0.6,98
+bi_modal_split,27000,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,AutoAltRef >= 1.0  AND  Threads < 6.0  AND  0.0 <= good < 1.0  AND  FrameBoost >= 1.0,1.0,0.5714285714285715,1.0,0.4,98
+tri_modal_split,27000,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,FrameBoost >= 1.0  AND  AutoAltRef >= 1.0  AND  0.0 <= good < 1.0  AND  lossless >= 1.0,3.0,0.6666666666666666,1.0,0.5,98
+power_law,27000,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  FrameBoost >= 1.0  AND  2.0 <= cpuUsed < 8.0,4.0,0.5454545454545454,0.5,0.6,98
+normal,27000,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  FrameBoost >= 1.0  AND  AutoAltRef >= 1.0  AND  2.0 <= cpuUsed < 6.0,2.0,0.5714285714285715,1.0,0.4,99
+uniform,27000,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,AutoAltRef >= 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= good < 1.0  AND  600.0 <= bitRate < 1500.0,0.0,0.7499999999999999,1.0,0.6,99
+bi_modal_split,27000,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  FrameBoost >= 1.0  AND  AutoAltRef >= 1.0  AND  0.0 <= complexity < 1.0,2.0,0.8571428571428571,1.0,0.75,99
+tri_modal_split,27000,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,AutoAltRef >= 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= good < 1.0  AND  4.0 <= cpuUsed < 8.0,0.0,0.5714285714285715,1.0,0.4,99
+power_law,27000,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  cpuUsed < 8.0  AND  FrameBoost >= 1.0  AND  TileColumns < 4.5,3.0,0.5161290322580646,0.5,0.5333333333333333,99
+normal,27000,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,AutoAltRef >= 1.0  AND  lossless >= 1.0  AND  FrameBoost >= 1.0  AND  lagInFrames < 4.0,1.0,0.5,1.0,0.3333333333333333,9
+uniform,27000,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,AutoAltRef >= 1.0  AND  FrameBoost >= 1.0  AND  lossless >= 1.0  AND  600.0 <= bitRate < 1500.0,3.0,0.7499999999999999,1.0,0.6,9
+bi_modal_split,27000,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,AutoAltRef >= 1.0  AND  lossless >= 1.0  AND  FrameBoost >= 1.0,0.0,1.0,1.0,1.0,9
+tri_modal_split,27000,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,lossless >= 1.0  AND  FrameBoost >= 1.0  AND  Threads < 8.0  AND  AutoAltRef >= 1.0,1.0,0.7499999999999999,1.0,0.6,9
+power_law,27000,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,AutoAltRef >= 1.0  AND  lossless >= 1.0  AND  Threads >= 8.0  AND  FrameBoost >= 1.0,2.0,0.5714285714285715,1.0,0.4,9

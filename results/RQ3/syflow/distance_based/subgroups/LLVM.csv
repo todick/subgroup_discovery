@@ -1,0 +1,6 @@
+rule,sg_samples,sg_coverage,rule_num_predicates,rule_features_used
+inline AND licm,256,0.25,2,"['licm', 'inline']"
+NOT gvn AND NOT instcombine AND NOT licm,128,0.125,3,"['gvn', 'instcombine', 'licm']"
+gvn AND NOT inline AND NOT licm,128,0.125,3,"['gvn', 'inline', 'licm']"
+NOT gvn AND NOT instcombine,256,0.25,2,"['gvn', 'instcombine']"
+gvn AND instcombine AND licm,128,0.125,3,"['gvn', 'instcombine', 'licm']"

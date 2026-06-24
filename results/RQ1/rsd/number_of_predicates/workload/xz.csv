@@ -1,0 +1,567 @@
+n_conditions,sg_mean,sg_cardinality,sg_rule,best_rule,best_rule_idx,f1,precision,recall,seed,runtime
+1,170.7161746813652,161,Lc4Lp0 = 1,Lc4Lp0 >= 1.0,0,1.0,1.0,1.0,0,46.80908632278442
+2,40.89523445786644,421,Dict = 1 AND FlushTimeout = 1,Dict >= 1.0  AND  FlushTimeout >= 1.0,1,1.0,1.0,1.0,0,36.79008936882019
+3,87.881683671427,352,Depth = 1 AND BlockSize = 1 AND FlushTimeout = 1,FlushTimeout >= 1.0  AND  Depth >= 1.0  AND  BlockSize >= 1.0,1,1.0,1.0,1.0,0,38.17728304862976
+4,175.7810552868676,140,hc4 = 1 AND Nice = 1 AND Depth = 1 AND Dist = 1,hc4 >= 1.0  AND  Nice >= 1.0  AND  Dist >= 1.0  AND  Depth >= 1.0,0,1.0,1.0,1.0,0,52.95745086669922
+5,80.78372219071495,303,MemoryLimit = 1 AND Nice = 1 AND Dict = 1 AND BlockSize = 1 AND FlushTimeout = 1,FlushTimeout >= 1.0  AND  MemoryLimit >= 1.0  AND  BlockSize >= 1.0  AND  Nice >= 1.0  AND  Dict >= 1.0  AND  0.0 <= Lc0Lp2 < 1.0  AND  0.0 <= Lc0Lp4 < 1.0,0,0.9442508710801394,1.0,0.8943894389438944,0,26.870290994644165
+6,73.69447047508798,141,crc32 = 1 AND MemoryLimit = 1 AND Nice = 1 AND Depth = 1 AND Dict = 1 AND BlockSize = 1,crc32 >= 1.0  AND  Depth >= 1.0  AND  Nice >= 1.0  AND  BlockSize >= 1.0  AND  Dict >= 1.0  AND  MemoryLimit >= 1.0,0,1.0,1.0,1.0,0,40.78355646133423
+1,177.09152658428053,190,Lc3Lp0 = 1,Lc3Lp0 >= 1.0,1,1.0,1.0,1.0,1,55.958454847335815
+2,74.24960600257157,216,hc4 = 1 AND MemoryLimit = 1,hc4 >= 1.0  AND  MemoryLimit >= 1.0,0,1.0,1.0,1.0,1,26.58326911926269
+3,55.71458791104968,141,bt4 = 1 AND Dict = 1 AND FlushTimeout = 1,bt4 >= 1.0  AND  FlushTimeout >= 1.0  AND  Dict >= 1.0  AND  0.0 <= Lc0Lp0 < 1.0,0,0.9438202247191012,1.0,0.8936170212765957,1,26.606427431106567
+4,93.08802075784372,106,Lc0Lp1 = 1 AND MemoryLimit = 1 AND Nice = 1 AND BlockSize = 1,Lc0Lp1 >= 1.0  AND  Nice >= 1.0  AND  BlockSize >= 1.0  AND  MemoryLimit >= 1.0,0,1.0,1.0,1.0,1,26.54916024208069
+5,197.53427692248624,278,Nice = 1 AND Depth = 1 AND Dist = 1 AND BlockSize = 1 AND FlushTimeout = 1,FlushTimeout >= 1.0  AND  Dist >= 1.0  AND  Depth >= 1.0  AND  BlockSize >= 1.0  AND  Nice >= 1.0,0,1.0,1.0,1.0,1,54.1420681476593
+1,107.28572214329049,367,bt3 = 1,bt3 >= 1.0,1,1.0,1.0,1.0,10,57.43862271308899
+2,149.24834532443822,144,FlushTimeout = 1 AND PositionBits = 1,FlushTimeout >= 1.0  AND  PositionBits >= 1.0,0,1.0,1.0,1.0,10,26.992021083831787
+3,138.34462154516268,193,crc64 = 1 AND Nice = 1 AND Depth = 1,crc64 >= 1.0  AND  Nice >= 1.0  AND  Dist >= 1.0  AND  Depth >= 1.0  AND  0.0 <= Lc4Lp0 < 1.0,0,0.9217877094972068,1.0,0.8549222797927462,10,37.24619054794312
+4,189.68562987427296,126,bt4 = 1 AND Nice = 1 AND BlockSize = 1 AND FlushTimeout = 1,FlushTimeout >= 1.0  AND  0.0 <= Lc2Lp2 < 1.0  AND  bt4 >= 1.0  AND  Nice >= 1.0  AND  BlockSize >= 1.0,0,0.992,1.0,0.984126984126984,10,55.79670166969299
+5,157.6547416446821,202,bt4 = 1 AND MemoryLimit = 1 AND Nice = 1 AND Depth = 1 AND Dict = 1,bt4 >= 1.0  AND  Nice >= 1.0  AND  Depth >= 1.0  AND  Dict >= 1.0  AND  MemoryLimit >= 1.0,0,1.0,1.0,1.0,10,47.38439059257507
+6,45.26753678672144,141,crc32 = 1 AND MemoryLimit = 1 AND Nice = 1 AND Depth = 1 AND Dict = 1 AND BlockSize = 1,crc32 >= 1.0  AND  Nice >= 1.0  AND  BlockSize >= 1.0  AND  MemoryLimit >= 1.0  AND  Dict >= 1.0  AND  Depth >= 1.0,0,1.0,1.0,1.0,10,27.77855372428894
+1,141.74129762493294,174,Lc0Lp2 = 1,Lc0Lp2 >= 1.0,1,1.0,1.0,1.0,11,36.96383404731751
+2,89.85373934600867,108,Lc0Lp2 = 1 AND BlockSize = 1,Lc0Lp2 >= 1.0  AND  BlockSize >= 1.0,0,1.0,1.0,1.0,11,37.50182342529297
+3,111.19690767994616,183,sha256 = 1 AND MemoryLimit = 1 AND Nice = 1,sha256 >= 1.0  AND  0.0 <= Lc1Lp1 < 1.0  AND  Nice >= 1.0  AND  MemoryLimit >= 1.0,0,0.9719101123595506,1.0,0.9453551912568308,11,27.249815940856934
+4,101.09961342383608,322,MemoryLimit = 1 AND Dist = 1 AND BlockSize = 1 AND FlushTimeout = 1,FlushTimeout >= 1.0  AND  BlockSize >= 1.0  AND  MemoryLimit >= 1.0  AND  Dist >= 1.0,0,1.0,1.0,1.0,11,26.92138934135437
+5,81.59753023339701,169,sha256 = 1 AND MemoryLimit = 1 AND Dict = 1 AND Dist = 1 AND BlockSize = 1,sha256 >= 1.0  AND  MemoryLimit >= 1.0  AND  Dist >= 1.0  AND  BlockSize >= 1.0  AND  Dict >= 1.0  AND  0.0 <= Lc2Lp2 < 1.0,0,0.9788519637462236,1.0,0.9585798816568049,11,27.605366706848145
+6,123.23277638744196,136,crc32 = 1 AND MemoryLimit = 1 AND Nice = 1 AND Depth = 1 AND Dict = 1 AND Dist = 1,crc32 >= 1.0  AND  MemoryLimit >= 1.0  AND  Nice >= 1.0  AND  Dist >= 1.0  AND  Depth >= 1.0  AND  Dict >= 1.0,0,1.0,1.0,1.0,11,42.47064304351807
+1,87.74612777165947,367,bt3 = 1,bt3 >= 1.0,1,1.0,1.0,1.0,12,40.56513524055481
+2,137.80611952967183,220,sha256 = 1 AND Depth = 1,sha256 >= 1.0  AND  Depth >= 1.0,0,1.0,1.0,1.0,12,38.43056631088257
+3,160.43456077207793,246,bt4 = 1 AND Nice = 1 AND BlockSize = 1,bt4 >= 1.0  AND  BlockSize >= 1.0  AND  Nice >= 1.0  AND  0.0 <= Lc1Lp1 < 1.0,0,0.9642105263157896,1.0,0.9308943089430894,12,31.92536997795105
+4,48.01871320944148,223,bt4 = 1 AND MemoryLimit = 1 AND Depth = 1 AND BlockSize = 1,bt4 >= 1.0  AND  MemoryLimit >= 1.0  AND  Depth >= 1.0  AND  BlockSize >= 1.0,0,1.0,1.0,1.0,12,27.056755304336548
+5,128.376689831574,148,none = 1 AND MemoryLimit = 1 AND Nice = 1 AND Depth = 1 AND Dist = 1,none >= 1.0  AND  Depth >= 1.0  AND  Dist >= 1.0  AND  MemoryLimit >= 1.0  AND  Nice >= 1.0,0,1.0,1.0,1.0,12,27.521205186843872
+1,71.44670959216701,106,Lc1Lp3 = 1,Lc1Lp3 >= 1.0,0,1.0,1.0,1.0,13,26.62764596939087
+2,55.88792718705607,312,crc32 = 1 AND MemoryLimit = 1,crc32 >= 1.0  AND  MemoryLimit >= 1.0,1,1.0,1.0,1.0,13,35.644038438797
+3,82.3416209229906,146,Nice = 1 AND Multithreading = 1 AND PositionBits = 1,PositionBits >= 1.0  AND  Multithreading >= 1.0  AND  0.0 <= Lc2Lp2 < 1.0  AND  Nice >= 1.0,0,0.9343065693430656,1.0,0.8767123287671232,13,35.470906019210815
+4,48.0224591217493,101,Lc0Lp1 = 1 AND Depth = 1 AND Dict = 1 AND FlushTimeout = 1,Lc0Lp1 >= 1.0  AND  Depth >= 1.0  AND  0.0 <= bt3 < 1.0  AND  FlushTimeout >= 1.0,0,0.9751243781094528,0.98,0.9702970297029704,13,26.50640034675598
+5,96.56744413560608,104,bt4 = 1 AND Depth = 1 AND Dist = 1 AND Multithreading = 1 AND BlockSize = 1,bt4 >= 1.0  AND  Multithreading >= 1.0  AND  Depth >= 1.0  AND  Dist >= 1.0  AND  BlockSize >= 1.0,0,1.0,1.0,1.0,13,26.725196599960327
+6,178.25842335645876,127,crc32 = 1 AND Nice = 1 AND Depth = 1 AND Dict = 1 AND Dist = 1 AND BlockSize = 1,crc32 >= 1.0  AND  BlockSize >= 1.0  AND  Depth >= 1.0  AND  Dict >= 1.0  AND  Dist >= 1.0  AND  Nice >= 1.0,0,1.0,1.0,1.0,13,36.13756442070007
+1,93.4975072249202,445,sha256 = 1,sha256 >= 1.0,1,1.0,1.0,1.0,14,41.05151605606079
+2,51.25206806667194,481,Depth = 1 AND Multithreading = 1,Depth >= 1.0  AND  Multithreading >= 1.0,0,1.0,1.0,1.0,14,32.82498478889465
+3,26.41103727702594,190,none = 1 AND Depth = 1 AND Dict = 1,none >= 1.0  AND  Depth >= 1.0  AND  Dict >= 1.0,0,1.0,1.0,1.0,14,27.21071767807007
+4,157.37779537701664,103,crc32 = 1 AND MemoryLimit = 1 AND Multithreading = 1 AND BlockSize = 1,crc32 >= 1.0  AND  Multithreading >= 1.0  AND  MemoryLimit >= 1.0  AND  0.0 <= Lc3Lp0 < 1.0  AND  BlockSize >= 1.0,0,0.9595959595959596,1.0,0.9223300970873788,14,27.74762964248657
+5,172.37778893541235,178,hc3 = 1 AND MemoryLimit = 1 AND Depth = 1 AND Dict = 1 AND Dist = 1,hc3 >= 1.0  AND  Dict >= 1.0  AND  MemoryLimit >= 1.0  AND  Dist >= 1.0  AND  Depth >= 1.0,0,1.0,1.0,1.0,14,45.481773853302
+6,63.099767757881445,133,crc32 = 1 AND MemoryLimit = 1 AND Nice = 1 AND Depth = 1 AND Dist = 1 AND BlockSize = 1,crc32 >= 1.0  AND  Nice >= 1.0  AND  BlockSize >= 1.0  AND  Depth >= 1.0  AND  Dist >= 1.0  AND  MemoryLimit >= 1.0,0,1.0,1.0,1.0,14,27.853880882263184
+1,85.80682807755585,161,Lc4Lp0 = 1,Lc4Lp0 >= 1.0,0,1.0,1.0,1.0,15,29.333653211593628
+2,151.8079532766532,240,hc3 = 1 AND MemoryLimit = 1,MemoryLimit >= 1.0  AND  hc3 >= 1.0,1,1.0,1.0,1.0,15,44.68773007392883
+3,157.1360658385201,111,hc4 = 1 AND Multithreading = 1 AND BlockSize = 1,hc4 >= 1.0  AND  Multithreading >= 1.0  AND  0.0 <= none < 1.0  AND  BlockSize >= 1.0,0,0.9064039408866996,1.0,0.8288288288288288,15,27.48369717597961
+4,170.70771868178605,114,bt4 = 1 AND MemoryLimit = 1 AND Depth = 1 AND Multithreading = 1,bt4 >= 1.0  AND  MemoryLimit >= 1.0  AND  Depth >= 1.0  AND  Multithreading >= 1.0,0,1.0,1.0,1.0,15,27.42606997489929
+5,99.13350383848838,117,bt4 = 1 AND Depth = 1 AND Dict = 1 AND BlockSize = 1 AND FlushTimeout = 1,bt4 >= 1.0  AND  FlushTimeout >= 1.0  AND  Depth >= 1.0  AND  Dict >= 1.0  AND  BlockSize >= 1.0,0,1.0,1.0,1.0,15,27.645999431610107
+6,138.13532636032264,131,crc32 = 1 AND MemoryLimit = 1 AND Depth = 1 AND Dict = 1 AND Dist = 1 AND BlockSize = 1,crc32 >= 1.0  AND  Depth >= 1.0  AND  Dist >= 1.0  AND  MemoryLimit >= 1.0  AND  BlockSize >= 1.0  AND  Dict >= 1.0,0,1.0,1.0,1.0,15,27.9033145904541
+1,124.42985138357712,248,bt2 = 1,bt2 >= 1.0,0,1.0,1.0,1.0,16,27.7292640209198
+2,116.94343076174518,222,hc4 = 1 AND Dist = 1,hc4 >= 1.0  AND  Dist >= 1.0,0,1.0,1.0,1.0,16,25.98915123939514
+3,169.4831541286514,103,Lc0Lp1 = 1 AND Nice = 1 AND FlushTimeout = 1,Lc0Lp1 >= 1.0  AND  FlushTimeout >= 1.0  AND  Nice >= 1.0,0,1.0,1.0,1.0,16,38.14689421653748
+4,36.6767520043844,208,MemoryLimit = 1 AND Nice = 1 AND Depth = 1 AND PositionBits = 1,PositionBits >= 1.0  AND  Nice >= 1.0  AND  Depth >= 1.0  AND  MemoryLimit >= 1.0  AND  BlockSize >= 1.0  AND  0.0 <= none < 1.0  AND  0.0 <= Lc1Lp3 < 1.0,0,0.8080229226361032,1.0,0.6778846153846154,16,26.497865438461304
+5,194.41540680932872,152,none = 1 AND MemoryLimit = 1 AND Nice = 1 AND Dist = 1 AND BlockSize = 1,none >= 1.0  AND  Nice >= 1.0  AND  MemoryLimit >= 1.0  AND  BlockSize >= 1.0  AND  Dist >= 1.0,0,1.0,1.0,1.0,16,48.04465174674988
+1,23.176673091594576,378,hc4 = 1,hc4 >= 1.0,1,1.0,1.0,1.0,17,35.06737160682678
+2,177.05621857455432,255,none = 1 AND Depth = 1,none >= 1.0  AND  Depth >= 1.0  AND  0.0 <= Lc1Lp0 < 1.0,0,0.9696969696969696,1.0,0.9411764705882352,17,52.94399118423462
+3,70.64801239820204,212,hc3 = 1 AND MemoryLimit = 1 AND Dict = 1,hc3 >= 1.0  AND  MemoryLimit >= 1.0  AND  Dict >= 1.0,0,1.0,1.0,1.0,17,34.597461223602295
+4,171.34218785140712,296,Nice = 1 AND Depth = 1 AND Dist = 1 AND FlushTimeout = 1,Nice >= 1.0  AND  Dist >= 1.0  AND  FlushTimeout >= 1.0  AND  Depth >= 1.0  AND  0.0 <= Lc0Lp4 < 1.0,0,0.9540636042402826,1.0,0.9121621621621622,17,53.66262125968933
+5,185.81654741974916,283,MemoryLimit = 1 AND Nice = 1 AND Dist = 1 AND BlockSize = 1 AND FlushTimeout = 1,FlushTimeout >= 1.0  AND  MemoryLimit >= 1.0  AND  BlockSize >= 1.0  AND  Dist >= 1.0  AND  Nice >= 1.0,0,1.0,1.0,1.0,17,54.18899083137512
+6,15.938134838828947,141,crc32 = 1 AND MemoryLimit = 1 AND Nice = 1 AND Depth = 1 AND Dict = 1 AND BlockSize = 1,crc32 >= 1.0  AND  MemoryLimit >= 1.0  AND  Nice >= 1.0  AND  Dict >= 1.0  AND  BlockSize >= 1.0  AND  Depth >= 1.0,0,1.0,1.0,1.0,17,26.635316610336304
+1,87.80131633831346,134,Lc0Lp0 = 1,Lc0Lp0 >= 1.0,0,1.0,1.0,1.0,18,29.257866859436035
+2,42.91951070950497,211,bt3 = 1 AND BlockSize = 1,bt3 >= 1.0  AND  BlockSize >= 1.0,0,1.0,1.0,1.0,18,27.85961890220642
+3,59.40813585603813,269,Dict = 1 AND BlockSize = 1 AND PositionBits = 1,PositionBits >= 1.0  AND  Dict >= 1.0  AND  BlockSize >= 1.0,0,1.0,1.0,1.0,18,27.517174243927
+4,148.93739380254397,169,sha256 = 1 AND MemoryLimit = 1 AND Nice = 1 AND Dict = 1,sha256 >= 1.0  AND  Nice >= 1.0  AND  Dict >= 1.0  AND  MemoryLimit >= 1.0  AND  0.0 <= Lc0Lp0 < 1.0,0,0.953560371517028,1.0,0.9112426035502958,18,41.027196168899536
+5,114.28847307174756,162,sha256 = 1 AND Nice = 1 AND Depth = 1 AND Dict = 1 AND BlockSize = 1,sha256 >= 1.0  AND  Depth >= 1.0  AND  Dict >= 1.0  AND  BlockSize >= 1.0  AND  Nice >= 1.0,0,1.0,1.0,1.0,18,27.610148906707764
+1,75.92068211246514,147,Lc2Lp2 = 1,Lc2Lp2 >= 1.0,0,1.0,1.0,1.0,19,28.08687996864319
+2,173.10117390339212,135,Lc0Lp1 = 1 AND FlushTimeout = 1,FlushTimeout >= 1.0  AND  Lc0Lp1 >= 1.0,0,1.0,1.0,1.0,19,36.77137446403504
+3,99.9466242125,107,Lc0Lp1 = 1 AND MemoryLimit = 1 AND FlushTimeout = 1,Lc0Lp1 >= 1.0  AND  FlushTimeout >= 1.0  AND  MemoryLimit >= 1.0,0,1.0,1.0,1.0,19,25.976426601409912
+4,130.25616073297869,376,MemoryLimit = 1 AND Nice = 1 AND Depth = 1 AND Multithreading = 1,Depth >= 1.0  AND  Multithreading >= 1.0  AND  MemoryLimit >= 1.0  AND  Nice >= 1.0  AND  0.0 <= Lc0Lp1 < 1.0  AND  0.0 <= Lc3Lp0 < 1.0,0,0.927246790299572,1.0,0.8643617021276596,19,31.15646815299988
+1,30.30595772837449,399,crc64 = 1,crc64 >= 1.0,1,1.0,1.0,1.0,2,44.65252947807312
+2,44.05591542861912,217,sha256 = 1 AND Nice = 1,sha256 >= 1.0  AND  Nice >= 1.0,0,1.0,1.0,1.0,2,38.37623572349548
+3,159.1546062970989,178,hc4 = 1 AND Nice = 1 AND Dict = 1,hc4 >= 1.0  AND  Nice >= 1.0  AND  0.0 <= Lc1Lp1 < 1.0  AND  Dict >= 1.0,0,0.9498525073746312,1.0,0.904494382022472,2,35.81060194969177
+4,192.3146227549269,100,Lc0Lp1 = 1 AND Depth = 1 AND BlockSize = 1 AND FlushTimeout = 1,Lc0Lp1 >= 1.0  AND  Depth >= 1.0  AND  0.0 <= Multithreading < 1.0  AND  BlockSize >= 1.0,0,1.0,1.0,1.0,2,28.593977451324463
+5,181.26953691341288,106,MemoryLimit = 1 AND Nice = 1 AND Depth = 1 AND Multithreading = 1 AND PositionBits = 1,MemoryLimit >= 1.0  AND  Multithreading >= 1.0  AND  PositionBits >= 1.0  AND  Depth >= 1.0  AND  Nice >= 1.0,0,1.0,1.0,1.0,2,48.35127782821655
+6,165.9232213281198,123,crc32 = 1 AND MemoryLimit = 1 AND Nice = 1 AND Dict = 1 AND Dist = 1 AND BlockSize = 1,crc32 >= 1.0  AND  Nice >= 1.0  AND  Dist >= 1.0  AND  Dict >= 1.0  AND  MemoryLimit >= 1.0  AND  BlockSize >= 1.0,0,1.0,1.0,1.0,2,29.611169576644897
+1,196.5656792006824,105,Lc1Lp0 = 1,Lc1Lp0 >= 1.0,0,1.0,1.0,1.0,20,31.119261503219604
+2,198.75658327114624,223,crc64 = 1 AND Dict = 1,crc64 >= 1.0  AND  Dict >= 1.0,0,1.0,1.0,1.0,20,60.0909595489502
+3,123.07636011173204,126,bt4 = 1 AND Nice = 1 AND Multithreading = 1,bt4 >= 1.0  AND  Multithreading >= 1.0  AND  Nice >= 1.0,0,1.0,1.0,1.0,20,41.56191372871399
+4,200.3545517961381,348,MemoryLimit = 1 AND Dict = 1 AND BlockSize = 1 AND FlushTimeout = 1,FlushTimeout >= 1.0  AND  MemoryLimit >= 1.0  AND  Dict >= 1.0  AND  BlockSize >= 1.0,0,1.0,1.0,1.0,20,60.27311158180237
+5,35.02514073131778,301,MemoryLimit = 1 AND Dict = 1 AND Dist = 1 AND Multithreading = 1 AND BlockSize = 1,Dict >= 1.0  AND  Multithreading >= 1.0  AND  BlockSize >= 1.0  AND  MemoryLimit >= 1.0  AND  Dist >= 1.0,0,1.0,1.0,1.0,20,26.94919276237488
+6,126.99578854562748,131,crc32 = 1 AND MemoryLimit = 1 AND Depth = 1 AND Dict = 1 AND Dist = 1 AND BlockSize = 1,crc32 >= 1.0  AND  Dict >= 1.0  AND  Dist >= 1.0  AND  BlockSize >= 1.0  AND  Depth >= 1.0  AND  0.0 <= Lc0Lp2 < 1.0  AND  MemoryLimit >= 1.0,0,0.9603174603174602,1.0,0.9236641221374046,20,28.094681978225708
+1,23.814581438017864,399,crc64 = 1,crc64 >= 1.0  AND  0.0 <= Lc0Lp0 < 1.0,0,0.9595827900912648,1.0,0.9223057644110276,21,37.5198347568512
+2,135.761352515717,312,crc32 = 1 AND Depth = 1,crc32 >= 1.0  AND  Depth >= 1.0,0,1.0,1.0,1.0,21,44.63224720954895
+3,42.25333576591613,186,crc64 = 1 AND MemoryLimit = 1 AND Dict = 1,crc64 >= 1.0  AND  MemoryLimit >= 1.0  AND  Dict >= 1.0,0,1.0,1.0,1.0,21,25.852792501449585
+4,131.46680664289826,108,hc3 = 1 AND MemoryLimit = 1 AND Dist = 1 AND Multithreading = 1,hc3 >= 1.0  AND  Multithreading >= 1.0  AND  MemoryLimit >= 1.0  AND  Dist >= 1.0,0,1.0,1.0,1.0,21,26.16811847686768
+5,88.5617461609896,153,sha256 = 1 AND MemoryLimit = 1 AND Nice = 1 AND Depth = 1 AND Dict = 1,sha256 >= 1.0  AND  MemoryLimit >= 1.0  AND  Depth >= 1.0  AND  Dict >= 1.0  AND  Nice >= 1.0,0,1.0,1.0,1.0,21,35.58790135383606
+1,124.49572340334882,399,crc64 = 1,crc64 >= 1.0,1,1.0,1.0,1.0,22,43.45029520988464
+2,201.07385409687944,294,bt4 = 1 AND Depth = 1,bt4 >= 1.0  AND  Depth >= 1.0,0,1.0,1.0,1.0,22,57.32319951057434
+3,163.21145697963036,214,hc3 = 1 AND Depth = 1 AND Dict = 1,hc3 >= 1.0  AND  Nice >= 1.0  AND  Dict >= 1.0  AND  Depth >= 1.0,0,0.9535452322738388,1.0,0.911214953271028,22,49.4722957611084
+4,62.79407934164587,140,hc4 = 1 AND Nice = 1 AND Depth = 1 AND Dict = 1,0.0 <= bt4 < 1.0  AND  Dict >= 1.0  AND  Nice >= 1.0  AND  hc4 >= 1.0  AND  Depth >= 1.0,0,1.0,1.0,1.0,22,37.22626090049744
+5,197.36882398316064,309,Nice = 1 AND Depth = 1 AND Dict = 1 AND Multithreading = 1 AND BlockSize = 1,Dict >= 1.0  AND  Multithreading >= 1.0  AND  BlockSize >= 1.0  AND  Depth >= 1.0  AND  0.0 <= Lc4Lp0 < 1.0  AND  Nice >= 1.0,0,0.9734219269102988,1.0,0.948220064724919,22,55.581015825271606
+6,188.20050993735268,127,crc32 = 1 AND Nice = 1 AND Depth = 1 AND Dict = 1 AND Dist = 1 AND BlockSize = 1,crc32 >= 1.0  AND  BlockSize >= 1.0  AND  Nice >= 1.0  AND  Depth >= 1.0  AND  Dict >= 1.0  AND  Dist >= 1.0  AND  0.0 <= Lc4Lp0 < 1.0,0,0.963265306122449,1.0,0.9291338582677166,22,50.67624235153198
+1,35.16695067185459,161,Lc4Lp0 = 1,Lc4Lp0 >= 1.0,0,1.0,1.0,1.0,23,29.81527590751648
+2,39.7072628628748,244,sha256 = 1 AND Dist = 1,sha256 >= 1.0  AND  Dist >= 1.0,0,1.0,1.0,1.0,23,27.20022225379944
+3,52.6438572865937,185,crc64 = 1 AND Depth = 1 AND Dict = 1,crc64 >= 1.0  AND  Depth >= 1.0  AND  0.0 <= Lc0Lp4 < 1.0  AND  Dict >= 1.0,0,0.9577464788732396,1.0,0.918918918918919,23,27.65157914161682
+4,79.22339015397388,198,crc32 = 1 AND Nice = 1 AND Depth = 1 AND Dict = 1,crc32 >= 1.0  AND  Depth >= 1.0  AND  Dict >= 1.0  AND  Nice >= 1.0,0,1.0,1.0,1.0,23,27.758636713027958
+5,86.31667301846545,299,MemoryLimit = 1 AND Nice = 1 AND Dict = 1 AND Multithreading = 1 AND BlockSize = 1,MemoryLimit >= 1.0  AND  Nice >= 1.0  AND  Multithreading >= 1.0  AND  Dict >= 1.0  AND  BlockSize >= 1.0,0,1.0,1.0,1.0,23,27.4169499874115
+6,31.95863777224186,131,crc32 = 1 AND MemoryLimit = 1 AND Depth = 1 AND Dict = 1 AND Dist = 1 AND BlockSize = 1,crc32 >= 1.0  AND  Depth >= 1.0  AND  Dist >= 1.0  AND  BlockSize >= 1.0  AND  MemoryLimit >= 1.0  AND  Dict >= 1.0,0,1.0,1.0,1.0,23,28.347564697265625
+1,201.75310716599915,248,bt2 = 1,bt2 >= 1.0  AND  0.0 <= Lc0Lp4 < 1.0,0,0.970954356846473,1.0,0.9435483870967742,24,57.57602524757385
+2,123.50088514280318,344,crc32 = 1 AND Dist = 1,crc32 >= 1.0  AND  Dist >= 1.0,0,1.0,1.0,1.0,24,31.47117042541504
+3,95.76079346565652,170,Lc0Lp1 = 1 AND Dict = 1 AND BlockSize = 1,Lc0Lp1 >= 1.0  AND  Dict >= 1.0  AND  BlockSize >= 1.0,0,1.0,1.0,1.0,24,25.52309846878052
+4,24.108730604220213,163,none = 1 AND Nice = 1 AND Depth = 1 AND Dist = 1,none >= 1.0  AND  Nice >= 1.0  AND  Depth >= 1.0  AND  Dist >= 1.0,0,1.0,1.0,1.0,24,25.895443439483643
+5,165.1666932289984,102,hc4 = 1 AND Nice = 1 AND Depth = 1 AND Dist = 1 AND BlockSize = 1,hc4 >= 1.0  AND  Depth >= 1.0  AND  BlockSize >= 1.0  AND  Nice >= 1.0  AND  Dist >= 1.0,0,1.0,1.0,1.0,24,39.07930660247803
+6,186.9665739346639,133,crc32 = 1 AND MemoryLimit = 1 AND Nice = 1 AND Depth = 1 AND Dist = 1 AND BlockSize = 1,crc32 >= 1.0  AND  Dist >= 1.0  AND  Nice >= 1.0  AND  MemoryLimit >= 1.0  AND  BlockSize >= 1.0  AND  0.0 <= bt3 < 1.0  AND  Depth >= 1.0,0,0.9444444444444444,1.0,0.8947368421052632,24,59.36306095123291
+1,172.13019865494329,445,sha256 = 1,sha256 >= 1.0,1,1.0,1.0,1.0,25,55.13412261009216
+2,53.43970107569614,240,hc3 = 1 AND Nice = 1,hc3 >= 1.0  AND  MemoryLimit >= 1.0  AND  Nice >= 1.0,0,0.9237668161434976,1.0,0.8583333333333333,25,25.565183401107788
+3,75.96102115667307,190,sha256 = 1 AND Depth = 1 AND Dict = 1,sha256 >= 1.0  AND  Depth >= 1.0  AND  Dict >= 1.0,0,1.0,1.0,1.0,25,25.759434938430783
+4,121.1226855696912,217,bt4 = 1 AND MemoryLimit = 1 AND Nice = 1 AND Dist = 1,bt4 >= 1.0  AND  Nice >= 1.0  AND  Dist >= 1.0  AND  MemoryLimit >= 1.0,0,1.0,1.0,1.0,25,35.485432386398315
+5,98.0574545609402,149,none = 1 AND MemoryLimit = 1 AND Nice = 1 AND Depth = 1 AND BlockSize = 1,none >= 1.0  AND  Nice >= 1.0  AND  Depth >= 1.0  AND  BlockSize >= 1.0  AND  0.0 <= Lc1Lp0 < 1.0  AND  MemoryLimit >= 1.0,0,0.9543859649122808,1.0,0.912751677852349,25,26.42978453636169
+1,168.2803535685547,469,none = 1,none >= 1.0,1,1.0,1.0,1.0,26,54.98736596107483
+2,151.3316643064658,222,hc4 = 1 AND Dist = 1,hc4 >= 1.0  AND  Dist >= 1.0,0,1.0,1.0,1.0,26,37.88024926185608
+3,44.53334852384483,170,hc4 = 1 AND Depth = 1 AND Dist = 1,hc4 >= 1.0  AND  Dist >= 1.0  AND  0.0 <= Lc0Lp4 < 1.0  AND  Depth >= 1.0  AND  0.0 <= Lc1Lp3 < 1.0,0,0.9506172839506172,1.0,0.9058823529411764,26,26.15641021728516
+4,126.32162958781444,181,crc32 = 1 AND Nice = 1 AND Dict = 1 AND Dist = 1,crc32 >= 1.0  AND  Dict >= 1.0  AND  Dist >= 1.0  AND  Nice >= 1.0  AND  0.0 <= bt3 < 1.0  AND  0.0 <= Lc0Lp0 < 1.0,0,0.8827160493827161,1.0,0.7900552486187845,26,26.78311324119568
+5,118.51714039545254,202,bt4 = 1 AND MemoryLimit = 1 AND Nice = 1 AND Depth = 1 AND Dict = 1,bt4 >= 1.0  AND  Nice >= 1.0  AND  Depth >= 1.0  AND  Dict >= 1.0  AND  MemoryLimit >= 1.0,0,1.0,1.0,1.0,26,26.153903245925903
+6,162.14081173705517,123,crc32 = 1 AND MemoryLimit = 1 AND Nice = 1 AND Dict = 1 AND Dist = 1 AND BlockSize = 1,crc32 >= 1.0  AND  Dist >= 1.0  AND  Nice >= 1.0  AND  BlockSize >= 1.0  AND  MemoryLimit >= 1.0  AND  Dict >= 1.0  AND  0.0 <= Lc2Lp2 < 1.0,0,0.979253112033195,1.0,0.959349593495935,26,37.53382992744446
+1,94.83738579968792,134,Lc0Lp0 = 1,0.0 <= hc4 < 1.0  AND  Lc0Lp0 >= 1.0,0,0.9448818897637796,1.0,0.8955223880597015,27,27.6309871673584
+2,95.58665642316475,217,sha256 = 1 AND Nice = 1,sha256 >= 1.0  AND  Nice >= 1.0,0,1.0,1.0,1.0,27,25.324482679367065
+3,79.16047369518299,398,Dict = 1 AND Multithreading = 1 AND BlockSize = 1,0.0 <= bt2 < 1.0  AND  Multithreading >= 1.0  AND  Dict >= 1.0  AND  BlockSize >= 1.0  AND  0.0 <= Lc0Lp2 < 1.0,0,0.8929068150208623,1.0,0.8065326633165829,27,25.55760717391968
+4,159.70917560370845,176,crc64 = 1 AND MemoryLimit = 1 AND Dist = 1 AND BlockSize = 1,crc64 >= 1.0  AND  Dist >= 1.0  AND  BlockSize >= 1.0  AND  MemoryLimit >= 1.0,0,1.0,1.0,1.0,27,43.43426179885864
+5,161.68925828891054,202,bt4 = 1 AND MemoryLimit = 1 AND Depth = 1 AND Dist = 1 AND BlockSize = 1,bt4 >= 1.0  AND  Depth >= 1.0  AND  MemoryLimit >= 1.0  AND  BlockSize >= 1.0  AND  Dist >= 1.0  AND  0.0 <= Lc2Lp2 < 1.0,0,0.982367758186398,1.0,0.9653465346534652,27,49.54613637924194
+6,90.20623956486637,133,crc32 = 1 AND MemoryLimit = 1 AND Nice = 1 AND Depth = 1 AND Dist = 1 AND BlockSize = 1,none >= 1.0  AND  0.0 <= bt3 < 1.0  AND  0.0 <= Lc1Lp0 < 1.0  AND  0.0 <= BlockSize < 1.0  AND  0.0 <= bt2 < 1.0  AND  0.0 <= bt4 < 1.0  AND  0.0 <= FlushTimeout < 1.0,0,0.0,0.0,0.0,27,27.516263723373413
+1,187.25686429759995,134,Lc0Lp0 = 1,Lc0Lp0 >= 1.0,0,1.0,1.0,1.0,28,40.38285779953003
+2,199.8558396070552,244,sha256 = 1 AND Dist = 1,sha256 >= 1.0  AND  Dist >= 1.0,0,1.0,1.0,1.0,28,51.79221248626709
+3,175.20647574436055,111,hc4 = 1 AND Multithreading = 1 AND BlockSize = 1,BlockSize >= 1.0  AND  Multithreading >= 1.0  AND  hc4 >= 1.0,0,1.0,1.0,1.0,28,26.281069040298465
+4,200.5116498720689,174,crc64 = 1 AND Nice = 1 AND Dict = 1 AND Dist = 1,crc64 >= 1.0  AND  Nice >= 1.0  AND  Dict >= 1.0  AND  Dist >= 1.0,0,1.0,1.0,1.0,28,48.064894676208496
+5,104.11773746989984,155,none = 1 AND MemoryLimit = 1 AND Nice = 1 AND Depth = 1 AND Dict = 1,none >= 1.0  AND  Nice >= 1.0  AND  Dict >= 1.0  AND  MemoryLimit >= 1.0  AND  Depth >= 1.0,0,1.0,1.0,1.0,28,26.64162015914917
+6,127.05100455098852,141,crc32 = 1 AND MemoryLimit = 1 AND Nice = 1 AND Depth = 1 AND Dict = 1 AND BlockSize = 1,crc32 >= 1.0  AND  Depth >= 1.0  AND  MemoryLimit >= 1.0  AND  BlockSize >= 1.0  AND  Nice >= 1.0  AND  Dict >= 1.0,0,1.0,1.0,1.0,28,27.04782772064209
+1,45.62966442417114,155,Lc1Lp1 = 1,Lc1Lp1 >= 1.0,0,1.0,1.0,1.0,29,27.32646059989929
+2,56.52960580855972,140,crc32 = 1 AND FlushTimeout = 1,crc32 >= 1.0  AND  FlushTimeout >= 1.0  AND  0.0 <= bt2 < 1.0,0,0.955223880597015,1.0,0.9142857142857144,29,26.090239763259888
+3,160.1292038542069,116,none = 1 AND MemoryLimit = 1 AND Multithreading = 1,none >= 1.0  AND  Multithreading >= 1.0  AND  0.0 <= Lc3Lp0 < 1.0  AND  MemoryLimit >= 1.0,0,0.9824561403508772,1.0,0.9655172413793104,29,26.16883635520935
+4,79.2444866564214,105,Nice = 1 AND Dict = 1 AND FlushTimeout = 1 AND PositionBits = 1,PositionBits >= 1.0  AND  FlushTimeout >= 1.0  AND  Nice >= 1.0  AND  Dict >= 1.0,0,1.0,1.0,1.0,29,26.289634704589844
+5,36.522257559149054,203,bt4 = 1 AND Nice = 1 AND Dict = 1 AND Dist = 1 AND BlockSize = 1,bt4 >= 1.0  AND  Dict >= 1.0  AND  Dist >= 1.0  AND  Nice >= 1.0  AND  0.0 <= Lc0Lp0 < 1.0  AND  BlockSize >= 1.0,0,0.9315789473684212,1.0,0.8719211822660099,29,26.407109022140503
+6,38.30113539907344,141,crc32 = 1 AND MemoryLimit = 1 AND Nice = 1 AND Depth = 1 AND Dict = 1 AND BlockSize = 1,crc32 >= 1.0  AND  BlockSize >= 1.0  AND  Depth >= 1.0  AND  Dict >= 1.0  AND  Nice >= 1.0  AND  MemoryLimit >= 1.0,0,1.0,1.0,1.0,29,26.842355966567997
+1,106.87653440370738,161,Lc4Lp0 = 1,Lc4Lp0 >= 1.0,0,1.0,1.0,1.0,3,27.95375967025757
+2,58.3493474061472,244,sha256 = 1 AND Dist = 1,sha256 >= 1.0  AND  Dist >= 1.0,0,1.0,1.0,1.0,3,25.718568325042725
+3,173.5190802102019,150,crc32 = 1 AND Depth = 1 AND Multithreading = 1,Depth >= 1.0  AND  Multithreading >= 1.0  AND  crc32 >= 1.0,0,1.0,1.0,1.0,3,38.89009118080139
+4,64.40221562114033,170,crc64 = 1 AND MemoryLimit = 1 AND Dict = 1 AND Dist = 1,crc64 >= 1.0  AND  Dict >= 1.0  AND  Depth >= 1.0  AND  MemoryLimit >= 1.0  AND  Dist >= 1.0,0,0.9506172839506172,1.0,0.9058823529411764,3,26.4456627368927
+5,148.5341783401209,107,bt4 = 1 AND MemoryLimit = 1 AND Dist = 1 AND Multithreading = 1 AND BlockSize = 1,bt4 >= 1.0  AND  Multithreading >= 1.0  AND  MemoryLimit >= 1.0  AND  BlockSize >= 1.0  AND  Dist >= 1.0,0,1.0,1.0,1.0,3,26.62177348136902
+1,188.7553432065789,106,Lc1Lp3 = 1,Lc1Lp3 >= 1.0,0,1.0,1.0,1.0,30,39.90589427947998
+2,194.3664457954281,122,none = 1 AND FlushTimeout = 1,none >= 1.0  AND  FlushTimeout >= 1.0  AND  0.0 <= PositionBits < 1.0,0,0.8651162790697675,1.0,0.7622950819672131,30,36.49045944213867
+3,102.09352781817086,193,crc64 = 1 AND Nice = 1 AND Depth = 1,crc64 >= 1.0  AND  Nice >= 1.0  AND  0.0 <= Lc0Lp1 < 1.0  AND  Depth >= 1.0,0,0.9217877094972068,1.0,0.8549222797927462,30,25.766263961791992
+4,121.23815488476708,333,Depth = 1 AND Dict = 1 AND BlockSize = 1 AND FlushTimeout = 1,FlushTimeout >= 1.0  AND  Depth >= 1.0  AND  BlockSize >= 1.0  AND  Dict >= 1.0,1,1.0,1.0,1.0,30,57.63340902328491
+5,71.43309904969176,104,bt4 = 1 AND Depth = 1 AND Dict = 1 AND Multithreading = 1 AND BlockSize = 1,bt4 >= 1.0  AND  Multithreading >= 1.0  AND  Dict >= 1.0  AND  BlockSize >= 1.0  AND  Depth >= 1.0,0,1.0,1.0,1.0,30,34.9002799987793
+6,155.63355346490405,131,crc32 = 1 AND MemoryLimit = 1 AND Depth = 1 AND Dict = 1 AND Dist = 1 AND BlockSize = 1,crc32 >= 1.0  AND  Dist >= 1.0  AND  MemoryLimit >= 1.0  AND  BlockSize >= 1.0  AND  Depth >= 1.0  AND  Dict >= 1.0,0,1.0,1.0,1.0,30,39.9973566532135
+1,144.06891800788227,134,Lc0Lp0 = 1,Lc0Lp0 >= 1.0,0,1.0,1.0,1.0,31,27.789068698883057
+2,93.3291505896866,302,bt4 = 1 AND Dist = 1,bt4 >= 1.0  AND  Dist >= 1.0,0,1.0,1.0,1.0,31,25.95762705802917
+3,83.46560807418317,103,Depth = 1 AND FlushTimeout = 1 AND PositionBits = 1,PositionBits >= 1.0  AND  FlushTimeout >= 1.0  AND  Depth >= 1.0,0,1.0,1.0,1.0,31,26.15719223022461
+4,34.158350805393646,193,crc32 = 1 AND Nice = 1 AND Dist = 1 AND BlockSize = 1,crc32 >= 1.0  AND  Nice >= 1.0  AND  BlockSize >= 1.0  AND  Dist >= 1.0,0,1.0,1.0,1.0,31,25.567105531692505
+5,190.29718462971255,301,MemoryLimit = 1 AND Dict = 1 AND Dist = 1 AND Multithreading = 1 AND BlockSize = 1,BlockSize >= 1.0  AND  Multithreading >= 1.0  AND  Dict >= 1.0  AND  MemoryLimit >= 1.0  AND  0.0 <= Lc1Lp0 < 1.0  AND  Dist >= 1.0,0,0.9584775086505192,1.0,0.920265780730897,31,56.8083484172821
+6,189.89495134600963,123,crc32 = 1 AND MemoryLimit = 1 AND Nice = 1 AND Dict = 1 AND Dist = 1 AND BlockSize = 1,crc32 >= 1.0  AND  MemoryLimit >= 1.0  AND  Dict >= 1.0  AND  BlockSize >= 1.0  AND  Nice >= 1.0  AND  Dist >= 1.0  AND  0.0 <= Lc2Lp2 < 1.0,0,0.979253112033195,1.0,0.959349593495935,31,58.53426361083984
+1,115.9810009149696,147,Lc2Lp2 = 1,Lc2Lp2 >= 1.0,0,1.0,1.0,1.0,32,27.741544723510746
+2,147.57455352780738,217,sha256 = 1 AND Nice = 1,sha256 >= 1.0  AND  Nice >= 1.0  AND  0.0 <= Lc0Lp0 < 1.0,0,0.9542168674698795,1.0,0.912442396313364,32,36.54733967781067
+3,54.51807317393867,113,crc32 = 1 AND hc4 = 1 AND Dist = 1,crc32 >= 1.0  AND  hc4 >= 1.0  AND  Dist >= 1.0,0,1.0,1.0,1.0,32,26.548354148864743
+4,85.74511923963493,116,crc32 = 1 AND MemoryLimit = 1 AND Nice = 1 AND Multithreading = 1,0.0 <= Depth < 1.0  AND  Lc4Lp0 >= 1.0  AND  0.0 <= sha256 < 1.0  AND  0.0 <= bt2 < 1.0,0,0.0,0.0,0.0,32,24.55521321296692
+5,201.3905082654504,101,hc3 = 1 AND MemoryLimit = 1 AND Nice = 1 AND Dist = 1 AND Multithreading = 1,hc3 >= 1.0  AND  Dist >= 1.0  AND  MemoryLimit >= 1.0  AND  Multithreading >= 1.0  AND  Nice >= 1.0,0,1.0,1.0,1.0,32,37.530500173568726
+1,142.5098586177917,106,Lc1Lp3 = 1,Lc1Lp3 >= 1.0,0,1.0,1.0,1.0,33,26.667396306991577
+2,76.22638927874858,302,bt4 = 1 AND MemoryLimit = 1,MemoryLimit >= 1.0  AND  bt4 >= 1.0,1,1.0,1.0,1.0,33,35.16720795631409
+3,85.02276367329952,242,MemoryLimit = 1 AND Depth = 1 AND PositionBits = 1,PositionBits >= 1.0  AND  MemoryLimit >= 1.0  AND  Depth >= 1.0,0,1.0,1.0,1.0,33,26.107860565185547
+4,202.62954822257245,205,MemoryLimit = 1 AND Dict = 1 AND BlockSize = 1 AND PositionBits = 1,PositionBits >= 1.0  AND  MemoryLimit >= 1.0  AND  BlockSize >= 1.0  AND  Dict >= 1.0,0,1.0,1.0,1.0,33,54.23173546791077
+5,202.2950934371887,124,bt4 = 1 AND MemoryLimit = 1 AND Dict = 1 AND BlockSize = 1 AND FlushTimeout = 1,bt4 >= 1.0  AND  Dict >= 1.0  AND  BlockSize >= 1.0  AND  FlushTimeout >= 1.0  AND  MemoryLimit >= 1.0,0,1.0,1.0,1.0,33,58.01920247077942
+6,137.63019729710362,133,crc32 = 1 AND MemoryLimit = 1 AND Nice = 1 AND Depth = 1 AND Dist = 1 AND BlockSize = 1,crc32 >= 1.0  AND  BlockSize >= 1.0  AND  MemoryLimit >= 1.0  AND  Nice >= 1.0  AND  Dist >= 1.0  AND  Depth >= 1.0,0,1.0,1.0,1.0,33,39.540162086486816
+1,34.447863027855306,161,Lc4Lp0 = 1,Lc4Lp0 >= 1.0,0,1.0,1.0,1.0,34,27.9354465007782
+2,145.8723641693396,126,bt3 = 1 AND PositionBits = 1,PositionBits >= 1.0  AND  bt3 >= 1.0,0,1.0,1.0,1.0,34,26.244855880737305
+3,65.37643330470897,188,hc4 = 1 AND Nice = 1 AND BlockSize = 1,hc4 >= 1.0  AND  0.0 <= Lc1Lp1 < 1.0  AND  Nice >= 1.0  AND  BlockSize >= 1.0,0,0.9497206703910616,1.0,0.9042553191489362,34,26.346128940582275
+4,69.22636418918226,123,bt4 = 1 AND MemoryLimit = 1 AND Dist = 1 AND FlushTimeout = 1,bt4 >= 1.0  AND  Dist >= 1.0  AND  FlushTimeout >= 1.0  AND  MemoryLimit >= 1.0,0,1.0,1.0,1.0,34,39.53371715545654
+5,177.2622661258274,159,sha256 = 1 AND MemoryLimit = 1 AND Nice = 1 AND Depth = 1 AND BlockSize = 1,sha256 >= 1.0  AND  Nice >= 1.0  AND  BlockSize >= 1.0  AND  MemoryLimit >= 1.0  AND  Depth >= 1.0,0,1.0,1.0,1.0,34,49.32154703140259
+6,35.736282211826975,136,crc32 = 1 AND MemoryLimit = 1 AND Nice = 1 AND Depth = 1 AND Dict = 1 AND Dist = 1,crc32 >= 1.0  AND  Nice >= 1.0  AND  MemoryLimit >= 1.0  AND  Dict >= 1.0  AND  Dist >= 1.0  AND  Depth >= 1.0,0,1.0,1.0,1.0,34,26.171841859817505
+1,77.14968122865282,229,Lc0Lp1 = 1,Lc0Lp1 >= 1.0,1,1.0,1.0,1.0,35,34.55175828933716
+2,103.05682767580646,102,none = 1 AND bt4 = 1,none >= 1.0  AND  bt4 >= 1.0,0,1.0,1.0,1.0,35,25.746276378631592
+3,18.12112562061656,158,hc4 = 1 AND MemoryLimit = 1 AND BlockSize = 1,hc4 >= 1.0  AND  MemoryLimit >= 1.0  AND  0.0 <= crc64 < 1.0  AND  BlockSize >= 1.0,0,0.8833922261484098,1.0,0.7911392405063291,35,26.243327856063843
+4,105.77641477274128,103,Lc0Lp1 = 1 AND Nice = 1 AND Dict = 1 AND Dist = 1,Lc0Lp1 >= 1.0  AND  Dist >= 1.0  AND  Dict >= 1.0  AND  Nice >= 1.0,0,1.0,1.0,1.0,35,25.80827379226685
+5,127.21396916690506,113,bt4 = 1 AND Nice = 1 AND Dist = 1 AND BlockSize = 1 AND FlushTimeout = 1,bt4 >= 1.0  AND  FlushTimeout >= 1.0  AND  BlockSize >= 1.0  AND  Nice >= 1.0  AND  Dist >= 1.0,0,1.0,1.0,1.0,35,37.2431161403656
+6,198.32455420016777,127,crc32 = 1 AND Nice = 1 AND Depth = 1 AND Dict = 1 AND Dist = 1 AND BlockSize = 1,crc32 >= 1.0  AND  Depth >= 1.0  AND  BlockSize >= 1.0  AND  Dict >= 1.0  AND  Dist >= 1.0  AND  Nice >= 1.0,0,1.0,1.0,1.0,35,58.997883796691895
+1,49.91991456512783,161,Lc4Lp0 = 1,Lc4Lp0 >= 1.0,0,1.0,1.0,1.0,36,27.82636046409607
+2,67.30430327481301,365,crc32 = 1 AND Nice = 1,crc32 >= 1.0  AND  Nice >= 1.0,1,1.0,1.0,1.0,36,35.27182698249817
+3,53.45262135430682,150,crc32 = 1 AND Depth = 1 AND Multithreading = 1,Depth >= 1.0  AND  Multithreading >= 1.0  AND  crc32 >= 1.0,0,1.0,1.0,1.0,36,26.331414222717285
+4,177.0384070037259,337,MemoryLimit = 1 AND Nice = 1 AND Dict = 1 AND Multithreading = 1,MemoryLimit >= 1.0  AND  Multithreading >= 1.0  AND  Dict >= 1.0  AND  0.0 <= Lc0Lp1 < 1.0  AND  Nice >= 1.0,0,0.9501557632398754,1.0,0.9050445103857568,36,56.858848571777344
+5,34.49964817293742,155,crc32 = 1 AND MemoryLimit = 1 AND Depth = 1 AND Dict = 1 AND Dist = 1,crc32 >= 1.0  AND  hc3 >= 1.0  AND  Dist >= 1.0  AND  BlockSize >= 1.0,0,0.4077669902912622,0.8235294117647058,0.2709677419354839,36,25.089186668396
+6,115.8984433110724,136,crc32 = 1 AND MemoryLimit = 1 AND Nice = 1 AND Depth = 1 AND Dict = 1 AND Dist = 1,crc32 >= 1.0  AND  Depth >= 1.0  AND  MemoryLimit >= 1.0  AND  Dict >= 1.0  AND  Dist >= 1.0  AND  0.0 <= Lc3Lp0 < 1.0  AND  Nice >= 1.0,0,0.9657794676806084,1.0,0.9338235294117648,36,27.1201388835907
+1,162.72968756262654,367,bt3 = 1,bt3 >= 1.0  AND  0.0 <= Lc0Lp0 < 1.0,0,0.9719887955182072,1.0,0.9455040871934604,37,48.24471592903137
+2,151.87742904173544,152,Lc0Lp1 = 1 AND Dist = 1,Lc0Lp1 >= 1.0  AND  Dist >= 1.0,0,1.0,1.0,1.0,37,25.239238500595093
+3,33.08812192192034,109,crc64 = 1 AND MemoryLimit = 1 AND Multithreading = 1,crc64 >= 1.0  AND  Multithreading >= 1.0  AND  0.0 <= Lc1Lp0 < 1.0  AND  MemoryLimit >= 1.0,0,0.941747572815534,1.0,0.8899082568807339,37,26.135622024536133
+4,152.81152771641655,169,none = 1 AND MemoryLimit = 1 AND Depth = 1 AND BlockSize = 1,none >= 1.0  AND  Depth >= 1.0  AND  BlockSize >= 1.0  AND  MemoryLimit >= 1.0,0,1.0,1.0,1.0,37,34.45071721076965
+1,106.97205494993256,378,hc4 = 1,hc4 >= 1.0,0,1.0,1.0,1.0,38,45.26135730743408
+2,139.1761468743612,152,Lc0Lp1 = 1 AND Dist = 1,Lc0Lp1 >= 1.0  AND  Dist >= 1.0  AND  0.0 <= crc64 < 1.0,1,0.8698884758364311,1.0,0.7697368421052632,38,42.645095109939575
+3,107.39455337374196,138,Depth = 1 AND Multithreading = 1 AND PositionBits = 1,PositionBits >= 1.0  AND  Multithreading >= 1.0  AND  Depth >= 1.0,0,1.0,1.0,1.0,38,31.699199199676517
+1,76.39339258798961,378,hc4 = 1,hc4 >= 1.0,1,1.0,1.0,1.0,39,37.90875768661499
+2,155.52426823713637,328,Dict = 1 AND PositionBits = 1,PositionBits >= 1.0  AND  Dict >= 1.0,0,1.0,1.0,1.0,39,46.85261678695679
+3,139.71252903019902,187,crc64 = 1 AND Nice = 1 AND Dict = 1,crc64 >= 1.0  AND  0.0 <= hc4 < 1.0  AND  Nice >= 1.0  AND  Dict >= 1.0,0,0.9096209912536444,1.0,0.8342245989304813,39,26.028265953063965
+4,90.95273353406932,211,bt4 = 1 AND Nice = 1 AND Depth = 1 AND Dist = 1,bt4 >= 1.0  AND  Nice >= 1.0  AND  Depth >= 1.0  AND  Dist >= 1.0  AND  BlockSize >= 1.0  AND  0.0 <= Lc2Lp2 < 1.0,0,0.9528535980148882,1.0,0.909952606635071,39,26.465653657913208
+5,85.15658508777597,326,MemoryLimit = 1 AND Nice = 1 AND Depth = 1 AND Multithreading = 1 AND BlockSize = 1,MemoryLimit >= 1.0  AND  Multithreading >= 1.0  AND  BlockSize >= 1.0  AND  Depth >= 1.0  AND  0.0 <= Lc0Lp1 < 1.0  AND  Nice >= 1.0  AND  Dict >= 1.0,0,0.8835616438356165,1.0,0.7914110429447853,39,26.290199995040894
+6,107.88945466748108,136,crc32 = 1 AND MemoryLimit = 1 AND Nice = 1 AND Depth = 1 AND Dict = 1 AND Dist = 1,crc32 >= 1.0  AND  Depth >= 1.0  AND  MemoryLimit >= 1.0  AND  Dict >= 1.0  AND  Dist >= 1.0  AND  Nice >= 1.0,0,1.0,1.0,1.0,39,27.215653896331787
+1,89.96419494282834,147,Lc2Lp2 = 1,Lc2Lp2 >= 1.0,0,1.0,1.0,1.0,4,28.022761821746823
+2,183.14942976208428,217,sha256 = 1 AND Nice = 1,sha256 >= 1.0  AND  Nice >= 1.0,0,1.0,1.0,1.0,4,40.22117233276367
+3,187.8213759057413,108,crc32 = 1 AND Nice = 1 AND FlushTimeout = 1,crc32 >= 1.0  AND  FlushTimeout >= 1.0  AND  Nice >= 1.0  AND  0.0 <= Lc0Lp1 < 1.0,0,0.8808290155440415,1.0,0.7870370370370371,4,35.70769810676575
+4,71.21957262760574,195,hc3 = 1 AND MemoryLimit = 1 AND Dict = 1 AND Dist = 1,hc3 >= 1.0  AND  MemoryLimit >= 1.0  AND  Dict >= 1.0  AND  Dist >= 1.0,0,1.0,1.0,1.0,4,25.855316400527958
+5,67.51655344158746,109,bt4 = 1 AND MemoryLimit = 1 AND Nice = 1 AND Multithreading = 1 AND BlockSize = 1,bt4 >= 1.0  AND  Multithreading >= 1.0  AND  MemoryLimit >= 1.0  AND  Nice >= 1.0  AND  BlockSize >= 1.0,0,1.0,1.0,1.0,4,35.38154578208923
+6,145.70890997251217,141,crc32 = 1 AND MemoryLimit = 1 AND Nice = 1 AND Depth = 1 AND Dict = 1 AND BlockSize = 1,crc32 >= 1.0  AND  MemoryLimit >= 1.0  AND  Dict >= 1.0  AND  Nice >= 1.0  AND  BlockSize >= 1.0  AND  Depth >= 1.0,0,1.0,1.0,1.0,4,38.38824796676636
+1,171.44502327925727,445,sha256 = 1,sha256 >= 1.0,1,1.0,1.0,1.0,40,58.87252926826477
+2,145.71976754495694,492,Dist = 1 AND Multithreading = 1,Dist >= 1.0  AND  Multithreading >= 1.0,1,1.0,1.0,1.0,40,58.17659497261048
+3,141.76213077821043,193,crc64 = 1 AND MemoryLimit = 1 AND BlockSize = 1,crc64 >= 1.0  AND  MemoryLimit >= 1.0  AND  BlockSize >= 1.0,0,1.0,1.0,1.0,40,47.91674494743347
+4,133.08808099875677,105,Lc0Lp1 = 1 AND MemoryLimit = 1 AND Dict = 1 AND FlushTimeout = 1,Lc0Lp1 >= 1.0  AND  MemoryLimit >= 1.0  AND  Dict >= 1.0  AND  0.0 <= Multithreading < 1.0,0,1.0,1.0,1.0,40,27.260083198547363
+5,115.7415874272602,108,bt4 = 1 AND MemoryLimit = 1 AND Nice = 1 AND Depth = 1 AND FlushTimeout = 1,bt4 >= 1.0  AND  FlushTimeout >= 1.0  AND  MemoryLimit >= 1.0  AND  Nice >= 1.0  AND  Depth >= 1.0,0,1.0,1.0,1.0,40,37.39485502243042
+1,150.1162962586721,174,Lc0Lp2 = 1,Lc0Lp2 >= 1.0,0,1.0,1.0,1.0,41,39.437448263168335
+2,66.98893549761365,117,crc64 = 1 AND hc3 = 1,crc64 >= 1.0  AND  hc3 >= 1.0  AND  0.0 <= Lc1Lp0 < 1.0,0,0.9553571428571428,1.0,0.9145299145299144,41,26.273791790008545
+3,145.0937267957619,195,none = 1 AND MemoryLimit = 1 AND Dict = 1,none >= 1.0  AND  Dict >= 1.0  AND  MemoryLimit >= 1.0,0,1.0,1.0,1.0,41,36.224302530288696
+4,169.92605068423703,111,crc32 = 1 AND Depth = 1 AND Dist = 1 AND Multithreading = 1,crc32 >= 1.0  AND  Multithreading >= 1.0  AND  0.0 <= Lc1Lp0 < 1.0  AND  Depth >= 1.0  AND  Dist >= 1.0,0,0.9722222222222222,1.0,0.945945945945946,41,26.689775466918945
+5,120.14863403755498,114,crc32 = 1 AND MemoryLimit = 1 AND Nice = 1 AND Depth = 1 AND Multithreading = 1,crc32 >= 1.0  AND  Multithreading >= 1.0  AND  MemoryLimit >= 1.0  AND  Nice >= 1.0  AND  0.0 <= Lc0Lp2 < 1.0  AND  Depth >= 1.0,0,0.9541284403669724,1.0,0.912280701754386,41,38.758464336395264
+1,81.36886491879986,134,Lc0Lp0 = 1,Lc0Lp0 >= 1.0,0,1.0,1.0,1.0,42,27.746959686279297
+2,87.56015274399887,254,none = 1 AND MemoryLimit = 1,MemoryLimit >= 1.0  AND  none >= 1.0,1,1.0,1.0,1.0,42,34.66947913169861
+3,25.196966734914465,207,hc3 = 1 AND Nice = 1 AND Depth = 1,hc3 >= 1.0  AND  Depth >= 1.0  AND  Dist >= 1.0  AND  Nice >= 1.0,0,0.9545454545454544,1.0,0.9130434782608696,42,26.0786406993866
+4,135.38575228222334,193,hc3 = 1 AND MemoryLimit = 1 AND Nice = 1 AND Dict = 1,hc3 >= 1.0  AND  Nice >= 1.0  AND  MemoryLimit >= 1.0  AND  Dict >= 1.0,0,1.0,1.0,1.0,42,38.042799949646
+5,198.1748757366771,107,bt4 = 1 AND MemoryLimit = 1 AND Dist = 1 AND Multithreading = 1 AND BlockSize = 1,bt4 >= 1.0  AND  MemoryLimit >= 1.0  AND  Multithreading >= 1.0  AND  Dist >= 1.0  AND  BlockSize >= 1.0,0,1.0,1.0,1.0,42,29.757636308670044
+6,26.12988197076209,141,crc32 = 1 AND MemoryLimit = 1 AND Nice = 1 AND Depth = 1 AND Dict = 1 AND BlockSize = 1,crc32 >= 1.0  AND  MemoryLimit >= 1.0  AND  Nice >= 1.0  AND  FlushTimeout >= 1.0  AND  Dict >= 1.0  AND  Depth >= 1.0  AND  BlockSize >= 1.0,0,0.59,1.0,0.4184397163120567,42,26.550237894058228
+1,130.83629852258196,162,Lc0Lp4 = 1,Lc0Lp4 >= 1.0,0,1.0,1.0,1.0,43,45.166635036468506
+2,34.18989227937492,302,Depth = 1 AND PositionBits = 1,PositionBits >= 1.0  AND  Depth >= 1.0  AND  0.0 <= Lc0Lp2 < 1.0,1,0.9347442680776016,1.0,0.8774834437086093,43,44.20685529708862
+3,20.00492711652368,198,crc64 = 1 AND Dist = 1 AND BlockSize = 1,crc64 >= 1.0  AND  Dist >= 1.0  AND  BlockSize >= 1.0,0,1.0,1.0,1.0,43,30.778032302856445
+4,164.82950541205537,100,crc64 = 1 AND Dist = 1 AND Multithreading = 1 AND BlockSize = 1,crc64 >= 1.0  AND  Dist >= 1.0  AND  Multithreading >= 1.0  AND  BlockSize >= 1.0,0,1.0,1.0,1.0,43,31.27912735939026
+5,108.93847860250872,170,hc3 = 1 AND MemoryLimit = 1 AND Nice = 1 AND Depth = 1 AND Dist = 1,hc3 >= 1.0  AND  MemoryLimit >= 1.0  AND  Nice >= 1.0  AND  Depth >= 1.0  AND  Dist >= 1.0,0,1.0,1.0,1.0,43,30.42924427986145
+1,186.1691560450125,588,bt4 = 1,bt4 >= 1.0,1,1.0,1.0,1.0,44,54.83701157569885
+2,87.96872495071909,126,bt3 = 1 AND PositionBits = 1,PositionBits >= 1.0  AND  bt3 >= 1.0  AND  0.0 <= FlushTimeout < 1.0,0,0.9411764705882352,1.0,0.8888888888888888,44,26.641698837280277
+3,26.802222296092392,246,bt4 = 1 AND MemoryLimit = 1 AND Dist = 1,bt4 >= 1.0  AND  MemoryLimit >= 1.0  AND  Dist >= 1.0  AND  0.0 <= Lc0Lp4 < 1.0,0,0.9598308668076108,1.0,0.9227642276422764,44,36.29049801826477
+4,137.86666741424398,195,Nice = 1 AND Depth = 1 AND Dist = 1 AND PositionBits = 1,PositionBits >= 1.0  AND  Depth >= 1.0  AND  Dist >= 1.0  AND  Nice >= 1.0,0,1.0,1.0,1.0,44,26.47031188011169
+5,119.74307683433756,101,bt4 = 1 AND Depth = 1 AND Dict = 1 AND Dist = 1 AND Multithreading = 1,bt4 >= 1.0  AND  Multithreading >= 1.0  AND  Dict >= 1.0  AND  Dist >= 1.0  AND  Depth >= 1.0,0,1.0,1.0,1.0,44,26.90162682533264
+6,130.11857053137118,123,crc32 = 1 AND MemoryLimit = 1 AND Nice = 1 AND Dict = 1 AND Dist = 1 AND BlockSize = 1,crc32 >= 1.0  AND  Dict >= 1.0  AND  Nice >= 1.0  AND  Dist >= 1.0  AND  MemoryLimit >= 1.0  AND  BlockSize >= 1.0,0,1.0,1.0,1.0,44,27.29348587989807
+1,30.94161246682615,229,Lc0Lp1 = 1,Lc0Lp1 >= 1.0,0,1.0,1.0,1.0,45,27.274720668792725
+2,21.65974073352402,328,Dist = 1 AND PositionBits = 1,PositionBits >= 1.0  AND  Dist >= 1.0  AND  0.0 <= Lc2Lp2 < 1.0,1,0.9554140127388536,1.0,0.9146341463414634,45,50.43150210380554
+3,67.50567287117974,146,Nice = 1 AND Multithreading = 1 AND PositionBits = 1,PositionBits >= 1.0  AND  Multithreading >= 1.0  AND  Nice >= 1.0  AND  Depth >= 1.0,0,0.8897338403041826,1.0,0.8013698630136986,45,26.6021785736084
+4,115.4103048843565,138,hc4 = 1 AND MemoryLimit = 1 AND Depth = 1 AND Dict = 1,hc4 >= 1.0  AND  Depth >= 1.0  AND  Dict >= 1.0  AND  MemoryLimit >= 1.0,0,1.0,1.0,1.0,45,39.02991700172424
+5,37.06542542781038,106,bt4 = 1 AND Nice = 1 AND Depth = 1 AND Dist = 1 AND FlushTimeout = 1,bt4 >= 1.0  AND  FlushTimeout >= 1.0  AND  Depth >= 1.0  AND  Dist >= 1.0  AND  Nice >= 1.0,0,1.0,1.0,1.0,45,26.785372257232662
+1,96.1630344005732,399,crc64 = 1,crc64 >= 1.0  AND  0.0 <= Lc1Lp0 < 1.0,0,0.9541284403669724,1.0,0.912280701754386,46,27.55053162574768
+2,86.2054001951948,189,crc32 = 1 AND hc4 = 1,hc4 >= 1.0  AND  0.0 <= Lc1Lp0 < 1.0  AND  crc32 >= 1.0,0,0.9838709677419354,1.0,0.9682539682539684,46,26.240294694900516
+3,59.39994079730154,209,hc3 = 1 AND Depth = 1 AND Dist = 1,Depth >= 1.0  AND  Dist >= 1.0  AND  hc3 >= 1.0,0,1.0,1.0,1.0,46,25.837342977523804
+4,153.96723902865176,176,sha256 = 1 AND Nice = 1 AND Dist = 1 AND BlockSize = 1,sha256 >= 1.0  AND  BlockSize >= 1.0  AND  Nice >= 1.0  AND  Dist >= 1.0,0,1.0,1.0,1.0,46,38.18525314331055
+5,91.77227740966958,148,none = 1 AND MemoryLimit = 1 AND Nice = 1 AND Depth = 1 AND Dist = 1,none >= 1.0  AND  MemoryLimit >= 1.0  AND  Nice >= 1.0  AND  Dist >= 1.0  AND  Depth >= 1.0,0,1.0,1.0,1.0,46,26.444948434829712
+6,185.94946882338607,127,crc32 = 1 AND Nice = 1 AND Depth = 1 AND Dict = 1 AND Dist = 1 AND BlockSize = 1,crc32 >= 1.0  AND  Dict >= 1.0  AND  BlockSize >= 1.0  AND  Dist >= 1.0  AND  Nice >= 1.0  AND  Depth >= 1.0,0,1.0,1.0,1.0,46,44.86004304885864
+1,166.8316839119279,155,Lc1Lp1 = 1,Lc1Lp1 >= 1.0,0,1.0,1.0,1.0,47,33.8694281578064
+2,148.96631508455425,238,sha256 = 1 AND BlockSize = 1,sha256 >= 1.0  AND  BlockSize >= 1.0,0,1.0,1.0,1.0,47,57.62023591995239
+3,89.99586435591536,142,bt4 = 1 AND BlockSize = 1 AND FlushTimeout = 1,bt4 >= 1.0  AND  BlockSize >= 1.0  AND  FlushTimeout >= 1.0,0,1.0,1.0,1.0,47,26.0250506401062
+4,39.574664325582575,193,crc32 = 1 AND Nice = 1 AND Dist = 1 AND BlockSize = 1,crc32 >= 1.0  AND  Dist >= 1.0  AND  Nice >= 1.0  AND  BlockSize >= 1.0,0,1.0,1.0,1.0,47,26.5159752368927
+5,77.05255123205673,161,crc64 = 1 AND MemoryLimit = 1 AND Nice = 1 AND Depth = 1 AND Dist = 1,crc64 >= 1.0  AND  Nice >= 1.0  AND  0.0 <= Lc0Lp0 < 1.0  AND  MemoryLimit >= 1.0  AND  Depth >= 1.0  AND  Dist >= 1.0,0,0.964630225080386,1.0,0.9316770186335404,47,26.4053897857666
+6,95.68499458918248,141,crc32 = 1 AND MemoryLimit = 1 AND Nice = 1 AND Depth = 1 AND Dict = 1 AND BlockSize = 1,crc32 >= 1.0  AND  MemoryLimit >= 1.0  AND  Nice >= 1.0  AND  BlockSize >= 1.0  AND  Depth >= 1.0  AND  Dict >= 1.0,0,1.0,1.0,1.0,47,27.061656951904297
+1,195.30507384173248,105,Lc1Lp0 = 1,Lc1Lp0 >= 1.0,0,1.0,1.0,1.0,48,41.67092680931091
+2,171.04495505949157,233,hc4 = 1 AND Depth = 1,hc4 >= 1.0  AND  Depth >= 1.0  AND  0.0 <= Lc0Lp4 < 1.0,0,0.9780701754385964,1.0,0.9570815450643776,48,52.86910533905029
+3,78.41076731314776,105,sha256 = 1 AND Dist = 1 AND FlushTimeout = 1,sha256 >= 1.0  AND  FlushTimeout >= 1.0  AND  Dist >= 1.0,0,1.0,1.0,1.0,48,26.49777746200561
+4,35.777337374190424,138,hc4 = 1 AND MemoryLimit = 1 AND Depth = 1 AND Dict = 1,hc4 >= 1.0  AND  Dict >= 1.0  AND  Depth >= 1.0  AND  MemoryLimit >= 1.0,0,1.0,1.0,1.0,48,26.554232835769653
+5,145.2233132948804,161,sha256 = 1 AND MemoryLimit = 1 AND Nice = 1 AND Dist = 1 AND BlockSize = 1,sha256 >= 1.0  AND  Dist >= 1.0  AND  0.0 <= Lc0Lp2 < 1.0  AND  Nice >= 1.0  AND  BlockSize >= 1.0  AND  MemoryLimit >= 1.0,0,0.9842271293375394,1.0,0.968944099378882,48,35.17133283615112
+6,46.97115770907371,136,crc32 = 1 AND MemoryLimit = 1 AND Nice = 1 AND Depth = 1 AND Dict = 1 AND Dist = 1,crc32 >= 1.0  AND  Nice >= 1.0  AND  0.0 <= hc4 < 1.0  AND  Depth >= 1.0  AND  Dist >= 1.0  AND  MemoryLimit >= 1.0  AND  Dict >= 1.0,0,0.8943089430894309,1.0,0.8088235294117647,48,26.209795236587524
+1,124.60897007540883,502,FlushTimeout = 1,FlushTimeout >= 1.0,1,1.0,1.0,1.0,49,48.67152643203735
+2,99.64318562168856,244,sha256 = 1 AND Dist = 1,sha256 >= 1.0  AND  Dist >= 1.0,0,1.0,1.0,1.0,49,25.36998295783997
+3,35.87734247775882,175,crc32 = 1 AND Nice = 1 AND Multithreading = 1,crc32 >= 1.0  AND  Multithreading >= 1.0  AND  Nice >= 1.0,0,1.0,1.0,1.0,49,26.27741360664368
+4,195.67625596842552,193,hc3 = 1 AND MemoryLimit = 1 AND Nice = 1 AND Dict = 1,hc3 >= 1.0  AND  0.0 <= Lc3Lp0 < 1.0  AND  MemoryLimit >= 1.0  AND  Dict >= 1.0  AND  Nice >= 1.0,0,0.9679144385026738,1.0,0.9378238341968912,49,39.22821235656738
+5,121.01732750247928,101,crc64 = 1 AND Nice = 1 AND Depth = 1 AND Dist = 1 AND Multithreading = 1,crc64 >= 1.0  AND  Dist >= 1.0  AND  Multithreading >= 1.0  AND  Nice >= 1.0  AND  Depth >= 1.0,0,1.0,1.0,1.0,49,26.007116556167603
+1,174.64229767633276,229,Lc0Lp1 = 1,Lc0Lp1 >= 1.0,0,1.0,1.0,1.0,5,57.96191048622131
+2,197.38812310823727,328,Dict = 1 AND PositionBits = 1,PositionBits >= 1.0  AND  Dict >= 1.0  AND  0.0 <= Lc2Lp2 < 1.0  AND  0.0 <= Lc0Lp0 < 1.0,0,0.9419354838709678,1.0,0.8902439024390244,5,51.85460925102234
+3,105.22912440443226,404,Nice = 1 AND Dict = 1 AND Multithreading = 1,Dict >= 1.0  AND  Multithreading >= 1.0  AND  Nice >= 1.0,1,1.0,1.0,1.0,5,41.93002891540527
+4,43.52827797906335,174,crc64 = 1 AND MemoryLimit = 1 AND Depth = 1 AND BlockSize = 1,crc64 >= 1.0  AND  Depth >= 1.0  AND  BlockSize >= 1.0  AND  MemoryLimit >= 1.0,0,1.0,1.0,1.0,5,25.966739892959595
+5,125.75698596723323,309,Nice = 1 AND Depth = 1 AND Dict = 1 AND Multithreading = 1 AND BlockSize = 1,Depth >= 1.0  AND  Multithreading >= 1.0  AND  BlockSize >= 1.0  AND  Nice >= 1.0  AND  Dict >= 1.0  AND  0.0 <= Lc0Lp4 < 1.0,0,0.961344537815126,1.0,0.9255663430420712,5,44.97070789337158
+6,182.250889978566,136,crc32 = 1 AND MemoryLimit = 1 AND Nice = 1 AND Depth = 1 AND Dict = 1 AND Dist = 1,crc32 >= 1.0  AND  Depth >= 1.0  AND  Dict >= 1.0  AND  Nice >= 1.0  AND  Dist >= 1.0  AND  MemoryLimit >= 1.0,0,1.0,1.0,1.0,5,62.39405083656311
+1,124.50918484183347,161,Lc4Lp0 = 1,Lc4Lp0 >= 1.0,0,1.0,1.0,1.0,50,38.1322865486145
+2,95.09910352439526,246,none = 1 AND Dist = 1,none >= 1.0  AND  Dist >= 1.0  AND  0.0 <= Lc0Lp0 < 1.0  AND  0.0 <= Lc1Lp0 < 1.0,0,0.9350649350649352,1.0,0.8780487804878049,50,26.24373269081116
+3,192.39007636505,142,bt4 = 1 AND BlockSize = 1 AND FlushTimeout = 1,FlushTimeout >= 1.0  AND  BlockSize >= 1.0  AND  bt4 >= 1.0,0,1.0,1.0,1.0,50,60.61179733276367
+4,73.98427888021612,111,hc3 = 1 AND Dict = 1 AND BlockSize = 1 AND FlushTimeout = 1,hc3 >= 1.0  AND  FlushTimeout >= 1.0  AND  Dict >= 1.0  AND  BlockSize >= 1.0,0,1.0,1.0,1.0,50,26.698031425476078
+5,124.36248992265584,160,sha256 = 1 AND Nice = 1 AND Depth = 1 AND Dist = 1 AND BlockSize = 1,sha256 >= 1.0  AND  Depth >= 1.0  AND  Dist >= 1.0  AND  BlockSize >= 1.0  AND  Nice >= 1.0,0,1.0,1.0,1.0,50,26.460514545440677
+1,115.70969296018572,367,bt3 = 1,bt3 >= 1.0,1,1.0,1.0,1.0,51,41.7849645614624
+2,18.51965138422185,481,Depth = 1 AND Multithreading = 1,Depth >= 1.0  AND  Multithreading >= 1.0,1,1.0,1.0,1.0,51,40.65957832336426
+3,184.502153675799,108,crc32 = 1 AND Nice = 1 AND FlushTimeout = 1,0.0 <= Lc0Lp4 < 1.0  AND  FlushTimeout >= 1.0  AND  crc32 >= 1.0  AND  Nice >= 1.0,0,0.9714285714285714,1.0,0.9444444444444444,51,29.366386890411377
+4,148.140600260172,218,bt4 = 1 AND MemoryLimit = 1 AND Nice = 1 AND Depth = 1,bt4 >= 1.0  AND  MemoryLimit >= 1.0  AND  Depth >= 1.0  AND  Nice >= 1.0,0,1.0,1.0,1.0,51,39.06957912445069
+5,113.41013535640477,305,Nice = 1 AND Dict = 1 AND Dist = 1 AND BlockSize = 1 AND FlushTimeout = 1,FlushTimeout >= 1.0  AND  Nice >= 1.0  AND  Dist >= 1.0  AND  Dict >= 1.0  AND  BlockSize >= 1.0,0,1.0,1.0,1.0,51,25.64088249206543
+6,109.60214770134696,136,crc32 = 1 AND MemoryLimit = 1 AND Nice = 1 AND Depth = 1 AND Dict = 1 AND Dist = 1,crc32 >= 1.0  AND  Dict >= 1.0  AND  MemoryLimit >= 1.0  AND  Dist >= 1.0  AND  Nice >= 1.0  AND  Depth >= 1.0,0,1.0,1.0,1.0,51,26.94190359115601
+1,193.6253049044219,106,Lc1Lp3 = 1,Lc1Lp3 >= 1.0,0,1.0,1.0,1.0,52,34.93590974807739
+2,79.57458591074324,223,crc64 = 1 AND Dict = 1,crc64 >= 1.0  AND  Dict >= 1.0,0,1.0,1.0,1.0,52,25.217505931854248
+3,100.87998415399534,144,Dist = 1 AND Multithreading = 1 AND PositionBits = 1,PositionBits >= 1.0  AND  Dist >= 1.0  AND  Multithreading >= 1.0,0,1.0,1.0,1.0,52,25.726487159729004
+4,134.24878428969524,195,hc3 = 1 AND MemoryLimit = 1 AND Dict = 1 AND Dist = 1,hc3 >= 1.0  AND  Dist >= 1.0  AND  MemoryLimit >= 1.0  AND  Dict >= 1.0,0,1.0,1.0,1.0,52,25.42021512985229
+5,49.15086183583883,108,Lc0Lp1 = 1 AND MemoryLimit = 1 AND Dict = 1 AND Dist = 1 AND BlockSize = 1,Lc0Lp1 >= 1.0  AND  Dict >= 1.0  AND  Dist >= 1.0  AND  MemoryLimit >= 1.0  AND  BlockSize >= 1.0,0,1.0,1.0,1.0,52,25.45080876350403
+6,87.59394617824134,136,crc32 = 1 AND MemoryLimit = 1 AND Nice = 1 AND Depth = 1 AND Dict = 1 AND Dist = 1,crc32 >= 1.0  AND  Depth >= 1.0  AND  Nice >= 1.0  AND  Dict >= 1.0  AND  MemoryLimit >= 1.0  AND  Dist >= 1.0,0,1.0,1.0,1.0,52,34.283257484436035
+1,144.07760919995036,399,crc64 = 1,crc64 >= 1.0,1,1.0,1.0,1.0,53,59.20825982093811
+2,100.64826150096827,373,Depth = 1 AND FlushTimeout = 1,FlushTimeout >= 1.0  AND  0.0 <= Lc3Lp0 < 1.0  AND  Depth >= 1.0,0,0.9794801641586868,1.0,0.9597855227882036,53,25.03245449066162
+3,78.89459525286087,138,bt4 = 1 AND MemoryLimit = 1 AND FlushTimeout = 1,FlushTimeout >= 1.0  AND  bt4 >= 1.0  AND  MemoryLimit >= 1.0  AND  Nice >= 1.0,0,0.942528735632184,1.0,0.8913043478260869,53,25.973254203796387
+4,184.99042372126647,111,bt4 = 1 AND Nice = 1 AND Dict = 1 AND Multithreading = 1,Nice >= 1.0  AND  Multithreading >= 1.0  AND  bt4 >= 1.0  AND  Dict >= 1.0,0,1.0,1.0,1.0,53,47.055861949920654
+5,199.5874024898168,172,Nice = 1 AND Depth = 1 AND Dist = 1 AND BlockSize = 1 AND PositionBits = 1,PositionBits >= 1.0  AND  BlockSize >= 1.0  AND  Depth >= 1.0  AND  Dist >= 1.0  AND  Nice >= 1.0,0,1.0,1.0,1.0,53,39.47407746315002
+6,161.5596480375234,127,crc32 = 1 AND Nice = 1 AND Depth = 1 AND Dict = 1 AND Dist = 1 AND BlockSize = 1,crc32 >= 1.0  AND  Depth >= 1.0  AND  Dict >= 1.0  AND  Dist >= 1.0  AND  Nice >= 1.0  AND  BlockSize >= 1.0,0,1.0,1.0,1.0,53,37.75034832954407
+1,126.26511378001064,502,FlushTimeout = 1,FlushTimeout >= 1.0,1,1.0,1.0,1.0,54,53.15755558013916
+2,179.18511592890636,390,MemoryLimit = 1 AND FlushTimeout = 1,0.0 <= Lc1Lp3 < 1.0  AND  FlushTimeout >= 1.0  AND  MemoryLimit >= 1.0,0,0.9682539682539684,1.0,0.9384615384615383,54,52.85585331916809
+3,156.48883677912227,203,sha256 = 1 AND Dict = 1 AND BlockSize = 1,sha256 >= 1.0  AND  BlockSize >= 1.0  AND  Dict >= 1.0  AND  0.0 <= Lc0Lp0 < 1.0,0,0.9562982005141388,1.0,0.916256157635468,54,44.97930073738098
+4,52.159853039337925,174,crc64 = 1 AND MemoryLimit = 1 AND Depth = 1 AND BlockSize = 1,crc64 >= 1.0  AND  MemoryLimit >= 1.0  AND  Depth >= 1.0  AND  BlockSize >= 1.0  AND  0.0 <= Lc0Lp0 < 1.0,0,0.9673590504451038,1.0,0.9367816091954024,54,25.90818166732788
+5,91.29194779796995,100,hc3 = 1 AND Nice = 1 AND Dict = 1 AND Multithreading = 1 AND BlockSize = 1,hc3 >= 1.0  AND  Multithreading >= 1.0  AND  Nice >= 1.0  AND  BlockSize >= 1.0  AND  Dict >= 1.0,0,1.0,1.0,1.0,54,39.72517418861389
+6,147.89507087935274,131,crc32 = 1 AND MemoryLimit = 1 AND Depth = 1 AND Dict = 1 AND Dist = 1 AND BlockSize = 1,crc32 >= 1.0  AND  Dist >= 1.0  AND  BlockSize >= 1.0  AND  MemoryLimit >= 1.0  AND  Depth >= 1.0  AND  Dict >= 1.0,0,1.0,1.0,1.0,54,26.54558897018433
+1,130.00214502361473,229,Lc0Lp1 = 1,Lc0Lp1 >= 1.0,0,1.0,1.0,1.0,55,27.98657727241516
+2,37.06976394925376,146,bt3 = 1 AND Nice = 1,bt3 >= 1.0  AND  Nice >= 1.0,0,1.0,1.0,1.0,55,26.517423629760746
+3,54.5258397063653,190,sha256 = 1 AND Depth = 1 AND Dict = 1,sha256 >= 1.0  AND  Depth >= 1.0  AND  Dict >= 1.0,0,1.0,1.0,1.0,55,26.408321857452396
+4,37.108309370887696,188,hc3 = 1 AND MemoryLimit = 1 AND Nice = 1 AND Dist = 1,hc3 >= 1.0  AND  MemoryLimit >= 1.0  AND  Dist >= 1.0  AND  Nice >= 1.0  AND  0.0 <= Lc2Lp2 < 1.0,0,0.958448753462604,1.0,0.9202127659574468,55,26.248620748519897
+5,45.22211250228622,155,crc32 = 1 AND MemoryLimit = 1 AND Depth = 1 AND Dict = 1 AND Dist = 1,crc32 >= 1.0  AND  Depth >= 1.0  AND  Dict >= 1.0  AND  Dist >= 1.0  AND  MemoryLimit >= 1.0,0,1.0,1.0,1.0,55,26.85933470726013
+6,29.857407721187936,141,crc32 = 1 AND MemoryLimit = 1 AND Nice = 1 AND Depth = 1 AND Dict = 1 AND BlockSize = 1,crc32 >= 1.0  AND  MemoryLimit >= 1.0  AND  Nice >= 1.0  AND  BlockSize >= 1.0  AND  Dict >= 1.0  AND  0.0 <= Lc2Lp2 < 1.0  AND  Depth >= 1.0,0,0.9745454545454546,1.0,0.950354609929078,55,27.125524520874023
+1,160.81862784205748,229,Lc0Lp1 = 1,Lc0Lp1 >= 1.0,0,1.0,1.0,1.0,56,45.75649356842041
+2,125.32928752662386,102,Lc0Lp2 = 1 AND Depth = 1,Lc0Lp2 >= 1.0  AND  Depth >= 1.0,0,1.0,1.0,1.0,56,34.058032274246216
+3,178.00368829603462,108,none = 1 AND Dict = 1 AND FlushTimeout = 1,none >= 1.0  AND  Dict >= 1.0  AND  FlushTimeout >= 1.0,0,1.0,1.0,1.0,56,37.96796011924744
+4,53.87372434701635,226,bt4 = 1 AND MemoryLimit = 1 AND Nice = 1 AND BlockSize = 1,bt4 >= 1.0  AND  Nice >= 1.0  AND  BlockSize >= 1.0  AND  MemoryLimit >= 1.0  AND  0.0 <= Lc1Lp1 < 1.0,0,0.960919540229885,1.0,0.9247787610619468,56,25.931345462799072
+5,152.90344743354748,156,crc32 = 1 AND Nice = 1 AND Depth = 1 AND Dict = 1 AND BlockSize = 1,crc32 >= 1.0  AND  Depth >= 1.0  AND  BlockSize >= 1.0  AND  Dict >= 1.0  AND  Nice >= 1.0,0,1.0,1.0,1.0,56,37.86985063552856
+6,128.8181998056552,136,crc32 = 1 AND MemoryLimit = 1 AND Nice = 1 AND Depth = 1 AND Dict = 1 AND Dist = 1,crc32 >= 1.0  AND  Nice >= 1.0  AND  Depth >= 1.0  AND  Dict >= 1.0  AND  Dist >= 1.0  AND  MemoryLimit >= 1.0,0,1.0,1.0,1.0,56,26.922346591949463
+1,194.30069344854448,469,none = 1,none >= 1.0,1,1.0,1.0,1.0,57,55.39327335357666
+2,114.47266931477964,232,sha256 = 1 AND MemoryLimit = 1,sha256 >= 1.0  AND  MemoryLimit >= 1.0,0,1.0,1.0,1.0,57,25.37341809272766
+3,89.03288536299931,112,hc3 = 1 AND Multithreading = 1 AND BlockSize = 1,hc3 >= 1.0  AND  Multithreading >= 1.0  AND  BlockSize >= 1.0,0,1.0,1.0,1.0,57,26.04806971549988
+4,193.8027272506885,114,Dist = 1 AND Multithreading = 1 AND BlockSize = 1 AND PositionBits = 1,PositionBits >= 1.0  AND  Multithreading >= 1.0  AND  0.0 <= sha256 < 1.0  AND  Dist >= 1.0  AND  BlockSize >= 1.0,0,0.86,1.0,0.7543859649122807,57,31.03894281387329
+5,88.63781920490662,210,bt4 = 1 AND MemoryLimit = 1 AND Nice = 1 AND Dict = 1 AND BlockSize = 1,bt4 >= 1.0  AND  Nice >= 1.0  AND  Dict >= 1.0  AND  BlockSize >= 1.0  AND  MemoryLimit >= 1.0,0,1.0,1.0,1.0,57,26.103124856948853
+6,140.43667072696556,127,crc32 = 1 AND Nice = 1 AND Depth = 1 AND Dict = 1 AND Dist = 1 AND BlockSize = 1,crc32 >= 1.0  AND  Nice >= 1.0  AND  Depth >= 1.0  AND  Dist >= 1.0  AND  BlockSize >= 1.0  AND  Dict >= 1.0,0,1.0,1.0,1.0,57,26.68065309524536
+1,150.1178350193951,367,bt3 = 1,bt3 >= 1.0,1,1.0,1.0,1.0,58,50.08510231971741
+2,69.83800161162284,373,Depth = 1 AND FlushTimeout = 1,0.0 <= bt3 < 1.0  AND  FlushTimeout >= 1.0  AND  Depth >= 1.0  AND  0.0 <= Lc1Lp3 < 1.0,0,0.9388335704125176,1.0,0.8847184986595175,58,37.57779932022095
+3,104.567210328517,404,Nice = 1 AND Dict = 1 AND Multithreading = 1,Dict >= 1.0  AND  Multithreading >= 1.0  AND  Nice >= 1.0  AND  0.0 <= Lc0Lp1 < 1.0  AND  0.0 <= Lc0Lp4 < 1.0,0,0.9154362416107382,1.0,0.844059405940594,58,25.875075340271
+4,47.20932801570084,109,crc32 = 1 AND hc4 = 1 AND Nice = 1 AND Depth = 1,crc32 >= 1.0  AND  hc4 >= 1.0  AND  Nice >= 1.0  AND  Depth >= 1.0,0,1.0,1.0,1.0,58,26.125585556030277
+5,152.50803945737374,105,hc3 = 1 AND MemoryLimit = 1 AND Depth = 1 AND Dist = 1 AND Multithreading = 1,hc3 >= 1.0  AND  MemoryLimit >= 1.0  AND  Depth >= 1.0  AND  Multithreading >= 1.0  AND  Dist >= 1.0,0,1.0,1.0,1.0,58,26.061930418014526
+1,98.4738879794324,367,bt3 = 1,bt3 >= 1.0,0,1.0,1.0,1.0,59,28.572275400161743
+2,157.43648316068493,107,bt2 = 1 AND Dict = 1,bt2 >= 1.0  AND  Dict >= 1.0  AND  0.0 <= Lc0Lp4 < 1.0,0,0.9560975609756098,1.0,0.9158878504672896,59,26.76863813400269
+3,106.91537587738404,240,bt4 = 1 AND Dict = 1 AND Dist = 1,bt4 >= 1.0  AND  Dict >= 1.0  AND  Dist >= 1.0,0,1.0,1.0,1.0,59,38.410622119903564
+4,61.113536708241554,134,hc4 = 1 AND Nice = 1 AND Dict = 1 AND BlockSize = 1,hc4 >= 1.0  AND  Nice >= 1.0  AND  Dict >= 1.0  AND  BlockSize >= 1.0,0,1.0,1.0,1.0,59,26.987029790878296
+5,183.2567511474098,159,none = 1 AND MemoryLimit = 1 AND Nice = 1 AND Dict = 1 AND Dist = 1,none >= 1.0  AND  Nice >= 1.0  AND  Dict >= 1.0  AND  MemoryLimit >= 1.0  AND  Dist >= 1.0,0,1.0,1.0,1.0,59,47.23365044593811
+6,152.73378120629664,136,crc32 = 1 AND MemoryLimit = 1 AND Nice = 1 AND Depth = 1 AND Dict = 1 AND Dist = 1,crc32 >= 1.0  AND  Dict >= 1.0  AND  Dist >= 1.0  AND  Nice >= 1.0  AND  MemoryLimit >= 1.0  AND  Depth >= 1.0,0,1.0,1.0,1.0,59,41.26182389259338
+1,91.59134331304622,248,bt2 = 1,bt2 >= 1.0,0,1.0,1.0,1.0,6,27.90282249450684
+2,192.07275608563864,489,Nice = 1 AND Multithreading = 1,Nice >= 1.0  AND  Multithreading >= 1.0,4,1.0,1.0,1.0,6,50.582783699035645
+3,127.28662205182596,108,crc32 = 1 AND bt4 = 1 AND BlockSize = 1,crc32 >= 1.0  AND  bt4 >= 1.0  AND  BlockSize >= 1.0,0,1.0,1.0,1.0,6,26.75450205802917
+4,56.0278421192284,202,hc3 = 1 AND Dict = 1 AND Dist = 1 AND BlockSize = 1,hc3 >= 1.0  AND  Dict >= 1.0  AND  Dist >= 1.0  AND  BlockSize >= 1.0,0,1.0,1.0,1.0,6,26.123735427856445
+5,46.25881527179404,176,MemoryLimit = 1 AND Dict = 1 AND Dist = 1 AND BlockSize = 1 AND PositionBits = 1,BlockSize >= 1.0  AND  PositionBits >= 1.0  AND  MemoryLimit >= 1.0  AND  Dict >= 1.0  AND  Dist >= 1.0  AND  0.0 <= Lc1Lp0 < 1.0,0,0.967741935483871,1.0,0.9375,6,25.519141674041748
+6,100.8399782276935,141,crc32 = 1 AND MemoryLimit = 1 AND Nice = 1 AND Depth = 1 AND Dict = 1 AND BlockSize = 1,crc32 >= 1.0  AND  MemoryLimit >= 1.0  AND  Nice >= 1.0  AND  Depth >= 1.0  AND  BlockSize >= 1.0  AND  Dict >= 1.0,0,1.0,1.0,1.0,6,27.30270767211914
+1,203.7110823773975,161,Lc4Lp0 = 1,Lc4Lp0 >= 1.0,1,1.0,1.0,1.0,60,60.238107681274414
+2,21.196291156350696,140,none = 1 AND bt3 = 1,none >= 1.0  AND  bt3 >= 1.0,0,1.0,1.0,1.0,60,28.435604333877563
+3,54.09511258196866,336,Depth = 1 AND Dist = 1 AND FlushTimeout = 1,FlushTimeout >= 1.0  AND  Dist >= 1.0  AND  Depth >= 1.0,0,1.0,1.0,1.0,60,26.946534633636475
+4,131.64801127266105,114,bt4 = 1 AND MemoryLimit = 1 AND Depth = 1 AND Multithreading = 1,bt4 >= 1.0  AND  Depth >= 1.0  AND  Multithreading >= 1.0  AND  MemoryLimit >= 1.0,0,1.0,1.0,1.0,60,28.042739152908325
+5,53.83916131983715,104,bt4 = 1 AND Nice = 1 AND Depth = 1 AND Dist = 1 AND Multithreading = 1,bt4 >= 1.0  AND  Multithreading >= 1.0  AND  Nice >= 1.0  AND  Depth >= 1.0  AND  Dist >= 1.0,0,1.0,1.0,1.0,60,28.357311248779297
+1,72.75586685924485,155,Lc1Lp1 = 1,0.0 <= bt4 < 1.0  AND  Lc1Lp1 >= 1.0,0,0.8848920863309353,1.0,0.7935483870967742,61,28.01892828941345
+2,180.8878471888693,108,Lc0Lp2 = 1 AND BlockSize = 1,BlockSize >= 1.0  AND  Lc0Lp2 >= 1.0,0,1.0,1.0,1.0,61,36.451605796813965
+3,74.35365403199052,170,hc4 = 1 AND Nice = 1 AND Dist = 1,hc4 >= 1.0  AND  Nice >= 1.0  AND  Dist >= 1.0,0,1.0,1.0,1.0,61,26.612276077270508
+4,79.41288176769501,126,Lc0Lp1 = 1 AND Dict = 1 AND BlockSize = 1 AND FlushTimeout = 1,Lc0Lp1 >= 1.0  AND  0.0 <= Multithreading < 1.0  AND  BlockSize >= 1.0  AND  Dict >= 1.0,0,1.0,1.0,1.0,61,26.077157258987427
+5,188.2913200732456,185,hc3 = 1 AND MemoryLimit = 1 AND Depth = 1 AND Dict = 1 AND BlockSize = 1,hc3 >= 1.0  AND  Depth >= 1.0  AND  Dict >= 1.0  AND  MemoryLimit >= 1.0  AND  BlockSize >= 1.0,0,1.0,1.0,1.0,61,56.58075976371765
+6,110.75194464961804,127,crc32 = 1 AND Nice = 1 AND Depth = 1 AND Dict = 1 AND Dist = 1 AND BlockSize = 1,crc32 >= 1.0  AND  Nice >= 1.0  AND  Dict >= 1.0  AND  BlockSize >= 1.0  AND  Dist >= 1.0  AND  Depth >= 1.0  AND  0.0 <= Lc2Lp2 < 1.0,1,0.9799196787148594,1.0,0.9606299212598424,61,41.26242065429688
+1,136.32956956420068,106,Lc1Lp3 = 1,Lc1Lp3 >= 1.0,0,1.0,1.0,1.0,62,27.08562970161438
+2,79.90551220905323,373,Depth = 1 AND FlushTimeout = 1,FlushTimeout >= 1.0  AND  Depth >= 1.0,0,1.0,1.0,1.0,62,25.27036547660828
+3,121.24695362038044,108,none = 1 AND Dict = 1 AND FlushTimeout = 1,none >= 1.0  AND  FlushTimeout >= 1.0  AND  Dict >= 1.0,0,1.0,1.0,1.0,62,26.435311317443848
+4,114.57736598925364,171,crc64 = 1 AND MemoryLimit = 1 AND Dict = 1 AND BlockSize = 1,crc64 >= 1.0  AND  MemoryLimit >= 1.0  AND  Dict >= 1.0  AND  BlockSize >= 1.0,0,1.0,1.0,1.0,62,25.98043131828308
+5,156.8068307469665,175,Nice = 1 AND Dict = 1 AND Dist = 1 AND BlockSize = 1 AND PositionBits = 1,PositionBits >= 1.0  AND  Dict >= 1.0  AND  BlockSize >= 1.0  AND  Nice >= 1.0  AND  Dist >= 1.0,0,1.0,1.0,1.0,62,50.549256801605225
+6,164.33243598347482,123,crc32 = 1 AND MemoryLimit = 1 AND Nice = 1 AND Dict = 1 AND Dist = 1 AND BlockSize = 1,crc32 >= 1.0  AND  Dist >= 1.0  AND  Dict >= 1.0  AND  BlockSize >= 1.0  AND  MemoryLimit >= 1.0  AND  Nice >= 1.0,0,1.0,1.0,1.0,62,38.666635036468506
+1,102.07054422671332,134,Lc0Lp0 = 1,Lc0Lp0 >= 1.0,0,1.0,1.0,1.0,63,38.09263849258423
+2,176.51526921367278,107,crc64 = 1 AND FlushTimeout = 1,crc64 >= 1.0  AND  FlushTimeout >= 1.0  AND  0.0 <= Lc1Lp0 < 1.0,0,0.9560975609756098,1.0,0.9158878504672896,63,38.01487731933594
+3,167.9699407933946,170,hc4 = 1 AND Nice = 1 AND Dist = 1,hc4 >= 1.0  AND  Nice >= 1.0  AND  Dist >= 1.0,0,1.0,1.0,1.0,63,44.73129916191101
+4,66.9225703343692,322,MemoryLimit = 1 AND Dist = 1 AND BlockSize = 1 AND FlushTimeout = 1,MemoryLimit >= 1.0  AND  Dist >= 1.0  AND  FlushTimeout >= 1.0  AND  Depth >= 1.0  AND  BlockSize >= 1.0,0,0.9302325581395348,1.0,0.8695652173913043,63,25.23579144477844
+5,43.60489463444759,283,MemoryLimit = 1 AND Nice = 1 AND Dist = 1 AND BlockSize = 1 AND FlushTimeout = 1,FlushTimeout >= 1.0  AND  MemoryLimit >= 1.0  AND  Nice >= 1.0  AND  Dist >= 1.0  AND  BlockSize >= 1.0  AND  0.0 <= Lc1Lp1 < 1.0  AND  0.0 <= crc32 < 1.0,0,0.837782340862423,1.0,0.7208480565371025,63,25.70981979370117
+6,123.83679608373076,133,crc32 = 1 AND MemoryLimit = 1 AND Nice = 1 AND Depth = 1 AND Dist = 1 AND BlockSize = 1,crc32 >= 1.0  AND  Depth >= 1.0  AND  Dist >= 1.0  AND  BlockSize >= 1.0  AND  Nice >= 1.0  AND  MemoryLimit >= 1.0  AND  0.0 <= Lc0Lp4 < 1.0,0,0.9568627450980391,1.0,0.9172932330827068,63,26.7715425491333
+1,78.02810556743188,161,Lc4Lp0 = 1,Lc4Lp0 >= 1.0,0,1.0,1.0,1.0,64,28.00129556655884
+2,175.56372573118034,107,crc64 = 1 AND FlushTimeout = 1,crc64 >= 1.0  AND  FlushTimeout >= 1.0,0,1.0,1.0,1.0,64,37.63237142562866
+3,30.168343747190608,240,crc32 = 1 AND Dict = 1 AND Dist = 1,crc32 >= 1.0  AND  Dict >= 1.0  AND  Dist >= 1.0,0,1.0,1.0,1.0,64,25.54400968551636
+4,115.9648934344173,184,sha256 = 1 AND MemoryLimit = 1 AND Dict = 1 AND BlockSize = 1,sha256 >= 1.0  AND  MemoryLimit >= 1.0  AND  Dict >= 1.0  AND  0.0 <= Lc1Lp3 < 1.0  AND  BlockSize >= 1.0,0,0.9633802816901408,1.0,0.9293478260869564,64,25.92148733139038
+5,174.4763068605224,160,crc64 = 1 AND Nice = 1 AND Dict = 1 AND Dist = 1 AND BlockSize = 1,crc64 >= 1.0  AND  Nice >= 1.0  AND  Dict >= 1.0  AND  BlockSize >= 1.0  AND  Dist >= 1.0,0,1.0,1.0,1.0,64,48.91503286361694
+1,156.7250567837461,161,Lc4Lp0 = 1,Lc4Lp0 >= 1.0,0,1.0,1.0,1.0,65,32.51750707626343
+2,92.00338445665692,228,hc4 = 1 AND Dict = 1,hc4 >= 1.0  AND  Dict >= 1.0,0,1.0,1.0,1.0,65,25.93897581100464
+3,27.802418079087385,192,crc64 = 1 AND Depth = 1 AND BlockSize = 1,crc64 >= 1.0  AND  Depth >= 1.0  AND  BlockSize >= 1.0,0,1.0,1.0,1.0,65,25.83868813514709
+4,197.7190846672401,103,hc3 = 1 AND Nice = 1 AND BlockSize = 1 AND FlushTimeout = 1,FlushTimeout >= 1.0  AND  BlockSize >= 1.0  AND  hc3 >= 1.0  AND  Nice >= 1.0,0,1.0,1.0,1.0,65,40.56885814666748
+5,56.64075033164655,101,hc3 = 1 AND MemoryLimit = 1 AND Dict = 1 AND Multithreading = 1 AND BlockSize = 1,hc3 >= 1.0  AND  Multithreading >= 1.0  AND  MemoryLimit >= 1.0  AND  Dict >= 1.0  AND  BlockSize >= 1.0,0,1.0,1.0,1.0,65,26.20577573776245
+6,199.7918275459978,131,crc32 = 1 AND MemoryLimit = 1 AND Depth = 1 AND Dict = 1 AND Dist = 1 AND BlockSize = 1,crc32 >= 1.0  AND  BlockSize >= 1.0  AND  MemoryLimit >= 1.0  AND  Depth >= 1.0  AND  Dict >= 1.0  AND  Dist >= 1.0,0,1.0,1.0,1.0,65,31.98888611793518
+1,184.05334553729543,399,crc64 = 1,crc64 >= 1.0,1,1.0,1.0,1.0,66,56.24191188812256
+2,193.14552498396165,249,crc32 = 1 AND PositionBits = 1,crc32 >= 1.0  AND  PositionBits >= 1.0,0,1.0,1.0,1.0,66,40.50631904602051
+3,137.72449770137928,137,Lc0Lp1 = 1 AND Depth = 1 AND Dict = 1,Lc0Lp1 >= 1.0  AND  Depth >= 1.0  AND  Dict >= 1.0,0,1.0,1.0,1.0,66,25.975573301315308
+4,153.56649016713362,356,MemoryLimit = 1 AND Depth = 1 AND Dist = 1 AND Multithreading = 1,Dist >= 1.0  AND  Multithreading >= 1.0  AND  MemoryLimit >= 1.0  AND  Depth >= 1.0,4,1.0,1.0,1.0,66,53.35759234428406
+5,42.683667702845696,176,crc32 = 1 AND MemoryLimit = 1 AND Nice = 1 AND Depth = 1 AND Dict = 1,crc32 >= 1.0  AND  Depth >= 1.0  AND  Dict >= 1.0  AND  MemoryLimit >= 1.0  AND  Nice >= 1.0,0,1.0,1.0,1.0,66,26.89780831336975
+1,128.3484065302564,161,Lc4Lp0 = 1,Lc4Lp0 >= 1.0,0,1.0,1.0,1.0,67,27.980857849121094
+2,188.7001640574591,176,bt4 = 1 AND PositionBits = 1,PositionBits >= 1.0  AND  bt4 >= 1.0  AND  0.0 <= Lc0Lp1 < 1.0,0,0.9202453987730062,1.0,0.8522727272727273,67,44.50066542625427
+3,138.295975442949,192,crc64 = 1 AND Depth = 1 AND Dist = 1,crc64 >= 1.0  AND  Depth >= 1.0  AND  Dist >= 1.0,0,1.0,1.0,1.0,67,25.735302925109863
+4,35.577561123005204,101,Depth = 1 AND Dict = 1 AND FlushTimeout = 1 AND PositionBits = 1,PositionBits >= 1.0  AND  FlushTimeout >= 1.0  AND  Dict >= 1.0  AND  Depth >= 1.0,0,1.0,1.0,1.0,67,26.25506901741028
+5,182.50507785743224,104,hc3 = 1 AND Depth = 1 AND Dict = 1 AND Multithreading = 1 AND BlockSize = 1,hc3 >= 1.0  AND  Multithreading >= 1.0  AND  Dict >= 1.0  AND  BlockSize >= 1.0  AND  Depth >= 1.0,0,1.0,1.0,1.0,67,30.95201563835144
+6,164.73313359439828,136,crc32 = 1 AND MemoryLimit = 1 AND Nice = 1 AND Depth = 1 AND Dict = 1 AND Dist = 1,crc32 >= 1.0  AND  Nice >= 1.0  AND  MemoryLimit >= 1.0  AND  Dict >= 1.0  AND  Dist >= 1.0  AND  Depth >= 1.0,0,1.0,1.0,1.0,67,31.53451704978943
+1,167.41452029809204,105,Lc1Lp0 = 1,Lc1Lp0 >= 1.0,0,1.0,1.0,1.0,68,26.66875267028809
+2,106.89072228142734,189,crc32 = 1 AND hc4 = 1,crc32 >= 1.0  AND  hc4 >= 1.0,0,1.0,1.0,1.0,68,26.167782306671143
+3,94.05485820335169,378,Nice = 1 AND BlockSize = 1 AND FlushTimeout = 1,BlockSize >= 1.0  AND  FlushTimeout >= 1.0  AND  Nice >= 1.0,1,1.0,1.0,1.0,68,35.61658430099487
+4,147.28912919429476,145,hc4 = 1 AND Nice = 1 AND Depth = 1 AND BlockSize = 1,hc4 >= 1.0  AND  Nice >= 1.0  AND  Depth >= 1.0  AND  BlockSize >= 1.0,0,1.0,1.0,1.0,68,37.68607521057129
+5,21.083315880896183,172,Nice = 1 AND Depth = 1 AND Dist = 1 AND BlockSize = 1 AND PositionBits = 1,PositionBits >= 1.0  AND  Depth >= 1.0  AND  FlushTimeout >= 1.0  AND  0.0 <= Lc0Lp1 < 1.0  AND  Nice >= 1.0,0,0.5021645021645021,0.9830508474576272,0.3372093023255814,68,25.79123878479004
+6,201.27811662003484,131,crc32 = 1 AND MemoryLimit = 1 AND Depth = 1 AND Dict = 1 AND Dist = 1 AND BlockSize = 1,crc32 >= 1.0  AND  MemoryLimit >= 1.0  AND  Dict >= 1.0  AND  Dist >= 1.0  AND  Depth >= 1.0  AND  BlockSize >= 1.0,0,1.0,1.0,1.0,68,42.11026263237
+1,201.1213498091281,161,Lc4Lp0 = 1,0.0 <= bt4 < 1.0  AND  Lc4Lp0 >= 1.0,0,0.8621908127208481,1.0,0.7577639751552795,69,51.0138566493988
+2,77.83874203625851,137,hc4 = 1 AND PositionBits = 1,PositionBits >= 1.0  AND  hc4 >= 1.0,0,1.0,1.0,1.0,69,26.25305247306824
+3,84.902800965847,132,bt4 = 1 AND Depth = 1 AND FlushTimeout = 1,bt4 >= 1.0  AND  FlushTimeout >= 1.0  AND  Depth >= 1.0,0,1.0,1.0,1.0,69,25.85125041007996
+4,20.14055199560522,105,Nice = 1 AND Dict = 1 AND FlushTimeout = 1 AND PositionBits = 1,PositionBits >= 1.0  AND  FlushTimeout >= 1.0  AND  Nice >= 1.0  AND  Dict >= 1.0,0,1.0,1.0,1.0,69,25.629124641418457
+5,25.25160672332206,101,crc64 = 1 AND Nice = 1 AND Depth = 1 AND Dist = 1 AND Multithreading = 1,crc64 >= 1.0  AND  Multithreading >= 1.0  AND  Nice >= 1.0  AND  Depth >= 1.0  AND  Dist >= 1.0,0,1.0,1.0,1.0,69,26.14561080932617
+6,111.80441255614484,127,crc32 = 1 AND Nice = 1 AND Depth = 1 AND Dict = 1 AND Dist = 1 AND BlockSize = 1,crc32 >= 1.0  AND  BlockSize >= 1.0  AND  Dict >= 1.0  AND  Dist >= 1.0  AND  Depth >= 1.0  AND  Nice >= 1.0,0,1.0,1.0,1.0,69,26.827174186706543
+1,83.78228119929591,445,sha256 = 1,sha256 >= 1.0,1,1.0,1.0,1.0,7,50.13095474243164
+2,78.24391129044587,108,Lc0Lp2 = 1 AND BlockSize = 1,Lc0Lp2 >= 1.0  AND  BlockSize >= 1.0,0,1.0,1.0,1.0,7,25.52656316757202
+3,153.07663379525857,134,bt4 = 1 AND Nice = 1 AND FlushTimeout = 1,FlushTimeout >= 1.0  AND  Nice >= 1.0  AND  bt4 >= 1.0,0,1.0,1.0,1.0,7,25.65493607521057
+4,122.79290875105862,188,hc3 = 1 AND MemoryLimit = 1 AND Depth = 1 AND Dist = 1,hc3 >= 1.0  AND  MemoryLimit >= 1.0  AND  Depth >= 1.0  AND  Dist >= 1.0  AND  0.0 <= Lc1Lp1 < 1.0,0,0.9613259668508288,1.0,0.925531914893617,7,25.809892654418945
+5,62.55213891251343,179,hc3 = 1 AND Nice = 1 AND Depth = 1 AND Dict = 1 AND Dist = 1,hc3 >= 1.0  AND  Nice >= 1.0  AND  Depth >= 1.0  AND  Dict >= 1.0  AND  Dist >= 1.0,0,1.0,1.0,1.0,7,25.31617212295532
+6,28.00631207335363,123,crc32 = 1 AND MemoryLimit = 1 AND Nice = 1 AND Dict = 1 AND Dist = 1 AND BlockSize = 1,crc32 >= 1.0  AND  Dict >= 1.0  AND  Dist >= 1.0  AND  Nice >= 1.0  AND  MemoryLimit >= 1.0  AND  BlockSize >= 1.0,0,1.0,1.0,1.0,7,26.81718373298645
+1,155.1741683438321,174,Lc0Lp2 = 1,Lc0Lp2 >= 1.0,0,1.0,1.0,1.0,70,32.010820150375366
+2,35.90995746650644,489,Nice = 1 AND Multithreading = 1,Nice >= 1.0  AND  Multithreading >= 1.0,0,1.0,1.0,1.0,70,36.04063153266907
+3,198.9479242063577,101,crc64 = 1 AND BlockSize = 1 AND FlushTimeout = 1,crc64 >= 1.0  AND  BlockSize >= 1.0  AND  FlushTimeout >= 1.0,0,1.0,1.0,1.0,70,32.67821311950684
+4,97.65468201394728,208,MemoryLimit = 1 AND Nice = 1 AND Depth = 1 AND PositionBits = 1,PositionBits >= 1.0  AND  Nice >= 1.0  AND  Depth >= 1.0  AND  MemoryLimit >= 1.0,0,1.0,1.0,1.0,70,26.593626499176025
+5,180.2450491453483,149,none = 1 AND MemoryLimit = 1 AND Depth = 1 AND Dist = 1 AND BlockSize = 1,none >= 1.0  AND  Depth >= 1.0  AND  BlockSize >= 1.0  AND  Dist >= 1.0  AND  MemoryLimit >= 1.0,0,1.0,1.0,1.0,70,40.573667764663696
+6,168.78412079234195,141,crc32 = 1 AND MemoryLimit = 1 AND Nice = 1 AND Depth = 1 AND Dict = 1 AND BlockSize = 1,crc32 >= 1.0  AND  Depth >= 1.0  AND  BlockSize >= 1.0  AND  Dict >= 1.0  AND  MemoryLimit >= 1.0  AND  Nice >= 1.0,0,1.0,1.0,1.0,70,43.207205057144165
+1,51.490823374360005,418,hc3 = 1,hc3 >= 1.0,1,1.0,1.0,1.0,71,42.556880235672
+2,198.5841725857582,172,none = 1 AND Multithreading = 1,none >= 1.0  AND  0.0 <= bt2 < 1.0  AND  Multithreading >= 1.0,0,0.966966966966967,1.0,0.936046511627907,71,51.592042207717896
+3,33.79523380139982,207,sha256 = 1 AND Dist = 1 AND BlockSize = 1,sha256 >= 1.0  AND  BlockSize >= 1.0  AND  Dist >= 1.0,0,1.0,1.0,1.0,71,25.6871030330658
+4,26.38795592055162,110,Lc0Lp1 = 1 AND MemoryLimit = 1 AND Depth = 1 AND BlockSize = 1,Lc0Lp1 >= 1.0  AND  MemoryLimit >= 1.0  AND  Depth >= 1.0  AND  BlockSize >= 1.0,0,1.0,1.0,1.0,71,25.772013187408447
+5,32.42653581780394,156,crc32 = 1 AND Nice = 1 AND Depth = 1 AND Dict = 1 AND BlockSize = 1,crc32 >= 1.0  AND  Depth >= 1.0  AND  Dict >= 1.0  AND  BlockSize >= 1.0  AND  Nice >= 1.0,0,1.0,1.0,1.0,71,26.21343755722046
+1,75.27429262197317,469,none = 1,none >= 1.0,0,1.0,1.0,1.0,72,29.02918672561645
+2,19.86115633261354,136,crc64 = 1 AND Multithreading = 1,crc64 >= 1.0  AND  Multithreading >= 1.0,0,1.0,1.0,1.0,72,26.19790720939636
+3,34.78434552253656,190,none = 1 AND Depth = 1 AND Dict = 1,none >= 1.0  AND  Dict >= 1.0  AND  0.0 <= Lc1Lp1 < 1.0  AND  Depth >= 1.0,0,0.9415041782729804,1.0,0.8894736842105263,72,26.103556156158447
+4,56.30314352588985,185,crc32 = 1 AND MemoryLimit = 1 AND Nice = 1 AND Dict = 1,crc32 >= 1.0  AND  Dict >= 1.0  AND  MemoryLimit >= 1.0  AND  Nice >= 1.0  AND  0.0 <= Lc4Lp0 < 1.0,0,0.9577464788732396,1.0,0.918918918918919,72,26.162403345108032
+5,200.7321906110728,114,bt4 = 1 AND MemoryLimit = 1 AND Depth = 1 AND Dict = 1 AND FlushTimeout = 1,FlushTimeout >= 1.0  AND  Depth >= 1.0  AND  bt4 >= 1.0  AND  0.0 <= Lc1Lp3 < 1.0  AND  MemoryLimit >= 1.0  AND  Dict >= 1.0  AND  0.0 <= Lc1Lp0 < 1.0,0,0.9245283018867924,1.0,0.8596491228070176,72,44.54523015022278
+1,100.07636689139515,162,Lc0Lp4 = 1,Lc0Lp4 >= 1.0,0,1.0,1.0,1.0,73,27.781739473342896
+2,95.84858845276818,229,Multithreading = 1 AND PositionBits = 1,PositionBits >= 1.0  AND  Multithreading >= 1.0,1,1.0,1.0,1.0,73,44.496898889541626
+3,165.08961714067124,138,bt4 = 1 AND MemoryLimit = 1 AND FlushTimeout = 1,FlushTimeout >= 1.0  AND  MemoryLimit >= 1.0  AND  bt4 >= 1.0,0,1.0,1.0,1.0,73,29.97846484184265
+4,88.03395899841775,137,Lc0Lp1 = 1 AND Dict = 1 AND Dist = 1 AND BlockSize = 1,BlockSize >= 1.0  AND  Lc0Lp1 >= 1.0  AND  Dict >= 1.0  AND  Dist >= 1.0,0,1.0,1.0,1.0,73,25.336296558380127
+5,34.33806930205657,169,sha256 = 1 AND MemoryLimit = 1 AND Dict = 1 AND Dist = 1 AND BlockSize = 1,sha256 >= 1.0  AND  BlockSize >= 1.0  AND  Dict >= 1.0  AND  Dist >= 1.0  AND  0.0 <= Lc4Lp0 < 1.0  AND  MemoryLimit >= 1.0  AND  0.0 <= hc3 < 1.0,0,0.8542372881355932,1.0,0.7455621301775148,73,26.32341361045837
+1,108.5439677436754,248,bt2 = 1,bt2 >= 1.0,0,1.0,1.0,1.0,74,27.809097051620483
+2,94.01253644550656,151,Lc0Lp1 = 1 AND MemoryLimit = 1,Lc0Lp1 >= 1.0  AND  MemoryLimit >= 1.0,0,1.0,1.0,1.0,74,25.3473641872406
+3,92.99866088647217,246,crc32 = 1 AND Nice = 1 AND Dist = 1,crc32 >= 1.0  AND  Nice >= 1.0  AND  Dist >= 1.0,0,1.0,1.0,1.0,74,51.2044723033905
+4,192.3102266967472,166,none = 1 AND MemoryLimit = 1 AND Nice = 1 AND Dist = 1,Dist >= 1.0  AND  none >= 1.0  AND  MemoryLimit >= 1.0  AND  0.0 <= bt3 < 1.0,1,0.9161676646706588,0.9107142857142856,0.9216867469879518,74,58.20415353775024
+5,172.1839457584836,564,Nice = 1 AND Depth = 1 AND Dict = 1 AND Dist = 1 AND BlockSize = 1,Nice >= 1.0  AND  Dict >= 1.0  AND  Dist >= 1.0  AND  BlockSize >= 1.0  AND  Depth >= 1.0  AND  0.0 <= crc64 < 1.0,0,0.8513238289205702,1.0,0.7411347517730497,74,50.54326939582825
+6,59.83915430877902,131,crc32 = 1 AND MemoryLimit = 1 AND Depth = 1 AND Dict = 1 AND Dist = 1 AND BlockSize = 1,crc32 >= 1.0  AND  Depth >= 1.0  AND  Dist >= 1.0  AND  BlockSize >= 1.0  AND  Dict >= 1.0  AND  MemoryLimit >= 1.0,0,1.0,1.0,1.0,74,26.547516107559204
+1,70.27301880797675,399,crc64 = 1,crc64 >= 1.0,1,1.0,1.0,1.0,75,44.28755235671997
+2,173.77177374851072,469,MemoryLimit = 1 AND Multithreading = 1,0.0 <= Lc1Lp3 < 1.0  AND  Multithreading >= 1.0  AND  MemoryLimit >= 1.0,0,0.9577777777777776,1.0,0.9189765458422174,75,50.08883237838745
+3,44.93298563987703,112,Lc0Lp1 = 1 AND Depth = 1 AND Dist = 1,Depth >= 1.0  AND  Lc0Lp1 >= 1.0  AND  Dist >= 1.0,0,1.0,1.0,1.0,75,25.993510484695435
+4,98.87345218379772,183,none = 1 AND Nice = 1 AND Dict = 1 AND BlockSize = 1,none >= 1.0  AND  Dict >= 1.0  AND  BlockSize >= 1.0  AND  Nice >= 1.0  AND  0.0 <= Lc2Lp2 < 1.0,0,0.9776536312849162,1.0,0.9562841530054644,75,35.39043307304382
+5,124.97428197920306,117,bt4 = 1 AND MemoryLimit = 1 AND Dict = 1 AND Dist = 1 AND FlushTimeout = 1,bt4 >= 1.0  AND  FlushTimeout >= 1.0  AND  MemoryLimit >= 1.0  AND  Dist >= 1.0  AND  Dict >= 1.0,0,1.0,1.0,1.0,75,26.16281080245972
+6,39.16703601711979,127,crc32 = 1 AND Nice = 1 AND Depth = 1 AND Dict = 1 AND Dist = 1 AND BlockSize = 1,crc32 >= 1.0  AND  Depth >= 1.0  AND  Multithreading >= 1.0  AND  BlockSize >= 1.0  AND  Dict >= 1.0  AND  Dist >= 1.0  AND  Nice >= 1.0,0,0.6907216494845361,1.0,0.5275590551181102,75,26.792728900909424
+1,46.41657395919564,248,bt2 = 1,bt2 >= 1.0  AND  0.0 <= Lc1Lp0 < 1.0,0,0.9424307036247336,1.0,0.8911290322580645,76,28.46287560462952
+2,85.31382354046768,166,hc4 = 1 AND Multithreading = 1,hc4 >= 1.0  AND  Multithreading >= 1.0,0,1.0,1.0,1.0,76,26.85491967201233
+3,188.12996128639853,170,hc4 = 1 AND Nice = 1 AND Dist = 1,hc4 >= 1.0  AND  Nice >= 1.0  AND  Dist >= 1.0,0,1.0,1.0,1.0,76,61.73016715049744
+4,177.731216090676,177,crc64 = 1 AND Depth = 1 AND Dist = 1 AND BlockSize = 1,crc64 >= 1.0  AND  BlockSize >= 1.0  AND  Depth >= 1.0  AND  Dist >= 1.0,0,1.0,1.0,1.0,76,41.57550430297852
+5,106.94299995731392,184,hc3 = 1 AND MemoryLimit = 1 AND Dict = 1 AND Dist = 1 AND BlockSize = 1,hc3 >= 1.0  AND  Dict >= 1.0  AND  BlockSize >= 1.0  AND  MemoryLimit >= 1.0  AND  Dist >= 1.0,0,1.0,1.0,1.0,76,40.4295973777771
+6,43.91044691007167,136,crc32 = 1 AND MemoryLimit = 1 AND Nice = 1 AND Depth = 1 AND Dict = 1 AND Dist = 1,crc32 >= 1.0  AND  Depth >= 1.0  AND  MemoryLimit >= 1.0  AND  FlushTimeout >= 1.0  AND  Dist >= 1.0  AND  Nice >= 1.0  AND  0.0 <= Lc1Lp3 < 1.0,0,0.5445026178010471,0.9454545454545454,0.3823529411764705,76,27.62988376617432
+1,58.0809470627712,445,sha256 = 1,sha256 >= 1.0,0,1.0,1.0,1.0,77,30.268930196762085
+2,49.48070784501661,469,MemoryLimit = 1 AND Multithreading = 1,MemoryLimit >= 1.0  AND  Multithreading >= 1.0  AND  0.0 <= Lc1Lp1 < 1.0,0,0.9577777777777776,1.0,0.9189765458422174,77,35.63244605064392
+3,45.696818587474205,113,hc3 = 1 AND Dist = 1 AND Multithreading = 1,hc3 >= 1.0  AND  Dist >= 1.0  AND  Multithreading >= 1.0,0,1.0,1.0,1.0,77,26.0168559551239
+4,108.49255904156918,193,crc32 = 1 AND MemoryLimit = 1 AND Depth = 1 AND BlockSize = 1,crc32 >= 1.0  AND  Depth >= 1.0  AND  BlockSize >= 1.0  AND  MemoryLimit >= 1.0,0,1.0,1.0,1.0,77,26.405228853225708
+5,82.67396049017898,183,hc3 = 1 AND MemoryLimit = 1 AND Nice = 1 AND Dict = 1 AND BlockSize = 1,hc3 >= 1.0  AND  Nice >= 1.0  AND  Dict >= 1.0  AND  BlockSize >= 1.0  AND  MemoryLimit >= 1.0,0,1.0,1.0,1.0,77,35.35329556465149
+6,39.07367712626507,136,crc32 = 1 AND MemoryLimit = 1 AND Nice = 1 AND Depth = 1 AND Dict = 1 AND Dist = 1,crc32 >= 1.0  AND  Depth >= 1.0  AND  Dict >= 1.0  AND  Dist >= 1.0  AND  MemoryLimit >= 1.0  AND  Nice >= 1.0,0,1.0,1.0,1.0,77,25.36392974853516
+1,38.63301363351901,445,sha256 = 1,sha256 >= 1.0,1,1.0,1.0,1.0,78,42.57572627067566
+2,182.31910351312027,245,hc4 = 1 AND Nice = 1,0.0 <= crc64 < 1.0  AND  hc4 >= 1.0  AND  Nice >= 1.0,0,0.9135254988913526,1.0,0.8408163265306122,78,51.62092161178589
+3,194.25346255029572,416,Nice = 1 AND Depth = 1 AND Multithreading = 1,Nice >= 1.0  AND  Multithreading >= 1.0  AND  Depth >= 1.0,0,1.0,1.0,1.0,78,50.7629554271698
+4,118.02488502594224,198,crc32 = 1 AND Nice = 1 AND Depth = 1 AND Dict = 1,crc32 >= 1.0  AND  Nice >= 1.0  AND  Dict >= 1.0  AND  Depth >= 1.0,0,1.0,1.0,1.0,78,26.233986616134644
+5,151.02704926017498,205,bt4 = 1 AND MemoryLimit = 1 AND Nice = 1 AND Depth = 1 AND BlockSize = 1,bt4 >= 1.0  AND  MemoryLimit >= 1.0  AND  Depth >= 1.0  AND  BlockSize >= 1.0  AND  Nice >= 1.0,0,1.0,1.0,1.0,78,36.37101459503174
+1,100.48050853726568,378,hc4 = 1,hc4 >= 1.0  AND  0.0 <= Lc1Lp1 < 1.0,0,0.948539638386648,1.0,0.902116402116402,79,28.13511967658997
+2,87.60712712677278,155,bt3 = 1 AND MemoryLimit = 1,bt3 >= 1.0  AND  MemoryLimit >= 1.0,0,1.0,1.0,1.0,79,26.996944904327396
+3,20.502673065946784,195,crc64 = 1 AND MemoryLimit = 1 AND Dist = 1,crc64 >= 1.0  AND  MemoryLimit >= 1.0  AND  Dist >= 1.0,0,1.0,1.0,1.0,79,26.398176431655884
+4,166.27490837991692,108,hc3 = 1 AND MemoryLimit = 1 AND Dist = 1 AND Multithreading = 1,hc3 >= 1.0  AND  MemoryLimit >= 1.0  AND  Multithreading >= 1.0  AND  Dist >= 1.0,0,1.0,1.0,1.0,79,26.534990787506104
+5,62.4290822115556,315,Nice = 1 AND Depth = 1 AND Dict = 1 AND Dist = 1 AND Multithreading = 1,Nice >= 1.0  AND  Dict >= 1.0  AND  Multithreading >= 1.0  AND  Dist >= 1.0  AND  Depth >= 1.0,0,1.0,1.0,1.0,79,26.089279890060425
+6,190.04936662184065,123,crc32 = 1 AND MemoryLimit = 1 AND Nice = 1 AND Dict = 1 AND Dist = 1 AND BlockSize = 1,Nice >= 1.0  AND  Dist >= 1.0  AND  crc32 >= 1.0  AND  MemoryLimit >= 1.0  AND  Dict >= 1.0  AND  BlockSize >= 1.0,0,1.0,1.0,1.0,79,44.69280695915222
+1,175.2028324927726,367,bt3 = 1,bt3 >= 1.0,1,1.0,1.0,1.0,8,58.91684675216675
+2,200.7691019760596,140,crc32 = 1 AND FlushTimeout = 1,crc32 >= 1.0  AND  FlushTimeout >= 1.0,0,1.0,1.0,1.0,8,57.991034507751465
+3,32.40742000980785,111,Lc0Lp1 = 1 AND MemoryLimit = 1 AND Nice = 1,Lc0Lp1 >= 1.0  AND  MemoryLimit >= 1.0  AND  Nice >= 1.0,0,1.0,1.0,1.0,8,26.15748429298401
+4,95.7246565027058,174,sha256 = 1 AND Depth = 1 AND Dict = 1 AND Dist = 1,sha256 >= 1.0  AND  Dict >= 1.0  AND  Depth >= 1.0  AND  Dist >= 1.0,0,1.0,1.0,1.0,8,26.628660917282104
+5,191.88865049951187,560,MemoryLimit = 1 AND Nice = 1 AND Dict = 1 AND Dist = 1 AND BlockSize = 1,Nice >= 1.0  AND  Dist >= 1.0  AND  Dict >= 1.0  AND  BlockSize >= 1.0  AND  MemoryLimit >= 1.0,0,1.0,1.0,1.0,8,50.34791946411133
+6,143.26865829577758,123,crc32 = 1 AND MemoryLimit = 1 AND Nice = 1 AND Dict = 1 AND Dist = 1 AND BlockSize = 1,crc32 >= 1.0  AND  MemoryLimit >= 1.0  AND  Dict >= 1.0  AND  Dist >= 1.0  AND  Nice >= 1.0  AND  BlockSize >= 1.0,0,1.0,1.0,1.0,8,40.90501117706299
+1,40.22808698999902,155,Lc1Lp1 = 1,Lc1Lp1 >= 1.0,0,1.0,1.0,1.0,80,27.51839852333069
+2,158.66928080192713,140,sha256 = 1 AND PositionBits = 1,sha256 >= 1.0  AND  PositionBits >= 1.0,0,1.0,1.0,1.0,80,26.476183891296387
+3,30.751352776833343,234,crc32 = 1 AND MemoryLimit = 1 AND Nice = 1,crc32 >= 1.0  AND  MemoryLimit >= 1.0  AND  Nice >= 1.0  AND  0.0 <= bt3 < 1.0,0,0.9623059866962306,1.0,0.9273504273504274,80,26.191274642944336
+4,159.53689116769525,106,hc3 = 1 AND Nice = 1 AND Multithreading = 1 AND BlockSize = 1,hc3 >= 1.0  AND  Nice >= 1.0  AND  Multithreading >= 1.0  AND  BlockSize >= 1.0,0,1.0,1.0,1.0,80,39.156914710998535
+5,55.78530625472689,195,bt4 = 1 AND Nice = 1 AND Depth = 1 AND Dict = 1 AND Dist = 1,bt4 >= 1.0  AND  Depth >= 1.0  AND  Dict >= 1.0  AND  Nice >= 1.0  AND  Dist >= 1.0,0,1.0,1.0,1.0,80,26.10666251182556
+6,111.19691599960775,127,crc32 = 1 AND Nice = 1 AND Depth = 1 AND Dict = 1 AND Dist = 1 AND BlockSize = 1,crc32 >= 1.0  AND  Depth >= 1.0  AND  Dist >= 1.0  AND  Nice >= 1.0  AND  BlockSize >= 1.0  AND  Dict >= 1.0,0,1.0,1.0,1.0,80,27.304609537124637
+1,121.8757423776885,445,sha256 = 1,sha256 >= 1.0,1,1.0,1.0,1.0,81,55.33757019042969
+2,141.36441486028505,130,hc3 = 1 AND PositionBits = 1,hc3 >= 1.0  AND  PositionBits >= 1.0,0,1.0,1.0,1.0,81,52.44354057312012
+3,197.77155555312476,111,Lc0Lp1 = 1 AND MemoryLimit = 1 AND Nice = 1,Lc0Lp1 >= 1.0  AND  MemoryLimit >= 1.0  AND  Nice >= 1.0,0,1.0,1.0,1.0,81,31.96989417076111
+4,27.61090915152241,106,MemoryLimit = 1 AND BlockSize = 1 AND FlushTimeout = 1 AND PositionBits = 1,PositionBits >= 1.0  AND  FlushTimeout >= 1.0  AND  MemoryLimit >= 1.0  AND  BlockSize >= 1.0,0,1.0,1.0,1.0,81,26.307918787002563
+5,200.6396662685958,159,none = 1 AND MemoryLimit = 1 AND Nice = 1 AND Dict = 1 AND Dist = 1,none >= 1.0  AND  Dist >= 1.0  AND  MemoryLimit >= 1.0  AND  Nice >= 1.0  AND  0.0 <= Lc0Lp4 < 1.0  AND  Dict >= 1.0,0,0.9675324675324676,1.0,0.9371069182389936,81,61.90483260154724
+1,179.25992157300175,588,bt4 = 1,bt4 >= 1.0  AND  0.0 <= Lc1Lp3 < 1.0  AND  Dict >= 1.0  AND  0.0 <= Lc3Lp0 < 1.0,0,0.6482758620689655,1.0,0.4795918367346938,82,56.09905648231506
+2,46.99170680311928,147,Lc0Lp1 = 1 AND Depth = 1,Lc0Lp1 >= 1.0  AND  Depth >= 1.0,0,1.0,1.0,1.0,82,25.33242106437683
+3,106.7818284615528,108,crc64 = 1 AND Depth = 1 AND Multithreading = 1,crc64 >= 1.0  AND  Depth >= 1.0  AND  Multithreading >= 1.0  AND  0.0 <= Lc0Lp0 < 1.0,0,0.9565217391304348,1.0,0.9166666666666666,82,49.52485752105713
+4,121.90434753236912,211,bt4 = 1 AND Nice = 1 AND Depth = 1 AND Dist = 1,bt4 >= 1.0  AND  Nice >= 1.0  AND  Depth >= 1.0  AND  Dist >= 1.0,0,1.0,1.0,1.0,82,37.01593232154846
+5,64.32223408736596,209,bt4 = 1 AND MemoryLimit = 1 AND Dict = 1 AND Dist = 1 AND BlockSize = 1,bt4 >= 1.0  AND  MemoryLimit >= 1.0  AND  Dict >= 1.0  AND  Dist >= 1.0  AND  BlockSize >= 1.0,0,1.0,1.0,1.0,82,25.88555359840393
+1,93.20391818735206,174,Lc0Lp2 = 1,Lc0Lp2 >= 1.0,0,1.0,1.0,1.0,83,29.907886505126957
+2,85.38846109277902,238,sha256 = 1 AND BlockSize = 1,sha256 >= 1.0  AND  BlockSize >= 1.0,0,1.0,1.0,1.0,83,27.312682390213013
+3,138.67200316803087,170,Lc0Lp1 = 1 AND Dict = 1 AND BlockSize = 1,Lc0Lp1 >= 1.0  AND  Dict >= 1.0  AND  0.0 <= bt3 < 1.0  AND  BlockSize >= 1.0,0,0.9570552147239264,1.0,0.9176470588235294,83,40.56312894821167
+4,103.98433864253236,111,bt4 = 1 AND MemoryLimit = 1 AND Dict = 1 AND Multithreading = 1,bt4 >= 1.0  AND  Multithreading >= 1.0  AND  MemoryLimit >= 1.0  AND  Dict >= 1.0,0,1.0,1.0,1.0,83,28.46959114074707
+5,68.0949014622683,105,bt4 = 1 AND MemoryLimit = 1 AND Depth = 1 AND Dist = 1 AND Multithreading = 1,bt4 >= 1.0  AND  Multithreading >= 1.0  AND  MemoryLimit >= 1.0  AND  Depth >= 1.0  AND  Dist >= 1.0,0,1.0,1.0,1.0,83,28.806982040405277
+6,143.28035435742044,127,crc32 = 1 AND Nice = 1 AND Depth = 1 AND Dict = 1 AND Dist = 1 AND BlockSize = 1,crc32 >= 1.0  AND  Nice >= 1.0  AND  Dist >= 1.0  AND  BlockSize >= 1.0  AND  Depth >= 1.0  AND  Dict >= 1.0,0,1.0,1.0,1.0,83,41.80545449256897
+1,42.73534039189172,106,Lc1Lp3 = 1,0.0 <= bt4 < 1.0  AND  Lc1Lp3 >= 1.0,0,0.8287292817679558,1.0,0.7075471698113207,84,27.10414814949036
+2,141.32756182967404,189,crc32 = 1 AND hc4 = 1,crc32 >= 1.0  AND  hc4 >= 1.0,0,1.0,1.0,1.0,84,27.73965072631836
+3,53.65758809755301,234,crc32 = 1 AND MemoryLimit = 1 AND Nice = 1,crc32 >= 1.0  AND  MemoryLimit >= 1.0  AND  Nice >= 1.0,0,1.0,1.0,1.0,84,27.723640203475952
+4,79.01501644301209,194,hc3 = 1 AND MemoryLimit = 1 AND Depth = 1 AND BlockSize = 1,hc3 >= 1.0  AND  Depth >= 1.0  AND  BlockSize >= 1.0  AND  MemoryLimit >= 1.0  AND  0.0 <= Lc1Lp1 < 1.0,0,0.9597855227882036,1.0,0.922680412371134,84,27.409629821777344
+5,66.13574644177059,181,MemoryLimit = 1 AND Nice = 1 AND Depth = 1 AND Dict = 1 AND PositionBits = 1,PositionBits >= 1.0  AND  Nice >= 1.0  AND  Dict >= 1.0  AND  Depth >= 1.0  AND  MemoryLimit >= 1.0  AND  0.0 <= Lc0Lp0 < 1.0,0,0.956772334293948,1.0,0.9171270718232044,84,28.019665718078613
+6,201.12712948640527,131,crc32 = 1 AND MemoryLimit = 1 AND Depth = 1 AND Dict = 1 AND Dist = 1 AND BlockSize = 1,crc32 >= 1.0  AND  Dict >= 1.0  AND  Dist >= 1.0  AND  MemoryLimit >= 1.0  AND  0.0 <= Lc0Lp0 < 1.0  AND  BlockSize >= 1.0  AND  Depth >= 1.0,0,0.9435483870967742,1.0,0.8931297709923665,84,53.57564115524292
+1,41.76725927567843,445,sha256 = 1,sha256 >= 1.0  AND  0.0 <= Lc2Lp2 < 1.0,1,0.9781859931113662,1.0,0.9573033707865168,85,49.48161268234253
+2,105.78632109593276,191,bt3 = 1 AND Dist = 1,bt3 >= 1.0  AND  Dist >= 1.0,0,1.0,1.0,1.0,85,36.47052979469299
+3,123.71396850749608,367,MemoryLimit = 1 AND Dict = 1 AND FlushTimeout = 1,FlushTimeout >= 1.0  AND  MemoryLimit >= 1.0  AND  Dict >= 1.0  AND  Dist >= 1.0  AND  0.0 <= Lc1Lp1 < 1.0,1,0.9011976047904192,1.0,0.8201634877384196,85,45.360047340393066
+4,84.36740024496736,106,Lc0Lp1 = 1 AND Depth = 1 AND Dist = 1 AND BlockSize = 1,Lc0Lp1 >= 1.0  AND  Dist >= 1.0  AND  BlockSize >= 1.0  AND  Depth >= 1.0,0,1.0,1.0,1.0,85,26.104708433151245
+5,115.28331404240532,102,hc3 = 1 AND MemoryLimit = 1 AND Dist = 1 AND Multithreading = 1 AND BlockSize = 1,hc3 >= 1.0  AND  MemoryLimit >= 1.0  AND  Multithreading >= 1.0  AND  Dist >= 1.0  AND  BlockSize >= 1.0,0,1.0,1.0,1.0,85,26.40258264541626
+6,142.9210645734625,136,crc32 = 1 AND MemoryLimit = 1 AND Nice = 1 AND Depth = 1 AND Dict = 1 AND Dist = 1,crc32 >= 1.0  AND  Dict >= 1.0  AND  Dist >= 1.0  AND  MemoryLimit >= 1.0  AND  Nice >= 1.0  AND  0.0 <= Lc1Lp1 < 1.0  AND  Depth >= 1.0,0,0.9578544061302682,1.0,0.9191176470588236,85,40.00244855880737
+1,136.13405900145312,147,Lc2Lp2 = 1,Lc2Lp2 >= 1.0,0,1.0,1.0,1.0,86,27.795122146606445
+2,195.40256787177847,101,bt2 = 1 AND Depth = 1,bt2 >= 1.0  AND  Depth >= 1.0,0,1.0,1.0,1.0,86,36.91862916946411
+3,50.38962174190695,260,crc32 = 1 AND Dist = 1 AND BlockSize = 1,crc32 >= 1.0  AND  Dist >= 1.0  AND  0.0 <= Lc0Lp2 < 1.0  AND  BlockSize >= 1.0,0,0.9430894308943092,1.0,0.8923076923076924,86,25.884628534317017
+4,177.76462432330237,349,Dict = 1 AND Dist = 1 AND BlockSize = 1 AND FlushTimeout = 1,FlushTimeout >= 1.0  AND  Dict >= 1.0  AND  BlockSize >= 1.0  AND  Dist >= 1.0,0,1.0,1.0,1.0,86,53.8405327796936
+5,102.45021401959836,105,bt4 = 1 AND Nice = 1 AND Dict = 1 AND Multithreading = 1 AND BlockSize = 1,bt4 >= 1.0  AND  Multithreading >= 1.0  AND  Nice >= 1.0  AND  Dict >= 1.0  AND  0.0 <= Lc0Lp0 < 1.0  AND  BlockSize >= 1.0,0,0.9175257731958762,1.0,0.8476190476190476,86,26.6806914806366
+1,181.2070705206944,418,hc3 = 1,hc3 >= 1.0  AND  Dist >= 1.0,1,0.725609756097561,1.0,0.569377990430622,87,56.053271770477295
+2,50.81994373608278,168,bt3 = 1 AND Multithreading = 1,bt3 >= 1.0  AND  Multithreading >= 1.0  AND  0.0 <= Lc0Lp2 < 1.0,0,0.9467084639498432,1.0,0.8988095238095238,87,26.472338438034058
+3,37.487909538258734,193,crc64 = 1 AND MemoryLimit = 1 AND BlockSize = 1,crc64 >= 1.0  AND  MemoryLimit >= 1.0  AND  0.0 <= hc4 < 1.0  AND  BlockSize >= 1.0,0,0.906515580736544,1.0,0.8290155440414507,87,25.997599363327023
+4,27.16032687818179,201,Nice = 1 AND Depth = 1 AND Dict = 1 AND PositionBits = 1,PositionBits >= 1.0  AND  Depth >= 1.0  AND  Dict >= 1.0  AND  Nice >= 1.0,0,1.0,1.0,1.0,87,26.23385643959045
+5,111.09004980323635,165,crc64 = 1 AND Nice = 1 AND Depth = 1 AND Dist = 1 AND BlockSize = 1,crc64 >= 1.0  AND  Nice >= 1.0  AND  Depth >= 1.0  AND  BlockSize >= 1.0  AND  Dist >= 1.0  AND  0.0 <= Lc2Lp2 < 1.0  AND  0.0 <= Lc1Lp0 < 1.0,0,0.888888888888889,1.0,0.8,87,26.0794894695282
+1,63.214113813241816,161,Lc4Lp0 = 1,Lc4Lp0 >= 1.0,1,1.0,1.0,1.0,88,34.50647449493408
+2,46.60617599491204,109,bt2 = 1 AND MemoryLimit = 1,bt2 >= 1.0  AND  MemoryLimit >= 1.0,0,1.0,1.0,1.0,88,25.21551632881165
+3,63.83348241007639,105,none = 1 AND MemoryLimit = 1 AND FlushTimeout = 1,none >= 1.0  AND  FlushTimeout >= 1.0  AND  MemoryLimit >= 1.0,0,1.0,1.0,1.0,88,25.73793339729309
+4,171.956295355204,341,MemoryLimit = 1 AND Dist = 1 AND Multithreading = 1 AND BlockSize = 1,0.0 <= crc32 < 1.0  AND  Multithreading >= 1.0  AND  BlockSize >= 1.0  AND  Dist >= 1.0  AND  MemoryLimit >= 1.0,0,0.8614357262103506,1.0,0.7565982404692082,88,58.21631026268005
+5,193.93751243622367,116,bt4 = 1 AND MemoryLimit = 1 AND Nice = 1 AND BlockSize = 1 AND FlushTimeout = 1,bt4 >= 1.0  AND  BlockSize >= 1.0  AND  MemoryLimit >= 1.0  AND  FlushTimeout >= 1.0  AND  Nice >= 1.0,0,1.0,1.0,1.0,88,58.96512913703919
+6,64.95372573842923,133,crc32 = 1 AND MemoryLimit = 1 AND Nice = 1 AND Depth = 1 AND Dist = 1 AND BlockSize = 1,0.0 <= none < 1.0  AND  bt3 >= 1.0  AND  0.0 <= FlushTimeout < 1.0  AND  0.0 <= Lc1Lp1 < 1.0  AND  0.0 <= Lc0Lp4 < 1.0  AND  0.0 <= MemoryLimit < 1.0  AND  0.0 <= Lc0Lp0 < 1.0,0,0.0,0.0,0.0,88,26.728184938430783
+1,104.2252399840858,106,Lc1Lp3 = 1,Lc1Lp3 >= 1.0,0,1.0,1.0,1.0,89,26.794702529907227
+2,37.96945158257364,156,sha256 = 1 AND bt4 = 1,sha256 >= 1.0  AND  bt4 >= 1.0,0,1.0,1.0,1.0,89,27.037140369415283
+3,40.61951622693261,109,crc64 = 1 AND MemoryLimit = 1 AND Multithreading = 1,crc64 >= 1.0  AND  Multithreading >= 1.0  AND  MemoryLimit >= 1.0,0,1.0,1.0,1.0,89,26.613145112991333
+4,30.645069126250675,102,crc32 = 1 AND Nice = 1 AND BlockSize = 1 AND FlushTimeout = 1,crc32 >= 1.0  AND  FlushTimeout >= 1.0  AND  Nice >= 1.0  AND  BlockSize >= 1.0,0,1.0,1.0,1.0,89,27.00795555114746
+5,123.21293072029248,178,Nice = 1 AND Depth = 1 AND Dict = 1 AND BlockSize = 1 AND PositionBits = 1,PositionBits >= 1.0  AND  Depth >= 1.0  AND  BlockSize >= 1.0  AND  Dict >= 1.0  AND  Nice >= 1.0,0,1.0,1.0,1.0,89,26.434079885482788
+6,157.19820340048608,136,crc32 = 1 AND MemoryLimit = 1 AND Nice = 1 AND Depth = 1 AND Dict = 1 AND Dist = 1,crc32 >= 1.0  AND  Dict >= 1.0  AND  Depth >= 1.0  AND  Nice >= 1.0  AND  Dist >= 1.0  AND  MemoryLimit >= 1.0  AND  0.0 <= bt2 < 1.0,0,0.9375,1.0,0.8823529411764706,89,35.32277822494507
+1,155.48068386500762,378,hc4 = 1,hc4 >= 1.0,0,1.0,1.0,1.0,9,58.58275866508484
+2,184.2353242768219,211,bt3 = 1 AND BlockSize = 1,bt3 >= 1.0  AND  0.0 <= Lc1Lp0 < 1.0  AND  BlockSize >= 1.0  AND  0.0 <= sha256 < 1.0,0,0.8746666666666667,1.0,0.7772511848341233,9,57.12357831001282
+3,74.85499683313675,117,hc3 = 1 AND Dict = 1 AND FlushTimeout = 1,hc3 >= 1.0  AND  Dict >= 1.0  AND  FlushTimeout >= 1.0,0,1.0,1.0,1.0,9,26.125762939453125
+4,139.10333763420533,220,bt4 = 1 AND Nice = 1 AND Depth = 1 AND BlockSize = 1,bt4 >= 1.0  AND  Nice >= 1.0  AND  Depth >= 1.0  AND  BlockSize >= 1.0  AND  MemoryLimit >= 1.0  AND  0.0 <= Lc0Lp0 < 1.0  AND  0.0 <= Lc1Lp1 < 1.0,0,0.8511749347258486,1.0,0.740909090909091,9,34.99921369552612
+5,128.9087067562355,186,hc3 = 1 AND Depth = 1 AND Dict = 1 AND Dist = 1 AND BlockSize = 1,hc3 >= 1.0  AND  Depth >= 1.0  AND  Dict >= 1.0  AND  Dist >= 1.0  AND  BlockSize >= 1.0,0,1.0,1.0,1.0,9,26.04437613487244
+6,131.5658033286499,131,crc32 = 1 AND MemoryLimit = 1 AND Depth = 1 AND Dict = 1 AND Dist = 1 AND BlockSize = 1,crc32 >= 1.0  AND  Depth >= 1.0  AND  BlockSize >= 1.0  AND  Dist >= 1.0  AND  Dict >= 1.0  AND  MemoryLimit >= 1.0,0,1.0,1.0,1.0,9,26.734986305236816
+1,22.116334102565165,248,bt2 = 1,bt2 >= 1.0  AND  0.0 <= Lc3Lp0 < 1.0,0,0.9356223175965666,1.0,0.8790322580645161,90,28.476771593093872
+2,152.36628316460408,111,bt2 = 1 AND Dist = 1,bt2 >= 1.0  AND  Dist >= 1.0  AND  0.0 <= Lc3Lp0 < 1.0,0,0.9577464788732396,1.0,0.918918918918919,90,26.049147605896
+3,64.84908046573119,232,MemoryLimit = 1 AND Dist = 1 AND PositionBits = 1,PositionBits >= 1.0  AND  MemoryLimit >= 1.0  AND  0.0 <= Lc1Lp0 < 1.0  AND  Dist >= 1.0,0,0.9711751662971174,1.0,0.9439655172413792,90,26.51917862892151
+4,90.53410223519629,106,hc3 = 1 AND MemoryLimit = 1 AND Dict = 1 AND Multithreading = 1,hc3 >= 1.0  AND  Multithreading >= 1.0  AND  Dict >= 1.0  AND  MemoryLimit >= 1.0  AND  0.0 <= Lc1Lp0 < 1.0,0,0.945273631840796,1.0,0.8962264150943396,90,26.6813440322876
+5,143.1196467039344,104,bt4 = 1 AND Nice = 1 AND Depth = 1 AND Dist = 1 AND Multithreading = 1,bt4 >= 1.0  AND  Nice >= 1.0  AND  Depth >= 1.0  AND  Multithreading >= 1.0  AND  Dist >= 1.0,0,1.0,1.0,1.0,90,26.82526135444641
+6,190.936038717517,131,crc32 = 1 AND MemoryLimit = 1 AND Depth = 1 AND Dict = 1 AND Dist = 1 AND BlockSize = 1,crc32 >= 1.0  AND  MemoryLimit >= 1.0  AND  Dist >= 1.0  AND  BlockSize >= 1.0  AND  Dict >= 1.0  AND  Depth >= 1.0,0,1.0,1.0,1.0,90,38.4360716342926
+1,98.53416278996696,367,bt3 = 1,bt3 >= 1.0,1,1.0,1.0,1.0,91,38.52971363067627
+2,152.11204812480597,136,none = 1 AND PositionBits = 1,none >= 1.0  AND  PositionBits >= 1.0  AND  0.0 <= hc4 < 1.0,0,0.9578544061302682,1.0,0.9191176470588236,91,37.907187700271606
+3,65.75015507119254,206,hc3 = 1 AND MemoryLimit = 1 AND Dist = 1,hc3 >= 1.0  AND  Dist >= 1.0  AND  MemoryLimit >= 1.0,0,1.0,1.0,1.0,91,25.765631198883057
+4,153.43165773417712,123,crc32 = 1 AND Dist = 1 AND Multithreading = 1 AND BlockSize = 1,crc32 >= 1.0  AND  Multithreading >= 1.0  AND  BlockSize >= 1.0  AND  Dist >= 1.0,0,1.0,1.0,1.0,91,26.419991493225098
+5,71.90042313576119,156,crc64 = 1 AND MemoryLimit = 1 AND Nice = 1 AND Dict = 1 AND Dist = 1,crc64 >= 1.0  AND  Nice >= 1.0  AND  Dist >= 1.0  AND  MemoryLimit >= 1.0  AND  Dict >= 1.0  AND  0.0 <= Lc2Lp2 < 1.0,0,0.9423728813559324,1.0,0.8910256410256411,91,26.22733354568481
+6,172.360522228989,133,crc32 = 1 AND MemoryLimit = 1 AND Nice = 1 AND Depth = 1 AND Dist = 1 AND BlockSize = 1,crc32 >= 1.0  AND  Nice >= 1.0  AND  Dist >= 1.0  AND  MemoryLimit >= 1.0  AND  Depth >= 1.0  AND  BlockSize >= 1.0,0,1.0,1.0,1.0,91,35.93450379371643
+1,87.70474150232286,378,hc4 = 1,hc4 >= 1.0,1,1.0,1.0,1.0,92,36.00526070594788
+2,77.88681087397448,216,crc64 = 1 AND Depth = 1,crc64 >= 1.0  AND  0.0 <= Lc2Lp2 < 1.0  AND  Depth >= 1.0  AND  Nice >= 1.0,0,0.8808290155440415,1.0,0.7870370370370371,92,34.46823596954346
+3,148.253574197863,149,hc4 = 1 AND MemoryLimit = 1 AND Dist = 1,hc4 >= 1.0  AND  Dist >= 1.0  AND  MemoryLimit >= 1.0,0,1.0,1.0,1.0,92,39.37542796134949
+4,31.295027172028647,174,crc64 = 1 AND MemoryLimit = 1 AND Depth = 1 AND BlockSize = 1,crc64 >= 1.0  AND  Depth >= 1.0  AND  MemoryLimit >= 1.0  AND  BlockSize >= 1.0  AND  0.0 <= Lc4Lp0 < 1.0  AND  0.0 <= Lc1Lp1 < 1.0,0,0.9192546583850932,1.0,0.8505747126436781,92,26.03486967086792
+5,36.19509597615451,156,crc32 = 1 AND Nice = 1 AND Depth = 1 AND Dict = 1 AND BlockSize = 1,crc32 >= 1.0  AND  Nice >= 1.0  AND  Dict >= 1.0  AND  BlockSize >= 1.0  AND  Depth >= 1.0,0,1.0,1.0,1.0,92,26.192410707473755
+6,179.2073533940935,123,crc32 = 1 AND MemoryLimit = 1 AND Nice = 1 AND Dict = 1 AND Dist = 1 AND BlockSize = 1,crc32 >= 1.0  AND  Nice >= 1.0  AND  Dict >= 1.0  AND  Dist >= 1.0  AND  BlockSize >= 1.0  AND  MemoryLimit >= 1.0,0,1.0,1.0,1.0,92,51.74679136276245
+1,84.86061058506567,161,Lc4Lp0 = 1,0.0 <= crc64 < 1.0  AND  Lc4Lp0 >= 1.0,0,0.9442622950819672,1.0,0.8944099378881988,93,28.177214860916138
+2,104.23840307308711,102,Lc1Lp1 = 1 AND BlockSize = 1,BlockSize >= 1.0  AND  Lc1Lp1 >= 1.0,0,1.0,1.0,1.0,93,25.730106830596924
+3,85.23456237092147,174,hc4 = 1 AND MemoryLimit = 1 AND Nice = 1,hc4 >= 1.0  AND  MemoryLimit >= 1.0  AND  Nice >= 1.0,0,1.0,1.0,1.0,93,26.27504181861877
+4,190.0425571909139,184,sha256 = 1 AND MemoryLimit = 1 AND Dict = 1 AND BlockSize = 1,sha256 >= 1.0  AND  Dict >= 1.0  AND  MemoryLimit >= 1.0  AND  BlockSize >= 1.0,0,1.0,1.0,1.0,93,58.196906328201294
+5,141.58393962180517,303,MemoryLimit = 1 AND Nice = 1 AND Dict = 1 AND BlockSize = 1 AND FlushTimeout = 1,FlushTimeout >= 1.0  AND  MemoryLimit >= 1.0  AND  Nice >= 1.0  AND  BlockSize >= 1.0  AND  Dict >= 1.0,0,1.0,1.0,1.0,93,30.335749626159668
+1,196.76854244515224,106,Lc1Lp3 = 1,Lc1Lp3 >= 1.0,0,1.0,1.0,1.0,94,33.220621824264526
+2,100.64466221342568,324,bt4 = 1 AND BlockSize = 1,bt4 >= 1.0  AND  BlockSize >= 1.0,0,1.0,1.0,1.0,94,35.87650942802429
+3,155.80953986402045,115,hc3 = 1 AND Depth = 1 AND Multithreading = 1,Depth >= 1.0  AND  Multithreading >= 1.0  AND  hc3 >= 1.0,0,1.0,1.0,1.0,94,38.944297790527344
+4,65.757853564884,341,MemoryLimit = 1 AND Dist = 1 AND Multithreading = 1 AND BlockSize = 1,MemoryLimit >= 1.0  AND  Multithreading >= 1.0  AND  BlockSize >= 1.0  AND  Dist >= 1.0,0,1.0,1.0,1.0,94,25.17265748977661
+5,74.70434067990624,286,MemoryLimit = 1 AND Nice = 1 AND Dict = 1 AND Dist = 1 AND FlushTimeout = 1,FlushTimeout >= 1.0  AND  Nice >= 1.0  AND  MemoryLimit >= 1.0  AND  Dist >= 1.0  AND  Dict >= 1.0  AND  0.0 <= Lc0Lp0 < 1.0  AND  0.0 <= Lc0Lp4 < 1.0,0,0.9104761904761904,1.0,0.8356643356643356,94,25.589104652404785
+6,178.06577680145656,131,crc32 = 1 AND MemoryLimit = 1 AND Depth = 1 AND Dict = 1 AND Dist = 1 AND BlockSize = 1,crc32 >= 1.0  AND  BlockSize >= 1.0  AND  MemoryLimit >= 1.0  AND  Dict >= 1.0  AND  Dist >= 1.0  AND  Depth >= 1.0,0,1.0,1.0,1.0,94,47.5345356464386
+1,28.10201369318406,229,Lc0Lp1 = 1,Lc0Lp1 >= 1.0,1,1.0,1.0,1.0,95,35.79104661941528
+2,178.38289539407944,140,sha256 = 1 AND PositionBits = 1,sha256 >= 1.0  AND  PositionBits >= 1.0,0,1.0,1.0,1.0,95,52.19566059112549
+3,61.861244174596585,105,none = 1 AND BlockSize = 1 AND FlushTimeout = 1,none >= 1.0  AND  FlushTimeout >= 1.0  AND  BlockSize >= 1.0,0,1.0,1.0,1.0,95,27.181403636932373
+4,43.0817989321258,100,bt3 = 1 AND Dict = 1 AND Dist = 1 AND BlockSize = 1,bt3 >= 1.0  AND  Depth >= 1.0  AND  Dict >= 1.0  AND  0.0 <= Lc0Lp4 < 1.0  AND  BlockSize >= 1.0  AND  Dist >= 1.0,0,0.7804878048780487,1.0,0.64,95,27.474600791931152
+5,130.04412884461888,124,bt4 = 1 AND MemoryLimit = 1 AND Dict = 1 AND BlockSize = 1 AND FlushTimeout = 1,bt4 >= 1.0  AND  Dict >= 1.0  AND  FlushTimeout >= 1.0  AND  BlockSize >= 1.0  AND  MemoryLimit >= 1.0  AND  0.0 <= Lc1Lp0 < 1.0,0,0.9535864978902954,1.0,0.9112903225806452,95,36.42644548416138
+6,71.95966034617415,141,crc32 = 1 AND MemoryLimit = 1 AND Nice = 1 AND Depth = 1 AND Dict = 1 AND BlockSize = 1,crc32 >= 1.0  AND  Depth >= 1.0  AND  Nice >= 1.0  AND  Dict >= 1.0  AND  BlockSize >= 1.0  AND  0.0 <= Lc4Lp0 < 1.0  AND  MemoryLimit >= 1.0,0,0.959409594095941,1.0,0.9219858156028368,95,27.99910283088684
+1,186.63756393940312,190,Lc3Lp0 = 1,0.0 <= FlushTimeout < 1.0  AND  Lc3Lp0 >= 1.0,0,0.9265536723163842,1.0,0.8631578947368421,96,59.883930921554565
+2,184.4553298684561,373,Depth = 1 AND FlushTimeout = 1,FlushTimeout >= 1.0  AND  Depth >= 1.0,1,1.0,1.0,1.0,96,57.61898899078369
+3,116.01965461220443,192,crc64 = 1 AND Depth = 1 AND Dist = 1,crc64 >= 1.0  AND  Depth >= 1.0  AND  0.0 <= bt2 < 1.0  AND  Dist >= 1.0,0,0.9090909090909092,1.0,0.8333333333333334,96,25.869845867156982
+4,73.7045154245032,143,hc4 = 1 AND MemoryLimit = 1 AND Depth = 1 AND BlockSize = 1,hc4 >= 1.0  AND  Depth >= 1.0  AND  BlockSize >= 1.0  AND  MemoryLimit >= 1.0,0,1.0,1.0,1.0,96,26.099281787872314
+5,138.24425383409528,163,sha256 = 1 AND MemoryLimit = 1 AND Nice = 1 AND Dict = 1 AND BlockSize = 1,sha256 >= 1.0  AND  MemoryLimit >= 1.0  AND  Nice >= 1.0  AND  Dict >= 1.0  AND  0.0 <= Lc1Lp1 < 1.0  AND  BlockSize >= 1.0  AND  0.0 <= bt3 < 1.0,0,0.8949152542372881,1.0,0.8098159509202454,96,26.119144201278687
+6,183.9438809380044,141,crc32 = 1 AND MemoryLimit = 1 AND Nice = 1 AND Depth = 1 AND Dict = 1 AND BlockSize = 1,crc32 >= 1.0  AND  MemoryLimit >= 1.0  AND  Nice >= 1.0  AND  Depth >= 1.0  AND  BlockSize >= 1.0  AND  Dict >= 1.0,0,1.0,1.0,1.0,96,38.6778085231781
+1,176.22077912756,174,Lc0Lp2 = 1,Lc0Lp2 >= 1.0,0,1.0,1.0,1.0,97,49.02556109428406
+2,157.3456336276141,152,Lc0Lp1 = 1 AND Dist = 1,Lc0Lp1 >= 1.0  AND  Dist >= 1.0,0,1.0,1.0,1.0,97,34.99080443382263
+3,113.98361822420992,119,none = 1 AND Depth = 1 AND Multithreading = 1,none >= 1.0  AND  Multithreading >= 1.0  AND  0.0 <= Lc1Lp3 < 1.0  AND  Depth >= 1.0,0,0.9696969696969696,1.0,0.9411764705882352,97,26.13187289237976
+4,124.53771346930117,112,Lc0Lp1 = 1 AND MemoryLimit = 1 AND Depth = 1 AND Dict = 1,Lc0Lp1 >= 1.0  AND  Depth >= 1.0  AND  Dict >= 1.0  AND  MemoryLimit >= 1.0,0,1.0,1.0,1.0,97,25.70362162590027
+5,150.0453327170012,104,hc3 = 1 AND Depth = 1 AND Dist = 1 AND Multithreading = 1 AND BlockSize = 1,hc3 >= 1.0  AND  Multithreading >= 1.0  AND  Depth >= 1.0  AND  Dist >= 1.0  AND  BlockSize >= 1.0,0,1.0,1.0,1.0,97,26.044309616088867
+6,188.1694700087308,133,crc32 = 1 AND MemoryLimit = 1 AND Nice = 1 AND Depth = 1 AND Dist = 1 AND BlockSize = 1,crc32 >= 1.0  AND  BlockSize >= 1.0  AND  Depth >= 1.0  AND  Nice >= 1.0  AND  Dist >= 1.0  AND  MemoryLimit >= 1.0,0,1.0,1.0,1.0,97,48.88239192962647
+1,31.903871800628977,106,Lc1Lp3 = 1,0.0 <= none < 1.0  AND  Lc1Lp3 >= 1.0,0,0.8900523560209425,1.0,0.8018867924528302,98,26.48061847686768
+2,83.3168781123275,166,bt3 = 1 AND Dict = 1,bt3 >= 1.0  AND  Dict >= 1.0,0,1.0,1.0,1.0,98,25.810486316680908
+3,73.8946313059578,117,crc32 = 1 AND hc4 = 1 AND Dict = 1,crc32 >= 1.0  AND  hc4 >= 1.0  AND  Dict >= 1.0,0,1.0,1.0,1.0,98,26.512147665023804
+4,53.8188047721189,183,none = 1 AND Nice = 1 AND Dict = 1 AND BlockSize = 1,none >= 1.0  AND  Dict >= 1.0  AND  BlockSize >= 1.0  AND  Nice >= 1.0  AND  0.0 <= bt2 < 1.0,0,0.9421965317919077,1.0,0.8907103825136612,98,26.125731468200684
+5,168.3785666477827,200,bt4 = 1 AND MemoryLimit = 1 AND Depth = 1 AND Dict = 1 AND Dist = 1,bt4 >= 1.0  AND  MemoryLimit >= 1.0  AND  Depth >= 1.0  AND  Dict >= 1.0  AND  Dist >= 1.0,0,1.0,1.0,1.0,98,49.211886167526245
+6,198.96980341965164,127,crc32 = 1 AND Nice = 1 AND Depth = 1 AND Dict = 1 AND Dist = 1 AND BlockSize = 1,crc32 >= 1.0  AND  Dist >= 1.0  AND  Nice >= 1.0  AND  Dict >= 1.0  AND  Depth >= 1.0  AND  BlockSize >= 1.0  AND  0.0 <= Lc0Lp2 < 1.0,0,0.963265306122449,1.0,0.9291338582677166,98,43.55042910575867
+1,136.23888581248252,190,Lc3Lp0 = 1,0.0 <= bt4 < 1.0  AND  Lc3Lp0 >= 1.0,0,0.9017341040462428,1.0,0.8210526315789474,99,27.27782654762268
+2,44.57882186613639,328,Dist = 1 AND PositionBits = 1,PositionBits >= 1.0  AND  0.0 <= Lc0Lp4 < 1.0  AND  Dist >= 1.0  AND  0.0 <= sha256 < 1.0  AND  0.0 <= Lc1Lp1 < 1.0,0,0.7761194029850745,1.0,0.6341463414634146,99,36.81286931037903
+3,98.0616496750826,103,Lc0Lp1 = 1 AND Nice = 1 AND FlushTimeout = 1,Lc0Lp1 >= 1.0  AND  Nice >= 1.0  AND  FlushTimeout >= 1.0,0,1.0,1.0,1.0,99,34.49799966812134
+4,152.54644034547087,179,crc32 = 1 AND Depth = 1 AND Dict = 1 AND Dist = 1,crc32 >= 1.0  AND  Depth >= 1.0  AND  Dist >= 1.0  AND  Dict >= 1.0,0,1.0,1.0,1.0,99,48.49586510658264
+5,87.72052784678041,171,MemoryLimit = 1 AND Depth = 1 AND Dist = 1 AND BlockSize = 1 AND PositionBits = 1,PositionBits >= 1.0  AND  MemoryLimit >= 1.0  AND  Dist >= 1.0  AND  BlockSize >= 1.0  AND  Depth >= 1.0,0,1.0,1.0,1.0,99,25.785294771194454
+6,69.0621664257254,133,crc32 = 1 AND MemoryLimit = 1 AND Nice = 1 AND Depth = 1 AND Dist = 1 AND BlockSize = 1,crc32 >= 1.0  AND  Nice >= 1.0  AND  MemoryLimit >= 1.0  AND  BlockSize >= 1.0  AND  Dist >= 1.0  AND  0.0 <= bt3 < 1.0  AND  Depth >= 1.0,0,0.9444444444444444,1.0,0.8947368421052632,99,27.02746844291687

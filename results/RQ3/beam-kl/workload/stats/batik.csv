@@ -1,0 +1,2 @@
+num_features,num_samples,sgs_unique,sgs_mean_jaccard,sgs_mean_overlap_coefficient,coverage_mean,coverage_total,rule_features_used,rule_feature_frequency,rule_num_features,rule_length_mean,rule_length_max,rule_length_min,runtime
+12,1919,3,0.1669928245270711,0.3333333333333333,0.2221643216953274,0.5330901511203752,"['pdf', 'validate', 'resolution', 'workload']","[('pdf', 5), ('validate', 2), ('resolution', 5), ('workload', 2)]",4,2.8,4.0,2.0,0.4354674816131592

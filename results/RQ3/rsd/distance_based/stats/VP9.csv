@@ -1,0 +1,2 @@
+num_features,num_samples,sgs_unique,sgs_mean_jaccard,sgs_mean_overlap_coefficient,coverage_mean,coverage_total,rule_features_used,rule_feature_frequency,rule_num_features,rule_length_mean,rule_length_max,rule_length_min,runtime
+17,216000,15,0.1517178686862556,0.3404761904761905,0.15,0.76,"['good', 'realtime', 'lossless', 'lagInFrames', 'cpuUsed', 'variance', 'bitRate']","[('good', 3), ('realtime', 7), ('lossless', 12), ('lagInFrames', 1), ('cpuUsed', 7), ('variance', 1), ('bitRate', 7)]",7,2.533333333333333,4.0,2.0,8472.432343959808

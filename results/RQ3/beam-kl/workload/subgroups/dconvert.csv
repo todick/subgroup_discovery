@@ -1,0 +1,6 @@
+rule,sg_samples,sg_coverage,rule_num_predicates,rule_features_used
+ios==1,1648,0.2436428149024246,1,['ios']
+ios==1 AND web==0,1648,0.2436428149024246,2,"['web', 'ios']"
+ios==1 AND androidMipmapInsteadOfDrawable==0,1648,0.2436428149024246,2,"['ios', 'androidMipmapInsteadOfDrawable']"
+ios==1 AND androidMipmapInsteadOfDrawable==0 AND web==0,1648,0.2436428149024246,3,"['web', 'ios', 'androidMipmapInsteadOfDrawable']"
+android==0 AND ios==1,1648,0.2436428149024246,2,"['ios', 'android']"

@@ -1,0 +1,6 @@
+rule,sg_samples,sg_coverage,rule_num_predicates,rule_features_used
+gvn==0 AND inline==0 AND instcombine==0 AND licm==0,64,0.0625,4,"['inline', 'gvn', 'licm', 'instcombine']"
+gvn==0 AND inline==0 AND instcombine==0 AND licm==0 AND sccp==1,32,0.03125,5,"['gvn', 'inline', 'instcombine', 'sccp', 'licm']"
+gvn==0 AND inline==0 AND instcombine==0 AND ipsccp==1 AND licm==0,32,0.03125,5,"['ipsccp', 'inline', 'instcombine', 'gvn', 'licm']"
+gvn==0 AND inline==0 AND instcombine==0 AND licm==0 AND simplifycfg==1,32,0.03125,5,"['inline', 'simplifycfg', 'instcombine', 'gvn', 'licm']"
+gvn==0 AND inline==0 AND instcombine==0 AND licm==0 AND print_used_types==1,32,0.03125,5,"['inline', 'print_used_types', 'instcombine', 'gvn', 'licm']"

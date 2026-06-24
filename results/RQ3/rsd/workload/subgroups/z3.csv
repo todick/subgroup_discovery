@@ -1,0 +1,12 @@
+rule,sg_samples,sg_coverage,rule_num_predicates,rule_features_used
+0.0 <= proof < 1.0  AND  0.0 <= trace < 1.0  AND  0.0 <= debug_ref_count < 1.0  AND  0.0 <= well_sorted_check < 1.0  AND  0.0 <= smtlib2_compliant < 1.0,72,0.07128712871287128,5,"['proof', 'trace', 'well_sorted_check', 'debug_ref_count', 'smtlib2_compliant']"
+debug_ref_count >= 1.0  AND  proof >= 1.0  AND  0.0 <= trace < 1.0,112,0.11089108910891089,3,"['trace', 'debug_ref_count', 'proof']"
+debug_ref_count >= 1.0  AND  0.0 <= trace < 1.0,247,0.24455445544554455,2,"['trace', 'debug_ref_count']"
+0.0 <= proof < 1.0  AND  0.0 <= trace < 1.0,295,0.29207920792079206,2,"['trace', 'proof']"
+debug_ref_count >= 1.0  AND  proof >= 1.0  AND  0.0 <= smtlib2_compliant < 1.0,121,0.1198019801980198,3,"['debug_ref_count', 'proof', 'smtlib2_compliant']"
+debug_ref_count >= 1.0  AND  proof >= 1.0,276,0.2732673267326733,2,"['debug_ref_count', 'proof']"
+debug_ref_count >= 1.0  AND  dump_models >= 1.0,297,0.29405940594059404,2,"['debug_ref_count', 'dump_models']"
+0.0 <= debug_ref_count < 1.0  AND  0.0 <= proof < 1.0,277,0.2742574257425743,2,"['debug_ref_count', 'proof']"
+0.0 <= debug_ref_count < 1.0  AND  0.0 <= smtlib2_compliant < 1.0  AND  0.0 <= stats < 1.0,162,0.1603960396039604,3,"['stats', 'debug_ref_count', 'smtlib2_compliant']"
+0.0 <= debug_ref_count < 1.0  AND  model_validate >= 1.0,193,0.1910891089108911,2,"['debug_ref_count', 'model_validate']"
+0.0 <= debug_ref_count < 1.0,489,0.48415841584158414,1,['debug_ref_count']

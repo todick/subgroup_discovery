@@ -1,0 +1,501 @@
+sg_distribution,sg_cardinality,sg_rule,best_rule,best_rule_idx,f1,precision,recall,seed
+normal,7500,max = 1 AND memory_based = 1 AND polly_opt_simplify_deps = 1,max AND polly_opt_simplify_deps AND NOT value_based,0,1.0,1.0,1.0,0
+uniform,7500,min = 1 AND polly = 1 AND value_based = 1,value_based AND NOT max AND polly,0,1.0,1.0,1.0,0
+bi_modal_split,10000,parallel = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,parallel AND polly_opt_simplify_deps,0,1.0,1.0,1.0,0
+tri_modal_split,7500,min = 1 AND polly_no_tiling = 1 AND polly_opt_simplify_deps = 1,polly_no_tiling AND polly_opt_simplify_deps AND NOT max,0,1.0,1.0,1.0,0
+power_law,10000,max = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,max AND polly_opt_simplify_deps AND polly_parallel,0,1.0,1.0,1.0,0
+normal,7500,none = 1 AND polly_no_tiling = 1 AND value_based = 1,NOT memory_based AND none AND polly_no_tiling,0,1.0,1.0,1.0,10
+uniform,7500,none = 1 AND polly_no_tiling = 1 AND value_based = 1,value_based AND polly_no_tiling AND none,0,1.0,1.0,1.0,10
+bi_modal_split,7500,none = 1 AND polly_no_tiling = 1 AND value_based = 1,value_based AND NOT pollyoptmaxconstantterm_10 AND polly_no_tiling,4,0.6153846153846154,0.5,0.8,10
+tri_modal_split,7500,none = 1 AND polly_no_tiling = 1 AND value_based = 1,NOT memory_based AND NOT polly AND polly_no_tiling,3,1.0,1.0,1.0,10
+power_law,7500,none = 1 AND polly_no_tiling = 1 AND value_based = 1,value_based AND none AND polly_no_tiling,0,1.0,1.0,1.0,10
+normal,7500,min = 1 AND polly_opt_simplify_deps = 1 AND value_based = 1,value_based AND polly_opt_simplify_deps AND NOT max,0,1.0,1.0,1.0,11
+uniform,7500,min = 1 AND polly_opt_simplify_deps = 1 AND value_based = 1,min AND NOT memory_based AND polly_opt_simplify_deps,0,1.0,1.0,1.0,11
+bi_modal_split,7500,min = 1 AND polly_opt_simplify_deps = 1 AND value_based = 1,NOT max AND NOT memory_based AND polly_opt_simplify_deps,0,1.0,1.0,1.0,11
+tri_modal_split,7500,min = 1 AND polly_opt_simplify_deps = 1 AND value_based = 1,value_based AND min AND polly_opt_simplify_deps,0,1.0,1.0,1.0,11
+power_law,7500,min = 1 AND polly_opt_simplify_deps = 1 AND value_based = 1,NOT max AND polly_opt_simplify_deps AND NOT memory_based,0,1.0,1.0,1.0,11
+normal,10000,parallel = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,parallel AND polly_opt_simplify_deps,0,1.0,1.0,1.0,12
+uniform,10000,parallel = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,parallel AND polly_opt_simplify_deps,0,1.0,1.0,1.0,12
+bi_modal_split,10000,parallel = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,parallel AND polly_opt_simplify_deps,0,1.0,1.0,1.0,12
+tri_modal_split,10000,parallel = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,parallel AND polly_opt_simplify_deps,0,1.0,1.0,1.0,12
+power_law,10000,parallel = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,parallel AND polly_opt_simplify_deps,0,1.0,1.0,1.0,12
+normal,10000,max = 1 AND polly_parallel = 1 AND value_based = 1,NOT min AND value_based AND polly_parallel,0,1.0,1.0,1.0,13
+uniform,10000,max = 1 AND polly_parallel = 1 AND value_based = 1,max AND value_based AND polly_parallel,0,1.0,1.0,1.0,13
+bi_modal_split,10000,max = 1 AND polly_parallel = 1 AND value_based = 1,value_based AND max AND polly_parallel,0,1.0,1.0,1.0,13
+tri_modal_split,10000,max = 1 AND polly_parallel = 1 AND value_based = 1,NOT min AND value_based AND polly_parallel,0,1.0,1.0,1.0,13
+power_law,10000,max = 1 AND polly_parallel = 1 AND value_based = 1,max AND value_based AND polly_parallel,0,1.0,1.0,1.0,13
+normal,7500,max = 1 AND polly_no_tiling = 1 AND value_based = 1,value_based AND polly_no_tiling AND NOT min,0,1.0,1.0,1.0,14
+uniform,7500,max = 1 AND polly_no_tiling = 1 AND value_based = 1,max AND polly_no_tiling AND value_based,0,1.0,1.0,1.0,14
+bi_modal_split,7500,max = 1 AND polly_no_tiling = 1 AND value_based = 1,value_based AND polly_no_tiling AND NOT min,2,1.0,1.0,1.0,14
+tri_modal_split,7500,max = 1 AND polly_no_tiling = 1 AND value_based = 1,value_based AND max AND polly_no_tiling,3,1.0,1.0,1.0,14
+power_law,7500,max = 1 AND polly_no_tiling = 1 AND value_based = 1,NOT memory_based AND polly_no_tiling AND NOT min,0,1.0,1.0,1.0,14
+normal,7500,memory_based = 1 AND min = 1 AND none = 1,min AND NOT value_based AND NOT polly,0,1.0,1.0,1.0,15
+uniform,7500,memory_based = 1 AND min = 1 AND none = 1,NOT polly AND NOT value_based AND NOT max,1,1.0,1.0,1.0,15
+bi_modal_split,7500,memory_based = 1 AND min = 1 AND none = 1,memory_based AND none AND NOT max,0,1.0,1.0,1.0,15
+tri_modal_split,7500,memory_based = 1 AND min = 1 AND none = 1,none AND min AND NOT value_based,0,1.0,1.0,1.0,15
+power_law,7500,memory_based = 1 AND min = 1 AND none = 1,min AND NOT value_based AND none,2,1.0,1.0,1.0,15
+normal,10000,polly = 1 AND polly_no_tiling = 1 AND polly_parallel = 1,polly AND polly_no_tiling AND polly_parallel,0,1.0,1.0,1.0,16
+uniform,10000,polly = 1 AND polly_no_tiling = 1 AND polly_parallel = 1,polly_no_tiling AND polly AND polly_parallel,0,1.0,1.0,1.0,16
+bi_modal_split,10000,polly = 1 AND polly_no_tiling = 1 AND polly_parallel = 1,NOT none AND polly_no_tiling AND polly_parallel,0,1.0,1.0,1.0,16
+tri_modal_split,10000,polly = 1 AND polly_no_tiling = 1 AND polly_parallel = 1,polly_no_tiling AND NOT none AND polly_parallel,0,1.0,1.0,1.0,16
+power_law,10000,polly = 1 AND polly_no_tiling = 1 AND polly_parallel = 1,NOT none AND polly_no_tiling AND polly_parallel,1,1.0,1.0,1.0,16
+normal,10000,polly_no_tiling = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,polly_no_tiling AND polly_opt_simplify_deps AND polly_parallel,0,1.0,1.0,1.0,17
+uniform,10000,polly_no_tiling = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,polly_no_tiling AND polly_opt_simplify_deps AND polly_parallel,0,1.0,1.0,1.0,17
+bi_modal_split,10000,polly_no_tiling = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,polly_no_tiling AND polly_opt_simplify_deps AND polly_parallel,0,1.0,1.0,1.0,17
+tri_modal_split,10000,polly_no_tiling = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,polly_opt_simplify_deps AND polly_no_tiling AND polly_parallel,0,1.0,1.0,1.0,17
+power_law,10000,polly_no_tiling = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,polly_opt_simplify_deps AND polly_no_tiling AND polly_parallel,0,1.0,1.0,1.0,17
+normal,7500,min = 1 AND none = 1 AND polly_no_tiling = 1,min AND none AND polly_no_tiling,0,1.0,1.0,1.0,18
+uniform,7500,min = 1 AND none = 1 AND polly_no_tiling = 1,none AND polly_no_tiling AND NOT max,0,1.0,1.0,1.0,18
+bi_modal_split,7500,min = 1 AND none = 1 AND polly_no_tiling = 1,min AND NOT polly AND polly_no_tiling,1,1.0,1.0,1.0,18
+tri_modal_split,7500,min = 1 AND none = 1 AND polly_no_tiling = 1,none AND min AND polly_no_tiling,0,1.0,1.0,1.0,18
+power_law,7500,min = 1 AND none = 1 AND polly_no_tiling = 1,polly_no_tiling AND NOT max AND none,0,1.0,1.0,1.0,18
+normal,10000,none = 1 AND polly_parallel = 1 AND value_based = 1,NOT memory_based AND NOT polly AND polly_parallel,0,1.0,1.0,1.0,19
+uniform,10000,none = 1 AND polly_parallel = 1 AND value_based = 1,none AND NOT memory_based AND polly_parallel,0,1.0,1.0,1.0,19
+bi_modal_split,10000,none = 1 AND polly_parallel = 1 AND value_based = 1,polly_parallel AND NOT pollyoptmaxcoefficient_10000 AND value_based,2,0.6153846153846154,0.5,0.8,19
+tri_modal_split,10000,none = 1 AND polly_parallel = 1 AND value_based = 1,NOT memory_based,2,0.5,0.3333333333333333,1.0,19
+power_law,10000,none = 1 AND polly_parallel = 1 AND value_based = 1,none AND NOT memory_based AND polly_parallel,0,1.0,1.0,1.0,19
+normal,10000,parallel_force = 1 AND polly_no_tiling = 1 AND polly_parallel = 1,parallel_force AND polly_no_tiling,0,1.0,1.0,1.0,1
+uniform,10000,parallel_force = 1 AND polly_no_tiling = 1 AND polly_parallel = 1,parallel_force AND polly_no_tiling,0,1.0,1.0,1.0,1
+bi_modal_split,10000,parallel_force = 1 AND polly_no_tiling = 1 AND polly_parallel = 1,parallel_force AND polly_no_tiling,0,1.0,1.0,1.0,1
+tri_modal_split,10000,parallel_force = 1 AND polly_no_tiling = 1 AND polly_parallel = 1,parallel_force AND polly_no_tiling,0,1.0,1.0,1.0,1
+power_law,10000,parallel_force = 1 AND polly_no_tiling = 1 AND polly_parallel = 1,parallel_force AND polly_no_tiling,0,1.0,1.0,1.0,1
+normal,7500,memory_based = 1 AND min = 1 AND polly_opt_simplify_deps = 1,polly_opt_simplify_deps AND min AND memory_based,0,1.0,1.0,1.0,20
+uniform,7500,memory_based = 1 AND min = 1 AND polly_opt_simplify_deps = 1,NOT max AND NOT value_based AND polly_opt_simplify_deps,0,1.0,1.0,1.0,20
+bi_modal_split,7500,memory_based = 1 AND min = 1 AND polly_opt_simplify_deps = 1,min AND NOT value_based AND polly_opt_simplify_deps,0,1.0,1.0,1.0,20
+tri_modal_split,7500,memory_based = 1 AND min = 1 AND polly_opt_simplify_deps = 1,NOT pollyoptmaxcoefficient_10 AND memory_based AND polly_opt_simplify_deps,3,0.6153846153846154,0.5,0.8,20
+power_law,7500,memory_based = 1 AND min = 1 AND polly_opt_simplify_deps = 1,min AND NOT value_based AND polly_opt_simplify_deps,0,1.0,1.0,1.0,20
+normal,7500,memory_based = 1 AND min = 1 AND polly_opt_simplify_deps = 1,NOT value_based AND min AND polly_opt_simplify_deps,0,1.0,1.0,1.0,21
+uniform,7500,memory_based = 1 AND min = 1 AND polly_opt_simplify_deps = 1,min AND memory_based AND polly_opt_simplify_deps,2,1.0,1.0,1.0,21
+bi_modal_split,7500,memory_based = 1 AND min = 1 AND polly_opt_simplify_deps = 1,memory_based AND NOT max AND polly_opt_simplify_deps,0,1.0,1.0,1.0,21
+tri_modal_split,7500,memory_based = 1 AND min = 1 AND polly_opt_simplify_deps = 1,memory_based AND min AND polly_opt_simplify_deps,0,1.0,1.0,1.0,21
+power_law,7500,memory_based = 1 AND min = 1 AND polly_opt_simplify_deps = 1,min AND polly_opt_simplify_deps AND NOT value_based,2,1.0,1.0,1.0,21
+normal,10000,min = 1 AND none = 1 AND polly_parallel = 1,none AND NOT max AND polly_parallel,0,1.0,1.0,1.0,22
+uniform,10000,min = 1 AND none = 1 AND polly_parallel = 1,NOT polly AND NOT max AND polly_parallel,0,1.0,1.0,1.0,22
+bi_modal_split,10000,min = 1 AND none = 1 AND polly_parallel = 1,min,1,0.5,0.3333333333333333,1.0,22
+tri_modal_split,10000,min = 1 AND none = 1 AND polly_parallel = 1,none,1,0.5,0.3333333333333333,1.0,22
+power_law,10000,min = 1 AND none = 1 AND polly_parallel = 1,none AND min AND polly_parallel,0,1.0,1.0,1.0,22
+normal,10000,max = 1 AND none = 1 AND polly_parallel = 1,NOT polly AND NOT min AND polly_parallel,0,1.0,1.0,1.0,23
+uniform,10000,max = 1 AND none = 1 AND polly_parallel = 1,none AND max AND polly_parallel,0,1.0,1.0,1.0,23
+bi_modal_split,10000,max = 1 AND none = 1 AND polly_parallel = 1,max AND NOT polly AND polly_parallel,0,1.0,1.0,1.0,23
+tri_modal_split,10000,max = 1 AND none = 1 AND polly_parallel = 1,NOT polly AND max AND polly_parallel,0,1.0,1.0,1.0,23
+power_law,10000,max = 1 AND none = 1 AND polly_parallel = 1,none AND NOT min AND polly_parallel,0,1.0,1.0,1.0,23
+normal,10000,memory_based = 1 AND min = 1 AND polly_parallel = 1,memory_based AND min AND polly_parallel,0,1.0,1.0,1.0,24
+uniform,10000,memory_based = 1 AND min = 1 AND polly_parallel = 1,min AND memory_based AND polly_parallel,0,1.0,1.0,1.0,24
+bi_modal_split,10000,memory_based = 1 AND min = 1 AND polly_parallel = 1,min AND memory_based AND polly_parallel,1,1.0,1.0,1.0,24
+tri_modal_split,10000,memory_based = 1 AND min = 1 AND polly_parallel = 1,min AND NOT value_based AND polly_parallel,1,1.0,1.0,1.0,24
+power_law,10000,memory_based = 1 AND min = 1 AND polly_parallel = 1,min AND memory_based AND polly_parallel,0,1.0,1.0,1.0,24
+normal,7500,none = 1 AND polly_no_tiling = 1 AND polly_opt_simplify_deps = 1,none AND polly_opt_simplify_deps AND polly_no_tiling,0,1.0,1.0,1.0,25
+uniform,7500,none = 1 AND polly_no_tiling = 1 AND polly_opt_simplify_deps = 1,polly_opt_simplify_deps AND NOT polly AND polly_no_tiling,0,1.0,1.0,1.0,25
+bi_modal_split,7500,none = 1 AND polly_no_tiling = 1 AND polly_opt_simplify_deps = 1,none AND polly_no_tiling AND polly_opt_simplify_deps,0,1.0,1.0,1.0,25
+tri_modal_split,7500,none = 1 AND polly_no_tiling = 1 AND polly_opt_simplify_deps = 1,polly_opt_simplify_deps AND polly_no_tiling AND NOT polly,2,1.0,1.0,1.0,25
+power_law,7500,none = 1 AND polly_no_tiling = 1 AND polly_opt_simplify_deps = 1,polly_opt_simplify_deps AND NOT polly AND polly_no_tiling,0,1.0,1.0,1.0,25
+normal,7500,max = 1 AND polly = 1 AND polly_opt_simplify_deps = 1,NOT min AND NOT none AND polly_opt_simplify_deps,0,1.0,1.0,1.0,26
+uniform,7500,max = 1 AND polly = 1 AND polly_opt_simplify_deps = 1,polly_opt_simplify_deps AND NOT none AND max,0,1.0,1.0,1.0,26
+bi_modal_split,7500,max = 1 AND polly = 1 AND polly_opt_simplify_deps = 1,polly AND polly_opt_simplify_deps AND max,0,1.0,1.0,1.0,26
+tri_modal_split,7500,max = 1 AND polly = 1 AND polly_opt_simplify_deps = 1,NOT min AND NOT none AND polly_opt_simplify_deps,0,1.0,1.0,1.0,26
+power_law,7500,max = 1 AND polly = 1 AND polly_opt_simplify_deps = 1,polly_opt_simplify_deps AND polly AND max,0,1.0,1.0,1.0,26
+normal,7500,min = 1 AND polly_no_tiling = 1 AND value_based = 1,min AND polly_no_tiling AND value_based,0,1.0,1.0,1.0,27
+uniform,7500,min = 1 AND polly_no_tiling = 1 AND value_based = 1,value_based AND min AND polly_no_tiling,0,1.0,1.0,1.0,27
+bi_modal_split,7500,min = 1 AND polly_no_tiling = 1 AND value_based = 1,NOT memory_based AND NOT max AND polly_no_tiling,0,1.0,1.0,1.0,27
+tri_modal_split,7500,min = 1 AND polly_no_tiling = 1 AND value_based = 1,min AND value_based AND polly_no_tiling,0,1.0,1.0,1.0,27
+power_law,7500,min = 1 AND polly_no_tiling = 1 AND value_based = 1,value_based AND polly_no_tiling AND min,0,1.0,1.0,1.0,27
+normal,7500,memory_based = 1 AND min = 1 AND polly_no_tiling = 1,polly_no_tiling AND NOT value_based AND min,0,1.0,1.0,1.0,28
+uniform,7500,memory_based = 1 AND min = 1 AND polly_no_tiling = 1,min AND polly_no_tiling AND NOT value_based,0,1.0,1.0,1.0,28
+bi_modal_split,7500,memory_based = 1 AND min = 1 AND polly_no_tiling = 1,min AND NOT value_based AND polly_no_tiling,0,1.0,1.0,1.0,28
+tri_modal_split,7500,memory_based = 1 AND min = 1 AND polly_no_tiling = 1,NOT value_based AND min AND polly_no_tiling,0,1.0,1.0,1.0,28
+power_law,7500,memory_based = 1 AND min = 1 AND polly_no_tiling = 1,min AND polly_no_tiling AND memory_based,0,1.0,1.0,1.0,28
+normal,7500,max = 1 AND memory_based = 1 AND polly_opt_simplify_deps = 1,memory_based AND polly_opt_simplify_deps AND max,0,1.0,1.0,1.0,29
+uniform,7500,max = 1 AND memory_based = 1 AND polly_opt_simplify_deps = 1,NOT min AND polly_opt_simplify_deps AND memory_based,2,1.0,1.0,1.0,29
+bi_modal_split,7500,max = 1 AND memory_based = 1 AND polly_opt_simplify_deps = 1,NOT min AND memory_based AND polly_opt_simplify_deps,2,1.0,1.0,1.0,29
+tri_modal_split,7500,max = 1 AND memory_based = 1 AND polly_opt_simplify_deps = 1,polly_opt_simplify_deps AND NOT value_based AND NOT min,0,1.0,1.0,1.0,29
+power_law,7500,max = 1 AND memory_based = 1 AND polly_opt_simplify_deps = 1,polly_opt_simplify_deps AND NOT min AND NOT value_based,3,1.0,1.0,1.0,29
+normal,7500,max = 1 AND polly = 1 AND value_based = 1,value_based AND polly AND NOT min,0,1.0,1.0,1.0,2
+uniform,7500,max = 1 AND polly = 1 AND value_based = 1,value_based AND max AND polly,0,1.0,1.0,1.0,2
+bi_modal_split,7500,max = 1 AND polly = 1 AND value_based = 1,NOT min AND NOT memory_based AND polly,0,1.0,1.0,1.0,2
+tri_modal_split,7500,max = 1 AND polly = 1 AND value_based = 1,max AND polly AND NOT memory_based,0,1.0,1.0,1.0,2
+power_law,7500,max = 1 AND polly = 1 AND value_based = 1,max AND polly AND value_based,0,1.0,1.0,1.0,2
+normal,10000,none = 1 AND polly_no_tiling = 1 AND polly_parallel = 1,polly_no_tiling AND none AND polly_parallel,0,1.0,1.0,1.0,30
+uniform,10000,none = 1 AND polly_no_tiling = 1 AND polly_parallel = 1,NOT polly AND polly_no_tiling AND polly_parallel,0,1.0,1.0,1.0,30
+bi_modal_split,10000,none = 1 AND polly_no_tiling = 1 AND polly_parallel = 1,polly_no_tiling AND NOT polly AND polly_parallel,0,1.0,1.0,1.0,30
+tri_modal_split,10000,none = 1 AND polly_no_tiling = 1 AND polly_parallel = 1,none AND polly_no_tiling AND polly_parallel,0,1.0,1.0,1.0,30
+power_law,10000,none = 1 AND polly_no_tiling = 1 AND polly_parallel = 1,polly_no_tiling AND NOT polly AND polly_parallel,0,1.0,1.0,1.0,30
+normal,7500,none = 1 AND polly_no_tiling = 1 AND value_based = 1,polly_no_tiling AND value_based AND NOT polly,0,1.0,1.0,1.0,31
+uniform,7500,none = 1 AND polly_no_tiling = 1 AND value_based = 1,value_based AND polly_no_tiling AND NOT polly,0,1.0,1.0,1.0,31
+bi_modal_split,7500,none = 1 AND polly_no_tiling = 1 AND value_based = 1,polly_no_tiling AND none AND NOT memory_based,1,1.0,1.0,1.0,31
+tri_modal_split,7500,none = 1 AND polly_no_tiling = 1 AND value_based = 1,polly_no_tiling AND NOT polly AND NOT memory_based,4,1.0,1.0,1.0,31
+power_law,7500,none = 1 AND polly_no_tiling = 1 AND value_based = 1,none AND value_based AND polly_no_tiling,0,1.0,1.0,1.0,31
+normal,7500,max = 1 AND memory_based = 1 AND polly_opt_simplify_deps = 1,memory_based AND polly_opt_simplify_deps AND NOT min,0,1.0,1.0,1.0,32
+uniform,7500,max = 1 AND memory_based = 1 AND polly_opt_simplify_deps = 1,max AND NOT value_based AND polly_opt_simplify_deps,0,1.0,1.0,1.0,32
+bi_modal_split,7500,max = 1 AND memory_based = 1 AND polly_opt_simplify_deps = 1,NOT min AND polly_opt_simplify_deps AND NOT value_based,0,1.0,1.0,1.0,32
+tri_modal_split,7500,max = 1 AND memory_based = 1 AND polly_opt_simplify_deps = 1,polly_opt_simplify_deps AND NOT min AND NOT value_based,0,1.0,1.0,1.0,32
+power_law,7500,max = 1 AND memory_based = 1 AND polly_opt_simplify_deps = 1,NOT min AND polly_opt_simplify_deps AND memory_based,2,1.0,1.0,1.0,32
+normal,10000,polly_no_tiling = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,polly_no_tiling AND polly_opt_simplify_deps AND polly_parallel,0,1.0,1.0,1.0,33
+uniform,10000,polly_no_tiling = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,polly_opt_simplify_deps AND polly_no_tiling AND polly_parallel,0,1.0,1.0,1.0,33
+bi_modal_split,10000,polly_no_tiling = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,polly_opt_simplify_deps AND polly_no_tiling AND polly_parallel,2,1.0,1.0,1.0,33
+tri_modal_split,10000,polly_no_tiling = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,polly_opt_simplify_deps AND polly_no_tiling AND polly_parallel,0,1.0,1.0,1.0,33
+power_law,10000,polly_no_tiling = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,polly_opt_simplify_deps AND polly_no_tiling AND polly_parallel,0,1.0,1.0,1.0,33
+normal,10000,min = 1 AND polly = 1 AND polly_parallel = 1,NOT max AND NOT none AND polly_parallel,0,1.0,1.0,1.0,34
+uniform,10000,min = 1 AND polly = 1 AND polly_parallel = 1,min AND polly AND polly_parallel,0,1.0,1.0,1.0,34
+bi_modal_split,10000,min = 1 AND polly = 1 AND polly_parallel = 1,polly AND NOT max AND polly_parallel,0,1.0,1.0,1.0,34
+tri_modal_split,10000,min = 1 AND polly = 1 AND polly_parallel = 1,min AND NOT none AND polly_parallel,1,1.0,1.0,1.0,34
+power_law,10000,min = 1 AND polly = 1 AND polly_parallel = 1,polly AND NOT max AND polly_parallel,0,1.0,1.0,1.0,34
+normal,7500,none = 1 AND polly_no_tiling = 1 AND value_based = 1,value_based AND polly_no_tiling AND NOT polly,0,1.0,1.0,1.0,35
+uniform,7500,none = 1 AND polly_no_tiling = 1 AND value_based = 1,polly_no_tiling AND NOT polly AND NOT memory_based,0,1.0,1.0,1.0,35
+bi_modal_split,7500,none = 1 AND polly_no_tiling = 1 AND value_based = 1,pollyrtcmaxparameters <= 12.0 AND polly_no_tiling AND value_based AND none,1,0.888888888888889,1.0,0.8,35
+tri_modal_split,7500,none = 1 AND polly_no_tiling = 1 AND value_based = 1,none AND NOT memory_based AND polly_no_tiling,0,1.0,1.0,1.0,35
+power_law,7500,none = 1 AND polly_no_tiling = 1 AND value_based = 1,polly_no_tiling AND value_based AND none,0,1.0,1.0,1.0,35
+normal,10000,none = 1 AND polly_no_tiling = 1 AND polly_parallel = 1,NOT polly AND polly_no_tiling AND polly_parallel,0,1.0,1.0,1.0,36
+uniform,10000,none = 1 AND polly_no_tiling = 1 AND polly_parallel = 1,none AND polly_no_tiling AND polly_parallel,0,1.0,1.0,1.0,36
+bi_modal_split,10000,none = 1 AND polly_no_tiling = 1 AND polly_parallel = 1,NOT polly AND polly_no_tiling AND polly_parallel,0,1.0,1.0,1.0,36
+tri_modal_split,10000,none = 1 AND polly_no_tiling = 1 AND polly_parallel = 1,none AND polly_no_tiling AND polly_parallel,1,1.0,1.0,1.0,36
+power_law,10000,none = 1 AND polly_no_tiling = 1 AND polly_parallel = 1,NOT polly AND polly_no_tiling AND polly_parallel,0,1.0,1.0,1.0,36
+normal,10000,none = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,none AND polly_opt_simplify_deps AND polly_parallel,0,1.0,1.0,1.0,37
+uniform,10000,none = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,polly_opt_simplify_deps AND NOT polly AND polly_parallel,0,1.0,1.0,1.0,37
+bi_modal_split,10000,none = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,none AND polly_opt_simplify_deps AND polly_parallel,0,1.0,1.0,1.0,37
+tri_modal_split,10000,none = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,NOT polly AND polly_opt_simplify_deps AND polly_parallel,0,1.0,1.0,1.0,37
+power_law,10000,none = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,polly_opt_simplify_deps AND none AND polly_parallel,0,1.0,1.0,1.0,37
+normal,7500,max = 1 AND memory_based = 1 AND none = 1,NOT value_based AND max AND NOT polly,0,1.0,1.0,1.0,38
+uniform,7500,max = 1 AND memory_based = 1 AND none = 1,NOT polly AND NOT min AND NOT value_based,0,1.0,1.0,1.0,38
+bi_modal_split,7500,max = 1 AND memory_based = 1 AND none = 1,none AND max AND NOT value_based,0,1.0,1.0,1.0,38
+tri_modal_split,7500,max = 1 AND memory_based = 1 AND none = 1,memory_based AND max AND none,0,1.0,1.0,1.0,38
+power_law,7500,max = 1 AND memory_based = 1 AND none = 1,max AND none AND NOT value_based,0,1.0,1.0,1.0,38
+normal,10000,none = 1 AND polly_parallel = 1 AND value_based = 1,NOT polly AND value_based AND polly_parallel,0,1.0,1.0,1.0,39
+uniform,10000,none = 1 AND polly_parallel = 1 AND value_based = 1,value_based AND none AND polly_parallel,0,1.0,1.0,1.0,39
+bi_modal_split,10000,none = 1 AND polly_parallel = 1 AND value_based = 1,value_based AND none AND polly_parallel,0,1.0,1.0,1.0,39
+tri_modal_split,10000,none = 1 AND polly_parallel = 1 AND value_based = 1,none AND NOT memory_based AND polly_parallel,0,1.0,1.0,1.0,39
+power_law,10000,none = 1 AND polly_parallel = 1 AND value_based = 1,value_based AND none AND polly_parallel,0,1.0,1.0,1.0,39
+normal,10000,max = 1 AND polly_no_tiling = 1 AND polly_parallel = 1,polly_no_tiling AND max AND polly_parallel,0,1.0,1.0,1.0,3
+uniform,10000,max = 1 AND polly_no_tiling = 1 AND polly_parallel = 1,polly_no_tiling AND NOT min AND polly_parallel,0,1.0,1.0,1.0,3
+bi_modal_split,10000,max = 1 AND polly_no_tiling = 1 AND polly_parallel = 1,max AND polly_no_tiling AND polly_parallel,0,1.0,1.0,1.0,3
+tri_modal_split,10000,max = 1 AND polly_no_tiling = 1 AND polly_parallel = 1,NOT min AND polly_no_tiling AND polly_parallel,0,1.0,1.0,1.0,3
+power_law,10000,max = 1 AND polly_no_tiling = 1 AND polly_parallel = 1,max AND polly_no_tiling AND polly_parallel,0,1.0,1.0,1.0,3
+normal,10000,min = 1 AND parallel = 1 AND polly_parallel = 1,parallel AND min,0,1.0,1.0,1.0,40
+uniform,10000,min = 1 AND parallel = 1 AND polly_parallel = 1,parallel AND min,0,1.0,1.0,1.0,40
+bi_modal_split,10000,min = 1 AND parallel = 1 AND polly_parallel = 1,parallel AND min,0,1.0,1.0,1.0,40
+tri_modal_split,10000,min = 1 AND parallel = 1 AND polly_parallel = 1,parallel AND NOT max,0,1.0,1.0,1.0,40
+power_law,10000,min = 1 AND parallel = 1 AND polly_parallel = 1,parallel AND NOT max,0,1.0,1.0,1.0,40
+normal,10000,max = 1 AND polly_no_tiling = 1 AND polly_parallel = 1,polly_no_tiling AND max AND polly_parallel,0,1.0,1.0,1.0,41
+uniform,10000,max = 1 AND polly_no_tiling = 1 AND polly_parallel = 1,polly_no_tiling AND max AND polly_parallel,0,1.0,1.0,1.0,41
+bi_modal_split,10000,max = 1 AND polly_no_tiling = 1 AND polly_parallel = 1,max AND polly_no_tiling AND polly_parallel,0,1.0,1.0,1.0,41
+tri_modal_split,10000,max = 1 AND polly_no_tiling = 1 AND polly_parallel = 1,max AND polly_no_tiling AND polly_parallel,0,1.0,1.0,1.0,41
+power_law,10000,max = 1 AND polly_no_tiling = 1 AND polly_parallel = 1,polly_no_tiling AND max AND polly_parallel,1,1.0,1.0,1.0,41
+normal,7500,min = 1 AND none = 1 AND polly_opt_simplify_deps = 1,polly_opt_simplify_deps AND NOT polly AND min,0,1.0,1.0,1.0,42
+uniform,7500,min = 1 AND none = 1 AND polly_opt_simplify_deps = 1,NOT max AND polly_opt_simplify_deps AND none,2,1.0,1.0,1.0,42
+bi_modal_split,7500,min = 1 AND none = 1 AND polly_opt_simplify_deps = 1,none AND polly_opt_simplify_deps AND min,3,1.0,1.0,1.0,42
+tri_modal_split,7500,min = 1 AND none = 1 AND polly_opt_simplify_deps = 1,NOT polly AND polly_opt_simplify_deps AND NOT max,1,1.0,1.0,1.0,42
+power_law,7500,min = 1 AND none = 1 AND polly_opt_simplify_deps = 1,polly_opt_simplify_deps AND none AND min,3,1.0,1.0,1.0,42
+normal,10000,max = 1 AND polly_no_tiling = 1 AND polly_parallel = 1,polly_no_tiling AND NOT min AND polly_parallel,0,1.0,1.0,1.0,43
+uniform,10000,max = 1 AND polly_no_tiling = 1 AND polly_parallel = 1,polly_no_tiling AND NOT min AND polly_parallel,0,1.0,1.0,1.0,43
+bi_modal_split,10000,max = 1 AND polly_no_tiling = 1 AND polly_parallel = 1,polly_no_tiling AND NOT min AND polly_parallel,0,1.0,1.0,1.0,43
+tri_modal_split,10000,max = 1 AND polly_no_tiling = 1 AND polly_parallel = 1,max AND polly_no_tiling AND polly_parallel,0,1.0,1.0,1.0,43
+power_law,10000,max = 1 AND polly_no_tiling = 1 AND polly_parallel = 1,NOT min AND polly_no_tiling AND polly_parallel,0,1.0,1.0,1.0,43
+normal,10000,polly_no_tiling = 1 AND polly_parallel = 1 AND value_based = 1,value_based AND polly_no_tiling AND polly_parallel,0,1.0,1.0,1.0,44
+uniform,10000,polly_no_tiling = 1 AND polly_parallel = 1 AND value_based = 1,polly_no_tiling AND value_based AND polly_parallel,0,1.0,1.0,1.0,44
+bi_modal_split,10000,polly_no_tiling = 1 AND polly_parallel = 1 AND value_based = 1,polly_no_tiling AND NOT memory_based AND polly_parallel,3,1.0,1.0,1.0,44
+tri_modal_split,10000,polly_no_tiling = 1 AND polly_parallel = 1 AND value_based = 1,value_based AND polly_no_tiling AND polly_parallel,1,1.0,1.0,1.0,44
+power_law,10000,polly_no_tiling = 1 AND polly_parallel = 1 AND value_based = 1,value_based AND polly_no_tiling AND polly_parallel,0,1.0,1.0,1.0,44
+normal,7500,min = 1 AND polly = 1 AND polly_no_tiling = 1,NOT none AND min AND polly_no_tiling,0,1.0,1.0,1.0,45
+uniform,7500,min = 1 AND polly = 1 AND polly_no_tiling = 1,polly_no_tiling AND polly AND min,0,1.0,1.0,1.0,45
+bi_modal_split,7500,min = 1 AND polly = 1 AND polly_no_tiling = 1,min AND NOT none,4,0.6666666666666666,0.5,1.0,45
+tri_modal_split,7500,min = 1 AND polly = 1 AND polly_no_tiling = 1,polly AND polly_no_tiling AND min,3,1.0,1.0,1.0,45
+power_law,7500,min = 1 AND polly = 1 AND polly_no_tiling = 1,polly_no_tiling AND polly AND min,0,1.0,1.0,1.0,45
+normal,10000,max = 1 AND polly_parallel = 1 AND value_based = 1,value_based AND max AND polly_parallel,0,1.0,1.0,1.0,46
+uniform,10000,max = 1 AND polly_parallel = 1 AND value_based = 1,value_based AND NOT min AND polly_parallel,0,1.0,1.0,1.0,46
+bi_modal_split,10000,max = 1 AND polly_parallel = 1 AND value_based = 1,max AND value_based AND polly_parallel,0,1.0,1.0,1.0,46
+tri_modal_split,10000,max = 1 AND polly_parallel = 1 AND value_based = 1,value_based AND max AND polly_parallel,0,1.0,1.0,1.0,46
+power_law,10000,max = 1 AND polly_parallel = 1 AND value_based = 1,value_based AND NOT min AND polly_parallel,0,1.0,1.0,1.0,46
+normal,7500,max = 1 AND polly_opt_simplify_deps = 1 AND value_based = 1,polly_opt_simplify_deps AND NOT min AND NOT memory_based,0,1.0,1.0,1.0,47
+uniform,7500,max = 1 AND polly_opt_simplify_deps = 1 AND value_based = 1,NOT min AND NOT memory_based AND polly_opt_simplify_deps,0,1.0,1.0,1.0,47
+bi_modal_split,7500,max = 1 AND polly_opt_simplify_deps = 1 AND value_based = 1,NOT memory_based AND NOT min AND polly_opt_simplify_deps,0,1.0,1.0,1.0,47
+tri_modal_split,7500,max = 1 AND polly_opt_simplify_deps = 1 AND value_based = 1,max AND polly_opt_simplify_deps AND NOT memory_based,0,1.0,1.0,1.0,47
+power_law,7500,max = 1 AND polly_opt_simplify_deps = 1 AND value_based = 1,polly_opt_simplify_deps AND NOT memory_based AND max,0,1.0,1.0,1.0,47
+normal,10000,min = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,min AND polly_opt_simplify_deps AND polly_parallel,0,1.0,1.0,1.0,48
+uniform,10000,min = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,polly_opt_simplify_deps AND NOT max AND polly_parallel,0,1.0,1.0,1.0,48
+bi_modal_split,10000,min = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,min AND polly_opt_simplify_deps AND polly_parallel,0,1.0,1.0,1.0,48
+tri_modal_split,10000,min = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,polly_opt_simplify_deps AND min AND polly_parallel,0,1.0,1.0,1.0,48
+power_law,10000,min = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,min AND polly_opt_simplify_deps AND polly_parallel,0,1.0,1.0,1.0,48
+normal,10000,memory_based = 1 AND min = 1 AND polly_parallel = 1,memory_based AND NOT max AND polly_parallel,0,1.0,1.0,1.0,49
+uniform,10000,memory_based = 1 AND min = 1 AND polly_parallel = 1,NOT value_based AND min AND polly_parallel,0,1.0,1.0,1.0,49
+bi_modal_split,10000,memory_based = 1 AND min = 1 AND polly_parallel = 1,min AND NOT value_based AND polly_parallel,1,1.0,1.0,1.0,49
+tri_modal_split,10000,memory_based = 1 AND min = 1 AND polly_parallel = 1,NOT value_based AND NOT max AND polly_parallel,2,1.0,1.0,1.0,49
+power_law,10000,memory_based = 1 AND min = 1 AND polly_parallel = 1,NOT value_based AND min AND polly_parallel,0,1.0,1.0,1.0,49
+normal,10000,parallel_force = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,parallel_force AND polly_opt_simplify_deps,0,1.0,1.0,1.0,4
+uniform,10000,parallel_force = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,parallel_force AND polly_opt_simplify_deps,0,1.0,1.0,1.0,4
+bi_modal_split,10000,parallel_force = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,parallel_force AND polly_opt_simplify_deps,0,1.0,1.0,1.0,4
+tri_modal_split,10000,parallel_force = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,parallel_force AND polly_opt_simplify_deps,0,1.0,1.0,1.0,4
+power_law,10000,parallel_force = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,parallel_force AND polly_opt_simplify_deps,0,1.0,1.0,1.0,4
+normal,10000,none = 1 AND parallel_force = 1 AND polly_parallel = 1,parallel_force AND none,0,1.0,1.0,1.0,50
+uniform,10000,none = 1 AND parallel_force = 1 AND polly_parallel = 1,parallel_force AND none,0,1.0,1.0,1.0,50
+bi_modal_split,10000,none = 1 AND parallel_force = 1 AND polly_parallel = 1,parallel_force AND none,0,1.0,1.0,1.0,50
+tri_modal_split,10000,none = 1 AND parallel_force = 1 AND polly_parallel = 1,parallel_force AND NOT polly,1,1.0,1.0,1.0,50
+power_law,10000,none = 1 AND parallel_force = 1 AND polly_parallel = 1,parallel_force AND none,0,1.0,1.0,1.0,50
+normal,10000,parallel = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,parallel AND polly_opt_simplify_deps,0,1.0,1.0,1.0,51
+uniform,10000,parallel = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,parallel AND polly_opt_simplify_deps,1,1.0,1.0,1.0,51
+bi_modal_split,10000,parallel = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,parallel AND polly_opt_simplify_deps,4,1.0,1.0,1.0,51
+tri_modal_split,10000,parallel = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,parallel,4,0.6666666666666666,0.5,1.0,51
+power_law,10000,parallel = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,parallel,4,0.6666666666666666,0.5,1.0,51
+normal,7500,max = 1 AND polly = 1 AND polly_opt_simplify_deps = 1,polly_opt_simplify_deps AND NOT none AND NOT min,0,1.0,1.0,1.0,52
+uniform,7500,max = 1 AND polly = 1 AND polly_opt_simplify_deps = 1,polly_opt_simplify_deps AND max AND polly,0,1.0,1.0,1.0,52
+bi_modal_split,7500,max = 1 AND polly = 1 AND polly_opt_simplify_deps = 1,max AND polly AND polly_opt_simplify_deps,0,1.0,1.0,1.0,52
+tri_modal_split,7500,max = 1 AND polly = 1 AND polly_opt_simplify_deps = 1,max AND polly AND polly_opt_simplify_deps,0,1.0,1.0,1.0,52
+power_law,7500,max = 1 AND polly = 1 AND polly_opt_simplify_deps = 1,max AND polly AND polly_opt_simplify_deps,0,1.0,1.0,1.0,52
+normal,7500,max = 1 AND none = 1 AND polly_opt_simplify_deps = 1,max AND polly_opt_simplify_deps AND none,0,1.0,1.0,1.0,53
+uniform,7500,max = 1 AND none = 1 AND polly_opt_simplify_deps = 1,max AND polly_opt_simplify_deps AND none,0,1.0,1.0,1.0,53
+bi_modal_split,7500,max = 1 AND none = 1 AND polly_opt_simplify_deps = 1,polly_opt_simplify_deps AND NOT polly,4,0.6666666666666666,0.5,1.0,53
+tri_modal_split,7500,max = 1 AND none = 1 AND polly_opt_simplify_deps = 1,NOT min AND none AND polly_opt_simplify_deps,2,1.0,1.0,1.0,53
+power_law,7500,max = 1 AND none = 1 AND polly_opt_simplify_deps = 1,NOT min AND NOT polly AND polly_opt_simplify_deps,0,1.0,1.0,1.0,53
+normal,7500,memory_based = 1 AND min = 1 AND polly_no_tiling = 1,min AND polly_no_tiling AND memory_based,0,1.0,1.0,1.0,54
+uniform,7500,memory_based = 1 AND min = 1 AND polly_no_tiling = 1,memory_based AND min AND polly_no_tiling,0,1.0,1.0,1.0,54
+bi_modal_split,7500,memory_based = 1 AND min = 1 AND polly_no_tiling = 1,polly_no_tiling AND NOT value_based AND min,3,1.0,1.0,1.0,54
+tri_modal_split,7500,memory_based = 1 AND min = 1 AND polly_no_tiling = 1,polly_no_tiling AND NOT max AND NOT value_based,1,1.0,1.0,1.0,54
+power_law,7500,memory_based = 1 AND min = 1 AND polly_no_tiling = 1,min AND NOT value_based AND polly_no_tiling,0,1.0,1.0,1.0,54
+normal,10000,min = 1 AND none = 1 AND polly_parallel = 1,min AND NOT polly AND polly_parallel,0,1.0,1.0,1.0,55
+uniform,10000,min = 1 AND none = 1 AND polly_parallel = 1,none AND min AND polly_parallel,0,1.0,1.0,1.0,55
+bi_modal_split,10000,min = 1 AND none = 1 AND polly_parallel = 1,none AND min AND polly_parallel,0,1.0,1.0,1.0,55
+tri_modal_split,10000,min = 1 AND none = 1 AND polly_parallel = 1,none AND min AND polly_parallel,0,1.0,1.0,1.0,55
+power_law,10000,min = 1 AND none = 1 AND polly_parallel = 1,none AND NOT max AND polly_parallel,0,1.0,1.0,1.0,55
+normal,10000,max = 1 AND parallel = 1 AND polly_parallel = 1,parallel AND NOT min,0,1.0,1.0,1.0,56
+uniform,10000,max = 1 AND parallel = 1 AND polly_parallel = 1,parallel AND max,0,1.0,1.0,1.0,56
+bi_modal_split,10000,max = 1 AND parallel = 1 AND polly_parallel = 1,parallel AND max,4,1.0,1.0,1.0,56
+tri_modal_split,10000,max = 1 AND parallel = 1 AND polly_parallel = 1,parallel AND NOT min,3,1.0,1.0,1.0,56
+power_law,10000,max = 1 AND parallel = 1 AND polly_parallel = 1,parallel AND max,0,1.0,1.0,1.0,56
+normal,7500,max = 1 AND polly = 1 AND value_based = 1,max AND NOT none AND value_based,0,1.0,1.0,1.0,57
+uniform,7500,max = 1 AND polly = 1 AND value_based = 1,NOT min AND NOT memory_based AND polly,0,1.0,1.0,1.0,57
+bi_modal_split,7500,max = 1 AND polly = 1 AND value_based = 1,value_based AND NOT none AND NOT min,0,1.0,1.0,1.0,57
+tri_modal_split,7500,max = 1 AND polly = 1 AND value_based = 1,NOT none AND value_based AND NOT min,0,1.0,1.0,1.0,57
+power_law,7500,max = 1 AND polly = 1 AND value_based = 1,NOT none AND NOT min AND value_based,0,1.0,1.0,1.0,57
+normal,10000,memory_based = 1 AND parallel_force = 1 AND polly_parallel = 1,parallel_force AND memory_based,0,1.0,1.0,1.0,58
+uniform,10000,memory_based = 1 AND parallel_force = 1 AND polly_parallel = 1,parallel_force AND memory_based,0,1.0,1.0,1.0,58
+bi_modal_split,10000,memory_based = 1 AND parallel_force = 1 AND polly_parallel = 1,parallel_force AND memory_based,0,1.0,1.0,1.0,58
+tri_modal_split,10000,memory_based = 1 AND parallel_force = 1 AND polly_parallel = 1,parallel_force AND NOT value_based,0,1.0,1.0,1.0,58
+power_law,10000,memory_based = 1 AND parallel_force = 1 AND polly_parallel = 1,parallel_force AND memory_based,0,1.0,1.0,1.0,58
+normal,7500,polly = 1 AND polly_no_tiling = 1 AND polly_opt_simplify_deps = 1,polly_no_tiling AND polly_opt_simplify_deps AND polly,0,1.0,1.0,1.0,59
+uniform,7500,polly = 1 AND polly_no_tiling = 1 AND polly_opt_simplify_deps = 1,polly_no_tiling AND NOT none AND polly_opt_simplify_deps,0,1.0,1.0,1.0,59
+bi_modal_split,7500,polly = 1 AND polly_no_tiling = 1 AND polly_opt_simplify_deps = 1,polly_no_tiling AND polly_opt_simplify_deps AND NOT none,0,1.0,1.0,1.0,59
+tri_modal_split,7500,polly = 1 AND polly_no_tiling = 1 AND polly_opt_simplify_deps = 1,polly AND polly_opt_simplify_deps AND polly_no_tiling,0,1.0,1.0,1.0,59
+power_law,7500,polly = 1 AND polly_no_tiling = 1 AND polly_opt_simplify_deps = 1,polly AND polly_no_tiling AND polly_opt_simplify_deps,0,1.0,1.0,1.0,59
+normal,7500,min = 1 AND none = 1 AND polly_no_tiling = 1,NOT max AND polly_no_tiling AND none,0,1.0,1.0,1.0,5
+uniform,7500,min = 1 AND none = 1 AND polly_no_tiling = 1,polly_no_tiling AND min AND none,0,1.0,1.0,1.0,5
+bi_modal_split,7500,min = 1 AND none = 1 AND polly_no_tiling = 1,none,1,0.4,0.25,1.0,5
+tri_modal_split,7500,min = 1 AND none = 1 AND polly_no_tiling = 1,polly_no_tiling AND none AND NOT max,1,1.0,1.0,1.0,5
+power_law,7500,min = 1 AND none = 1 AND polly_no_tiling = 1,NOT max AND polly_no_tiling AND none,0,1.0,1.0,1.0,5
+normal,10000,max = 1 AND memory_based = 1 AND polly_parallel = 1,memory_based AND max AND polly_parallel,0,1.0,1.0,1.0,60
+uniform,10000,max = 1 AND memory_based = 1 AND polly_parallel = 1,max AND NOT value_based AND polly_parallel,0,1.0,1.0,1.0,60
+bi_modal_split,10000,max = 1 AND memory_based = 1 AND polly_parallel = 1,memory_based AND NOT min AND polly_parallel,3,1.0,1.0,1.0,60
+tri_modal_split,10000,max = 1 AND memory_based = 1 AND polly_parallel = 1,max AND memory_based AND polly_parallel,0,1.0,1.0,1.0,60
+power_law,10000,max = 1 AND memory_based = 1 AND polly_parallel = 1,max AND memory_based AND polly_parallel,0,1.0,1.0,1.0,60
+normal,10000,min = 1 AND parallel = 1 AND polly_parallel = 1,parallel AND NOT max,0,1.0,1.0,1.0,61
+uniform,10000,min = 1 AND parallel = 1 AND polly_parallel = 1,parallel AND min,0,1.0,1.0,1.0,61
+bi_modal_split,10000,min = 1 AND parallel = 1 AND polly_parallel = 1,parallel AND min,2,1.0,1.0,1.0,61
+tri_modal_split,10000,min = 1 AND parallel = 1 AND polly_parallel = 1,parallel AND min,3,1.0,1.0,1.0,61
+power_law,10000,min = 1 AND parallel = 1 AND polly_parallel = 1,parallel AND min,0,1.0,1.0,1.0,61
+normal,7500,memory_based = 1 AND polly = 1 AND polly_no_tiling = 1,polly AND polly_no_tiling AND memory_based,0,1.0,1.0,1.0,62
+uniform,7500,memory_based = 1 AND polly = 1 AND polly_no_tiling = 1,polly AND NOT value_based AND polly_no_tiling,0,1.0,1.0,1.0,62
+bi_modal_split,7500,memory_based = 1 AND polly = 1 AND polly_no_tiling = 1,NOT none AND polly_no_tiling AND memory_based,0,1.0,1.0,1.0,62
+tri_modal_split,7500,memory_based = 1 AND polly = 1 AND polly_no_tiling = 1,NOT none AND memory_based,4,0.6666666666666666,0.5,1.0,62
+power_law,7500,memory_based = 1 AND polly = 1 AND polly_no_tiling = 1,NOT value_based AND polly_no_tiling AND NOT none,0,1.0,1.0,1.0,62
+normal,7500,min = 1 AND polly = 1 AND value_based = 1,min AND NOT none AND NOT memory_based,0,1.0,1.0,1.0,63
+uniform,7500,min = 1 AND polly = 1 AND value_based = 1,min AND NOT memory_based AND polly,2,1.0,1.0,1.0,63
+bi_modal_split,7500,min = 1 AND polly = 1 AND value_based = 1,NOT none AND min AND value_based,0,1.0,1.0,1.0,63
+tri_modal_split,7500,min = 1 AND polly = 1 AND value_based = 1,min AND value_based AND NOT none,0,1.0,1.0,1.0,63
+power_law,7500,min = 1 AND polly = 1 AND value_based = 1,value_based AND NOT max AND polly,3,1.0,1.0,1.0,63
+normal,7500,polly_no_tiling = 1 AND polly_opt_simplify_deps = 1 AND value_based = 1,polly_opt_simplify_deps AND polly_no_tiling AND value_based,0,1.0,1.0,1.0,64
+uniform,7500,polly_no_tiling = 1 AND polly_opt_simplify_deps = 1 AND value_based = 1,value_based AND polly_opt_simplify_deps AND polly_no_tiling,0,1.0,1.0,1.0,64
+bi_modal_split,7500,polly_no_tiling = 1 AND polly_opt_simplify_deps = 1 AND value_based = 1,polly_opt_simplify_deps AND polly_no_tiling AND value_based,0,1.0,1.0,1.0,64
+tri_modal_split,7500,polly_no_tiling = 1 AND polly_opt_simplify_deps = 1 AND value_based = 1,polly_no_tiling AND value_based AND polly_opt_simplify_deps,0,1.0,1.0,1.0,64
+power_law,7500,polly_no_tiling = 1 AND polly_opt_simplify_deps = 1 AND value_based = 1,polly_opt_simplify_deps AND polly_no_tiling AND NOT memory_based,0,1.0,1.0,1.0,64
+normal,7500,min = 1 AND polly = 1 AND polly_no_tiling = 1,polly_no_tiling AND polly AND NOT max,0,1.0,1.0,1.0,65
+uniform,7500,min = 1 AND polly = 1 AND polly_no_tiling = 1,min AND polly_no_tiling AND polly,0,1.0,1.0,1.0,65
+bi_modal_split,7500,min = 1 AND polly = 1 AND polly_no_tiling = 1,polly_no_tiling AND NOT max AND NOT none,1,1.0,1.0,1.0,65
+tri_modal_split,7500,min = 1 AND polly = 1 AND polly_no_tiling = 1,polly AND polly_no_tiling AND min,4,1.0,1.0,1.0,65
+power_law,7500,min = 1 AND polly = 1 AND polly_no_tiling = 1,polly AND NOT max AND polly_no_tiling,0,1.0,1.0,1.0,65
+normal,7500,memory_based = 1 AND none = 1 AND polly_no_tiling = 1,polly_no_tiling AND NOT value_based AND NOT polly,0,1.0,1.0,1.0,66
+uniform,7500,memory_based = 1 AND none = 1 AND polly_no_tiling = 1,none AND memory_based AND polly_no_tiling,0,1.0,1.0,1.0,66
+bi_modal_split,7500,memory_based = 1 AND none = 1 AND polly_no_tiling = 1,NOT value_based AND none AND polly_no_tiling,0,1.0,1.0,1.0,66
+tri_modal_split,7500,memory_based = 1 AND none = 1 AND polly_no_tiling = 1,memory_based AND NOT polly AND polly_no_tiling,0,1.0,1.0,1.0,66
+power_law,7500,memory_based = 1 AND none = 1 AND polly_no_tiling = 1,NOT value_based AND polly_no_tiling AND NOT polly,0,1.0,1.0,1.0,66
+normal,10000,parallel = 1 AND polly_no_tiling = 1 AND polly_parallel = 1,parallel AND polly_no_tiling,0,1.0,1.0,1.0,67
+uniform,10000,parallel = 1 AND polly_no_tiling = 1 AND polly_parallel = 1,parallel AND polly_no_tiling,0,1.0,1.0,1.0,67
+bi_modal_split,10000,parallel = 1 AND polly_no_tiling = 1 AND polly_parallel = 1,parallel AND polly_no_tiling,0,1.0,1.0,1.0,67
+tri_modal_split,10000,parallel = 1 AND polly_no_tiling = 1 AND polly_parallel = 1,parallel AND polly_no_tiling,0,1.0,1.0,1.0,67
+power_law,10000,parallel = 1 AND polly_no_tiling = 1 AND polly_parallel = 1,parallel AND polly_no_tiling,0,1.0,1.0,1.0,67
+normal,10000,max = 1 AND parallel_force = 1 AND polly_parallel = 1,parallel_force AND NOT min,0,1.0,1.0,1.0,68
+uniform,10000,max = 1 AND parallel_force = 1 AND polly_parallel = 1,parallel_force AND max,0,1.0,1.0,1.0,68
+bi_modal_split,10000,max = 1 AND parallel_force = 1 AND polly_parallel = 1,parallel_force AND NOT min,1,1.0,1.0,1.0,68
+tri_modal_split,10000,max = 1 AND parallel_force = 1 AND polly_parallel = 1,parallel_force AND NOT min,0,1.0,1.0,1.0,68
+power_law,10000,max = 1 AND parallel_force = 1 AND polly_parallel = 1,parallel_force AND max,0,1.0,1.0,1.0,68
+normal,7500,max = 1 AND memory_based = 1 AND polly_no_tiling = 1,NOT min AND NOT value_based AND polly_no_tiling,0,1.0,1.0,1.0,69
+uniform,7500,max = 1 AND memory_based = 1 AND polly_no_tiling = 1,polly_no_tiling AND NOT min AND memory_based,0,1.0,1.0,1.0,69
+bi_modal_split,7500,max = 1 AND memory_based = 1 AND polly_no_tiling = 1,polly_no_tiling AND NOT value_based AND max,0,1.0,1.0,1.0,69
+tri_modal_split,7500,max = 1 AND memory_based = 1 AND polly_no_tiling = 1,NOT value_based,2,0.4,0.25,1.0,69
+power_law,7500,max = 1 AND memory_based = 1 AND polly_no_tiling = 1,memory_based AND polly_no_tiling AND NOT min,0,1.0,1.0,1.0,69
+normal,7500,max = 1 AND none = 1 AND value_based = 1,value_based AND max AND none,0,1.0,1.0,1.0,6
+uniform,7500,max = 1 AND none = 1 AND value_based = 1,none AND NOT min AND value_based,0,1.0,1.0,1.0,6
+bi_modal_split,7500,max = 1 AND none = 1 AND value_based = 1,max AND NOT memory_based AND NOT polly,0,1.0,1.0,1.0,6
+tri_modal_split,7500,max = 1 AND none = 1 AND value_based = 1,max AND none AND NOT memory_based,4,1.0,1.0,1.0,6
+power_law,7500,max = 1 AND none = 1 AND value_based = 1,none AND value_based AND NOT min,0,1.0,1.0,1.0,6
+normal,7500,max = 1 AND polly_no_tiling = 1 AND value_based = 1,NOT min AND value_based AND polly_no_tiling,0,1.0,1.0,1.0,70
+uniform,7500,max = 1 AND polly_no_tiling = 1 AND value_based = 1,polly_no_tiling AND value_based AND NOT min,2,1.0,1.0,1.0,70
+bi_modal_split,7500,max = 1 AND polly_no_tiling = 1 AND value_based = 1,max AND polly_no_tiling AND value_based,0,1.0,1.0,1.0,70
+tri_modal_split,7500,max = 1 AND polly_no_tiling = 1 AND value_based = 1,max AND NOT memory_based AND polly_no_tiling,3,1.0,1.0,1.0,70
+power_law,7500,max = 1 AND polly_no_tiling = 1 AND value_based = 1,max AND value_based AND polly_no_tiling,3,1.0,1.0,1.0,70
+normal,10000,min = 1 AND polly = 1 AND polly_parallel = 1,NOT max AND polly AND polly_parallel,0,1.0,1.0,1.0,71
+uniform,10000,min = 1 AND polly = 1 AND polly_parallel = 1,NOT none AND NOT max AND polly_parallel,0,1.0,1.0,1.0,71
+bi_modal_split,10000,min = 1 AND polly = 1 AND polly_parallel = 1,polly AND min AND polly_parallel,0,1.0,1.0,1.0,71
+tri_modal_split,10000,min = 1 AND polly = 1 AND polly_parallel = 1,polly AND NOT max AND polly_parallel,1,1.0,1.0,1.0,71
+power_law,10000,min = 1 AND polly = 1 AND polly_parallel = 1,NOT max AND polly AND polly_parallel,0,1.0,1.0,1.0,71
+normal,7500,min = 1 AND polly = 1 AND value_based = 1,min AND value_based AND NOT none,0,1.0,1.0,1.0,72
+uniform,7500,min = 1 AND polly = 1 AND value_based = 1,min AND NOT memory_based AND polly,0,1.0,1.0,1.0,72
+bi_modal_split,7500,min = 1 AND polly = 1 AND value_based = 1,min AND NOT none AND value_based,0,1.0,1.0,1.0,72
+tri_modal_split,7500,min = 1 AND polly = 1 AND value_based = 1,value_based AND NOT none AND NOT max,2,1.0,1.0,1.0,72
+power_law,7500,min = 1 AND polly = 1 AND value_based = 1,polly AND NOT max AND NOT memory_based,0,1.0,1.0,1.0,72
+normal,7500,memory_based = 1 AND polly_no_tiling = 1 AND polly_opt_simplify_deps = 1,polly_no_tiling AND polly_opt_simplify_deps AND memory_based,0,1.0,1.0,1.0,73
+uniform,7500,memory_based = 1 AND polly_no_tiling = 1 AND polly_opt_simplify_deps = 1,polly_opt_simplify_deps AND memory_based AND polly_no_tiling,0,1.0,1.0,1.0,73
+bi_modal_split,7500,memory_based = 1 AND polly_no_tiling = 1 AND polly_opt_simplify_deps = 1,polly_no_tiling AND polly_opt_simplify_deps AND NOT value_based,2,1.0,1.0,1.0,73
+tri_modal_split,7500,memory_based = 1 AND polly_no_tiling = 1 AND polly_opt_simplify_deps = 1,polly_opt_simplify_deps AND polly_no_tiling,4,0.6666666666666666,0.5,1.0,73
+power_law,7500,memory_based = 1 AND polly_no_tiling = 1 AND polly_opt_simplify_deps = 1,memory_based AND polly_opt_simplify_deps AND polly_no_tiling,0,1.0,1.0,1.0,73
+normal,7500,min = 1 AND polly_no_tiling = 1 AND value_based = 1,polly_no_tiling AND NOT memory_based AND min,0,1.0,1.0,1.0,74
+uniform,7500,min = 1 AND polly_no_tiling = 1 AND value_based = 1,value_based AND polly_no_tiling AND min,0,1.0,1.0,1.0,74
+bi_modal_split,7500,min = 1 AND polly_no_tiling = 1 AND value_based = 1,polly_no_tiling AND NOT memory_based AND NOT max,0,1.0,1.0,1.0,74
+tri_modal_split,7500,min = 1 AND polly_no_tiling = 1 AND value_based = 1,polly_no_tiling AND NOT memory_based AND min,0,1.0,1.0,1.0,74
+power_law,7500,min = 1 AND polly_no_tiling = 1 AND value_based = 1,min AND value_based AND polly_no_tiling,0,1.0,1.0,1.0,74
+normal,7500,min = 1 AND polly_opt_simplify_deps = 1 AND value_based = 1,NOT memory_based AND NOT max AND polly_opt_simplify_deps,0,1.0,1.0,1.0,75
+uniform,7500,min = 1 AND polly_opt_simplify_deps = 1 AND value_based = 1,NOT memory_based AND min AND polly_opt_simplify_deps,0,1.0,1.0,1.0,75
+bi_modal_split,7500,min = 1 AND polly_opt_simplify_deps = 1 AND value_based = 1,NOT max AND value_based AND polly_opt_simplify_deps,2,1.0,1.0,1.0,75
+tri_modal_split,7500,min = 1 AND polly_opt_simplify_deps = 1 AND value_based = 1,min AND NOT memory_based AND polly_opt_simplify_deps,2,1.0,1.0,1.0,75
+power_law,7500,min = 1 AND polly_opt_simplify_deps = 1 AND value_based = 1,value_based AND NOT max AND polly_opt_simplify_deps,0,1.0,1.0,1.0,75
+normal,10000,min = 1 AND parallel = 1 AND polly_parallel = 1,NOT pollyoptmaxcoefficient_10000,0,0.2758620689655172,0.1666666666666666,0.8,76
+uniform,10000,min = 1 AND parallel = 1 AND polly_parallel = 1,parallel AND min,0,1.0,1.0,1.0,76
+bi_modal_split,10000,min = 1 AND parallel = 1 AND polly_parallel = 1,parallel AND min,1,1.0,1.0,1.0,76
+tri_modal_split,10000,min = 1 AND parallel = 1 AND polly_parallel = 1,parallel AND min,1,1.0,1.0,1.0,76
+power_law,10000,min = 1 AND parallel = 1 AND polly_parallel = 1,parallel AND NOT max,0,1.0,1.0,1.0,76
+normal,7500,max = 1 AND polly_opt_simplify_deps = 1 AND value_based = 1,polly_opt_simplify_deps AND value_based AND NOT min,0,1.0,1.0,1.0,77
+uniform,7500,max = 1 AND polly_opt_simplify_deps = 1 AND value_based = 1,max AND polly_opt_simplify_deps AND NOT memory_based,1,1.0,1.0,1.0,77
+bi_modal_split,7500,max = 1 AND polly_opt_simplify_deps = 1 AND value_based = 1,polly_opt_simplify_deps AND NOT memory_based AND max,0,1.0,1.0,1.0,77
+tri_modal_split,7500,max = 1 AND polly_opt_simplify_deps = 1 AND value_based = 1,polly_opt_simplify_deps AND max AND value_based,1,1.0,1.0,1.0,77
+power_law,7500,max = 1 AND polly_opt_simplify_deps = 1 AND value_based = 1,polly_opt_simplify_deps AND NOT memory_based AND NOT min,3,1.0,1.0,1.0,77
+normal,10000,max = 1 AND none = 1 AND polly_parallel = 1,NOT polly AND NOT min AND polly_parallel,0,1.0,1.0,1.0,78
+uniform,10000,max = 1 AND none = 1 AND polly_parallel = 1,max AND none AND polly_parallel,0,1.0,1.0,1.0,78
+bi_modal_split,10000,max = 1 AND none = 1 AND polly_parallel = 1,max AND none AND polly_parallel,0,1.0,1.0,1.0,78
+tri_modal_split,10000,max = 1 AND none = 1 AND polly_parallel = 1,none AND max,3,0.8,0.6666666666666666,1.0,78
+power_law,10000,max = 1 AND none = 1 AND polly_parallel = 1,none AND NOT min AND polly_parallel,0,1.0,1.0,1.0,78
+normal,7500,memory_based = 1 AND polly_no_tiling = 1 AND polly_opt_simplify_deps = 1,NOT value_based AND polly_opt_simplify_deps AND polly_no_tiling,0,1.0,1.0,1.0,79
+uniform,7500,memory_based = 1 AND polly_no_tiling = 1 AND polly_opt_simplify_deps = 1,polly_no_tiling AND NOT value_based AND polly_opt_simplify_deps,2,1.0,1.0,1.0,79
+bi_modal_split,7500,memory_based = 1 AND polly_no_tiling = 1 AND polly_opt_simplify_deps = 1,polly_opt_simplify_deps AND memory_based AND polly_no_tiling,0,1.0,1.0,1.0,79
+tri_modal_split,7500,memory_based = 1 AND polly_no_tiling = 1 AND polly_opt_simplify_deps = 1,polly_opt_simplify_deps AND polly_no_tiling AND NOT value_based,0,1.0,1.0,1.0,79
+power_law,7500,memory_based = 1 AND polly_no_tiling = 1 AND polly_opt_simplify_deps = 1,polly_no_tiling AND polly_opt_simplify_deps AND NOT value_based,3,1.0,1.0,1.0,79
+normal,7500,min = 1 AND polly = 1 AND polly_no_tiling = 1,NOT max AND polly AND polly_no_tiling,0,1.0,1.0,1.0,7
+uniform,7500,min = 1 AND polly = 1 AND polly_no_tiling = 1,NOT none AND polly_no_tiling AND NOT max,0,1.0,1.0,1.0,7
+bi_modal_split,7500,min = 1 AND polly = 1 AND polly_no_tiling = 1,polly AND polly_no_tiling,4,0.6666666666666666,0.5,1.0,7
+tri_modal_split,7500,min = 1 AND polly = 1 AND polly_no_tiling = 1,pollyrtcmaxparameters > 3.0 AND NOT pollyoptmaxcoefficient_10000 AND polly_no_tiling,4,0.3287671232876712,0.25,0.48,7
+power_law,7500,min = 1 AND polly = 1 AND polly_no_tiling = 1,polly_no_tiling AND polly AND NOT max,0,1.0,1.0,1.0,7
+normal,10000,memory_based = 1 AND polly = 1 AND polly_parallel = 1,polly AND memory_based AND polly_parallel,0,1.0,1.0,1.0,80
+uniform,10000,memory_based = 1 AND polly = 1 AND polly_parallel = 1,polly AND memory_based AND polly_parallel,0,1.0,1.0,1.0,80
+bi_modal_split,10000,memory_based = 1 AND polly = 1 AND polly_parallel = 1,memory_based AND polly AND polly_parallel,0,1.0,1.0,1.0,80
+tri_modal_split,10000,memory_based = 1 AND polly = 1 AND polly_parallel = 1,polly AND NOT value_based AND polly_parallel,2,1.0,1.0,1.0,80
+power_law,10000,memory_based = 1 AND polly = 1 AND polly_parallel = 1,NOT none AND NOT value_based AND polly_parallel,0,1.0,1.0,1.0,80
+normal,10000,parallel_force = 1 AND polly_no_tiling = 1 AND polly_parallel = 1,parallel_force AND polly_no_tiling,0,1.0,1.0,1.0,81
+uniform,10000,parallel_force = 1 AND polly_no_tiling = 1 AND polly_parallel = 1,parallel_force AND polly_no_tiling,0,1.0,1.0,1.0,81
+bi_modal_split,10000,parallel_force = 1 AND polly_no_tiling = 1 AND polly_parallel = 1,parallel_force AND polly_no_tiling,2,1.0,1.0,1.0,81
+tri_modal_split,10000,parallel_force = 1 AND polly_no_tiling = 1 AND polly_parallel = 1,parallel_force AND polly_no_tiling,2,1.0,1.0,1.0,81
+power_law,10000,parallel_force = 1 AND polly_no_tiling = 1 AND polly_parallel = 1,parallel_force AND polly_no_tiling,0,1.0,1.0,1.0,81
+normal,7500,min = 1 AND polly_no_tiling = 1 AND polly_opt_simplify_deps = 1,polly_no_tiling AND min AND polly_opt_simplify_deps,0,1.0,1.0,1.0,82
+uniform,7500,min = 1 AND polly_no_tiling = 1 AND polly_opt_simplify_deps = 1,polly_no_tiling AND min AND polly_opt_simplify_deps,0,1.0,1.0,1.0,82
+bi_modal_split,7500,min = 1 AND polly_no_tiling = 1 AND polly_opt_simplify_deps = 1,polly_opt_simplify_deps AND polly_no_tiling AND min,1,1.0,1.0,1.0,82
+tri_modal_split,7500,min = 1 AND polly_no_tiling = 1 AND polly_opt_simplify_deps = 1,polly_opt_simplify_deps,2,0.4,0.25,1.0,82
+power_law,7500,min = 1 AND polly_no_tiling = 1 AND polly_opt_simplify_deps = 1,polly_opt_simplify_deps AND NOT max AND polly_no_tiling,0,1.0,1.0,1.0,82
+normal,10000,memory_based = 1 AND parallel = 1 AND polly_parallel = 1,parallel AND NOT value_based,0,1.0,1.0,1.0,83
+uniform,10000,memory_based = 1 AND parallel = 1 AND polly_parallel = 1,parallel AND NOT value_based,0,1.0,1.0,1.0,83
+bi_modal_split,10000,memory_based = 1 AND parallel = 1 AND polly_parallel = 1,polly_parallel,0,0.4,0.25,1.0,83
+tri_modal_split,10000,memory_based = 1 AND parallel = 1 AND polly_parallel = 1,parallel AND NOT value_based,2,1.0,1.0,1.0,83
+power_law,10000,memory_based = 1 AND parallel = 1 AND polly_parallel = 1,parallel AND memory_based,0,1.0,1.0,1.0,83
+normal,7500,memory_based = 1 AND none = 1 AND polly_opt_simplify_deps = 1,none AND polly_opt_simplify_deps AND NOT value_based,0,1.0,1.0,1.0,84
+uniform,7500,memory_based = 1 AND none = 1 AND polly_opt_simplify_deps = 1,NOT value_based AND polly_opt_simplify_deps AND NOT polly,2,1.0,1.0,1.0,84
+bi_modal_split,7500,memory_based = 1 AND none = 1 AND polly_opt_simplify_deps = 1,memory_based AND polly_opt_simplify_deps AND NOT polly,0,1.0,1.0,1.0,84
+tri_modal_split,7500,memory_based = 1 AND none = 1 AND polly_opt_simplify_deps = 1,none AND polly_opt_simplify_deps AND NOT value_based,2,1.0,1.0,1.0,84
+power_law,7500,memory_based = 1 AND none = 1 AND polly_opt_simplify_deps = 1,NOT polly AND memory_based AND polly_opt_simplify_deps,4,1.0,1.0,1.0,84
+normal,10000,parallel = 1 AND polly_parallel = 1 AND value_based = 1,parallel AND NOT memory_based,0,1.0,1.0,1.0,85
+uniform,10000,parallel = 1 AND polly_parallel = 1 AND value_based = 1,parallel AND NOT memory_based,0,1.0,1.0,1.0,85
+bi_modal_split,10000,parallel = 1 AND polly_parallel = 1 AND value_based = 1,parallel AND NOT memory_based,0,1.0,1.0,1.0,85
+tri_modal_split,10000,parallel = 1 AND polly_parallel = 1 AND value_based = 1,parallel AND NOT memory_based,1,1.0,1.0,1.0,85
+power_law,10000,parallel = 1 AND polly_parallel = 1 AND value_based = 1,parallel AND NOT memory_based,1,1.0,1.0,1.0,85
+normal,7500,min = 1 AND none = 1 AND polly_opt_simplify_deps = 1,none AND polly_opt_simplify_deps AND NOT max,0,1.0,1.0,1.0,86
+uniform,7500,min = 1 AND none = 1 AND polly_opt_simplify_deps = 1,polly_opt_simplify_deps AND none AND min,0,1.0,1.0,1.0,86
+bi_modal_split,7500,min = 1 AND none = 1 AND polly_opt_simplify_deps = 1,polly_opt_simplify_deps AND NOT polly AND min,1,1.0,1.0,1.0,86
+tri_modal_split,7500,min = 1 AND none = 1 AND polly_opt_simplify_deps = 1,none AND polly_opt_simplify_deps AND min,1,1.0,1.0,1.0,86
+power_law,7500,min = 1 AND none = 1 AND polly_opt_simplify_deps = 1,polly_opt_simplify_deps AND min AND NOT polly,2,1.0,1.0,1.0,86
+normal,7500,max = 1 AND none = 1 AND polly_no_tiling = 1,polly_no_tiling AND NOT min AND NOT polly,0,1.0,1.0,1.0,87
+uniform,7500,max = 1 AND none = 1 AND polly_no_tiling = 1,polly_no_tiling AND NOT polly AND NOT min,0,1.0,1.0,1.0,87
+bi_modal_split,7500,max = 1 AND none = 1 AND polly_no_tiling = 1,NOT min AND none AND polly_no_tiling,0,1.0,1.0,1.0,87
+tri_modal_split,7500,max = 1 AND none = 1 AND polly_no_tiling = 1,polly_no_tiling AND max AND NOT polly,2,1.0,1.0,1.0,87
+power_law,7500,max = 1 AND none = 1 AND polly_no_tiling = 1,NOT polly AND max AND polly_no_tiling,0,1.0,1.0,1.0,87
+normal,10000,memory_based = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,memory_based AND polly_opt_simplify_deps AND polly_parallel,0,1.0,1.0,1.0,88
+uniform,10000,memory_based = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,memory_based AND polly_opt_simplify_deps AND polly_parallel,0,1.0,1.0,1.0,88
+bi_modal_split,10000,memory_based = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,memory_based AND polly_opt_simplify_deps AND polly_parallel,3,1.0,1.0,1.0,88
+tri_modal_split,10000,memory_based = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,polly_opt_simplify_deps AND memory_based AND polly_parallel,2,1.0,1.0,1.0,88
+power_law,10000,memory_based = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,memory_based AND polly_opt_simplify_deps AND polly_parallel,0,1.0,1.0,1.0,88
+normal,10000,min = 1 AND polly = 1 AND polly_parallel = 1,NOT max AND polly AND polly_parallel,0,1.0,1.0,1.0,89
+uniform,10000,min = 1 AND polly = 1 AND polly_parallel = 1,min AND polly AND polly_parallel,0,1.0,1.0,1.0,89
+bi_modal_split,10000,min = 1 AND polly = 1 AND polly_parallel = 1,min AND NOT none AND polly_parallel,0,1.0,1.0,1.0,89
+tri_modal_split,10000,min = 1 AND polly = 1 AND polly_parallel = 1,NOT none AND NOT max AND polly_parallel,0,1.0,1.0,1.0,89
+power_law,10000,min = 1 AND polly = 1 AND polly_parallel = 1,polly AND min AND polly_parallel,0,1.0,1.0,1.0,89
+normal,10000,memory_based = 1 AND parallel = 1 AND polly_parallel = 1,parallel AND memory_based,0,1.0,1.0,1.0,8
+uniform,10000,memory_based = 1 AND parallel = 1 AND polly_parallel = 1,parallel AND memory_based,0,1.0,1.0,1.0,8
+bi_modal_split,10000,memory_based = 1 AND parallel = 1 AND polly_parallel = 1,parallel AND memory_based,0,1.0,1.0,1.0,8
+tri_modal_split,10000,memory_based = 1 AND parallel = 1 AND polly_parallel = 1,parallel AND memory_based,0,1.0,1.0,1.0,8
+power_law,10000,memory_based = 1 AND parallel = 1 AND polly_parallel = 1,parallel AND memory_based,0,1.0,1.0,1.0,8
+normal,10000,polly = 1 AND polly_parallel = 1 AND value_based = 1,value_based AND polly AND polly_parallel,0,1.0,1.0,1.0,90
+uniform,10000,polly = 1 AND polly_parallel = 1 AND value_based = 1,value_based AND polly AND polly_parallel,0,1.0,1.0,1.0,90
+bi_modal_split,10000,polly = 1 AND polly_parallel = 1 AND value_based = 1,NOT none AND NOT memory_based AND polly_parallel,2,1.0,1.0,1.0,90
+tri_modal_split,10000,polly = 1 AND polly_parallel = 1 AND value_based = 1,polly AND NOT memory_based AND polly_parallel,1,1.0,1.0,1.0,90
+power_law,10000,polly = 1 AND polly_parallel = 1 AND value_based = 1,polly AND value_based AND polly_parallel,0,1.0,1.0,1.0,90
+normal,10000,min = 1 AND polly = 1 AND polly_parallel = 1,min AND NOT none AND polly_parallel,0,1.0,1.0,1.0,91
+uniform,10000,min = 1 AND polly = 1 AND polly_parallel = 1,min AND NOT none AND polly_parallel,0,1.0,1.0,1.0,91
+bi_modal_split,10000,min = 1 AND polly = 1 AND polly_parallel = 1,NOT max AND NOT none AND polly_parallel,0,1.0,1.0,1.0,91
+tri_modal_split,10000,min = 1 AND polly = 1 AND polly_parallel = 1,min AND polly AND polly_parallel,2,1.0,1.0,1.0,91
+power_law,10000,min = 1 AND polly = 1 AND polly_parallel = 1,min AND NOT none AND polly_parallel,0,1.0,1.0,1.0,91
+normal,10000,min = 1 AND parallel = 1 AND polly_parallel = 1,parallel AND NOT max,0,1.0,1.0,1.0,92
+uniform,10000,min = 1 AND parallel = 1 AND polly_parallel = 1,parallel AND min,0,1.0,1.0,1.0,92
+bi_modal_split,10000,min = 1 AND parallel = 1 AND polly_parallel = 1,parallel AND min,4,1.0,1.0,1.0,92
+tri_modal_split,10000,min = 1 AND parallel = 1 AND polly_parallel = 1,parallel AND NOT max,1,1.0,1.0,1.0,92
+power_law,10000,min = 1 AND parallel = 1 AND polly_parallel = 1,parallel AND min,1,1.0,1.0,1.0,92
+normal,10000,parallel = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,parallel AND polly_opt_simplify_deps,0,1.0,1.0,1.0,93
+uniform,10000,parallel = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,parallel AND polly_opt_simplify_deps,1,1.0,1.0,1.0,93
+bi_modal_split,10000,parallel = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,parallel AND polly_opt_simplify_deps,3,1.0,1.0,1.0,93
+tri_modal_split,10000,parallel = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,parallel,3,0.6666666666666666,0.5,1.0,93
+power_law,10000,parallel = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,parallel AND polly_opt_simplify_deps,2,1.0,1.0,1.0,93
+normal,10000,min = 1 AND polly_parallel = 1 AND value_based = 1,NOT max AND NOT memory_based AND polly_parallel,0,1.0,1.0,1.0,94
+uniform,10000,min = 1 AND polly_parallel = 1 AND value_based = 1,min AND value_based AND polly_parallel,0,1.0,1.0,1.0,94
+bi_modal_split,10000,min = 1 AND polly_parallel = 1 AND value_based = 1,min AND NOT memory_based,3,0.8,0.6666666666666666,1.0,94
+tri_modal_split,10000,min = 1 AND polly_parallel = 1 AND value_based = 1,NOT max AND NOT memory_based AND polly_parallel,2,1.0,1.0,1.0,94
+power_law,10000,min = 1 AND polly_parallel = 1 AND value_based = 1,value_based AND NOT max AND polly_parallel,2,1.0,1.0,1.0,94
+normal,10000,none = 1 AND polly_parallel = 1 AND value_based = 1,value_based AND none AND polly_parallel,0,1.0,1.0,1.0,95
+uniform,10000,none = 1 AND polly_parallel = 1 AND value_based = 1,none AND value_based AND polly_parallel,0,1.0,1.0,1.0,95
+bi_modal_split,10000,none = 1 AND polly_parallel = 1 AND value_based = 1,none AND value_based AND polly_parallel,0,1.0,1.0,1.0,95
+tri_modal_split,10000,none = 1 AND polly_parallel = 1 AND value_based = 1,none AND NOT memory_based AND polly_parallel,0,1.0,1.0,1.0,95
+power_law,10000,none = 1 AND polly_parallel = 1 AND value_based = 1,value_based AND NOT polly AND polly_parallel,0,1.0,1.0,1.0,95
+normal,10000,parallel = 1 AND polly = 1 AND polly_parallel = 1,parallel AND polly,0,1.0,1.0,1.0,96
+uniform,10000,parallel = 1 AND polly = 1 AND polly_parallel = 1,parallel AND polly,0,1.0,1.0,1.0,96
+bi_modal_split,10000,parallel = 1 AND polly = 1 AND polly_parallel = 1,parallel AND polly,2,1.0,1.0,1.0,96
+tri_modal_split,10000,parallel = 1 AND polly = 1 AND polly_parallel = 1,parallel AND polly,4,1.0,1.0,1.0,96
+power_law,10000,parallel = 1 AND polly = 1 AND polly_parallel = 1,parallel AND NOT none,0,1.0,1.0,1.0,96
+normal,10000,memory_based = 1 AND parallel_force = 1 AND polly_parallel = 1,parallel_force AND NOT value_based,0,1.0,1.0,1.0,97
+uniform,10000,memory_based = 1 AND parallel_force = 1 AND polly_parallel = 1,parallel_force AND memory_based,0,1.0,1.0,1.0,97
+bi_modal_split,10000,memory_based = 1 AND parallel_force = 1 AND polly_parallel = 1,memory_based AND parallel_force,0,1.0,1.0,1.0,97
+tri_modal_split,10000,memory_based = 1 AND parallel_force = 1 AND polly_parallel = 1,parallel_force AND NOT value_based,0,1.0,1.0,1.0,97
+power_law,10000,memory_based = 1 AND parallel_force = 1 AND polly_parallel = 1,parallel_force AND memory_based,1,1.0,1.0,1.0,97
+normal,10000,max = 1 AND polly = 1 AND polly_parallel = 1,max AND polly AND polly_parallel,0,1.0,1.0,1.0,98
+uniform,10000,max = 1 AND polly = 1 AND polly_parallel = 1,max AND NOT none AND polly_parallel,0,1.0,1.0,1.0,98
+bi_modal_split,10000,max = 1 AND polly = 1 AND polly_parallel = 1,max AND NOT none AND polly_parallel,0,1.0,1.0,1.0,98
+tri_modal_split,10000,max = 1 AND polly = 1 AND polly_parallel = 1,NOT min AND NOT none AND polly_parallel,0,1.0,1.0,1.0,98
+power_law,10000,max = 1 AND polly = 1 AND polly_parallel = 1,NOT min AND NOT none AND polly_parallel,0,1.0,1.0,1.0,98
+normal,7500,min = 1 AND polly_no_tiling = 1 AND value_based = 1,polly_no_tiling AND value_based AND NOT max,0,1.0,1.0,1.0,99
+uniform,7500,min = 1 AND polly_no_tiling = 1 AND value_based = 1,min AND NOT memory_based AND polly_no_tiling,0,1.0,1.0,1.0,99
+bi_modal_split,7500,min = 1 AND polly_no_tiling = 1 AND value_based = 1,polly_no_tiling AND NOT max AND value_based,0,1.0,1.0,1.0,99
+tri_modal_split,7500,min = 1 AND polly_no_tiling = 1 AND value_based = 1,polly_no_tiling AND min,3,0.6666666666666666,0.5,1.0,99
+power_law,7500,min = 1 AND polly_no_tiling = 1 AND value_based = 1,polly_no_tiling AND value_based AND min,0,1.0,1.0,1.0,99
+normal,7500,min = 1 AND polly = 1 AND polly_no_tiling = 1,polly AND polly_no_tiling AND min,0,1.0,1.0,1.0,9
+uniform,7500,min = 1 AND polly = 1 AND polly_no_tiling = 1,NOT none AND polly_no_tiling AND min,0,1.0,1.0,1.0,9
+bi_modal_split,7500,min = 1 AND polly = 1 AND polly_no_tiling = 1,NOT none AND NOT max AND polly_no_tiling,2,1.0,1.0,1.0,9
+tri_modal_split,7500,min = 1 AND polly = 1 AND polly_no_tiling = 1,polly_no_tiling AND NOT max AND NOT none,0,1.0,1.0,1.0,9
+power_law,7500,min = 1 AND polly = 1 AND polly_no_tiling = 1,min AND polly_no_tiling AND polly,0,1.0,1.0,1.0,9

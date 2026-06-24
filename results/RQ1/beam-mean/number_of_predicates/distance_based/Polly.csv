@@ -1,0 +1,401 @@
+n_conditions,sg_mean,sg_cardinality,sg_rule,best_rule,best_rule_idx,f1,precision,recall,seed,runtime
+1,5.7392001920146845,12000,pollyoptmaxconstantterm_1 = 1,pollyoptmaxconstantterm_1==0,0,0.0,0.0,0.0,0,6.369781255722046
+2,28.23656962178144,15000,polly = 1 AND polly_no_tiling = 1,polly==1 AND polly_no_tiling==1,0,1.0,1.0,1.0,0,6.525418281555176
+3,24.53163255481762,5000,memory_based = 1 AND parallel = 1 AND polly_no_tiling = 1,pollyoptmaxconstantterm_10000==0 AND parallel==0 AND polly_no_tiling==1 AND polly_opt_simplify_deps==0,0,0.0,0.0,0.0,0,6.923581123352051
+4,19.63242404864822,5000,min = 1 AND parallel = 1 AND polly = 1 AND polly_parallel = 1,parallel==0,0,0.0,0.0,0.0,0,5.80479884147644
+1,28.032654064978686,12000,pollyoptmaxconstantterm_100 = 1,pollyoptmaxconstantterm_100==1,0,1.0,1.0,1.0,1,5.274208307266235
+2,10.116559918995408,15000,polly = 1 AND value_based = 1,polly==0,0,0.0,0.0,0.0,1,4.9931700229644775
+3,5.672000679650387,5000,min = 1 AND none = 1 AND parallel_force = 1,parallel_force==0,0,0.0,0.0,0.0,1,5.693712949752808
+4,7.375063903357454,3750,max = 1 AND none = 1 AND polly_opt_simplify_deps = 1 AND value_based = 1,polly_opt_simplify_deps==0,0,0.0,0.0,0.0,1,4.588383197784424
+1,16.46249835819515,12000,pollyoptmaxcoefficient_100 = 1,pollyoptmaxcoefficient_100==0,0,0.0,0.0,0.0,10,6.151384353637695
+2,15.748564760899606,4000,parallel = 1 AND pollydefaulttilesize = 16,parallel==0,0,0.0,0.0,0.0,10,5.979872941970825
+3,16.951822167728935,3000,max = 1 AND none = 1 AND pollydefaulttilesize = 256,min==1,0,0.0,0.0,0.0,10,5.093931913375855
+4,22.592953806199656,3750,min = 1 AND none = 1 AND polly_no_tiling = 1 AND polly_opt_simplify_deps = 1,polly_opt_simplify_deps==0,0,0.0,0.0,0.0,10,5.231967210769653
+1,13.081407454262228,12000,pollydefaulttilesize = 16,pollydefaulttilesize==64,0,0.0,0.0,0.0,11,3.706048488616944
+2,24.20993040465024,6000,polly_no_tiling = 1 AND pollyoptmaxcoefficient_10 = 1,pollyoptmaxcoefficient_10==0,0,0.0,0.0,0.0,11,5.909510374069214
+3,27.68386847852633,3000,none = 1 AND pollyoptmaxconstantterm_10 = 1 AND value_based = 1,pollyoptmaxconstantterm_10==1 AND value_based==1 AND polly==0,0,1.0,1.0,1.0,11,6.095364570617676
+4,11.327011190861317,5000,max = 1 AND polly = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,polly==0,0,0.0,0.0,0.0,11,4.968110322952271
+1,23.67261607386581,12000,pollyoptmaxconstantterm_100 = 1,pollyoptmaxconstantterm_100==0,0,0.0,0.0,0.0,12,6.061564683914185
+2,5.805435363481782,6000,none = 1 AND pollyoptmaxconstantterm_1 = 1,pollyoptmaxconstantterm_1==0,0,0.0,0.0,0.0,12,6.142207384109497
+3,10.334021100857695,3000,none = 1 AND polly_no_tiling = 1 AND pollyoptmaxconstantterm_1 = 1,pollyoptmaxconstantterm_1==0,0,0.0,0.0,0.0,12,5.872116327285767
+4,27.921572729261936,5000,parallel_force = 1 AND polly = 1 AND polly_parallel = 1 AND value_based = 1,value_based==1 AND parallel_force==1 AND polly==1,0,1.0,1.0,1.0,12,6.9622886180877686
+1,15.481301012544025,12000,pollyoptmaxconstantterm_100 = 1,pollyoptmaxconstantterm_100==0,0,0.0,0.0,0.0,13,6.274765253067017
+2,6.576658523132508,6000,none = 1 AND pollyoptmaxcoefficient_10000 = 1,pollyoptmaxcoefficient_10000==0,0,0.0,0.0,0.0,13,6.395416259765625
+3,6.124425244272772,4000,max = 1 AND polly_parallel = 1 AND pollyoptmaxcoefficient_1 = 1,pollyoptmaxcoefficient_1==0,0,0.0,0.0,0.0,13,6.278564453125
+4,23.40639884489337,5000,memory_based = 1 AND min = 1 AND parallel_force = 1 AND polly_parallel = 1,min==0,0,0.0,0.0,0.0,13,5.580120086669922
+1,28.685480057158173,12000,pollyoptmaxconstantterm_10 = 1,pollyoptmaxconstantterm_10==1,0,1.0,1.0,1.0,14,5.4081737995147705
+2,11.76777421661166,8000,polly_parallel = 1 AND pollyoptmaxcoefficient_10 = 1,pollyoptmaxcoefficient_10==0,0,0.0,0.0,0.0,14,6.208404302597046
+3,25.25166350820605,3000,none = 1 AND pollyoptmaxconstantterm_100 = 1 AND value_based = 1,pollyoptmaxcoefficient_10000==0 AND pollyoptmaxconstantterm_10==0 AND pollyoptmaxconstantterm_10000==0 AND value_based==0 AND polly_opt_simplify_deps==1,0,0.0,0.0,0.0,14,6.887567281723023
+4,21.48424518716481,5000,max = 1 AND parallel = 1 AND polly_no_tiling = 1 AND polly_parallel = 1,parallel==0,0,0.0,0.0,0.0,14,5.454646110534668
+1,29.641490108946986,12000,pollyoptmaxconstantterm_1 = 1,pollyoptmaxconstantterm_1==1,0,1.0,1.0,1.0,15,5.361916542053223
+2,11.142107459422355,6000,pollyoptmaxconstantterm_10 = 1 AND value_based = 1,pollyoptmaxconstantterm_10==0,0,0.0,0.0,0.0,15,6.048904657363892
+3,11.193916195467445,3000,min = 1 AND polly = 1 AND pollyrtcmaxparameters = 2,min==0,0,0.0,0.0,0.0,15,5.019274711608887
+4,27.47188038886112,3750,max = 1 AND polly = 1 AND polly_opt_simplify_deps = 1 AND value_based = 1,value_based==1 AND min==0 AND polly==1 AND polly_opt_simplify_deps==1,0,1.0,1.0,1.0,15,6.362718105316162
+1,15.786790016443934,12000,pollyoptmaxcoefficient_10000 = 1,pollyoptmaxcoefficient_10000==0,0,0.0,0.0,0.0,16,6.142805576324463
+2,29.74724054778351,6000,polly_no_tiling = 1 AND pollyoptmaxcoefficient_1000 = 1,pollyoptmaxcoefficient_1000==1 AND polly_no_tiling==1,0,1.0,1.0,1.0,16,6.315124273300171
+3,29.678756062729992,3000,min = 1 AND polly = 1 AND pollyoptmaxconstantterm_100 = 1,pollyoptmaxconstantterm_100==1 AND min==1 AND polly==1,0,1.0,1.0,1.0,16,6.17412805557251
+4,23.2341056330776,5000,none = 1 AND parallel = 1 AND polly_parallel = 1 AND value_based = 1,parallel==0,0,0.0,0.0,0.0,16,6.165808439254761
+1,9.521553205569022,12000,pollyoptmaxcoefficient_1 = 1,pollyoptmaxcoefficient_1==0,0,0.0,0.0,0.0,17,5.967496633529663
+2,11.630466759023683,6000,max = 1 AND pollyoptmaxcoefficient_1000 = 1,pollyoptmaxcoefficient_1000==0,0,0.0,0.0,0.0,17,6.182011365890503
+3,24.756154692189657,4000,none = 1 AND polly_parallel = 1 AND pollyoptmaxcoefficient_10000 = 1,pollyoptmaxcoefficient_1000==0 AND pollyoptmaxcoefficient_10000==0 AND pollyoptmaxconstantterm_10==0,0,0.0,0.0,0.0,17,7.227336406707764
+4,5.770711873136925,5000,none = 1 AND parallel = 1 AND polly_no_tiling = 1 AND polly_parallel = 1,parallel==0,0,0.0,0.0,0.0,17,5.812521696090698
+1,20.513005865787807,12000,pollyoptmaxconstantterm_1 = 1,pollyoptmaxconstantterm_1==0,0,0.0,0.0,0.0,18,6.322491645812988
+2,27.79836761667064,6000,polly = 1 AND pollyoptmaxcoefficient_1000 = 1,pollyoptmaxcoefficient_1000==1 AND polly==1,0,1.0,1.0,1.0,18,6.065899610519409
+3,7.824122567621869,3000,min = 1 AND polly_no_tiling = 1 AND pollyoptmaxcoefficient_1 = 1,pollyoptmaxcoefficient_1==0,0,0.0,0.0,0.0,18,6.162778615951538
+4,15.67706178313546,5000,max = 1 AND polly_no_tiling = 1 AND polly_parallel = 1 AND value_based = 1,value_based==0,0,0.0,0.0,0.0,18,5.032197952270508
+1,21.925719071876927,12000,pollyoptmaxconstantterm_10 = 1,pollyoptmaxconstantterm_10==0,0,0.0,0.0,0.0,19,6.104777574539185
+2,15.299434865695796,6000,pollyoptmaxcoefficient_1000 = 1 AND value_based = 1,pollyoptmaxcoefficient_1000==0,0,0.0,0.0,0.0,19,6.138667821884155
+3,21.19386720310401,5000,none = 1 AND parallel = 1 AND polly_no_tiling = 1,parallel==0,0,0.0,0.0,0.0,19,5.196812152862549
+4,15.42613697571105,5000,none = 1 AND polly_no_tiling = 1 AND polly_parallel = 1 AND value_based = 1,polly_no_tiling==0,0,0.0,0.0,0.0,19,4.8859593868255615
+1,25.76028921108991,12000,pollyoptmaxcoefficient_10000 = 1,pollyoptmaxcoefficient_10000==0 AND pollyoptmaxconstantterm_10==0,0,0.0,0.0,0.0,2,6.683459520339966
+2,12.055950927642565,15000,max = 1 AND polly_opt_simplify_deps = 1,polly_opt_simplify_deps==0,0,0.0,0.0,0.0,2,4.9651594161987305
+3,10.158008929409206,3000,max = 1 AND polly_opt_simplify_deps = 1 AND pollyoptmaxconstantterm_10000 = 1,pollyoptmaxconstantterm_10000==0,0,0.0,0.0,0.0,2,5.89594578742981
+4,10.747822398600226,3750,polly = 1 AND polly_no_tiling = 1 AND polly_opt_simplify_deps = 1 AND value_based = 1,polly_opt_simplify_deps==0,0,0.0,0.0,0.0,2,4.677666425704956
+1,14.153647077838231,12000,pollyoptmaxcoefficient_100 = 1,pollyoptmaxcoefficient_100==0,0,0.0,0.0,0.0,20,6.046559810638428
+2,7.228270336569838,10000,memory_based = 1 AND parallel_force = 1,parallel_force==0,0,0.0,0.0,0.0,20,5.87278413772583
+3,11.80401112714179,3000,min = 1 AND none = 1 AND pollydefaulttilesize = 256,polly==1,0,0.0,0.0,0.0,20,4.9934446811676025
+4,29.37794612139777,5000,memory_based = 1 AND parallel_force = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,value_based==0 AND parallel_force==1 AND polly_opt_simplify_deps==1,0,1.0,1.0,1.0,20,7.16301703453064
+1,13.292513501891689,12000,pollyoptmaxconstantterm_100 = 1,pollyoptmaxconstantterm_100==0,0,0.0,0.0,0.0,21,6.09287691116333
+2,26.4482722280614,10000,max = 1 AND parallel_force = 1,pollyoptmaxcoefficient_1==0 AND pollyoptmaxcoefficient_1000==0 AND pollyoptmaxconstantterm_1==0 AND pollyoptmaxconstantterm_100==0 AND value_based==1 AND min==1 AND polly==0,0,0.0,0.0,0.0,21,8.975311040878296
+3,9.225029668926886,4000,polly_parallel = 1 AND pollyoptmaxconstantterm_10 = 1 AND value_based = 1,pollyoptmaxconstantterm_10==0,0,0.0,0.0,0.0,21,5.965765953063965
+4,6.114134576834415,5000,max = 1 AND parallel_force = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,parallel_force==0,0,0.0,0.0,0.0,21,5.6680521965026855
+1,25.853537800792274,12000,pollyoptmaxconstantterm_10000 = 1,pollyoptmaxconstantterm_10000==0,0,0.0,0.0,0.0,22,6.505999803543091
+2,6.879322266511692,6000,memory_based = 1 AND pollyrtcmaxparameters = 16,value_based==1,0,0.0,0.0,0.0,22,5.288654327392578
+3,17.824196775942646,3000,memory_based = 1 AND min = 1 AND pollydefaulttilesize = 1024,value_based==1,0,0.0,0.0,0.0,22,5.263649702072144
+4,17.430628053443165,5000,min = 1 AND polly_no_tiling = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,min==0,0,0.0,0.0,0.0,22,4.882562875747681
+1,17.14782998173181,12000,pollyoptmaxconstantterm_100 = 1,pollyoptmaxconstantterm_100==0,0,0.0,0.0,0.0,23,6.124271392822266
+2,15.499981397694336,4000,parallel_force = 1 AND pollyoptmaxconstantterm_1 = 1,pollyoptmaxconstantterm_1==0,0,0.0,0.0,0.0,23,5.770411252975464
+3,29.325136279993703,10000,max = 1 AND none = 1 AND polly_parallel = 1,min==0 AND polly==0 AND polly_parallel==1,0,1.0,1.0,1.0,23,7.407147884368896
+4,25.41953504560464,5000,min = 1 AND polly_no_tiling = 1 AND polly_parallel = 1 AND value_based = 1,pollyoptmaxcoefficient_10000==0 AND value_based==0,0,0.0,0.0,0.0,23,7.260599374771118
+1,19.034380459081955,12000,pollyoptmaxconstantterm_1 = 1,pollyoptmaxconstantterm_1==0,0,0.0,0.0,0.0,24,6.192815542221069
+2,20.225303762125687,4000,parallel_force = 1 AND pollyoptmaxconstantterm_1000 = 1,pollyoptmaxconstantterm_1000==0,0,0.0,0.0,0.0,24,5.72675633430481
+3,14.0335597598689,3000,max = 1 AND memory_based = 1 AND pollyoptmaxcoefficient_1 = 1,pollyoptmaxcoefficient_1==0,0,0.0,0.0,0.0,24,5.771582126617432
+4,7.888898718971767,3750,max = 1 AND memory_based = 1 AND none = 1 AND polly_no_tiling = 1,min==1,0,0.0,0.0,0.0,24,4.765510082244873
+1,10.395852793840072,12000,pollyoptmaxconstantterm_10 = 1,pollyoptmaxconstantterm_10==0,0,0.0,0.0,0.0,25,6.084200859069824
+2,17.937554081003537,4000,parallel_force = 1 AND pollyoptmaxcoefficient_1 = 1,pollyoptmaxcoefficient_1==0,0,0.0,0.0,0.0,25,5.7734575271606445
+3,15.892420579242764,3000,memory_based = 1 AND none = 1 AND pollyoptmaxcoefficient_1000 = 1,pollyoptmaxcoefficient_1000==0,0,0.0,0.0,0.0,25,5.723089933395386
+4,26.08893466894484,3750,min = 1 AND polly = 1 AND polly_no_tiling = 1 AND polly_opt_simplify_deps = 1,pollyoptmaxconstantterm_1==0 AND pollyoptmaxconstantterm_1000==0 AND pollyoptmaxconstantterm_10000==0 AND pollyrtcmaxparameters==2 AND min==0 AND parallel_force==1,0,0.0,0.0,0.0,25,7.15142822265625
+1,24.332952402802004,12000,pollyoptmaxcoefficient_1 = 1,pollyoptmaxcoefficient_1==0,0,0.0,0.0,0.0,26,6.114950656890869
+2,14.997038397053547,4000,parallel_force = 1 AND pollyoptmaxcoefficient_1 = 1,pollyoptmaxcoefficient_1==0,0,0.0,0.0,0.0,26,5.6708972454071045
+3,18.97940063007032,5000,max = 1 AND parallel = 1 AND polly_opt_simplify_deps = 1,parallel==0,0,0.0,0.0,0.0,26,5.5460731983184814
+4,12.354762900960202,5000,none = 1 AND parallel_force = 1 AND polly_parallel = 1 AND value_based = 1,parallel_force==0,0,0.0,0.0,0.0,26,5.40491247177124
+1,9.600006038327848,12000,pollyoptmaxcoefficient_1 = 1,pollyoptmaxcoefficient_1==0,0,0.0,0.0,0.0,27,6.2471442222595215
+2,9.755594521843722,4000,parallel = 1 AND pollyoptmaxcoefficient_1 = 1,pollyoptmaxcoefficient_1==0,0,0.0,0.0,0.0,27,6.09197735786438
+3,8.201355065681305,7500,min = 1 AND polly_no_tiling = 1 AND value_based = 1,min==0,0,0.0,0.0,0.0,27,4.930686473846436
+4,14.639214959515522,3750,memory_based = 1 AND min = 1 AND none = 1 AND polly_no_tiling = 1,min==0,0,0.0,0.0,0.0,27,4.758505821228027
+1,22.313592987603705,12000,pollydefaulttilesize = 16,pollydefaulttilesize==64,0,0.0,0.0,0.0,28,4.2286694049835205
+2,13.723157483231256,6000,none = 1 AND pollyoptmaxconstantterm_1000 = 1,pollyoptmaxconstantterm_1000==0,0,0.0,0.0,0.0,28,6.121922731399536
+3,18.302184554265978,3000,memory_based = 1 AND none = 1 AND pollyoptmaxconstantterm_100 = 1,pollyoptmaxconstantterm_100==0,0,0.0,0.0,0.0,28,5.523698091506958
+4,6.751665873751328,5000,memory_based = 1 AND min = 1 AND none = 1 AND polly_parallel = 1,min==0,0,0.0,0.0,0.0,28,4.9068920612335205
+1,18.22997779858917,12000,pollyoptmaxcoefficient_1000 = 1,pollyoptmaxcoefficient_1000==0,0,0.0,0.0,0.0,29,6.04853105545044
+2,19.83180698657035,15000,max = 1 AND none = 1,polly==1,0,0.0,0.0,0.0,29,5.055686235427856
+3,19.468534592869155,3000,max = 1 AND polly_no_tiling = 1 AND pollyoptmaxcoefficient_10 = 1,pollyoptmaxcoefficient_10==0,0,0.0,0.0,0.0,29,6.081206560134888
+4,14.87434810648051,5000,none = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1 AND value_based = 1,polly==1,0,0.0,0.0,0.0,29,4.865337371826172
+1,17.509515134733938,12000,pollyoptmaxcoefficient_10 = 1,pollyoptmaxcoefficient_10==0,0,0.0,0.0,0.0,3,6.096183300018311
+2,14.860196614700452,6000,pollyoptmaxcoefficient_10 = 1 AND value_based = 1,pollyoptmaxcoefficient_10==0,0,0.0,0.0,0.0,3,6.053932189941406
+3,26.798967491194325,10000,max = 1 AND polly_no_tiling = 1 AND polly_parallel = 1,pollydefaulttilesize==64 AND pollyoptmaxcoefficient_10==0 AND pollyoptmaxconstantterm_100==0 AND pollyoptmaxconstantterm_10000==0 AND value_based==0 AND parallel==1 AND polly_no_tiling==0,0,0.0,0.0,0.0,3,7.645246267318726
+4,17.096230832719897,5000,memory_based = 1 AND parallel_force = 1 AND polly_no_tiling = 1 AND polly_parallel = 1,parallel_force==0,0,0.0,0.0,0.0,3,5.249167919158936
+1,18.56888843182424,12000,pollyoptmaxcoefficient_10000 = 1,pollyoptmaxcoefficient_10000==0,0,0.0,0.0,0.0,30,6.205366134643555
+2,25.886330718059117,4000,parallel = 1 AND pollyoptmaxcoefficient_1 = 1,pollyoptmaxcoefficient_10==0 AND pollyoptmaxconstantterm_1==0 AND pollyoptmaxconstantterm_1000==0 AND value_based==0 AND polly_no_tiling==0 AND polly_parallel==0,0,0.0,0.0,0.0,30,7.987536907196045
+3,28.46086986098856,4000,memory_based = 1 AND polly_parallel = 1 AND pollyoptmaxconstantterm_10000 = 1,pollyoptmaxconstantterm_10000==1 AND value_based==0 AND polly_parallel==1,0,1.0,1.0,1.0,30,6.580911159515381
+4,22.777748536845227,5000,parallel_force = 1 AND polly_no_tiling = 1 AND polly_parallel = 1 AND value_based = 1,parallel_force==0,0,0.0,0.0,0.0,30,6.147937774658203
+1,17.944388582446294,12000,pollyoptmaxconstantterm_1 = 1,pollyoptmaxconstantterm_1==0,0,0.0,0.0,0.0,31,6.057939529418945
+2,23.01707067442049,6000,none = 1 AND pollyoptmaxcoefficient_10000 = 1,pollyoptmaxcoefficient_10000==0,0,0.0,0.0,0.0,31,5.4699461460113525
+3,27.25909275304964,3000,polly = 1 AND pollyoptmaxconstantterm_100 = 1 AND value_based = 1,pollydefaulttilesize==64 AND pollyoptmaxcoefficient_100==0 AND pollyoptmaxcoefficient_1000==0 AND pollyoptmaxconstantterm_100==0 AND min==0 AND parallel_force==1 AND polly_opt_simplify_deps==0,0,0.0,0.0,0.0,31,7.639532089233398
+4,23.75519426315311,3750,none = 1 AND polly_no_tiling = 1 AND polly_opt_simplify_deps = 1 AND value_based = 1,polly_no_tiling==0,0,0.0,0.0,0.0,31,5.734518527984619
+1,24.54389517517428,12000,pollyoptmaxconstantterm_100 = 1,pollyoptmaxconstantterm_100==0,0,0.0,0.0,0.0,32,6.288612842559815
+2,24.4308999034314,4000,parallel_force = 1 AND pollyoptmaxcoefficient_10000 = 1,pollyoptmaxcoefficient_1==0 AND pollyoptmaxcoefficient_10000==0,0,0.0,0.0,0.0,32,6.502945423126221
+3,21.25443975562884,3000,max = 1 AND polly_no_tiling = 1 AND pollyrtcmaxparameters = 2,min==1,0,0.0,0.0,0.0,32,5.64635968208313
+4,16.322336655803603,5000,parallel = 1 AND polly_no_tiling = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,parallel==0,0,0.0,0.0,0.0,32,5.753326654434204
+1,15.869510826088437,12000,pollyoptmaxconstantterm_10000 = 1,pollyoptmaxconstantterm_10000==0,0,0.0,0.0,0.0,33,6.079299449920654
+2,20.06276940450649,10000,parallel_force = 1 AND polly_no_tiling = 1,parallel_force==0,0,0.0,0.0,0.0,33,5.796971082687378
+3,16.635736824029816,3000,memory_based = 1 AND polly = 1 AND pollyoptmaxconstantterm_1 = 1,pollyoptmaxconstantterm_1==0,0,0.0,0.0,0.0,33,5.551417827606201
+4,21.973951242267454,5000,max = 1 AND parallel = 1 AND polly_no_tiling = 1 AND polly_parallel = 1,parallel==0,0,0.0,0.0,0.0,33,5.578969717025757
+1,22.51046721920956,12000,pollyoptmaxconstantterm_10 = 1,pollyoptmaxconstantterm_10==0,0,0.0,0.0,0.0,34,6.173919916152954
+2,9.339895184245696,6000,none = 1 AND pollyoptmaxcoefficient_1000 = 1,pollyoptmaxcoefficient_1000==0,0,0.0,0.0,0.0,34,6.236951589584351
+3,8.042258337992536,3000,polly_opt_simplify_deps = 1 AND pollyoptmaxconstantterm_1000 = 1 AND value_based = 1,pollyoptmaxconstantterm_1000==0,0,0.0,0.0,0.0,34,6.062283515930176
+4,20.61057459525196,5000,parallel = 1 AND polly_no_tiling = 1 AND polly_parallel = 1 AND value_based = 1,parallel==0,0,0.0,0.0,0.0,34,5.945621728897095
+1,19.5742565878832,12000,pollyoptmaxcoefficient_10000 = 1,pollyoptmaxcoefficient_10000==0,0,0.0,0.0,0.0,35,6.191231727600098
+2,29.132616144896748,6000,polly = 1 AND pollyoptmaxcoefficient_1 = 1,pollyoptmaxcoefficient_1==1 AND polly==1,0,1.0,1.0,1.0,35,5.921974420547485
+3,8.659814208294678,3000,none = 1 AND pollyoptmaxcoefficient_1 = 1 AND value_based = 1,pollyoptmaxcoefficient_1==0,0,0.0,0.0,0.0,35,5.792891025543213
+4,10.202612312920683,3750,memory_based = 1 AND min = 1 AND polly = 1 AND polly_no_tiling = 1,polly_no_tiling==0,0,0.0,0.0,0.0,35,4.7247700691223145
+1,12.632882855083372,12000,pollyoptmaxconstantterm_1 = 1,pollyoptmaxconstantterm_1==0,0,0.0,0.0,0.0,36,6.0773797035217285
+2,18.443630168522816,4000,parallel = 1 AND pollyrtcmaxparameters = 8,parallel==0,0,0.0,0.0,0.0,36,6.030396461486816
+3,30.170995371847283,3000,max = 1 AND pollyoptmaxcoefficient_1 = 1 AND value_based = 1,pollyoptmaxcoefficient_1==1 AND value_based==1 AND min==0,0,1.0,1.0,1.0,36,5.826411724090576
+4,24.48362504013442,3750,min = 1 AND none = 1 AND polly_no_tiling = 1 AND polly_opt_simplify_deps = 1,pollyoptmaxcoefficient_100==0 AND pollyoptmaxconstantterm_1000==0 AND pollyoptmaxconstantterm_10000==0 AND parallel==0 AND polly_no_tiling==0,0,0.0,0.0,0.0,36,7.661144971847534
+1,6.918996094152659,12000,pollyoptmaxcoefficient_10000 = 1,pollyoptmaxcoefficient_10000==0,0,0.0,0.0,0.0,37,6.007793188095093
+2,5.9967958790015,6000,none = 1 AND pollyoptmaxcoefficient_100 = 1,pollyoptmaxcoefficient_100==0,0,0.0,0.0,0.0,37,6.0287275314331055
+3,28.123245327121097,4000,none = 1 AND polly_parallel = 1 AND pollyoptmaxcoefficient_10000 = 1,pollyoptmaxcoefficient_10000==1 AND polly==0 AND polly_parallel==1,0,1.0,1.0,1.0,37,6.212387561798096
+4,28.57508283509895,5000,min = 1 AND parallel = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,min==1 AND parallel_force==0 AND polly_opt_simplify_deps==1 AND polly_parallel==1,0,1.0,1.0,1.0,37,7.262269973754883
+1,6.055745334903343,12000,pollyoptmaxcoefficient_1 = 1,pollyoptmaxcoefficient_1==0,0,0.0,0.0,0.0,38,6.084965229034424
+2,24.92895943838352,6000,none = 1 AND pollyoptmaxcoefficient_1000 = 1,pollyoptmaxcoefficient_1000==0 AND pollyoptmaxcoefficient_10000==0,0,0.0,0.0,0.0,38,7.08175539970398
+3,28.97347916396829,3000,max = 1 AND memory_based = 1 AND pollyoptmaxcoefficient_10000 = 1,pollyoptmaxcoefficient_10000==1 AND value_based==0 AND min==0,0,1.0,1.0,1.0,38,6.059936285018921
+4,7.202128739099785,3750,memory_based = 1 AND polly = 1 AND polly_no_tiling = 1 AND polly_opt_simplify_deps = 1,value_based==1,0,0.0,0.0,0.0,38,4.897491216659546
+1,29.571198446252676,12000,pollyoptmaxcoefficient_1000 = 1,pollyoptmaxcoefficient_1000==1,0,1.0,1.0,1.0,39,5.388401031494141
+2,19.842770308822026,6000,max = 1 AND pollyoptmaxcoefficient_10000 = 1,pollyoptmaxcoefficient_10000==0,0,0.0,0.0,0.0,39,6.049874067306519
+3,28.92825168867866,3000,max = 1 AND polly_opt_simplify_deps = 1 AND pollyoptmaxcoefficient_1 = 1,pollyoptmaxcoefficient_1==1 AND min==0 AND polly_opt_simplify_deps==1,0,1.0,1.0,1.0,39,6.457738637924194
+4,26.47689354724487,5000,min = 1 AND polly = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,pollydefaulttilesize==64 AND pollyoptmaxcoefficient_1==0 AND pollyoptmaxconstantterm_1000==0 AND polly==0 AND polly_no_tiling==1 AND polly_parallel==0,0,0.0,0.0,0.0,39,7.009666919708252
+1,11.01153545178444,12000,pollyoptmaxconstantterm_1000 = 1,pollyoptmaxconstantterm_1000==0,0,0.0,0.0,0.0,4,6.3014466762542725
+2,9.715502260860974,6000,polly_opt_simplify_deps = 1 AND pollyoptmaxcoefficient_100 = 1,pollyoptmaxcoefficient_100==0,0,0.0,0.0,0.0,4,6.662473440170288
+3,29.497454217430235,3000,none = 1 AND pollydefaulttilesize = 4 AND value_based = 1,pollydefaulttilesize==4 AND value_based==1 AND polly==0,0,1.0,1.0,1.0,4,6.083270311355591
+4,13.051278315734526,3750,memory_based = 1 AND none = 1 AND polly_no_tiling = 1 AND polly_opt_simplify_deps = 1,polly_opt_simplify_deps==0,0,0.0,0.0,0.0,4,4.716679334640503
+1,8.854033195031082,12000,pollyoptmaxcoefficient_10000 = 1,pollyoptmaxcoefficient_10000==0,0,0.0,0.0,0.0,40,6.200312852859497
+2,13.49946931145121,6000,none = 1 AND pollydefaulttilesize = 64,polly==1,0,0.0,0.0,0.0,40,5.429833889007568
+3,17.932371442837415,10000,min = 1 AND parallel = 1 AND polly_parallel = 1,parallel==0,0,0.0,0.0,0.0,40,6.120261192321777
+4,27.5209513120627,3750,memory_based = 1 AND min = 1 AND polly_no_tiling = 1 AND polly_opt_simplify_deps = 1,pollyoptmaxcoefficient_10==0 AND pollyoptmaxcoefficient_100==0 AND pollyoptmaxconstantterm_10000==0 AND pollyrtcmaxparameters==4 AND polly_opt_simplify_deps==1,2,0.1085972850678733,0.125,0.096,40,7.556826829910278
+1,27.888836805719656,12000,pollyoptmaxconstantterm_1000 = 1,pollyoptmaxconstantterm_1000==1,0,1.0,1.0,1.0,41,5.6533520221710205
+2,24.238165027406485,15000,polly = 1 AND polly_no_tiling = 1,polly_no_tiling==0,0,0.0,0.0,0.0,41,5.210037708282471
+3,9.665504449321924,3000,max = 1 AND memory_based = 1 AND pollyoptmaxconstantterm_10 = 1,pollyoptmaxconstantterm_10==0,0,0.0,0.0,0.0,41,5.941298723220825
+4,23.477451815011296,5000,parallel_force = 1 AND polly = 1 AND polly_no_tiling = 1 AND polly_parallel = 1,pollyoptmaxcoefficient_1==0 AND parallel_force==0,0,0.0,0.0,0.0,41,6.169183254241943
+1,25.44201102162944,12000,pollyoptmaxconstantterm_1 = 1,pollyoptmaxconstantterm_1==0,0,0.0,0.0,0.0,42,6.452823162078857
+2,18.50714585590241,10000,parallel = 1 AND polly_no_tiling = 1,parallel==0,0,0.0,0.0,0.0,42,6.254418611526489
+3,21.303342296438306,7500,min = 1 AND none = 1 AND polly_opt_simplify_deps = 1,min==0,0,0.0,0.0,0.0,42,5.132879257202148
+4,10.473149437310136,3750,memory_based = 1 AND polly = 1 AND polly_no_tiling = 1 AND polly_opt_simplify_deps = 1,polly_no_tiling==0,0,0.0,0.0,0.0,42,4.768536567687988
+1,17.914439667342425,12000,pollydefaulttilesize = 1024,pollydefaulttilesize==16,0,0.0,0.0,0.0,43,3.776442766189575
+2,27.48848162712472,6000,polly_opt_simplify_deps = 1 AND pollyoptmaxcoefficient_1 = 1,pollyoptmaxcoefficient_1==1 AND polly_opt_simplify_deps==1,0,1.0,1.0,1.0,43,6.29379940032959
+3,27.141166363144848,3000,min = 1 AND polly_opt_simplify_deps = 1 AND pollyoptmaxcoefficient_100 = 1,pollydefaulttilesize==4 AND pollyoptmaxcoefficient_10==0 AND pollyoptmaxcoefficient_100==0 AND pollyrtcmaxparameters==4 AND value_based==0,0,0.0,0.0,0.0,43,6.737248659133911
+4,18.8718217433358,3750,min = 1 AND polly_no_tiling = 1 AND polly_opt_simplify_deps = 1 AND value_based = 1,polly_opt_simplify_deps==0,0,0.0,0.0,0.0,43,5.063512325286865
+1,16.61700103631568,12000,pollyoptmaxconstantterm_1000 = 1,pollyoptmaxconstantterm_1000==0,0,0.0,0.0,0.0,44,6.144412517547607
+2,11.241635180807418,8000,polly_parallel = 1 AND pollyoptmaxconstantterm_1 = 1,pollyoptmaxconstantterm_1==0,0,0.0,0.0,0.0,44,6.2549309730529785
+3,11.17989890240939,3000,min = 1 AND none = 1 AND pollyoptmaxconstantterm_100 = 1,pollyoptmaxconstantterm_100==0,0,0.0,0.0,0.0,44,5.734257936477661
+4,14.865291788247864,5000,min = 1 AND polly = 1 AND polly_parallel = 1 AND value_based = 1,min==0,0,0.0,0.0,0.0,44,4.868765115737915
+1,6.207393747563999,12000,pollyoptmaxconstantterm_1 = 1,pollyoptmaxconstantterm_1==0,0,0.0,0.0,0.0,45,6.056865692138672
+2,6.859998224661237,10000,min = 1 AND parallel_force = 1,parallel_force==0,0,0.0,0.0,0.0,45,5.904585123062134
+3,26.202816614145043,3000,max = 1 AND memory_based = 1 AND pollyoptmaxcoefficient_1 = 1,pollydefaulttilesize==4 AND pollyoptmaxcoefficient_100==1 AND pollyoptmaxconstantterm_1000==0 AND parallel==1,0,0.0,0.0,0.0,45,7.240085363388061
+4,16.422753737468792,5000,min = 1 AND parallel_force = 1 AND polly_parallel = 1 AND value_based = 1,parallel_force==0,0,0.0,0.0,0.0,45,5.740789175033569
+1,26.818778181788478,12000,pollyoptmaxcoefficient_1000 = 1,pollydefaulttilesize==4 AND pollyoptmaxcoefficient_10000==1 AND pollyoptmaxconstantterm_1==0 AND parallel_force==0 AND polly_opt_simplify_deps==0,0,0.0,0.0,0.0,46,7.3132004737854
+2,24.06049129243053,6000,min = 1 AND pollyoptmaxcoefficient_10000 = 1,pollyoptmaxcoefficient_10000==0,0,0.0,0.0,0.0,46,6.6768553256988525
+3,15.07972724288358,10000,max = 1 AND polly_parallel = 1 AND value_based = 1,value_based==0,0,0.0,0.0,0.0,46,5.1014955043792725
+4,14.580693309312345,5000,max = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1 AND value_based = 1,min==1,0,0.0,0.0,0.0,46,4.906320571899414
+1,14.319571107962105,12000,pollyoptmaxcoefficient_1000 = 1,pollyoptmaxcoefficient_1000==0,0,0.0,0.0,0.0,47,6.310415506362915
+2,14.34864656575402,4000,parallel = 1 AND pollydefaulttilesize = 64,parallel==0,0,0.0,0.0,0.0,47,6.254864454269409
+3,12.87483567630263,4000,polly = 1 AND polly_parallel = 1 AND pollyoptmaxconstantterm_1000 = 1,pollyoptmaxconstantterm_1000==0,0,0.0,0.0,0.0,47,6.16823935508728
+4,13.551217756791011,5000,max = 1 AND polly_no_tiling = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,min==1,0,0.0,0.0,0.0,47,5.02245020866394
+1,8.988634505364688,12000,pollydefaulttilesize = 4,pollydefaulttilesize==16,0,0.0,0.0,0.0,48,3.6881494522094727
+2,26.50353828215185,4000,parallel_force = 1 AND pollyoptmaxconstantterm_1 = 1,pollyoptmaxcoefficient_100==0 AND pollyoptmaxconstantterm_1==1 AND value_based==0 AND parallel_force==0 AND polly==0 AND polly_parallel==1,0,0.0,0.0,0.0,48,7.091956853866577
+3,23.210749805372306,3000,polly_no_tiling = 1 AND polly_opt_simplify_deps = 1 AND pollyoptmaxcoefficient_10 = 1,pollyoptmaxcoefficient_10==0 AND pollyoptmaxconstantterm_100==0 AND pollyoptmaxconstantterm_10000==0,0,0.0,0.0,0.0,48,6.751150369644165
+4,16.8484904293924,5000,parallel = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1 AND value_based = 1,parallel==0,0,0.0,0.0,0.0,48,5.540748596191406
+1,19.560475457787877,12000,pollyoptmaxcoefficient_100 = 1,pollyoptmaxcoefficient_100==0,0,0.0,0.0,0.0,49,6.099755048751831
+2,18.192998501310345,6000,none = 1 AND pollyoptmaxconstantterm_1 = 1,pollyoptmaxconstantterm_1==0,0,0.0,0.0,0.0,49,6.092752456665039
+3,13.90223017354548,4000,none = 1 AND polly_parallel = 1 AND pollyoptmaxcoefficient_10 = 1,pollyoptmaxcoefficient_10==0,0,0.0,0.0,0.0,49,5.9871485233306885
+4,17.157391294750013,5000,none = 1 AND parallel_force = 1 AND polly_parallel = 1 AND value_based = 1,parallel_force==0,0,0.0,0.0,0.0,49,5.633823156356812
+1,10.614824445364992,12000,pollyoptmaxcoefficient_1 = 1,pollyoptmaxcoefficient_1==0,0,0.0,0.0,0.0,5,6.117919445037842
+2,20.5483333830264,6000,polly_no_tiling = 1 AND pollyoptmaxcoefficient_1000 = 1,pollyoptmaxcoefficient_1000==0,0,0.0,0.0,0.0,5,6.385388851165772
+3,10.681676750598712,5000,min = 1 AND parallel = 1 AND value_based = 1,parallel==0,0,0.0,0.0,0.0,5,5.737213850021362
+4,15.090271077166742,5000,min = 1 AND parallel_force = 1 AND polly_parallel = 1 AND value_based = 1,parallel_force==0,0,0.0,0.0,0.0,5,5.326996326446533
+1,18.40376524064404,12000,pollyoptmaxcoefficient_10000 = 1,pollyoptmaxcoefficient_10000==0,0,0.0,0.0,0.0,50,6.0578484535217285
+2,15.291799605381607,6000,none = 1 AND pollyoptmaxcoefficient_10000 = 1,pollyoptmaxcoefficient_10000==0,0,0.0,0.0,0.0,50,6.025342702865601
+3,27.27611050058341,5000,min = 1 AND parallel = 1 AND polly_no_tiling = 1,pollyoptmaxcoefficient_100==0 AND pollyoptmaxconstantterm_10==0 AND pollyoptmaxconstantterm_10000==0 AND parallel_force==0 AND polly_no_tiling==1 AND polly_opt_simplify_deps==0,1,0.2448979591836734,0.25,0.24,50,7.036139249801636
+4,14.759201727198828,5000,parallel_force = 1 AND polly = 1 AND polly_no_tiling = 1 AND polly_parallel = 1,parallel_force==0,0,0.0,0.0,0.0,50,5.676449775695801
+1,10.818828061102272,12000,pollydefaulttilesize = 16,pollydefaulttilesize==64,0,0.0,0.0,0.0,51,3.782564401626587
+2,11.192705907961058,6000,pollyoptmaxconstantterm_10000 = 1 AND value_based = 1,pollyoptmaxconstantterm_10000==0,0,0.0,0.0,0.0,51,6.210506200790405
+3,13.888396099548656,4000,none = 1 AND polly_parallel = 1 AND pollyoptmaxconstantterm_1 = 1,pollyoptmaxconstantterm_1==0,0,0.0,0.0,0.0,51,6.151984453201294
+4,28.568093505308493,5000,min = 1 AND polly_no_tiling = 1 AND polly_parallel = 1 AND value_based = 1,value_based==1 AND min==1 AND polly_no_tiling==1 AND polly_parallel==1,0,1.0,1.0,1.0,51,8.312037706375122
+1,30.432058172915998,12000,pollyoptmaxconstantterm_100 = 1,pollyoptmaxconstantterm_100==1,0,1.0,1.0,1.0,52,5.35986328125
+2,8.788431513034942,8000,polly_parallel = 1 AND pollyoptmaxcoefficient_100 = 1,pollyoptmaxcoefficient_100==0,0,0.0,0.0,0.0,52,6.263743162155151
+3,20.84291948220928,3000,none = 1 AND polly_opt_simplify_deps = 1 AND pollyoptmaxcoefficient_10 = 1,pollyoptmaxcoefficient_10==0 AND pollyoptmaxcoefficient_10000==0,0,0.0,0.0,0.0,52,6.57163143157959
+4,25.68266669776522,3750,none = 1 AND polly_no_tiling = 1 AND polly_opt_simplify_deps = 1 AND value_based = 1,pollydefaulttilesize==4 AND pollyoptmaxcoefficient_100==1 AND polly_no_tiling==0 AND polly_parallel==1,0,0.0,0.0,0.0,52,7.889415264129639
+1,9.122241005562406,12000,pollyoptmaxconstantterm_10 = 1,pollyoptmaxconstantterm_10==0,0,0.0,0.0,0.0,53,6.066685199737549
+2,18.708988055453663,6000,min = 1 AND pollyoptmaxcoefficient_1000 = 1,pollyoptmaxcoefficient_1000==0,0,0.0,0.0,0.0,53,6.072946786880493
+3,28.016007172678645,3000,min = 1 AND polly_no_tiling = 1 AND pollyoptmaxconstantterm_100 = 1,pollyoptmaxconstantterm_100==1 AND min==1 AND polly_no_tiling==1,0,1.0,1.0,1.0,53,6.561083793640137
+4,8.430628928623443,5000,memory_based = 1 AND min = 1 AND parallel = 1 AND polly_parallel = 1,parallel==0,0,0.0,0.0,0.0,53,5.78332257270813
+1,19.565507309552466,12000,pollyoptmaxcoefficient_1 = 1,pollyoptmaxcoefficient_1==0,0,0.0,0.0,0.0,54,6.201119899749756
+2,11.987337210183902,6000,min = 1 AND pollyoptmaxcoefficient_100 = 1,pollyoptmaxcoefficient_100==0,0,0.0,0.0,0.0,54,6.179485082626343
+3,19.524628149123764,3000,max = 1 AND pollyoptmaxcoefficient_100 = 1 AND value_based = 1,pollyoptmaxcoefficient_100==0,0,0.0,0.0,0.0,54,5.765313386917114
+4,9.981767970771427,5000,max = 1 AND none = 1 AND polly_parallel = 1 AND value_based = 1,min==1,0,0.0,0.0,0.0,54,4.91249418258667
+1,14.800000790574218,12000,pollyoptmaxcoefficient_1 = 1,pollyoptmaxcoefficient_1==0,0,0.0,0.0,0.0,55,6.132959365844727
+2,10.347546040146232,4000,parallel_force = 1 AND pollyoptmaxcoefficient_1000 = 1,pollyoptmaxcoefficient_1000==0,0,0.0,0.0,0.0,55,5.78697395324707
+3,17.432807038876874,4000,polly = 1 AND polly_parallel = 1 AND pollyoptmaxconstantterm_10 = 1,pollyoptmaxconstantterm_10==0,0,0.0,0.0,0.0,55,6.042754173278809
+4,22.154356506331546,5000,none = 1 AND parallel = 1 AND polly_parallel = 1 AND value_based = 1,parallel==0,0,0.0,0.0,0.0,55,5.4234583377838135
+1,7.706873070928975,12000,pollydefaulttilesize = 1024,pollydefaulttilesize==64,0,0.0,0.0,0.0,56,3.6658143997192383
+2,13.96698861202969,15000,max = 1 AND none = 1,min==1,0,0.0,0.0,0.0,56,5.051139116287232
+3,26.60016817378204,3000,polly_no_tiling = 1 AND polly_opt_simplify_deps = 1 AND pollyoptmaxconstantterm_1000 = 1,pollyoptmaxcoefficient_100==0 AND pollyoptmaxcoefficient_1000==0 AND pollyoptmaxconstantterm_100==1 AND polly==0 AND polly_no_tiling==0 AND polly_parallel==1,0,0.0,0.0,0.0,56,7.575230598449707
+4,14.17291381067614,3750,min = 1 AND none = 1 AND polly_no_tiling = 1 AND polly_opt_simplify_deps = 1,min==0,0,0.0,0.0,0.0,56,4.800806999206543
+1,18.32761569337658,12000,pollyoptmaxconstantterm_100 = 1,pollyoptmaxconstantterm_100==0,0,0.0,0.0,0.0,57,6.304352045059204
+2,26.80628906652204,6000,min = 1 AND pollyoptmaxcoefficient_1 = 1,pollydefaulttilesize==16 AND pollyoptmaxcoefficient_1000==0 AND pollyoptmaxconstantterm_100==0 AND min==0 AND polly_parallel==1,0,0.0,0.0,0.0,57,7.479147434234619
+3,28.384826124719275,7500,max = 1 AND polly = 1 AND value_based = 1,value_based==1 AND min==0 AND polly==1,0,1.0,1.0,1.0,57,7.334282398223877
+4,9.514739469601272,5000,none = 1 AND parallel = 1 AND polly_parallel = 1 AND value_based = 1,parallel==0,0,0.0,0.0,0.0,57,5.972640752792358
+1,25.194528232857344,12000,pollyoptmaxconstantterm_100 = 1,pollyoptmaxconstantterm_100==0,0,0.0,0.0,0.0,58,5.934906959533691
+2,30.266878984178465,6000,min = 1 AND pollyoptmaxconstantterm_100 = 1,pollyoptmaxconstantterm_100==1 AND min==1,0,1.0,1.0,1.0,58,6.073479652404785
+3,30.543463613478185,3000,memory_based = 1 AND polly_no_tiling = 1 AND pollyoptmaxcoefficient_100 = 1,pollyoptmaxcoefficient_100==1 AND value_based==0 AND polly_no_tiling==1,0,1.0,1.0,1.0,58,6.609493255615234
+4,9.83209007815463,5000,none = 1 AND parallel_force = 1 AND polly_no_tiling = 1 AND polly_parallel = 1,parallel_force==0,0,0.0,0.0,0.0,58,6.062983274459839
+1,12.089593614078996,12000,pollyoptmaxconstantterm_1 = 1,pollyoptmaxconstantterm_1==0,0,0.0,0.0,0.0,59,6.041543483734131
+2,19.79141589664265,10000,max = 1 AND parallel = 1,parallel==0,0,0.0,0.0,0.0,59,6.077715396881104
+3,13.821883617267911,3000,memory_based = 1 AND none = 1 AND pollyoptmaxcoefficient_1000 = 1,pollyoptmaxcoefficient_1000==0,0,0.0,0.0,0.0,59,5.727324485778809
+4,24.248693886279412,5000,none = 1 AND parallel_force = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,parallel_force==0,0,0.0,0.0,0.0,59,5.990028142929077
+1,21.266025977829905,12000,pollyoptmaxcoefficient_10 = 1,pollyoptmaxcoefficient_10==0,0,0.0,0.0,0.0,6,6.346558570861816
+2,15.608769261614468,6000,pollyoptmaxconstantterm_10 = 1 AND value_based = 1,pollyoptmaxconstantterm_10==0,0,0.0,0.0,0.0,6,6.422612905502319
+3,18.922763699716285,3000,max = 1 AND memory_based = 1 AND pollyoptmaxcoefficient_1000 = 1,pollyoptmaxcoefficient_1000==0,0,0.0,0.0,0.0,6,5.566739797592163
+4,14.70150766991611,5000,memory_based = 1 AND parallel_force = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,parallel_force==0,0,0.0,0.0,0.0,6,6.087072134017944
+1,22.1862096892296,12000,pollyoptmaxconstantterm_1 = 1,pollyoptmaxconstantterm_1==0,0,0.0,0.0,0.0,60,6.450852870941162
+2,9.0627026304868,6000,max = 1 AND pollydefaulttilesize = 16,min==1,0,0.0,0.0,0.0,60,5.643450021743774
+3,22.023083753778984,5000,memory_based = 1 AND min = 1 AND parallel = 1,parallel==0,0,0.0,0.0,0.0,60,5.381306886672974
+4,15.899287936173286,3750,memory_based = 1 AND polly = 1 AND polly_no_tiling = 1 AND polly_opt_simplify_deps = 1,polly_opt_simplify_deps==0,0,0.0,0.0,0.0,60,5.272313117980957
+1,8.375653055218262,12000,pollyoptmaxcoefficient_1 = 1,pollyoptmaxcoefficient_1==0,0,0.0,0.0,0.0,61,6.254298686981201
+2,14.018858873893056,8000,polly_parallel = 1 AND pollyoptmaxconstantterm_1 = 1,pollyoptmaxconstantterm_1==0,0,0.0,0.0,0.0,61,6.456113338470459
+3,15.999194188725207,3000,max = 1 AND none = 1 AND pollyoptmaxcoefficient_10 = 1,pollyoptmaxcoefficient_10==0,0,0.0,0.0,0.0,61,6.30302619934082
+4,23.7355472945817,5000,min = 1 AND parallel_force = 1 AND polly_no_tiling = 1 AND polly_parallel = 1,pollyoptmaxconstantterm_10000==0 AND parallel_force==0,0,0.0,0.0,0.0,61,6.4740540981292725
+1,16.95170543925873,12000,pollyoptmaxconstantterm_10000 = 1,pollyoptmaxconstantterm_10000==0,0,0.0,0.0,0.0,62,6.26974368095398
+2,22.351199242863338,6000,min = 1 AND pollyoptmaxcoefficient_1000 = 1,pollyoptmaxcoefficient_1000==0,0,0.0,0.0,0.0,62,6.2876691818237305
+3,10.582600237293663,3000,min = 1 AND polly_no_tiling = 1 AND pollyoptmaxconstantterm_1000 = 1,pollyoptmaxconstantterm_1000==0,0,0.0,0.0,0.0,62,6.088171005249023
+4,20.347516557840297,5000,none = 1 AND parallel = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,parallel==0,0,0.0,0.0,0.0,62,5.534162521362305
+1,16.305190853856317,12000,pollyoptmaxcoefficient_10000 = 1,pollyoptmaxcoefficient_10000==0,0,0.0,0.0,0.0,63,6.440331220626831
+2,12.241772705029929,6000,polly = 1 AND pollyrtcmaxparameters = 1,polly==0,0,0.0,0.0,0.0,63,5.540815114974976
+3,8.2102878864591,3000,memory_based = 1 AND min = 1 AND pollyoptmaxconstantterm_1 = 1,pollyoptmaxconstantterm_1==0,0,0.0,0.0,0.0,63,5.973387002944946
+4,23.00893005150816,5000,memory_based = 1 AND min = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,min==0,0,0.0,0.0,0.0,63,5.282743692398071
+1,14.850943874665973,12000,pollyrtcmaxparameters = 2,pollyrtcmaxparameters==16,0,0.0,0.0,0.0,64,3.669877052307129
+2,20.99344750532113,8000,polly_parallel = 1 AND pollyoptmaxcoefficient_10 = 1,pollyoptmaxcoefficient_10==0,0,0.0,0.0,0.0,64,6.182980537414551
+3,13.126733167017704,3000,polly = 1 AND polly_no_tiling = 1 AND pollydefaulttilesize = 4,polly_no_tiling==0,0,0.0,0.0,0.0,64,5.210175037384033
+4,15.495034464618962,5000,none = 1 AND polly_no_tiling = 1 AND polly_parallel = 1 AND value_based = 1,value_based==0,0,0.0,0.0,0.0,64,4.94453239440918
+1,14.583525862050932,12000,pollyoptmaxconstantterm_100 = 1,pollyoptmaxconstantterm_100==0,0,0.0,0.0,0.0,65,6.06879472732544
+2,10.742578511059753,6000,polly_opt_simplify_deps = 1 AND pollydefaulttilesize = 4,polly_opt_simplify_deps==0,0,0.0,0.0,0.0,65,5.368179321289063
+3,23.387512277211098,4000,none = 1 AND polly_parallel = 1 AND pollyoptmaxconstantterm_1000 = 1,pollyoptmaxconstantterm_1000==0,0,0.0,0.0,0.0,65,6.1280481815338135
+4,5.815222855946509,5000,min = 1 AND polly_no_tiling = 1 AND polly_parallel = 1 AND value_based = 1,min==0,0,0.0,0.0,0.0,65,4.951826572418213
+1,22.18392189202657,12000,pollyoptmaxconstantterm_100 = 1,pollyoptmaxconstantterm_100==0,0,0.0,0.0,0.0,66,6.138867616653442
+2,23.566377858086184,6000,polly_no_tiling = 1 AND pollyoptmaxconstantterm_10000 = 1,pollyoptmaxconstantterm_10000==0,0,0.0,0.0,0.0,66,6.218210935592651
+3,18.540037408212108,3000,none = 1 AND polly_opt_simplify_deps = 1 AND pollyoptmaxcoefficient_1 = 1,pollyoptmaxcoefficient_1==0,0,0.0,0.0,0.0,66,5.687678337097168
+4,9.808755842643423,5000,min = 1 AND parallel = 1 AND polly_no_tiling = 1 AND polly_parallel = 1,parallel==0,0,0.0,0.0,0.0,66,5.911778688430786
+1,29.86602846958238,12000,pollyoptmaxconstantterm_1 = 1,pollyoptmaxconstantterm_1==1,0,1.0,1.0,1.0,67,5.36453652381897
+2,18.45516604729106,8000,polly_parallel = 1 AND pollyoptmaxcoefficient_10 = 1,pollyoptmaxcoefficient_10==0,0,0.0,0.0,0.0,67,6.276595592498779
+3,11.049725737001385,3000,polly_no_tiling = 1 AND polly_opt_simplify_deps = 1 AND pollyoptmaxconstantterm_10000 = 1,pollyoptmaxconstantterm_10000==0,0,0.0,0.0,0.0,67,5.545797824859619
+4,28.308539434068543,5000,max = 1 AND none = 1 AND parallel_force = 1 AND polly_parallel = 1,min==0 AND parallel_force==1 AND polly==0,0,1.0,1.0,1.0,67,6.952132940292358
+1,12.8284797040502,12000,pollyoptmaxconstantterm_10000 = 1,pollyoptmaxconstantterm_10000==0,0,0.0,0.0,0.0,68,6.104604721069336
+2,20.93318775745553,15000,memory_based = 1 AND polly_no_tiling = 1,polly_no_tiling==0,0,0.0,0.0,0.0,68,5.038918256759644
+3,22.060667410276583,3000,max = 1 AND polly_opt_simplify_deps = 1 AND pollyoptmaxconstantterm_10 = 1,pollyoptmaxconstantterm_10==0,0,0.0,0.0,0.0,68,6.211389780044556
+4,8.96266897675684,5000,max = 1 AND parallel_force = 1 AND polly_no_tiling = 1 AND polly_parallel = 1,parallel_force==0,0,0.0,0.0,0.0,68,5.67223858833313
+1,6.698581195578416,12000,pollyoptmaxconstantterm_100 = 1,pollyoptmaxconstantterm_100==0,0,0.0,0.0,0.0,69,6.061647653579712
+2,14.330142963685354,6000,polly_no_tiling = 1 AND pollyoptmaxcoefficient_100 = 1,pollyoptmaxcoefficient_100==0,0,0.0,0.0,0.0,69,6.2703537940979
+3,12.168971681135906,3000,min = 1 AND polly_opt_simplify_deps = 1 AND pollyrtcmaxparameters = 4,min==0,0,0.0,0.0,0.0,69,5.438531398773193
+4,7.066327731913872,5000,polly_no_tiling = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1 AND value_based = 1,value_based==0,0,0.0,0.0,0.0,69,4.867572546005249
+1,10.421513203060842,12000,pollyoptmaxcoefficient_1 = 1,pollyoptmaxcoefficient_1==0,0,0.0,0.0,0.0,7,6.148205995559692
+2,9.470422098762254,6000,memory_based = 1 AND pollyoptmaxconstantterm_10 = 1,pollyoptmaxconstantterm_10==0,0,0.0,0.0,0.0,7,6.064388513565064
+3,15.802885647534923,4000,polly_no_tiling = 1 AND polly_parallel = 1 AND pollyoptmaxconstantterm_10 = 1,pollyoptmaxconstantterm_10==0,0,0.0,0.0,0.0,7,6.124047517776489
+4,11.02109529288196,3750,memory_based = 1 AND min = 1 AND none = 1 AND polly_no_tiling = 1,polly==1,0,0.0,0.0,0.0,7,4.608739852905273
+1,15.197666324195891,12000,pollyoptmaxcoefficient_1 = 1,pollyoptmaxcoefficient_1==0,0,0.0,0.0,0.0,70,6.1780335903167725
+2,22.827288099520377,10000,min = 1 AND parallel = 1,parallel==0,0,0.0,0.0,0.0,70,6.0182530879974365
+3,10.634448790343852,4000,min = 1 AND polly_parallel = 1 AND pollyoptmaxcoefficient_1 = 1,pollyoptmaxcoefficient_1==0,0,0.0,0.0,0.0,70,6.065851926803589
+4,24.689473479781377,5000,memory_based = 1 AND none = 1 AND parallel_force = 1 AND polly_parallel = 1,pollyoptmaxcoefficient_10000==0 AND polly==1,0,0.0,0.0,0.0,70,6.592422008514404
+1,21.22585704588856,12000,pollyoptmaxcoefficient_100 = 1,pollyoptmaxcoefficient_100==0,0,0.0,0.0,0.0,71,6.074170112609863
+2,18.70092919416216,8000,polly_parallel = 1 AND pollyoptmaxconstantterm_10000 = 1,pollyoptmaxconstantterm_10000==0,0,0.0,0.0,0.0,71,6.201534271240234
+3,6.87197945636566,3000,min = 1 AND polly_no_tiling = 1 AND pollyoptmaxconstantterm_10000 = 1,pollyoptmaxconstantterm_10000==0,0,0.0,0.0,0.0,71,5.899714708328247
+4,6.798427218874527,3750,max = 1 AND none = 1 AND polly_no_tiling = 1 AND polly_opt_simplify_deps = 1,polly_no_tiling==0,0,0.0,0.0,0.0,71,4.638925313949585
+1,9.272389769469084,12000,pollyoptmaxconstantterm_1 = 1,pollyoptmaxconstantterm_1==0,0,0.0,0.0,0.0,72,5.94880223274231
+2,23.196457543894542,6000,polly_opt_simplify_deps = 1 AND pollyoptmaxcoefficient_1000 = 1,pollyoptmaxcoefficient_1000==0,0,0.0,0.0,0.0,72,5.786498069763184
+3,6.884727538252784,4000,parallel_force = 1 AND polly_parallel = 1 AND pollyrtcmaxparameters = 2,parallel_force==0,0,0.0,0.0,0.0,72,6.035344362258911
+4,16.772247832043522,5000,memory_based = 1 AND min = 1 AND polly = 1 AND polly_parallel = 1,value_based==1,0,0.0,0.0,0.0,72,4.784074306488037
+1,26.44632087862544,12000,pollyoptmaxcoefficient_1 = 1,pollyoptmaxcoefficient_1==0 AND pollyoptmaxcoefficient_10000==0 AND value_based==1 AND polly==1 AND polly_opt_simplify_deps==0,0,0.0,0.0,0.0,73,8.435191631317139
+2,17.569126950736127,6000,none = 1 AND pollyoptmaxconstantterm_100 = 1,pollyoptmaxconstantterm_100==0,0,0.0,0.0,0.0,73,6.008700132369995
+3,17.767394676554503,3000,none = 1 AND polly_no_tiling = 1 AND pollyrtcmaxparameters = 16,polly_no_tiling==0,0,0.0,0.0,0.0,73,5.258412599563599
+4,8.178057899357773,3750,memory_based = 1 AND polly = 1 AND polly_no_tiling = 1 AND polly_opt_simplify_deps = 1,polly==0,0,0.0,0.0,0.0,73,4.849931001663208
+1,15.469197519441291,12000,pollyrtcmaxparameters = 2,pollyrtcmaxparameters==1,0,0.0,0.0,0.0,74,3.746448040008545
+2,18.83045131406488,6000,min = 1 AND pollyoptmaxcoefficient_1 = 1,pollyoptmaxcoefficient_1==0,0,0.0,0.0,0.0,74,6.159170627593994
+3,8.248963982154299,3000,polly_no_tiling = 1 AND polly_opt_simplify_deps = 1 AND pollyoptmaxconstantterm_1 = 1,pollyoptmaxconstantterm_1==0,0,0.0,0.0,0.0,74,6.004321813583374
+4,19.46536576193596,3750,min = 1 AND none = 1 AND polly_opt_simplify_deps = 1 AND value_based = 1,value_based==0,0,0.0,0.0,0.0,74,5.451318264007568
+1,15.18333004769201,12000,pollyrtcmaxparameters = 1,pollyrtcmaxparameters==16,0,0.0,0.0,0.0,75,3.752025604248047
+2,21.629019750957028,6000,pollyoptmaxcoefficient_1000 = 1 AND value_based = 1,pollyoptmaxcoefficient_1000==0,0,0.0,0.0,0.0,75,6.199932098388672
+3,22.415162784874603,3000,min = 1 AND pollyoptmaxconstantterm_1 = 1 AND value_based = 1,pollyoptmaxconstantterm_1==0,0,0.0,0.0,0.0,75,5.534605264663696
+4,10.247082048146067,5000,none = 1 AND polly_no_tiling = 1 AND polly_parallel = 1 AND value_based = 1,value_based==0,0,0.0,0.0,0.0,75,4.98330283164978
+1,18.267780350930494,12000,pollyoptmaxcoefficient_100 = 1,pollyoptmaxcoefficient_100==0,0,0.0,0.0,0.0,76,6.197445392608643
+2,9.156259438831675,6000,polly_opt_simplify_deps = 1 AND pollydefaulttilesize = 1024,polly_opt_simplify_deps==0,0,0.0,0.0,0.0,76,5.471271276473999
+3,27.954951739315124,10000,min = 1 AND parallel = 1 AND polly_parallel = 1,min==1 AND parallel_force==0 AND polly_parallel==1,0,1.0,1.0,1.0,76,6.5612311363220215
+4,16.74171056004068,3750,memory_based = 1 AND min = 1 AND polly = 1 AND polly_opt_simplify_deps = 1,polly_opt_simplify_deps==0,0,0.0,0.0,0.0,76,4.735583782196045
+1,21.558716865938926,12000,pollyoptmaxconstantterm_100 = 1,pollyoptmaxconstantterm_100==0,0,0.0,0.0,0.0,77,6.092740058898926
+2,23.539284655333336,6000,polly_no_tiling = 1 AND pollyoptmaxconstantterm_10000 = 1,pollyoptmaxconstantterm_10000==0,0,0.0,0.0,0.0,77,6.119497299194336
+3,6.019462376325065,3000,max = 1 AND polly_no_tiling = 1 AND pollyoptmaxconstantterm_10 = 1,pollyoptmaxconstantterm_10==0,0,0.0,0.0,0.0,77,5.904731512069702
+4,17.284691413846495,5000,parallel = 1 AND polly_no_tiling = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,parallel==0,0,0.0,0.0,0.0,77,5.856572151184082
+1,7.889197028546191,12000,pollyoptmaxcoefficient_10000 = 1,pollyoptmaxcoefficient_10000==0,0,0.0,0.0,0.0,78,6.120275020599365
+2,25.95477780308553,6000,none = 1 AND pollyoptmaxconstantterm_1 = 1,pollyoptmaxcoefficient_10==0 AND pollyoptmaxcoefficient_10000==0 AND pollyoptmaxconstantterm_1==0 AND pollyoptmaxconstantterm_10==0 AND parallel==1 AND polly==1 AND polly_opt_simplify_deps==1,0,0.0,0.0,0.0,78,8.834579467773438
+3,28.649180683750576,3000,max = 1 AND pollyoptmaxcoefficient_10000 = 1 AND value_based = 1,pollyoptmaxcoefficient_10000==1 AND value_based==1 AND min==0,0,1.0,1.0,1.0,78,5.942751407623291
+4,21.210730149421064,3750,memory_based = 1 AND none = 1 AND polly_no_tiling = 1 AND polly_opt_simplify_deps = 1,value_based==1,0,0.0,0.0,0.0,78,5.394123554229736
+1,14.054143683808537,12000,pollyoptmaxconstantterm_1000 = 1,pollyoptmaxconstantterm_1000==0,0,0.0,0.0,0.0,79,6.18099570274353
+2,26.79484435358368,4000,parallel_force = 1 AND pollyoptmaxconstantterm_10000 = 1,pollydefaulttilesize==64 AND pollyoptmaxcoefficient_100==0 AND pollyoptmaxconstantterm_1==0 AND polly_parallel==0,0,0.0,0.0,0.0,79,7.041893482208252
+3,29.620905893748382,3000,memory_based = 1 AND min = 1 AND pollyoptmaxconstantterm_10 = 1,pollyoptmaxconstantterm_10==1 AND value_based==0 AND min==1,0,1.0,1.0,1.0,79,6.027125835418701
+4,30.05620683295502,5000,none = 1 AND parallel = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,parallel_force==0 AND polly==0 AND polly_opt_simplify_deps==1 AND polly_parallel==1,0,1.0,1.0,1.0,79,7.41318941116333
+1,25.94999105553075,12000,pollyoptmaxconstantterm_100 = 1,pollyoptmaxcoefficient_1000==0 AND pollyoptmaxconstantterm_100==0,0,0.0,0.0,0.0,8,7.371198654174805
+2,15.243338323131375,6000,polly = 1 AND pollyoptmaxconstantterm_100 = 1,pollyoptmaxconstantterm_100==0,0,0.0,0.0,0.0,8,6.38939905166626
+3,13.229574898178509,4000,memory_based = 1 AND polly_parallel = 1 AND pollyoptmaxconstantterm_10000 = 1,pollyoptmaxconstantterm_10000==0,0,0.0,0.0,0.0,8,6.2871458530426025
+4,26.90958899246097,5000,min = 1 AND none = 1 AND parallel_force = 1 AND polly_parallel = 1,pollyoptmaxcoefficient_1000==1 AND pollyoptmaxconstantterm_10==1 AND value_based==0 AND polly==1,0,0.0,0.0,0.0,8,6.220743417739868
+1,22.093500372604428,12000,pollyoptmaxcoefficient_100 = 1,pollyoptmaxcoefficient_100==0,0,0.0,0.0,0.0,80,6.125544309616089
+2,30.38596365560836,10000,none = 1 AND parallel_force = 1,parallel_force==1 AND polly==0,0,1.0,1.0,1.0,80,6.44848370552063
+3,10.68668932658699,3000,memory_based = 1 AND polly = 1 AND pollyoptmaxcoefficient_10 = 1,pollyoptmaxcoefficient_10==0,0,0.0,0.0,0.0,80,5.621265411376953
+4,14.97387572870503,5000,min = 1 AND parallel_force = 1 AND polly = 1 AND polly_parallel = 1,parallel_force==0,0,0.0,0.0,0.0,80,5.013192176818848
+1,18.15322085797637,12000,pollyoptmaxconstantterm_1 = 1,pollyoptmaxconstantterm_1==0,0,0.0,0.0,0.0,81,6.171860933303833
+2,26.83022374416911,6000,memory_based = 1 AND pollyrtcmaxparameters = 8,pollyoptmaxcoefficient_10==0 AND pollyoptmaxconstantterm_1==0 AND pollyoptmaxconstantterm_100==0 AND min==1 AND parallel==0 AND polly_no_tiling==1,4,0.0888888888888888,0.1,0.08,81,7.776425123214722
+3,21.116215529893147,3000,max = 1 AND polly_no_tiling = 1 AND pollyoptmaxcoefficient_1 = 1,pollyoptmaxcoefficient_1==0,0,0.0,0.0,0.0,81,5.823276281356812
+4,12.321380723534126,5000,parallel = 1 AND polly_no_tiling = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,parallel==0,0,0.0,0.0,0.0,81,5.449744939804077
+1,11.31955533268036,12000,pollyoptmaxconstantterm_10000 = 1,pollyoptmaxconstantterm_10000==0,0,0.0,0.0,0.0,82,6.039852380752564
+2,21.732141757647653,4000,parallel_force = 1 AND pollydefaulttilesize = 256,parallel_force==0,0,0.0,0.0,0.0,82,6.085366249084473
+3,10.969801555953884,5000,min = 1 AND parallel_force = 1 AND polly = 1,parallel_force==0,0,0.0,0.0,0.0,82,5.603118181228638
+4,5.765654705975479,5000,min = 1 AND polly = 1 AND polly_parallel = 1 AND value_based = 1,min==0,0,0.0,0.0,0.0,82,4.791931867599487
+1,18.676711637393847,12000,pollyoptmaxcoefficient_1 = 1,pollyoptmaxcoefficient_1==0,0,0.0,0.0,0.0,83,6.160208940505981
+2,13.576436772548984,6000,polly = 1 AND pollyoptmaxcoefficient_10 = 1,pollyoptmaxcoefficient_10==0,0,0.0,0.0,0.0,83,6.119093894958496
+3,18.486360242353744,3000,polly_opt_simplify_deps = 1 AND pollyoptmaxconstantterm_1000 = 1 AND value_based = 1,pollyoptmaxconstantterm_1000==0,0,0.0,0.0,0.0,83,5.802289724349976
+4,18.19950345499825,5000,min = 1 AND parallel_force = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,parallel_force==0,0,0.0,0.0,0.0,83,5.592952489852905
+1,15.348511494137425,12000,pollyoptmaxconstantterm_100 = 1,pollyoptmaxconstantterm_100==0,0,0.0,0.0,0.0,84,6.113266229629517
+2,29.130634115637363,6000,polly = 1 AND pollyoptmaxcoefficient_10000 = 1,pollyoptmaxcoefficient_10000==1 AND polly==1,0,1.0,1.0,1.0,84,5.931837320327759
+3,16.59502011470242,7500,memory_based = 1 AND none = 1 AND polly_opt_simplify_deps = 1,polly_opt_simplify_deps==0,0,0.0,0.0,0.0,84,4.893619537353516
+4,28.4238450621791,5000,memory_based = 1 AND polly = 1 AND polly_no_tiling = 1 AND polly_parallel = 1,value_based==0 AND polly==1 AND polly_no_tiling==1 AND polly_parallel==1,0,1.0,1.0,1.0,84,8.129474639892578
+1,10.34155678659149,12000,pollydefaulttilesize = 64,pollydefaulttilesize==256,0,0.0,0.0,0.0,85,3.702714443206787
+2,19.13677587083976,6000,polly = 1 AND pollyoptmaxconstantterm_1000 = 1,pollyoptmaxconstantterm_1000==0,0,0.0,0.0,0.0,85,6.11028265953064
+3,9.701255400823282,3000,polly_opt_simplify_deps = 1 AND pollyoptmaxconstantterm_10 = 1 AND value_based = 1,pollyoptmaxconstantterm_10==0,0,0.0,0.0,0.0,85,6.079447269439697
+4,5.937392814886863,3750,max = 1 AND polly = 1 AND polly_no_tiling = 1 AND polly_opt_simplify_deps = 1,polly_opt_simplify_deps==0,0,0.0,0.0,0.0,85,4.819408416748047
+1,29.79894559722321,12000,pollyoptmaxcoefficient_1 = 1,pollyoptmaxcoefficient_1==1,0,1.0,1.0,1.0,86,5.484298944473267
+2,15.74183626915362,6000,polly_no_tiling = 1 AND pollyoptmaxconstantterm_10 = 1,pollyoptmaxconstantterm_10==0,0,0.0,0.0,0.0,86,6.287237167358398
+3,30.243537467242167,3000,memory_based = 1 AND polly_no_tiling = 1 AND pollyoptmaxcoefficient_10 = 1,pollyoptmaxcoefficient_10==1 AND value_based==0 AND polly_no_tiling==1,0,1.0,1.0,1.0,86,6.607805252075195
+4,30.26741410200925,5000,memory_based = 1 AND min = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,value_based==0 AND min==1 AND polly_opt_simplify_deps==1 AND polly_parallel==1,0,1.0,1.0,1.0,86,7.912653923034668
+1,13.758896901043984,12000,pollyoptmaxconstantterm_10 = 1,pollyoptmaxconstantterm_10==0,0,0.0,0.0,0.0,87,6.273833274841309
+2,8.811487978375293,6000,polly_opt_simplify_deps = 1 AND pollyoptmaxconstantterm_10 = 1,pollyoptmaxconstantterm_10==0,0,0.0,0.0,0.0,87,6.474703311920166
+3,19.24838821211522,4000,polly_no_tiling = 1 AND polly_parallel = 1 AND pollyoptmaxcoefficient_1 = 1,pollyoptmaxcoefficient_1==0,0,0.0,0.0,0.0,87,6.28356409072876
+4,16.08880958500979,5000,parallel_force = 1 AND polly = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1,parallel_force==0,0,0.0,0.0,0.0,87,5.881316184997559
+1,14.345555199176973,12000,pollyrtcmaxparameters = 1,pollyrtcmaxparameters==2,0,0.0,0.0,0.0,88,3.783907890319824
+2,20.83516730454676,15000,memory_based = 1 AND min = 1,min==0,0,0.0,0.0,0.0,88,5.212798833847046
+3,25.76633462485085,3000,memory_based = 1 AND none = 1 AND pollyoptmaxconstantterm_10000 = 1,pollyoptmaxcoefficient_10==0 AND pollyoptmaxcoefficient_1000==0 AND parallel_force==0 AND polly==1 AND polly_opt_simplify_deps==0,0,0.0,0.0,0.0,88,7.77780294418335
+4,24.867518042379917,5000,max = 1 AND memory_based = 1 AND parallel_force = 1 AND polly_parallel = 1,value_based==1 AND polly_no_tiling==1,0,0.0,0.0,0.0,88,6.156031608581543
+1,27.87676780852123,12000,pollyrtcmaxparameters = 16,pollyrtcmaxparameters==16,0,1.0,1.0,1.0,89,4.318017721176148
+2,10.832259380895616,6000,pollyoptmaxcoefficient_100 = 1 AND value_based = 1,pollyoptmaxcoefficient_100==0,0,0.0,0.0,0.0,89,6.116237163543701
+3,10.02349110133489,3000,none = 1 AND polly_opt_simplify_deps = 1 AND pollyoptmaxcoefficient_1000 = 1,pollyoptmaxcoefficient_1000==0,0,0.0,0.0,0.0,89,5.748839378356934
+4,14.228951699288825,3750,memory_based = 1 AND min = 1 AND none = 1 AND polly_no_tiling = 1,value_based==1,0,0.0,0.0,0.0,89,4.776778697967529
+1,14.162854525010204,12000,pollyoptmaxconstantterm_100 = 1,pollyoptmaxconstantterm_100==0,0,0.0,0.0,0.0,9,6.253552436828613
+2,8.139692770373284,6000,polly_no_tiling = 1 AND pollyoptmaxcoefficient_10 = 1,pollyoptmaxcoefficient_10==0,0,0.0,0.0,0.0,9,6.4035727977752686
+3,20.87843924914251,3000,polly_opt_simplify_deps = 1 AND pollyoptmaxconstantterm_10000 = 1 AND value_based = 1,pollyoptmaxconstantterm_10000==0,0,0.0,0.0,0.0,9,5.416795253753662
+4,20.34075759293749,5000,parallel_force = 1 AND polly_opt_simplify_deps = 1 AND polly_parallel = 1 AND value_based = 1,parallel_force==0,0,0.0,0.0,0.0,9,5.743938684463501
+1,30.27101330037697,12000,pollyrtcmaxparameters = 4,pollyrtcmaxparameters==4,0,1.0,1.0,1.0,90,4.301605701446533
+2,13.659702668672749,6000,memory_based = 1 AND pollyoptmaxconstantterm_100 = 1,pollyoptmaxconstantterm_100==0,0,0.0,0.0,0.0,90,6.0284833908081055
+3,7.811642536509586,3000,memory_based = 1 AND min = 1 AND pollyrtcmaxparameters = 8,min==0,0,0.0,0.0,0.0,90,4.96203351020813
+4,24.76768924379738,5000,none = 1 AND polly_no_tiling = 1 AND polly_parallel = 1 AND value_based = 1,pollyoptmaxcoefficient_100==0 AND pollyoptmaxconstantterm_100==0 AND value_based==0 AND polly_parallel==1,0,0.0,0.0,0.0,90,7.113438367843628
+1,22.634698326820526,12000,pollyoptmaxconstantterm_1 = 1,pollyoptmaxconstantterm_1==0,0,0.0,0.0,0.0,91,5.988144636154175
+2,23.00294212799435,6000,memory_based = 1 AND pollyoptmaxcoefficient_100 = 1,pollyoptmaxcoefficient_100==0,0,0.0,0.0,0.0,91,6.164643526077271
+3,18.5020003706327,3000,max = 1 AND memory_based = 1 AND pollyoptmaxconstantterm_100 = 1,pollyoptmaxconstantterm_100==0,0,0.0,0.0,0.0,91,5.636004686355591
+4,16.982749762238846,3750,none = 1 AND polly_no_tiling = 1 AND polly_opt_simplify_deps = 1 AND value_based = 1,polly_opt_simplify_deps==0,0,0.0,0.0,0.0,91,4.78128981590271
+1,21.256104899149715,12000,pollyoptmaxconstantterm_1000 = 1,pollyoptmaxconstantterm_1000==0,0,0.0,0.0,0.0,92,6.548814535140991
+2,10.655069156926563,6000,polly = 1 AND pollyoptmaxcoefficient_1000 = 1,pollyoptmaxcoefficient_1000==0,0,0.0,0.0,0.0,92,6.464802980422974
+3,9.390900258587282,4000,min = 1 AND polly_parallel = 1 AND pollyoptmaxcoefficient_1 = 1,pollyoptmaxcoefficient_1==0,0,0.0,0.0,0.0,92,6.417412281036377
+4,18.16720604354729,5000,parallel_force = 1 AND polly = 1 AND polly_parallel = 1 AND value_based = 1,parallel_force==0,0,0.0,0.0,0.0,92,5.988782167434692
+1,15.97907108654124,12000,pollyoptmaxcoefficient_10 = 1,pollyoptmaxcoefficient_10==0,0,0.0,0.0,0.0,93,6.015956878662109
+2,18.92239754179051,15000,memory_based = 1 AND polly = 1,value_based==1,0,0.0,0.0,0.0,93,5.063822746276856
+3,20.51807621503308,4000,polly_no_tiling = 1 AND polly_parallel = 1 AND pollyoptmaxconstantterm_10 = 1,pollyoptmaxconstantterm_10==0,0,0.0,0.0,0.0,93,5.928309440612793
+4,22.1769910630726,5000,min = 1 AND none = 1 AND polly_no_tiling = 1 AND polly_parallel = 1,polly_no_tiling==0,0,0.0,0.0,0.0,93,5.062782287597656
+1,17.800684650733988,12000,pollyoptmaxcoefficient_10 = 1,pollyoptmaxcoefficient_10==0,0,0.0,0.0,0.0,94,6.031426429748535
+2,19.205839180741865,6000,max = 1 AND pollyoptmaxcoefficient_1 = 1,pollyoptmaxcoefficient_1==0,0,0.0,0.0,0.0,94,5.996607065200806
+3,16.20576045813468,3000,none = 1 AND polly_opt_simplify_deps = 1 AND pollyoptmaxcoefficient_100 = 1,pollyoptmaxcoefficient_100==0,0,0.0,0.0,0.0,94,5.781949758529663
+4,21.96838709902162,5000,min = 1 AND parallel = 1 AND polly_parallel = 1 AND value_based = 1,parallel==0,0,0.0,0.0,0.0,94,5.513822078704834
+1,10.923066610048588,12000,pollyoptmaxcoefficient_10 = 1,pollyoptmaxcoefficient_10==0,0,0.0,0.0,0.0,95,6.147067546844482
+2,26.207877728121293,6000,pollyoptmaxconstantterm_1000 = 1 AND value_based = 1,pollyoptmaxcoefficient_10000==0 AND pollyoptmaxconstantterm_10==0 AND pollyoptmaxconstantterm_1000==0 AND pollyrtcmaxparameters==16 AND polly_no_tiling==0,0,0.0,0.0,0.0,95,7.811975002288818
+3,12.38009969275456,3000,none = 1 AND polly_no_tiling = 1 AND pollyoptmaxcoefficient_10 = 1,pollyoptmaxcoefficient_10==0,0,0.0,0.0,0.0,95,5.95393705368042
+4,14.811326274290366,5000,max = 1 AND none = 1 AND parallel = 1 AND polly_parallel = 1,parallel==0,0,0.0,0.0,0.0,95,5.2379150390625
+1,20.250625377528834,12000,pollyoptmaxcoefficient_1000 = 1,pollyoptmaxcoefficient_1000==0,0,0.0,0.0,0.0,96,6.241848707199097
+2,15.528421063245062,6000,polly = 1 AND pollyoptmaxcoefficient_1000 = 1,pollyoptmaxcoefficient_1000==0,0,0.0,0.0,0.0,96,6.097493886947632
+3,13.303786466032133,5000,min = 1 AND parallel = 1 AND polly_no_tiling = 1,parallel==0,0,0.0,0.0,0.0,96,5.992159366607666
+4,14.810330157335033,5000,memory_based = 1 AND none = 1 AND parallel = 1 AND polly_parallel = 1,parallel==0,0,0.0,0.0,0.0,96,5.505094051361084
+1,12.500104450373374,12000,pollydefaulttilesize = 64,pollydefaulttilesize==16,0,0.0,0.0,0.0,97,3.703831672668457
+2,17.049410002853815,6000,memory_based = 1 AND pollyoptmaxcoefficient_10 = 1,pollyoptmaxcoefficient_10==0,0,0.0,0.0,0.0,97,6.053179740905762
+3,13.504927476517228,3000,memory_based = 1 AND polly = 1 AND pollydefaulttilesize = 4,value_based==1,0,0.0,0.0,0.0,97,4.949811935424805
+4,6.648249903446032,3750,max = 1 AND none = 1 AND polly_no_tiling = 1 AND value_based = 1,value_based==0,0,0.0,0.0,0.0,97,4.807177543640137
+1,21.32805292536612,12000,pollyoptmaxconstantterm_100 = 1,pollyoptmaxconstantterm_100==0,0,0.0,0.0,0.0,98,6.081666469573975
+2,11.294602060682024,15000,min = 1 AND value_based = 1,value_based==0,0,0.0,0.0,0.0,98,5.064069747924805
+3,9.362801873214837,5000,min = 1 AND parallel_force = 1 AND polly = 1,parallel_force==0,0,0.0,0.0,0.0,98,5.752965211868286
+4,6.5254885608037805,5000,memory_based = 1 AND none = 1 AND polly_no_tiling = 1 AND polly_parallel = 1,polly_no_tiling==0,0,0.0,0.0,0.0,98,4.69727087020874
+1,30.424439023497392,12000,pollydefaulttilesize = 16,pollydefaulttilesize==16,0,1.0,1.0,1.0,99,4.28053879737854
+2,28.169010807640458,15000,max = 1 AND none = 1,min==0 AND polly==0,0,1.0,1.0,1.0,99,6.420701503753662
+3,14.411897335676668,7500,min = 1 AND polly_no_tiling = 1 AND value_based = 1,min==0,0,0.0,0.0,0.0,99,4.882808208465576
+4,16.688137492281893,3750,min = 1 AND polly_no_tiling = 1 AND polly_opt_simplify_deps = 1 AND value_based = 1,polly_opt_simplify_deps==0,0,0.0,0.0,0.0,99,4.668455362319946

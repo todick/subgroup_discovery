@@ -1,0 +1,2 @@
+num_features,num_samples,sgs_unique,sgs_mean_jaccard,sgs_mean_overlap_coefficient,coverage_mean,coverage_total,rule_features_used,rule_feature_frequency,rule_num_features,rule_length_mean,rule_length_max,rule_length_min
+13,1010,4,0.0,0.0,0.25,1.0,"['proof', 'debug_ref_count']","[('proof', 5), ('debug_ref_count', 5)]",2,2.0,2.0,2.0

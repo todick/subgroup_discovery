@@ -1,0 +1,301 @@
+n_conditions,sg_mean,sg_cardinality,sg_rule,best_rule,best_rule_idx,f1,precision,recall,seed,runtime
+2,234.19816678156752,256,inline = 1 AND licm = 1,inline==1 AND licm==1,0,1.0,1.0,1.0,0,0.2325894832611084
+3,254.28141509295165,128,ipsccp = 1 AND jump_threading = 1 AND print_used_types = 1,ipsccp==1 AND jump_threading==1 AND print_used_types==1,0,1.0,1.0,1.0,0,0.2391343116760254
+4,217.99136771106168,64,inline = 1 AND instcombine = 1 AND licm = 1 AND simplifycfg = 1,inline==1 AND instcombine==1 AND licm==1 AND simplifycfg==1,0,1.0,1.0,1.0,0,0.2362763881683349
+2,253.87155934823437,256,gvn = 1 AND iv_users = 1,gvn==1 AND iv_users==1,0,1.0,1.0,1.0,1,0.2206072807312011
+3,259.36794933665124,128,ipsccp = 1 AND licm = 1 AND sccp = 1,ipsccp==1 AND licm==1 AND sccp==1,0,1.0,1.0,1.0,1,0.2238445281982422
+4,263.2576642057184,64,gvn = 1 AND instcombine = 1 AND licm = 1 AND sccp = 1,gvn==1 AND instcombine==1 AND licm==1 AND sccp==1,0,1.0,1.0,1.0,1,0.2232794761657714
+2,259.6777809281276,256,iv_users = 1 AND jump_threading = 1,iv_users==1 AND jump_threading==1,0,1.0,1.0,1.0,10,0.2342526912689209
+3,217.4238108331653,128,inline = 1 AND ipsccp = 1 AND licm = 1,inline==1 AND ipsccp==1 AND licm==1,0,1.0,1.0,1.0,10,0.2379121780395507
+4,232.42905145647896,64,gvn = 1 AND inline = 1 AND licm = 1 AND simplifycfg = 1,gvn==1 AND inline==1 AND licm==1 AND simplifycfg==1,0,1.0,1.0,1.0,10,0.2360608577728271
+2,210.9178614959505,256,iv_users = 1 AND licm = 1,iv_users==1 AND licm==1,0,1.0,1.0,1.0,11,0.2267875671386718
+3,229.2149224361173,128,ipsccp = 1 AND licm = 1 AND print_used_types = 1,ipsccp==1 AND licm==1 AND print_used_types==1,0,1.0,1.0,1.0,11,0.2322196960449218
+4,204.70277736115253,64,inline = 1 AND iv_users = 1 AND print_used_types = 1 AND sccp = 1,licm==1,4,0.1111111111111111,0.0625,0.5,11,0.1255309581756591
+2,247.2197738559156,256,jump_threading = 1 AND sccp = 1,jump_threading==1 AND sccp==1,0,1.0,1.0,1.0,12,0.2199056148529052
+3,248.7743427112132,128,gvn = 1 AND licm = 1 AND sccp = 1,gvn==1 AND licm==1 AND sccp==1,0,1.0,1.0,1.0,12,0.2216126918792724
+4,241.00354629828888,64,gvn = 1 AND inline = 1 AND ipsccp = 1 AND sccp = 1,gvn==1 AND inline==1 AND ipsccp==1 AND sccp==1,0,1.0,1.0,1.0,12,0.2209467887878418
+2,238.2690509920203,256,print_used_types = 1 AND sccp = 1,print_used_types==1 AND sccp==1,0,1.0,1.0,1.0,13,0.23622727394104
+3,241.9269766491124,128,inline = 1 AND iv_users = 1 AND simplifycfg = 1,inline==1 AND iv_users==1 AND simplifycfg==1,0,1.0,1.0,1.0,13,0.2489776611328125
+4,236.67453718209515,64,inline = 1 AND instcombine = 1 AND ipsccp = 1 AND iv_users = 1,inline==1 AND instcombine==1 AND ipsccp==1 AND iv_users==1,0,1.0,1.0,1.0,13,0.2432208061218261
+2,245.85715311307237,256,print_used_types = 1 AND sccp = 1,print_used_types==1 AND sccp==1,0,1.0,1.0,1.0,14,0.2285170555114746
+3,235.47506373906623,128,gvn = 1 AND inline = 1 AND simplifycfg = 1,gvn==1 AND inline==1 AND simplifycfg==1,0,1.0,1.0,1.0,14,0.2372448444366455
+4,255.1817267832163,64,inline = 1 AND iv_users = 1 AND licm = 1 AND simplifycfg = 1,inline==1 AND iv_users==1 AND licm==1 AND simplifycfg==1,0,1.0,1.0,1.0,14,0.232555866241455
+2,218.09079008041323,256,gvn = 1 AND iv_users = 1,gvn==1 AND iv_users==1,0,1.0,1.0,1.0,15,0.2271053791046142
+3,253.4474810774765,128,iv_users = 1 AND jump_threading = 1 AND sccp = 1,iv_users==1 AND jump_threading==1 AND sccp==1,0,1.0,1.0,1.0,15,0.2263555526733398
+4,217.52299844372783,64,inline = 1 AND iv_users = 1 AND jump_threading = 1 AND print_used_types = 1,inline==1 AND iv_users==1 AND jump_threading==1 AND print_used_types==1,0,1.0,1.0,1.0,15,0.2294607162475586
+2,226.4794270726021,256,iv_users = 1 AND simplifycfg = 1,iv_users==1 AND simplifycfg==1,0,1.0,1.0,1.0,16,0.2165665626525879
+3,220.67618409317052,128,ipsccp = 1 AND licm = 1 AND print_used_types = 1,ipsccp==1 AND licm==1 AND print_used_types==1,0,1.0,1.0,1.0,16,0.218069314956665
+4,236.62786365953835,64,inline = 1 AND instcombine = 1 AND jump_threading = 1 AND print_used_types = 1,inline==1 AND instcombine==1 AND jump_threading==1 AND print_used_types==1,0,1.0,1.0,1.0,16,0.2182235717773437
+2,215.7876692085047,256,sccp = 1 AND simplifycfg = 1,sccp==1 AND simplifycfg==1,0,1.0,1.0,1.0,17,0.21726655960083
+3,255.5510692034941,128,inline = 1 AND jump_threading = 1 AND print_used_types = 1,inline==1 AND jump_threading==1 AND print_used_types==1,0,1.0,1.0,1.0,17,0.2171094417572021
+4,227.38426453221277,64,inline = 1 AND licm = 1 AND print_used_types = 1 AND simplifycfg = 1,licm==1,0,0.2222222222222222,0.125,1.0,17,0.1187446117401123
+2,233.29564529199152,256,iv_users = 1 AND print_used_types = 1,iv_users==1 AND print_used_types==1,0,1.0,1.0,1.0,18,0.2206075191497802
+3,217.32909401569515,128,instcombine = 1 AND iv_users = 1 AND simplifycfg = 1,instcombine==1 AND iv_users==1 AND simplifycfg==1,0,1.0,1.0,1.0,18,0.2194151878356933
+4,236.01905602467505,64,gvn = 1 AND ipsccp = 1 AND jump_threading = 1 AND sccp = 1,gvn==1 AND ipsccp==1 AND jump_threading==1 AND sccp==1,0,1.0,1.0,1.0,18,0.2237834930419922
+2,255.9027179530181,256,inline = 1 AND print_used_types = 1,inline==1 AND print_used_types==1,0,1.0,1.0,1.0,19,0.2154278755187988
+3,224.54282370688335,128,ipsccp = 1 AND jump_threading = 1 AND licm = 1,ipsccp==1 AND jump_threading==1 AND licm==1,0,1.0,1.0,1.0,19,0.2148778438568115
+4,216.2081058578391,64,instcombine = 1 AND ipsccp = 1 AND licm = 1 AND print_used_types = 1,licm==1,2,0.2222222222222222,0.125,1.0,19,0.1255643367767334
+2,235.45548155746343,256,licm = 1 AND simplifycfg = 1,licm==1 AND simplifycfg==1,0,1.0,1.0,1.0,2,0.2249178886413574
+3,256.9443495911643,128,inline = 1 AND instcombine = 1 AND sccp = 1,inline==1 AND instcombine==1 AND sccp==1,0,1.0,1.0,1.0,2,0.2220473289489746
+4,252.5292886471009,64,gvn = 1 AND instcombine = 1 AND licm = 1 AND sccp = 1,gvn==1 AND instcombine==1 AND licm==1 AND sccp==1,0,1.0,1.0,1.0,2,0.2258491516113281
+2,211.22967909576565,256,gvn = 1 AND simplifycfg = 1,gvn==1 AND simplifycfg==1,0,1.0,1.0,1.0,20,0.2227725982666015
+3,242.6874325066553,128,inline = 1 AND jump_threading = 1 AND licm = 1,inline==1 AND jump_threading==1 AND licm==1,0,1.0,1.0,1.0,20,0.2262978553771972
+4,252.9705903805203,64,inline = 1 AND jump_threading = 1 AND print_used_types = 1 AND simplifycfg = 1,inline==1 AND jump_threading==1 AND print_used_types==1 AND simplifycfg==1,0,1.0,1.0,1.0,20,0.233306884765625
+2,228.45761177296015,256,iv_users = 1 AND jump_threading = 1,iv_users==1 AND jump_threading==1,0,1.0,1.0,1.0,21,0.229299783706665
+3,211.9711836563964,128,ipsccp = 1 AND jump_threading = 1 AND licm = 1,ipsccp==1 AND jump_threading==1 AND licm==1,0,1.0,1.0,1.0,21,0.2323031425476074
+4,234.3515235129181,64,gvn = 1 AND ipsccp = 1 AND iv_users = 1 AND sccp = 1,gvn==1 AND ipsccp==1 AND iv_users==1 AND sccp==1,0,1.0,1.0,1.0,21,0.2320189476013183
+2,261.0126494096761,256,print_used_types = 1 AND simplifycfg = 1,print_used_types==1 AND simplifycfg==1,0,1.0,1.0,1.0,22,0.2246668338775634
+3,257.04010308745745,128,gvn = 1 AND jump_threading = 1 AND licm = 1,gvn==1 AND jump_threading==1 AND licm==1,0,1.0,1.0,1.0,22,0.224694013595581
+4,218.4748233733197,64,gvn = 1 AND inline = 1 AND jump_threading = 1 AND sccp = 1,gvn==1 AND inline==1 AND jump_threading==1 AND sccp==1,0,1.0,1.0,1.0,22,0.2294158935546875
+2,226.32224893785883,256,jump_threading = 1 AND sccp = 1,jump_threading==1 AND sccp==1,0,1.0,1.0,1.0,23,0.2257091999053955
+3,221.2079074612616,128,instcombine = 1 AND jump_threading = 1 AND simplifycfg = 1,instcombine==1 AND jump_threading==1 AND simplifycfg==1,0,1.0,1.0,1.0,23,0.228555679321289
+4,266.55460370572257,64,gvn = 1 AND iv_users = 1 AND licm = 1 AND sccp = 1,jump_threading==1,4,0.1111111111111111,0.0625,0.5,23,0.1241509914398193
+2,245.3622780169232,256,instcombine = 1 AND sccp = 1,instcombine==1 AND sccp==1,0,1.0,1.0,1.0,24,0.2298898696899414
+3,224.00760870778183,128,inline = 1 AND iv_users = 1 AND sccp = 1,inline==1 AND iv_users==1 AND sccp==1,0,1.0,1.0,1.0,24,0.2321290969848632
+4,235.0244437344336,64,ipsccp = 1 AND jump_threading = 1 AND sccp = 1 AND simplifycfg = 1,ipsccp==1 AND jump_threading==1 AND sccp==1 AND simplifycfg==1,0,1.0,1.0,1.0,24,0.2315902709960937
+2,256.74387081753173,256,instcombine = 1 AND print_used_types = 1,instcombine==1 AND print_used_types==1,0,1.0,1.0,1.0,25,0.2195079326629638
+3,251.65397471483448,128,gvn = 1 AND iv_users = 1 AND jump_threading = 1,gvn==1 AND iv_users==1 AND jump_threading==1,0,1.0,1.0,1.0,25,0.2235114574432373
+4,226.6614734637732,64,gvn = 1 AND inline = 1 AND jump_threading = 1 AND print_used_types = 1,gvn==1,0,0.2222222222222222,0.125,1.0,25,0.1215629577636718
+2,210.4959139014862,256,inline = 1 AND iv_users = 1,inline==1 AND iv_users==1,0,1.0,1.0,1.0,26,0.235414981842041
+3,231.5616854694544,128,gvn = 1 AND instcombine = 1 AND ipsccp = 1,gvn==1 AND instcombine==1 AND ipsccp==1,0,1.0,1.0,1.0,26,0.2481417655944824
+4,210.0584980650433,64,inline = 1 AND instcombine = 1 AND ipsccp = 1 AND print_used_types = 1,inline==1 AND instcombine==1 AND ipsccp==1 AND print_used_types==1,0,1.0,1.0,1.0,26,0.2404453754425048
+2,223.4649824991366,256,iv_users = 1 AND jump_threading = 1,iv_users==1 AND jump_threading==1,0,1.0,1.0,1.0,27,0.2190003395080566
+3,263.80090089373624,128,iv_users = 1 AND jump_threading = 1 AND simplifycfg = 1,iv_users==1 AND jump_threading==1 AND simplifycfg==1,0,1.0,1.0,1.0,27,0.2187914848327636
+4,205.7278844749068,64,inline = 1 AND ipsccp = 1 AND licm = 1 AND simplifycfg = 1,inline==1 AND ipsccp==1 AND licm==1 AND simplifycfg==1,0,1.0,1.0,1.0,27,0.2211482524871826
+2,219.33789448507525,256,instcombine = 1 AND print_used_types = 1,instcombine==1 AND print_used_types==1,0,1.0,1.0,1.0,28,0.2179977893829345
+3,252.09183872508817,128,jump_threading = 1 AND print_used_types = 1 AND sccp = 1,jump_threading==1 AND print_used_types==1 AND sccp==1,0,1.0,1.0,1.0,28,0.2297155857086181
+4,210.6644317419785,64,gvn = 1 AND ipsccp = 1 AND print_used_types = 1 AND sccp = 1,gvn==1 AND ipsccp==1 AND print_used_types==1 AND sccp==1,0,1.0,1.0,1.0,28,0.2194232940673828
+2,216.64030523349385,256,licm = 1 AND simplifycfg = 1,licm==1 AND simplifycfg==1,0,1.0,1.0,1.0,29,0.2367660999298095
+3,230.3242880864278,128,inline = 1 AND instcombine = 1 AND sccp = 1,inline==1 AND instcombine==1 AND sccp==1,0,1.0,1.0,1.0,29,0.2368288040161132
+4,216.75901862515,64,inline = 1 AND ipsccp = 1 AND iv_users = 1 AND simplifycfg = 1,ipsccp==1,1,0.2222222222222222,0.125,1.0,29,0.1314246654510498
+2,237.5000070679709,256,inline = 1 AND jump_threading = 1,inline==1 AND jump_threading==1,0,1.0,1.0,1.0,3,0.2264490127563476
+3,238.9212998969868,128,iv_users = 1 AND jump_threading = 1 AND simplifycfg = 1,iv_users==1 AND jump_threading==1 AND simplifycfg==1,0,1.0,1.0,1.0,3,0.239943265914917
+4,251.70968243445637,64,instcombine = 1 AND iv_users = 1 AND sccp = 1 AND simplifycfg = 1,iv_users==1,2,0.2222222222222222,0.125,1.0,3,0.1238574981689453
+2,209.9925946218981,256,jump_threading = 1 AND simplifycfg = 1,jump_threading==1 AND simplifycfg==1,0,1.0,1.0,1.0,30,0.2332675457000732
+3,243.9437772619036,128,gvn = 1 AND inline = 1 AND ipsccp = 1,gvn==1 AND inline==1 AND ipsccp==1,0,1.0,1.0,1.0,30,0.2342159748077392
+4,230.00048124538884,64,inline = 1 AND jump_threading = 1 AND sccp = 1 AND simplifycfg = 1,inline==1 AND jump_threading==1 AND sccp==1 AND simplifycfg==1,0,1.0,1.0,1.0,30,0.2364022731781005
+2,251.48801520790715,256,ipsccp = 1 AND licm = 1,ipsccp==1 AND licm==1,0,1.0,1.0,1.0,31,0.2204854488372802
+3,252.61903377764764,128,inline = 1 AND licm = 1 AND sccp = 1,inline==1 AND licm==1 AND sccp==1,0,1.0,1.0,1.0,31,0.2181982994079589
+4,249.01085327661752,64,gvn = 1 AND ipsccp = 1 AND iv_users = 1 AND simplifycfg = 1,gvn==1 AND ipsccp==1 AND iv_users==1 AND simplifycfg==1,0,1.0,1.0,1.0,31,0.2237987518310547
+2,226.10445494835284,256,inline = 1 AND sccp = 1,inline==1 AND sccp==1,0,1.0,1.0,1.0,32,0.2233922481536865
+3,266.14584225945066,128,gvn = 1 AND jump_threading = 1 AND sccp = 1,gvn==1 AND jump_threading==1 AND sccp==1,0,1.0,1.0,1.0,32,0.2206549644470214
+4,217.39107478559447,64,ipsccp = 1 AND iv_users = 1 AND licm = 1 AND print_used_types = 1,print_used_types==1,0,0.2222222222222222,0.125,1.0,32,0.1222729682922363
+2,257.10432372896105,256,gvn = 1 AND licm = 1,gvn==1 AND licm==1,0,1.0,1.0,1.0,33,0.2445473670959472
+3,212.0545154837094,128,jump_threading = 1 AND print_used_types = 1 AND sccp = 1,jump_threading==1 AND print_used_types==1 AND sccp==1,0,1.0,1.0,1.0,33,0.2436583042144775
+4,222.2867723839326,64,licm = 1 AND print_used_types = 1 AND sccp = 1 AND simplifycfg = 1,licm==1 AND print_used_types==1 AND sccp==1 AND simplifycfg==1,0,1.0,1.0,1.0,33,0.2477538585662841
+2,213.5066915207112,256,inline = 1 AND instcombine = 1,inline==1 AND instcombine==1,0,1.0,1.0,1.0,34,0.2177314758300781
+3,208.79610775871157,128,gvn = 1 AND inline = 1 AND jump_threading = 1,gvn==1 AND inline==1 AND jump_threading==1,0,1.0,1.0,1.0,34,0.2171106338500976
+4,215.79418898377867,64,inline = 1 AND ipsccp = 1 AND jump_threading = 1 AND licm = 1,inline==1,4,0.2222222222222222,0.125,1.0,34,0.1191375255584716
+2,240.56698782423405,256,jump_threading = 1 AND licm = 1,jump_threading==1 AND licm==1,0,1.0,1.0,1.0,35,0.221614122390747
+3,205.89487466452752,128,gvn = 1 AND instcombine = 1 AND jump_threading = 1,gvn==1 AND instcombine==1 AND jump_threading==1,0,1.0,1.0,1.0,35,0.219642162322998
+4,243.55269486216287,64,inline = 1 AND instcombine = 1 AND ipsccp = 1 AND iv_users = 1,instcombine==1,0,0.2222222222222222,0.125,1.0,35,0.1220521926879882
+2,239.87907709681588,256,ipsccp = 1 AND jump_threading = 1,ipsccp==1 AND jump_threading==1,0,1.0,1.0,1.0,36,0.2170991897583007
+3,254.03478551170255,128,instcombine = 1 AND ipsccp = 1 AND licm = 1,instcombine==1 AND ipsccp==1 AND licm==1,0,1.0,1.0,1.0,36,0.2154576778411865
+4,249.38288032214967,64,ipsccp = 1 AND iv_users = 1 AND jump_threading = 1 AND print_used_types = 1,ipsccp==1 AND iv_users==1 AND jump_threading==1 AND print_used_types==1,0,1.0,1.0,1.0,36,0.2206556797027588
+2,208.54050330739545,256,inline = 1 AND licm = 1,inline==1 AND licm==1,0,1.0,1.0,1.0,37,0.2198874950408935
+3,226.1477042870158,128,inline = 1 AND ipsccp = 1 AND jump_threading = 1,inline==1 AND ipsccp==1 AND jump_threading==1,0,1.0,1.0,1.0,37,0.2225396633148193
+4,233.0253210176915,64,instcombine = 1 AND ipsccp = 1 AND jump_threading = 1 AND print_used_types = 1,instcombine==1 AND ipsccp==1 AND jump_threading==1 AND print_used_types==1,0,1.0,1.0,1.0,37,0.2226552963256836
+2,214.95269216144624,256,licm = 1 AND sccp = 1,licm==1 AND sccp==1,0,1.0,1.0,1.0,38,0.2198169231414795
+3,212.9523956224012,128,ipsccp = 1 AND jump_threading = 1 AND licm = 1,ipsccp==1 AND jump_threading==1 AND licm==1,0,1.0,1.0,1.0,38,0.2190666198730468
+4,240.30485477021668,64,gvn = 1 AND licm = 1 AND sccp = 1 AND simplifycfg = 1,gvn==1 AND licm==1 AND sccp==1 AND simplifycfg==1,0,1.0,1.0,1.0,38,0.2203807830810547
+2,243.7361774621113,256,gvn = 1 AND iv_users = 1,gvn==1 AND iv_users==1,0,1.0,1.0,1.0,39,0.2147688865661621
+3,206.39029530059705,128,iv_users = 1 AND jump_threading = 1 AND print_used_types = 1,iv_users==1 AND jump_threading==1 AND print_used_types==1,0,1.0,1.0,1.0,39,0.2141375541687011
+4,205.7415544748769,64,gvn = 1 AND print_used_types = 1 AND sccp = 1 AND simplifycfg = 1,jump_threading==0,4,0.1111111111111111,0.0625,0.5,39,0.1188108921051025
+2,263.2269990531365,256,iv_users = 1 AND print_used_types = 1,iv_users==1 AND print_used_types==1,0,1.0,1.0,1.0,4,0.2196660041809082
+3,213.76921025299265,128,gvn = 1 AND instcombine = 1 AND sccp = 1,gvn==1 AND instcombine==1 AND sccp==1,0,1.0,1.0,1.0,4,0.2176594734191894
+4,207.124941148926,64,gvn = 1 AND instcombine = 1 AND iv_users = 1 AND jump_threading = 1,licm==1,3,0.1111111111111111,0.0625,0.5,4,0.1197340488433837
+2,245.8132685425822,256,ipsccp = 1 AND jump_threading = 1,ipsccp==1 AND jump_threading==1,0,1.0,1.0,1.0,40,0.2311854362487793
+3,244.1212155059111,128,instcombine = 1 AND licm = 1 AND simplifycfg = 1,instcombine==1 AND licm==1 AND simplifycfg==1,0,1.0,1.0,1.0,40,0.2350974082946777
+4,243.09339624018656,64,inline = 1 AND licm = 1 AND sccp = 1 AND simplifycfg = 1,inline==1,0,0.2222222222222222,0.125,1.0,40,0.1266326904296875
+2,209.01163140332145,256,inline = 1 AND print_used_types = 1,inline==1 AND print_used_types==1,0,1.0,1.0,1.0,41,0.2180120944976806
+3,248.364819034596,128,inline = 1 AND ipsccp = 1 AND sccp = 1,inline==1 AND ipsccp==1 AND sccp==1,0,1.0,1.0,1.0,41,0.2266180515289306
+4,257.777928863449,64,instcombine = 1 AND iv_users = 1 AND jump_threading = 1 AND simplifycfg = 1,ipsccp==1,3,0.1111111111111111,0.0625,0.5,41,0.1188874244689941
+2,243.41532703383908,256,licm = 1 AND print_used_types = 1,licm==1 AND print_used_types==1,0,1.0,1.0,1.0,42,0.2200055122375488
+3,262.28064975451366,128,inline = 1 AND ipsccp = 1 AND jump_threading = 1,inline==1 AND ipsccp==1 AND jump_threading==1,0,1.0,1.0,1.0,42,0.2281782627105713
+4,260.91458924871614,64,gvn = 1 AND instcombine = 1 AND ipsccp = 1 AND licm = 1,gvn==1 AND instcombine==1 AND ipsccp==1 AND licm==1,0,1.0,1.0,1.0,42,0.2247302532196045
+2,242.6574941208923,256,ipsccp = 1 AND simplifycfg = 1,ipsccp==1 AND simplifycfg==1,0,1.0,1.0,1.0,43,0.2247450351715088
+3,239.3985691600764,128,inline = 1 AND instcombine = 1 AND licm = 1,inline==1 AND instcombine==1 AND licm==1,0,1.0,1.0,1.0,43,0.2348861694335937
+4,237.68268861118844,64,gvn = 1 AND inline = 1 AND ipsccp = 1 AND print_used_types = 1,gvn==1 AND inline==1 AND ipsccp==1 AND print_used_types==1,0,1.0,1.0,1.0,43,0.2265670299530029
+2,239.95033899898036,256,gvn = 1 AND print_used_types = 1,gvn==1 AND print_used_types==1,0,1.0,1.0,1.0,44,0.2233462333679199
+3,248.31873993054992,128,gvn = 1 AND jump_threading = 1 AND licm = 1,gvn==1 AND jump_threading==1 AND licm==1,0,1.0,1.0,1.0,44,0.2245237827301025
+4,248.5586012816175,64,iv_users = 1 AND licm = 1 AND print_used_types = 1 AND simplifycfg = 1,iv_users==1 AND licm==1 AND print_used_types==1 AND simplifycfg==1,0,1.0,1.0,1.0,44,0.2343194484710693
+2,262.773014408004,256,inline = 1 AND instcombine = 1,inline==1 AND instcombine==1,0,1.0,1.0,1.0,45,0.2278110980987548
+3,264.53150863716775,128,ipsccp = 1 AND iv_users = 1 AND sccp = 1,ipsccp==1 AND iv_users==1 AND sccp==1,0,1.0,1.0,1.0,45,0.2291786670684814
+4,226.80794815058016,64,inline = 1 AND ipsccp = 1 AND jump_threading = 1 AND sccp = 1,inline==1 AND ipsccp==1 AND jump_threading==1 AND sccp==1,0,1.0,1.0,1.0,45,0.2271292209625244
+2,204.0746983775456,256,gvn = 1 AND iv_users = 1,gvn==1 AND iv_users==1,0,1.0,1.0,1.0,46,0.2167036533355713
+3,220.9679787643654,128,jump_threading = 1 AND licm = 1 AND simplifycfg = 1,jump_threading==1 AND licm==1 AND simplifycfg==1,0,1.0,1.0,1.0,46,0.2196238040924072
+4,263.31453060626563,64,gvn = 1 AND jump_threading = 1 AND print_used_types = 1 AND simplifycfg = 1,inline==0,4,0.1111111111111111,0.0625,0.5,46,0.1186585426330566
+2,212.9091393596412,256,iv_users = 1 AND licm = 1,iv_users==1 AND licm==1,0,1.0,1.0,1.0,47,0.2189397811889648
+3,243.36560015763536,128,ipsccp = 1 AND sccp = 1 AND simplifycfg = 1,ipsccp==1 AND sccp==1 AND simplifycfg==1,0,1.0,1.0,1.0,47,0.2240211963653564
+4,229.48842742664172,64,gvn = 1 AND inline = 1 AND instcombine = 1 AND sccp = 1,gvn==1 AND inline==1 AND instcombine==1 AND sccp==1,0,1.0,1.0,1.0,47,0.2227826118469238
+2,206.9779348474516,256,iv_users = 1 AND jump_threading = 1,iv_users==1 AND jump_threading==1,0,1.0,1.0,1.0,48,0.2245764732360839
+3,258.8185787703595,128,gvn = 1 AND iv_users = 1 AND sccp = 1,gvn==1 AND iv_users==1 AND sccp==1,0,1.0,1.0,1.0,48,0.2229156494140625
+4,235.6525439168501,64,gvn = 1 AND instcombine = 1 AND jump_threading = 1 AND sccp = 1,gvn==1 AND instcombine==1 AND jump_threading==1 AND sccp==1,0,1.0,1.0,1.0,48,0.2279586791992187
+2,231.56943861854973,256,inline = 1 AND print_used_types = 1,inline==1 AND print_used_types==1,0,1.0,1.0,1.0,49,0.2161726951599121
+3,265.4304126523698,128,gvn = 1 AND iv_users = 1 AND sccp = 1,gvn==1 AND iv_users==1 AND sccp==1,0,1.0,1.0,1.0,49,0.2150990962982177
+4,228.0519159077924,64,instcombine = 1 AND iv_users = 1 AND print_used_types = 1 AND sccp = 1,instcombine==1 AND iv_users==1 AND print_used_types==1 AND sccp==1,0,1.0,1.0,1.0,49,0.2177934646606445
+2,235.3222249451916,256,print_used_types = 1 AND sccp = 1,print_used_types==1 AND sccp==1,0,1.0,1.0,1.0,5,0.2244398593902588
+3,239.436243778952,128,instcombine = 1 AND iv_users = 1 AND licm = 1,instcombine==1 AND iv_users==1 AND licm==1,0,1.0,1.0,1.0,5,0.238375186920166
+4,258.020755279569,64,gvn = 1 AND inline = 1 AND jump_threading = 1 AND simplifycfg = 1,print_used_types==0,3,0.1111111111111111,0.0625,0.5,5,0.122697114944458
+2,254.55373109527747,256,gvn = 1 AND instcombine = 1,gvn==1 AND instcombine==1,0,1.0,1.0,1.0,50,0.2190408706665039
+3,253.39451690135868,128,inline = 1 AND ipsccp = 1 AND jump_threading = 1,inline==1 AND ipsccp==1 AND jump_threading==1,0,1.0,1.0,1.0,50,0.2220299243927002
+4,224.83661970584387,64,inline = 1 AND jump_threading = 1 AND licm = 1 AND sccp = 1,inline==1 AND jump_threading==1 AND licm==1 AND sccp==1,0,1.0,1.0,1.0,50,0.2194149494171142
+2,228.82207357270093,256,gvn = 1 AND jump_threading = 1,gvn==1 AND jump_threading==1,0,1.0,1.0,1.0,51,0.2261395454406738
+3,248.39532678875463,128,instcombine = 1 AND iv_users = 1 AND jump_threading = 1,instcombine==1 AND iv_users==1 AND jump_threading==1,0,1.0,1.0,1.0,51,0.2311043739318847
+4,258.12311844090243,64,gvn = 1 AND inline = 1 AND iv_users = 1 AND licm = 1,gvn==1 AND inline==1 AND iv_users==1 AND licm==1,0,1.0,1.0,1.0,51,0.2309386730194091
+2,204.0569355060756,256,gvn = 1 AND iv_users = 1,gvn==1 AND iv_users==1,0,1.0,1.0,1.0,52,0.2203154563903808
+3,257.5533987224409,128,iv_users = 1 AND print_used_types = 1 AND sccp = 1,iv_users==1 AND print_used_types==1 AND sccp==1,0,1.0,1.0,1.0,52,0.226186990737915
+4,232.3649563496374,64,inline = 1 AND instcombine = 1 AND iv_users = 1 AND simplifycfg = 1,inline==1,0,0.2222222222222222,0.125,1.0,52,0.1207189559936523
+2,246.28578226377476,256,instcombine = 1 AND print_used_types = 1,instcombine==1 AND print_used_types==1,0,1.0,1.0,1.0,53,0.2172479629516601
+3,225.645319880446,128,gvn = 1 AND inline = 1 AND instcombine = 1,gvn==1 AND inline==1 AND instcombine==1,0,1.0,1.0,1.0,53,0.2314012050628662
+4,206.96024501528987,64,gvn = 1 AND iv_users = 1 AND jump_threading = 1 AND sccp = 1,print_used_types==1,4,0.1111111111111111,0.0625,0.5,53,0.1199181079864502
+2,217.61518319005407,256,print_used_types = 1 AND sccp = 1,print_used_types==1 AND sccp==1,0,1.0,1.0,1.0,54,0.2268743515014648
+3,242.3615425602046,128,ipsccp = 1 AND jump_threading = 1 AND print_used_types = 1,ipsccp==1 AND jump_threading==1 AND print_used_types==1,0,1.0,1.0,1.0,54,0.2328248023986816
+4,261.0011445985458,64,gvn = 1 AND instcombine = 1 AND ipsccp = 1 AND simplifycfg = 1,gvn==1 AND instcombine==1 AND ipsccp==1 AND simplifycfg==1,0,1.0,1.0,1.0,54,0.2291998863220214
+2,204.0508407171237,256,instcombine = 1 AND licm = 1,instcombine==1 AND licm==1,0,1.0,1.0,1.0,55,0.222355842590332
+3,214.4390351650001,128,instcombine = 1 AND ipsccp = 1 AND print_used_types = 1,instcombine==1 AND ipsccp==1 AND print_used_types==1,0,1.0,1.0,1.0,55,0.2261240482330322
+4,212.75430471622343,64,gvn = 1 AND ipsccp = 1 AND licm = 1 AND sccp = 1,gvn==1 AND ipsccp==1 AND licm==1 AND sccp==1,0,1.0,1.0,1.0,55,0.2244966030120849
+2,242.98095166396303,256,gvn = 1 AND sccp = 1,gvn==1 AND sccp==1,0,1.0,1.0,1.0,56,0.2404429912567138
+3,225.58239647412373,128,gvn = 1 AND inline = 1 AND sccp = 1,gvn==1 AND inline==1 AND sccp==1,0,1.0,1.0,1.0,56,0.2489793300628662
+4,256.96455151204697,64,inline = 1 AND instcombine = 1 AND iv_users = 1 AND print_used_types = 1,inline==1,1,0.2222222222222222,0.125,1.0,56,0.1317687034606933
+2,215.4552622641692,256,jump_threading = 1 AND licm = 1,jump_threading==1 AND licm==1,0,1.0,1.0,1.0,57,0.2208297252655029
+3,240.0174480823981,128,gvn = 1 AND sccp = 1 AND simplifycfg = 1,gvn==1 AND sccp==1 AND simplifycfg==1,0,1.0,1.0,1.0,57,0.2304832935333252
+4,232.0311405283116,64,iv_users = 1 AND licm = 1 AND print_used_types = 1 AND simplifycfg = 1,iv_users==1 AND licm==1 AND print_used_types==1 AND simplifycfg==1,0,1.0,1.0,1.0,57,0.2235138416290283
+2,245.446592101311,256,jump_threading = 1 AND sccp = 1,jump_threading==1 AND sccp==1,0,1.0,1.0,1.0,58,0.2242662906646728
+3,216.6208332573957,128,instcombine = 1 AND iv_users = 1 AND simplifycfg = 1,instcombine==1 AND iv_users==1 AND simplifycfg==1,0,1.0,1.0,1.0,58,0.2254340648651123
+4,255.9300070806388,64,gvn = 1 AND jump_threading = 1 AND sccp = 1 AND simplifycfg = 1,inline==1,0,0.1111111111111111,0.0625,0.5,58,0.1223030090332031
+2,249.0017430764271,256,print_used_types = 1 AND sccp = 1,print_used_types==1 AND sccp==1,0,1.0,1.0,1.0,59,0.2196512222290039
+3,207.25228032051865,128,iv_users = 1 AND licm = 1 AND print_used_types = 1,iv_users==1 AND licm==1 AND print_used_types==1,0,1.0,1.0,1.0,59,0.2183284759521484
+4,256.4007069298741,64,instcombine = 1 AND ipsccp = 1 AND sccp = 1 AND simplifycfg = 1,licm==0,2,0.1111111111111111,0.0625,0.5,59,0.1198706626892089
+2,242.65864331825924,256,iv_users = 1 AND jump_threading = 1,iv_users==1 AND jump_threading==1,0,1.0,1.0,1.0,6,0.2267396450042724
+3,232.964359647727,128,licm = 1 AND sccp = 1 AND simplifycfg = 1,licm==1 AND sccp==1 AND simplifycfg==1,0,1.0,1.0,1.0,6,0.2307331562042236
+4,255.9173171378802,64,gvn = 1 AND inline = 1 AND jump_threading = 1 AND print_used_types = 1,instcombine==1,2,0.1111111111111111,0.0625,0.5,6,0.1231625080108642
+2,241.2078441682497,256,print_used_types = 1 AND simplifycfg = 1,print_used_types==1 AND simplifycfg==1,0,1.0,1.0,1.0,60,0.2370622158050537
+3,264.7083420853382,128,gvn = 1 AND iv_users = 1 AND jump_threading = 1,gvn==1 AND iv_users==1 AND jump_threading==1,0,1.0,1.0,1.0,60,0.2353849411010742
+4,215.37338438160063,64,gvn = 1 AND ipsccp = 1 AND print_used_types = 1 AND simplifycfg = 1,gvn==1 AND ipsccp==1 AND print_used_types==1 AND simplifycfg==1,0,1.0,1.0,1.0,60,0.2400989532470703
+2,243.7826331860016,256,iv_users = 1 AND sccp = 1,iv_users==1 AND sccp==1,0,1.0,1.0,1.0,61,0.2160561084747314
+3,236.97196655081265,128,licm = 1 AND print_used_types = 1 AND sccp = 1,licm==1 AND print_used_types==1 AND sccp==1,0,1.0,1.0,1.0,61,0.220555305480957
+4,227.96631116506632,64,gvn = 1 AND iv_users = 1 AND sccp = 1 AND simplifycfg = 1,sccp==1,1,0.2222222222222222,0.125,1.0,61,0.1180582046508789
+2,207.18710142108972,256,gvn = 1 AND jump_threading = 1,gvn==1 AND jump_threading==1,0,1.0,1.0,1.0,62,0.2214751243591308
+3,229.32410764844275,128,inline = 1 AND licm = 1 AND simplifycfg = 1,inline==1 AND licm==1 AND simplifycfg==1,0,1.0,1.0,1.0,62,0.2262966632843017
+4,235.3338543516302,64,gvn = 1 AND jump_threading = 1 AND licm = 1 AND simplifycfg = 1,gvn==1 AND jump_threading==1 AND licm==1 AND simplifycfg==1,0,1.0,1.0,1.0,62,0.2278993129730224
+2,224.6326168149677,256,ipsccp = 1 AND sccp = 1,ipsccp==1 AND sccp==1,0,1.0,1.0,1.0,63,0.2305717468261718
+3,253.48774760266636,128,instcombine = 1 AND ipsccp = 1 AND print_used_types = 1,instcombine==1 AND ipsccp==1 AND print_used_types==1,0,1.0,1.0,1.0,63,0.2351181507110595
+4,259.7819395725736,64,inline = 1 AND ipsccp = 1 AND iv_users = 1 AND licm = 1,print_used_types==0,2,0.1111111111111111,0.0625,0.5,63,0.1256778240203857
+2,255.65892205407445,256,instcombine = 1 AND sccp = 1,instcombine==1 AND sccp==1,0,1.0,1.0,1.0,64,0.2213397026062011
+3,252.81935711488453,128,inline = 1 AND iv_users = 1 AND simplifycfg = 1,inline==1 AND iv_users==1 AND simplifycfg==1,0,1.0,1.0,1.0,64,0.2231233119964599
+4,257.6586988677362,64,instcombine = 1 AND ipsccp = 1 AND iv_users = 1 AND simplifycfg = 1,sccp==1,0,0.1111111111111111,0.0625,0.5,64,0.1223757266998291
+2,262.14966632482765,256,instcombine = 1 AND ipsccp = 1,instcombine==1 AND ipsccp==1,0,1.0,1.0,1.0,65,0.2169668674468994
+3,243.55203330652003,128,instcombine = 1 AND licm = 1 AND sccp = 1,instcombine==1 AND licm==1 AND sccp==1,0,1.0,1.0,1.0,65,0.222470998764038
+4,252.6002941707717,64,inline = 1 AND instcombine = 1 AND ipsccp = 1 AND sccp = 1,inline==1 AND instcombine==1 AND ipsccp==1 AND sccp==1,0,1.0,1.0,1.0,65,0.2214839458465576
+2,243.0233436305148,256,gvn = 1 AND licm = 1,gvn==1 AND licm==1,0,1.0,1.0,1.0,66,0.2178676128387451
+3,235.8692397236672,128,inline = 1 AND ipsccp = 1 AND iv_users = 1,inline==1 AND ipsccp==1 AND iv_users==1,0,1.0,1.0,1.0,66,0.2220096588134765
+4,249.9896343929203,64,gvn = 1 AND inline = 1 AND iv_users = 1 AND simplifycfg = 1,gvn==1 AND inline==1 AND iv_users==1 AND simplifycfg==1,0,1.0,1.0,1.0,66,0.2225992679595947
+2,219.2991281601838,256,gvn = 1 AND print_used_types = 1,gvn==1 AND print_used_types==1,0,1.0,1.0,1.0,67,0.229562759399414
+3,248.4640142424672,128,licm = 1 AND print_used_types = 1 AND simplifycfg = 1,licm==1 AND print_used_types==1 AND simplifycfg==1,0,1.0,1.0,1.0,67,0.2337560653686523
+4,238.67033744978696,64,ipsccp = 1 AND jump_threading = 1 AND sccp = 1 AND simplifycfg = 1,ipsccp==1 AND jump_threading==1 AND sccp==1 AND simplifycfg==1,0,1.0,1.0,1.0,67,0.2306368350982666
+2,235.7682932116653,256,instcombine = 1 AND iv_users = 1,instcombine==1 AND iv_users==1,0,1.0,1.0,1.0,68,0.2311022281646728
+3,224.3191426920504,128,gvn = 1 AND licm = 1 AND sccp = 1,gvn==1 AND licm==1 AND sccp==1,0,1.0,1.0,1.0,68,0.2310094833374023
+4,205.33553851152456,64,gvn = 1 AND instcombine = 1 AND jump_threading = 1 AND print_used_types = 1,gvn==1 AND instcombine==1 AND jump_threading==1 AND print_used_types==1,0,1.0,1.0,1.0,68,0.2358391284942627
+2,243.29804907282573,256,gvn = 1 AND jump_threading = 1,gvn==1 AND jump_threading==1,0,1.0,1.0,1.0,69,0.2236137390136718
+3,223.55081126989356,128,gvn = 1 AND instcombine = 1 AND ipsccp = 1,gvn==1 AND instcombine==1 AND ipsccp==1,0,1.0,1.0,1.0,69,0.2196147441864013
+4,262.939994137874,64,inline = 1 AND jump_threading = 1 AND licm = 1 AND simplifycfg = 1,gvn==1,4,0.1111111111111111,0.0625,0.5,69,0.1197857856750488
+2,250.58917165947167,256,instcombine = 1 AND licm = 1,instcombine==1 AND licm==1,0,1.0,1.0,1.0,7,0.2215218544006347
+3,255.65571372377397,128,jump_threading = 1 AND licm = 1 AND simplifycfg = 1,jump_threading==1 AND licm==1 AND simplifycfg==1,0,1.0,1.0,1.0,7,0.233182668685913
+4,255.1227524033383,64,gvn = 1 AND jump_threading = 1 AND print_used_types = 1 AND simplifycfg = 1,gvn==1 AND jump_threading==1 AND print_used_types==1 AND simplifycfg==1,0,1.0,1.0,1.0,7,0.224989652633667
+2,206.92848097736095,256,instcombine = 1 AND ipsccp = 1,instcombine==1 AND ipsccp==1,0,1.0,1.0,1.0,70,0.2207288742065429
+3,226.3625654145632,128,inline = 1 AND print_used_types = 1 AND sccp = 1,inline==1 AND print_used_types==1 AND sccp==1,0,1.0,1.0,1.0,70,0.22658371925354
+4,244.3581533979269,64,gvn = 1 AND inline = 1 AND jump_threading = 1 AND simplifycfg = 1,gvn==1 AND inline==1 AND jump_threading==1 AND simplifycfg==1,0,1.0,1.0,1.0,70,0.2220869064331054
+2,219.98820623481257,256,instcombine = 1 AND sccp = 1,instcombine==1 AND sccp==1,0,1.0,1.0,1.0,71,0.220729112625122
+3,247.1039691343006,128,inline = 1 AND instcombine = 1 AND ipsccp = 1,inline==1 AND instcombine==1 AND ipsccp==1,0,1.0,1.0,1.0,71,0.2275512218475341
+4,263.9031382014529,64,gvn = 1 AND ipsccp = 1 AND print_used_types = 1 AND sccp = 1,gvn==1 AND ipsccp==1 AND print_used_types==1 AND sccp==1,0,1.0,1.0,1.0,71,0.229837417602539
+2,263.1226643259279,256,instcombine = 1 AND iv_users = 1,instcombine==1 AND iv_users==1,0,1.0,1.0,1.0,72,0.2184517383575439
+3,208.36775489708583,128,iv_users = 1 AND sccp = 1 AND simplifycfg = 1,iv_users==1 AND sccp==1 AND simplifycfg==1,0,1.0,1.0,1.0,72,0.2189922332763672
+4,222.068649826828,64,gvn = 1 AND instcombine = 1 AND licm = 1 AND print_used_types = 1,gvn==1 AND instcombine==1 AND licm==1 AND print_used_types==1,0,1.0,1.0,1.0,72,0.2211380004882812
+2,244.51656462834967,256,licm = 1 AND simplifycfg = 1,licm==1 AND simplifycfg==1,0,1.0,1.0,1.0,73,0.2522802352905273
+3,224.43676573112475,128,iv_users = 1 AND licm = 1 AND sccp = 1,iv_users==1 AND licm==1 AND sccp==1,0,1.0,1.0,1.0,73,0.251777172088623
+4,237.7372443646666,64,gvn = 1 AND jump_threading = 1 AND print_used_types = 1 AND sccp = 1,gvn==1 AND jump_threading==1 AND print_used_types==1 AND sccp==1,0,1.0,1.0,1.0,73,0.2563917636871338
+2,231.03607132631475,256,gvn = 1 AND inline = 1,gvn==1 AND inline==1,0,1.0,1.0,1.0,74,0.2170262336730957
+3,247.3475992870396,128,inline = 1 AND iv_users = 1 AND print_used_types = 1,inline==1 AND iv_users==1 AND print_used_types==1,0,1.0,1.0,1.0,74,0.227280855178833
+4,250.47452508275063,64,gvn = 1 AND jump_threading = 1 AND print_used_types = 1 AND simplifycfg = 1,simplifycfg==1,0,0.2222222222222222,0.125,1.0,74,0.1185133457183837
+2,257.9180590651591,256,ipsccp = 1 AND simplifycfg = 1,ipsccp==1 AND simplifycfg==1,0,1.0,1.0,1.0,75,0.2164773941040039
+3,249.04597639118495,128,gvn = 1 AND iv_users = 1 AND licm = 1,gvn==1 AND iv_users==1 AND licm==1,0,1.0,1.0,1.0,75,0.2340588569641113
+4,226.8238287734185,64,instcombine = 1 AND ipsccp = 1 AND jump_threading = 1 AND licm = 1,instcombine==1 AND ipsccp==1 AND jump_threading==1 AND licm==1,0,1.0,1.0,1.0,75,0.2190084457397461
+2,216.6598301629496,256,ipsccp = 1 AND simplifycfg = 1,ipsccp==1 AND simplifycfg==1,0,1.0,1.0,1.0,76,0.2231802940368652
+3,206.0185406857995,128,gvn = 1 AND licm = 1 AND print_used_types = 1,gvn==1 AND licm==1 AND print_used_types==1,0,1.0,1.0,1.0,76,0.2219991683959961
+4,206.01821067146895,64,inline = 1 AND ipsccp = 1 AND iv_users = 1 AND sccp = 1,gvn==1,4,0.1111111111111111,0.0625,0.5,76,0.121086835861206
+2,213.8037214803425,256,iv_users = 1 AND simplifycfg = 1,iv_users==1 AND simplifycfg==1,0,1.0,1.0,1.0,77,0.221898078918457
+3,253.61374860389432,128,gvn = 1 AND inline = 1 AND print_used_types = 1,gvn==1 AND inline==1 AND print_used_types==1,0,1.0,1.0,1.0,77,0.228295087814331
+4,218.22562185177415,64,gvn = 1 AND ipsccp = 1 AND iv_users = 1 AND jump_threading = 1,ipsccp==1,3,0.2222222222222222,0.125,1.0,77,0.1218340396881103
+2,246.8675920554952,256,inline = 1 AND sccp = 1,inline==1 AND sccp==1,0,1.0,1.0,1.0,78,0.2189586162567138
+3,227.53394577719496,128,instcombine = 1 AND licm = 1 AND simplifycfg = 1,instcombine==1 AND licm==1 AND simplifycfg==1,0,1.0,1.0,1.0,78,0.2233016490936279
+4,247.0697563407871,64,inline = 1 AND instcombine = 1 AND iv_users = 1 AND licm = 1,inline==1 AND instcombine==1 AND iv_users==1 AND licm==1,0,1.0,1.0,1.0,78,0.2217519283294677
+2,216.46951390132904,256,gvn = 1 AND licm = 1,gvn==1 AND licm==1,0,1.0,1.0,1.0,79,0.2198381423950195
+3,262.7987744404667,128,inline = 1 AND ipsccp = 1 AND sccp = 1,inline==1 AND ipsccp==1 AND sccp==1,0,1.0,1.0,1.0,79,0.2183530330657959
+4,228.8527443928417,64,gvn = 1 AND jump_threading = 1 AND print_used_types = 1 AND sccp = 1,gvn==1 AND jump_threading==1 AND print_used_types==1 AND sccp==1,0,1.0,1.0,1.0,79,0.2215380668640136
+2,231.35442505859703,256,licm = 1 AND print_used_types = 1,licm==1 AND print_used_types==1,0,1.0,1.0,1.0,8,0.2241687774658203
+3,224.9654700596652,128,iv_users = 1 AND jump_threading = 1 AND print_used_types = 1,iv_users==1 AND jump_threading==1 AND print_used_types==1,0,1.0,1.0,1.0,8,0.2225866317749023
+4,231.5250426658192,64,ipsccp = 1 AND print_used_types = 1 AND sccp = 1 AND simplifycfg = 1,ipsccp==1,0,0.2222222222222222,0.125,1.0,8,0.1220045089721679
+2,215.4664817060489,256,ipsccp = 1 AND licm = 1,ipsccp==1 AND licm==1,0,1.0,1.0,1.0,80,0.2210626602172851
+3,251.1742320937175,128,jump_threading = 1 AND licm = 1 AND simplifycfg = 1,jump_threading==1 AND licm==1 AND simplifycfg==1,0,1.0,1.0,1.0,80,0.2257895469665527
+4,250.8082897416736,64,inline = 1 AND instcombine = 1 AND jump_threading = 1 AND sccp = 1,inline==1 AND instcombine==1 AND jump_threading==1 AND sccp==1,0,1.0,1.0,1.0,80,0.2232933044433593
+2,223.82847439124836,256,gvn = 1 AND sccp = 1,gvn==1 AND sccp==1,0,1.0,1.0,1.0,81,0.2169601917266845
+3,228.46200250276905,128,ipsccp = 1 AND print_used_types = 1 AND simplifycfg = 1,ipsccp==1 AND print_used_types==1 AND simplifycfg==1,0,1.0,1.0,1.0,81,0.2281830310821533
+4,263.3552605336377,64,gvn = 1 AND instcombine = 1 AND jump_threading = 1 AND licm = 1,sccp==1,3,0.1111111111111111,0.0625,0.5,81,0.1194162368774414
+2,241.4632445784381,256,instcombine = 1 AND licm = 1,instcombine==1 AND licm==1,0,1.0,1.0,1.0,82,0.2205479145050048
+3,262.4665907828389,128,gvn = 1 AND inline = 1 AND iv_users = 1,gvn==1 AND inline==1 AND iv_users==1,0,1.0,1.0,1.0,82,0.2248497009277343
+4,261.68568600051054,64,gvn = 1 AND ipsccp = 1 AND licm = 1 AND print_used_types = 1,gvn==1 AND ipsccp==1 AND licm==1 AND print_used_types==1,0,1.0,1.0,1.0,82,0.2252376079559326
+2,255.48621111514825,256,inline = 1 AND iv_users = 1,inline==1 AND iv_users==1,0,1.0,1.0,1.0,83,0.2238519191741943
+3,261.64992569793674,128,inline = 1 AND ipsccp = 1 AND jump_threading = 1,inline==1 AND ipsccp==1 AND jump_threading==1,0,1.0,1.0,1.0,83,0.2248103618621826
+4,227.95414810557665,64,inline = 1 AND iv_users = 1 AND jump_threading = 1 AND licm = 1,inline==1 AND iv_users==1 AND jump_threading==1 AND licm==1,0,1.0,1.0,1.0,83,0.2258355617523193
+2,227.4679472868168,256,inline = 1 AND iv_users = 1,inline==1 AND iv_users==1,0,1.0,1.0,1.0,84,0.2252500057220459
+3,219.35917104147467,128,instcombine = 1 AND iv_users = 1 AND jump_threading = 1,instcombine==1 AND iv_users==1 AND jump_threading==1,0,1.0,1.0,1.0,84,0.2235755920410156
+4,216.82219780042055,64,inline = 1 AND print_used_types = 1 AND sccp = 1 AND simplifycfg = 1,inline==1 AND print_used_types==1 AND sccp==1 AND simplifycfg==1,0,1.0,1.0,1.0,84,0.2269859313964843
+2,235.64954700436164,256,instcombine = 1 AND print_used_types = 1,instcombine==1 AND print_used_types==1,0,1.0,1.0,1.0,85,0.2257013320922851
+3,217.9068247385623,128,iv_users = 1 AND sccp = 1 AND simplifycfg = 1,iv_users==1 AND sccp==1 AND simplifycfg==1,0,1.0,1.0,1.0,85,0.2239165306091308
+4,218.6676973136432,64,gvn = 1 AND instcombine = 1 AND licm = 1 AND simplifycfg = 1,instcombine==1,0,0.2222222222222222,0.125,1.0,85,0.1233985424041748
+2,258.03773189698484,256,gvn = 1 AND simplifycfg = 1,gvn==1 AND simplifycfg==1,0,1.0,1.0,1.0,86,0.2225284576416015
+3,224.7623437307538,128,gvn = 1 AND inline = 1 AND ipsccp = 1,gvn==1 AND inline==1 AND ipsccp==1,0,1.0,1.0,1.0,86,0.2198059558868408
+4,204.31523287454945,64,gvn = 1 AND inline = 1 AND print_used_types = 1 AND simplifycfg = 1,jump_threading==0,4,0.1111111111111111,0.0625,0.5,86,0.1218390464782714
+2,203.60144531941933,256,jump_threading = 1 AND sccp = 1,jump_threading==1 AND sccp==1,0,1.0,1.0,1.0,87,0.2251296043395996
+3,208.9103133025814,128,inline = 1 AND licm = 1 AND print_used_types = 1,inline==1 AND licm==1 AND print_used_types==1,0,1.0,1.0,1.0,87,0.2220323085784912
+4,219.01821532371483,64,gvn = 1 AND instcombine = 1 AND licm = 1 AND sccp = 1,gvn==1 AND instcombine==1 AND licm==1 AND sccp==1,0,1.0,1.0,1.0,87,0.2239894866943359
+2,227.78789803402825,256,gvn = 1 AND ipsccp = 1,gvn==1 AND ipsccp==1,0,1.0,1.0,1.0,88,0.2243540287017822
+3,260.11961852170054,128,inline = 1 AND licm = 1 AND print_used_types = 1,inline==1 AND licm==1 AND print_used_types==1,0,1.0,1.0,1.0,88,0.2237505912780761
+4,248.74129424765812,64,licm = 1 AND print_used_types = 1 AND sccp = 1 AND simplifycfg = 1,licm==1 AND print_used_types==1 AND sccp==1 AND simplifycfg==1,0,1.0,1.0,1.0,88,0.2264564037322998
+2,262.67300103845344,256,iv_users = 1 AND print_used_types = 1,iv_users==1 AND print_used_types==1,0,1.0,1.0,1.0,89,0.2240166664123535
+3,256.9126690319597,128,gvn = 1 AND instcombine = 1 AND simplifycfg = 1,gvn==1 AND instcombine==1 AND simplifycfg==1,0,1.0,1.0,1.0,89,0.2283899784088134
+4,219.69886011587732,64,inline = 1 AND instcombine = 1 AND ipsccp = 1 AND print_used_types = 1,inline==1 AND instcombine==1 AND ipsccp==1 AND print_used_types==1,0,1.0,1.0,1.0,89,0.2278110980987548
+2,252.1759634166833,256,licm = 1 AND print_used_types = 1,licm==1 AND print_used_types==1,0,1.0,1.0,1.0,9,0.222689151763916
+3,210.8434136378792,128,iv_users = 1 AND licm = 1 AND print_used_types = 1,iv_users==1 AND licm==1 AND print_used_types==1,0,1.0,1.0,1.0,9,0.2206966876983642
+4,251.98742210122373,64,gvn = 1 AND inline = 1 AND sccp = 1 AND simplifycfg = 1,gvn==1 AND inline==1 AND sccp==1 AND simplifycfg==1,0,1.0,1.0,1.0,9,0.2268030643463134
+2,260.05663256507586,256,iv_users = 1 AND simplifycfg = 1,iv_users==1 AND simplifycfg==1,0,1.0,1.0,1.0,90,0.2354598045349121
+3,210.23136908909956,128,instcombine = 1 AND ipsccp = 1 AND iv_users = 1,instcombine==1 AND ipsccp==1 AND iv_users==1,0,1.0,1.0,1.0,90,0.2446980476379394
+4,221.6922545307997,64,inline = 1 AND instcombine = 1 AND iv_users = 1 AND print_used_types = 1,inline==1,3,0.2222222222222222,0.125,1.0,90,0.1322894096374511
+2,223.40317048645855,256,instcombine = 1 AND print_used_types = 1,instcombine==1 AND print_used_types==1,0,1.0,1.0,1.0,91,0.2409005165100097
+3,237.40295860774512,128,iv_users = 1 AND print_used_types = 1 AND simplifycfg = 1,iv_users==1 AND print_used_types==1 AND simplifycfg==1,0,1.0,1.0,1.0,91,0.2595622539520263
+4,234.3791737205303,64,inline = 1 AND instcombine = 1 AND jump_threading = 1 AND sccp = 1,inline==1 AND instcombine==1 AND jump_threading==1 AND sccp==1,0,1.0,1.0,1.0,91,0.2491793632507324
+2,219.28460716433935,256,ipsccp = 1 AND licm = 1,ipsccp==1 AND licm==1,0,1.0,1.0,1.0,92,0.2246310710906982
+3,204.0173475659792,128,inline = 1 AND instcombine = 1 AND print_used_types = 1,inline==1 AND instcombine==1 AND print_used_types==1,0,1.0,1.0,1.0,92,0.2213718891143798
+4,247.45417231069655,64,gvn = 1 AND inline = 1 AND print_used_types = 1 AND simplifycfg = 1,gvn==1 AND inline==1 AND print_used_types==1 AND simplifycfg==1,0,1.0,1.0,1.0,92,0.2269001007080078
+2,229.19928791890447,256,sccp = 1 AND simplifycfg = 1,sccp==1 AND simplifycfg==1,0,1.0,1.0,1.0,93,0.222874641418457
+3,227.5838638490192,128,instcombine = 1 AND ipsccp = 1 AND print_used_types = 1,instcombine==1 AND ipsccp==1 AND print_used_types==1,0,1.0,1.0,1.0,93,0.2382509708404541
+4,246.34816389863937,64,gvn = 1 AND inline = 1 AND ipsccp = 1 AND iv_users = 1,iv_users==1,1,0.2222222222222222,0.125,1.0,93,0.1221675872802734
+2,241.41237931220348,256,gvn = 1 AND jump_threading = 1,gvn==1 AND jump_threading==1,0,1.0,1.0,1.0,94,0.2528951168060303
+3,234.95540089125865,128,gvn = 1 AND ipsccp = 1 AND licm = 1,gvn==1 AND ipsccp==1 AND licm==1,0,1.0,1.0,1.0,94,0.2572906017303467
+4,249.87100579114832,64,instcombine = 1 AND iv_users = 1 AND print_used_types = 1 AND simplifycfg = 1,instcombine==1 AND iv_users==1 AND print_used_types==1 AND simplifycfg==1,0,1.0,1.0,1.0,94,0.2659838199615478
+2,218.0213219789681,256,inline = 1 AND instcombine = 1,inline==1 AND instcombine==1,0,1.0,1.0,1.0,95,0.2284138202667236
+3,215.92981635747776,128,iv_users = 1 AND jump_threading = 1 AND licm = 1,iv_users==1 AND jump_threading==1 AND licm==1,0,1.0,1.0,1.0,95,0.2357099056243896
+4,225.53741899437327,64,gvn = 1 AND ipsccp = 1 AND jump_threading = 1 AND simplifycfg = 1,simplifycfg==1,0,0.2222222222222222,0.125,1.0,95,0.1260304450988769
+2,204.99895804965263,256,instcombine = 1 AND iv_users = 1,instcombine==1 AND iv_users==1,0,1.0,1.0,1.0,96,0.2191431522369384
+3,227.40871878248083,128,gvn = 1 AND licm = 1 AND simplifycfg = 1,gvn==1 AND licm==1 AND simplifycfg==1,0,1.0,1.0,1.0,96,0.2230195999145507
+4,236.29559508029445,64,gvn = 1 AND licm = 1 AND sccp = 1 AND simplifycfg = 1,gvn==1 AND licm==1 AND sccp==1 AND simplifycfg==1,0,1.0,1.0,1.0,96,0.2205924987792968
+2,236.3487284004306,256,gvn = 1 AND ipsccp = 1,gvn==1 AND ipsccp==1,0,1.0,1.0,1.0,97,0.2390692234039306
+3,246.87924352379997,128,ipsccp = 1 AND print_used_types = 1 AND simplifycfg = 1,ipsccp==1 AND print_used_types==1 AND simplifycfg==1,0,1.0,1.0,1.0,97,0.2525203227996826
+4,249.55958389788856,64,inline = 1 AND instcombine = 1 AND licm = 1 AND simplifycfg = 1,inline==1,1,0.2222222222222222,0.125,1.0,97,0.134037971496582
+2,266.2249401164649,256,print_used_types = 1 AND simplifycfg = 1,print_used_types==1 AND simplifycfg==1,0,1.0,1.0,1.0,98,0.2255020141601562
+3,211.01545289155104,128,jump_threading = 1 AND print_used_types = 1 AND simplifycfg = 1,jump_threading==1 AND print_used_types==1 AND simplifycfg==1,0,1.0,1.0,1.0,98,0.2314350605010986
+4,209.26098536930883,64,instcombine = 1 AND ipsccp = 1 AND iv_users = 1 AND licm = 1,simplifycfg==1,4,0.1111111111111111,0.0625,0.5,98,0.1239066123962402
+2,210.8796986268988,256,inline = 1 AND licm = 1,inline==1 AND licm==1,0,1.0,1.0,1.0,99,0.2317512035369873
+3,236.18511275097256,128,inline = 1 AND jump_threading = 1 AND licm = 1,inline==1 AND jump_threading==1 AND licm==1,0,1.0,1.0,1.0,99,0.237499713897705
+4,241.5370959252186,64,gvn = 1 AND iv_users = 1 AND print_used_types = 1 AND simplifycfg = 1,gvn==1 AND iv_users==1 AND print_used_types==1 AND simplifycfg==1,0,1.0,1.0,1.0,99,0.232720136642456

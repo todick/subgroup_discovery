@@ -1,0 +1,701 @@
+n_conditions,sg_mean,sg_cardinality,sg_rule,best_rule,best_rule_idx,f1,precision,recall,seed,runtime
+1,20.123088825368267,572,VBRRange = 1,VBRRange==1 AND Freeformat==0,0,1.0,1.0,1.0,0,0.1675717830657959
+2,19.90941814320604,1146,Freeformat = 1 AND SwapBytes = 1,SwapBytes==1 AND Freeformat==1,0,1.0,1.0,1.0,0,0.4187867641448974
+3,8.854335620949666,415,NoRes = 1 AND NoReplayGain = 1 AND CBR = 8,NoRes==1 AND CBR==8 AND NoReplayGain==1 AND ReplayGainFast==0,0,1.0,1.0,1.0,0,28.541101932525635
+4,22.665421976916583,210,NoRes = 1 AND CRC = 1 AND ReplayGainAccurate = 1 AND CBR = 320,NoRes==1 AND CBR==320 AND NoReplayGain==0 AND ReplayGainFast==0 AND CRC==1,0,1.0,1.0,1.0,0,10.545093297958374
+5,28.242920039964684,324,Freeformat = 1 AND CRC = 1 AND JointStereo = 1 AND SwapBytes = 1 AND VBRRange = 0,SwapBytes==1 AND MidSideStereo==0 AND Freeformat==1 AND Mono==0 AND DualChannels==0 AND Stereo==0 AND CRC==1,0,1.0,1.0,1.0,0,1.4972949028015137
+6,20.00068761023575,309,NoRes = 1 AND Freeformat = 1 AND CRC = 1 AND JointStereo = 1 AND SwapBytes = 1 AND VBRRange = 0,NoRes==1 AND JointStereo==1 AND SwapBytes==1 AND MidSideStereo==0 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,0,24.559536695480347
+7,14.73455925792041,377,NoRes = 1 AND Downmix = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND ReplayGainAccurate = 1 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND NoReplayGain==0 AND Downmix==1 AND ReplayGainFast==0 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,0,11.442298412322998
+1,17.77423517861404,1061,Resampling = 8,Resampling==8,0,1.0,1.0,1.0,1,0.2357556819915771
+2,16.252297438665767,259,ReplayGainFast = 1 AND Stereo = 1,NoReplayGain==0 AND ReplayGainFast==1 AND MidSideStereo==0 AND Mono==0 AND DualChannels==0 AND Stereo==1,0,1.0,1.0,1.0,1,1.0718271732330322
+3,27.09654204990978,304,NoRes = 1 AND MidSideStereo = 1 AND Freeformat = 1,NoRes==1 AND MidSideStereo==1 AND Freeformat==1,0,1.0,1.0,1.0,1,20.40778088569641
+4,22.664427945771195,589,NoRes = 1 AND Downmix = 1 AND CRC = 1 AND ReplayGainAccurate = 1,NoRes==1 AND NoReplayGain==0 AND Downmix==1 AND ReplayGainFast==0 AND CRC==1,0,1.0,1.0,1.0,1,19.58147168159485
+5,22.364168729769105,321,NoRes = 1 AND Downmix = 1 AND Freeformat = 1 AND Resampling = 22 AND VBRRange = 0,NoRes==1 AND Resampling==22 AND Downmix==1 AND Freeformat==1,0,1.0,1.0,1.0,1,6.679241895675659
+6,4.913450478184746,305,NoRes = 1 AND Downmix = 1 AND Freeformat = 1 AND CRC = 1 AND JointStereo = 1 AND VBRRange = 0,SwapBytes==1 AND Resampling==44 AND CBR==8 AND VBRRange==0 AND NoReplayGain==1 AND MidSideStereo==1 AND CRC==0,0,0.0,0.0,0.0,1,71.03487396240234
+7,4.96715817476241,337,NoRes = 1 AND Downmix = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND Resampling = 8 AND VBRRange = 0,SwapBytes==1 AND Resampling==22 AND VBRRange==0 AND NoReplayGain==1 AND Downmix==1 AND Freeformat==0 AND Stereo==1,0,0.0,0.0,0.0,1,95.02602171897888
+1,25.371613112462164,1162,NoReplayGain = 1,NoReplayGain==1,0,1.0,1.0,1.0,10,4.318096876144409
+2,10.442206851707748,991,ReplayGainFast = 1 AND CBR = 8,CBR==8 AND NoReplayGain==0 AND ReplayGainFast==1,0,1.0,1.0,1.0,10,0.4240739345550537
+3,18.337607721975974,395,ReplayGainAccurate = 1 AND Resampling = 22 AND CBR = 8,Resampling==22 AND CBR==8 AND NoReplayGain==0 AND ReplayGainFast==0,0,1.0,1.0,1.0,10,0.2582643032073974
+4,3.918749895988436,575,Downmix = 1 AND CRC = 1 AND ReplayGainAccurate = 1 AND VBRRange = 0,NoRes==0 AND JointStereo==0 AND ReplayGainAccurate==0 AND MidSideStereo==0 AND Freeformat==0 AND Stereo==0 AND CRC==1,0,0.0,0.0,0.0,10,86.02956247329712
+5,2.673229749235128,268,NoRes = 1 AND Downmix = 1 AND SwapBytes = 1 AND Resampling = 22 AND CBR = 8,NoRes==1 AND CBR==320 AND NoReplayGain==0 AND Downmix==1 AND ReplayGainFast==1 AND Stereo==1 AND CRC==1,0,0.0,0.0,0.0,10,83.90515112876892
+6,18.274453840789256,274,NoRes = 1 AND Downmix = 1 AND ReplayGainFast = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1,NoRes==1 AND SwapBytes==1 AND Downmix==1 AND ReplayGainFast==1 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,10,13.635201454162598
+7,10.509818938775844,304,NoRes = 1 AND Downmix = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND CBR = 160 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND CBR==160 AND Downmix==1 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,10,15.35649275779724
+1,11.599980658658852,999,JointStereo = 1,MidSideStereo==0 AND Mono==0 AND DualChannels==0 AND Stereo==0,0,1.0,1.0,1.0,11,0.6154329776763916
+2,22.51729181649452,442,Downmix = 1 AND Resampling = 44,Resampling==44 AND Downmix==1,0,1.0,1.0,1.0,11,1.2031044960021973
+3,10.542938319718749,220,Downmix = 1 AND JointStereo = 1 AND CBR = 8,CBR==8 AND Downmix==1 AND MidSideStereo==0 AND Mono==0 AND DualChannels==0 AND Stereo==0,0,1.0,1.0,1.0,11,15.573238611221312
+4,5.299833954906766,348,NoRes = 1 AND Freeformat = 1 AND CRC = 1 AND CBR = 160,NoRes==1 AND SwapBytes==1 AND Resampling==44 AND VBRRange==1 AND Downmix==0 AND ReplayGainFast==1 AND DualChannels==1,0,0.0,0.0,0.0,11,58.87118029594421
+5,13.112215170862097,312,NoRes = 1 AND Downmix = 1 AND Freeformat = 1 AND CBR = 8 AND VBRRange = 0,NoRes==1 AND CBR==8 AND Downmix==1 AND Freeformat==1,0,1.0,1.0,1.0,11,22.56894826889038
+6,8.443468517445817,304,NoRes = 1 AND Downmix = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND CBR = 160,NoRes==1 AND SwapBytes==1 AND CBR==160 AND Downmix==1 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,11,21.855329990386963
+7,14.950483241764982,357,NoRes = 1 AND Downmix = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND CBR = 320 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND CBR==320 AND Downmix==1 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,11,21.35999035835266
+1,15.692279008797469,722,DualChannels = 1,MidSideStereo==0 AND Mono==0 AND DualChannels==1,0,1.0,1.0,1.0,12,0.3907880783081054
+2,27.579864080550323,425,Downmix = 1 AND Stereo = 1,Downmix==1 AND MidSideStereo==0 AND Mono==0 AND DualChannels==0 AND Stereo==1,0,1.0,1.0,1.0,12,1.198070049285889
+3,15.073999445425194,242,JointStereo = 1 AND SwapBytes = 1 AND CBR = 8,SwapBytes==1 AND CBR==8 AND MidSideStereo==0 AND Mono==0 AND DualChannels==0 AND Stereo==0,0,1.0,1.0,1.0,12,2.648157119750977
+4,12.907466748718027,233,Downmix = 1 AND ReplayGainAccurate = 1 AND CBR = 320 AND VBRRange = 0,CBR==320 AND NoReplayGain==0 AND Downmix==1 AND ReplayGainFast==0,0,1.0,1.0,1.0,12,5.602635145187378
+5,16.564430424428714,274,NoRes = 1 AND NoReplayGain = 1 AND Downmix = 1 AND SwapBytes = 1 AND CBR = 8,NoRes==1 AND SwapBytes==1 AND CBR==8 AND NoReplayGain==1 AND Downmix==1 AND ReplayGainFast==0,0,1.0,1.0,1.0,12,23.83295512199402
+6,28.834461958837878,337,NoRes = 1 AND Downmix = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND Resampling = 8,NoRes==1 AND SwapBytes==1 AND Resampling==8 AND Downmix==1 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,12,5.256576299667358
+7,9.99721835856352,274,NoRes = 1 AND Downmix = 1 AND ReplayGainFast = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND Downmix==1 AND ReplayGainFast==1 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,12,20.78123140335083
+1,22.42673688973588,1061,Resampling = 8,Resampling==8,0,1.0,1.0,1.0,13,0.2275347709655761
+2,11.306186905454153,248,ReplayGainFast = 1 AND DualChannels = 1,NoReplayGain==0 AND ReplayGainFast==1 AND MidSideStereo==0 AND Mono==0 AND DualChannels==1,0,1.0,1.0,1.0,13,2.9689691066741943
+3,22.828760872175085,388,CRC = 1 AND Resampling = 8 AND CBR = 8,Resampling==8 AND CBR==8 AND CRC==1,0,1.0,1.0,1.0,13,0.5629336833953857
+4,12.379326674440044,482,NoRes = 1 AND CRC = 1 AND SwapBytes = 1 AND Resampling = 22,NoRes==1 AND SwapBytes==1 AND Resampling==22 AND CRC==1,0,1.0,1.0,1.0,13,20.814836502075195
+5,29.719597584441,359,NoRes = 1 AND Downmix = 1 AND Freeformat = 1 AND SwapBytes = 1 AND Resampling = 8,NoRes==1 AND SwapBytes==1 AND Resampling==8 AND Downmix==1 AND Freeformat==1,0,1.0,1.0,1.0,13,8.968065977096558
+6,28.90312669562979,936,NoRes = 1 AND Downmix = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND Downmix==1 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,13,11.688705205917358
+7,4.491654104126519,296,NoRes = 1 AND Downmix = 1 AND Freeformat = 1 AND CRC = 1 AND JointStereo = 1 AND SwapBytes = 1 AND VBRRange = 0,NoRes==0 AND Resampling==22 AND VBRRange==0 AND NoReplayGain==0 AND Downmix==0 AND MidSideStereo==0 AND DualChannels==0,0,0.0,0.0,0.0,13,99.25905084609984
+1,22.015458568359985,1162,NoReplayGain = 1,NoReplayGain==1,0,1.0,1.0,1.0,14,4.061771154403687
+2,22.332915405633837,222,JointStereo = 1 AND CBR = 320,CBR==320 AND MidSideStereo==0 AND Mono==0 AND DualChannels==0 AND Stereo==0,0,1.0,1.0,1.0,14,0.7369465827941895
+3,12.486411229678376,326,NoRes = 1 AND NoReplayGain = 1 AND Freeformat = 1,NoRes==1 AND NoReplayGain==1 AND ReplayGainFast==0 AND Freeformat==1,0,1.0,1.0,1.0,14,23.81249213218689
+4,23.725846743374344,403,NoRes = 1 AND Downmix = 1 AND Freeformat = 1 AND CBR = 320,NoRes==1 AND CBR==320 AND Downmix==1 AND Freeformat==1,0,1.0,1.0,1.0,14,17.4903461933136
+5,12.266964676922589,311,Downmix = 1 AND Freeformat = 1 AND CRC = 1 AND CBR = 8 AND VBRRange = 0,CBR==8 AND Downmix==1 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,14,8.586462020874023
+6,24.00332777731308,266,NoRes = 1 AND MidSideStereo = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND MidSideStereo==1 AND Freeformat==1 AND Mono==0 AND CRC==1,0,1.0,1.0,1.0,14,22.94526314735413
+7,26.410201876397533,275,NoRes = 1 AND Downmix = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND CBR = 8 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND CBR==8 AND Downmix==1 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,14,8.015873432159424
+1,3.699815295184961,999,JointStereo = 1,SwapBytes==0 AND Resampling==48 AND VBRRange==0 AND NoReplayGain==1 AND Downmix==0 AND DualChannels==1 AND CRC==0,0,0.0,0.0,0.0,15,73.61284303665161
+2,14.7571055322758,375,DualChannels = 1 AND SwapBytes = 1,SwapBytes==1 AND MidSideStereo==0 AND Mono==0 AND DualChannels==1 AND Stereo==0,0,1.0,1.0,1.0,15,1.4234414100646973
+3,9.645668539267607,225,MidSideStereo = 1 AND Resampling = 22 AND CBR = 8,Resampling==22 AND CBR==8 AND MidSideStereo==1 AND Mono==0 AND DualChannels==0 AND Stereo==0,0,1.0,1.0,1.0,15,6.610578298568726
+4,17.830485683536814,283,NoReplayGain = 1 AND Downmix = 1 AND CRC = 1 AND CBR = 8,CBR==8 AND NoReplayGain==1 AND Downmix==1 AND ReplayGainFast==0 AND CRC==1,0,1.0,1.0,1.0,15,4.09360671043396
+5,10.13913420215588,310,NoRes = 1 AND Downmix = 1 AND Freeformat = 1 AND JointStereo = 1 AND SwapBytes = 1,NoRes==1 AND JointStereo==1 AND SwapBytes==1 AND Downmix==1 AND MidSideStereo==0 AND Freeformat==1,0,1.0,1.0,1.0,15,21.16581392288208
+6,24.1434441196201,377,NoRes = 1 AND Downmix = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND ReplayGainAccurate = 1,NoRes==1 AND SwapBytes==1 AND NoReplayGain==0 AND Downmix==1 AND ReplayGainFast==0 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,15,20.541595697402958
+7,10.921793184796844,274,NoRes = 1 AND Downmix = 1 AND ReplayGainFast = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND Downmix==1 AND ReplayGainFast==1 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,15,12.633220195770264
+1,4.316447596657638,801,Resampling = 48,NoRes==0 AND Resampling==22 AND Downmix==0 AND ReplayGainFast==0 AND Freeformat==1 AND Mono==1 AND CRC==0,0,0.0,0.0,0.0,16,94.4176185131073
+2,3.5386897296003537,1144,Freeformat = 1 AND CRC = 1,NoRes==1 AND CBR==320 AND NoReplayGain==0 AND Downmix==1 AND MidSideStereo==1 AND Freeformat==0 AND DualChannels==0,0,0.0,0.0,0.0,16,51.32430863380432
+3,9.426918756208435,273,Resampling = 22 AND CBR = 160 AND VBRRange = 0,Resampling==22 AND CBR==160,0,1.0,1.0,1.0,16,13.462000846862791
+4,27.11740036071838,297,Downmix = 1 AND ReplayGainFast = 1 AND Freeformat = 1 AND CRC = 1,NoReplayGain==0 AND Downmix==1 AND ReplayGainFast==1 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,16,1.3886771202087402
+5,6.632112805757459,448,NoRes = 1 AND Freeformat = 1 AND SwapBytes = 1 AND ReplayGainAccurate = 1 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND NoReplayGain==0 AND ReplayGainFast==0 AND Freeformat==1,0,1.0,1.0,1.0,16,49.32474303245544
+6,22.05597542821264,327,NoRes = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND CBR = 160 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND CBR==160 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,16,21.425678253173828
+7,17.12944840520511,254,NoRes = 1 AND Downmix = 1 AND MidSideStereo = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND Downmix==1 AND MidSideStereo==1 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,16,23.898902893066406
+1,19.32645435074916,999,JointStereo = 1,MidSideStereo==0 AND Mono==0 AND DualChannels==0 AND Stereo==0,0,1.0,1.0,1.0,17,0.3241820335388183
+2,21.25670862954972,425,Downmix = 1 AND Stereo = 1,Downmix==1 AND MidSideStereo==0 AND Mono==0 AND DualChannels==0 AND Stereo==1,0,1.0,1.0,1.0,17,1.3279578685760498
+3,6.31857960072317,389,Downmix = 1 AND SwapBytes = 1 AND CBR = 160,SwapBytes==1 AND CBR==160 AND Downmix==1,4,1.0,1.0,1.0,17,71.90698862075806
+4,15.808015720079934,1054,NoRes = 1 AND Freeformat = 1 AND SwapBytes = 1 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND Freeformat==1,0,1.0,1.0,1.0,17,16.606420278549194
+5,21.199863039884157,251,NoRes = 1 AND ReplayGainFast = 1 AND CRC = 1 AND CBR = 8 AND VBRRange = 0,NoRes==1 AND CBR==8 AND VBRRange==0 AND NoReplayGain==0 AND ReplayGainFast==1 AND CRC==1,0,1.0,1.0,1.0,17,14.480710983276367
+6,16.39603191705352,228,NoRes = 1 AND Downmix = 1 AND ReplayGainFast = 1 AND SwapBytes = 1 AND CBR = 8 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND CBR==8 AND VBRRange==0 AND Downmix==1 AND ReplayGainFast==1,0,1.0,1.0,1.0,17,22.477721214294437
+7,3.30012650636508,285,NoRes = 1 AND NoReplayGain = 1 AND Downmix = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND VBRRange = 0,NoRes==1 AND ReplayGainAccurate==1 AND Resampling==48 AND CBR==8 AND VBRRange==0 AND Mono==1 AND CRC==1,0,0.0,0.0,0.0,17,89.94816160202026
+1,9.612964003494032,723,CBR = 160,CBR==160,0,1.0,1.0,1.0,18,2.846691370010376
+2,20.21635131707293,475,Downmix = 1 AND CBR = 160,CBR==160 AND Downmix==1,0,1.0,1.0,1.0,18,1.2462615966796875
+3,3.303718540771712,242,NoRes = 1 AND Mono = 1 AND CRC = 1,SwapBytes==1 AND CBR==8 AND NoReplayGain==1 AND ReplayGainFast==0 AND Mono==0 AND CRC==1,0,0.0,0.0,0.0,18,90.2311601638794
+4,13.145009073368906,255,NoRes = 1 AND Downmix = 1 AND ReplayGainAccurate = 1 AND CBR = 8,NoRes==1 AND CBR==8 AND NoReplayGain==0 AND Downmix==1 AND ReplayGainFast==0,0,1.0,1.0,1.0,18,11.724639654159546
+5,26.374951420562216,230,NoRes = 1 AND Downmix = 1 AND Stereo = 1 AND CRC = 1 AND SwapBytes = 1,NoRes==1 AND SwapBytes==1 AND Downmix==1 AND MidSideStereo==0 AND Stereo==1 AND CRC==1,0,1.0,1.0,1.0,18,13.430331230163574
+6,9.331294394458634,254,NoRes = 1 AND Downmix = 1 AND MidSideStereo = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1,NoRes==1 AND SwapBytes==1 AND Downmix==1 AND MidSideStereo==1 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,18,14.097492218017578
+7,14.616447340305612,377,NoRes = 1 AND Downmix = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND ReplayGainAccurate = 1 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND NoReplayGain==0 AND Downmix==1 AND ReplayGainFast==0 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,18,22.135557651519772
+1,19.64670060453484,930,Resampling = 44,Resampling==44,0,1.0,1.0,1.0,19,0.2131695747375488
+2,15.45926062981632,465,SwapBytes = 1 AND CBR = 160,SwapBytes==1 AND CBR==160,0,1.0,1.0,1.0,19,0.91772198677063
+3,25.844842887356627,1146,Freeformat = 1 AND SwapBytes = 1 AND VBRRange = 0,SwapBytes==1 AND Freeformat==1,0,1.0,1.0,1.0,19,0.4031047821044922
+4,21.4630977158042,226,NoRes = 1 AND CRC = 1 AND Resampling = 44 AND VBRRange = 0,NoRes==1 AND Resampling==44 AND VBRRange==0 AND CRC==1,0,1.0,1.0,1.0,19,14.63306736946106
+5,5.185309971752925,308,NoReplayGain = 1 AND Downmix = 1 AND Freeformat = 1 AND CRC = 1 AND VBRRange = 0,NoRes==1 AND SwapBytes==0 AND Resampling==44 AND Downmix==1 AND ReplayGainFast==0 AND MidSideStereo==1 AND Freeformat==1,0,0.0,0.0,0.0,19,60.74076867103577
+6,8.512612221139046,274,NoRes = 1 AND Downmix = 1 AND ReplayGainFast = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1,NoRes==1 AND SwapBytes==1 AND Downmix==1 AND ReplayGainFast==1 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,19,26.75271773338318
+7,23.851972437960956,254,NoRes = 1 AND Downmix = 1 AND MidSideStereo = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND Downmix==1 AND MidSideStereo==1 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,19,16.34275531768799
+1,7.649338294289824,572,VBRRange = 1,VBRRange==1 AND Freeformat==0,0,1.0,1.0,1.0,2,10.069465637207031
+2,5.874446797838212,277,NoReplayGain = 1 AND Resampling = 44,NoRes==0 AND JointStereo==1 AND SwapBytes==1 AND Resampling==22 AND NoReplayGain==1 AND Downmix==0 AND Freeformat==0,0,0.0,0.0,0.0,2,90.9656491279602
+3,5.8410709932412574,388,CRC = 1 AND Resampling = 8 AND CBR = 8,NoRes==1 AND Resampling==48 AND CBR==160 AND NoReplayGain==0 AND ReplayGainFast==0 AND MidSideStereo==1 AND DualChannels==0,0,0.0,0.0,0.0,2,81.79437589645386
+4,15.740388885032573,317,NoRes = 1 AND CRC = 1 AND Resampling = 22 AND CBR = 8,NoRes==1 AND Resampling==22 AND CBR==8 AND CRC==1,0,1.0,1.0,1.0,2,7.829077482223511
+5,18.61355259052072,395,Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND CBR = 320 AND VBRRange = 0,SwapBytes==1 AND CBR==320 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,2,1.822014331817627
+6,19.023226195507934,290,Downmix = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND CBR = 8 AND VBRRange = 0,SwapBytes==1 AND CBR==8 AND Downmix==1 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,2,2.2326605319976807
+7,14.41112789440294,377,NoRes = 1 AND Downmix = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND ReplayGainAccurate = 1 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND NoReplayGain==0 AND Downmix==1 AND ReplayGainFast==0 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,2,7.55179500579834
+1,2.489493178038702,1061,Resampling = 8,NoRes==1 AND SwapBytes==0 AND Resampling==44 AND CBR==160 AND MidSideStereo==1 AND Freeformat==1,0,0.0,0.0,0.0,20,55.289650440216064
+2,12.03524477211702,572,CBR = 8 AND VBRRange = 1,VBRRange==1 AND Freeformat==0,0,1.0,1.0,1.0,20,0.4783556461334228
+3,12.537563053519046,428,Downmix = 1 AND Freeformat = 1 AND CBR = 320,CBR==320 AND Downmix==1 AND Freeformat==1,0,1.0,1.0,1.0,20,5.865884780883789
+4,16.15303630349664,456,NoRes = 1 AND Downmix = 1 AND Resampling = 8 AND VBRRange = 0,NoRes==1 AND Resampling==8 AND VBRRange==0 AND Downmix==1,0,1.0,1.0,1.0,20,20.924339771270752
+5,20.94540043574148,272,NoRes = 1 AND Downmix = 1 AND SwapBytes = 1 AND Resampling = 48 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND Resampling==48 AND VBRRange==0 AND Downmix==1,0,1.0,1.0,1.0,20,20.663975477218628
+6,8.305478029670157,327,Downmix = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND CBR = 160 AND VBRRange = 0,SwapBytes==1 AND CBR==160 AND Downmix==1 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,20,22.886173248291016
+7,3.639733333446632,296,NoRes = 1 AND Downmix = 1 AND Freeformat = 1 AND CRC = 1 AND JointStereo = 1 AND SwapBytes = 1 AND VBRRange = 0,NoRes==0 AND JointStereo==0 AND Resampling==8 AND NoReplayGain==0 AND ReplayGainFast==0 AND Mono==0 AND CRC==0,0,0.0,0.0,0.0,20,89.02741026878357
+1,28.82380537909826,723,CBR = 160,CBR==160,0,1.0,1.0,1.0,21,0.2096786499023437
+2,27.270236228873227,232,NoRes = 1 AND VBRRange = 1,NoRes==1 AND VBRRange==1 AND Freeformat==0,0,1.0,1.0,1.0,21,14.025851726531982
+3,3.366692273955622,695,ReplayGainAccurate = 1 AND CBR = 8 AND VBRRange = 0,NoRes==0 AND JointStereo==1 AND SwapBytes==1 AND VBRRange==1 AND NoReplayGain==0 AND Mono==0 AND CRC==1,0,0.0,0.0,0.0,21,48.56761169433594
+4,4.537130994376052,361,NoRes = 1 AND MidSideStereo = 1 AND CRC = 1 AND VBRRange = 0,JointStereo==1 AND Resampling==44 AND CBR==160 AND NoReplayGain==1 AND Freeformat==1 AND Stereo==0 AND CRC==0,0,0.0,0.0,0.0,21,60.25743508338928
+5,26.614205507399102,346,NoRes = 1 AND Downmix = 1 AND Freeformat = 1 AND CBR = 160 AND VBRRange = 0,NoRes==1 AND CBR==160 AND Downmix==1 AND Freeformat==1,0,1.0,1.0,1.0,21,5.0145583152771
+6,10.508293265842962,374,NoRes = 1 AND Downmix = 1 AND CRC = 1 AND SwapBytes = 1 AND Resampling = 22 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND Resampling==22 AND VBRRange==0 AND Downmix==1 AND CRC==1,0,1.0,1.0,1.0,21,22.612866640090942
+7,8.27329040136017,304,NoRes = 1 AND Downmix = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND CBR = 160 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND CBR==160 AND Downmix==1 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,21,26.63202738761902
+1,4.255624733751685,1061,Resampling = 8,NoRes==0 AND JointStereo==0 AND Resampling==22 AND CBR==160 AND NoReplayGain==0 AND ReplayGainFast==0 AND CRC==0,0,0.0,0.0,0.0,22,88.04013681411743
+2,17.149792021733933,314,Stereo = 1 AND Resampling = 22,Resampling==22 AND MidSideStereo==0 AND Mono==0 AND DualChannels==0 AND Stereo==1,0,1.0,1.0,1.0,22,0.6505041122436523
+3,21.32185898941149,665,NoRes = 1 AND ReplayGainAccurate = 1 AND VBRRange = 0,NoRes==1 AND VBRRange==0 AND NoReplayGain==0 AND ReplayGainFast==0,0,1.0,1.0,1.0,22,18.908665657043457
+4,27.715336589942112,374,Downmix = 1 AND MidSideStereo = 1 AND SwapBytes = 1 AND VBRRange = 0,SwapBytes==1 AND VBRRange==0 AND Downmix==1 AND MidSideStereo==1 AND Mono==0 AND DualChannels==0,0,1.0,1.0,1.0,22,1.3901879787445068
+5,19.669086984405634,235,NoRes = 1 AND SwapBytes = 1 AND Resampling = 8 AND CBR = 8 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND Resampling==8 AND CBR==8 AND VBRRange==0,0,1.0,1.0,1.0,22,16.19552969932556
+6,8.623161545292074,357,NoRes = 1 AND Downmix = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND CBR = 320,NoRes==1 AND SwapBytes==1 AND CBR==320 AND Downmix==1 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,22,22.635345697402958
+7,12.009920672832406,274,NoRes = 1 AND Downmix = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND Resampling = 22 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND Resampling==22 AND Downmix==1 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,22,22.49991202354431
+1,3.65175741921296,723,CBR = 160,NoRes==0 AND Resampling==44 AND VBRRange==2 AND NoReplayGain==0 AND ReplayGainFast==0 AND Mono==0 AND CRC==1,0,0.0,0.0,0.0,23,44.93090605735779
+2,20.73160876592869,335,MidSideStereo = 1 AND Freeformat = 1,MidSideStereo==1 AND Freeformat==1,0,1.0,1.0,1.0,23,1.0025553703308103
+3,7.889573213713833,262,NoRes = 1 AND Downmix = 1 AND DualChannels = 1,NoRes==1 AND Downmix==1 AND MidSideStereo==0 AND Mono==0 AND DualChannels==1,0,1.0,1.0,1.0,23,23.55003809928894
+4,27.41319118902366,211,NoRes = 1 AND Downmix = 1 AND ReplayGainAccurate = 1 AND Resampling = 22,NoRes==1 AND Resampling==22 AND NoReplayGain==0 AND Downmix==1 AND ReplayGainFast==0,0,1.0,1.0,1.0,23,17.519302129745483
+5,27.22309047648053,283,NoRes = 1 AND MidSideStereo = 1 AND Freeformat = 1 AND SwapBytes = 1 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND MidSideStereo==1 AND Freeformat==1 AND Mono==0 AND DualChannels==0,0,1.0,1.0,1.0,23,20.966449975967407
+6,6.594042514583977,284,NoRes = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND CBR = 8 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND CBR==8 AND Freeformat==1 AND CRC==1,4,1.0,1.0,1.0,23,73.71639680862427
+7,2.5619808088290714,296,NoRes = 1 AND Downmix = 1 AND Freeformat = 1 AND CRC = 1 AND JointStereo = 1 AND SwapBytes = 1 AND VBRRange = 0,JointStereo==1 AND SwapBytes==1 AND Resampling==44 AND CBR==8 AND VBRRange==0 AND NoReplayGain==0 AND Downmix==0,0,0.0,0.0,0.0,23,71.78691029548645
+1,20.29059228110088,645,Mono = 1,MidSideStereo==0 AND Mono==1,0,1.0,1.0,1.0,24,0.28072190284729
+2,8.223757104439928,403,NoRes = 1 AND Resampling = 48,NoRes==1 AND Resampling==48,0,1.0,1.0,1.0,24,17.50349450111389
+3,28.36424001797613,665,Downmix = 1 AND ReplayGainAccurate = 1 AND VBRRange = 0,VBRRange==0 AND NoReplayGain==0 AND Downmix==1 AND ReplayGainFast==0,0,1.0,1.0,1.0,24,1.1710302829742432
+4,24.27059843771777,300,SwapBytes = 1 AND Resampling = 8 AND CBR = 8 AND VBRRange = 0,SwapBytes==1 AND Resampling==8 AND CBR==8 AND VBRRange==0,0,1.0,1.0,1.0,24,0.8291308879852295
+5,9.508228108907169,936,NoRes = 1 AND Downmix = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1,NoRes==1 AND SwapBytes==1 AND Downmix==1 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,24,21.884028434753414
+6,15.3271878991183,291,NoRes = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND Resampling = 22 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND Resampling==22 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,24,20.507478713989254
+7,14.91632335216665,304,NoRes = 1 AND Downmix = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND CBR = 160 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND CBR==160 AND Downmix==1 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,24,23.816415071487427
+1,5.011297410517331,801,Resampling = 48,NoRes==1 AND Resampling==8 AND CBR==8 AND ReplayGainFast==1 AND MidSideStereo==1 AND Freeformat==0 AND CRC==1,0,0.0,0.0,0.0,25,94.7137553691864
+2,20.50622322018463,957,NoReplayGain = 1 AND VBRRange = 0,VBRRange==0 AND NoReplayGain==1 AND ReplayGainFast==0,0,1.0,1.0,1.0,25,5.020921945571899
+3,5.774978762408901,261,JointStereo = 1 AND Resampling = 22 AND VBRRange = 0,NoRes==1 AND Resampling==44 AND VBRRange==1 AND Downmix==0 AND ReplayGainFast==0 AND Stereo==1 AND CRC==0,0,0.0,0.0,0.0,25,60.67499899864197
+4,26.62375844275256,358,Downmix = 1 AND Freeformat = 1 AND CRC = 1 AND CBR = 160,CBR==160 AND Downmix==1 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,25,1.314683437347412
+5,9.602657830596849,588,NoRes = 1 AND CRC = 1 AND SwapBytes = 1 AND CBR = 8 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND CBR==8 AND VBRRange==0 AND CRC==1,0,1.0,1.0,1.0,25,21.112156629562374
+6,16.400714303958907,469,NoRes = 1 AND Downmix = 1 AND CRC = 1 AND SwapBytes = 1 AND ReplayGainAccurate = 1 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND VBRRange==0 AND NoReplayGain==0 AND Downmix==1 AND ReplayGainFast==0 AND CRC==1,0,1.0,1.0,1.0,25,10.52115249633789
+7,5.600142381039578,275,NoRes = 1 AND Downmix = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND CBR = 8 AND VBRRange = 0,NoRes==0 AND SwapBytes==1 AND ReplayGainAccurate==0 AND Resampling==22 AND DualChannels==0 AND Stereo==1 AND CRC==0,0,0.0,0.0,0.0,25,104.09531331062315
+1,18.704207358508384,999,JointStereo = 1,MidSideStereo==0 AND Mono==0 AND DualChannels==0 AND Stereo==0,0,1.0,1.0,1.0,26,0.3412749767303467
+2,22.116329434674096,624,NoReplayGain = 1 AND SwapBytes = 1,SwapBytes==1 AND NoReplayGain==1,0,1.0,1.0,1.0,26,4.665516138076782
+3,8.572322316606947,456,CRC = 1 AND JointStereo = 1 AND SwapBytes = 1,SwapBytes==1 AND MidSideStereo==0 AND Mono==0 AND DualChannels==0 AND Stereo==0 AND CRC==1,0,1.0,1.0,1.0,26,19.573042392730716
+4,8.916723835919484,426,Freeformat = 1 AND SwapBytes = 1 AND CBR = 320 AND VBRRange = 0,SwapBytes==1 AND CBR==320 AND Freeformat==1,0,1.0,1.0,1.0,26,12.808658838272097
+5,7.449914522573701,311,Downmix = 1 AND Freeformat = 1 AND SwapBytes = 1 AND CBR = 8 AND VBRRange = 0,SwapBytes==1 AND CBR==8 AND Downmix==1 AND Freeformat==1,0,1.0,1.0,1.0,26,37.75407361984253
+6,18.96798552986296,377,NoRes = 1 AND Downmix = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND ReplayGainAccurate = 1,NoRes==1 AND SwapBytes==1 AND NoReplayGain==0 AND Downmix==1 AND ReplayGainFast==0 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,26,19.698952198028564
+7,25.292205786643184,285,NoRes = 1 AND NoReplayGain = 1 AND Downmix = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND NoReplayGain==1 AND Downmix==1 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,26,25.838457584381104
+1,10.345329340072736,281,VBRRange = 2,VBRRange==2 AND Freeformat==0,0,1.0,1.0,1.0,27,3.5805389881134038
+2,2.393102042406834,567,MidSideStereo = 1 AND SwapBytes = 1,MidSideStereo==0,0,0.0,0.0,0.0,27,73.50004482269287
+3,26.4043883109644,320,Stereo = 1 AND CRC = 1 AND CBR = 8,CBR==8 AND MidSideStereo==0 AND Mono==0 AND DualChannels==0 AND Stereo==1 AND CRC==1,0,1.0,1.0,1.0,27,0.8246092796325684
+4,5.433967781068764,301,SwapBytes = 1 AND ReplayGainAccurate = 1 AND CBR = 8 AND VBRRange = 0,NoRes==1 AND SwapBytes==0 AND ReplayGainAccurate==1 AND Resampling==48 AND VBRRange==0 AND Downmix==0 AND DualChannels==1,0,0.0,0.0,0.0,27,86.72817659378052
+5,23.341377782104196,352,Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND CBR = 160 AND VBRRange = 0,SwapBytes==1 AND CBR==160 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,27,1.1034574508666992
+6,3.242132316643516,282,Downmix = 1 AND ReplayGainFast = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND VBRRange = 0,JointStereo==0 AND Resampling==44 AND CBR==8 AND Downmix==0 AND Mono==0 AND DualChannels==0,0,0.0,0.0,0.0,27,84.57530331611633
+7,15.131449176959867,337,NoRes = 1 AND Downmix = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND Resampling = 8 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND Resampling==8 AND Downmix==1 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,27,19.32590079307556
+1,24.56078333325096,645,Mono = 1,MidSideStereo==0 AND Mono==1,0,1.0,1.0,1.0,28,0.1982514858245849
+2,18.315761998947345,356,Downmix = 1 AND DualChannels = 1,Downmix==1 AND MidSideStereo==0 AND Mono==0 AND DualChannels==1,0,1.0,1.0,1.0,28,1.5820722579956057
+3,17.54107803113123,407,NoRes = 1 AND Resampling = 22 AND CBR = 8,NoRes==1 AND Resampling==22 AND CBR==8,0,1.0,1.0,1.0,28,15.46916913986206
+4,3.550722315206836,401,Freeformat = 1 AND CRC = 1 AND CBR = 160 AND VBRRange = 0,Resampling==48 AND Downmix==1 AND ReplayGainFast==0 AND MidSideStereo==1 AND Freeformat==0 AND Mono==0,0,0.0,0.0,0.0,28,103.20031023025513
+5,25.87387122847394,424,NoRes = 1 AND CRC = 1 AND SwapBytes = 1 AND Resampling = 8 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND Resampling==8 AND VBRRange==0 AND CRC==1,0,1.0,1.0,1.0,28,20.96082854270935
+6,25.68671140499301,414,NoRes = 1 AND Downmix = 1 AND Freeformat = 1 AND SwapBytes = 1 AND ReplayGainAccurate = 1 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND NoReplayGain==0 AND Downmix==1 AND ReplayGainFast==0 AND Freeformat==1,0,1.0,1.0,1.0,28,18.572811365127563
+7,18.63963372225537,296,NoRes = 1 AND Downmix = 1 AND Freeformat = 1 AND CRC = 1 AND JointStereo = 1 AND SwapBytes = 1 AND VBRRange = 0,NoRes==1 AND JointStereo==1 AND SwapBytes==1 AND Downmix==1 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,28,8.948988676071167
+1,18.300449311406272,999,JointStereo = 1,MidSideStereo==0 AND Mono==0 AND DualChannels==0 AND Stereo==0,0,1.0,1.0,1.0,29,0.3137130737304687
+2,4.884907417128692,646,CBR = 320 AND VBRRange = 0,NoRes==1 AND Resampling==44 AND VBRRange==1 AND NoReplayGain==1 AND Freeformat==0 AND Stereo==1 AND CRC==0,0,0.0,0.0,0.0,29,76.27932572364807
+3,27.962117984126305,283,ReplayGainAccurate = 1 AND Resampling = 44 AND VBRRange = 0,Resampling==44 AND VBRRange==0 AND NoReplayGain==0 AND ReplayGainFast==0,0,1.0,1.0,1.0,29,0.2607836723327636
+4,5.110367759309609,304,NoReplayGain = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1,NoRes==0 AND Resampling==22 AND NoReplayGain==0 AND Downmix==1 AND ReplayGainFast==1 AND MidSideStereo==1 AND CRC==0,0,0.0,0.0,0.0,29,50.68676686286926
+5,26.994980187908915,996,NoRes = 1 AND Downmix = 1 AND Freeformat = 1 AND CRC = 1 AND VBRRange = 0,NoRes==1 AND Downmix==1 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,29,18.171854257583615
+6,5.638922468755236,210,NoRes = 1 AND Downmix = 1 AND ReplayGainFast = 1 AND CRC = 1 AND CBR = 8 AND VBRRange = 0,NoRes==0 AND Resampling==48 AND CBR==160 AND NoReplayGain==0 AND ReplayGainFast==0 AND MidSideStereo==1 AND DualChannels==0,0,0.0,0.0,0.0,29,87.2884202003479
+7,21.37551501868211,285,NoRes = 1 AND NoReplayGain = 1 AND Downmix = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND NoReplayGain==1 AND Downmix==1 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,29,29.847593069076535
+1,13.794866829985514,572,VBRRange = 1,VBRRange==1 AND Freeformat==0,0,1.0,1.0,1.0,3,0.2744355201721191
+2,11.299560896242877,398,NoRes = 1 AND Resampling = 44,NoRes==1 AND Resampling==44,0,1.0,1.0,1.0,3,20.78756785392761
+3,18.978006965314385,239,DualChannels = 1 AND SwapBytes = 1 AND CBR = 8,SwapBytes==1 AND CBR==8 AND MidSideStereo==0 AND Mono==0 AND DualChannels==1 AND Stereo==0,0,1.0,1.0,1.0,3,1.3042173385620115
+4,21.99093682557282,473,Downmix = 1 AND CRC = 1 AND Resampling = 8 AND VBRRange = 0,Resampling==8 AND VBRRange==0 AND Downmix==1 AND CRC==1,0,1.0,1.0,1.0,3,1.4133963584899902
+5,23.084318007349285,288,NoRes = 1 AND Downmix = 1 AND ReplayGainFast = 1 AND Freeformat = 1 AND CRC = 1,NoRes==1 AND NoReplayGain==0 AND Downmix==1 AND ReplayGainFast==1 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,3,20.436771154403687
+6,13.385573975679918,273,NoRes = 1 AND Downmix = 1 AND MidSideStereo = 1 AND Freeformat = 1 AND CRC = 1 AND VBRRange = 0,NoRes==1 AND Downmix==1 AND MidSideStereo==1 AND Freeformat==1 AND Mono==0 AND CRC==1,0,1.0,1.0,1.0,3,11.783347845077516
+7,7.873302379966838,377,NoRes = 1 AND Downmix = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND ReplayGainAccurate = 1 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND NoReplayGain==0 AND Downmix==1 AND ReplayGainFast==0 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,3,15.140246868133543
+1,17.470425638839544,999,JointStereo = 1,MidSideStereo==0 AND Mono==0 AND DualChannels==0 AND Stereo==0,0,1.0,1.0,1.0,30,0.3451302051544189
+2,8.967010475592431,878,Resampling = 8 AND VBRRange = 0,Resampling==8 AND VBRRange==0,0,1.0,1.0,1.0,30,3.3972110748291016
+3,17.924832408299153,246,Freeformat = 1 AND Resampling = 48 AND VBRRange = 0,Resampling==48 AND Freeformat==1,0,1.0,1.0,1.0,30,2.1889264583587646
+4,12.53601506927896,1050,NoRes = 1 AND Freeformat = 1 AND CRC = 1 AND VBRRange = 0,NoRes==1 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,30,17.224449634552002
+5,12.9743426504808,452,Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND ReplayGainAccurate = 1 AND VBRRange = 0,SwapBytes==1 AND NoReplayGain==0 AND ReplayGainFast==0 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,30,2.642082929611206
+6,21.874082153012964,258,NoRes = 1 AND Downmix = 1 AND ReplayGainFast = 1 AND CRC = 1 AND SwapBytes = 1 AND CBR = 8,NoRes==1 AND SwapBytes==1 AND CBR==8 AND Downmix==1 AND ReplayGainFast==1 AND CRC==1,0,1.0,1.0,1.0,30,17.55340003967285
+7,5.097863268080745,377,NoRes = 1 AND Downmix = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND ReplayGainAccurate = 1 AND VBRRange = 0,SwapBytes==1 AND Resampling==22 AND CBR==8 AND Downmix==1 AND MidSideStereo==1 AND CRC==0,0,0.0,0.0,0.0,30,100.5360963344574
+1,7.75690425029089,1061,Resampling = 8,Resampling==8,0,1.0,1.0,1.0,31,6.416016101837158
+2,23.20065226208318,232,NoRes = 1 AND VBRRange = 1,NoRes==1 AND VBRRange==1 AND Freeformat==0,0,1.0,1.0,1.0,31,22.599416971206665
+3,27.73409102634437,247,NoReplayGain = 1 AND Resampling = 22 AND CBR = 8,Resampling==22 AND CBR==8 AND NoReplayGain==1 AND ReplayGainFast==0,0,1.0,1.0,1.0,31,5.069550037384033
+4,28.24366854839789,228,Freeformat = 1 AND SwapBytes = 1 AND Resampling = 48 AND VBRRange = 0,SwapBytes==1 AND Resampling==48 AND Freeformat==1,0,1.0,1.0,1.0,31,1.4463050365447998
+5,15.946902834678625,411,NoRes = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND ReplayGainAccurate = 1,NoRes==1 AND SwapBytes==1 AND NoReplayGain==0 AND ReplayGainFast==0 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,31,21.851056575775143
+6,28.32271452547357,254,NoRes = 1 AND Downmix = 1 AND MidSideStereo = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1,NoRes==1 AND SwapBytes==1 AND Downmix==1 AND MidSideStereo==1 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,31,24.26111340522766
+7,17.586799661287017,337,NoRes = 1 AND Downmix = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND Resampling = 8 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND Resampling==8 AND Downmix==1 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,31,23.34114122390747
+1,11.073489554549967,801,Resampling = 48,Resampling==48,0,1.0,1.0,1.0,32,0.8884177207946777
+2,12.004424709882844,501,Downmix = 1 AND MidSideStereo = 1,Downmix==1 AND MidSideStereo==1,0,1.0,1.0,1.0,32,2.652235746383667
+3,16.61546336594293,285,SwapBytes = 1 AND CBR = 8 AND VBRRange = 1,SwapBytes==1 AND VBRRange==1 AND Freeformat==0,0,1.0,1.0,1.0,32,0.6027696132659912
+4,5.185604265693408,499,NoRes = 1 AND Downmix = 1 AND SwapBytes = 1 AND Resampling = 22,Resampling==44 AND VBRRange==1 AND NoReplayGain==0 AND Downmix==1 AND ReplayGainFast==1 AND DualChannels==1 AND CRC==1,0,0.0,0.0,0.0,32,54.16782760620117
+5,25.578736364691157,279,Downmix = 1 AND ReplayGainFast = 1 AND SwapBytes = 1 AND CBR = 8 AND VBRRange = 0,SwapBytes==1 AND CBR==8 AND VBRRange==0 AND NoReplayGain==0 AND Downmix==1 AND ReplayGainFast==1,0,1.0,1.0,1.0,32,1.5066046714782717
+6,23.29075803325237,254,NoRes = 1 AND Downmix = 1 AND CRC = 1 AND SwapBytes = 1 AND Resampling = 8 AND CBR = 8,NoRes==1 AND SwapBytes==1 AND Resampling==8 AND CBR==8 AND Downmix==1 AND CRC==1,0,1.0,1.0,1.0,32,18.922276735305783
+7,21.298278908648157,275,NoRes = 1 AND Downmix = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND CBR = 8 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND CBR==8 AND Downmix==1 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,32,23.507214784622192
+1,18.73490467173184,930,Resampling = 44,Resampling==44,0,1.0,1.0,1.0,33,0.2296390533447265
+2,8.91347034524781,404,Freeformat = 1 AND Resampling = 22,Resampling==22 AND Freeformat==1,0,1.0,1.0,1.0,33,14.747579097747805
+3,7.998926372977068,741,SwapBytes = 1 AND ReplayGainAccurate = 1 AND VBRRange = 0,SwapBytes==1 AND VBRRange==0 AND NoReplayGain==0 AND ReplayGainFast==0,0,1.0,1.0,1.0,33,6.861308574676514
+4,23.607459492904237,215,NoRes = 1 AND Downmix = 1 AND Stereo = 1 AND CBR = 8,NoRes==1 AND CBR==8 AND Downmix==1 AND MidSideStereo==0 AND Mono==0 AND Stereo==1,0,1.0,1.0,1.0,33,11.60564136505127
+5,21.696317447213044,358,Downmix = 1 AND Freeformat = 1 AND CRC = 1 AND CBR = 160 AND VBRRange = 0,CBR==160 AND Downmix==1 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,33,1.38543701171875
+6,4.584905428262434,321,NoRes = 1 AND NoReplayGain = 1 AND Downmix = 1 AND CRC = 1 AND SwapBytes = 1 AND VBRRange = 0,NoRes==1 AND CBR==160 AND NoReplayGain==1 AND Downmix==1 AND Freeformat==1 AND Stereo==0 AND CRC==0,0,0.0,0.0,0.0,33,58.95043396949768
+7,13.921313482804557,254,NoRes = 1 AND Downmix = 1 AND MidSideStereo = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND Downmix==1 AND MidSideStereo==1 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,33,23.398998260498047
+1,7.826644403517547,723,CBR = 160,CBR==160,0,1.0,1.0,1.0,34,12.134820461273192
+2,23.005102660119736,1071,ReplayGainFast = 1 AND VBRRange = 0,VBRRange==0 AND NoReplayGain==0 AND ReplayGainFast==1,0,1.0,1.0,1.0,34,0.2704253196716308
+3,6.079608338750518,456,CRC = 1 AND JointStereo = 1 AND SwapBytes = 1,JointStereo==0 AND Resampling==48 AND CBR==160 AND ReplayGainFast==1 AND MidSideStereo==0 AND Stereo==0 AND CRC==1,0,0.0,0.0,0.0,34,81.92134189605713
+4,17.519519693851045,312,NoRes = 1 AND NoReplayGain = 1 AND CBR = 8 AND VBRRange = 0,NoRes==1 AND CBR==8 AND VBRRange==0 AND NoReplayGain==1 AND ReplayGainFast==0,0,1.0,1.0,1.0,34,14.02554965019226
+5,17.74989092901777,312,NoRes = 1 AND Downmix = 1 AND Freeformat = 1 AND CBR = 8 AND VBRRange = 0,NoRes==1 AND CBR==8 AND Downmix==1 AND Freeformat==1,0,1.0,1.0,1.0,34,20.18911027908325
+6,27.431345787544885,357,NoRes = 1 AND Downmix = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND CBR = 320,NoRes==1 AND SwapBytes==1 AND CBR==320 AND Downmix==1 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,34,13.212543249130247
+7,17.590300556372135,304,NoRes = 1 AND Downmix = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND CBR = 160 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND CBR==160 AND Downmix==1 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,34,15.867830276489258
+1,28.97355731128612,645,Mono = 1,MidSideStereo==0 AND Mono==1,0,1.0,1.0,1.0,35,0.210317850112915
+2,22.328703753884003,248,ReplayGainFast = 1 AND DualChannels = 1,NoReplayGain==0 AND ReplayGainFast==1 AND MidSideStereo==0 AND Mono==0 AND DualChannels==1,0,1.0,1.0,1.0,35,0.827068567276001
+3,8.03407454357921,225,MidSideStereo = 1 AND CRC = 1 AND ReplayGainAccurate = 1,NoReplayGain==0 AND ReplayGainFast==0 AND MidSideStereo==1 AND Mono==0 AND DualChannels==0 AND CRC==1,0,1.0,1.0,1.0,35,28.53960132598877
+4,18.434317411440823,361,NoRes = 1 AND MidSideStereo = 1 AND CRC = 1 AND VBRRange = 0,NoRes==1 AND VBRRange==0 AND MidSideStereo==1 AND Mono==0 AND DualChannels==0 AND CRC==1,0,1.0,1.0,1.0,35,27.351991653442383
+5,13.028648075985648,296,NoRes = 1 AND NoReplayGain = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1,NoRes==1 AND SwapBytes==1 AND NoReplayGain==1 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,35,12.785917043685911
+6,17.19480723399205,378,NoRes = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND CBR = 320 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND CBR==320 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,35,16.47131371498108
+7,11.804194643291096,275,NoRes = 1 AND Downmix = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND CBR = 8 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND CBR==8 AND Downmix==1 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,35,26.878159284591675
+1,4.579643672406411,801,Resampling = 48,NoRes==0 AND ReplayGainAccurate==0 AND Resampling==44 AND Downmix==0 AND MidSideStereo==1 AND Stereo==0 AND CRC==0,0,0.0,0.0,0.0,36,90.8713312149048
+2,7.722921007360595,432,MidSideStereo = 1 AND ReplayGainAccurate = 1,NoReplayGain==0 AND ReplayGainFast==0 AND MidSideStereo==1,0,1.0,1.0,1.0,36,10.451823711395264
+3,10.257389828431569,547,MidSideStereo = 1 AND CBR = 8 AND VBRRange = 0,CBR==8 AND VBRRange==0 AND MidSideStereo==1 AND Mono==0 AND DualChannels==0 AND Stereo==0,0,1.0,1.0,1.0,36,1.5194432735443115
+4,13.631909478019711,414,Downmix = 1 AND JointStereo = 1 AND SwapBytes = 1 AND VBRRange = 0,SwapBytes==1 AND VBRRange==0 AND Downmix==1 AND MidSideStereo==0 AND Mono==0 AND DualChannels==0 AND Stereo==0,0,1.0,1.0,1.0,36,5.929752588272095
+5,17.856378878124026,296,NoRes = 1 AND Downmix = 1 AND Freeformat = 1 AND SwapBytes = 1 AND Resampling = 22,NoRes==1 AND SwapBytes==1 AND Resampling==22 AND Downmix==1 AND Freeformat==1,0,1.0,1.0,1.0,36,19.843302488327023
+6,23.219986556354588,305,NoRes = 1 AND Downmix = 1 AND Freeformat = 1 AND CRC = 1 AND JointStereo = 1 AND VBRRange = 0,NoRes==1 AND JointStereo==1 AND Downmix==1 AND MidSideStereo==0 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,36,17.63483476638794
+7,10.034378453084644,377,NoRes = 1 AND Downmix = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND ReplayGainAccurate = 1 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND NoReplayGain==0 AND Downmix==1 AND ReplayGainFast==0 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,36,14.93147873878479
+1,8.057266461610446,645,Mono = 1,MidSideStereo==0 AND Mono==1,0,1.0,1.0,1.0,37,8.397359848022461
+2,21.09900888655829,291,NoReplayGain = 1 AND JointStereo = 1,NoReplayGain==1 AND ReplayGainFast==0 AND MidSideStereo==0 AND Mono==0 AND DualChannels==0 AND Stereo==0,0,1.0,1.0,1.0,37,5.842667102813721
+3,5.825103254614111,253,NoReplayGain = 1 AND Resampling = 8 AND VBRRange = 0,NoRes==0 AND CBR==8 AND VBRRange==0 AND NoReplayGain==1 AND Downmix==1 AND DualChannels==1 AND CRC==1,0,0.0,0.0,0.0,37,81.94749474525452
+4,2.863208398868695,318,NoRes = 1 AND Freeformat = 1 AND CRC = 1 AND JointStereo = 1,NoRes==0 AND NoReplayGain==1 AND Downmix==1 AND ReplayGainFast==0 AND MidSideStereo==1 AND Freeformat==1 AND CRC==1,0,0.0,0.0,0.0,37,58.69269156455994
+5,27.85626445819839,434,NoRes = 1 AND Downmix = 1 AND SwapBytes = 1 AND Resampling = 8 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND Resampling==8 AND VBRRange==0 AND Downmix==1,0,1.0,1.0,1.0,37,20.128518104553223
+6,28.441581163364777,404,NoRes = 1 AND Downmix = 1 AND CRC = 1 AND SwapBytes = 1 AND Resampling = 8 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND Resampling==8 AND VBRRange==0 AND Downmix==1 AND CRC==1,0,1.0,1.0,1.0,37,20.75411820411682
+7,11.283068882714998,274,NoRes = 1 AND Downmix = 1 AND ReplayGainFast = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND Downmix==1 AND ReplayGainFast==1 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,37,20.88873672485352
+1,8.419179153273058,572,VBRRange = 1,VBRRange==1 AND Freeformat==0,0,1.0,1.0,1.0,38,4.982438087463379
+2,24.6467640458732,757,CRC = 1 AND Resampling = 22,Resampling==22 AND CRC==1,0,1.0,1.0,1.0,38,0.3278512954711914
+3,26.31466169822856,210,NoReplayGain = 1 AND Resampling = 44 AND VBRRange = 0,Resampling==44 AND VBRRange==0 AND NoReplayGain==1 AND ReplayGainFast==0,0,1.0,1.0,1.0,38,5.417286396026611
+4,6.919306335730249,265,NoRes = 1 AND Stereo = 1 AND CRC = 1 AND VBRRange = 0,NoRes==1 AND VBRRange==0 AND MidSideStereo==0 AND Mono==0 AND Stereo==1 AND CRC==1,0,1.0,1.0,1.0,38,55.533149003982544
+5,11.450482145573304,266,NoRes = 1 AND MidSideStereo = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1,NoRes==1 AND SwapBytes==1 AND MidSideStereo==1 AND Freeformat==1 AND Mono==0 AND CRC==1,0,1.0,1.0,1.0,38,25.121180534362797
+6,20.525777503791023,211,NoRes = 1 AND ReplayGainFast = 1 AND CRC = 1 AND SwapBytes = 1 AND CBR = 8 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND CBR==8 AND VBRRange==0 AND ReplayGainFast==1 AND CRC==1,0,1.0,1.0,1.0,38,22.02883720397949
+7,22.48665245503836,296,NoRes = 1 AND Downmix = 1 AND Freeformat = 1 AND CRC = 1 AND JointStereo = 1 AND SwapBytes = 1 AND VBRRange = 0,NoRes==1 AND JointStereo==1 AND SwapBytes==1 AND Downmix==1 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,38,9.495989799499512
+1,13.379156845205754,1061,Resampling = 8,Resampling==8,0,1.0,1.0,1.0,39,0.3352270126342773
+2,13.073853764029272,313,NoRes = 1 AND Mono = 1,NoRes==1 AND MidSideStereo==0 AND Mono==1,0,1.0,1.0,1.0,39,22.172234773635864
+3,26.159903121087837,217,NoRes = 1 AND ReplayGainFast = 1 AND Resampling = 8,NoRes==1 AND Resampling==8 AND NoReplayGain==0 AND ReplayGainFast==1,0,1.0,1.0,1.0,39,13.063267946243286
+4,2.583530258567959,391,NoRes = 1 AND Downmix = 1 AND SwapBytes = 1 AND CBR = 320,NoRes==0 AND Resampling==48 AND CBR==160 AND NoReplayGain==1 AND Downmix==0 AND MidSideStereo==0 AND DualChannels==0,0,0.0,0.0,0.0,39,48.36781549453735
+5,16.99681668239523,309,NoRes = 1 AND Freeformat = 1 AND CRC = 1 AND JointStereo = 1 AND SwapBytes = 1,NoRes==1 AND JointStereo==1 AND SwapBytes==1 AND MidSideStereo==0 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,39,12.599225521087646
+6,27.878297411311625,274,NoRes = 1 AND Downmix = 1 AND ReplayGainFast = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1,NoRes==1 AND SwapBytes==1 AND Downmix==1 AND ReplayGainFast==1 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,39,12.358439683914185
+7,18.774863986543476,296,NoRes = 1 AND Downmix = 1 AND Freeformat = 1 AND CRC = 1 AND JointStereo = 1 AND SwapBytes = 1 AND VBRRange = 0,NoRes==1 AND JointStereo==1 AND SwapBytes==1 AND Downmix==1 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,39,22.03273868560791
+1,28.77324577103376,572,VBRRange = 1,VBRRange==1 AND Freeformat==0,0,1.0,1.0,1.0,4,0.1382160186767578
+2,11.469380190246287,792,NoRes = 1 AND ReplayGainAccurate = 1,NoRes==1 AND NoReplayGain==0 AND ReplayGainFast==0,0,1.0,1.0,1.0,4,20.97801733016968
+3,15.964858961758516,955,NoRes = 1 AND CRC = 1 AND CBR = 8,NoRes==1 AND CBR==8 AND CRC==1,0,1.0,1.0,1.0,4,13.627514600753784
+4,20.841760237270343,229,Downmix = 1 AND ReplayGainAccurate = 1 AND CBR = 8 AND VBRRange = 0,CBR==8 AND VBRRange==0 AND NoReplayGain==0 AND Downmix==1 AND ReplayGainFast==0,0,1.0,1.0,1.0,4,1.20741605758667
+5,26.369856608170814,309,NoRes = 1 AND Freeformat = 1 AND CRC = 1 AND JointStereo = 1 AND SwapBytes = 1,NoRes==1 AND JointStereo==1 AND SwapBytes==1 AND MidSideStereo==0 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,4,22.25194549560547
+6,16.187386632191647,378,NoRes = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND CBR = 320 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND CBR==320 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,4,21.3796021938324
+7,18.56348528773137,337,NoRes = 1 AND Downmix = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND Resampling = 8 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND Resampling==8 AND Downmix==1 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,4,18.549031257629395
+1,3.861723899332569,281,VBRRange = 2,NoRes==1 AND JointStereo==0 AND Resampling==44 AND NoReplayGain==1 AND Downmix==0 AND CRC==1,2,0.0067114093959731,0.0588235294117647,0.0035587188612099,40,104.25536513328552
+2,5.270382356278982,621,NoReplayGain = 1 AND CRC = 1,NoRes==0 AND JointStereo==1 AND SwapBytes==1 AND Resampling==44 AND NoReplayGain==1 AND Freeformat==1 AND DualChannels==0,0,0.0,0.0,0.0,40,42.78232908248901
+3,14.176120229006832,224,JointStereo = 1 AND SwapBytes = 1 AND ReplayGainAccurate = 1,SwapBytes==1 AND NoReplayGain==0 AND ReplayGainFast==0 AND MidSideStereo==0 AND Mono==0 AND DualChannels==0 AND Stereo==0,0,1.0,1.0,1.0,40,3.066913604736328
+4,14.906967045129118,606,NoRes = 1 AND CRC = 1 AND SwapBytes = 1 AND ReplayGainAccurate = 1,NoRes==1 AND SwapBytes==1 AND NoReplayGain==0 AND ReplayGainFast==0 AND CRC==1,0,1.0,1.0,1.0,40,21.48935484886169
+5,27.175481722718185,451,NoRes = 1 AND Downmix = 1 AND ReplayGainFast = 1 AND CRC = 1 AND SwapBytes = 1,NoRes==1 AND SwapBytes==1 AND NoReplayGain==0 AND Downmix==1 AND ReplayGainFast==1 AND CRC==1,0,1.0,1.0,1.0,40,20.771206617355347
+6,27.396270745440628,291,NoReplayGain = 1 AND Downmix = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND VBRRange = 0,SwapBytes==1 AND NoReplayGain==1 AND Downmix==1 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,40,3.901086807250977
+7,4.951691880629667,274,NoRes = 1 AND Downmix = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND Resampling = 22 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND ReplayGainAccurate==0 AND VBRRange==0 AND Downmix==0 AND Stereo==1 AND CRC==0,0,0.0,0.0,0.0,40,93.27794289588928
+1,21.800991837948565,722,DualChannels = 1,MidSideStereo==0 AND Mono==0 AND DualChannels==1,0,1.0,1.0,1.0,41,0.3074603080749511
+2,8.29408014545224,291,NoReplayGain = 1 AND JointStereo = 1,NoReplayGain==1 AND ReplayGainFast==0 AND MidSideStereo==0 AND Mono==0 AND DualChannels==0 AND Stereo==0,0,1.0,1.0,1.0,41,19.722412109375
+3,4.096097823691768,457,CRC = 1 AND Resampling = 22 AND CBR = 8,Resampling==8 AND CBR==320 AND NoReplayGain==0 AND ReplayGainFast==1 AND MidSideStereo==0 AND Freeformat==0 AND CRC==0,0,0.0,0.0,0.0,41,103.37106704711914
+4,18.946192954362704,285,NoRes = 1 AND SwapBytes = 1 AND ReplayGainAccurate = 1 AND CBR = 8,NoRes==1 AND SwapBytes==1 AND CBR==8 AND NoReplayGain==0 AND ReplayGainFast==0,0,1.0,1.0,1.0,41,21.94548439979553
+5,21.781017824799697,318,NoRes = 1 AND Freeformat = 1 AND CRC = 1 AND JointStereo = 1 AND VBRRange = 0,NoRes==1 AND MidSideStereo==0 AND Freeformat==1 AND Mono==0 AND DualChannels==0 AND Stereo==0 AND CRC==1,0,1.0,1.0,1.0,41,7.807981967926025
+6,7.885384556248387,298,NoRes = 1 AND Downmix = 1 AND Freeformat = 1 AND CRC = 1 AND Resampling = 22 AND VBRRange = 0,NoRes==1 AND Resampling==22 AND Downmix==1 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,41,32.498043060302734
+7,13.982035799602954,274,NoRes = 1 AND Downmix = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND Resampling = 22 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND Resampling==22 AND Downmix==1 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,41,9.393275260925291
+1,27.924532711502152,930,Resampling = 44,Resampling==44,0,1.0,1.0,1.0,42,0.2096421718597412
+2,22.27668093822106,222,NoReplayGain = 1 AND MidSideStereo = 1,NoReplayGain==1 AND ReplayGainFast==0 AND MidSideStereo==1,0,1.0,1.0,1.0,42,5.056994915008545
+3,18.448565657392447,626,CRC = 1 AND Resampling = 22 AND VBRRange = 0,Resampling==22 AND VBRRange==0 AND CRC==1,0,1.0,1.0,1.0,42,0.5476837158203125
+4,8.001604403443611,311,Downmix = 1 AND Freeformat = 1 AND CRC = 1 AND CBR = 8,CBR==8 AND Downmix==1 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,42,26.606016635894772
+5,23.025184370997238,246,NoRes = 1 AND CRC = 1 AND SwapBytes = 1 AND ReplayGainAccurate = 1 AND CBR = 8,NoRes==1 AND SwapBytes==1 AND CBR==8 AND NoReplayGain==0 AND ReplayGainFast==0 AND CRC==1,0,1.0,1.0,1.0,42,20.48202061653137
+6,2.6248862646893194,291,NoRes = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND Resampling = 22 AND VBRRange = 0,NoRes==1 AND JointStereo==0 AND SwapBytes==1 AND Resampling==48 AND Freeformat==0 AND DualChannels==0 AND CRC==1,0,0.0,0.0,0.0,42,92.63443732261658
+7,19.42185577249768,274,NoRes = 1 AND Downmix = 1 AND ReplayGainFast = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND Downmix==1 AND ReplayGainFast==1 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,42,14.086653470993042
+1,20.603361944968604,645,Mono = 1,MidSideStereo==0 AND Mono==1,0,1.0,1.0,1.0,43,0.2839274406433105
+2,25.272572609881724,335,MidSideStereo = 1 AND Freeformat = 1,MidSideStereo==1 AND Freeformat==1,0,1.0,1.0,1.0,43,0.4698619842529297
+3,14.1720406222753,224,MidSideStereo = 1 AND SwapBytes = 1 AND Resampling = 8,SwapBytes==1 AND Resampling==8 AND MidSideStereo==1 AND Mono==0 AND DualChannels==0 AND Stereo==0,0,1.0,1.0,1.0,43,2.75757908821106
+4,12.337512454998102,678,CRC = 1 AND SwapBytes = 1 AND CBR = 8 AND VBRRange = 0,SwapBytes==1 AND CBR==8 AND VBRRange==0 AND CRC==1,0,1.0,1.0,1.0,43,2.691579818725586
+5,11.397550589555992,304,NoRes = 1 AND Freeformat = 1 AND CRC = 1 AND CBR = 8 AND VBRRange = 0,NoRes==1 AND CBR==8 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,43,19.73679041862488
+6,12.617266095718133,296,NoRes = 1 AND Downmix = 1 AND Freeformat = 1 AND SwapBytes = 1 AND Resampling = 22 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND Resampling==22 AND Downmix==1 AND Freeformat==1,0,1.0,1.0,1.0,43,8.780498504638672
+7,25.60340359517028,274,NoRes = 1 AND Downmix = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND Resampling = 22 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND Resampling==22 AND Downmix==1 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,43,20.128618717193604
+1,3.145469011639488,281,VBRRange = 2,SwapBytes==1 AND Resampling==48 AND CBR==8 AND Downmix==1 AND ReplayGainFast==0 AND DualChannels==1,0,0.0068493150684931,0.0909090909090909,0.0035587188612099,44,99.93545484542848
+2,21.196217931267075,425,NoRes = 1 AND Stereo = 1,NoRes==1 AND MidSideStereo==0 AND Mono==0 AND DualChannels==0 AND Stereo==1,0,1.0,1.0,1.0,44,21.87936425209045
+3,17.484252361688547,554,CRC = 1 AND SwapBytes = 1 AND Resampling = 8,SwapBytes==1 AND Resampling==8 AND CRC==1,0,1.0,1.0,1.0,44,0.9951958656311036
+4,16.439794802878225,395,Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND CBR = 320,SwapBytes==1 AND CBR==320 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,44,3.0491507053375244
+5,8.353752133069827,309,NoRes = 1 AND Freeformat = 1 AND CRC = 1 AND JointStereo = 1 AND SwapBytes = 1,NoRes==1 AND JointStereo==1 AND SwapBytes==1 AND MidSideStereo==0 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,44,17.70575451850891
+6,2.9094616847564643,305,NoRes = 1 AND Downmix = 1 AND Freeformat = 1 AND CRC = 1 AND JointStereo = 1 AND VBRRange = 0,NoRes==0 AND SwapBytes==0 AND Downmix==1 AND ReplayGainFast==0 AND Freeformat==1 AND Stereo==1 AND CRC==0,0,0.0,0.0,0.0,44,49.12697696685791
+7,20.65975093788653,274,NoRes = 1 AND Downmix = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND Resampling = 22 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND Resampling==22 AND Downmix==1 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,44,21.93440008163452
+1,3.971064000438137,646,CBR = 320,NoRes==0 AND ReplayGainAccurate==1 AND Resampling==48 AND VBRRange==1 AND MidSideStereo==0 AND Stereo==0 AND CRC==1,0,0.0,0.0,0.0,45,74.05843496322632
+2,19.57453934750136,846,JointStereo = 1 AND VBRRange = 0,VBRRange==0 AND MidSideStereo==0 AND Mono==0 AND DualChannels==0 AND Stereo==0,0,1.0,1.0,1.0,45,0.4449629783630371
+3,4.727985261238469,320,Stereo = 1 AND CRC = 1 AND CBR = 8,NoRes==1 AND JointStereo==1 AND Resampling==22 AND NoReplayGain==0 AND Downmix==0 AND ReplayGainFast==0 AND CRC==1,0,0.0,0.0,0.0,45,72.64568090438843
+4,27.56971822699388,426,NoRes = 1 AND NoReplayGain = 1 AND Downmix = 1 AND VBRRange = 0,NoRes==1 AND VBRRange==0 AND NoReplayGain==1 AND Downmix==1 AND ReplayGainFast==0,0,1.0,1.0,1.0,45,26.61705422401428
+5,22.37284259500477,323,NoRes = 1 AND Freeformat = 1 AND JointStereo = 1 AND SwapBytes = 1 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND MidSideStereo==0 AND Freeformat==1 AND Mono==0 AND DualChannels==0 AND Stereo==0,0,1.0,1.0,1.0,45,21.567749977111816
+6,22.52090186690004,327,Downmix = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND CBR = 160 AND VBRRange = 0,SwapBytes==1 AND CBR==160 AND Downmix==1 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,45,1.4963657855987549
+7,23.928481394499897,254,NoRes = 1 AND Downmix = 1 AND MidSideStereo = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND Downmix==1 AND MidSideStereo==1 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,45,23.34908890724182
+1,8.225611014003842,1162,NoReplayGain = 1,NoReplayGain==1,0,1.0,1.0,1.0,46,6.356677293777466
+2,25.35395312039844,523,DualChannels = 1 AND CBR = 8,CBR==8 AND MidSideStereo==0 AND Mono==0 AND DualChannels==1 AND Stereo==0,0,1.0,1.0,1.0,46,0.3751792907714844
+3,5.915435378937358,277,NoRes = 1 AND SwapBytes = 1 AND Resampling = 44,NoRes==0 AND ReplayGainAccurate==0 AND Resampling==8 AND Freeformat==1 AND Stereo==0 AND CRC==0,0,0.0,0.0,0.0,46,98.4150731563568
+4,14.561761407004214,426,NoRes = 1 AND NoReplayGain = 1 AND Downmix = 1 AND VBRRange = 0,NoRes==1 AND VBRRange==0 AND NoReplayGain==1 AND Downmix==1 AND ReplayGainFast==0,0,1.0,1.0,1.0,46,22.91981840133667
+5,5.223977026924313,451,NoRes = 1 AND Downmix = 1 AND ReplayGainFast = 1 AND CRC = 1 AND SwapBytes = 1,NoRes==0 AND SwapBytes==1 AND Resampling==48 AND VBRRange==0 AND ReplayGainFast==0 AND DualChannels==0 AND Stereo==0,0,0.0,0.0,0.0,46,96.45204448699953
+6,2.2654412161798123,288,NoRes = 1 AND Downmix = 1 AND ReplayGainFast = 1 AND Freeformat = 1 AND CRC = 1 AND VBRRange = 0,CBR==8 AND ReplayGainFast==0 AND DualChannels==0 AND Stereo==0,0,0.0,0.0,0.0,46,100.83676147460938
+7,10.805382086931235,285,NoRes = 1 AND NoReplayGain = 1 AND Downmix = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND NoReplayGain==1 AND Freeformat==1 AND CRC==1,0,0.981067125645439,0.9628378378378378,1.0,46,27.9930112361908
+1,19.32046268521332,572,VBRRange = 1,VBRRange==1 AND Freeformat==0,0,1.0,1.0,1.0,47,0.2020847797393798
+2,28.98439895659659,313,NoRes = 1 AND Mono = 1,NoRes==1 AND MidSideStereo==0 AND Mono==1,0,1.0,1.0,1.0,47,25.50203514099121
+3,3.434534371333529,352,Downmix = 1 AND ReplayGainAccurate = 1 AND CBR = 8,SwapBytes==0 AND Resampling==44 AND CBR==160 AND Downmix==1 AND DualChannels==0 AND Stereo==0 AND CRC==0,0,0.0,0.0,0.0,47,132.72414302825928
+4,11.13304845344154,233,Downmix = 1 AND Freeformat = 1 AND Resampling = 48 AND VBRRange = 0,Resampling==48 AND Downmix==1 AND Freeformat==1,0,1.0,1.0,1.0,47,14.335924625396729
+5,21.886398525448648,214,NoRes = 1 AND Downmix = 1 AND ReplayGainAccurate = 1 AND CBR = 320 AND VBRRange = 0,NoRes==1 AND CBR==320 AND NoReplayGain==0 AND Downmix==1 AND ReplayGainFast==0,0,1.0,1.0,1.0,47,26.858813047409058
+6,29.079396479310148,211,NoRes = 1 AND ReplayGainFast = 1 AND CRC = 1 AND SwapBytes = 1 AND CBR = 8 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND CBR==8 AND VBRRange==0 AND ReplayGainFast==1 AND CRC==1,0,1.0,1.0,1.0,47,16.845706462860107
+7,4.333334665007136,304,NoRes = 1 AND Downmix = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND CBR = 160 AND VBRRange = 0,NoRes==0 AND Resampling==8 AND CBR==320 AND NoReplayGain==0 AND ReplayGainFast==0 AND MidSideStereo==1 AND CRC==1,0,0.0,0.0,0.0,47,56.04260730743408
+1,8.920391026000587,999,JointStereo = 1,MidSideStereo==0 AND Mono==0 AND DualChannels==0 AND Stereo==0,0,1.0,1.0,1.0,48,1.5014190673828125
+2,15.129704911633883,246,Freeformat = 1 AND Resampling = 48,Resampling==48 AND Freeformat==1,0,1.0,1.0,1.0,48,4.100555658340454
+3,20.98768334061187,280,ReplayGainAccurate = 1 AND CBR = 160 AND VBRRange = 0,CBR==160 AND NoReplayGain==0 AND ReplayGainFast==0,0,1.0,1.0,1.0,48,0.2227139472961425
+4,5.845333084539002,239,Downmix = 1 AND MidSideStereo = 1 AND CRC = 1 AND CBR = 8,NoRes==0 AND Resampling==48 AND VBRRange==1 AND NoReplayGain==0 AND Downmix==1 AND Freeformat==0 AND DualChannels==1,0,0.0,0.0,0.0,48,45.47497582435608
+5,26.441741493023716,403,Downmix = 1 AND Freeformat = 1 AND SwapBytes = 1 AND CBR = 320 AND VBRRange = 0,SwapBytes==1 AND CBR==320 AND Downmix==1 AND Freeformat==1,0,1.0,1.0,1.0,48,1.2133512496948242
+6,28.945312484885456,291,NoRes = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND Resampling = 22 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND Resampling==22 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,48,21.681621551513672
+7,16.10776013014596,337,NoRes = 1 AND Downmix = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND Resampling = 8 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND Resampling==8 AND Downmix==1 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,48,19.43057584762573
+1,7.726896757234445,801,Resampling = 48,Resampling==48,0,1.0,1.0,1.0,49,10.411073446273804
+2,27.40860626517916,1146,Freeformat = 1 AND SwapBytes = 1,SwapBytes==1 AND Freeformat==1,0,1.0,1.0,1.0,49,0.2989482879638672
+3,20.48980084628312,236,NoRes = 1 AND DualChannels = 1 AND CBR = 8,NoRes==1 AND CBR==8 AND MidSideStereo==0 AND Mono==0 AND DualChannels==1 AND Stereo==0,0,1.0,1.0,1.0,49,19.58879780769348
+4,7.82474406671865,329,NoRes = 1 AND Downmix = 1 AND ReplayGainFast = 1 AND CBR = 8,NoRes==1 AND CBR==8 AND NoReplayGain==0 AND Downmix==1 AND ReplayGainFast==1,0,1.0,1.0,1.0,49,29.276787996292114
+5,4.5029576002060265,334,NoRes = 1 AND Downmix = 1 AND MidSideStereo = 1 AND SwapBytes = 1 AND VBRRange = 0,JointStereo==0 AND SwapBytes==0 AND Resampling==22 AND Downmix==0 AND Freeformat==1 AND Mono==0 AND DualChannels==0,0,0.0,0.0,0.0,49,97.40517568588255
+6,25.499496188899062,305,NoRes = 1 AND Downmix = 1 AND Freeformat = 1 AND CRC = 1 AND JointStereo = 1 AND VBRRange = 0,NoRes==1 AND JointStereo==1 AND Downmix==1 AND MidSideStereo==0 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,49,20.59466767311096
+7,10.09632428056702,254,NoRes = 1 AND Downmix = 1 AND MidSideStereo = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND Downmix==1 AND MidSideStereo==1 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,49,24.271641969680783
+1,29.076083638154454,646,CBR = 320,CBR==320,0,1.0,1.0,1.0,5,0.249697208404541
+2,3.546709094486386,223,JointStereo = 1 AND Resampling = 48,SwapBytes==1 AND VBRRange==0 AND MidSideStereo==0 AND Freeformat==0 AND Mono==0 AND CRC==0,0,0.0266666666666666,0.0328947368421052,0.0224215246636771,5,112.2294054031372
+3,24.01052966038844,420,Freeformat = 1 AND CRC = 1 AND CBR = 320,CBR==320 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,5,0.8946771621704102
+4,8.65282988850587,678,CRC = 1 AND SwapBytes = 1 AND CBR = 8 AND VBRRange = 0,SwapBytes==1 AND CBR==8 AND VBRRange==0 AND CRC==1,0,1.0,1.0,1.0,5,12.377870798110962
+5,19.205408532145032,249,NoRes = 1 AND ReplayGainFast = 1 AND SwapBytes = 1 AND CBR = 8 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND CBR==8 AND VBRRange==0 AND NoReplayGain==0 AND ReplayGainFast==1,0,1.0,1.0,1.0,5,16.901551485061646
+6,13.614900062912564,414,NoRes = 1 AND Downmix = 1 AND Freeformat = 1 AND SwapBytes = 1 AND ReplayGainAccurate = 1 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND NoReplayGain==0 AND Downmix==1 AND ReplayGainFast==0 AND Freeformat==1,0,1.0,1.0,1.0,5,23.535315990448
+7,21.355804038402397,275,NoRes = 1 AND Downmix = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND CBR = 8 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND CBR==8 AND Downmix==1 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,5,23.81334090232849
+1,24.636827052920864,723,CBR = 160,CBR==160,0,1.0,1.0,1.0,50,0.2055702209472656
+2,11.23065735861487,1208,NoRes = 1 AND CBR = 8,NoRes==1 AND CBR==8,0,1.0,1.0,1.0,50,17.82807183265686
+3,14.108887998595597,408,NoRes = 1 AND MidSideStereo = 1 AND SwapBytes = 1,NoRes==1 AND SwapBytes==1 AND MidSideStereo==1 AND Mono==0 AND DualChannels==0 AND Stereo==0,0,1.0,1.0,1.0,50,11.23785161972046
+4,13.560117053295288,213,NoRes = 1 AND Downmix = 1 AND Freeformat = 1 AND Resampling = 48,NoRes==1 AND Resampling==48 AND Downmix==1 AND Freeformat==1,0,1.0,1.0,1.0,50,23.45040988922119
+5,5.711286538832176,334,NoRes = 1 AND Downmix = 1 AND MidSideStereo = 1 AND SwapBytes = 1 AND VBRRange = 0,JointStereo==0 AND VBRRange==0 AND Downmix==1 AND Freeformat==0 AND Mono==0 AND Stereo==0 AND CRC==0,0,0.0432692307692307,0.1097560975609756,0.0269461077844311,50,103.10733270645142
+6,27.82490409532248,298,NoRes = 1 AND Downmix = 1 AND Freeformat = 1 AND CRC = 1 AND Resampling = 22 AND VBRRange = 0,NoRes==1 AND Resampling==22 AND Downmix==1 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,50,14.012588024139404
+7,18.970900820229705,274,NoRes = 1 AND Downmix = 1 AND ReplayGainFast = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND Downmix==1 AND ReplayGainFast==1 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,50,22.482370615005493
+1,11.024036153613194,572,VBRRange = 1,VBRRange==1 AND Freeformat==0,0,1.0,1.0,1.0,51,0.7892472743988037
+2,3.866837172594496,258,DualChannels = 1 AND Resampling = 22,NoRes==1 AND Resampling==22 AND VBRRange==1 AND Downmix==1 AND MidSideStereo==0 AND Mono==1 AND Stereo==0,0,0.0,0.0,0.0,51,69.55666375160217
+3,27.15239468432169,256,SwapBytes = 1 AND Resampling = 48 AND CBR = 8,SwapBytes==1 AND Resampling==48 AND CBR==8,0,1.0,1.0,1.0,51,0.5933265686035156
+4,10.032589313229828,494,Downmix = 1 AND ReplayGainFast = 1 AND SwapBytes = 1 AND VBRRange = 0,SwapBytes==1 AND VBRRange==0 AND NoReplayGain==0 AND Downmix==1 AND ReplayGainFast==1,0,1.0,1.0,1.0,51,5.637409448623657
+5,27.777952957566303,311,Downmix = 1 AND Freeformat = 1 AND CRC = 1 AND CBR = 8 AND VBRRange = 0,CBR==8 AND Downmix==1 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,51,1.3880906105041504
+6,6.1075535899348825,325,NoRes = 1 AND Downmix = 1 AND Freeformat = 1 AND CRC = 1 AND CBR = 160 AND VBRRange = 0,CBR==160 AND Downmix==1 AND Freeformat==1 AND CRC==1,4,0.9516837481698388,0.9078212290502792,1.0,51,93.54627990722656
+7,5.0331086049269,275,NoRes = 1 AND Downmix = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND CBR = 8 AND VBRRange = 0,NoRes==0 AND Resampling==22 AND VBRRange==1 AND Downmix==1 AND ReplayGainFast==1 AND DualChannels==1 AND CRC==1,0,0.0,0.0,0.0,51,75.24038457870483
+1,17.738806353406687,722,DualChannels = 1,MidSideStereo==0 AND Mono==0 AND DualChannels==1,0,1.0,1.0,1.0,52,0.3246569633483886
+2,16.030196668669845,788,Downmix = 1 AND ReplayGainAccurate = 1,NoReplayGain==0 AND Downmix==1 AND ReplayGainFast==0,0,1.0,1.0,1.0,52,1.0723741054534912
+3,5.824346726983726,214,ReplayGainAccurate = 1 AND Resampling = 44 AND CBR = 8,NoRes==0 AND Resampling==44 AND CBR==8 AND NoReplayGain==1 AND Freeformat==1 AND Mono==0 AND DualChannels==0,0,0.0,0.0,0.0,52,46.82997012138367
+4,5.568107628749389,265,NoRes = 1 AND Stereo = 1 AND CRC = 1 AND VBRRange = 0,NoRes==0 AND Resampling==44 AND CBR==8 AND NoReplayGain==1 AND Freeformat==1 AND Mono==0 AND DualChannels==0,0,0.0,0.0,0.0,52,45.35324716567993
+5,5.272948467879949,348,NoRes = 1 AND Freeformat = 1 AND SwapBytes = 1 AND CBR = 160 AND VBRRange = 0,NoRes==0 AND Resampling==44 AND CBR==8 AND NoReplayGain==1 AND Freeformat==1 AND Mono==0 AND DualChannels==0,0,0.0,0.0,0.0,52,43.87727546691895
+6,9.184745822963194,210,NoRes = 1 AND Downmix = 1 AND Freeformat = 1 AND ReplayGainAccurate = 1 AND CBR = 320 AND VBRRange = 0,NoRes==1 AND CBR==320 AND NoReplayGain==0 AND Downmix==1 AND ReplayGainFast==0 AND Freeformat==1,0,1.0,1.0,1.0,52,15.426441669464111
+7,21.70961748053857,274,NoRes = 1 AND Downmix = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND Resampling = 22 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND Resampling==22 AND Downmix==1 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,52,10.06490993499756
+1,24.19022074459422,646,CBR = 320,CBR==320,0,1.0,1.0,1.0,53,0.2288794517517089
+2,11.014106196846708,402,SwapBytes = 1 AND Resampling = 44,SwapBytes==1 AND Resampling==44,0,1.0,1.0,1.0,53,4.368643045425415
+3,12.943042759353746,1047,Freeformat = 1 AND CRC = 1 AND SwapBytes = 1,SwapBytes==1 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,53,2.0990183353424072
+4,29.027525717502343,212,NoRes = 1 AND ReplayGainAccurate = 1 AND Resampling = 22 AND VBRRange = 0,NoRes==1 AND Resampling==22 AND VBRRange==0 AND NoReplayGain==0 AND ReplayGainFast==0,0,1.0,1.0,1.0,53,20.53426480293274
+5,25.352756376657727,417,Downmix = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND ReplayGainAccurate = 1,SwapBytes==1 AND NoReplayGain==0 AND Downmix==1 AND ReplayGainFast==0 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,53,1.3811774253845217
+6,21.109844200849206,235,Downmix = 1 AND CRC = 1 AND SwapBytes = 1 AND Resampling = 8 AND CBR = 8 AND VBRRange = 0,SwapBytes==1 AND Resampling==8 AND CBR==8 AND VBRRange==0 AND Downmix==1 AND CRC==1,0,1.0,1.0,1.0,53,1.983038187026977
+7,4.557141991980931,285,NoRes = 1 AND NoReplayGain = 1 AND Downmix = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND VBRRange = 0,SwapBytes==0 AND ReplayGainAccurate==0 AND CBR==320 AND MidSideStereo==0 AND DualChannels==0 AND CRC==1,0,0.0,0.0,0.0,53,100.01280426979064
+1,22.383964921055988,646,CBR = 320,CBR==320,0,1.0,1.0,1.0,54,0.2350316047668457
+2,18.37030851191696,370,ReplayGainAccurate = 1 AND Resampling = 44,Resampling==44 AND NoReplayGain==0 AND ReplayGainFast==0,0,1.0,1.0,1.0,54,0.2053253650665283
+3,25.66630797112286,255,NoRes = 1 AND ReplayGainAccurate = 1 AND Resampling = 22,NoRes==1 AND Resampling==22 AND NoReplayGain==0 AND ReplayGainFast==0,0,1.0,1.0,1.0,54,12.52772331237793
+4,22.711157854989555,321,NoRes = 1 AND Downmix = 1 AND Freeformat = 1 AND Resampling = 22,NoRes==1 AND Resampling==22 AND Downmix==1 AND Freeformat==1,0,1.0,1.0,1.0,54,24.04518318176269
+5,19.33499442285413,382,Downmix = 1 AND CRC = 1 AND JointStereo = 1 AND SwapBytes = 1 AND VBRRange = 0,JointStereo==1 AND SwapBytes==1 AND VBRRange==0 AND Downmix==1 AND MidSideStereo==0 AND CRC==1,0,1.0,1.0,1.0,54,3.399587154388428
+6,5.825930222106843,357,NoRes = 1 AND Downmix = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND CBR = 320,NoRes==0 AND JointStereo==1 AND Resampling==44 AND NoReplayGain==0 AND Downmix==0 AND Freeformat==0 AND CRC==1,0,0.0,0.0,0.0,54,94.37254214286804
+7,21.42324598758091,377,NoRes = 1 AND Downmix = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND ReplayGainAccurate = 1 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND NoReplayGain==0 AND Downmix==1 AND ReplayGainFast==0 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,54,18.95280170440674
+1,4.12745101151094,645,Mono = 1,NoRes==0 AND SwapBytes==0 AND Resampling==48 AND ReplayGainFast==0 AND Freeformat==0 AND Stereo==1 AND CRC==1,0,0.0,0.0,0.0,55,47.3038809299469
+2,18.72902840439827,601,Downmix = 1 AND Resampling = 8,Resampling==8 AND Downmix==1,0,1.0,1.0,1.0,55,1.385040283203125
+3,23.846648844729604,737,CRC = 1 AND ReplayGainAccurate = 1 AND VBRRange = 0,VBRRange==0 AND NoReplayGain==0 AND ReplayGainFast==0 AND CRC==1,0,1.0,1.0,1.0,55,0.3052253723144531
+4,26.160664573849036,340,NoRes = 1 AND Freeformat = 1 AND Resampling = 22 AND VBRRange = 0,NoRes==1 AND Resampling==22 AND Freeformat==1,0,1.0,1.0,1.0,55,19.980251789093018
+5,3.626316909907552,310,Downmix = 1 AND Freeformat = 1 AND CRC = 1 AND JointStereo = 1 AND SwapBytes = 1,NoRes==1 AND JointStereo==0 AND ReplayGainAccurate==1 AND Resampling==8 AND CBR==8 AND MidSideStereo==0 AND Freeformat==1,0,0.0,0.0,0.0,55,106.43390774726868
+6,22.779708932381872,309,NoRes = 1 AND Freeformat = 1 AND CRC = 1 AND JointStereo = 1 AND SwapBytes = 1 AND VBRRange = 0,NoRes==1 AND JointStereo==1 AND SwapBytes==1 AND MidSideStereo==0 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,55,25.74842047691345
+7,15.87889944326584,377,NoRes = 1 AND Downmix = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND ReplayGainAccurate = 1 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND NoReplayGain==0 AND Downmix==1 AND ReplayGainFast==0 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,55,22.933207750320435
+1,2.4082507577816057,817,Stereo = 1,Stereo==0,0,0.0,0.0,0.0,56,59.42703723907471
+2,10.654473852567282,407,CRC = 1 AND Resampling = 44,Resampling==44 AND CRC==1,0,1.0,1.0,1.0,56,5.029294490814209
+3,12.468939703076575,400,Resampling = 48 AND CBR = 8 AND VBRRange = 0,Resampling==48 AND CBR==8 AND VBRRange==0,0,1.0,1.0,1.0,56,1.249392032623291
+4,5.209991282785732,996,NoRes = 1 AND Downmix = 1 AND Freeformat = 1 AND CRC = 1,JointStereo==0 AND SwapBytes==1 AND ReplayGainAccurate==1 AND Resampling==48 AND VBRRange==0 AND Downmix==0 AND Stereo==0,0,0.0,0.0,0.0,56,89.5491852760315
+5,11.736325756458251,217,Downmix = 1 AND Freeformat = 1 AND CRC = 1 AND Resampling = 48 AND VBRRange = 0,Resampling==48 AND Downmix==1 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,56,13.90116262435913
+6,9.455433734878593,305,NoRes = 1 AND Downmix = 1 AND Freeformat = 1 AND CRC = 1 AND JointStereo = 1 AND VBRRange = 0,NoRes==1 AND JointStereo==1 AND Downmix==1 AND MidSideStereo==0 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,56,27.42642617225647
+7,7.317195740318601,274,NoRes = 1 AND Downmix = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND Resampling = 22 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND Resampling==22 AND Downmix==1 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,56,43.85931134223938
+1,8.053952360013444,801,Resampling = 48,Resampling==48,0,1.0,1.0,1.0,57,5.935373067855835
+2,18.19496012167509,396,ReplayGainFast = 1 AND Resampling = 8,Resampling==8 AND NoReplayGain==0 AND ReplayGainFast==1,0,1.0,1.0,1.0,57,0.3675947189331054
+3,3.827439680748508,666,Resampling = 22 AND CBR = 8 AND VBRRange = 0,NoRes==1 AND SwapBytes==0 AND Resampling==22 AND VBRRange==1 AND Downmix==0 AND ReplayGainFast==1 AND DualChannels==1,0,0.0,0.0,0.0,57,64.5298969745636
+4,4.922580643730101,305,NoRes = 1 AND SwapBytes = 1 AND Resampling = 8 AND CBR = 8,NoRes==0 AND SwapBytes==1 AND ReplayGainAccurate==0 AND Resampling==22 AND Downmix==0 AND DualChannels==0 AND Stereo==0,0,0.0,0.0,0.0,57,109.26285696029665
+5,20.10335827096059,217,NoRes = 1 AND Freeformat = 1 AND SwapBytes = 1 AND Resampling = 48 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND Resampling==48 AND Freeformat==1,0,1.0,1.0,1.0,57,18.55854201316833
+6,14.806506137154846,310,NoRes = 1 AND Downmix = 1 AND Freeformat = 1 AND JointStereo = 1 AND SwapBytes = 1 AND VBRRange = 0,NoRes==1 AND JointStereo==1 AND SwapBytes==1 AND Downmix==1 AND MidSideStereo==0 AND Freeformat==1,0,1.0,1.0,1.0,57,20.36565613746643
+7,17.948726534978505,337,NoRes = 1 AND Downmix = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND Resampling = 8 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND Resampling==8 AND Downmix==1 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,57,23.84173321723938
+1,25.857952337792455,817,Stereo = 1,MidSideStereo==0 AND Mono==0 AND DualChannels==0 AND Stereo==1,0,1.0,1.0,1.0,58,0.2391681671142578
+2,20.42799287021132,258,DualChannels = 1 AND Resampling = 22,Resampling==22 AND MidSideStereo==0 AND Mono==0 AND DualChannels==1 AND Stereo==0,0,1.0,1.0,1.0,58,0.5805220603942871
+3,19.385936267275465,324,NoReplayGain = 1 AND Resampling = 22 AND VBRRange = 0,Resampling==22 AND VBRRange==0 AND NoReplayGain==1 AND ReplayGainFast==0,0,1.0,1.0,1.0,58,5.438076019287109
+4,28.217907188667585,301,NoRes = 1 AND Downmix = 1 AND ReplayGainFast = 1 AND Freeformat = 1,NoRes==1 AND NoReplayGain==0 AND Downmix==1 AND ReplayGainFast==1 AND Freeformat==1,0,1.0,1.0,1.0,58,21.884683847427368
+5,18.993481488735203,255,Downmix = 1 AND SwapBytes = 1 AND Resampling = 8 AND CBR = 8 AND VBRRange = 0,SwapBytes==1 AND Resampling==8 AND CBR==8 AND VBRRange==0 AND Downmix==1,0,1.0,1.0,1.0,58,1.8180501461029053
+6,29.15367698200841,218,NoRes = 1 AND Downmix = 1 AND CRC = 1 AND Resampling = 8 AND CBR = 8 AND VBRRange = 0,NoRes==1 AND Resampling==8 AND CBR==8 AND VBRRange==0 AND Downmix==1 AND CRC==1,0,1.0,1.0,1.0,58,14.350974082946776
+7,5.079334154317643,275,NoRes = 1 AND Downmix = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND CBR = 8 AND VBRRange = 0,SwapBytes==1 AND Resampling==8 AND CBR==8 AND NoReplayGain==1 AND Downmix==1 AND MidSideStereo==1 AND CRC==0,0,0.0,0.0,0.0,58,104.423983335495
+1,2.870310853807418,817,Stereo = 1,Stereo==0,0,0.0,0.0,0.0,59,72.11188244819641
+2,18.8646888789709,449,Downmix = 1 AND CBR = 320,CBR==320 AND Downmix==1,0,1.0,1.0,1.0,59,1.3582189083099363
+3,15.929388835030716,227,Downmix = 1 AND ReplayGainFast = 1 AND Resampling = 22,Resampling==22 AND NoReplayGain==0 AND Downmix==1 AND ReplayGainFast==1,0,1.0,1.0,1.0,59,1.7487952709197998
+4,18.452388365668664,428,Downmix = 1 AND Freeformat = 1 AND CBR = 320 AND VBRRange = 0,CBR==320 AND Downmix==1 AND Freeformat==1,0,1.0,1.0,1.0,59,1.6425137519836426
+5,10.224626436396548,1187,NoRes = 1 AND Downmix = 1 AND CRC = 1 AND SwapBytes = 1 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND VBRRange==0 AND Downmix==1 AND CRC==1,0,1.0,1.0,1.0,59,13.17771291732788
+6,22.25242249928647,296,NoRes = 1 AND Downmix = 1 AND Freeformat = 1 AND SwapBytes = 1 AND Resampling = 22 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND Resampling==22 AND Downmix==1 AND Freeformat==1,0,1.0,1.0,1.0,59,21.905928373336792
+7,25.39516893402687,275,NoRes = 1 AND Downmix = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND CBR = 8 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND CBR==8 AND Downmix==1 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,59,20.645287036895752
+1,14.619263730639137,722,DualChannels = 1,MidSideStereo==0 AND Mono==0 AND DualChannels==1,0,1.0,1.0,1.0,6,0.4496514797210693
+2,12.761391783673128,417,NoRes = 1 AND CBR = 160,NoRes==1 AND CBR==160,0,1.0,1.0,1.0,6,15.616846084594728
+3,26.223313241784457,330,Downmix = 1 AND Stereo = 1 AND CRC = 1,Downmix==1 AND MidSideStereo==0 AND Mono==0 AND DualChannels==0 AND Stereo==1 AND CRC==1,0,1.0,1.0,1.0,6,1.3351750373840332
+4,13.607405815110267,589,NoRes = 1 AND CRC = 1 AND ReplayGainAccurate = 1 AND VBRRange = 0,NoRes==1 AND VBRRange==0 AND NoReplayGain==0 AND ReplayGainFast==0 AND CRC==1,0,1.0,1.0,1.0,6,12.128314733505247
+5,10.401311783530746,271,NoRes = 1 AND Downmix = 1 AND MidSideStereo = 1 AND Freeformat = 1 AND SwapBytes = 1,NoRes==1 AND SwapBytes==1 AND Downmix==1 AND MidSideStereo==1 AND Freeformat==1 AND Mono==0,0,1.0,1.0,1.0,6,23.673746347427368
+6,25.136989551139628,291,NoReplayGain = 1 AND Downmix = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND VBRRange = 0,SwapBytes==1 AND NoReplayGain==1 AND Downmix==1 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,6,5.034627914428711
+7,25.447237018447566,304,NoRes = 1 AND Downmix = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND CBR = 160 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND CBR==160 AND Downmix==1 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,6,9.922787189483644
+1,26.32578584054562,723,CBR = 160,CBR==160,0,1.0,1.0,1.0,60,0.2040615081787109
+2,18.946436153356203,1071,ReplayGainFast = 1 AND VBRRange = 0,VBRRange==0 AND NoReplayGain==0 AND ReplayGainFast==1,0,1.0,1.0,1.0,60,0.3069636821746826
+3,4.7514690765084096,303,NoRes = 1 AND Resampling = 44 AND VBRRange = 0,NoRes==0 AND CBR==160 AND NoReplayGain==0 AND Downmix==1 AND Freeformat==0 AND DualChannels==1 AND CRC==1,0,0.0,0.0,0.0,60,50.23208975791931
+4,22.44864851869041,300,Downmix = 1 AND CRC = 1 AND SwapBytes = 1 AND Resampling = 48,SwapBytes==1 AND Resampling==48 AND Downmix==1 AND CRC==1,0,1.0,1.0,1.0,60,1.663459300994873
+5,19.866949423002215,996,NoRes = 1 AND Downmix = 1 AND Freeformat = 1 AND CRC = 1 AND VBRRange = 0,NoRes==1 AND Downmix==1 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,60,13.074806928634644
+6,10.850169451144833,296,NoRes = 1 AND NoReplayGain = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND NoReplayGain==1 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,60,26.428546667099
+7,15.179880067313515,254,NoRes = 1 AND Downmix = 1 AND MidSideStereo = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND Downmix==1 AND MidSideStereo==1 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,60,17.17250919342041
+1,11.898958375878433,572,VBRRange = 1,VBRRange==1 AND Freeformat==0,0,1.0,1.0,1.0,61,0.5597901344299316
+2,5.276441704411328,371,Mono = 1 AND CBR = 8,SwapBytes==1 AND ReplayGainAccurate==1 AND VBRRange==0 AND Downmix==1 AND MidSideStereo==1 AND Freeformat==0 AND CRC==0,0,0.0,0.0,0.0,61,60.358275175094604
+3,19.91821557798503,320,Downmix = 1 AND CRC = 1 AND Resampling = 48,Resampling==48 AND Downmix==1 AND CRC==1,0,1.0,1.0,1.0,61,1.677582025527954
+4,10.889663975945597,252,Freeformat = 1 AND ReplayGainAccurate = 1 AND CBR = 320 AND VBRRange = 0,CBR==320 AND NoReplayGain==0 AND ReplayGainFast==0 AND Freeformat==1,0,1.0,1.0,1.0,61,7.764767169952393
+5,12.00348586184466,395,Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND CBR = 320 AND VBRRange = 0,SwapBytes==1 AND CBR==320 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,61,10.92360234260559
+6,4.415144921685943,296,NoRes = 1 AND NoReplayGain = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND VBRRange = 0,NoRes==1 AND Resampling==8 AND VBRRange==1 AND ReplayGainFast==1 AND Mono==0 AND Stereo==1 AND CRC==0,0,0.0,0.0,0.0,61,86.15452361106873
+7,6.576218080290037,337,NoRes = 1 AND Downmix = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND Resampling = 8 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND Resampling==8 AND VBRRange==0 AND CRC==1,4,0.885676741130092,0.7948113207547169,1.0,61,64.18246936798096
+1,19.7945810164181,801,Resampling = 48,Resampling==48,0,1.0,1.0,1.0,62,0.2134060859680175
+2,21.99644069800834,515,CRC = 1 AND JointStereo = 1,MidSideStereo==0 AND Mono==0 AND DualChannels==0 AND Stereo==0 AND CRC==1,0,1.0,1.0,1.0,62,0.6377379894256592
+3,5.215637977587622,1067,Downmix = 1 AND Freeformat = 1 AND CRC = 1,NoRes==1 AND Resampling==22 AND NoReplayGain==1 AND Downmix==0 AND Freeformat==1 AND Mono==1 AND CRC==0,0,0.0,0.0,0.0,62,69.2777304649353
+4,15.55162178779038,228,NoRes = 1 AND Downmix = 1 AND MidSideStereo = 1 AND CBR = 8,NoRes==1 AND CBR==8 AND Downmix==1 AND MidSideStereo==1 AND Mono==0 AND DualChannels==0,0,1.0,1.0,1.0,62,22.832109928131104
+5,24.074275577483743,532,NoRes = 1 AND Downmix = 1 AND CRC = 1 AND SwapBytes = 1 AND ReplayGainAccurate = 1,NoRes==1 AND SwapBytes==1 AND NoReplayGain==0 AND Downmix==1 AND ReplayGainFast==0 AND CRC==1,0,1.0,1.0,1.0,62,20.018880367279053
+6,19.224581156725435,238,Downmix = 1 AND ReplayGainFast = 1 AND CRC = 1 AND SwapBytes = 1 AND CBR = 8 AND VBRRange = 0,SwapBytes==1 AND CBR==8 AND VBRRange==0 AND Downmix==1 AND ReplayGainFast==1 AND CRC==1,0,1.0,1.0,1.0,62,2.327135801315308
+7,19.542650396441594,304,NoRes = 1 AND Downmix = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND CBR = 160 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND CBR==160 AND Downmix==1 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,62,6.881492853164673
+1,23.221883423910104,930,Resampling = 44,Resampling==44,0,1.0,1.0,1.0,63,0.2166428565979004
+2,4.315527645156,824,MidSideStereo = 1 AND VBRRange = 0,NoRes==0 AND JointStereo==0 AND VBRRange==2 AND Downmix==0 AND Mono==0 AND DualChannels==0 AND CRC==1,0,0.0,0.0,0.0,63,100.4009566307068
+3,20.41822791456937,328,Downmix = 1 AND SwapBytes = 1 AND Resampling = 48,SwapBytes==1 AND Resampling==48 AND Downmix==1,0,1.0,1.0,1.0,63,1.0421178340911863
+4,1.7376339308561444,212,Downmix = 1 AND CRC = 1 AND ReplayGainAccurate = 1 AND CBR = 320,SwapBytes==0 AND ReplayGainAccurate==1 AND Resampling==22 AND CBR==320 AND Freeformat==0 AND Stereo==1 AND CRC==0,0,0.0,0.0,0.0,63,101.14909863471983
+5,28.321407074300357,385,NoRes = 1 AND CRC = 1 AND SwapBytes = 1 AND CBR = 320 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND CBR==320 AND CRC==1,0,1.0,1.0,1.0,63,20.680100440979004
+6,7.422461071773445,469,NoRes = 1 AND Downmix = 1 AND CRC = 1 AND SwapBytes = 1 AND ReplayGainAccurate = 1 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND VBRRange==0 AND NoReplayGain==0 AND Downmix==1 AND ReplayGainFast==0 AND CRC==1,0,1.0,1.0,1.0,63,29.656497955322266
+7,9.703201428232124,274,NoRes = 1 AND Downmix = 1 AND ReplayGainFast = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND Downmix==1 AND ReplayGainFast==1 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,63,24.67851948738098
+1,20.105494214135792,646,CBR = 320,CBR==320,0,1.0,1.0,1.0,64,0.2430815696716308
+2,17.40857156709611,442,Downmix = 1 AND Resampling = 44,Resampling==44 AND Downmix==1,0,1.0,1.0,1.0,64,1.2089450359344482
+3,16.429758194435514,235,NoRes = 1 AND Resampling = 48 AND CBR = 8,NoRes==1 AND Resampling==48 AND CBR==8,0,1.0,1.0,1.0,64,21.608920574188232
+4,26.00340038946255,210,NoRes = 1 AND CRC = 1 AND ReplayGainAccurate = 1 AND CBR = 320,NoRes==1 AND CBR==320 AND NoReplayGain==0 AND ReplayGainFast==0 AND CRC==1,0,1.0,1.0,1.0,64,18.72413372993469
+5,23.93290698105781,231,NoRes = 1 AND Downmix = 1 AND CRC = 1 AND ReplayGainAccurate = 1 AND CBR = 8,NoRes==1 AND CBR==8 AND NoReplayGain==0 AND Downmix==1 AND ReplayGainFast==0 AND CRC==1,0,1.0,1.0,1.0,64,15.732557773590088
+6,27.94804841780319,404,NoRes = 1 AND Downmix = 1 AND CRC = 1 AND SwapBytes = 1 AND Resampling = 8 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND Resampling==8 AND VBRRange==0 AND Downmix==1 AND CRC==1,0,1.0,1.0,1.0,64,18.22562789916992
+7,21.296194574776923,296,NoRes = 1 AND Downmix = 1 AND Freeformat = 1 AND CRC = 1 AND JointStereo = 1 AND SwapBytes = 1 AND VBRRange = 0,NoRes==1 AND JointStereo==1 AND SwapBytes==1 AND Downmix==1 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,64,7.333846807479858
+1,9.92381519607385,999,JointStereo = 1,MidSideStereo==0 AND Mono==0 AND DualChannels==0 AND Stereo==0,0,1.0,1.0,1.0,65,1.041630744934082
+2,25.76023871039376,369,Downmix = 1 AND Resampling = 48,Resampling==48 AND Downmix==1,0,1.0,1.0,1.0,65,1.2329394817352295
+3,8.861040503430747,465,SwapBytes = 1 AND CBR = 160 AND VBRRange = 0,SwapBytes==1 AND CBR==160,0,1.0,1.0,1.0,65,11.956296443939207
+4,10.961256622278016,340,Freeformat = 1 AND CRC = 1 AND JointStereo = 1 AND VBRRange = 0,MidSideStereo==0 AND Freeformat==1 AND Mono==0 AND DualChannels==0 AND Stereo==0 AND CRC==1,0,1.0,1.0,1.0,65,11.765619277954102
+5,10.110360678619363,316,Downmix = 1 AND Freeformat = 1 AND CRC = 1 AND Resampling = 22 AND VBRRange = 0,Resampling==22 AND Downmix==1 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,65,14.476629734039308
+6,10.879476116355256,296,NoRes = 1 AND Downmix = 1 AND Freeformat = 1 AND SwapBytes = 1 AND Resampling = 22 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND Resampling==22 AND Downmix==1 AND Freeformat==1,0,1.0,1.0,1.0,65,20.09665441513061
+7,21.782602751954837,304,NoRes = 1 AND Downmix = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND CBR = 160 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND CBR==160 AND Downmix==1 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,65,19.60465788841248
+1,21.455157380319083,1162,NoReplayGain = 1,NoReplayGain==1,0,1.0,1.0,1.0,66,4.762416839599609
+2,21.706038578089675,701,Resampling = 44 AND VBRRange = 0,Resampling==44 AND VBRRange==0,0,1.0,1.0,1.0,66,0.3131120204925537
+3,14.195570342321965,303,NoRes = 1 AND Resampling = 44 AND VBRRange = 0,NoRes==1 AND Resampling==44 AND VBRRange==0,0,1.0,1.0,1.0,66,26.97994065284729
+4,20.7942974970728,670,Downmix = 1 AND SwapBytes = 1 AND CBR = 8 AND VBRRange = 0,SwapBytes==1 AND CBR==8 AND VBRRange==0 AND Downmix==1,0,1.0,1.0,1.0,66,1.1164250373840332
+5,2.896655484497485,250,Downmix = 1 AND CRC = 1 AND SwapBytes = 1 AND Resampling = 22 AND CBR = 8,NoRes==0 AND SwapBytes==0 AND Resampling==48 AND VBRRange==1 AND NoReplayGain==0 AND ReplayGainFast==0 AND Stereo==1,0,0.0,0.0,0.0,66,106.8619465827942
+6,12.681943364003418,383,NoRes = 1 AND Downmix = 1 AND Freeformat = 1 AND SwapBytes = 1 AND CBR = 320 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND CBR==320 AND Downmix==1 AND Freeformat==1,0,1.0,1.0,1.0,66,24.90913939476013
+7,25.070521340032187,377,NoRes = 1 AND Downmix = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND ReplayGainAccurate = 1 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND NoReplayGain==0 AND Downmix==1 AND ReplayGainFast==0 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,66,25.448607444763184
+1,6.413699059297471,1162,NoReplayGain = 1,NoReplayGain==1,0,1.0,1.0,1.0,67,32.88074827194214
+2,14.576282651929445,222,NoReplayGain = 1 AND MidSideStereo = 1,NoReplayGain==1 AND ReplayGainFast==0 AND MidSideStereo==1,0,1.0,1.0,1.0,67,6.446830034255981
+3,15.472390134766888,340,ReplayGainFast = 1 AND Resampling = 22 AND VBRRange = 0,Resampling==22 AND VBRRange==0 AND NoReplayGain==0 AND ReplayGainFast==1,0,1.0,1.0,1.0,67,0.5544626712799072
+4,14.822077371016508,311,Downmix = 1 AND Freeformat = 1 AND SwapBytes = 1 AND CBR = 8,SwapBytes==1 AND CBR==8 AND Downmix==1 AND Freeformat==1,0,1.0,1.0,1.0,67,4.31367301940918
+5,26.42806342615437,382,Downmix = 1 AND CRC = 1 AND JointStereo = 1 AND SwapBytes = 1 AND VBRRange = 0,JointStereo==1 AND SwapBytes==1 AND VBRRange==0 AND Downmix==1 AND MidSideStereo==0 AND CRC==1,0,1.0,1.0,1.0,67,1.752511739730835
+6,20.97423577115276,274,NoRes = 1 AND Downmix = 1 AND ReplayGainFast = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1,NoRes==1 AND SwapBytes==1 AND Downmix==1 AND ReplayGainFast==1 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,67,17.566893577575684
+7,14.20555060788453,304,NoRes = 1 AND Downmix = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND CBR = 160 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND CBR==160 AND Downmix==1 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,67,8.01580262184143
+1,18.332278122134937,572,VBRRange = 1,VBRRange==1 AND Freeformat==0,0,1.0,1.0,1.0,68,0.1748921871185302
+2,23.35210745793948,314,Stereo = 1 AND Resampling = 22,Resampling==22 AND MidSideStereo==0 AND Mono==0 AND DualChannels==0 AND Stereo==1,0,1.0,1.0,1.0,68,0.4168844223022461
+3,4.479059123149535,221,MidSideStereo = 1 AND CRC = 1 AND Resampling = 8,NoRes==0 AND Resampling==44 AND VBRRange==1 AND NoReplayGain==1 AND Mono==0 AND Stereo==1 AND CRC==1,0,0.0,0.0,0.0,68,47.999423027038574
+4,7.076403713937706,222,Downmix = 1 AND ReplayGainFast = 1 AND SwapBytes = 1 AND Resampling = 8,SwapBytes==1 AND Resampling==8 AND NoReplayGain==0 AND Downmix==1 AND ReplayGainFast==1,0,1.0,1.0,1.0,68,54.86138319969177
+5,12.613315177121564,315,Downmix = 1 AND Freeformat = 1 AND SwapBytes = 1 AND Resampling = 22 AND VBRRange = 0,SwapBytes==1 AND Resampling==22 AND Downmix==1 AND Freeformat==1,0,1.0,1.0,1.0,68,7.73158597946167
+6,7.156655213645196,210,NoRes = 1 AND Downmix = 1 AND Freeformat = 1 AND ReplayGainAccurate = 1 AND CBR = 320 AND VBRRange = 0,NoRes==1 AND CBR==320 AND NoReplayGain==0 AND Downmix==1 AND ReplayGainFast==0 AND Freeformat==1,0,1.0,1.0,1.0,68,47.86493372917175
+7,9.372946380793698,254,NoRes = 1 AND Downmix = 1 AND MidSideStereo = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND Downmix==1 AND MidSideStereo==1 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,68,24.44709587097168
+1,25.013283903983456,801,Resampling = 48,Resampling==48,0,1.0,1.0,1.0,69,0.2065620422363281
+2,27.24488817233146,402,SwapBytes = 1 AND Resampling = 44,SwapBytes==1 AND Resampling==44,0,1.0,1.0,1.0,69,0.451092004776001
+3,3.6529369028311423,253,NoReplayGain = 1 AND JointStereo = 1 AND VBRRange = 0,NoRes==1 AND SwapBytes==0 AND Resampling==48 AND Downmix==1 AND MidSideStereo==0 AND Freeformat==0 AND Stereo==1,0,0.0,0.0,0.0,69,59.22572922706604
+4,19.368527040587708,378,Downmix = 1 AND ReplayGainFast = 1 AND SwapBytes = 1 AND CBR = 8,SwapBytes==1 AND CBR==8 AND NoReplayGain==0 AND Downmix==1 AND ReplayGainFast==1,0,1.0,1.0,1.0,69,1.3826689720153809
+5,24.61972386246766,412,NoRes = 1 AND Downmix = 1 AND ReplayGainFast = 1 AND CRC = 1 AND VBRRange = 0,NoRes==1 AND VBRRange==0 AND NoReplayGain==0 AND Downmix==1 AND ReplayGainFast==1 AND CRC==1,0,1.0,1.0,1.0,69,23.304682970047
+6,12.057159875624748,253,NoRes = 1 AND Downmix = 1 AND CRC = 1 AND SwapBytes = 1 AND Resampling = 48 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND Resampling==48 AND VBRRange==0 AND Downmix==1 AND CRC==1,0,1.0,1.0,1.0,69,19.513646125793457
+7,18.789885645279416,377,NoRes = 1 AND Downmix = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND ReplayGainAccurate = 1 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND NoReplayGain==0 AND Downmix==1 AND ReplayGainFast==0 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,69,8.59093976020813
+1,20.33196307483473,1162,NoReplayGain = 1,NoReplayGain==1,0,1.0,1.0,1.0,7,1.1934771537780762
+2,25.933300426252494,463,NoRes = 1 AND MidSideStereo = 1,NoRes==1 AND MidSideStereo==1,0,1.0,1.0,1.0,7,19.34083294868469
+3,28.038991267147715,261,Downmix = 1 AND ReplayGainAccurate = 1 AND Resampling = 22,Resampling==22 AND NoReplayGain==0 AND Downmix==1 AND ReplayGainFast==0,0,1.0,1.0,1.0,7,1.149104118347168
+4,20.14631030711635,234,Downmix = 1 AND CRC = 1 AND Resampling = 44 AND VBRRange = 0,Resampling==44 AND VBRRange==0 AND Downmix==1 AND CRC==1,0,1.0,1.0,1.0,7,1.5176916122436523
+5,20.825123843705388,237,NoRes = 1 AND SwapBytes = 1 AND Resampling = 22 AND CBR = 8 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND Resampling==22 AND CBR==8 AND VBRRange==0,0,1.0,1.0,1.0,7,19.40190839767456
+6,17.744158545025535,413,NoRes = 1 AND Downmix = 1 AND Freeformat = 1 AND CRC = 1 AND ReplayGainAccurate = 1 AND VBRRange = 0,NoRes==1 AND NoReplayGain==0 AND Downmix==1 AND ReplayGainFast==0 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,7,19.22382926940918
+7,9.850316575199882,304,NoRes = 1 AND Downmix = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND CBR = 160 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND CBR==160 AND Downmix==1 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,7,23.49510717391968
+1,24.693594697618423,999,JointStereo = 1,MidSideStereo==0 AND Mono==0 AND DualChannels==0 AND Stereo==0,0,1.0,1.0,1.0,70,0.1898517608642578
+2,27.664887267286616,311,JointStereo = 1 AND Resampling = 22,Resampling==22 AND MidSideStereo==0 AND Mono==0 AND DualChannels==0 AND Stereo==0,0,1.0,1.0,1.0,70,0.3433527946472168
+3,23.501638838529992,272,Mono = 1 AND SwapBytes = 1 AND VBRRange = 0,SwapBytes==1 AND VBRRange==0 AND MidSideStereo==0 AND Mono==1 AND DualChannels==0 AND Stereo==0,0,1.0,1.0,1.0,70,0.8932034969329834
+4,27.487418684904235,338,NoRes = 1 AND Downmix = 1 AND CRC = 1 AND CBR = 160,NoRes==1 AND CBR==160 AND Downmix==1 AND CRC==1,0,1.0,1.0,1.0,70,24.45550107955933
+5,12.361066041121742,333,NoRes = 1 AND MidSideStereo = 1 AND CRC = 1 AND SwapBytes = 1 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND VBRRange==0 AND MidSideStereo==1 AND Mono==0 AND CRC==1,0,1.0,1.0,1.0,70,22.525609016418457
+6,4.687683319477233,383,NoRes = 1 AND Downmix = 1 AND Freeformat = 1 AND SwapBytes = 1 AND CBR = 320 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND ReplayGainAccurate==1 AND Resampling==22 AND CBR==160 AND Downmix==1 AND DualChannels==1,0,0.0,0.0,0.0,70,125.546058177948
+7,23.238345592718627,337,NoRes = 1 AND Downmix = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND Resampling = 8 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND Resampling==8 AND Downmix==1 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,70,24.47264552116394
+1,16.493406395430107,1013,MidSideStereo = 1,MidSideStereo==1,0,1.0,1.0,1.0,71,0.2690558433532715
+2,9.403550078371724,624,NoReplayGain = 1 AND SwapBytes = 1,SwapBytes==1 AND NoReplayGain==1,0,1.0,1.0,1.0,71,7.639642953872681
+3,12.446661112354793,933,Downmix = 1 AND SwapBytes = 1 AND CBR = 8,SwapBytes==1 AND CBR==8 AND Downmix==1,0,1.0,1.0,1.0,71,1.6236507892608645
+4,23.57433742518047,384,NoRes = 1 AND Downmix = 1 AND CRC = 1 AND CBR = 320,NoRes==1 AND CBR==320 AND Downmix==1 AND CRC==1,0,1.0,1.0,1.0,71,11.605896234512327
+5,20.996138463172738,373,Downmix = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND CBR = 320,SwapBytes==1 AND CBR==320 AND Downmix==1 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,71,1.5749878883361816
+6,21.29905605025316,383,NoRes = 1 AND Downmix = 1 AND Freeformat = 1 AND SwapBytes = 1 AND CBR = 320 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND CBR==320 AND Downmix==1 AND Freeformat==1,0,1.0,1.0,1.0,71,9.125007629394531
+7,18.765161207936853,285,NoRes = 1 AND NoReplayGain = 1 AND Downmix = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND NoReplayGain==1 AND Downmix==1 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,71,23.80006504058838
+1,28.08042102458539,801,Resampling = 48,Resampling==48,0,1.0,1.0,1.0,72,0.2180662155151367
+2,20.16879433247007,551,Resampling = 48 AND CBR = 8,Resampling==48 AND CBR==8,0,1.0,1.0,1.0,72,0.2616341114044189
+3,24.68870764046805,214,ReplayGainAccurate = 1 AND Resampling = 44 AND CBR = 8,Resampling==44 AND CBR==8 AND NoReplayGain==0 AND ReplayGainFast==0,0,1.0,1.0,1.0,72,0.2756593227386474
+4,8.186063526484144,218,NoRes = 1 AND CRC = 1 AND ReplayGainAccurate = 1 AND Resampling = 22,NoRes==1 AND Resampling==22 AND NoReplayGain==0 AND ReplayGainFast==0 AND CRC==1,0,1.0,1.0,1.0,72,33.49387288093567
+5,26.41374772875518,264,NoRes = 1 AND Downmix = 1 AND ReplayGainFast = 1 AND CRC = 1 AND CBR = 8,NoRes==1 AND CBR==8 AND NoReplayGain==0 AND Downmix==1 AND ReplayGainFast==1 AND CRC==1,0,1.0,1.0,1.0,72,24.61345624923706
+6,27.210009776144293,296,NoRes = 1 AND NoReplayGain = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND NoReplayGain==1 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,72,25.973860025405884
+7,8.083961895085528,285,NoRes = 1 AND NoReplayGain = 1 AND Downmix = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND NoReplayGain==1 AND Downmix==1 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,72,32.1920382976532
+1,12.196540381584628,572,VBRRange = 1,VBRRange==1 AND Freeformat==0,0,1.0,1.0,1.0,73,0.4638347625732422
+2,8.161328679970959,438,JointStereo = 1 AND ReplayGainAccurate = 1,NoReplayGain==0 AND ReplayGainFast==0 AND MidSideStereo==0 AND Mono==0 AND DualChannels==0 AND Stereo==0,0,1.0,1.0,1.0,73,7.856806993484497
+3,26.15737071067956,404,SwapBytes = 1 AND Resampling = 8 AND CBR = 8,SwapBytes==1 AND Resampling==8 AND CBR==8,0,1.0,1.0,1.0,73,0.503138542175293
+4,26.634525319147137,358,Downmix = 1 AND Freeformat = 1 AND CRC = 1 AND CBR = 160,CBR==160 AND Downmix==1 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,73,1.2772579193115234
+5,10.283499874290875,237,NoRes = 1 AND CRC = 1 AND Resampling = 8 AND CBR = 8 AND VBRRange = 0,NoRes==1 AND Resampling==8 AND CBR==8 AND VBRRange==0 AND CRC==1,0,1.0,1.0,1.0,73,24.96619987487793
+6,16.696975881387765,414,NoRes = 1 AND Downmix = 1 AND Freeformat = 1 AND SwapBytes = 1 AND ReplayGainAccurate = 1 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND NoReplayGain==0 AND Downmix==1 AND ReplayGainFast==0 AND Freeformat==1,0,1.0,1.0,1.0,73,19.120895624160767
+7,24.4181929538977,296,NoRes = 1 AND Downmix = 1 AND Freeformat = 1 AND CRC = 1 AND JointStereo = 1 AND SwapBytes = 1 AND VBRRange = 0,NoRes==1 AND JointStereo==1 AND SwapBytes==1 AND Downmix==1 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,73,24.07203507423401
+1,15.251459103509712,1162,NoReplayGain = 1,NoReplayGain==1,0,1.0,1.0,1.0,74,4.560467481613159
+2,19.1324126766574,600,Stereo = 1 AND VBRRange = 0,VBRRange==0 AND MidSideStereo==0 AND Mono==0 AND DualChannels==0 AND Stereo==1,0,1.0,1.0,1.0,74,0.4911623001098633
+3,18.861887044824023,547,MidSideStereo = 1 AND CBR = 8 AND VBRRange = 0,CBR==8 AND VBRRange==0 AND MidSideStereo==1 AND Mono==0 AND DualChannels==0 AND Stereo==0,0,1.0,1.0,1.0,74,0.5393753051757812
+4,23.835053296836463,372,MidSideStereo = 1 AND CRC = 1 AND SwapBytes = 1 AND VBRRange = 0,SwapBytes==1 AND VBRRange==0 AND MidSideStereo==1 AND Mono==0 AND DualChannels==0 AND CRC==1,0,1.0,1.0,1.0,74,1.7662270069122314
+5,26.876991327522568,417,NoRes = 1 AND CRC = 1 AND SwapBytes = 1 AND Resampling = 22 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND Resampling==22 AND VBRRange==0 AND CRC==1,0,1.0,1.0,1.0,74,20.547430276870728
+6,23.076841395848955,417,Downmix = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND ReplayGainAccurate = 1 AND VBRRange = 0,SwapBytes==1 AND NoReplayGain==0 AND Downmix==1 AND ReplayGainFast==0 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,74,1.4782347679138184
+7,14.448721213191703,377,NoRes = 1 AND Downmix = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND ReplayGainAccurate = 1 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND NoReplayGain==0 AND Downmix==1 AND ReplayGainFast==0 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,74,22.761585235595703
+1,4.8889912676966265,930,Resampling = 44,SwapBytes==1 AND Resampling==22 AND VBRRange==2 AND NoReplayGain==0 AND Mono==0 AND DualChannels==0 AND CRC==0,0,0.0,0.0,0.0,75,92.3729486465454
+2,8.19194458791054,318,Downmix = 1 AND Mono = 1,Downmix==1 AND MidSideStereo==0 AND Mono==1,0,1.0,1.0,1.0,75,19.3298819065094
+3,26.00375366508808,389,Downmix = 1 AND SwapBytes = 1 AND CBR = 160,SwapBytes==1 AND CBR==160 AND Downmix==1,0,1.0,1.0,1.0,75,1.3125479221343994
+4,18.57738186428422,290,Downmix = 1 AND MidSideStereo = 1 AND Freeformat = 1 AND SwapBytes = 1,SwapBytes==1 AND Downmix==1 AND MidSideStereo==1 AND Freeformat==1 AND Mono==0 AND DualChannels==0,0,1.0,1.0,1.0,75,2.7518327236175537
+5,26.76872206882725,398,NoRes = 1 AND Downmix = 1 AND CRC = 1 AND JointStereo = 1 AND SwapBytes = 1,NoRes==1 AND JointStereo==1 AND SwapBytes==1 AND Downmix==1 AND MidSideStereo==0 AND CRC==1,0,1.0,1.0,1.0,75,21.443735122680664
+6,21.144897517531437,299,NoRes = 1 AND NoReplayGain = 1 AND Downmix = 1 AND Freeformat = 1 AND SwapBytes = 1 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND NoReplayGain==1 AND Downmix==1 AND Freeformat==1,0,1.0,1.0,1.0,75,9.924055814743042
+7,20.7592540389605,377,NoRes = 1 AND Downmix = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND ReplayGainAccurate = 1 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND NoReplayGain==0 AND Downmix==1 AND ReplayGainFast==0 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,75,21.047842741012573
+1,7.675124970125522,645,Mono = 1,MidSideStereo==0 AND Mono==1,0,1.0,1.0,1.0,76,11.030853748321531
+2,27.57175738502175,500,NoRes = 1 AND JointStereo = 1,NoRes==1 AND MidSideStereo==0 AND Mono==0 AND DualChannels==0 AND Stereo==0,0,1.0,1.0,1.0,76,5.2444493770599365
+3,10.578258477189983,402,NoRes = 1 AND MidSideStereo = 1 AND VBRRange = 0,NoRes==1 AND VBRRange==0 AND MidSideStereo==1 AND Mono==0 AND DualChannels==0 AND Stereo==0,0,1.0,1.0,1.0,76,22.601420879364014
+4,22.01592243804453,210,NoRes = 1 AND CRC = 1 AND Resampling = 48 AND CBR = 8,NoRes==1 AND Resampling==48 AND CBR==8 AND CRC==1,0,1.0,1.0,1.0,76,8.744157552719116
+5,28.265807274080743,296,NoRes = 1 AND Downmix = 1 AND Freeformat = 1 AND SwapBytes = 1 AND Resampling = 22,NoRes==1 AND SwapBytes==1 AND Resampling==22 AND Downmix==1 AND Freeformat==1,0,1.0,1.0,1.0,76,8.08822512626648
+6,23.53832548201149,469,NoRes = 1 AND Downmix = 1 AND CRC = 1 AND SwapBytes = 1 AND ReplayGainAccurate = 1 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND VBRRange==0 AND NoReplayGain==0 AND Downmix==1 AND ReplayGainFast==0 AND CRC==1,0,1.0,1.0,1.0,76,8.658379793167114
+7,19.856721974768963,304,NoRes = 1 AND Downmix = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND CBR = 160 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND CBR==160 AND Downmix==1 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,76,18.628591775894165
+1,22.2622799643608,817,Stereo = 1,MidSideStereo==0 AND Mono==0 AND DualChannels==0 AND Stereo==1,0,1.0,1.0,1.0,77,0.2125887870788574
+2,24.230936049641343,475,Downmix = 1 AND CBR = 160,CBR==160 AND Downmix==1,0,1.0,1.0,1.0,77,1.2228507995605469
+3,15.17595136112534,266,Mono = 1 AND CBR = 8 AND VBRRange = 0,CBR==8 AND VBRRange==0 AND MidSideStereo==0 AND Mono==1 AND DualChannels==0 AND Stereo==0,0,1.0,1.0,1.0,77,1.0307233333587646
+4,6.938291369225592,651,Downmix = 1 AND CRC = 1 AND CBR = 8 AND VBRRange = 0,CBR==8 AND VBRRange==0 AND Downmix==1 AND CRC==1,0,1.0,1.0,1.0,77,21.942339658737183
+5,25.498349860474303,228,NoReplayGain = 1 AND Downmix = 1 AND CRC = 1 AND SwapBytes = 1 AND CBR = 8,SwapBytes==1 AND CBR==8 AND NoReplayGain==1 AND Downmix==1 AND ReplayGainFast==0 AND CRC==1,0,1.0,1.0,1.0,77,5.845019817352295
+6,26.783544873733625,327,NoRes = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND CBR = 160 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND CBR==160 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,77,18.690407276153564
+7,3.2946178788396687,377,NoRes = 1 AND Downmix = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND ReplayGainAccurate = 1 AND VBRRange = 0,NoRes==0 AND Resampling==44 AND CBR==320 AND NoReplayGain==0 AND Downmix==1 AND MidSideStereo==0 AND CRC==1,0,0.0,0.0,0.0,77,44.60833835601807
+1,5.984666052524312,281,VBRRange = 2,CBR==8 AND VBRRange==2 AND Freeformat==0,3,1.0,1.0,1.0,78,109.06340837478638
+2,22.76002115680004,230,Downmix = 1 AND VBRRange = 1,VBRRange==1 AND Downmix==1 AND Freeformat==0,0,1.0,1.0,1.0,78,1.219806671142578
+3,19.169464256646588,941,CRC = 1 AND CBR = 8 AND VBRRange = 0,CBR==8 AND VBRRange==0 AND CRC==1,0,1.0,1.0,1.0,78,0.5093367099761963
+4,25.025685641112037,313,NoRes = 1 AND Freeformat = 1 AND SwapBytes = 1 AND Resampling = 22,NoRes==1 AND SwapBytes==1 AND Resampling==22 AND Freeformat==1,0,1.0,1.0,1.0,78,16.60287857055664
+5,10.636836540371371,348,NoRes = 1 AND Freeformat = 1 AND CRC = 1 AND CBR = 160 AND VBRRange = 0,NoRes==1 AND CBR==160 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,78,14.681987285614014
+6,17.650849896510326,295,NoRes = 1 AND NoReplayGain = 1 AND Downmix = 1 AND Freeformat = 1 AND CRC = 1 AND VBRRange = 0,NoRes==1 AND NoReplayGain==1 AND Downmix==1 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,78,26.67927646636963
+7,21.88794448236231,304,NoRes = 1 AND Downmix = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND CBR = 160 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND CBR==160 AND Downmix==1 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,78,6.304700374603272
+1,13.99502874964494,646,CBR = 320,CBR==320,0,1.0,1.0,1.0,79,0.5407800674438477
+2,14.662627621561054,396,ReplayGainFast = 1 AND Resampling = 8,Resampling==8 AND NoReplayGain==0 AND ReplayGainFast==1,0,1.0,1.0,1.0,79,0.4648222923278808
+3,26.88715579198069,322,NoRes = 1 AND Freeformat = 1 AND CBR = 8,NoRes==1 AND CBR==8 AND Freeformat==1,0,1.0,1.0,1.0,79,20.522629499435425
+4,23.38272842361261,290,Downmix = 1 AND CRC = 1 AND Resampling = 22 AND CBR = 8,Resampling==22 AND CBR==8 AND Downmix==1 AND CRC==1,0,1.0,1.0,1.0,79,1.4080569744110107
+5,19.293208643612896,223,NoRes = 1 AND Freeformat = 1 AND ReplayGainAccurate = 1 AND CBR = 320 AND VBRRange = 0,NoRes==1 AND CBR==320 AND NoReplayGain==0 AND ReplayGainFast==0 AND Freeformat==1,0,1.0,1.0,1.0,79,17.90613579750061
+6,11.217063307201586,211,NoRes = 1 AND ReplayGainFast = 1 AND CRC = 1 AND SwapBytes = 1 AND CBR = 8 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND CBR==8 AND VBRRange==0 AND ReplayGainFast==1 AND CRC==1,0,1.0,1.0,1.0,79,13.863131523132324
+7,5.375971544662264,337,NoRes = 1 AND Downmix = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND Resampling = 8 AND VBRRange = 0,SwapBytes==1 AND Resampling==22 AND VBRRange==0 AND Downmix==0 AND ReplayGainFast==1 AND Stereo==1 AND CRC==0,0,0.0,0.0,0.0,79,82.69717693328857
+1,15.25063134237515,645,Mono = 1,MidSideStereo==0 AND Mono==1,0,1.0,1.0,1.0,8,0.3461432456970215
+2,26.00123234031478,432,MidSideStereo = 1 AND ReplayGainAccurate = 1,NoReplayGain==0 AND ReplayGainFast==0 AND MidSideStereo==1,0,1.0,1.0,1.0,8,0.2904436588287353
+3,29.057994836381045,1167,Downmix = 1 AND Freeformat = 1 AND VBRRange = 0,Downmix==1 AND Freeformat==1,0,1.0,1.0,1.0,8,1.1915912628173828
+4,10.886501651131423,695,NoRes = 1 AND SwapBytes = 1 AND CBR = 8 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND CBR==8 AND VBRRange==0,0,1.0,1.0,1.0,8,10.910415172576904
+5,18.23045247748319,426,NoRes = 1 AND Downmix = 1 AND SwapBytes = 1 AND Resampling = 22 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND Resampling==22 AND VBRRange==0 AND Downmix==1,0,1.0,1.0,1.0,8,17.00143337249756
+6,18.19705874667052,377,NoRes = 1 AND Downmix = 1 AND Freeformat = 1 AND CRC = 1 AND CBR = 320 AND VBRRange = 0,NoRes==1 AND CBR==320 AND Downmix==1 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,8,12.09924602508545
+7,23.42618253665579,285,NoRes = 1 AND NoReplayGain = 1 AND Downmix = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND NoReplayGain==1 AND Downmix==1 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,8,28.212543487548828
+1,23.110332837463936,722,DualChannels = 1,MidSideStereo==0 AND Mono==0 AND DualChannels==1,0,1.0,1.0,1.0,80,0.223146915435791
+2,15.332832491665824,270,CRC = 1 AND VBRRange = 1,VBRRange==1 AND Freeformat==0 AND CRC==1,0,1.0,1.0,1.0,80,0.7762975692749023
+3,18.78761534460293,266,Mono = 1 AND CBR = 8 AND VBRRange = 0,CBR==8 AND VBRRange==0 AND MidSideStereo==0 AND Mono==1 AND DualChannels==0 AND Stereo==0,0,1.0,1.0,1.0,80,0.7492473125457764
+4,21.0300932542749,422,NoRes = 1 AND JointStereo = 1 AND SwapBytes = 1 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND VBRRange==0 AND MidSideStereo==0 AND Mono==0 AND DualChannels==0 AND Stereo==0,0,1.0,1.0,1.0,80,19.959754943847656
+5,27.152192003297003,237,NoRes = 1 AND CRC = 1 AND Resampling = 8 AND CBR = 8 AND VBRRange = 0,NoRes==1 AND Resampling==8 AND CBR==8 AND VBRRange==0 AND CRC==1,0,1.0,1.0,1.0,80,14.609812498092651
+6,17.920389453252085,414,NoRes = 1 AND Downmix = 1 AND Freeformat = 1 AND SwapBytes = 1 AND ReplayGainAccurate = 1 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND NoReplayGain==0 AND Downmix==1 AND ReplayGainFast==0 AND Freeformat==1,0,1.0,1.0,1.0,80,20.243063926696777
+7,22.801590095020423,337,NoRes = 1 AND Downmix = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND Resampling = 8 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND Resampling==8 AND Downmix==1 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,80,21.035583019256592
+1,3.169947401040244,722,DualChannels = 1,DualChannels==0,0,0.0,0.0,0.0,81,71.89805245399475
+2,25.50559685971999,527,JointStereo = 1 AND SwapBytes = 1,SwapBytes==1 AND MidSideStereo==0 AND Mono==0 AND DualChannels==0 AND Stereo==0,0,1.0,1.0,1.0,81,0.374922513961792
+3,28.128968176140862,407,NoRes = 1 AND Resampling = 22 AND CBR = 8,NoRes==1 AND Resampling==22 AND CBR==8,0,1.0,1.0,1.0,81,10.328884601593018
+4,21.659357569634054,395,Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND CBR = 320,SwapBytes==1 AND CBR==320 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,81,1.179121732711792
+5,26.555911156060777,255,NoRes = 1 AND NoReplayGain = 1 AND SwapBytes = 1 AND CBR = 8 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND CBR==8 AND VBRRange==0 AND NoReplayGain==1 AND ReplayGainFast==0,0,1.0,1.0,1.0,81,22.78004550933838
+6,3.208280313973152,310,Downmix = 1 AND Freeformat = 1 AND CRC = 1 AND JointStereo = 1 AND SwapBytes = 1 AND VBRRange = 0,NoRes==0 AND NoReplayGain==0 AND ReplayGainFast==1 AND MidSideStereo==1 AND Freeformat==1 AND CRC==1,0,0.0,0.0,0.0,81,71.1553738117218
+7,17.450470566145007,274,NoRes = 1 AND Downmix = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND Resampling = 22 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND Resampling==22 AND Downmix==1 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,81,19.372249364852905
+1,19.25434013515312,817,Stereo = 1,MidSideStereo==0 AND Mono==0 AND DualChannels==0 AND Stereo==1,0,1.0,1.0,1.0,82,0.3041965961456299
+2,6.382823088531291,457,Stereo = 1 AND SwapBytes = 1,NoRes==0 AND CBR==8 AND NoReplayGain==1 AND Downmix==1 AND Mono==1 AND Stereo==0 AND CRC==0,0,0.0,0.0,0.0,82,42.28128433227539
+3,25.48987244788244,955,CRC = 1 AND SwapBytes = 1 AND CBR = 8,SwapBytes==1 AND CBR==8 AND CRC==1,0,1.0,1.0,1.0,82,0.6225094795227051
+4,18.805289542488577,397,NoRes = 1 AND Freeformat = 1 AND Resampling = 8 AND VBRRange = 0,NoRes==1 AND Resampling==8 AND Freeformat==1,0,1.0,1.0,1.0,82,21.216158628463745
+5,7.067228693122137,424,NoRes = 1 AND CRC = 1 AND SwapBytes = 1 AND Resampling = 8 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND Resampling==8 AND VBRRange==0 AND CRC==1,0,1.0,1.0,1.0,82,35.80603528022766
+6,8.893241581240076,285,NoRes = 1 AND NoReplayGain = 1 AND Downmix = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1,NoRes==1 AND SwapBytes==1 AND NoReplayGain==1 AND Downmix==1 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,82,15.102333307266235
+7,27.159551047266177,274,NoRes = 1 AND Downmix = 1 AND ReplayGainFast = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND Downmix==1 AND ReplayGainFast==1 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,82,19.638749361038208
+1,7.281499996462607,930,Resampling = 44,Resampling==44,0,1.0,1.0,1.0,83,12.913788557052612
+2,18.749659899221346,736,MidSideStereo = 1 AND CBR = 8,CBR==8 AND MidSideStereo==1 AND Mono==0 AND DualChannels==0 AND Stereo==0,0,1.0,1.0,1.0,83,0.406707763671875
+3,18.899524319519852,518,NoReplayGain = 1 AND CRC = 1 AND VBRRange = 0,VBRRange==0 AND NoReplayGain==1 AND ReplayGainFast==0 AND CRC==1,0,1.0,1.0,1.0,83,5.913528919219971
+4,6.74142090515373,416,NoRes = 1 AND CRC = 1 AND JointStereo = 1 AND VBRRange = 0,NoRes==1 AND VBRRange==0 AND MidSideStereo==0 AND Mono==0 AND DualChannels==0 AND Stereo==0 AND CRC==1,0,1.0,1.0,1.0,83,50.06211304664612
+5,6.113153392643109,270,NoRes = 1 AND NoReplayGain = 1 AND Downmix = 1 AND CRC = 1 AND CBR = 8,NoRes==1 AND SwapBytes==0 AND Resampling==44 AND CBR==320 AND ReplayGainFast==0 AND MidSideStereo==0 AND DualChannels==1,0,0.0,0.0,0.0,83,61.64638328552246
+6,27.52508996737713,374,NoRes = 1 AND Downmix = 1 AND CRC = 1 AND SwapBytes = 1 AND Resampling = 22 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND Resampling==22 AND VBRRange==0 AND Downmix==1 AND CRC==1,0,1.0,1.0,1.0,83,8.200486183166504
+7,12.731897189988835,274,NoRes = 1 AND Downmix = 1 AND ReplayGainFast = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND Downmix==1 AND ReplayGainFast==1 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,83,16.75632333755493
+1,17.508016202684292,646,CBR = 320,CBR==320,0,1.0,1.0,1.0,84,0.2982621192932129
+2,2.220721761096609,311,JointStereo = 1 AND Resampling = 22,JointStereo==0 AND ReplayGainAccurate==0 AND CBR==8 AND Freeformat==0 AND DualChannels==0 AND Stereo==0 AND CRC==0,0,0.0,0.0,0.0,84,97.46097707748412
+3,11.694328298197217,231,CRC = 1 AND ReplayGainAccurate = 1 AND CBR = 320,CBR==320 AND NoReplayGain==0 AND ReplayGainFast==0 AND CRC==1,0,1.0,1.0,1.0,84,8.562549829483032
+4,18.69830012923665,478,Downmix = 1 AND ReplayGainFast = 1 AND CRC = 1 AND VBRRange = 0,VBRRange==0 AND NoReplayGain==0 AND Downmix==1 AND ReplayGainFast==1 AND CRC==1,0,1.0,1.0,1.0,84,1.4448738098144531
+5,28.58580449292165,270,NoRes = 1 AND CRC = 1 AND SwapBytes = 1 AND Resampling = 8 AND CBR = 8,NoRes==1 AND SwapBytes==1 AND Resampling==8 AND CBR==8 AND CRC==1,0,1.0,1.0,1.0,84,23.994850397109985
+6,4.928713861061013,235,Downmix = 1 AND CRC = 1 AND SwapBytes = 1 AND Resampling = 8 AND CBR = 8 AND VBRRange = 0,NoRes==0 AND SwapBytes==0 AND Resampling==22 AND ReplayGainFast==1 AND MidSideStereo==0 AND Stereo==1 AND CRC==1,0,0.0,0.0,0.0,84,56.51600980758667
+7,8.950506587505105,377,NoRes = 1 AND Downmix = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND ReplayGainAccurate = 1 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND NoReplayGain==0 AND Downmix==1 AND ReplayGainFast==0 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,84,25.169264554977417
+1,18.502860832019675,801,Resampling = 48,Resampling==48,0,1.0,1.0,1.0,85,0.2221899032592773
+2,26.69036571058857,283,ReplayGainFast = 1 AND Resampling = 44,Resampling==44 AND NoReplayGain==0 AND ReplayGainFast==1,0,1.0,1.0,1.0,85,0.2844023704528808
+3,24.023780821822463,515,NoRes = 1 AND NoReplayGain = 1 AND CRC = 1,NoRes==1 AND NoReplayGain==1 AND CRC==1,0,1.0,1.0,1.0,85,27.75393581390381
+4,13.975297835270412,302,CRC = 1 AND ReplayGainAccurate = 1 AND CBR = 8 AND VBRRange = 0,CBR==8 AND VBRRange==0 AND NoReplayGain==0 AND ReplayGainFast==0 AND CRC==1,0,1.0,1.0,1.0,85,1.076728582382202
+5,15.426802362381654,332,NoReplayGain = 1 AND Downmix = 1 AND CRC = 1 AND SwapBytes = 1 AND VBRRange = 0,SwapBytes==1 AND VBRRange==0 AND NoReplayGain==1 AND Downmix==1 AND ReplayGainFast==0 AND CRC==1,0,1.0,1.0,1.0,85,10.976279497146606
+6,24.69316719465372,210,NoRes = 1 AND Downmix = 1 AND ReplayGainFast = 1 AND CRC = 1 AND CBR = 8 AND VBRRange = 0,NoRes==1 AND CBR==8 AND VBRRange==0 AND Downmix==1 AND ReplayGainFast==1 AND CRC==1,0,1.0,1.0,1.0,85,23.345027446746823
+7,27.23518076345264,275,NoRes = 1 AND Downmix = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND CBR = 8 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND CBR==8 AND Downmix==1 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,85,8.04444670677185
+1,13.867875642921693,646,CBR = 320,CBR==320,0,1.0,1.0,1.0,86,0.5761122703552246
+2,7.432616461043477,345,ReplayGainAccurate = 1 AND Resampling = 48,Resampling==48 AND NoReplayGain==0 AND ReplayGainFast==0,0,1.0,1.0,1.0,86,24.72590804100037
+3,17.989147023135185,933,Downmix = 1 AND SwapBytes = 1 AND CBR = 8,SwapBytes==1 AND CBR==8 AND Downmix==1,0,1.0,1.0,1.0,86,1.2948493957519531
+4,25.231432088635184,223,NoRes = 1 AND Freeformat = 1 AND ReplayGainAccurate = 1 AND CBR = 320,NoRes==1 AND CBR==320 AND NoReplayGain==0 AND ReplayGainFast==0 AND Freeformat==1,0,1.0,1.0,1.0,86,19.99474191665649
+5,27.950782543637175,211,NoRes = 1 AND Downmix = 1 AND Stereo = 1 AND SwapBytes = 1 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND VBRRange==0 AND Downmix==1 AND MidSideStereo==0 AND Stereo==1,0,1.0,1.0,1.0,86,12.524654865264893
+6,3.910199576907694,218,NoRes = 1 AND Downmix = 1 AND CRC = 1 AND Resampling = 8 AND CBR = 8 AND VBRRange = 0,JointStereo==1 AND SwapBytes==1 AND Resampling==22 AND VBRRange==0 AND ReplayGainFast==1 AND Freeformat==0 AND CRC==1,0,0.0,0.0,0.0,86,100.70043087005617
+7,4.76387270655989,274,NoRes = 1 AND Downmix = 1 AND ReplayGainFast = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND VBRRange = 0,NoRes==1 AND Resampling==22 AND VBRRange==2 AND NoReplayGain==1 AND Downmix==0 AND MidSideStereo==0 AND CRC==1,0,0.0,0.0,0.0,86,55.33560729026794
+1,25.31051998692303,723,CBR = 160,CBR==160,0,1.0,1.0,1.0,87,0.2068231105804443
+2,20.57414988796645,1048,ReplayGainAccurate = 1 AND CBR = 8,CBR==8 AND NoReplayGain==0 AND ReplayGainFast==0,0,1.0,1.0,1.0,87,0.1549882888793945
+3,2.5625592306056597,583,NoReplayGain = 1 AND CBR = 8 AND VBRRange = 0,SwapBytes==0 AND ReplayGainAccurate==1 AND Resampling==44 AND VBRRange==1 AND Downmix==1 AND Stereo==1 AND CRC==1,0,0.0,0.0,0.0,87,85.71795105934143
+4,22.78992923741828,222,NoRes = 1 AND Freeformat = 1 AND Resampling = 48 AND VBRRange = 0,NoRes==1 AND Resampling==48 AND Freeformat==1,0,1.0,1.0,1.0,87,11.260498523712158
+5,23.872958172068085,268,NoRes = 1 AND Downmix = 1 AND SwapBytes = 1 AND Resampling = 22 AND CBR = 8,NoRes==1 AND SwapBytes==1 AND Resampling==22 AND CBR==8 AND Downmix==1,0,1.0,1.0,1.0,87,14.792552471160889
+6,10.045490770708406,289,Downmix = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND Resampling = 22 AND VBRRange = 0,SwapBytes==1 AND Resampling==22 AND Downmix==1 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,87,13.467198371887209
+7,17.8569885921664,357,NoRes = 1 AND Downmix = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND CBR = 320 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND CBR==320 AND Downmix==1 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,87,20.861531257629395
+1,12.126790415836352,572,VBRRange = 1,VBRRange==1 AND Freeformat==0,0,1.0,1.0,1.0,88,0.4833295345306396
+2,14.811269086867272,398,NoRes = 1 AND Resampling = 44,NoRes==1 AND Resampling==44,0,1.0,1.0,1.0,88,11.417469263076782
+3,16.976819954141973,266,CRC = 1 AND SwapBytes = 1 AND Resampling = 44,SwapBytes==1 AND Resampling==44 AND CRC==1,0,1.0,1.0,1.0,88,2.03113341331482
+4,28.365508163109222,326,CRC = 1 AND Resampling = 22 AND CBR = 8 AND VBRRange = 0,Resampling==22 AND CBR==8 AND VBRRange==0 AND CRC==1,0,1.0,1.0,1.0,88,0.6758291721343994
+5,26.641786026821265,323,NoRes = 1 AND Freeformat = 1 AND JointStereo = 1 AND SwapBytes = 1 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND MidSideStereo==0 AND Freeformat==1 AND Mono==0 AND DualChannels==0 AND Stereo==0,0,1.0,1.0,1.0,88,13.879772663116457
+6,19.337159053957944,290,Downmix = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND CBR = 8 AND VBRRange = 0,SwapBytes==1 AND CBR==8 AND Downmix==1 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,88,2.154452323913574
+7,23.134808360551823,377,NoRes = 1 AND Downmix = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND ReplayGainAccurate = 1 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND NoReplayGain==0 AND Downmix==1 AND ReplayGainFast==0 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,88,16.626436233520508
+1,17.53492593643462,930,Resampling = 44,Resampling==44,0,1.0,1.0,1.0,89,0.2292060852050781
+2,4.55581032886331,232,Mono = 1 AND Resampling = 22,NoRes==0 AND SwapBytes==1 AND Resampling==44 AND CBR==8 AND NoReplayGain==1 AND MidSideStereo==0 AND DualChannels==0,0,0.0,0.0,0.0,89,99.22493243217468
+3,21.93940721697272,244,NoRes = 1 AND Downmix = 1 AND Mono = 1,NoRes==1 AND Downmix==1 AND MidSideStereo==0 AND Mono==1,0,1.0,1.0,1.0,89,11.48958969116211
+4,10.925753291091404,367,NoRes = 1 AND SwapBytes = 1 AND CBR = 160 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND CBR==160,0,1.0,1.0,1.0,89,21.56680393218994
+5,28.98710162712877,296,NoRes = 1 AND ReplayGainFast = 1 AND Freeformat = 1 AND CRC = 1 AND VBRRange = 0,NoRes==1 AND NoReplayGain==0 AND ReplayGainFast==1 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,89,7.066138982772827
+6,6.522752762802238,235,Downmix = 1 AND CRC = 1 AND SwapBytes = 1 AND Resampling = 8 AND CBR = 8 AND VBRRange = 0,SwapBytes==1 AND Resampling==8 AND CBR==8 AND VBRRange==0 AND Downmix==1 AND CRC==1,4,1.0,1.0,1.0,89,75.80880069732666
+7,2.6108147391004204,274,NoRes = 1 AND Downmix = 1 AND ReplayGainFast = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND VBRRange = 0,NoRes==0 AND VBRRange==1 AND NoReplayGain==0 AND Downmix==1 AND ReplayGainFast==1 AND MidSideStereo==1 AND CRC==0,0,0.0,0.0,0.0,89,51.52757716178894
+1,6.698319881654202,1013,MidSideStereo = 1,MidSideStereo==1,0,1.0,1.0,1.0,9,24.21029043197632
+2,10.267265106388797,417,NoRes = 1 AND CBR = 160,NoRes==1 AND CBR==160,0,1.0,1.0,1.0,9,22.11169171333313
+3,5.104219421795788,304,NoRes = 1 AND Stereo = 1 AND CBR = 8,SwapBytes==1 AND ReplayGainAccurate==1 AND Resampling==48 AND VBRRange==1 AND Downmix==0 AND DualChannels==1 AND CRC==1,0,0.0,0.0,0.0,9,80.93648171424866
+4,15.841665948162367,245,NoRes = 1 AND ReplayGainAccurate = 1 AND CBR = 8 AND VBRRange = 0,NoRes==1 AND CBR==8 AND VBRRange==0 AND NoReplayGain==0 AND ReplayGainFast==0,0,1.0,1.0,1.0,9,14.588527917861938
+5,14.474626075132855,301,NoRes = 1 AND Downmix = 1 AND ReplayGainFast = 1 AND Freeformat = 1 AND VBRRange = 0,NoRes==1 AND NoReplayGain==0 AND Downmix==1 AND ReplayGainFast==1 AND Freeformat==1,0,1.0,1.0,1.0,9,11.304210662841797
+6,17.605425397292066,317,NoRes = 1 AND Downmix = 1 AND CRC = 1 AND SwapBytes = 1 AND CBR = 160 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND CBR==160 AND Downmix==1 AND CRC==1,0,1.0,1.0,1.0,9,23.634581089019772
+7,15.836392008362475,357,NoRes = 1 AND Downmix = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND CBR = 320 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND CBR==320 AND Downmix==1 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,9,23.304577589035038
+1,23.17342968490268,1162,NoReplayGain = 1,NoReplayGain==1,0,1.0,1.0,1.0,90,4.711724519729614
+2,12.41066415728288,362,NoRes = 1 AND DualChannels = 1,NoRes==1 AND MidSideStereo==0 AND Mono==0 AND DualChannels==1,0,1.0,1.0,1.0,90,22.75692367553711
+3,6.957072476777007,410,NoRes = 1 AND Downmix = 1 AND MidSideStereo = 1,NoRes==1 AND Downmix==1 AND MidSideStereo==1,0,1.0,1.0,1.0,90,47.34591126441956
+4,27.02804921170788,296,NoRes = 1 AND ReplayGainFast = 1 AND Freeformat = 1 AND CRC = 1,NoRes==1 AND NoReplayGain==0 AND ReplayGainFast==1 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,90,12.936843872070312
+5,26.346018302038782,325,Downmix = 1 AND Freeformat = 1 AND JointStereo = 1 AND SwapBytes = 1 AND VBRRange = 0,SwapBytes==1 AND Downmix==1 AND MidSideStereo==0 AND Freeformat==1 AND Mono==0 AND DualChannels==0 AND Stereo==0,0,1.0,1.0,1.0,90,2.0416479110717773
+6,27.942502419148365,210,NoRes = 1 AND NoReplayGain = 1 AND Downmix = 1 AND SwapBytes = 1 AND CBR = 8 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND CBR==8 AND VBRRange==0 AND NoReplayGain==1 AND Downmix==1,0,1.0,1.0,1.0,90,25.685141563415527
+7,5.069740474558089,274,NoRes = 1 AND Downmix = 1 AND ReplayGainFast = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND VBRRange = 0,NoRes==1 AND JointStereo==0 AND Resampling==48 AND Freeformat==0 AND DualChannels==0 AND Stereo==0 AND CRC==0,0,0.0,0.0,0.0,90,118.6077024936676
+1,15.912267540995597,645,Mono = 1,MidSideStereo==0 AND Mono==1,0,1.0,1.0,1.0,91,0.3079767227172851
+2,15.525076828710525,515,CRC = 1 AND JointStereo = 1,MidSideStereo==0 AND Mono==0 AND DualChannels==0 AND Stereo==0 AND CRC==1,0,1.0,1.0,1.0,91,1.1029231548309326
+3,21.815746660435256,285,SwapBytes = 1 AND CBR = 8 AND VBRRange = 1,SwapBytes==1 AND VBRRange==1 AND Freeformat==0,0,1.0,1.0,1.0,91,0.3634917736053467
+4,17.3842859370159,285,NoRes = 1 AND SwapBytes = 1 AND ReplayGainAccurate = 1 AND CBR = 8,NoRes==1 AND SwapBytes==1 AND CBR==8 AND NoReplayGain==0 AND ReplayGainFast==0,0,1.0,1.0,1.0,91,8.378988981246948
+5,9.534729777524388,301,NoRes = 1 AND Downmix = 1 AND ReplayGainFast = 1 AND Freeformat = 1 AND VBRRange = 0,NoRes==1 AND NoReplayGain==0 AND Downmix==1 AND ReplayGainFast==1 AND Freeformat==1,0,1.0,1.0,1.0,91,20.270542860031128
+6,18.899849366856568,290,Downmix = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND CBR = 8 AND VBRRange = 0,SwapBytes==1 AND CBR==8 AND Downmix==1 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,91,2.5440263748168945
+7,4.218328192164735,285,NoRes = 1 AND NoReplayGain = 1 AND Downmix = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND VBRRange = 0,NoRes==0 AND VBRRange==2 AND NoReplayGain==0 AND Downmix==1 AND Mono==1 AND DualChannels==0 AND CRC==0,0,0.0,0.0,0.0,91,49.35656380653381
+1,7.185460072096886,1061,Resampling = 8,Resampling==8,0,1.0,1.0,1.0,92,11.95530891418457
+2,2.4430877847929646,570,MidSideStereo = 1 AND CRC = 1,MidSideStereo==0,0,0.0,0.0,0.0,92,79.57436561584473
+3,27.18150421983389,311,CRC = 1 AND ReplayGainAccurate = 1 AND Resampling = 22,Resampling==22 AND NoReplayGain==0 AND ReplayGainFast==0 AND CRC==1,0,1.0,1.0,1.0,92,0.3058264255523681
+4,6.453837092135254,429,NoRes = 1 AND CRC = 1 AND JointStereo = 1 AND SwapBytes = 1,NoRes==1 AND SwapBytes==1 AND MidSideStereo==0 AND Mono==0 AND DualChannels==0 AND Stereo==0 AND CRC==1,0,1.0,1.0,1.0,92,60.60736632347107
+5,16.25411994866258,264,NoRes = 1 AND Downmix = 1 AND ReplayGainFast = 1 AND CRC = 1 AND CBR = 8,NoRes==1 AND CBR==8 AND NoReplayGain==0 AND Downmix==1 AND ReplayGainFast==1 AND CRC==1,0,1.0,1.0,1.0,92,10.783111095428469
+6,28.972611609131487,357,NoRes = 1 AND Downmix = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND CBR = 320,NoRes==1 AND SwapBytes==1 AND CBR==320 AND Downmix==1 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,92,10.902239799499512
+7,7.125998194802058,285,NoRes = 1 AND NoReplayGain = 1 AND Downmix = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND NoReplayGain==1 AND Downmix==1 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,92,40.693881034851074
+1,15.373829288921884,723,CBR = 160,CBR==160,0,1.0,1.0,1.0,93,0.3106486797332763
+2,10.450848517150664,846,JointStereo = 1 AND VBRRange = 0,VBRRange==0 AND MidSideStereo==0 AND Mono==0 AND DualChannels==0 AND Stereo==0,0,1.0,1.0,1.0,93,1.3914330005645752
+3,22.293959374514905,1167,Downmix = 1 AND Freeformat = 1 AND VBRRange = 0,Downmix==1 AND Freeformat==1,0,1.0,1.0,1.0,93,1.1823585033416748
+4,6.550421284930574,268,Downmix = 1 AND SwapBytes = 1 AND ReplayGainAccurate = 1 AND CBR = 8,SwapBytes==1 AND CBR==8 AND NoReplayGain==0 AND Downmix==1 AND ReplayGainFast==0,0,1.0,1.0,1.0,93,68.84114599227905
+5,28.492195775476723,311,NoRes = 1 AND NoReplayGain = 1 AND Freeformat = 1 AND SwapBytes = 1 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND NoReplayGain==1 AND ReplayGainFast==0 AND Freeformat==1,0,1.0,1.0,1.0,93,23.635435342788696
+6,5.561397675421367,210,NoRes = 1 AND NoReplayGain = 1 AND CRC = 1 AND SwapBytes = 1 AND CBR = 8 AND VBRRange = 0,SwapBytes==0 AND Resampling==44 AND VBRRange==2 AND NoReplayGain==1 AND Downmix==0 AND DualChannels==1 AND CRC==0,0,0.0,0.0,0.0,93,86.5580563545227
+7,16.47799307308508,285,NoRes = 1 AND NoReplayGain = 1 AND Downmix = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND NoReplayGain==1 AND Downmix==1 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,93,23.70836925506592
+1,15.582656458963314,999,JointStereo = 1,MidSideStereo==0 AND Mono==0 AND DualChannels==0 AND Stereo==0,0,1.0,1.0,1.0,94,0.3585071563720703
+2,18.458322471479683,442,Downmix = 1 AND Resampling = 44,Resampling==44 AND Downmix==1,0,1.0,1.0,1.0,94,1.1649839878082275
+3,20.62738561923325,450,SwapBytes = 1 AND CBR = 320 AND VBRRange = 0,SwapBytes==1 AND CBR==320,0,1.0,1.0,1.0,94,0.4593183994293213
+4,5.374930088020387,286,NoRes = 1 AND MidSideStereo = 1 AND Freeformat = 1 AND CRC = 1,NoRes==1 AND SwapBytes==1 AND Resampling==44 AND VBRRange==1 AND NoReplayGain==0 AND Mono==1 AND CRC==1,0,0.0,0.0,0.0,94,94.86861181259157
+5,17.83719714824,311,Downmix = 1 AND ReplayGainFast = 1 AND CRC = 1 AND SwapBytes = 1 AND CBR = 8,SwapBytes==1 AND CBR==8 AND NoReplayGain==0 AND Downmix==1 AND ReplayGainFast==1 AND CRC==1,0,1.0,1.0,1.0,94,1.5549516677856443
+6,14.628062033827398,310,NoRes = 1 AND Downmix = 1 AND Freeformat = 1 AND JointStereo = 1 AND SwapBytes = 1 AND VBRRange = 0,NoRes==1 AND JointStereo==1 AND SwapBytes==1 AND Downmix==1 AND MidSideStereo==0 AND Freeformat==1,0,1.0,1.0,1.0,94,22.761465787887573
+7,9.335008254523842,274,NoRes = 1 AND Downmix = 1 AND ReplayGainFast = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND Downmix==1 AND ReplayGainFast==1 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,94,23.29972815513611
+1,10.597854627088694,572,VBRRange = 1,VBRRange==1 AND Freeformat==0,0,1.0,1.0,1.0,95,0.9299204349517822
+2,4.048932583241466,956,Resampling = 22 AND CBR = 8,NoRes==1 AND Resampling==44 AND CBR==8 AND NoReplayGain==1 AND Downmix==1 AND Freeformat==1 AND Stereo==0,0,0.0,0.0,0.0,95,86.70630025863647
+3,6.835517115406872,674,NoRes = 1 AND SwapBytes = 1 AND ReplayGainAccurate = 1,NoRes==1 AND SwapBytes==1 AND NoReplayGain==0 AND ReplayGainFast==0,0,1.0,1.0,1.0,95,32.92719507217407
+4,17.064474919111824,435,NoRes = 1 AND NoReplayGain = 1 AND SwapBytes = 1 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND VBRRange==0 AND NoReplayGain==1 AND ReplayGainFast==0,0,1.0,1.0,1.0,95,19.72417259216309
+5,26.634850194690056,295,NoRes = 1 AND ReplayGainFast = 1 AND Freeformat = 1 AND SwapBytes = 1 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND NoReplayGain==0 AND ReplayGainFast==1 AND Freeformat==1,0,1.0,1.0,1.0,95,21.31858801841736
+6,13.813805237071184,321,NoRes = 1 AND NoReplayGain = 1 AND Downmix = 1 AND CRC = 1 AND SwapBytes = 1 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND VBRRange==0 AND NoReplayGain==1 AND Downmix==1 AND CRC==1,0,1.0,1.0,1.0,95,25.39810538291931
+7,18.58916294710639,254,NoRes = 1 AND Downmix = 1 AND MidSideStereo = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND Downmix==1 AND MidSideStereo==1 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,95,8.610068321228027
+1,15.855763514096058,722,DualChannels = 1,MidSideStereo==0 AND Mono==0 AND DualChannels==1,0,1.0,1.0,1.0,96,0.3682427406311035
+2,9.44666991196531,570,MidSideStereo = 1 AND CRC = 1,MidSideStereo==1 AND Mono==0 AND DualChannels==0 AND CRC==1,0,1.0,1.0,1.0,96,3.636897802352905
+3,26.192368376211167,399,Freeformat = 1 AND SwapBytes = 1 AND CBR = 160,SwapBytes==1 AND CBR==160 AND Freeformat==1,0,1.0,1.0,1.0,96,0.5469803810119629
+4,28.202561053821665,315,CRC = 1 AND SwapBytes = 1 AND ReplayGainAccurate = 1 AND CBR = 8,SwapBytes==1 AND CBR==8 AND NoReplayGain==0 AND ReplayGainFast==0 AND CRC==1,0,1.0,1.0,1.0,96,0.4462831020355224
+5,27.78342439294104,324,Freeformat = 1 AND CRC = 1 AND JointStereo = 1 AND SwapBytes = 1 AND VBRRange = 0,SwapBytes==1 AND MidSideStereo==0 AND Freeformat==1 AND Mono==0 AND DualChannels==0 AND Stereo==0 AND CRC==1,0,1.0,1.0,1.0,96,1.6086721420288086
+6,13.523316257078024,413,NoRes = 1 AND Downmix = 1 AND Freeformat = 1 AND CRC = 1 AND ReplayGainAccurate = 1 AND VBRRange = 0,NoRes==1 AND NoReplayGain==0 AND Downmix==1 AND ReplayGainFast==0 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,96,16.798288583755493
+7,20.02832287974017,274,NoRes = 1 AND Downmix = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND Resampling = 22 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND Resampling==22 AND Downmix==1 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,96,23.03815984725952
+1,26.183491004712664,999,JointStereo = 1,MidSideStereo==0 AND Mono==0 AND DualChannels==0 AND Stereo==0,0,1.0,1.0,1.0,97,0.3136067390441894
+2,17.565046731264488,600,Stereo = 1 AND VBRRange = 0,VBRRange==0 AND MidSideStereo==0 AND Mono==0 AND DualChannels==0 AND Stereo==1,0,1.0,1.0,1.0,97,0.5193495750427246
+3,24.948036624994355,467,SwapBytes = 1 AND Resampling = 22 AND CBR = 8,SwapBytes==1 AND Resampling==22 AND CBR==8,0,1.0,1.0,1.0,97,0.4538536071777344
+4,28.77515566781466,235,NoRes = 1 AND Downmix = 1 AND Resampling = 44 AND VBRRange = 0,NoRes==1 AND Resampling==44 AND VBRRange==0 AND Downmix==1,0,1.0,1.0,1.0,97,15.234809637069702
+5,7.694728144161146,273,Downmix = 1 AND MidSideStereo = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1,SwapBytes==1 AND Downmix==1 AND MidSideStereo==1 AND Freeformat==1 AND Mono==0 AND CRC==1,0,1.0,1.0,1.0,97,38.28358602523804
+6,5.7410576312268455,357,NoRes = 1 AND Downmix = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND CBR = 320,NoRes==0 AND JointStereo==0 AND Resampling==48 AND VBRRange==1 AND MidSideStereo==0 AND CRC==1,0,0.0,0.0,0.0,97,121.30677127838136
+7,18.32531630120089,357,NoRes = 1 AND Downmix = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND CBR = 320 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND CBR==320 AND Downmix==1 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,97,18.403626918792725
+1,17.617021886754188,572,VBRRange = 1,VBRRange==1 AND Freeformat==0,0,1.0,1.0,1.0,98,0.1921167373657226
+2,25.90839897131612,398,NoRes = 1 AND Resampling = 44,NoRes==1 AND Resampling==44,0,1.0,1.0,1.0,98,14.71284031867981
+3,15.26046514388029,239,Stereo = 1 AND Resampling = 22 AND CBR = 8,Resampling==22 AND CBR==8 AND MidSideStereo==0 AND Mono==0 AND DualChannels==0 AND Stereo==1,0,1.0,1.0,1.0,98,1.2537102699279783
+4,8.305056283192785,223,NoRes = 1 AND SwapBytes = 1 AND Resampling = 44 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND Resampling==44 AND VBRRange==0,0,1.0,1.0,1.0,98,36.81498336791992
+5,10.709964706317267,357,Downmix = 1 AND Freeformat = 1 AND SwapBytes = 1 AND CBR = 160 AND VBRRange = 0,SwapBytes==1 AND CBR==160 AND Downmix==1 AND Freeformat==1,0,1.0,1.0,1.0,98,9.424254417419434
+6,8.661646232995295,359,NoRes = 1 AND Downmix = 1 AND Freeformat = 1 AND SwapBytes = 1 AND Resampling = 8 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND Resampling==8 AND Downmix==1 AND Freeformat==1,0,1.0,1.0,1.0,98,26.04917979240417
+7,2.6932304780837946,274,NoRes = 1 AND Downmix = 1 AND ReplayGainFast = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND VBRRange = 0,NoRes==1 AND Resampling==48 AND VBRRange==2 AND NoReplayGain==0 AND ReplayGainFast==0 AND Mono==0 AND Stereo==1,0,0.0,0.0,0.0,98,63.04141664505005
+1,6.521518022864299,646,CBR = 320,CBR==320,0,1.0,1.0,1.0,99,41.53502559661865
+2,14.5307590076564,957,NoReplayGain = 1 AND VBRRange = 0,VBRRange==0 AND NoReplayGain==1 AND ReplayGainFast==0,0,1.0,1.0,1.0,99,4.77925705909729
+3,2.586991084438288,1146,Freeformat = 1 AND SwapBytes = 1 AND VBRRange = 0,Freeformat==0,0,0.0,0.0,0.0,99,34.42490220069885
+4,23.449683641171884,222,NoRes = 1 AND Freeformat = 1 AND Resampling = 48 AND VBRRange = 0,NoRes==1 AND Resampling==48 AND Freeformat==1,0,1.0,1.0,1.0,99,19.414820432662964
+5,10.393988108063924,352,Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND CBR = 160 AND VBRRange = 0,SwapBytes==1 AND CBR==160 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,99,12.341305017471312
+6,16.900098946346567,411,NoRes = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND ReplayGainAccurate = 1 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND NoReplayGain==0 AND ReplayGainFast==0 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,99,21.17287397384644
+7,21.25182512205765,254,NoRes = 1 AND Downmix = 1 AND MidSideStereo = 1 AND Freeformat = 1 AND CRC = 1 AND SwapBytes = 1 AND VBRRange = 0,NoRes==1 AND SwapBytes==1 AND Downmix==1 AND MidSideStereo==1 AND Freeformat==1 AND CRC==1,0,1.0,1.0,1.0,99,21.37702775001526

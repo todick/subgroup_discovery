@@ -1,0 +1,501 @@
+sg_distribution,sg_cardinality,sg_rule,best_rule,best_rule_idx,f1,precision,recall,seed
+normal,256,validate = 1 AND resolution = 307200.0 AND quality = 0.1,resolution <= 1190400.0 AND validate AND NOT quality,0,1.0,1.0,1.0,0
+uniform,192,validate = 1 AND quality = 0.1 AND indexed = 1.0,resolution > 1190400.0,0,0.1739130434782609,0.1,0.6666666666666666,0
+bi_modal_split,192,tiff = 1 AND anyScriptOrigin = 1 AND quality = 0.1,tiff AND anyScriptOrigin,0,1.0,1.0,1.0,0
+tri_modal_split,256,anyScriptOrigin = 1 AND resolution = 307200.0 AND quality = 0.1,resolution <= 1190400.0 AND anyScriptOrigin AND NOT quality,2,1.0,1.0,1.0,0
+power_law,192,validate = 1 AND quality = 0.1 AND indexed = 4.0,indexed > 3.0 AND validate,2,0.5714285714285715,0.4,1.0,0
+normal,192,validate = 1 AND quality = 0.1 AND indexed = 8.0,indexed > 6.0 AND validate AND NOT quality,0,1.0,1.0,1.0,10
+uniform,192,validate = 1 AND quality = 0.1 AND indexed = 8.0,indexed > 6.0 AND validate AND NOT quality,0,1.0,1.0,1.0,10
+bi_modal_split,192,validate = 1 AND quality = 0.1 AND indexed = 8.0,indexed > 6.0,4,0.5714285714285715,0.4,1.0,10
+tri_modal_split,192,validate = 1 AND quality = 0.1 AND indexed = 8.0,validate AND indexed > 6.0 AND NOT quality,3,1.0,1.0,1.0,10
+power_law,192,validate = 1 AND quality = 0.1 AND indexed = 8.0,indexed > 6.0,3,0.5714285714285715,0.4,1.0,10
+normal,256,onload = 1 AND resolution = 2073600.0 AND quality = 0.1,onload AND resolution <= 5184000.0 AND resolution > 1190400.0 AND NOT quality,0,1.0,1.0,1.0,11
+uniform,256,onload = 1 AND resolution = 2073600.0 AND quality = 0.1,onload AND indexed > 1.5 AND resolution <= 5184000.0 AND NOT quality,3,0.6,0.5,0.75,11
+bi_modal_split,256,onload = 1 AND resolution = 2073600.0 AND quality = 0.1,onload AND resolution <= 5184000.0 AND resolution > 1190400.0 AND NOT quality,0,1.0,1.0,1.0,11
+tri_modal_split,256,onload = 1 AND resolution = 2073600.0 AND quality = 0.1,resolution <= 5184000.0 AND resolution > 1190400.0 AND onload AND NOT quality,0,1.0,1.0,1.0,11
+power_law,256,onload = 1 AND resolution = 2073600.0 AND quality = 0.1,NOT jpg AND resolution > 1190400.0,1,0.375,0.25,0.75,11
+normal,192,validate = 1 AND png = 1 AND quality = 0.1,png AND validate,0,1.0,1.0,1.0,12
+uniform,192,validate = 1 AND png = 1 AND quality = 0.1,png AND validate,1,1.0,1.0,1.0,12
+bi_modal_split,192,validate = 1 AND png = 1 AND quality = 0.1,png AND validate,0,1.0,1.0,1.0,12
+tri_modal_split,192,validate = 1 AND png = 1 AND quality = 0.1,png AND validate,0,1.0,1.0,1.0,12
+power_law,192,validate = 1 AND png = 1 AND quality = 0.1,indexed > 3.0 AND NOT tiff,2,0.2,0.125,0.5,12
+normal,192,anyScriptOrigin = 1 AND quality = 0.1 AND indexed = 2.0,anyScriptOrigin AND indexed <= 3.0 AND indexed > 1.5 AND NOT quality,0,1.0,1.0,1.0,13
+uniform,192,anyScriptOrigin = 1 AND quality = 0.1 AND indexed = 2.0,NOT quality AND anyScriptOrigin AND NOT tiff AND indexed > 1.5,4,0.4615384615384615,0.3333333333333333,0.75,13
+bi_modal_split,192,anyScriptOrigin = 1 AND quality = 0.1 AND indexed = 2.0,indexed <= 3.0 AND indexed > 1.5 AND anyScriptOrigin AND NOT quality,0,1.0,1.0,1.0,13
+tri_modal_split,192,anyScriptOrigin = 1 AND quality = 0.1 AND indexed = 2.0,indexed <= 3.0 AND anyScriptOrigin AND indexed > 1.5 AND NOT quality,0,1.0,1.0,1.0,13
+power_law,192,anyScriptOrigin = 1 AND quality = 0.1 AND indexed = 2.0,NOT png,0,0.1667631731325999,0.0938110749185667,0.75,13
+normal,192,onload = 1 AND dpi = 400.0 AND quality = 0.1,dpi > 300.0 AND onload AND NOT quality,0,1.0,1.0,1.0,14
+uniform,192,onload = 1 AND dpi = 400.0 AND quality = 0.1,dpi > 300.0 AND onload AND NOT quality,0,1.0,1.0,1.0,14
+bi_modal_split,192,onload = 1 AND dpi = 400.0 AND quality = 0.1,dpi > 150.0,0,0.3333333333333333,0.2,1.0,14
+tri_modal_split,192,onload = 1 AND dpi = 400.0 AND quality = 0.1,NOT jpg AND dpi > 300.0,4,0.6,0.5,0.75,14
+power_law,192,onload = 1 AND dpi = 400.0 AND quality = 0.1,dpi > 300.0,3,0.5714285714285715,0.4,1.0,14
+normal,192,anyScriptOrigin = 1 AND quality = 0.1 AND indexed = 8.0,anyScriptOrigin AND indexed > 6.0 AND NOT quality,0,1.0,1.0,1.0,15
+uniform,192,anyScriptOrigin = 1 AND quality = 0.1 AND indexed = 8.0,indexed > 6.0 AND anyScriptOrigin AND NOT quality,0,1.0,1.0,1.0,15
+bi_modal_split,192,anyScriptOrigin = 1 AND quality = 0.1 AND indexed = 8.0,validate AND indexed > 3.0,4,0.2857142857142857,0.2,0.5,15
+tri_modal_split,192,anyScriptOrigin = 1 AND quality = 0.1 AND indexed = 8.0,indexed > 6.0,4,0.5714285714285715,0.4,1.0,15
+power_law,192,anyScriptOrigin = 1 AND quality = 0.1 AND indexed = 8.0,anyScriptOrigin AND indexed > 6.0 AND NOT quality,4,1.0,1.0,1.0,15
+normal,192,validate = 1 AND dpi = 200.0 AND quality = 0.1,dpi > 150.0 AND validate AND dpi <= 300.0 AND NOT quality,0,1.0,1.0,1.0,16
+uniform,192,validate = 1 AND dpi = 200.0 AND quality = 0.1,resolution > 1190400.0 AND dpi > 150.0,1,0.3076923076923076,0.2,0.6666666666666666,16
+bi_modal_split,192,validate = 1 AND dpi = 200.0 AND quality = 0.1,validate AND dpi <= 300.0 AND dpi > 150.0 AND NOT quality,0,1.0,1.0,1.0,16
+tri_modal_split,192,validate = 1 AND dpi = 200.0 AND quality = 0.1,validate AND dpi > 150.0 AND dpi <= 300.0 AND NOT quality,2,1.0,1.0,1.0,16
+power_law,192,validate = 1 AND dpi = 200.0 AND quality = 0.1,NOT quality,0,0.2222222222222222,0.125,1.0,16
+normal,192,anyScriptOrigin = 1 AND dpi = 50.0 AND quality = 0.1,dpi <= 75.0 AND anyScriptOrigin AND NOT quality,0,1.0,1.0,1.0,17
+uniform,192,anyScriptOrigin = 1 AND dpi = 50.0 AND quality = 0.1,NOT jpg AND dpi <= 75.0,3,0.6,0.5,0.75,17
+bi_modal_split,192,anyScriptOrigin = 1 AND dpi = 50.0 AND quality = 0.1,NOT quality AND dpi <= 75.0 AND anyScriptOrigin,1,1.0,1.0,1.0,17
+tri_modal_split,192,anyScriptOrigin = 1 AND dpi = 50.0 AND quality = 0.1,anyScriptOrigin AND dpi <= 75.0 AND NOT quality,0,1.0,1.0,1.0,17
+power_law,192,anyScriptOrigin = 1 AND dpi = 50.0 AND quality = 0.1,indexed > 1.5,0,0.1765787860208461,0.1000694927032661,0.75,17
+normal,192,validate = 1 AND quality = 0.1 AND indexed = 4.0,indexed <= 6.0 AND indexed > 3.0 AND validate AND NOT quality,0,1.0,1.0,1.0,18
+uniform,192,validate = 1 AND quality = 0.1 AND indexed = 4.0,validate AND indexed > 3.0 AND indexed <= 6.0 AND NOT quality,0,1.0,1.0,1.0,18
+bi_modal_split,192,validate = 1 AND quality = 0.1 AND indexed = 4.0,NOT quality AND indexed > 3.0 AND indexed <= 6.0 AND validate,0,1.0,1.0,1.0,18
+tri_modal_split,192,validate = 1 AND quality = 0.1 AND indexed = 4.0,indexed > 3.0 AND validate AND indexed <= 6.0 AND NOT quality,0,1.0,1.0,1.0,18
+power_law,192,validate = 1 AND quality = 0.1 AND indexed = 4.0,indexed > 3.0 AND NOT quality,3,0.4,0.25,1.0,18
+normal,192,validate = 1 AND jpg = 1 AND quality = 0.1,jpg AND NOT quality AND validate,0,1.0,1.0,1.0,19
+uniform,192,validate = 1 AND jpg = 1 AND quality = 0.1,validate AND resolution <= 5184000.0 AND NOT pdf,4,0.364153627311522,0.2504892367906066,0.6666666666666666,19
+bi_modal_split,192,validate = 1 AND jpg = 1 AND quality = 0.1,jpg AND NOT quality AND validate,0,1.0,1.0,1.0,19
+tri_modal_split,192,validate = 1 AND jpg = 1 AND quality = 0.1,dpi > 75.0 AND jpg,2,0.3754889178617992,0.2504347826086956,0.75,19
+power_law,192,validate = 1 AND jpg = 1 AND quality = 0.1,onload AND NOT quality,2,0.2,0.125,0.5,19
+normal,192,validate = 1 AND pdf = 1 AND quality = 0.1,pdf AND validate,0,1.0,1.0,1.0,1
+uniform,192,validate = 1 AND pdf = 1 AND quality = 0.1,pdf AND validate,1,1.0,1.0,1.0,1
+bi_modal_split,192,validate = 1 AND pdf = 1 AND quality = 0.1,indexed <= 6.0,0,0.1765787860208461,0.1000694927032661,0.75,1
+tri_modal_split,192,validate = 1 AND pdf = 1 AND quality = 0.1,resolution > 1190400.0 AND indexed <= 6.0 AND NOT png,2,0.2,0.125,0.5,1
+power_law,192,validate = 1 AND pdf = 1 AND quality = 0.1,validate AND NOT tiff,2,0.4004171011470282,0.2503259452411995,1.0,1
+normal,192,validate = 1 AND dpi = 100.0 AND quality = 0.1,dpi <= 150.0 AND validate AND dpi > 75.0 AND NOT quality,0,1.0,1.0,1.0,20
+uniform,192,validate = 1 AND dpi = 100.0 AND quality = 0.1,NOT quality AND dpi <= 150.0 AND dpi > 75.0 AND validate,1,1.0,1.0,1.0,20
+bi_modal_split,192,validate = 1 AND dpi = 100.0 AND quality = 0.1,validate AND dpi <= 150.0 AND dpi > 75.0 AND NOT quality,0,1.0,1.0,1.0,20
+tri_modal_split,192,validate = 1 AND dpi = 100.0 AND quality = 0.1,indexed > 1.5 AND dpi > 75.0,1,0.2265932336742722,0.1334569045412419,0.75,20
+power_law,192,validate = 1 AND dpi = 100.0 AND quality = 0.1,validate AND dpi <= 300.0 AND dpi > 75.0,4,0.572280178837556,0.4008350730688935,1.0,20
+normal,256,validate = 1 AND resolution = 8294400.0 AND quality = 0.1,resolution > 5184000.0 AND validate AND NOT quality,0,1.0,1.0,1.0,21
+uniform,256,validate = 1 AND resolution = 8294400.0 AND quality = 0.1,resolution > 5184000.0 AND validate AND NOT quality,0,1.0,1.0,1.0,21
+bi_modal_split,256,validate = 1 AND resolution = 8294400.0 AND quality = 0.1,resolution > 5184000.0 AND validate AND NOT quality,0,1.0,1.0,1.0,21
+tri_modal_split,256,validate = 1 AND resolution = 8294400.0 AND quality = 0.1,resolution > 5184000.0 AND validate AND NOT quality,0,1.0,1.0,1.0,21
+power_law,256,validate = 1 AND resolution = 8294400.0 AND quality = 0.1,validate AND NOT quality AND resolution > 5184000.0,4,1.0,1.0,1.0,21
+normal,192,validate = 1 AND dpi = 50.0 AND quality = 0.1,dpi <= 75.0 AND validate AND NOT quality,0,1.0,1.0,1.0,22
+uniform,192,validate = 1 AND dpi = 50.0 AND quality = 0.1,dpi <= 75.0 AND validate AND NOT quality,0,1.0,1.0,1.0,22
+bi_modal_split,192,validate = 1 AND dpi = 50.0 AND quality = 0.1,dpi <= 300.0 AND validate,1,0.4215148188803512,0.2670375521557719,1.0,22
+tri_modal_split,192,validate = 1 AND dpi = 50.0 AND quality = 0.1,indexed > 1.5 AND dpi <= 150.0 AND NOT tiff AND NOT quality,4,0.3461538461538461,0.25,0.5625,22
+power_law,192,validate = 1 AND dpi = 50.0 AND quality = 0.1,dpi <= 75.0 AND validate AND NOT quality,4,1.0,1.0,1.0,22
+normal,239,anyScriptOrigin = 1 AND validate = 1 AND onload = 1,validate AND anyScriptOrigin AND onload,0,1.0,1.0,1.0,23
+uniform,239,anyScriptOrigin = 1 AND validate = 1 AND onload = 1,onload AND validate AND anyScriptOrigin,0,1.0,1.0,1.0,23
+bi_modal_split,239,anyScriptOrigin = 1 AND validate = 1 AND onload = 1,anyScriptOrigin AND validate,3,0.6657381615598886,0.4989561586638831,1.0,23
+tri_modal_split,239,anyScriptOrigin = 1 AND validate = 1 AND onload = 1,onload AND anyScriptOrigin,3,0.6657381615598886,0.4989561586638831,1.0,23
+power_law,239,anyScriptOrigin = 1 AND validate = 1 AND onload = 1,onload AND validate,3,0.6657381615598886,0.4989561586638831,1.0,23
+normal,192,validate = 1 AND pdf = 1 AND quality = 0.1,indexed > 1.5 AND anyScriptOrigin AND validate,4,0.2613430127041742,0.2005571030640668,0.375,24
+uniform,192,validate = 1 AND pdf = 1 AND quality = 0.1,pdf AND validate,0,1.0,1.0,1.0,24
+bi_modal_split,192,validate = 1 AND pdf = 1 AND quality = 0.1,validate,0,0.3336229365768897,0.200208550573514,1.0,24
+tri_modal_split,192,validate = 1 AND pdf = 1 AND quality = 0.1,resolution > 1190400.0,0,0.1739130434782609,0.1,0.6666666666666666,24
+power_law,192,validate = 1 AND pdf = 1 AND quality = 0.1,pdf,4,0.6666666666666666,0.5,1.0,24
+normal,192,tiff = 1 AND onload = 1 AND quality = 0.1,tiff AND onload,0,1.0,1.0,1.0,25
+uniform,192,tiff = 1 AND onload = 1 AND quality = 0.1,tiff AND onload,1,1.0,1.0,1.0,25
+bi_modal_split,192,tiff = 1 AND onload = 1 AND quality = 0.1,resolution > 1190400.0 AND NOT jpg,1,0.2666666666666666,0.1666666666666666,0.6666666666666666,25
+tri_modal_split,192,tiff = 1 AND onload = 1 AND quality = 0.1,NOT jpg,0,0.2857142857142857,0.1666666666666666,1.0,25
+power_law,192,tiff = 1 AND onload = 1 AND quality = 0.1,tiff,4,0.6666666666666666,0.5,1.0,25
+normal,192,anyScriptOrigin = 1 AND quality = 0.1 AND indexed = 4.0,anyScriptOrigin AND indexed > 3.0 AND indexed <= 6.0 AND NOT quality,0,1.0,1.0,1.0,26
+uniform,192,anyScriptOrigin = 1 AND quality = 0.1 AND indexed = 4.0,indexed > 3.0 AND indexed <= 6.0 AND anyScriptOrigin AND NOT quality,0,1.0,1.0,1.0,26
+bi_modal_split,192,anyScriptOrigin = 1 AND quality = 0.1 AND indexed = 4.0,indexed > 3.0,1,0.3333333333333333,0.2,1.0,26
+tri_modal_split,192,anyScriptOrigin = 1 AND quality = 0.1 AND indexed = 4.0,dpi <= 150.0 AND indexed > 3.0,3,0.2857142857142857,0.2,0.5,26
+power_law,192,anyScriptOrigin = 1 AND quality = 0.1 AND indexed = 4.0,anyScriptOrigin,0,0.3336229365768897,0.200208550573514,1.0,26
+normal,192,onload = 1 AND quality = 0.1 AND indexed = 1.0,NOT tiff,0,0.1667631731325999,0.0938110749185667,0.75,27
+uniform,192,onload = 1 AND quality = 0.1 AND indexed = 1.0,indexed <= 1.5 AND onload AND NOT quality,0,1.0,1.0,1.0,27
+bi_modal_split,192,onload = 1 AND quality = 0.1 AND indexed = 1.0,indexed <= 1.5 AND onload AND NOT quality,0,1.0,1.0,1.0,27
+tri_modal_split,192,onload = 1 AND quality = 0.1 AND indexed = 1.0,indexed <= 1.5 AND onload AND NOT quality,4,1.0,1.0,1.0,27
+power_law,192,onload = 1 AND quality = 0.1 AND indexed = 1.0,indexed <= 1.5,2,0.5714285714285715,0.4,1.0,27
+normal,192,onload = 1 AND quality = 0.1 AND indexed = 1.0,indexed <= 1.5 AND onload AND NOT quality,0,1.0,1.0,1.0,28
+uniform,192,onload = 1 AND quality = 0.1 AND indexed = 1.0,indexed <= 3.0,0,0.3336229365768897,0.200208550573514,1.0,28
+bi_modal_split,192,onload = 1 AND quality = 0.1 AND indexed = 1.0,NOT jpg,0,0.2142857142857142,0.125,0.75,28
+tri_modal_split,192,onload = 1 AND quality = 0.1 AND indexed = 1.0,indexed <= 1.5 AND onload AND NOT quality,0,1.0,1.0,1.0,28
+power_law,192,onload = 1 AND quality = 0.1 AND indexed = 1.0,NOT png AND indexed <= 6.0,1,0.2144452717795979,0.1251086012163336,0.75,28
+normal,192,validate = 1 AND png = 1 AND quality = 0.1,png AND validate,0,1.0,1.0,1.0,29
+uniform,192,validate = 1 AND png = 1 AND quality = 0.1,png AND validate,0,1.0,1.0,1.0,29
+bi_modal_split,192,validate = 1 AND png = 1 AND quality = 0.1,png AND validate,0,1.0,1.0,1.0,29
+tri_modal_split,192,validate = 1 AND png = 1 AND quality = 0.1,png AND validate,1,1.0,1.0,1.0,29
+power_law,192,validate = 1 AND png = 1 AND quality = 0.1,png,4,0.6666666666666666,0.5,1.0,29
+normal,192,tiff = 1 AND onload = 1 AND quality = 0.1,tiff AND onload,0,1.0,1.0,1.0,2
+uniform,192,tiff = 1 AND onload = 1 AND quality = 0.1,indexed <= 3.0,1,0.1668114682884448,0.100104275286757,0.5,2
+bi_modal_split,192,tiff = 1 AND onload = 1 AND quality = 0.1,indexed > 1.5 AND onload AND NOT quality,3,0.375,0.25,0.75,2
+tri_modal_split,192,tiff = 1 AND onload = 1 AND quality = 0.1,resolution > 5184000.0 AND NOT quality,4,0.1818181818181818,0.125,0.3333333333333333,2
+power_law,192,tiff = 1 AND onload = 1 AND quality = 0.1,dpi > 75.0 AND onload AND NOT png,3,0.3754889178617992,0.2504347826086956,0.75,2
+normal,192,tiff = 1 AND onload = 1 AND quality = 0.1,indexed <= 3.0 AND NOT pdf AND NOT quality,4,0.25,0.1666666666666666,0.5,30
+uniform,192,tiff = 1 AND onload = 1 AND quality = 0.1,indexed <= 6.0 AND dpi <= 150.0 AND NOT png,3,0.1877444589308996,0.1252173913043478,0.375,30
+bi_modal_split,192,tiff = 1 AND onload = 1 AND quality = 0.1,NOT tiff,0,0.0,0.0,0.0,30
+tri_modal_split,192,tiff = 1 AND onload = 1 AND quality = 0.1,tiff AND onload,3,1.0,1.0,1.0,30
+power_law,192,tiff = 1 AND onload = 1 AND quality = 0.1,resolution > 1190400.0,0,0.1739130434782609,0.1,0.6666666666666666,30
+normal,256,anyScriptOrigin = 1 AND resolution = 8294400.0 AND quality = 0.1,resolution > 5184000.0 AND anyScriptOrigin AND NOT quality,0,1.0,1.0,1.0,31
+uniform,256,anyScriptOrigin = 1 AND resolution = 8294400.0 AND quality = 0.1,resolution > 5184000.0 AND anyScriptOrigin AND NOT quality,0,1.0,1.0,1.0,31
+bi_modal_split,256,anyScriptOrigin = 1 AND resolution = 8294400.0 AND quality = 0.1,resolution > 5184000.0 AND anyScriptOrigin AND NOT quality,0,1.0,1.0,1.0,31
+tri_modal_split,256,anyScriptOrigin = 1 AND resolution = 8294400.0 AND quality = 0.1,resolution > 5184000.0 AND anyScriptOrigin AND NOT quality,4,1.0,1.0,1.0,31
+power_law,256,anyScriptOrigin = 1 AND resolution = 8294400.0 AND quality = 0.1,NOT onload AND anyScriptOrigin,2,0.3478260869565218,0.2666666666666666,0.5,31
+normal,192,onload = 1 AND dpi = 50.0 AND quality = 0.1,dpi <= 150.0,0,0.3336229365768897,0.200208550573514,1.0,32
+uniform,192,onload = 1 AND dpi = 50.0 AND quality = 0.1,dpi <= 75.0 AND onload AND NOT quality,0,1.0,1.0,1.0,32
+bi_modal_split,192,onload = 1 AND dpi = 50.0 AND quality = 0.1,dpi <= 75.0,4,0.5714285714285715,0.4,1.0,32
+tri_modal_split,192,onload = 1 AND dpi = 50.0 AND quality = 0.1,resolution <= 5184000.0,0,0.1740312712440516,0.1000781860828772,0.6666666666666666,32
+power_law,192,onload = 1 AND dpi = 50.0 AND quality = 0.1,dpi <= 75.0 AND onload AND NOT quality,3,1.0,1.0,1.0,32
+normal,192,onload = 1 AND dpi = 100.0 AND quality = 0.1,onload AND dpi <= 150.0 AND dpi > 75.0 AND NOT quality,0,1.0,1.0,1.0,33
+uniform,192,onload = 1 AND dpi = 100.0 AND quality = 0.1,dpi <= 150.0 AND onload AND dpi > 75.0 AND NOT quality,0,1.0,1.0,1.0,33
+bi_modal_split,192,onload = 1 AND dpi = 100.0 AND quality = 0.1,NOT quality AND indexed > 1.5 AND resolution > 1190400.0 AND dpi <= 300.0,3,0.25,0.1666666666666666,0.5,33
+tri_modal_split,192,onload = 1 AND dpi = 100.0 AND quality = 0.1,onload AND dpi > 75.0 AND dpi <= 150.0 AND NOT quality,0,1.0,1.0,1.0,33
+power_law,192,onload = 1 AND dpi = 100.0 AND quality = 0.1,NOT quality AND dpi <= 150.0 AND onload,3,0.6666666666666666,0.5,1.0,33
+normal,192,validate = 1 AND jpg = 1 AND quality = 0.1,validate AND jpg AND NOT quality,0,1.0,1.0,1.0,34
+uniform,192,validate = 1 AND jpg = 1 AND quality = 0.1,NOT tiff AND NOT quality AND NOT png AND validate,3,0.6666666666666666,0.5,1.0,34
+bi_modal_split,192,validate = 1 AND jpg = 1 AND quality = 0.1,validate AND jpg,4,0.6678260869565218,0.5013054830287206,1.0,34
+tri_modal_split,192,validate = 1 AND jpg = 1 AND quality = 0.1,jpg AND NOT quality AND validate,4,1.0,1.0,1.0,34
+power_law,192,validate = 1 AND jpg = 1 AND quality = 0.1,jpg,1,0.4004171011470282,0.2503259452411995,1.0,34
+normal,192,onload = 1 AND dpi = 100.0 AND quality = 0.1,dpi <= 150.0 AND onload AND dpi > 75.0 AND NOT quality,0,1.0,1.0,1.0,35
+uniform,192,onload = 1 AND dpi = 100.0 AND quality = 0.1,onload AND dpi > 75.0 AND dpi <= 150.0,1,0.8909512761020882,0.803347280334728,1.0,35
+bi_modal_split,192,onload = 1 AND dpi = 100.0 AND quality = 0.1,dpi <= 150.0 AND onload AND dpi > 75.0 AND NOT quality,0,1.0,1.0,1.0,35
+tri_modal_split,192,onload = 1 AND dpi = 100.0 AND quality = 0.1,onload AND dpi > 75.0 AND dpi <= 150.0,0,0.8909512761020882,0.803347280334728,1.0,35
+power_law,192,onload = 1 AND dpi = 100.0 AND quality = 0.1,NOT quality AND resolution <= 5184000.0 AND dpi <= 150.0,2,0.3636363636363636,0.25,0.6666666666666666,35
+normal,192,onload = 1 AND quality = 0.1 AND indexed = 2.0,indexed <= 6.0 AND indexed <= 3.0 AND NOT quality AND onload,3,0.6666666666666666,0.5,1.0,36
+uniform,192,onload = 1 AND quality = 0.1 AND indexed = 2.0,onload AND indexed <= 3.0 AND indexed > 1.5 AND NOT quality,0,1.0,1.0,1.0,36
+bi_modal_split,192,onload = 1 AND quality = 0.1 AND indexed = 2.0,indexed > 1.5 AND indexed <= 3.0,4,0.572280178837556,0.4008350730688935,1.0,36
+tri_modal_split,192,onload = 1 AND quality = 0.1 AND indexed = 2.0,indexed <= 3.0 AND indexed > 1.5 AND onload AND NOT quality,3,1.0,1.0,1.0,36
+power_law,192,onload = 1 AND quality = 0.1 AND indexed = 2.0,onload AND indexed > 1.5,2,0.4215148188803512,0.2670375521557719,1.0,36
+normal,192,onload = 1 AND dpi = 100.0 AND quality = 0.1,onload AND dpi <= 150.0 AND dpi > 75.0 AND NOT quality,0,1.0,1.0,1.0,37
+uniform,192,onload = 1 AND dpi = 100.0 AND quality = 0.1,dpi <= 150.0 AND onload AND dpi > 75.0 AND NOT quality,0,1.0,1.0,1.0,37
+bi_modal_split,192,onload = 1 AND dpi = 100.0 AND quality = 0.1,onload,1,0.3336229365768897,0.200208550573514,1.0,37
+tri_modal_split,192,onload = 1 AND dpi = 100.0 AND quality = 0.1,anyScriptOrigin,1,0.1668114682884448,0.100104275286757,0.5,37
+power_law,192,onload = 1 AND dpi = 100.0 AND quality = 0.1,onload AND dpi > 75.0,2,0.4215148188803512,0.2670375521557719,1.0,37
+normal,192,anyScriptOrigin = 1 AND dpi = 400.0 AND quality = 0.1,dpi > 300.0 AND anyScriptOrigin AND NOT quality,0,1.0,1.0,1.0,38
+uniform,192,anyScriptOrigin = 1 AND dpi = 400.0 AND quality = 0.1,dpi > 300.0 AND anyScriptOrigin AND NOT quality,0,1.0,1.0,1.0,38
+bi_modal_split,192,anyScriptOrigin = 1 AND dpi = 400.0 AND quality = 0.1,dpi > 300.0 AND anyScriptOrigin AND NOT quality,0,1.0,1.0,1.0,38
+tri_modal_split,192,anyScriptOrigin = 1 AND dpi = 400.0 AND quality = 0.1,dpi > 300.0 AND anyScriptOrigin AND NOT quality,0,1.0,1.0,1.0,38
+power_law,192,anyScriptOrigin = 1 AND dpi = 400.0 AND quality = 0.1,dpi > 300.0,2,0.5714285714285715,0.4,1.0,38
+normal,192,validate = 1 AND jpg = 1 AND quality = 0.1,jpg AND NOT quality AND validate,0,1.0,1.0,1.0,39
+uniform,192,validate = 1 AND jpg = 1 AND quality = 0.1,resolution <= 5184000.0 AND jpg,3,0.364153627311522,0.2504892367906066,0.6666666666666666,39
+bi_modal_split,192,validate = 1 AND jpg = 1 AND quality = 0.1,validate AND jpg AND NOT quality,3,1.0,1.0,1.0,39
+tri_modal_split,192,validate = 1 AND jpg = 1 AND quality = 0.1,jpg AND validate AND NOT quality,0,1.0,1.0,1.0,39
+power_law,192,validate = 1 AND jpg = 1 AND quality = 0.1,indexed <= 6.0 AND NOT tiff AND resolution > 1190400.0 AND jpg,4,0.3333333333333333,0.25,0.5,39
+normal,192,onload = 1 AND pdf = 1 AND quality = 0.1,pdf AND onload,0,1.0,1.0,1.0,3
+uniform,192,onload = 1 AND pdf = 1 AND quality = 0.1,pdf AND onload,1,1.0,1.0,1.0,3
+bi_modal_split,192,onload = 1 AND pdf = 1 AND quality = 0.1,indexed <= 6.0,0,0.1765787860208461,0.1000694927032661,0.75,3
+tri_modal_split,192,onload = 1 AND pdf = 1 AND quality = 0.1,pdf,4,0.6666666666666666,0.5,1.0,3
+power_law,192,onload = 1 AND pdf = 1 AND quality = 0.1,pdf AND onload,4,1.0,1.0,1.0,3
+normal,256,onload = 1 AND resolution = 8294400.0 AND quality = 0.1,resolution > 5184000.0 AND onload AND NOT quality,0,1.0,1.0,1.0,40
+uniform,256,onload = 1 AND resolution = 8294400.0 AND quality = 0.1,indexed <= 3.0,0,0.2106995884773662,0.1334723670490094,0.5,40
+bi_modal_split,256,onload = 1 AND resolution = 8294400.0 AND quality = 0.1,resolution > 5184000.0,3,0.5714285714285715,0.4,1.0,40
+tri_modal_split,256,onload = 1 AND resolution = 8294400.0 AND quality = 0.1,resolution > 5184000.0,2,0.5714285714285715,0.4,1.0,40
+power_law,256,onload = 1 AND resolution = 8294400.0 AND quality = 0.1,resolution > 5184000.0 AND NOT jpg,3,0.6,0.5,0.75,40
+normal,192,validate = 1 AND dpi = 200.0 AND quality = 0.1,dpi > 150.0 AND dpi <= 300.0 AND validate AND NOT quality,0,1.0,1.0,1.0,41
+uniform,192,validate = 1 AND dpi = 200.0 AND quality = 0.1,indexed > 1.5 AND NOT png AND indexed > 3.0 AND NOT quality,3,0.1875,0.125,0.375,41
+bi_modal_split,192,validate = 1 AND dpi = 200.0 AND quality = 0.1,dpi > 150.0 AND dpi <= 300.0 AND validate AND NOT quality,0,1.0,1.0,1.0,41
+tri_modal_split,192,validate = 1 AND dpi = 200.0 AND quality = 0.1,validate AND dpi > 150.0 AND dpi <= 300.0 AND NOT quality,0,1.0,1.0,1.0,41
+power_law,192,validate = 1 AND dpi = 200.0 AND quality = 0.1,onload,0,0.1668114682884448,0.100104275286757,0.5,41
+normal,192,anyScriptOrigin = 1 AND quality = 0.1 AND indexed = 4.0,anyScriptOrigin AND indexed > 3.0 AND indexed <= 6.0 AND NOT quality,0,1.0,1.0,1.0,42
+uniform,192,anyScriptOrigin = 1 AND quality = 0.1 AND indexed = 4.0,NOT pdf AND resolution <= 5184000.0 AND NOT jpg,4,0.1818181818181818,0.125,0.3333333333333333,42
+bi_modal_split,192,anyScriptOrigin = 1 AND quality = 0.1 AND indexed = 4.0,anyScriptOrigin AND indexed > 3.0 AND indexed <= 6.0 AND NOT quality,0,1.0,1.0,1.0,42
+tri_modal_split,192,anyScriptOrigin = 1 AND quality = 0.1 AND indexed = 4.0,anyScriptOrigin AND indexed > 3.0 AND indexed <= 6.0 AND NOT quality,0,1.0,1.0,1.0,42
+power_law,192,anyScriptOrigin = 1 AND quality = 0.1 AND indexed = 4.0,indexed <= 6.0 AND indexed > 3.0,3,0.5714285714285715,0.4,1.0,42
+normal,256,anyScriptOrigin = 1 AND resolution = 8294400.0 AND quality = 0.1,resolution > 5184000.0 AND anyScriptOrigin AND NOT quality,0,1.0,1.0,1.0,43
+uniform,256,anyScriptOrigin = 1 AND resolution = 8294400.0 AND quality = 0.1,resolution > 5184000.0 AND anyScriptOrigin AND NOT quality,0,1.0,1.0,1.0,43
+bi_modal_split,256,anyScriptOrigin = 1 AND resolution = 8294400.0 AND quality = 0.1,NOT jpg AND dpi > 75.0 AND dpi <= 300.0 AND resolution > 5184000.0,4,0.4285714285714285,0.5,0.375,43
+tri_modal_split,256,anyScriptOrigin = 1 AND resolution = 8294400.0 AND quality = 0.1,indexed <= 6.0,0,0.2265486725663716,0.1334259902710215,0.75,43
+power_law,256,anyScriptOrigin = 1 AND resolution = 8294400.0 AND quality = 0.1,anyScriptOrigin,0,0.4213991769547325,0.2669447340980188,1.0,43
+normal,256,anyScriptOrigin = 1 AND resolution = 8294400.0 AND quality = 0.1,resolution > 5184000.0 AND anyScriptOrigin AND NOT quality,0,1.0,1.0,1.0,44
+uniform,256,anyScriptOrigin = 1 AND resolution = 8294400.0 AND quality = 0.1,resolution > 5184000.0 AND anyScriptOrigin AND NOT quality,0,1.0,1.0,1.0,44
+bi_modal_split,256,anyScriptOrigin = 1 AND resolution = 8294400.0 AND quality = 0.1,resolution > 5184000.0,1,0.5714285714285715,0.4,1.0,44
+tri_modal_split,256,anyScriptOrigin = 1 AND resolution = 8294400.0 AND quality = 0.1,resolution > 5184000.0 AND anyScriptOrigin AND NOT quality,2,1.0,1.0,1.0,44
+power_law,256,anyScriptOrigin = 1 AND resolution = 8294400.0 AND quality = 0.1,anyScriptOrigin AND resolution > 1190400.0,2,0.5714285714285715,0.4,1.0,44
+normal,256,validate = 1 AND resolution = 2073600.0 AND quality = 0.1,resolution <= 5184000.0 AND resolution > 1190400.0 AND validate AND NOT quality,0,1.0,1.0,1.0,45
+uniform,256,validate = 1 AND resolution = 2073600.0 AND quality = 0.1,NOT onload AND resolution <= 5184000.0 AND validate AND resolution > 1190400.0,3,0.6153846153846154,0.8,0.5,45
+bi_modal_split,256,validate = 1 AND resolution = 2073600.0 AND quality = 0.1,validate AND resolution <= 5184000.0 AND resolution > 1190400.0 AND NOT quality,0,1.0,1.0,1.0,45
+tri_modal_split,256,validate = 1 AND resolution = 2073600.0 AND quality = 0.1,validate AND resolution <= 5184000.0 AND resolution > 1190400.0 AND NOT quality,0,1.0,1.0,1.0,45
+power_law,256,validate = 1 AND resolution = 2073600.0 AND quality = 0.1,validate AND resolution > 1190400.0 AND resolution <= 5184000.0,4,0.888888888888889,0.8,1.0,45
+normal,192,onload = 1 AND dpi = 50.0 AND quality = 0.1,dpi <= 75.0 AND onload AND NOT quality,0,1.0,1.0,1.0,46
+uniform,192,onload = 1 AND dpi = 50.0 AND quality = 0.1,dpi <= 75.0 AND onload AND NOT quality,0,1.0,1.0,1.0,46
+bi_modal_split,192,onload = 1 AND dpi = 50.0 AND quality = 0.1,dpi <= 75.0 AND onload AND NOT quality,0,1.0,1.0,1.0,46
+tri_modal_split,192,onload = 1 AND dpi = 50.0 AND quality = 0.1,dpi <= 75.0 AND onload AND NOT quality,0,1.0,1.0,1.0,46
+power_law,192,onload = 1 AND dpi = 50.0 AND quality = 0.1,dpi <= 75.0,4,0.5714285714285715,0.4,1.0,46
+normal,192,onload = 1 AND dpi = 100.0 AND quality = 0.1,dpi <= 150.0 AND dpi > 75.0 AND onload AND NOT quality,0,1.0,1.0,1.0,47
+uniform,192,onload = 1 AND dpi = 100.0 AND quality = 0.1,onload AND dpi <= 150.0 AND dpi > 75.0 AND NOT quality,0,1.0,1.0,1.0,47
+bi_modal_split,192,onload = 1 AND dpi = 100.0 AND quality = 0.1,dpi <= 150.0 AND onload AND dpi > 75.0 AND NOT quality,0,1.0,1.0,1.0,47
+tri_modal_split,192,onload = 1 AND dpi = 100.0 AND quality = 0.1,onload AND dpi <= 150.0 AND dpi > 75.0 AND NOT quality,0,1.0,1.0,1.0,47
+power_law,192,onload = 1 AND dpi = 100.0 AND quality = 0.1,dpi > 75.0 AND indexed <= 6.0 AND NOT quality,2,0.2727272727272727,0.1666666666666666,0.75,47
+normal,192,anyScriptOrigin = 1 AND png = 1 AND quality = 0.1,png AND anyScriptOrigin,0,1.0,1.0,1.0,48
+uniform,192,anyScriptOrigin = 1 AND png = 1 AND quality = 0.1,png AND anyScriptOrigin,0,1.0,1.0,1.0,48
+bi_modal_split,192,anyScriptOrigin = 1 AND png = 1 AND quality = 0.1,validate AND NOT tiff,2,0.2002085505735141,0.1251629726205997,0.5,48
+tri_modal_split,192,anyScriptOrigin = 1 AND png = 1 AND quality = 0.1,NOT pdf,0,0.2223508975101332,0.1250814332247557,1.0,48
+power_law,192,anyScriptOrigin = 1 AND png = 1 AND quality = 0.1,png,4,0.6666666666666666,0.5,1.0,48
+normal,192,tiff = 1 AND anyScriptOrigin = 1 AND quality = 0.1,tiff AND anyScriptOrigin,0,1.0,1.0,1.0,49
+uniform,192,tiff = 1 AND anyScriptOrigin = 1 AND quality = 0.1,tiff AND anyScriptOrigin,0,1.0,1.0,1.0,49
+bi_modal_split,192,tiff = 1 AND anyScriptOrigin = 1 AND quality = 0.1,tiff AND anyScriptOrigin,0,1.0,1.0,1.0,49
+tri_modal_split,192,tiff = 1 AND anyScriptOrigin = 1 AND quality = 0.1,tiff AND anyScriptOrigin,0,1.0,1.0,1.0,49
+power_law,192,tiff = 1 AND anyScriptOrigin = 1 AND quality = 0.1,NOT quality,0,0.2222222222222222,0.125,1.0,49
+normal,192,onload = 1 AND dpi = 200.0 AND quality = 0.1,onload AND dpi <= 300.0 AND dpi > 150.0 AND NOT quality,0,1.0,1.0,1.0,4
+uniform,192,onload = 1 AND dpi = 200.0 AND quality = 0.1,NOT validate AND NOT quality,2,0.2,0.125,0.5,4
+bi_modal_split,192,onload = 1 AND dpi = 200.0 AND quality = 0.1,NOT quality AND dpi > 150.0,2,0.4,0.25,1.0,4
+tri_modal_split,192,onload = 1 AND dpi = 200.0 AND quality = 0.1,NOT quality AND dpi <= 300.0 AND dpi > 150.0,4,0.6666666666666666,0.5,1.0,4
+power_law,192,onload = 1 AND dpi = 200.0 AND quality = 0.1,dpi > 150.0 AND dpi <= 300.0,2,0.5714285714285715,0.4,1.0,4
+normal,192,validate = 1 AND dpi = 400.0 AND quality = 0.1,dpi > 300.0 AND validate AND NOT quality,0,1.0,1.0,1.0,50
+uniform,192,validate = 1 AND dpi = 400.0 AND quality = 0.1,dpi > 300.0 AND validate AND NOT quality,0,1.0,1.0,1.0,50
+bi_modal_split,192,validate = 1 AND dpi = 400.0 AND quality = 0.1,dpi > 300.0 AND validate AND NOT quality,1,1.0,1.0,1.0,50
+tri_modal_split,192,validate = 1 AND dpi = 400.0 AND quality = 0.1,dpi > 300.0 AND validate AND NOT quality,1,1.0,1.0,1.0,50
+power_law,192,validate = 1 AND dpi = 400.0 AND quality = 0.1,dpi > 300.0,3,0.5714285714285715,0.4,1.0,50
+normal,256,validate = 1 AND resolution = 307200.0 AND quality = 0.1,resolution <= 1190400.0 AND validate AND NOT quality,0,1.0,1.0,1.0,51
+uniform,256,validate = 1 AND resolution = 307200.0 AND quality = 0.1,validate AND resolution <= 1190400.0 AND NOT quality,0,1.0,1.0,1.0,51
+bi_modal_split,256,validate = 1 AND resolution = 307200.0 AND quality = 0.1,NOT png AND validate,1,0.375366568914956,0.2503259452411995,0.75,51
+tri_modal_split,256,validate = 1 AND resolution = 307200.0 AND quality = 0.1,resolution <= 1190400.0 AND validate,1,0.8904347826086957,0.8025078369905956,1.0,51
+power_law,256,validate = 1 AND resolution = 307200.0 AND quality = 0.1,resolution <= 1190400.0 AND NOT quality,4,0.6666666666666666,0.5,1.0,51
+normal,256,validate = 1 AND resolution = 307200.0 AND quality = 0.1,resolution <= 1190400.0 AND validate AND NOT quality,0,1.0,1.0,1.0,52
+uniform,256,validate = 1 AND resolution = 307200.0 AND quality = 0.1,resolution <= 1190400.0 AND validate AND NOT quality,0,1.0,1.0,1.0,52
+bi_modal_split,256,validate = 1 AND resolution = 307200.0 AND quality = 0.1,NOT tiff AND validate,1,0.375366568914956,0.2503259452411995,0.75,52
+tri_modal_split,256,validate = 1 AND resolution = 307200.0 AND quality = 0.1,resolution <= 1190400.0,3,0.5720670391061453,0.4006259780907668,1.0,52
+power_law,256,validate = 1 AND resolution = 307200.0 AND quality = 0.1,resolution <= 1190400.0,3,0.5720670391061453,0.4006259780907668,1.0,52
+normal,192,validate = 1 AND dpi = 200.0 AND quality = 0.1,dpi > 150.0 AND dpi <= 300.0 AND validate AND NOT quality,0,1.0,1.0,1.0,53
+uniform,192,validate = 1 AND dpi = 200.0 AND quality = 0.1,dpi > 150.0 AND dpi <= 300.0 AND validate AND NOT quality,0,1.0,1.0,1.0,53
+bi_modal_split,192,validate = 1 AND dpi = 200.0 AND quality = 0.1,validate AND dpi > 150.0 AND dpi <= 300.0 AND NOT quality,0,1.0,1.0,1.0,53
+tri_modal_split,192,validate = 1 AND dpi = 200.0 AND quality = 0.1,dpi > 150.0 AND validate AND dpi <= 300.0 AND NOT quality,0,1.0,1.0,1.0,53
+power_law,192,validate = 1 AND dpi = 200.0 AND quality = 0.1,dpi > 150.0 AND dpi <= 300.0,3,0.5714285714285715,0.4,1.0,53
+normal,256,onload = 1 AND resolution = 307200.0 AND quality = 0.1,resolution <= 1190400.0 AND onload AND NOT quality,0,1.0,1.0,1.0,54
+uniform,256,onload = 1 AND resolution = 307200.0 AND quality = 0.1,resolution <= 1190400.0 AND onload AND NOT quality,0,1.0,1.0,1.0,54
+bi_modal_split,256,onload = 1 AND resolution = 307200.0 AND quality = 0.1,dpi <= 300.0,0,0.2265486725663716,0.1334259902710215,0.75,54
+tri_modal_split,256,onload = 1 AND resolution = 307200.0 AND quality = 0.1,resolution <= 1190400.0 AND NOT quality AND onload,1,1.0,1.0,1.0,54
+power_law,256,onload = 1 AND resolution = 307200.0 AND quality = 0.1,indexed > 1.5,0,0.2265486725663716,0.1334259902710215,0.75,54
+normal,192,onload = 1 AND dpi = 200.0 AND quality = 0.1,dpi <= 300.0 AND dpi > 150.0 AND onload AND NOT quality,0,1.0,1.0,1.0,55
+uniform,192,onload = 1 AND dpi = 200.0 AND quality = 0.1,dpi > 150.0 AND dpi <= 300.0 AND onload AND NOT quality,0,1.0,1.0,1.0,55
+bi_modal_split,192,onload = 1 AND dpi = 200.0 AND quality = 0.1,dpi <= 300.0 AND dpi > 150.0,2,0.5714285714285715,0.4,1.0,55
+tri_modal_split,192,onload = 1 AND dpi = 200.0 AND quality = 0.1,dpi > 150.0 AND dpi <= 300.0,2,0.5714285714285715,0.4,1.0,55
+power_law,192,onload = 1 AND dpi = 200.0 AND quality = 0.1,dpi > 75.0 AND onload AND dpi > 150.0,3,0.5714285714285715,0.4,1.0,55
+normal,256,anyScriptOrigin = 1 AND resolution = 8294400.0 AND quality = 0.1,resolution > 5184000.0 AND anyScriptOrigin AND NOT quality,0,1.0,1.0,1.0,56
+uniform,256,anyScriptOrigin = 1 AND resolution = 8294400.0 AND quality = 0.1,NOT quality AND dpi <= 300.0 AND NOT pdf AND anyScriptOrigin,3,0.4186046511627907,0.3333333333333333,0.5625,56
+bi_modal_split,256,anyScriptOrigin = 1 AND resolution = 8294400.0 AND quality = 0.1,resolution > 1190400.0 AND anyScriptOrigin,1,0.5714285714285715,0.4,1.0,56
+tri_modal_split,256,anyScriptOrigin = 1 AND resolution = 8294400.0 AND quality = 0.1,anyScriptOrigin AND resolution > 5184000.0 AND NOT quality,1,1.0,1.0,1.0,56
+power_law,256,anyScriptOrigin = 1 AND resolution = 8294400.0 AND quality = 0.1,resolution > 5184000.0,1,0.5714285714285715,0.4,1.0,56
+normal,192,tiff = 1 AND validate = 1 AND quality = 0.1,tiff AND validate,0,1.0,1.0,1.0,57
+uniform,192,tiff = 1 AND validate = 1 AND quality = 0.1,tiff AND validate,1,1.0,1.0,1.0,57
+bi_modal_split,192,tiff = 1 AND validate = 1 AND quality = 0.1,validate AND NOT jpg,3,0.5,0.3333333333333333,1.0,57
+tri_modal_split,192,tiff = 1 AND validate = 1 AND quality = 0.1,resolution <= 5184000.0 AND NOT onload AND NOT png,4,0.1818181818181818,0.125,0.3333333333333333,57
+power_law,192,tiff = 1 AND validate = 1 AND quality = 0.1,validate,1,0.3336229365768897,0.200208550573514,1.0,57
+normal,192,validate = 1 AND dpi = 200.0 AND quality = 0.1,validate AND dpi > 150.0 AND dpi <= 300.0 AND NOT quality,0,1.0,1.0,1.0,58
+uniform,192,validate = 1 AND dpi = 200.0 AND quality = 0.1,NOT pdf AND dpi > 75.0,1,0.2144452717795979,0.1251086012163336,0.75,58
+bi_modal_split,192,validate = 1 AND dpi = 200.0 AND quality = 0.1,validate AND dpi > 150.0 AND dpi <= 300.0 AND NOT quality,0,1.0,1.0,1.0,58
+tri_modal_split,192,validate = 1 AND dpi = 200.0 AND quality = 0.1,NOT quality AND dpi <= 300.0 AND dpi > 150.0,4,0.6666666666666666,0.5,1.0,58
+power_law,192,validate = 1 AND dpi = 200.0 AND quality = 0.1,indexed <= 6.0,0,0.1765787860208461,0.1000694927032661,0.75,58
+normal,192,validate = 1 AND pdf = 1 AND quality = 0.1,pdf AND validate,0,1.0,1.0,1.0,59
+uniform,192,validate = 1 AND pdf = 1 AND quality = 0.1,pdf AND validate,1,1.0,1.0,1.0,59
+bi_modal_split,192,validate = 1 AND pdf = 1 AND quality = 0.1,pdf,3,0.6666666666666666,0.5,1.0,59
+tri_modal_split,192,validate = 1 AND pdf = 1 AND quality = 0.1,NOT jpg AND validate,3,0.5,0.3333333333333333,1.0,59
+power_law,192,validate = 1 AND pdf = 1 AND quality = 0.1,NOT jpg AND validate,2,0.5,0.3333333333333333,1.0,59
+normal,192,onload = 1 AND quality = 0.1 AND indexed = 4.0,NOT quality AND indexed > 3.0 AND indexed <= 6.0 AND onload,0,1.0,1.0,1.0,5
+uniform,192,onload = 1 AND quality = 0.1 AND indexed = 4.0,NOT pdf AND NOT anyScriptOrigin AND indexed <= 6.0,4,0.1875,0.125,0.375,5
+bi_modal_split,192,onload = 1 AND quality = 0.1 AND indexed = 4.0,dpi <= 300.0,0,0.1765787860208461,0.1000694927032661,0.75,5
+tri_modal_split,192,onload = 1 AND quality = 0.1 AND indexed = 4.0,indexed > 3.0 AND indexed <= 6.0,2,0.5714285714285715,0.4,1.0,5
+power_law,192,onload = 1 AND quality = 0.1 AND indexed = 4.0,onload,0,0.3336229365768897,0.200208550573514,1.0,5
+normal,192,anyScriptOrigin = 1 AND dpi = 200.0 AND quality = 0.1,dpi > 150.0 AND anyScriptOrigin AND dpi <= 300.0 AND NOT quality,0,1.0,1.0,1.0,60
+uniform,192,anyScriptOrigin = 1 AND dpi = 200.0 AND quality = 0.1,anyScriptOrigin,0,0.3336229365768897,0.200208550573514,1.0,60
+bi_modal_split,192,anyScriptOrigin = 1 AND dpi = 200.0 AND quality = 0.1,anyScriptOrigin AND NOT quality AND dpi <= 300.0,3,0.5,0.3333333333333333,1.0,60
+tri_modal_split,192,anyScriptOrigin = 1 AND dpi = 200.0 AND quality = 0.1,anyScriptOrigin AND dpi > 150.0 AND dpi <= 300.0 AND NOT quality,4,1.0,1.0,1.0,60
+power_law,192,anyScriptOrigin = 1 AND dpi = 200.0 AND quality = 0.1,NOT tiff AND dpi > 75.0 AND indexed > 1.5 AND anyScriptOrigin,3,0.3467094703049759,0.2505800464037123,0.5625,60
+normal,192,validate = 1 AND dpi = 50.0 AND quality = 0.1,dpi <= 75.0 AND validate AND NOT quality,0,1.0,1.0,1.0,61
+uniform,192,validate = 1 AND dpi = 50.0 AND quality = 0.1,dpi <= 75.0 AND validate AND NOT quality,1,1.0,1.0,1.0,61
+bi_modal_split,192,validate = 1 AND dpi = 50.0 AND quality = 0.1,validate,1,0.3336229365768897,0.200208550573514,1.0,61
+tri_modal_split,192,validate = 1 AND dpi = 50.0 AND quality = 0.1,dpi <= 75.0,3,0.5714285714285715,0.4,1.0,61
+power_law,192,validate = 1 AND dpi = 50.0 AND quality = 0.1,onload,1,0.1668114682884448,0.100104275286757,0.5,61
+normal,192,anyScriptOrigin = 1 AND quality = 0.1 AND indexed = 1.0,anyScriptOrigin AND indexed <= 1.5 AND NOT quality,0,1.0,1.0,1.0,62
+uniform,192,anyScriptOrigin = 1 AND quality = 0.1 AND indexed = 1.0,NOT quality AND indexed <= 1.5 AND anyScriptOrigin,1,1.0,1.0,1.0,62
+bi_modal_split,192,anyScriptOrigin = 1 AND quality = 0.1 AND indexed = 1.0,indexed <= 1.5 AND anyScriptOrigin AND NOT quality,0,1.0,1.0,1.0,62
+tri_modal_split,192,anyScriptOrigin = 1 AND quality = 0.1 AND indexed = 1.0,anyScriptOrigin AND indexed <= 1.5 AND NOT quality,2,1.0,1.0,1.0,62
+power_law,192,anyScriptOrigin = 1 AND quality = 0.1 AND indexed = 1.0,resolution > 1190400.0,0,0.1739130434782609,0.1,0.6666666666666666,62
+normal,192,tiff = 1 AND anyScriptOrigin = 1 AND quality = 0.1,tiff AND anyScriptOrigin,0,1.0,1.0,1.0,63
+uniform,192,tiff = 1 AND anyScriptOrigin = 1 AND quality = 0.1,tiff AND anyScriptOrigin,1,1.0,1.0,1.0,63
+bi_modal_split,192,tiff = 1 AND anyScriptOrigin = 1 AND quality = 0.1,NOT pdf AND anyScriptOrigin AND NOT jpg,1,0.6666666666666666,0.5,1.0,63
+tri_modal_split,192,tiff = 1 AND anyScriptOrigin = 1 AND quality = 0.1,tiff AND anyScriptOrigin,1,1.0,1.0,1.0,63
+power_law,192,tiff = 1 AND anyScriptOrigin = 1 AND quality = 0.1,indexed <= 6.0 AND NOT quality AND NOT jpg,2,0.2727272727272727,0.1666666666666666,0.75,63
+normal,192,anyScriptOrigin = 1 AND quality = 0.1 AND indexed = 8.0,indexed > 6.0 AND anyScriptOrigin AND NOT quality,0,1.0,1.0,1.0,64
+uniform,192,anyScriptOrigin = 1 AND quality = 0.1 AND indexed = 8.0,indexed > 6.0 AND anyScriptOrigin AND NOT quality,0,1.0,1.0,1.0,64
+bi_modal_split,192,anyScriptOrigin = 1 AND quality = 0.1 AND indexed = 8.0,validate AND indexed > 6.0 AND anyScriptOrigin AND NOT quality,0,0.6666666666666666,1.0,0.5,64
+tri_modal_split,192,anyScriptOrigin = 1 AND quality = 0.1 AND indexed = 8.0,validate,0,0.1668114682884448,0.100104275286757,0.5,64
+power_law,192,anyScriptOrigin = 1 AND quality = 0.1 AND indexed = 8.0,indexed > 6.0,3,0.5714285714285715,0.4,1.0,64
+normal,192,anyScriptOrigin = 1 AND quality = 0.1 AND indexed = 8.0,indexed > 6.0 AND NOT quality AND anyScriptOrigin,0,1.0,1.0,1.0,65
+uniform,192,anyScriptOrigin = 1 AND quality = 0.1 AND indexed = 8.0,indexed > 6.0 AND anyScriptOrigin,1,0.888888888888889,0.8,1.0,65
+bi_modal_split,192,anyScriptOrigin = 1 AND quality = 0.1 AND indexed = 8.0,NOT quality,0,0.2222222222222222,0.125,1.0,65
+tri_modal_split,192,anyScriptOrigin = 1 AND quality = 0.1 AND indexed = 8.0,indexed > 6.0 AND anyScriptOrigin AND NOT quality,1,1.0,1.0,1.0,65
+power_law,192,anyScriptOrigin = 1 AND quality = 0.1 AND indexed = 8.0,indexed > 6.0,3,0.5714285714285715,0.4,1.0,65
+normal,239,anyScriptOrigin = 1 AND validate = 1 AND onload = 1,anyScriptOrigin AND validate AND resolution > 1190400.0 AND onload,0,0.8020050125313283,1.0,0.6694560669456067,66
+uniform,239,anyScriptOrigin = 1 AND validate = 1 AND onload = 1,onload AND validate AND anyScriptOrigin,0,1.0,1.0,1.0,66
+bi_modal_split,239,anyScriptOrigin = 1 AND validate = 1 AND onload = 1,onload AND anyScriptOrigin,4,0.6657381615598886,0.4989561586638831,1.0,66
+tri_modal_split,239,anyScriptOrigin = 1 AND validate = 1 AND onload = 1,validate AND anyScriptOrigin AND onload,2,1.0,1.0,1.0,66
+power_law,239,anyScriptOrigin = 1 AND validate = 1 AND onload = 1,NOT quality AND indexed > 1.5 AND onload,2,0.3533742331288343,0.25,0.602510460251046,66
+normal,239,anyScriptOrigin = 1 AND validate = 1 AND onload = 1,indexed <= 6.0 AND NOT png AND anyScriptOrigin,2,0.3513513513513513,0.248695652173913,0.5983263598326359,67
+uniform,239,anyScriptOrigin = 1 AND validate = 1 AND onload = 1,onload AND validate AND NOT png AND anyScriptOrigin,1,0.8883720930232559,1.0,0.799163179916318,67
+bi_modal_split,239,anyScriptOrigin = 1 AND validate = 1 AND onload = 1,anyScriptOrigin AND onload AND validate,0,1.0,1.0,1.0,67
+tri_modal_split,239,anyScriptOrigin = 1 AND validate = 1 AND onload = 1,validate AND onload,4,0.6657381615598886,0.4989561586638831,1.0,67
+power_law,239,anyScriptOrigin = 1 AND validate = 1 AND onload = 1,resolution > 1190400.0,0,0.2106649111257406,0.125,0.6694560669456067,67
+normal,192,anyScriptOrigin = 1 AND quality = 0.1 AND indexed = 8.0,indexed > 6.0 AND anyScriptOrigin AND NOT quality,0,1.0,1.0,1.0,68
+uniform,192,anyScriptOrigin = 1 AND quality = 0.1 AND indexed = 8.0,indexed > 6.0 AND NOT quality AND anyScriptOrigin,1,1.0,1.0,1.0,68
+bi_modal_split,192,anyScriptOrigin = 1 AND quality = 0.1 AND indexed = 8.0,NOT jpg,0,0.2142857142857142,0.125,0.75,68
+tri_modal_split,192,anyScriptOrigin = 1 AND quality = 0.1 AND indexed = 8.0,NOT jpg,0,0.2142857142857142,0.125,0.75,68
+power_law,192,anyScriptOrigin = 1 AND quality = 0.1 AND indexed = 8.0,dpi <= 300.0 AND indexed > 1.5 AND anyScriptOrigin,2,0.3939808481532147,0.2671614100185528,0.75,68
+normal,256,anyScriptOrigin = 1 AND resolution = 307200.0 AND quality = 0.1,indexed <= 3.0 AND anyScriptOrigin,3,0.3482993197278911,0.267223382045929,0.5,69
+uniform,256,anyScriptOrigin = 1 AND resolution = 307200.0 AND quality = 0.1,dpi <= 300.0 AND NOT onload AND NOT quality,3,0.2307692307692307,0.1666666666666666,0.375,69
+bi_modal_split,256,anyScriptOrigin = 1 AND resolution = 307200.0 AND quality = 0.1,resolution <= 1190400.0 AND anyScriptOrigin AND NOT quality,1,1.0,1.0,1.0,69
+tri_modal_split,256,anyScriptOrigin = 1 AND resolution = 307200.0 AND quality = 0.1,resolution <= 1190400.0 AND anyScriptOrigin AND NOT quality,0,1.0,1.0,1.0,69
+power_law,256,anyScriptOrigin = 1 AND resolution = 307200.0 AND quality = 0.1,indexed > 1.5,0,0.2265486725663716,0.1334259902710215,0.75,69
+normal,192,anyScriptOrigin = 1 AND dpi = 50.0 AND quality = 0.1,dpi <= 75.0 AND NOT quality AND anyScriptOrigin,0,1.0,1.0,1.0,6
+uniform,192,anyScriptOrigin = 1 AND dpi = 50.0 AND quality = 0.1,dpi <= 75.0 AND anyScriptOrigin AND NOT quality,0,1.0,1.0,1.0,6
+bi_modal_split,192,anyScriptOrigin = 1 AND dpi = 50.0 AND quality = 0.1,dpi <= 75.0 AND anyScriptOrigin AND NOT quality,0,1.0,1.0,1.0,6
+tri_modal_split,192,anyScriptOrigin = 1 AND dpi = 50.0 AND quality = 0.1,dpi <= 75.0,4,0.5714285714285715,0.4,1.0,6
+power_law,192,anyScriptOrigin = 1 AND dpi = 50.0 AND quality = 0.1,anyScriptOrigin,0,0.3336229365768897,0.200208550573514,1.0,6
+normal,192,tiff = 1 AND anyScriptOrigin = 1 AND quality = 0.1,tiff AND anyScriptOrigin,0,1.0,1.0,1.0,70
+uniform,192,tiff = 1 AND anyScriptOrigin = 1 AND quality = 0.1,tiff AND anyScriptOrigin,1,1.0,1.0,1.0,70
+bi_modal_split,192,tiff = 1 AND anyScriptOrigin = 1 AND quality = 0.1,tiff AND anyScriptOrigin,2,1.0,1.0,1.0,70
+tri_modal_split,192,tiff = 1 AND anyScriptOrigin = 1 AND quality = 0.1,tiff AND anyScriptOrigin,1,1.0,1.0,1.0,70
+power_law,192,tiff = 1 AND anyScriptOrigin = 1 AND quality = 0.1,tiff,3,0.6666666666666666,0.5,1.0,70
+normal,256,anyScriptOrigin = 1 AND resolution = 2073600.0 AND quality = 0.1,anyScriptOrigin AND resolution > 1190400.0 AND resolution <= 5184000.0 AND NOT quality,0,1.0,1.0,1.0,71
+uniform,256,anyScriptOrigin = 1 AND resolution = 2073600.0 AND quality = 0.1,NOT pdf,0,0.2144053601340033,0.1250814332247557,0.75,71
+bi_modal_split,256,anyScriptOrigin = 1 AND resolution = 2073600.0 AND quality = 0.1,anyScriptOrigin AND resolution <= 5184000.0 AND resolution > 1190400.0 AND NOT quality,4,1.0,1.0,1.0,71
+tri_modal_split,256,anyScriptOrigin = 1 AND resolution = 2073600.0 AND quality = 0.1,anyScriptOrigin AND resolution > 1190400.0 AND resolution <= 5184000.0 AND NOT quality,1,1.0,1.0,1.0,71
+power_law,256,anyScriptOrigin = 1 AND resolution = 2073600.0 AND quality = 0.1,dpi > 150.0 AND resolution <= 5184000.0,3,0.2857142857142857,0.2,0.5,71
+normal,192,validate = 1 AND dpi = 100.0 AND quality = 0.1,resolution <= 5184000.0,0,0.1740312712440516,0.1000781860828772,0.6666666666666666,72
+uniform,192,validate = 1 AND dpi = 100.0 AND quality = 0.1,dpi <= 150.0 AND dpi > 75.0,2,0.572280178837556,0.4008350730688935,1.0,72
+bi_modal_split,192,validate = 1 AND dpi = 100.0 AND quality = 0.1,dpi <= 150.0 AND dpi > 75.0 AND validate AND NOT quality,0,1.0,1.0,1.0,72
+tri_modal_split,192,validate = 1 AND dpi = 100.0 AND quality = 0.1,dpi > 75.0 AND dpi <= 150.0 AND NOT quality AND validate,1,1.0,1.0,1.0,72
+power_law,192,validate = 1 AND dpi = 100.0 AND quality = 0.1,NOT jpg AND dpi <= 300.0,1,0.2727272727272727,0.1666666666666666,0.75,72
+normal,192,anyScriptOrigin = 1 AND pdf = 1 AND quality = 0.1,pdf AND anyScriptOrigin,0,1.0,1.0,1.0,73
+uniform,192,anyScriptOrigin = 1 AND pdf = 1 AND quality = 0.1,pdf AND anyScriptOrigin,0,1.0,1.0,1.0,73
+bi_modal_split,192,anyScriptOrigin = 1 AND pdf = 1 AND quality = 0.1,pdf AND anyScriptOrigin,0,1.0,1.0,1.0,73
+tri_modal_split,192,anyScriptOrigin = 1 AND pdf = 1 AND quality = 0.1,pdf AND anyScriptOrigin,0,1.0,1.0,1.0,73
+power_law,192,anyScriptOrigin = 1 AND pdf = 1 AND quality = 0.1,NOT pdf,0,0.0,0.0,0.0,73
+normal,192,onload = 1 AND dpi = 400.0 AND quality = 0.1,dpi > 300.0 AND onload AND NOT quality,0,1.0,1.0,1.0,74
+uniform,192,onload = 1 AND dpi = 400.0 AND quality = 0.1,dpi > 300.0 AND onload AND NOT quality,0,1.0,1.0,1.0,74
+bi_modal_split,192,onload = 1 AND dpi = 400.0 AND quality = 0.1,dpi <= 300.0,0,0.0,0.0,0.0,74
+tri_modal_split,192,onload = 1 AND dpi = 400.0 AND quality = 0.1,dpi > 300.0,4,0.5714285714285715,0.4,1.0,74
+power_law,192,onload = 1 AND dpi = 400.0 AND quality = 0.1,resolution <= 1190400.0 AND dpi > 75.0,4,0.1907600596125186,0.1336116910229645,0.3333333333333333,74
+normal,192,anyScriptOrigin = 1 AND dpi = 50.0 AND quality = 0.1,anyScriptOrigin AND NOT quality AND dpi <= 300.0,3,0.5,0.3333333333333333,1.0,75
+uniform,192,anyScriptOrigin = 1 AND dpi = 50.0 AND quality = 0.1,dpi <= 75.0 AND NOT quality AND anyScriptOrigin,1,1.0,1.0,1.0,75
+bi_modal_split,192,anyScriptOrigin = 1 AND dpi = 50.0 AND quality = 0.1,NOT tiff AND indexed > 3.0 AND dpi <= 300.0,3,0.1875,0.125,0.375,75
+tri_modal_split,192,anyScriptOrigin = 1 AND dpi = 50.0 AND quality = 0.1,NOT png AND NOT quality,1,0.2142857142857142,0.125,0.75,75
+power_law,192,anyScriptOrigin = 1 AND dpi = 50.0 AND quality = 0.1,anyScriptOrigin,0,0.3336229365768897,0.200208550573514,1.0,75
+normal,256,onload = 1 AND resolution = 8294400.0 AND quality = 0.1,resolution > 5184000.0 AND onload AND NOT quality,0,1.0,1.0,1.0,76
+uniform,256,onload = 1 AND resolution = 8294400.0 AND quality = 0.1,resolution > 1190400.0 AND onload,1,0.5714285714285715,0.4,1.0,76
+bi_modal_split,256,onload = 1 AND resolution = 8294400.0 AND quality = 0.1,resolution > 5184000.0,3,0.5714285714285715,0.4,1.0,76
+tri_modal_split,256,onload = 1 AND resolution = 8294400.0 AND quality = 0.1,NOT pdf AND indexed > 3.0 AND dpi > 75.0 AND resolution > 1190400.0,4,0.225,0.1875,0.28125,76
+power_law,256,onload = 1 AND resolution = 8294400.0 AND quality = 0.1,indexed > 1.5,0,0.2265486725663716,0.1334259902710215,0.75,76
+normal,192,validate = 1 AND quality = 0.1 AND indexed = 8.0,validate AND indexed > 6.0 AND NOT quality,0,1.0,1.0,1.0,77
+uniform,192,validate = 1 AND quality = 0.1 AND indexed = 8.0,indexed > 6.0 AND validate AND NOT quality,1,1.0,1.0,1.0,77
+bi_modal_split,192,validate = 1 AND quality = 0.1 AND indexed = 8.0,indexed > 6.0,3,0.5714285714285715,0.4,1.0,77
+tri_modal_split,192,validate = 1 AND quality = 0.1 AND indexed = 8.0,dpi <= 300.0 AND validate AND indexed > 1.5,4,0.3939808481532147,0.2671614100185528,0.75,77
+power_law,192,validate = 1 AND quality = 0.1 AND indexed = 8.0,NOT png,0,0.1667631731325999,0.0938110749185667,0.75,77
+normal,192,onload = 1 AND quality = 0.1 AND indexed = 1.0,NOT quality AND indexed <= 1.5 AND onload,0,1.0,1.0,1.0,78
+uniform,192,onload = 1 AND quality = 0.1 AND indexed = 1.0,onload AND indexed <= 1.5 AND NOT quality,0,1.0,1.0,1.0,78
+bi_modal_split,192,onload = 1 AND quality = 0.1 AND indexed = 1.0,onload AND NOT jpg,4,0.375,0.25,0.75,78
+tri_modal_split,192,onload = 1 AND quality = 0.1 AND indexed = 1.0,indexed > 1.5,0,0.0,0.0,0.0,78
+power_law,192,onload = 1 AND quality = 0.1 AND indexed = 1.0,onload,0,0.3336229365768897,0.200208550573514,1.0,78
+normal,192,validate = 1 AND dpi = 100.0 AND quality = 0.1,dpi <= 150.0,0,0.3336229365768897,0.200208550573514,1.0,79
+uniform,192,validate = 1 AND dpi = 100.0 AND quality = 0.1,validate AND dpi <= 150.0 AND dpi > 75.0 AND NOT quality,0,1.0,1.0,1.0,79
+bi_modal_split,192,validate = 1 AND dpi = 100.0 AND quality = 0.1,validate AND dpi <= 150.0 AND dpi > 75.0 AND NOT quality,0,1.0,1.0,1.0,79
+tri_modal_split,192,validate = 1 AND dpi = 100.0 AND quality = 0.1,dpi <= 150.0 AND dpi > 75.0 AND validate AND NOT quality,2,1.0,1.0,1.0,79
+power_law,192,validate = 1 AND dpi = 100.0 AND quality = 0.1,dpi <= 150.0,1,0.3336229365768897,0.200208550573514,1.0,79
+normal,256,validate = 1 AND resolution = 2073600.0 AND quality = 0.1,indexed <= 3.0 AND resolution <= 5184000.0,2,0.2860335195530726,0.2003129890453834,0.5,7
+uniform,256,validate = 1 AND resolution = 2073600.0 AND quality = 0.1,validate AND resolution <= 5184000.0 AND resolution > 1190400.0 AND NOT quality,0,1.0,1.0,1.0,7
+bi_modal_split,256,validate = 1 AND resolution = 2073600.0 AND quality = 0.1,dpi > 150.0 AND resolution <= 5184000.0,3,0.2857142857142857,0.2,0.5,7
+tri_modal_split,256,validate = 1 AND resolution = 2073600.0 AND quality = 0.1,validate AND resolution > 1190400.0 AND resolution <= 5184000.0 AND NOT quality,4,1.0,1.0,1.0,7
+power_law,256,validate = 1 AND resolution = 2073600.0 AND quality = 0.1,resolution > 1190400.0 AND resolution <= 5184000.0,1,0.5714285714285715,0.4,1.0,7
+normal,256,anyScriptOrigin = 1 AND resolution = 8294400.0 AND quality = 0.1,resolution > 5184000.0 AND anyScriptOrigin AND NOT quality,0,1.0,1.0,1.0,80
+uniform,256,anyScriptOrigin = 1 AND resolution = 8294400.0 AND quality = 0.1,validate,0,0.2106995884773662,0.1334723670490094,0.5,80
+bi_modal_split,256,anyScriptOrigin = 1 AND resolution = 8294400.0 AND quality = 0.1,indexed > 1.5,0,0.2265486725663716,0.1334259902710215,0.75,80
+tri_modal_split,256,anyScriptOrigin = 1 AND resolution = 8294400.0 AND quality = 0.1,resolution > 5184000.0,3,0.5714285714285715,0.4,1.0,80
+power_law,256,anyScriptOrigin = 1 AND resolution = 8294400.0 AND quality = 0.1,resolution > 1190400.0 AND indexed > 1.5 AND indexed > 3.0 AND anyScriptOrigin,4,0.4444444444444445,0.4,0.5,80
+normal,192,anyScriptOrigin = 1 AND dpi = 200.0 AND quality = 0.1,dpi > 150.0 AND dpi <= 300.0 AND anyScriptOrigin AND NOT quality,0,1.0,1.0,1.0,81
+uniform,192,anyScriptOrigin = 1 AND dpi = 200.0 AND quality = 0.1,dpi > 150.0 AND anyScriptOrigin AND dpi <= 300.0 AND NOT quality,0,1.0,1.0,1.0,81
+bi_modal_split,192,anyScriptOrigin = 1 AND dpi = 200.0 AND quality = 0.1,anyScriptOrigin AND dpi <= 300.0 AND dpi > 150.0 AND NOT quality,0,1.0,1.0,1.0,81
+tri_modal_split,192,anyScriptOrigin = 1 AND dpi = 200.0 AND quality = 0.1,dpi > 150.0 AND dpi <= 300.0 AND anyScriptOrigin AND NOT quality,0,1.0,1.0,1.0,81
+power_law,192,anyScriptOrigin = 1 AND dpi = 200.0 AND quality = 0.1,anyScriptOrigin AND dpi <= 300.0 AND dpi > 150.0 AND NOT quality,4,1.0,1.0,1.0,81
+normal,256,validate = 1 AND resolution = 8294400.0 AND quality = 0.1,indexed > 3.0 AND validate AND resolution > 5184000.0 AND NOT quality,0,0.6666666666666666,1.0,0.5,82
+uniform,256,validate = 1 AND resolution = 8294400.0 AND quality = 0.1,NOT jpg AND anyScriptOrigin AND resolution > 1190400.0,4,0.3,0.25,0.375,82
+bi_modal_split,256,validate = 1 AND resolution = 8294400.0 AND quality = 0.1,resolution > 1190400.0,0,0.3333333333333333,0.2,1.0,82
+tri_modal_split,256,validate = 1 AND resolution = 8294400.0 AND quality = 0.1,NOT jpg,0,0.2727272727272727,0.1666666666666666,0.75,82
+power_law,256,validate = 1 AND resolution = 8294400.0 AND quality = 0.1,dpi <= 300.0 AND indexed > 1.5 AND resolution > 1190400.0,2,0.2950819672131148,0.2,0.5625,82
+normal,192,validate = 1 AND png = 1 AND quality = 0.1,png AND validate,0,1.0,1.0,1.0,83
+uniform,192,validate = 1 AND png = 1 AND quality = 0.1,dpi <= 300.0 AND NOT jpg,1,0.2727272727272727,0.1666666666666666,0.75,83
+bi_modal_split,192,validate = 1 AND png = 1 AND quality = 0.1,indexed > 1.5,0,0.1765787860208461,0.1000694927032661,0.75,83
+tri_modal_split,192,validate = 1 AND png = 1 AND quality = 0.1,NOT png,0,0.0,0.0,0.0,83
+power_law,192,validate = 1 AND png = 1 AND quality = 0.1,dpi > 150.0 AND NOT tiff AND NOT jpg,4,0.3333333333333333,0.25,0.5,83
+normal,192,onload = 1 AND quality = 0.1 AND indexed = 8.0,indexed > 6.0 AND onload AND NOT quality,0,1.0,1.0,1.0,84
+uniform,192,onload = 1 AND quality = 0.1 AND indexed = 8.0,indexed > 6.0 AND onload AND NOT quality,0,1.0,1.0,1.0,84
+bi_modal_split,192,onload = 1 AND quality = 0.1 AND indexed = 8.0,indexed > 6.0 AND onload AND NOT quality,1,1.0,1.0,1.0,84
+tri_modal_split,192,onload = 1 AND quality = 0.1 AND indexed = 8.0,indexed > 6.0 AND onload AND NOT quality,3,1.0,1.0,1.0,84
+power_law,192,onload = 1 AND quality = 0.1 AND indexed = 8.0,onload AND indexed > 6.0 AND NOT quality,4,1.0,1.0,1.0,84
+normal,192,validate = 1 AND dpi = 400.0 AND quality = 0.1,dpi > 300.0 AND validate AND NOT quality,0,1.0,1.0,1.0,85
+uniform,192,validate = 1 AND dpi = 400.0 AND quality = 0.1,dpi > 300.0 AND validate AND NOT quality,0,1.0,1.0,1.0,85
+bi_modal_split,192,validate = 1 AND dpi = 400.0 AND quality = 0.1,validate,0,0.3336229365768897,0.200208550573514,1.0,85
+tri_modal_split,192,validate = 1 AND dpi = 400.0 AND quality = 0.1,dpi > 300.0 AND validate AND NOT quality,3,1.0,1.0,1.0,85
+power_law,192,validate = 1 AND dpi = 400.0 AND quality = 0.1,validate AND dpi > 300.0 AND NOT quality,4,1.0,1.0,1.0,85
+normal,192,validate = 1 AND quality = 0.1 AND indexed = 1.0,indexed <= 1.5 AND validate AND NOT quality,0,1.0,1.0,1.0,86
+uniform,192,validate = 1 AND quality = 0.1 AND indexed = 1.0,indexed <= 1.5 AND validate AND NOT quality,0,1.0,1.0,1.0,86
+bi_modal_split,192,validate = 1 AND quality = 0.1 AND indexed = 1.0,indexed <= 6.0 AND validate,2,0.4215148188803512,0.2670375521557719,1.0,86
+tri_modal_split,192,validate = 1 AND quality = 0.1 AND indexed = 1.0,indexed <= 3.0 AND indexed <= 1.5,3,0.5714285714285715,0.4,1.0,86
+power_law,192,validate = 1 AND quality = 0.1 AND indexed = 1.0,NOT pdf AND indexed <= 1.5,4,0.5,0.375,0.75,86
+normal,192,validate = 1 AND quality = 0.1 AND indexed = 2.0,indexed <= 3.0 AND indexed > 1.5 AND validate AND NOT quality,0,1.0,1.0,1.0,87
+uniform,192,validate = 1 AND quality = 0.1 AND indexed = 2.0,NOT quality AND validate AND indexed <= 3.0 AND indexed > 1.5,1,1.0,1.0,1.0,87
+bi_modal_split,192,validate = 1 AND quality = 0.1 AND indexed = 2.0,pdf AND validate AND indexed > 1.5 AND indexed <= 3.0,0,0.4,1.0,0.25,87
+tri_modal_split,192,validate = 1 AND quality = 0.1 AND indexed = 2.0,validate AND indexed > 1.5 AND indexed <= 3.0 AND NOT quality,0,1.0,1.0,1.0,87
+power_law,192,validate = 1 AND quality = 0.1 AND indexed = 2.0,indexed <= 3.0,0,0.3336229365768897,0.200208550573514,1.0,87
+normal,192,onload = 1 AND quality = 0.1 AND indexed = 2.0,onload AND indexed <= 3.0 AND indexed > 1.5 AND NOT quality,0,1.0,1.0,1.0,88
+uniform,192,onload = 1 AND quality = 0.1 AND indexed = 2.0,indexed <= 3.0 AND indexed > 1.5 AND onload AND NOT quality,0,1.0,1.0,1.0,88
+bi_modal_split,192,onload = 1 AND quality = 0.1 AND indexed = 2.0,indexed <= 3.0 AND onload AND indexed > 1.5 AND NOT quality,0,1.0,1.0,1.0,88
+tri_modal_split,192,onload = 1 AND quality = 0.1 AND indexed = 2.0,indexed <= 3.0 AND onload AND indexed > 1.5 AND NOT quality,0,1.0,1.0,1.0,88
+power_law,192,onload = 1 AND quality = 0.1 AND indexed = 2.0,indexed > 1.5 AND onload,1,0.4215148188803512,0.2670375521557719,1.0,88
+normal,256,onload = 1 AND resolution = 307200.0 AND quality = 0.1,onload AND resolution <= 1190400.0 AND NOT quality,0,1.0,1.0,1.0,89
+uniform,256,onload = 1 AND resolution = 307200.0 AND quality = 0.1,validate AND onload,2,0.3482993197278911,0.267223382045929,0.5,89
+bi_modal_split,256,onload = 1 AND resolution = 307200.0 AND quality = 0.1,resolution <= 1190400.0 AND onload,3,0.8904347826086957,0.8025078369905956,1.0,89
+tri_modal_split,256,onload = 1 AND resolution = 307200.0 AND quality = 0.1,resolution <= 1190400.0 AND NOT quality,4,0.6666666666666666,0.5,1.0,89
+power_law,256,onload = 1 AND resolution = 307200.0 AND quality = 0.1,dpi > 75.0,0,0.2265486725663716,0.1334259902710215,0.75,89
+normal,192,validate = 1 AND jpg = 1 AND quality = 0.1,NOT quality AND indexed <= 6.0 AND NOT pdf,2,0.2727272727272727,0.1666666666666666,0.75,8
+uniform,192,validate = 1 AND jpg = 1 AND quality = 0.1,jpg AND NOT quality AND validate,0,1.0,1.0,1.0,8
+bi_modal_split,192,validate = 1 AND jpg = 1 AND quality = 0.1,NOT tiff AND indexed > 3.0 AND NOT png,3,0.25,0.1666666666666666,0.5,8
+tri_modal_split,192,validate = 1 AND jpg = 1 AND quality = 0.1,validate AND jpg AND NOT quality,0,1.0,1.0,1.0,8
+power_law,192,validate = 1 AND jpg = 1 AND quality = 0.1,NOT quality AND indexed > 1.5 AND resolution > 1190400.0 AND NOT png,3,0.25,0.1666666666666666,0.5,8
+normal,192,validate = 1 AND quality = 0.1 AND indexed = 2.0,validate AND indexed <= 3.0 AND indexed > 1.5 AND NOT quality,0,1.0,1.0,1.0,90
+uniform,192,validate = 1 AND quality = 0.1 AND indexed = 2.0,NOT png,0,0.1667631731325999,0.0938110749185667,0.75,90
+bi_modal_split,192,validate = 1 AND quality = 0.1 AND indexed = 2.0,indexed <= 3.0 AND validate AND indexed > 1.5 AND NOT quality,0,1.0,1.0,1.0,90
+tri_modal_split,192,validate = 1 AND quality = 0.1 AND indexed = 2.0,indexed <= 3.0 AND indexed > 1.5 AND NOT quality AND validate,0,1.0,1.0,1.0,90
+power_law,192,validate = 1 AND quality = 0.1 AND indexed = 2.0,resolution <= 5184000.0 AND dpi > 75.0 AND NOT pdf AND indexed > 1.5,4,0.1877444589308996,0.1252173913043478,0.375,90
+normal,192,anyScriptOrigin = 1 AND dpi = 400.0 AND quality = 0.1,dpi > 300.0 AND anyScriptOrigin AND NOT quality,0,1.0,1.0,1.0,91
+uniform,192,anyScriptOrigin = 1 AND dpi = 400.0 AND quality = 0.1,dpi > 300.0 AND anyScriptOrigin AND NOT quality,0,1.0,1.0,1.0,91
+bi_modal_split,192,anyScriptOrigin = 1 AND dpi = 400.0 AND quality = 0.1,dpi > 300.0 AND anyScriptOrigin AND NOT quality,2,1.0,1.0,1.0,91
+tri_modal_split,192,anyScriptOrigin = 1 AND dpi = 400.0 AND quality = 0.1,dpi > 300.0 AND anyScriptOrigin AND NOT quality,1,1.0,1.0,1.0,91
+power_law,192,anyScriptOrigin = 1 AND dpi = 400.0 AND quality = 0.1,dpi > 300.0,4,0.5714285714285715,0.4,1.0,91
+normal,192,validate = 1 AND quality = 0.1 AND indexed = 4.0,validate AND indexed > 3.0 AND indexed <= 6.0 AND NOT quality,0,1.0,1.0,1.0,92
+uniform,192,validate = 1 AND quality = 0.1 AND indexed = 4.0,resolution <= 5184000.0 AND NOT jpg,1,0.2,0.125,0.5,92
+bi_modal_split,192,validate = 1 AND quality = 0.1 AND indexed = 4.0,dpi > 75.0 AND NOT quality AND indexed > 3.0,2,0.375,0.25,0.75,92
+tri_modal_split,192,validate = 1 AND quality = 0.1 AND indexed = 4.0,indexed > 3.0 AND indexed <= 6.0 AND validate AND NOT quality,1,1.0,1.0,1.0,92
+power_law,192,validate = 1 AND quality = 0.1 AND indexed = 4.0,dpi <= 150.0,0,0.1668114682884448,0.100104275286757,0.5,92
+normal,192,tiff = 1 AND validate = 1 AND quality = 0.1,tiff AND validate,0,1.0,1.0,1.0,93
+uniform,192,tiff = 1 AND validate = 1 AND quality = 0.1,tiff AND validate,1,1.0,1.0,1.0,93
+bi_modal_split,192,tiff = 1 AND validate = 1 AND quality = 0.1,tiff AND validate,0,1.0,1.0,1.0,93
+tri_modal_split,192,tiff = 1 AND validate = 1 AND quality = 0.1,tiff AND validate,0,1.0,1.0,1.0,93
+power_law,192,tiff = 1 AND validate = 1 AND quality = 0.1,resolution <= 5184000.0,0,0.1740312712440516,0.1000781860828772,0.6666666666666666,93
+normal,192,validate = 1 AND jpg = 1 AND quality = 0.1,jpg AND validate AND NOT quality,0,1.0,1.0,1.0,94
+uniform,192,validate = 1 AND jpg = 1 AND quality = 0.1,dpi <= 300.0 AND validate,1,0.3161361141602634,0.2002781641168289,0.75,94
+bi_modal_split,192,validate = 1 AND jpg = 1 AND quality = 0.1,dpi > 75.0 AND NOT anyScriptOrigin AND NOT tiff,3,0.1875,0.125,0.375,94
+tri_modal_split,192,validate = 1 AND jpg = 1 AND quality = 0.1,jpg,1,0.4004171011470282,0.2503259452411995,1.0,94
+power_law,192,validate = 1 AND jpg = 1 AND quality = 0.1,validate,0,0.3336229365768897,0.200208550573514,1.0,94
+normal,192,onload = 1 AND quality = 0.1 AND indexed = 8.0,indexed > 6.0,3,0.5714285714285715,0.4,1.0,95
+uniform,192,onload = 1 AND quality = 0.1 AND indexed = 8.0,indexed > 6.0 AND onload AND NOT quality,0,1.0,1.0,1.0,95
+bi_modal_split,192,onload = 1 AND quality = 0.1 AND indexed = 8.0,NOT pdf AND NOT validate AND NOT quality,3,0.1875,0.125,0.375,95
+tri_modal_split,192,onload = 1 AND quality = 0.1 AND indexed = 8.0,indexed <= 6.0,0,0.0,0.0,0.0,95
+power_law,192,onload = 1 AND quality = 0.1 AND indexed = 8.0,indexed > 6.0,4,0.5714285714285715,0.4,1.0,95
+normal,192,validate = 1 AND quality = 0.1 AND indexed = 8.0,indexed > 6.0 AND validate AND NOT quality,0,1.0,1.0,1.0,96
+uniform,192,validate = 1 AND quality = 0.1 AND indexed = 8.0,indexed > 6.0 AND validate AND NOT quality,0,1.0,1.0,1.0,96
+bi_modal_split,192,validate = 1 AND quality = 0.1 AND indexed = 8.0,indexed > 6.0,3,0.5714285714285715,0.4,1.0,96
+tri_modal_split,192,validate = 1 AND quality = 0.1 AND indexed = 8.0,indexed > 6.0,4,0.5714285714285715,0.4,1.0,96
+power_law,192,validate = 1 AND quality = 0.1 AND indexed = 8.0,indexed > 3.0 AND NOT quality AND validate,4,0.6666666666666666,0.5,1.0,96
+normal,192,onload = 1 AND pdf = 1 AND quality = 0.1,onload AND pdf,0,1.0,1.0,1.0,97
+uniform,192,onload = 1 AND pdf = 1 AND quality = 0.1,pdf AND onload,1,1.0,1.0,1.0,97
+bi_modal_split,192,onload = 1 AND pdf = 1 AND quality = 0.1,indexed <= 3.0 AND NOT quality AND NOT jpg,4,0.25,0.1666666666666666,0.5,97
+tri_modal_split,192,onload = 1 AND pdf = 1 AND quality = 0.1,indexed > 1.5,0,0.1765787860208461,0.1000694927032661,0.75,97
+power_law,192,onload = 1 AND pdf = 1 AND quality = 0.1,resolution > 1190400.0,0,0.1739130434782609,0.1,0.6666666666666666,97
+normal,256,anyScriptOrigin = 1 AND resolution = 8294400.0 AND quality = 0.1,resolution > 5184000.0 AND anyScriptOrigin AND NOT quality,0,1.0,1.0,1.0,98
+uniform,256,anyScriptOrigin = 1 AND resolution = 8294400.0 AND quality = 0.1,resolution > 5184000.0 AND anyScriptOrigin AND NOT quality,0,1.0,1.0,1.0,98
+bi_modal_split,256,anyScriptOrigin = 1 AND resolution = 8294400.0 AND quality = 0.1,resolution > 5184000.0 AND anyScriptOrigin AND NOT quality,0,1.0,1.0,1.0,98
+tri_modal_split,256,anyScriptOrigin = 1 AND resolution = 8294400.0 AND quality = 0.1,resolution > 5184000.0 AND anyScriptOrigin,2,0.888888888888889,0.8,1.0,98
+power_law,256,anyScriptOrigin = 1 AND resolution = 8294400.0 AND quality = 0.1,dpi > 75.0,0,0.2265486725663716,0.1334259902710215,0.75,98
+normal,192,validate = 1 AND png = 1 AND quality = 0.1,png AND validate,0,1.0,1.0,1.0,99
+uniform,192,validate = 1 AND png = 1 AND quality = 0.1,png,3,0.6666666666666666,0.5,1.0,99
+bi_modal_split,192,validate = 1 AND png = 1 AND quality = 0.1,NOT quality AND NOT onload AND validate,4,0.3333333333333333,0.25,0.5,99
+tri_modal_split,192,validate = 1 AND png = 1 AND quality = 0.1,NOT quality,0,0.2222222222222222,0.125,1.0,99
+power_law,192,validate = 1 AND png = 1 AND quality = 0.1,png,4,0.6666666666666666,0.5,1.0,99
+normal,192,onload = 1 AND dpi = 400.0 AND quality = 0.1,dpi > 300.0 AND onload AND NOT quality,0,1.0,1.0,1.0,9
+uniform,192,onload = 1 AND dpi = 400.0 AND quality = 0.1,dpi > 300.0 AND onload AND NOT quality,0,1.0,1.0,1.0,9
+bi_modal_split,192,onload = 1 AND dpi = 400.0 AND quality = 0.1,dpi > 300.0 AND onload AND NOT quality,2,1.0,1.0,1.0,9
+tri_modal_split,192,onload = 1 AND dpi = 400.0 AND quality = 0.1,dpi > 300.0,2,0.5714285714285715,0.4,1.0,9
+power_law,192,onload = 1 AND dpi = 400.0 AND quality = 0.1,onload,0,0.3336229365768897,0.200208550573514,1.0,9

@@ -1,0 +1,6 @@
+rule,sg_samples,sg_coverage,rule_num_predicates,rule_features_used
+lossless==0,108000,0.5,1,['lossless']
+lossless==1 AND cpuUsed==4 AND realtime==1,10800,0.05,3,"['cpuUsed', 'lossless', 'realtime']"
+good==0 AND lossless==1 AND cpuUsed==4,10800,0.05,3,"['cpuUsed', 'lossless', 'good']"
+good==0 AND lossless==1 AND cpuUsed==4 AND realtime==1,10800,0.05,4,"['cpuUsed', 'lossless', 'good', 'realtime']"
+lossless==1 AND cpuUsed==0,21600,0.1,2,"['cpuUsed', 'lossless']"

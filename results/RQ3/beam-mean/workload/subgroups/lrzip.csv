@@ -1,0 +1,6 @@
+rule,sg_samples,sg_coverage,rule_num_predicates,rule_features_used
+integrityCheck==0 AND zpaq==1 AND nice==0 AND multithreading==0 AND unlimitedWindowSize==0,2,0.010471204188481676,5,"['nice', 'zpaq', 'integrityCheck', 'multithreading', 'unlimitedWindowSize']"
+encryption==0 AND integrityCheck==0 AND zpaq==1 AND multithreading==0 AND unlimitedWindowSize==0,2,0.010471204188481676,5,"['encryption', 'zpaq', 'integrityCheck', 'multithreading', 'unlimitedWindowSize']"
+encryption==0 AND zpaq==1 AND nice==0 AND multithreading==0 AND unlimitedWindowSize==0,2,0.010471204188481676,5,"['nice', 'encryption', 'zpaq', 'multithreading', 'unlimitedWindowSize']"
+encryption==0 AND zpaq==1 AND multithreading==0 AND unlimitedWindowSize==0,4,0.020942408376963352,4,"['zpaq', 'multithreading', 'encryption', 'unlimitedWindowSize']"
+encryption==0 AND noBackend==0 AND zpaq==1 AND multithreading==0 AND unlimitedWindowSize==0,4,0.020942408376963352,5,"['encryption', 'zpaq', 'noBackend', 'multithreading', 'unlimitedWindowSize']"

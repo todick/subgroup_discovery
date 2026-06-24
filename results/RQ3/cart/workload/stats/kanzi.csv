@@ -1,0 +1,2 @@
+num_features,num_samples,sgs_unique,sgs_mean_jaccard,sgs_mean_overlap_coefficient,coverage_mean,coverage_total,rule_features_used,rule_feature_frequency,rule_num_features,rule_length_mean,rule_length_max,rule_length_min,runtime
+26,4112,5,0.17926689388477418,0.6,0.055544747081712066,0.23467898832684825,"['ROLZ', 'TPAQX', 'ROLZX', 'blocksize', 'TPAQ', 'jobs']","[('ROLZ', 3), ('TPAQX', 5), ('ROLZX', 3), ('blocksize', 5), ('TPAQ', 1), ('jobs', 1)]",6,3.8,5.0,2.0,0.01417088508605957

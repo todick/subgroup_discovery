@@ -1,0 +1,6 @@
+rule,sg_samples,sg_coverage,rule_num_predicates,rule_features_used
+no-psy==0 AND cpu-independent==0 AND no-asm==1,374,0.12014134275618374,3,"['no-asm', 'no-psy', 'cpu-independent']"
+no-psy==0 AND cpu-independent==0 AND no-asm==1 AND workload==0,374,0.12014134275618374,4,"['workload', 'no-asm', 'no-psy', 'cpu-independent']"
+cpu-independent==0 AND no-asm==1 AND intra-refresh==0,346,0.11114680372630903,3,"['intra-refresh', 'no-asm', 'cpu-independent']"
+cpu-independent==0 AND no-asm==1 AND workload==0 AND intra-refresh==0,346,0.11114680372630903,4,"['workload', 'intra-refresh', 'no-asm', 'cpu-independent']"
+no-psy==0 AND cpu-independent==0 AND no-asm==1 AND intra-refresh==0,232,0.07452618053324767,4,"['intra-refresh', 'no-asm', 'no-psy', 'cpu-independent']"

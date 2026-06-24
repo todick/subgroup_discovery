@@ -1,0 +1,115 @@
+n_conditions,sg_mean,sg_cardinality,sg_rule,best_rule,best_rule_idx,f1,precision,recall,seed,runtime
+1,5917244.485129629,54000,cyclicRefresh = 1,cyclicRefresh >= 1.0  AND  0.0 <= constrainedQuality < 1.0  AND  lagInFrames < 12.0  AND  600.0 <= bitRate < 1500.0,4,0.4210526315789474,1.0,0.2666666666666666,0,7790.89687204361
+1,1517158.2328333333,54000,off = 1,off >= 1.0  AND  TileColumns < 4.5  AND  600.0 <= bitRate < 1200.0  AND  Threads >= 4.0,2,0.3516483516483517,1.0,0.2133333333333333,1,7756.38722038269
+1,5834629.120416666,43200,Threads = 2,Threads < 4.0  AND  0.0 <= lossless < 1.0  AND  lagInFrames >= 4.0  AND  0.0 <= variableBitrate < 0.5,4,0.3636363636363636,1.0,0.2222222222222222,10,6758.088912963867
+2,5373578.733981482,10800,cyclicRefresh = 1 AND cpuUsed = 8,cyclicRefresh >= 1.0  AND  cpuUsed >= 8.0  AND  Threads >= 4.0  AND  TileColumns >= 1.5,0,0.6956521739130436,1.0,0.5333333333333333,10,6879.734903097153
+1,5578964.916814815,54000,off = 1,off >= 1.0  AND  0.0 <= constantBitrate < 1.0  AND  cpuUsed >= 2.0  AND  0.0 <= AutoAltRef < 1.0  AND  bitRate < 1500.0  AND  Threads < 10.0,3,0.2915717539863325,1.0,0.1706666666666666,11,8178.324344873428
+1,800629.690925926,54000,off = 1,off >= 1.0  AND  bitRate < 600.0  AND  cpuUsed >= 2.0,4,0.2758620689655173,1.0,0.16,12,7960.849820137024
+1,6399227.251180556,43200,Threads = 6,6.0 <= Threads < 8.0  AND  0.0 <= constantBitrate < 0.5  AND  0.0 <= complexity < 1.0  AND  TileColumns >= 1.5  AND  bitRate >= 600.0,4,0.4210526315789474,1.0,0.2666666666666666,13,6921.508491754532
+1,4666607.03312963,54000,off = 1,off >= 1.0  AND  cpuUsed < 4.0  AND  900.0 <= bitRate < 1500.0,3,0.2758620689655173,1.0,0.16,14,7826.368316888809
+1,768279.2313703704,54000,cyclicRefresh = 1,Threads >= 6.0  AND  cyclicRefresh >= 1.0  AND  AutoAltRef >= 1.0  AND  TileColumns < 4.5,4,0.3333333333333333,1.0,0.2,15,7685.047596693039
+1,7218661.287018519,54000,off = 1,off >= 1.0  AND  0.0 <= constantBitrate < 0.5  AND  1.5 <= TileColumns < 4.5,4,0.3636363636363636,1.0,0.2222222222222222,16,7558.200453996658
+1,7765829.577888889,54000,variance = 1,variance >= 1.0  AND  Threads < 6.0  AND  TileColumns < 4.5  AND  cpuUsed < 8.0,4,0.3516483516483517,1.0,0.2133333333333333,17,8175.109564304352
+1,7141381.704930556,43200,bitRate = 1200,1200.0 <= bitRate < 1500.0  AND  cpuUsed < 6.0  AND  0.0 <= variance < 1.0  AND  0.0 <= good < 1.0,3,0.3673469387755101,1.0,0.225,18,7134.06703209877
+1,5487833.5997916665,43200,bitRate = 900,900.0 <= bitRate < 1200.0  AND  0.0 <= constrainedQuality < 1.0  AND  TileColumns >= 1.5  AND  lagInFrames >= 8.0  AND  0.0 <= complexity < 1.0,2,0.3636363636363636,1.0,0.2222222222222222,19,7060.5254554748535
+1,7228779.576342593,43200,Threads = 8,0.0 <= variableBitrate < 0.5  AND  8.0 <= Threads < 10.0  AND  0.0 <= complexity < 1.0  AND  cpuUsed >= 2.0  AND  bitRate >= 600.0,4,0.4848484848484848,1.0,0.32,2,6870.789315223694
+1,8142361.09212963,43200,bitRate = 1500,bitRate >= 1500.0  AND  0.0 <= cyclicRefresh < 1.0  AND  cpuUsed >= 4.0  AND  0.0 <= constantBitrate < 0.5,4,0.4615384615384615,1.0,0.3,20,6633.244163990021
+1,4838474.943842593,43200,bitRate = 300,bitRate < 600.0  AND  0.0 <= complexity < 1.0  AND  0.0 <= lossless < 1.0  AND  0.0 <= constrainedQuality < 0.5  AND  cpuUsed >= 2.0,3,0.3333333333333333,1.0,0.2,21,6971.318558454514
+1,5599654.915222222,54000,off = 1,off >= 1.0  AND  TileColumns >= 1.5  AND  variableBitrate >= 0.5  AND  cpuUsed >= 2.0,3,0.3018867924528302,1.0,0.1777777777777777,22,8030.856693983078
+1,3421562.8017361118,43200,Threads = 4,lagInFrames >= 4.0  AND  4.0 <= Threads < 6.0  AND  0.0 <= cyclicRefresh < 1.0  AND  0.0 <= variance < 1.0  AND  bitRate >= 600.0,4,0.4210526315789474,1.0,0.2666666666666666,23,6965.85246014595
+2,4007099.0547916666,14400,lagInFrames = 0 AND Threads = 10,0.0 <= complexity < 1.0  AND  Threads >= 10.0  AND  lagInFrames < 4.0,1,0.8571428571428571,1.0,0.75,23,6803.259992361069
+1,4033275.8813425926,43200,bitRate = 1200,1200.0 <= bitRate < 1500.0  AND  0.0 <= lossless < 1.0  AND  lagInFrames >= 8.0  AND  0.0 <= constantBitrate < 0.5,4,0.3636363636363636,1.0,0.2222222222222222,24,7120.175244808197
+2,5717011.202638889,14400,lagInFrames = 16 AND cpuUsed = 0,cpuUsed < 2.0  AND  0.0 <= constrainedQuality < 1.0  AND  lagInFrames >= 12.0,1,0.8,1.0,0.6666666666666666,24,7348.141663074493
+1,7677095.578055556,43200,bitRate = 900,TileColumns >= 3.0  AND  900.0 <= bitRate < 1200.0  AND  Threads >= 8.0,4,0.4210526315789474,1.0,0.2666666666666666,25,6924.249228239059
+1,5251873.886550926,43200,Threads = 4,4.0 <= Threads < 6.0  AND  lagInFrames >= 12.0  AND  cpuUsed < 8.0,4,0.4210526315789474,1.0,0.2666666666666666,26,7004.689408063889
+2,2345979.7786805555,14400,constantBitrate = 1 AND bitRate = 1500,0.0 <= complexity < 1.0  AND  bitRate >= 1500.0  AND  constantBitrate >= 0.5  AND  0.0 <= cyclicRefresh < 1.0,1,0.6666666666666666,1.0,0.5,26,7608.135900735855
+1,6236369.972703704,54000,complexity = 1,0.0 <= good < 1.0  AND  complexity >= 1.0  AND  TileColumns < 4.5  AND  lagInFrames < 12.0,4,0.3636363636363636,1.0,0.2222222222222222,27,7618.455955266952
+1,2621936.677851852,54000,cyclicRefresh = 1,cyclicRefresh >= 1.0  AND  0.0 <= FrameBoost < 1.0  AND  Threads < 6.0  AND  bitRate >= 600.0,4,0.2758620689655173,1.0,0.16,28,8005.905169725418
+2,3753749.5646527777,14400,Threads = 10 AND TileColumns = 0,TileColumns < 1.5  AND  Threads >= 10.0  AND  0.0 <= constantBitrate < 0.5,1,0.8,1.0,0.6666666666666666,28,6752.746371746063
+1,6702546.683773148,43200,cpuUsed = 4,4.0 <= cpuUsed < 6.0  AND  lagInFrames < 16.0  AND  bitRate >= 1200.0,4,0.4210526315789474,1.0,0.2666666666666666,29,7015.9674344062805
+1,6681393.409425925,54000,variance = 1,variance >= 1.0  AND  lossless >= 1.0  AND  0.0 <= FrameBoost < 1.0  AND  cpuUsed < 6.0,2,0.2608695652173913,1.0,0.15,3,7818.291523456573
+1,1830169.1568333332,54000,complexity = 1,complexity >= 1.0  AND  lagInFrames >= 8.0  AND  0.0 <= constrainedQuality < 1.0  AND  lossless >= 1.0  AND  Threads >= 4.0,4,0.3018867924528302,1.0,0.1777777777777777,30,7824.004693508148
+1,3436224.53962963,43200,cpuUsed = 4,4.0 <= cpuUsed < 6.0  AND  0.0 <= AutoAltRef < 1.0  AND  Threads < 6.0,4,0.3333333333333333,1.0,0.2,31,7149.493918418884
+2,1579580.095277778,10800,off = 1 AND bitRate = 600,off >= 1.0  AND  600.0 <= bitRate < 900.0,1,1.0,1.0,1.0,31,7099.171033143997
+1,4958118.158833333,54000,cyclicRefresh = 1,cyclicRefresh >= 1.0  AND  lagInFrames >= 16.0  AND  TileColumns >= 1.5  AND  bitRate >= 600.0,4,0.3018867924528302,1.0,0.1777777777777777,32,7852.490333080292
+1,5152084.89599537,43200,cpuUsed = 4,0.0 <= realtime < 1.0  AND  4.0 <= cpuUsed < 6.0  AND  TileColumns >= 3.0  AND  0.0 <= constrainedQuality < 0.5,3,0.3636363636363636,1.0,0.2222222222222222,33,6906.647114038467
+1,1717030.2467824074,43200,cpuUsed = 2,2.0 <= cpuUsed < 4.0  AND  0.0 <= cyclicRefresh < 1.0  AND  0.0 <= constrainedQuality < 1.0  AND  0.0 <= AutoAltRef < 1.0,3,0.4,1.0,0.25,34,7282.76713848114
+1,1718428.438912037,43200,Threads = 4,4.0 <= Threads < 6.0  AND  0.0 <= lossless < 1.0  AND  0.0 <= variance < 1.0,4,0.5454545454545454,1.0,0.375,35,6725.476891756058
+1,6784700.652939815,43200,Threads = 2,Threads < 4.0  AND  TileColumns >= 1.5  AND  0.0 <= FrameBoost < 1.0  AND  0.0 <= variableBitrate < 0.5,3,0.3636363636363636,1.0,0.2222222222222222,36,6975.536612272263
+1,4723238.790111112,54000,complexity = 1,complexity >= 1.0  AND  Threads < 10.0  AND  bitRate < 600.0,3,0.2758620689655173,1.0,0.16,37,7660.813092708588
+1,5695973.213101852,43200,Threads = 8,8.0 <= Threads < 10.0  AND  0.0 <= lossless < 1.0  AND  cpuUsed < 6.0  AND  0.0 <= cyclicRefresh < 1.0,3,0.3673469387755101,1.0,0.225,38,6802.672244310379
+2,6252229.577870371,10800,cyclicRefresh = 1 AND Threads = 8,8.0 <= Threads < 10.0  AND  cyclicRefresh >= 1.0,1,1.0,1.0,1.0,38,7685.638328552246
+1,6681193.839907408,43200,cpuUsed = 0,cpuUsed < 2.0  AND  0.0 <= AutoAltRef < 1.0  AND  FrameBoost >= 1.0,3,0.4,1.0,0.25,39,6921.345970392227
+1,6834483.792722222,54000,complexity = 1,complexity >= 1.0  AND  600.0 <= bitRate < 1500.0  AND  0.0 <= FrameBoost < 1.0  AND  2.0 <= cpuUsed < 8.0  AND  Threads < 10.0,3,0.2517482517482518,1.0,0.144,4,7814.500488996506
+1,4877225.095481481,54000,cyclicRefresh = 1,cyclicRefresh >= 1.0  AND  TileColumns >= 4.5  AND  0.0 <= constantBitrate < 0.5  AND  bitRate < 1500.0,4,0.3018867924528302,1.0,0.1777777777777777,40,8309.821449279785
+1,1897679.6942592592,43200,bitRate = 1200,1200.0 <= bitRate < 1500.0  AND  lagInFrames >= 4.0  AND  Threads >= 4.0  AND  cpuUsed >= 6.0,4,0.3516483516483517,1.0,0.2133333333333333,41,6937.466116189957
+1,3145533.972777778,43200,bitRate = 1200,0.0 <= constrainedQuality < 1.0  AND  1200.0 <= bitRate < 1500.0  AND  0.0 <= variance < 1.0  AND  0.0 <= lossless < 1.0,4,0.4,1.0,0.25,42,6721.163161277771
+1,7443596.0365,54000,variance = 1,0.0 <= realtime < 1.0  AND  variance >= 1.0  AND  Threads < 10.0  AND  0.0 <= constrainedQuality < 1.0  AND  TileColumns < 4.5,4,0.3018867924528302,1.0,0.1777777777777777,43,8075.532465219498
+1,4633434.460944445,54000,complexity = 1,complexity >= 1.0  AND  cpuUsed < 6.0  AND  bitRate < 900.0  AND  lagInFrames < 12.0,4,0.2758620689655173,1.0,0.16,44,7588.375638008118
+1,1142005.249351852,43200,cpuUsed = 0,cpuUsed < 2.0  AND  Threads < 6.0  AND  bitRate < 1500.0  AND  0.0 <= constantBitrate < 0.5,3,0.3516483516483517,1.0,0.2133333333333333,45,6857.64720249176
+1,6180396.252722222,54000,complexity = 1,complexity >= 1.0  AND  0.0 <= variableBitrate < 0.5  AND  cpuUsed < 6.0  AND  lagInFrames < 12.0,4,0.4210526315789474,1.0,0.2666666666666666,46,7792.610137462616
+1,8099028.423111111,54000,complexity = 1,complexity >= 1.0  AND  0.0 <= FrameBoost < 1.0  AND  0.0 <= constrainedQuality < 1.0  AND  lagInFrames < 12.0  AND  Threads < 8.0,2,0.2352941176470588,1.0,0.1333333333333333,47,8171.982461690903
+1,5654740.27437037,54000,complexity = 1,complexity >= 1.0  AND  Threads >= 8.0  AND  cpuUsed < 6.0  AND  TileColumns < 4.5,3,0.2758620689655173,1.0,0.16,48,7952.517277240753
+1,6560987.628287037,43200,cpuUsed = 4,4.0 <= cpuUsed < 6.0  AND  0.0 <= variableBitrate < 0.5  AND  Threads >= 4.0  AND  TileColumns < 4.5  AND  0.0 <= cyclicRefresh < 1.0,4,0.4210526315789474,1.0,0.2666666666666666,49,6680.147891759872
+1,722424.1816666666,54000,cyclicRefresh = 1,cyclicRefresh >= 1.0  AND  0.0 <= constantBitrate < 1.0  AND  bitRate >= 1200.0  AND  TileColumns >= 1.5,3,0.3018867924528302,1.0,0.1777777777777777,5,8077.140231132507
+1,7985915.378222222,54000,off = 1,off >= 1.0  AND  lagInFrames >= 8.0  AND  bitRate >= 1200.0  AND  Threads < 10.0,4,0.3516483516483517,1.0,0.2133333333333333,50,7735.905229330063
+1,3753517.904685185,54000,cyclicRefresh = 1,cyclicRefresh >= 1.0  AND  TileColumns >= 4.5  AND  0.0 <= realtime < 1.0,4,0.2857142857142857,1.0,0.1666666666666666,51,7891.473784685135
+1,5076208.957611111,54000,cyclicRefresh = 1,cyclicRefresh >= 1.0  AND  0.0 <= variableBitrate < 1.0  AND  Threads >= 8.0  AND  cpuUsed < 8.0,4,0.3516483516483517,1.0,0.2133333333333333,52,7774.625087976456
+1,743072.5469675926,43200,bitRate = 1200,lossless >= 1.0  AND  1200.0 <= bitRate < 1500.0  AND  0.0 <= complexity < 1.0  AND  Threads < 10.0,4,0.4615384615384615,1.0,0.3,53,6946.498242139816
+1,1167775.982,54000,off = 1,off >= 1.0  AND  4.0 <= Threads < 6.0  AND  TileColumns >= 1.5,2,0.2352941176470588,1.0,0.1333333333333333,54,7946.553271532059
+1,4076709.347240741,54000,cyclicRefresh = 1,cyclicRefresh >= 1.0  AND  0.0 <= constantBitrate < 0.5  AND  Threads < 6.0  AND  bitRate < 1500.0,4,0.3516483516483517,1.0,0.2133333333333333,55,7834.660500764847
+1,5340206.517203704,54000,complexity = 1,Threads < 6.0  AND  complexity >= 1.0  AND  cpuUsed < 6.0  AND  lagInFrames >= 4.0,3,0.2758620689655173,1.0,0.16,56,7802.386182546616
+1,7717264.2625,43200,bitRate = 300,bitRate < 600.0  AND  lagInFrames < 4.0,4,0.5,1.0,0.3333333333333333,57,6442.450362682343
+2,5378332.427777777,10800,variance = 1 AND cpuUsed = 4,variance >= 1.0  AND  4.0 <= cpuUsed < 6.0  AND  0.0 <= variableBitrate < 0.5  AND  bitRate < 1500.0,0,0.6956521739130436,1.0,0.5333333333333333,57,7762.003076553345
+1,1288585.1456712964,43200,Threads = 8,8.0 <= Threads < 10.0  AND  bitRate < 900.0  AND  cpuUsed >= 4.0,3,0.3870967741935484,1.0,0.24,58,6727.640310764313
+1,1554003.7746064814,43200,bitRate = 1500,0.0 <= cyclicRefresh < 1.0  AND  bitRate >= 1500.0  AND  0.0 <= AutoAltRef < 1.0  AND  0.0 <= constrainedQuality < 0.5,3,0.4,1.0,0.25,59,7120.047098398209
+1,6392330.292611111,54000,off = 1,off >= 1.0  AND  lagInFrames < 8.0  AND  bitRate < 1500.0,4,0.4210526315789474,1.0,0.2666666666666666,6,7937.908539772034
+1,3232092.744467593,43200,Threads = 6,6.0 <= Threads < 8.0  AND  off >= 1.0,4,0.4,1.0,0.25,60,6962.423901796341
+1,3277158.1343888887,54000,cyclicRefresh = 1,cyclicRefresh >= 1.0  AND  cpuUsed < 4.0  AND  0.0 <= variableBitrate < 1.0  AND  Threads < 10.0  AND  bitRate < 1500.0,3,0.2915717539863325,1.0,0.1706666666666666,61,8112.088414669037
+1,698054.1353888889,54000,cyclicRefresh = 1,cyclicRefresh >= 1.0  AND  4.0 <= Threads < 6.0,2,0.3333333333333333,1.0,0.2,62,7802.870831489563
+1,5133840.804513888,43200,cpuUsed = 4,4.0 <= cpuUsed < 6.0  AND  TileColumns < 6.0  AND  lagInFrames < 4.0,4,0.3636363636363636,1.0,0.2222222222222222,63,6734.593219041824
+1,2285442.1192037035,54000,complexity = 1,complexity >= 1.0  AND  0.0 <= AutoAltRef < 1.0  AND  TileColumns >= 1.5  AND  2.0 <= cpuUsed < 8.0  AND  Threads < 10.0,3,0.2758620689655173,1.0,0.16,64,8062.064019680023
+1,2602264.073555556,54000,variance = 1,variance >= 1.0  AND  TileColumns >= 4.5  AND  lagInFrames >= 8.0  AND  bitRate >= 600.0  AND  Threads < 10.0,2,0.2490272373540856,1.0,0.1422222222222222,65,7645.343836069107
+1,5369112.758356482,43200,Threads = 8,8.0 <= Threads < 10.0  AND  0.0 <= good < 1.0  AND  2.0 <= cpuUsed < 8.0,4,0.4615384615384615,1.0,0.3,66,7020.940596103668
+1,1300191.5203472222,43200,Threads = 4,4.0 <= Threads < 6.0  AND  0.0 <= variance < 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= off < 1.0  AND  bitRate >= 600.0,3,0.3333333333333333,1.0,0.2,67,6710.54979300499
+1,4585427.939388889,54000,variance = 1,variance >= 1.0  AND  lagInFrames < 4.0  AND  0.0 <= constrainedQuality < 1.0  AND  cpuUsed < 8.0,3,0.3018867924528302,1.0,0.1777777777777777,68,7714.896179199219
+1,7916201.191319444,43200,Threads = 4,FrameBoost >= 1.0  AND  4.0 <= Threads < 6.0  AND  0.0 <= cyclicRefresh < 1.0  AND  bitRate < 1500.0,4,0.4615384615384615,1.0,0.3,69,6899.893104553223
+2,6774814.898703704,10800,variance = 1 AND cpuUsed = 0,variance >= 1.0  AND  cpuUsed < 2.0  AND  Threads < 8.0,0,0.7499999999999999,1.0,0.6,69,7729.930177688599
+1,4767622.558740741,54000,complexity = 1,complexity >= 1.0  AND  Threads < 6.0  AND  cpuUsed < 8.0  AND  TileColumns < 6.0  AND  bitRate >= 600.0,4,0.2915717539863325,1.0,0.1706666666666666,7,7844.665243864059
+1,5909109.809851852,54000,cyclicRefresh = 1,cyclicRefresh >= 1.0  AND  lossless >= 1.0  AND  0.0 <= good < 1.0  AND  bitRate >= 600.0,4,0.3333333333333333,1.0,0.2,70,7968.992833852768
+1,4506289.354407407,54000,variance = 1,0.0 <= AutoAltRef < 1.0  AND  variance >= 1.0  AND  lossless >= 1.0  AND  bitRate < 1500.0,4,0.3333333333333333,1.0,0.2,71,7945.363485336304
+1,5759352.941925926,54000,off = 1,0.0 <= realtime < 1.0  AND  off >= 1.0  AND  Threads >= 6.0  AND  lagInFrames >= 4.0,4,0.3333333333333333,1.0,0.2,72,7811.498097419739
+1,7170751.134375,43200,Threads = 6,6.0 <= Threads < 8.0  AND  0.0 <= constantBitrate < 0.5  AND  TileColumns >= 3.0  AND  bitRate < 1500.0  AND  cpuUsed >= 2.0,4,0.4429065743944636,1.0,0.2844444444444444,73,6995.414412736893
+1,6803599.663,54000,cyclicRefresh = 1,cyclicRefresh >= 1.0  AND  bitRate >= 600.0  AND  4.0 <= Threads < 8.0  AND  0.0 <= constantBitrate < 0.5,4,0.3516483516483517,1.0,0.2133333333333333,74,7897.978123188019
+1,7487579.603055555,43200,bitRate = 300,lossless >= 1.0  AND  bitRate < 600.0  AND  TileColumns >= 1.5  AND  cpuUsed < 8.0,3,0.4210526315789474,1.0,0.2666666666666666,75,6757.806831598282
+1,7328144.506722222,54000,cyclicRefresh = 1,AutoAltRef >= 1.0  AND  cyclicRefresh >= 1.0  AND  cpuUsed >= 6.0  AND  Threads >= 4.0,3,0.2758620689655173,1.0,0.16,76,8178.914209604263
+1,6812401.108657408,43200,Threads = 8,8.0 <= Threads < 10.0  AND  cpuUsed < 6.0  AND  lagInFrames < 12.0  AND  0.0 <= cyclicRefresh < 1.0,4,0.4615384615384615,1.0,0.3,77,6840.158583879471
+2,3500188.079555556,18000,cyclicRefresh = 1 AND lagInFrames = 0,cyclicRefresh >= 1.0  AND  lagInFrames < 4.0  AND  0.0 <= good < 1.0,1,0.6666666666666666,1.0,0.5,77,7818.369453668594
+1,843284.188962963,54000,complexity = 1,complexity >= 1.0  AND  lagInFrames >= 4.0  AND  FrameBoost >= 1.0  AND  Threads < 8.0,4,0.3333333333333333,1.0,0.2,78,8094.173870325088
+1,2750074.834277778,54000,cyclicRefresh = 1,cyclicRefresh >= 1.0  AND  lagInFrames >= 8.0  AND  0.0 <= AutoAltRef < 1.0  AND  Threads >= 6.0,4,0.3333333333333333,1.0,0.2,79,8120.774618387222
+1,2532621.059648148,54000,cyclicRefresh = 1,cyclicRefresh >= 1.0  AND  600.0 <= bitRate < 1200.0  AND  FrameBoost >= 1.0  AND  Threads < 10.0,3,0.2758620689655173,1.0,0.16,8,7610.06637096405
+1,3338707.0550555554,54000,cyclicRefresh = 1,cyclicRefresh >= 1.0  AND  0.0 <= constantBitrate < 1.0  AND  0.0 <= lossless < 1.0  AND  4.0 <= Threads < 10.0,4,0.3333333333333333,1.0,0.2,80,7801.173923492432
+1,4807278.005069445,43200,bitRate = 300,0.0 <= FrameBoost < 1.0  AND  bitRate < 600.0  AND  0.0 <= constrainedQuality < 0.5  AND  Threads >= 4.0,4,0.4210526315789474,1.0,0.2666666666666666,81,6465.2738354206085
+1,1975489.4649444444,54000,cyclicRefresh = 1,cyclicRefresh >= 1.0  AND  lossless >= 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= variableBitrate < 0.5  AND  Threads >= 4.0,2,0.2352941176470588,1.0,0.1333333333333333,82,7547.183781385422
+1,7946623.386875,43200,cpuUsed = 0,cpuUsed < 2.0  AND  bitRate < 1200.0  AND  0.0 <= cyclicRefresh < 1.0  AND  0.0 <= variance < 1.0,3,0.4615384615384615,1.0,0.3,83,6754.926457643509
+2,4725257.41537037,10800,off = 1 AND cpuUsed = 2,off >= 1.0  AND  2.0 <= cpuUsed < 4.0,1,1.0,1.0,1.0,83,7660.442589998245
+1,890183.3414074074,54000,cyclicRefresh = 1,0.0 <= realtime < 1.0  AND  cyclicRefresh >= 1.0  AND  TileColumns < 6.0  AND  2.0 <= cpuUsed < 8.0,3,0.3333333333333333,1.0,0.2,84,7557.16980099678
+1,973404.7434953704,43200,Threads = 10,0.0 <= off < 1.0  AND  Threads >= 10.0  AND  0.0 <= good < 1.0,4,0.5454545454545454,1.0,0.375,85,6815.467546701431
+1,1019009.103912037,43200,bitRate = 300,TileColumns < 6.0  AND  bitRate < 600.0  AND  0.0 <= AutoAltRef < 1.0,4,0.5,1.0,0.3333333333333333,86,6858.311889886856
+2,4441948.248888889,18000,complexity = 1 AND constrainedQuality = 1,complexity >= 1.0  AND  constrainedQuality >= 0.5  AND  Threads < 8.0  AND  bitRate >= 600.0,1,0.6486486486486487,1.0,0.48,86,8068.755209445953
+1,629035.1817222222,54000,cyclicRefresh = 1,cyclicRefresh >= 1.0  AND  0.0 <= constrainedQuality < 0.5  AND  cpuUsed < 4.0  AND  Threads >= 4.0  AND  TileColumns >= 1.5,4,0.2490272373540856,1.0,0.1422222222222222,87,8218.060462713242
+1,6740146.118796296,54000,cyclicRefresh = 1,cyclicRefresh >= 1.0  AND  lossless >= 1.0  AND  0.0 <= variableBitrate < 1.0  AND  lagInFrames < 12.0,4,0.3636363636363636,1.0,0.2222222222222222,88,7532.286774635315
+1,7108818.174851852,54000,off = 1,off >= 1.0  AND  TileColumns >= 1.5  AND  lossless >= 1.0  AND  600.0 <= bitRate < 1500.0,4,0.3333333333333333,1.0,0.2,89,7775.629417181015
+1,7624462.740925926,43200,cpuUsed = 6,6.0 <= cpuUsed < 8.0  AND  TileColumns < 4.5  AND  constantBitrate >= 0.5,4,0.3636363636363636,1.0,0.2222222222222222,9,7079.329272508621
+1,5046609.075907407,54000,variance = 1,variance >= 1.0  AND  lagInFrames < 16.0  AND  bitRate >= 1200.0  AND  0.0 <= constantBitrate < 0.5,4,0.3018867924528302,1.0,0.1777777777777777,90,7699.070825099945
+1,4793611.467337963,43200,cpuUsed = 8,0.0 <= realtime < 1.0  AND  cpuUsed >= 8.0  AND  0.0 <= variance < 1.0  AND  0.0 <= cyclicRefresh < 1.0,3,0.4,1.0,0.25,91,6565.497235536575
+2,2350926.0196666666,36000,AutoAltRef = 1 AND TileColumns = 0,TileColumns < 3.0  AND  AutoAltRef >= 1.0  AND  0.0 <= complexity < 1.0  AND  Threads < 8.0,4,0.6206896551724138,1.0,0.45,91,8028.583275794983
+1,4655904.447555556,54000,complexity = 1,complexity >= 1.0  AND  cpuUsed < 6.0  AND  FrameBoost >= 1.0  AND  bitRate < 1500.0  AND  Threads < 8.0,3,0.2517482517482518,1.0,0.144,92,7853.580709457397
+1,1043577.8124629628,54000,cyclicRefresh = 1,cyclicRefresh >= 1.0  AND  bitRate < 900.0  AND  AutoAltRef >= 1.0,4,0.3333333333333333,1.0,0.2,93,8048.934450149536
+1,6037838.847268518,43200,Threads = 8,AutoAltRef >= 1.0  AND  8.0 <= Threads < 10.0  AND  bitRate < 1200.0  AND  lagInFrames < 12.0,2,0.3333333333333333,1.0,0.2,94,6847.264122724533
+1,2103392.384212963,43200,Threads = 8,0.0 <= complexity < 1.0  AND  8.0 <= Threads < 10.0  AND  bitRate < 1200.0  AND  TileColumns >= 3.0  AND  cpuUsed >= 2.0,4,0.3870967741935484,1.0,0.24,95,6757.247935295105
+2,4836581.762833334,18000,variance = 1 AND variableBitrate = 1,variance >= 1.0  AND  variableBitrate >= 0.5  AND  0.0 <= FrameBoost < 1.0,1,0.6666666666666666,1.0,0.5,95,7877.069079875946
+1,2111260.8282962963,54000,off = 1,off >= 1.0  AND  0.0 <= lossless < 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= constrainedQuality < 0.5,3,0.2857142857142857,1.0,0.1666666666666666,96,7602.258847236633
+1,2296115.7873333334,54000,cyclicRefresh = 1,cyclicRefresh >= 1.0  AND  0.0 <= FrameBoost < 1.0  AND  cpuUsed >= 4.0  AND  0.0 <= AutoAltRef < 1.0,3,0.2608695652173913,1.0,0.15,97,8099.227942466736
+1,6503969.19974537,43200,bitRate = 900,0.0 <= complexity < 1.0  AND  900.0 <= bitRate < 1200.0  AND  lagInFrames < 12.0  AND  TileColumns >= 1.5,4,0.5,1.0,0.3333333333333333,98,6925.022352218628
+1,1323732.243759259,54000,cyclicRefresh = 1,cyclicRefresh >= 1.0  AND  lagInFrames < 8.0  AND  bitRate < 1500.0  AND  Threads >= 6.0,4,0.2758620689655173,1.0,0.16,99,7951.728394508362

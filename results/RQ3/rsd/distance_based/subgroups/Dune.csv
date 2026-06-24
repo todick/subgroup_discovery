@@ -1,0 +1,16 @@
+rule,sg_samples,sg_coverage,rule_num_predicates,rule_features_used
+PreSmoothing < 2.0  AND  PostSmooting < 2.0  AND  0.0 <= cells_50 < 1.0,120,0.052083333333333336,3,"['cells_50', 'PreSmoothing', 'PostSmooting']"
+GradientSolver >= 1.0  AND  PostSmooting >= 4.0  AND  PreSmoothing >= 3.0  AND  0.0 <= cells_54 < 1.0,120,0.052083333333333336,4,"['cells_54', 'PreSmoothing', 'PostSmooting', 'GradientSolver']"
+cells_53 >= 1.0  AND  PostSmooting >= 3.0  AND  0.0 <= GradientSolver < 1.0  AND  PreSmoothing < 6.0,144,0.0625,4,"['GradientSolver', 'PreSmoothing', 'PostSmooting', 'cells_53']"
+cells_54 >= 1.0  AND  PostSmooting >= 2.0  AND  0.0 <= GradientSolver < 1.0  AND  0.0 <= BiCGSTABSolver < 1.0  AND  PreSmoothing >= 1.0,120,0.052083333333333336,5,"['cells_54', 'BiCGSTABSolver', 'GradientSolver', 'PreSmoothing', 'PostSmooting']"
+0.0 <= LoopSolver < 1.0  AND  2.0 <= PostSmooting < 5.0  AND  1.0 <= PreSmoothing < 5.0  AND  0.0 <= cells_55 < 1.0  AND  0.0 <= cells_54 < 1.0,288,0.125,5,"['cells_54', 'cells_55', 'LoopSolver', 'PreSmoothing', 'PostSmooting']"
+3.0 <= PostSmooting < 6.0  AND  cells_55 >= 1.0  AND  0.0 <= GradientSolver < 1.0,126,0.0546875,3,"['cells_55', 'PostSmooting', 'GradientSolver']"
+PostSmooting >= 6.0  AND  0.0 <= cells_55 < 1.0  AND  0.0 <= cells_54 < 1.0  AND  PreSmoothing < 6.0,192,0.08333333333333333,4,"['PreSmoothing', 'cells_54', 'cells_55', 'PostSmooting']"
+PostSmooting >= 3.0  AND  0.0 <= cells_55 < 1.0  AND  0.0 <= cells_54 < 1.0  AND  0.0 <= cells_53 < 1.0  AND  0.0 <= SeqSOR < 1.0,336,0.14583333333333334,5,"['cells_54', 'SeqSOR', 'cells_55', 'PostSmooting', 'cells_53']"
+0.0 <= LoopSolver < 1.0  AND  2.0 <= PostSmooting < 5.0  AND  PreSmoothing < 5.0  AND  0.0 <= cells_50 < 1.0  AND  0.0 <= CGSolver < 1.0,300,0.13020833333333334,5,"['CGSolver', 'cells_50', 'LoopSolver', 'PreSmoothing', 'PostSmooting']"
+0.0 <= cells_55 < 1.0  AND  PostSmooting >= 2.0  AND  0.0 <= cells_54 < 1.0  AND  0.0 <= cells_53 < 1.0  AND  0.0 <= cells_52 < 1.0,560,0.24305555555555555,5,"['cells_54', 'cells_55', 'cells_52', 'PostSmooting', 'cells_53']"
+0.0 <= LoopSolver < 1.0  AND  PostSmooting < 1.0  AND  0.0 <= cells_50 < 1.0  AND  0.0 <= cells_51 < 1.0,144,0.0625,4,"['cells_50', 'cells_51', 'PostSmooting', 'LoopSolver']"
+0.0 <= GradientSolver < 1.0  AND  2.0 <= PostSmooting < 6.0  AND  PreSmoothing >= 2.0,720,0.3125,3,"['PreSmoothing', 'PostSmooting', 'GradientSolver']"
+0.0 <= CGSolver < 1.0  AND  0.0 <= SeqSOR < 1.0  AND  PreSmoothing >= 2.0  AND  0.0 <= LoopSolver < 1.0,420,0.18229166666666666,4,"['CGSolver', 'PreSmoothing', 'SeqSOR', 'LoopSolver']"
+0.0 <= cells_50 < 1.0  AND  0.0 <= cells_51 < 1.0  AND  PostSmooting < 2.0  AND  0.0 <= cells_52 < 1.0,312,0.13541666666666666,4,"['cells_52', 'cells_50', 'cells_51', 'PostSmooting']"
+PostSmooting >= 3.0,1344,0.5833333333333334,1,['PostSmooting']

@@ -1,0 +1,6 @@
+rule,sg_samples,sg_coverage,rule_num_predicates,rule_features_used
+FPAQ==0 AND TPAQX==1 AND Huffman==0 AND blocksize==1000 AND TPAQ==0,219,0.05325875486381323,5,"['TPAQ', 'Huffman', 'TPAQX', 'blocksize', 'FPAQ']"
+FPAQ==0 AND TPAQX==1 AND ANS1==0 AND blocksize==1000 AND TPAQ==0,219,0.05325875486381323,5,"['TPAQ', 'ANS1', 'TPAQX', 'blocksize', 'FPAQ']"
+FPAQ==0 AND TPAQX==1 AND ANS0==0 AND blocksize==1000 AND TPAQ==0,219,0.05325875486381323,5,"['blocksize', 'TPAQX', 'FPAQ', 'TPAQ', 'ANS0']"
+FPAQ==0 AND TPAQX==1 AND Range==0 AND blocksize==1000 AND TPAQ==0,219,0.05325875486381323,5,"['blocksize', 'TPAQX', 'Range', 'FPAQ', 'TPAQ']"
+FPAQ==0 AND TPAQX==1 AND CM==0 AND blocksize==1000 AND TPAQ==0,219,0.05325875486381323,5,"['CM', 'TPAQ', 'TPAQX', 'blocksize', 'FPAQ']"

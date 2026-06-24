@@ -1,0 +1,6 @@
+rule,sg_samples,sg_coverage,rule_num_predicates,rule_features_used
+UseAdaptiveSizePolicy==1 AND NewRatio==32 AND SurvivorRatio==1,2304,0.011904761904761904,3,"['NewRatio', 'SurvivorRatio', 'UseAdaptiveSizePolicy']"
+UseAdaptiveSizePolicy==1 AND NewRatio==32,16128,0.08333333333333333,2,"['NewRatio', 'UseAdaptiveSizePolicy']"
+UseAdaptiveSizePolicy==1 AND NewRatio==32 AND SurvivorRatio==1 AND TenuredGenerationSizeSupplement_50==0,1536,0.007936507936507936,4,"['TenuredGenerationSizeSupplement_50', 'NewRatio', 'SurvivorRatio', 'UseAdaptiveSizePolicy']"
+UseAdaptiveSizePolicy==1 AND NewRatio==32 AND SurvivorRatio==1 AND TenuredGenerationSizeSupplement_90==0,1536,0.007936507936507936,4,"['TenuredGenerationSizeSupplement_90', 'NewRatio', 'SurvivorRatio', 'UseAdaptiveSizePolicy']"
+UseAdaptiveSizePolicy==1 AND NewRatio==32 AND SurvivorRatio==1 AND TenuredGenerationSizeSupplement_70==0,1536,0.007936507936507936,4,"['TenuredGenerationSizeSupplement_70', 'NewRatio', 'SurvivorRatio', 'UseAdaptiveSizePolicy']"

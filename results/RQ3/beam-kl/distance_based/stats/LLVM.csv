@@ -1,0 +1,2 @@
+num_features,num_samples,sgs_unique,sgs_mean_jaccard,sgs_mean_overlap_coefficient,coverage_mean,coverage_total,rule_features_used,rule_feature_frequency,rule_num_features,rule_length_mean,rule_length_max,rule_length_min,runtime
+10,1024,5,0.4,0.7,0.0375,0.0625,"['sccp', 'ipsccp', 'inline', 'simplifycfg', 'print_used_types', 'instcombine', 'gvn', 'licm']","[('sccp', 1), ('ipsccp', 1), ('inline', 5), ('simplifycfg', 1), ('print_used_types', 1), ('instcombine', 5), ('gvn', 5), ('licm', 5)]",8,4.8,5.0,4.0,0.31323671340942383

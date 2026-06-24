@@ -1,0 +1,6 @@
+rule,sg_samples,sg_coverage,rule_num_predicates,rule_features_used
+NOT compressionZpaq AND NOT compressionLrzip AND NOT compressionBzip2 AND NOT compressionGzip,144,0.3333333333333333,4,"['compressionLrzip', 'compressionGzip', 'compressionBzip2', 'compressionZpaq']"
+compressionZpaq AND level > 7.5,16,0.037037037037037035,2,"['level', 'compressionZpaq']"
+NOT compressionZpaq AND NOT compressionLrzip AND NOT compressionBzip2 AND NOT compressionGzip AND NOT encryption,72,0.16666666666666666,5,"['compressionBzip2', 'encryption', 'compressionLrzip', 'compressionZpaq', 'compressionGzip']"
+NOT compressionZpaq AND NOT compressionLrzip AND NOT compressionBzip2 AND NOT compressionGzip AND encryption,72,0.16666666666666666,5,"['compressionBzip2', 'encryption', 'compressionLrzip', 'compressionZpaq', 'compressionGzip']"
+compressionZpaq AND level > 7.5 AND NOT disableCompressibilityTesting,8,0.018518518518518517,3,"['disableCompressibilityTesting', 'level', 'compressionZpaq']"

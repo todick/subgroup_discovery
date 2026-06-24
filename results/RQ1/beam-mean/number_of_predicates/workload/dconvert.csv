@@ -1,0 +1,401 @@
+n_conditions,sg_mean,sg_cardinality,sg_rule,best_rule,best_rule_idx,f1,precision,recall,seed,runtime
+1,38.90954221401543,830,win = 1,android==0 AND ios==0 AND web==0,0,1.0,1.0,1.0,0,0.7996683120727539
+2,28.639775700005067,1044,androidIncludeLdpiTvdpi = 1 AND threads = 90,androidIncludeLdpiTvdpi==0 AND gif==0,0,0.0,0.0,0.0,0,1.2463784217834473
+3,25.382404637128,528,android = 1 AND floor = 1 AND threads = 10,round==1 AND jpeg==0,0,0.0,0.0,0.0,0,1.2436203956604004
+4,20.25078119844409,471,scaleIsHeightDp = 1 AND antiAliasing = 1 AND skipUpscaling = 1 AND threads = 90,threads==10 AND bmp==0,0,0.0,0.0,0.0,0,1.1215088367462158
+1,31.62018187964905,830,win = 1,iosCreateImagesetFolders==0 AND antiAliasing==1 AND skipUpscaling==0 AND round==1 AND threads==90 AND ios==1 AND scaleIsHeightDp==1,0,0.0,0.0,0.0,1,1.566948175430298
+2,55.41701158705251,757,androidMipmapInsteadOfDrawable = 1 AND threads = 10,threads==10 AND androidMipmapInsteadOfDrawable==1,0,1.0,1.0,1.0,1,1.0890507698059082
+3,45.31787923119015,509,scaleIsHeightDp = 1 AND floor = 1 AND threads = 10,threads==10 AND scaleIsHeightDp==1 AND floor==1,0,1.0,1.0,1.0,1,1.3742411136627195
+4,23.525330779773725,409,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND antiAliasing = 1 AND threads = 10,win==0 AND bmp==0 AND gif==0 AND androidMipmapInsteadOfDrawable==0 AND scaleIsHeightDp==1 AND jpeg==0 AND floor==1,0,0.0,0.0,0.0,1,1.4675016403198242
+1,45.70279557098409,752,web = 1,web==1,0,1.0,1.0,1.0,10,0.7853221893310547
+2,55.51697761760106,1802,android = 1 AND androidMipmapInsteadOfDrawable = 1,androidMipmapInsteadOfDrawable==1,0,1.0,1.0,1.0,10,0.9164376258850098
+3,40.8647215908794,699,android = 1 AND ceil = 1 AND threads = 90,round==0 AND threads==90 AND android==1 AND floor==0,0,1.0,1.0,1.0,10,1.4805903434753418
+4,33.82799384778639,373,scaleIsHeightDp = 1 AND antiAliasing = 1 AND skipUpscaling = 1 AND threads = 10,iosCreateImagesetFolders==0 AND win==0 AND skipUpscaling==0 AND png==0 AND round==0 AND bmp==0 AND web==0,0,0.0,0.0,0.0,10,1.4890570640563965
+1,52.79812480434995,1802,androidMipmapInsteadOfDrawable = 1,androidMipmapInsteadOfDrawable==1,0,1.0,1.0,1.0,11,0.9076550006866456
+2,19.224640204414037,933,scaleIsHeightDp = 1 AND androidIncludeLdpiTvdpi = 1,androidIncludeLdpiTvdpi==0,0,0.0,0.0,0.0,11,0.9498124122619628
+3,30.546035909394185,899,android = 1 AND antiAliasing = 1 AND skipUpscaling = 1,android==0 AND web==0,0,0.0,0.0,0.0,11,1.0749244689941406
+4,24.80985879634644,346,android = 1 AND scaleIsHeightDp = 1 AND jpeg = 1 AND threads = 90,win==0 AND skipUpscaling==0 AND androidIncludeLdpiTvdpi==0 AND png==0 AND scaleIsHeightDp==0 AND jpeg==0 AND floor==0,0,0.0,0.0,0.0,11,1.430924892425537
+1,31.65131490735092,1777,androidIncludeLdpiTvdpi = 1,androidIncludeLdpiTvdpi==0 AND bmp==0,0,0.0,0.0,0.0,12,1.0611307621002195
+2,38.61324014673342,649,ios = 1 AND threads = 10,threads==10 AND ios==1,0,1.0,1.0,1.0,12,1.0479867458343506
+3,23.599192112471208,485,scaleIsHeightDp = 1 AND skipUpscaling = 1 AND androidIncludeLdpiTvdpi = 1,androidIncludeLdpiTvdpi==0 AND bmp==0,0,0.0,0.0,0.0,12,1.3724861145019531
+4,23.22207609688833,394,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND scaleIsHeightDp = 1 AND threads = 10,skipUpscaling==1 AND bmp==0 AND androidMipmapInsteadOfDrawable==0 AND web==0 AND jpeg==0 AND floor==0,0,0.0,0.0,0.0,12,1.2559185028076172
+1,37.32276499708502,1079,bmp = 1,win==1 AND skipUpscaling==0 AND ceil==1 AND threads==90 AND jpeg==1,0,0.0,0.0,0.0,13,1.4227428436279297
+2,57.38815747240927,622,floor = 1 AND androidIncludeLdpiTvdpi = 1,androidIncludeLdpiTvdpi==1 AND floor==1,0,1.0,1.0,1.0,13,0.9808802604675292
+3,34.47792539806531,615,android = 1 AND scaleIsHeightDp = 1 AND floor = 1,ceil==0 AND threads==90 AND bmp==1 AND web==1 AND floor==0,0,0.0,0.0,0.0,13,1.455122709274292
+4,29.83157802682364,482,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND scaleIsHeightDp = 1 AND antiAliasing = 1,antiAliasing==0 AND androidIncludeLdpiTvdpi==0 AND png==0 AND round==0 AND threads==90 AND gif==0 AND android==1,0,0.0,0.0,0.0,13,1.5275421142578125
+1,24.11258045522668,1802,androidMipmapInsteadOfDrawable = 1,androidMipmapInsteadOfDrawable==0,0,0.0,0.0,0.0,14,0.9649252891540528
+2,31.66527159954755,355,bmp = 1 AND ceil = 1,win==1 AND antiAliasing==0 AND skipUpscaling==0 AND png==0 AND round==1 AND jpeg==0,0,0.0,0.0,0.0,14,1.489607334136963
+3,29.14511776678896,371,jpeg = 1 AND antiAliasing = 1 AND ceil = 1,win==0 AND round==0 AND threads==90 AND bmp==1 AND android==0,0,0.0,0.0,0.0,14,1.3247449398040771
+4,42.44873923461982,491,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND antiAliasing = 1 AND skipUpscaling = 1,antiAliasing==1 AND skipUpscaling==1 AND androidMipmapInsteadOfDrawable==1,0,1.0,1.0,1.0,14,1.2471368312835691
+1,26.444063686714745,1777,androidIncludeLdpiTvdpi = 1,androidIncludeLdpiTvdpi==0,0,0.0,0.0,0.0,15,1.033317804336548
+2,51.2462793221972,402,floor = 1 AND png = 1,png==1 AND floor==1,0,1.0,1.0,1.0,15,1.0003430843353271
+3,44.29841644866552,345,androidMipmapInsteadOfDrawable = 1 AND scaleIsHeightDp = 1 AND jpeg = 1,androidMipmapInsteadOfDrawable==1 AND scaleIsHeightDp==1 AND jpeg==1,0,1.0,1.0,1.0,15,1.214735507965088
+4,28.303777009914803,392,android = 1 AND scaleIsHeightDp = 1 AND androidIncludeLdpiTvdpi = 1 AND threads = 10,iosCreateImagesetFolders==0 AND win==0 AND antiAliasing==1 AND android==0 AND scaleIsHeightDp==0 AND jpeg==0 AND floor==0,0,0.0,0.0,0.0,15,1.368959665298462
+1,28.39849225893411,752,web = 1,win==0 AND antiAliasing==1 AND png==0 AND threads==90 AND web==0 AND jpeg==0,0,0.0,0.0,0.0,16,1.5446875095367432
+2,57.20823782289459,571,androidMipmapInsteadOfDrawable = 1 AND ceil = 1,round==0 AND androidMipmapInsteadOfDrawable==1 AND floor==0,0,1.0,1.0,1.0,16,0.994398832321167
+3,42.571192387618,504,android = 1 AND round = 1 AND threads = 10,round==1 AND threads==10 AND android==1,0,1.0,1.0,1.0,16,1.3106606006622314
+4,56.34996320857972,400,android = 1 AND antiAliasing = 1 AND androidIncludeLdpiTvdpi = 1 AND threads = 10,antiAliasing==1 AND androidIncludeLdpiTvdpi==1 AND threads==10,0,1.0,1.0,1.0,16,1.2880902290344238
+1,52.62906275278339,1777,androidIncludeLdpiTvdpi = 1,androidIncludeLdpiTvdpi==1,0,1.0,1.0,1.0,17,0.9155645370483398
+2,18.19412349829544,649,ios = 1 AND threads = 10,gif==0 AND ios==0,0,0.0,0.0,0.0,17,1.0704827308654783
+3,31.470918440608266,665,jpeg = 1 AND antiAliasing = 1 AND threads = 90,skipUpscaling==0 AND androidIncludeLdpiTvdpi==0 AND ceil==0 AND gif==0 AND scaleIsHeightDp==1 AND jpeg==0,0,0.0,0.0,0.0,17,1.6439528465270996
+4,34.704724141680856,339,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND jpeg = 1 AND skipUpscaling = 1,skipUpscaling==1 AND png==0 AND bmp==0 AND gif==0 AND android==1 AND androidMipmapInsteadOfDrawable==0 AND floor==0,0,0.0,0.0,0.0,17,1.5041968822479248
+1,37.24500282112919,1648,ios = 1,antiAliasing==0 AND skipUpscaling==1 AND androidIncludeLdpiTvdpi==1 AND png==1 AND threads==90 AND scaleIsHeightDp==0,0,0.0,0.0,0.0,18,1.4589579105377195
+2,32.04807356420263,1029,skipUpscaling = 1 AND round = 1,antiAliasing==1 AND skipUpscaling==0 AND androidIncludeLdpiTvdpi==0 AND round==1 AND bmp==0 AND gif==0 AND jpeg==0,0,0.0,0.0,0.0,18,1.5147485733032229
+3,40.69500929259919,631,scaleIsHeightDp = 1 AND jpeg = 1 AND antiAliasing = 1,antiAliasing==1 AND scaleIsHeightDp==1 AND jpeg==1,0,1.0,1.0,1.0,18,1.3848726749420166
+4,24.806608236539024,508,android = 1 AND antiAliasing = 1 AND skipUpscaling = 1 AND threads = 90,antiAliasing==0 AND threads==90 AND jpeg==0 AND floor==1,0,0.0,0.0,0.0,18,1.3944952487945557
+1,21.923606017124165,752,web = 1,web==0,0,0.0,0.0,0.0,19,0.9902989864349364
+2,48.20282846913321,1281,skipUpscaling = 1 AND threads = 10,skipUpscaling==1 AND threads==10,0,1.0,1.0,1.0,19,1.0871198177337646
+3,22.37223596255368,373,scaleIsHeightDp = 1 AND jpeg = 1 AND ceil = 1,skipUpscaling==1 AND gif==0 AND ios==1 AND scaleIsHeightDp==0 AND floor==0,0,0.0,0.0,0.0,19,1.447345495223999
+4,22.5446847852809,493,android = 1 AND scaleIsHeightDp = 1 AND antiAliasing = 1 AND androidIncludeLdpiTvdpi = 1,iosCreateImagesetFolders==0 AND antiAliasing==0 AND jpeg==0,0,0.0,0.0,0.0,19,1.1865484714508057
+1,37.36792578581424,1648,ios = 1,antiAliasing==0 AND skipUpscaling==0 AND gif==1 AND androidMipmapInsteadOfDrawable==1 AND floor==1,0,0.0,0.0,0.0,2,1.410292148590088
+2,43.382573087170215,378,bmp = 1 AND floor = 1,bmp==1 AND floor==1,0,1.0,1.0,1.0,2,1.0028541088104248
+3,39.472996119828366,922,antiAliasing = 1 AND skipUpscaling = 1 AND threads = 90,antiAliasing==1 AND skipUpscaling==1 AND threads==90,0,1.0,1.0,1.0,2,1.3009941577911377
+4,21.330403111898505,354,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND jpeg = 1 AND threads = 90,threads==10 AND scaleIsHeightDp==0,0,0.0,0.0,0.0,2,1.2118608951568604
+1,30.625146307687366,1079,bmp = 1,png==0 AND bmp==0,0,0.0,0.0,0.0,20,1.1812498569488523
+2,22.57880269320116,1302,round = 1 AND threads = 90,png==0 AND round==0,0,0.0,0.0,0.0,20,0.9865665435791016
+3,50.2267096703594,405,ios = 1 AND scaleIsHeightDp = 1 AND antiAliasing = 1,antiAliasing==1 AND ios==1 AND scaleIsHeightDp==1,0,1.0,1.0,1.0,20,1.3084650039672852
+4,35.16565183759701,471,scaleIsHeightDp = 1 AND antiAliasing = 1 AND skipUpscaling = 1 AND threads = 90,antiAliasing==0 AND ceil==0 AND threads==10 AND bmp==0 AND gif==0 AND android==0,0,0.0,0.0,0.0,20,1.350372076034546
+1,46.89478332924693,752,web = 1,web==1,0,1.0,1.0,1.0,21,0.7717025279998779
+2,53.18049630204589,558,bmp = 1 AND android = 1,bmp==1 AND android==1,0,1.0,1.0,1.0,21,0.9277822971343994
+3,26.791448690176694,733,android = 1 AND androidIncludeLdpiTvdpi = 1 AND threads = 10,androidIncludeLdpiTvdpi==0 AND png==0,0,0.0,0.0,0.0,21,1.2200345993041992
+4,23.146270090059204,526,android = 1 AND scaleIsHeightDp = 1 AND antiAliasing = 1 AND threads = 90,png==0 AND android==0,0,0.0,0.0,0.0,21,1.1565837860107422
+1,23.641002024051964,752,web = 1,web==0,0,0.0,0.0,0.0,22,0.9657037258148192
+2,50.20271892438325,1322,ceil = 1 AND threads = 90,round==0 AND threads==90 AND floor==0,0,1.0,1.0,1.0,22,1.1174702644348145
+3,54.53770553607045,363,android = 1 AND png = 1 AND threads = 90,png==1 AND threads==90 AND android==1,0,1.0,1.0,1.0,22,1.2054870128631592
+4,37.545702309462285,523,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND androidIncludeLdpiTvdpi = 1 AND threads = 90,win==1 AND antiAliasing==0 AND skipUpscaling==1 AND round==1 AND bmp==0 AND scaleIsHeightDp==1 AND jpeg==0,0,0.0,0.0,0.0,22,1.3141961097717283
+1,48.99215400878057,832,iosCreateImagesetFolders = 1,iosCreateImagesetFolders==1,0,1.0,1.0,1.0,23,0.8157265186309814
+2,33.1037117056424,1813,android = 1 AND antiAliasing = 1,skipUpscaling==0 AND png==0 AND ceil==0 AND android==0 AND web==0,0,0.0,0.0,0.0,23,1.5163064002990725
+3,43.28256733292152,1044,android = 1 AND androidIncludeLdpiTvdpi = 1 AND threads = 90,androidIncludeLdpiTvdpi==1 AND threads==90,0,1.0,1.0,1.0,23,1.1905744075775146
+4,45.47562602201618,373,scaleIsHeightDp = 1 AND antiAliasing = 1 AND skipUpscaling = 1 AND threads = 10,antiAliasing==1 AND skipUpscaling==1 AND threads==10 AND scaleIsHeightDp==1,0,1.0,1.0,1.0,23,1.4186882972717283
+1,56.24283042004121,830,win = 1,android==0 AND ios==0 AND web==0,0,1.0,1.0,1.0,24,0.7859389781951904
+2,21.36757433845821,559,ios = 1 AND jpeg = 1,ios==0,0,0.0,0.0,0.0,24,1.0157430171966553
+3,27.374739959060765,493,antiAliasing = 1 AND round = 1 AND threads = 10,antiAliasing==1 AND threads==90 AND gif==0 AND scaleIsHeightDp==0,0,0.0,0.0,0.0,24,1.6042487621307373
+4,57.25608356682282,354,android = 1 AND antiAliasing = 1 AND round = 1 AND threads = 90,antiAliasing==1 AND round==1 AND threads==90 AND android==1,0,1.0,1.0,1.0,24,1.4365708827972412
+1,42.24205444211075,830,win = 1,android==0 AND ios==0 AND web==0,0,1.0,1.0,1.0,25,0.8041298389434814
+2,52.86888156528057,562,ios = 1 AND round = 1,round==1 AND ios==1,0,1.0,1.0,1.0,25,0.9793331623077391
+3,51.42162264857815,598,android = 1 AND scaleIsHeightDp = 1 AND round = 1,round==1 AND android==1 AND scaleIsHeightDp==1,0,1.0,1.0,1.0,25,1.5085065364837646
+4,35.10319671528239,491,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND antiAliasing = 1 AND skipUpscaling = 1,win==0 AND ceil==1 AND threads==90 AND gif==1 AND scaleIsHeightDp==1 AND web==0,0,0.0211267605633802,0.0779220779220779,0.0122199592668024,25,1.3918991088867188
+1,54.95920773596597,1802,androidMipmapInsteadOfDrawable = 1,androidMipmapInsteadOfDrawable==1,0,1.0,1.0,1.0,26,0.948000431060791
+2,51.18341698360821,733,androidIncludeLdpiTvdpi = 1 AND threads = 10,androidIncludeLdpiTvdpi==1 AND threads==10,0,1.0,1.0,1.0,26,1.1356654167175293
+3,56.74723520927436,733,android = 1 AND androidIncludeLdpiTvdpi = 1 AND threads = 10,androidIncludeLdpiTvdpi==1 AND threads==10,0,1.0,1.0,1.0,26,1.1905994415283203
+4,52.1520055253173,509,android = 1 AND skipUpscaling = 1 AND androidIncludeLdpiTvdpi = 1 AND threads = 90,skipUpscaling==1 AND androidIncludeLdpiTvdpi==1 AND threads==90,0,1.0,1.0,1.0,26,1.348951816558838
+1,25.733135609195745,752,web = 1,web==0,0,0.0,0.0,0.0,27,1.071568489074707
+2,26.630470010746773,733,androidIncludeLdpiTvdpi = 1 AND threads = 10,androidIncludeLdpiTvdpi==0 AND gif==0,0,0.0,0.0,0.0,27,1.0895884037017822
+3,18.879766395225555,933,android = 1 AND scaleIsHeightDp = 1 AND androidIncludeLdpiTvdpi = 1,androidIncludeLdpiTvdpi==0,0,0.0,0.0,0.0,27,1.0697791576385498
+4,24.887689575361755,517,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND skipUpscaling = 1 AND threads = 90,antiAliasing==1 AND round==0 AND threads==90 AND ios==1 AND jpeg==0 AND floor==0,0,0.0,0.0,0.0,27,1.4479646682739258
+1,53.62384524746189,1648,ios = 1,ios==1,0,1.0,1.0,1.0,28,0.8754444122314453
+2,53.51526048858205,592,ios = 1 AND floor = 1,ios==1 AND floor==1,0,1.0,1.0,1.0,28,0.9568827152252196
+3,47.82821972974226,924,android = 1 AND scaleIsHeightDp = 1 AND antiAliasing = 1,antiAliasing==1 AND android==1 AND scaleIsHeightDp==1,0,1.0,1.0,1.0,28,1.5974278450012207
+4,43.01428185673616,493,android = 1 AND scaleIsHeightDp = 1 AND antiAliasing = 1 AND androidIncludeLdpiTvdpi = 1,antiAliasing==1 AND androidIncludeLdpiTvdpi==1 AND scaleIsHeightDp==1,0,1.0,1.0,1.0,28,1.2346501350402832
+1,38.34512366145919,752,web = 1,web==1,0,1.0,1.0,1.0,29,0.7956593036651611
+2,39.297442061952935,586,androidIncludeLdpiTvdpi = 1 AND round = 1,androidIncludeLdpiTvdpi==1 AND round==1,0,1.0,1.0,1.0,29,0.9362878799438475
+3,46.21492846875,433,jpeg = 1 AND round = 1 AND threads = 90,round==1 AND threads==90 AND jpeg==1,0,1.0,1.0,1.0,29,1.458956003189087
+4,51.28111536929083,386,android = 1 AND scaleIsHeightDp = 1 AND skipUpscaling = 1 AND threads = 10,skipUpscaling==1 AND threads==10 AND android==1 AND scaleIsHeightDp==1,0,1.0,1.0,1.0,29,1.4289402961730957
+1,27.77610764377865,982,gif = 1,gif==0,0,0.0,0.0,0.0,3,1.08803129196167
+2,41.70489725128654,1598,scaleIsHeightDp = 1 AND skipUpscaling = 1,skipUpscaling==1 AND scaleIsHeightDp==1,0,1.0,1.0,1.0,3,1.1016685962677002
+3,25.411918788130578,540,androidMipmapInsteadOfDrawable = 1 AND antiAliasing = 1 AND threads = 90,win==0 AND png==0 AND ceil==0 AND threads==10 AND gif==0 AND ios==0 AND scaleIsHeightDp==0,0,0.0,0.0,0.0,3,1.3474066257476809
+4,37.72618195653386,347,android = 1 AND floor = 1 AND androidIncludeLdpiTvdpi = 1 AND threads = 90,ceil==1 AND android==0 AND ios==0 AND scaleIsHeightDp==0 AND jpeg==1,0,0.0,0.0,0.0,3,1.189730882644653
+1,30.90471695211013,830,win = 1,iosCreateImagesetFolders==0 AND win==0 AND ceil==0 AND bmp==0 AND jpeg==0,0,0.0,0.0,0.0,30,1.5458338260650637
+2,34.164064070329964,1302,round = 1 AND threads = 90,win==0 AND png==0 AND ceil==0 AND threads==10 AND bmp==0 AND scaleIsHeightDp==1 AND jpeg==0,0,0.0,0.0,0.0,30,1.498865842819214
+3,49.00905680789615,411,jpeg = 1 AND floor = 1 AND antiAliasing = 1,antiAliasing==1 AND jpeg==1 AND floor==1,0,1.0,1.0,1.0,30,1.3831474781036377
+4,56.25906960688536,400,android = 1 AND antiAliasing = 1 AND androidIncludeLdpiTvdpi = 1 AND threads = 10,antiAliasing==1 AND androidIncludeLdpiTvdpi==1 AND threads==10,0,1.0,1.0,1.0,30,1.3286185264587402
+1,29.38804330762165,1648,ios = 1,ios==0,0,0.0,0.0,0.0,31,1.0290672779083252
+2,21.209821227746712,1044,androidIncludeLdpiTvdpi = 1 AND threads = 90,androidIncludeLdpiTvdpi==0,0,0.0,0.0,0.0,31,0.9252867698669434
+3,41.796269023213085,435,android = 1 AND ceil = 1 AND threads = 10,round==0 AND threads==10 AND android==1 AND floor==0,0,1.0,1.0,1.0,31,1.4318854808807373
+4,49.81810000938334,509,android = 1 AND skipUpscaling = 1 AND androidIncludeLdpiTvdpi = 1 AND threads = 90,skipUpscaling==1 AND androidIncludeLdpiTvdpi==1 AND threads==90,0,1.0,1.0,1.0,31,1.2689566612243652
+1,22.82847240021509,832,iosCreateImagesetFolders = 1,iosCreateImagesetFolders==0,0,0.0,0.0,0.0,32,0.9827272891998292
+2,29.83643990490996,497,bmp = 1 AND skipUpscaling = 1,skipUpscaling==0 AND gif==0 AND ios==0 AND scaleIsHeightDp==1 AND jpeg==0,0,0.0,0.0,0.0,32,1.699402093887329
+3,41.22082002634624,616,android = 1 AND antiAliasing = 1 AND round = 1,antiAliasing==1 AND round==1 AND android==1,0,1.0,1.0,1.0,32,1.3180530071258545
+4,39.94511160399584,394,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND skipUpscaling = 1 AND threads = 10,skipUpscaling==1 AND threads==10 AND androidMipmapInsteadOfDrawable==1,0,1.0,1.0,1.0,32,1.3140709400177002
+1,34.537780681382486,1777,androidIncludeLdpiTvdpi = 1,iosCreateImagesetFolders==0 AND antiAliasing==1 AND png==0 AND threads==90 AND android==0 AND scaleIsHeightDp==1,0,0.0,0.0,0.0,33,1.5025033950805664
+2,39.92978028961207,510,iosCreateImagesetFolders = 1 AND threads = 90,iosCreateImagesetFolders==1 AND threads==90,0,1.0,1.0,1.0,33,0.9808733463287354
+3,40.282603690760354,394,androidMipmapInsteadOfDrawable = 1 AND scaleIsHeightDp = 1 AND threads = 10,threads==10 AND androidMipmapInsteadOfDrawable==1 AND scaleIsHeightDp==1,0,1.0,1.0,1.0,33,1.3585522174835205
+4,41.52198169002168,509,android = 1 AND skipUpscaling = 1 AND androidIncludeLdpiTvdpi = 1 AND threads = 90,skipUpscaling==1 AND androidIncludeLdpiTvdpi==1 AND threads==90,0,1.0,1.0,1.0,33,1.272747039794922
+1,48.86015104971222,832,iosCreateImagesetFolders = 1,iosCreateImagesetFolders==1,0,1.0,1.0,1.0,34,0.7892262935638428
+2,32.17517200641996,1045,androidMipmapInsteadOfDrawable = 1 AND threads = 90,win==0 AND antiAliasing==1 AND androidIncludeLdpiTvdpi==0 AND png==0 AND threads==10 AND web==0 AND jpeg==0,0,0.0,0.0,0.0,34,1.5084500312805176
+3,29.999817795734035,619,floor = 1 AND skipUpscaling = 1 AND threads = 90,skipUpscaling==0 AND gif==0 AND web==0 AND jpeg==0,0,0.0,0.0,0.0,34,1.3768296241760254
+4,28.863384076971087,394,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND scaleIsHeightDp = 1 AND threads = 10,iosCreateImagesetFolders==1 AND skipUpscaling==0 AND round==1 AND bmp==1,0,0.0,0.0,0.0,34,1.4112401008605957
+1,39.02526543775878,982,gif = 1,gif==1,0,1.0,1.0,1.0,35,0.85866379737854
+2,39.06478446360967,1949,scaleIsHeightDp = 1 AND threads = 90,threads==90 AND scaleIsHeightDp==1,0,1.0,1.0,1.0,35,1.1228423118591309
+3,42.68382215484935,493,antiAliasing = 1 AND round = 1 AND threads = 10,antiAliasing==1 AND round==1 AND threads==10,0,1.0,1.0,1.0,35,1.3765416145324707
+4,45.632977372229966,508,android = 1 AND antiAliasing = 1 AND skipUpscaling = 1 AND threads = 90,antiAliasing==1 AND skipUpscaling==1 AND threads==90 AND android==1,0,1.0,1.0,1.0,35,1.483306884765625
+1,33.00174439517202,1777,androidIncludeLdpiTvdpi = 1,androidIncludeLdpiTvdpi==0 AND threads==10 AND bmp==0 AND gif==0 AND androidMipmapInsteadOfDrawable==0 AND web==0 AND jpeg==0,0,0.0,0.0,0.0,36,1.2386701107025146
+2,36.145489537070986,933,scaleIsHeightDp = 1 AND androidIncludeLdpiTvdpi = 1,antiAliasing==1 AND androidIncludeLdpiTvdpi==0 AND gif==0 AND ios==0 AND androidMipmapInsteadOfDrawable==0 AND scaleIsHeightDp==1 AND floor==1,0,0.0,0.0,0.0,36,1.518751621246338
+3,42.22914754780189,712,android = 1 AND skipUpscaling = 1 AND threads = 10,skipUpscaling==1 AND threads==10 AND android==1,0,1.0,1.0,1.0,36,1.3886175155639648
+4,19.956007243435373,353,android = 1 AND scaleIsHeightDp = 1 AND ceil = 1 AND threads = 90,android==0,0,0.0,0.0,0.0,36,1.022077560424805
+1,49.38298534300168,1079,bmp = 1,bmp==1,0,1.0,1.0,1.0,37,0.8899927139282227
+2,33.615995097479534,1970,antiAliasing = 1 AND threads = 90,antiAliasing==1 AND threads==10 AND bmp==0 AND floor==0,0,0.0,0.0,0.0,37,1.4666814804077148
+3,38.44613559926792,650,scaleIsHeightDp = 1 AND ceil = 1 AND threads = 90,win==0 AND ceil==1 AND threads==90 AND gif==0 AND jpeg==0,0,0.4652278177458034,0.4841930116472546,0.4476923076923076,37,1.416625738143921
+4,25.425591711209357,341,android = 1 AND scaleIsHeightDp = 1 AND jpeg = 1 AND antiAliasing = 1,androidIncludeLdpiTvdpi==1 AND round==0 AND threads==90 AND gif==0 AND scaleIsHeightDp==1 AND jpeg==0,0,0.0,0.0,0.0,37,1.511993646621704
+1,28.356933211553645,1777,androidIncludeLdpiTvdpi = 1,androidIncludeLdpiTvdpi==0,0,0.0,0.0,0.0,38,1.0708086490631104
+2,43.15935050632906,670,bmp = 1 AND threads = 90,threads==90 AND bmp==1,0,1.0,1.0,1.0,38,1.0819525718688965
+3,38.25298407723055,894,android = 1 AND scaleIsHeightDp = 1 AND skipUpscaling = 1,ios==0 AND scaleIsHeightDp==1 AND web==0 AND floor==0,4,0.5049292756108015,0.409312022237665,0.6588366890380313,38,1.3622667789459229
+4,43.81227964252376,386,android = 1 AND scaleIsHeightDp = 1 AND skipUpscaling = 1 AND threads = 10,skipUpscaling==1 AND threads==10 AND android==1 AND scaleIsHeightDp==1,0,1.0,1.0,1.0,38,1.4346563816070557
+1,25.45350219710765,1802,androidMipmapInsteadOfDrawable = 1,androidMipmapInsteadOfDrawable==0,0,0.0,0.0,0.0,39,0.9573919773101808
+2,36.142916359551606,1302,round = 1 AND threads = 90,skipUpscaling==1 AND ceil==0 AND threads==10 AND bmp==0 AND androidMipmapInsteadOfDrawable==0 AND web==0 AND jpeg==0,0,0.0,0.0,0.0,39,1.4122745990753174
+3,37.52911660036868,648,antiAliasing = 1 AND ceil = 1 AND threads = 90,iosCreateImagesetFolders==0 AND win==0 AND antiAliasing==0 AND round==1 AND bmp==0 AND android==0 AND scaleIsHeightDp==1,0,0.0,0.0,0.0,39,1.4641673564910889
+4,22.623501505081784,346,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND floor = 1 AND threads = 90,androidMipmapInsteadOfDrawable==0,0,0.0,0.0,0.0,39,1.209779977798462
+1,34.62536754243237,1648,ios = 1,antiAliasing==0 AND skipUpscaling==1 AND png==0 AND ceil==0 AND bmp==0 AND androidMipmapInsteadOfDrawable==1,0,0.0,0.0,0.0,4,1.4908902645111084
+2,27.806418454836667,1610,antiAliasing = 1 AND skipUpscaling = 1,skipUpscaling==0,0,0.0,0.0,0.0,4,1.0570402145385742
+3,43.07004225893615,379,androidMipmapInsteadOfDrawable = 1 AND androidIncludeLdpiTvdpi = 1 AND threads = 10,androidIncludeLdpiTvdpi==1 AND threads==10 AND androidMipmapInsteadOfDrawable==1,0,1.0,1.0,1.0,4,1.3061573505401611
+4,43.936259286485146,398,android = 1 AND scaleIsHeightDp = 1 AND antiAliasing = 1 AND threads = 10,antiAliasing==1 AND threads==10 AND android==1 AND scaleIsHeightDp==1,0,1.0,1.0,1.0,4,1.4412155151367188
+1,51.68075301951748,830,win = 1,android==0 AND ios==0 AND web==0,0,1.0,1.0,1.0,40,0.7923057079315186
+2,49.99587314141646,1792,android = 1 AND scaleIsHeightDp = 1,android==1 AND scaleIsHeightDp==1,0,1.0,1.0,1.0,40,1.2437844276428225
+3,33.46861763437735,485,scaleIsHeightDp = 1 AND skipUpscaling = 1 AND androidIncludeLdpiTvdpi = 1,antiAliasing==1 AND skipUpscaling==0 AND androidIncludeLdpiTvdpi==1 AND ceil==1,0,0.0,0.0,0.0,40,1.472362756729126
+4,28.96680507665072,351,android = 1 AND androidIncludeLdpiTvdpi = 1 AND ceil = 1 AND threads = 90,antiAliasing==0 AND skipUpscaling==1 AND png==0 AND bmp==0 AND web==0 AND jpeg==0 AND floor==1,0,0.0,0.0,0.0,40,1.396493911743164
+1,55.03792549345367,1777,androidIncludeLdpiTvdpi = 1,androidIncludeLdpiTvdpi==1,0,1.0,1.0,1.0,41,0.9091026782989502
+2,53.55732208581079,369,gif = 1 AND threads = 10,threads==10 AND gif==1,0,1.0,1.0,1.0,41,1.0070083141326904
+3,25.741750768122174,351,androidIncludeLdpiTvdpi = 1 AND ceil = 1 AND threads = 90,win==0 AND antiAliasing==1 AND androidIncludeLdpiTvdpi==0 AND threads==10 AND androidMipmapInsteadOfDrawable==0 AND web==0,0,0.0,0.0,0.0,41,1.4588518142700195
+4,55.80779444265095,352,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND ceil = 1 AND threads = 90,round==0 AND threads==90 AND androidMipmapInsteadOfDrawable==1 AND floor==0,0,1.0,1.0,1.0,41,1.1371018886566162
+1,36.665054267111714,832,iosCreateImagesetFolders = 1,antiAliasing==1 AND androidIncludeLdpiTvdpi==1 AND threads==10 AND androidMipmapInsteadOfDrawable==0 AND scaleIsHeightDp==0 AND jpeg==1,0,0.0,0.0,0.0,42,1.5095610618591309
+2,39.23218913797598,1089,jpeg = 1 AND skipUpscaling = 1,skipUpscaling==1 AND jpeg==1,0,1.0,1.0,1.0,42,1.1771447658538818
+3,25.375833054667265,922,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND scaleIsHeightDp = 1,bmp==0 AND androidMipmapInsteadOfDrawable==0,0,0.0,0.0,0.0,42,1.1237928867340088
+4,28.747909893602586,352,android = 1 AND jpeg = 1 AND antiAliasing = 1 AND threads = 90,antiAliasing==0 AND androidIncludeLdpiTvdpi==0 AND round==0 AND bmp==1 AND androidMipmapInsteadOfDrawable==0 AND web==0 AND floor==0,0,0.0,0.0,0.0,42,1.5114872455596924
+1,28.28166575287992,1144,png = 1,png==0,0,0.0,0.0,0.0,43,1.0562689304351809
+2,31.13607741120997,341,gif = 1 AND floor = 1,iosCreateImagesetFolders==0 AND antiAliasing==1 AND png==0 AND gif==0 AND android==0 AND web==0 AND floor==1,0,0.0,0.0,0.0,43,1.459479808807373
+3,49.67284316638614,485,scaleIsHeightDp = 1 AND skipUpscaling = 1 AND androidIncludeLdpiTvdpi = 1,skipUpscaling==1 AND androidIncludeLdpiTvdpi==1 AND scaleIsHeightDp==1,0,1.0,1.0,1.0,43,1.3001937866210938
+4,45.13805041866209,351,android = 1 AND androidIncludeLdpiTvdpi = 1 AND ceil = 1 AND threads = 90,androidIncludeLdpiTvdpi==1 AND round==0 AND threads==90 AND floor==0,0,1.0,1.0,1.0,43,1.122081995010376
+1,33.090068350474375,1802,androidMipmapInsteadOfDrawable = 1,androidMipmapInsteadOfDrawable==0,0,0.0,0.0,0.0,44,1.109992742538452
+2,29.664358309332258,832,iosCreateImagesetFolders = 1 AND ios = 1,iosCreateImagesetFolders==0 AND web==0 AND floor==0,0,0.0,0.0,0.0,44,1.3089842796325684
+3,30.976923254809016,371,jpeg = 1 AND antiAliasing = 1 AND ceil = 1,antiAliasing==0 AND threads==90 AND ios==0 AND androidMipmapInsteadOfDrawable==0 AND web==0 AND jpeg==0 AND floor==0,0,0.0,0.0,0.0,44,1.5987401008605957
+4,39.4692452602374,346,android = 1 AND androidIncludeLdpiTvdpi = 1 AND round = 1 AND threads = 90,androidIncludeLdpiTvdpi==1 AND threads==90 AND floor==0,0,0.663470757430489,0.4964131994261119,1.0,44,1.2643225193023682
+1,56.9013028209412,752,web = 1,web==1,0,1.0,1.0,1.0,45,0.777172327041626
+2,19.70225790530981,1335,floor = 1 AND threads = 90,floor==0,0,0.0,0.0,0.0,45,0.9608662128448486
+3,30.719164106242616,619,floor = 1 AND skipUpscaling = 1 AND threads = 90,iosCreateImagesetFolders==0 AND antiAliasing==0 AND skipUpscaling==0 AND bmp==0,0,0.0,0.0,0.0,45,1.6007695198059082
+4,20.770867571128864,460,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND skipUpscaling = 1 AND androidIncludeLdpiTvdpi = 1,androidMipmapInsteadOfDrawable==0,0,0.0,0.0,0.0,45,0.9782798290252686
+1,28.62300848344004,1079,bmp = 1,bmp==0,0,0.0,0.0,0.0,46,1.0368833541870115
+2,55.9323788832854,494,win = 1 AND threads = 90,threads==90 AND android==0 AND ios==0 AND web==0,0,1.0,1.0,1.0,46,0.9791789054870604
+3,44.595297580041006,376,skipUpscaling = 1 AND androidIncludeLdpiTvdpi = 1 AND threads = 10,skipUpscaling==1 AND androidIncludeLdpiTvdpi==1 AND threads==10,0,1.0,1.0,1.0,46,1.3602075576782229
+4,42.79565919266266,509,android = 1 AND skipUpscaling = 1 AND androidIncludeLdpiTvdpi = 1 AND threads = 90,skipUpscaling==1 AND androidIncludeLdpiTvdpi==1 AND threads==90,0,1.0,1.0,1.0,46,1.3190422058105469
+1,31.35078713036838,830,win = 1,win==0 AND web==0 AND jpeg==0,0,0.0,0.0,0.0,47,1.286745309829712
+2,54.81052078363479,422,iosCreateImagesetFolders = 1 AND antiAliasing = 1,iosCreateImagesetFolders==1 AND antiAliasing==1,0,1.0,1.0,1.0,47,1.1302824020385742
+3,50.43106526163641,484,ios = 1 AND scaleIsHeightDp = 1 AND threads = 90,threads==90 AND ios==1 AND scaleIsHeightDp==1,0,1.0,1.0,1.0,47,1.316666603088379
+4,44.7610681281723,347,android = 1 AND floor = 1 AND androidIncludeLdpiTvdpi = 1 AND threads = 90,androidIncludeLdpiTvdpi==1 AND threads==90 AND floor==1,0,1.0,1.0,1.0,47,1.1699604988098145
+1,42.09775694413928,1079,bmp = 1,bmp==1,0,1.0,1.0,1.0,48,0.8950152397155762
+2,32.11307037517923,1029,skipUpscaling = 1 AND round = 1,win==0 AND antiAliasing==1 AND skipUpscaling==0 AND png==0 AND bmp==0,0,0.0,0.0,0.0,48,1.4587061405181885
+3,42.91809052541386,348,scaleIsHeightDp = 1 AND png = 1 AND threads = 90,png==1 AND threads==90 AND scaleIsHeightDp==1,0,1.0,1.0,1.0,48,1.1752877235412598
+4,34.31743632460342,476,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND scaleIsHeightDp = 1 AND skipUpscaling = 1,antiAliasing==1 AND skipUpscaling==1 AND threads==90 AND android==1 AND androidMipmapInsteadOfDrawable==0 AND floor==1,0,0.0,0.0,0.0,48,1.504078388214111
+1,48.59771637171004,1144,png = 1,png==1,0,1.0,1.0,1.0,49,0.9089586734771729
+2,21.600546288540865,1302,round = 1 AND threads = 90,round==0,0,0.0,0.0,0.0,49,0.9907426834106444
+3,25.13213499335456,542,scaleIsHeightDp = 1 AND jpeg = 1 AND threads = 10,threads==90 AND ios==0,0,0.0,0.0,0.0,49,1.4799435138702393
+4,43.54265169304645,482,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND scaleIsHeightDp = 1 AND antiAliasing = 1,antiAliasing==1 AND androidMipmapInsteadOfDrawable==1 AND scaleIsHeightDp==1,0,1.0,1.0,1.0,49,1.2949943542480469
+1,47.4419978290852,982,gif = 1,gif==1,0,1.0,1.0,1.0,5,0.8699781894683838
+2,44.09808942141114,353,web = 1 AND threads = 10,threads==10 AND web==1,0,1.0,1.0,1.0,5,0.9570107460021972
+3,40.16237871655368,380,skipUpscaling = 1 AND ceil = 1 AND threads = 10,skipUpscaling==1 AND round==0 AND threads==10 AND floor==0,0,1.0,1.0,1.0,5,1.3108415603637695
+4,47.99426744758637,343,android = 1 AND scaleIsHeightDp = 1 AND round = 1 AND threads = 90,round==1 AND threads==90 AND android==1 AND scaleIsHeightDp==1,0,1.0,1.0,1.0,5,1.4215562343597412
+1,43.01233704508789,1144,png = 1,png==1,0,1.0,1.0,1.0,50,0.9000518321990967
+2,45.69234311547156,701,png = 1 AND threads = 90,png==1 AND threads==90,0,1.0,1.0,1.0,50,1.0542855262756348
+3,30.90706295570041,482,androidMipmapInsteadOfDrawable = 1 AND scaleIsHeightDp = 1 AND antiAliasing = 1,win==0 AND skipUpscaling==0 AND ios==0 AND androidMipmapInsteadOfDrawable==0 AND jpeg==1 AND floor==0,0,0.0,0.0,0.0,50,1.5647172927856443
+4,28.70900946942748,400,android = 1 AND antiAliasing = 1 AND androidIncludeLdpiTvdpi = 1 AND threads = 10,iosCreateImagesetFolders==0 AND skipUpscaling==0 AND androidIncludeLdpiTvdpi==0 AND round==0,0,0.0,0.0,0.0,50,1.496267795562744
+1,25.618895499504283,1079,bmp = 1,bmp==0,0,0.0,0.0,0.0,51,1.044363498687744
+2,35.042907498211235,1700,android = 1 AND skipUpscaling = 1,win==0 AND antiAliasing==1 AND skipUpscaling==0 AND ceil==1 AND bmp==0 AND ios==0,0,0.0,0.0,0.0,51,1.4613568782806396
+3,47.38769131408663,528,android = 1 AND floor = 1 AND threads = 10,threads==10 AND android==1 AND floor==1,0,1.0,1.0,1.0,51,1.2848224639892578
+4,48.17401049476311,345,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND scaleIsHeightDp = 1 AND jpeg = 1,androidMipmapInsteadOfDrawable==1 AND scaleIsHeightDp==1 AND jpeg==1,0,1.0,1.0,1.0,51,1.1102445125579834
+1,20.527399301810416,1648,ios = 1,ios==0,0,0.0,0.0,0.0,52,1.0022149085998535
+2,53.49207741107261,1386,scaleIsHeightDp = 1 AND threads = 10,threads==10 AND scaleIsHeightDp==1,0,1.0,1.0,1.0,52,1.0726263523101809
+3,54.21266213587744,762,android = 1 AND antiAliasing = 1 AND threads = 10,antiAliasing==1 AND threads==10 AND android==1,0,1.0,1.0,1.0,52,1.4013826847076416
+4,28.852256641191023,482,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND scaleIsHeightDp = 1 AND antiAliasing = 1,png==0 AND bmp==0 AND gif==0 AND android==0 AND web==0,0,0.0,0.0,0.0,52,1.504491090774536
+1,36.83238238015843,752,web = 1,antiAliasing==0 AND png==0 AND ceil==1 AND threads==10 AND gif==0 AND ios==1,0,0.0,0.0,0.0,53,1.4672493934631348
+2,39.611814893864576,494,win = 1 AND threads = 90,threads==90 AND android==0 AND ios==0 AND web==0,0,1.0,1.0,1.0,53,0.9689276218414308
+3,23.472955361064518,348,bmp = 1 AND android = 1 AND threads = 90,iosCreateImagesetFolders==0 AND skipUpscaling==0 AND bmp==0 AND web==0 AND jpeg==0,0,0.0,0.0,0.0,53,1.466463327407837
+4,47.91241412449542,482,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND scaleIsHeightDp = 1 AND antiAliasing = 1,antiAliasing==1 AND androidMipmapInsteadOfDrawable==1 AND scaleIsHeightDp==1,0,1.0,1.0,1.0,53,1.262163162231445
+1,22.72578947816819,830,win = 1,win==0,0,0.0,0.0,0.0,54,1.1246209144592283
+2,28.61881154861104,1386,scaleIsHeightDp = 1 AND threads = 10,win==0 AND scaleIsHeightDp==0,0,0.0,0.0,0.0,54,1.1048927307128906
+3,28.838246058653212,753,android = 1 AND scaleIsHeightDp = 1 AND threads = 10,iosCreateImagesetFolders==0 AND scaleIsHeightDp==0,0,0.0,0.0,0.0,54,1.1549272537231443
+4,22.101465525893637,348,android = 1 AND antiAliasing = 1 AND ceil = 1 AND threads = 90,iosCreateImagesetFolders==0 AND win==0 AND ceil==0 AND gif==0 AND web==0,0,0.0,0.0,0.0,54,1.401139259338379
+1,29.45009388744913,982,gif = 1,skipUpscaling==1 AND androidIncludeLdpiTvdpi==0 AND round==0 AND gif==0 AND web==0,0,0.0,0.0,0.0,55,1.284339189529419
+2,19.01114691800886,497,bmp = 1 AND skipUpscaling = 1,bmp==0,0,0.0,0.0,0.0,55,1.1929583549499512
+3,26.031442425718648,933,android = 1 AND scaleIsHeightDp = 1 AND androidIncludeLdpiTvdpi = 1,png==0 AND scaleIsHeightDp==0,0,0.0,0.0,0.0,55,1.1000926494598389
+4,40.07687950092369,346,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND floor = 1 AND threads = 90,threads==90 AND androidMipmapInsteadOfDrawable==1 AND floor==1,0,1.0,1.0,1.0,55,1.1982042789459229
+1,42.43689360174256,1802,androidMipmapInsteadOfDrawable = 1,androidMipmapInsteadOfDrawable==1,0,1.0,1.0,1.0,56,0.889472484588623
+2,27.122648302598968,738,ios = 1 AND skipUpscaling = 1,bmp==0 AND ios==0 AND web==0,0,0.0,0.0,0.0,56,1.2197377681732178
+3,22.78563534147837,922,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND scaleIsHeightDp = 1,androidMipmapInsteadOfDrawable==0,0,0.0,0.0,0.0,56,1.100020408630371
+4,27.40028687369766,542,android = 1 AND antiAliasing = 1 AND androidIncludeLdpiTvdpi = 1 AND threads = 90,ceil==0 AND threads==10,0,0.0,0.0,0.0,56,1.12524151802063
+1,39.73632552515527,1648,ios = 1,ios==1,0,1.0,1.0,1.0,57,0.8901515007019043
+2,47.86365797439425,1044,androidIncludeLdpiTvdpi = 1 AND threads = 90,androidIncludeLdpiTvdpi==1 AND threads==90,0,1.0,1.0,1.0,57,1.1042492389678955
+3,32.57487001003128,591,scaleIsHeightDp = 1 AND floor = 1 AND antiAliasing = 1,win==0 AND antiAliasing==0 AND png==0 AND ceil==0 AND gif==0 AND androidMipmapInsteadOfDrawable==0,0,0.0,0.0,0.0,57,1.4739704132080078
+4,29.69227389954848,528,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND scaleIsHeightDp = 1 AND threads = 90,win==0 AND antiAliasing==1 AND threads==10 AND gif==0 AND androidMipmapInsteadOfDrawable==0 AND scaleIsHeightDp==1 AND floor==1,0,0.0,0.0,0.0,57,1.484416961669922
+1,41.58668496501299,982,gif = 1,gif==1,0,1.0,1.0,1.0,58,0.9059338569641112
+2,44.33654335112055,1119,scaleIsHeightDp = 1 AND round = 1,round==1 AND scaleIsHeightDp==1,0,1.0,1.0,1.0,58,1.1661646366119385
+3,37.65726797600948,434,skipUpscaling = 1 AND round = 1 AND threads = 10,win==0 AND skipUpscaling==1 AND round==0 AND threads==90 AND android==0 AND scaleIsHeightDp==1 AND jpeg==1,0,0.0,0.0,0.0,58,1.4541232585906982
+4,50.56595949876039,343,android = 1 AND scaleIsHeightDp = 1 AND round = 1 AND threads = 90,round==1 AND threads==90 AND android==1 AND scaleIsHeightDp==1,0,1.0,1.0,1.0,58,1.5144498348236084
+1,51.95636198132036,982,gif = 1,gif==1,0,1.0,1.0,1.0,59,0.904000759124756
+2,22.984367512108516,1162,floor = 1 AND antiAliasing = 1,floor==0,0,0.0,0.0,0.0,59,0.9843916893005372
+3,39.449984524244805,394,androidMipmapInsteadOfDrawable = 1 AND skipUpscaling = 1 AND threads = 10,androidIncludeLdpiTvdpi==1 AND png==0 AND bmp==0 AND androidMipmapInsteadOfDrawable==0 AND scaleIsHeightDp==0,0,0.0,0.0,0.0,59,1.4448802471160889
+4,33.60490349778968,386,android = 1 AND scaleIsHeightDp = 1 AND skipUpscaling = 1 AND threads = 10,skipUpscaling==0 AND bmp==0 AND androidMipmapInsteadOfDrawable==1,0,0.0,0.0,0.0,59,1.2614521980285645
+1,30.02591303061668,1802,androidMipmapInsteadOfDrawable = 1,androidMipmapInsteadOfDrawable==0,0,0.0,0.0,0.0,6,0.9793436527252196
+2,23.76375837869393,610,androidMipmapInsteadOfDrawable = 1 AND round = 1,androidMipmapInsteadOfDrawable==0,0,0.0,0.0,0.0,6,0.929035186767578
+3,42.00908987820412,393,iosCreateImagesetFolders = 1 AND ios = 1 AND skipUpscaling = 1,iosCreateImagesetFolders==1 AND skipUpscaling==1,0,1.0,1.0,1.0,6,1.145533561706543
+4,32.423769866543786,493,android = 1 AND scaleIsHeightDp = 1 AND antiAliasing = 1 AND androidIncludeLdpiTvdpi = 1,skipUpscaling==1 AND ceil==0 AND bmp==0 AND gif==0 AND ios==1 AND scaleIsHeightDp==0,0,0.0,0.0,0.0,6,1.495317459106445
+1,41.4611041839808,1144,png = 1,png==1,0,1.0,1.0,1.0,60,0.8958983421325684
+2,37.18879106045573,1700,android = 1 AND skipUpscaling = 1,skipUpscaling==0 AND threads==90 AND gif==1 AND androidMipmapInsteadOfDrawable==0 AND scaleIsHeightDp==1 AND web==0,0,0.0,0.0,0.0,60,1.5283379554748535
+3,35.427354753088096,346,androidIncludeLdpiTvdpi = 1 AND round = 1 AND threads = 90,iosCreateImagesetFolders==0 AND antiAliasing==1 AND skipUpscaling==1 AND androidIncludeLdpiTvdpi==0 AND bmp==1 AND androidMipmapInsteadOfDrawable==0 AND scaleIsHeightDp==0,0,0.0,0.0,0.0,60,1.3515491485595703
+4,31.93046727255802,376,android = 1 AND skipUpscaling = 1 AND androidIncludeLdpiTvdpi = 1 AND threads = 10,iosCreateImagesetFolders==0 AND antiAliasing==1 AND skipUpscaling==1 AND androidIncludeLdpiTvdpi==0 AND androidMipmapInsteadOfDrawable==0 AND jpeg==0,0,0.0,0.0,0.0,60,1.3522701263427734
+1,38.22117200050317,1777,androidIncludeLdpiTvdpi = 1,androidIncludeLdpiTvdpi==1,0,1.0,1.0,1.0,61,0.9102551937103271
+2,27.40247849524341,1700,android = 1 AND skipUpscaling = 1,skipUpscaling==0,0,0.0,0.0,0.0,61,0.9498672485351562
+3,30.77652592795464,610,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND round = 1,png==0 AND threads==10 AND androidMipmapInsteadOfDrawable==0 AND scaleIsHeightDp==1 AND floor==0,0,0.0,0.0,0.0,61,1.5199637413024902
+4,29.29655130269133,352,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND ceil = 1 AND threads = 90,win==0 AND antiAliasing==0 AND skipUpscaling==1 AND png==0 AND ceil==0 AND jpeg==0,0,0.0,0.0,0.0,61,1.36388897895813
+1,37.7870865519147,982,gif = 1,androidIncludeLdpiTvdpi==0 AND png==1 AND ceil==1 AND threads==90 AND ios==0 AND scaleIsHeightDp==0,0,0.0,0.0,0.0,62,1.2275724411010742
+2,57.63632715719392,1302,round = 1 AND threads = 90,round==1 AND threads==90,0,1.0,1.0,1.0,62,1.1179163455963137
+3,46.68098687371936,349,androidMipmapInsteadOfDrawable = 1 AND jpeg = 1 AND antiAliasing = 1,antiAliasing==1 AND androidMipmapInsteadOfDrawable==1 AND jpeg==1,0,1.0,1.0,1.0,62,1.179220199584961
+4,25.62652959650684,528,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND scaleIsHeightDp = 1 AND threads = 90,ceil==0 AND ios==0 AND scaleIsHeightDp==0,0,0.0,0.0,0.0,62,1.3550570011138916
+1,27.932738901097466,830,win = 1,iosCreateImagesetFolders==0 AND win==0 AND png==0,0,0.0,0.0,0.0,63,1.0151381492614746
+2,33.57761589344034,586,androidIncludeLdpiTvdpi = 1 AND round = 1,iosCreateImagesetFolders==0 AND antiAliasing==0 AND png==1 AND web==0 AND floor==1,0,0.0,0.0,0.0,63,1.4093589782714844
+3,40.10482202849239,393,iosCreateImagesetFolders = 1 AND ios = 1 AND skipUpscaling = 1,iosCreateImagesetFolders==1 AND skipUpscaling==1,0,1.0,1.0,1.0,63,1.0077171325683594
+4,21.442620565969698,509,android = 1 AND skipUpscaling = 1 AND androidIncludeLdpiTvdpi = 1 AND threads = 90,ceil==0 AND threads==10 AND jpeg==0,0,0.0,0.0,0.0,63,1.1001248359680176
+1,47.306784540547824,1777,androidIncludeLdpiTvdpi = 1,androidIncludeLdpiTvdpi==1,0,1.0,1.0,1.0,64,0.8984768390655518
+2,21.914360928661136,979,round = 1 AND threads = 10,threads==90,0,0.0,0.0,0.0,64,1.0019614696502686
+3,24.673576622121494,1045,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND threads = 90,androidMipmapInsteadOfDrawable==0,0,0.0,0.0,0.0,64,1.2278637886047363
+4,48.90139645722442,394,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND skipUpscaling = 1 AND threads = 10,skipUpscaling==1 AND threads==10 AND androidMipmapInsteadOfDrawable==1,0,1.0,1.0,1.0,64,1.2733736038208008
+1,33.94171006744306,1648,ios = 1,antiAliasing==1 AND round==0 AND ios==0 AND scaleIsHeightDp==1 AND web==0 AND floor==0,0,0.0,0.0,0.0,65,1.452967882156372
+2,25.3976635727276,1086,floor = 1 AND skipUpscaling = 1,floor==0,0,0.0,0.0,0.0,65,1.0015242099761963
+3,35.07156816198702,753,android = 1 AND scaleIsHeightDp = 1 AND threads = 10,androidIncludeLdpiTvdpi==0 AND png==0 AND threads==90 AND gif==0 AND scaleIsHeightDp==0 AND web==0 AND floor==1,0,0.0,0.0,0.0,65,1.482227802276611
+4,19.519945204103514,478,android = 1 AND antiAliasing = 1 AND skipUpscaling = 1 AND androidIncludeLdpiTvdpi = 1,androidIncludeLdpiTvdpi==0,0,0.0,0.0,0.0,65,1.0488996505737305
+1,43.884153186925104,1079,bmp = 1,bmp==1,0,1.0,1.0,1.0,66,0.8850317001342773
+2,25.83229452043792,733,androidIncludeLdpiTvdpi = 1 AND threads = 10,androidIncludeLdpiTvdpi==0 AND bmp==0,0,0.0,0.0,0.0,66,1.2234978675842283
+3,42.27270481085344,504,android = 1 AND round = 1 AND threads = 10,round==1 AND threads==10 AND android==1,0,1.0,1.0,1.0,66,1.2922322750091553
+4,24.833033072754446,352,android = 1 AND jpeg = 1 AND antiAliasing = 1 AND threads = 90,iosCreateImagesetFolders==0 AND antiAliasing==0 AND skipUpscaling==0 AND round==0 AND threads==90 AND ios==1 AND jpeg==0,0,0.0,0.0,0.0,66,1.4150283336639404
+1,34.39761791062885,1079,bmp = 1,antiAliasing==1 AND androidIncludeLdpiTvdpi==0 AND round==0 AND threads==90 AND bmp==0 AND android==1 AND jpeg==0,0,0.0,0.0,0.0,67,1.6575775146484375
+2,56.71889675680832,346,bmp = 1 AND round = 1,round==1 AND bmp==1,0,1.0,1.0,1.0,67,1.0089952945709229
+3,23.276030913426048,346,androidMipmapInsteadOfDrawable = 1 AND floor = 1 AND threads = 90,iosCreateImagesetFolders==0 AND skipUpscaling==0 AND bmp==0 AND android==0 AND floor==1,0,0.0,0.0,0.0,67,1.4621028900146484
+4,54.94011942907727,398,android = 1 AND scaleIsHeightDp = 1 AND antiAliasing = 1 AND threads = 10,antiAliasing==1 AND threads==10 AND android==1 AND scaleIsHeightDp==1,0,1.0,1.0,1.0,67,1.459287166595459
+1,33.923010739074606,982,gif = 1,antiAliasing==0 AND skipUpscaling==1 AND androidIncludeLdpiTvdpi==0 AND gif==0 AND android==1 AND androidMipmapInsteadOfDrawable==0,0,0.0,0.0,0.0,68,1.646967887878418
+2,34.59966545224846,541,gif = 1 AND android = 1,antiAliasing==0 AND ceil==1 AND bmp==0 AND ios==1 AND scaleIsHeightDp==1,0,0.0,0.0,0.0,68,1.3622260093688965
+3,22.97979546765073,922,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND scaleIsHeightDp = 1,androidMipmapInsteadOfDrawable==0,0,0.0,0.0,0.0,68,1.030505657196045
+4,42.05831832978444,345,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND scaleIsHeightDp = 1 AND jpeg = 1,androidMipmapInsteadOfDrawable==1 AND scaleIsHeightDp==1 AND jpeg==1,0,1.0,1.0,1.0,68,1.1396100521087646
+1,21.748920458443177,1802,androidMipmapInsteadOfDrawable = 1,androidMipmapInsteadOfDrawable==0,0,0.0,0.0,0.0,69,0.9623358249664308
+2,48.2520411573674,1050,scaleIsHeightDp = 1 AND ceil = 1,round==0 AND scaleIsHeightDp==1 AND floor==0,0,1.0,1.0,1.0,69,1.1214947700500488
+3,27.051739447725417,512,scaleIsHeightDp = 1 AND skipUpscaling = 1 AND ceil = 1,win==0 AND skipUpscaling==1 AND bmp==0 AND ios==0 AND androidMipmapInsteadOfDrawable==0 AND scaleIsHeightDp==0 AND floor==1,0,0.0,0.0,0.0,69,1.4943373203277588
+4,41.76231553513282,485,android = 1 AND scaleIsHeightDp = 1 AND skipUpscaling = 1 AND androidIncludeLdpiTvdpi = 1,skipUpscaling==1 AND androidIncludeLdpiTvdpi==1 AND scaleIsHeightDp==1,0,1.0,1.0,1.0,69,1.2963838577270508
+1,46.65263167505673,1079,bmp = 1,bmp==1,0,1.0,1.0,1.0,7,0.8846240043640137
+2,51.21526740518728,1598,scaleIsHeightDp = 1 AND skipUpscaling = 1,skipUpscaling==1 AND scaleIsHeightDp==1,0,1.0,1.0,1.0,7,1.0918879508972168
+3,46.68563933269714,376,skipUpscaling = 1 AND androidIncludeLdpiTvdpi = 1 AND threads = 10,skipUpscaling==1 AND androidIncludeLdpiTvdpi==1 AND threads==10,0,1.0,1.0,1.0,7,1.3279168605804443
+4,57.78089735143227,478,android = 1 AND antiAliasing = 1 AND skipUpscaling = 1 AND androidIncludeLdpiTvdpi = 1,antiAliasing==1 AND skipUpscaling==1 AND androidIncludeLdpiTvdpi==1,0,1.0,1.0,1.0,7,1.305142164230347
+1,32.00626586694597,830,win = 1,skipUpscaling==0 AND androidIncludeLdpiTvdpi==0 AND png==1 AND threads==10 AND androidMipmapInsteadOfDrawable==1,0,0.0,0.0,0.0,70,1.641754388809204
+2,42.37144185565304,1212,android = 1 AND jpeg = 1,android==1 AND jpeg==1,0,1.0,1.0,1.0,70,1.1440763473510742
+3,38.13646803711968,622,android = 1 AND floor = 1 AND androidIncludeLdpiTvdpi = 1,antiAliasing==1 AND skipUpscaling==1 AND bmp==0 AND gif==0 AND ios==0 AND scaleIsHeightDp==1,2,0.1112140871177015,0.1312910284463894,0.0964630225080385,70,1.6429834365844729
+4,44.64259177651232,341,android = 1 AND scaleIsHeightDp = 1 AND jpeg = 1 AND antiAliasing = 1,antiAliasing==1 AND android==1 AND scaleIsHeightDp==1 AND jpeg==1,0,1.0,1.0,1.0,70,1.5827820301055908
+1,42.581443643587946,1648,ios = 1,ios==1,0,1.0,1.0,1.0,71,0.8810830116271973
+2,53.79760734652156,571,scaleIsHeightDp = 1 AND png = 1,png==1 AND scaleIsHeightDp==1,0,1.0,1.0,1.0,71,1.0575063228607178
+3,23.308043868672428,762,android = 1 AND antiAliasing = 1 AND threads = 10,iosCreateImagesetFolders==0 AND androidIncludeLdpiTvdpi==0 AND threads==90 AND bmp==0,0,0.0,0.0,0.0,71,1.2208800315856934
+4,19.97679676758793,394,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND scaleIsHeightDp = 1 AND threads = 10,androidIncludeLdpiTvdpi==0 AND androidMipmapInsteadOfDrawable==0 AND web==0,0,0.0,0.0,0.0,71,1.2125041484832764
+1,56.2608998700144,982,gif = 1,gif==1,0,1.0,1.0,1.0,72,0.865760326385498
+2,48.1442209609838,378,bmp = 1 AND floor = 1,bmp==1 AND floor==1,0,1.0,1.0,1.0,72,0.9979262351989746
+3,53.91573479581033,380,ios = 1 AND antiAliasing = 1 AND skipUpscaling = 1,antiAliasing==1 AND skipUpscaling==1 AND ios==1,0,1.0,1.0,1.0,72,1.2685117721557615
+4,48.40014927975973,491,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND antiAliasing = 1 AND androidIncludeLdpiTvdpi = 1,antiAliasing==1 AND androidIncludeLdpiTvdpi==1 AND androidMipmapInsteadOfDrawable==1,0,1.0,1.0,1.0,72,1.2491767406463623
+1,29.886783596843102,982,gif = 1,win==0 AND png==0 AND gif==0,0,0.0,0.0,0.0,73,1.1033332347869873
+2,49.28991514467974,621,jpeg = 1 AND androidIncludeLdpiTvdpi = 1,androidIncludeLdpiTvdpi==1 AND jpeg==1,0,1.0,1.0,1.0,73,0.9571945667266846
+3,20.10560052988048,371,jpeg = 1 AND antiAliasing = 1 AND ceil = 1,ceil==0 AND ios==0,0,0.0,0.0,0.0,73,1.1385624408721924
+4,23.82062226152025,508,android = 1 AND antiAliasing = 1 AND skipUpscaling = 1 AND threads = 90,threads==10 AND scaleIsHeightDp==0,0,0.0,0.0,0.0,73,0.9594764709472656
+1,55.810649438217226,752,web = 1,web==1,0,1.0,1.0,1.0,74,0.7783446311950684
+2,55.51992675581171,701,png = 1 AND threads = 90,png==1 AND threads==90,0,1.0,1.0,1.0,74,1.0453298091888428
+3,22.606839213468287,376,android = 1 AND jpeg = 1 AND ceil = 1,iosCreateImagesetFolders==0 AND antiAliasing==1 AND skipUpscaling==0 AND androidIncludeLdpiTvdpi==0 AND ceil==0 AND bmp==1 AND androidMipmapInsteadOfDrawable==0,0,0.0,0.0,0.0,74,1.438636064529419
+4,43.14042815692837,376,android = 1 AND skipUpscaling = 1 AND androidIncludeLdpiTvdpi = 1 AND threads = 10,skipUpscaling==1 AND androidIncludeLdpiTvdpi==1 AND threads==10,0,1.0,1.0,1.0,74,1.2873568534851074
+1,26.071196781833617,1144,png = 1,png==0 AND web==0,0,0.0,0.0,0.0,75,1.1040234565734863
+2,55.8425136806472,709,jpeg = 1 AND ceil = 1,round==0 AND jpeg==1 AND floor==0,0,1.0,1.0,1.0,75,1.0561461448669434
+3,56.69599191512786,657,scaleIsHeightDp = 1 AND floor = 1 AND threads = 90,threads==90 AND scaleIsHeightDp==1 AND floor==1,0,1.0,1.0,1.0,75,1.3492181301116943
+4,22.97577978599172,409,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND antiAliasing = 1 AND threads = 10,round==0 AND gif==0 AND android==0 AND ios==0 AND jpeg==0,0,0.0,0.0,0.0,75,1.287754774093628
+1,39.44941357972351,1777,androidIncludeLdpiTvdpi = 1,androidIncludeLdpiTvdpi==1,0,1.0,1.0,1.0,76,0.9364020824432372
+2,18.74653126388345,1970,antiAliasing = 1 AND threads = 90,antiAliasing==0,0,0.0,0.0,0.0,76,0.8864998817443848
+3,27.877287765416742,351,antiAliasing = 1 AND png = 1 AND threads = 90,win==0 AND antiAliasing==0 AND round==0 AND gif==0 AND android==0,0,0.0,0.0,0.0,76,1.5631272792816162
+4,22.50331406106236,349,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND jpeg = 1 AND antiAliasing = 1,png==0 AND threads==90 AND android==1 AND androidMipmapInsteadOfDrawable==0 AND scaleIsHeightDp==0 AND jpeg==0,0,0.0,0.0,0.0,76,1.464681625366211
+1,53.63441486162572,830,win = 1,android==0 AND ios==0 AND web==0,0,1.0,1.0,1.0,77,0.8059706687927246
+2,22.014267631723555,569,androidIncludeLdpiTvdpi = 1 AND ceil = 1,win==0 AND androidIncludeLdpiTvdpi==0 AND threads==90,0,0.0,0.0,0.0,77,1.0128557682037354
+3,27.274894642387373,346,androidMipmapInsteadOfDrawable = 1 AND floor = 1 AND threads = 90,antiAliasing==0 AND round==0 AND ios==0 AND floor==0,0,0.0,0.0,0.0,77,1.5358591079711914
+4,41.32914103982752,392,android = 1 AND scaleIsHeightDp = 1 AND androidIncludeLdpiTvdpi = 1 AND threads = 10,androidIncludeLdpiTvdpi==1 AND threads==10 AND scaleIsHeightDp==1,0,1.0,1.0,1.0,77,1.3113305568695068
+1,27.636142094081723,1079,bmp = 1,bmp==0,0,0.0,0.0,0.0,78,1.1287384033203125
+2,27.73471243161292,942,antiAliasing = 1 AND androidIncludeLdpiTvdpi = 1,win==0 AND antiAliasing==0,0,0.0,0.0,0.0,78,1.0666780471801758
+3,29.862801947330443,922,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND scaleIsHeightDp = 1,png==0 AND round==1 AND threads==10 AND gif==0 AND androidMipmapInsteadOfDrawable==0 AND web==0,0,0.0,0.0,0.0,78,1.366776704788208
+4,47.615044313249086,477,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND scaleIsHeightDp = 1 AND androidIncludeLdpiTvdpi = 1,androidIncludeLdpiTvdpi==1 AND androidMipmapInsteadOfDrawable==1 AND scaleIsHeightDp==1,0,1.0,1.0,1.0,78,1.314750909805298
+1,49.42553384497746,1777,androidIncludeLdpiTvdpi = 1,androidIncludeLdpiTvdpi==1,0,1.0,1.0,1.0,79,0.9335377216339112
+2,20.96877038674535,1302,round = 1 AND threads = 90,round==0,0,0.0,0.0,0.0,79,0.9947640895843506
+3,30.81384550127968,654,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND jpeg = 1,skipUpscaling==1 AND ceil==0 AND bmp==1 AND android==1 AND scaleIsHeightDp==1,0,0.0,0.0,0.0,79,1.6778106689453125
+4,42.87208272809111,409,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND antiAliasing = 1 AND threads = 10,antiAliasing==1 AND threads==10 AND androidMipmapInsteadOfDrawable==1,0,1.0,1.0,1.0,79,1.3085296154022217
+1,30.76583864781944,1144,png = 1,skipUpscaling==1 AND androidIncludeLdpiTvdpi==0 AND png==0 AND threads==90 AND web==0 AND jpeg==0,0,0.0,0.0,0.0,8,1.2786812782287598
+2,47.59987745798982,378,bmp = 1 AND floor = 1,bmp==1 AND floor==1,0,1.0,1.0,1.0,8,1.097743034362793
+3,22.39695011443062,510,antiAliasing = 1 AND skipUpscaling = 1 AND ceil = 1,win==0 AND ceil==0 AND bmp==0,0,0.0,0.0,0.0,8,1.0812485218048096
+4,54.845224934607984,354,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND jpeg = 1 AND threads = 90,threads==90 AND androidMipmapInsteadOfDrawable==1 AND jpeg==1,0,1.0,1.0,1.0,8,1.1102640628814695
+1,21.215971388687283,1777,androidIncludeLdpiTvdpi = 1,androidIncludeLdpiTvdpi==0,0,0.0,0.0,0.0,80,0.9414541721343994
+2,53.36270350471207,411,iosCreateImagesetFolders = 1 AND scaleIsHeightDp = 1,iosCreateImagesetFolders==1 AND scaleIsHeightDp==1,0,1.0,1.0,1.0,80,0.9480917453765868
+3,52.61918336496534,642,scaleIsHeightDp = 1 AND round = 1 AND threads = 90,round==1 AND threads==90 AND scaleIsHeightDp==1,0,1.0,1.0,1.0,80,1.3390717506408691
+4,55.0258969537144,508,android = 1 AND antiAliasing = 1 AND skipUpscaling = 1 AND threads = 90,antiAliasing==1 AND skipUpscaling==1 AND threads==90 AND android==1,0,1.0,1.0,1.0,80,1.4685018062591553
+1,51.06879106208712,752,web = 1,web==1,0,1.0,1.0,1.0,81,0.7774717807769775
+2,29.61049220022884,402,floor = 1 AND png = 1,antiAliasing==1 AND png==0 AND round==0 AND bmp==0 AND androidMipmapInsteadOfDrawable==1 AND scaleIsHeightDp==0 AND jpeg==0,0,0.0,0.0,0.0,81,1.5595695972442627
+3,47.89701774168957,665,jpeg = 1 AND antiAliasing = 1 AND threads = 90,antiAliasing==1 AND threads==90 AND jpeg==1,0,1.0,1.0,1.0,81,1.3784048557281494
+4,55.85514131946949,341,android = 1 AND scaleIsHeightDp = 1 AND jpeg = 1 AND antiAliasing = 1,antiAliasing==1 AND android==1 AND scaleIsHeightDp==1 AND jpeg==1,0,1.0,1.0,1.0,81,1.432705640792847
+1,20.40791852060497,1802,androidMipmapInsteadOfDrawable = 1,androidMipmapInsteadOfDrawable==0,0,0.0,0.0,0.0,82,0.9832942485809326
+2,23.184920863536156,795,jpeg = 1 AND floor = 1,jpeg==0,0,0.0,0.0,0.0,82,0.993757963180542
+3,25.023782237732775,478,antiAliasing = 1 AND skipUpscaling = 1 AND androidIncludeLdpiTvdpi = 1,iosCreateImagesetFolders==0 AND antiAliasing==0 AND bmp==0 AND androidMipmapInsteadOfDrawable==0 AND web==0,0,0.0,0.0,0.0,82,1.5891902446746826
+4,52.120202862230464,347,android = 1 AND floor = 1 AND androidIncludeLdpiTvdpi = 1 AND threads = 90,androidIncludeLdpiTvdpi==1 AND threads==90 AND floor==1,0,1.0,1.0,1.0,82,1.167738676071167
+1,54.0924582149304,1079,bmp = 1,bmp==1,0,1.0,1.0,1.0,83,0.9083213806152344
+2,30.988695881560723,422,gif = 1 AND skipUpscaling = 1,antiAliasing==0 AND round==1 AND threads==10 AND gif==0 AND android==1 AND scaleIsHeightDp==0,0,0.0,0.0,0.0,83,1.6075012683868408
+3,46.75669917974828,638,android = 1 AND scaleIsHeightDp = 1 AND jpeg = 1,android==1 AND scaleIsHeightDp==1 AND jpeg==1,0,1.0,1.0,1.0,83,1.3265199661254885
+4,28.248963127112287,528,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND scaleIsHeightDp = 1 AND threads = 90,antiAliasing==0 AND androidIncludeLdpiTvdpi==0 AND png==0 AND scaleIsHeightDp==0 AND web==0 AND jpeg==0,0,0.0,0.0,0.0,83,1.4821231365203855
+1,48.59930942332721,752,web = 1,web==1,0,1.0,1.0,1.0,84,0.7804405689239502
+2,51.199176527845474,1700,android = 1 AND skipUpscaling = 1,skipUpscaling==1 AND android==1,0,1.0,1.0,1.0,84,1.200915813446045
+3,43.634425365287946,601,jpeg = 1 AND skipUpscaling = 1 AND threads = 90,skipUpscaling==1 AND threads==90 AND jpeg==1,0,1.0,1.0,1.0,84,1.3562922477722168
+4,21.42977238622881,509,android = 1 AND skipUpscaling = 1 AND androidIncludeLdpiTvdpi = 1 AND threads = 90,androidIncludeLdpiTvdpi==0,0,0.0,0.0,0.0,84,1.1203651428222656
+1,41.59847509628206,982,gif = 1,gif==1,0,1.0,1.0,1.0,85,0.8669655323028564
+2,48.091049098335205,1281,skipUpscaling = 1 AND threads = 10,skipUpscaling==1 AND threads==10,0,1.0,1.0,1.0,85,1.066216230392456
+3,55.55658294031469,1051,android = 1 AND antiAliasing = 1 AND threads = 90,antiAliasing==1 AND threads==90 AND android==1,0,1.0,1.0,1.0,85,1.4663896560668943
+4,46.50738597434062,477,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND scaleIsHeightDp = 1 AND androidIncludeLdpiTvdpi = 1,androidIncludeLdpiTvdpi==1 AND androidMipmapInsteadOfDrawable==1 AND scaleIsHeightDp==1,0,1.0,1.0,1.0,85,1.2408123016357422
+1,42.844270852570496,1777,androidIncludeLdpiTvdpi = 1,androidIncludeLdpiTvdpi==1,0,1.0,1.0,1.0,86,0.9109725952148438
+2,45.11622594587322,1335,floor = 1 AND threads = 90,threads==90 AND floor==1,0,1.0,1.0,1.0,86,1.1156535148620603
+3,56.68614278490157,586,android = 1 AND androidIncludeLdpiTvdpi = 1 AND round = 1,androidIncludeLdpiTvdpi==1 AND round==1,0,1.0,1.0,1.0,86,1.0058791637420654
+4,18.49924952685157,347,android = 1 AND floor = 1 AND androidIncludeLdpiTvdpi = 1 AND threads = 90,androidIncludeLdpiTvdpi==0 AND round==0 AND web==0,0,0.0,0.0,0.0,86,1.2766950130462646
+1,40.49493373424958,982,gif = 1,gif==1,0,1.0,1.0,1.0,87,0.8589987754821777
+2,51.208117469728144,380,png = 1 AND round = 1,png==1 AND round==1,0,1.0,1.0,1.0,87,0.9925355911254884
+3,48.0253094027788,394,androidMipmapInsteadOfDrawable = 1 AND scaleIsHeightDp = 1 AND threads = 10,threads==10 AND androidMipmapInsteadOfDrawable==1 AND scaleIsHeightDp==1,0,1.0,1.0,1.0,87,1.2862441539764404
+4,40.27812778631943,460,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND skipUpscaling = 1 AND androidIncludeLdpiTvdpi = 1,skipUpscaling==1 AND androidIncludeLdpiTvdpi==1 AND androidMipmapInsteadOfDrawable==1,0,1.0,1.0,1.0,87,1.2340900897979736
+1,31.56323115462985,752,web = 1,antiAliasing==0 AND skipUpscaling==0 AND ceil==0 AND gif==0 AND android==0 AND scaleIsHeightDp==0 AND web==0,0,0.0,0.0,0.0,88,1.4695518016815186
+2,27.582039625754728,353,web = 1 AND threads = 10,antiAliasing==1 AND ceil==0 AND threads==10 AND android==0 AND web==0,0,0.0,0.0,0.0,88,1.222175121307373
+3,44.37655814048672,495,floor = 1 AND antiAliasing = 1 AND threads = 10,antiAliasing==1 AND threads==10 AND floor==1,0,1.0,1.0,1.0,88,1.3317842483520508
+4,31.042850008151383,394,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND scaleIsHeightDp = 1 AND threads = 10,png==0 AND round==1 AND threads==10 AND ios==0 AND scaleIsHeightDp==0 AND jpeg==0,0,0.0,0.0,0.0,88,1.4204962253570557
+1,40.75230172378808,832,iosCreateImagesetFolders = 1,iosCreateImagesetFolders==1,0,1.0,1.0,1.0,89,0.8138854503631592
+2,40.91576947193173,1207,jpeg = 1 AND antiAliasing = 1,antiAliasing==1 AND jpeg==1,0,1.0,1.0,1.0,89,1.174386739730835
+3,38.49104788078392,346,jpeg = 1 AND androidIncludeLdpiTvdpi = 1 AND threads = 90,win==0 AND png==0 AND threads==90 AND web==0,0,0.2411149825783971,0.1370839936608557,1.0,89,1.3925669193267822
+4,19.414454405207508,349,android = 1 AND floor = 1 AND antiAliasing = 1 AND threads = 90,iosCreateImagesetFolders==0 AND win==0 AND antiAliasing==0 AND gif==0 AND web==0,0,0.0,0.0,0.0,89,1.345956802368164
+1,32.94921238800066,752,web = 1,win==0 AND antiAliasing==0 AND skipUpscaling==0 AND androidIncludeLdpiTvdpi==0 AND web==0 AND jpeg==1,0,0.0,0.0,0.0,9,1.576535940170288
+2,28.280559016093903,362,png = 1 AND ceil = 1,iosCreateImagesetFolders==0 AND win==0 AND ceil==0 AND threads==90 AND android==0,0,0.0,0.0,0.0,9,1.472322940826416
+3,41.48736975711042,885,android = 1 AND skipUpscaling = 1 AND androidIncludeLdpiTvdpi = 1,skipUpscaling==1 AND androidIncludeLdpiTvdpi==1,0,1.0,1.0,1.0,9,1.168900966644287
+4,39.86535754997496,348,android = 1 AND antiAliasing = 1 AND ceil = 1 AND threads = 90,antiAliasing==1 AND round==0 AND threads==90 AND android==1 AND floor==0,0,1.0,1.0,1.0,9,1.4608154296875
+1,30.80413877796458,1079,bmp = 1,bmp==0 AND androidMipmapInsteadOfDrawable==0,0,0.0,0.0,0.0,90,1.1915972232818604
+2,41.93798514875105,1212,android = 1 AND jpeg = 1,android==1 AND jpeg==1,0,1.0,1.0,1.0,90,1.0235652923583984
+3,32.636734144966695,1045,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND threads = 90,antiAliasing==1 AND ceil==1 AND threads==10 AND gif==0 AND jpeg==0,0,0.0,0.0,0.0,90,1.4263923168182373
+4,42.264568586383305,471,scaleIsHeightDp = 1 AND antiAliasing = 1 AND skipUpscaling = 1 AND threads = 90,antiAliasing==1 AND skipUpscaling==1 AND threads==90 AND scaleIsHeightDp==1,0,1.0,1.0,1.0,90,1.3964552879333496
+1,56.27285468088393,752,web = 1,web==1,0,1.0,1.0,1.0,91,0.8006339073181152
+2,57.09327330680122,621,jpeg = 1 AND androidIncludeLdpiTvdpi = 1,androidIncludeLdpiTvdpi==1 AND jpeg==1,0,1.0,1.0,1.0,91,0.978297472000122
+3,38.96876992049643,610,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND round = 1,round==1 AND androidMipmapInsteadOfDrawable==1,0,1.0,1.0,1.0,91,1.211299180984497
+4,20.728435169746778,391,android = 1 AND antiAliasing = 1 AND skipUpscaling = 1 AND threads = 10,antiAliasing==0,0,0.0,0.0,0.0,91,1.0848464965820312
+1,22.18306603205517,1802,androidMipmapInsteadOfDrawable = 1,androidMipmapInsteadOfDrawable==0,0,0.0,0.0,0.0,92,0.9796063899993896
+2,20.48259274679701,979,round = 1 AND threads = 10,round==0,0,0.0,0.0,0.0,92,0.9221477508544922
+3,49.27270392537651,894,android = 1 AND scaleIsHeightDp = 1 AND skipUpscaling = 1,skipUpscaling==1 AND android==1 AND scaleIsHeightDp==1,0,1.0,1.0,1.0,92,1.5549006462097168
+4,21.35967687751053,478,android = 1 AND antiAliasing = 1 AND skipUpscaling = 1 AND androidIncludeLdpiTvdpi = 1,skipUpscaling==0 AND web==0,0,0.0,0.0,0.0,92,1.020418405532837
+1,49.00589828294161,830,win = 1,android==0 AND ios==0 AND web==0,0,1.0,1.0,1.0,93,0.7808628082275391
+2,26.074928423982684,399,web = 1 AND threads = 90,antiAliasing==1 AND png==0 AND round==0 AND android==0 AND web==0 AND jpeg==0,0,0.0,0.0,0.0,93,1.577908992767334
+3,20.968244162177665,380,skipUpscaling = 1 AND ceil = 1 AND threads = 10,iosCreateImagesetFolders==0 AND win==0 AND skipUpscaling==1 AND threads==90 AND androidMipmapInsteadOfDrawable==0 AND web==0,0,0.0,0.0,0.0,93,1.4692208766937256
+4,25.396189919257285,349,android = 1 AND floor = 1 AND antiAliasing = 1 AND threads = 90,iosCreateImagesetFolders==0 AND png==0 AND round==0 AND threads==90 AND bmp==0 AND ios==1 AND floor==0,0,0.0,0.0,0.0,93,1.4362516403198242
+1,20.358139801681567,1648,ios = 1,ios==0,0,0.0,0.0,0.0,94,0.9637730121612548
+2,36.77560952363406,1212,android = 1 AND floor = 1,antiAliasing==1 AND skipUpscaling==1 AND threads==10 AND gif==0 AND androidMipmapInsteadOfDrawable==0 AND web==0 AND floor==0,0,0.0,0.0,0.0,94,1.5651748180389404
+3,30.740712432905163,528,androidMipmapInsteadOfDrawable = 1 AND scaleIsHeightDp = 1 AND threads = 90,iosCreateImagesetFolders==0 AND win==0 AND skipUpscaling==1 AND round==1 AND threads==10 AND scaleIsHeightDp==1 AND web==0,0,0.0,0.0,0.0,94,1.503225803375244
+4,49.78545900812109,540,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND antiAliasing = 1 AND threads = 90,antiAliasing==1 AND threads==90 AND androidMipmapInsteadOfDrawable==1,0,1.0,1.0,1.0,94,1.290820598602295
+1,35.91421724255483,830,win = 1,iosCreateImagesetFolders==1 AND png==0 AND threads==90 AND gif==0 AND scaleIsHeightDp==1 AND floor==0,0,0.0,0.0,0.0,95,1.5184459686279297
+2,20.49216464232846,610,androidMipmapInsteadOfDrawable = 1 AND round = 1,androidMipmapInsteadOfDrawable==0,0,0.0,0.0,0.0,95,0.9238548278808594
+3,41.03353440754286,619,floor = 1 AND skipUpscaling = 1 AND threads = 90,skipUpscaling==1 AND threads==90 AND floor==1,0,1.0,1.0,1.0,95,1.344750165939331
+4,36.65067955348857,476,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND scaleIsHeightDp = 1 AND skipUpscaling = 1,iosCreateImagesetFolders==1 AND skipUpscaling==1 AND bmp==0,0,0.0,0.0,0.0,95,1.1758506298065186
+1,48.40640409355115,832,iosCreateImagesetFolders = 1,iosCreateImagesetFolders==1,0,1.0,1.0,1.0,96,0.7884855270385742
+2,35.62553775244389,1295,jpeg = 1 AND threads = 90,win==1 AND skipUpscaling==0 AND png==0 AND threads==10 AND bmp==0 AND scaleIsHeightDp==1 AND jpeg==0,0,0.0,0.0,0.0,96,1.470425367355347
+3,43.88390587786839,924,android = 1 AND scaleIsHeightDp = 1 AND antiAliasing = 1,antiAliasing==1 AND android==1 AND scaleIsHeightDp==1,0,1.0,1.0,1.0,96,1.45231294631958
+4,24.509051808559427,394,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND skipUpscaling = 1 AND threads = 10,png==0 AND ceil==0 AND threads==90 AND android==0 AND web==0,0,0.0,0.0,0.0,96,1.341482162475586
+1,19.378843676806635,1079,bmp = 1,bmp==0,0,0.0,0.0,0.0,97,1.0406267642974854
+2,36.9493315319128,1212,android = 1 AND jpeg = 1,skipUpscaling==1 AND png==1 AND ios==1 AND floor==0,0,0.0,0.0,0.0,97,1.385540246963501
+3,34.97147481234033,622,android = 1 AND floor = 1 AND androidIncludeLdpiTvdpi = 1,antiAliasing==0 AND bmp==0 AND android==1 AND scaleIsHeightDp==0 AND floor==0,0,0.0,0.0,0.0,97,1.446676254272461
+4,37.707851620657074,493,android = 1 AND scaleIsHeightDp = 1 AND antiAliasing = 1 AND androidIncludeLdpiTvdpi = 1,win==0 AND antiAliasing==0 AND androidIncludeLdpiTvdpi==0 AND threads==10 AND scaleIsHeightDp==1,0,0.0,0.0,0.0,97,1.3635504245758057
+1,33.74240760680779,1144,png = 1,win==0 AND antiAliasing==0 AND skipUpscaling==0 AND androidIncludeLdpiTvdpi==0 AND png==0 AND round==1 AND threads==90,0,0.0,0.0,0.0,98,1.6463799476623535
+2,17.970659950712673,1089,jpeg = 1 AND skipUpscaling = 1,jpeg==0,0,0.0,0.0,0.0,98,0.9022150039672852
+3,28.908275178518235,435,android = 1 AND ceil = 1 AND threads = 10,antiAliasing==1 AND ceil==0 AND bmp==0 AND androidMipmapInsteadOfDrawable==0 AND scaleIsHeightDp==0 AND jpeg==0,0,0.0,0.0,0.0,98,1.3777997493743896
+4,29.167958100674092,343,android = 1 AND scaleIsHeightDp = 1 AND floor = 1 AND threads = 90,win==0 AND png==0 AND ceil==0 AND threads==90 AND bmp==0 AND scaleIsHeightDp==0 AND jpeg==0,0,0.0,0.0,0.0,98,1.390028476715088
+1,27.3012245701186,1144,png = 1,win==0 AND png==0,0,0.0,0.0,0.0,99,1.0745553970336914
+2,56.79883073447992,463,gif = 1 AND antiAliasing = 1,antiAliasing==1 AND gif==1,0,1.0,1.0,1.0,99,1.016840934753418
+3,21.62153105913555,712,android = 1 AND skipUpscaling = 1 AND threads = 10,threads==90 AND gif==0,0,0.0,0.0,0.0,99,1.1039035320281982
+4,35.53330137977779,348,android = 1 AND antiAliasing = 1 AND ceil = 1 AND threads = 90,iosCreateImagesetFolders==0 AND antiAliasing==1 AND skipUpscaling==1 AND round==1 AND threads==90 AND androidMipmapInsteadOfDrawable==0 AND web==0,0,0.0,0.0,0.0,99,1.330575704574585

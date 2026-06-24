@@ -1,0 +1,16 @@
+rule,sg_samples,sg_coverage,rule_num_predicates,rule_features_used
+0.0 <= Dict < 1.0  AND  0.0 <= Multithreading < 1.0  AND  0.0 <= Nice < 1.0  AND  0.0 <= Dist < 1.0  AND  bt2 >= 1.0,116,0.058029014507253625,5,"['Multithreading', 'Dist', 'Dict', 'bt2', 'Nice']"
+hc3 >= 1.0  AND  BlockSize >= 1.0  AND  Dist >= 1.0  AND  Dict >= 1.0  AND  Depth >= 1.0,186,0.09304652326163082,5,"['hc3', 'Dist', 'Dict', 'Depth', 'BlockSize']"
+0.0 <= Dict < 1.0  AND  0.0 <= Multithreading < 1.0  AND  0.0 <= Nice < 1.0  AND  0.0 <= Dist < 1.0  AND  bt4 >= 1.0,141,0.07053526763381691,5,"['Multithreading', 'Dist', 'Dict', 'Nice', 'bt4']"
+0.0 <= Nice < 1.0  AND  0.0 <= Dict < 1.0  AND  0.0 <= Depth < 1.0  AND  0.0 <= Multithreading < 1.0  AND  0.0 <= Dist < 1.0,453,0.22661330665332666,5,"['Multithreading', 'Dist', 'Dict', 'Depth', 'Nice']"
+0.0 <= hc4 < 1.0  AND  0.0 <= BlockSize < 1.0  AND  Multithreading >= 1.0  AND  0.0 <= Nice < 1.0  AND  0.0 <= Lc1Lp3 < 1.0,100,0.05002501250625312,5,"['hc4', 'Multithreading', 'Nice', 'BlockSize', 'Lc1Lp3']"
+0.0 <= hc3 < 1.0  AND  0.0 <= Dict < 1.0  AND  0.0 <= hc4 < 1.0  AND  Dist >= 1.0  AND  0.0 <= Lc0Lp4 < 1.0,134,0.0670335167583792,5,"['hc3', 'hc4', 'Dist', 'Dict', 'Lc0Lp4']"
+0.0 <= Dict < 1.0  AND  0.0 <= Multithreading < 1.0  AND  0.0 <= hc3 < 1.0,559,0.27963981990995496,3,"['Multithreading', 'hc3', 'Dict']"
+bt4 >= 1.0  AND  Dist >= 1.0  AND  BlockSize >= 1.0  AND  Dict >= 1.0  AND  Multithreading >= 1.0,101,0.05052526263131566,5,"['Multithreading', 'Dist', 'Dict', 'BlockSize', 'bt4']"
+bt4 >= 1.0  AND  FlushTimeout >= 1.0  AND  BlockSize >= 1.0  AND  Dist >= 1.0,126,0.06303151575787894,4,"['BlockSize', 'Dist', 'bt4', 'FlushTimeout']"
+0.0 <= BlockSize < 1.0  AND  0.0 <= FlushTimeout < 1.0  AND  0.0 <= crc32 < 1.0,527,0.263631815907954,3,"['BlockSize', 'crc32', 'FlushTimeout']"
+bt3 >= 1.0  AND  Dict >= 1.0  AND  Dist >= 1.0  AND  BlockSize >= 1.0,100,0.05002501250625312,4,"['bt3', 'BlockSize', 'Dist', 'Dict']"
+0.0 <= BlockSize < 1.0,876,0.4382191095547774,1,['BlockSize']
+0.0 <= hc3 < 1.0  AND  0.0 <= hc4 < 1.0  AND  0.0 <= bt4 < 1.0  AND  Dict >= 1.0  AND  Nice >= 1.0,196,0.09804902451225612,5,"['hc3', 'hc4', 'Dict', 'Nice', 'bt4']"
+hc4 >= 1.0  AND  Dist >= 1.0  AND  0.0 <= Lc4Lp0 < 1.0  AND  Dict >= 1.0  AND  0.0 <= Lc1Lp1 < 1.0,129,0.06453226613306653,5,"['hc4', 'Dist', 'Dict', 'Lc1Lp1', 'Lc4Lp0']"
+0.0 <= hc3 < 1.0  AND  0.0 <= hc4 < 1.0,1203,0.6018009004502252,2,"['hc3', 'hc4']"

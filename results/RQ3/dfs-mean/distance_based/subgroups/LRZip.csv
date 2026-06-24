@@ -1,0 +1,6 @@
+rule,sg_samples,sg_coverage,rule_num_predicates,rule_features_used
+compression==1 AND compressionGzip==0 AND compressionLrzip==0 AND compressionZpaq==1 AND level==9,8,0.018518518518518517,5,"['compressionZpaq', 'compressionGzip', 'compression', 'compressionLrzip', 'level']"
+compression==1 AND compressionBzip2==0 AND compressionZpaq==1 AND level==9,8,0.018518518518518517,4,"['compressionZpaq', 'compression', 'compressionBzip2', 'level']"
+compression==1 AND compressionBzip2==0 AND compressionLzo==0 AND compressionZpaq==1 AND level==9,8,0.018518518518518517,5,"['compressionLzo', 'compressionZpaq', 'compressionBzip2', 'compression', 'level']"
+compression==1 AND compressionBzip2==0 AND compressionLrzip==0 AND compressionZpaq==1 AND level==9,8,0.018518518518518517,5,"['compressionZpaq', 'compressionBzip2', 'level', 'compressionLrzip', 'compression']"
+compression==1 AND compressionBzip2==0 AND compressionGzip==0 AND compressionZpaq==1 AND level==9,8,0.018518518518518517,5,"['compressionZpaq', 'compressionGzip', 'compressionBzip2', 'compression', 'level']"

@@ -1,0 +1,6 @@
+rule,sg_samples,sg_coverage,rule_num_predicates,rule_features_used
+Resampling==44 AND CBR==8 AND MidSideStereo==0 AND Freeformat==1 AND Mono==0,2,0.00047664442326024784,5,"['Mono', 'Resampling', 'MidSideStereo', 'CBR', 'Freeformat']"
+Resampling==44 AND CBR==8 AND ReplayGainFast==0 AND Freeformat==1 AND Mono==0,2,0.00047664442326024784,5,"['Mono', 'Resampling', 'ReplayGainFast', 'CBR', 'Freeformat']"
+Resampling==44 AND CBR==8 AND Downmix==0 AND Freeformat==1 AND Mono==0,2,0.00047664442326024784,5,"['Downmix', 'Mono', 'Resampling', 'CBR', 'Freeformat']"
+Resampling==44 AND CBR==8 AND NoReplayGain==1 AND Freeformat==1 AND Mono==0,2,0.00047664442326024784,5,"['Mono', 'Resampling', 'NoReplayGain', 'CBR', 'Freeformat']"
+NoRes==0 AND Resampling==44 AND CBR==8 AND Freeformat==1 AND Mono==0,2,0.00047664442326024784,5,"['CBR', 'Mono', 'Resampling', 'NoRes', 'Freeformat']"

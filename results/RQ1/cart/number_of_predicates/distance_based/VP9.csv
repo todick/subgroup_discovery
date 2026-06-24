@@ -1,0 +1,401 @@
+n_conditions,sg_mean,sg_cardinality,sg_rule,best_rule,best_rule_idx,f1,precision,recall,seed,runtime
+1,5917244.485129629,54000,cyclicRefresh = 1,cyclicRefresh,0,1.0,1.0,1.0,0,1.3033456802368164
+2,2286291.425037037,27000,cyclicRefresh = 1 AND FrameBoost = 1,cyclicRefresh AND FrameBoost,0,1.0,1.0,1.0,0,1.3594138622283936
+3,5420216.147583334,12000,constantBitrate = 1 AND lossless = 1 AND TileColumns = 3,constantBitrate AND lossless AND TileColumns > 1.5 AND TileColumns <= 4.5,0,1.0,1.0,1.0,0,1.3395745754241943
+4,4757593.573185185,13500,realtime = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,lossless AND AutoAltRef AND FrameBoost AND realtime,0,1.0,1.0,1.0,0,1.2981693744659424
+1,1517158.2328333333,54000,off = 1,off,0,1.0,1.0,1.0,1,1.4719395637512207
+2,2495843.6652777777,10800,complexity = 1 AND cpuUsed = 2,complexity AND cpuUsed <= 3.0 AND cpuUsed > 1.0,0,1.0,1.0,1.0,1,1.415553092956543
+3,7457072.576296296,10800,AutoAltRef = 1 AND lossless = 1 AND Threads = 6,AutoAltRef AND lossless AND Threads > 5.0 AND Threads <= 7.0,0,1.0,1.0,1.0,1,1.356476068496704
+4,4865291.339481481,13500,good = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,good AND FrameBoost AND AutoAltRef AND lossless,0,1.0,1.0,1.0,1,1.312973976135254
+1,5834629.120416666,43200,Threads = 2,Threads <= 3.0,0,1.0,1.0,1.0,10,1.4331936836242676
+2,5373578.733981482,10800,cyclicRefresh = 1 AND cpuUsed = 8,cpuUsed > 7.0 AND cyclicRefresh,0,1.0,1.0,1.0,10,1.4102773666381836
+3,1502999.9074444445,18000,good = 1 AND constrainedQuality = 1 AND FrameBoost = 1,constrainedQuality AND FrameBoost AND good,0,1.0,1.0,1.0,10,1.363647222518921
+4,4435455.57362963,13500,good = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,good AND FrameBoost AND AutoAltRef AND lossless,0,1.0,1.0,1.0,10,1.3147203922271729
+1,5578964.916814815,54000,off = 1,off,0,1.0,1.0,1.0,11,1.377392292022705
+2,6230265.140208334,14400,variableBitrate = 1 AND Threads = 6,variableBitrate AND Threads <= 7.0 AND Threads > 5.0,0,1.0,1.0,1.0,11,1.3721301555633545
+3,1137820.6664444443,18000,realtime = 1 AND variableBitrate = 1 AND lossless = 1,variableBitrate AND realtime AND lossless,0,1.0,1.0,1.0,11,1.3215632438659668
+4,1834368.096296296,13500,realtime = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,lossless AND realtime AND FrameBoost AND AutoAltRef,0,1.0,1.0,1.0,11,1.3828821182250977
+1,800629.690925926,54000,off = 1,off,0,1.0,1.0,1.0,12,1.353653907775879
+2,6284175.635703703,27000,AutoAltRef = 1 AND variance = 1,variance AND AutoAltRef,0,1.0,1.0,1.0,12,1.4046273231506348
+3,6524016.9366666665,18000,variableBitrate = 1 AND lossless = 1 AND FrameBoost = 1,variableBitrate AND FrameBoost AND lossless,0,1.0,1.0,1.0,12,1.3315308094024658
+4,4320890.066962963,13500,good = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,bitRate <= 1050.0 AND AutoAltRef AND lagInFrames <= 4.0 AND NOT realtime AND FrameBoost AND lossless,0,0.3333333333333333,1.0,0.2,12,1.3581125736236572
+1,6399227.251180556,43200,Threads = 6,Threads <= 7.0 AND Threads > 5.0,0,1.0,1.0,1.0,13,1.4472553730010986
+2,6696642.867444444,27000,cyclicRefresh = 1 AND lossless = 1,cyclicRefresh AND lossless,0,1.0,1.0,1.0,13,1.3927209377288818
+3,8043726.501851852,13500,realtime = 1 AND AutoAltRef = 1 AND cyclicRefresh = 1,cyclicRefresh AND AutoAltRef AND realtime,0,1.0,1.0,1.0,13,1.319319248199463
+4,7265393.374962963,13500,realtime = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,AutoAltRef AND NOT good AND lossless AND FrameBoost,0,1.0,1.0,1.0,13,1.3219194412231443
+1,4666607.03312963,54000,off = 1,off,0,1.0,1.0,1.0,14,1.35825777053833
+2,3320737.8477407405,27000,good = 1 AND cyclicRefresh = 1,cyclicRefresh AND good,0,1.0,1.0,1.0,14,1.3946657180786133
+3,2774383.074666667,12000,realtime = 1 AND variableBitrate = 1 AND lagInFrames = 0,variableBitrate AND lagInFrames <= 4.0 AND realtime,0,1.0,1.0,1.0,14,1.3377258777618408
+4,2866567.133851852,13500,realtime = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,realtime AND FrameBoost AND AutoAltRef AND lossless,0,1.0,1.0,1.0,14,1.3196969032287598
+1,768279.2313703704,54000,cyclicRefresh = 1,cyclicRefresh,0,1.0,1.0,1.0,15,1.426055669784546
+2,1294030.6846296296,10800,off = 1 AND cpuUsed = 2,off AND cpuUsed <= 3.0 AND cpuUsed > 1.0,0,1.0,1.0,1.0,15,1.3966412544250488
+3,6119027.643425926,10800,good = 1 AND AutoAltRef = 1 AND cpuUsed = 4,good AND AutoAltRef AND cpuUsed <= 5.0 AND cpuUsed > 3.0,0,1.0,1.0,1.0,15,1.3396196365356443
+4,3174957.3792592594,13500,good = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,NOT realtime AND lossless AND FrameBoost AND AutoAltRef,0,1.0,1.0,1.0,15,1.3341476917266846
+1,7218661.287018519,54000,off = 1,off,0,1.0,1.0,1.0,16,1.348351001739502
+2,5331053.606833333,36000,FrameBoost = 1 AND lagInFrames = 8,FrameBoost AND lagInFrames <= 12.0 AND lagInFrames > 4.0,0,1.0,1.0,1.0,16,1.3604276180267334
+3,737430.5803703704,10800,AutoAltRef = 1 AND lossless = 1 AND Threads = 4,Threads <= 5.0 AND Threads > 3.0 AND lossless AND AutoAltRef,0,1.0,1.0,1.0,16,1.3273890018463137
+4,6607220.460222222,13500,good = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,AutoAltRef AND lossless AND good AND FrameBoost,0,1.0,1.0,1.0,16,1.3187217712402344
+1,7765829.577888889,54000,variance = 1,variance,0,1.0,1.0,1.0,17,1.3578212261199951
+2,7215168.916041667,14400,cpuUsed = 4 AND TileColumns = 3,cpuUsed > 3.0 AND cpuUsed <= 5.0 AND TileColumns > 1.5 AND TileColumns <= 4.5,0,1.0,1.0,1.0,17,1.3822476863861084
+3,7044749.672111111,18000,AutoAltRef = 1 AND lossless = 1 AND lagInFrames = 16,lagInFrames > 12.0 AND AutoAltRef AND lossless,0,1.0,1.0,1.0,17,1.3250315189361572
+4,787755.0085185185,13500,realtime = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,AutoAltRef AND NOT good AND FrameBoost AND lossless,0,1.0,1.0,1.0,17,1.2957980632781982
+1,7141381.704930556,43200,bitRate = 1200,bitRate > 1050.0 AND bitRate <= 1350.0,0,1.0,1.0,1.0,18,1.3623921871185305
+2,7821322.714592593,27000,AutoAltRef = 1 AND complexity = 1,complexity AND AutoAltRef,0,1.0,1.0,1.0,18,1.3650565147399902
+3,5166129.677833334,12000,FrameBoost = 1 AND lagInFrames = 0 AND TileColumns = 6,TileColumns > 4.5 AND lagInFrames <= 4.0 AND FrameBoost,0,1.0,1.0,1.0,18,1.2918336391448977
+4,4443878.839555556,13500,good = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,good AND AutoAltRef AND lossless AND FrameBoost,0,1.0,1.0,1.0,18,1.2813961505889893
+1,5487833.5997916665,43200,bitRate = 900,bitRate <= 1050.0 AND bitRate > 750.0,0,1.0,1.0,1.0,19,1.385141134262085
+2,3173649.49675,36000,variableBitrate = 1 AND lossless = 1,variableBitrate AND lossless,0,1.0,1.0,1.0,19,1.3683550357818604
+3,5764380.092666667,13500,realtime = 1 AND off = 1 AND lossless = 1,off AND lossless AND NOT good,0,1.0,1.0,1.0,19,1.351106882095337
+4,4442239.640370371,13500,good = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,lossless AND NOT realtime AND FrameBoost AND AutoAltRef,0,1.0,1.0,1.0,19,1.3379201889038086
+1,7228779.576342593,43200,Threads = 8,Threads > 7.0 AND Threads <= 9.0,0,1.0,1.0,1.0,2,1.667638063430786
+2,6812770.365472223,36000,realtime = 1 AND constrainedQuality = 1,constrainedQuality AND NOT good,0,1.0,1.0,1.0,2,1.5665168762207031
+3,1159055.8113888889,10800,good = 1 AND AutoAltRef = 1 AND Threads = 8,Threads > 7.0 AND Threads <= 9.0 AND NOT realtime AND AutoAltRef,0,1.0,1.0,1.0,2,1.555049180984497
+4,4661603.624074074,13500,realtime = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,lossless AND AutoAltRef AND FrameBoost AND NOT good,0,1.0,1.0,1.0,2,1.5299456119537354
+1,8142361.09212963,43200,bitRate = 1500,bitRate > 1350.0,0,1.0,1.0,1.0,20,1.3593075275421145
+2,3665588.3225,18000,cyclicRefresh = 1 AND constantBitrate = 1,cyclicRefresh AND constantBitrate,0,1.0,1.0,1.0,20,1.3835430145263672
+3,2329253.167925926,13500,realtime = 1 AND variance = 1 AND lossless = 1,variance AND realtime AND lossless,0,1.0,1.0,1.0,20,1.3479082584381104
+4,7550317.778518518,13500,good = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,lossless AND NOT realtime AND AutoAltRef AND FrameBoost,0,1.0,1.0,1.0,20,1.3299143314361572
+1,4838474.943842593,43200,bitRate = 300,bitRate <= 450.0,0,1.0,1.0,1.0,21,1.422706127166748
+2,4327846.138666667,27000,off = 1 AND FrameBoost = 1,off AND FrameBoost,0,1.0,1.0,1.0,21,1.4096465110778809
+3,3033601.261203704,10800,good = 1 AND lossless = 1 AND cpuUsed = 2,cpuUsed <= 3.0 AND good AND lossless AND cpuUsed > 1.0,0,1.0,1.0,1.0,21,1.327338933944702
+4,1916001.068962963,13500,realtime = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,FrameBoost AND realtime AND AutoAltRef AND lossless,0,1.0,1.0,1.0,21,1.33487868309021
+1,5599654.915222222,54000,off = 1,off,0,1.0,1.0,1.0,22,1.3685834407806396
+2,7387009.940777778,18000,complexity = 1 AND TileColumns = 6,complexity AND TileColumns > 4.5,0,1.0,1.0,1.0,22,1.399144411087036
+3,2327629.515833333,18000,realtime = 1 AND variableBitrate = 1 AND FrameBoost = 1,variableBitrate AND FrameBoost AND NOT good,0,1.0,1.0,1.0,22,1.3259327411651611
+4,2688385.122074074,13500,good = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,NOT realtime AND lossless AND AutoAltRef AND FrameBoost,0,1.0,1.0,1.0,22,1.299440860748291
+1,3421562.8017361118,43200,Threads = 4,Threads <= 5.0 AND Threads > 3.0,0,1.0,1.0,1.0,23,1.3690896034240725
+2,4007099.0547916666,14400,lagInFrames = 0 AND Threads = 10,FrameBoost AND Threads > 7.0 AND lagInFrames <= 4.0 AND cpuUsed > 1.0 AND Threads > 9.0,0,0.5714285714285715,1.0,0.4,23,1.3921825885772705
+3,493309.7598333333,12000,constantBitrate = 1 AND lossless = 1 AND lagInFrames = 0,constantBitrate AND lagInFrames <= 4.0 AND lossless,0,1.0,1.0,1.0,23,1.3589282035827637
+4,2196861.714962963,13500,good = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,lossless AND AutoAltRef AND good AND FrameBoost,0,1.0,1.0,1.0,23,1.319312334060669
+1,4033275.8813425926,43200,bitRate = 1200,bitRate > 1050.0 AND bitRate <= 1350.0,0,1.0,1.0,1.0,24,1.433934211730957
+2,5717011.202638889,14400,lagInFrames = 16 AND cpuUsed = 0,cpuUsed <= 1.0 AND lagInFrames > 12.0,0,1.0,1.0,1.0,24,1.4376428127288818
+3,4844907.108814815,13500,good = 1 AND AutoAltRef = 1 AND complexity = 1,complexity AND NOT realtime AND AutoAltRef,0,1.0,1.0,1.0,24,1.340217113494873
+4,6935244.504592593,13500,good = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,NOT realtime AND lossless AND FrameBoost AND AutoAltRef,0,1.0,1.0,1.0,24,1.3292005062103271
+1,7677095.578055556,43200,bitRate = 900,bitRate <= 1050.0 AND bitRate > 750.0,0,1.0,1.0,1.0,25,1.4370434284210205
+2,1146649.6147222223,10800,complexity = 1 AND bitRate = 900,complexity AND bitRate <= 1050.0 AND bitRate > 750.0,0,1.0,1.0,1.0,25,1.3921754360198977
+3,2122082.201759259,10800,AutoAltRef = 1 AND lossless = 1 AND bitRate = 1200,bitRate > 1050.0 AND AutoAltRef AND lossless AND bitRate <= 1350.0,0,1.0,1.0,1.0,25,1.3788678646087646
+4,3036409.42037037,13500,realtime = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,AutoAltRef AND lossless AND realtime AND FrameBoost,0,1.0,1.0,1.0,25,1.3032770156860352
+1,5251873.886550926,43200,Threads = 4,Threads <= 5.0 AND Threads > 3.0,0,1.0,1.0,1.0,26,1.3607902526855469
+2,2345979.7786805555,14400,constantBitrate = 1 AND bitRate = 1500,bitRate > 1350.0 AND constantBitrate,0,1.0,1.0,1.0,26,1.4090983867645264
+3,5025345.84037037,13500,AutoAltRef = 1 AND off = 1 AND FrameBoost = 1,off AND AutoAltRef AND FrameBoost,0,1.0,1.0,1.0,26,1.3380703926086426
+4,5470526.754296296,13500,realtime = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,FrameBoost AND AutoAltRef AND realtime AND lossless,0,1.0,1.0,1.0,26,1.3539111614227295
+1,6236369.972703704,54000,complexity = 1,complexity,0,1.0,1.0,1.0,27,1.414628982543945
+2,7341672.737333333,27000,variance = 1 AND lossless = 1,variance AND lossless,0,1.0,1.0,1.0,27,1.3951146602630615
+3,4966858.757314815,10800,lossless = 1 AND FrameBoost = 1 AND Threads = 10,Threads > 9.0 AND lossless AND FrameBoost,0,1.0,1.0,1.0,27,1.3773691654205322
+4,6473994.76725926,13500,good = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,NOT realtime AND lossless AND AutoAltRef AND FrameBoost,0,1.0,1.0,1.0,27,1.3124489784240725
+1,2621936.677851852,54000,cyclicRefresh = 1,cyclicRefresh,0,1.0,1.0,1.0,28,1.3561174869537354
+2,3753749.5646527777,14400,Threads = 10 AND TileColumns = 0,TileColumns <= 1.5 AND Threads > 9.0,0,1.0,1.0,1.0,28,1.4005866050720217
+3,5997623.895259259,13500,good = 1 AND complexity = 1 AND lossless = 1,complexity AND NOT realtime AND lossless,0,1.0,1.0,1.0,28,1.3458034992218018
+4,1506858.676074074,13500,realtime = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,realtime AND FrameBoost AND lossless AND AutoAltRef,0,1.0,1.0,1.0,28,1.324256420135498
+1,6702546.683773148,43200,cpuUsed = 4,cpuUsed <= 5.0 AND cpuUsed > 3.0,0,1.0,1.0,1.0,29,1.3727214336395264
+2,711377.5655555555,14400,Threads = 8 AND TileColumns = 6,TileColumns > 4.5 AND Threads > 7.0 AND Threads <= 9.0,0,1.0,1.0,1.0,29,1.3891334533691406
+3,2149729.8350925925,10800,good = 1 AND lossless = 1 AND cpuUsed = 6,cpuUsed > 5.0 AND NOT realtime AND cpuUsed <= 7.0 AND lossless,0,1.0,1.0,1.0,29,1.3453080654144287
+4,4351751.965333333,13500,realtime = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,lossless AND FrameBoost AND AutoAltRef AND NOT good,0,1.0,1.0,1.0,29,1.3335449695587158
+1,6681393.409425925,54000,variance = 1,variance,0,1.0,1.0,1.0,3,1.6922318935394287
+2,7941833.010185185,10800,complexity = 1 AND cpuUsed = 4,complexity AND cpuUsed > 3.0 AND cpuUsed <= 5.0,0,1.0,1.0,1.0,3,1.5877084732055664
+3,1720537.5691666666,12000,variableBitrate = 1 AND FrameBoost = 1 AND TileColumns = 0,TileColumns <= 1.5 AND variableBitrate AND FrameBoost,0,1.0,1.0,1.0,3,1.5344078540802002
+4,4323810.023185185,13500,good = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,cpuUsed > 1.0 AND AutoAltRef AND lossless AND cpuUsed > 5.0 AND NOT realtime AND FrameBoost,0,0.5714285714285715,1.0,0.4,3,1.5339138507843018
+1,1830169.1568333332,54000,complexity = 1,complexity,0,1.0,1.0,1.0,30,1.3443098068237305
+2,6457965.879305556,36000,good = 1 AND constrainedQuality = 1,constrainedQuality AND NOT realtime,0,1.0,1.0,1.0,30,1.394775629043579
+3,2833404.2055,12000,good = 1 AND constrainedQuality = 1 AND lagInFrames = 0,lagInFrames <= 4.0 AND constrainedQuality AND good,0,1.0,1.0,1.0,30,1.3894033432006836
+4,7295152.553703704,13500,realtime = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,AutoAltRef AND realtime AND FrameBoost AND lossless,0,1.0,1.0,1.0,30,1.388235092163086
+1,3436224.53962963,43200,cpuUsed = 4,cpuUsed > 3.0 AND cpuUsed <= 5.0,0,1.0,1.0,1.0,31,1.3908565044403076
+2,1579580.095277778,10800,off = 1 AND bitRate = 600,off AND bitRate <= 750.0 AND bitRate > 450.0,0,1.0,1.0,1.0,31,1.3802731037139893
+3,8173971.866203704,10800,good = 1 AND AutoAltRef = 1 AND cpuUsed = 4,good AND AutoAltRef AND cpuUsed > 3.0 AND cpuUsed <= 5.0,0,1.0,1.0,1.0,31,1.3373167514801023
+4,557733.3338518519,13500,good = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,FrameBoost AND lossless AND AutoAltRef AND good,0,1.0,1.0,1.0,31,1.35622239112854
+1,4958118.158833333,54000,cyclicRefresh = 1,cyclicRefresh,0,1.0,1.0,1.0,32,1.3501639366149902
+2,7754989.322037037,27000,off = 1 AND lossless = 1,off AND lossless,0,1.0,1.0,1.0,32,1.3983492851257324
+3,4673342.448083334,12000,AutoAltRef = 1 AND variableBitrate = 1 AND lagInFrames = 8,variableBitrate AND AutoAltRef AND lagInFrames > 4.0 AND lagInFrames <= 12.0,0,1.0,1.0,1.0,32,1.3303589820861816
+4,7772682.962740741,13500,good = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,good AND lossless AND AutoAltRef AND FrameBoost,0,1.0,1.0,1.0,32,1.3612589836120603
+1,5152084.89599537,43200,cpuUsed = 4,cpuUsed <= 5.0 AND cpuUsed > 3.0,0,1.0,1.0,1.0,33,1.4371600151062012
+2,2718791.498,18000,variance = 1 AND constantBitrate = 1,variance AND constantBitrate,0,1.0,1.0,1.0,33,1.3864467144012451
+3,6688009.531611111,18000,good = 1 AND constantBitrate = 1 AND lossless = 1,constantBitrate AND good AND lossless,0,1.0,1.0,1.0,33,1.3219006061553955
+4,1861725.3895555555,13500,realtime = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,FrameBoost AND lossless AND NOT good AND AutoAltRef,0,1.0,1.0,1.0,33,1.332878589630127
+1,1717030.2467824074,43200,cpuUsed = 2,cpuUsed <= 3.0 AND cpuUsed > 1.0,0,1.0,1.0,1.0,34,1.3733983039855957
+2,7038010.606481481,27000,complexity = 1 AND lossless = 1,complexity AND lossless,0,1.0,1.0,1.0,34,1.3899197578430176
+3,2827432.2784444443,13500,realtime = 1 AND variance = 1 AND FrameBoost = 1,variance AND realtime AND FrameBoost,0,1.0,1.0,1.0,34,1.321021318435669
+4,5645916.009037037,13500,good = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,lossless AND FrameBoost AND good AND AutoAltRef,0,1.0,1.0,1.0,34,1.3421316146850586
+1,1718428.438912037,43200,Threads = 4,Threads <= 5.0 AND Threads > 3.0,0,1.0,1.0,1.0,35,1.3380556106567385
+2,6428586.112777778,18000,cyclicRefresh = 1 AND lagInFrames = 16,cyclicRefresh AND lagInFrames > 12.0,0,1.0,1.0,1.0,35,1.411865234375
+3,1865293.746,12000,constantBitrate = 1 AND lossless = 1 AND TileColumns = 0,TileColumns <= 1.5 AND constantBitrate AND lossless,0,1.0,1.0,1.0,35,1.340342998504639
+4,6838490.055407408,13500,realtime = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,realtime AND AutoAltRef AND FrameBoost AND lossless,0,1.0,1.0,1.0,35,1.2909255027770996
+1,6784700.652939815,43200,Threads = 2,Threads <= 3.0,0,1.0,1.0,1.0,36,1.3565006256103516
+2,3767055.2310555554,36000,realtime = 1 AND constantBitrate = 1,constantBitrate AND NOT good,0,1.0,1.0,1.0,36,1.4048054218292236
+3,7085593.84537037,10800,realtime = 1 AND AutoAltRef = 1 AND cpuUsed = 6,cpuUsed > 5.0 AND realtime AND AutoAltRef AND cpuUsed <= 7.0,0,1.0,1.0,1.0,36,1.3392066955566406
+4,6493624.03437037,13500,good = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,AutoAltRef AND lossless AND good AND FrameBoost,0,1.0,1.0,1.0,36,1.3240351676940918
+1,4723238.790111112,54000,complexity = 1,complexity,0,1.0,1.0,1.0,37,1.345050811767578
+2,2722274.6163333333,18000,complexity = 1 AND TileColumns = 6,complexity AND TileColumns > 4.5,0,1.0,1.0,1.0,37,1.406846284866333
+3,4540152.179833333,18000,AutoAltRef = 1 AND constrainedQuality = 1 AND FrameBoost = 1,FrameBoost AND constrainedQuality AND AutoAltRef,0,1.0,1.0,1.0,37,1.3293113708496094
+4,5965690.82437037,13500,good = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,lossless AND good AND FrameBoost AND AutoAltRef,0,1.0,1.0,1.0,37,1.361231803894043
+1,5695973.213101852,43200,Threads = 8,Threads > 7.0 AND Threads <= 9.0,0,1.0,1.0,1.0,38,1.4453685283660889
+2,6252229.577870371,10800,cyclicRefresh = 1 AND Threads = 8,cyclicRefresh AND Threads > 7.0 AND Threads <= 9.0,0,1.0,1.0,1.0,38,1.4065065383911133
+3,2995567.5573333334,18000,constantBitrate = 1 AND lossless = 1 AND FrameBoost = 1,constantBitrate AND lossless AND FrameBoost,0,1.0,1.0,1.0,38,1.3158831596374512
+4,5834626.8821481485,13500,realtime = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,lossless AND realtime AND AutoAltRef AND FrameBoost,0,1.0,1.0,1.0,38,1.3229868412017822
+1,6681193.839907408,43200,cpuUsed = 0,cpuUsed <= 1.0,0,1.0,1.0,1.0,39,1.3672199249267578
+2,6275103.578472222,14400,lagInFrames = 16 AND bitRate = 600,lagInFrames > 12.0 AND bitRate <= 750.0 AND bitRate > 450.0,0,1.0,1.0,1.0,39,1.3950376510620115
+3,636788.8721666667,18000,realtime = 1 AND constrainedQuality = 1 AND lossless = 1,constrainedQuality AND lossless AND NOT good,0,1.0,1.0,1.0,39,1.3077633380889893
+4,521431.3111851852,13500,realtime = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,FrameBoost AND lossless AND AutoAltRef AND realtime,0,1.0,1.0,1.0,39,1.2953383922576904
+1,6834483.792722222,54000,complexity = 1,complexity,0,1.0,1.0,1.0,4,1.391968011856079
+2,2565293.889375,14400,lagInFrames = 8 AND bitRate = 300,bitRate <= 450.0 AND lagInFrames <= 12.0 AND lagInFrames > 4.0,0,1.0,1.0,1.0,4,1.447431564331055
+3,4461200.916611111,18000,good = 1 AND FrameBoost = 1 AND TileColumns = 3,good AND FrameBoost AND TileColumns <= 4.5 AND TileColumns > 1.5,0,1.0,1.0,1.0,4,1.3017654418945312
+4,1990125.267925926,13500,good = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,FrameBoost AND good AND AutoAltRef AND lossless,0,1.0,1.0,1.0,4,1.4120912551879885
+1,4877225.095481481,54000,cyclicRefresh = 1,cyclicRefresh,0,1.0,1.0,1.0,40,1.3548643589019775
+2,5131478.208240741,21600,realtime = 1 AND bitRate = 1500,bitRate > 1350.0 AND NOT good,0,1.0,1.0,1.0,40,1.3938822746276855
+3,7674255.673407407,13500,AutoAltRef = 1 AND complexity = 1 AND FrameBoost = 1,complexity AND AutoAltRef AND FrameBoost,0,1.0,1.0,1.0,40,1.3221261501312256
+4,606823.2123703704,13500,realtime = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,AutoAltRef AND lossless AND NOT good AND FrameBoost,0,1.0,1.0,1.0,40,1.2998862266540527
+1,1897679.6942592592,43200,bitRate = 1200,bitRate > 1050.0 AND bitRate <= 1350.0,0,1.0,1.0,1.0,41,1.411573886871338
+2,3524127.886740741,27000,cyclicRefresh = 1 AND lossless = 1,cyclicRefresh AND lossless,0,1.0,1.0,1.0,41,1.4375441074371338
+3,4666520.137,12000,good = 1 AND variableBitrate = 1 AND lagInFrames = 8,good AND variableBitrate AND lagInFrames > 4.0 AND lagInFrames <= 12.0,0,1.0,1.0,1.0,41,1.2952210903167725
+4,7393578.805259259,13500,good = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,good AND lossless AND AutoAltRef AND FrameBoost,0,1.0,1.0,1.0,41,1.372011423110962
+1,3145533.972777778,43200,bitRate = 1200,bitRate > 1050.0 AND bitRate <= 1350.0,0,1.0,1.0,1.0,42,1.3845961093902588
+2,4937278.65575,36000,variableBitrate = 1 AND lossless = 1,variableBitrate AND lossless,0,1.0,1.0,1.0,42,1.385131597518921
+3,1173971.415388889,18000,AutoAltRef = 1 AND lossless = 1 AND TileColumns = 0,TileColumns <= 1.5 AND AutoAltRef AND lossless,0,1.0,1.0,1.0,42,1.3250551223754885
+4,7146269.199259259,13500,good = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,AutoAltRef AND lossless AND FrameBoost AND good,0,1.0,1.0,1.0,42,1.351912021636963
+1,7443596.0365,54000,variance = 1,variance,0,1.0,1.0,1.0,43,1.3473453521728516
+2,6365509.069425926,54000,good = 1 AND FrameBoost = 1,FrameBoost AND NOT realtime,0,1.0,1.0,1.0,43,1.3814482688903809
+3,6965558.024222222,18000,constantBitrate = 1 AND lossless = 1 AND FrameBoost = 1,constantBitrate AND lossless AND FrameBoost,0,1.0,1.0,1.0,43,1.337719202041626
+4,5265352.827333333,13500,good = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,FrameBoost AND NOT realtime AND AutoAltRef AND lossless,0,1.0,1.0,1.0,43,1.3302710056304932
+1,4633434.460944445,54000,complexity = 1,complexity,0,1.0,1.0,1.0,44,1.3718795776367188
+2,1399585.8966666667,21600,FrameBoost = 1 AND Threads = 8,Threads > 7.0 AND FrameBoost AND Threads <= 9.0,0,1.0,1.0,1.0,44,1.3956267833709717
+3,5381623.927685185,10800,good = 1 AND AutoAltRef = 1 AND Threads = 6,AutoAltRef AND good AND Threads <= 7.0 AND Threads > 5.0,0,1.0,1.0,1.0,44,1.2954857349395752
+4,3895569.516592593,13500,realtime = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,AutoAltRef AND realtime AND lossless AND FrameBoost,0,1.0,1.0,1.0,44,1.375502109527588
+1,1142005.249351852,43200,cpuUsed = 0,cpuUsed <= 1.0,0,1.0,1.0,1.0,45,1.383279800415039
+2,5267931.974388889,18000,cyclicRefresh = 1 AND constrainedQuality = 1,cyclicRefresh AND constrainedQuality,0,1.0,1.0,1.0,45,1.398716688156128
+3,2958838.470148148,13500,good = 1 AND AutoAltRef = 1 AND variance = 1,variance AND AutoAltRef AND good,0,1.0,1.0,1.0,45,1.3343355655670166
+4,3874440.2803703705,13500,good = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,lagInFrames > 4.0 AND lossless AND Threads > 5.0 AND AutoAltRef AND NOT realtime AND FrameBoost,0,0.5714285714285715,1.0,0.4,45,1.3233137130737305
+1,6180396.252722222,54000,complexity = 1,complexity,0,1.0,1.0,1.0,46,1.344857692718506
+2,6869404.935925926,27000,off = 1 AND FrameBoost = 1,off AND FrameBoost,0,1.0,1.0,1.0,46,1.393681526184082
+3,2449775.4707407407,10800,realtime = 1 AND AutoAltRef = 1 AND Threads = 8,Threads > 7.0 AND realtime AND AutoAltRef AND Threads <= 9.0,0,1.0,1.0,1.0,46,1.3387818336486816
+4,2877997.7194814817,13500,realtime = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,realtime AND lossless AND FrameBoost AND AutoAltRef,0,1.0,1.0,1.0,46,1.279865026473999
+1,8099028.423111111,54000,complexity = 1,complexity,0,1.0,1.0,1.0,47,1.3621573448181152
+2,6179873.140555556,36000,AutoAltRef = 1 AND constantBitrate = 1,constantBitrate AND AutoAltRef,0,1.0,1.0,1.0,47,1.3893651962280271
+3,465885.6269444444,18000,realtime = 1 AND constrainedQuality = 1 AND lossless = 1,constrainedQuality AND NOT good AND lossless,0,1.0,1.0,1.0,47,1.313511848449707
+4,1227467.5497037035,13500,realtime = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,realtime AND FrameBoost AND AutoAltRef AND lossless,0,1.0,1.0,1.0,47,1.313565731048584
+1,5654740.27437037,54000,complexity = 1,complexity,0,1.0,1.0,1.0,48,1.3711140155792236
+2,2253161.75675,36000,variableBitrate = 1 AND lossless = 1,variableBitrate AND lossless,0,1.0,1.0,1.0,48,1.4008524417877195
+3,5586901.21712963,10800,realtime = 1 AND FrameBoost = 1 AND cpuUsed = 6,cpuUsed > 5.0 AND FrameBoost AND cpuUsed <= 7.0 AND realtime,0,1.0,1.0,1.0,48,1.324819803237915
+4,3732266.2876296295,13500,good = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,AutoAltRef AND lossless AND NOT realtime AND FrameBoost,0,1.0,1.0,1.0,48,1.3320274353027344
+1,6560987.628287037,43200,cpuUsed = 4,cpuUsed > 3.0 AND cpuUsed <= 5.0,0,1.0,1.0,1.0,49,1.3930039405822754
+2,2386684.904611111,18000,cyclicRefresh = 1 AND constrainedQuality = 1,cyclicRefresh AND constrainedQuality,0,1.0,1.0,1.0,49,1.397923469543457
+3,1450631.9561666667,18000,good = 1 AND variableBitrate = 1 AND lossless = 1,variableBitrate AND good AND lossless,0,1.0,1.0,1.0,49,1.318465232849121
+4,8069827.646666666,13500,realtime = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,lossless AND realtime AND AutoAltRef AND FrameBoost,0,1.0,1.0,1.0,49,1.294576644897461
+1,722424.1816666666,54000,cyclicRefresh = 1,cyclicRefresh,0,1.0,1.0,1.0,5,1.3745319843292236
+2,569080.2747685185,21600,realtime = 1 AND Threads = 2,Threads <= 3.0 AND NOT good,0,1.0,1.0,1.0,5,1.427828073501587
+3,4321633.443611112,10800,lossless = 1 AND FrameBoost = 1 AND Threads = 4,FrameBoost AND constantBitrate AND lossless AND Threads > 3.0 AND Threads <= 5.0,0,0.5,1.0,0.3333333333333333,5,1.3174867630004885
+4,4678367.916,13500,realtime = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,AutoAltRef AND lossless AND NOT good AND FrameBoost,0,1.0,1.0,1.0,5,1.3914196491241455
+1,7985915.378222222,54000,off = 1,off,0,1.0,1.0,1.0,50,1.3470475673675537
+2,2405176.359777778,18000,variance = 1 AND variableBitrate = 1,variance AND variableBitrate,0,1.0,1.0,1.0,50,1.4007174968719482
+3,6293668.894916667,12000,realtime = 1 AND lagInFrames = 0 AND TileColumns = 3,lagInFrames <= 4.0 AND realtime AND TileColumns > 1.5 AND TileColumns <= 4.5,0,1.0,1.0,1.0,50,1.351665496826172
+4,6655423.822592593,13500,good = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,lossless AND FrameBoost AND NOT realtime AND AutoAltRef,0,1.0,1.0,1.0,50,1.3264808654785156
+1,3753517.904685185,54000,cyclicRefresh = 1,cyclicRefresh,0,1.0,1.0,1.0,51,1.3334133625030518
+2,7273244.77662037,21600,good = 1 AND cpuUsed = 2,cpuUsed <= 3.0 AND NOT realtime AND cpuUsed > 1.0,0,1.0,1.0,1.0,51,1.3811802864074707
+3,941728.6718888888,18000,realtime = 1 AND AutoAltRef = 1 AND TileColumns = 0,TileColumns <= 1.5 AND NOT good AND AutoAltRef,0,1.0,1.0,1.0,51,1.3634614944458008
+4,4997425.281555556,13500,good = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,lossless AND FrameBoost AND AutoAltRef AND NOT realtime,0,1.0,1.0,1.0,51,1.3111443519592283
+1,5076208.957611111,54000,cyclicRefresh = 1,cyclicRefresh,0,1.0,1.0,1.0,52,1.353287935256958
+2,959385.9453055556,36000,lossless = 1 AND TileColumns = 0,TileColumns <= 1.5 AND lossless,0,1.0,1.0,1.0,52,1.3829684257507324
+3,2752999.2324074074,10800,realtime = 1 AND FrameBoost = 1 AND bitRate = 600,bitRate <= 750.0 AND bitRate > 450.0 AND FrameBoost AND realtime,0,1.0,1.0,1.0,52,1.369197130203247
+4,5548106.97125926,13500,realtime = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,realtime AND AutoAltRef AND lossless AND FrameBoost,0,1.0,1.0,1.0,52,1.3300650119781494
+1,743072.5469675926,43200,bitRate = 1200,bitRate > 1050.0 AND bitRate <= 1350.0,0,1.0,1.0,1.0,53,1.3724915981292725
+2,3996977.686333333,18000,complexity = 1 AND constantBitrate = 1,constantBitrate AND NOT cyclicRefresh AND NOT variance AND cpuUsed > 7.0 AND complexity,0,0.3333333333333333,1.0,0.2,53,1.3765084743499756
+3,2355370.4547777777,18000,lossless = 1 AND FrameBoost = 1 AND TileColumns = 6,TileColumns > 4.5 AND FrameBoost AND lossless,0,1.0,1.0,1.0,53,1.3398652076721191
+4,6636025.227037037,13500,realtime = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,AutoAltRef AND lossless AND realtime AND FrameBoost,0,1.0,1.0,1.0,53,1.3148338794708252
+1,1167775.982,54000,off = 1,off,0,1.0,1.0,1.0,54,1.367090940475464
+2,7469709.798458333,24000,constantBitrate = 1 AND TileColumns = 3,constantBitrate AND TileColumns > 1.5 AND TileColumns <= 4.5,0,1.0,1.0,1.0,54,1.3870124816894531
+3,5792608.385916667,12000,AutoAltRef = 1 AND constantBitrate = 1 AND lagInFrames = 16,lagInFrames > 12.0 AND constantBitrate AND AutoAltRef,0,1.0,1.0,1.0,54,1.3704795837402344
+4,1450051.9784444445,13500,good = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,AutoAltRef AND FrameBoost AND NOT realtime AND lossless,0,1.0,1.0,1.0,54,1.3215315341949463
+1,4076709.347240741,54000,cyclicRefresh = 1,cyclicRefresh,0,1.0,1.0,1.0,55,1.3632118701934814
+2,5390729.2397407405,27000,good = 1 AND variance = 1,variance AND NOT realtime,0,1.0,1.0,1.0,55,1.4063382148742676
+3,1979896.003555556,13500,good = 1 AND cyclicRefresh = 1 AND FrameBoost = 1,cyclicRefresh AND NOT realtime AND FrameBoost,0,1.0,1.0,1.0,55,1.347738265991211
+4,3278075.106518518,13500,realtime = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,lossless AND FrameBoost AND AutoAltRef AND NOT good,0,1.0,1.0,1.0,55,1.3502256870269775
+1,5340206.517203704,54000,complexity = 1,complexity,0,1.0,1.0,1.0,56,1.3625586032867432
+2,6773472.485347223,14400,constrainedQuality = 1 AND cpuUsed = 2,constrainedQuality AND cpuUsed <= 3.0 AND cpuUsed > 1.0,0,1.0,1.0,1.0,56,1.3883578777313232
+3,2547309.311777778,13500,good = 1 AND variance = 1 AND FrameBoost = 1,variance AND FrameBoost AND NOT realtime,0,1.0,1.0,1.0,56,1.349226474761963
+4,1644624.7771111112,13500,realtime = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,NOT good AND AutoAltRef AND lossless AND FrameBoost,0,1.0,1.0,1.0,56,1.3250501155853271
+1,7717264.2625,43200,bitRate = 300,bitRate <= 450.0,0,1.0,1.0,1.0,57,1.3832495212554932
+2,5378332.427777777,10800,variance = 1 AND cpuUsed = 4,variance AND cpuUsed <= 5.0 AND cpuUsed > 3.0,0,1.0,1.0,1.0,57,1.4173293113708496
+3,5102675.8915740745,10800,realtime = 1 AND FrameBoost = 1 AND Threads = 6,realtime AND FrameBoost AND Threads > 5.0 AND Threads <= 7.0,0,1.0,1.0,1.0,57,1.3242745399475098
+4,5784481.052,13500,realtime = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,realtime AND AutoAltRef AND FrameBoost AND lossless,0,1.0,1.0,1.0,57,1.28851056098938
+1,1288585.1456712964,43200,Threads = 8,Threads > 7.0 AND Threads <= 9.0,0,1.0,1.0,1.0,58,1.3569915294647217
+2,4265066.489194444,36000,AutoAltRef = 1 AND constantBitrate = 1,constantBitrate AND AutoAltRef,0,1.0,1.0,1.0,58,1.3866791725158691
+3,5007097.038166666,18000,good = 1 AND constantBitrate = 1 AND lossless = 1,constantBitrate AND lossless AND good,0,1.0,1.0,1.0,58,1.341012716293335
+4,7662844.232518518,13500,good = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,good AND AutoAltRef AND FrameBoost AND lossless,0,1.0,1.0,1.0,58,1.3100600242614746
+1,1554003.7746064814,43200,bitRate = 1500,bitRate > 1350.0,0,1.0,1.0,1.0,59,1.3885107040405271
+2,8043175.507203704,54000,AutoAltRef = 1 AND lossless = 1,AutoAltRef AND lossless,0,1.0,1.0,1.0,59,1.3905212879180908
+3,1839143.0443333331,18000,good = 1 AND constantBitrate = 1 AND lossless = 1,constantBitrate AND good AND lossless,0,1.0,1.0,1.0,59,1.3222079277038574
+4,1133423.6888888888,13500,realtime = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,lossless AND AutoAltRef AND FrameBoost AND realtime,0,1.0,1.0,1.0,59,1.3246345520019531
+1,6392330.292611111,54000,off = 1,off,0,1.0,1.0,1.0,6,1.378223180770874
+2,7097135.628638889,36000,lossless = 1 AND TileColumns = 3,lossless AND TileColumns <= 4.5 AND TileColumns > 1.5,0,1.0,1.0,1.0,6,1.3535985946655271
+3,6402593.701407407,13500,good = 1 AND complexity = 1 AND FrameBoost = 1,complexity AND FrameBoost AND NOT realtime,0,1.0,1.0,1.0,6,1.3079242706298828
+4,3376952.873037037,13500,good = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,AutoAltRef AND lossless AND FrameBoost AND good,0,1.0,1.0,1.0,6,1.293609619140625
+1,3232092.744467593,43200,Threads = 6,Threads <= 7.0 AND Threads > 5.0,0,1.0,1.0,1.0,60,1.3694400787353516
+2,540788.8313194445,14400,variableBitrate = 1 AND Threads = 4,variableBitrate AND Threads <= 5.0 AND Threads > 3.0,0,1.0,1.0,1.0,60,1.3907670974731443
+3,7375336.687777778,13500,realtime = 1 AND cyclicRefresh = 1 AND FrameBoost = 1,cyclicRefresh AND FrameBoost AND realtime,0,1.0,1.0,1.0,60,1.3328912258148191
+4,2809571.69637037,13500,good = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,AutoAltRef AND FrameBoost AND NOT realtime AND lossless,0,1.0,1.0,1.0,60,1.296115159988403
+1,3277158.1343888887,54000,cyclicRefresh = 1,cyclicRefresh,0,1.0,1.0,1.0,61,1.40112566947937
+2,6433566.4227083335,14400,lagInFrames = 0 AND cpuUsed = 8,cpuUsed > 7.0 AND lagInFrames <= 4.0,0,1.0,1.0,1.0,61,1.4697890281677246
+3,1397401.061925926,13500,realtime = 1 AND complexity = 1 AND lossless = 1,complexity AND lossless AND NOT good,0,1.0,1.0,1.0,61,1.3631010055541992
+4,2537714.339037037,13500,realtime = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,AutoAltRef AND FrameBoost AND realtime AND lossless,0,1.0,1.0,1.0,61,1.3332672119140625
+1,698054.1353888889,54000,cyclicRefresh = 1,cyclicRefresh,0,1.0,1.0,1.0,62,1.4780476093292236
+2,3010489.8119444447,18000,variance = 1 AND constrainedQuality = 1,variance AND constrainedQuality,0,1.0,1.0,1.0,62,1.5997626781463623
+3,6065189.043777778,13500,realtime = 1 AND AutoAltRef = 1 AND off = 1,off AND NOT good AND AutoAltRef,0,1.0,1.0,1.0,62,1.4517087936401367
+4,7947274.449407407,13500,realtime = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,AutoAltRef AND FrameBoost AND lossless AND NOT good,0,1.0,1.0,1.0,62,1.5889105796813965
+1,5133840.804513888,43200,cpuUsed = 4,cpuUsed <= 5.0 AND cpuUsed > 3.0,0,1.0,1.0,1.0,63,1.5684576034545898
+2,7773639.863333333,14400,lagInFrames = 16 AND cpuUsed = 0,cpuUsed <= 1.0 AND lagInFrames > 12.0,0,1.0,1.0,1.0,63,1.5220367908477783
+3,5714672.787333333,18000,AutoAltRef = 1 AND lossless = 1 AND TileColumns = 3,AutoAltRef AND lossless AND TileColumns <= 4.5 AND TileColumns > 1.5,0,1.0,1.0,1.0,63,1.4567971229553225
+4,7377768.963259259,13500,realtime = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,FrameBoost AND AutoAltRef AND lossless AND realtime,0,1.0,1.0,1.0,63,1.4845287799835205
+1,2285442.1192037035,54000,complexity = 1,complexity,0,1.0,1.0,1.0,64,1.569003343582153
+2,6077030.109611111,36000,good = 1 AND variableBitrate = 1,variableBitrate AND good,0,1.0,1.0,1.0,64,1.514763116836548
+3,7488746.573388888,18000,good = 1 AND constantBitrate = 1 AND FrameBoost = 1,constantBitrate AND NOT realtime AND FrameBoost,0,1.0,1.0,1.0,64,1.427893877029419
+4,3949410.946296296,13500,realtime = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,lossless AND AutoAltRef AND TileColumns <= 4.5 AND FrameBoost AND NOT good,0,0.8,1.0,0.6666666666666666,64,1.4461774826049805
+1,2602264.073555556,54000,variance = 1,variance,0,1.0,1.0,1.0,65,1.5245051383972168
+2,3342615.6441666665,14400,constrainedQuality = 1 AND Threads = 2,Threads <= 3.0 AND constrainedQuality,0,1.0,1.0,1.0,65,1.5479223728179932
+3,5208018.810444444,18000,realtime = 1 AND constantBitrate = 1 AND FrameBoost = 1,constantBitrate AND FrameBoost AND NOT good,0,1.0,1.0,1.0,65,1.4866349697113037
+4,7923958.272518518,13500,realtime = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,realtime AND lossless AND FrameBoost AND AutoAltRef,0,1.0,1.0,1.0,65,1.539158582687378
+1,5369112.758356482,43200,Threads = 8,Threads > 7.0 AND Threads <= 9.0,0,1.0,1.0,1.0,66,1.516012191772461
+2,6806106.206259259,27000,realtime = 1 AND off = 1,off AND NOT good,0,1.0,1.0,1.0,66,1.5081181526184082
+3,6534038.975555556,10800,good = 1 AND FrameBoost = 1 AND Threads = 10,Threads > 9.0 AND NOT realtime AND FrameBoost,0,1.0,1.0,1.0,66,1.447098970413208
+4,7899649.418,13500,good = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,good AND lossless AND AutoAltRef AND FrameBoost,0,1.0,1.0,1.0,66,1.4713923931121826
+1,1300191.5203472222,43200,Threads = 4,Threads <= 5.0 AND Threads > 3.0,0,1.0,1.0,1.0,67,1.619788646697998
+2,1874007.20075,36000,AutoAltRef = 1 AND constantBitrate = 1,constantBitrate AND AutoAltRef,0,1.0,1.0,1.0,67,1.5544500350952148
+3,7009439.645037037,13500,AutoAltRef = 1 AND cyclicRefresh = 1 AND FrameBoost = 1,cyclicRefresh AND AutoAltRef AND FrameBoost,0,1.0,1.0,1.0,67,1.4963107109069824
+4,3482410.105185185,13500,good = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,lossless AND AutoAltRef AND good AND FrameBoost,0,1.0,1.0,1.0,67,1.58447527885437
+1,4585427.939388889,54000,variance = 1,variance,0,1.0,1.0,1.0,68,1.5279760360717771
+2,1367425.4573888888,36000,AutoAltRef = 1 AND lagInFrames = 0,lagInFrames <= 4.0 AND AutoAltRef,0,1.0,1.0,1.0,68,1.5303692817687988
+3,2715717.696111111,18000,lossless = 1 AND FrameBoost = 1 AND TileColumns = 0,TileColumns <= 1.5 AND FrameBoost AND lossless,0,1.0,1.0,1.0,68,1.4815969467163086
+4,4515916.689259259,13500,realtime = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,FrameBoost AND lossless AND AutoAltRef AND NOT good,0,1.0,1.0,1.0,68,1.518524408340454
+1,7916201.191319444,43200,Threads = 4,Threads <= 5.0 AND Threads > 3.0,0,1.0,1.0,1.0,69,1.524406671524048
+2,6774814.898703704,10800,variance = 1 AND cpuUsed = 0,cpuUsed <= 1.0 AND variance,0,1.0,1.0,1.0,69,1.5318503379821775
+3,7085274.802166667,12000,good = 1 AND constantBitrate = 1 AND TileColumns = 3,constantBitrate AND good AND TileColumns <= 4.5 AND TileColumns > 1.5,0,1.0,1.0,1.0,69,1.4610483646392822
+4,1396020.311925926,13500,realtime = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,AutoAltRef AND realtime AND FrameBoost AND lossless,0,1.0,1.0,1.0,69,1.4678246974945068
+1,4767622.558740741,54000,complexity = 1,complexity,0,1.0,1.0,1.0,7,1.371346950531006
+2,3960212.200277778,18000,variance = 1 AND variableBitrate = 1,variance AND variableBitrate,0,1.0,1.0,1.0,7,1.3570513725280762
+3,1145968.5645833334,12000,lossless = 1 AND lagInFrames = 0 AND TileColumns = 6,TileColumns > 4.5 AND lagInFrames <= 4.0 AND lossless,0,1.0,1.0,1.0,7,1.3096063137054443
+4,7694128.724518519,13500,good = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,AutoAltRef AND FrameBoost AND good AND lossless,0,1.0,1.0,1.0,7,1.3335626125335691
+1,5909109.809851852,54000,cyclicRefresh = 1,cyclicRefresh,0,1.0,1.0,1.0,70,1.509751796722412
+2,7287481.998861111,36000,good = 1 AND constrainedQuality = 1,constrainedQuality AND good,0,1.0,1.0,1.0,70,1.4618678092956543
+3,3070282.687037037,10800,lossless = 1 AND FrameBoost = 1 AND bitRate = 1500,bitRate > 1350.0 AND FrameBoost AND lossless,0,1.0,1.0,1.0,70,1.4178948402404783
+4,8139606.736370371,13500,realtime = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,FrameBoost AND realtime AND lossless AND AutoAltRef,0,1.0,1.0,1.0,70,1.4392313957214355
+1,4506289.354407407,54000,variance = 1,variance,0,1.0,1.0,1.0,71,1.5165915489196775
+2,1357667.9760416667,14400,Threads = 8 AND TileColumns = 3,Threads > 7.0 AND Threads <= 9.0 AND TileColumns > 1.5 AND TileColumns <= 4.5,0,1.0,1.0,1.0,71,1.52524995803833
+3,5145318.159333333,13500,AutoAltRef = 1 AND off = 1 AND lossless = 1,off AND lossless AND AutoAltRef,0,1.0,1.0,1.0,71,1.468170404434204
+4,2857521.3496296294,13500,realtime = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,lossless AND FrameBoost AND realtime AND AutoAltRef,0,1.0,1.0,1.0,71,1.5270781517028809
+1,5759352.941925926,54000,off = 1,off,0,1.0,1.0,1.0,72,1.606215476989746
+2,1368349.698148148,10800,off = 1 AND bitRate = 1500,bitRate > 1350.0 AND off,0,1.0,1.0,1.0,72,1.584601640701294
+3,3657281.8484444446,18000,realtime = 1 AND FrameBoost = 1 AND lagInFrames = 0,lagInFrames <= 4.0 AND FrameBoost AND realtime,0,1.0,1.0,1.0,72,1.5567865371704102
+4,3997295.304666667,13500,good = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,FrameBoost,1,0.2222222222222222,0.125,1.0,72,1.6419453620910645
+1,7170751.134375,43200,Threads = 6,Threads <= 7.0 AND Threads > 5.0,0,1.0,1.0,1.0,73,1.5700528621673584
+2,6481607.223333334,14400,constrainedQuality = 1 AND cpuUsed = 4,constrainedQuality AND cpuUsed > 3.0 AND cpuUsed <= 5.0,0,1.0,1.0,1.0,73,1.5327324867248535
+3,3533820.191166667,12000,variableBitrate = 1 AND lossless = 1 AND TileColumns = 6,TileColumns > 4.5 AND variableBitrate AND lossless,0,1.0,1.0,1.0,73,1.4709415435791016
+4,3538947.797481481,13500,realtime = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,FrameBoost AND NOT good AND lossless AND AutoAltRef,0,1.0,1.0,1.0,73,1.48382568359375
+1,6803599.663,54000,cyclicRefresh = 1,cyclicRefresh,0,1.0,1.0,1.0,74,1.525498390197754
+2,3676043.5288888887,10800,off = 1 AND Threads = 8,off AND Threads > 7.0 AND Threads <= 9.0,0,1.0,1.0,1.0,74,1.5067074298858645
+3,1759382.1446666666,18000,good = 1 AND constrainedQuality = 1 AND FrameBoost = 1,constrainedQuality AND FrameBoost AND good,0,1.0,1.0,1.0,74,1.4173390865325928
+4,2895419.5597037035,13500,good = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,good AND AutoAltRef AND lossless AND FrameBoost,0,1.0,1.0,1.0,74,1.4707036018371582
+1,7487579.603055555,43200,bitRate = 300,bitRate <= 450.0,0,1.0,1.0,1.0,75,1.5235722064971924
+2,6029037.436055556,36000,AutoAltRef = 1 AND variableBitrate = 1,variableBitrate AND AutoAltRef,0,1.0,1.0,1.0,75,1.53269624710083
+3,6155531.235333334,12000,realtime = 1 AND constrainedQuality = 1 AND lagInFrames = 8,constrainedQuality AND realtime AND lagInFrames <= 12.0 AND lagInFrames > 4.0,0,1.0,1.0,1.0,75,1.4026730060577393
+4,1993359.502074074,13500,realtime = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,NOT good AND AutoAltRef AND FrameBoost AND lossless,0,1.0,1.0,1.0,75,1.4405200481414795
+1,7328144.506722222,54000,cyclicRefresh = 1,cyclicRefresh,0,1.0,1.0,1.0,76,1.5283303260803225
+2,6726180.893037037,27000,AutoAltRef = 1 AND cyclicRefresh = 1,cyclicRefresh AND AutoAltRef,0,1.0,1.0,1.0,76,1.497009515762329
+3,6728424.978518519,13500,realtime = 1 AND AutoAltRef = 1 AND cyclicRefresh = 1,cyclicRefresh AND AutoAltRef AND realtime,0,1.0,1.0,1.0,76,1.469656467437744
+4,5010256.626888889,13500,good = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,lossless AND good AND FrameBoost AND AutoAltRef,0,1.0,1.0,1.0,76,1.550203800201416
+1,6812401.108657408,43200,Threads = 8,Threads > 7.0 AND Threads <= 9.0,0,1.0,1.0,1.0,77,1.4790220260620115
+2,3500188.079555556,18000,cyclicRefresh = 1 AND lagInFrames = 0,lagInFrames <= 4.0 AND cyclicRefresh,0,1.0,1.0,1.0,77,1.5652270317077637
+3,4379270.615333334,13500,AutoAltRef = 1 AND cyclicRefresh = 1 AND lossless = 1,NOT off AND NOT constrainedQuality AND FrameBoost AND cyclicRefresh AND lossless AND AutoAltRef,0,0.5,1.0,0.3333333333333333,77,1.4872825145721436
+4,1095915.4211851852,13500,good = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,FrameBoost AND NOT realtime AND AutoAltRef AND lossless,0,1.0,1.0,1.0,77,1.4935262203216553
+1,843284.188962963,54000,complexity = 1,complexity,0,1.0,1.0,1.0,78,1.4908108711242676
+2,3310315.758,24000,constantBitrate = 1 AND TileColumns = 3,constantBitrate AND TileColumns <= 4.5 AND TileColumns > 1.5,0,1.0,1.0,1.0,78,1.5213778018951416
+3,2797764.5023703706,13500,good = 1 AND complexity = 1 AND FrameBoost = 1,complexity AND NOT realtime AND FrameBoost,0,1.0,1.0,1.0,78,1.5002315044403076
+4,4617083.565703704,13500,realtime = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,NOT good AND AutoAltRef AND FrameBoost AND lossless,0,1.0,1.0,1.0,78,1.4750280380249023
+1,2750074.834277778,54000,cyclicRefresh = 1,cyclicRefresh,0,1.0,1.0,1.0,79,1.5686492919921875
+2,2930385.766638889,36000,AutoAltRef = 1 AND lagInFrames = 16,lagInFrames > 12.0 AND AutoAltRef,0,1.0,1.0,1.0,79,1.5590431690216064
+3,5219733.724277778,18000,AutoAltRef = 1 AND FrameBoost = 1 AND TileColumns = 6,TileColumns > 4.5 AND FrameBoost AND AutoAltRef,0,1.0,1.0,1.0,79,1.4857704639434814
+4,1992191.6256296297,13500,realtime = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,FrameBoost AND AutoAltRef AND NOT good AND lossless,0,1.0,1.0,1.0,79,1.5931000709533691
+1,2532621.059648148,54000,cyclicRefresh = 1,cyclicRefresh,0,1.0,1.0,1.0,8,1.3640022277832031
+2,3511440.46475,36000,constrainedQuality = 1 AND lossless = 1,constrainedQuality AND lossless,0,1.0,1.0,1.0,8,1.396514892578125
+3,2341890.9438888887,10800,AutoAltRef = 1 AND lossless = 1 AND cpuUsed = 8,cpuUsed > 7.0 AND AutoAltRef AND lossless,0,1.0,1.0,1.0,8,1.366257905960083
+4,639470.8214814814,13500,good = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,AutoAltRef AND NOT realtime AND lossless AND FrameBoost,0,1.0,1.0,1.0,8,1.337479829788208
+1,3338707.0550555554,54000,cyclicRefresh = 1,cyclicRefresh,0,1.0,1.0,1.0,80,1.5368785858154297
+2,2068966.5166944445,36000,realtime = 1 AND constantBitrate = 1,constantBitrate AND NOT good,0,1.0,1.0,1.0,80,1.5610196590423584
+3,5632350.940370371,10800,realtime = 1 AND lossless = 1 AND cpuUsed = 4,cpuUsed <= 5.0 AND cpuUsed > 3.0 AND lossless AND realtime,0,1.0,1.0,1.0,80,1.5333216190338137
+4,8282550.391703703,13500,good = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,lossless AND FrameBoost AND NOT realtime AND AutoAltRef,0,1.0,1.0,1.0,80,1.600168228149414
+1,4807278.005069445,43200,bitRate = 300,bitRate <= 450.0,0,1.0,1.0,1.0,81,1.562732458114624
+2,2642737.718541667,14400,bitRate = 900 AND TileColumns = 3,bitRate <= 1050.0 AND bitRate > 750.0 AND TileColumns > 1.5 AND TileColumns <= 4.5,0,1.0,1.0,1.0,81,1.643782615661621
+3,909040.7931111112,13500,good = 1 AND off = 1 AND FrameBoost = 1,off AND good AND FrameBoost,0,1.0,1.0,1.0,81,1.5544216632843018
+4,6064484.386444445,13500,good = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,NOT realtime AND AutoAltRef AND FrameBoost AND lossless,0,1.0,1.0,1.0,81,1.5759165287017822
+1,1975489.4649444444,54000,cyclicRefresh = 1,cyclicRefresh,0,1.0,1.0,1.0,82,1.5138895511627195
+2,1989676.1752592595,27000,good = 1 AND off = 1,off AND good,0,1.0,1.0,1.0,82,1.5216755867004397
+3,1168464.1215555556,13500,good = 1 AND complexity = 1 AND FrameBoost = 1,complexity AND FrameBoost AND NOT realtime,0,1.0,1.0,1.0,82,1.4841463565826416
+4,2419257.9583703703,13500,good = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,AutoAltRef AND lossless AND FrameBoost AND good,0,1.0,1.0,1.0,82,1.4872169494628906
+1,7946623.386875,43200,cpuUsed = 0,cpuUsed <= 1.0,0,1.0,1.0,1.0,83,1.5752084255218506
+2,4725257.41537037,10800,off = 1 AND cpuUsed = 2,off AND cpuUsed <= 3.0 AND cpuUsed > 1.0,0,1.0,1.0,1.0,83,1.576291561126709
+3,1499955.3078333333,12000,realtime = 1 AND constrainedQuality = 1 AND TileColumns = 6,constrainedQuality AND TileColumns > 4.5 AND realtime,0,1.0,1.0,1.0,83,1.5160698890686035
+4,5822808.21674074,13500,good = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,good AND FrameBoost AND AutoAltRef AND lossless,0,1.0,1.0,1.0,83,1.556908130645752
+1,890183.3414074074,54000,cyclicRefresh = 1,cyclicRefresh,0,1.0,1.0,1.0,84,1.511446475982666
+2,627304.1750555555,18000,variance = 1 AND constantBitrate = 1,variance AND constantBitrate,0,1.0,1.0,1.0,84,1.597944736480713
+3,1820559.942962963,13500,realtime = 1 AND off = 1 AND FrameBoost = 1,off AND FrameBoost AND realtime,0,1.0,1.0,1.0,84,1.5119578838348389
+4,8056105.985629629,13500,realtime = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,lossless AND realtime AND AutoAltRef AND FrameBoost,0,1.0,1.0,1.0,84,1.6859526634216309
+1,973404.7434953704,43200,Threads = 10,Threads > 9.0,0,1.0,1.0,1.0,85,1.549830436706543
+2,3220351.9915277776,21600,realtime = 1 AND cpuUsed = 2,cpuUsed <= 3.0 AND realtime AND cpuUsed > 1.0,0,1.0,1.0,1.0,85,1.5593576431274414
+3,8087121.227277778,18000,AutoAltRef = 1 AND FrameBoost = 1 AND TileColumns = 3,AutoAltRef AND FrameBoost AND TileColumns <= 4.5 AND TileColumns > 1.5,0,1.0,1.0,1.0,85,1.5034048557281494
+4,5520575.759703704,13500,good = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,good AND lossless AND AutoAltRef AND FrameBoost,0,1.0,1.0,1.0,85,1.570159673690796
+1,1019009.103912037,43200,bitRate = 300,bitRate <= 450.0,0,1.0,1.0,1.0,86,1.4830749034881592
+2,4441948.248888889,18000,complexity = 1 AND constrainedQuality = 1,complexity AND constrainedQuality,0,1.0,1.0,1.0,86,1.5318942070007324
+3,3970130.3557777777,18000,realtime = 1 AND AutoAltRef = 1 AND TileColumns = 3,NOT good AND AutoAltRef AND TileColumns > 1.5 AND TileColumns <= 4.5,0,1.0,1.0,1.0,86,1.4757513999938965
+4,1171631.3563703704,13500,good = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,AutoAltRef AND lossless AND good AND FrameBoost,0,1.0,1.0,1.0,86,1.4641540050506592
+1,629035.1817222222,54000,cyclicRefresh = 1,cyclicRefresh,0,1.0,1.0,1.0,87,1.5246813297271729
+2,6353665.374407408,27000,off = 1 AND lossless = 1,off AND lossless,0,1.0,1.0,1.0,87,1.530747652053833
+3,4200088.5155,12000,constantBitrate = 1 AND lossless = 1 AND TileColumns = 0,NOT constrainedQuality,0,0.1538461538461538,0.0833333333333333,1.0,87,1.503270149230957
+4,7870667.445851852,13500,good = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,FrameBoost AND AutoAltRef AND lossless AND good,0,1.0,1.0,1.0,87,1.5356249809265137
+1,6740146.118796296,54000,cyclicRefresh = 1,cyclicRefresh,0,1.0,1.0,1.0,88,1.4779961109161377
+2,657798.1342592592,21600,FrameBoost = 1 AND Threads = 4,Threads <= 5.0 AND FrameBoost AND Threads > 3.0,0,1.0,1.0,1.0,88,1.5336484909057615
+3,1658742.7803333334,18000,good = 1 AND AutoAltRef = 1 AND lagInFrames = 8,AutoAltRef AND good AND lagInFrames > 4.0 AND lagInFrames <= 12.0,0,1.0,1.0,1.0,88,1.4464962482452393
+4,6237629.620666667,13500,realtime = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,realtime AND lossless AND AutoAltRef AND FrameBoost,0,1.0,1.0,1.0,88,1.4465858936309814
+1,7108818.174851852,54000,off = 1,off,0,1.0,1.0,1.0,89,1.5470097064971924
+2,2263085.882222222,18000,cyclicRefresh = 1 AND lagInFrames = 8,cyclicRefresh AND lagInFrames > 4.0 AND lagInFrames <= 12.0,0,1.0,1.0,1.0,89,1.5730538368225098
+3,4262630.882611111,18000,AutoAltRef = 1 AND variableBitrate = 1 AND FrameBoost = 1,AutoAltRef AND variableBitrate AND FrameBoost,0,1.0,1.0,1.0,89,1.5078086853027344
+4,589858.9677037037,13500,good = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,lossless AND AutoAltRef AND NOT realtime AND FrameBoost,0,1.0,1.0,1.0,89,1.681689739227295
+1,7624462.740925926,43200,cpuUsed = 6,cpuUsed > 5.0 AND cpuUsed <= 7.0,0,1.0,1.0,1.0,9,1.3722505569458008
+2,3730386.669814815,27000,good = 1 AND cyclicRefresh = 1,cyclicRefresh AND NOT realtime,0,1.0,1.0,1.0,9,1.396754026412964
+3,493901.1424444445,13500,off = 1 AND lossless = 1 AND FrameBoost = 1,off AND lossless AND FrameBoost,0,1.0,1.0,1.0,9,1.3770973682403564
+4,1477605.9157037036,13500,good = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,good AND FrameBoost AND AutoAltRef AND lossless,0,1.0,1.0,1.0,9,1.32896089553833
+1,5046609.075907407,54000,variance = 1,variance,0,1.0,1.0,1.0,90,1.5333199501037598
+2,7236950.794907408,21600,AutoAltRef = 1 AND Threads = 6,AutoAltRef AND Threads <= 7.0 AND Threads > 5.0,0,1.0,1.0,1.0,90,1.5492620468139648
+3,661550.6971666666,12000,variableBitrate = 1 AND FrameBoost = 1 AND TileColumns = 3,variableBitrate AND FrameBoost AND TileColumns > 1.5 AND TileColumns <= 4.5,0,1.0,1.0,1.0,90,1.5255115032196045
+4,7732882.441259259,13500,realtime = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,lossless AND realtime AND AutoAltRef AND FrameBoost,0,1.0,1.0,1.0,90,1.5844368934631348
+1,4793611.467337963,43200,cpuUsed = 8,cpuUsed > 7.0,0,1.0,1.0,1.0,91,1.5536503791809082
+2,2350926.0196666666,36000,AutoAltRef = 1 AND TileColumns = 0,TileColumns <= 1.5 AND AutoAltRef,0,1.0,1.0,1.0,91,1.5889341831207275
+3,3248246.121222222,18000,good = 1 AND variableBitrate = 1 AND lossless = 1,variableBitrate AND NOT realtime AND lossless,0,1.0,1.0,1.0,91,1.5038692951202393
+4,6213758.611703704,13500,realtime = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,lossless AND AutoAltRef AND NOT good AND FrameBoost,0,1.0,1.0,1.0,91,1.5770421028137207
+1,4655904.447555556,54000,complexity = 1,complexity,0,1.0,1.0,1.0,92,1.5168585777282717
+2,5623163.407,24000,constrainedQuality = 1 AND TileColumns = 0,TileColumns <= 1.5 AND constrainedQuality,0,1.0,1.0,1.0,92,1.5731463432312012
+3,4530627.1754814815,13500,realtime = 1 AND complexity = 1 AND lossless = 1,complexity AND lossless AND NOT good,0,1.0,1.0,1.0,92,1.5201842784881592
+4,856983.584074074,13500,good = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,NOT realtime AND FrameBoost AND AutoAltRef AND lossless,0,1.0,1.0,1.0,92,1.5134174823760986
+1,1043577.8124629628,54000,cyclicRefresh = 1,cyclicRefresh,0,1.0,1.0,1.0,93,1.3512935638427734
+2,4204717.46925,36000,lossless = 1 AND lagInFrames = 16,lagInFrames > 4.0,2,0.4,0.25,1.0,93,1.4249680042266846
+3,1602940.292,18000,AutoAltRef = 1 AND lossless = 1 AND lagInFrames = 0,lagInFrames <= 4.0 AND AutoAltRef AND lossless,0,1.0,1.0,1.0,93,1.3454129695892334
+4,5959084.142666667,13500,good = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,FrameBoost AND good AND AutoAltRef AND lossless,0,1.0,1.0,1.0,93,1.3990535736083984
+1,6037838.847268518,43200,Threads = 8,Threads > 7.0 AND Threads <= 9.0,0,1.0,1.0,1.0,94,1.4893276691436768
+2,2617700.505851852,27000,good = 1 AND variance = 1,variance AND good,0,1.0,1.0,1.0,94,1.5416531562805176
+3,7240257.739166667,18000,good = 1 AND constrainedQuality = 1 AND FrameBoost = 1,constrainedQuality AND FrameBoost AND NOT realtime,0,1.0,1.0,1.0,94,1.4206786155700684
+4,5140683.110518519,13500,realtime = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,AutoAltRef AND realtime AND FrameBoost AND lossless,0,1.0,1.0,1.0,94,1.509183406829834
+1,2103392.384212963,43200,Threads = 8,Threads > 7.0 AND Threads <= 9.0,0,1.0,1.0,1.0,95,1.5368239879608154
+2,4836581.762833334,18000,variance = 1 AND variableBitrate = 1,variance AND variableBitrate,0,1.0,1.0,1.0,95,1.5398852825164795
+3,4867548.0417777775,18000,variableBitrate = 1 AND lossless = 1 AND FrameBoost = 1,variableBitrate AND lossless AND FrameBoost,0,1.0,1.0,1.0,95,1.477259397506714
+4,962830.951851852,13500,realtime = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,lossless AND FrameBoost AND AutoAltRef AND realtime,0,1.0,1.0,1.0,95,1.5431580543518066
+1,2111260.8282962963,54000,off = 1,off,0,1.0,1.0,1.0,96,1.5336227416992188
+2,5234027.361444444,18000,cyclicRefresh = 1 AND constantBitrate = 1,cyclicRefresh AND constantBitrate,0,1.0,1.0,1.0,96,1.5324106216430664
+3,2559114.3596296296,10800,realtime = 1 AND lossless = 1 AND cpuUsed = 6,cpuUsed > 5.0 AND lossless AND cpuUsed <= 7.0 AND NOT good,0,1.0,1.0,1.0,96,1.453632354736328
+4,6695025.413481481,13500,good = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,AutoAltRef AND lossless AND NOT realtime AND FrameBoost,0,1.0,1.0,1.0,96,1.4931647777557373
+1,2296115.7873333334,54000,cyclicRefresh = 1,cyclicRefresh,0,1.0,1.0,1.0,97,1.5508790016174316
+2,1789120.9505555555,18000,variance = 1 AND lagInFrames = 0,variance AND lagInFrames <= 4.0,0,1.0,1.0,1.0,97,1.5923609733581543
+3,2637242.9800925925,10800,good = 1 AND AutoAltRef = 1 AND cpuUsed = 0,cpuUsed <= 1.0 AND AutoAltRef AND good,0,1.0,1.0,1.0,97,1.5535216331481934
+4,6633928.614666667,13500,good = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,lossless AND FrameBoost AND AutoAltRef AND NOT realtime,0,1.0,1.0,1.0,97,1.6124651432037354
+1,6503969.19974537,43200,bitRate = 900,bitRate <= 1050.0 AND bitRate > 750.0,0,1.0,1.0,1.0,98,1.572667121887207
+2,3521496.7525925925,21600,AutoAltRef = 1 AND bitRate = 600,bitRate <= 750.0 AND bitRate > 450.0 AND AutoAltRef,0,1.0,1.0,1.0,98,1.6254193782806396
+3,3022948.7519259257,13500,good = 1 AND variance = 1 AND FrameBoost = 1,variance AND good AND FrameBoost,0,1.0,1.0,1.0,98,1.5268967151641846
+4,4961229.258444444,13500,good = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,AutoAltRef AND FrameBoost AND good AND lossless,0,1.0,1.0,1.0,98,1.645169019699097
+1,1323732.243759259,54000,cyclicRefresh = 1,cyclicRefresh,0,1.0,1.0,1.0,99,1.4990262985229492
+2,2732332.5231944444,21600,good = 1 AND bitRate = 1200,bitRate > 1050.0 AND NOT realtime AND bitRate <= 1350.0,0,1.0,1.0,1.0,99,1.5082032680511477
+3,7558433.49037037,13500,realtime = 1 AND variance = 1 AND lossless = 1,variance AND NOT good AND lossless,0,1.0,1.0,1.0,99,1.4415497779846191
+4,1852957.297703704,13500,good = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,lossless AND FrameBoost AND NOT realtime AND AutoAltRef,0,1.0,1.0,1.0,99,1.443173885345459

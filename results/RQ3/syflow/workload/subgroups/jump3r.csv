@@ -1,0 +1,6 @@
+rule,sg_samples,sg_coverage,rule_num_predicates,rule_features_used
+NOT Mono AND Resampling >= 44.00,1469,0.35009532888465206,2,"['Resampling', 'Mono']"
+Freeformat AND SwapBytes AND NOT ReplayGainAccurate AND Resampling = 8.00,275,0.06553860819828408,4,"['SwapBytes', 'Resampling', 'ReplayGainAccurate', 'Freeformat']"
+NOT Mono AND Resampling != 8.00,2641,0.6294089609151573,2,"['Resampling', 'Mono']"
+Freeformat AND SwapBytes AND NOT ReplayGainAccurate AND Resampling = 8.00,275,0.06553860819828408,4,"['SwapBytes', 'Resampling', 'ReplayGainAccurate', 'Freeformat']"
+NOT Mono AND Resampling >= 44.00,1469,0.35009532888465206,2,"['Resampling', 'Mono']"

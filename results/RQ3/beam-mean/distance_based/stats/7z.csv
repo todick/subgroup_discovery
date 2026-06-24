@@ -1,0 +1,2 @@
+num_features,num_samples,sgs_unique,sgs_mean_jaccard,sgs_mean_overlap_coefficient,coverage_mean,coverage_total,rule_features_used,rule_feature_frequency,rule_num_features,rule_length_mean,rule_length_max,rule_length_min,runtime
+12,68640,2,0.5,1.0,0.05,0.06666666666666667,"['LZMA2', 'PPMd', 'LZMA', 'Deflate', 'BZip2', 'x']","[('LZMA2', 3), ('PPMd', 3), ('LZMA', 2), ('Deflate', 1), ('BZip2', 3), ('x', 5)]",6,3.4,5.0,2.0,1.9437391757965088

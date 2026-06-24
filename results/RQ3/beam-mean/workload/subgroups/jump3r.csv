@@ -1,0 +1,6 @@
+rule,sg_samples,sg_coverage,rule_num_predicates,rule_features_used
+Resampling==48 AND Mono==0,716,0.17063870352716873,2,"['Mono', 'Resampling']"
+Resampling==48 AND workload==0 AND Mono==0,716,0.17063870352716873,3,"['workload', 'Mono', 'Resampling']"
+Resampling==48 AND NoReplayGain==0 AND Mono==0,533,0.12702573879885606,3,"['Mono', 'Resampling', 'NoReplayGain']"
+Resampling==48 AND workload==0 AND NoReplayGain==0 AND Mono==0,533,0.12702573879885606,4,"['workload', 'Mono', 'Resampling', 'NoReplayGain']"
+Resampling==48 AND NoReplayGain==0 AND ReplayGainFast==0 AND Mono==0,310,0.07387988560533841,4,"['ReplayGainFast', 'Mono', 'Resampling', 'NoReplayGain']"

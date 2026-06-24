@@ -1,0 +1,78 @@
+dataset,casestudy,rule,sg_idx,mean_shift,rel_std,skewness,modality
+distance_based,7z,BZip2 $\wedge$ x <= 6.00,0,-0.0685,0.0581,3.2601,Unimodal
+distance_based,7z,$\neg$BZip2 $\wedge$ x <= 4.00,1,-0.1276,0.0535,4.6947,Unimodal
+distance_based,7z,$\neg$BZip2 $\wedge$ $\neg$PPMd $\wedge$ x >= 8.00,2,0.1710,0.7343,3.8076,Bimodal
+distance_based,7z,PPMd $\wedge$ x <= 6.00,3,-0.1330,0.0313,4.6949,Unimodal
+distance_based,7z,$\neg$Deflate $\wedge$ $\neg$PPMd $\wedge$ x <= 4.00,4,-0.1030,0.1146,3.8743,Unimodal
+distance_based,BerkeleyDBC,PAGESIZE >= 4.00 $\wedge$ HAVE_CRYPTO $\wedge$ $\neg$HAVE_REPLICATION.1 $\wedge$ $\neg$HAVE_VERIFY.1,0,0.2767,1.0503,1.8318,Multimodal
+distance_based,BerkeleyDBC,PAGESIZE >= 4.00 $\wedge$ $\neg$HAVE_CRYPTO $\wedge$ HAVE_REPLICATION.1,1,-0.1972,0.0156,4.6949,Unimodal
+distance_based,BerkeleyDBC,PAGESIZE = 32.00 $\wedge$ HAVE_CRYPTO $\wedge$ $\neg$HAVE_HASH.1 $\wedge$ $\neg$HAVE_REPLICATION.1 $\wedge$ $\neg$HAVE_VERIFY.1,2,0.7762,0.0525,4.6949,Unimodal
+distance_based,BerkeleyDBC,HAVE_CRYPTO $\wedge$ $\neg$HAVE_HASH.1 $\wedge$ $\neg$HAVE_REPLICATION.1 $\wedge$ $\neg$HAVE_SEQUENCE.1 $\wedge$ $\neg$HAVE_VERIFY.1,3,0.1924,1.0921,1.4875,Multimodal
+distance_based,BerkeleyDBC,$\neg$HAVE_HASH $\wedge$ PAGESIZE >= 4.00 $\wedge$ $\neg$HAVE_CRYPTO,4,-0.1901,0.0469,4.5545,Unimodal
+distance_based,Dune,SeqSOR $\wedge$ cells_54,0,0.0274,0.9938,4.2280,Multimodal
+distance_based,Dune,SeqGS $\wedge$ $\neg$cells_54 $\wedge$ $\neg$cells_55 $\wedge$ PostSmooting >= 2.00,1,-0.0385,0.3524,3.5527,Unimodal
+distance_based,Dune,SeqSOR $\wedge$ $\neg$cells_50 $\wedge$ $\neg$cells_51 $\wedge$ $\neg$cells_54,2,0.0193,1.0038,2.4479,Multimodal
+distance_based,Dune,$\neg$GradientSolver $\wedge$ SeqSOR $\wedge$ cells_53,3,0.0250,0.8955,3.1155,Multimodal
+distance_based,Dune,SeqGS $\wedge$ cells_52,4,-0.0154,0.9478,3.4537,Multimodal
+distance_based,Hipacc,OpenCL $\wedge$ $\neg$TextureMemory $\wedge$ $\neg$bs_1024x1 $\wedge$ $\neg$bs_128x8 $\wedge$ $\neg$bs_256x4 $\wedge$ $\neg$bs_32x16 $\wedge$ $\neg$bs_32x2 $\wedge$ $\neg$bs_32x32 $\wedge$ $\neg$bs_512x2 $\wedge$ $\neg$bs_64x1 $\wedge$ $\neg$bs_64x16 $\wedge$ pixelPerThread >= 3.00,0,0.0128,1.0446,3.9531,Multimodal
+distance_based,Hipacc,$\neg$LocalMemory $\wedge$ $\neg$bs_128x1 $\wedge$ $\neg$bs_128x2 $\wedge$ $\neg$bs_128x4 $\wedge$ $\neg$bs_256x1 $\wedge$ $\neg$bs_32x1 $\wedge$ $\neg$bs_64x2 $\wedge$ $\neg$bs_64x4,1,-0.0881,0.3067,3.3074,Unimodal
+distance_based,Hipacc,LocalMemory $\wedge$ $\neg$bs_1024x1 $\wedge$ $\neg$bs_128x1 $\wedge$ $\neg$bs_128x2 $\wedge$ $\neg$bs_32x4 $\wedge$ $\neg$bs_32x8 $\wedge$ $\neg$bs_64x2 $\wedge$ $\neg$bs_64x4,2,0.1601,0.9774,1.4155,Multimodal
+distance_based,Hipacc,$\neg$Array2D $\wedge$ $\neg$LocalMemory $\wedge$ $\neg$bs_1024x1 $\wedge$ $\neg$bs_32x1 $\wedge$ $\neg$bs_512x2,3,-0.1068,0.2257,4.1238,Unimodal
+distance_based,Hipacc,LocalMemory $\wedge$ $\neg$bs_1024x1 $\wedge$ $\neg$bs_128x1 $\wedge$ $\neg$bs_128x2 $\wedge$ $\neg$bs_32x2 $\wedge$ $\neg$bs_32x4 $\wedge$ $\neg$bs_32x8 $\wedge$ $\neg$bs_64x2 $\wedge$ $\neg$bs_64x4,4,0.1755,0.9526,1.4312,Multimodal
+distance_based,JavaGC,NewRatio >= 8.00 $\wedge$ UseAdaptiveSizePolicy,0,0.2373,1.0129,2.1099,Multimodal
+distance_based,JavaGC,NewRatio <= 8.00 $\wedge$ $\neg$UseAdaptiveSizePolicy,1,-0.0990,0.0803,4.0703,Unimodal
+distance_based,JavaGC,NewRatio = 32.00 $\wedge$ $\neg$UseAdaptiveSizePolicy,2,-0.0250,0.2115,2.7670,Bimodal
+distance_based,JavaGC,NewRatio <= 8.00 $\wedge$ SurvivorRatio != 1.00 $\wedge$ UseAdaptiveGCBoundary,3,-0.0679,0.4327,4.2298,Unimodal
+distance_based,JavaGC,NewRatio >= 16.00 $\wedge$ SurvivorRatio != 1.00 $\wedge$ UseAdaptiveSizePolicy,4,0.2645,0.4512,2.9006,Bimodal
+distance_based,LLVM,inline $\wedge$ licm,0,0.2669,0.4808,1.2899,Multimodal
+distance_based,LLVM,$\neg$gvn $\wedge$ $\neg$instcombine $\wedge$ $\neg$licm,1,-0.4002,0.3146,1.3156,Bimodal
+distance_based,LLVM,gvn $\wedge$ $\neg$inline $\wedge$ $\neg$licm,2,-0.0319,0.4844,1.1334,Bimodal
+distance_based,LLVM,$\neg$gvn $\wedge$ $\neg$instcombine,3,-0.1894,1.2751,1.3020,Multimodal
+distance_based,LLVM,gvn $\wedge$ instcombine $\wedge$ licm,4,0.2876,0.4047,1.4890,Multimodal
+distance_based,LRZip,compressionLrzip $\wedge$ level >= 3.00,0,0.0082,0.3033,3.3978,Bimodal
+distance_based,LRZip,$\neg$compressionBzip2 $\wedge$ $\neg$compressionLrzip $\wedge$ level >= 4.00,1,0.0573,1.4225,4.3353,Unimodal
+distance_based,LRZip,$\neg$compression $\wedge$ $\neg$compressionBzip2 $\wedge$ $\neg$encryption,2,-0.0942,0.0021,4.6949,Unimodal
+distance_based,LRZip,compression $\wedge$ $\neg$compressionGzip $\wedge$ $\neg$compressionLzo,3,0.0882,1.2709,2.6343,Bimodal
+distance_based,LRZip,compressionGzip $\wedge$ level <= 7.00,4,-0.0829,0.0208,4.6949,Unimodal
+distance_based,Polly,min $\wedge$ polly $\wedge$ value_based,0,-0.3590,1.4614,0.9965,Multimodal
+distance_based,Polly,memory_based $\wedge$ $\neg$parallel,1,0.0713,0.0709,4.3688,Bimodal
+distance_based,Polly,none $\wedge$ $\neg$parallel,3,-0.0063,0.8752,4.3577,Multimodal
+distance_based,Polly,none $\wedge$ $\neg$parallel $\wedge$ polly_parallel,4,-0.0075,0.8738,4.3851,Multimodal
+distance_based,VP9,good $\wedge$ $\neg$lossless $\wedge$ bitRate = 1500.00,0,-0.4416,0.0057,4.6859,Unimodal
+distance_based,VP9,lossless,1,0.4624,0.0805,2.6719,Unimodal
+distance_based,VP9,$\neg$lossless,2,-0.4624,0.0231,4.6948,Unimodal
+workload,batik,pdf,0,-0.2026,0.1436,2.1500,Bimodal
+workload,batik,$\neg$validate $\wedge$ $\neg$pdf,1,0.0206,1.0549,1.3121,Bimodal
+workload,batik,validate $\wedge$ $\neg$pdf $\wedge$ resolution != 8294400.00,2,-0.1349,0.4976,2.2172,Bimodal
+workload,batik,$\neg$pdf $\wedge$ resolution = 8294400.00,3,0.4833,0.1448,2.2152,Unimodal
+workload,dconvert,$\neg$iosCreateImagesetFolders $\wedge$ $\neg$ios $\wedge$ $\neg$web $\wedge$ $\neg$win $\wedge$ threads = 10.00,0,0.2593,0.5836,3.0065,Bimodal
+workload,dconvert,$\neg$android $\wedge$ ios $\wedge$ $\neg$androidMipmapInsteadOfDrawable $\wedge$ $\neg$androidIncludeLdpiTvdpi,1,-0.2814,0.0382,4.5956,Unimodal
+workload,dconvert,$\neg$iosCreateImagesetFolders $\wedge$ $\neg$android $\wedge$ $\neg$ios $\wedge$ $\neg$androidMipmapInsteadOfDrawable $\wedge$ $\neg$androidIncludeLdpiTvdpi,2,-0.2724,0.5787,3.0315,Unimodal
+workload,dconvert,$\neg$iosCreateImagesetFolders $\wedge$ android $\wedge$ $\neg$ios $\wedge$ $\neg$web $\wedge$ $\neg$win,3,0.2532,0.5816,2.8724,Bimodal
+workload,dconvert,$\neg$android $\wedge$ $\neg$androidMipmapInsteadOfDrawable $\wedge$ $\neg$androidIncludeLdpiTvdpi,4,-0.2770,0.4062,3.0079,Bimodal
+workload,h2,RECOMPILE_ALWAYS,0,-0.2033,0.3448,2.5558,Bimodal
+workload,h2,$\neg$PAGE_STORE_TRIM $\wedge$ $\neg$RECOMPILE_ALWAYS $\wedge$ MVSTORE,1,0.5584,0.1415,2.6498,Bimodal
+workload,h2,$\neg$MVSTORE,3,-0.2106,0.2381,2.0637,Bimodal
+workload,h2,$\neg$PAGE_STORE_TRIM $\wedge$ MVSTORE,4,0.3252,0.9051,1.7376,Multimodal
+workload,jump3r,$\neg$Mono $\wedge$ Resampling >= 44.00,0,0.1040,0.8677,1.5898,Bimodal
+workload,jump3r,Freeformat $\wedge$ SwapBytes $\wedge$ $\neg$ReplayGainAccurate $\wedge$ Resampling = 8.00,1,-0.1078,0.1424,3.3667,Unimodal
+workload,jump3r,$\neg$Mono $\wedge$ Resampling != 8.00,2,0.0502,0.9183,1.4299,Multimodal
+workload,kanzi,ROLZX $\wedge$ $\neg$Huffman $\wedge$ blocksize = 1000000000.00,0,0.0282,0.4833,2.0956,Bimodal
+workload,kanzi,$\neg$ROLZX $\wedge$ $\neg$TPAQ $\wedge$ $\neg$BWTS $\wedge$ $\neg$SRT $\wedge$ $\neg$BWT $\wedge$ $\neg$TPAQX $\wedge$ $\neg$ROLZ $\wedge$ $\neg$ANS1,1,-0.1036,0.0449,4.6949,Unimodal
+workload,kanzi,RANK $\wedge$ skip $\wedge$ $\neg$Huffman $\wedge$ blocksize = 1000000000.00,2,0.0187,0.4244,2.4332,Bimodal
+workload,kanzi,$\neg$ROLZX $\wedge$ $\neg$TPAQ $\wedge$ $\neg$BWTS $\wedge$ $\neg$SRT $\wedge$ $\neg$BWT $\wedge$ $\neg$TPAQX $\wedge$ $\neg$ROLZ,3,-0.0987,0.1333,4.6782,Unimodal
+workload,kanzi,$\neg$ROLZX $\wedge$ $\neg$TPAQ $\wedge$ $\neg$BWTS $\wedge$ $\neg$SRT $\wedge$ $\neg$BWT $\wedge$ $\neg$TPAQX,4,-0.0982,0.1353,4.6757,Unimodal
+workload,x264,intra-refresh $\wedge$ no-psy $\wedge$ cpu-independent $\wedge$ no-asm,0,0.0380,0.1022,2.9693,Unimodal
+workload,x264,$\neg$no-asm,1,-0.2192,0.0656,3.5103,Unimodal
+workload,x264,no-asm,2,0.2041,0.7623,1.6001,Multimodal
+workload,x264,$\neg$intra-refresh $\wedge$ $\neg$no-psy,3,0.0051,1.2518,3.2346,Multimodal
+workload,x264,intra-refresh $\wedge$ no-psy $\wedge$ non-deterministic,4,0.0060,0.5672,2.3169,Bimodal
+workload,xz,$\neg$hc3 $\wedge$ Dict $\wedge$ BlockSize,0,0.0802,0.7555,3.0687,Multimodal
+workload,xz,$\neg$Nice $\wedge$ $\neg$Dict $\wedge$ $\neg$Multithreading,1,-0.1804,0.0404,4.6696,Unimodal
+workload,xz,hc3 $\wedge$ $\neg$bt2 $\wedge$ Depth $\wedge$ Dict $\wedge$ Dist $\wedge$ BlockSize,2,0.7428,0.0296,4.6865,Unimodal
+workload,xz,$\neg$Nice $\wedge$ $\neg$Dict,3,-0.1860,0.0678,4.5389,Unimodal
+workload,xz,$\neg$bt2 $\wedge$ Depth $\wedge$ Dict $\wedge$ Dist $\wedge$ BlockSize,4,0.3369,1.2447,2.1756,Bimodal
+workload,z3,debug_ref_count $\wedge$ proof,0,-0.5170,0.0201,4.6944,Unimodal
+workload,z3,$\neg$debug_ref_count $\wedge$ $\neg$proof,1,0.2943,0.0142,4.6948,Unimodal
+workload,z3,debug_ref_count $\wedge$ $\neg$proof,2,0.4331,0.0181,4.0916,Unimodal
+workload,z3,$\neg$debug_ref_count $\wedge$ proof,3,-0.2120,0.0210,4.6004,Unimodal

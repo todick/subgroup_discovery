@@ -1,0 +1,2 @@
+num_features,num_samples,sgs_unique,sgs_mean_jaccard,sgs_mean_overlap_coefficient,coverage_mean,coverage_total,rule_features_used,rule_feature_frequency,rule_num_features,rule_length_mean,rule_length_max,rule_length_min,runtime
+31,13485,5,0.31650375939849623,0.4,0.24311457174638487,0.49551353355580274,"['LocalMemory', 'Linear2D', 'bs_512x2', 'bs_1024x1', 'pixelPerThread', 'Linear1D', 'bs_32x1']","[('LocalMemory', 5), ('Linear2D', 1), ('bs_512x2', 1), ('bs_1024x1', 5), ('pixelPerThread', 2), ('Linear1D', 2), ('bs_32x1', 3)]",7,3.8,5.0,3.0,0.028975486755371094

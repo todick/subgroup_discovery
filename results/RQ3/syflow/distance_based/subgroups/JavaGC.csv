@@ -1,0 +1,6 @@
+rule,sg_samples,sg_coverage,rule_num_predicates,rule_features_used
+NewRatio >= 8.00 AND UseAdaptiveSizePolicy,48384,0.25,2,"['UseAdaptiveSizePolicy', 'NewRatio']"
+NewRatio <= 8.00 AND NOT UseAdaptiveSizePolicy,64512,0.3333333333333333,2,"['UseAdaptiveSizePolicy', 'NewRatio']"
+NewRatio = 32.00 AND NOT UseAdaptiveSizePolicy,16128,0.08333333333333333,2,"['UseAdaptiveSizePolicy', 'NewRatio']"
+NewRatio <= 8.00 AND SurvivorRatio != 1.00 AND UseAdaptiveGCBoundary,55296,0.2857142857142857,3,"['NewRatio', 'UseAdaptiveGCBoundary', 'SurvivorRatio']"
+NewRatio >= 16.00 AND SurvivorRatio != 1.00 AND UseAdaptiveSizePolicy,27648,0.14285714285714285,3,"['UseAdaptiveSizePolicy', 'NewRatio', 'SurvivorRatio']"

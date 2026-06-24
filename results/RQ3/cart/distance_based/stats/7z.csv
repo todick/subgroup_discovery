@@ -1,0 +1,2 @@
+num_features,num_samples,sgs_unique,sgs_mean_jaccard,sgs_mean_overlap_coefficient,coverage_mean,coverage_total,rule_features_used,rule_feature_frequency,rule_num_features,rule_length_mean,rule_length_max,rule_length_min,runtime
+12,68640,5,0.4045454545454546,0.6,0.05582750582750583,0.23333333333333334,"['mtOff', 'Deflate', 'BZip2', 'x', 'BlockSize', 'Files', 'PPMd']","[('mtOff', 3), ('Deflate', 1), ('BZip2', 5), ('x', 5), ('BlockSize', 1), ('Files', 2), ('PPMd', 1)]",7,3.8,5.0,2.0,0.09018921852111816

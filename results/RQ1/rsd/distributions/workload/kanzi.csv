@@ -1,0 +1,501 @@
+sg_distribution,sg_cardinality,sg_rule,best_rule,best_rule_idx,f1,precision,recall,seed
+normal,510,TEXT = 1 AND BWTS = 1 AND LZ = 1,BWTS >= 1.0  AND  LZ >= 1.0  AND  TEXT >= 1.0  AND  0.0 <= TPAQ < 1.0,0.0,0.9285714285714286,1.0,0.8666666666666667,0
+uniform,444,BWTS = 1 AND checksum = 1 AND ROLZ = 1,ROLZ >= 1.0  AND  checksum >= 1.0  AND  BWTS >= 1.0  AND  0.0 <= CM < 1.0,2.0,0.97459584295612,1.0,0.9504504504504504,0
+bi_modal_split,523,ROLZX = 1 AND skip = 1 AND checksum = 1,ROLZX >= 1.0  AND  skip >= 1.0  AND  checksum >= 1.0,1.0,1.0,1.0,1.0,0
+tri_modal_split,475,BWTS = 1 AND RLT = 1 AND jobs = 8,RLT >= 1.0  AND  jobs >= 8.0  AND  BWTS >= 1.0  AND  0.0 <= ROLZ < 1.0,1.0,0.7757731958762887,1.0,0.6336842105263157,0
+power_law,671,BWTS = 1 AND LZ = 1 AND checksum = 1,0.0 <= BWTS < 1.0  AND  1000000.0 <= blocksize < 1000000000.0  AND  0.0 <= FPAQ < 1.0  AND  0.0 <= CM < 1.0,0.0,0.0,0.0,0.0,0
+normal,433,LZP = 1 AND BWTS = 1 AND ROLZ = 1,0.0 <= RANK < 1.0  AND  ROLZ >= 1.0  AND  LZP >= 1.0  AND  BWTS >= 1.0,0.0,0.901015228426396,1.0,0.8198614318706697,10
+uniform,433,LZP = 1 AND BWTS = 1 AND ROLZ = 1,LZP >= 1.0  AND  ROLZ >= 1.0  AND  BWTS >= 1.0  AND  0.0 <= MTFT < 1.0,0.0,0.7646219686162624,1.0,0.6189376443418014,10
+bi_modal_split,433,LZP = 1 AND BWTS = 1 AND ROLZ = 1,LZP >= 1.0  AND  BWTS >= 1.0  AND  ROLZ >= 1.0  AND  0.0 <= TPAQ < 1.0,0.0,0.9641148325358851,1.0,0.930715935334873,10
+tri_modal_split,433,LZP = 1 AND BWTS = 1 AND ROLZ = 1,LZP >= 1.0  AND  BWTS >= 1.0  AND  ROLZ >= 1.0  AND  RLT >= 1.0,0.0,0.7113095238095238,1.0,0.5519630484988453,10
+power_law,433,LZP = 1 AND BWTS = 1 AND ROLZ = 1,1000.0 <= blocksize < 1000000000.0  AND  ANS0 >= 1.0  AND  RLT >= 1.0,0.0,0.0185185185185185,0.0467289719626168,0.0115473441108545,10
+normal,671,BWTS = 1 AND LZ = 1 AND checksum = 1,LZ >= 1.0  AND  checksum >= 1.0  AND  0.0 <= Range < 1.0  AND  BWTS >= 1.0,1.0,0.9771341463414634,1.0,0.955290611028316,11
+uniform,671,BWTS = 1 AND LZ = 1 AND checksum = 1,BWTS >= 1.0  AND  checksum >= 1.0  AND  LZ >= 1.0  AND  0.0 <= Huffman < 1.0,0.0,0.8144876325088339,1.0,0.6870342771982116,11
+bi_modal_split,671,BWTS = 1 AND LZ = 1 AND checksum = 1,LZ >= 1.0  AND  checksum >= 1.0  AND  BWTS >= 1.0,0.0,1.0,1.0,1.0,11
+tri_modal_split,671,BWTS = 1 AND LZ = 1 AND checksum = 1,LZ >= 1.0  AND  checksum >= 1.0  AND  BWTS >= 1.0,0.0,1.0,1.0,1.0,11
+power_law,671,BWTS = 1 AND LZ = 1 AND checksum = 1,LZ >= 1.0  AND  checksum >= 1.0  AND  jobs >= 4.0  AND  BWTS >= 1.0,0.0,0.8460877042132415,1.0,0.7332339791356185,11
+normal,495,skip = 1 AND LZ = 1 AND MTFT = 1,LZ >= 1.0  AND  MTFT >= 1.0  AND  skip >= 1.0,0.0,1.0,1.0,1.0,12
+uniform,495,skip = 1 AND LZ = 1 AND MTFT = 1,skip >= 1.0  AND  MTFT >= 1.0  AND  0.0 <= Huffman < 1.0  AND  LZ >= 1.0,1.0,0.943436499466382,1.0,0.8929292929292929,12
+bi_modal_split,495,skip = 1 AND LZ = 1 AND MTFT = 1,skip >= 1.0  AND  MTFT >= 1.0  AND  LZ >= 1.0  AND  0.0 <= TEXT < 1.0,1.0,0.7420584498094028,1.0,0.5898989898989899,12
+tri_modal_split,495,skip = 1 AND LZ = 1 AND MTFT = 1,LZ >= 1.0  AND  MTFT >= 1.0  AND  skip >= 1.0  AND  blocksize >= 1000000.0,1.0,0.8950892857142857,1.0,0.8101010101010101,12
+power_law,495,skip = 1 AND LZ = 1 AND MTFT = 1,skip >= 1.0  AND  MTFT >= 1.0  AND  LZ >= 1.0  AND  X86 >= 1.0,1.0,0.7625,1.0,0.6161616161616161,12
+normal,608,LZ = 1 AND X86 = 1 AND checksum = 1,X86 >= 1.0  AND  checksum >= 1.0  AND  LZ >= 1.0,0.0,1.0,1.0,1.0,13
+uniform,608,LZ = 1 AND X86 = 1 AND checksum = 1,X86 >= 1.0  AND  checksum >= 1.0  AND  0.0 <= Range < 1.0  AND  LZ >= 1.0,1.0,0.939843068875327,1.0,0.8865131578947368,13
+bi_modal_split,608,LZ = 1 AND X86 = 1 AND checksum = 1,LZ >= 1.0  AND  X86 >= 1.0  AND  checksum >= 1.0  AND  1000.0 <= blocksize < 1000000000.0,1.0,0.7778894472361809,1.0,0.6365131578947368,13
+tri_modal_split,608,LZ = 1 AND X86 = 1 AND checksum = 1,X86 >= 1.0  AND  checksum >= 1.0  AND  LZ >= 1.0,1.0,1.0,1.0,1.0,13
+power_law,608,LZ = 1 AND X86 = 1 AND checksum = 1,X86 >= 1.0  AND  checksum >= 1.0  AND  LZ >= 1.0,1.0,1.0,1.0,1.0,13
+normal,487,LZ = 1 AND SRT = 1 AND RLT = 1,0.0 <= RANK < 1.0  AND  RLT >= 1.0  AND  LZ >= 1.0  AND  SRT >= 1.0,0.0,0.8404761904761905,1.0,0.7248459958932238,14
+uniform,487,LZ = 1 AND SRT = 1 AND RLT = 1,LZ >= 1.0  AND  SRT >= 1.0  AND  RLT >= 1.0  AND  0.0 <= BWT < 1.0,0.0,0.7975308641975308,1.0,0.6632443531827515,14
+bi_modal_split,487,LZ = 1 AND SRT = 1 AND RLT = 1,LZ >= 1.0  AND  SRT >= 1.0  AND  RLT >= 1.0,0.0,1.0,1.0,1.0,14
+tri_modal_split,487,LZ = 1 AND SRT = 1 AND RLT = 1,checksum >= 1.0  AND  RLT >= 1.0  AND  SRT >= 1.0  AND  LZ >= 1.0,0.0,0.8554641598119859,1.0,0.7474332648870636,14
+power_law,487,LZ = 1 AND SRT = 1 AND RLT = 1,LZ >= 1.0  AND  RLT >= 1.0  AND  SRT >= 1.0,2.0,1.0,1.0,1.0,14
+normal,449,skip = 1 AND MTFT = 1 AND SRT = 1,skip >= 1.0  AND  MTFT >= 1.0  AND  SRT >= 1.0  AND  0.0 <= TPAQX < 1.0,0.0,0.9245508982035928,1.0,0.8596881959910914,15
+uniform,449,skip = 1 AND MTFT = 1 AND SRT = 1,MTFT >= 1.0  AND  SRT >= 1.0  AND  blocksize >= 1000000.0  AND  skip >= 1.0,1.0,0.9062119366626068,1.0,0.8285077951002228,15
+bi_modal_split,449,skip = 1 AND MTFT = 1 AND SRT = 1,skip >= 1.0  AND  MTFT >= 1.0  AND  SRT >= 1.0,0.0,1.0,1.0,1.0,15
+tri_modal_split,449,skip = 1 AND MTFT = 1 AND SRT = 1,skip >= 1.0  AND  MTFT >= 1.0  AND  SRT >= 1.0,0.0,1.0,1.0,1.0,15
+power_law,449,skip = 1 AND MTFT = 1 AND SRT = 1,MTFT >= 1.0  AND  SRT >= 1.0  AND  skip >= 1.0,1.0,1.0,1.0,1.0,15
+normal,443,ROLZX = 1 AND BWTS = 1 AND checksum = 1,ROLZX >= 1.0  AND  skip >= 1.0  AND  BWTS >= 1.0  AND  checksum >= 1.0,0.0,0.8538163001293662,1.0,0.744920993227991,16
+uniform,443,ROLZX = 1 AND BWTS = 1 AND checksum = 1,ROLZX >= 1.0  AND  checksum >= 1.0  AND  BWTS >= 1.0,1.0,1.0,1.0,1.0,16
+bi_modal_split,443,ROLZX = 1 AND BWTS = 1 AND checksum = 1,ROLZX >= 1.0  AND  checksum >= 1.0  AND  blocksize >= 1000000.0  AND  BWTS >= 1.0,0.0,0.924757281553398,1.0,0.8600451467268623,16
+tri_modal_split,443,ROLZX = 1 AND BWTS = 1 AND checksum = 1,ROLZX >= 1.0  AND  BWTS >= 1.0  AND  checksum >= 1.0  AND  blocksize >= 1000000.0,1.0,0.924757281553398,1.0,0.8600451467268623,16
+power_law,443,ROLZX = 1 AND BWTS = 1 AND checksum = 1,ROLZX >= 1.0  AND  BWTS >= 1.0  AND  checksum >= 1.0,1.0,1.0,1.0,1.0,16
+normal,475,BWTS = 1 AND LZ = 1 AND MTFT = 1,LZ >= 1.0  AND  MTFT >= 1.0  AND  BWTS >= 1.0,3.0,1.0,1.0,1.0,17
+uniform,475,BWTS = 1 AND LZ = 1 AND MTFT = 1,MTFT >= 1.0  AND  jobs >= 8.0  AND  LZ >= 1.0  AND  BWTS >= 1.0,0.0,0.5946745562130178,1.0,0.4231578947368421,17
+bi_modal_split,475,BWTS = 1 AND LZ = 1 AND MTFT = 1,LZ >= 1.0  AND  MTFT >= 1.0  AND  BWTS >= 1.0,0.0,1.0,1.0,1.0,17
+tri_modal_split,475,BWTS = 1 AND LZ = 1 AND MTFT = 1,BWTS >= 1.0  AND  LZ >= 1.0  AND  MTFT >= 1.0  AND  0.0 <= ZRLT < 1.0,0.0,0.8080301129234629,1.0,0.6778947368421052,17
+power_law,475,BWTS = 1 AND LZ = 1 AND MTFT = 1,LZ >= 1.0  AND  MTFT >= 1.0  AND  BWTS >= 1.0  AND  jobs >= 4.0,3.0,0.8676996424314659,1.0,0.7663157894736842,17
+normal,453,LZP = 1 AND checksum = 1 AND ROLZ = 1,LZP >= 1.0  AND  ROLZ >= 1.0  AND  0.0 <= ANS0 < 1.0  AND  checksum >= 1.0,0.0,0.9621993127147768,1.0,0.9271523178807948,18
+uniform,453,LZP = 1 AND checksum = 1 AND ROLZ = 1,LZP >= 1.0  AND  ROLZ >= 1.0  AND  0.0 <= TEXT < 1.0  AND  checksum >= 1.0,1.0,0.7203389830508474,1.0,0.5629139072847682,18
+bi_modal_split,453,LZP = 1 AND checksum = 1 AND ROLZ = 1,checksum >= 1.0  AND  ROLZ >= 1.0  AND  LZP >= 1.0,0.0,1.0,1.0,1.0,18
+tri_modal_split,453,LZP = 1 AND checksum = 1 AND ROLZ = 1,checksum >= 1.0  AND  ROLZ >= 1.0  AND  LZP >= 1.0,2.0,1.0,1.0,1.0,18
+power_law,453,LZP = 1 AND checksum = 1 AND ROLZ = 1,checksum >= 1.0  AND  ROLZ >= 1.0  AND  LZP >= 1.0,1.0,1.0,1.0,1.0,18
+normal,426,LZP = 1 AND LZ = 1 AND SRT = 1,LZP >= 1.0  AND  LZ >= 1.0  AND  SRT >= 1.0,0.0,1.0,1.0,1.0,19
+uniform,426,LZP = 1 AND LZ = 1 AND SRT = 1,LZP >= 1.0  AND  LZ >= 1.0  AND  SRT >= 1.0,1.0,1.0,1.0,1.0,19
+bi_modal_split,426,LZP = 1 AND LZ = 1 AND SRT = 1,LZP >= 1.0  AND  LZ >= 1.0  AND  SRT >= 1.0,0.0,1.0,1.0,1.0,19
+tri_modal_split,426,LZP = 1 AND LZ = 1 AND SRT = 1,LZP >= 1.0  AND  LZ >= 1.0  AND  0.0 <= Huffman < 1.0  AND  SRT >= 1.0,1.0,0.864,1.0,0.7605633802816901,19
+power_law,426,LZP = 1 AND LZ = 1 AND SRT = 1,LZP >= 1.0  AND  SRT >= 1.0  AND  LZ >= 1.0,2.0,1.0,1.0,1.0,19
+normal,571,BWTS = 1 AND LZ = 1 AND SRT = 1,SRT >= 1.0  AND  0.0 <= FPAQ < 1.0  AND  LZ >= 1.0  AND  BWTS >= 1.0,0.0,0.9665158371040724,1.0,0.935201401050788,1
+uniform,571,BWTS = 1 AND LZ = 1 AND SRT = 1,LZ >= 1.0  AND  SRT >= 1.0  AND  BWTS >= 1.0  AND  X86 >= 1.0,1.0,0.7225950782997763,1.0,0.5656742556917689,1
+bi_modal_split,571,BWTS = 1 AND LZ = 1 AND SRT = 1,LZ >= 1.0  AND  SRT >= 1.0  AND  0.0 <= FPAQ < 1.0  AND  BWTS >= 1.0,0.0,0.9665158371040724,1.0,0.935201401050788,1
+tri_modal_split,571,BWTS = 1 AND LZ = 1 AND SRT = 1,LZ >= 1.0  AND  SRT >= 1.0  AND  BWTS >= 1.0  AND  0.0 <= Huffman < 1.0,2.0,0.8781925343811395,1.0,0.7828371278458844,1
+power_law,571,BWTS = 1 AND LZ = 1 AND SRT = 1,LZ >= 1.0  AND  SRT >= 1.0  AND  BWTS >= 1.0,4.0,1.0,1.0,1.0,1
+normal,463,BWTS = 1 AND X86 = 1 AND jobs = 8,X86 >= 1.0  AND  jobs >= 8.0  AND  0.0 <= CM < 1.0  AND  BWTS >= 1.0,0.0,0.9756637168141594,1.0,0.9524838012958964,20
+uniform,463,BWTS = 1 AND X86 = 1 AND jobs = 8,jobs >= 8.0  AND  BWTS >= 1.0  AND  X86 >= 1.0  AND  0.0 <= RANK < 1.0,1.0,0.8949880668257757,1.0,0.8099352051835853,20
+bi_modal_split,463,BWTS = 1 AND X86 = 1 AND jobs = 8,BWTS >= 1.0  AND  X86 >= 1.0  AND  jobs >= 8.0,0.0,1.0,1.0,1.0,20
+tri_modal_split,463,BWTS = 1 AND X86 = 1 AND jobs = 8,RANK >= 1.0  AND  checksum >= 1.0  AND  0.0 <= LZP < 1.0  AND  0.0 <= skip < 1.0,0.0,0.0034843205574912,0.009009009009009,0.0021598272138228,20
+power_law,463,BWTS = 1 AND X86 = 1 AND jobs = 8,X86 >= 1.0  AND  jobs >= 8.0  AND  BWTS >= 1.0,4.0,1.0,1.0,1.0,20
+normal,609,BWTS = 1 AND LZ = 1 AND RLT = 1,LZ >= 1.0  AND  RLT >= 1.0  AND  BWTS >= 1.0,1.0,1.0,1.0,1.0,21
+uniform,609,BWTS = 1 AND LZ = 1 AND RLT = 1,LZ >= 1.0  AND  RLT >= 1.0  AND  BWTS >= 1.0  AND  0.0 <= RANK < 1.0,0.0,0.8552631578947367,1.0,0.7471264367816092,21
+bi_modal_split,609,BWTS = 1 AND LZ = 1 AND RLT = 1,LZ >= 1.0  AND  RLT >= 1.0  AND  0.0 <= ANS1 < 1.0  AND  BWTS >= 1.0,1.0,0.8680297397769516,1.0,0.7668308702791461,21
+tri_modal_split,609,BWTS = 1 AND LZ = 1 AND RLT = 1,BWTS >= 1.0  AND  LZ >= 1.0  AND  0.0 <= TEXT < 1.0  AND  RLT >= 1.0,0.0,0.6931330472103004,1.0,0.5303776683087028,21
+power_law,609,BWTS = 1 AND LZ = 1 AND RLT = 1,0.0 <= ROLZX < 1.0  AND  LZ >= 1.0  AND  RLT >= 1.0  AND  BWTS >= 1.0,3.0,0.8035363457760314,1.0,0.6715927750410509,21
+normal,505,BWTS = 1 AND RLT = 1 AND blocksize = 1000000,BWTS >= 1.0  AND  RLT >= 1.0  AND  1000000.0 <= blocksize < 1000000000.0  AND  0.0 <= CM < 1.0,0.0,0.9766970618034448,1.0,0.9544554455445544,22
+uniform,505,BWTS = 1 AND RLT = 1 AND blocksize = 1000000,BWTS >= 1.0  AND  RLT >= 1.0  AND  1000000.0 <= blocksize < 1000000000.0,0.0,1.0,1.0,1.0,22
+bi_modal_split,505,BWTS = 1 AND RLT = 1 AND blocksize = 1000000,BWTS >= 1.0  AND  1000000.0 <= blocksize < 1000000000.0  AND  RLT >= 1.0  AND  0.0 <= TPAQ < 1.0,0.0,0.9746192893401014,1.0,0.9504950495049505,22
+tri_modal_split,505,BWTS = 1 AND RLT = 1 AND blocksize = 1000000,1000000.0 <= blocksize < 1000000000.0  AND  RLT >= 1.0  AND  BWTS >= 1.0,0.0,1.0,1.0,1.0,22
+power_law,505,BWTS = 1 AND RLT = 1 AND blocksize = 1000000,BWTS >= 1.0  AND  1000000.0 <= blocksize < 1000000000.0  AND  RLT >= 1.0,2.0,1.0,1.0,1.0,22
+normal,437,LZP = 1 AND LZ = 1 AND X86 = 1,LZP >= 1.0  AND  0.0 <= CM < 1.0  AND  LZ >= 1.0  AND  X86 >= 1.0,0.0,0.9753810082063308,1.0,0.9519450800915332,23
+uniform,437,LZP = 1 AND LZ = 1 AND X86 = 1,LZP >= 1.0  AND  1000.0 <= blocksize < 1000000000.0  AND  LZ >= 1.0  AND  X86 >= 1.0,0.0,0.8393094289508632,1.0,0.7231121281464531,23
+bi_modal_split,437,LZP = 1 AND LZ = 1 AND X86 = 1,LZP >= 1.0  AND  LZ >= 1.0  AND  0.0 <= ANS1 < 1.0  AND  X86 >= 1.0,0.0,0.8936708860759494,1.0,0.8077803203661327,23
+tri_modal_split,437,LZP = 1 AND LZ = 1 AND X86 = 1,LZP >= 1.0  AND  0.0 <= TPAQ < 1.0  AND  X86 >= 1.0  AND  LZ >= 1.0,0.0,0.946987951807229,1.0,0.8993135011441648,23
+power_law,437,LZP = 1 AND LZ = 1 AND X86 = 1,LZ >= 1.0  AND  LZP >= 1.0  AND  skip >= 1.0  AND  X86 >= 1.0,4.0,0.8484848484848484,1.0,0.7368421052631579,23
+normal,561,LZP = 1 AND BWTS = 1 AND RLT = 1,LZP >= 1.0  AND  RLT >= 1.0  AND  BWTS >= 1.0  AND  0.0 <= ANS1 < 1.0,0.0,0.8824701195219125,1.0,0.7896613190730838,24
+uniform,561,LZP = 1 AND BWTS = 1 AND RLT = 1,BWTS >= 1.0  AND  RLT >= 1.0  AND  LZP >= 1.0  AND  0.0 <= ANS1 < 1.0,1.0,0.8824701195219125,1.0,0.7896613190730838,24
+bi_modal_split,561,LZP = 1 AND BWTS = 1 AND RLT = 1,BWTS >= 1.0  AND  RLT >= 1.0  AND  LZP >= 1.0,0.0,1.0,1.0,1.0,24
+tri_modal_split,561,LZP = 1 AND BWTS = 1 AND RLT = 1,LZP >= 1.0  AND  RLT >= 1.0  AND  0.0 <= ROLZX < 1.0  AND  BWTS >= 1.0,1.0,0.7574750830564784,1.0,0.6096256684491979,24
+power_law,561,LZP = 1 AND BWTS = 1 AND RLT = 1,LZP >= 1.0  AND  RLT >= 1.0  AND  0.0 <= TPAQX < 1.0  AND  BWTS >= 1.0,1.0,0.9715857011915672,1.0,0.9447415329768272,24
+normal,574,skip = 1 AND LZ = 1 AND RLT = 1,LZ >= 1.0  AND  RLT >= 1.0  AND  0.0 <= TPAQ < 1.0  AND  skip >= 1.0,0.0,0.940959409594096,1.0,0.8885017421602788,25
+uniform,574,skip = 1 AND LZ = 1 AND RLT = 1,LZ >= 1.0  AND  RLT >= 1.0  AND  skip >= 1.0  AND  0.0 <= ANS1 < 1.0,1.0,0.873405299313052,1.0,0.7752613240418118,25
+bi_modal_split,574,skip = 1 AND LZ = 1 AND RLT = 1,LZ >= 1.0  AND  RLT >= 1.0  AND  skip >= 1.0  AND  1000.0 <= blocksize < 1000000000.0,0.0,0.7735042735042735,1.0,0.6306620209059234,25
+tri_modal_split,574,skip = 1 AND LZ = 1 AND RLT = 1,LZ >= 1.0  AND  RLT >= 1.0  AND  skip >= 1.0  AND  0.0 <= ZRLT < 1.0,1.0,0.8473895582329317,1.0,0.735191637630662,25
+power_law,574,skip = 1 AND LZ = 1 AND RLT = 1,LZ >= 1.0  AND  RLT >= 1.0  AND  skip >= 1.0,1.0,1.0,1.0,1.0,25
+normal,608,LZ = 1 AND X86 = 1 AND checksum = 1,LZ >= 1.0  AND  checksum >= 1.0  AND  X86 >= 1.0  AND  0.0 <= ANS1 < 1.0,0.0,0.8833792470156107,1.0,0.7911184210526315,26
+uniform,608,LZ = 1 AND X86 = 1 AND checksum = 1,LZ >= 1.0  AND  checksum >= 1.0  AND  0.0 <= TPAQX < 1.0  AND  X86 >= 1.0,1.0,0.9490060501296456,1.0,0.9029605263157896,26
+bi_modal_split,608,LZ = 1 AND X86 = 1 AND checksum = 1,LZ >= 1.0  AND  checksum >= 1.0  AND  0.0 <= TPAQ < 1.0  AND  X86 >= 1.0,0.0,0.9370629370629372,1.0,0.881578947368421,26
+tri_modal_split,608,LZ = 1 AND X86 = 1 AND checksum = 1,LZ >= 1.0  AND  checksum >= 1.0  AND  0.0 <= RANK < 1.0  AND  X86 >= 1.0,0.0,0.7159450897571278,1.0,0.5575657894736842,26
+power_law,608,LZ = 1 AND X86 = 1 AND checksum = 1,X86 >= 1.0  AND  checksum >= 1.0  AND  0.0 <= ANS1 < 1.0  AND  LZ >= 1.0,0.0,0.8833792470156107,1.0,0.7911184210526315,26
+normal,496,BWTS = 1 AND ROLZ = 1 AND blocksize = 1000000,BWTS >= 1.0  AND  ROLZ >= 1.0  AND  1000000.0 <= blocksize < 1000000000.0,0.0,1.0,1.0,1.0,27
+uniform,496,BWTS = 1 AND ROLZ = 1 AND blocksize = 1000000,ROLZ >= 1.0  AND  1000000.0 <= blocksize < 1000000000.0  AND  0.0 <= CM < 1.0  AND  BWTS >= 1.0,1.0,0.9804727646454264,1.0,0.9616935483870968,27
+bi_modal_split,496,BWTS = 1 AND ROLZ = 1 AND blocksize = 1000000,1000000.0 <= blocksize < 1000000000.0  AND  ROLZ >= 1.0  AND  0.0 <= FPAQ < 1.0  AND  BWTS >= 1.0,1.0,0.9379014989293362,1.0,0.8830645161290323,27
+tri_modal_split,496,BWTS = 1 AND ROLZ = 1 AND blocksize = 1000000,ROLZ >= 1.0  AND  BWTS >= 1.0  AND  1000000.0 <= blocksize < 1000000000.0  AND  0.0 <= Huffman < 1.0,2.0,0.8162291169451075,1.0,0.6895161290322581,27
+power_law,496,BWTS = 1 AND ROLZ = 1 AND blocksize = 1000000,0.0 <= CM < 1.0  AND  ROLZ >= 1.0  AND  1000000.0 <= blocksize < 1000000000.0  AND  BWTS >= 1.0,0.0,0.9804727646454264,1.0,0.9616935483870968,27
+normal,477,skip = 1 AND BWTS = 1 AND MTFT = 1,skip >= 1.0  AND  MTFT >= 1.0  AND  BWTS >= 1.0  AND  0.0 <= ANS0 < 1.0,0.0,0.9527991218441272,1.0,0.909853249475891,28
+uniform,477,skip = 1 AND BWTS = 1 AND MTFT = 1,BWTS >= 1.0  AND  MTFT >= 1.0  AND  skip >= 1.0  AND  0.0 <= CM < 1.0,1.0,0.9470198675496688,1.0,0.89937106918239,28
+bi_modal_split,477,skip = 1 AND BWTS = 1 AND MTFT = 1,BWTS >= 1.0  AND  MTFT >= 1.0  AND  skip >= 1.0  AND  0.0 <= ANS1 < 1.0,0.0,0.9146757679180888,1.0,0.8427672955974843,28
+tri_modal_split,477,skip = 1 AND BWTS = 1 AND MTFT = 1,BWTS >= 1.0  AND  MTFT >= 1.0  AND  skip >= 1.0,0.0,1.0,1.0,1.0,28
+power_law,477,skip = 1 AND BWTS = 1 AND MTFT = 1,skip >= 1.0  AND  checksum >= 1.0  AND  MTFT >= 1.0  AND  BWTS >= 1.0,0.0,0.8881118881118881,1.0,0.7987421383647799,28
+normal,570,skip = 1 AND checksum = 1 AND ROLZ = 1,skip >= 1.0  AND  checksum >= 1.0  AND  ROLZ >= 1.0  AND  0.0 <= FPAQ < 1.0,0.0,0.9424860853432282,1.0,0.8912280701754386,29
+uniform,570,skip = 1 AND checksum = 1 AND ROLZ = 1,skip >= 1.0  AND  ROLZ >= 1.0  AND  checksum >= 1.0  AND  0.0 <= TPAQ < 1.0,1.0,0.9255419415645616,1.0,0.8614035087719298,29
+bi_modal_split,570,skip = 1 AND checksum = 1 AND ROLZ = 1,ROLZ >= 1.0  AND  skip >= 1.0  AND  checksum >= 1.0  AND  0.0 <= CM < 1.0,1.0,0.9664551223934724,1.0,0.9350877192982456,29
+tri_modal_split,570,skip = 1 AND checksum = 1 AND ROLZ = 1,skip >= 1.0  AND  ROLZ >= 1.0  AND  blocksize >= 1000000.0  AND  checksum >= 1.0,1.0,0.8845401174168298,1.0,0.7929824561403509,29
+power_law,570,skip = 1 AND checksum = 1 AND ROLZ = 1,skip >= 1.0  AND  ROLZ >= 1.0  AND  LZP >= 1.0  AND  0.0 <= FPAQ < 1.0,4.0,0.6755555555555556,0.9212121212121211,0.5333333333333333,29
+normal,412,X86 = 1 AND RLT = 1 AND blocksize = 1000000,RLT >= 1.0  AND  1000000.0 <= blocksize < 1000000000.0  AND  X86 >= 1.0,0.0,1.0,1.0,1.0,2
+uniform,412,X86 = 1 AND RLT = 1 AND blocksize = 1000000,1000000.0 <= blocksize < 1000000000.0  AND  RLT >= 1.0  AND  X86 >= 1.0  AND  0.0 <= ZRLT < 1.0,1.0,0.844319775596073,1.0,0.7305825242718447,2
+bi_modal_split,412,X86 = 1 AND RLT = 1 AND blocksize = 1000000,X86 >= 1.0  AND  checksum >= 1.0  AND  1000000.0 <= blocksize < 1000000000.0  AND  RLT >= 1.0,0.0,0.8475524475524475,1.0,0.7354368932038835,2
+tri_modal_split,412,X86 = 1 AND RLT = 1 AND blocksize = 1000000,X86 >= 1.0  AND  RLT >= 1.0  AND  1000000.0 <= blocksize < 1000000000.0  AND  checksum >= 1.0,0.0,0.8475524475524475,1.0,0.7354368932038835,2
+power_law,412,X86 = 1 AND RLT = 1 AND blocksize = 1000000,X86 >= 1.0  AND  1000000.0 <= blocksize < 1000000000.0  AND  RLT >= 1.0,1.0,1.0,1.0,1.0,2
+normal,464,LZP = 1 AND MTFT = 1 AND checksum = 1,LZP >= 1.0  AND  checksum >= 1.0  AND  MTFT >= 1.0  AND  0.0 <= ANS0 < 1.0,0.0,0.9665924276169264,1.0,0.9353448275862069,30
+uniform,464,LZP = 1 AND MTFT = 1 AND checksum = 1,LZP >= 1.0  AND  MTFT >= 1.0  AND  0.0 <= TPAQX < 1.0  AND  checksum >= 1.0,1.0,0.9700332963374028,1.0,0.9418103448275862,30
+bi_modal_split,464,LZP = 1 AND MTFT = 1 AND checksum = 1,MTFT >= 1.0  AND  1000.0 <= blocksize < 1000000000.0  AND  checksum >= 1.0  AND  LZP >= 1.0,0.0,0.8238276299112801,1.0,0.7004310344827587,30
+tri_modal_split,464,LZP = 1 AND MTFT = 1 AND checksum = 1,LZP >= 1.0  AND  MTFT >= 1.0  AND  checksum >= 1.0  AND  blocksize >= 1000000.0,1.0,0.9069493521790344,1.0,0.8297413793103449,30
+power_law,464,LZP = 1 AND MTFT = 1 AND checksum = 1,LZP >= 1.0  AND  MTFT >= 1.0  AND  checksum >= 1.0,1.0,1.0,1.0,1.0,30
+normal,542,LZP = 1 AND BWTS = 1 AND LZ = 1,LZP >= 1.0  AND  LZ >= 1.0  AND  BWTS >= 1.0  AND  0.0 <= TPAQ < 1.0,1.0,0.94140625,1.0,0.8892988929889298,31
+uniform,542,LZP = 1 AND BWTS = 1 AND LZ = 1,LZP >= 1.0  AND  LZ >= 1.0  AND  BWTS >= 1.0  AND  0.0 <= Huffman < 1.0,1.0,0.7955555555555556,1.0,0.6605166051660517,31
+bi_modal_split,542,LZP = 1 AND BWTS = 1 AND LZ = 1,LZP >= 1.0  AND  LZ >= 1.0  AND  BWTS >= 1.0  AND  RLT >= 1.0,1.0,0.7709750566893425,1.0,0.6273062730627307,31
+tri_modal_split,542,LZP = 1 AND BWTS = 1 AND LZ = 1,LZP >= 1.0  AND  0.0 <= ZRLT < 1.0  AND  BWTS >= 1.0  AND  LZ >= 1.0,0.0,0.8008849557522123,1.0,0.6678966789667896,31
+power_law,542,LZP = 1 AND BWTS = 1 AND LZ = 1,LZP >= 1.0  AND  BWTS >= 1.0  AND  LZ >= 1.0  AND  0.0 <= Range < 1.0,0.0,0.9878618113912232,1.0,0.9760147601476016,31
+normal,599,skip = 1 AND X86 = 1 AND RLT = 1,X86 >= 1.0  AND  RLT >= 1.0  AND  0.0 <= Range < 1.0  AND  skip >= 1.0,1.0,0.9582608695652174,1.0,0.9198664440734556,32
+uniform,599,skip = 1 AND X86 = 1 AND RLT = 1,RLT >= 1.0  AND  X86 >= 1.0  AND  skip >= 1.0  AND  0.0 <= RANK < 1.0,1.0,0.7559709241952233,1.0,0.6076794657762938,32
+bi_modal_split,599,skip = 1 AND X86 = 1 AND RLT = 1,skip >= 1.0  AND  X86 >= 1.0  AND  RLT >= 1.0,0.0,1.0,1.0,1.0,32
+tri_modal_split,599,skip = 1 AND X86 = 1 AND RLT = 1,X86 >= 1.0  AND  RLT >= 1.0  AND  0.0 <= FPAQ < 1.0  AND  skip >= 1.0,0.0,0.9645635263612792,1.0,0.9315525876460768,32
+power_law,599,skip = 1 AND X86 = 1 AND RLT = 1,X86 >= 1.0  AND  RLT >= 1.0  AND  skip >= 1.0,1.0,1.0,1.0,1.0,32
+normal,688,skip = 1 AND checksum = 1 AND RLT = 1,skip >= 1.0  AND  RLT >= 1.0  AND  checksum >= 1.0,1.0,1.0,1.0,1.0,33
+uniform,688,skip = 1 AND checksum = 1 AND RLT = 1,checksum >= 1.0  AND  RLT >= 1.0  AND  skip >= 1.0  AND  0.0 <= Huffman < 1.0,0.0,0.8730548730548731,1.0,0.7747093023255814,33
+bi_modal_split,688,skip = 1 AND checksum = 1 AND RLT = 1,RLT >= 1.0  AND  0.0 <= BWT < 1.0  AND  skip >= 1.0  AND  checksum >= 1.0,0.0,0.7670250896057348,1.0,0.622093023255814,33
+tri_modal_split,688,skip = 1 AND checksum = 1 AND RLT = 1,skip >= 1.0  AND  RLT >= 1.0  AND  checksum >= 1.0  AND  LZP >= 1.0,0.0,0.7592425608656448,1.0,0.6119186046511628,33
+power_law,688,skip = 1 AND checksum = 1 AND RLT = 1,checksum >= 1.0  AND  RLT >= 1.0  AND  skip >= 1.0,0.0,1.0,1.0,1.0,33
+normal,688,skip = 1 AND checksum = 1 AND RLT = 1,skip >= 1.0  AND  RLT >= 1.0  AND  checksum >= 1.0  AND  0.0 <= Huffman < 1.0,1.0,0.8730548730548731,1.0,0.7747093023255814,34
+uniform,688,skip = 1 AND checksum = 1 AND RLT = 1,checksum >= 1.0  AND  RLT >= 1.0  AND  skip >= 1.0  AND  0.0 <= Huffman < 1.0,0.0,0.8730548730548731,1.0,0.7747093023255814,34
+bi_modal_split,688,skip = 1 AND checksum = 1 AND RLT = 1,skip >= 1.0  AND  RLT >= 1.0  AND  checksum >= 1.0  AND  0.0 <= Huffman < 1.0,0.0,0.8730548730548731,1.0,0.7747093023255814,34
+tri_modal_split,688,skip = 1 AND checksum = 1 AND RLT = 1,checksum >= 1.0  AND  RLT >= 1.0  AND  skip >= 1.0  AND  0.0 <= Range < 1.0,2.0,0.9544072948328268,1.0,0.9127906976744186,34
+power_law,688,skip = 1 AND checksum = 1 AND RLT = 1,skip >= 1.0  AND  checksum >= 1.0  AND  RLT >= 1.0  AND  0.0 <= FPAQ < 1.0,0.0,0.9455938697318008,1.0,0.8968023255813954,34
+normal,526,LZ = 1 AND SRT = 1 AND X86 = 1,LZ >= 1.0  AND  SRT >= 1.0  AND  0.0 <= ANS0 < 1.0  AND  X86 >= 1.0,0.0,0.9604743083003952,1.0,0.9239543726235742,35
+uniform,526,LZ = 1 AND SRT = 1 AND X86 = 1,SRT >= 1.0  AND  X86 >= 1.0  AND  LZ >= 1.0  AND  0.0 <= CM < 1.0,0.0,0.9521912350597608,1.0,0.908745247148289,35
+bi_modal_split,526,LZ = 1 AND SRT = 1 AND X86 = 1,SRT >= 1.0  AND  X86 >= 1.0  AND  LZ >= 1.0,0.0,1.0,1.0,1.0,35
+tri_modal_split,526,LZ = 1 AND SRT = 1 AND X86 = 1,SRT >= 1.0  AND  X86 >= 1.0  AND  LZ >= 1.0  AND  0.0 <= ANS1 < 1.0,0.0,0.8602383531960996,1.0,0.7547528517110266,35
+power_law,526,LZ = 1 AND SRT = 1 AND X86 = 1,TEXT >= 1.0  AND  jobs >= 8.0  AND  0.0 <= MTFT < 1.0  AND  0.0 <= Huffman < 1.0,2.0,0.1307966706302021,0.1746031746031746,0.1045627376425855,35
+normal,432,BWTS = 1 AND MTFT = 1 AND blocksize = 1000000,BWTS >= 1.0  AND  MTFT >= 1.0  AND  1000000.0 <= blocksize < 1000000000.0,0.0,1.0,1.0,1.0,36
+uniform,432,BWTS = 1 AND MTFT = 1 AND blocksize = 1000000,MTFT >= 1.0  AND  1000000.0 <= blocksize < 1000000000.0  AND  BWTS >= 1.0,4.0,1.0,1.0,1.0,36
+bi_modal_split,432,BWTS = 1 AND MTFT = 1 AND blocksize = 1000000,MTFT >= 1.0  AND  1000000.0 <= blocksize < 1000000000.0  AND  BWTS >= 1.0,0.0,1.0,1.0,1.0,36
+tri_modal_split,432,BWTS = 1 AND MTFT = 1 AND blocksize = 1000000,BWTS >= 1.0  AND  MTFT >= 1.0  AND  1000000.0 <= blocksize < 1000000000.0  AND  skip >= 1.0,1.0,0.6687211093990754,1.0,0.5023148148148148,36
+power_law,432,BWTS = 1 AND MTFT = 1 AND blocksize = 1000000,RLT >= 1.0  AND  1000000.0 <= blocksize < 1000000000.0  AND  MTFT >= 1.0  AND  BWTS >= 1.0,0.0,0.7532467532467533,1.0,0.6041666666666666,36
+normal,438,LZP = 1 AND SRT = 1 AND X86 = 1,SRT >= 1.0  AND  X86 >= 1.0  AND  LZP >= 1.0,0.0,1.0,1.0,1.0,37
+uniform,438,LZP = 1 AND SRT = 1 AND X86 = 1,LZP >= 1.0  AND  SRT >= 1.0  AND  0.0 <= ANS0 < 1.0  AND  X86 >= 1.0,0.0,0.9433051869722556,1.0,0.8926940639269406,37
+bi_modal_split,0,LZP = 1 AND SRT = 1 AND X86 = 1,,,0.0,0.0,0.0,37
+tri_modal_split,438,LZP = 1 AND SRT = 1 AND X86 = 1,SRT >= 1.0  AND  X86 >= 1.0  AND  LZP >= 1.0  AND  checksum >= 1.0,0.0,0.8897338403041826,1.0,0.8013698630136986,37
+power_law,438,LZP = 1 AND SRT = 1 AND X86 = 1,SRT >= 1.0  AND  X86 >= 1.0  AND  LZP >= 1.0,0.0,1.0,1.0,1.0,37
+normal,589,BWTS = 1 AND LZ = 1 AND X86 = 1,LZ >= 1.0  AND  X86 >= 1.0  AND  BWTS >= 1.0,3.0,1.0,1.0,1.0,38
+uniform,589,BWTS = 1 AND LZ = 1 AND X86 = 1,BWTS >= 1.0  AND  LZ >= 1.0  AND  0.0 <= ZRLT < 1.0  AND  X86 >= 1.0,0.0,0.8507317073170733,1.0,0.7402376910016978,38
+bi_modal_split,589,BWTS = 1 AND LZ = 1 AND X86 = 1,BWTS >= 1.0  AND  X86 >= 1.0  AND  0.0 <= CM < 1.0  AND  LZ >= 1.0,4.0,0.9593639575971732,1.0,0.9219015280135824,38
+tri_modal_split,589,BWTS = 1 AND LZ = 1 AND X86 = 1,BWTS >= 1.0  AND  X86 >= 1.0  AND  jobs >= 4.0  AND  LZ >= 1.0,1.0,0.8348170128585559,1.0,0.7164685908319185,38
+power_law,589,BWTS = 1 AND LZ = 1 AND X86 = 1,BWTS >= 1.0  AND  X86 >= 1.0  AND  LZ >= 1.0,0.0,1.0,1.0,1.0,38
+normal,481,skip = 1 AND MTFT = 1 AND X86 = 1,X86 >= 1.0  AND  MTFT >= 1.0  AND  skip >= 1.0,4.0,1.0,1.0,1.0,39
+uniform,481,skip = 1 AND MTFT = 1 AND X86 = 1,MTFT >= 1.0  AND  X86 >= 1.0  AND  skip >= 1.0,1.0,1.0,1.0,1.0,39
+bi_modal_split,481,skip = 1 AND MTFT = 1 AND X86 = 1,SRT >= 1.0  AND  X86 >= 1.0  AND  MTFT >= 1.0  AND  skip >= 1.0,0.0,0.742483660130719,1.0,0.5904365904365905,39
+tri_modal_split,481,skip = 1 AND MTFT = 1 AND X86 = 1,MTFT >= 1.0  AND  X86 >= 1.0  AND  skip >= 1.0  AND  SRT >= 1.0,1.0,0.742483660130719,1.0,0.5904365904365905,39
+power_law,481,skip = 1 AND MTFT = 1 AND X86 = 1,MTFT >= 1.0  AND  X86 >= 1.0  AND  skip >= 1.0,2.0,1.0,1.0,1.0,39
+normal,481,skip = 1 AND MTFT = 1 AND X86 = 1,MTFT >= 1.0  AND  X86 >= 1.0  AND  checksum >= 1.0  AND  skip >= 1.0,0.0,0.8826945412311267,1.0,0.7900207900207901,3
+uniform,481,skip = 1 AND MTFT = 1 AND X86 = 1,MTFT >= 1.0  AND  X86 >= 1.0  AND  skip >= 1.0  AND  blocksize >= 1000000.0,1.0,0.8891454965357968,1.0,0.8004158004158004,3
+bi_modal_split,481,skip = 1 AND MTFT = 1 AND X86 = 1,skip >= 1.0  AND  MTFT >= 1.0  AND  X86 >= 1.0  AND  BWTS >= 1.0,0.0,0.7190412782956058,1.0,0.5613305613305614,3
+tri_modal_split,481,skip = 1 AND MTFT = 1 AND X86 = 1,MTFT >= 1.0  AND  X86 >= 1.0  AND  skip >= 1.0  AND  RLT >= 1.0,1.0,0.7035040431266846,1.0,0.5426195426195426,3
+power_law,0,skip = 1 AND MTFT = 1 AND X86 = 1,,,0.0,0.0,0.0,3
+normal,475,BWTS = 1 AND RLT = 1 AND jobs = 8,BWTS >= 1.0  AND  RLT >= 1.0  AND  jobs >= 8.0  AND  0.0 <= ANS0 < 1.0,0.0,0.98068669527897,1.0,0.9621052631578948,40
+uniform,475,BWTS = 1 AND RLT = 1 AND jobs = 8,RLT >= 1.0  AND  jobs >= 8.0  AND  BWTS >= 1.0,0.0,1.0,1.0,1.0,40
+bi_modal_split,475,BWTS = 1 AND RLT = 1 AND jobs = 8,RLT >= 1.0  AND  jobs >= 8.0  AND  BWTS >= 1.0,3.0,1.0,1.0,1.0,40
+tri_modal_split,475,BWTS = 1 AND RLT = 1 AND jobs = 8,RLT >= 1.0  AND  jobs >= 8.0  AND  BWTS >= 1.0,3.0,1.0,1.0,1.0,40
+power_law,475,BWTS = 1 AND RLT = 1 AND jobs = 8,0.0 <= skip < 1.0  AND  FPAQ >= 1.0  AND  0.0 <= MTFT < 1.0  AND  0.0 <= SRT < 1.0,0.0,0.0,0.0,0.0,40
+normal,444,skip = 1 AND MTFT = 1 AND BWT = 1,MTFT >= 1.0  AND  BWT >= 1.0  AND  skip >= 1.0  AND  0.0 <= Range < 1.0,1.0,0.9326923076923076,1.0,0.8738738738738738,41
+uniform,444,skip = 1 AND MTFT = 1 AND BWT = 1,MTFT >= 1.0  AND  BWT >= 1.0  AND  skip >= 1.0,0.0,1.0,1.0,1.0,41
+bi_modal_split,444,skip = 1 AND MTFT = 1 AND BWT = 1,MTFT >= 1.0  AND  BWT >= 1.0  AND  skip >= 1.0,0.0,1.0,1.0,1.0,41
+tri_modal_split,444,skip = 1 AND MTFT = 1 AND BWT = 1,skip >= 1.0  AND  MTFT >= 1.0  AND  BWT >= 1.0,0.0,1.0,1.0,1.0,41
+power_law,0,skip = 1 AND MTFT = 1 AND BWT = 1,,,0.0,0.0,0.0,41
+normal,609,BWTS = 1 AND LZ = 1 AND RLT = 1,BWTS >= 1.0  AND  RLT >= 1.0  AND  LZ >= 1.0  AND  0.0 <= ROLZ < 1.0,0.0,0.7807807807807808,1.0,0.6403940886699507,42
+uniform,609,BWTS = 1 AND LZ = 1 AND RLT = 1,BWTS >= 1.0  AND  LZ >= 1.0  AND  RLT >= 1.0  AND  blocksize >= 1000000.0,0.0,0.9027027027027028,1.0,0.8226600985221675,42
+bi_modal_split,609,BWTS = 1 AND LZ = 1 AND RLT = 1,LZ >= 1.0  AND  RLT >= 1.0  AND  0.0 <= TEXT < 1.0  AND  BWTS >= 1.0,0.0,0.6931330472103004,1.0,0.5303776683087028,42
+tri_modal_split,609,BWTS = 1 AND LZ = 1 AND RLT = 1,RLT >= 1.0  AND  LZ >= 1.0  AND  BWTS >= 1.0  AND  0.0 <= ZRLT < 1.0,1.0,0.8520263901979265,1.0,0.7422003284072249,42
+power_law,609,BWTS = 1 AND LZ = 1 AND RLT = 1,LZ >= 1.0  AND  RLT >= 1.0  AND  blocksize >= 1000000.0  AND  BWTS >= 1.0,0.0,0.9027027027027028,1.0,0.8226600985221675,42
+normal,610,skip = 1 AND LZ = 1 AND X86 = 1,skip >= 1.0  AND  LZ >= 1.0  AND  X86 >= 1.0,0.0,1.0,1.0,1.0,43
+uniform,610,skip = 1 AND LZ = 1 AND X86 = 1,skip >= 1.0  AND  X86 >= 1.0  AND  LZ >= 1.0  AND  jobs >= 4.0,1.0,0.7676767676767677,1.0,0.6229508196721312,43
+bi_modal_split,610,skip = 1 AND LZ = 1 AND X86 = 1,skip >= 1.0  AND  LZ >= 1.0  AND  X86 >= 1.0  AND  blocksize >= 1000000.0,1.0,0.8598130841121495,1.0,0.7540983606557377,43
+tri_modal_split,610,skip = 1 AND LZ = 1 AND X86 = 1,LZ >= 1.0  AND  X86 >= 1.0  AND  RLT >= 1.0  AND  skip >= 1.0,1.0,0.714436248682824,1.0,0.5557377049180328,43
+power_law,610,skip = 1 AND LZ = 1 AND X86 = 1,skip >= 1.0  AND  LZ >= 1.0  AND  X86 >= 1.0,2.0,1.0,1.0,1.0,43
+normal,557,LZP = 1 AND SRT = 1 AND checksum = 1,SRT >= 1.0  AND  checksum >= 1.0  AND  LZP >= 1.0  AND  0.0 <= TPAQ < 1.0,1.0,0.9380362249761678,1.0,0.8833034111310593,44
+uniform,557,LZP = 1 AND SRT = 1 AND checksum = 1,SRT >= 1.0  AND  checksum >= 1.0  AND  0.0 <= TPAQX < 1.0  AND  LZP >= 1.0,0.0,0.9742173112338858,1.0,0.9497307001795332,44
+bi_modal_split,557,LZP = 1 AND SRT = 1 AND checksum = 1,LZP >= 1.0  AND  SRT >= 1.0  AND  checksum >= 1.0,1.0,1.0,1.0,1.0,44
+tri_modal_split,557,LZP = 1 AND SRT = 1 AND checksum = 1,LZP >= 1.0  AND  checksum >= 1.0  AND  SRT >= 1.0  AND  1000.0 <= blocksize < 1000000000.0,1.0,0.8310598111227702,1.0,0.7109515260323159,44
+power_law,557,LZP = 1 AND SRT = 1 AND checksum = 1,LZP >= 1.0  AND  SRT >= 1.0  AND  0.0 <= ANS1 < 1.0  AND  checksum >= 1.0,1.0,0.8848848848848849,1.0,0.7935368043087971,44
+normal,467,BWT = 1 AND ROLZ = 1 AND blocksize = 1000000,BWT >= 1.0  AND  1000000.0 <= blocksize < 1000000000.0  AND  ROLZ >= 1.0,0.0,1.0,1.0,1.0,45
+uniform,467,BWT = 1 AND ROLZ = 1 AND blocksize = 1000000,ROLZ >= 1.0  AND  BWT >= 1.0  AND  0.0 <= FPAQ < 1.0  AND  1000000.0 <= blocksize < 1000000000.0,1.0,0.910151691948658,1.0,0.8351177730192719,45
+bi_modal_split,467,BWT = 1 AND ROLZ = 1 AND blocksize = 1000000,ROLZ >= 1.0  AND  BWT >= 1.0  AND  1000000.0 <= blocksize < 1000000000.0  AND  0.0 <= FPAQ < 1.0,1.0,0.910151691948658,1.0,0.8351177730192719,45
+tri_modal_split,467,BWT = 1 AND ROLZ = 1 AND blocksize = 1000000,BWT >= 1.0  AND  ROLZ >= 1.0  AND  0.0 <= ANS1 < 1.0  AND  1000000.0 <= blocksize < 1000000000.0,1.0,0.9481981981981982,1.0,0.9014989293361884,45
+power_law,467,BWT = 1 AND ROLZ = 1 AND blocksize = 1000000,1000000.0 <= blocksize < 1000000000.0  AND  BWT >= 1.0  AND  ROLZ >= 1.0  AND  0.0 <= TPAQX < 1.0,0.0,0.903755868544601,1.0,0.8244111349036403,45
+normal,685,LZP = 1 AND skip = 1 AND checksum = 1,LZP >= 1.0  AND  skip >= 1.0  AND  checksum >= 1.0,1.0,1.0,1.0,1.0,46
+uniform,685,LZP = 1 AND skip = 1 AND checksum = 1,LZP >= 1.0  AND  checksum >= 1.0  AND  skip >= 1.0,1.0,1.0,1.0,1.0,46
+bi_modal_split,685,LZP = 1 AND skip = 1 AND checksum = 1,skip >= 1.0  AND  checksum >= 1.0  AND  LZP >= 1.0,0.0,1.0,1.0,1.0,46
+tri_modal_split,685,LZP = 1 AND skip = 1 AND checksum = 1,LZP >= 1.0  AND  skip >= 1.0  AND  0.0 <= ANS1 < 1.0  AND  checksum >= 1.0,0.0,0.8861788617886179,1.0,0.7956204379562044,46
+power_law,685,LZP = 1 AND skip = 1 AND checksum = 1,LZP >= 1.0  AND  0.0 <= ANS0 < 1.0  AND  skip >= 1.0  AND  checksum >= 1.0,0.0,0.9280125195618152,1.0,0.8656934306569343,46
+normal,574,skip = 1 AND LZ = 1 AND RLT = 1,skip >= 1.0  AND  LZ >= 1.0  AND  0.0 <= ZRLT < 1.0  AND  RLT >= 1.0,0.0,0.8473895582329317,1.0,0.735191637630662,47
+uniform,574,skip = 1 AND LZ = 1 AND RLT = 1,LZ >= 1.0  AND  skip >= 1.0  AND  RLT >= 1.0  AND  0.0 <= ANS0 < 1.0,4.0,0.9573115349682106,1.0,0.9181184668989548,47
+bi_modal_split,574,skip = 1 AND LZ = 1 AND RLT = 1,skip >= 1.0  AND  LZ >= 1.0  AND  0.0 <= TPAQ < 1.0  AND  RLT >= 1.0,0.0,0.940959409594096,1.0,0.8885017421602788,47
+tri_modal_split,574,skip = 1 AND LZ = 1 AND RLT = 1,skip >= 1.0  AND  RLT >= 1.0  AND  LZ >= 1.0,0.0,1.0,1.0,1.0,47
+power_law,574,skip = 1 AND LZ = 1 AND RLT = 1,skip >= 1.0  AND  LZ >= 1.0  AND  RLT >= 1.0  AND  0.0 <= Huffman < 1.0,0.0,0.9056244041944708,1.0,0.8275261324041812,47
+normal,492,skip = 1 AND LZ = 1 AND BWT = 1,LZ >= 1.0  AND  BWT >= 1.0  AND  skip >= 1.0  AND  blocksize >= 1000000.0,0.0,0.8767123287671234,1.0,0.7804878048780488,48
+uniform,492,skip = 1 AND LZ = 1 AND BWT = 1,LZ >= 1.0  AND  BWT >= 1.0  AND  0.0 <= FPAQ < 1.0  AND  skip >= 1.0,1.0,0.9642105263157896,1.0,0.9308943089430894,48
+bi_modal_split,492,skip = 1 AND LZ = 1 AND BWT = 1,LZ >= 1.0  AND  BWT >= 1.0  AND  skip >= 1.0,0.0,1.0,1.0,1.0,48
+tri_modal_split,492,skip = 1 AND LZ = 1 AND BWT = 1,skip >= 1.0  AND  LZ >= 1.0  AND  BWT >= 1.0,0.0,1.0,1.0,1.0,48
+power_law,492,skip = 1 AND LZ = 1 AND BWT = 1,LZ >= 1.0  AND  BWT >= 1.0  AND  skip >= 1.0,1.0,1.0,1.0,1.0,48
+normal,412,skip = 1 AND X86 = 1 AND ROLZ = 1,skip >= 1.0  AND  X86 >= 1.0  AND  ROLZ >= 1.0,0.0,1.0,1.0,1.0,49
+uniform,412,skip = 1 AND X86 = 1 AND ROLZ = 1,skip >= 1.0  AND  ROLZ >= 1.0  AND  X86 >= 1.0  AND  checksum >= 1.0,0.0,0.9157894736842104,1.0,0.8446601941747572,49
+bi_modal_split,412,skip = 1 AND X86 = 1 AND ROLZ = 1,0.0 <= TPAQ < 1.0  AND  ROLZ >= 1.0  AND  skip >= 1.0  AND  X86 >= 1.0,0.0,0.9422336328626444,1.0,0.8907766990291263,49
+tri_modal_split,412,skip = 1 AND X86 = 1 AND ROLZ = 1,X86 >= 1.0  AND  ROLZ >= 1.0  AND  skip >= 1.0  AND  blocksize >= 1000000.0,1.0,0.8743169398907104,1.0,0.7766990291262136,49
+power_law,412,skip = 1 AND X86 = 1 AND ROLZ = 1,X86 >= 1.0  AND  ROLZ >= 1.0  AND  skip >= 1.0,1.0,1.0,1.0,1.0,49
+normal,441,BWTS = 1 AND LZ = 1 AND ROLZ = 1,LZ >= 1.0  AND  ROLZ >= 1.0  AND  1000.0 <= blocksize < 1000000000.0  AND  BWTS >= 1.0,1.0,0.8440366972477064,1.0,0.7301587301587301,4
+uniform,441,BWTS = 1 AND LZ = 1 AND ROLZ = 1,ROLZ >= 1.0  AND  LZ >= 1.0  AND  BWTS >= 1.0,3.0,1.0,1.0,1.0,4
+bi_modal_split,441,BWTS = 1 AND LZ = 1 AND ROLZ = 1,LZ >= 1.0  AND  ROLZ >= 1.0  AND  0.0 <= ZRLT < 1.0  AND  BWTS >= 1.0,1.0,0.8394736842105264,1.0,0.7233560090702947,4
+tri_modal_split,441,BWTS = 1 AND LZ = 1 AND ROLZ = 1,BWTS >= 1.0  AND  ROLZ >= 1.0  AND  LZ >= 1.0,1.0,1.0,1.0,1.0,4
+power_law,441,BWTS = 1 AND LZ = 1 AND ROLZ = 1,LZ >= 1.0  AND  ROLZ >= 1.0  AND  BWTS >= 1.0  AND  0.0 <= CM < 1.0,0.0,0.976798143851508,1.0,0.9546485260770976,4
+normal,443,ROLZX = 1 AND BWTS = 1 AND checksum = 1,ROLZX >= 1.0  AND  BWTS >= 1.0  AND  checksum >= 1.0,0.0,1.0,1.0,1.0,50
+uniform,443,ROLZX = 1 AND BWTS = 1 AND checksum = 1,ROLZX >= 1.0  AND  BWTS >= 1.0  AND  checksum >= 1.0,1.0,1.0,1.0,1.0,50
+bi_modal_split,443,ROLZX = 1 AND BWTS = 1 AND checksum = 1,ROLZX >= 1.0  AND  checksum >= 1.0  AND  1000.0 <= blocksize < 1000000000.0  AND  BWTS >= 1.0,2.0,0.7978290366350068,1.0,0.6636568848758465,50
+tri_modal_split,443,ROLZX = 1 AND BWTS = 1 AND checksum = 1,ROLZX >= 1.0  AND  BWTS >= 1.0  AND  checksum >= 1.0  AND  0.0 <= TPAQ < 1.0,0.0,0.9142156862745098,1.0,0.8419864559819413,50
+power_law,443,ROLZX = 1 AND BWTS = 1 AND checksum = 1,ROLZX >= 1.0  AND  checksum >= 1.0  AND  BWTS >= 1.0,1.0,1.0,1.0,1.0,50
+normal,448,BWTS = 1 AND SRT = 1 AND blocksize = 1000000,1000000.0 <= blocksize < 1000000000.0  AND  SRT >= 1.0  AND  BWTS >= 1.0,1.0,1.0,1.0,1.0,51
+uniform,448,BWTS = 1 AND SRT = 1 AND blocksize = 1000000,SRT >= 1.0  AND  1000000.0 <= blocksize < 1000000000.0  AND  BWTS >= 1.0,1.0,1.0,1.0,1.0,51
+bi_modal_split,448,BWTS = 1 AND SRT = 1 AND blocksize = 1000000,SRT >= 1.0  AND  1000000.0 <= blocksize < 1000000000.0  AND  0.0 <= TPAQX < 1.0  AND  BWTS >= 1.0,1.0,0.8992628992628993,1.0,0.8169642857142857,51
+tri_modal_split,448,BWTS = 1 AND SRT = 1 AND blocksize = 1000000,1000000.0 <= blocksize < 1000000000.0  AND  SRT >= 1.0  AND  BWTS >= 1.0  AND  0.0 <= ANS1 < 1.0,1.0,0.8924598269468479,1.0,0.8058035714285714,51
+power_law,448,BWTS = 1 AND SRT = 1 AND blocksize = 1000000,BWTS >= 1.0  AND  SRT >= 1.0  AND  1000000.0 <= blocksize < 1000000000.0,1.0,1.0,1.0,1.0,51
+normal,451,LZP = 1 AND TEXT = 1 AND checksum = 1,LZP >= 1.0  AND  TEXT >= 1.0  AND  checksum >= 1.0,1.0,1.0,1.0,1.0,52
+uniform,451,LZP = 1 AND TEXT = 1 AND checksum = 1,TEXT >= 1.0  AND  checksum >= 1.0  AND  LZP >= 1.0,0.0,1.0,1.0,1.0,52
+bi_modal_split,451,LZP = 1 AND TEXT = 1 AND checksum = 1,LZP >= 1.0  AND  TEXT >= 1.0  AND  checksum >= 1.0,0.0,1.0,1.0,1.0,52
+tri_modal_split,451,LZP = 1 AND TEXT = 1 AND checksum = 1,LZP >= 1.0  AND  TEXT >= 1.0  AND  checksum >= 1.0  AND  0.0 <= BWT < 1.0,1.0,0.7908847184986595,1.0,0.6541019955654102,52
+power_law,451,LZP = 1 AND TEXT = 1 AND checksum = 1,TEXT >= 1.0  AND  checksum >= 1.0  AND  LZP >= 1.0,0.0,1.0,1.0,1.0,52
+normal,653,skip = 1 AND SRT = 1 AND checksum = 1,skip >= 1.0  AND  checksum >= 1.0  AND  SRT >= 1.0,0.0,1.0,1.0,1.0,53
+uniform,653,skip = 1 AND SRT = 1 AND checksum = 1,skip >= 1.0  AND  SRT >= 1.0  AND  0.0 <= ANS1 < 1.0  AND  checksum >= 1.0,0.0,0.8432240921169175,1.0,0.7289433384379785,53
+bi_modal_split,653,skip = 1 AND SRT = 1 AND checksum = 1,skip >= 1.0  AND  SRT >= 1.0  AND  checksum >= 1.0  AND  blocksize >= 1000000.0,0.0,0.877042132416165,1.0,0.781010719754977,53
+tri_modal_split,653,skip = 1 AND SRT = 1 AND checksum = 1,SRT >= 1.0  AND  checksum >= 1.0  AND  skip >= 1.0  AND  0.0 <= TPAQ < 1.0,1.0,0.9233305853256388,1.0,0.8575803981623277,53
+power_law,653,skip = 1 AND SRT = 1 AND checksum = 1,0.0 <= skip < 1.0  AND  TPAQ >= 1.0  AND  0.0 <= LZP < 1.0  AND  0.0 <= ZRLT < 1.0,0.0,0.0,0.0,0.0,53
+normal,525,LZP = 1 AND skip = 1 AND BWTS = 1,LZP >= 1.0  AND  BWTS >= 1.0  AND  skip >= 1.0,1.0,1.0,1.0,1.0,54
+uniform,525,LZP = 1 AND skip = 1 AND BWTS = 1,skip >= 1.0  AND  BWTS >= 1.0  AND  LZP >= 1.0  AND  0.0 <= TPAQ < 1.0,1.0,0.9241803278688524,1.0,0.8590476190476191,54
+bi_modal_split,525,LZP = 1 AND skip = 1 AND BWTS = 1,LZP >= 1.0  AND  skip >= 1.0  AND  BWTS >= 1.0,2.0,1.0,1.0,1.0,54
+tri_modal_split,525,LZP = 1 AND skip = 1 AND BWTS = 1,skip >= 1.0  AND  LZP >= 1.0  AND  BWTS >= 1.0  AND  0.0 <= ANS1 < 1.0,3.0,0.877005347593583,1.0,0.780952380952381,54
+power_law,525,LZP = 1 AND skip = 1 AND BWTS = 1,skip >= 1.0  AND  BWTS >= 1.0  AND  0.0 <= MTFT < 1.0  AND  LZP >= 1.0,1.0,0.6972704714640199,1.0,0.5352380952380953,54
+normal,513,TEXT = 1 AND BWTS = 1 AND checksum = 1,BWTS >= 1.0  AND  checksum >= 1.0  AND  TEXT >= 1.0  AND  0.0 <= ANS0 < 1.0,0.0,0.9498464687819856,1.0,0.9044834307992202,55
+uniform,513,TEXT = 1 AND BWTS = 1 AND checksum = 1,TEXT >= 1.0  AND  checksum >= 1.0  AND  BWTS >= 1.0,0.0,1.0,1.0,1.0,55
+bi_modal_split,513,TEXT = 1 AND BWTS = 1 AND checksum = 1,BWTS >= 1.0  AND  checksum >= 1.0  AND  TEXT >= 1.0,0.0,1.0,1.0,1.0,55
+tri_modal_split,513,TEXT = 1 AND BWTS = 1 AND checksum = 1,BWTS >= 1.0  AND  checksum >= 1.0  AND  TEXT >= 1.0,1.0,1.0,1.0,1.0,55
+power_law,513,TEXT = 1 AND BWTS = 1 AND checksum = 1,TPAQ >= 1.0  AND  0.0 <= BWT < 1.0  AND  0.0 <= ZRLT < 1.0,0.0,0.1091954022988505,0.2076502732240437,0.074074074074074,55
+normal,429,LZ = 1 AND checksum = 1 AND jobs = 8,LZ >= 1.0  AND  jobs >= 8.0  AND  checksum >= 1.0  AND  LZP >= 1.0,0.0,0.8083333333333333,1.0,0.6783216783216783,56
+uniform,429,LZ = 1 AND checksum = 1 AND jobs = 8,checksum >= 1.0  AND  jobs >= 8.0  AND  LZ >= 1.0  AND  0.0 <= ANS0 < 1.0,1.0,0.9536585365853658,1.0,0.9114219114219114,56
+bi_modal_split,429,LZ = 1 AND checksum = 1 AND jobs = 8,skip >= 1.0  AND  jobs >= 8.0  AND  checksum >= 1.0  AND  LZ >= 1.0,0.0,0.8278688524590163,1.0,0.7062937062937062,56
+tri_modal_split,429,LZ = 1 AND checksum = 1 AND jobs = 8,LZ >= 1.0  AND  jobs >= 8.0  AND  checksum >= 1.0  AND  blocksize >= 1000000.0,3.0,0.9221105527638191,1.0,0.8554778554778555,56
+power_law,429,LZ = 1 AND checksum = 1 AND jobs = 8,LZ >= 1.0  AND  jobs >= 8.0  AND  checksum >= 1.0,2.0,1.0,1.0,1.0,56
+normal,468,LZP = 1 AND checksum = 1 AND jobs = 8,checksum >= 1.0  AND  jobs >= 8.0  AND  LZP >= 1.0,1.0,1.0,1.0,1.0,57
+uniform,468,LZP = 1 AND checksum = 1 AND jobs = 8,LZP >= 1.0  AND  checksum >= 1.0  AND  jobs >= 8.0  AND  1000.0 <= blocksize < 1000000000.0,0.0,0.8654545454545455,1.0,0.7628205128205128,57
+bi_modal_split,468,LZP = 1 AND checksum = 1 AND jobs = 8,LZP >= 1.0  AND  checksum >= 1.0  AND  jobs >= 8.0,1.0,1.0,1.0,1.0,57
+tri_modal_split,468,LZP = 1 AND checksum = 1 AND jobs = 8,Huffman >= 1.0  AND  checksum >= 1.0  AND  jobs >= 8.0  AND  LZP >= 1.0,2.0,0.7317073170731707,1.0,0.5769230769230769,57
+power_law,468,LZP = 1 AND checksum = 1 AND jobs = 8,LZP >= 1.0  AND  jobs >= 8.0  AND  checksum >= 1.0,2.0,1.0,1.0,1.0,57
+normal,429,LZ = 1 AND checksum = 1 AND jobs = 8,LZ >= 1.0  AND  checksum >= 1.0  AND  jobs >= 8.0,0.0,1.0,1.0,1.0,58
+uniform,429,LZ = 1 AND checksum = 1 AND jobs = 8,LZ >= 1.0  AND  checksum >= 1.0  AND  jobs >= 8.0,0.0,1.0,1.0,1.0,58
+bi_modal_split,429,LZ = 1 AND checksum = 1 AND jobs = 8,LZ >= 1.0  AND  jobs >= 8.0  AND  0.0 <= CM < 1.0  AND  checksum >= 1.0,0.0,0.9858156028368792,1.0,0.972027972027972,58
+tri_modal_split,429,LZ = 1 AND checksum = 1 AND jobs = 8,LZ >= 1.0  AND  jobs >= 8.0  AND  checksum >= 1.0,0.0,1.0,1.0,1.0,58
+power_law,429,LZ = 1 AND checksum = 1 AND jobs = 8,ROLZX >= 1.0  AND  jobs >= 4.0  AND  LZ >= 1.0  AND  BWT >= 1.0,2.0,0.2959183673469387,0.5471698113207547,0.2027972027972027,58
+normal,594,LZP = 1 AND LZ = 1 AND checksum = 1,LZP >= 1.0  AND  LZ >= 1.0  AND  checksum >= 1.0,1.0,1.0,1.0,1.0,59
+uniform,594,LZP = 1 AND LZ = 1 AND checksum = 1,LZP >= 1.0  AND  LZ >= 1.0  AND  0.0 <= ANS1 < 1.0  AND  checksum >= 1.0,0.0,0.9030470914127424,1.0,0.8232323232323232,59
+bi_modal_split,594,LZP = 1 AND LZ = 1 AND checksum = 1,LZP >= 1.0  AND  checksum >= 1.0  AND  LZ >= 1.0,0.0,1.0,1.0,1.0,59
+tri_modal_split,594,LZP = 1 AND LZ = 1 AND checksum = 1,LZ >= 1.0  AND  checksum >= 1.0  AND  LZP >= 1.0,0.0,1.0,1.0,1.0,59
+power_law,594,LZP = 1 AND LZ = 1 AND checksum = 1,LZP >= 1.0  AND  LZ >= 1.0  AND  checksum >= 1.0,0.0,1.0,1.0,1.0,59
+normal,542,LZP = 1 AND BWTS = 1 AND LZ = 1,BWTS >= 1.0  AND  LZ >= 1.0  AND  LZP >= 1.0,0.0,1.0,1.0,1.0,5
+uniform,542,LZP = 1 AND BWTS = 1 AND LZ = 1,LZP >= 1.0  AND  LZ >= 1.0  AND  0.0 <= ANS0 < 1.0  AND  BWTS >= 1.0,1.0,0.9372549019607844,1.0,0.8819188191881919,5
+bi_modal_split,542,LZP = 1 AND BWTS = 1 AND LZ = 1,LZP >= 1.0  AND  LZ >= 1.0  AND  BWTS >= 1.0,1.0,1.0,1.0,1.0,5
+tri_modal_split,542,LZP = 1 AND BWTS = 1 AND LZ = 1,LZP >= 1.0  AND  LZ >= 1.0  AND  BWTS >= 1.0,4.0,1.0,1.0,1.0,5
+power_law,542,LZP = 1 AND BWTS = 1 AND LZ = 1,LZP >= 1.0  AND  BWTS >= 1.0  AND  LZ >= 1.0,0.0,1.0,1.0,1.0,5
+normal,529,BWTS = 1 AND MTFT = 1 AND checksum = 1,BWTS >= 1.0  AND  MTFT >= 1.0  AND  checksum >= 1.0,1.0,1.0,1.0,1.0,60
+uniform,529,BWTS = 1 AND MTFT = 1 AND checksum = 1,ROLZX >= 1.0  AND  MTFT >= 1.0  AND  BWTS >= 1.0  AND  checksum >= 1.0,1.0,0.6675062972292191,1.0,0.500945179584121,60
+bi_modal_split,529,BWTS = 1 AND MTFT = 1 AND checksum = 1,MTFT >= 1.0  AND  checksum >= 1.0  AND  BWTS >= 1.0  AND  X86 >= 1.0,1.0,0.7175757575757575,1.0,0.5595463137996219,60
+tri_modal_split,529,BWTS = 1 AND MTFT = 1 AND checksum = 1,MTFT >= 1.0  AND  checksum >= 1.0  AND  BWTS >= 1.0  AND  blocksize >= 1000000.0,1.0,0.9302325581395348,1.0,0.8695652173913043,60
+power_law,529,BWTS = 1 AND MTFT = 1 AND checksum = 1,SRT >= 1.0  AND  0.0 <= checksum < 1.0  AND  ROLZX >= 1.0  AND  0.0 <= FPAQ < 1.0,0.0,0.0,0.0,0.0,60
+normal,604,skip = 1 AND MTFT = 1 AND checksum = 1,skip >= 1.0  AND  MTFT >= 1.0  AND  0.0 <= CM < 1.0  AND  checksum >= 1.0,1.0,0.970161977834612,1.0,0.9420529801324504,61
+uniform,604,skip = 1 AND MTFT = 1 AND checksum = 1,MTFT >= 1.0  AND  checksum >= 1.0  AND  skip >= 1.0  AND  0.0 <= TPAQX < 1.0,1.0,0.9375549692172384,1.0,0.8824503311258278,61
+bi_modal_split,604,skip = 1 AND MTFT = 1 AND checksum = 1,skip >= 1.0  AND  MTFT >= 1.0  AND  checksum >= 1.0,0.0,1.0,1.0,1.0,61
+tri_modal_split,604,skip = 1 AND MTFT = 1 AND checksum = 1,MTFT >= 1.0  AND  checksum >= 1.0  AND  0.0 <= TPAQX < 1.0  AND  skip >= 1.0,0.0,0.9375549692172384,1.0,0.8824503311258278,61
+power_law,604,skip = 1 AND MTFT = 1 AND checksum = 1,MTFT >= 1.0  AND  skip >= 1.0  AND  checksum >= 1.0,1.0,1.0,1.0,1.0,61
+normal,488,RLT = 1 AND BWT = 1 AND blocksize = 1000000,RLT >= 1.0  AND  0.0 <= ANS1 < 1.0  AND  1000000.0 <= blocksize < 1000000000.0  AND  BWT >= 1.0,0.0,0.9594882729211088,1.0,0.9221311475409836,62
+uniform,488,RLT = 1 AND BWT = 1 AND blocksize = 1000000,BWT >= 1.0  AND  1000000.0 <= blocksize < 1000000000.0  AND  0.0 <= ANS1 < 1.0  AND  RLT >= 1.0,0.0,0.9594882729211088,1.0,0.9221311475409836,62
+bi_modal_split,488,RLT = 1 AND BWT = 1 AND blocksize = 1000000,RLT >= 1.0  AND  1000000.0 <= blocksize < 1000000000.0  AND  BWT >= 1.0,0.0,1.0,1.0,1.0,62
+tri_modal_split,488,RLT = 1 AND BWT = 1 AND blocksize = 1000000,RLT >= 1.0  AND  1000000.0 <= blocksize < 1000000000.0  AND  0.0 <= BWTS < 1.0  AND  RANK >= 1.0,0.0,0.603399433427762,0.9770642201834864,0.4364754098360656,62
+power_law,488,RLT = 1 AND BWT = 1 AND blocksize = 1000000,RLT >= 1.0  AND  1000000.0 <= blocksize < 1000000000.0  AND  SRT >= 1.0  AND  BWT >= 1.0,1.0,0.5855072463768116,1.0,0.4139344262295082,62
+normal,421,BWTS = 1 AND MTFT = 1 AND SRT = 1,BWTS >= 1.0  AND  MTFT >= 1.0  AND  SRT >= 1.0,0.0,1.0,1.0,1.0,63
+uniform,421,BWTS = 1 AND MTFT = 1 AND SRT = 1,BWTS >= 1.0  AND  SRT >= 1.0  AND  MTFT >= 1.0  AND  LZ >= 1.0,1.0,0.7488855869242199,1.0,0.5985748218527316,63
+bi_modal_split,421,BWTS = 1 AND MTFT = 1 AND SRT = 1,MTFT >= 1.0  AND  SRT >= 1.0  AND  BWTS >= 1.0  AND  0.0 <= Huffman < 1.0,3.0,0.883289124668435,1.0,0.7909738717339667,63
+tri_modal_split,421,BWTS = 1 AND MTFT = 1 AND SRT = 1,BWTS >= 1.0  AND  MTFT >= 1.0  AND  SRT >= 1.0  AND  0.0 <= ROLZX < 1.0,1.0,0.7562776957163959,1.0,0.6080760095011877,63
+power_law,421,BWTS = 1 AND MTFT = 1 AND SRT = 1,MTFT >= 1.0  AND  0.0 <= TPAQX < 1.0  AND  SRT >= 1.0  AND  BWTS >= 1.0,0.0,0.8590785907859078,1.0,0.7529691211401425,63
+normal,513,checksum = 1 AND RLT = 1 AND ROLZ = 1,checksum >= 1.0  AND  RLT >= 1.0  AND  ROLZ >= 1.0  AND  0.0 <= FPAQ < 1.0,0.0,0.9400826446280992,1.0,0.8869395711500975,64
+uniform,513,checksum = 1 AND RLT = 1 AND ROLZ = 1,RLT >= 1.0  AND  ROLZ >= 1.0  AND  0.0 <= FPAQ < 1.0  AND  checksum >= 1.0,0.0,0.9400826446280992,1.0,0.8869395711500975,64
+bi_modal_split,513,checksum = 1 AND RLT = 1 AND ROLZ = 1,0.0 <= TPAQX < 1.0  AND  ROLZ >= 1.0  AND  RLT >= 1.0  AND  checksum >= 1.0,0.0,0.950920245398773,1.0,0.9064327485380116,64
+tri_modal_split,513,checksum = 1 AND RLT = 1 AND ROLZ = 1,SRT >= 1.0  AND  ROLZ >= 1.0  AND  RLT >= 1.0  AND  checksum >= 1.0,0.0,0.660574412532637,1.0,0.49317738791423,64
+power_law,513,checksum = 1 AND RLT = 1 AND ROLZ = 1,checksum >= 1.0  AND  ROLZ >= 1.0  AND  RLT >= 1.0,0.0,1.0,1.0,1.0,64
+normal,422,skip = 1 AND LZ = 1 AND ROLZ = 1,LZ >= 1.0  AND  ROLZ >= 1.0  AND  checksum >= 1.0  AND  skip >= 1.0,0.0,0.9193341869398208,1.0,0.8507109004739336,65
+uniform,422,skip = 1 AND LZ = 1 AND ROLZ = 1,skip >= 1.0  AND  ROLZ >= 1.0  AND  0.0 <= ANS0 < 1.0  AND  LZ >= 1.0,0.0,0.9489414694894148,1.0,0.9028436018957346,65
+bi_modal_split,422,skip = 1 AND LZ = 1 AND ROLZ = 1,skip >= 1.0  AND  ROLZ >= 1.0  AND  LZ >= 1.0  AND  MTFT >= 1.0,0.0,0.6975308641975309,1.0,0.5355450236966824,65
+tri_modal_split,422,skip = 1 AND LZ = 1 AND ROLZ = 1,skip >= 1.0  AND  LZ >= 1.0  AND  ROLZ >= 1.0  AND  0.0 <= TPAQ < 1.0,0.0,0.9396984924623116,1.0,0.8862559241706162,65
+power_law,422,skip = 1 AND LZ = 1 AND ROLZ = 1,skip >= 1.0  AND  ROLZ >= 1.0  AND  LZ >= 1.0,1.0,1.0,1.0,1.0,65
+normal,622,BWTS = 1 AND X86 = 1 AND checksum = 1,X86 >= 1.0  AND  checksum >= 1.0  AND  BWTS >= 1.0  AND  0.0 <= Huffman < 1.0,0.0,0.8003857280617165,1.0,0.6672025723472669,66
+uniform,622,BWTS = 1 AND X86 = 1 AND checksum = 1,BWTS >= 1.0  AND  X86 >= 1.0  AND  checksum >= 1.0,0.0,1.0,1.0,1.0,66
+bi_modal_split,622,BWTS = 1 AND X86 = 1 AND checksum = 1,X86 >= 1.0  AND  checksum >= 1.0  AND  0.0 <= ANS1 < 1.0  AND  BWTS >= 1.0,0.0,0.8942222222222223,1.0,0.8086816720257235,66
+tri_modal_split,622,BWTS = 1 AND X86 = 1 AND checksum = 1,checksum >= 1.0  AND  BWTS >= 1.0  AND  X86 >= 1.0  AND  0.0 <= FPAQ < 1.0,3.0,0.9761316872427984,1.0,0.9533762057877814,66
+power_law,622,BWTS = 1 AND X86 = 1 AND checksum = 1,0.0 <= skip < 1.0  AND  4.0 <= jobs < 8.0  AND  0.0 <= ROLZ < 1.0  AND  BWTS >= 1.0,0.0,0.0702210663198959,0.1836734693877551,0.0434083601286173,66
+normal,462,MTFT = 1 AND SRT = 1 AND checksum = 1,MTFT >= 1.0  AND  SRT >= 1.0  AND  checksum >= 1.0  AND  0.0 <= FPAQ < 1.0,0.0,0.9488054607508531,1.0,0.9025974025974026,67
+uniform,462,MTFT = 1 AND SRT = 1 AND checksum = 1,MTFT >= 1.0  AND  blocksize >= 1000000.0  AND  SRT >= 1.0  AND  checksum >= 1.0,0.0,0.9142185663924792,1.0,0.841991341991342,67
+bi_modal_split,462,MTFT = 1 AND SRT = 1 AND checksum = 1,MTFT >= 1.0  AND  SRT >= 1.0  AND  0.0 <= FPAQ < 1.0  AND  checksum >= 1.0,1.0,0.9488054607508531,1.0,0.9025974025974026,67
+tri_modal_split,462,MTFT = 1 AND SRT = 1 AND checksum = 1,MTFT >= 1.0  AND  SRT >= 1.0  AND  checksum >= 1.0  AND  skip >= 1.0,1.0,0.8772782503037667,1.0,0.7813852813852814,67
+power_law,462,MTFT = 1 AND SRT = 1 AND checksum = 1,SRT >= 1.0  AND  checksum >= 1.0  AND  MTFT >= 1.0,1.0,1.0,1.0,1.0,67
+normal,571,BWTS = 1 AND LZ = 1 AND SRT = 1,LZ >= 1.0  AND  SRT >= 1.0  AND  BWTS >= 1.0  AND  0.0 <= ANS1 < 1.0,0.0,0.8693069306930692,1.0,0.7688266199649737,68
+uniform,571,BWTS = 1 AND LZ = 1 AND SRT = 1,LZ >= 1.0  AND  SRT >= 1.0  AND  BWTS >= 1.0,1.0,1.0,1.0,1.0,68
+bi_modal_split,571,BWTS = 1 AND LZ = 1 AND SRT = 1,LZ >= 1.0  AND  SRT >= 1.0  AND  0.0 <= Huffman < 1.0  AND  BWTS >= 1.0,0.0,0.8781925343811395,1.0,0.7828371278458844,68
+tri_modal_split,571,BWTS = 1 AND LZ = 1 AND SRT = 1,SRT >= 1.0  AND  0.0 <= ANS1 < 1.0  AND  LZ >= 1.0  AND  BWTS >= 1.0,0.0,0.8693069306930692,1.0,0.7688266199649737,68
+power_law,571,BWTS = 1 AND LZ = 1 AND SRT = 1,LZ >= 1.0  AND  SRT >= 1.0  AND  BWTS >= 1.0  AND  0.0 <= CM < 1.0,1.0,0.9484346224677715,1.0,0.9019264448336252,68
+normal,428,BWTS = 1 AND MTFT = 1 AND X86 = 1,X86 >= 1.0  AND  MTFT >= 1.0  AND  BWTS >= 1.0,3.0,1.0,1.0,1.0,69
+uniform,428,BWTS = 1 AND MTFT = 1 AND X86 = 1,BWTS >= 1.0  AND  MTFT >= 1.0  AND  X86 >= 1.0  AND  0.0 <= Range < 1.0,1.0,0.9748502994011976,1.0,0.9509345794392524,69
+bi_modal_split,428,BWTS = 1 AND MTFT = 1 AND X86 = 1,BWTS >= 1.0  AND  MTFT >= 1.0  AND  X86 >= 1.0  AND  0.0 <= TPAQ < 1.0,0.0,0.9535452322738388,1.0,0.911214953271028,69
+tri_modal_split,428,BWTS = 1 AND MTFT = 1 AND X86 = 1,MTFT >= 1.0  AND  X86 >= 1.0  AND  BWTS >= 1.0,1.0,1.0,1.0,1.0,69
+power_law,428,BWTS = 1 AND MTFT = 1 AND X86 = 1,MTFT >= 1.0  AND  X86 >= 1.0  AND  0.0 <= TPAQ < 1.0  AND  BWTS >= 1.0,1.0,0.9535452322738388,1.0,0.911214953271028,69
+normal,551,skip = 1 AND LZ = 1 AND SRT = 1,skip >= 1.0  AND  LZ >= 1.0  AND  SRT >= 1.0  AND  blocksize >= 1000000.0,0.0,0.8650875386199793,1.0,0.7622504537205081,6
+uniform,551,skip = 1 AND LZ = 1 AND SRT = 1,skip >= 1.0  AND  0.0 <= Range < 1.0  AND  LZ >= 1.0  AND  SRT >= 1.0,0.0,0.919607843137255,1.0,0.8511796733212341,6
+bi_modal_split,551,skip = 1 AND LZ = 1 AND SRT = 1,SRT >= 1.0  AND  checksum >= 1.0  AND  LZ >= 1.0  AND  skip >= 1.0,0.0,0.8857431749241659,1.0,0.79491833030853,6
+tri_modal_split,551,skip = 1 AND LZ = 1 AND SRT = 1,LZ >= 1.0  AND  SRT >= 1.0  AND  skip >= 1.0  AND  0.0 <= BWT < 1.0,1.0,0.7741935483870968,1.0,0.631578947368421,6
+power_law,551,skip = 1 AND LZ = 1 AND SRT = 1,TEXT >= 1.0  AND  4.0 <= jobs < 8.0  AND  0.0 <= TPAQX < 1.0  AND  LZP >= 1.0,0.0,0.1002949852507374,0.2677165354330709,0.0617059891107078,6
+normal,419,checksum = 1 AND BWT = 1 AND blocksize = 1000000,BWT >= 1.0  AND  1000000.0 <= blocksize < 1000000000.0  AND  checksum >= 1.0  AND  0.0 <= CM < 1.0,0.0,0.9879227053140096,1.0,0.9761336515513126,70
+uniform,419,checksum = 1 AND BWT = 1 AND blocksize = 1000000,BWT >= 1.0  AND  1000000.0 <= blocksize < 1000000000.0  AND  checksum >= 1.0  AND  0.0 <= TPAQX < 1.0,0.0,0.9214929214929216,1.0,0.8544152744630071,70
+bi_modal_split,419,checksum = 1 AND BWT = 1 AND blocksize = 1000000,checksum >= 1.0  AND  1000000.0 <= blocksize < 1000000000.0  AND  BWT >= 1.0  AND  0.0 <= LZP < 1.0,1.0,0.704791344667697,1.0,0.5441527446300716,70
+tri_modal_split,419,checksum = 1 AND BWT = 1 AND blocksize = 1000000,BWT >= 1.0  AND  1000000.0 <= blocksize < 1000000000.0  AND  checksum >= 1.0  AND  0.0 <= FPAQ < 1.0,1.0,0.940581542351454,1.0,0.8878281622911695,70
+power_law,419,checksum = 1 AND BWT = 1 AND blocksize = 1000000,checksum >= 1.0  AND  1000000.0 <= blocksize < 1000000000.0  AND  0.0 <= MTFT < 1.0  AND  BWT >= 1.0,0.0,0.704791344667697,1.0,0.5441527446300716,70
+normal,449,skip = 1 AND checksum = 1 AND jobs = 8,skip >= 1.0  AND  checksum >= 1.0  AND  jobs >= 8.0,0.0,1.0,1.0,1.0,71
+uniform,449,skip = 1 AND checksum = 1 AND jobs = 8,skip >= 1.0  AND  jobs >= 8.0  AND  checksum >= 1.0  AND  0.0 <= ANS0 < 1.0,2.0,0.944770857814336,1.0,0.8953229398663697,71
+bi_modal_split,449,skip = 1 AND checksum = 1 AND jobs = 8,checksum >= 1.0  AND  jobs >= 8.0  AND  0.0 <= Range < 1.0  AND  skip >= 1.0,0.0,0.9509345794392524,1.0,0.9064587973273942,71
+tri_modal_split,449,skip = 1 AND checksum = 1 AND jobs = 8,skip >= 1.0  AND  checksum >= 1.0  AND  jobs >= 8.0,0.0,1.0,1.0,1.0,71
+power_law,449,skip = 1 AND checksum = 1 AND jobs = 8,skip >= 1.0  AND  jobs >= 8.0  AND  0.0 <= ANS0 < 1.0  AND  checksum >= 1.0,1.0,0.944770857814336,1.0,0.8953229398663697,71
+normal,438,LZP = 1 AND SRT = 1 AND X86 = 1,LZP >= 1.0  AND  0.0 <= TPAQ < 1.0  AND  X86 >= 1.0  AND  SRT >= 1.0,0.0,0.9571428571428572,1.0,0.9178082191780822,72
+uniform,438,LZP = 1 AND SRT = 1 AND X86 = 1,X86 >= 1.0  AND  LZP >= 1.0  AND  0.0 <= TPAQX < 1.0  AND  SRT >= 1.0,1.0,0.9290953545232272,1.0,0.867579908675799,72
+bi_modal_split,438,LZP = 1 AND SRT = 1 AND X86 = 1,LZP >= 1.0  AND  SRT >= 1.0  AND  X86 >= 1.0,0.0,1.0,1.0,1.0,72
+tri_modal_split,438,LZP = 1 AND SRT = 1 AND X86 = 1,LZP >= 1.0  AND  SRT >= 1.0  AND  0.0 <= MTFT < 1.0  AND  X86 >= 1.0,1.0,0.7679324894514769,1.0,0.6232876712328768,72
+power_law,438,LZP = 1 AND SRT = 1 AND X86 = 1,LZP >= 1.0  AND  SRT >= 1.0  AND  X86 >= 1.0,3.0,1.0,1.0,1.0,72
+normal,476,MTFT = 1 AND checksum = 1 AND RLT = 1,MTFT >= 1.0  AND  0.0 <= FPAQ < 1.0  AND  RLT >= 1.0  AND  checksum >= 1.0,0.0,0.9526952695269528,1.0,0.9096638655462184,73
+uniform,476,MTFT = 1 AND checksum = 1 AND RLT = 1,MTFT >= 1.0  AND  checksum >= 1.0  AND  RLT >= 1.0,1.0,1.0,1.0,1.0,73
+bi_modal_split,476,MTFT = 1 AND checksum = 1 AND RLT = 1,MTFT >= 1.0  AND  checksum >= 1.0  AND  RLT >= 1.0  AND  LZP >= 1.0,1.0,0.7029972752043597,1.0,0.542016806722689,73
+tri_modal_split,476,MTFT = 1 AND checksum = 1 AND RLT = 1,MTFT >= 1.0  AND  checksum >= 1.0  AND  RLT >= 1.0  AND  0.0 <= TEXT < 1.0,4.0,0.7340425531914894,1.0,0.5798319327731093,73
+power_law,476,MTFT = 1 AND checksum = 1 AND RLT = 1,RLT >= 1.0  AND  MTFT >= 1.0  AND  checksum >= 1.0,1.0,1.0,1.0,1.0,73
+normal,450,X86 = 1 AND checksum = 1 AND BWT = 1,X86 >= 1.0  AND  checksum >= 1.0  AND  BWT >= 1.0  AND  0.0 <= CM < 1.0,0.0,0.9737742303306728,1.0,0.9488888888888888,74
+uniform,450,X86 = 1 AND checksum = 1 AND BWT = 1,X86 >= 1.0  AND  BWT >= 1.0  AND  0.0 <= Range < 1.0  AND  checksum >= 1.0,1.0,0.9077669902912622,1.0,0.8311111111111111,74
+bi_modal_split,450,X86 = 1 AND checksum = 1 AND BWT = 1,X86 >= 1.0  AND  BWT >= 1.0  AND  checksum >= 1.0  AND  0.0 <= ANS1 < 1.0,0.0,0.9311163895486936,1.0,0.8711111111111111,74
+tri_modal_split,450,X86 = 1 AND checksum = 1 AND BWT = 1,checksum >= 1.0  AND  BWT >= 1.0  AND  X86 >= 1.0  AND  0.0 <= ZRLT < 1.0,0.0,0.7637362637362637,1.0,0.6177777777777778,74
+power_law,450,X86 = 1 AND checksum = 1 AND BWT = 1,X86 >= 1.0  AND  checksum >= 1.0  AND  BWT >= 1.0,0.0,1.0,1.0,1.0,74
+normal,476,MTFT = 1 AND checksum = 1 AND RLT = 1,MTFT >= 1.0  AND  checksum >= 1.0  AND  RLT >= 1.0  AND  0.0 <= ANS1 < 1.0,0.0,0.91324200913242,1.0,0.8403361344537815,75
+uniform,476,MTFT = 1 AND checksum = 1 AND RLT = 1,MTFT >= 1.0  AND  checksum >= 1.0  AND  RLT >= 1.0  AND  0.0 <= TPAQ < 1.0,1.0,0.9339305711086228,1.0,0.8760504201680672,75
+bi_modal_split,476,MTFT = 1 AND checksum = 1 AND RLT = 1,checksum >= 1.0  AND  RLT >= 1.0  AND  MTFT >= 1.0,0.0,1.0,1.0,1.0,75
+tri_modal_split,476,MTFT = 1 AND checksum = 1 AND RLT = 1,MTFT >= 1.0  AND  RLT >= 1.0  AND  checksum >= 1.0,1.0,1.0,1.0,1.0,75
+power_law,476,MTFT = 1 AND checksum = 1 AND RLT = 1,0.0 <= SRT < 1.0  AND  1.0 <= jobs < 8.0  AND  LZP >= 1.0  AND  TEXT >= 1.0,0.0,0.0909090909090909,0.2288135593220339,0.0567226890756302,75
+normal,479,RANK = 1 AND skip = 1 AND X86 = 1,skip >= 1.0  AND  X86 >= 1.0  AND  RANK >= 1.0  AND  0.0 <= TPAQ < 1.0,0.0,0.9437706725468578,1.0,0.8935281837160751,76
+uniform,479,RANK = 1 AND skip = 1 AND X86 = 1,RANK >= 1.0  AND  X86 >= 1.0  AND  0.0 <= Range < 1.0  AND  skip >= 1.0,1.0,0.8795321637426902,1.0,0.7849686847599165,76
+bi_modal_split,479,RANK = 1 AND skip = 1 AND X86 = 1,RANK >= 1.0  AND  skip >= 1.0  AND  X86 >= 1.0  AND  0.0 <= Huffman < 1.0,0.0,0.9676724137931032,1.0,0.9373695198329852,76
+tri_modal_split,479,RANK = 1 AND skip = 1 AND X86 = 1,skip >= 1.0  AND  X86 >= 1.0  AND  RANK >= 1.0  AND  0.0 <= FPAQ < 1.0,0.0,0.9676724137931032,1.0,0.9373695198329852,76
+power_law,479,RANK = 1 AND skip = 1 AND X86 = 1,X86 >= 1.0  AND  RANK >= 1.0  AND  skip >= 1.0  AND  0.0 <= ANS0 < 1.0,1.0,0.950711938663746,1.0,0.906054279749478,76
+normal,508,LZP = 1 AND BWTS = 1 AND SRT = 1,SRT >= 1.0  AND  LZP >= 1.0  AND  BWTS >= 1.0  AND  1000.0 <= blocksize < 1000000000.0,1.0,0.8761061946902654,1.0,0.7795275590551181,77
+uniform,508,LZP = 1 AND BWTS = 1 AND SRT = 1,LZP >= 1.0  AND  SRT >= 1.0  AND  BWTS >= 1.0,0.0,1.0,1.0,1.0,77
+bi_modal_split,508,LZP = 1 AND BWTS = 1 AND SRT = 1,LZP >= 1.0  AND  0.0 <= TPAQX < 1.0  AND  SRT >= 1.0  AND  BWTS >= 1.0,0.0,0.9051724137931036,1.0,0.8267716535433071,77
+tri_modal_split,508,LZP = 1 AND BWTS = 1 AND SRT = 1,LZP >= 1.0  AND  SRT >= 1.0  AND  checksum >= 1.0  AND  BWTS >= 1.0,1.0,0.8711111111111111,1.0,0.7716535433070866,77
+power_law,508,LZP = 1 AND BWTS = 1 AND SRT = 1,0.0 <= RANK < 1.0  AND  ROLZ >= 1.0  AND  0.0 <= skip < 1.0  AND  RLT >= 1.0,1.0,0.1642969984202211,0.416,0.1023622047244094,77
+normal,456,RANK = 1 AND checksum = 1 AND BWT = 1,RANK >= 1.0  AND  checksum >= 1.0  AND  BWT >= 1.0,1.0,1.0,1.0,1.0,78
+uniform,456,RANK = 1 AND checksum = 1 AND BWT = 1,RANK >= 1.0  AND  checksum >= 1.0  AND  BWT >= 1.0,3.0,1.0,1.0,1.0,78
+bi_modal_split,456,RANK = 1 AND checksum = 1 AND BWT = 1,RANK >= 1.0  AND  checksum >= 1.0  AND  BWT >= 1.0,0.0,1.0,1.0,1.0,78
+tri_modal_split,456,RANK = 1 AND checksum = 1 AND BWT = 1,RANK >= 1.0  AND  BWT >= 1.0  AND  checksum >= 1.0  AND  0.0 <= ANS1 < 1.0,0.0,0.8958837772397095,1.0,0.8114035087719298,78
+power_law,456,RANK = 1 AND checksum = 1 AND BWT = 1,0.0 <= RLT < 1.0  AND  1000.0 <= blocksize < 1000000.0  AND  checksum >= 1.0  AND  0.0 <= CM < 1.0,1.0,0.1500815660685155,0.2929936305732484,0.1008771929824561,78
+normal,527,LZP = 1 AND BWTS = 1 AND X86 = 1,LZP >= 1.0  AND  X86 >= 1.0  AND  BWTS >= 1.0  AND  0.0 <= Huffman < 1.0,0.0,0.7885057471264368,1.0,0.650853889943074,79
+uniform,527,LZP = 1 AND BWTS = 1 AND X86 = 1,LZP >= 1.0  AND  X86 >= 1.0  AND  0.0 <= CM < 1.0  AND  BWTS >= 1.0,0.0,0.9845857418111752,1.0,0.969639468690702,79
+bi_modal_split,527,LZP = 1 AND BWTS = 1 AND X86 = 1,LZP >= 1.0  AND  BWTS >= 1.0  AND  X86 >= 1.0  AND  checksum >= 1.0,0.0,0.8715203426124196,1.0,0.7722960151802657,79
+tri_modal_split,527,LZP = 1 AND BWTS = 1 AND X86 = 1,X86 >= 1.0  AND  LZP >= 1.0  AND  BWTS >= 1.0,1.0,1.0,1.0,1.0,79
+power_law,527,LZP = 1 AND BWTS = 1 AND X86 = 1,LZP >= 1.0  AND  BWTS >= 1.0  AND  X86 >= 1.0,3.0,1.0,1.0,1.0,79
+normal,437,TEXT = 1 AND skip = 1 AND RLT = 1,skip >= 1.0  AND  RLT >= 1.0  AND  TEXT >= 1.0  AND  0.0 <= FPAQ < 1.0,0.0,0.9545454545454544,1.0,0.9130434782608696,7
+uniform,437,TEXT = 1 AND skip = 1 AND RLT = 1,TEXT >= 1.0  AND  skip >= 1.0  AND  RLT >= 1.0,1.0,1.0,1.0,1.0,7
+bi_modal_split,437,TEXT = 1 AND skip = 1 AND RLT = 1,TEXT >= 1.0  AND  RLT >= 1.0  AND  skip >= 1.0,1.0,1.0,1.0,1.0,7
+tri_modal_split,437,TEXT = 1 AND skip = 1 AND RLT = 1,TEXT >= 1.0  AND  skip >= 1.0  AND  0.0 <= BWT < 1.0  AND  RLT >= 1.0,2.0,0.6676829268292683,1.0,0.5011441647597255,7
+power_law,437,TEXT = 1 AND skip = 1 AND RLT = 1,TEXT >= 1.0  AND  RLT >= 1.0  AND  skip >= 1.0,2.0,1.0,1.0,1.0,7
+normal,512,SRT = 1 AND X86 = 1 AND RLT = 1,SRT >= 1.0  AND  RLT >= 1.0  AND  0.0 <= CM < 1.0  AND  X86 >= 1.0,0.0,0.9486652977412732,1.0,0.90234375,80
+uniform,512,SRT = 1 AND X86 = 1 AND RLT = 1,SRT >= 1.0  AND  RLT >= 1.0  AND  0.0 <= TPAQ < 1.0  AND  X86 >= 1.0,0.0,0.9614604462474644,1.0,0.92578125,80
+bi_modal_split,512,SRT = 1 AND X86 = 1 AND RLT = 1,SRT >= 1.0  AND  RLT >= 1.0  AND  X86 >= 1.0,0.0,1.0,1.0,1.0,80
+tri_modal_split,512,SRT = 1 AND X86 = 1 AND RLT = 1,X86 >= 1.0  AND  RLT >= 1.0  AND  0.0 <= TEXT < 1.0  AND  SRT >= 1.0,1.0,0.7358024691358025,1.0,0.58203125,80
+power_law,512,SRT = 1 AND X86 = 1 AND RLT = 1,Range >= 1.0  AND  jobs >= 4.0  AND  1000000.0 <= blocksize < 1000000000.0  AND  0.0 <= RANK < 1.0,0.0,0.0031746031746031,0.0084745762711864,0.001953125,80
+normal,573,LZ = 1 AND SRT = 1 AND checksum = 1,SRT >= 1.0  AND  0.0 <= ANS1 < 1.0  AND  checksum >= 1.0  AND  LZ >= 1.0,0.0,0.8597014925373135,1.0,0.7539267015706806,81
+uniform,573,LZ = 1 AND SRT = 1 AND checksum = 1,LZ >= 1.0  AND  SRT >= 1.0  AND  checksum >= 1.0,0.0,1.0,1.0,1.0,81
+bi_modal_split,573,LZ = 1 AND SRT = 1 AND checksum = 1,SRT >= 1.0  AND  checksum >= 1.0  AND  LZ >= 1.0  AND  0.0 <= TEXT < 1.0,0.0,0.688787185354691,1.0,0.525305410122164,81
+tri_modal_split,573,LZ = 1 AND SRT = 1 AND checksum = 1,LZ >= 1.0  AND  SRT >= 1.0  AND  checksum >= 1.0,1.0,1.0,1.0,1.0,81
+power_law,573,LZ = 1 AND SRT = 1 AND checksum = 1,4.0 <= jobs < 8.0  AND  Range >= 1.0  AND  0.0 <= LZ < 1.0  AND  0.0 <= ROLZ < 1.0,0.0,0.0,0.0,0.0,81
+normal,497,RANK = 1 AND skip = 1 AND LZ = 1,RANK >= 1.0  AND  LZ >= 1.0  AND  checksum >= 1.0  AND  skip >= 1.0,0.0,0.8856502242152466,1.0,0.7947686116700201,82
+uniform,497,RANK = 1 AND skip = 1 AND LZ = 1,skip >= 1.0  AND  LZ >= 1.0  AND  RANK >= 1.0,1.0,1.0,1.0,1.0,82
+bi_modal_split,497,RANK = 1 AND skip = 1 AND LZ = 1,RANK >= 1.0  AND  skip >= 1.0  AND  LZ >= 1.0,1.0,1.0,1.0,1.0,82
+tri_modal_split,497,RANK = 1 AND skip = 1 AND LZ = 1,ROLZX >= 1.0  AND  LZ >= 1.0  AND  RANK >= 1.0  AND  skip >= 1.0,0.0,0.6886543535620053,1.0,0.5251509054325956,82
+power_law,497,RANK = 1 AND skip = 1 AND LZ = 1,LZ >= 1.0  AND  RANK >= 1.0  AND  skip >= 1.0,2.0,1.0,1.0,1.0,82
+normal,412,skip = 1 AND X86 = 1 AND ROLZ = 1,skip >= 1.0  AND  ROLZ >= 1.0  AND  X86 >= 1.0,1.0,1.0,1.0,1.0,83
+uniform,412,skip = 1 AND X86 = 1 AND ROLZ = 1,skip >= 1.0  AND  ROLZ >= 1.0  AND  X86 >= 1.0,3.0,1.0,1.0,1.0,83
+bi_modal_split,412,skip = 1 AND X86 = 1 AND ROLZ = 1,skip >= 1.0  AND  X86 >= 1.0  AND  ROLZ >= 1.0,0.0,1.0,1.0,1.0,83
+tri_modal_split,412,skip = 1 AND X86 = 1 AND ROLZ = 1,ROLZ >= 1.0  AND  0.0 <= ANS1 < 1.0  AND  skip >= 1.0  AND  X86 >= 1.0,0.0,0.8491620111731844,1.0,0.7378640776699029,83
+power_law,412,skip = 1 AND X86 = 1 AND ROLZ = 1,skip >= 1.0  AND  ROLZ >= 1.0  AND  X86 >= 1.0,1.0,1.0,1.0,1.0,83
+normal,417,SRT = 1 AND checksum = 1 AND blocksize = 1000000,SRT >= 1.0  AND  1000000.0 <= blocksize < 1000000000.0  AND  checksum >= 1.0,1.0,1.0,1.0,1.0,84
+uniform,417,SRT = 1 AND checksum = 1 AND blocksize = 1000000,1000000.0 <= blocksize < 1000000000.0  AND  SRT >= 1.0  AND  checksum >= 1.0,1.0,1.0,1.0,1.0,84
+bi_modal_split,417,SRT = 1 AND checksum = 1 AND blocksize = 1000000,SRT >= 1.0  AND  1000000.0 <= blocksize < 1000000000.0  AND  checksum >= 1.0  AND  0.0 <= ROLZX < 1.0,1.0,0.7439759036144579,1.0,0.592326139088729,84
+tri_modal_split,417,SRT = 1 AND checksum = 1 AND blocksize = 1000000,checksum >= 1.0  AND  Huffman >= 1.0  AND  SRT >= 1.0  AND  1000000.0 <= blocksize < 1000000000.0,1.0,0.5470383275261325,1.0,0.3764988009592326,84
+power_law,417,SRT = 1 AND checksum = 1 AND blocksize = 1000000,SRT >= 1.0  AND  1000000.0 <= blocksize < 1000000000.0  AND  checksum >= 1.0,0.0,1.0,1.0,1.0,84
+normal,574,skip = 1 AND LZ = 1 AND RLT = 1,LZ >= 1.0  AND  RLT >= 1.0  AND  skip >= 1.0,3.0,1.0,1.0,1.0,85
+uniform,574,skip = 1 AND LZ = 1 AND RLT = 1,skip >= 1.0  AND  RLT >= 1.0  AND  LZ >= 1.0  AND  0.0 <= ZRLT < 1.0,1.0,0.8473895582329317,1.0,0.735191637630662,85
+bi_modal_split,574,skip = 1 AND LZ = 1 AND RLT = 1,skip >= 1.0  AND  LZ >= 1.0  AND  RLT >= 1.0,0.0,1.0,1.0,1.0,85
+tri_modal_split,574,skip = 1 AND LZ = 1 AND RLT = 1,skip >= 1.0  AND  RLT >= 1.0  AND  LZ >= 1.0  AND  checksum >= 1.0,0.0,0.8496993987975952,1.0,0.7386759581881533,85
+power_law,574,skip = 1 AND LZ = 1 AND RLT = 1,skip >= 1.0  AND  RLT >= 1.0  AND  LZ >= 1.0  AND  0.0 <= CM < 1.0,0.0,0.9301025163094128,1.0,0.8693379790940766,85
+normal,708,skip = 1 AND BWTS = 1 AND checksum = 1,skip >= 1.0  AND  checksum >= 1.0  AND  BWTS >= 1.0  AND  0.0 <= TPAQ < 1.0,0.0,0.9149425287356322,1.0,0.8432203389830508,86
+uniform,708,skip = 1 AND BWTS = 1 AND checksum = 1,BWTS >= 1.0  AND  0.0 <= BWT < 1.0  AND  skip >= 1.0  AND  checksum >= 1.0,0.0,0.7938671209540035,1.0,0.6581920903954802,86
+bi_modal_split,708,skip = 1 AND BWTS = 1 AND checksum = 1,skip >= 1.0  AND  BWTS >= 1.0  AND  checksum >= 1.0  AND  0.0 <= FPAQ < 1.0,0.0,0.9618768328445748,1.0,0.9265536723163842,86
+tri_modal_split,708,skip = 1 AND BWTS = 1 AND checksum = 1,skip >= 1.0  AND  BWTS >= 1.0  AND  checksum >= 1.0  AND  0.0 <= TPAQX < 1.0,1.0,0.9588235294117646,1.0,0.9209039548022598,86
+power_law,708,skip = 1 AND BWTS = 1 AND checksum = 1,skip >= 1.0  AND  0.0 <= BWT < 1.0  AND  0.0 <= LZ < 1.0  AND  0.0 <= RANK < 1.0,1.0,0.1859931113662457,0.4969325153374233,0.1144067796610169,86
+normal,417,SRT = 1 AND checksum = 1 AND blocksize = 1000000,SRT >= 1.0  AND  checksum >= 1.0  AND  1000000.0 <= blocksize < 1000000000.0,0.0,1.0,1.0,1.0,87
+uniform,417,SRT = 1 AND checksum = 1 AND blocksize = 1000000,SRT >= 1.0  AND  checksum >= 1.0  AND  1000000.0 <= blocksize < 1000000000.0  AND  0.0 <= ROLZX < 1.0,1.0,0.7439759036144579,1.0,0.592326139088729,87
+bi_modal_split,417,SRT = 1 AND checksum = 1 AND blocksize = 1000000,checksum >= 1.0  AND  1000000.0 <= blocksize < 1000000000.0  AND  SRT >= 1.0,1.0,1.0,1.0,1.0,87
+tri_modal_split,417,SRT = 1 AND checksum = 1 AND blocksize = 1000000,SRT >= 1.0  AND  checksum >= 1.0  AND  0.0 <= MTFT < 1.0  AND  1000000.0 <= blocksize < 1000000000.0,1.0,0.6416938110749186,1.0,0.4724220623501199,87
+power_law,417,SRT = 1 AND checksum = 1 AND blocksize = 1000000,SRT >= 1.0  AND  1000000.0 <= blocksize < 1000000000.0  AND  checksum >= 1.0,1.0,1.0,1.0,1.0,87
+normal,412,X86 = 1 AND RLT = 1 AND blocksize = 1000000,RLT >= 1.0  AND  1000000.0 <= blocksize < 1000000000.0  AND  X86 >= 1.0,0.0,1.0,1.0,1.0,88
+uniform,412,X86 = 1 AND RLT = 1 AND blocksize = 1000000,1000000.0 <= blocksize < 1000000000.0  AND  RLT >= 1.0  AND  X86 >= 1.0,4.0,1.0,1.0,1.0,88
+bi_modal_split,412,X86 = 1 AND RLT = 1 AND blocksize = 1000000,RLT >= 1.0  AND  1000000.0 <= blocksize < 1000000000.0  AND  X86 >= 1.0  AND  skip >= 1.0,1.0,0.7400611620795107,1.0,0.587378640776699,88
+tri_modal_split,412,X86 = 1 AND RLT = 1 AND blocksize = 1000000,X86 >= 1.0  AND  RLT >= 1.0  AND  0.0 <= TPAQ < 1.0  AND  1000000.0 <= blocksize < 1000000000.0,0.0,0.9648241206030151,1.0,0.9320388349514565,88
+power_law,412,X86 = 1 AND RLT = 1 AND blocksize = 1000000,RLT >= 1.0  AND  1000000.0 <= blocksize < 1000000000.0  AND  0.0 <= Range < 1.0  AND  X86 >= 1.0,0.0,0.9687108886107634,1.0,0.9393203883495146,88
+normal,424,TEXT = 1 AND X86 = 1 AND checksum = 1,TEXT >= 1.0  AND  checksum >= 1.0  AND  X86 >= 1.0,4.0,1.0,1.0,1.0,89
+uniform,424,TEXT = 1 AND X86 = 1 AND checksum = 1,X86 >= 1.0  AND  checksum >= 1.0  AND  TEXT >= 1.0  AND  0.0 <= ZRLT < 1.0,0.0,0.8303448275862069,1.0,0.7099056603773585,89
+bi_modal_split,424,TEXT = 1 AND X86 = 1 AND checksum = 1,TEXT >= 1.0  AND  checksum >= 1.0  AND  X86 >= 1.0  AND  0.0 <= ANS1 < 1.0,2.0,0.8915032679738563,1.0,0.8042452830188679,89
+tri_modal_split,424,TEXT = 1 AND X86 = 1 AND checksum = 1,TEXT >= 1.0  AND  X86 >= 1.0  AND  checksum >= 1.0  AND  0.0 <= ROLZX < 1.0,0.0,0.8056338028169014,1.0,0.6745283018867925,89
+power_law,424,TEXT = 1 AND X86 = 1 AND checksum = 1,X86 >= 1.0  AND  TEXT >= 1.0  AND  checksum >= 1.0,2.0,1.0,1.0,1.0,89
+normal,453,LZP = 1 AND checksum = 1 AND ROLZ = 1,LZP >= 1.0  AND  checksum >= 1.0  AND  ROLZ >= 1.0  AND  0.0 <= Range < 1.0,0.0,0.9353701527614572,1.0,0.8785871964679912,8
+uniform,453,LZP = 1 AND checksum = 1 AND ROLZ = 1,LZP >= 1.0  AND  checksum >= 1.0  AND  ROLZ >= 1.0,1.0,1.0,1.0,1.0,8
+bi_modal_split,453,LZP = 1 AND checksum = 1 AND ROLZ = 1,checksum >= 1.0  AND  ROLZ >= 1.0  AND  LZP >= 1.0  AND  1000000.0 <= blocksize < 1000000000.0,1.0,0.655786350148368,1.0,0.4878587196467991,8
+tri_modal_split,453,LZP = 1 AND checksum = 1 AND ROLZ = 1,ROLZ >= 1.0  AND  LZP >= 1.0  AND  blocksize >= 1000000.0  AND  checksum >= 1.0,2.0,0.8787128712871287,1.0,0.7836644591611479,8
+power_law,453,LZP = 1 AND checksum = 1 AND ROLZ = 1,checksum >= 1.0  AND  ROLZ >= 1.0  AND  LZP >= 1.0  AND  0.0 <= TEXT < 1.0,0.0,0.7203389830508474,1.0,0.5629139072847682,8
+normal,475,TEXT = 1 AND BWTS = 1 AND X86 = 1,TEXT >= 1.0  AND  BWTS >= 1.0  AND  0.0 <= ZRLT < 1.0  AND  X86 >= 1.0,0.0,0.8849765258215962,1.0,0.7936842105263158,90
+uniform,475,TEXT = 1 AND BWTS = 1 AND X86 = 1,TEXT >= 1.0  AND  X86 >= 1.0  AND  0.0 <= Range < 1.0  AND  BWTS >= 1.0,0.0,0.98068669527897,1.0,0.9621052631578948,90
+bi_modal_split,475,TEXT = 1 AND BWTS = 1 AND X86 = 1,TEXT >= 1.0  AND  BWTS >= 1.0  AND  X86 >= 1.0  AND  0.0 <= TPAQ < 1.0,1.0,0.9432703003337042,1.0,0.8926315789473684,90
+tri_modal_split,475,TEXT = 1 AND BWTS = 1 AND X86 = 1,BWTS >= 1.0  AND  X86 >= 1.0  AND  TEXT >= 1.0  AND  0.0 <= Huffman < 1.0,0.0,0.858173076923077,1.0,0.751578947368421,90
+power_law,475,TEXT = 1 AND BWTS = 1 AND X86 = 1,TEXT >= 1.0  AND  BWTS >= 1.0  AND  0.0 <= ANS1 < 1.0  AND  X86 >= 1.0,0.0,0.9117983963344788,1.0,0.8378947368421052,90
+normal,417,LZP = 1 AND X86 = 1 AND RLT = 1,X86 >= 1.0  AND  RLT >= 1.0  AND  LZP >= 1.0  AND  skip >= 1.0,0.0,0.811965811965812,1.0,0.6834532374100719,91
+uniform,417,LZP = 1 AND X86 = 1 AND RLT = 1,LZP >= 1.0  AND  X86 >= 1.0  AND  RLT >= 1.0,0.0,1.0,1.0,1.0,91
+bi_modal_split,417,LZP = 1 AND X86 = 1 AND RLT = 1,LZP >= 1.0  AND  RLT >= 1.0  AND  X86 >= 1.0,0.0,1.0,1.0,1.0,91
+tri_modal_split,417,LZP = 1 AND X86 = 1 AND RLT = 1,LZP >= 1.0  AND  X86 >= 1.0  AND  RLT >= 1.0  AND  jobs >= 4.0,1.0,0.813655761024182,1.0,0.6858513189448441,91
+power_law,417,LZP = 1 AND X86 = 1 AND RLT = 1,LZP >= 1.0  AND  X86 >= 1.0  AND  0.0 <= MTFT < 1.0  AND  RLT >= 1.0,1.0,0.8017241379310345,1.0,0.6690647482014388,91
+normal,462,X86 = 1 AND checksum = 1 AND ROLZ = 1,X86 >= 1.0  AND  checksum >= 1.0  AND  ROLZ >= 1.0,0.0,1.0,1.0,1.0,92
+uniform,462,X86 = 1 AND checksum = 1 AND ROLZ = 1,X86 >= 1.0  AND  ROLZ >= 1.0  AND  0.0 <= TPAQ < 1.0  AND  checksum >= 1.0,1.0,0.944,1.0,0.8939393939393939,92
+bi_modal_split,462,X86 = 1 AND checksum = 1 AND ROLZ = 1,X86 >= 1.0  AND  checksum >= 1.0  AND  ROLZ >= 1.0  AND  skip >= 1.0,0.0,0.8592592592592593,1.0,0.7532467532467533,92
+tri_modal_split,462,X86 = 1 AND checksum = 1 AND ROLZ = 1,X86 >= 1.0  AND  checksum >= 1.0  AND  ROLZ >= 1.0,0.0,1.0,1.0,1.0,92
+power_law,462,X86 = 1 AND checksum = 1 AND ROLZ = 1,X86 >= 1.0  AND  checksum >= 1.0  AND  ROLZ >= 1.0,1.0,1.0,1.0,1.0,92
+normal,418,MTFT = 1 AND RLT = 1 AND BWT = 1,MTFT >= 1.0  AND  BWT >= 1.0  AND  0.0 <= TPAQ < 1.0  AND  RLT >= 1.0,0.0,0.9653465346534654,1.0,0.9330143540669856,93
+uniform,418,MTFT = 1 AND RLT = 1 AND BWT = 1,RLT >= 1.0  AND  BWT >= 1.0  AND  MTFT >= 1.0  AND  0.0 <= LZP < 1.0,0.0,0.8500687757909215,1.0,0.7392344497607656,93
+bi_modal_split,418,MTFT = 1 AND RLT = 1 AND BWT = 1,MTFT >= 1.0  AND  RLT >= 1.0  AND  BWT >= 1.0,0.0,1.0,1.0,1.0,93
+tri_modal_split,418,MTFT = 1 AND RLT = 1 AND BWT = 1,0.0 <= RANK < 1.0  AND  RLT >= 1.0  AND  BWT >= 1.0  AND  MTFT >= 1.0,0.0,0.804005722460658,1.0,0.6722488038277512,93
+power_law,418,MTFT = 1 AND RLT = 1 AND BWT = 1,MTFT >= 1.0  AND  BWT >= 1.0  AND  RLT >= 1.0,1.0,1.0,1.0,1.0,93
+normal,437,TEXT = 1 AND skip = 1 AND RLT = 1,skip >= 1.0  AND  RLT >= 1.0  AND  TEXT >= 1.0  AND  0.0 <= ANS1 < 1.0,0.0,0.9102244389027432,1.0,0.8352402745995423,94
+uniform,437,TEXT = 1 AND skip = 1 AND RLT = 1,TEXT >= 1.0  AND  RLT >= 1.0  AND  0.0 <= ROLZX < 1.0  AND  skip >= 1.0,1.0,0.7894736842105263,1.0,0.6521739130434783,94
+bi_modal_split,437,TEXT = 1 AND skip = 1 AND RLT = 1,TEXT >= 1.0  AND  RLT >= 1.0  AND  0.0 <= ANS1 < 1.0  AND  skip >= 1.0,0.0,0.9102244389027432,1.0,0.8352402745995423,94
+tri_modal_split,437,TEXT = 1 AND skip = 1 AND RLT = 1,TEXT >= 1.0  AND  skip >= 1.0  AND  RLT >= 1.0  AND  0.0 <= TPAQ < 1.0,1.0,0.9249692496924968,1.0,0.8604118993135011,94
+power_law,437,TEXT = 1 AND skip = 1 AND RLT = 1,skip >= 1.0  AND  TEXT >= 1.0  AND  RLT >= 1.0,1.0,1.0,1.0,1.0,94
+normal,425,BWTS = 1 AND X86 = 1 AND ROLZ = 1,X86 >= 1.0  AND  ROLZ >= 1.0  AND  0.0 <= CM < 1.0  AND  BWTS >= 1.0,0.0,0.979591836734694,1.0,0.96,95
+uniform,425,BWTS = 1 AND X86 = 1 AND ROLZ = 1,X86 >= 1.0  AND  ROLZ >= 1.0  AND  BWTS >= 1.0  AND  0.0 <= FPAQ < 1.0,1.0,0.9684466019417476,1.0,0.9388235294117648,95
+bi_modal_split,425,BWTS = 1 AND X86 = 1 AND ROLZ = 1,BWTS >= 1.0  AND  ROLZ >= 1.0  AND  checksum >= 1.0  AND  X86 >= 1.0,1.0,0.7237237237237237,1.0,0.5670588235294117,95
+tri_modal_split,425,BWTS = 1 AND X86 = 1 AND ROLZ = 1,0.0 <= ROLZX < 1.0  AND  ROLZ >= 1.0  AND  X86 >= 1.0  AND  BWTS >= 1.0,0.0,0.8292011019283747,1.0,0.7082352941176471,95
+power_law,425,BWTS = 1 AND X86 = 1 AND ROLZ = 1,X86 >= 1.0  AND  ROLZ >= 1.0  AND  BWTS >= 1.0,1.0,1.0,1.0,1.0,95
+normal,708,skip = 1 AND BWTS = 1 AND checksum = 1,skip >= 1.0  AND  BWTS >= 1.0  AND  checksum >= 1.0,0.0,1.0,1.0,1.0,96
+uniform,708,skip = 1 AND BWTS = 1 AND checksum = 1,skip >= 1.0  AND  checksum >= 1.0  AND  BWTS >= 1.0  AND  X86 >= 1.0,1.0,0.7718993928881179,1.0,0.6285310734463276,96
+bi_modal_split,708,skip = 1 AND BWTS = 1 AND checksum = 1,skip >= 1.0  AND  BWTS >= 1.0  AND  0.0 <= TPAQX < 1.0  AND  checksum >= 1.0,1.0,0.9588235294117646,1.0,0.9209039548022598,96
+tri_modal_split,708,skip = 1 AND BWTS = 1 AND checksum = 1,BWTS >= 1.0  AND  checksum >= 1.0  AND  skip >= 1.0  AND  0.0 <= TPAQX < 1.0,2.0,0.9588235294117646,1.0,0.9209039548022598,96
+power_law,708,skip = 1 AND BWTS = 1 AND checksum = 1,skip >= 1.0  AND  BWTS >= 1.0  AND  checksum >= 1.0  AND  0.0 <= FPAQ < 1.0,0.0,0.9618768328445748,1.0,0.9265536723163842,96
+normal,470,LZ = 1 AND checksum = 1 AND ROLZ = 1,LZ >= 1.0  AND  ROLZ >= 1.0  AND  checksum >= 1.0,0.0,1.0,1.0,1.0,97
+uniform,470,LZ = 1 AND checksum = 1 AND ROLZ = 1,checksum >= 1.0  AND  ROLZ >= 1.0  AND  LZ >= 1.0  AND  0.0 <= TPAQ < 1.0,1.0,0.9366515837104072,1.0,0.8808510638297873,97
+bi_modal_split,470,LZ = 1 AND checksum = 1 AND ROLZ = 1,LZ >= 1.0  AND  ROLZ >= 1.0  AND  0.0 <= ZRLT < 1.0  AND  checksum >= 1.0,1.0,0.7994891443167305,1.0,0.6659574468085107,97
+tri_modal_split,470,LZ = 1 AND checksum = 1 AND ROLZ = 1,LZ >= 1.0  AND  ROLZ >= 1.0  AND  0.0 <= TPAQ < 1.0  AND  checksum >= 1.0,1.0,0.9366515837104072,1.0,0.8808510638297873,97
+power_law,470,LZ = 1 AND checksum = 1 AND ROLZ = 1,checksum >= 1.0  AND  ROLZ >= 1.0  AND  LZ >= 1.0,1.0,1.0,1.0,1.0,97
+normal,455,TEXT = 1 AND LZ = 1 AND checksum = 1,TEXT >= 1.0  AND  checksum >= 1.0  AND  0.0 <= Range < 1.0  AND  LZ >= 1.0,0.0,0.9798206278026904,1.0,0.9604395604395604,98
+uniform,455,TEXT = 1 AND LZ = 1 AND checksum = 1,checksum >= 1.0  AND  TEXT >= 1.0  AND  LZ >= 1.0  AND  0.0 <= ROLZX < 1.0,1.0,0.7834224598930483,1.0,0.643956043956044,98
+bi_modal_split,455,TEXT = 1 AND LZ = 1 AND checksum = 1,TEXT >= 1.0  AND  LZ >= 1.0  AND  checksum >= 1.0,0.0,1.0,1.0,1.0,98
+tri_modal_split,455,TEXT = 1 AND LZ = 1 AND checksum = 1,TEXT >= 1.0  AND  LZ >= 1.0  AND  checksum >= 1.0,1.0,1.0,1.0,1.0,98
+power_law,455,TEXT = 1 AND LZ = 1 AND checksum = 1,checksum >= 1.0  AND  0.0 <= BWT < 1.0  AND  LZ >= 1.0  AND  TEXT >= 1.0,0.0,0.7534246575342465,1.0,0.6043956043956044,98
+normal,481,TEXT = 1 AND BWTS = 1 AND RLT = 1,TEXT >= 1.0  AND  BWTS >= 1.0  AND  RLT >= 1.0  AND  0.0 <= ANS1 < 1.0,0.0,0.9018264840182648,1.0,0.8212058212058212,99
+uniform,481,TEXT = 1 AND BWTS = 1 AND RLT = 1,TEXT >= 1.0  AND  RLT >= 1.0  AND  BWTS >= 1.0,0.0,1.0,1.0,1.0,99
+bi_modal_split,481,TEXT = 1 AND BWTS = 1 AND RLT = 1,BWTS >= 1.0  AND  checksum >= 1.0  AND  TEXT >= 1.0  AND  RLT >= 1.0,0.0,0.8615384615384616,1.0,0.7567567567567568,99
+tri_modal_split,481,TEXT = 1 AND BWTS = 1 AND RLT = 1,RLT >= 1.0  AND  0.0 <= BWT < 1.0  AND  TEXT >= 1.0  AND  BWTS >= 1.0,0.0,0.7224435590969456,1.0,0.5654885654885655,99
+power_law,481,TEXT = 1 AND BWTS = 1 AND RLT = 1,0.0 <= LZP < 1.0  AND  BWTS >= 1.0  AND  0.0 <= ROLZX < 1.0  AND  LZ >= 1.0,1.0,0.223826714801444,0.2657142857142857,0.1933471933471933,99
+normal,417,X86 = 1 AND checksum = 1 AND jobs = 8,checksum >= 1.0  AND  jobs >= 8.0  AND  X86 >= 1.0  AND  0.0 <= Range < 1.0,0.0,0.9443037974683544,1.0,0.894484412470024,9
+uniform,417,X86 = 1 AND checksum = 1 AND jobs = 8,X86 >= 1.0  AND  jobs >= 8.0  AND  checksum >= 1.0  AND  0.0 <= ANS1 < 1.0,0.0,0.9182879377431908,1.0,0.8489208633093526,9
+bi_modal_split,417,X86 = 1 AND checksum = 1 AND jobs = 8,checksum >= 1.0  AND  jobs >= 8.0  AND  0.0 <= ANS0 < 1.0  AND  X86 >= 1.0,1.0,0.9522613065326632,1.0,0.9088729016786572,9
+tri_modal_split,417,X86 = 1 AND checksum = 1 AND jobs = 8,X86 >= 1.0  AND  jobs >= 8.0  AND  checksum >= 1.0  AND  1000.0 <= blocksize < 1000000000.0,4.0,0.8085714285714286,1.0,0.6786570743405276,9
+power_law,417,X86 = 1 AND checksum = 1 AND jobs = 8,checksum >= 1.0  AND  jobs >= 8.0  AND  0.0 <= ANS1 < 1.0  AND  X86 >= 1.0,0.0,0.9182879377431908,1.0,0.8489208633093526,9

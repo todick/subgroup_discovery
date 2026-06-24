@@ -1,0 +1,2 @@
+num_features,num_samples,sgs_unique,sgs_mean_jaccard,sgs_mean_overlap_coefficient,coverage_mean,coverage_total,rule_features_used,rule_feature_frequency,rule_num_features,rule_length_mean,rule_length_max,rule_length_min,runtime
+26,3113,3,0.7793576050239892,0.955024195844008,0.4235999571688618,0.48217153870864116,"['no-asm', 'sliced-threads', 'workload', 'cpu-independent']","[('no-asm', 5), ('sliced-threads', 1), ('workload', 2), ('cpu-independent', 2)]",4,2.0,3.0,1.0,0.7712290287017822

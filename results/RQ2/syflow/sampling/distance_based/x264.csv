@@ -1,0 +1,784 @@
+sampling_strategy,sample_size,sg_cardinality,sg_rule,best_rule,best_rule_idx,f1,precision,recall,seed
+full,1152,144,no_8x8dct = 1 AND no_deblock = 1 AND no_fast_pskip = 1,no_8x8dct AND no_deblock AND no_fast_pskip,0,1.0,1.0,1.0,0
+random_2,18,3,no_cabac = 1 AND no_fast_pskip = 1 AND no_mixed_refs = 1,no_fast_pskip AND no_mixed_refs,3,0.6666666666666666,0.5,1.0,0
+random_5,45,4,no_8x8dct = 1 AND no_cabac = 1 AND no_deblock = 1,NOT no_fast_pskip AND NOT no_mbtree,3,0.1428571428571428,0.1,0.25,0
+random_10,90,11,no_8x8dct = 1 AND no_mbtree = 1 AND no_weightb = 1,NOT no_cabac AND NOT no_weightb,4,0.3333333333333333,0.24,0.5454545454545454,0
+random_20,180,21,no_8x8dct = 1 AND no_mbtree = 1 AND no_mixed_refs = 1,no_8x8dct AND no_mbtree AND no_mixed_refs,0,1.0,1.0,1.0,0
+2-wise,19,5,no_deblock = 1 AND no_mixed_refs = 1 AND no_weightb = 1,NOT no_8x8dct AND no_deblock AND ref = 9.00,3,0.5714285714285715,1.0,0.4,0
+3-wise,43,4,no_deblock = 1 AND no_fast_pskip = 1 AND no_mixed_refs = 1,NOT no_8x8dct AND rc_lookahead != 20.00,0,0.1176470588235294,0.0769230769230769,0.25,0
+4-wise,94,10,no_deblock = 1 AND no_mbtree = 1 AND no_mixed_refs = 1,no_cabac AND NOT no_fast_pskip AND no_mixed_refs AND ref != 1.00,2,0.5,0.5,0.5,0
+full,1152,144,no_fast_pskip = 1 AND no_mbtree = 1 AND no_mixed_refs = 1,no_fast_pskip AND no_mbtree AND no_mixed_refs,1,1.0,1.0,1.0,10
+random_5,45,8,no_fast_pskip = 1 AND no_mbtree = 1 AND no_mixed_refs = 1,no_8x8dct AND NOT no_deblock AND rc_lookahead != 60.00 AND ref != 1.00,4,0.3333333333333332,0.3,0.375,10
+random_10,90,14,no_fast_pskip = 1 AND no_mbtree = 1 AND no_mixed_refs = 1,NOT no_8x8dct AND NOT no_weightb AND rc_lookahead != 20.00 AND ref = 1.00,1,0.2,0.3333333333333333,0.1428571428571428,10
+random_20,180,23,no_fast_pskip = 1 AND no_mbtree = 1 AND no_mixed_refs = 1,no_fast_pskip AND no_mixed_refs AND no_weightb,3,0.425531914893617,0.4166666666666667,0.4347826086956521,10
+2-wise,16,2,no_fast_pskip = 1 AND no_mbtree = 1 AND no_mixed_refs = 1,NOT no_cabac AND no_mbtree AND rc_lookahead != 20.00,1,0.4,0.3333333333333333,0.5,10
+3-wise,44,11,no_fast_pskip = 1 AND no_mbtree = 1 AND no_mixed_refs = 1,no_mixed_refs AND NOT no_weightb AND rc_lookahead != 20.00,2,0.64,0.5714285714285714,0.7272727272727273,10
+4-wise,98,15,no_fast_pskip = 1 AND no_mbtree = 1 AND no_mixed_refs = 1,no_8x8dct AND no_weightb AND ref != 9.00,3,0.2068965517241379,0.2142857142857142,0.2,10
+full,1152,144,no_8x8dct = 1 AND no_fast_pskip = 1 AND no_mixed_refs = 1,no_8x8dct AND no_fast_pskip AND no_mixed_refs,0,1.0,1.0,1.0,11
+random_2,18,5,no_8x8dct = 1 AND no_fast_pskip = 1 AND no_mixed_refs = 1,NOT no_cabac AND no_fast_pskip,4,0.5714285714285714,0.4444444444444444,0.8,11
+random_5,45,6,no_8x8dct = 1 AND no_fast_pskip = 1 AND no_mixed_refs = 1,NOT no_deblock AND NOT no_fast_pskip AND rc_lookahead != 20.00,0,0.6153846153846153,0.5714285714285714,0.6666666666666666,11
+random_10,90,10,no_8x8dct = 1 AND no_fast_pskip = 1 AND no_mixed_refs = 1,no_8x8dct AND no_mixed_refs AND NOT no_weightb,2,0.6956521739130435,0.6153846153846154,0.8,11
+random_20,180,28,no_8x8dct = 1 AND no_fast_pskip = 1 AND no_mixed_refs = 1,no_8x8dct AND no_fast_pskip AND no_mixed_refs,1,1.0,1.0,1.0,11
+2-wise,14,3,no_8x8dct = 1 AND no_fast_pskip = 1 AND no_mixed_refs = 1,NOT no_deblock AND no_mixed_refs,1,0.5714285714285715,0.5,0.6666666666666666,11
+3-wise,41,6,no_8x8dct = 1 AND no_fast_pskip = 1 AND no_mixed_refs = 1,no_8x8dct AND no_fast_pskip,2,0.7499999999999999,0.6,1.0,11
+4-wise,111,12,no_8x8dct = 1 AND no_fast_pskip = 1 AND no_mixed_refs = 1,no_cabac AND rc_lookahead != 60.00 AND ref = 5.00,0,0.1666666666666666,0.1666666666666666,0.1666666666666666,11
+full,1152,144,no_cabac = 1 AND no_deblock = 1 AND no_mixed_refs = 1,no_cabac AND no_deblock AND no_mixed_refs,0,1.0,1.0,1.0,12
+random_2,18,2,no_cabac = 1 AND no_deblock = 1 AND no_mixed_refs = 1,no_cabac AND no_deblock AND rc_lookahead = 60.00,4,0.5714285714285715,0.4,1.0,12
+random_5,45,7,no_cabac = 1 AND no_deblock = 1 AND no_mixed_refs = 1,NOT no_8x8dct AND no_cabac AND rc_lookahead != 20.00,0,0.2,0.1538461538461538,0.2857142857142857,12
+random_10,90,7,no_cabac = 1 AND no_deblock = 1 AND no_mixed_refs = 1,no_deblock AND NOT no_mbtree,3,0.2352941176470588,0.1481481481481481,0.5714285714285714,12
+random_20,180,12,no_cabac = 1 AND no_deblock = 1 AND no_mixed_refs = 1,no_deblock AND no_mixed_refs,4,0.5454545454545454,0.375,1.0,12
+2-wise,18,1,no_cabac = 1 AND no_deblock = 1 AND no_mixed_refs = 1,no_8x8dct AND no_cabac AND NOT no_deblock AND no_fast_pskip,1,0.6666666666666666,0.5,1.0,12
+3-wise,40,4,no_cabac = 1 AND no_deblock = 1 AND no_mixed_refs = 1,no_cabac AND NOT no_weightb,4,0.5333333333333333,0.3636363636363636,1.0,12
+4-wise,96,14,no_cabac = 1 AND no_deblock = 1 AND no_mixed_refs = 1,no_fast_pskip AND ref = 5.00,4,0.2790697674418604,0.2068965517241379,0.4285714285714285,12
+full,1152,144,no_8x8dct = 1 AND no_fast_pskip = 1 AND no_mixed_refs = 1,no_8x8dct AND no_fast_pskip AND no_mixed_refs,0,1.0,1.0,1.0,13
+random_2,18,1,no_8x8dct = 1 AND no_fast_pskip = 1 AND no_mixed_refs = 1,NOT no_cabac AND NOT no_deblock AND no_mbtree,3,0.3333333333333333,0.2,1.0,13
+random_5,45,10,no_8x8dct = 1 AND no_fast_pskip = 1 AND no_mixed_refs = 1,no_fast_pskip AND no_mixed_refs,4,0.7142857142857143,0.5555555555555556,1.0,13
+random_10,90,9,no_8x8dct = 1 AND no_fast_pskip = 1 AND no_mixed_refs = 1,no_8x8dct AND no_mixed_refs,1,0.5294117647058824,0.36,1.0,13
+random_20,180,26,no_8x8dct = 1 AND no_fast_pskip = 1 AND no_mixed_refs = 1,no_8x8dct AND no_fast_pskip AND no_mixed_refs,0,1.0,1.0,1.0,13
+2-wise,19,2,no_8x8dct = 1 AND no_fast_pskip = 1 AND no_mixed_refs = 1,no_fast_pskip AND no_mixed_refs,0,0.5714285714285715,0.4,1.0,13
+3-wise,45,3,no_8x8dct = 1 AND no_fast_pskip = 1 AND no_mixed_refs = 1,NOT no_fast_pskip AND NOT no_mixed_refs,2,0.5454545454545454,0.375,1.0,13
+4-wise,106,16,no_8x8dct = 1 AND no_fast_pskip = 1 AND no_mixed_refs = 1,NOT no_8x8dct AND rc_lookahead = 40.00,4,0.25,0.25,0.25,13
+full,1152,144,no_cabac = 1 AND no_deblock = 1 AND no_mbtree = 1,no_cabac AND no_deblock AND no_mbtree,0,1.0,1.0,1.0,14
+random_2,18,4,no_cabac = 1 AND no_deblock = 1 AND no_mbtree = 1,no_cabac AND no_mbtree,0,0.8,0.6666666666666666,1.0,14
+random_5,45,7,no_cabac = 1 AND no_deblock = 1 AND no_mbtree = 1,NOT no_deblock AND NOT no_fast_pskip AND no_mbtree,3,0.8571428571428571,0.8571428571428571,0.8571428571428571,14
+random_10,90,10,no_cabac = 1 AND no_deblock = 1 AND no_mbtree = 1,NOT no_cabac AND no_deblock AND NOT no_mbtree,2,1.0,1.0,1.0,14
+random_20,180,22,no_cabac = 1 AND no_deblock = 1 AND no_mbtree = 1,no_cabac AND no_deblock AND no_mbtree,1,1.0,1.0,1.0,14
+2-wise,13,1,no_cabac = 1 AND no_deblock = 1 AND no_mbtree = 1,NOT no_mbtree AND rc_lookahead = 20.00 AND ref = 9.00,0,1.0,1.0,1.0,14
+3-wise,43,7,no_cabac = 1 AND no_deblock = 1 AND no_mbtree = 1,no_mbtree AND NOT no_weightb AND ref != 9.00,1,0.4705882352941176,0.4,0.5714285714285714,14
+4-wise,103,18,no_cabac = 1 AND no_deblock = 1 AND no_mbtree = 1,no_cabac AND no_deblock AND no_mbtree,2,1.0,1.0,1.0,14
+full,1152,144,no_cabac = 1 AND no_deblock = 1 AND no_weightb = 1,no_cabac AND no_deblock AND no_weightb,0,1.0,1.0,1.0,15
+random_2,18,4,no_cabac = 1 AND no_deblock = 1 AND no_weightb = 1,no_cabac AND no_deblock AND no_fast_pskip AND no_mixed_refs AND no_weightb,1,0.8571428571428571,1.0,0.75,15
+random_5,45,4,no_cabac = 1 AND no_deblock = 1 AND no_weightb = 1,no_deblock AND NOT no_weightb AND rc_lookahead != 60.00,4,0.7272727272727273,0.5714285714285714,1.0,15
+random_10,90,7,no_cabac = 1 AND no_deblock = 1 AND no_weightb = 1,no_deblock AND no_fast_pskip AND no_weightb AND rc_lookahead != 20.00 AND ref != 1.00,2,0.5,0.6,0.4285714285714285,15
+random_20,180,20,no_cabac = 1 AND no_deblock = 1 AND no_weightb = 1,no_cabac AND NOT no_deblock AND no_weightb,0,1.0,1.0,1.0,15
+2-wise,19,2,no_cabac = 1 AND no_deblock = 1 AND no_weightb = 1,no_fast_pskip AND no_weightb AND rc_lookahead != 20.00,3,0.5714285714285715,0.4,1.0,15
+3-wise,43,4,no_cabac = 1 AND no_deblock = 1 AND no_weightb = 1,no_8x8dct AND no_mbtree AND rc_lookahead != 20.00,0,0.2222222222222222,0.2,0.25,15
+4-wise,99,10,no_cabac = 1 AND no_deblock = 1 AND no_weightb = 1,NOT no_mbtree AND no_weightb,3,0.25,0.1818181818181818,0.4,15
+full,1152,144,no_8x8dct = 1 AND no_fast_pskip = 1 AND no_mixed_refs = 1,no_8x8dct AND no_fast_pskip AND no_mixed_refs,0,1.0,1.0,1.0,16
+random_2,18,3,no_8x8dct = 1 AND no_fast_pskip = 1 AND no_mixed_refs = 1,no_8x8dct AND no_weightb AND ref != 1.00,0,0.5714285714285715,0.5,0.6666666666666666,16
+random_5,45,4,no_8x8dct = 1 AND no_fast_pskip = 1 AND no_mixed_refs = 1,no_mixed_refs AND ref != 9.00,0,0.3,0.1875,0.75,16
+random_10,90,12,no_8x8dct = 1 AND no_fast_pskip = 1 AND no_mixed_refs = 1,no_fast_pskip AND no_mixed_refs,4,0.7741935483870968,0.631578947368421,1.0,16
+random_20,180,19,no_8x8dct = 1 AND no_fast_pskip = 1 AND no_mixed_refs = 1,no_8x8dct AND NOT no_deblock AND no_mixed_refs,0,0.6122448979591837,0.5,0.7894736842105263,16
+2-wise,16,3,no_8x8dct = 1 AND no_fast_pskip = 1 AND no_mixed_refs = 1,no_8x8dct AND no_deblock AND no_fast_pskip AND no_mixed_refs,0,1.0,1.0,1.0,16
+3-wise,44,8,no_8x8dct = 1 AND no_fast_pskip = 1 AND no_mixed_refs = 1,no_8x8dct AND no_fast_pskip AND no_mixed_refs,1,1.0,1.0,1.0,16
+4-wise,103,15,no_8x8dct = 1 AND no_fast_pskip = 1 AND no_mixed_refs = 1,no_8x8dct AND no_fast_pskip AND no_mixed_refs,2,1.0,1.0,1.0,16
+full,1152,144,no_deblock = 1 AND no_mixed_refs = 1 AND no_weightb = 1,no_deblock AND no_mixed_refs AND no_weightb,0,1.0,1.0,1.0,17
+random_5,45,3,no_deblock = 1 AND no_mixed_refs = 1 AND no_weightb = 1,no_deblock AND NOT no_mixed_refs,2,0.4285714285714285,0.2727272727272727,1.0,17
+random_10,90,15,no_deblock = 1 AND no_mixed_refs = 1 AND no_weightb = 1,no_deblock AND no_mixed_refs,2,0.7499999999999999,0.6,1.0,17
+random_20,180,23,no_deblock = 1 AND no_mixed_refs = 1 AND no_weightb = 1,NOT no_cabac AND no_deblock,0,0.3934426229508196,0.3157894736842105,0.5217391304347826,17
+2-wise,17,1,no_deblock = 1 AND no_mixed_refs = 1 AND no_weightb = 1,no_cabac AND no_deblock AND ref != 1.00,0,0.0,0.0,0.0,17
+3-wise,38,7,no_deblock = 1 AND no_mixed_refs = 1 AND no_weightb = 1,no_8x8dct AND no_weightb,4,0.5555555555555556,0.4545454545454545,0.7142857142857143,17
+4-wise,97,12,no_deblock = 1 AND no_mixed_refs = 1 AND no_weightb = 1,no_deblock AND no_mixed_refs,4,0.7058823529411764,0.5454545454545454,1.0,17
+full,1152,144,no_cabac = 1 AND no_mixed_refs = 1 AND no_weightb = 1,no_cabac AND no_mixed_refs AND no_weightb,0,1.0,1.0,1.0,18
+random_2,18,1,no_cabac = 1 AND no_mixed_refs = 1 AND no_weightb = 1,no_fast_pskip,4,0.1818181818181818,0.1,1.0,18
+random_5,45,7,no_cabac = 1 AND no_mixed_refs = 1 AND no_weightb = 1,no_cabac AND no_mbtree AND no_mixed_refs,0,0.7058823529411764,0.6,0.8571428571428571,18
+random_10,90,11,no_cabac = 1 AND no_mixed_refs = 1 AND no_weightb = 1,no_cabac AND no_mbtree AND no_weightb,2,0.7826086956521738,0.75,0.8181818181818182,18
+random_20,180,21,no_cabac = 1 AND no_mixed_refs = 1 AND no_weightb = 1,no_cabac AND no_mixed_refs AND no_weightb,0,1.0,1.0,1.0,18
+2-wise,15,3,no_cabac = 1 AND no_mixed_refs = 1 AND no_weightb = 1,NOT no_mixed_refs AND no_weightb,0,0.7499999999999999,0.6,1.0,18
+3-wise,48,7,no_cabac = 1 AND no_mixed_refs = 1 AND no_weightb = 1,no_cabac AND no_mixed_refs AND rc_lookahead != 20.00,1,0.8750000000000001,0.7777777777777778,1.0,18
+4-wise,102,14,no_cabac = 1 AND no_mixed_refs = 1 AND no_weightb = 1,no_cabac AND NOT no_weightb,0,0.717948717948718,0.56,1.0,18
+full,1152,144,no_8x8dct = 1 AND no_deblock = 1 AND no_mbtree = 1,no_8x8dct AND no_deblock AND no_mbtree,1,1.0,1.0,1.0,19
+random_2,18,2,no_8x8dct = 1 AND no_deblock = 1 AND no_mbtree = 1,no_cabac AND NOT no_fast_pskip,0,0.0,0.0,0.0,19
+random_5,45,3,no_8x8dct = 1 AND no_deblock = 1 AND no_mbtree = 1,no_8x8dct AND rc_lookahead = 20.00,2,0.5454545454545454,0.375,1.0,19
+random_10,90,11,no_8x8dct = 1 AND no_deblock = 1 AND no_mbtree = 1,no_8x8dct AND no_deblock AND no_mbtree,4,1.0,1.0,1.0,19
+random_20,180,22,no_8x8dct = 1 AND no_deblock = 1 AND no_mbtree = 1,no_8x8dct AND no_deblock AND NOT no_mbtree,2,1.0,1.0,1.0,19
+3-wise,45,5,no_8x8dct = 1 AND no_deblock = 1 AND no_mbtree = 1,no_weightb AND rc_lookahead = 40.00,2,0.4285714285714285,0.3333333333333333,0.6,19
+4-wise,100,14,no_8x8dct = 1 AND no_deblock = 1 AND no_mbtree = 1,no_deblock AND no_weightb,2,0.3157894736842105,0.25,0.4285714285714285,19
+full,1152,144,no_cabac = 1 AND no_deblock = 1 AND no_mbtree = 1,no_cabac AND no_deblock AND no_mbtree,0,1.0,1.0,1.0,1
+random_2,18,1,no_cabac = 1 AND no_deblock = 1 AND no_mbtree = 1,no_8x8dct AND NOT no_cabac,0,0.3333333333333333,0.2,1.0,1
+random_5,45,7,no_cabac = 1 AND no_deblock = 1 AND no_mbtree = 1,NOT no_deblock AND no_mbtree AND no_mixed_refs,4,0.6666666666666666,0.625,0.7142857142857143,1
+random_10,90,12,no_cabac = 1 AND no_deblock = 1 AND no_mbtree = 1,no_deblock AND no_mbtree AND ref != 9.00,2,0.6896551724137931,0.5882352941176471,0.8333333333333334,1
+random_20,180,22,no_cabac = 1 AND no_deblock = 1 AND no_mbtree = 1,no_cabac AND no_deblock AND no_mbtree,0,1.0,1.0,1.0,1
+2-wise,17,2,no_cabac = 1 AND no_deblock = 1 AND no_mbtree = 1,NOT no_mbtree AND NOT no_weightb AND rc_lookahead != 60.00,0,0.3333333333333333,0.25,0.5,1
+3-wise,46,7,no_cabac = 1 AND no_deblock = 1 AND no_mbtree = 1,no_cabac AND no_deblock AND no_mbtree,2,1.0,1.0,1.0,1
+4-wise,98,15,no_cabac = 1 AND no_deblock = 1 AND no_mbtree = 1,no_cabac AND no_deblock AND no_mbtree,1,1.0,1.0,1.0,1
+full,1152,144,no_8x8dct = 1 AND no_deblock = 1 AND no_fast_pskip = 1,no_8x8dct AND no_deblock AND no_fast_pskip,0,1.0,1.0,1.0,20
+random_2,18,3,no_8x8dct = 1 AND no_deblock = 1 AND no_fast_pskip = 1,no_8x8dct AND NOT no_cabac AND no_weightb,3,0.6666666666666666,0.6666666666666666,0.6666666666666666,20
+random_5,45,7,no_8x8dct = 1 AND no_deblock = 1 AND no_fast_pskip = 1,NOT no_cabac AND no_deblock AND ref != 1.00,2,0.6,1.0,0.4285714285714285,20
+random_10,90,13,no_8x8dct = 1 AND no_deblock = 1 AND no_fast_pskip = 1,no_8x8dct AND no_deblock AND NOT no_weightb,1,0.5833333333333334,0.6363636363636364,0.5384615384615384,20
+random_20,180,30,no_8x8dct = 1 AND no_deblock = 1 AND no_fast_pskip = 1,no_8x8dct AND no_deblock AND no_fast_pskip,1,1.0,1.0,1.0,20
+2-wise,17,4,no_8x8dct = 1 AND no_deblock = 1 AND no_fast_pskip = 1,NOT no_fast_pskip AND NOT no_mbtree,1,0.8,0.6666666666666666,1.0,20
+3-wise,42,5,no_8x8dct = 1 AND no_deblock = 1 AND no_fast_pskip = 1,no_deblock AND NOT no_fast_pskip AND NOT no_mbtree,1,0.6,0.6,0.6,20
+4-wise,101,11,no_8x8dct = 1 AND no_deblock = 1 AND no_fast_pskip = 1,NOT no_cabac AND no_fast_pskip AND ref != 9.00,3,0.32,0.2857142857142857,0.3636363636363636,20
+full,1152,144,no_8x8dct = 1 AND no_deblock = 1 AND no_fast_pskip = 1,no_8x8dct AND no_deblock AND no_fast_pskip,0,1.0,1.0,1.0,21
+random_2,18,2,no_8x8dct = 1 AND no_deblock = 1 AND no_fast_pskip = 1,no_deblock AND no_mixed_refs AND ref != 1.00,1,0.25,0.1666666666666666,0.5,21
+random_5,45,8,no_8x8dct = 1 AND no_deblock = 1 AND no_fast_pskip = 1,NOT no_8x8dct AND no_deblock AND no_fast_pskip,0,1.0,1.0,1.0,21
+random_10,90,7,no_8x8dct = 1 AND no_deblock = 1 AND no_fast_pskip = 1,NOT no_8x8dct AND no_fast_pskip,3,0.56,0.3888888888888889,1.0,21
+random_20,180,21,no_8x8dct = 1 AND no_deblock = 1 AND no_fast_pskip = 1,no_deblock AND no_fast_pskip,2,0.6363636363636364,0.4666666666666667,1.0,21
+2-wise,17,1,no_8x8dct = 1 AND no_deblock = 1 AND no_fast_pskip = 1,NOT no_8x8dct AND no_mbtree,2,0.4,0.25,1.0,21
+3-wise,43,2,no_8x8dct = 1 AND no_deblock = 1 AND no_fast_pskip = 1,NOT no_cabac AND no_deblock AND rc_lookahead != 20.00,1,0.1818181818181818,0.1111111111111111,0.5,21
+4-wise,103,12,no_8x8dct = 1 AND no_deblock = 1 AND no_fast_pskip = 1,NOT no_cabac AND no_deblock AND NOT no_fast_pskip,2,0.6086956521739131,0.6363636363636364,0.5833333333333334,21
+full,1152,144,no_cabac = 1 AND no_fast_pskip = 1 AND no_mixed_refs = 1,no_cabac AND no_fast_pskip AND no_mixed_refs,0,1.0,1.0,1.0,22
+random_2,18,3,no_cabac = 1 AND no_fast_pskip = 1 AND no_mixed_refs = 1,NOT no_deblock AND no_fast_pskip,1,0.6666666666666666,0.5,1.0,22
+random_5,45,8,no_cabac = 1 AND no_fast_pskip = 1 AND no_mixed_refs = 1,NOT no_cabac AND no_deblock,2,0.380952380952381,0.3076923076923077,0.5,22
+random_10,90,10,no_cabac = 1 AND no_fast_pskip = 1 AND no_mixed_refs = 1,no_mbtree AND rc_lookahead != 60.00,2,0.1739130434782609,0.1111111111111111,0.4,22
+random_20,180,24,no_cabac = 1 AND no_fast_pskip = 1 AND no_mixed_refs = 1,no_fast_pskip AND no_mixed_refs,0,0.7058823529411764,0.5454545454545454,1.0,22
+2-wise,19,2,no_cabac = 1 AND no_fast_pskip = 1 AND no_mixed_refs = 1,no_8x8dct AND no_cabac,0,0.2222222222222222,0.1428571428571428,0.5,22
+3-wise,40,3,no_cabac = 1 AND no_fast_pskip = 1 AND no_mixed_refs = 1,NOT no_deblock AND no_fast_pskip,3,0.3333333333333333,0.2222222222222222,0.6666666666666666,22
+4-wise,105,10,no_cabac = 1 AND no_fast_pskip = 1 AND no_mixed_refs = 1,no_fast_pskip AND no_mixed_refs,4,0.5405405405405406,0.3703703703703703,1.0,22
+full,1152,144,no_8x8dct = 1 AND no_fast_pskip = 1 AND no_mbtree = 1,no_8x8dct AND no_fast_pskip AND no_mbtree,2,1.0,1.0,1.0,23
+random_2,18,3,no_8x8dct = 1 AND no_fast_pskip = 1 AND no_mbtree = 1,no_cabac AND no_fast_pskip AND no_mixed_refs AND rc_lookahead != 20.00,4,0.4,0.5,0.3333333333333333,23
+random_5,45,6,no_8x8dct = 1 AND no_fast_pskip = 1 AND no_mbtree = 1,NOT no_8x8dct AND no_fast_pskip,2,0.8,0.6666666666666666,1.0,23
+random_10,90,12,no_8x8dct = 1 AND no_fast_pskip = 1 AND no_mbtree = 1,no_8x8dct AND NOT no_fast_pskip AND NOT no_mixed_refs,0,0.6666666666666666,0.7777777777777778,0.5833333333333334,23
+random_20,180,16,no_8x8dct = 1 AND no_fast_pskip = 1 AND no_mbtree = 1,NOT no_8x8dct AND no_mbtree,0,0.5818181818181819,0.4102564102564102,1.0,23
+2-wise,19,2,no_8x8dct = 1 AND no_fast_pskip = 1 AND no_mbtree = 1,no_fast_pskip AND no_mixed_refs,2,0.8,0.6666666666666666,1.0,23
+3-wise,43,6,no_8x8dct = 1 AND no_fast_pskip = 1 AND no_mbtree = 1,no_8x8dct AND NOT no_deblock AND no_fast_pskip AND rc_lookahead != 20.00,3,0.6153846153846153,0.5714285714285714,0.6666666666666666,23
+4-wise,106,16,no_8x8dct = 1 AND no_fast_pskip = 1 AND no_mbtree = 1,NOT no_8x8dct AND no_fast_pskip AND no_mixed_refs,0,0.5714285714285715,0.6666666666666666,0.5,23
+full,1152,144,no_fast_pskip = 1 AND no_mbtree = 1 AND no_mixed_refs = 1,no_fast_pskip AND no_mbtree AND no_mixed_refs,0,1.0,1.0,1.0,24
+random_2,18,2,no_fast_pskip = 1 AND no_mbtree = 1 AND no_mixed_refs = 1,no_cabac AND no_weightb AND ref != 1.00,1,0.4,0.3333333333333333,0.5,24
+random_5,45,5,no_fast_pskip = 1 AND no_mbtree = 1 AND no_mixed_refs = 1,no_8x8dct AND no_fast_pskip,1,0.4,0.3,0.6,24
+random_10,90,9,no_fast_pskip = 1 AND no_mbtree = 1 AND no_mixed_refs = 1,no_fast_pskip AND no_mbtree AND no_mixed_refs,2,1.0,1.0,1.0,24
+random_20,180,23,no_fast_pskip = 1 AND no_mbtree = 1 AND no_mixed_refs = 1,no_fast_pskip AND no_mbtree AND no_mixed_refs,0,1.0,1.0,1.0,24
+2-wise,18,3,no_fast_pskip = 1 AND no_mbtree = 1 AND no_mixed_refs = 1,NOT no_cabac AND NOT no_mbtree AND ref != 9.00,0,0.0,0.0,0.0,24
+3-wise,44,4,no_fast_pskip = 1 AND no_mbtree = 1 AND no_mixed_refs = 1,no_mixed_refs AND rc_lookahead != 60.00,1,0.3333333333333333,0.2142857142857142,0.75,24
+4-wise,104,13,no_fast_pskip = 1 AND no_mbtree = 1 AND no_mixed_refs = 1,no_mbtree AND no_weightb,2,0.2631578947368421,0.2,0.3846153846153846,24
+full,1152,144,no_cabac = 1 AND no_fast_pskip = 1 AND no_mbtree = 1,no_cabac AND no_fast_pskip AND no_mbtree,1,1.0,1.0,1.0,25
+random_2,18,1,no_cabac = 1 AND no_fast_pskip = 1 AND no_mbtree = 1,no_cabac AND NOT no_weightb AND rc_lookahead != 20.00 AND ref != 9.00,2,0.5,0.3333333333333333,1.0,25
+random_5,45,8,no_cabac = 1 AND no_fast_pskip = 1 AND no_mbtree = 1,no_cabac AND no_fast_pskip AND ref != 1.00,0,0.7777777777777777,0.7,0.875,25
+random_10,90,9,no_cabac = 1 AND no_fast_pskip = 1 AND no_mbtree = 1,no_cabac AND no_fast_pskip AND no_mbtree,3,1.0,1.0,1.0,25
+random_20,180,25,no_cabac = 1 AND no_fast_pskip = 1 AND no_mbtree = 1,no_cabac AND NOT no_weightb AND rc_lookahead != 20.00,1,0.3384615384615385,0.275,0.44,25
+2-wise,15,3,no_cabac = 1 AND no_fast_pskip = 1 AND no_mbtree = 1,no_cabac AND no_fast_pskip AND no_weightb,3,0.8571428571428571,0.75,1.0,25
+3-wise,38,4,no_cabac = 1 AND no_fast_pskip = 1 AND no_mbtree = 1,no_mbtree AND no_mixed_refs AND rc_lookahead != 20.00,0,0.6,0.5,0.75,25
+4-wise,101,11,no_cabac = 1 AND no_fast_pskip = 1 AND no_mbtree = 1,no_fast_pskip AND NOT no_mixed_refs AND rc_lookahead != 20.00,3,0.3225806451612903,0.25,0.4545454545454545,25
+full,1152,144,no_cabac = 1 AND no_deblock = 1 AND no_mbtree = 1,no_cabac AND no_deblock AND no_mbtree,0,1.0,1.0,1.0,26
+random_2,18,1,no_cabac = 1 AND no_deblock = 1 AND no_mbtree = 1,NOT no_cabac AND no_deblock AND no_fast_pskip,2,0.4,0.25,1.0,26
+random_5,45,6,no_cabac = 1 AND no_deblock = 1 AND no_mbtree = 1,no_8x8dct AND no_deblock AND ref != 1.00,3,0.4,0.3333333333333333,0.5,26
+random_10,90,12,no_cabac = 1 AND no_deblock = 1 AND no_mbtree = 1,no_cabac AND no_deblock AND no_mbtree,4,1.0,1.0,1.0,26
+random_20,180,19,no_cabac = 1 AND no_deblock = 1 AND no_mbtree = 1,no_cabac AND no_mbtree AND ref != 1.00,4,0.6086956521739131,0.5185185185185185,0.7368421052631579,26
+2-wise,15,3,no_cabac = 1 AND no_deblock = 1 AND no_mbtree = 1,no_cabac AND NOT no_mbtree,0,0.8571428571428571,0.75,1.0,26
+3-wise,40,4,no_cabac = 1 AND no_deblock = 1 AND no_mbtree = 1,NOT no_mixed_refs AND rc_lookahead != 20.00 AND ref != 1.00,1,0.2857142857142857,0.2,0.5,26
+4-wise,103,15,no_cabac = 1 AND no_deblock = 1 AND no_mbtree = 1,no_cabac AND no_deblock AND no_mbtree,1,1.0,1.0,1.0,26
+full,1152,144,no_deblock = 1 AND no_fast_pskip = 1 AND no_mbtree = 1,no_deblock AND no_fast_pskip AND no_mbtree,1,1.0,1.0,1.0,27
+random_2,18,1,no_deblock = 1 AND no_fast_pskip = 1 AND no_mbtree = 1,no_cabac AND NOT no_fast_pskip AND rc_lookahead != 20.00 AND ref = 5.00,0,0.0,0.0,0.0,27
+random_5,45,4,no_deblock = 1 AND no_fast_pskip = 1 AND no_mbtree = 1,NOT no_deblock AND NOT no_mixed_refs,0,0.4285714285714285,0.3,0.75,27
+random_10,90,10,no_deblock = 1 AND no_fast_pskip = 1 AND no_mbtree = 1,no_deblock AND no_fast_pskip AND no_mbtree,2,1.0,1.0,1.0,27
+random_20,180,19,no_deblock = 1 AND no_fast_pskip = 1 AND no_mbtree = 1,NOT no_fast_pskip AND no_mbtree,1,0.6229508196721312,0.4523809523809524,1.0,27
+2-wise,16,2,no_deblock = 1 AND no_fast_pskip = 1 AND no_mbtree = 1,NOT no_8x8dct AND no_deblock AND no_fast_pskip AND rc_lookahead = 60.00,0,0.4,0.3333333333333333,0.5,27
+3-wise,38,6,no_deblock = 1 AND no_fast_pskip = 1 AND no_mbtree = 1,NOT no_deblock AND no_fast_pskip AND NOT no_mbtree,3,1.0,1.0,1.0,27
+4-wise,101,13,no_deblock = 1 AND no_fast_pskip = 1 AND no_mbtree = 1,no_fast_pskip AND no_mbtree,1,0.6842105263157895,0.52,1.0,27
+full,1152,144,no_deblock = 1 AND no_mbtree = 1 AND no_mixed_refs = 1,no_deblock AND no_mbtree AND no_mixed_refs,1,1.0,1.0,1.0,28
+random_2,18,2,no_deblock = 1 AND no_mbtree = 1 AND no_mixed_refs = 1,NOT no_cabac AND no_mixed_refs AND NOT no_weightb,2,0.4,0.3333333333333333,0.5,28
+random_5,45,9,no_deblock = 1 AND no_mbtree = 1 AND no_mixed_refs = 1,no_8x8dct AND no_cabac AND no_deblock AND NOT no_mbtree,1,0.6250000000000001,0.7142857142857143,0.5555555555555556,28
+random_10,90,13,no_deblock = 1 AND no_mbtree = 1 AND no_mixed_refs = 1,no_deblock AND no_mbtree AND no_mixed_refs,1,1.0,1.0,1.0,28
+random_20,180,27,no_deblock = 1 AND no_mbtree = 1 AND no_mixed_refs = 1,no_deblock AND no_mbtree AND no_mixed_refs,0,1.0,1.0,1.0,28
+2-wise,15,1,no_deblock = 1 AND no_mbtree = 1 AND no_mixed_refs = 1,no_deblock AND NOT no_fast_pskip AND ref != 9.00,1,0.5,0.3333333333333333,1.0,28
+3-wise,46,3,no_deblock = 1 AND no_mbtree = 1 AND no_mixed_refs = 1,no_fast_pskip AND rc_lookahead != 20.00,3,0.2,0.1176470588235294,0.6666666666666666,28
+4-wise,102,15,no_deblock = 1 AND no_mbtree = 1 AND no_mixed_refs = 1,no_deblock AND no_mbtree,2,0.6818181818181819,0.5172413793103449,1.0,28
+full,1152,144,no_fast_pskip = 1 AND no_mixed_refs = 1 AND no_weightb = 1,no_fast_pskip AND no_mixed_refs AND no_weightb,0,1.0,1.0,1.0,29
+random_2,18,2,no_fast_pskip = 1 AND no_mixed_refs = 1 AND no_weightb = 1,no_cabac AND no_mixed_refs AND no_weightb AND rc_lookahead != 20.00,1,0.6666666666666666,0.5,1.0,29
+random_5,45,6,no_fast_pskip = 1 AND no_mixed_refs = 1 AND no_weightb = 1,NOT no_cabac AND no_fast_pskip AND ref != 1.00,1,0.4,0.3333333333333333,0.5,29
+random_10,90,15,no_fast_pskip = 1 AND no_mixed_refs = 1 AND no_weightb = 1,no_mixed_refs AND no_weightb,2,0.7692307692307693,0.625,1.0,29
+random_20,180,23,no_fast_pskip = 1 AND no_mixed_refs = 1 AND no_weightb = 1,NOT no_cabac AND no_mbtree AND rc_lookahead != 20.00,2,0.1851851851851851,0.1612903225806451,0.217391304347826,29
+2-wise,16,2,no_fast_pskip = 1 AND no_mixed_refs = 1 AND no_weightb = 1,NOT no_8x8dct AND no_weightb AND ref != 9.00,0,0.0,0.0,0.0,29
+3-wise,38,5,no_fast_pskip = 1 AND no_mixed_refs = 1 AND no_weightb = 1,NOT no_8x8dct AND no_deblock AND NOT no_mixed_refs,0,0.6,0.6,0.6,29
+4-wise,104,19,no_fast_pskip = 1 AND no_mixed_refs = 1 AND no_weightb = 1,no_mixed_refs AND no_weightb,4,0.7916666666666666,0.6551724137931034,1.0,29
+full,1152,144,no_8x8dct = 1 AND no_cabac = 1 AND no_weightb = 1,no_8x8dct AND no_cabac AND no_weightb,0,1.0,1.0,1.0,2
+random_2,18,3,no_8x8dct = 1 AND no_cabac = 1 AND no_weightb = 1,NOT no_mbtree AND rc_lookahead != 60.00 AND ref != 1.00,1,0.5,0.4,0.6666666666666666,2
+random_5,45,3,no_8x8dct = 1 AND no_cabac = 1 AND no_weightb = 1,no_8x8dct AND NOT no_mbtree,3,0.2857142857142857,0.1818181818181818,0.6666666666666666,2
+random_10,90,7,no_8x8dct = 1 AND no_cabac = 1 AND no_weightb = 1,no_8x8dct AND no_cabac AND no_weightb,1,1.0,1.0,1.0,2
+random_20,180,22,no_8x8dct = 1 AND no_cabac = 1 AND no_weightb = 1,no_8x8dct AND no_cabac AND no_weightb,0,1.0,1.0,1.0,2
+3-wise,45,5,no_8x8dct = 1 AND no_cabac = 1 AND no_weightb = 1,no_fast_pskip AND no_weightb AND rc_lookahead != 60.00,3,0.4285714285714285,0.3333333333333333,0.6,2
+4-wise,104,17,no_8x8dct = 1 AND no_cabac = 1 AND no_weightb = 1,no_8x8dct AND no_cabac AND no_weightb,0,1.0,1.0,1.0,2
+full,1152,144,no_cabac = 1 AND no_fast_pskip = 1 AND no_mixed_refs = 1,no_cabac AND no_fast_pskip AND no_mixed_refs,0,1.0,1.0,1.0,30
+random_2,18,1,no_cabac = 1 AND no_fast_pskip = 1 AND no_mixed_refs = 1,no_deblock AND rc_lookahead != 60.00 AND ref != 1.00,2,0.25,0.1428571428571428,1.0,30
+random_10,90,10,no_cabac = 1 AND no_fast_pskip = 1 AND no_mixed_refs = 1,no_cabac AND no_fast_pskip AND no_mixed_refs,3,1.0,1.0,1.0,30
+random_20,180,22,no_cabac = 1 AND no_fast_pskip = 1 AND no_mixed_refs = 1,no_cabac AND no_fast_pskip AND no_mixed_refs,2,1.0,1.0,1.0,30
+2-wise,18,3,no_cabac = 1 AND no_fast_pskip = 1 AND no_mixed_refs = 1,no_mixed_refs AND no_weightb,1,0.7499999999999999,0.6,1.0,30
+3-wise,52,2,no_cabac = 1 AND no_fast_pskip = 1 AND no_mixed_refs = 1,no_cabac AND NOT no_weightb,4,0.2857142857142857,0.1666666666666666,1.0,30
+4-wise,99,10,no_cabac = 1 AND no_fast_pskip = 1 AND no_mixed_refs = 1,no_fast_pskip,4,0.3636363636363636,0.2222222222222222,1.0,30
+full,1152,144,no_8x8dct = 1 AND no_fast_pskip = 1 AND no_weightb = 1,no_8x8dct AND no_fast_pskip AND no_weightb,0,1.0,1.0,1.0,31
+random_5,45,7,no_8x8dct = 1 AND no_fast_pskip = 1 AND no_weightb = 1,NOT no_deblock AND no_mixed_refs AND no_weightb,4,0.4444444444444444,0.3636363636363636,0.5714285714285714,31
+random_10,90,12,no_8x8dct = 1 AND no_fast_pskip = 1 AND no_weightb = 1,no_8x8dct AND no_weightb AND ref = 5.00,3,0.7407407407407408,0.6666666666666666,0.8333333333333334,31
+random_20,180,23,no_8x8dct = 1 AND no_fast_pskip = 1 AND no_weightb = 1,NOT no_8x8dct AND no_fast_pskip AND no_weightb,2,1.0,1.0,1.0,31
+2-wise,16,3,no_8x8dct = 1 AND no_fast_pskip = 1 AND no_weightb = 1,NOT no_mixed_refs AND no_weightb AND rc_lookahead != 20.00,0,0.8571428571428571,0.75,1.0,31
+3-wise,47,5,no_8x8dct = 1 AND no_fast_pskip = 1 AND no_weightb = 1,no_fast_pskip AND no_weightb AND ref != 9.00,2,0.6666666666666666,0.5714285714285714,0.8,31
+4-wise,101,12,no_8x8dct = 1 AND no_fast_pskip = 1 AND no_weightb = 1,no_8x8dct AND no_mbtree,1,0.4,0.2857142857142857,0.6666666666666666,31
+full,1152,144,no_8x8dct = 1 AND no_deblock = 1 AND no_weightb = 1,no_8x8dct AND no_deblock AND no_weightb,0,1.0,1.0,1.0,32
+random_2,18,2,no_8x8dct = 1 AND no_deblock = 1 AND no_weightb = 1,NOT no_mbtree AND no_mixed_refs AND no_weightb,4,0.5,0.3333333333333333,1.0,32
+random_5,45,2,no_8x8dct = 1 AND no_deblock = 1 AND no_weightb = 1,NOT no_mbtree AND NOT no_mixed_refs AND rc_lookahead != 20.00 AND ref != 9.00,2,0.2222222222222222,0.1428571428571428,0.5,32
+random_10,90,17,no_8x8dct = 1 AND no_deblock = 1 AND no_weightb = 1,no_8x8dct AND no_deblock AND no_weightb,1,1.0,1.0,1.0,32
+random_20,180,24,no_8x8dct = 1 AND no_deblock = 1 AND no_weightb = 1,no_8x8dct AND no_deblock AND no_weightb,1,1.0,1.0,1.0,32
+2-wise,16,2,no_8x8dct = 1 AND no_deblock = 1 AND no_weightb = 1,rc_lookahead != 60.00 AND ref = 1.00,0,0.2857142857142857,0.2,0.5,32
+3-wise,42,5,no_8x8dct = 1 AND no_deblock = 1 AND no_weightb = 1,NOT no_8x8dct AND no_deblock AND no_weightb,3,1.0,1.0,1.0,32
+4-wise,103,12,no_8x8dct = 1 AND no_deblock = 1 AND no_weightb = 1,no_8x8dct AND no_weightb AND ref != 9.00,4,0.4827586206896552,0.4117647058823529,0.5833333333333334,32
+full,1152,144,no_cabac = 1 AND no_fast_pskip = 1 AND no_mixed_refs = 1,no_cabac AND no_fast_pskip AND no_mixed_refs,0,1.0,1.0,1.0,33
+random_2,18,3,no_cabac = 1 AND no_fast_pskip = 1 AND no_mixed_refs = 1,NOT no_8x8dct AND no_fast_pskip,1,0.6666666666666666,0.6666666666666666,0.6666666666666666,33
+random_5,45,7,no_cabac = 1 AND no_fast_pskip = 1 AND no_mixed_refs = 1,no_8x8dct AND NOT no_deblock AND no_mixed_refs,1,0.4705882352941176,0.4,0.5714285714285714,33
+random_10,90,14,no_cabac = 1 AND no_fast_pskip = 1 AND no_mixed_refs = 1,no_cabac AND no_fast_pskip AND no_mixed_refs,0,1.0,1.0,1.0,33
+random_20,180,23,no_cabac = 1 AND no_fast_pskip = 1 AND no_mixed_refs = 1,NOT no_mbtree AND no_mixed_refs AND NOT no_weightb,1,0.1395348837209302,0.15,0.1304347826086956,33
+2-wise,18,3,no_cabac = 1 AND no_fast_pskip = 1 AND no_mixed_refs = 1,NOT no_mbtree AND NOT no_weightb,1,0.5,0.4,0.6666666666666666,33
+3-wise,44,6,no_cabac = 1 AND no_fast_pskip = 1 AND no_mixed_refs = 1,no_cabac AND no_mixed_refs,1,0.7058823529411764,0.5454545454545454,1.0,33
+4-wise,96,10,no_cabac = 1 AND no_fast_pskip = 1 AND no_mixed_refs = 1,NOT no_8x8dct AND no_mixed_refs,0,0.4848484848484848,0.3478260869565217,0.8,33
+full,1152,144,no_8x8dct = 1 AND no_cabac = 1 AND no_mbtree = 1,no_8x8dct AND no_cabac AND no_mbtree,1,1.0,1.0,1.0,34
+random_2,18,3,no_8x8dct = 1 AND no_cabac = 1 AND no_mbtree = 1,no_8x8dct AND no_mbtree,2,0.6,0.4285714285714285,1.0,34
+random_5,45,7,no_8x8dct = 1 AND no_cabac = 1 AND no_mbtree = 1,NOT no_8x8dct AND no_cabac AND no_mbtree,1,1.0,1.0,1.0,34
+random_10,90,13,no_8x8dct = 1 AND no_cabac = 1 AND no_mbtree = 1,no_8x8dct AND no_cabac AND no_mbtree,1,1.0,1.0,1.0,34
+random_20,180,16,no_8x8dct = 1 AND no_cabac = 1 AND no_mbtree = 1,no_cabac AND no_weightb,0,0.3076923076923076,0.2222222222222222,0.5,34
+2-wise,15,2,no_8x8dct = 1 AND no_cabac = 1 AND no_mbtree = 1,no_8x8dct AND NOT no_deblock,4,0.4,0.3333333333333333,0.5,34
+3-wise,42,4,no_8x8dct = 1 AND no_cabac = 1 AND no_mbtree = 1,NOT no_8x8dct AND no_cabac AND NOT no_deblock,2,0.6666666666666665,0.6,0.75,34
+4-wise,102,14,no_8x8dct = 1 AND no_cabac = 1 AND no_mbtree = 1,no_8x8dct AND no_cabac AND no_mbtree,4,1.0,1.0,1.0,34
+full,1152,144,no_8x8dct = 1 AND no_deblock = 1 AND no_fast_pskip = 1,no_8x8dct AND no_deblock AND no_fast_pskip,0,1.0,1.0,1.0,35
+random_2,18,3,no_8x8dct = 1 AND no_deblock = 1 AND no_fast_pskip = 1,no_8x8dct AND no_mixed_refs AND rc_lookahead != 60.00,0,0.4,0.5,0.3333333333333333,35
+random_5,45,9,no_8x8dct = 1 AND no_deblock = 1 AND no_fast_pskip = 1,NOT no_8x8dct AND NOT no_cabac AND no_fast_pskip AND no_weightb,1,0.5333333333333333,0.6666666666666666,0.4444444444444444,35
+random_10,90,6,no_8x8dct = 1 AND no_deblock = 1 AND no_fast_pskip = 1,NOT no_8x8dct AND no_mbtree,2,0.2666666666666666,0.1666666666666666,0.6666666666666666,35
+random_20,180,28,no_8x8dct = 1 AND no_deblock = 1 AND no_fast_pskip = 1,no_8x8dct AND no_deblock AND NOT no_fast_pskip,0,1.0,1.0,1.0,35
+2-wise,14,1,no_8x8dct = 1 AND no_deblock = 1 AND no_fast_pskip = 1,NOT no_cabac AND NOT no_deblock AND NOT no_weightb,4,0.5,0.3333333333333333,1.0,35
+3-wise,41,6,no_8x8dct = 1 AND no_deblock = 1 AND no_fast_pskip = 1,no_mixed_refs AND rc_lookahead != 20.00 AND ref = 5.00,0,0.1666666666666666,0.1666666666666666,0.1666666666666666,35
+4-wise,101,11,no_8x8dct = 1 AND no_deblock = 1 AND no_fast_pskip = 1,NOT no_deblock AND no_fast_pskip,1,0.6666666666666666,0.5,1.0,35
+full,1152,144,no_cabac = 1 AND no_fast_pskip = 1 AND no_mixed_refs = 1,no_cabac AND no_fast_pskip AND no_mixed_refs,0,1.0,1.0,1.0,36
+random_2,18,2,no_cabac = 1 AND no_fast_pskip = 1 AND no_mixed_refs = 1,NOT no_fast_pskip AND ref = 1.00,1,0.6666666666666666,0.5,1.0,36
+random_5,45,7,no_cabac = 1 AND no_fast_pskip = 1 AND no_mixed_refs = 1,no_fast_pskip AND NOT no_mixed_refs AND no_weightb,1,0.4615384615384615,0.5,0.4285714285714285,36
+random_10,90,14,no_cabac = 1 AND no_fast_pskip = 1 AND no_mixed_refs = 1,no_cabac AND no_mixed_refs,0,0.7000000000000001,0.5384615384615384,1.0,36
+random_20,180,28,no_cabac = 1 AND no_fast_pskip = 1 AND no_mixed_refs = 1,no_cabac AND no_fast_pskip AND no_mixed_refs,0,1.0,1.0,1.0,36
+2-wise,17,3,no_cabac = 1 AND no_fast_pskip = 1 AND no_mixed_refs = 1,NOT no_8x8dct AND NOT no_mbtree AND no_mixed_refs,0,0.3333333333333333,0.3333333333333333,0.3333333333333333,36
+3-wise,46,5,no_cabac = 1 AND no_fast_pskip = 1 AND no_mixed_refs = 1,NOT no_deblock AND no_fast_pskip,4,0.4705882352941176,0.3333333333333333,0.8,36
+4-wise,102,14,no_cabac = 1 AND no_fast_pskip = 1 AND no_mixed_refs = 1,no_fast_pskip AND no_mixed_refs AND rc_lookahead = 40.00,3,0.7096774193548386,0.6470588235294118,0.7857142857142857,36
+full,1152,144,no_deblock = 1 AND no_fast_pskip = 1 AND no_mbtree = 1,no_deblock AND no_fast_pskip AND no_mbtree,1,1.0,1.0,1.0,37
+random_2,18,4,no_deblock = 1 AND no_fast_pskip = 1 AND no_mbtree = 1,no_deblock AND no_mbtree,0,0.8,0.6666666666666666,1.0,37
+random_5,45,8,no_deblock = 1 AND no_fast_pskip = 1 AND no_mbtree = 1,NOT no_8x8dct AND no_cabac AND no_deblock AND no_mbtree,4,0.4,1.0,0.25,37
+random_10,90,11,no_deblock = 1 AND no_fast_pskip = 1 AND no_mbtree = 1,NOT no_deblock AND no_fast_pskip AND no_mbtree,4,1.0,1.0,1.0,37
+random_20,180,19,no_deblock = 1 AND no_fast_pskip = 1 AND no_mbtree = 1,no_deblock AND no_mbtree,2,0.6031746031746031,0.4318181818181818,1.0,37
+2-wise,15,1,no_deblock = 1 AND no_fast_pskip = 1 AND no_mbtree = 1,no_8x8dct AND no_cabac AND ref != 1.00,0,0.4,0.25,1.0,37
+3-wise,47,4,no_deblock = 1 AND no_fast_pskip = 1 AND no_mbtree = 1,no_deblock AND NOT no_mixed_refs,4,0.4285714285714285,0.3,0.75,37
+4-wise,106,14,no_deblock = 1 AND no_fast_pskip = 1 AND no_mbtree = 1,no_deblock AND no_fast_pskip AND no_mbtree,2,1.0,1.0,1.0,37
+full,1152,144,no_8x8dct = 1 AND no_deblock = 1 AND no_fast_pskip = 1,no_8x8dct AND no_deblock AND no_fast_pskip,0,1.0,1.0,1.0,38
+random_2,18,2,no_8x8dct = 1 AND no_deblock = 1 AND no_fast_pskip = 1,no_8x8dct AND no_deblock,0,0.5714285714285715,0.4,1.0,38
+random_5,45,8,no_8x8dct = 1 AND no_deblock = 1 AND no_fast_pskip = 1,NOT no_8x8dct AND no_deblock AND no_fast_pskip,0,1.0,1.0,1.0,38
+random_10,90,11,no_8x8dct = 1 AND no_deblock = 1 AND no_fast_pskip = 1,no_8x8dct AND no_deblock AND no_fast_pskip,0,1.0,1.0,1.0,38
+random_20,180,25,no_8x8dct = 1 AND no_deblock = 1 AND no_fast_pskip = 1,no_8x8dct AND no_deblock AND no_fast_pskip,0,1.0,1.0,1.0,38
+2-wise,14,5,no_8x8dct = 1 AND no_deblock = 1 AND no_fast_pskip = 1,no_8x8dct AND no_deblock AND no_fast_pskip,2,1.0,1.0,1.0,38
+3-wise,50,4,no_8x8dct = 1 AND no_deblock = 1 AND no_fast_pskip = 1,no_fast_pskip AND rc_lookahead = 60.00,4,0.3333333333333333,0.25,0.5,38
+4-wise,91,10,no_8x8dct = 1 AND no_deblock = 1 AND no_fast_pskip = 1,NOT no_fast_pskip AND NOT no_weightb AND rc_lookahead != 20.00,1,0.3846153846153846,0.3125,0.5,38
+full,1152,144,no_8x8dct = 1 AND no_deblock = 1 AND no_mixed_refs = 1,no_8x8dct AND no_deblock AND no_mixed_refs,0,1.0,1.0,1.0,39
+random_2,18,3,no_8x8dct = 1 AND no_deblock = 1 AND no_mixed_refs = 1,NOT no_cabac AND no_deblock AND no_mixed_refs,4,1.0,1.0,1.0,39
+random_5,45,7,no_8x8dct = 1 AND no_deblock = 1 AND no_mixed_refs = 1,no_8x8dct AND no_deblock AND no_mixed_refs,0,1.0,1.0,1.0,39
+random_10,90,12,no_8x8dct = 1 AND no_deblock = 1 AND no_mixed_refs = 1,no_8x8dct AND no_deblock AND no_mixed_refs,4,1.0,1.0,1.0,39
+random_20,180,17,no_8x8dct = 1 AND no_deblock = 1 AND no_mixed_refs = 1,no_8x8dct AND no_deblock AND NOT no_mixed_refs,0,1.0,1.0,1.0,39
+3-wise,41,6,no_8x8dct = 1 AND no_deblock = 1 AND no_mixed_refs = 1,no_8x8dct AND no_cabac AND no_deblock AND rc_lookahead != 60.00,2,0.5,0.5,0.5,39
+4-wise,105,16,no_8x8dct = 1 AND no_deblock = 1 AND no_mixed_refs = 1,no_8x8dct AND no_deblock AND no_mixed_refs,4,1.0,1.0,1.0,39
+full,1152,144,no_8x8dct = 1 AND no_fast_pskip = 1 AND no_weightb = 1,no_8x8dct AND no_fast_pskip AND no_weightb,0,1.0,1.0,1.0,3
+random_2,18,2,no_8x8dct = 1 AND no_fast_pskip = 1 AND no_weightb = 1,no_mixed_refs,0,0.3076923076923077,0.1818181818181818,1.0,3
+random_5,45,4,no_8x8dct = 1 AND no_fast_pskip = 1 AND no_weightb = 1,no_mixed_refs AND rc_lookahead != 60.00 AND ref != 9.00,3,0.3333333333333333,0.25,0.5,3
+random_10,90,10,no_8x8dct = 1 AND no_fast_pskip = 1 AND no_weightb = 1,no_8x8dct AND no_fast_pskip AND no_weightb,1,1.0,1.0,1.0,3
+random_20,180,21,no_8x8dct = 1 AND no_fast_pskip = 1 AND no_weightb = 1,no_8x8dct AND no_deblock AND no_weightb,3,0.5238095238095238,0.5238095238095238,0.5238095238095238,3
+2-wise,16,3,no_8x8dct = 1 AND no_fast_pskip = 1 AND no_weightb = 1,no_8x8dct AND no_weightb AND ref = 1.00,1,0.8,1.0,0.6666666666666666,3
+3-wise,44,5,no_8x8dct = 1 AND no_fast_pskip = 1 AND no_weightb = 1,no_8x8dct AND no_weightb AND ref != 9.00,0,0.6666666666666666,0.5,1.0,3
+4-wise,104,12,no_8x8dct = 1 AND no_fast_pskip = 1 AND no_weightb = 1,no_8x8dct AND no_fast_pskip AND no_weightb,1,1.0,1.0,1.0,3
+full,1152,144,no_8x8dct = 1 AND no_deblock = 1 AND no_mbtree = 1,no_8x8dct AND no_deblock AND no_mbtree,0,1.0,1.0,1.0,40
+random_2,18,1,no_8x8dct = 1 AND no_deblock = 1 AND no_mbtree = 1,NOT no_fast_pskip AND no_mixed_refs AND no_weightb,0,0.0,0.0,0.0,40
+random_5,45,6,no_8x8dct = 1 AND no_deblock = 1 AND no_mbtree = 1,NOT no_8x8dct AND no_deblock AND no_mbtree,2,1.0,1.0,1.0,40
+random_10,90,6,no_8x8dct = 1 AND no_deblock = 1 AND no_mbtree = 1,NOT no_8x8dct AND NOT no_fast_pskip AND rc_lookahead != 20.00 AND ref = 5.00,4,0.3749999999999999,0.3,0.5,40
+random_20,180,19,no_8x8dct = 1 AND no_deblock = 1 AND no_mbtree = 1,no_8x8dct AND NOT no_mbtree,4,0.6333333333333334,0.4634146341463415,1.0,40
+2-wise,14,1,no_8x8dct = 1 AND no_deblock = 1 AND no_mbtree = 1,NOT no_8x8dct AND NOT no_mixed_refs,0,0.0,0.0,0.0,40
+3-wise,52,7,no_8x8dct = 1 AND no_deblock = 1 AND no_mbtree = 1,no_8x8dct AND no_mixed_refs AND ref != 1.00,0,0.3999999999999999,0.375,0.4285714285714285,40
+4-wise,96,12,no_8x8dct = 1 AND no_deblock = 1 AND no_mbtree = 1,no_deblock AND no_mbtree,4,0.7272727272727273,0.5714285714285714,1.0,40
+full,1152,144,no_fast_pskip = 1 AND no_mixed_refs = 1 AND no_weightb = 1,no_mixed_refs AND no_weightb,1,0.6666666666666666,0.5,1.0,41
+random_2,18,2,no_fast_pskip = 1 AND no_mixed_refs = 1 AND no_weightb = 1,NOT no_8x8dct AND no_deblock,2,0.2222222222222222,0.1428571428571428,0.5,41
+random_5,45,2,no_fast_pskip = 1 AND no_mixed_refs = 1 AND no_weightb = 1,no_mixed_refs,4,0.2857142857142857,0.1666666666666666,1.0,41
+random_10,90,9,no_fast_pskip = 1 AND no_mixed_refs = 1 AND no_weightb = 1,no_fast_pskip AND rc_lookahead != 60.00,2,0.2702702702702703,0.1785714285714285,0.5555555555555556,41
+random_20,180,25,no_fast_pskip = 1 AND no_mixed_refs = 1 AND no_weightb = 1,no_fast_pskip AND no_mixed_refs AND no_weightb,0,1.0,1.0,1.0,41
+2-wise,18,1,no_fast_pskip = 1 AND no_mixed_refs = 1 AND no_weightb = 1,NOT no_mbtree AND NOT no_mixed_refs,2,0.5,0.3333333333333333,1.0,41
+3-wise,45,4,no_fast_pskip = 1 AND no_mixed_refs = 1 AND no_weightb = 1,no_cabac AND no_weightb,1,0.3999999999999999,0.2727272727272727,0.75,41
+4-wise,102,9,no_fast_pskip = 1 AND no_mixed_refs = 1 AND no_weightb = 1,no_fast_pskip AND NOT no_mbtree AND NOT no_mixed_refs AND NOT no_weightb,0,0.6153846153846153,1.0,0.4444444444444444,41
+full,1152,144,no_8x8dct = 1 AND no_mbtree = 1 AND no_weightb = 1,no_8x8dct AND no_mbtree AND no_weightb,2,1.0,1.0,1.0,42
+random_2,18,3,no_8x8dct = 1 AND no_mbtree = 1 AND no_weightb = 1,no_deblock AND no_mbtree AND no_weightb,0,1.0,1.0,1.0,42
+random_5,45,5,no_8x8dct = 1 AND no_mbtree = 1 AND no_weightb = 1,no_mbtree AND no_weightb,1,0.8333333333333333,0.7142857142857143,1.0,42
+random_10,90,7,no_8x8dct = 1 AND no_mbtree = 1 AND no_weightb = 1,no_mbtree AND no_mixed_refs AND NOT no_weightb,4,0.6666666666666665,0.5454545454545454,0.8571428571428571,42
+random_20,180,22,no_8x8dct = 1 AND no_mbtree = 1 AND no_weightb = 1,NOT no_cabac AND ref = 5.00,0,0.0714285714285714,0.0588235294117647,0.0909090909090909,42
+2-wise,17,4,no_8x8dct = 1 AND no_mbtree = 1 AND no_weightb = 1,no_8x8dct AND no_mbtree AND no_weightb,1,1.0,1.0,1.0,42
+3-wise,42,4,no_8x8dct = 1 AND no_mbtree = 1 AND no_weightb = 1,NOT no_8x8dct AND NOT no_deblock AND no_weightb,1,0.25,0.25,0.25,42
+4-wise,100,14,no_8x8dct = 1 AND no_mbtree = 1 AND no_weightb = 1,NOT no_cabac AND no_mbtree AND rc_lookahead != 60.00,0,0.2285714285714285,0.1904761904761904,0.2857142857142857,42
+full,1152,144,no_deblock = 1 AND no_mbtree = 1 AND no_weightb = 1,no_deblock AND no_mbtree AND no_weightb,0,1.0,1.0,1.0,43
+random_2,18,2,no_deblock = 1 AND no_mbtree = 1 AND no_weightb = 1,NOT no_deblock AND NOT no_mixed_refs AND rc_lookahead != 60.00 AND ref != 1.00,0,0.0,0.0,0.0,43
+random_5,45,3,no_deblock = 1 AND no_mbtree = 1 AND no_weightb = 1,rc_lookahead = 40.00,0,0.0952380952380952,0.0555555555555555,0.3333333333333333,43
+random_10,90,7,no_deblock = 1 AND no_mbtree = 1 AND no_weightb = 1,no_mbtree AND ref != 1.00,0,0.375,0.24,0.8571428571428571,43
+random_20,180,18,no_deblock = 1 AND no_mbtree = 1 AND no_weightb = 1,no_deblock AND no_fast_pskip AND no_mbtree,2,0.6521739130434783,0.5357142857142857,0.8333333333333334,43
+2-wise,16,2,no_deblock = 1 AND no_mbtree = 1 AND no_weightb = 1,no_deblock AND no_mbtree,0,0.6666666666666666,0.5,1.0,43
+3-wise,44,5,no_deblock = 1 AND no_mbtree = 1 AND no_weightb = 1,no_mbtree AND ref = 5.00,4,0.5555555555555556,0.3846153846153846,1.0,43
+4-wise,99,16,no_deblock = 1 AND no_mbtree = 1 AND no_weightb = 1,no_deblock AND NOT no_fast_pskip AND ref != 9.00,0,0.4375,0.4375,0.4375,43
+full,1152,144,no_8x8dct = 1 AND no_deblock = 1 AND no_mbtree = 1,no_8x8dct AND no_deblock AND no_mbtree,0,1.0,1.0,1.0,44
+random_2,18,3,no_8x8dct = 1 AND no_deblock = 1 AND no_mbtree = 1,no_8x8dct AND no_fast_pskip AND no_mbtree AND no_mixed_refs,0,0.6666666666666666,0.6666666666666666,0.6666666666666666,44
+random_5,45,6,no_8x8dct = 1 AND no_deblock = 1 AND no_mbtree = 1,no_deblock AND NOT no_fast_pskip AND no_mbtree,0,0.3333333333333333,0.3333333333333333,0.3333333333333333,44
+random_10,90,16,no_8x8dct = 1 AND no_deblock = 1 AND no_mbtree = 1,NOT no_deblock AND no_mbtree,4,0.8205128205128205,0.6956521739130435,1.0,44
+random_20,180,20,no_8x8dct = 1 AND no_deblock = 1 AND no_mbtree = 1,no_8x8dct AND NOT no_cabac AND no_deblock,1,0.5957446808510639,0.5185185185185185,0.7,44
+2-wise,15,2,no_8x8dct = 1 AND no_deblock = 1 AND no_mbtree = 1,NOT no_8x8dct AND NOT no_cabac AND NOT no_fast_pskip,3,0.5,0.5,0.5,44
+3-wise,49,8,no_8x8dct = 1 AND no_deblock = 1 AND no_mbtree = 1,no_deblock AND no_mixed_refs AND ref != 9.00,3,0.7142857142857143,0.8333333333333334,0.625,44
+4-wise,98,10,no_8x8dct = 1 AND no_deblock = 1 AND no_mbtree = 1,no_8x8dct AND no_deblock AND ref != 1.00,3,0.5833333333333334,0.5,0.7,44
+full,1152,144,no_8x8dct = 1 AND no_mixed_refs = 1 AND no_weightb = 1,no_8x8dct AND no_mixed_refs AND no_weightb,0,1.0,1.0,1.0,45
+random_2,18,4,no_8x8dct = 1 AND no_mixed_refs = 1 AND no_weightb = 1,no_8x8dct AND no_weightb,0,1.0,1.0,1.0,45
+random_5,45,6,no_8x8dct = 1 AND no_mixed_refs = 1 AND no_weightb = 1,no_8x8dct AND NOT no_fast_pskip AND no_mixed_refs,0,0.5333333333333333,0.4444444444444444,0.6666666666666666,45
+random_10,90,15,no_8x8dct = 1 AND no_mixed_refs = 1 AND no_weightb = 1,no_8x8dct AND no_mixed_refs AND no_weightb,1,1.0,1.0,1.0,45
+random_20,180,20,no_8x8dct = 1 AND no_mixed_refs = 1 AND no_weightb = 1,no_mixed_refs AND no_weightb,0,0.6451612903225806,0.4761904761904761,1.0,45
+2-wise,18,1,no_8x8dct = 1 AND no_mixed_refs = 1 AND no_weightb = 1,no_8x8dct AND NOT no_fast_pskip,0,0.0,0.0,0.0,45
+3-wise,42,4,no_8x8dct = 1 AND no_mixed_refs = 1 AND no_weightb = 1,NOT no_8x8dct AND no_deblock AND ref != 9.00,0,0.2,0.1666666666666666,0.25,45
+4-wise,103,11,no_8x8dct = 1 AND no_mixed_refs = 1 AND no_weightb = 1,no_8x8dct AND no_mixed_refs AND no_weightb,1,1.0,1.0,1.0,45
+full,1152,144,no_8x8dct = 1 AND no_mbtree = 1 AND no_weightb = 1,no_8x8dct AND no_mbtree AND no_weightb,0,1.0,1.0,1.0,46
+random_2,18,5,no_8x8dct = 1 AND no_mbtree = 1 AND no_weightb = 1,no_mbtree AND no_weightb,0,0.7692307692307693,0.625,1.0,46
+random_5,45,7,no_8x8dct = 1 AND no_mbtree = 1 AND no_weightb = 1,no_fast_pskip AND NOT no_weightb AND ref != 9.00,2,0.4285714285714285,0.4285714285714285,0.4285714285714285,46
+random_10,90,8,no_8x8dct = 1 AND no_mbtree = 1 AND no_weightb = 1,no_8x8dct AND rc_lookahead != 20.00,4,0.2777777777777778,0.1785714285714285,0.625,46
+random_20,180,18,no_8x8dct = 1 AND no_mbtree = 1 AND no_weightb = 1,no_8x8dct AND no_mbtree AND NOT no_weightb,1,1.0,1.0,1.0,46
+2-wise,17,2,no_8x8dct = 1 AND no_mbtree = 1 AND no_weightb = 1,no_8x8dct AND NOT no_cabac AND no_mbtree AND rc_lookahead = 20.00,3,0.5,0.5,0.5,46
+3-wise,44,3,no_8x8dct = 1 AND no_mbtree = 1 AND no_weightb = 1,no_8x8dct AND no_deblock AND no_weightb AND ref != 9.00,2,0.6666666666666666,0.5,1.0,46
+4-wise,98,11,no_8x8dct = 1 AND no_mbtree = 1 AND no_weightb = 1,no_8x8dct AND no_mbtree AND no_weightb,2,1.0,1.0,1.0,46
+full,1152,144,no_cabac = 1 AND no_fast_pskip = 1 AND no_mixed_refs = 1,no_cabac AND no_fast_pskip AND no_mixed_refs,0,1.0,1.0,1.0,47
+random_2,18,1,no_cabac = 1 AND no_fast_pskip = 1 AND no_mixed_refs = 1,no_cabac AND no_mbtree AND rc_lookahead != 60.00,1,0.3333333333333333,0.2,1.0,47
+random_5,45,2,no_cabac = 1 AND no_fast_pskip = 1 AND no_mixed_refs = 1,no_cabac AND NOT no_deblock AND no_mbtree,2,0.5,0.3333333333333333,1.0,47
+random_10,90,13,no_cabac = 1 AND no_fast_pskip = 1 AND no_mixed_refs = 1,no_cabac AND NOT no_weightb,4,0.3243243243243243,0.25,0.4615384615384615,47
+random_20,180,23,no_cabac = 1 AND no_fast_pskip = 1 AND no_mixed_refs = 1,no_cabac AND no_fast_pskip AND no_mixed_refs,4,1.0,1.0,1.0,47
+2-wise,17,4,no_cabac = 1 AND no_fast_pskip = 1 AND no_mixed_refs = 1,NOT no_8x8dct,2,0.2,0.1666666666666666,0.25,47
+3-wise,42,6,no_cabac = 1 AND no_fast_pskip = 1 AND no_mixed_refs = 1,NOT no_8x8dct AND no_cabac AND no_mixed_refs AND rc_lookahead != 20.00,1,0.5454545454545454,0.6,0.5,47
+4-wise,100,11,no_cabac = 1 AND no_fast_pskip = 1 AND no_mixed_refs = 1,no_mixed_refs AND NOT no_weightb AND rc_lookahead != 60.00 AND ref != 1.00,0,0.3478260869565217,0.3333333333333333,0.3636363636363636,47
+full,1152,144,no_8x8dct = 1 AND no_fast_pskip = 1 AND no_mbtree = 1,no_8x8dct AND no_fast_pskip AND no_mbtree,0,1.0,1.0,1.0,48
+random_2,18,1,no_8x8dct = 1 AND no_fast_pskip = 1 AND no_mbtree = 1,no_8x8dct AND no_cabac AND NOT no_deblock AND no_fast_pskip,0,0.0,0.0,0.0,48
+random_5,45,5,no_8x8dct = 1 AND no_fast_pskip = 1 AND no_mbtree = 1,no_fast_pskip AND no_mbtree,2,0.7692307692307693,0.625,1.0,48
+random_10,90,13,no_8x8dct = 1 AND no_fast_pskip = 1 AND no_mbtree = 1,no_8x8dct AND no_fast_pskip AND no_mbtree,0,1.0,1.0,1.0,48
+random_20,180,17,no_8x8dct = 1 AND no_fast_pskip = 1 AND no_mbtree = 1,no_deblock AND no_fast_pskip AND no_mbtree,2,0.5,0.4074074074074074,0.6470588235294118,48
+2-wise,13,1,no_8x8dct = 1 AND no_fast_pskip = 1 AND no_mbtree = 1,NOT no_mbtree AND no_weightb,1,0.4,0.25,1.0,48
+3-wise,46,5,no_8x8dct = 1 AND no_fast_pskip = 1 AND no_mbtree = 1,no_8x8dct AND no_mbtree AND NOT no_weightb,0,0.6,0.6,0.6,48
+4-wise,95,11,no_8x8dct = 1 AND no_fast_pskip = 1 AND no_mbtree = 1,no_8x8dct AND no_fast_pskip,0,0.6666666666666666,0.5,1.0,48
+full,1152,144,no_8x8dct = 1 AND no_cabac = 1 AND no_weightb = 1,no_8x8dct AND no_cabac AND no_weightb,1,1.0,1.0,1.0,49
+random_2,18,1,no_8x8dct = 1 AND no_cabac = 1 AND no_weightb = 1,no_8x8dct AND no_deblock AND no_fast_pskip,0,0.3333333333333333,0.2,1.0,49
+random_5,45,3,no_8x8dct = 1 AND no_cabac = 1 AND no_weightb = 1,no_8x8dct AND no_cabac AND NOT no_deblock AND rc_lookahead != 60.00,3,0.5714285714285715,0.5,0.6666666666666666,49
+random_10,90,14,no_8x8dct = 1 AND no_cabac = 1 AND no_weightb = 1,no_8x8dct AND NOT no_deblock AND NOT no_mbtree AND ref = 9.00,2,0.3809523809523809,0.5714285714285714,0.2857142857142857,49
+random_20,180,26,no_8x8dct = 1 AND no_cabac = 1 AND no_weightb = 1,no_8x8dct AND no_cabac AND no_weightb,1,1.0,1.0,1.0,49
+2-wise,15,1,no_8x8dct = 1 AND no_cabac = 1 AND no_weightb = 1,NOT no_mixed_refs AND NOT no_weightb,2,0.4,0.25,1.0,49
+3-wise,48,5,no_8x8dct = 1 AND no_cabac = 1 AND no_weightb = 1,NOT no_8x8dct AND no_cabac AND no_weightb,4,1.0,1.0,1.0,49
+4-wise,99,12,no_8x8dct = 1 AND no_cabac = 1 AND no_weightb = 1,no_8x8dct AND no_mixed_refs AND no_weightb,0,0.6666666666666665,0.6,0.75,49
+full,1152,144,no_deblock = 1 AND no_mixed_refs = 1 AND no_weightb = 1,no_deblock AND no_mixed_refs AND no_weightb,0,1.0,1.0,1.0,4
+random_2,18,4,no_deblock = 1 AND no_mixed_refs = 1 AND no_weightb = 1,NOT no_mbtree AND no_mixed_refs,1,0.888888888888889,0.8,1.0,4
+random_5,45,7,no_deblock = 1 AND no_mixed_refs = 1 AND no_weightb = 1,no_deblock AND no_mixed_refs,0,0.7000000000000001,0.5384615384615384,1.0,4
+random_10,90,10,no_deblock = 1 AND no_mixed_refs = 1 AND no_weightb = 1,NOT no_mbtree AND no_mixed_refs,3,0.4375,0.3181818181818182,0.7,4
+random_20,180,27,no_deblock = 1 AND no_mixed_refs = 1 AND no_weightb = 1,no_deblock AND no_mixed_refs AND no_weightb,2,1.0,1.0,1.0,4
+2-wise,17,1,no_deblock = 1 AND no_mixed_refs = 1 AND no_weightb = 1,NOT no_fast_pskip AND NOT no_mixed_refs AND rc_lookahead = 20.00 AND ref = 9.00,0,0.0,0.0,0.0,4
+3-wise,43,5,no_deblock = 1 AND no_mixed_refs = 1 AND no_weightb = 1,no_mixed_refs AND no_weightb AND rc_lookahead != 60.00 AND ref != 9.00,0,0.5,0.4285714285714285,0.6,4
+4-wise,99,10,no_deblock = 1 AND no_mixed_refs = 1 AND no_weightb = 1,NOT no_8x8dct AND NOT no_fast_pskip AND ref != 1.00,3,0.1481481481481481,0.1176470588235294,0.2,4
+full,1152,144,no_deblock = 1 AND no_fast_pskip = 1 AND no_weightb = 1,no_deblock AND no_fast_pskip AND no_weightb,0,1.0,1.0,1.0,50
+random_2,18,2,no_deblock = 1 AND no_fast_pskip = 1 AND no_weightb = 1,NOT no_deblock AND no_fast_pskip,3,1.0,1.0,1.0,50
+random_5,45,3,no_deblock = 1 AND no_fast_pskip = 1 AND no_weightb = 1,no_8x8dct,2,0.2,0.1176470588235294,0.6666666666666666,50
+random_10,90,14,no_deblock = 1 AND no_fast_pskip = 1 AND no_weightb = 1,no_cabac AND NOT no_deblock AND no_weightb,2,0.64,0.7272727272727273,0.5714285714285714,50
+random_20,180,21,no_deblock = 1 AND no_fast_pskip = 1 AND no_weightb = 1,no_fast_pskip AND no_weightb,0,0.626865671641791,0.4565217391304347,1.0,50
+2-wise,18,4,no_deblock = 1 AND no_fast_pskip = 1 AND no_weightb = 1,no_deblock AND ref != 1.00,1,0.6153846153846153,0.4444444444444444,1.0,50
+3-wise,44,7,no_deblock = 1 AND no_fast_pskip = 1 AND no_weightb = 1,NOT no_8x8dct AND no_fast_pskip AND no_weightb,0,0.75,0.6666666666666666,0.8571428571428571,50
+4-wise,97,13,no_deblock = 1 AND no_fast_pskip = 1 AND no_weightb = 1,no_deblock AND no_fast_pskip,3,0.7647058823529412,0.6190476190476191,1.0,50
+full,1152,144,no_8x8dct = 1 AND no_deblock = 1 AND no_mbtree = 1,no_8x8dct AND no_deblock AND no_mbtree,1,1.0,1.0,1.0,51
+random_2,18,1,no_8x8dct = 1 AND no_deblock = 1 AND no_mbtree = 1,no_deblock AND no_weightb,1,0.5,0.3333333333333333,1.0,51
+random_5,45,7,no_8x8dct = 1 AND no_deblock = 1 AND no_mbtree = 1,no_8x8dct AND no_deblock AND NOT no_fast_pskip AND no_mixed_refs AND ref = 5.00,2,0.2,0.3333333333333333,0.1428571428571428,51
+random_10,90,7,no_8x8dct = 1 AND no_deblock = 1 AND no_mbtree = 1,NOT no_cabac AND NOT no_fast_pskip AND ref != 1.00,3,0.3157894736842105,0.25,0.4285714285714285,51
+random_20,180,22,no_8x8dct = 1 AND no_deblock = 1 AND no_mbtree = 1,no_8x8dct AND no_fast_pskip AND ref != 1.00,2,0.4166666666666666,0.3846153846153846,0.4545454545454545,51
+2-wise,20,2,no_8x8dct = 1 AND no_deblock = 1 AND no_mbtree = 1,no_8x8dct AND NOT no_cabac,1,0.8,0.6666666666666666,1.0,51
+3-wise,44,9,no_8x8dct = 1 AND no_deblock = 1 AND no_mbtree = 1,no_mbtree AND ref != 1.00,4,0.5833333333333334,0.4666666666666667,0.7777777777777778,51
+4-wise,103,13,no_8x8dct = 1 AND no_deblock = 1 AND no_mbtree = 1,no_8x8dct AND no_deblock AND no_mbtree,1,1.0,1.0,1.0,51
+full,1152,144,no_cabac = 1 AND no_deblock = 1 AND no_weightb = 1,no_cabac AND no_deblock AND no_weightb,0,1.0,1.0,1.0,52
+random_2,18,3,no_cabac = 1 AND no_deblock = 1 AND no_weightb = 1,no_fast_pskip AND NOT no_mbtree,0,0.3333333333333333,0.3333333333333333,0.3333333333333333,52
+random_5,45,7,no_cabac = 1 AND no_deblock = 1 AND no_weightb = 1,no_deblock AND no_mbtree,3,0.3809523809523809,0.2857142857142857,0.5714285714285714,52
+random_10,90,17,no_cabac = 1 AND no_deblock = 1 AND no_weightb = 1,no_cabac AND no_deblock AND no_weightb,0,1.0,1.0,1.0,52
+random_20,180,31,no_cabac = 1 AND no_deblock = 1 AND no_weightb = 1,no_cabac AND no_weightb,2,0.6966292134831461,0.5344827586206896,1.0,52
+2-wise,13,2,no_cabac = 1 AND no_deblock = 1 AND no_weightb = 1,no_deblock AND no_weightb AND ref = 1.00,0,0.5,0.5,0.5,52
+3-wise,38,4,no_cabac = 1 AND no_deblock = 1 AND no_weightb = 1,NOT no_8x8dct AND no_mbtree AND rc_lookahead != 60.00,4,0.3636363636363636,0.2857142857142857,0.5,52
+4-wise,101,14,no_cabac = 1 AND no_deblock = 1 AND no_weightb = 1,no_cabac AND no_fast_pskip,0,0.4210526315789474,0.3333333333333333,0.5714285714285714,52
+full,1152,144,no_fast_pskip = 1 AND no_mbtree = 1 AND no_mixed_refs = 1,no_fast_pskip AND no_mbtree AND no_mixed_refs,0,1.0,1.0,1.0,53
+random_2,18,2,no_fast_pskip = 1 AND no_mbtree = 1 AND no_mixed_refs = 1,NOT no_8x8dct AND no_fast_pskip AND no_mbtree,1,0.8,0.6666666666666666,1.0,53
+random_5,45,8,no_fast_pskip = 1 AND no_mbtree = 1 AND no_mixed_refs = 1,NOT no_deblock AND no_fast_pskip AND no_mbtree,2,0.6666666666666666,0.7142857142857143,0.625,53
+random_10,90,16,no_fast_pskip = 1 AND no_mbtree = 1 AND no_mixed_refs = 1,no_fast_pskip AND no_mbtree AND no_mixed_refs,0,1.0,1.0,1.0,53
+random_20,180,30,no_fast_pskip = 1 AND no_mbtree = 1 AND no_mixed_refs = 1,no_fast_pskip AND no_mbtree AND no_mixed_refs,4,1.0,1.0,1.0,53
+2-wise,16,2,no_fast_pskip = 1 AND no_mbtree = 1 AND no_mixed_refs = 1,NOT no_cabac AND no_deblock AND no_mbtree AND rc_lookahead != 20.00 AND ref != 1.00,0,0.4,0.3333333333333333,0.5,53
+3-wise,43,8,no_fast_pskip = 1 AND no_mbtree = 1 AND no_mixed_refs = 1,no_fast_pskip AND ref != 9.00,3,0.5,0.4166666666666667,0.625,53
+4-wise,97,11,no_fast_pskip = 1 AND no_mbtree = 1 AND no_mixed_refs = 1,no_cabac AND NOT no_deblock,1,0.1538461538461538,0.1071428571428571,0.2727272727272727,53
+full,1152,144,no_8x8dct = 1 AND no_cabac = 1 AND no_deblock = 1,no_8x8dct AND no_cabac AND no_deblock,0,1.0,1.0,1.0,54
+random_2,18,4,no_8x8dct = 1 AND no_cabac = 1 AND no_deblock = 1,no_8x8dct AND NOT no_deblock,4,0.888888888888889,0.8,1.0,54
+random_5,45,7,no_8x8dct = 1 AND no_cabac = 1 AND no_deblock = 1,no_cabac AND ref != 1.00,4,0.631578947368421,0.5,0.8571428571428571,54
+random_10,90,10,no_8x8dct = 1 AND no_cabac = 1 AND no_deblock = 1,no_8x8dct AND NOT no_fast_pskip AND no_weightb,0,0.3478260869565217,0.3076923076923077,0.4,54
+random_20,180,27,no_8x8dct = 1 AND no_cabac = 1 AND no_deblock = 1,no_8x8dct AND no_cabac AND no_deblock,1,1.0,1.0,1.0,54
+2-wise,18,2,no_8x8dct = 1 AND no_cabac = 1 AND no_deblock = 1,NOT no_mixed_refs AND rc_lookahead != 20.00,2,0.3333333333333333,0.25,0.5,54
+3-wise,39,4,no_8x8dct = 1 AND no_cabac = 1 AND no_deblock = 1,NOT no_cabac AND NOT no_deblock AND NOT no_fast_pskip AND rc_lookahead != 20.00,4,0.6666666666666665,0.6,0.75,54
+4-wise,103,11,no_8x8dct = 1 AND no_cabac = 1 AND no_deblock = 1,no_cabac AND no_deblock,1,0.6111111111111112,0.44,1.0,54
+full,1152,144,no_cabac = 1 AND no_deblock = 1 AND no_fast_pskip = 1,no_cabac AND no_deblock AND no_fast_pskip,0,1.0,1.0,1.0,55
+random_2,18,2,no_cabac = 1 AND no_deblock = 1 AND no_fast_pskip = 1,no_mixed_refs AND rc_lookahead != 20.00 AND ref != 1.00,0,0.6666666666666666,0.5,1.0,55
+random_5,45,9,no_cabac = 1 AND no_deblock = 1 AND no_fast_pskip = 1,no_cabac AND no_deblock AND no_fast_pskip,1,1.0,1.0,1.0,55
+random_10,90,11,no_cabac = 1 AND no_deblock = 1 AND no_fast_pskip = 1,no_cabac AND no_deblock AND no_fast_pskip,2,1.0,1.0,1.0,55
+random_20,180,19,no_cabac = 1 AND no_deblock = 1 AND no_fast_pskip = 1,NOT no_cabac AND no_deblock AND no_fast_pskip,2,1.0,1.0,1.0,55
+2-wise,14,1,no_cabac = 1 AND no_deblock = 1 AND no_fast_pskip = 1,no_deblock AND NOT no_mbtree,2,0.5,0.3333333333333333,1.0,55
+3-wise,45,5,no_cabac = 1 AND no_deblock = 1 AND no_fast_pskip = 1,no_cabac AND no_deblock AND NOT no_mixed_refs,2,0.5,0.4285714285714285,0.6,55
+4-wise,95,9,no_cabac = 1 AND no_deblock = 1 AND no_fast_pskip = 1,no_fast_pskip AND ref != 1.00,1,0.4210526315789473,0.2758620689655172,0.8888888888888888,55
+full,1152,144,no_8x8dct = 1 AND no_cabac = 1 AND no_weightb = 1,no_8x8dct AND no_cabac AND no_weightb,0,1.0,1.0,1.0,56
+random_2,18,3,no_8x8dct = 1 AND no_cabac = 1 AND no_weightb = 1,NOT no_fast_pskip AND no_weightb,2,0.2857142857142857,0.25,0.3333333333333333,56
+random_5,45,5,no_8x8dct = 1 AND no_cabac = 1 AND no_weightb = 1,NOT no_mbtree AND NOT no_mixed_refs AND NOT no_weightb,0,0.6,0.6,0.6,56
+random_10,90,8,no_8x8dct = 1 AND no_cabac = 1 AND no_weightb = 1,NOT no_8x8dct AND no_cabac AND rc_lookahead != 20.00 AND ref = 5.00,2,0.7000000000000001,0.5833333333333334,0.875,56
+random_20,180,16,no_8x8dct = 1 AND no_cabac = 1 AND no_weightb = 1,no_cabac AND rc_lookahead = 40.00,0,0.2926829268292683,0.24,0.375,56
+2-wise,17,2,no_8x8dct = 1 AND no_cabac = 1 AND no_weightb = 1,no_mbtree AND NOT no_weightb AND ref != 1.00,0,0.6666666666666666,0.5,1.0,56
+3-wise,38,4,no_8x8dct = 1 AND no_cabac = 1 AND no_weightb = 1,no_cabac AND no_mbtree AND rc_lookahead != 60.00,3,0.6,0.5,0.75,56
+4-wise,102,15,no_8x8dct = 1 AND no_cabac = 1 AND no_weightb = 1,no_8x8dct AND no_cabac AND NOT no_mixed_refs,2,0.625,0.5882352941176471,0.6666666666666666,56
+full,1152,144,no_8x8dct = 1 AND no_cabac = 1 AND no_mixed_refs = 1,no_8x8dct AND no_cabac AND no_mixed_refs,0,1.0,1.0,1.0,57
+random_2,18,3,no_8x8dct = 1 AND no_cabac = 1 AND no_mixed_refs = 1,NOT no_mbtree AND rc_lookahead != 60.00 AND ref != 9.00,1,0.2857142857142857,0.25,0.3333333333333333,57
+random_5,45,4,no_8x8dct = 1 AND no_cabac = 1 AND no_mixed_refs = 1,no_8x8dct AND no_fast_pskip,0,0.4705882352941176,0.3076923076923077,1.0,57
+random_10,90,9,no_8x8dct = 1 AND no_cabac = 1 AND no_mixed_refs = 1,no_8x8dct AND no_mixed_refs,3,0.5294117647058824,0.36,1.0,57
+random_20,180,20,no_8x8dct = 1 AND no_cabac = 1 AND no_mixed_refs = 1,no_cabac AND no_mixed_refs,0,0.6451612903225806,0.4761904761904761,1.0,57
+2-wise,16,1,no_8x8dct = 1 AND no_cabac = 1 AND no_mixed_refs = 1,no_8x8dct AND NOT no_cabac AND no_fast_pskip AND rc_lookahead = 20.00,0,0.0,0.0,0.0,57
+3-wise,40,8,no_8x8dct = 1 AND no_cabac = 1 AND no_mixed_refs = 1,no_8x8dct AND no_cabac AND no_mixed_refs,4,1.0,1.0,1.0,57
+4-wise,96,12,no_8x8dct = 1 AND no_cabac = 1 AND no_mixed_refs = 1,no_8x8dct AND no_cabac AND no_mixed_refs,3,1.0,1.0,1.0,57
+full,1152,144,no_mbtree = 1 AND no_mixed_refs = 1 AND no_weightb = 1,no_mbtree AND no_mixed_refs AND no_weightb,2,1.0,1.0,1.0,58
+random_2,18,3,no_mbtree = 1 AND no_mixed_refs = 1 AND no_weightb = 1,no_mixed_refs AND NOT no_weightb,0,0.8571428571428571,0.75,1.0,58
+random_5,45,5,no_mbtree = 1 AND no_mixed_refs = 1 AND no_weightb = 1,no_mbtree AND no_weightb AND ref != 1.00,3,0.5714285714285714,0.4444444444444444,0.8,58
+random_10,90,7,no_mbtree = 1 AND no_mixed_refs = 1 AND no_weightb = 1,NOT no_cabac AND NOT no_mbtree AND rc_lookahead != 60.00,0,0.2,0.1538461538461538,0.2857142857142857,58
+random_20,180,21,no_mbtree = 1 AND no_mixed_refs = 1 AND no_weightb = 1,no_mbtree AND no_mixed_refs AND no_weightb,0,1.0,1.0,1.0,58
+3-wise,42,4,no_mbtree = 1 AND no_mixed_refs = 1 AND no_weightb = 1,no_mbtree AND rc_lookahead != 20.00,4,0.5,0.3333333333333333,1.0,58
+4-wise,100,12,no_mbtree = 1 AND no_mixed_refs = 1 AND no_weightb = 1,NOT no_8x8dct AND NOT no_deblock,3,0.2564102564102564,0.1851851851851851,0.4166666666666667,58
+full,1152,144,no_fast_pskip = 1 AND no_mbtree = 1 AND no_mixed_refs = 1,no_fast_pskip AND no_mbtree AND no_mixed_refs,1,1.0,1.0,1.0,59
+random_2,18,5,no_fast_pskip = 1 AND no_mbtree = 1 AND no_mixed_refs = 1,no_fast_pskip AND no_weightb,1,0.7272727272727272,0.6666666666666666,0.8,59
+random_5,45,7,no_fast_pskip = 1 AND no_mbtree = 1 AND no_mixed_refs = 1,no_mbtree AND no_mixed_refs,0,0.8750000000000001,0.7777777777777778,1.0,59
+random_10,90,12,no_fast_pskip = 1 AND no_mbtree = 1 AND no_mixed_refs = 1,NOT no_deblock AND no_mbtree AND no_mixed_refs,1,0.6666666666666666,0.6666666666666666,0.6666666666666666,59
+random_20,180,19,no_fast_pskip = 1 AND no_mbtree = 1 AND no_mixed_refs = 1,NOT no_8x8dct AND no_fast_pskip AND no_mbtree,2,0.4615384615384615,0.45,0.4736842105263157,59
+2-wise,15,1,no_fast_pskip = 1 AND no_mbtree = 1 AND no_mixed_refs = 1,NOT no_8x8dct AND NOT no_fast_pskip AND no_weightb,3,0.5,0.3333333333333333,1.0,59
+3-wise,43,7,no_fast_pskip = 1 AND no_mbtree = 1 AND no_mixed_refs = 1,no_fast_pskip AND no_mixed_refs,1,0.6666666666666666,0.5,1.0,59
+4-wise,101,14,no_fast_pskip = 1 AND no_mbtree = 1 AND no_mixed_refs = 1,NOT no_deblock AND NOT no_weightb AND rc_lookahead = 40.00 AND ref != 1.00,0,0.1999999999999999,0.1875,0.2142857142857142,59
+full,1152,144,no_cabac = 1 AND no_fast_pskip = 1 AND no_mixed_refs = 1,no_cabac AND no_fast_pskip AND no_mixed_refs,2,1.0,1.0,1.0,5
+random_2,18,2,no_cabac = 1 AND no_fast_pskip = 1 AND no_mixed_refs = 1,no_cabac AND no_fast_pskip,3,1.0,1.0,1.0,5
+random_5,45,6,no_cabac = 1 AND no_fast_pskip = 1 AND no_mixed_refs = 1,NOT no_cabac AND no_mixed_refs AND ref != 9.00,0,0.5714285714285715,0.5,0.6666666666666666,5
+random_10,90,10,no_cabac = 1 AND no_fast_pskip = 1 AND no_mixed_refs = 1,no_8x8dct AND no_cabac AND no_fast_pskip,0,0.8000000000000002,0.8,0.8,5
+random_20,180,14,no_cabac = 1 AND no_fast_pskip = 1 AND no_mixed_refs = 1,no_cabac AND no_mixed_refs,2,0.5283018867924528,0.358974358974359,1.0,5
+2-wise,16,4,no_cabac = 1 AND no_fast_pskip = 1 AND no_mixed_refs = 1,NOT no_deblock AND no_mixed_refs,3,0.888888888888889,0.8,1.0,5
+3-wise,42,7,no_cabac = 1 AND no_fast_pskip = 1 AND no_mixed_refs = 1,no_cabac AND no_fast_pskip AND no_mixed_refs,1,1.0,1.0,1.0,5
+4-wise,95,11,no_cabac = 1 AND no_fast_pskip = 1 AND no_mixed_refs = 1,no_mixed_refs AND ref != 1.00,0,0.3720930232558139,0.25,0.7272727272727273,5
+full,1152,144,no_8x8dct = 1 AND no_mixed_refs = 1 AND no_weightb = 1,no_8x8dct AND no_mixed_refs AND no_weightb,0,1.0,1.0,1.0,60
+random_2,18,1,no_8x8dct = 1 AND no_mixed_refs = 1 AND no_weightb = 1,NOT no_deblock AND NOT no_fast_pskip AND no_mbtree,0,0.5,0.3333333333333333,1.0,60
+random_5,45,3,no_8x8dct = 1 AND no_mixed_refs = 1 AND no_weightb = 1,no_8x8dct AND no_fast_pskip,0,0.3333333333333333,0.2222222222222222,0.6666666666666666,60
+random_10,90,11,no_8x8dct = 1 AND no_mixed_refs = 1 AND no_weightb = 1,no_8x8dct AND no_weightb,4,0.6875000000000001,0.5238095238095238,1.0,60
+random_20,180,18,no_8x8dct = 1 AND no_mixed_refs = 1 AND no_weightb = 1,NOT no_8x8dct AND no_mixed_refs AND no_weightb,0,1.0,1.0,1.0,60
+2-wise,16,3,no_8x8dct = 1 AND no_mixed_refs = 1 AND no_weightb = 1,no_8x8dct AND no_fast_pskip,1,0.5714285714285715,0.5,0.6666666666666666,60
+3-wise,46,5,no_8x8dct = 1 AND no_mixed_refs = 1 AND no_weightb = 1,no_8x8dct AND no_mixed_refs AND no_weightb,2,1.0,1.0,1.0,60
+4-wise,103,13,no_8x8dct = 1 AND no_mixed_refs = 1 AND no_weightb = 1,no_cabac AND no_weightb AND ref != 1.00,2,0.3333333333333333,0.2941176470588235,0.3846153846153846,60
+full,1152,144,no_8x8dct = 1 AND no_deblock = 1 AND no_fast_pskip = 1,no_8x8dct AND no_deblock AND no_fast_pskip,0,1.0,1.0,1.0,61
+random_2,18,4,no_8x8dct = 1 AND no_deblock = 1 AND no_fast_pskip = 1,no_8x8dct AND no_cabac,1,0.75,0.75,0.75,61
+random_5,45,3,no_8x8dct = 1 AND no_deblock = 1 AND no_fast_pskip = 1,NOT no_8x8dct AND no_mbtree AND no_weightb,0,0.3636363636363636,0.25,0.6666666666666666,61
+random_10,90,10,no_8x8dct = 1 AND no_deblock = 1 AND no_fast_pskip = 1,no_8x8dct AND NOT no_weightb AND rc_lookahead != 20.00 AND ref != 1.00,0,0.2857142857142856,0.2727272727272727,0.3,61
+random_20,180,25,no_8x8dct = 1 AND no_deblock = 1 AND no_fast_pskip = 1,no_8x8dct AND no_fast_pskip AND rc_lookahead != 20.00,4,0.6428571428571428,0.5806451612903226,0.72,61
+2-wise,21,5,no_8x8dct = 1 AND no_deblock = 1 AND no_fast_pskip = 1,no_8x8dct AND ref = 5.00,1,0.6666666666666666,0.5714285714285714,0.8,61
+3-wise,42,6,no_8x8dct = 1 AND no_deblock = 1 AND no_fast_pskip = 1,NOT no_mixed_refs AND rc_lookahead != 20.00 AND ref != 1.00,3,0.25,0.2,0.3333333333333333,61
+4-wise,98,14,no_8x8dct = 1 AND no_deblock = 1 AND no_fast_pskip = 1,no_8x8dct AND no_deblock,2,0.7000000000000001,0.5384615384615384,1.0,61
+full,1152,144,no_8x8dct = 1 AND no_deblock = 1 AND no_mixed_refs = 1,no_8x8dct AND no_deblock AND no_mixed_refs,0,1.0,1.0,1.0,62
+random_2,18,3,no_8x8dct = 1 AND no_deblock = 1 AND no_mixed_refs = 1,no_cabac AND no_deblock AND ref != 1.00,1,0.2857142857142857,0.25,0.3333333333333333,62
+random_5,45,4,no_8x8dct = 1 AND no_deblock = 1 AND no_mixed_refs = 1,no_deblock AND no_mixed_refs,0,0.4444444444444445,0.2857142857142857,1.0,62
+random_10,90,13,no_8x8dct = 1 AND no_deblock = 1 AND no_mixed_refs = 1,no_deblock AND NOT no_mixed_refs,2,0.7222222222222222,0.5652173913043478,1.0,62
+random_20,180,19,no_8x8dct = 1 AND no_deblock = 1 AND no_mixed_refs = 1,NOT no_mbtree AND no_mixed_refs AND no_weightb AND ref != 1.00,4,0.0909090909090909,0.08,0.1052631578947368,62
+3-wise,39,8,no_8x8dct = 1 AND no_deblock = 1 AND no_mixed_refs = 1,no_8x8dct AND no_deblock AND no_mixed_refs,4,1.0,1.0,1.0,62
+4-wise,101,14,no_8x8dct = 1 AND no_deblock = 1 AND no_mixed_refs = 1,no_8x8dct AND no_cabac AND ref != 1.00,0,0.3636363636363636,0.3157894736842105,0.4285714285714285,62
+full,1152,144,no_deblock = 1 AND no_mbtree = 1 AND no_mixed_refs = 1,no_deblock AND no_mbtree AND no_mixed_refs,0,1.0,1.0,1.0,63
+random_5,45,5,no_deblock = 1 AND no_mbtree = 1 AND no_mixed_refs = 1,no_cabac AND NOT no_mixed_refs AND no_weightb,1,0.5,0.4285714285714285,0.6,63
+random_10,90,13,no_deblock = 1 AND no_mbtree = 1 AND no_mixed_refs = 1,no_deblock AND no_mbtree AND no_mixed_refs,3,1.0,1.0,1.0,63
+random_20,180,22,no_deblock = 1 AND no_mbtree = 1 AND no_mixed_refs = 1,no_deblock AND no_mbtree AND no_mixed_refs,2,1.0,1.0,1.0,63
+2-wise,17,1,no_deblock = 1 AND no_mbtree = 1 AND no_mixed_refs = 1,NOT no_cabac AND NOT no_mixed_refs AND no_weightb,3,0.6666666666666666,0.5,1.0,63
+3-wise,41,5,no_deblock = 1 AND no_mbtree = 1 AND no_mixed_refs = 1,NOT no_8x8dct AND no_mbtree,3,0.5333333333333333,0.4,0.8,63
+4-wise,109,14,no_deblock = 1 AND no_mbtree = 1 AND no_mixed_refs = 1,NOT no_cabac AND NOT no_weightb,2,0.2272727272727272,0.1666666666666666,0.3571428571428571,63
+full,1152,144,no_cabac = 1 AND no_deblock = 1 AND no_mixed_refs = 1,no_cabac AND no_deblock AND no_mixed_refs,0,1.0,1.0,1.0,64
+random_2,18,2,no_cabac = 1 AND no_deblock = 1 AND no_mixed_refs = 1,NOT no_cabac AND rc_lookahead != 60.00,1,0.8,0.6666666666666666,1.0,64
+random_5,45,2,no_cabac = 1 AND no_deblock = 1 AND no_mixed_refs = 1,NOT no_cabac AND no_fast_pskip AND no_weightb,2,0.3333333333333333,0.2,1.0,64
+random_10,90,13,no_cabac = 1 AND no_deblock = 1 AND no_mixed_refs = 1,no_deblock AND no_mixed_refs,4,0.7647058823529412,0.6190476190476191,1.0,64
+random_20,180,25,no_cabac = 1 AND no_deblock = 1 AND no_mixed_refs = 1,no_cabac AND no_deblock AND no_mixed_refs,2,1.0,1.0,1.0,64
+2-wise,15,1,no_cabac = 1 AND no_deblock = 1 AND no_mixed_refs = 1,no_cabac AND no_weightb AND rc_lookahead != 20.00,0,0.0,0.0,0.0,64
+3-wise,44,4,no_cabac = 1 AND no_deblock = 1 AND no_mixed_refs = 1,no_fast_pskip AND NOT no_weightb,4,0.3333333333333333,0.25,0.5,64
+4-wise,98,12,no_cabac = 1 AND no_deblock = 1 AND no_mixed_refs = 1,no_deblock AND no_mixed_refs,1,0.6486486486486487,0.48,1.0,64
+full,1152,144,no_8x8dct = 1 AND no_cabac = 1 AND no_mixed_refs = 1,no_8x8dct AND no_cabac AND no_mixed_refs,1,1.0,1.0,1.0,65
+random_2,18,4,no_8x8dct = 1 AND no_cabac = 1 AND no_mixed_refs = 1,no_mbtree AND no_mixed_refs AND rc_lookahead != 60.00,1,0.75,0.75,0.75,65
+random_5,45,7,no_8x8dct = 1 AND no_cabac = 1 AND no_mixed_refs = 1,NOT no_deblock AND NOT no_weightb,2,0.1,0.0769230769230769,0.1428571428571428,65
+random_10,90,16,no_8x8dct = 1 AND no_cabac = 1 AND no_mixed_refs = 1,no_8x8dct AND no_cabac AND no_mixed_refs,3,1.0,1.0,1.0,65
+random_20,180,19,no_8x8dct = 1 AND no_cabac = 1 AND no_mixed_refs = 1,no_8x8dct AND no_cabac AND no_mixed_refs,2,1.0,1.0,1.0,65
+2-wise,15,3,no_8x8dct = 1 AND no_cabac = 1 AND no_mixed_refs = 1,no_mixed_refs AND no_weightb AND ref != 9.00,2,0.5714285714285715,0.5,0.6666666666666666,65
+3-wise,43,9,no_8x8dct = 1 AND no_cabac = 1 AND no_mixed_refs = 1,NOT no_fast_pskip AND NOT no_mbtree AND no_weightb,4,0.4615384615384615,0.75,0.3333333333333333,65
+4-wise,101,11,no_8x8dct = 1 AND no_cabac = 1 AND no_mixed_refs = 1,no_8x8dct AND ref = 5.00,3,0.3636363636363636,0.2424242424242424,0.7272727272727273,65
+full,1152,144,no_cabac = 1 AND no_mbtree = 1 AND no_weightb = 1,no_cabac AND no_mbtree AND no_weightb,0,1.0,1.0,1.0,66
+random_2,18,4,no_cabac = 1 AND no_mbtree = 1 AND no_weightb = 1,NOT no_deblock AND no_weightb,3,0.4,0.3333333333333333,0.5,66
+random_5,45,4,no_cabac = 1 AND no_mbtree = 1 AND no_weightb = 1,no_cabac AND no_mbtree AND ref = 5.00,0,0.8,0.6666666666666666,1.0,66
+random_10,90,5,no_cabac = 1 AND no_mbtree = 1 AND no_weightb = 1,no_deblock AND rc_lookahead != 20.00 AND ref != 1.00,0,0.25,0.1481481481481481,0.8,66
+random_20,180,20,no_cabac = 1 AND no_mbtree = 1 AND no_weightb = 1,no_cabac AND ref != 9.00,3,0.3209876543209876,0.2131147540983606,0.65,66
+2-wise,16,1,no_cabac = 1 AND no_mbtree = 1 AND no_weightb = 1,no_8x8dct AND no_fast_pskip AND no_mbtree,0,0.0,0.0,0.0,66
+3-wise,43,8,no_cabac = 1 AND no_mbtree = 1 AND no_weightb = 1,no_cabac AND NOT no_deblock,2,0.631578947368421,0.5454545454545454,0.75,66
+4-wise,102,8,no_cabac = 1 AND no_mbtree = 1 AND no_weightb = 1,NOT no_cabac AND NOT no_deblock AND no_mixed_refs,0,0.4166666666666667,0.3125,0.625,66
+full,1152,144,no_deblock = 1 AND no_mbtree = 1 AND no_weightb = 1,no_deblock AND no_mbtree AND no_weightb,0,1.0,1.0,1.0,67
+random_5,45,6,no_deblock = 1 AND no_mbtree = 1 AND no_weightb = 1,no_deblock AND NOT no_fast_pskip AND no_weightb AND ref != 1.00,2,0.5,0.5,0.5,67
+random_10,90,12,no_deblock = 1 AND no_mbtree = 1 AND no_weightb = 1,no_deblock AND no_mbtree AND no_weightb,4,1.0,1.0,1.0,67
+random_20,180,29,no_deblock = 1 AND no_mbtree = 1 AND no_weightb = 1,no_deblock AND no_mbtree AND no_weightb,0,1.0,1.0,1.0,67
+2-wise,18,2,no_deblock = 1 AND no_mbtree = 1 AND no_weightb = 1,NOT no_cabac AND NOT no_fast_pskip AND NOT no_mixed_refs,2,0.6666666666666666,0.5,1.0,67
+3-wise,39,2,no_deblock = 1 AND no_mbtree = 1 AND no_weightb = 1,no_deblock AND no_mbtree,2,0.4444444444444445,0.2857142857142857,1.0,67
+4-wise,101,11,no_deblock = 1 AND no_mbtree = 1 AND no_weightb = 1,no_deblock AND no_mbtree,0,0.6111111111111112,0.44,1.0,67
+full,1152,144,no_8x8dct = 1 AND no_fast_pskip = 1 AND no_mbtree = 1,no_8x8dct AND no_fast_pskip AND no_mbtree,1,1.0,1.0,1.0,68
+random_2,18,2,no_8x8dct = 1 AND no_fast_pskip = 1 AND no_mbtree = 1,NOT no_fast_pskip AND NOT no_weightb,0,0.0,0.0,0.0,68
+random_5,45,4,no_8x8dct = 1 AND no_fast_pskip = 1 AND no_mbtree = 1,no_fast_pskip AND rc_lookahead != 60.00,4,0.3529411764705882,0.2307692307692307,0.75,68
+random_10,90,9,no_8x8dct = 1 AND no_fast_pskip = 1 AND no_mbtree = 1,no_8x8dct AND no_fast_pskip,1,0.5806451612903226,0.4090909090909091,1.0,68
+random_20,180,20,no_8x8dct = 1 AND no_fast_pskip = 1 AND no_mbtree = 1,no_8x8dct AND no_fast_pskip AND no_mbtree,1,1.0,1.0,1.0,68
+2-wise,18,1,no_8x8dct = 1 AND no_fast_pskip = 1 AND no_mbtree = 1,NOT no_mixed_refs AND NOT no_weightb,0,0.0,0.0,0.0,68
+3-wise,45,7,no_8x8dct = 1 AND no_fast_pskip = 1 AND no_mbtree = 1,no_fast_pskip AND no_mbtree AND ref = 5.00,4,0.7058823529411764,0.6,0.8571428571428571,68
+4-wise,102,15,no_8x8dct = 1 AND no_fast_pskip = 1 AND no_mbtree = 1,no_8x8dct AND no_fast_pskip AND no_mbtree,1,1.0,1.0,1.0,68
+full,1152,144,no_8x8dct = 1 AND no_cabac = 1 AND no_weightb = 1,no_8x8dct AND no_cabac AND no_weightb,0,1.0,1.0,1.0,69
+random_2,18,3,no_8x8dct = 1 AND no_cabac = 1 AND no_weightb = 1,no_8x8dct AND no_weightb,1,0.7499999999999999,0.6,1.0,69
+random_5,45,7,no_8x8dct = 1 AND no_cabac = 1 AND no_weightb = 1,no_mbtree AND no_weightb,2,0.6250000000000001,0.5555555555555556,0.7142857142857143,69
+random_10,90,13,no_8x8dct = 1 AND no_cabac = 1 AND no_weightb = 1,no_8x8dct AND NOT no_cabac AND no_weightb,3,1.0,1.0,1.0,69
+random_20,180,27,no_8x8dct = 1 AND no_cabac = 1 AND no_weightb = 1,no_8x8dct AND no_cabac AND no_weightb,2,1.0,1.0,1.0,69
+2-wise,15,1,no_8x8dct = 1 AND no_cabac = 1 AND no_weightb = 1,NOT no_8x8dct AND no_mixed_refs,1,0.3333333333333333,0.2,1.0,69
+3-wise,41,7,no_8x8dct = 1 AND no_cabac = 1 AND no_weightb = 1,no_8x8dct AND no_cabac AND no_weightb,2,1.0,1.0,1.0,69
+4-wise,102,14,no_8x8dct = 1 AND no_cabac = 1 AND no_weightb = 1,NOT no_8x8dct AND NOT no_weightb AND ref = 5.00,1,0.6666666666666666,0.6923076923076923,0.6428571428571429,69
+full,1152,144,no_deblock = 1 AND no_fast_pskip = 1 AND no_weightb = 1,no_deblock AND no_fast_pskip AND no_weightb,0,1.0,1.0,1.0,6
+random_2,18,3,no_deblock = 1 AND no_fast_pskip = 1 AND no_weightb = 1,no_fast_pskip AND no_weightb AND rc_lookahead != 20.00,0,0.8571428571428571,0.75,1.0,6
+random_5,45,6,no_deblock = 1 AND no_fast_pskip = 1 AND no_weightb = 1,no_deblock AND NOT no_weightb,1,0.6666666666666666,0.5,1.0,6
+random_10,90,15,no_deblock = 1 AND no_fast_pskip = 1 AND no_weightb = 1,NOT no_deblock AND no_fast_pskip AND no_weightb,4,1.0,1.0,1.0,6
+random_20,180,26,no_deblock = 1 AND no_fast_pskip = 1 AND no_weightb = 1,NOT no_deblock AND no_fast_pskip AND no_weightb,3,1.0,1.0,1.0,6
+2-wise,18,3,no_deblock = 1 AND no_fast_pskip = 1 AND no_weightb = 1,NOT no_mbtree AND no_weightb,4,0.5714285714285715,0.5,0.6666666666666666,6
+3-wise,41,6,no_deblock = 1 AND no_fast_pskip = 1 AND no_weightb = 1,no_deblock AND no_weightb,0,0.7499999999999999,0.6,1.0,6
+4-wise,103,15,no_deblock = 1 AND no_fast_pskip = 1 AND no_weightb = 1,no_deblock AND no_mbtree AND ref != 1.00,1,0.3125,0.2941176470588235,0.3333333333333333,6
+full,1152,144,no_8x8dct = 1 AND no_fast_pskip = 1 AND no_mixed_refs = 1,no_8x8dct AND no_fast_pskip AND no_mixed_refs,0,1.0,1.0,1.0,70
+random_2,18,2,no_8x8dct = 1 AND no_fast_pskip = 1 AND no_mixed_refs = 1,no_8x8dct AND no_mixed_refs,1,0.5714285714285715,0.4,1.0,70
+random_5,45,5,no_8x8dct = 1 AND no_fast_pskip = 1 AND no_mixed_refs = 1,no_fast_pskip AND NOT no_mbtree AND rc_lookahead != 20.00 AND ref != 1.00,2,0.5454545454545454,0.5,0.6,70
+random_10,90,9,no_8x8dct = 1 AND no_fast_pskip = 1 AND no_mixed_refs = 1,no_fast_pskip AND no_mixed_refs AND rc_lookahead != 60.00,2,0.5384615384615384,0.4117647058823529,0.7777777777777778,70
+random_20,180,28,no_8x8dct = 1 AND no_fast_pskip = 1 AND no_mixed_refs = 1,no_8x8dct AND no_mixed_refs,0,0.7000000000000001,0.5384615384615384,1.0,70
+3-wise,42,5,no_8x8dct = 1 AND no_fast_pskip = 1 AND no_mixed_refs = 1,no_8x8dct AND NOT no_deblock AND rc_lookahead != 20.00,1,0.4615384615384615,0.375,0.6,70
+4-wise,104,12,no_8x8dct = 1 AND no_fast_pskip = 1 AND no_mixed_refs = 1,no_8x8dct AND no_weightb,3,0.2702702702702703,0.2,0.4166666666666667,70
+full,1152,144,no_fast_pskip = 1 AND no_mixed_refs = 1 AND no_weightb = 1,no_fast_pskip AND no_mixed_refs AND no_weightb,0,1.0,1.0,1.0,71
+random_2,18,3,no_fast_pskip = 1 AND no_mixed_refs = 1 AND no_weightb = 1,NOT no_mbtree AND no_mixed_refs AND ref != 9.00,0,0.5714285714285715,0.5,0.6666666666666666,71
+random_5,45,5,no_fast_pskip = 1 AND no_mixed_refs = 1 AND no_weightb = 1,NOT no_deblock AND no_weightb AND rc_lookahead != 20.00,3,0.1818181818181818,0.1666666666666666,0.2,71
+random_10,90,5,no_fast_pskip = 1 AND no_mixed_refs = 1 AND no_weightb = 1,NOT no_fast_pskip AND NOT no_mbtree AND rc_lookahead = 40.00,1,0.1818181818181818,0.1666666666666666,0.2,71
+random_20,180,26,no_fast_pskip = 1 AND no_mixed_refs = 1 AND no_weightb = 1,no_fast_pskip AND no_mixed_refs AND rc_lookahead != 60.00,4,0.6909090909090909,0.6551724137931034,0.7307692307692307,71
+2-wise,17,1,no_fast_pskip = 1 AND no_mixed_refs = 1 AND no_weightb = 1,NOT no_cabac AND NOT no_mbtree,0,0.0,0.0,0.0,71
+3-wise,41,4,no_fast_pskip = 1 AND no_mixed_refs = 1 AND no_weightb = 1,no_weightb AND rc_lookahead != 60.00,2,0.3529411764705882,0.2307692307692307,0.75,71
+4-wise,99,13,no_fast_pskip = 1 AND no_mixed_refs = 1 AND no_weightb = 1,no_mixed_refs AND no_weightb,2,0.7027027027027027,0.5416666666666666,1.0,71
+full,1152,144,no_8x8dct = 1 AND no_cabac = 1 AND no_weightb = 1,no_8x8dct AND no_cabac AND no_weightb,0,1.0,1.0,1.0,72
+random_2,18,1,no_8x8dct = 1 AND no_cabac = 1 AND no_weightb = 1,NOT no_8x8dct AND NOT no_mixed_refs AND ref = 9.00,0,0.0,0.0,0.0,72
+random_5,45,5,no_8x8dct = 1 AND no_cabac = 1 AND no_weightb = 1,no_fast_pskip AND no_mbtree AND rc_lookahead != 20.00,2,0.1333333333333333,0.1,0.2,72
+random_10,90,13,no_8x8dct = 1 AND no_cabac = 1 AND no_weightb = 1,no_8x8dct AND NOT no_fast_pskip AND no_weightb,3,0.7500000000000001,0.8181818181818182,0.6923076923076923,72
+random_20,180,21,no_8x8dct = 1 AND no_cabac = 1 AND no_weightb = 1,no_cabac AND no_fast_pskip AND NOT no_mbtree,2,0.3181818181818182,0.3043478260869565,0.3333333333333333,72
+2-wise,16,1,no_8x8dct = 1 AND no_cabac = 1 AND no_weightb = 1,no_8x8dct AND NOT no_weightb AND rc_lookahead = 60.00,0,0.0,0.0,0.0,72
+3-wise,43,2,no_8x8dct = 1 AND no_cabac = 1 AND no_weightb = 1,no_deblock AND no_weightb,1,0.2857142857142857,0.1666666666666666,1.0,72
+4-wise,99,12,no_8x8dct = 1 AND no_cabac = 1 AND no_weightb = 1,no_8x8dct AND NOT no_fast_pskip,0,0.1578947368421052,0.1153846153846153,0.25,72
+full,1152,144,no_8x8dct = 1 AND no_deblock = 1 AND no_weightb = 1,no_8x8dct AND no_deblock AND no_weightb,1,1.0,1.0,1.0,73
+random_2,18,2,no_8x8dct = 1 AND no_deblock = 1 AND no_weightb = 1,no_cabac AND no_deblock AND no_mixed_refs,1,0.4,0.3333333333333333,0.5,73
+random_5,45,1,no_8x8dct = 1 AND no_deblock = 1 AND no_weightb = 1,NOT no_cabac AND NOT no_mixed_refs,0,0.2222222222222222,0.125,1.0,73
+random_10,90,11,no_8x8dct = 1 AND no_deblock = 1 AND no_weightb = 1,no_8x8dct AND NOT no_weightb AND rc_lookahead != 60.00,3,0.6086956521739131,0.5833333333333334,0.6363636363636364,73
+random_20,180,26,no_8x8dct = 1 AND no_deblock = 1 AND no_weightb = 1,no_8x8dct AND NOT no_deblock AND no_weightb,0,1.0,1.0,1.0,73
+2-wise,17,2,no_8x8dct = 1 AND no_deblock = 1 AND no_weightb = 1,no_8x8dct AND NOT no_deblock,1,0.6666666666666666,0.5,1.0,73
+3-wise,45,7,no_8x8dct = 1 AND no_deblock = 1 AND no_weightb = 1,no_deblock AND no_weightb,1,0.7777777777777778,0.6363636363636364,1.0,73
+4-wise,95,10,no_8x8dct = 1 AND no_deblock = 1 AND no_weightb = 1,no_8x8dct AND no_deblock AND rc_lookahead = 40.00,0,0.5925925925925927,0.4705882352941176,0.8,73
+full,1152,144,no_8x8dct = 1 AND no_cabac = 1 AND no_mixed_refs = 1,no_8x8dct AND no_cabac AND no_mixed_refs,0,1.0,1.0,1.0,74
+random_2,18,1,no_8x8dct = 1 AND no_cabac = 1 AND no_mixed_refs = 1,no_fast_pskip AND NOT no_mbtree AND ref = 5.00,3,0.2857142857142857,0.1666666666666666,1.0,74
+random_5,45,6,no_8x8dct = 1 AND no_cabac = 1 AND no_mixed_refs = 1,no_cabac AND NOT no_deblock AND NOT no_fast_pskip AND rc_lookahead != 20.00 AND ref != 9.00,2,0.2222222222222222,0.3333333333333333,0.1666666666666666,74
+random_10,90,11,no_8x8dct = 1 AND no_cabac = 1 AND no_mixed_refs = 1,no_cabac AND no_mixed_refs AND rc_lookahead != 60.00,0,0.6896551724137931,0.5555555555555556,0.9090909090909092,74
+random_20,180,22,no_8x8dct = 1 AND no_cabac = 1 AND no_mixed_refs = 1,no_8x8dct AND no_cabac AND no_mixed_refs,3,1.0,1.0,1.0,74
+2-wise,17,3,no_8x8dct = 1 AND no_cabac = 1 AND no_mixed_refs = 1,NOT no_fast_pskip AND no_mixed_refs,0,0.3333333333333333,0.3333333333333333,0.3333333333333333,74
+3-wise,48,7,no_8x8dct = 1 AND no_cabac = 1 AND no_mixed_refs = 1,no_deblock AND NOT no_fast_pskip AND ref != 1.00,3,0.4285714285714285,0.4285714285714285,0.4285714285714285,74
+4-wise,103,10,no_8x8dct = 1 AND no_cabac = 1 AND no_mixed_refs = 1,no_cabac AND no_mixed_refs,2,0.6060606060606061,0.4347826086956521,1.0,74
+full,1152,144,no_8x8dct = 1 AND no_cabac = 1 AND no_mbtree = 1,no_8x8dct AND no_cabac AND no_mbtree,0,1.0,1.0,1.0,75
+random_2,18,2,no_8x8dct = 1 AND no_cabac = 1 AND no_mbtree = 1,no_cabac AND no_mbtree,2,0.6666666666666666,0.5,1.0,75
+random_5,45,5,no_8x8dct = 1 AND no_cabac = 1 AND no_mbtree = 1,no_cabac AND rc_lookahead = 60.00,4,0.3636363636363636,0.3333333333333333,0.4,75
+random_10,90,11,no_8x8dct = 1 AND no_cabac = 1 AND no_mbtree = 1,no_8x8dct AND NOT no_cabac AND no_mbtree,0,1.0,1.0,1.0,75
+random_20,180,13,no_8x8dct = 1 AND no_cabac = 1 AND no_mbtree = 1,no_8x8dct AND no_mbtree AND NOT no_mixed_refs AND ref = 5.00,3,0.5,0.4210526315789473,0.6153846153846154,75
+3-wise,44,5,no_8x8dct = 1 AND no_cabac = 1 AND no_mbtree = 1,no_mixed_refs AND no_weightb,2,0.3157894736842105,0.2142857142857142,0.6,75
+4-wise,96,13,no_8x8dct = 1 AND no_cabac = 1 AND no_mbtree = 1,NOT no_fast_pskip AND no_mbtree,3,0.3589743589743589,0.2692307692307692,0.5384615384615384,75
+full,1152,144,no_fast_pskip = 1 AND no_mbtree = 1 AND no_mixed_refs = 1,no_fast_pskip AND no_mbtree AND no_mixed_refs,1,1.0,1.0,1.0,76
+random_2,18,1,no_fast_pskip = 1 AND no_mbtree = 1 AND no_mixed_refs = 1,rc_lookahead = 20.00,1,0.2857142857142857,0.1666666666666666,1.0,76
+random_5,45,9,no_fast_pskip = 1 AND no_mbtree = 1 AND no_mixed_refs = 1,no_fast_pskip AND no_mixed_refs,2,0.9,0.8181818181818182,1.0,76
+random_10,90,11,no_fast_pskip = 1 AND no_mbtree = 1 AND no_mixed_refs = 1,no_8x8dct AND no_deblock AND no_mbtree,0,0.4,0.3571428571428571,0.4545454545454545,76
+random_20,180,25,no_fast_pskip = 1 AND no_mbtree = 1 AND no_mixed_refs = 1,no_fast_pskip AND no_mbtree AND no_mixed_refs,1,1.0,1.0,1.0,76
+2-wise,17,4,no_fast_pskip = 1 AND no_mbtree = 1 AND no_mixed_refs = 1,no_cabac AND no_mbtree AND NOT no_weightb,2,0.2857142857142857,0.3333333333333333,0.25,76
+3-wise,48,9,no_fast_pskip = 1 AND no_mbtree = 1 AND no_mixed_refs = 1,no_fast_pskip AND no_mbtree AND no_mixed_refs,1,1.0,1.0,1.0,76
+4-wise,99,16,no_fast_pskip = 1 AND no_mbtree = 1 AND no_mixed_refs = 1,no_fast_pskip AND no_mbtree AND no_mixed_refs,1,1.0,1.0,1.0,76
+full,1152,144,no_8x8dct = 1 AND no_cabac = 1 AND no_mixed_refs = 1,no_8x8dct AND no_cabac AND no_mixed_refs,0,1.0,1.0,1.0,77
+random_2,18,1,no_8x8dct = 1 AND no_cabac = 1 AND no_mixed_refs = 1,no_mbtree AND no_mixed_refs,0,0.5,0.3333333333333333,1.0,77
+random_5,45,7,no_8x8dct = 1 AND no_cabac = 1 AND no_mixed_refs = 1,no_mixed_refs AND rc_lookahead != 60.00,3,0.56,0.3888888888888889,1.0,77
+random_10,90,13,no_8x8dct = 1 AND no_cabac = 1 AND no_mixed_refs = 1,no_8x8dct AND no_mbtree,0,0.4666666666666667,0.4117647058823529,0.5384615384615384,77
+random_20,180,24,no_8x8dct = 1 AND no_cabac = 1 AND no_mixed_refs = 1,no_8x8dct AND no_cabac AND no_mixed_refs,0,1.0,1.0,1.0,77
+2-wise,15,1,no_8x8dct = 1 AND no_cabac = 1 AND no_mixed_refs = 1,no_8x8dct AND no_cabac,1,0.6666666666666666,0.5,1.0,77
+3-wise,41,3,no_8x8dct = 1 AND no_cabac = 1 AND no_mixed_refs = 1,no_8x8dct AND NOT no_deblock AND no_fast_pskip AND rc_lookahead != 20.00,1,0.2222222222222222,0.1666666666666666,0.3333333333333333,77
+4-wise,95,13,no_8x8dct = 1 AND no_cabac = 1 AND no_mixed_refs = 1,no_8x8dct AND NOT no_cabac AND no_mixed_refs,3,1.0,1.0,1.0,77
+full,1152,144,no_8x8dct = 1 AND no_fast_pskip = 1 AND no_weightb = 1,no_8x8dct AND no_fast_pskip AND no_weightb,0,1.0,1.0,1.0,78
+random_2,18,2,no_8x8dct = 1 AND no_fast_pskip = 1 AND no_weightb = 1,no_8x8dct AND rc_lookahead != 20.00,0,0.4444444444444445,0.2857142857142857,1.0,78
+random_5,45,6,no_8x8dct = 1 AND no_fast_pskip = 1 AND no_weightb = 1,no_8x8dct AND no_fast_pskip AND rc_lookahead != 60.00,0,0.8571428571428571,0.75,1.0,78
+random_10,90,9,no_8x8dct = 1 AND no_fast_pskip = 1 AND no_weightb = 1,no_8x8dct AND no_fast_pskip,0,0.5806451612903226,0.4090909090909091,1.0,78
+random_20,180,24,no_8x8dct = 1 AND no_fast_pskip = 1 AND no_weightb = 1,NOT no_8x8dct AND no_mixed_refs AND no_weightb,2,0.6086956521739131,0.6363636363636364,0.5833333333333334,78
+2-wise,15,2,no_8x8dct = 1 AND no_fast_pskip = 1 AND no_weightb = 1,NOT no_cabac AND no_fast_pskip AND no_weightb,1,0.4,0.3333333333333333,0.5,78
+3-wise,42,4,no_8x8dct = 1 AND no_fast_pskip = 1 AND no_weightb = 1,NOT no_8x8dct AND no_fast_pskip AND no_weightb,3,1.0,1.0,1.0,78
+4-wise,102,11,no_8x8dct = 1 AND no_fast_pskip = 1 AND no_weightb = 1,no_8x8dct AND no_fast_pskip,0,0.5641025641025641,0.3928571428571428,1.0,78
+full,1152,144,no_8x8dct = 1 AND no_mbtree = 1 AND no_mixed_refs = 1,no_8x8dct AND no_mbtree AND no_mixed_refs,0,1.0,1.0,1.0,79
+random_5,45,8,no_8x8dct = 1 AND no_mbtree = 1 AND no_mixed_refs = 1,NOT no_mixed_refs,2,0.5517241379310345,0.3809523809523809,1.0,79
+random_10,90,14,no_8x8dct = 1 AND no_mbtree = 1 AND no_mixed_refs = 1,NOT no_fast_pskip AND no_mbtree,1,0.4390243902439024,0.3333333333333333,0.6428571428571429,79
+random_20,180,25,no_8x8dct = 1 AND no_mbtree = 1 AND no_mixed_refs = 1,no_8x8dct AND no_mbtree AND NOT no_mixed_refs,3,1.0,1.0,1.0,79
+2-wise,16,1,no_8x8dct = 1 AND no_mbtree = 1 AND no_mixed_refs = 1,no_8x8dct AND no_mbtree AND no_mixed_refs,3,1.0,1.0,1.0,79
+3-wise,41,7,no_8x8dct = 1 AND no_mbtree = 1 AND no_mixed_refs = 1,no_cabac AND no_deblock,0,0.3529411764705882,0.3,0.4285714285714285,79
+4-wise,102,15,no_8x8dct = 1 AND no_mbtree = 1 AND no_mixed_refs = 1,no_8x8dct AND no_mixed_refs AND ref != 1.00,0,0.6486486486486486,0.5454545454545454,0.8,79
+full,1152,144,no_cabac = 1 AND no_fast_pskip = 1 AND no_weightb = 1,no_cabac AND no_fast_pskip AND no_weightb,1,1.0,1.0,1.0,7
+random_2,18,3,no_cabac = 1 AND no_fast_pskip = 1 AND no_weightb = 1,no_cabac AND no_deblock AND no_mixed_refs,4,0.4,0.5,0.3333333333333333,7
+random_5,45,4,no_cabac = 1 AND no_fast_pskip = 1 AND no_weightb = 1,no_cabac AND no_fast_pskip AND rc_lookahead != 60.00,3,0.7272727272727273,0.5714285714285714,1.0,7
+random_10,90,10,no_cabac = 1 AND no_fast_pskip = 1 AND no_weightb = 1,no_cabac AND no_fast_pskip AND NOT no_mixed_refs AND ref != 1.00,4,0.7368421052631577,0.7777777777777778,0.7,7
+random_20,180,22,no_cabac = 1 AND no_fast_pskip = 1 AND no_weightb = 1,no_cabac AND no_fast_pskip AND no_weightb,2,1.0,1.0,1.0,7
+2-wise,17,3,no_cabac = 1 AND no_fast_pskip = 1 AND no_weightb = 1,NOT no_fast_pskip AND NOT no_weightb AND rc_lookahead = 60.00,0,0.8,1.0,0.6666666666666666,7
+3-wise,47,6,no_cabac = 1 AND no_fast_pskip = 1 AND no_weightb = 1,no_cabac AND no_fast_pskip,1,0.6666666666666666,0.5,1.0,7
+4-wise,97,11,no_cabac = 1 AND no_fast_pskip = 1 AND no_weightb = 1,no_cabac AND no_fast_pskip AND ref != 9.00,2,0.6206896551724137,0.5,0.8181818181818182,7
+full,1152,144,no_cabac = 1 AND no_deblock = 1 AND no_fast_pskip = 1,no_cabac AND no_deblock AND no_fast_pskip,0,1.0,1.0,1.0,80
+random_2,18,2,no_cabac = 1 AND no_deblock = 1 AND no_fast_pskip = 1,no_fast_pskip AND no_weightb,3,0.4,0.3333333333333333,0.5,80
+random_5,45,4,no_cabac = 1 AND no_deblock = 1 AND no_fast_pskip = 1,NOT no_cabac AND no_fast_pskip,3,0.5714285714285715,0.4,1.0,80
+random_10,90,8,no_cabac = 1 AND no_deblock = 1 AND no_fast_pskip = 1,no_cabac AND no_fast_pskip AND NOT no_weightb,2,0.4705882352941176,0.4444444444444444,0.5,80
+random_20,180,24,no_cabac = 1 AND no_deblock = 1 AND no_fast_pskip = 1,no_cabac AND no_deblock AND no_fast_pskip,2,1.0,1.0,1.0,80
+2-wise,16,2,no_cabac = 1 AND no_deblock = 1 AND no_fast_pskip = 1,no_cabac AND no_weightb,0,0.4,0.3333333333333333,0.5,80
+3-wise,44,6,no_cabac = 1 AND no_deblock = 1 AND no_fast_pskip = 1,no_deblock AND no_fast_pskip AND ref = 5.00,3,0.7499999999999999,0.6,1.0,80
+4-wise,98,12,no_cabac = 1 AND no_deblock = 1 AND no_fast_pskip = 1,no_cabac AND no_fast_pskip AND no_weightb AND ref != 9.00,2,0.5833333333333334,0.5833333333333334,0.5833333333333334,80
+full,1152,144,no_cabac = 1 AND no_fast_pskip = 1 AND no_mixed_refs = 1,no_cabac AND no_fast_pskip AND no_mixed_refs,0,1.0,1.0,1.0,81
+random_2,18,1,no_cabac = 1 AND no_fast_pskip = 1 AND no_mixed_refs = 1,no_mixed_refs AND rc_lookahead != 20.00,2,0.3333333333333333,0.2,1.0,81
+random_5,45,6,no_cabac = 1 AND no_fast_pskip = 1 AND no_mixed_refs = 1,NOT no_8x8dct AND NOT no_deblock AND no_mixed_refs AND ref != 1.00,0,0.1666666666666666,0.1666666666666666,0.1666666666666666,81
+random_10,90,11,no_cabac = 1 AND no_fast_pskip = 1 AND no_mixed_refs = 1,no_cabac AND no_mixed_refs AND rc_lookahead != 60.00,2,0.5806451612903226,0.45,0.8181818181818182,81
+random_20,180,19,no_cabac = 1 AND no_fast_pskip = 1 AND no_mixed_refs = 1,NOT no_8x8dct AND no_fast_pskip AND no_mixed_refs AND ref != 1.00,0,0.4705882352941176,0.5333333333333333,0.4210526315789473,81
+2-wise,16,3,no_cabac = 1 AND no_fast_pskip = 1 AND no_mixed_refs = 1,no_mixed_refs AND rc_lookahead != 60.00,0,0.6666666666666666,0.5,1.0,81
+3-wise,46,7,no_cabac = 1 AND no_fast_pskip = 1 AND no_mixed_refs = 1,no_mixed_refs AND no_weightb AND rc_lookahead != 60.00,0,0.5714285714285714,0.5714285714285714,0.5714285714285714,81
+4-wise,102,10,no_cabac = 1 AND no_fast_pskip = 1 AND no_mixed_refs = 1,NOT no_deblock AND NOT no_fast_pskip AND NOT no_weightb,3,0.380952380952381,0.3636363636363636,0.4,81
+full,1152,144,no_cabac = 1 AND no_deblock = 1 AND no_weightb = 1,no_cabac AND no_deblock AND no_weightb,0,1.0,1.0,1.0,82
+random_2,18,2,no_cabac = 1 AND no_deblock = 1 AND no_weightb = 1,NOT no_cabac AND no_weightb,1,0.8,0.6666666666666666,1.0,82
+random_5,45,6,no_cabac = 1 AND no_deblock = 1 AND no_weightb = 1,no_cabac AND no_deblock AND no_weightb,3,1.0,1.0,1.0,82
+random_10,90,6,no_cabac = 1 AND no_deblock = 1 AND no_weightb = 1,no_deblock AND no_weightb AND rc_lookahead != 20.00,0,0.5555555555555556,0.4166666666666667,0.8333333333333334,82
+random_20,180,25,no_cabac = 1 AND no_deblock = 1 AND no_weightb = 1,NOT no_cabac AND no_deblock AND NOT no_weightb,0,1.0,1.0,1.0,82
+2-wise,16,4,no_cabac = 1 AND no_deblock = 1 AND no_weightb = 1,no_cabac AND no_deblock,0,0.888888888888889,0.8,1.0,82
+3-wise,40,3,no_cabac = 1 AND no_deblock = 1 AND no_weightb = 1,no_deblock AND no_fast_pskip AND rc_lookahead != 60.00,2,0.3636363636363636,0.25,0.6666666666666666,82
+4-wise,97,12,no_cabac = 1 AND no_deblock = 1 AND no_weightb = 1,no_cabac AND no_deblock AND no_weightb,2,1.0,1.0,1.0,82
+full,1152,144,no_cabac = 1 AND no_deblock = 1 AND no_mixed_refs = 1,no_cabac AND no_deblock AND no_mixed_refs,0,1.0,1.0,1.0,83
+random_2,18,2,no_cabac = 1 AND no_deblock = 1 AND no_mixed_refs = 1,NOT no_fast_pskip AND no_mbtree,0,0.25,0.1666666666666666,0.5,83
+random_5,45,8,no_cabac = 1 AND no_deblock = 1 AND no_mixed_refs = 1,no_cabac AND no_deblock AND no_mixed_refs,4,1.0,1.0,1.0,83
+random_10,90,9,no_cabac = 1 AND no_deblock = 1 AND no_mixed_refs = 1,no_8x8dct AND no_cabac AND no_deblock,0,0.7777777777777778,0.7777777777777778,0.7777777777777778,83
+random_20,180,26,no_cabac = 1 AND no_deblock = 1 AND no_mixed_refs = 1,no_cabac AND no_deblock AND NOT no_mixed_refs,0,1.0,1.0,1.0,83
+2-wise,17,3,no_cabac = 1 AND no_deblock = 1 AND no_mixed_refs = 1,no_mbtree AND rc_lookahead != 60.00,4,0.7499999999999999,0.6,1.0,83
+3-wise,40,5,no_cabac = 1 AND no_deblock = 1 AND no_mixed_refs = 1,no_cabac AND no_deblock AND rc_lookahead != 20.00,3,0.6153846153846154,0.5,0.8,83
+4-wise,104,11,no_cabac = 1 AND no_deblock = 1 AND no_mixed_refs = 1,NOT no_8x8dct AND no_cabac AND no_mixed_refs AND ref = 5.00,0,0.5263157894736842,0.625,0.4545454545454545,83
+full,1152,144,no_deblock = 1 AND no_fast_pskip = 1 AND no_weightb = 1,no_deblock AND no_fast_pskip AND no_weightb,1,1.0,1.0,1.0,84
+random_2,18,2,no_deblock = 1 AND no_fast_pskip = 1 AND no_weightb = 1,no_deblock AND no_fast_pskip AND rc_lookahead != 60.00,1,0.5714285714285715,0.4,1.0,84
+random_5,45,7,no_deblock = 1 AND no_fast_pskip = 1 AND no_weightb = 1,no_fast_pskip AND no_weightb AND rc_lookahead != 60.00,1,0.5555555555555556,0.4545454545454545,0.7142857142857143,84
+random_10,90,9,no_deblock = 1 AND no_fast_pskip = 1 AND no_weightb = 1,no_fast_pskip AND no_weightb,0,0.5294117647058824,0.36,1.0,84
+random_20,180,29,no_deblock = 1 AND no_fast_pskip = 1 AND no_weightb = 1,no_cabac AND no_fast_pskip AND no_mixed_refs AND ref != 1.00,0,0.391304347826087,0.5294117647058824,0.3103448275862069,84
+2-wise,18,5,no_deblock = 1 AND no_fast_pskip = 1 AND no_weightb = 1,no_fast_pskip AND no_weightb AND rc_lookahead != 20.00,2,0.8000000000000002,0.8,0.8,84
+3-wise,43,4,no_deblock = 1 AND no_fast_pskip = 1 AND no_weightb = 1,NOT no_8x8dct AND no_cabac AND NOT no_weightb,1,0.3636363636363636,0.2857142857142857,0.5,84
+4-wise,100,12,no_deblock = 1 AND no_fast_pskip = 1 AND no_weightb = 1,no_deblock AND no_fast_pskip AND no_weightb,3,1.0,1.0,1.0,84
+full,1152,144,no_8x8dct = 1 AND no_deblock = 1 AND no_weightb = 1,no_8x8dct AND no_deblock AND no_weightb,0,1.0,1.0,1.0,85
+random_2,18,1,no_8x8dct = 1 AND no_deblock = 1 AND no_weightb = 1,NOT no_cabac AND no_fast_pskip AND no_mixed_refs,3,0.5,0.3333333333333333,1.0,85
+random_5,45,5,no_8x8dct = 1 AND no_deblock = 1 AND no_weightb = 1,no_8x8dct AND no_mbtree AND NOT no_weightb AND ref = 1.00,2,0.4444444444444445,0.5,0.4,85
+random_10,90,13,no_8x8dct = 1 AND no_deblock = 1 AND no_weightb = 1,no_deblock AND NOT no_mixed_refs AND no_weightb,0,0.64,0.6666666666666666,0.6153846153846154,85
+random_20,180,23,no_8x8dct = 1 AND no_deblock = 1 AND no_weightb = 1,no_8x8dct AND no_deblock AND no_weightb,2,1.0,1.0,1.0,85
+3-wise,44,7,no_8x8dct = 1 AND no_deblock = 1 AND no_weightb = 1,no_8x8dct AND no_deblock AND no_weightb,0,1.0,1.0,1.0,85
+4-wise,93,11,no_8x8dct = 1 AND no_deblock = 1 AND no_weightb = 1,no_8x8dct AND rc_lookahead != 20.00,4,0.4,0.2758620689655172,0.7272727272727273,85
+full,1152,144,no_cabac = 1 AND no_mbtree = 1 AND no_weightb = 1,no_cabac AND no_mbtree AND no_weightb,0,1.0,1.0,1.0,86
+random_2,18,2,no_cabac = 1 AND no_mbtree = 1 AND no_weightb = 1,no_deblock AND no_mbtree AND ref != 1.00,1,0.5714285714285715,0.4,1.0,86
+random_5,45,5,no_cabac = 1 AND no_mbtree = 1 AND no_weightb = 1,NOT no_cabac AND NOT no_weightb,4,0.7142857142857143,0.5555555555555556,1.0,86
+random_10,90,7,no_cabac = 1 AND no_mbtree = 1 AND no_weightb = 1,no_8x8dct AND NOT no_mixed_refs AND rc_lookahead != 20.00,0,0.2222222222222222,0.15,0.4285714285714285,86
+random_20,180,29,no_cabac = 1 AND no_mbtree = 1 AND no_weightb = 1,no_cabac AND no_mbtree AND no_weightb,1,1.0,1.0,1.0,86
+2-wise,15,1,no_cabac = 1 AND no_mbtree = 1 AND no_weightb = 1,no_8x8dct AND no_weightb AND ref != 1.00,3,0.4,0.25,1.0,86
+3-wise,41,9,no_cabac = 1 AND no_mbtree = 1 AND no_weightb = 1,no_fast_pskip AND ref != 1.00,4,0.3846153846153846,0.2941176470588235,0.5555555555555556,86
+4-wise,97,12,no_cabac = 1 AND no_mbtree = 1 AND no_weightb = 1,no_cabac AND no_mbtree AND no_weightb,2,1.0,1.0,1.0,86
+full,1152,144,no_8x8dct = 1 AND no_mbtree = 1 AND no_mixed_refs = 1,no_8x8dct AND no_mbtree AND no_mixed_refs,0,1.0,1.0,1.0,87
+random_2,18,4,no_8x8dct = 1 AND no_mbtree = 1 AND no_mixed_refs = 1,no_8x8dct AND no_mbtree AND ref != 1.00,4,0.8571428571428571,1.0,0.75,87
+random_5,45,5,no_8x8dct = 1 AND no_mbtree = 1 AND no_mixed_refs = 1,no_mbtree AND no_mixed_refs,4,0.7142857142857143,0.5555555555555556,1.0,87
+random_10,90,11,no_8x8dct = 1 AND no_mbtree = 1 AND no_mixed_refs = 1,no_mbtree AND no_weightb,2,0.3333333333333333,0.24,0.5454545454545454,87
+random_20,180,17,no_8x8dct = 1 AND no_mbtree = 1 AND no_mixed_refs = 1,no_8x8dct AND no_cabac AND no_mixed_refs,2,0.6666666666666667,0.631578947368421,0.7058823529411765,87
+2-wise,16,2,no_8x8dct = 1 AND no_mbtree = 1 AND no_mixed_refs = 1,no_fast_pskip AND no_mixed_refs,3,0.4,0.3333333333333333,0.5,87
+3-wise,42,7,no_8x8dct = 1 AND no_mbtree = 1 AND no_mixed_refs = 1,no_8x8dct AND no_mbtree AND no_mixed_refs,2,1.0,1.0,1.0,87
+4-wise,98,9,no_8x8dct = 1 AND no_mbtree = 1 AND no_mixed_refs = 1,no_8x8dct AND no_cabac AND NOT no_weightb,2,0.2727272727272727,0.2307692307692307,0.3333333333333333,87
+full,1152,144,no_deblock = 1 AND no_mbtree = 1 AND no_weightb = 1,no_deblock AND no_mbtree AND no_weightb,0,1.0,1.0,1.0,88
+random_5,45,5,no_deblock = 1 AND no_mbtree = 1 AND no_weightb = 1,NOT no_cabac AND NOT no_mbtree AND no_weightb,4,0.4285714285714285,0.3333333333333333,0.6,88
+random_10,90,20,no_deblock = 1 AND no_mbtree = 1 AND no_weightb = 1,no_deblock AND no_mbtree AND no_weightb,1,1.0,1.0,1.0,88
+random_20,180,21,no_deblock = 1 AND no_mbtree = 1 AND no_weightb = 1,no_deblock AND no_mbtree AND no_weightb,0,1.0,1.0,1.0,88
+2-wise,17,3,no_deblock = 1 AND no_mbtree = 1 AND no_weightb = 1,no_cabac AND no_weightb AND ref != 9.00,4,0.8571428571428571,0.75,1.0,88
+3-wise,51,5,no_deblock = 1 AND no_mbtree = 1 AND no_weightb = 1,NOT no_cabac AND NOT no_mbtree AND rc_lookahead != 60.00,0,0.4705882352941176,0.3333333333333333,0.8,88
+4-wise,101,15,no_deblock = 1 AND no_mbtree = 1 AND no_weightb = 1,no_weightb AND ref != 1.00,3,0.3749999999999999,0.2727272727272727,0.6,88
+full,1152,144,no_8x8dct = 1 AND no_fast_pskip = 1 AND no_mbtree = 1,no_8x8dct AND no_fast_pskip AND no_mbtree,0,1.0,1.0,1.0,89
+random_2,18,2,no_8x8dct = 1 AND no_fast_pskip = 1 AND no_mbtree = 1,NOT no_cabac AND no_deblock AND no_mbtree,2,0.5,0.5,0.5,89
+random_5,45,4,no_8x8dct = 1 AND no_fast_pskip = 1 AND no_mbtree = 1,NOT no_deblock AND no_mbtree,2,0.3076923076923076,0.2222222222222222,0.5,89
+random_10,90,13,no_8x8dct = 1 AND no_fast_pskip = 1 AND no_mbtree = 1,no_8x8dct AND no_fast_pskip AND no_weightb,2,0.7407407407407408,0.7142857142857143,0.7692307692307693,89
+random_20,180,21,no_8x8dct = 1 AND no_fast_pskip = 1 AND no_mbtree = 1,no_8x8dct AND no_fast_pskip AND no_mbtree,0,1.0,1.0,1.0,89
+2-wise,16,3,no_8x8dct = 1 AND no_fast_pskip = 1 AND no_mbtree = 1,NOT no_cabac AND rc_lookahead != 20.00,2,0.4444444444444444,0.3333333333333333,0.6666666666666666,89
+3-wise,41,5,no_8x8dct = 1 AND no_fast_pskip = 1 AND no_mbtree = 1,no_8x8dct AND no_mbtree AND rc_lookahead != 20.00,4,0.6666666666666666,0.5714285714285714,0.8,89
+4-wise,96,10,no_8x8dct = 1 AND no_fast_pskip = 1 AND no_mbtree = 1,no_8x8dct AND no_fast_pskip AND no_mbtree,2,1.0,1.0,1.0,89
+full,1152,144,no_8x8dct = 1 AND no_cabac = 1 AND no_weightb = 1,no_8x8dct AND no_cabac AND no_weightb,0,1.0,1.0,1.0,8
+random_2,18,1,no_8x8dct = 1 AND no_cabac = 1 AND no_weightb = 1,no_weightb AND rc_lookahead != 20.00,4,0.3333333333333333,0.2,1.0,8
+random_5,45,7,no_8x8dct = 1 AND no_cabac = 1 AND no_weightb = 1,NOT no_8x8dct AND NOT no_mixed_refs AND ref = 1.00,0,0.5333333333333333,0.5,0.5714285714285714,8
+random_10,90,14,no_8x8dct = 1 AND no_cabac = 1 AND no_weightb = 1,no_cabac AND NOT no_mbtree,2,0.5555555555555556,0.4545454545454545,0.7142857142857143,8
+random_20,180,22,no_8x8dct = 1 AND no_cabac = 1 AND no_weightb = 1,NOT no_cabac AND no_weightb AND rc_lookahead != 20.00,4,0.5490196078431373,0.4827586206896552,0.6363636363636364,8
+2-wise,15,3,no_8x8dct = 1 AND no_cabac = 1 AND no_weightb = 1,no_8x8dct AND NOT no_mbtree AND ref != 1.00,0,0.3333333333333333,0.3333333333333333,0.3333333333333333,8
+3-wise,45,4,no_8x8dct = 1 AND no_cabac = 1 AND no_weightb = 1,no_8x8dct AND no_weightb,4,0.5,0.3333333333333333,1.0,8
+4-wise,106,11,no_8x8dct = 1 AND no_cabac = 1 AND no_weightb = 1,no_8x8dct AND no_fast_pskip AND no_weightb,3,0.5384615384615385,0.4666666666666667,0.6363636363636364,8
+full,1152,144,no_8x8dct = 1 AND no_cabac = 1 AND no_weightb = 1,no_8x8dct AND no_cabac AND no_weightb,1,1.0,1.0,1.0,90
+random_2,18,1,no_8x8dct = 1 AND no_cabac = 1 AND no_weightb = 1,NOT no_mixed_refs AND NOT no_weightb AND rc_lookahead != 20.00 AND ref != 9.00,0,0.0,0.0,0.0,90
+random_5,45,8,no_8x8dct = 1 AND no_cabac = 1 AND no_weightb = 1,no_8x8dct AND no_cabac AND no_weightb,1,1.0,1.0,1.0,90
+random_10,90,8,no_8x8dct = 1 AND no_cabac = 1 AND no_weightb = 1,no_cabac AND no_weightb,1,0.5517241379310345,0.3809523809523809,1.0,90
+random_20,180,20,no_8x8dct = 1 AND no_cabac = 1 AND no_weightb = 1,no_8x8dct AND no_cabac AND no_weightb,1,1.0,1.0,1.0,90
+2-wise,15,3,no_8x8dct = 1 AND no_cabac = 1 AND no_weightb = 1,NOT no_cabac AND no_fast_pskip AND no_weightb,2,0.6666666666666666,0.6666666666666666,0.6666666666666666,90
+3-wise,40,5,no_8x8dct = 1 AND no_cabac = 1 AND no_weightb = 1,no_cabac AND NOT no_mbtree AND ref != 1.00,0,0.4000000000000001,0.4,0.4,90
+4-wise,95,9,no_8x8dct = 1 AND no_cabac = 1 AND no_weightb = 1,no_8x8dct AND NOT no_weightb AND rc_lookahead != 20.00,0,0.5833333333333334,0.4666666666666667,0.7777777777777778,90
+full,1152,144,no_8x8dct = 1 AND no_mbtree = 1 AND no_weightb = 1,no_8x8dct AND no_mbtree AND no_weightb,0,1.0,1.0,1.0,91
+random_2,18,2,no_8x8dct = 1 AND no_mbtree = 1 AND no_weightb = 1,no_deblock AND no_mixed_refs AND no_weightb AND ref != 1.00,3,0.4,0.3333333333333333,0.5,91
+random_5,45,4,no_8x8dct = 1 AND no_mbtree = 1 AND no_weightb = 1,NOT no_cabac AND no_fast_pskip AND no_mbtree AND no_weightb,1,0.6666666666666665,0.6,0.75,91
+random_10,90,13,no_8x8dct = 1 AND no_mbtree = 1 AND no_weightb = 1,no_8x8dct AND NOT no_mixed_refs,4,0.3448275862068966,0.3125,0.3846153846153846,91
+random_20,180,29,no_8x8dct = 1 AND no_mbtree = 1 AND no_weightb = 1,no_mbtree AND no_weightb,2,0.7837837837837839,0.6444444444444445,1.0,91
+2-wise,18,1,no_8x8dct = 1 AND no_mbtree = 1 AND no_weightb = 1,NOT no_deblock AND NOT no_mixed_refs AND no_weightb,3,0.5,0.3333333333333333,1.0,91
+3-wise,45,5,no_8x8dct = 1 AND no_mbtree = 1 AND no_weightb = 1,NOT no_mbtree AND NOT no_mixed_refs AND rc_lookahead != 20.00,0,0.2666666666666666,0.2,0.4,91
+4-wise,96,14,no_8x8dct = 1 AND no_mbtree = 1 AND no_weightb = 1,no_8x8dct AND no_mbtree AND no_weightb,3,1.0,1.0,1.0,91
+full,1152,144,no_deblock = 1 AND no_mbtree = 1 AND no_weightb = 1,no_deblock AND no_mbtree AND no_weightb,1,1.0,1.0,1.0,92
+random_2,18,3,no_deblock = 1 AND no_mbtree = 1 AND no_weightb = 1,NOT no_8x8dct AND no_fast_pskip AND no_mbtree,1,0.5,0.4,0.6666666666666666,92
+random_5,45,8,no_deblock = 1 AND no_mbtree = 1 AND no_weightb = 1,no_deblock AND no_mbtree AND no_weightb,1,1.0,1.0,1.0,92
+random_10,90,6,no_deblock = 1 AND no_mbtree = 1 AND no_weightb = 1,no_deblock AND no_mbtree AND no_weightb,2,1.0,1.0,1.0,92
+random_20,180,23,no_deblock = 1 AND no_mbtree = 1 AND no_weightb = 1,no_deblock AND no_mbtree,4,0.6969696969696969,0.5348837209302325,1.0,92
+2-wise,16,4,no_deblock = 1 AND no_mbtree = 1 AND no_weightb = 1,no_fast_pskip AND no_weightb,3,0.5714285714285715,0.6666666666666666,0.5,92
+3-wise,40,5,no_deblock = 1 AND no_mbtree = 1 AND no_weightb = 1,no_fast_pskip AND no_mbtree AND no_weightb,1,0.5714285714285714,0.4444444444444444,0.8,92
+4-wise,110,14,no_deblock = 1 AND no_mbtree = 1 AND no_weightb = 1,no_deblock AND no_mbtree AND no_weightb,1,1.0,1.0,1.0,92
+full,1152,144,no_8x8dct = 1 AND no_cabac = 1 AND no_fast_pskip = 1,no_8x8dct AND no_cabac AND no_fast_pskip,0,1.0,1.0,1.0,93
+random_2,18,2,no_8x8dct = 1 AND no_cabac = 1 AND no_fast_pskip = 1,no_cabac AND NOT no_mixed_refs,0,0.2857142857142857,0.2,0.5,93
+random_5,45,2,no_8x8dct = 1 AND no_cabac = 1 AND no_fast_pskip = 1,NOT no_cabac AND no_weightb,2,0.3333333333333333,0.2,1.0,93
+random_10,90,14,no_8x8dct = 1 AND no_cabac = 1 AND no_fast_pskip = 1,no_cabac AND ref != 1.00,3,0.5116279069767441,0.3793103448275862,0.7857142857142857,93
+random_20,180,24,no_8x8dct = 1 AND no_cabac = 1 AND no_fast_pskip = 1,no_8x8dct AND no_cabac AND no_fast_pskip,3,1.0,1.0,1.0,93
+2-wise,18,3,no_8x8dct = 1 AND no_cabac = 1 AND no_fast_pskip = 1,no_fast_pskip,2,0.6,0.4285714285714285,1.0,93
+3-wise,44,4,no_8x8dct = 1 AND no_cabac = 1 AND no_fast_pskip = 1,no_fast_pskip AND no_mixed_refs AND rc_lookahead != 20.00,0,0.2857142857142857,0.2,0.5,93
+4-wise,98,15,no_8x8dct = 1 AND no_cabac = 1 AND no_fast_pskip = 1,no_8x8dct AND no_fast_pskip AND ref != 9.00,0,0.7272727272727272,0.6666666666666666,0.8,93
+full,1152,144,no_fast_pskip = 1 AND no_mbtree = 1 AND no_weightb = 1,no_fast_pskip AND no_mbtree AND no_weightb,0,1.0,1.0,1.0,94
+random_2,18,3,no_fast_pskip = 1 AND no_mbtree = 1 AND no_weightb = 1,no_mbtree AND no_weightb AND ref = 5.00,0,0.7499999999999999,0.6,1.0,94
+random_5,45,7,no_fast_pskip = 1 AND no_mbtree = 1 AND no_weightb = 1,NOT no_mixed_refs AND NOT no_weightb,2,0.588235294117647,0.5,0.7142857142857143,94
+random_10,90,12,no_fast_pskip = 1 AND no_mbtree = 1 AND no_weightb = 1,no_fast_pskip AND no_mbtree,2,0.6153846153846153,0.4444444444444444,1.0,94
+random_20,180,21,no_fast_pskip = 1 AND no_mbtree = 1 AND no_weightb = 1,no_fast_pskip AND no_weightb,3,0.6666666666666666,0.5,1.0,94
+2-wise,16,2,no_fast_pskip = 1 AND no_mbtree = 1 AND no_weightb = 1,NOT no_cabac AND no_mbtree,0,0.5714285714285715,0.4,1.0,94
+3-wise,45,10,no_fast_pskip = 1 AND no_mbtree = 1 AND no_weightb = 1,NOT no_cabac AND no_mbtree AND no_weightb AND rc_lookahead != 20.00,2,0.5,0.6666666666666666,0.4,94
+4-wise,102,12,no_fast_pskip = 1 AND no_mbtree = 1 AND no_weightb = 1,NOT no_cabac AND no_mbtree AND rc_lookahead != 20.00 AND ref != 9.00,0,0.32,0.3076923076923077,0.3333333333333333,94
+full,1152,144,no_fast_pskip = 1 AND no_mbtree = 1 AND no_weightb = 1,no_fast_pskip AND no_mbtree AND no_weightb,0,1.0,1.0,1.0,95
+random_2,18,3,no_fast_pskip = 1 AND no_mbtree = 1 AND no_weightb = 1,no_fast_pskip AND no_mbtree AND no_weightb,1,1.0,1.0,1.0,95
+random_5,45,6,no_fast_pskip = 1 AND no_mbtree = 1 AND no_weightb = 1,NOT no_fast_pskip AND no_mixed_refs AND no_weightb,1,0.4615384615384615,0.4285714285714285,0.5,95
+random_10,90,11,no_fast_pskip = 1 AND no_mbtree = 1 AND no_weightb = 1,no_fast_pskip AND no_mbtree AND no_weightb,1,1.0,1.0,1.0,95
+random_20,180,24,no_fast_pskip = 1 AND no_mbtree = 1 AND no_weightb = 1,no_fast_pskip AND no_mbtree AND no_weightb,1,1.0,1.0,1.0,95
+2-wise,16,3,no_fast_pskip = 1 AND no_mbtree = 1 AND no_weightb = 1,no_fast_pskip AND no_weightb,0,1.0,1.0,1.0,95
+3-wise,45,5,no_fast_pskip = 1 AND no_mbtree = 1 AND no_weightb = 1,NOT no_cabac AND no_weightb,2,0.4,0.3,0.6,95
+4-wise,101,10,no_fast_pskip = 1 AND no_mbtree = 1 AND no_weightb = 1,no_mbtree AND no_weightb AND ref != 1.00,2,0.64,0.5333333333333333,0.8,95
+full,1152,144,no_fast_pskip = 1 AND no_mixed_refs = 1 AND no_weightb = 1,no_fast_pskip AND no_mixed_refs AND no_weightb,0,1.0,1.0,1.0,96
+random_2,18,4,no_fast_pskip = 1 AND no_mixed_refs = 1 AND no_weightb = 1,NOT no_fast_pskip AND ref != 9.00,4,0.75,0.75,0.75,96
+random_5,45,5,no_fast_pskip = 1 AND no_mixed_refs = 1 AND no_weightb = 1,no_cabac AND no_mixed_refs AND ref != 1.00,3,0.5333333333333333,0.4,0.8,96
+random_10,90,15,no_fast_pskip = 1 AND no_mixed_refs = 1 AND no_weightb = 1,no_fast_pskip AND no_mixed_refs AND no_weightb,2,1.0,1.0,1.0,96
+random_20,180,28,no_fast_pskip = 1 AND no_mixed_refs = 1 AND no_weightb = 1,no_fast_pskip AND no_mixed_refs AND no_weightb,0,1.0,1.0,1.0,96
+2-wise,17,2,no_fast_pskip = 1 AND no_mixed_refs = 1 AND no_weightb = 1,NOT no_mixed_refs AND ref != 1.00,1,0.2857142857142857,0.2,0.5,96
+3-wise,45,5,no_fast_pskip = 1 AND no_mixed_refs = 1 AND no_weightb = 1,NOT no_8x8dct AND no_weightb AND rc_lookahead = 40.00,4,0.4000000000000001,0.4,0.4,96
+4-wise,98,9,no_fast_pskip = 1 AND no_mixed_refs = 1 AND no_weightb = 1,NOT no_8x8dct AND no_fast_pskip AND rc_lookahead != 60.00,4,0.2962962962962963,0.2222222222222222,0.4444444444444444,96
+full,1152,144,no_8x8dct = 1 AND no_cabac = 1 AND no_mixed_refs = 1,no_8x8dct AND no_cabac AND no_mixed_refs,0,1.0,1.0,1.0,97
+random_5,45,3,no_8x8dct = 1 AND no_cabac = 1 AND no_mixed_refs = 1,no_cabac AND NOT no_mbtree,3,0.125,0.0769230769230769,0.3333333333333333,97
+random_10,90,11,no_8x8dct = 1 AND no_cabac = 1 AND no_mixed_refs = 1,NOT no_deblock AND NOT no_fast_pskip AND no_mixed_refs AND rc_lookahead != 20.00,1,0.3157894736842105,0.375,0.2727272727272727,97
+random_20,180,22,no_8x8dct = 1 AND no_cabac = 1 AND no_mixed_refs = 1,no_8x8dct AND NOT no_weightb,3,0.2608695652173913,0.1914893617021276,0.4090909090909091,97
+2-wise,15,1,no_8x8dct = 1 AND no_cabac = 1 AND no_mixed_refs = 1,rc_lookahead != 20.00 AND ref = 5.00,0,0.4,0.25,1.0,97
+3-wise,43,6,no_8x8dct = 1 AND no_cabac = 1 AND no_mixed_refs = 1,no_cabac AND rc_lookahead != 20.00,0,0.4761904761904761,0.3333333333333333,0.8333333333333334,97
+4-wise,101,14,no_8x8dct = 1 AND no_cabac = 1 AND no_mixed_refs = 1,no_8x8dct AND no_cabac AND no_mixed_refs,0,1.0,1.0,1.0,97
+full,1152,144,no_8x8dct = 1 AND no_mbtree = 1 AND no_mixed_refs = 1,no_8x8dct AND ref != 1.00,0,0.3636363636363636,0.25,0.6666666666666666,98
+random_2,18,3,no_8x8dct = 1 AND no_mbtree = 1 AND no_mixed_refs = 1,no_cabac AND no_fast_pskip AND no_mbtree AND no_mixed_refs,2,0.6666666666666666,0.6666666666666666,0.6666666666666666,98
+random_5,45,5,no_8x8dct = 1 AND no_mbtree = 1 AND no_mixed_refs = 1,no_fast_pskip AND NOT no_mbtree,3,0.3749999999999999,0.2727272727272727,0.6,98
+random_10,90,17,no_8x8dct = 1 AND no_mbtree = 1 AND no_mixed_refs = 1,no_8x8dct AND no_mbtree AND no_mixed_refs,1,1.0,1.0,1.0,98
+random_20,180,18,no_8x8dct = 1 AND no_mbtree = 1 AND no_mixed_refs = 1,no_8x8dct AND no_mbtree AND no_mixed_refs,2,1.0,1.0,1.0,98
+2-wise,15,1,no_8x8dct = 1 AND no_mbtree = 1 AND no_mixed_refs = 1,NOT no_8x8dct AND NOT no_deblock,1,0.6666666666666666,0.5,1.0,98
+3-wise,46,4,no_8x8dct = 1 AND no_mbtree = 1 AND no_mixed_refs = 1,no_8x8dct AND no_weightb,0,0.1333333333333333,0.0909090909090909,0.25,98
+4-wise,98,13,no_8x8dct = 1 AND no_mbtree = 1 AND no_mixed_refs = 1,no_8x8dct AND NOT no_deblock AND no_mbtree,1,0.64,0.6666666666666666,0.6153846153846154,98
+full,1152,144,no_8x8dct = 1 AND no_deblock = 1 AND no_mbtree = 1,no_8x8dct AND no_deblock AND no_mbtree,0,1.0,1.0,1.0,99
+random_2,18,2,no_8x8dct = 1 AND no_deblock = 1 AND no_mbtree = 1,no_cabac AND NOT no_weightb AND rc_lookahead != 60.00,0,0.5,0.5,0.5,99
+random_5,45,3,no_8x8dct = 1 AND no_deblock = 1 AND no_mbtree = 1,NOT no_fast_pskip AND NOT no_mixed_refs AND ref != 1.00,2,0.2222222222222222,0.1666666666666666,0.3333333333333333,99
+random_10,90,9,no_8x8dct = 1 AND no_deblock = 1 AND no_mbtree = 1,NOT no_8x8dct AND no_deblock AND no_mbtree,1,1.0,1.0,1.0,99
+random_20,180,25,no_8x8dct = 1 AND no_deblock = 1 AND no_mbtree = 1,no_8x8dct AND no_deblock AND no_mbtree,0,1.0,1.0,1.0,99
+2-wise,17,4,no_8x8dct = 1 AND no_deblock = 1 AND no_mbtree = 1,no_8x8dct AND NOT no_deblock AND NOT no_mbtree,3,1.0,1.0,1.0,99
+3-wise,46,7,no_8x8dct = 1 AND no_deblock = 1 AND no_mbtree = 1,no_deblock AND no_mbtree,1,0.7000000000000001,0.5384615384615384,1.0,99
+4-wise,98,7,no_8x8dct = 1 AND no_deblock = 1 AND no_mbtree = 1,no_deblock AND no_mbtree AND rc_lookahead != 60.00,4,0.5217391304347825,0.375,0.8571428571428571,99
+full,1152,144,no_cabac = 1 AND no_fast_pskip = 1 AND no_mixed_refs = 1,no_cabac AND no_fast_pskip AND no_mixed_refs,1,1.0,1.0,1.0,9
+random_2,18,4,no_cabac = 1 AND no_fast_pskip = 1 AND no_mixed_refs = 1,no_cabac AND ref = 5.00,0,0.6,0.5,0.75,9
+random_5,45,7,no_cabac = 1 AND no_fast_pskip = 1 AND no_mixed_refs = 1,no_fast_pskip AND rc_lookahead != 60.00,0,0.48,0.3333333333333333,0.8571428571428571,9
+random_10,90,13,no_cabac = 1 AND no_fast_pskip = 1 AND no_mixed_refs = 1,NOT no_8x8dct AND NOT no_deblock AND no_weightb,1,0.2608695652173913,0.3,0.2307692307692307,9
+random_20,180,17,no_cabac = 1 AND no_fast_pskip = 1 AND no_mixed_refs = 1,NOT no_8x8dct AND NOT no_mbtree AND NOT no_mixed_refs AND ref = 5.00,3,0.4374999999999999,0.4666666666666667,0.4117647058823529,9
+2-wise,18,3,no_cabac = 1 AND no_fast_pskip = 1 AND no_mixed_refs = 1,no_fast_pskip AND NOT no_mbtree AND ref != 9.00,2,0.25,0.2,0.3333333333333333,9
+3-wise,46,7,no_cabac = 1 AND no_fast_pskip = 1 AND no_mixed_refs = 1,NOT no_8x8dct AND no_mbtree AND rc_lookahead != 20.00 AND ref != 1.00,0,0.4615384615384615,0.5,0.4285714285714285,9
+4-wise,101,11,no_cabac = 1 AND no_fast_pskip = 1 AND no_mixed_refs = 1,no_cabac AND no_mixed_refs AND ref != 1.00,0,0.5384615384615385,0.4666666666666667,0.6363636363636364,9

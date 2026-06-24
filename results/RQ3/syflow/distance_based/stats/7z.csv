@@ -1,0 +1,2 @@
+num_features,num_samples,sgs_unique,sgs_mean_jaccard,sgs_mean_overlap_coefficient,coverage_mean,coverage_total,rule_features_used,rule_feature_frequency,rule_num_features,rule_length_mean,rule_length_max,rule_length_min
+12,68640,5,0.09307692307692308,0.21666666666666665,0.23333333333333334,0.7666666666666667,"['BZip2', 'Deflate', 'x', 'PPMd']","[('BZip2', 3), ('Deflate', 1), ('x', 5), ('PPMd', 3)]",4,2.4,3.0,2.0

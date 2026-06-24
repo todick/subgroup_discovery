@@ -1,0 +1,335 @@
+n_conditions,sg_mean,sg_cardinality,sg_rule,best_rule,best_rule_idx,f1,precision,recall,seed,runtime
+1,5917244.485129629,54000,cyclicRefresh = 1,off==0 AND cyclicRefresh==1,0,1.0,1.0,1.0,0,393.52244782447815
+2,2286291.425037037,27000,cyclicRefresh = 1 AND FrameBoost = 1,cyclicRefresh==0,0,0.0,0.0,0.0,0,4742.1710896492
+3,5420216.147583334,12000,constantBitrate = 1 AND lossless = 1 AND TileColumns = 3,lossless==1 AND TileColumns==3 AND constantBitrate==1,0,1.0,1.0,1.0,0,3225.402771949768
+4,4757593.573185185,13500,realtime = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,lossless==1 AND FrameBoost==1 AND realtime==1 AND AutoAltRef==1,0,1.0,1.0,1.0,0,5599.211168050766
+1,1517158.2328333333,54000,off = 1,off==0,0,0.0,0.0,0.0,1,1261.1078882217407
+2,2495843.6652777777,10800,complexity = 1 AND cpuUsed = 2,complexity==0,0,0.0,0.0,0.0,1,6527.235251903534
+3,7457072.576296296,10800,AutoAltRef = 1 AND lossless = 1 AND Threads = 6,lossless==1 AND Threads==6 AND AutoAltRef==1,0,1.0,1.0,1.0,1,711.1850025653839
+4,4865291.339481481,13500,good = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,lossless==1 AND FrameBoost==1 AND realtime==0 AND AutoAltRef==1,0,1.0,1.0,1.0,1,5121.93260884285
+1,5834629.120416666,43200,Threads = 2,Threads==2,0,1.0,1.0,1.0,10,740.6682579517365
+2,5373578.733981482,10800,cyclicRefresh = 1 AND cpuUsed = 8,cpuUsed==8 AND off==0 AND cyclicRefresh==1,0,1.0,1.0,1.0,10,3217.941320180893
+3,1502999.9074444445,18000,good = 1 AND constrainedQuality = 1 AND FrameBoost = 1,constrainedQuality==0,0,0.0,0.0,0.0,10,4850.495215892792
+1,5578964.916814815,54000,off = 1,off==1,0,1.0,1.0,1.0,11,638.276379108429
+2,6230265.140208334,14400,variableBitrate = 1 AND Threads = 6,Threads==6 AND constantBitrate==0 AND constrainedQuality==0,0,1.0,1.0,1.0,11,1148.3606119155884
+3,1137820.6664444443,18000,realtime = 1 AND variableBitrate = 1 AND lossless = 1,variableBitrate==0,0,0.0,0.0,0.0,11,4417.927183866501
+4,1834368.096296296,13500,realtime = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,lossless==0,0,0.0,0.0,0.0,11,6592.082210063934
+1,800629.690925926,54000,off = 1,off==0,0,0.0,0.0,0.0,12,842.2758667469025
+2,6284175.635703703,27000,AutoAltRef = 1 AND variance = 1,AutoAltRef==1 AND off==0 AND complexity==0 AND cyclicRefresh==0,0,1.0,1.0,1.0,12,477.9376060962677
+3,6524016.9366666665,18000,variableBitrate = 1 AND lossless = 1 AND FrameBoost = 1,lossless==1 AND FrameBoost==1 AND constantBitrate==0 AND constrainedQuality==0,0,1.0,1.0,1.0,12,686.0407135486603
+4,4320890.066962963,13500,good = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,lossless==1 AND FrameBoost==1 AND realtime==0 AND AutoAltRef==1,1,1.0,1.0,1.0,12,6544.108450889587
+1,6399227.251180556,43200,Threads = 6,Threads==6,0,1.0,1.0,1.0,13,321.80429577827454
+2,6696642.867444444,27000,cyclicRefresh = 1 AND lossless = 1,lossless==1 AND off==0 AND cyclicRefresh==1,0,1.0,1.0,1.0,13,302.7608025074005
+3,8043726.501851852,13500,realtime = 1 AND AutoAltRef = 1 AND cyclicRefresh = 1,good==0 AND realtime==1 AND AutoAltRef==1 AND off==0 AND cyclicRefresh==1,0,1.0,1.0,1.0,13,132.00560665130615
+4,7265393.374962963,13500,realtime = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,lossless==1 AND FrameBoost==1 AND realtime==1 AND AutoAltRef==1,0,1.0,1.0,1.0,13,332.7841851711273
+1,4666607.03312963,54000,off = 1,off==1,0,1.0,1.0,1.0,14,3747.363352537155
+2,3320737.8477407405,27000,good = 1 AND cyclicRefresh = 1,cyclicRefresh==0,0,0.0,0.0,0.0,14,6515.74102473259
+1,768279.2313703704,54000,cyclicRefresh = 1,cyclicRefresh==0,0,0.0,0.0,0.0,15,898.9441168308258
+2,1294030.6846296296,10800,off = 1 AND cpuUsed = 2,off==0,0,0.0,0.0,0.0,15,6145.617704868317
+3,6119027.643425926,10800,good = 1 AND AutoAltRef = 1 AND cpuUsed = 4,cpuUsed==4 AND realtime==0 AND AutoAltRef==1,0,1.0,1.0,1.0,15,2234.6289393901825
+1,7218661.287018519,54000,off = 1,off==1,0,1.0,1.0,1.0,16,50.33718013763428
+2,5331053.606833333,36000,FrameBoost = 1 AND lagInFrames = 8,FrameBoost==1 AND lagInFrames==8,0,1.0,1.0,1.0,16,1746.8167099952698
+3,737430.5803703704,10800,AutoAltRef = 1 AND lossless = 1 AND Threads = 4,lossless==0,0,0.0,0.0,0.0,16,5949.161735057831
+4,6607220.460222222,13500,good = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,lossless==1 AND FrameBoost==1 AND realtime==0 AND AutoAltRef==1,0,1.0,1.0,1.0,16,1659.9074029922483
+1,7765829.577888889,54000,variance = 1,off==0 AND complexity==0 AND cyclicRefresh==0,0,1.0,1.0,1.0,17,26.018585443496704
+2,7215168.916041667,14400,cpuUsed = 4 AND TileColumns = 3,cpuUsed==4 AND TileColumns==3,0,1.0,1.0,1.0,17,680.2450399398804
+3,7044749.672111111,18000,AutoAltRef = 1 AND lossless = 1 AND lagInFrames = 16,lossless==1 AND lagInFrames==16 AND AutoAltRef==1,0,1.0,1.0,1.0,17,463.5863561630249
+4,787755.0085185185,13500,realtime = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,AutoAltRef==0,0,0.0,0.0,0.0,17,5165.663296461105
+1,7141381.704930556,43200,bitRate = 1200,bitRate==1200,0,1.0,1.0,1.0,18,168.67957377433777
+2,7821322.714592593,27000,AutoAltRef = 1 AND complexity = 1,AutoAltRef==1 AND off==0 AND complexity==1,0,1.0,1.0,1.0,18,110.64882159233092
+3,5166129.677833334,12000,FrameBoost = 1 AND lagInFrames = 0 AND TileColumns = 6,FrameBoost==1 AND lagInFrames==0 AND TileColumns==6,0,1.0,1.0,1.0,18,4225.209223508835
+4,4443878.839555556,13500,good = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,lossless==1 AND FrameBoost==1 AND realtime==0 AND AutoAltRef==1,0,1.0,1.0,1.0,18,6668.776751995087
+1,5487833.5997916665,43200,bitRate = 900,bitRate==900,0,1.0,1.0,1.0,19,1175.109013557434
+2,3173649.49675,36000,variableBitrate = 1 AND lossless = 1,variableBitrate==0,0,0.0,0.0,0.0,19,5725.400848865509
+3,5764380.092666667,13500,realtime = 1 AND off = 1 AND lossless = 1,good==0 AND lossless==1 AND realtime==1 AND off==1 AND complexity==0 AND cyclicRefresh==0,0,1.0,1.0,1.0,19,1175.3849351406095
+1,7228779.576342593,43200,Threads = 8,Threads==8,0,1.0,1.0,1.0,2,163.51357078552246
+2,6812770.365472223,36000,realtime = 1 AND constrainedQuality = 1,good==0 AND realtime==1 AND constrainedQuality==1,0,1.0,1.0,1.0,2,62.38206720352173
+3,1159055.8113888889,10800,good = 1 AND AutoAltRef = 1 AND Threads = 8,realtime==1,0,0.0,0.0,0.0,2,5753.052076339722
+4,4661603.624074074,13500,realtime = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,lossless==1 AND FrameBoost==1 AND realtime==1 AND AutoAltRef==1,0,1.0,1.0,1.0,2,5758.927999019623
+1,8142361.09212963,43200,bitRate = 1500,bitRate==1500,0,1.0,1.0,1.0,20,50.19783973693848
+2,3665588.3225,18000,cyclicRefresh = 1 AND constantBitrate = 1,lagInFrames==8 AND Threads==4 AND TileColumns==0 AND AutoAltRef==1 AND complexity==1 AND variableBitrate==0 AND constrainedQuality==1,0,0.0,0.0,0.0,20,6411.224137544632
+3,2329253.167925926,13500,realtime = 1 AND variance = 1 AND lossless = 1,variance==0,0,0.0,0.0,0.0,20,6581.715668439865
+4,7550317.778518518,13500,good = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,lossless==1 AND FrameBoost==1 AND realtime==0 AND AutoAltRef==1,0,1.0,1.0,1.0,20,1503.396445274353
+1,4838474.943842593,43200,bitRate = 300,bitRate==300,0,1.0,1.0,1.0,21,3435.738247156143
+2,4327846.138666667,27000,off = 1 AND FrameBoost = 1,FrameBoost==1 AND off==1 AND complexity==0 AND cyclicRefresh==0,0,1.0,1.0,1.0,21,6472.877230882645
+1,5599654.915222222,54000,off = 1,off==1,0,1.0,1.0,1.0,22,644.2635164260864
+2,7387009.940777778,18000,complexity = 1 AND TileColumns = 6,TileColumns==6 AND off==0 AND complexity==1,0,1.0,1.0,1.0,22,294.60511112213135
+3,2327629.515833333,18000,realtime = 1 AND variableBitrate = 1 AND FrameBoost = 1,variableBitrate==0,0,0.0,0.0,0.0,22,5968.697918891907
+4,2688385.122074074,13500,good = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,realtime==1,0,0.0,0.0,0.0,22,7328.409844875336
+1,3421562.8017361118,43200,Threads = 4,Threads==2 AND complexity==0,0,0.0,0.0,0.0,23,5965.24159693718
+2,4007099.0547916666,14400,lagInFrames = 0 AND Threads = 10,lossless==0 AND lagInFrames==8 AND bitRate==600 AND Threads==4 AND TileColumns==0 AND cyclicRefresh==0 AND constantBitrate==1,0,0.0,0.0,0.0,23,7184.172305822372
+1,4033275.8813425926,43200,bitRate = 1200,lossless==1 AND lagInFrames==0 AND bitRate==1500 AND cpuUsed==4 AND AutoAltRef==1 AND variance==1,0,0.0,0.0,0.0,24,5918.007324457169
+2,5717011.202638889,14400,lagInFrames = 16 AND cpuUsed = 0,lagInFrames==16 AND cpuUsed==0,0,1.0,1.0,1.0,24,2488.322598695755
+3,4844907.108814815,13500,good = 1 AND AutoAltRef = 1 AND complexity = 1,good==1 AND realtime==0 AND AutoAltRef==1 AND off==0 AND complexity==1,0,1.0,1.0,1.0,24,4781.941563129425
+4,6935244.504592593,13500,good = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,lossless==1 AND FrameBoost==1 AND realtime==0 AND AutoAltRef==1,0,1.0,1.0,1.0,24,1609.4647767543793
+1,7677095.578055556,43200,bitRate = 900,bitRate==900,0,1.0,1.0,1.0,25,94.1229395866394
+2,1146649.6147222223,10800,complexity = 1 AND bitRate = 900,complexity==0,0,0.0,0.0,0.0,25,6046.332179546356
+3,2122082.201759259,10800,AutoAltRef = 1 AND lossless = 1 AND bitRate = 1200,AutoAltRef==0,0,0.0,0.0,0.0,25,6936.554930448532
+1,5251873.886550926,43200,Threads = 4,Threads==4,0,1.0,1.0,1.0,26,1799.6628546714785
+2,2345979.7786805555,14400,constantBitrate = 1 AND bitRate = 1500,constantBitrate==0,0,0.0,0.0,0.0,26,6306.128956794739
+3,5025345.84037037,13500,AutoAltRef = 1 AND off = 1 AND FrameBoost = 1,FrameBoost==1 AND AutoAltRef==1 AND off==1 AND complexity==0 AND cyclicRefresh==0,0,1.0,1.0,1.0,26,4384.159721851349
+1,6236369.972703704,54000,complexity = 1,off==0 AND complexity==1,0,1.0,1.0,1.0,27,191.7392852306366
+2,7341672.737333333,27000,variance = 1 AND lossless = 1,lossless==1 AND off==0 AND complexity==0 AND cyclicRefresh==0,0,1.0,1.0,1.0,27,175.3451268672943
+3,4966858.757314815,10800,lossless = 1 AND FrameBoost = 1 AND Threads = 10,lossless==1 AND FrameBoost==1 AND Threads==10,0,1.0,1.0,1.0,27,5160.566890478134
+4,6473994.76725926,13500,good = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,lossless==1 AND FrameBoost==1 AND realtime==0 AND AutoAltRef==1,0,1.0,1.0,1.0,27,1642.4836592674255
+1,2621936.677851852,54000,cyclicRefresh = 1,cyclicRefresh==0,0,0.0,0.0,0.0,28,2790.140779018402
+2,3753749.5646527777,14400,Threads = 10 AND TileColumns = 0,good==0 AND FrameBoost==0 AND lagInFrames==16 AND bitRate==900 AND cpuUsed==2 AND constrainedQuality==1,1,0.0021857923497267,0.0666666666666666,0.0011111111111111,28,6699.993764638901
+3,5997623.895259259,13500,good = 1 AND complexity = 1 AND lossless = 1,good==1 AND lossless==1 AND realtime==0 AND off==0 AND complexity==1,0,1.0,1.0,1.0,28,1870.857778787613
+1,6702546.683773148,43200,cpuUsed = 4,cpuUsed==4,0,1.0,1.0,1.0,29,299.3542873859405
+2,711377.5655555555,14400,Threads = 8 AND TileColumns = 6,TileColumns==3,0,0.0,0.0,0.0,29,6185.787353754044
+3,2149729.8350925925,10800,good = 1 AND lossless = 1 AND cpuUsed = 6,realtime==1,0,0.0,0.0,0.0,29,7095.228654384613
+1,6681393.409425925,54000,variance = 1,off==0 AND complexity==0 AND cyclicRefresh==0,0,1.0,1.0,1.0,3,120.20998525619508
+2,7941833.010185185,10800,complexity = 1 AND cpuUsed = 4,cpuUsed==4 AND off==0 AND complexity==1,0,1.0,1.0,1.0,3,335.7175686359405
+3,1720537.5691666666,12000,variableBitrate = 1 AND FrameBoost = 1 AND TileColumns = 0,variableBitrate==0,0,0.0,0.0,0.0,3,6067.319753885269
+4,4323810.023185185,13500,good = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,lossless==1 AND FrameBoost==1 AND realtime==0 AND AutoAltRef==1,0,1.0,1.0,1.0,3,7153.120553970337
+1,1830169.1568333332,54000,complexity = 1,complexity==0,0,0.0,0.0,0.0,30,1567.3509361743927
+2,6457965.879305556,36000,good = 1 AND constrainedQuality = 1,good==1 AND realtime==0 AND constrainedQuality==1,0,1.0,1.0,1.0,30,1114.1128015518188
+3,2833404.2055,12000,good = 1 AND constrainedQuality = 1 AND lagInFrames = 0,constrainedQuality==0,0,0.0,0.0,0.0,30,6786.294185876846
+4,7295152.553703704,13500,realtime = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,lossless==1 AND FrameBoost==1 AND realtime==1 AND AutoAltRef==1,0,1.0,1.0,1.0,30,402.2805352210999
+1,3436224.53962963,43200,cpuUsed = 4,cpuUsed==0 AND constantBitrate==0,0,0.0,0.0,0.0,31,5917.411049365997
+2,1579580.095277778,10800,off = 1 AND bitRate = 600,off==0,0,0.0,0.0,0.0,31,6529.610040187836
+3,8173971.866203704,10800,good = 1 AND AutoAltRef = 1 AND cpuUsed = 4,cpuUsed==4 AND realtime==0 AND AutoAltRef==1,0,1.0,1.0,1.0,31,1750.4829993247986
+1,4958118.158833333,54000,cyclicRefresh = 1,off==0 AND cyclicRefresh==1,0,1.0,1.0,1.0,32,2087.278242111206
+2,7754989.322037037,27000,off = 1 AND lossless = 1,lossless==1 AND off==1 AND complexity==0 AND cyclicRefresh==0,0,1.0,1.0,1.0,32,113.19740438461304
+3,4673342.448083334,12000,AutoAltRef = 1 AND variableBitrate = 1 AND lagInFrames = 8,lagInFrames==8 AND AutoAltRef==1 AND constantBitrate==0 AND constrainedQuality==0,0,1.0,1.0,1.0,32,5831.008203029633
+4,7772682.962740741,13500,good = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,lossless==1 AND FrameBoost==1 AND realtime==0 AND AutoAltRef==1,0,1.0,1.0,1.0,32,1309.2209284305573
+1,5152084.89599537,43200,cpuUsed = 4,cpuUsed==4,0,1.0,1.0,1.0,33,2091.285867214203
+2,2718791.498,18000,variance = 1 AND constantBitrate = 1,constantBitrate==0,0,0.0,0.0,0.0,33,6171.647280216217
+3,6688009.531611111,18000,good = 1 AND constantBitrate = 1 AND lossless = 1,good==1 AND lossless==1 AND realtime==0 AND constantBitrate==1,0,1.0,1.0,1.0,33,1298.8035118579865
+1,1717030.2467824074,43200,cpuUsed = 2,cpuUsed==4,0,0.0,0.0,0.0,34,4155.662900924683
+2,7038010.606481481,27000,complexity = 1 AND lossless = 1,lossless==1 AND off==0 AND complexity==1,0,1.0,1.0,1.0,34,207.7258470058441
+3,2827432.2784444443,13500,realtime = 1 AND variance = 1 AND FrameBoost = 1,variance==0,0,0.0,0.0,0.0,34,6952.251334428787
+4,5645916.009037037,13500,good = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,lossless==1 AND FrameBoost==1 AND realtime==0 AND AutoAltRef==1,0,1.0,1.0,1.0,34,3185.5765857696533
+1,1718428.438912037,43200,Threads = 4,Threads==8,0,0.0,0.0,0.0,35,4162.937166213989
+2,6428586.112777778,18000,cyclicRefresh = 1 AND lagInFrames = 16,lagInFrames==16 AND off==0 AND cyclicRefresh==1,0,1.0,1.0,1.0,35,755.0357508659363
+3,1865293.746,12000,constantBitrate = 1 AND lossless = 1 AND TileColumns = 0,constantBitrate==0,0,0.0,0.0,0.0,35,6747.458195924759
+4,6838490.055407408,13500,realtime = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,lossless==1 AND FrameBoost==1 AND realtime==1 AND AutoAltRef==1,0,1.0,1.0,1.0,35,530.5346918106079
+1,6784700.652939815,43200,Threads = 2,Threads==2,0,1.0,1.0,1.0,36,216.139169216156
+2,3767055.2310555554,36000,realtime = 1 AND constantBitrate = 1,constantBitrate==0,0,0.0,0.0,0.0,36,6251.375954151154
+3,7085593.84537037,10800,realtime = 1 AND AutoAltRef = 1 AND cpuUsed = 6,cpuUsed==6 AND realtime==1 AND AutoAltRef==1,0,1.0,1.0,1.0,36,649.8760998249054
+4,6493624.03437037,13500,good = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,lossless==1 AND FrameBoost==1 AND realtime==0 AND AutoAltRef==1,0,1.0,1.0,1.0,36,1689.196739912033
+1,4723238.790111112,54000,complexity = 1,off==0 AND complexity==1,0,1.0,1.0,1.0,37,3276.691608428955
+2,2722274.6163333333,18000,complexity = 1 AND TileColumns = 6,complexity==0,0,0.0,0.0,0.0,37,6395.067207336426
+1,5695973.213101852,43200,Threads = 8,Threads==8,0,1.0,1.0,1.0,38,830.3318321704865
+2,6252229.577870371,10800,cyclicRefresh = 1 AND Threads = 8,Threads==8 AND off==0 AND cyclicRefresh==1,0,1.0,1.0,1.0,38,1357.1828999519348
+3,2995567.5573333334,18000,constantBitrate = 1 AND lossless = 1 AND FrameBoost = 1,constantBitrate==0,0,0.0,0.0,0.0,38,6346.22020483017
+4,5834626.8821481485,13500,realtime = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,lossless==1 AND FrameBoost==1 AND realtime==1 AND AutoAltRef==1,0,1.0,1.0,1.0,38,1388.7871680259705
+1,6681193.839907408,43200,cpuUsed = 0,cpuUsed==0,0,1.0,1.0,1.0,39,294.30387830734253
+2,6275103.578472222,14400,lagInFrames = 16 AND bitRate = 600,lagInFrames==16 AND bitRate==600,0,1.0,1.0,1.0,39,1409.6549417972565
+3,636788.8721666667,18000,realtime = 1 AND constrainedQuality = 1 AND lossless = 1,constrainedQuality==0,0,0.0,0.0,0.0,39,4017.174096822738
+4,521431.3111851852,13500,realtime = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,FrameBoost==0,0,0.0,0.0,0.0,39,5357.347734212875
+1,6834483.792722222,54000,complexity = 1,off==0 AND complexity==1,0,1.0,1.0,1.0,4,90.36844182014464
+2,2565293.889375,14400,lagInFrames = 8 AND bitRate = 300,lagInFrames==16 AND off==0,0,0.0,0.0,0.0,4,6554.26070356369
+3,4461200.916611111,18000,good = 1 AND FrameBoost = 1 AND TileColumns = 3,FrameBoost==1 AND TileColumns==3 AND realtime==0,0,1.0,1.0,1.0,4,6766.90922498703
+1,4877225.095481481,54000,cyclicRefresh = 1,off==0 AND cyclicRefresh==1,0,1.0,1.0,1.0,40,2457.7700006961823
+2,5131478.208240741,21600,realtime = 1 AND bitRate = 1500,bitRate==1500 AND realtime==1,0,1.0,1.0,1.0,40,2439.5486307144165
+3,7674255.673407407,13500,AutoAltRef = 1 AND complexity = 1 AND FrameBoost = 1,FrameBoost==1 AND AutoAltRef==1 AND off==0 AND complexity==1,0,1.0,1.0,1.0,40,298.02405738830566
+4,606823.2123703704,13500,realtime = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,AutoAltRef==0,0,0.0,0.0,0.0,40,5166.69242143631
+1,1897679.6942592592,43200,bitRate = 1200,bitRate==300,0,0.0,0.0,0.0,41,4343.071254491806
+2,3524127.886740741,27000,cyclicRefresh = 1 AND lossless = 1,cyclicRefresh==0,0,0.0,0.0,0.0,41,6553.654055595398
+1,3145533.972777778,43200,bitRate = 1200,bitRate==1500,0,0.0,0.0,0.0,42,5896.260447740555
+2,4937278.65575,36000,variableBitrate = 1 AND lossless = 1,lossless==1 AND constantBitrate==0 AND constrainedQuality==0,0,1.0,1.0,1.0,42,3281.106166601181
+1,7443596.0365,54000,variance = 1,off==0 AND complexity==0 AND cyclicRefresh==0,0,1.0,1.0,1.0,43,41.688236236572266
+2,6365509.069425926,54000,good = 1 AND FrameBoost = 1,FrameBoost==1 AND realtime==0,0,1.0,1.0,1.0,43,1158.08531665802
+3,6965558.024222222,18000,constantBitrate = 1 AND lossless = 1 AND FrameBoost = 1,lossless==1 AND FrameBoost==1 AND constantBitrate==1,0,1.0,1.0,1.0,43,542.7255611419678
+4,5265352.827333333,13500,good = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,lossless==1 AND FrameBoost==1 AND realtime==0 AND AutoAltRef==1,0,1.0,1.0,1.0,43,3484.713344812393
+1,4633434.460944445,54000,complexity = 1,off==0 AND complexity==1,0,1.0,1.0,1.0,44,4018.348945617676
+2,1399585.8966666667,21600,FrameBoost = 1 AND Threads = 8,FrameBoost==0,0,0.0,0.0,0.0,44,5359.8671708107
+3,5381623.927685185,10800,good = 1 AND AutoAltRef = 1 AND Threads = 6,Threads==6 AND realtime==0 AND AutoAltRef==1,0,1.0,1.0,1.0,44,3819.4987049102783
+1,1142005.249351852,43200,cpuUsed = 0,cpuUsed==6,0,0.0,0.0,0.0,45,3651.5845329761514
+2,5267931.974388889,18000,cyclicRefresh = 1 AND constrainedQuality = 1,off==0 AND variance==0 AND complexity==0 AND cyclicRefresh==1 AND constrainedQuality==1,0,1.0,1.0,1.0,45,2736.37639951706
+3,2958838.470148148,13500,good = 1 AND AutoAltRef = 1 AND variance = 1,variance==0,0,0.0,0.0,0.0,45,7118.677730083466
+1,6180396.252722222,54000,complexity = 1,off==0 AND complexity==1,0,1.0,1.0,1.0,46,208.6512520313263
+2,6869404.935925926,27000,off = 1 AND FrameBoost = 1,FrameBoost==1 AND off==1 AND complexity==0 AND cyclicRefresh==0,0,1.0,1.0,1.0,46,291.3989009857178
+3,2449775.4707407407,10800,realtime = 1 AND AutoAltRef = 1 AND Threads = 8,realtime==0,0,0.0,0.0,0.0,46,6596.489856481552
+4,2877997.7194814817,13500,realtime = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,realtime==0,0,0.0,0.0,0.0,46,7671.619164228439
+1,8099028.423111111,54000,complexity = 1,off==0 AND complexity==1,0,1.0,1.0,1.0,47,15.49465012550354
+2,6179873.140555556,36000,AutoAltRef = 1 AND constantBitrate = 1,AutoAltRef==1 AND constantBitrate==1,0,1.0,1.0,1.0,47,407.98653411865234
+3,465885.6269444444,18000,realtime = 1 AND constrainedQuality = 1 AND lossless = 1,constrainedQuality==0,0,0.0,0.0,0.0,47,3802.715865373612
+4,1227467.5497037035,13500,realtime = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,realtime==0,0,0.0,0.0,0.0,47,5482.794127702713
+1,5654740.27437037,54000,complexity = 1,off==0 AND complexity==1,0,1.0,1.0,1.0,48,531.9641213417053
+2,2253161.75675,36000,variableBitrate = 1 AND lossless = 1,variableBitrate==0,0,0.0,0.0,0.0,48,3835.1052792072296
+3,5586901.21712963,10800,realtime = 1 AND FrameBoost = 1 AND cpuUsed = 6,FrameBoost==1 AND cpuUsed==6 AND realtime==1,0,1.0,1.0,1.0,48,2201.09543800354
+4,3732266.2876296295,13500,good = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,good==0 AND lagInFrames==16 AND TileColumns==0 AND AutoAltRef==1 AND cyclicRefresh==1 AND constrainedQuality==0,0,0.0,0.0,0.0,48,7349.449712753296
+1,6560987.628287037,43200,cpuUsed = 4,cpuUsed==4,0,1.0,1.0,1.0,49,293.81087255477905
+2,2386684.904611111,18000,cyclicRefresh = 1 AND constrainedQuality = 1,cyclicRefresh==0,0,0.0,0.0,0.0,49,5693.690496206284
+3,1450631.9561666667,18000,good = 1 AND variableBitrate = 1 AND lossless = 1,variableBitrate==0,0,0.0,0.0,0.0,49,4889.086570978165
+4,8069827.646666666,13500,realtime = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,lossless==1 AND FrameBoost==1 AND realtime==1 AND AutoAltRef==1,0,1.0,1.0,1.0,49,224.65645360946652
+1,722424.1816666666,54000,cyclicRefresh = 1,cyclicRefresh==0,0,0.0,0.0,0.0,5,884.2385354042053
+2,569080.2747685185,21600,realtime = 1 AND Threads = 2,realtime==0,0,0.0,0.0,0.0,5,3374.743738412857
+3,4321633.443611112,10800,lossless = 1 AND FrameBoost = 1 AND Threads = 4,lagInFrames==8 AND bitRate==600 AND Threads==6 AND TileColumns==0 AND realtime==0 AND AutoAltRef==1 AND off==0,0,0.0,0.0,0.0,5,6974.68448638916
+1,7985915.378222222,54000,off = 1,off==1,0,1.0,1.0,1.0,50,32.60581707954407
+2,2405176.359777778,18000,variance = 1 AND variableBitrate = 1,variance==0,0,0.0,0.0,0.0,50,5869.098620891571
+3,6293668.894916667,12000,realtime = 1 AND lagInFrames = 0 AND TileColumns = 3,lagInFrames==0 AND TileColumns==3 AND realtime==1,0,1.0,1.0,1.0,50,1020.3203988075256
+4,6655423.822592593,13500,good = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,lossless==1 AND FrameBoost==1 AND realtime==0 AND AutoAltRef==1,0,1.0,1.0,1.0,50,1689.29416680336
+1,3753517.904685185,54000,cyclicRefresh = 1,cyclicRefresh==0,0,0.0,0.0,0.0,51,5625.176978349686
+2,7273244.77662037,21600,good = 1 AND cpuUsed = 2,cpuUsed==2 AND realtime==0,0,1.0,1.0,1.0,51,1195.6976714134216
+3,941728.6718888888,18000,realtime = 1 AND AutoAltRef = 1 AND TileColumns = 0,realtime==0,0,0.0,0.0,0.0,51,4806.213205814362
+1,5076208.957611111,54000,cyclicRefresh = 1,off==0 AND cyclicRefresh==1,0,1.0,1.0,1.0,52,1564.311504125595
+2,959385.9453055556,36000,lossless = 1 AND TileColumns = 0,lossless==0,0,0.0,0.0,0.0,52,2726.33575797081
+3,2752999.2324074074,10800,realtime = 1 AND FrameBoost = 1 AND bitRate = 600,FrameBoost==0 AND variance==0 AND cyclicRefresh==0,0,0.0,0.0,0.0,52,6966.683280944824
+4,5548106.97125926,13500,realtime = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,lossless==1 AND FrameBoost==1 AND realtime==1 AND AutoAltRef==1,0,1.0,1.0,1.0,52,2336.784646511078
+1,743072.5469675926,43200,bitRate = 1200,bitRate==600,0,0.0,0.0,0.0,53,3219.0080482959747
+2,3996977.686333333,18000,complexity = 1 AND constantBitrate = 1,lagInFrames==8 AND bitRate==900 AND Threads==6 AND cpuUsed==2 AND AutoAltRef==0 AND variance==1 AND variableBitrate==0,0,0.0,0.0,0.0,53,6715.041153907776
+1,1167775.982,54000,off = 1,off==0,0,0.0,0.0,0.0,54,1039.720754146576
+2,7469709.798458333,24000,constantBitrate = 1 AND TileColumns = 3,TileColumns==3 AND constantBitrate==1,0,1.0,1.0,1.0,54,205.2604694366455
+3,5792608.385916667,12000,AutoAltRef = 1 AND constantBitrate = 1 AND lagInFrames = 16,lagInFrames==16 AND AutoAltRef==1 AND constantBitrate==1,0,1.0,1.0,1.0,54,1834.225332260132
+4,1450051.9784444445,13500,good = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,AutoAltRef==0,0,0.0,0.0,0.0,54,5742.463974237442
+1,4076709.347240741,54000,cyclicRefresh = 1,FrameBoost==1 AND bitRate==900 AND Threads==2 AND cpuUsed==4 AND AutoAltRef==0 AND cyclicRefresh==0 AND constrainedQuality==0,0,0.0,0.0,0.0,55,5755.25733757019
+2,5390729.2397407405,27000,good = 1 AND variance = 1,good==1 AND realtime==0 AND off==0 AND complexity==0 AND cyclicRefresh==0,0,1.0,1.0,1.0,55,1865.629115819931
+3,1979896.003555556,13500,good = 1 AND cyclicRefresh = 1 AND FrameBoost = 1,cyclicRefresh==0,0,0.0,0.0,0.0,55,6943.896043300629
+1,5340206.517203704,54000,complexity = 1,off==0 AND complexity==1,0,1.0,1.0,1.0,56,1025.6129097938538
+2,6773472.485347223,14400,constrainedQuality = 1 AND cpuUsed = 2,cpuUsed==2 AND constrainedQuality==1,0,1.0,1.0,1.0,56,717.5837090015411
+3,2547309.311777778,13500,good = 1 AND variance = 1 AND FrameBoost = 1,variance==0,0,0.0,0.0,0.0,56,6646.180196046829
+1,7717264.2625,43200,bitRate = 300,bitRate==300,0,1.0,1.0,1.0,57,94.71675682067873
+2,5378332.427777777,10800,variance = 1 AND cpuUsed = 4,cpuUsed==4 AND off==0 AND complexity==0 AND cyclicRefresh==0,0,1.0,1.0,1.0,57,3276.932528734207
+3,5102675.8915740745,10800,realtime = 1 AND FrameBoost = 1 AND Threads = 6,FrameBoost==1 AND Threads==6 AND realtime==1,0,1.0,1.0,1.0,57,4021.778867483139
+4,5784481.052,13500,realtime = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,lossless==1 AND FrameBoost==1 AND realtime==1 AND AutoAltRef==1,0,1.0,1.0,1.0,57,1683.2895784378052
+1,1288585.1456712964,43200,Threads = 8,Threads==6,0,0.0,0.0,0.0,58,3783.3440787792206
+2,4265066.489194444,36000,AutoAltRef = 1 AND constantBitrate = 1,AutoAltRef==1 AND constantBitrate==1,4,1.0,1.0,1.0,58,6627.684992074966
+3,5007097.038166666,18000,good = 1 AND constantBitrate = 1 AND lossless = 1,good==1 AND lossless==1 AND realtime==0 AND constantBitrate==1,0,1.0,1.0,1.0,58,3756.652787923813
+1,1554003.7746064814,43200,bitRate = 1500,bitRate==300,0,0.0,0.0,0.0,59,3959.169495820999
+2,8043175.507203704,54000,AutoAltRef = 1 AND lossless = 1,lossless==1 AND AutoAltRef==1,0,1.0,1.0,1.0,59,65.12537026405334
+3,1839143.0443333331,18000,good = 1 AND constantBitrate = 1 AND lossless = 1,constantBitrate==0,0,0.0,0.0,0.0,59,5385.093856334686
+1,6392330.292611111,54000,off = 1,off==1,0,1.0,1.0,1.0,6,175.5637767314911
+2,7097135.628638889,36000,lossless = 1 AND TileColumns = 3,lossless==1 AND TileColumns==3,0,1.0,1.0,1.0,6,176.46068120002747
+3,6402593.701407407,13500,good = 1 AND complexity = 1 AND FrameBoost = 1,good==1 AND FrameBoost==1 AND realtime==0 AND off==0 AND complexity==1,0,1.0,1.0,1.0,6,1472.641222000122
+4,3376952.873037037,13500,good = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,lossless==0 AND FrameBoost==1 AND cpuUsed==0 AND realtime==1 AND AutoAltRef==1 AND cyclicRefresh==1 AND constantBitrate==0,0,0.0,0.0,0.0,6,6703.14061498642
+1,3232092.744467593,43200,Threads = 6,Threads==4,0,0.0,0.0,0.0,60,5843.156286239624
+2,540788.8313194445,14400,variableBitrate = 1 AND Threads = 4,variableBitrate==0,0,0.0,0.0,0.0,60,5810.30161857605
+3,7375336.687777778,13500,realtime = 1 AND cyclicRefresh = 1 AND FrameBoost = 1,good==0 AND FrameBoost==1 AND realtime==1 AND off==0 AND cyclicRefresh==1,0,1.0,1.0,1.0,60,313.434846162796
+1,3277158.1343888887,54000,cyclicRefresh = 1,cyclicRefresh==0,0,0.0,0.0,0.0,61,4571.6356518268585
+2,6433566.4227083335,14400,lagInFrames = 0 AND cpuUsed = 8,lagInFrames==0 AND cpuUsed==8,0,1.0,1.0,1.0,61,1294.799587249756
+3,1397401.061925926,13500,realtime = 1 AND complexity = 1 AND lossless = 1,complexity==0,0,0.0,0.0,0.0,61,7118.098630189896
+1,698054.1353888889,54000,cyclicRefresh = 1,cyclicRefresh==0,0,0.0,0.0,0.0,62,868.8651511669159
+2,3010489.8119444447,18000,variance = 1 AND constrainedQuality = 1,variance==0,0,0.0,0.0,0.0,62,6506.246268987656
+3,6065189.043777778,13500,realtime = 1 AND AutoAltRef = 1 AND off = 1,good==0 AND realtime==1 AND AutoAltRef==1 AND off==1,0,1.0,1.0,1.0,62,836.5083479881287
+4,7947274.449407407,13500,realtime = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,lossless==1 AND FrameBoost==1 AND realtime==1 AND AutoAltRef==1,0,1.0,1.0,1.0,62,213.3807842731476
+1,5133840.804513888,43200,cpuUsed = 4,cpuUsed==4,0,1.0,1.0,1.0,63,2180.241613149643
+2,7773639.863333333,14400,lagInFrames = 16 AND cpuUsed = 0,lagInFrames==16 AND cpuUsed==0,0,1.0,1.0,1.0,63,443.6971616744995
+3,5714672.787333333,18000,AutoAltRef = 1 AND lossless = 1 AND TileColumns = 3,lossless==1 AND TileColumns==3 AND AutoAltRef==1,0,1.0,1.0,1.0,63,1798.5103449821472
+4,7377768.963259259,13500,realtime = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,lossless==1 AND FrameBoost==1 AND realtime==1 AND AutoAltRef==1,0,1.0,1.0,1.0,63,333.9892976284027
+1,2285442.1192037035,54000,complexity = 1,complexity==0,0,0.0,0.0,0.0,64,2242.1832208633423
+2,6077030.109611111,36000,good = 1 AND variableBitrate = 1,good==1 AND realtime==0 AND constantBitrate==0 AND constrainedQuality==0,0,1.0,1.0,1.0,64,1207.3890447616575
+3,7488746.573388888,18000,good = 1 AND constantBitrate = 1 AND FrameBoost = 1,good==1 AND FrameBoost==1 AND realtime==0 AND constantBitrate==1,0,1.0,1.0,1.0,64,1186.6118021011353
+4,3949410.946296296,13500,realtime = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,lossless==0 AND FrameBoost==0 AND cpuUsed==2 AND TileColumns==0 AND off==1 AND variableBitrate==0 AND constrainedQuality==1,0,0.0,0.0,0.0,64,7331.572634935379
+1,2602264.073555556,54000,variance = 1,variance==0,0,0.0,0.0,0.0,65,2794.3050129413605
+2,3342615.6441666665,14400,constrainedQuality = 1 AND Threads = 2,complexity==0 AND constrainedQuality==0,0,0.0,0.0,0.0,65,7127.045028686523
+3,5208018.810444444,18000,realtime = 1 AND constantBitrate = 1 AND FrameBoost = 1,good==0 AND FrameBoost==1 AND realtime==1 AND constantBitrate==1,0,1.0,1.0,1.0,65,2643.3516442775726
+4,7923958.272518518,13500,realtime = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,lossless==1 AND FrameBoost==1 AND realtime==1 AND AutoAltRef==1,0,1.0,1.0,1.0,65,270.7987108230591
+1,5369112.758356482,43200,Threads = 8,Threads==8,0,1.0,1.0,1.0,66,1534.1170563697815
+2,6806106.206259259,27000,realtime = 1 AND off = 1,good==0 AND realtime==1 AND off==1,0,1.0,1.0,1.0,66,115.71317744255066
+3,6534038.975555556,10800,good = 1 AND FrameBoost = 1 AND Threads = 10,FrameBoost==1 AND Threads==10 AND realtime==0,0,1.0,1.0,1.0,66,1737.9616630077362
+4,7899649.418,13500,good = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,lossless==1 AND FrameBoost==1 AND realtime==0 AND AutoAltRef==1,0,1.0,1.0,1.0,66,1241.4052443504331
+1,1300191.5203472222,43200,Threads = 4,Threads==10,0,0.0,0.0,0.0,67,3727.240560770035
+2,1874007.20075,36000,AutoAltRef = 1 AND constantBitrate = 1,constantBitrate==0,0,0.0,0.0,0.0,67,3273.610373020172
+3,7009439.645037037,13500,AutoAltRef = 1 AND cyclicRefresh = 1 AND FrameBoost = 1,FrameBoost==1 AND AutoAltRef==1 AND off==0 AND cyclicRefresh==1,0,1.0,1.0,1.0,67,599.6050531864166
+1,4585427.939388889,54000,variance = 1,off==0 AND complexity==0 AND cyclicRefresh==0,0,1.0,1.0,1.0,68,4025.246092319489
+2,1367425.4573888888,36000,AutoAltRef = 1 AND lagInFrames = 0,AutoAltRef==0,0,0.0,0.0,0.0,68,3174.5407593250275
+3,2715717.696111111,18000,lossless = 1 AND FrameBoost = 1 AND TileColumns = 0,lossless==0,0,0.0,0.0,0.0,68,7348.005382299423
+1,7916201.191319444,43200,Threads = 4,Threads==4,0,1.0,1.0,1.0,69,91.53777408599854
+2,6774814.898703704,10800,variance = 1 AND cpuUsed = 0,cpuUsed==0 AND off==0 AND complexity==0 AND cyclicRefresh==0,0,1.0,1.0,1.0,69,840.1523678302765
+3,7085274.802166667,12000,good = 1 AND constantBitrate = 1 AND TileColumns = 3,good==1 AND TileColumns==3 AND realtime==0 AND constantBitrate==1,0,1.0,1.0,1.0,69,1275.8465588092804
+4,1396020.311925926,13500,realtime = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,AutoAltRef==0,0,0.0,0.0,0.0,69,5740.530095338821
+1,4767622.558740741,54000,complexity = 1,off==0 AND complexity==1,0,1.0,1.0,1.0,7,3137.875550270081
+2,3960212.200277778,18000,variance = 1 AND variableBitrate = 1,lagInFrames==8 AND bitRate==300 AND Threads==6 AND cpuUsed==8 AND TileColumns==6 AND off==0,1,0.001763668430335,0.1111111111111111,0.0008888888888888,7,6659.666919946671
+1,5909109.809851852,54000,cyclicRefresh = 1,off==0 AND cyclicRefresh==1,0,1.0,1.0,1.0,70,389.8635365962982
+2,7287481.998861111,36000,good = 1 AND constrainedQuality = 1,good==1 AND realtime==0 AND constrainedQuality==1,0,1.0,1.0,1.0,70,1042.0875811576843
+3,3070282.687037037,10800,lossless = 1 AND FrameBoost = 1 AND bitRate = 1500,FrameBoost==1 AND lagInFrames==8 AND bitRate==600 AND cpuUsed==6 AND TileColumns==3 AND cyclicRefresh==1,0,0.0,0.0,0.0,70,6679.819804906845
+4,8139606.736370371,13500,realtime = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,lossless==1 AND FrameBoost==1 AND realtime==1 AND AutoAltRef==1,0,1.0,1.0,1.0,70,159.360933303833
+1,4506289.354407407,54000,variance = 1,off==0 AND complexity==0 AND cyclicRefresh==0,0,1.0,1.0,1.0,71,4640.1242797374725
+2,1357667.9760416667,14400,Threads = 8 AND TileColumns = 3,TileColumns==0,0,0.0,0.0,0.0,71,6383.180326461792
+1,5759352.941925926,54000,off = 1,off==1,0,1.0,1.0,1.0,72,482.5568819046021
+2,1368349.698148148,10800,off = 1 AND bitRate = 1500,off==0,0,0.0,0.0,0.0,72,6039.603088378906
+3,3657281.8484444446,18000,realtime = 1 AND FrameBoost = 1 AND lagInFrames = 0,FrameBoost==0 AND lagInFrames==0 AND Threads==8 AND cpuUsed==4 AND complexity==0 AND cyclicRefresh==0 AND variableBitrate==1,0,0.0,0.0,0.0,72,7320.727130889893
+1,7170751.134375,43200,Threads = 6,Threads==6,0,1.0,1.0,1.0,73,166.6619381904602
+2,6481607.223333334,14400,constrainedQuality = 1 AND cpuUsed = 4,cpuUsed==4 AND constrainedQuality==1,0,1.0,1.0,1.0,73,899.1711518764496
+3,3533820.191166667,12000,variableBitrate = 1 AND lossless = 1 AND TileColumns = 6,lossless==0 AND FrameBoost==1 AND lagInFrames==16 AND Threads==2 AND variance==0 AND complexity==1 AND cyclicRefresh==0,0,0.0,0.0,0.0,73,6825.691538572311
+1,6803599.663,54000,cyclicRefresh = 1,off==0 AND cyclicRefresh==1,0,1.0,1.0,1.0,74,93.94728302955627
+2,3676043.5288888887,10800,off = 1 AND Threads = 8,good==1 AND lossless==1 AND FrameBoost==1 AND TileColumns==0 AND variableBitrate==1 AND constantBitrate==0 AND constrainedQuality==0,2,0.0217391304347826,0.05,0.0138888888888888,74,6464.555458307266
+3,1759382.1446666666,18000,good = 1 AND constrainedQuality = 1 AND FrameBoost = 1,constrainedQuality==0,0,0.0,0.0,0.0,74,5890.224772453308
+1,7487579.603055555,43200,bitRate = 300,bitRate==300,0,1.0,1.0,1.0,75,93.49888515472412
+2,6029037.436055556,36000,AutoAltRef = 1 AND variableBitrate = 1,AutoAltRef==1 AND constantBitrate==0 AND constrainedQuality==0,0,1.0,1.0,1.0,75,454.93035674095154
+3,6155531.235333334,12000,realtime = 1 AND constrainedQuality = 1 AND lagInFrames = 8,good==0 AND lagInFrames==8 AND realtime==1 AND constrainedQuality==1,0,1.0,1.0,1.0,75,775.6210803985596
+4,1993359.502074074,13500,realtime = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,realtime==0,0,0.0,0.0,0.0,75,5933.450602054596
+1,7328144.506722222,54000,cyclicRefresh = 1,off==0 AND cyclicRefresh==1,0,1.0,1.0,1.0,76,40.00475287437439
+2,6726180.893037037,27000,AutoAltRef = 1 AND cyclicRefresh = 1,AutoAltRef==1 AND off==0 AND cyclicRefresh==1,0,1.0,1.0,1.0,76,283.6013250350952
+3,6728424.978518519,13500,realtime = 1 AND AutoAltRef = 1 AND cyclicRefresh = 1,good==0 AND realtime==1 AND AutoAltRef==1 AND off==0 AND cyclicRefresh==1,0,1.0,1.0,1.0,76,342.3596725463867
+4,5010256.626888889,13500,good = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,lossless==1 AND FrameBoost==1 AND realtime==0 AND AutoAltRef==1,0,1.0,1.0,1.0,76,4181.212731361389
+1,6812401.108657408,43200,Threads = 8,Threads==8,0,1.0,1.0,1.0,77,178.7561662197113
+2,3500188.079555556,18000,cyclicRefresh = 1 AND lagInFrames = 0,complexity==0 AND cyclicRefresh==0,0,0.0,0.0,0.0,77,6578.028024196625
+3,4379270.615333334,13500,AutoAltRef = 1 AND cyclicRefresh = 1 AND lossless = 1,lossless==1 AND AutoAltRef==1 AND off==0 AND cyclicRefresh==1,0,1.0,1.0,1.0,77,7624.713800430298
+1,843284.188962963,54000,complexity = 1,complexity==0,0,0.0,0.0,0.0,78,900.7009572982788
+2,3310315.758,24000,constantBitrate = 1 AND TileColumns = 3,constantBitrate==0,0,0.0,0.0,0.0,78,6793.049307584763
+1,2750074.834277778,54000,cyclicRefresh = 1,cyclicRefresh==0,0,0.0,0.0,0.0,79,3101.35600733757
+2,2930385.766638889,36000,AutoAltRef = 1 AND lagInFrames = 16,AutoAltRef==0,0,0.0,0.0,0.0,79,5321.9510843753815
+3,5219733.724277778,18000,AutoAltRef = 1 AND FrameBoost = 1 AND TileColumns = 6,FrameBoost==1 AND TileColumns==6 AND AutoAltRef==1,0,1.0,1.0,1.0,79,3976.987138748169
+1,2532621.059648148,54000,cyclicRefresh = 1,cyclicRefresh==0,0,0.0,0.0,0.0,8,2584.439017534256
+2,3511440.46475,36000,constrainedQuality = 1 AND lossless = 1,constrainedQuality==0,0,0.0,0.0,0.0,8,6179.07709312439
+1,3338707.0550555554,54000,cyclicRefresh = 1,cyclicRefresh==0,0,0.0,0.0,0.0,80,4936.526723384857
+2,2068966.5166944445,36000,realtime = 1 AND constantBitrate = 1,constantBitrate==0,0,0.0,0.0,0.0,80,3382.5787110328674
+3,5632350.940370371,10800,realtime = 1 AND lossless = 1 AND cpuUsed = 4,lossless==1 AND cpuUsed==4 AND realtime==1,0,1.0,1.0,1.0,80,2538.1994490623474
+4,8282550.391703703,13500,good = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,lossless==1 AND FrameBoost==1 AND realtime==0 AND AutoAltRef==1,0,1.0,1.0,1.0,80,1361.158120393753
+1,4807278.005069445,43200,bitRate = 300,bitRate==300,0,1.0,1.0,1.0,81,3728.1694252491
+2,2642737.718541667,14400,bitRate = 900 AND TileColumns = 3,TileColumns==6,0,0.0,0.0,0.0,81,7497.745891332626
+1,1975489.4649444444,54000,cyclicRefresh = 1,cyclicRefresh==0,0,0.0,0.0,0.0,82,1918.175130844116
+2,1989676.1752592595,27000,good = 1 AND off = 1,off==0,0,0.0,0.0,0.0,82,4210.149165153503
+3,1168464.1215555556,13500,good = 1 AND complexity = 1 AND FrameBoost = 1,complexity==0,0,0.0,0.0,0.0,82,6597.883124828339
+1,7946623.386875,43200,cpuUsed = 0,cpuUsed==0,0,1.0,1.0,1.0,83,91.8669366836548
+2,4725257.41537037,10800,off = 1 AND cpuUsed = 2,cpuUsed==2 AND off==1 AND complexity==0 AND cyclicRefresh==0,0,1.0,1.0,1.0,83,5923.379343509674
+3,1499955.3078333333,12000,realtime = 1 AND constrainedQuality = 1 AND TileColumns = 6,constrainedQuality==0,0,0.0,0.0,0.0,83,6776.815154790878
+1,890183.3414074074,54000,cyclicRefresh = 1,cyclicRefresh==0,0,0.0,0.0,0.0,84,932.11496424675
+2,627304.1750555555,18000,variance = 1 AND constantBitrate = 1,variance==0,0,0.0,0.0,0.0,84,4161.6788165569305
+3,1820559.942962963,13500,realtime = 1 AND off = 1 AND FrameBoost = 1,off==0,0,0.0,0.0,0.0,84,6897.027045965195
+4,8056105.985629629,13500,realtime = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,lossless==1 AND FrameBoost==1 AND realtime==1 AND AutoAltRef==1,0,1.0,1.0,1.0,84,287.49649477005005
+1,973404.7434953704,43200,Threads = 10,Threads==4,0,0.0,0.0,0.0,85,3664.55596280098
+2,3220351.9915277776,21600,realtime = 1 AND cpuUsed = 2,realtime==0,0,0.0,0.0,0.0,85,7273.365463256836
+3,8087121.227277778,18000,AutoAltRef = 1 AND FrameBoost = 1 AND TileColumns = 3,FrameBoost==1 AND TileColumns==3 AND AutoAltRef==1,0,1.0,1.0,1.0,85,350.8223834037781
+4,5520575.759703704,13500,good = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,lossless==1 AND FrameBoost==1 AND realtime==0 AND AutoAltRef==1,0,1.0,1.0,1.0,85,3421.3996188640594
+1,1019009.103912037,43200,bitRate = 300,bitRate==900,0,0.0,0.0,0.0,86,3507.9714233875275
+2,4441948.248888889,18000,complexity = 1 AND constrainedQuality = 1,off==0 AND variance==0 AND complexity==1 AND cyclicRefresh==0 AND constrainedQuality==1,0,1.0,1.0,1.0,86,6877.65536737442
+1,629035.1817222222,54000,cyclicRefresh = 1,cyclicRefresh==0,0,0.0,0.0,0.0,87,847.2498917579651
+2,6353665.374407408,27000,off = 1 AND lossless = 1,lossless==1 AND off==1 AND complexity==0 AND cyclicRefresh==0,0,1.0,1.0,1.0,87,516.533830165863
+3,4200088.5155,12000,constantBitrate = 1 AND lossless = 1 AND TileColumns = 0,lagInFrames==8 AND bitRate==1200 AND Threads==10 AND cpuUsed==8 AND realtime==1 AND AutoAltRef==1 AND constrainedQuality==0,2,0.0013227513227513,0.0833333333333333,0.0006666666666666,87,7016.196593284607
+4,7870667.445851852,13500,good = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,lossless==1 AND FrameBoost==1 AND realtime==0 AND AutoAltRef==1,0,1.0,1.0,1.0,87,1513.250890493393
+1,6740146.118796296,54000,cyclicRefresh = 1,off==0 AND cyclicRefresh==1,0,1.0,1.0,1.0,88,93.11437225341795
+2,657798.1342592592,21600,FrameBoost = 1 AND Threads = 4,FrameBoost==0,0,0.0,0.0,0.0,88,4003.87365102768
+3,1658742.7803333334,18000,good = 1 AND AutoAltRef = 1 AND lagInFrames = 8,AutoAltRef==0,0,0.0,0.0,0.0,88,5431.37023472786
+4,6237629.620666667,13500,realtime = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,lossless==1 AND FrameBoost==1 AND realtime==1 AND AutoAltRef==1,0,1.0,1.0,1.0,88,1117.9714221954346
+1,7108818.174851852,54000,off = 1,off==1,0,1.0,1.0,1.0,89,71.67954874038696
+2,2263085.882222222,18000,cyclicRefresh = 1 AND lagInFrames = 8,cyclicRefresh==0,0,0.0,0.0,0.0,89,6061.115848302841
+3,4262630.882611111,18000,AutoAltRef = 1 AND variableBitrate = 1 AND FrameBoost = 1,good==0 AND FrameBoost==0 AND bitRate==300 AND Threads==10 AND AutoAltRef==1 AND constantBitrate==0 AND constrainedQuality==0,0,0.0,0.0,0.0,89,8199.896217823029
+1,7624462.740925926,43200,cpuUsed = 6,cpuUsed==6,0,1.0,1.0,1.0,9,94.40742206573486
+2,3730386.669814815,27000,good = 1 AND cyclicRefresh = 1,lossless==1 AND off==0 AND cyclicRefresh==0 AND constantBitrate==0,0,0.0,0.0,0.0,9,6323.562287092209
+3,493901.1424444445,13500,off = 1 AND lossless = 1 AND FrameBoost = 1,off==0,0,0.0,0.0,0.0,9,5068.6377918720245
+1,5046609.075907407,54000,variance = 1,off==0 AND complexity==0 AND cyclicRefresh==0,0,1.0,1.0,1.0,90,1812.690763950348
+2,7236950.794907408,21600,AutoAltRef = 1 AND Threads = 6,Threads==6 AND AutoAltRef==1,0,1.0,1.0,1.0,90,331.9071090221405
+3,661550.6971666666,12000,variableBitrate = 1 AND FrameBoost = 1 AND TileColumns = 3,variableBitrate==0,0,0.0,0.0,0.0,90,6268.806306362152
+4,7732882.441259259,13500,realtime = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,lossless==1 AND FrameBoost==1 AND realtime==1 AND AutoAltRef==1,0,1.0,1.0,1.0,90,292.7115457057953
+1,4793611.467337963,43200,cpuUsed = 8,cpuUsed==8,0,1.0,1.0,1.0,91,3868.227673768997
+2,2350926.0196666666,36000,AutoAltRef = 1 AND TileColumns = 0,AutoAltRef==0,0,0.0,0.0,0.0,91,4616.338765859604
+1,4655904.447555556,54000,complexity = 1,off==0 AND complexity==1,0,1.0,1.0,1.0,92,3625.892710924149
+2,5623163.407,24000,constrainedQuality = 1 AND TileColumns = 0,TileColumns==0 AND constrainedQuality==1,0,1.0,1.0,1.0,92,1520.566053390503
+3,4530627.1754814815,13500,realtime = 1 AND complexity = 1 AND lossless = 1,good==0 AND lossless==1 AND realtime==1 AND off==0 AND complexity==1,0,1.0,1.0,1.0,92,6557.216135978699
+1,1043577.8124629628,54000,cyclicRefresh = 1,cyclicRefresh==0,0,0.0,0.0,0.0,93,1037.746985912323
+2,4204717.46925,36000,lossless = 1 AND lagInFrames = 16,FrameBoost==1 AND lagInFrames==0 AND bitRate==900 AND Threads==8 AND realtime==1 AND variance==0 AND constantBitrate==1,0,0.0,0.0,0.0,93,6642.643366098404
+3,1602940.292,18000,AutoAltRef = 1 AND lossless = 1 AND lagInFrames = 0,AutoAltRef==0,0,0.0,0.0,0.0,93,5908.698530673981
+1,6037838.847268518,43200,Threads = 8,Threads==8,0,1.0,1.0,1.0,94,520.087742805481
+2,2617700.505851852,27000,good = 1 AND variance = 1,variance==0,0,0.0,0.0,0.0,94,5362.797086238861
+3,7240257.739166667,18000,good = 1 AND constrainedQuality = 1 AND FrameBoost = 1,good==1 AND FrameBoost==1 AND realtime==0 AND constrainedQuality==1,0,1.0,1.0,1.0,94,1294.450912952423
+4,5140683.110518519,13500,realtime = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,lossless==1 AND FrameBoost==1 AND realtime==1 AND AutoAltRef==1,0,1.0,1.0,1.0,94,3714.848428726196
+1,2103392.384212963,43200,Threads = 8,Threads==4,0,0.0,0.0,0.0,95,5026.152378320694
+2,4836581.762833334,18000,variance = 1 AND variableBitrate = 1,off==0 AND variance==1 AND complexity==0 AND cyclicRefresh==0 AND constantBitrate==0 AND constrainedQuality==0,0,1.0,1.0,1.0,95,5282.712323665619
+1,2111260.8282962963,54000,off = 1,off==0,0,0.0,0.0,0.0,96,1839.8365635871887
+2,5234027.361444444,18000,cyclicRefresh = 1 AND constantBitrate = 1,off==0 AND variance==0 AND complexity==0 AND cyclicRefresh==1 AND constantBitrate==1,0,1.0,1.0,1.0,96,2820.903604269028
+3,2559114.3596296296,10800,realtime = 1 AND lossless = 1 AND cpuUsed = 6,lossless==0,0,0.0,0.0,0.0,96,7541.781998157501
+4,6695025.413481481,13500,good = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,lossless==1 AND FrameBoost==1 AND realtime==0 AND AutoAltRef==1,0,1.0,1.0,1.0,96,1979.4123921394348
+1,2296115.7873333334,54000,cyclicRefresh = 1,cyclicRefresh==0,0,0.0,0.0,0.0,97,2340.4744639396667
+2,1789120.9505555555,18000,variance = 1 AND lagInFrames = 0,variance==0,0,0.0,0.0,0.0,97,5852.254157543182
+1,6503969.19974537,43200,bitRate = 900,bitRate==900,0,1.0,1.0,1.0,98,301.88281989097595
+2,3521496.7525925925,21600,AutoAltRef = 1 AND bitRate = 600,AutoAltRef==0 AND variance==0 AND cyclicRefresh==0,0,0.0,0.0,0.0,98,6449.927955389023
+3,3022948.7519259257,13500,good = 1 AND variance = 1 AND FrameBoost = 1,variance==0,0,0.0,0.0,0.0,98,7614.060149669647
+1,1323732.243759259,54000,cyclicRefresh = 1,cyclicRefresh==0,0,0.0,0.0,0.0,99,1182.625699520111
+2,2732332.5231944444,21600,good = 1 AND bitRate = 1200,realtime==1,0,0.0,0.0,0.0,99,6038.074198961258
+3,7558433.49037037,13500,realtime = 1 AND variance = 1 AND lossless = 1,good==0 AND lossless==1 AND realtime==1 AND off==0 AND complexity==0 AND cyclicRefresh==0,0,1.0,1.0,1.0,99,159.6257894039154
+4,1852957.297703704,13500,good = 1 AND AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,lossless==0,0,0.0,0.0,0.0,99,7355.508607149124

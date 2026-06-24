@@ -1,0 +1,401 @@
+n_conditions,sg_mean,sg_cardinality,sg_rule,best_rule,best_rule_idx,f1,precision,recall,seed,runtime
+1,38.90954221401543,830,win = 1,win >= 1.0,1,1.0,1.0,1.0,0,60.16423034667969
+2,28.639775700005067,1044,androidIncludeLdpiTvdpi = 1 AND threads = 90,androidIncludeLdpiTvdpi >= 1.0  AND  threads >= 90.0,1,1.0,1.0,1.0,0,63.94432306289673
+3,25.382404637128,528,android = 1 AND floor = 1 AND threads = 10,floor >= 1.0  AND  0.0 <= png < 1.0  AND  10.0 <= threads < 90.0  AND  android >= 1.0,0,0.9124613800205974,1.0,0.8390151515151515,0,42.39834427833557
+4,20.25078119844409,471,scaleIsHeightDp = 1 AND antiAliasing = 1 AND skipUpscaling = 1 AND threads = 90,antiAliasing >= 1.0  AND  skipUpscaling >= 1.0  AND  0.0 <= gif < 1.0  AND  threads >= 90.0  AND  scaleIsHeightDp >= 1.0,0,0.9331823329558324,1.0,0.8747346072186837,0,44.022984743118286
+1,31.62018187964905,830,win = 1,win >= 1.0,2,1.0,1.0,1.0,1,73.05039191246033
+2,55.41701158705251,757,androidMipmapInsteadOfDrawable = 1 AND threads = 10,androidMipmapInsteadOfDrawable >= 1.0  AND  10.0 <= threads < 90.0  AND  0.0 <= bmp < 1.0,0,0.923951670220327,1.0,0.8586525759577279,1,73.52147579193115
+3,45.31787923119015,509,scaleIsHeightDp = 1 AND floor = 1 AND threads = 10,floor >= 1.0  AND  10.0 <= threads < 90.0  AND  0.0 <= gif < 1.0  AND  scaleIsHeightDp >= 1.0,0,0.9362591431556948,1.0,0.8801571709233792,1,42.75044679641724
+4,23.525330779773725,409,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND antiAliasing = 1 AND threads = 10,androidMipmapInsteadOfDrawable >= 1.0  AND  10.0 <= threads < 90.0  AND  antiAliasing >= 1.0,1,1.0,1.0,1.0,1,58.86259627342224
+1,45.70279557098409,752,web = 1,web >= 1.0,2,1.0,1.0,1.0,10,72.37367916107178
+2,55.51697761760106,1802,android = 1 AND androidMipmapInsteadOfDrawable = 1,androidMipmapInsteadOfDrawable >= 1.0,3,1.0,1.0,1.0,10,92.79209852218628
+3,40.8647215908794,699,android = 1 AND ceil = 1 AND threads = 90,android >= 1.0  AND  ceil >= 1.0  AND  threads >= 90.0,0,1.0,1.0,1.0,10,42.8199417591095
+4,33.82799384778639,373,scaleIsHeightDp = 1 AND antiAliasing = 1 AND skipUpscaling = 1 AND threads = 10,scaleIsHeightDp >= 1.0  AND  skipUpscaling >= 1.0  AND  10.0 <= threads < 90.0  AND  antiAliasing >= 1.0,0,1.0,1.0,1.0,10,44.04172730445862
+1,52.79812480434995,1802,androidMipmapInsteadOfDrawable = 1,androidMipmapInsteadOfDrawable >= 1.0,2,1.0,1.0,1.0,11,86.68397688865662
+2,19.224640204414037,933,scaleIsHeightDp = 1 AND androidIncludeLdpiTvdpi = 1,scaleIsHeightDp >= 1.0  AND  androidIncludeLdpiTvdpi >= 1.0,0,1.0,1.0,1.0,11,46.31822681427002
+3,30.546035909394185,899,android = 1 AND antiAliasing = 1 AND skipUpscaling = 1,android >= 1.0  AND  antiAliasing >= 1.0  AND  skipUpscaling >= 1.0,0,1.0,1.0,1.0,11,48.26632523536682
+4,24.80985879634644,346,android = 1 AND scaleIsHeightDp = 1 AND jpeg = 1 AND threads = 90,jpeg >= 1.0  AND  threads >= 90.0  AND  scaleIsHeightDp >= 1.0  AND  0.0 <= round < 1.0  AND  android >= 1.0,0,0.8006932409012132,1.0,0.6676300578034682,11,42.86170148849487
+1,31.65131490735092,1777,androidIncludeLdpiTvdpi = 1,androidIncludeLdpiTvdpi >= 1.0,2,1.0,1.0,1.0,12,80.99580788612366
+2,38.61324014673342,649,ios = 1 AND threads = 10,0.0 <= gif < 1.0  AND  ios >= 1.0  AND  10.0 <= threads < 90.0,0,0.9386753883892068,1.0,0.884437596302003,12,42.46115446090698
+3,23.599192112471208,485,scaleIsHeightDp = 1 AND skipUpscaling = 1 AND androidIncludeLdpiTvdpi = 1,scaleIsHeightDp >= 1.0  AND  skipUpscaling >= 1.0  AND  androidIncludeLdpiTvdpi >= 1.0,0,1.0,1.0,1.0,12,42.16702723503113
+4,23.22207609688833,394,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND scaleIsHeightDp = 1 AND threads = 10,androidMipmapInsteadOfDrawable >= 1.0  AND  scaleIsHeightDp >= 1.0  AND  10.0 <= threads < 90.0,0,1.0,1.0,1.0,12,42.048604011535645
+1,37.32276499708502,1079,bmp = 1,bmp >= 1.0,1,1.0,1.0,1.0,13,68.88453769683838
+2,57.38815747240927,622,floor = 1 AND androidIncludeLdpiTvdpi = 1,androidIncludeLdpiTvdpi >= 1.0  AND  0.0 <= png < 1.0  AND  floor >= 1.0,0,0.903964757709251,1.0,0.8247588424437299,13,55.30657720565796
+3,34.47792539806531,615,android = 1 AND scaleIsHeightDp = 1 AND floor = 1,scaleIsHeightDp >= 1.0  AND  floor >= 1.0  AND  android >= 1.0  AND  0.0 <= gif < 1.0,0,0.9182058047493404,1.0,0.848780487804878,13,43.03476476669312
+4,29.83157802682364,482,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND scaleIsHeightDp = 1 AND antiAliasing = 1,androidMipmapInsteadOfDrawable >= 1.0  AND  antiAliasing >= 1.0  AND  scaleIsHeightDp >= 1.0,0,1.0,1.0,1.0,13,43.03578615188599
+1,24.11258045522668,1802,androidMipmapInsteadOfDrawable = 1,androidMipmapInsteadOfDrawable >= 1.0,2,1.0,1.0,1.0,14,77.85192966461182
+2,31.66527159954755,355,bmp = 1 AND ceil = 1,bmp >= 1.0  AND  ceil >= 1.0  AND  0.0 <= iosCreateImagesetFolders < 1.0,0,0.937125748502994,1.0,0.8816901408450705,14,41.25383710861206
+3,29.14511776678896,371,jpeg = 1 AND antiAliasing = 1 AND ceil = 1,jpeg >= 1.0  AND  antiAliasing >= 1.0  AND  0.0 <= win < 1.0  AND  ceil >= 1.0,0,0.94,1.0,0.8867924528301887,14,43.33772277832031
+4,42.44873923461982,491,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND antiAliasing = 1 AND skipUpscaling = 1,androidMipmapInsteadOfDrawable >= 1.0  AND  antiAliasing >= 1.0  AND  skipUpscaling >= 1.0,0,1.0,1.0,1.0,14,43.28379464149475
+1,26.444063686714745,1777,androidIncludeLdpiTvdpi = 1,androidIncludeLdpiTvdpi >= 1.0  AND  0.0 <= ceil < 1.0,2,0.8093802345058627,1.0,0.6797974113674733,15,90.31140780448914
+2,51.2462793221972,402,floor = 1 AND png = 1,floor >= 1.0  AND  png >= 1.0,0,1.0,1.0,1.0,15,41.589746952056885
+3,44.29841644866552,345,androidMipmapInsteadOfDrawable = 1 AND scaleIsHeightDp = 1 AND jpeg = 1,scaleIsHeightDp >= 1.0  AND  jpeg >= 1.0  AND  androidMipmapInsteadOfDrawable >= 1.0,0,1.0,1.0,1.0,15,41.957767486572266
+4,28.303777009914803,392,android = 1 AND scaleIsHeightDp = 1 AND androidIncludeLdpiTvdpi = 1 AND threads = 10,androidIncludeLdpiTvdpi >= 1.0  AND  10.0 <= threads < 90.0  AND  0.0 <= jpeg < 1.0  AND  scaleIsHeightDp >= 1.0,0,0.759493670886076,1.0,0.6122448979591837,15,40.76162838935852
+1,28.39849225893411,752,web = 1,web >= 1.0,1,1.0,1.0,1.0,16,59.21179413795471
+2,57.20823782289459,571,androidMipmapInsteadOfDrawable = 1 AND ceil = 1,androidMipmapInsteadOfDrawable >= 1.0  AND  ceil >= 1.0  AND  threads >= 90.0,1,0.7627302275189599,1.0,0.6164623467600701,16,64.46374821662903
+3,42.571192387618,504,android = 1 AND round = 1 AND threads = 10,round >= 1.0  AND  10.0 <= threads < 90.0  AND  android >= 1.0,0,1.0,1.0,1.0,16,42.94778966903687
+4,56.34996320857972,400,android = 1 AND antiAliasing = 1 AND androidIncludeLdpiTvdpi = 1 AND threads = 10,antiAliasing >= 1.0  AND  androidIncludeLdpiTvdpi >= 1.0  AND  10.0 <= threads < 90.0,0,1.0,1.0,1.0,16,50.23068022727966
+1,52.62906275278339,1777,androidIncludeLdpiTvdpi = 1,androidIncludeLdpiTvdpi >= 1.0,3,1.0,1.0,1.0,17,96.57141971588136
+2,18.19412349829544,649,ios = 1 AND threads = 10,ios >= 1.0  AND  10.0 <= threads < 90.0,1,1.0,1.0,1.0,17,60.81877565383911
+3,31.470918440608266,665,jpeg = 1 AND antiAliasing = 1 AND threads = 90,antiAliasing >= 1.0  AND  threads >= 90.0  AND  jpeg >= 1.0  AND  0.0 <= win < 1.0,0,0.9393939393939392,1.0,0.8857142857142857,17,43.33117938041687
+4,34.704724141680856,339,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND jpeg = 1 AND skipUpscaling = 1,jpeg >= 1.0  AND  skipUpscaling >= 1.0  AND  androidMipmapInsteadOfDrawable >= 1.0,0,1.0,1.0,1.0,17,42.25221657752991
+1,37.24500282112919,1648,ios = 1,ios >= 1.0,2,1.0,1.0,1.0,18,79.12388181686401
+2,32.04807356420263,1029,skipUpscaling = 1 AND round = 1,skipUpscaling >= 1.0  AND  round >= 1.0  AND  0.0 <= gif < 1.0,1,0.927007299270073,1.0,0.8639455782312925,18,63.75144648551941
+3,40.69500929259919,631,scaleIsHeightDp = 1 AND jpeg = 1 AND antiAliasing = 1,jpeg >= 1.0  AND  antiAliasing >= 1.0  AND  scaleIsHeightDp >= 1.0,0,1.0,1.0,1.0,18,42.917720079422
+4,24.806608236539024,508,android = 1 AND antiAliasing = 1 AND skipUpscaling = 1 AND threads = 90,antiAliasing >= 1.0  AND  skipUpscaling >= 1.0  AND  android >= 1.0  AND  threads >= 90.0,0,1.0,1.0,1.0,18,42.8493537902832
+1,21.923606017124165,752,web = 1,web >= 1.0,0,1.0,1.0,1.0,19,48.83060097694397
+2,48.20282846913321,1281,skipUpscaling = 1 AND threads = 10,skipUpscaling >= 1.0  AND  10.0 <= threads < 90.0,1,1.0,1.0,1.0,19,73.7030463218689
+3,22.37223596255368,373,scaleIsHeightDp = 1 AND jpeg = 1 AND ceil = 1,scaleIsHeightDp >= 1.0  AND  jpeg >= 1.0  AND  ceil >= 1.0,0,1.0,1.0,1.0,19,43.58396625518799
+4,22.5446847852809,493,android = 1 AND scaleIsHeightDp = 1 AND antiAliasing = 1 AND androidIncludeLdpiTvdpi = 1,scaleIsHeightDp >= 1.0  AND  androidIncludeLdpiTvdpi >= 1.0  AND  antiAliasing >= 1.0,1,1.0,1.0,1.0,19,59.94200587272644
+1,37.36792578581424,1648,ios = 1,ios >= 1.0  AND  0.0 <= round < 1.0,1,0.7944403803950256,1.0,0.6589805825242718,2,59.13670873641968
+2,43.382573087170215,378,bmp = 1 AND floor = 1,bmp >= 1.0  AND  floor >= 1.0  AND  0.0 <= androidMipmapInsteadOfDrawable < 1.0  AND  0.0 <= androidIncludeLdpiTvdpi < 1.0,0,0.7647058823529412,1.0,0.6190476190476191,2,40.96567463874817
+3,39.472996119828366,922,antiAliasing = 1 AND skipUpscaling = 1 AND threads = 90,antiAliasing >= 1.0  AND  skipUpscaling >= 1.0  AND  0.0 <= bmp < 1.0  AND  threads >= 90.0,1,0.9069353882631892,1.0,0.8297180043383948,2,65.87542009353638
+4,21.330403111898505,354,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND jpeg = 1 AND threads = 90,androidMipmapInsteadOfDrawable >= 1.0  AND  jpeg >= 1.0  AND  threads >= 90.0,0,1.0,1.0,1.0,2,43.06794834136963
+1,30.625146307687366,1079,bmp = 1,bmp >= 1.0  AND  0.0 <= web < 1.0,1,0.9457743038593064,1.0,0.897126969416126,20,61.61773371696472
+2,22.57880269320116,1302,round = 1 AND threads = 90,round >= 1.0  AND  threads >= 90.0,2,1.0,1.0,1.0,20,89.96809267997742
+3,50.2267096703594,405,ios = 1 AND scaleIsHeightDp = 1 AND antiAliasing = 1,scaleIsHeightDp >= 1.0  AND  antiAliasing >= 1.0  AND  ios >= 1.0,0,1.0,1.0,1.0,20,42.411104917526245
+4,35.16565183759701,471,scaleIsHeightDp = 1 AND antiAliasing = 1 AND skipUpscaling = 1 AND threads = 90,scaleIsHeightDp >= 1.0  AND  antiAliasing >= 1.0  AND  threads >= 90.0  AND  skipUpscaling >= 1.0,0,1.0,1.0,1.0,20,44.70229506492615
+1,46.89478332924693,752,web = 1,web >= 1.0  AND  skipUpscaling >= 1.0,1,0.5824693685202639,1.0,0.4109042553191489,21,60.13223290443421
+2,53.18049630204589,558,bmp = 1 AND android = 1,bmp >= 1.0  AND  android >= 1.0,0,1.0,1.0,1.0,21,48.72838115692139
+3,26.791448690176694,733,android = 1 AND androidIncludeLdpiTvdpi = 1 AND threads = 10,androidIncludeLdpiTvdpi >= 1.0  AND  10.0 <= threads < 90.0  AND  0.0 <= gif < 1.0,1,0.918081180811808,1.0,0.8485675306957708,21,64.6027479171753
+4,23.146270090059204,526,android = 1 AND scaleIsHeightDp = 1 AND antiAliasing = 1 AND threads = 90,scaleIsHeightDp >= 1.0  AND  antiAliasing >= 1.0  AND  android >= 1.0  AND  threads >= 90.0,0,1.0,1.0,1.0,21,43.23297572135925
+1,23.641002024051964,752,web = 1,web >= 1.0,1,1.0,1.0,1.0,22,57.76043748855591
+2,50.20271892438325,1322,ceil = 1 AND threads = 90,ceil >= 1.0  AND  threads >= 90.0  AND  0.0 <= gif < 1.0,2,0.9163934426229507,1.0,0.8456883509833586,22,83.69279074668884
+3,54.53770553607045,363,android = 1 AND png = 1 AND threads = 90,android >= 1.0  AND  png >= 1.0  AND  threads >= 90.0,0,1.0,1.0,1.0,22,41.83486247062683
+4,37.545702309462285,523,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND androidIncludeLdpiTvdpi = 1 AND threads = 90,androidIncludeLdpiTvdpi >= 1.0  AND  threads >= 90.0  AND  androidMipmapInsteadOfDrawable >= 1.0  AND  0.0 <= bmp < 1.0  AND  0.0 <= gif < 1.0,0,0.8113636363636363,1.0,0.6826003824091779,22,42.99851107597351
+1,48.99215400878057,832,iosCreateImagesetFolders = 1,iosCreateImagesetFolders >= 1.0,2,1.0,1.0,1.0,23,75.72031283378601
+2,33.1037117056424,1813,android = 1 AND antiAliasing = 1,android >= 1.0  AND  antiAliasing >= 1.0,1,1.0,1.0,1.0,23,61.4279568195343
+3,43.28256733292152,1044,android = 1 AND androidIncludeLdpiTvdpi = 1 AND threads = 90,androidIncludeLdpiTvdpi >= 1.0  AND  threads >= 90.0  AND  0.0 <= gif < 1.0,0,0.9125,1.0,0.8390804597701149,23,49.28336262702942
+4,45.47562602201618,373,scaleIsHeightDp = 1 AND antiAliasing = 1 AND skipUpscaling = 1 AND threads = 10,antiAliasing >= 1.0  AND  10.0 <= threads < 90.0  AND  scaleIsHeightDp >= 1.0  AND  skipUpscaling >= 1.0,0,1.0,1.0,1.0,23,43.508551597595215
+1,56.24283042004121,830,win = 1,win >= 1.0,1,1.0,1.0,1.0,24,67.93831944465637
+2,21.36757433845821,559,ios = 1 AND jpeg = 1,ios >= 1.0  AND  jpeg >= 1.0,0,1.0,1.0,1.0,24,45.80299377441406
+3,27.374739959060765,493,antiAliasing = 1 AND round = 1 AND threads = 10,antiAliasing >= 1.0  AND  round >= 1.0  AND  10.0 <= threads < 90.0  AND  0.0 <= skipUpscaling < 1.0,0,0.6853333333333332,1.0,0.5212981744421906,24,43.1087543964386
+4,57.25608356682282,354,android = 1 AND antiAliasing = 1 AND round = 1 AND threads = 90,round >= 1.0  AND  threads >= 90.0  AND  antiAliasing >= 1.0  AND  android >= 1.0,0,1.0,1.0,1.0,24,47.74020481109619
+1,42.24205444211075,830,win = 1,win >= 1.0,2,1.0,1.0,1.0,25,70.07282423973083
+2,52.86888156528057,562,ios = 1 AND round = 1,ios >= 1.0  AND  round >= 1.0,1,1.0,1.0,1.0,25,57.113396406173706
+3,51.42162264857815,598,android = 1 AND scaleIsHeightDp = 1 AND round = 1,scaleIsHeightDp >= 1.0  AND  round >= 1.0  AND  android >= 1.0  AND  0.0 <= gif < 1.0,0,0.9234923492349236,1.0,0.8578595317725752,25,42.74372911453247
+4,35.10319671528239,491,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND antiAliasing = 1 AND skipUpscaling = 1,androidMipmapInsteadOfDrawable >= 1.0  AND  skipUpscaling >= 1.0  AND  androidIncludeLdpiTvdpi >= 1.0  AND  antiAliasing >= 1.0,0,0.6836461126005363,1.0,0.5193482688391039,25,42.38118028640747
+1,54.95920773596597,1802,androidMipmapInsteadOfDrawable = 1,androidMipmapInsteadOfDrawable >= 1.0,4,1.0,1.0,1.0,26,85.14855790138245
+2,51.18341698360821,733,androidIncludeLdpiTvdpi = 1 AND threads = 10,androidIncludeLdpiTvdpi >= 1.0  AND  10.0 <= threads < 90.0,1,1.0,1.0,1.0,26,65.969970703125
+3,56.74723520927436,733,android = 1 AND androidIncludeLdpiTvdpi = 1 AND threads = 10,androidIncludeLdpiTvdpi >= 1.0  AND  10.0 <= threads < 90.0,1,1.0,1.0,1.0,26,64.90138459205627
+4,52.1520055253173,509,android = 1 AND skipUpscaling = 1 AND androidIncludeLdpiTvdpi = 1 AND threads = 90,androidIncludeLdpiTvdpi >= 1.0  AND  threads >= 90.0  AND  skipUpscaling >= 1.0  AND  0.0 <= gif < 1.0,0,0.9112299465240642,1.0,0.8369351669941061,26,42.94110369682312
+1,25.733135609195745,752,web = 1,web >= 1.0,1,1.0,1.0,1.0,27,58.34970760345459
+2,26.630470010746773,733,androidIncludeLdpiTvdpi = 1 AND threads = 10,androidIncludeLdpiTvdpi >= 1.0  AND  10.0 <= threads < 90.0  AND  0.0 <= png < 1.0,1,0.9124629080118694,1.0,0.8390177353342428,27,64.66461777687073
+3,18.879766395225555,933,android = 1 AND scaleIsHeightDp = 1 AND androidIncludeLdpiTvdpi = 1,scaleIsHeightDp >= 1.0  AND  androidIncludeLdpiTvdpi >= 1.0,1,1.0,1.0,1.0,27,65.68930053710938
+4,24.887689575361755,517,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND skipUpscaling = 1 AND threads = 90,androidMipmapInsteadOfDrawable >= 1.0  AND  0.0 <= png < 1.0  AND  threads >= 90.0  AND  skipUpscaling >= 1.0,0,0.9069767441860463,1.0,0.8297872340425532,27,43.00800633430481
+1,53.62384524746189,1648,ios = 1,ios >= 1.0,1,1.0,1.0,1.0,28,87.37767910957336
+2,53.51526048858205,592,ios = 1 AND floor = 1,ios >= 1.0  AND  floor >= 1.0  AND  0.0 <= bmp < 1.0,1,0.9107635694572216,1.0,0.8361486486486487,28,64.70574426651001
+3,47.82821972974226,924,android = 1 AND scaleIsHeightDp = 1 AND antiAliasing = 1,android >= 1.0  AND  scaleIsHeightDp >= 1.0  AND  antiAliasing >= 1.0,1,1.0,1.0,1.0,28,64.91787672042847
+4,43.01428185673616,493,android = 1 AND scaleIsHeightDp = 1 AND antiAliasing = 1 AND androidIncludeLdpiTvdpi = 1,scaleIsHeightDp >= 1.0  AND  antiAliasing >= 1.0  AND  androidIncludeLdpiTvdpi >= 1.0  AND  0.0 <= png < 1.0,0,0.9080841638981174,1.0,0.8316430020283976,28,43.30037808418274
+1,38.34512366145919,752,web = 1,web >= 1.0  AND  0.0 <= ceil < 1.0,1,0.8035003977724742,1.0,0.6715425531914894,29,62.67363452911377
+2,39.297442061952935,586,androidIncludeLdpiTvdpi = 1 AND round = 1,androidIncludeLdpiTvdpi >= 1.0  AND  round >= 1.0,1,1.0,1.0,1.0,29,58.29736876487732
+3,46.21492846875,433,jpeg = 1 AND round = 1 AND threads = 90,jpeg >= 1.0  AND  round >= 1.0  AND  threads >= 90.0,0,1.0,1.0,1.0,29,43.05248236656189
+4,51.28111536929083,386,android = 1 AND scaleIsHeightDp = 1 AND skipUpscaling = 1 AND threads = 10,scaleIsHeightDp >= 1.0  AND  skipUpscaling >= 1.0  AND  10.0 <= threads < 90.0  AND  android >= 1.0,0,1.0,1.0,1.0,29,42.93964338302612
+1,27.77610764377865,982,gif = 1,gif >= 1.0  AND  0.0 <= ios < 1.0,1,0.869314910765688,1.0,0.7688391038696538,3,60.14637351036072
+2,41.70489725128654,1598,scaleIsHeightDp = 1 AND skipUpscaling = 1,scaleIsHeightDp >= 1.0  AND  skipUpscaling >= 1.0,2,1.0,1.0,1.0,3,80.46756148338318
+3,25.411918788130578,540,androidMipmapInsteadOfDrawable = 1 AND antiAliasing = 1 AND threads = 90,androidMipmapInsteadOfDrawable >= 1.0  AND  antiAliasing >= 1.0  AND  threads >= 90.0,0,1.0,1.0,1.0,3,42.86572289466858
+4,37.72618195653386,347,android = 1 AND floor = 1 AND androidIncludeLdpiTvdpi = 1 AND threads = 90,floor >= 1.0  AND  androidIncludeLdpiTvdpi >= 1.0  AND  threads >= 90.0,0,1.0,1.0,1.0,3,43.05358028411865
+1,30.90471695211013,830,win = 1,win >= 1.0  AND  0.0 <= round < 1.0,1,0.7979724837074583,1.0,0.6638554216867469,30,57.82063674926758
+2,34.164064070329964,1302,round = 1 AND threads = 90,round >= 1.0  AND  threads >= 90.0  AND  0.0 <= web < 1.0,2,0.9491525423728812,1.0,0.9032258064516128,30,82.76515102386475
+3,49.00905680789615,411,jpeg = 1 AND floor = 1 AND antiAliasing = 1,jpeg >= 1.0  AND  floor >= 1.0  AND  antiAliasing >= 1.0,0,1.0,1.0,1.0,30,43.67957520484924
+4,56.25906960688536,400,android = 1 AND antiAliasing = 1 AND androidIncludeLdpiTvdpi = 1 AND threads = 10,antiAliasing >= 1.0  AND  androidIncludeLdpiTvdpi >= 1.0  AND  10.0 <= threads < 90.0  AND  0.0 <= floor < 1.0,0,0.774885145482389,1.0,0.6325,30,58.355297565460205
+1,29.38804330762165,1648,ios = 1,ios >= 1.0,3,1.0,1.0,1.0,31,82.15439891815186
+2,21.209821227746712,1044,androidIncludeLdpiTvdpi = 1 AND threads = 90,0.0 <= bmp < 1.0  AND  androidIncludeLdpiTvdpi >= 1.0  AND  threads >= 90.0,1,0.9096605744125328,1.0,0.8342911877394636,31,72.54697227478027
+3,41.796269023213085,435,android = 1 AND ceil = 1 AND threads = 10,ceil >= 1.0  AND  10.0 <= threads < 90.0  AND  android >= 1.0,0,1.0,1.0,1.0,31,42.93032741546631
+4,49.81810000938334,509,android = 1 AND skipUpscaling = 1 AND androidIncludeLdpiTvdpi = 1 AND threads = 90,0.0 <= floor < 1.0  AND  androidIncludeLdpiTvdpi >= 1.0  AND  skipUpscaling >= 1.0  AND  threads >= 90.0,0,0.800942285041225,1.0,0.6679764243614931,31,42.540168046951294
+1,22.82847240021509,832,iosCreateImagesetFolders = 1,iosCreateImagesetFolders >= 1.0,2,1.0,1.0,1.0,32,71.84077906608582
+2,29.83643990490996,497,bmp = 1 AND skipUpscaling = 1,bmp >= 1.0  AND  skipUpscaling >= 1.0  AND  0.0 <= ios < 1.0,0,0.8600917431192661,1.0,0.7545271629778671,32,58.018261194229126
+3,41.22082002634624,616,android = 1 AND antiAliasing = 1 AND round = 1,antiAliasing >= 1.0  AND  round >= 1.0  AND  android >= 1.0  AND  0.0 <= gif < 1.0,0,0.9192982456140352,1.0,0.8506493506493507,32,42.87900376319885
+4,39.94511160399584,394,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND skipUpscaling = 1 AND threads = 10,skipUpscaling >= 1.0  AND  10.0 <= threads < 90.0  AND  androidMipmapInsteadOfDrawable >= 1.0  AND  scaleIsHeightDp >= 1.0,0,0.6932006633499171,1.0,0.5304568527918782,32,41.81430339813232
+1,34.537780681382486,1777,androidIncludeLdpiTvdpi = 1,androidIncludeLdpiTvdpi >= 1.0,2,1.0,1.0,1.0,33,92.6495440006256
+2,39.92978028961207,510,iosCreateImagesetFolders = 1 AND threads = 90,iosCreateImagesetFolders >= 1.0  AND  threads >= 90.0,1,1.0,1.0,1.0,33,56.92031908035278
+3,40.282603690760354,394,androidMipmapInsteadOfDrawable = 1 AND scaleIsHeightDp = 1 AND threads = 10,scaleIsHeightDp >= 1.0  AND  10.0 <= threads < 90.0  AND  androidMipmapInsteadOfDrawable >= 1.0,0,1.0,1.0,1.0,33,42.79106307029724
+4,41.52198169002168,509,android = 1 AND skipUpscaling = 1 AND androidIncludeLdpiTvdpi = 1 AND threads = 90,skipUpscaling >= 1.0  AND  androidIncludeLdpiTvdpi >= 1.0  AND  threads >= 90.0  AND  0.0 <= jpeg < 1.0,0,0.7952662721893492,1.0,0.6601178781925344,33,43.784682750701904
+1,48.86015104971222,832,iosCreateImagesetFolders = 1,iosCreateImagesetFolders >= 1.0  AND  0.0 <= png < 1.0,1,0.903098220171391,1.0,0.8233173076923077,34,57.12789011001587
+2,32.17517200641996,1045,androidMipmapInsteadOfDrawable = 1 AND threads = 90,androidMipmapInsteadOfDrawable >= 1.0  AND  threads >= 90.0,2,1.0,1.0,1.0,34,72.87486457824707
+3,29.999817795734035,619,floor = 1 AND skipUpscaling = 1 AND threads = 90,floor >= 1.0  AND  skipUpscaling >= 1.0  AND  0.0 <= bmp < 1.0  AND  threads >= 90.0,1,0.9053934571175952,1.0,0.827140549273021,34,61.48962712287903
+4,28.863384076971087,394,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND scaleIsHeightDp = 1 AND threads = 10,androidMipmapInsteadOfDrawable >= 1.0  AND  10.0 <= threads < 90.0  AND  0.0 <= floor < 1.0  AND  scaleIsHeightDp >= 1.0,0,0.7744945567651632,1.0,0.631979695431472,34,41.00917029380798
+1,39.02526543775878,982,gif = 1,gif >= 1.0,2,1.0,1.0,1.0,35,75.43413925170898
+2,39.06478446360967,1949,scaleIsHeightDp = 1 AND threads = 90,scaleIsHeightDp >= 1.0  AND  threads >= 90.0,2,1.0,1.0,1.0,35,76.60222959518433
+3,42.68382215484935,493,antiAliasing = 1 AND round = 1 AND threads = 10,antiAliasing >= 1.0  AND  round >= 1.0  AND  10.0 <= threads < 90.0  AND  skipUpscaling >= 1.0,0,0.6474622770919067,1.0,0.4787018255578093,35,43.348105669021606
+4,45.632977372229966,508,android = 1 AND antiAliasing = 1 AND skipUpscaling = 1 AND threads = 90,antiAliasing >= 1.0  AND  skipUpscaling >= 1.0  AND  threads >= 90.0  AND  0.0 <= bmp < 1.0  AND  android >= 1.0,0,0.9075268817204302,1.0,0.8307086614173228,35,43.8946328163147
+1,33.00174439517202,1777,androidIncludeLdpiTvdpi = 1,androidIncludeLdpiTvdpi >= 1.0,2,1.0,1.0,1.0,36,88.34073853492737
+2,36.145489537070986,933,scaleIsHeightDp = 1 AND androidIncludeLdpiTvdpi = 1,scaleIsHeightDp >= 1.0  AND  androidIncludeLdpiTvdpi >= 1.0,1,1.0,1.0,1.0,36,58.95747184753418
+3,42.22914754780189,712,android = 1 AND skipUpscaling = 1 AND threads = 10,skipUpscaling >= 1.0  AND  10.0 <= threads < 90.0  AND  android >= 1.0,1,1.0,1.0,1.0,36,60.064647912979126
+4,19.956007243435373,353,android = 1 AND scaleIsHeightDp = 1 AND ceil = 1 AND threads = 90,android >= 1.0  AND  ceil >= 1.0  AND  threads >= 90.0  AND  scaleIsHeightDp >= 1.0,0,1.0,1.0,1.0,36,42.14554476737976
+1,49.38298534300168,1079,bmp = 1,bmp >= 1.0,1,1.0,1.0,1.0,37,67.10170722007751
+2,33.615995097479534,1970,antiAliasing = 1 AND threads = 90,antiAliasing >= 1.0  AND  threads >= 90.0  AND  0.0 <= floor < 1.0,3,0.7962114268255422,1.0,0.6614213197969543,37,97.21027326583862
+3,38.44613559926792,650,scaleIsHeightDp = 1 AND ceil = 1 AND threads = 90,scaleIsHeightDp >= 1.0  AND  ceil >= 1.0  AND  threads >= 90.0,0,1.0,1.0,1.0,37,42.79276704788208
+4,25.425591711209357,341,android = 1 AND scaleIsHeightDp = 1 AND jpeg = 1 AND antiAliasing = 1,jpeg >= 1.0  AND  antiAliasing >= 1.0  AND  android >= 1.0  AND  scaleIsHeightDp >= 1.0,0,1.0,1.0,1.0,37,42.3569221496582
+1,28.356933211553645,1777,androidIncludeLdpiTvdpi = 1,androidIncludeLdpiTvdpi >= 1.0,1,1.0,1.0,1.0,38,79.72269201278687
+2,43.15935050632906,670,bmp = 1 AND threads = 90,bmp >= 1.0  AND  threads >= 90.0  AND  0.0 <= androidIncludeLdpiTvdpi < 1.0,1,0.8517566409597259,1.0,0.7417910447761195,38,57.6582133769989
+3,38.25298407723055,894,android = 1 AND scaleIsHeightDp = 1 AND skipUpscaling = 1,android >= 1.0  AND  scaleIsHeightDp >= 1.0  AND  skipUpscaling >= 1.0,0,1.0,1.0,1.0,38,47.414496183395386
+4,43.81227964252376,386,android = 1 AND scaleIsHeightDp = 1 AND skipUpscaling = 1 AND threads = 10,scaleIsHeightDp >= 1.0  AND  10.0 <= threads < 90.0  AND  android >= 1.0  AND  skipUpscaling >= 1.0,0,1.0,1.0,1.0,38,44.04484391212464
+1,25.45350219710765,1802,androidMipmapInsteadOfDrawable = 1,androidMipmapInsteadOfDrawable >= 1.0,3,1.0,1.0,1.0,39,91.81661009788512
+2,36.142916359551606,1302,round = 1 AND threads = 90,0.0 <= web < 1.0  AND  round >= 1.0  AND  threads >= 90.0,0,0.9491525423728812,1.0,0.9032258064516128,39,45.61981654167175
+3,37.52911660036868,648,antiAliasing = 1 AND ceil = 1 AND threads = 90,ceil >= 1.0  AND  threads >= 90.0  AND  antiAliasing >= 1.0  AND  0.0 <= bmp < 1.0,0,0.9026248941574936,1.0,0.8225308641975309,39,42.76728439331055
+4,22.623501505081784,346,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND floor = 1 AND threads = 90,androidMipmapInsteadOfDrawable >= 1.0  AND  floor >= 1.0  AND  threads >= 90.0,0,1.0,1.0,1.0,39,41.84777641296387
+1,34.62536754243237,1648,ios = 1,ios >= 1.0  AND  antiAliasing >= 1.0,3,0.6579804560260586,1.0,0.4902912621359223,4,87.63018918037415
+2,27.806418454836667,1610,antiAliasing = 1 AND skipUpscaling = 1,antiAliasing >= 1.0  AND  skipUpscaling >= 1.0,2,1.0,1.0,1.0,4,87.4781641960144
+3,43.07004225893615,379,androidMipmapInsteadOfDrawable = 1 AND androidIncludeLdpiTvdpi = 1 AND threads = 10,androidIncludeLdpiTvdpi >= 1.0  AND  10.0 <= threads < 90.0  AND  androidMipmapInsteadOfDrawable >= 1.0,0,1.0,1.0,1.0,4,41.85691022872925
+4,43.936259286485146,398,android = 1 AND scaleIsHeightDp = 1 AND antiAliasing = 1 AND threads = 10,scaleIsHeightDp >= 1.0  AND  antiAliasing >= 1.0  AND  android >= 1.0  AND  10.0 <= threads < 90.0,0,1.0,1.0,1.0,4,42.964877128601074
+1,51.68075301951748,830,win = 1,win >= 1.0,1,1.0,1.0,1.0,40,64.16900157928467
+2,49.99587314141646,1792,android = 1 AND scaleIsHeightDp = 1,android >= 1.0  AND  scaleIsHeightDp >= 1.0  AND  0.0 <= skipUpscaling < 1.0,0,0.6676579925650558,1.0,0.5011160714285714,40,83.52725410461426
+3,33.46861763437735,485,scaleIsHeightDp = 1 AND skipUpscaling = 1 AND androidIncludeLdpiTvdpi = 1,scaleIsHeightDp >= 1.0  AND  skipUpscaling >= 1.0  AND  androidIncludeLdpiTvdpi >= 1.0,0,1.0,1.0,1.0,40,42.53267574310303
+4,28.96680507665072,351,android = 1 AND androidIncludeLdpiTvdpi = 1 AND ceil = 1 AND threads = 90,androidIncludeLdpiTvdpi >= 1.0  AND  ceil >= 1.0  AND  threads >= 90.0,0,1.0,1.0,1.0,40,42.82091021537781
+1,55.03792549345367,1777,androidIncludeLdpiTvdpi = 1,androidIncludeLdpiTvdpi >= 1.0,3,1.0,1.0,1.0,41,88.07280826568604
+2,53.55732208581079,369,gif = 1 AND threads = 10,gif >= 1.0  AND  10.0 <= threads < 90.0,0,1.0,1.0,1.0,41,40.65227770805359
+3,25.741750768122174,351,androidIncludeLdpiTvdpi = 1 AND ceil = 1 AND threads = 90,androidIncludeLdpiTvdpi >= 1.0  AND  ceil >= 1.0  AND  threads >= 90.0,0,1.0,1.0,1.0,41,42.28303098678589
+4,55.80779444265095,352,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND ceil = 1 AND threads = 90,androidMipmapInsteadOfDrawable >= 1.0  AND  ceil >= 1.0  AND  threads >= 90.0,0,1.0,1.0,1.0,41,42.75130844116211
+1,36.665054267111714,832,iosCreateImagesetFolders = 1,iosCreateImagesetFolders >= 1.0,1,1.0,1.0,1.0,42,64.13035440444946
+2,39.23218913797598,1089,jpeg = 1 AND skipUpscaling = 1,jpeg >= 1.0  AND  skipUpscaling >= 1.0,1,1.0,1.0,1.0,42,65.84919691085815
+3,25.375833054667265,922,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND scaleIsHeightDp = 1,androidMipmapInsteadOfDrawable >= 1.0  AND  scaleIsHeightDp >= 1.0,1,1.0,1.0,1.0,42,68.789377450943
+4,28.747909893602586,352,android = 1 AND jpeg = 1 AND antiAliasing = 1 AND threads = 90,jpeg >= 1.0  AND  antiAliasing >= 1.0  AND  android >= 1.0  AND  threads >= 90.0,0,1.0,1.0,1.0,42,43.2912700176239
+1,28.28166575287992,1144,png = 1,png >= 1.0,1,1.0,1.0,1.0,43,66.43909454345703
+2,31.13607741120997,341,gif = 1 AND floor = 1,gif >= 1.0  AND  0.0 <= win < 1.0  AND  floor >= 1.0,0,0.93603744149766,1.0,0.8797653958944281,43,40.08329582214356
+3,49.67284316638614,485,scaleIsHeightDp = 1 AND skipUpscaling = 1 AND androidIncludeLdpiTvdpi = 1,scaleIsHeightDp >= 1.0  AND  skipUpscaling >= 1.0  AND  androidIncludeLdpiTvdpi >= 1.0,0,1.0,1.0,1.0,43,42.39892077445984
+4,45.13805041866209,351,android = 1 AND androidIncludeLdpiTvdpi = 1 AND ceil = 1 AND threads = 90,androidIncludeLdpiTvdpi >= 1.0  AND  ceil >= 1.0  AND  0.0 <= bmp < 1.0  AND  threads >= 90.0,0,0.903125,1.0,0.8233618233618234,43,41.67540168762207
+1,33.090068350474375,1802,androidMipmapInsteadOfDrawable = 1,androidMipmapInsteadOfDrawable >= 1.0,2,1.0,1.0,1.0,44,81.8916003704071
+2,29.664358309332258,832,iosCreateImagesetFolders = 1 AND ios = 1,iosCreateImagesetFolders >= 1.0,2,1.0,1.0,1.0,44,77.31890845298767
+3,30.976923254809016,371,jpeg = 1 AND antiAliasing = 1 AND ceil = 1,jpeg >= 1.0  AND  antiAliasing >= 1.0  AND  ceil >= 1.0,0,1.0,1.0,1.0,44,42.30121445655823
+4,39.4692452602374,346,android = 1 AND androidIncludeLdpiTvdpi = 1 AND round = 1 AND threads = 90,androidIncludeLdpiTvdpi >= 1.0  AND  round >= 1.0  AND  threads >= 90.0,0,1.0,1.0,1.0,44,42.45297622680664
+1,56.9013028209412,752,web = 1,web >= 1.0,1,1.0,1.0,1.0,45,74.23372864723206
+2,19.70225790530981,1335,floor = 1 AND threads = 90,floor >= 1.0  AND  threads >= 90.0,1,1.0,1.0,1.0,45,62.81838369369507
+3,30.719164106242616,619,floor = 1 AND skipUpscaling = 1 AND threads = 90,floor >= 1.0  AND  skipUpscaling >= 1.0  AND  0.0 <= androidIncludeLdpiTvdpi < 1.0  AND  threads >= 90.0  AND  0.0 <= androidMipmapInsteadOfDrawable < 1.0,0,0.741869918699187,1.0,0.5896607431340872,45,43.46432876586914
+4,20.770867571128864,460,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND skipUpscaling = 1 AND androidIncludeLdpiTvdpi = 1,skipUpscaling >= 1.0  AND  androidIncludeLdpiTvdpi >= 1.0  AND  androidMipmapInsteadOfDrawable >= 1.0  AND  0.0 <= ceil < 1.0,0,0.8174807197943444,1.0,0.691304347826087,45,42.01986360549927
+1,28.62300848344004,1079,bmp = 1,bmp >= 1.0,2,1.0,1.0,1.0,46,89.68626308441162
+2,55.9323788832854,494,win = 1 AND threads = 90,0.0 <= gif < 1.0  AND  win >= 1.0  AND  threads >= 90.0,0,0.9142857142857144,1.0,0.8421052631578947,46,62.456013917922974
+3,44.595297580041006,376,skipUpscaling = 1 AND androidIncludeLdpiTvdpi = 1 AND threads = 10,skipUpscaling >= 1.0  AND  androidIncludeLdpiTvdpi >= 1.0  AND  10.0 <= threads < 90.0,0,1.0,1.0,1.0,46,49.47577476501465
+4,42.79565919266266,509,android = 1 AND skipUpscaling = 1 AND androidIncludeLdpiTvdpi = 1 AND threads = 90,skipUpscaling >= 1.0  AND  androidIncludeLdpiTvdpi >= 1.0  AND  threads >= 90.0,0,1.0,1.0,1.0,46,50.96267080307007
+1,31.35078713036838,830,win = 1,win >= 1.0,1,1.0,1.0,1.0,47,61.03699445724487
+2,54.81052078363479,422,iosCreateImagesetFolders = 1 AND antiAliasing = 1,iosCreateImagesetFolders >= 1.0  AND  0.0 <= png < 1.0  AND  antiAliasing >= 1.0,0,0.9010416666666666,1.0,0.8199052132701422,47,39.77898359298706
+3,50.43106526163641,484,ios = 1 AND scaleIsHeightDp = 1 AND threads = 90,ios >= 1.0  AND  scaleIsHeightDp >= 1.0  AND  threads >= 90.0,1,1.0,1.0,1.0,47,57.9293692111969
+4,44.7610681281723,347,android = 1 AND floor = 1 AND androidIncludeLdpiTvdpi = 1 AND threads = 90,floor >= 1.0  AND  androidIncludeLdpiTvdpi >= 1.0  AND  0.0 <= gif < 1.0  AND  threads >= 90.0,0,0.915625,1.0,0.8443804034582133,47,41.67517518997192
+1,42.09775694413928,1079,bmp = 1,bmp >= 1.0,2,1.0,1.0,1.0,48,80.85992217063904
+2,32.11307037517923,1029,skipUpscaling = 1 AND round = 1,skipUpscaling >= 1.0  AND  round >= 1.0  AND  0.0 <= web < 1.0  AND  0.0 <= antiAliasing < 1.0,2,0.6037991858887382,1.0,0.4324586977648202,48,85.12662053108215
+3,42.91809052541386,348,scaleIsHeightDp = 1 AND png = 1 AND threads = 90,scaleIsHeightDp >= 1.0  AND  png >= 1.0  AND  threads >= 90.0,0,1.0,1.0,1.0,48,42.41951823234558
+4,34.31743632460342,476,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND scaleIsHeightDp = 1 AND skipUpscaling = 1,androidMipmapInsteadOfDrawable >= 1.0  AND  scaleIsHeightDp >= 1.0  AND  skipUpscaling >= 1.0,0,1.0,1.0,1.0,48,42.68678569793701
+1,48.59771637171004,1144,png = 1,png >= 1.0,2,1.0,1.0,1.0,49,78.90179944038391
+2,21.600546288540865,1302,round = 1 AND threads = 90,round >= 1.0  AND  threads >= 90.0,2,1.0,1.0,1.0,49,81.30872678756714
+3,25.13213499335456,542,scaleIsHeightDp = 1 AND jpeg = 1 AND threads = 10,scaleIsHeightDp >= 1.0  AND  jpeg >= 1.0  AND  10.0 <= threads < 90.0  AND  0.0 <= ios < 1.0,0,0.8696558915537017,1.0,0.7693726937269373,49,42.27090382575989
+4,43.54265169304645,482,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND scaleIsHeightDp = 1 AND antiAliasing = 1,androidMipmapInsteadOfDrawable >= 1.0  AND  scaleIsHeightDp >= 1.0  AND  0.0 <= bmp < 1.0  AND  antiAliasing >= 1.0,0,0.9082672706681766,1.0,0.8319502074688797,49,42.97745609283447
+1,47.4419978290852,982,gif = 1,gif >= 1.0  AND  0.0 <= antiAliasing < 1.0,3,0.6915389740173218,1.0,0.5285132382892057,5,85.42391419410706
+2,44.09808942141114,353,web = 1 AND threads = 10,0.0 <= gif < 1.0  AND  web >= 1.0  AND  10.0 <= threads < 90.0  AND  0.0 <= floor < 1.0,0,0.7347670250896057,1.0,0.5807365439093485,5,39.14020490646362
+3,40.16237871655368,380,skipUpscaling = 1 AND ceil = 1 AND threads = 10,skipUpscaling >= 1.0  AND  ceil >= 1.0  AND  10.0 <= threads < 90.0  AND  0.0 <= bmp < 1.0,0,0.923512747875354,1.0,0.8578947368421053,5,41.81667637825012
+4,47.99426744758637,343,android = 1 AND scaleIsHeightDp = 1 AND round = 1 AND threads = 90,round >= 1.0  AND  threads >= 90.0  AND  android >= 1.0  AND  scaleIsHeightDp >= 1.0,0,1.0,1.0,1.0,5,42.41913557052612
+1,43.01233704508789,1144,png = 1,png >= 1.0,3,1.0,1.0,1.0,50,89.83419156074524
+2,45.69234311547156,701,png = 1 AND threads = 90,png >= 1.0  AND  threads >= 90.0  AND  0.0 <= iosCreateImagesetFolders < 1.0,2,0.9297709923664124,1.0,0.8687589158345221,50,71.95312190055847
+3,30.90706295570041,482,androidMipmapInsteadOfDrawable = 1 AND scaleIsHeightDp = 1 AND antiAliasing = 1,androidMipmapInsteadOfDrawable >= 1.0  AND  scaleIsHeightDp >= 1.0  AND  antiAliasing >= 1.0,0,1.0,1.0,1.0,50,43.03795218467712
+4,28.70900946942748,400,android = 1 AND antiAliasing = 1 AND androidIncludeLdpiTvdpi = 1 AND threads = 10,antiAliasing >= 1.0  AND  androidIncludeLdpiTvdpi >= 1.0  AND  10.0 <= threads < 90.0  AND  0.0 <= png < 1.0,0,0.9100817438692098,1.0,0.835,50,41.87642741203308
+1,25.618895499504283,1079,bmp = 1,bmp >= 1.0,2,1.0,1.0,1.0,51,83.80983901023865
+2,35.042907498211235,1700,android = 1 AND skipUpscaling = 1,android >= 1.0  AND  skipUpscaling >= 1.0  AND  0.0 <= gif < 1.0,3,0.919262555626192,1.0,0.8505882352941176,51,88.27098608016968
+3,47.38769131408663,528,android = 1 AND floor = 1 AND threads = 10,android >= 1.0  AND  floor >= 1.0  AND  10.0 <= threads < 90.0  AND  0.0 <= bmp < 1.0,0,0.9202453987730062,1.0,0.8522727272727273,51,42.81077456474304
+4,48.17401049476311,345,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND scaleIsHeightDp = 1 AND jpeg = 1,androidMipmapInsteadOfDrawable >= 1.0  AND  scaleIsHeightDp >= 1.0  AND  jpeg >= 1.0,0,1.0,1.0,1.0,51,41.80953645706177
+1,20.527399301810416,1648,ios = 1,ios >= 1.0,4,1.0,1.0,1.0,52,80.33973050117493
+2,53.49207741107261,1386,scaleIsHeightDp = 1 AND threads = 10,scaleIsHeightDp >= 1.0  AND  10.0 <= threads < 90.0  AND  0.0 <= gif < 1.0,1,0.937116564417178,1.0,0.8816738816738817,52,77.21313953399658
+3,54.21266213587744,762,android = 1 AND antiAliasing = 1 AND threads = 10,antiAliasing >= 1.0  AND  10.0 <= threads < 90.0  AND  android >= 1.0,1,1.0,1.0,1.0,52,67.27037382125854
+4,28.852256641191023,482,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND scaleIsHeightDp = 1 AND antiAliasing = 1,scaleIsHeightDp >= 1.0  AND  antiAliasing >= 1.0  AND  androidMipmapInsteadOfDrawable >= 1.0  AND  0.0 <= ceil < 1.0,0,0.8142681426814268,1.0,0.6867219917012448,52,42.19502329826355
+1,36.83238238015843,752,web = 1,web >= 1.0,1,1.0,1.0,1.0,53,59.28438687324524
+2,39.611814893864576,494,win = 1 AND threads = 90,win >= 1.0  AND  threads >= 90.0,0,1.0,1.0,1.0,53,41.70390605926514
+3,23.472955361064518,348,bmp = 1 AND android = 1 AND threads = 90,bmp >= 1.0  AND  threads >= 90.0  AND  android >= 1.0,0,1.0,1.0,1.0,53,41.05318760871887
+4,47.91241412449542,482,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND scaleIsHeightDp = 1 AND antiAliasing = 1,androidMipmapInsteadOfDrawable >= 1.0  AND  scaleIsHeightDp >= 1.0  AND  skipUpscaling >= 1.0  AND  antiAliasing >= 1.0,0,0.6866485013623979,1.0,0.5228215767634855,53,42.47858929634094
+1,22.72578947816819,830,win = 1,win >= 1.0,1,1.0,1.0,1.0,54,66.56833529472351
+2,28.61881154861104,1386,scaleIsHeightDp = 1 AND threads = 10,scaleIsHeightDp >= 1.0  AND  10.0 <= threads < 90.0,3,1.0,1.0,1.0,54,89.0050220489502
+3,28.838246058653212,753,android = 1 AND scaleIsHeightDp = 1 AND threads = 10,scaleIsHeightDp >= 1.0  AND  10.0 <= threads < 90.0  AND  0.0 <= gif < 1.0  AND  android >= 1.0,0,0.925053533190578,1.0,0.8605577689243028,54,43.193336486816406
+4,22.101465525893637,348,android = 1 AND antiAliasing = 1 AND ceil = 1 AND threads = 90,antiAliasing >= 1.0  AND  ceil >= 1.0  AND  0.0 <= gif < 1.0  AND  android >= 1.0  AND  threads >= 90.0,0,0.9175738724727838,1.0,0.8477011494252874,54,41.93804311752319
+1,29.45009388744913,982,gif = 1,gif >= 1.0  AND  0.0 <= win < 1.0,1,0.936654033567948,1.0,0.8808553971486762,55,63.21853494644165
+2,19.01114691800886,497,bmp = 1 AND skipUpscaling = 1,bmp >= 1.0  AND  0.0 <= scaleIsHeightDp < 1.0  AND  skipUpscaling >= 1.0,1,0.6420765027322405,1.0,0.4728370221327967,55,61.480884313583374
+3,26.031442425718648,933,android = 1 AND scaleIsHeightDp = 1 AND androidIncludeLdpiTvdpi = 1,scaleIsHeightDp >= 1.0  AND  androidIncludeLdpiTvdpi >= 1.0,0,1.0,1.0,1.0,55,47.00517511367798
+4,40.07687950092369,346,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND floor = 1 AND threads = 90,androidMipmapInsteadOfDrawable >= 1.0  AND  floor >= 1.0  AND  threads >= 90.0  AND  0.0 <= png < 1.0,0,0.9085173501577288,1.0,0.8323699421965318,55,42.6563777923584
+1,42.43689360174256,1802,androidMipmapInsteadOfDrawable = 1,androidMipmapInsteadOfDrawable >= 1.0,2,1.0,1.0,1.0,56,82.68126964569092
+2,27.122648302598968,738,ios = 1 AND skipUpscaling = 1,ios >= 1.0  AND  skipUpscaling >= 1.0,0,1.0,1.0,1.0,56,46.55331635475159
+3,22.78563534147837,922,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND scaleIsHeightDp = 1,androidMipmapInsteadOfDrawable >= 1.0  AND  scaleIsHeightDp >= 1.0,2,1.0,1.0,1.0,56,88.04159498214722
+4,27.40028687369766,542,android = 1 AND antiAliasing = 1 AND androidIncludeLdpiTvdpi = 1 AND threads = 90,antiAliasing >= 1.0  AND  androidIncludeLdpiTvdpi >= 1.0  AND  0.0 <= gif < 1.0  AND  threads >= 90.0,0,0.9127382146439318,1.0,0.8394833948339483,56,43.05320858955383
+1,39.73632552515527,1648,ios = 1,ios >= 1.0,1,1.0,1.0,1.0,57,65.81446385383606
+2,47.86365797439425,1044,androidIncludeLdpiTvdpi = 1 AND threads = 90,0.0 <= gif < 1.0  AND  androidIncludeLdpiTvdpi >= 1.0  AND  threads >= 90.0,0,0.9125,1.0,0.8390804597701149,57,69.74296402931213
+3,32.57487001003128,591,scaleIsHeightDp = 1 AND floor = 1 AND antiAliasing = 1,floor >= 1.0  AND  antiAliasing >= 1.0  AND  0.0 <= win < 1.0  AND  scaleIsHeightDp >= 1.0  AND  0.0 <= gif < 1.0  AND  0.0 <= bmp < 1.0,0,0.7635983263598326,1.0,0.6175972927241963,57,43.88703632354736
+4,29.69227389954848,528,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND scaleIsHeightDp = 1 AND threads = 90,androidMipmapInsteadOfDrawable >= 1.0  AND  scaleIsHeightDp >= 1.0  AND  threads >= 90.0  AND  0.0 <= bmp < 1.0,0,0.907962771458118,1.0,0.8314393939393939,57,43.73430275917053
+1,41.58668496501299,982,gif = 1,gif >= 1.0,1,1.0,1.0,1.0,58,55.58541131019592
+2,44.33654335112055,1119,scaleIsHeightDp = 1 AND round = 1,scaleIsHeightDp >= 1.0  AND  round >= 1.0  AND  0.0 <= gif < 1.0,1,0.9302103250478012,1.0,0.8695263628239499,58,61.284597635269165
+3,37.65726797600948,434,skipUpscaling = 1 AND round = 1 AND threads = 10,skipUpscaling >= 1.0  AND  round >= 1.0  AND  10.0 <= threads < 90.0,0,1.0,1.0,1.0,58,42.82192254066467
+4,50.56595949876039,343,android = 1 AND scaleIsHeightDp = 1 AND round = 1 AND threads = 90,scaleIsHeightDp >= 1.0  AND  round >= 1.0  AND  android >= 1.0  AND  0.0 <= bmp < 1.0  AND  threads >= 90.0,0,0.91283676703645,1.0,0.8396501457725948,58,42.652979612350464
+1,51.95636198132036,982,gif = 1,gif >= 1.0  AND  0.0 <= round < 1.0,2,0.802439024390244,1.0,0.670061099796334,59,87.29865956306458
+2,22.984367512108516,1162,floor = 1 AND antiAliasing = 1,floor >= 1.0  AND  antiAliasing >= 1.0,1,1.0,1.0,1.0,59,66.20707201957703
+3,39.449984524244805,394,androidMipmapInsteadOfDrawable = 1 AND skipUpscaling = 1 AND threads = 10,skipUpscaling >= 1.0  AND  10.0 <= threads < 90.0  AND  androidMipmapInsteadOfDrawable >= 1.0,0,1.0,1.0,1.0,59,42.40318775177002
+4,33.60490349778968,386,android = 1 AND scaleIsHeightDp = 1 AND skipUpscaling = 1 AND threads = 10,android >= 1.0  AND  skipUpscaling >= 1.0  AND  scaleIsHeightDp >= 1.0  AND  10.0 <= threads < 90.0  AND  0.0 <= gif < 1.0,0,0.9292649098474342,1.0,0.8678756476683938,59,43.20069360733032
+1,30.02591303061668,1802,androidMipmapInsteadOfDrawable = 1,androidMipmapInsteadOfDrawable >= 1.0  AND  0.0 <= png < 1.0,2,0.909860859044162,1.0,0.8346281908990011,6,87.91096782684326
+2,23.76375837869393,610,androidMipmapInsteadOfDrawable = 1 AND round = 1,androidMipmapInsteadOfDrawable >= 1.0  AND  round >= 1.0,0,1.0,1.0,1.0,6,42.11353468894959
+3,42.00908987820412,393,iosCreateImagesetFolders = 1 AND ios = 1 AND skipUpscaling = 1,iosCreateImagesetFolders >= 1.0  AND  0.0 <= floor < 1.0  AND  skipUpscaling >= 1.0,0,0.7757009345794392,1.0,0.6335877862595419,6,39.78327178955078
+4,32.423769866543786,493,android = 1 AND scaleIsHeightDp = 1 AND antiAliasing = 1 AND androidIncludeLdpiTvdpi = 1,scaleIsHeightDp >= 1.0  AND  antiAliasing >= 1.0  AND  androidIncludeLdpiTvdpi >= 1.0,0,1.0,1.0,1.0,6,42.77036213874817
+1,41.4611041839808,1144,png = 1,png >= 1.0,2,1.0,1.0,1.0,60,81.09275937080383
+2,37.18879106045573,1700,android = 1 AND skipUpscaling = 1,android >= 1.0  AND  skipUpscaling >= 1.0,2,1.0,1.0,1.0,60,80.14103841781616
+3,35.427354753088096,346,androidIncludeLdpiTvdpi = 1 AND round = 1 AND threads = 90,androidIncludeLdpiTvdpi >= 1.0  AND  round >= 1.0  AND  threads >= 90.0,0,1.0,1.0,1.0,60,42.7976393699646
+4,31.93046727255802,376,android = 1 AND skipUpscaling = 1 AND androidIncludeLdpiTvdpi = 1 AND threads = 10,skipUpscaling >= 1.0  AND  androidIncludeLdpiTvdpi >= 1.0  AND  10.0 <= threads < 90.0,0,1.0,1.0,1.0,60,42.20759272575378
+1,38.22117200050317,1777,androidIncludeLdpiTvdpi = 1,0.0 <= bmp < 1.0  AND  androidIncludeLdpiTvdpi >= 1.0,3,0.9148091603053436,1.0,0.842993809791784,61,92.44641065597534
+2,27.40247849524341,1700,android = 1 AND skipUpscaling = 1,android >= 1.0  AND  skipUpscaling >= 1.0  AND  0.0 <= bmp < 1.0,3,0.9126958746402304,1.0,0.8394117647058823,61,86.72107195854187
+3,30.77652592795464,610,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND round = 1,androidMipmapInsteadOfDrawable >= 1.0  AND  round >= 1.0,0,1.0,1.0,1.0,61,42.06172943115234
+4,29.29655130269133,352,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND ceil = 1 AND threads = 90,androidMipmapInsteadOfDrawable >= 1.0  AND  threads >= 90.0  AND  ceil >= 1.0,0,1.0,1.0,1.0,61,41.4816632270813
+1,37.7870865519147,982,gif = 1,gif >= 1.0,1,1.0,1.0,1.0,62,60.26317501068115
+2,57.63632715719392,1302,round = 1 AND threads = 90,0.0 <= web < 1.0  AND  round >= 1.0  AND  threads >= 90.0,1,0.9491525423728812,1.0,0.9032258064516128,62,75.10013318061829
+3,46.68098687371936,349,androidMipmapInsteadOfDrawable = 1 AND jpeg = 1 AND antiAliasing = 1,androidMipmapInsteadOfDrawable >= 1.0  AND  jpeg >= 1.0  AND  antiAliasing >= 1.0,0,1.0,1.0,1.0,62,42.54828786849976
+4,25.62652959650684,528,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND scaleIsHeightDp = 1 AND threads = 90,scaleIsHeightDp >= 1.0  AND  threads >= 90.0  AND  androidMipmapInsteadOfDrawable >= 1.0  AND  0.0 <= png < 1.0,0,0.906832298136646,1.0,0.8295454545454546,62,43.24360632896423
+1,27.932738901097466,830,win = 1,win >= 1.0  AND  0.0 <= png < 1.0,1,0.9028420356906808,1.0,0.8228915662650602,63,66.08884048461914
+2,33.57761589344034,586,androidIncludeLdpiTvdpi = 1 AND round = 1,androidIncludeLdpiTvdpi >= 1.0  AND  round >= 1.0,1,1.0,1.0,1.0,63,57.49687433242798
+3,40.10482202849239,393,iosCreateImagesetFolders = 1 AND ios = 1 AND skipUpscaling = 1,iosCreateImagesetFolders >= 1.0  AND  skipUpscaling >= 1.0,0,1.0,1.0,1.0,63,41.72733235359192
+4,21.442620565969698,509,android = 1 AND skipUpscaling = 1 AND androidIncludeLdpiTvdpi = 1 AND threads = 90,skipUpscaling >= 1.0  AND  androidIncludeLdpiTvdpi >= 1.0  AND  threads >= 90.0,1,1.0,1.0,1.0,63,61.065892696380615
+1,47.306784540547824,1777,androidIncludeLdpiTvdpi = 1,androidIncludeLdpiTvdpi >= 1.0,3,1.0,1.0,1.0,64,98.00266671180724
+2,21.914360928661136,979,round = 1 AND threads = 10,round >= 1.0  AND  10.0 <= threads < 90.0  AND  0.0 <= gif < 1.0,1,0.9323882224645584,1.0,0.8733401430030644,64,65.94980216026306
+3,24.673576622121494,1045,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND threads = 90,androidMipmapInsteadOfDrawable >= 1.0  AND  threads >= 90.0,1,1.0,1.0,1.0,64,65.98899817466736
+4,48.90139645722442,394,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND skipUpscaling = 1 AND threads = 10,androidMipmapInsteadOfDrawable >= 1.0  AND  skipUpscaling >= 1.0  AND  10.0 <= threads < 90.0,0,1.0,1.0,1.0,64,43.54403758049011
+1,33.94171006744306,1648,ios = 1,ios >= 1.0,1,1.0,1.0,1.0,65,58.33709526062012
+2,25.3976635727276,1086,floor = 1 AND skipUpscaling = 1,floor >= 1.0  AND  skipUpscaling >= 1.0,1,1.0,1.0,1.0,65,64.307785987854
+3,35.07156816198702,753,android = 1 AND scaleIsHeightDp = 1 AND threads = 10,0.0 <= png < 1.0  AND  10.0 <= threads < 90.0  AND  scaleIsHeightDp >= 1.0  AND  android >= 1.0  AND  0.0 <= floor < 1.0,0,0.7017241379310345,1.0,0.5405046480743692,65,44.271244525909424
+4,19.519945204103514,478,android = 1 AND antiAliasing = 1 AND skipUpscaling = 1 AND androidIncludeLdpiTvdpi = 1,antiAliasing >= 1.0  AND  androidIncludeLdpiTvdpi >= 1.0  AND  skipUpscaling >= 1.0,1,1.0,1.0,1.0,65,58.95186519622803
+1,43.884153186925104,1079,bmp = 1,bmp >= 1.0,2,1.0,1.0,1.0,66,69.67498230934143
+2,25.83229452043792,733,androidIncludeLdpiTvdpi = 1 AND threads = 10,androidIncludeLdpiTvdpi >= 1.0  AND  10.0 <= threads < 90.0,1,1.0,1.0,1.0,66,61.81461977958679
+3,42.27270481085344,504,android = 1 AND round = 1 AND threads = 10,round >= 1.0  AND  10.0 <= threads < 90.0  AND  android >= 1.0,0,1.0,1.0,1.0,66,43.14124321937561
+4,24.833033072754446,352,android = 1 AND jpeg = 1 AND antiAliasing = 1 AND threads = 90,jpeg >= 1.0  AND  antiAliasing >= 1.0  AND  android >= 1.0  AND  threads >= 90.0,0,1.0,1.0,1.0,66,42.55740690231323
+1,34.39761791062885,1079,bmp = 1,bmp >= 1.0  AND  0.0 <= round < 1.0,2,0.8090507726269315,1.0,0.6793327154772938,67,80.5395405292511
+2,56.71889675680832,346,bmp = 1 AND round = 1,bmp >= 1.0  AND  round >= 1.0,0,1.0,1.0,1.0,67,41.37933969497681
+3,23.276030913426048,346,androidMipmapInsteadOfDrawable = 1 AND floor = 1 AND threads = 90,floor >= 1.0  AND  threads >= 90.0  AND  androidMipmapInsteadOfDrawable >= 1.0  AND  0.0 <= gif < 1.0,0,0.915360501567398,1.0,0.8439306358381503,67,41.96767830848694
+4,54.94011942907727,398,android = 1 AND scaleIsHeightDp = 1 AND antiAliasing = 1 AND threads = 10,android >= 1.0  AND  antiAliasing >= 1.0  AND  10.0 <= threads < 90.0  AND  scaleIsHeightDp >= 1.0,0,1.0,1.0,1.0,67,43.826836585998535
+1,33.923010739074606,982,gif = 1,gif >= 1.0,2,1.0,1.0,1.0,68,73.70504379272461
+2,34.59966545224846,541,gif = 1 AND android = 1,gif >= 1.0  AND  android >= 1.0,1,1.0,1.0,1.0,68,56.21763014793396
+3,22.97979546765073,922,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND scaleIsHeightDp = 1,androidMipmapInsteadOfDrawable >= 1.0  AND  scaleIsHeightDp >= 1.0,1,1.0,1.0,1.0,68,65.59851121902466
+4,42.05831832978444,345,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND scaleIsHeightDp = 1 AND jpeg = 1,scaleIsHeightDp >= 1.0  AND  jpeg >= 1.0  AND  androidMipmapInsteadOfDrawable >= 1.0,0,1.0,1.0,1.0,68,42.41211724281311
+1,21.748920458443177,1802,androidMipmapInsteadOfDrawable = 1,androidMipmapInsteadOfDrawable >= 1.0,1,1.0,1.0,1.0,69,85.51815891265869
+2,48.2520411573674,1050,scaleIsHeightDp = 1 AND ceil = 1,scaleIsHeightDp >= 1.0  AND  ceil >= 1.0,1,1.0,1.0,1.0,69,61.00983691215515
+3,27.051739447725417,512,scaleIsHeightDp = 1 AND skipUpscaling = 1 AND ceil = 1,skipUpscaling >= 1.0  AND  ceil >= 1.0  AND  0.0 <= androidMipmapInsteadOfDrawable < 1.0  AND  scaleIsHeightDp >= 1.0  AND  0.0 <= bmp < 1.0,0,0.7373612823674476,1.0,0.583984375,69,42.91393280029297
+4,41.76231553513282,485,android = 1 AND scaleIsHeightDp = 1 AND skipUpscaling = 1 AND androidIncludeLdpiTvdpi = 1,scaleIsHeightDp >= 1.0  AND  skipUpscaling >= 1.0  AND  androidIncludeLdpiTvdpi >= 1.0  AND  0.0 <= floor < 1.0,0,0.7995049504950495,1.0,0.6659793814432989,69,42.70111036300659
+1,46.65263167505673,1079,bmp = 1,bmp >= 1.0,1,1.0,1.0,1.0,7,61.06119441986084
+2,51.21526740518728,1598,scaleIsHeightDp = 1 AND skipUpscaling = 1,scaleIsHeightDp >= 1.0  AND  skipUpscaling >= 1.0,2,1.0,1.0,1.0,7,83.23095726966858
+3,46.68563933269714,376,skipUpscaling = 1 AND androidIncludeLdpiTvdpi = 1 AND threads = 10,skipUpscaling >= 1.0  AND  androidIncludeLdpiTvdpi >= 1.0  AND  10.0 <= threads < 90.0,0,1.0,1.0,1.0,7,41.80347418785095
+4,57.78089735143227,478,android = 1 AND antiAliasing = 1 AND skipUpscaling = 1 AND androidIncludeLdpiTvdpi = 1,antiAliasing >= 1.0  AND  androidIncludeLdpiTvdpi >= 1.0  AND  skipUpscaling >= 1.0,1,1.0,1.0,1.0,7,63.91227197647095
+1,32.00626586694597,830,win = 1,win >= 1.0,1,1.0,1.0,1.0,70,57.86625266075134
+2,42.37144185565304,1212,android = 1 AND jpeg = 1,android >= 1.0  AND  jpeg >= 1.0,0,1.0,1.0,1.0,70,41.58421039581299
+3,38.13646803711968,622,android = 1 AND floor = 1 AND androidIncludeLdpiTvdpi = 1,floor >= 1.0  AND  androidIncludeLdpiTvdpi >= 1.0  AND  0.0 <= png < 1.0,1,0.903964757709251,1.0,0.8247588424437299,70,58.566534757614136
+4,44.64259177651232,341,android = 1 AND scaleIsHeightDp = 1 AND jpeg = 1 AND antiAliasing = 1,scaleIsHeightDp >= 1.0  AND  jpeg >= 1.0  AND  android >= 1.0  AND  antiAliasing >= 1.0,0,1.0,1.0,1.0,70,42.775607109069824
+1,42.581443643587946,1648,ios = 1,iosCreateImagesetFolders >= 1.0,2,0.6709677419354839,1.0,0.5048543689320388,71,79.94564652442932
+2,53.79760734652156,571,scaleIsHeightDp = 1 AND png = 1,scaleIsHeightDp >= 1.0  AND  png >= 1.0,1,1.0,1.0,1.0,71,60.336167335510254
+3,23.308043868672428,762,android = 1 AND antiAliasing = 1 AND threads = 10,0.0 <= gif < 1.0  AND  10.0 <= threads < 90.0  AND  antiAliasing >= 1.0  AND  android >= 1.0,0,0.9222065063649222,1.0,0.8556430446194225,71,55.79209280014038
+4,19.97679676758793,394,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND scaleIsHeightDp = 1 AND threads = 10,androidMipmapInsteadOfDrawable >= 1.0  AND  10.0 <= threads < 90.0  AND  scaleIsHeightDp >= 1.0,0,1.0,1.0,1.0,71,41.204367876052856
+1,56.2608998700144,982,gif = 1,0.0 <= iosCreateImagesetFolders < 1.0  AND  gif >= 1.0,1,0.9429494079655544,1.0,0.8920570264765784,72,60.95660424232483
+2,48.1442209609838,378,bmp = 1 AND floor = 1,bmp >= 1.0  AND  floor >= 1.0,0,1.0,1.0,1.0,72,40.69344162940979
+3,53.91573479581033,380,ios = 1 AND antiAliasing = 1 AND skipUpscaling = 1,antiAliasing >= 1.0  AND  skipUpscaling >= 1.0  AND  ios >= 1.0,0,1.0,1.0,1.0,72,41.70267868041992
+4,48.40014927975973,491,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND antiAliasing = 1 AND androidIncludeLdpiTvdpi = 1,androidMipmapInsteadOfDrawable >= 1.0  AND  androidIncludeLdpiTvdpi >= 1.0  AND  antiAliasing >= 1.0,1,1.0,1.0,1.0,72,60.04149174690247
+1,29.886783596843102,982,gif = 1,gif >= 1.0,1,1.0,1.0,1.0,73,65.71240949630737
+2,49.28991514467974,621,jpeg = 1 AND androidIncludeLdpiTvdpi = 1,jpeg >= 1.0  AND  androidIncludeLdpiTvdpi >= 1.0,0,1.0,1.0,1.0,73,42.90097737312317
+3,20.10560052988048,371,jpeg = 1 AND antiAliasing = 1 AND ceil = 1,jpeg >= 1.0  AND  antiAliasing >= 1.0  AND  ceil >= 1.0,0,1.0,1.0,1.0,73,43.02516484260559
+4,23.82062226152025,508,android = 1 AND antiAliasing = 1 AND skipUpscaling = 1 AND threads = 90,skipUpscaling >= 1.0  AND  threads >= 90.0  AND  android >= 1.0  AND  antiAliasing >= 1.0,0,1.0,1.0,1.0,73,43.820656061172485
+1,55.810649438217226,752,web = 1,web >= 1.0,1,1.0,1.0,1.0,74,71.70000839233398
+2,55.51992675581171,701,png = 1 AND threads = 90,png >= 1.0  AND  threads >= 90.0,1,1.0,1.0,1.0,74,71.91293692588806
+3,22.606839213468287,376,android = 1 AND jpeg = 1 AND ceil = 1,android >= 1.0  AND  jpeg >= 1.0  AND  ceil >= 1.0,0,1.0,1.0,1.0,74,42.82071661949158
+4,43.14042815692837,376,android = 1 AND skipUpscaling = 1 AND androidIncludeLdpiTvdpi = 1 AND threads = 10,skipUpscaling >= 1.0  AND  androidIncludeLdpiTvdpi >= 1.0  AND  10.0 <= threads < 90.0,0,1.0,1.0,1.0,74,42.52729821205139
+1,26.071196781833617,1144,png = 1,png >= 1.0,2,1.0,1.0,1.0,75,80.31523942947388
+2,55.8425136806472,709,jpeg = 1 AND ceil = 1,0.0 <= web < 1.0  AND  ceil >= 1.0  AND  jpeg >= 1.0,0,0.9306184012066364,1.0,0.8702397743300423,75,56.04307961463928
+3,56.69599191512786,657,scaleIsHeightDp = 1 AND floor = 1 AND threads = 90,floor >= 1.0  AND  threads >= 90.0  AND  scaleIsHeightDp >= 1.0  AND  0.0 <= web < 1.0,1,0.949640287769784,1.0,0.9041095890410958,75,73.59810709953308
+4,22.97577978599172,409,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND antiAliasing = 1 AND threads = 10,androidMipmapInsteadOfDrawable >= 1.0  AND  antiAliasing >= 1.0  AND  10.0 <= threads < 90.0,0,1.0,1.0,1.0,75,42.03876566886902
+1,39.44941357972351,1777,androidIncludeLdpiTvdpi = 1,androidIncludeLdpiTvdpi >= 1.0,1,1.0,1.0,1.0,76,66.99317836761475
+2,18.74653126388345,1970,antiAliasing = 1 AND threads = 90,antiAliasing >= 1.0  AND  threads >= 90.0,2,1.0,1.0,1.0,76,86.5982313156128
+3,27.877287765416742,351,antiAliasing = 1 AND png = 1 AND threads = 90,png >= 1.0  AND  threads >= 90.0  AND  0.0 <= win < 1.0  AND  antiAliasing >= 1.0,0,0.9298780487804876,1.0,0.8689458689458689,76,41.40946793556213
+4,22.50331406106236,349,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND jpeg = 1 AND antiAliasing = 1,jpeg >= 1.0  AND  antiAliasing >= 1.0  AND  androidMipmapInsteadOfDrawable >= 1.0  AND  0.0 <= androidIncludeLdpiTvdpi < 1.0,0,0.6602687140115163,1.0,0.492836676217765,76,40.79303479194641
+1,53.63441486162572,830,win = 1,win >= 1.0,1,1.0,1.0,1.0,77,70.29713535308838
+2,22.014267631723555,569,androidIncludeLdpiTvdpi = 1 AND ceil = 1,androidIncludeLdpiTvdpi >= 1.0  AND  ceil >= 1.0,0,1.0,1.0,1.0,77,41.52549505233765
+3,27.274894642387373,346,androidMipmapInsteadOfDrawable = 1 AND floor = 1 AND threads = 90,floor >= 1.0  AND  threads >= 90.0  AND  androidMipmapInsteadOfDrawable >= 1.0  AND  0.0 <= png < 1.0,0,0.9085173501577288,1.0,0.8323699421965318,77,41.43976831436157
+4,41.32914103982752,392,android = 1 AND scaleIsHeightDp = 1 AND androidIncludeLdpiTvdpi = 1 AND threads = 10,androidIncludeLdpiTvdpi >= 1.0  AND  10.0 <= threads < 90.0  AND  scaleIsHeightDp >= 1.0,0,1.0,1.0,1.0,77,42.26236939430237
+1,27.636142094081723,1079,bmp = 1,bmp >= 1.0,2,1.0,1.0,1.0,78,82.39393615722656
+2,27.73471243161292,942,antiAliasing = 1 AND androidIncludeLdpiTvdpi = 1,antiAliasing >= 1.0  AND  androidIncludeLdpiTvdpi >= 1.0,2,1.0,1.0,1.0,78,77.13820052146912
+3,29.862801947330443,922,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND scaleIsHeightDp = 1,androidMipmapInsteadOfDrawable >= 1.0  AND  scaleIsHeightDp >= 1.0,0,1.0,1.0,1.0,78,41.81820368766785
+4,47.615044313249086,477,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND scaleIsHeightDp = 1 AND androidIncludeLdpiTvdpi = 1,androidMipmapInsteadOfDrawable >= 1.0  AND  androidIncludeLdpiTvdpi >= 1.0  AND  0.0 <= ceil < 1.0  AND  scaleIsHeightDp >= 1.0,0,0.8060075093867334,1.0,0.6750524109014675,78,41.963239431381226
+1,49.42553384497746,1777,androidIncludeLdpiTvdpi = 1,androidIncludeLdpiTvdpi >= 1.0,2,1.0,1.0,1.0,79,82.38911271095276
+2,20.96877038674535,1302,round = 1 AND threads = 90,round >= 1.0  AND  threads >= 90.0,1,1.0,1.0,1.0,79,70.08586406707764
+3,30.81384550127968,654,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND jpeg = 1,androidMipmapInsteadOfDrawable >= 1.0  AND  jpeg >= 1.0,0,1.0,1.0,1.0,79,42.87080693244934
+4,42.87208272809111,409,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND antiAliasing = 1 AND threads = 10,antiAliasing >= 1.0  AND  10.0 <= threads < 90.0  AND  androidMipmapInsteadOfDrawable >= 1.0,0,1.0,1.0,1.0,79,42.5759334564209
+1,30.76583864781944,1144,png = 1,0.0 <= win < 1.0  AND  png >= 1.0,1,0.9313404950957496,1.0,0.8715034965034965,8,62.10837769508362
+2,47.59987745798982,378,bmp = 1 AND floor = 1,bmp >= 1.0  AND  floor >= 1.0,0,1.0,1.0,1.0,8,42.3701913356781
+3,22.39695011443062,510,antiAliasing = 1 AND skipUpscaling = 1 AND ceil = 1,skipUpscaling >= 1.0  AND  ceil >= 1.0  AND  antiAliasing >= 1.0,0,1.0,1.0,1.0,8,43.093828201293945
+4,54.845224934607984,354,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND jpeg = 1 AND threads = 90,androidMipmapInsteadOfDrawable >= 1.0  AND  threads >= 90.0  AND  jpeg >= 1.0,0,1.0,1.0,1.0,8,43.23385787010193
+1,21.215971388687283,1777,androidIncludeLdpiTvdpi = 1,androidIncludeLdpiTvdpi >= 1.0,2,1.0,1.0,1.0,80,91.59840631484984
+2,53.36270350471207,411,iosCreateImagesetFolders = 1 AND scaleIsHeightDp = 1,iosCreateImagesetFolders >= 1.0  AND  scaleIsHeightDp >= 1.0  AND  0.0 <= round < 1.0,0,0.7876106194690266,1.0,0.6496350364963503,80,56.1891770362854
+3,52.61918336496534,642,scaleIsHeightDp = 1 AND round = 1 AND threads = 90,scaleIsHeightDp >= 1.0  AND  round >= 1.0  AND  threads >= 90.0,1,1.0,1.0,1.0,80,65.3682324886322
+4,55.0258969537144,508,android = 1 AND antiAliasing = 1 AND skipUpscaling = 1 AND threads = 90,antiAliasing >= 1.0  AND  skipUpscaling >= 1.0  AND  threads >= 90.0  AND  0.0 <= bmp < 1.0  AND  android >= 1.0,0,0.9075268817204302,1.0,0.8307086614173228,80,48.51897096633911
+1,51.06879106208712,752,web = 1,web >= 1.0,1,1.0,1.0,1.0,81,69.84902334213257
+2,29.61049220022884,402,floor = 1 AND png = 1,floor >= 1.0  AND  png >= 1.0,0,1.0,1.0,1.0,81,41.412142515182495
+3,47.89701774168957,665,jpeg = 1 AND antiAliasing = 1 AND threads = 90,jpeg >= 1.0  AND  threads >= 90.0  AND  antiAliasing >= 1.0,0,1.0,1.0,1.0,81,43.293338775634766
+4,55.85514131946949,341,android = 1 AND scaleIsHeightDp = 1 AND jpeg = 1 AND antiAliasing = 1,android >= 1.0  AND  jpeg >= 1.0  AND  scaleIsHeightDp >= 1.0  AND  antiAliasing >= 1.0,0,1.0,1.0,1.0,81,42.39857220649719
+1,20.40791852060497,1802,androidMipmapInsteadOfDrawable = 1,androidMipmapInsteadOfDrawable >= 1.0  AND  0.0 <= floor < 1.0,2,0.7918203151190077,1.0,0.6553829078801332,82,85.68324518203735
+2,23.184920863536156,795,jpeg = 1 AND floor = 1,jpeg >= 1.0  AND  floor >= 1.0,2,1.0,1.0,1.0,82,80.47531747817993
+3,25.023782237732775,478,antiAliasing = 1 AND skipUpscaling = 1 AND androidIncludeLdpiTvdpi = 1,0.0 <= gif < 1.0  AND  androidIncludeLdpiTvdpi >= 1.0  AND  antiAliasing >= 1.0  AND  skipUpscaling >= 1.0,0,0.9111617312072892,1.0,0.8368200836820083,82,42.19254493713379
+4,52.120202862230464,347,android = 1 AND floor = 1 AND androidIncludeLdpiTvdpi = 1 AND threads = 90,floor >= 1.0  AND  androidIncludeLdpiTvdpi >= 1.0  AND  threads >= 90.0,0,1.0,1.0,1.0,82,42.16072988510132
+1,54.0924582149304,1079,bmp = 1,bmp >= 1.0,2,1.0,1.0,1.0,83,82.02200937271118
+2,30.988695881560723,422,gif = 1 AND skipUpscaling = 1,gif >= 1.0  AND  skipUpscaling >= 1.0  AND  0.0 <= ios < 1.0,0,0.8835978835978835,1.0,0.7914691943127962,83,40.54352855682373
+3,46.75669917974828,638,android = 1 AND scaleIsHeightDp = 1 AND jpeg = 1,scaleIsHeightDp >= 1.0  AND  jpeg >= 1.0  AND  0.0 <= ceil < 1.0  AND  android >= 1.0,0,0.8119180633147114,1.0,0.6833855799373041,83,42.42352652549744
+4,28.248963127112287,528,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND scaleIsHeightDp = 1 AND threads = 90,androidMipmapInsteadOfDrawable >= 1.0  AND  scaleIsHeightDp >= 1.0  AND  threads >= 90.0,0,1.0,1.0,1.0,83,42.34796071052551
+1,48.59930942332721,752,web = 1,web >= 1.0,1,1.0,1.0,1.0,84,71.36792421340942
+2,51.199176527845474,1700,android = 1 AND skipUpscaling = 1,android >= 1.0  AND  skipUpscaling >= 1.0,1,1.0,1.0,1.0,84,79.1989917755127
+3,43.634425365287946,601,jpeg = 1 AND skipUpscaling = 1 AND threads = 90,jpeg >= 1.0  AND  skipUpscaling >= 1.0  AND  threads >= 90.0  AND  0.0 <= web < 1.0,1,0.9538729329852044,1.0,0.9118136439267888,84,61.069984674453735
+4,21.42977238622881,509,android = 1 AND skipUpscaling = 1 AND androidIncludeLdpiTvdpi = 1 AND threads = 90,skipUpscaling >= 1.0  AND  androidIncludeLdpiTvdpi >= 1.0  AND  threads >= 90.0,1,1.0,1.0,1.0,84,59.07305383682251
+1,41.59847509628206,982,gif = 1,gif >= 1.0,1,1.0,1.0,1.0,85,62.095782995224
+2,48.091049098335205,1281,skipUpscaling = 1 AND threads = 10,skipUpscaling >= 1.0  AND  10.0 <= threads < 90.0,0,1.0,1.0,1.0,85,45.66707754135132
+3,55.55658294031469,1051,android = 1 AND antiAliasing = 1 AND threads = 90,antiAliasing >= 1.0  AND  threads >= 90.0  AND  android >= 1.0,1,1.0,1.0,1.0,85,66.25631213188171
+4,46.50738597434062,477,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND scaleIsHeightDp = 1 AND androidIncludeLdpiTvdpi = 1,androidMipmapInsteadOfDrawable >= 1.0  AND  scaleIsHeightDp >= 1.0  AND  androidIncludeLdpiTvdpi >= 1.0,0,1.0,1.0,1.0,85,42.47326850891113
+1,42.844270852570496,1777,androidIncludeLdpiTvdpi = 1,androidIncludeLdpiTvdpi >= 1.0  AND  threads >= 90.0,4,0.7401630627437079,1.0,0.5875070343275183,86,86.73957943916321
+2,45.11622594587322,1335,floor = 1 AND threads = 90,floor >= 1.0  AND  threads >= 90.0  AND  0.0 <= web < 1.0  AND  0.0 <= jpeg < 1.0,2,0.7552447552447552,1.0,0.6067415730337079,86,89.86774921417236
+3,56.68614278490157,586,android = 1 AND androidIncludeLdpiTvdpi = 1 AND round = 1,androidIncludeLdpiTvdpi >= 1.0  AND  round >= 1.0,0,1.0,1.0,1.0,86,50.88676571846008
+4,18.49924952685157,347,android = 1 AND floor = 1 AND androidIncludeLdpiTvdpi = 1 AND threads = 90,androidIncludeLdpiTvdpi >= 1.0  AND  threads >= 90.0  AND  floor >= 1.0,0,1.0,1.0,1.0,86,42.13019847869873
+1,40.49493373424958,982,gif = 1,gif >= 1.0,2,1.0,1.0,1.0,87,75.83925342559814
+2,51.208117469728144,380,png = 1 AND round = 1,0.0 <= web < 1.0  AND  png >= 1.0  AND  round >= 1.0  AND  0.0 <= ios < 1.0,0,0.7839999999999999,1.0,0.6447368421052632,87,39.28851056098938
+3,48.0253094027788,394,androidMipmapInsteadOfDrawable = 1 AND scaleIsHeightDp = 1 AND threads = 10,androidMipmapInsteadOfDrawable >= 1.0  AND  scaleIsHeightDp >= 1.0  AND  10.0 <= threads < 90.0  AND  0.0 <= round < 1.0,0,0.7969465648854962,1.0,0.6624365482233503,87,40.16342735290527
+4,40.27812778631943,460,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND skipUpscaling = 1 AND androidIncludeLdpiTvdpi = 1,androidMipmapInsteadOfDrawable >= 1.0  AND  androidIncludeLdpiTvdpi >= 1.0  AND  0.0 <= png < 1.0  AND  skipUpscaling >= 1.0,0,0.9034564958283672,1.0,0.8239130434782609,87,42.01694560050965
+1,31.56323115462985,752,web = 1,web >= 1.0,0,1.0,1.0,1.0,88,43.63734292984009
+2,27.582039625754728,353,web = 1 AND threads = 10,web >= 1.0  AND  0.0 <= floor < 1.0  AND  10.0 <= threads < 90.0  AND  0.0 <= png < 1.0,0,0.7210144927536231,1.0,0.5637393767705382,88,60.61931920051575
+3,44.37655814048672,495,floor = 1 AND antiAliasing = 1 AND threads = 10,floor >= 1.0  AND  antiAliasing >= 1.0  AND  10.0 <= threads < 90.0  AND  scaleIsHeightDp >= 1.0  AND  0.0 <= gif < 1.0,0,0.6307053941908713,1.0,0.4606060606060606,88,42.69940972328186
+4,31.042850008151383,394,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND scaleIsHeightDp = 1 AND threads = 10,scaleIsHeightDp >= 1.0  AND  10.0 <= threads < 90.0  AND  androidMipmapInsteadOfDrawable >= 1.0  AND  0.0 <= bmp < 1.0  AND  0.0 <= gif < 1.0,0,0.8377581120943952,1.0,0.7208121827411168,88,41.44890880584717
+1,40.75230172378808,832,iosCreateImagesetFolders = 1,iosCreateImagesetFolders >= 1.0,2,1.0,1.0,1.0,89,71.58981728553772
+2,40.91576947193173,1207,jpeg = 1 AND antiAliasing = 1,jpeg >= 1.0  AND  antiAliasing >= 1.0,2,1.0,1.0,1.0,89,78.71291756629944
+3,38.49104788078392,346,jpeg = 1 AND androidIncludeLdpiTvdpi = 1 AND threads = 90,jpeg >= 1.0  AND  androidIncludeLdpiTvdpi >= 1.0  AND  threads >= 90.0,0,1.0,1.0,1.0,89,42.38826084136963
+4,19.414454405207508,349,android = 1 AND floor = 1 AND antiAliasing = 1 AND threads = 90,floor >= 1.0  AND  antiAliasing >= 1.0  AND  android >= 1.0  AND  threads >= 90.0,0,1.0,1.0,1.0,89,42.98423767089844
+1,32.94921238800066,752,web = 1,web >= 1.0  AND  0.0 <= round < 1.0,1,0.7987220447284346,1.0,0.6648936170212766,9,58.8740177154541
+2,28.280559016093903,362,png = 1 AND ceil = 1,png >= 1.0  AND  ceil >= 1.0  AND  threads >= 90.0,0,0.7872696817420435,1.0,0.649171270718232,9,41.39274883270264
+3,41.48736975711042,885,android = 1 AND skipUpscaling = 1 AND androidIncludeLdpiTvdpi = 1,skipUpscaling >= 1.0  AND  androidIncludeLdpiTvdpi >= 1.0,2,1.0,1.0,1.0,9,82.5706901550293
+4,39.86535754997496,348,android = 1 AND antiAliasing = 1 AND ceil = 1 AND threads = 90,android >= 1.0  AND  ceil >= 1.0  AND  threads >= 90.0  AND  antiAliasing >= 1.0,0,1.0,1.0,1.0,9,43.01638746261597
+1,30.80413877796458,1079,bmp = 1,bmp >= 1.0,2,1.0,1.0,1.0,90,79.51518630981445
+2,41.93798514875105,1212,android = 1 AND jpeg = 1,android >= 1.0  AND  jpeg >= 1.0,2,1.0,1.0,1.0,90,79.81017088890076
+3,32.636734144966695,1045,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND threads = 90,androidMipmapInsteadOfDrawable >= 1.0  AND  threads >= 90.0,1,1.0,1.0,1.0,90,64.65241861343384
+4,42.264568586383305,471,scaleIsHeightDp = 1 AND antiAliasing = 1 AND skipUpscaling = 1 AND threads = 90,antiAliasing >= 1.0  AND  skipUpscaling >= 1.0  AND  scaleIsHeightDp >= 1.0  AND  threads >= 90.0,0,1.0,1.0,1.0,90,44.40708017349243
+1,56.27285468088393,752,web = 1,web >= 1.0,1,1.0,1.0,1.0,91,65.11788940429688
+2,57.09327330680122,621,jpeg = 1 AND androidIncludeLdpiTvdpi = 1,jpeg >= 1.0  AND  androidIncludeLdpiTvdpi >= 1.0,1,1.0,1.0,1.0,91,63.3603618144989
+3,38.96876992049643,610,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND round = 1,androidMipmapInsteadOfDrawable >= 1.0  AND  round >= 1.0,1,1.0,1.0,1.0,91,56.24226951599121
+4,20.728435169746778,391,android = 1 AND antiAliasing = 1 AND skipUpscaling = 1 AND threads = 10,android >= 1.0  AND  antiAliasing >= 1.0  AND  skipUpscaling >= 1.0  AND  10.0 <= threads < 90.0,0,1.0,1.0,1.0,91,42.41749286651611
+1,22.18306603205517,1802,androidMipmapInsteadOfDrawable = 1,androidMipmapInsteadOfDrawable >= 1.0,1,1.0,1.0,1.0,92,76.03432011604309
+2,20.48259274679701,979,round = 1 AND threads = 10,round >= 1.0  AND  10.0 <= threads < 90.0  AND  0.0 <= png < 1.0,0,0.915235457063712,1.0,0.8437180796731358,92,76.19625282287598
+3,49.27270392537651,894,android = 1 AND scaleIsHeightDp = 1 AND skipUpscaling = 1,android >= 1.0  AND  scaleIsHeightDp >= 1.0  AND  skipUpscaling >= 1.0,0,1.0,1.0,1.0,92,47.90983486175537
+4,21.35967687751053,478,android = 1 AND antiAliasing = 1 AND skipUpscaling = 1 AND androidIncludeLdpiTvdpi = 1,antiAliasing >= 1.0  AND  skipUpscaling >= 1.0  AND  androidIncludeLdpiTvdpi >= 1.0  AND  0.0 <= gif < 1.0,0,0.9111617312072892,1.0,0.8368200836820083,92,42.963064432144165
+1,49.00589828294161,830,win = 1,win >= 1.0  AND  0.0 <= png < 1.0,0,0.9028420356906808,1.0,0.8228915662650602,93,44.22744202613831
+2,26.074928423982684,399,web = 1 AND threads = 90,web >= 1.0  AND  threads >= 90.0  AND  0.0 <= floor < 1.0,0,0.8,1.0,0.6666666666666666,93,57.56602573394776
+3,20.968244162177665,380,skipUpscaling = 1 AND ceil = 1 AND threads = 10,ceil >= 1.0  AND  10.0 <= threads < 90.0  AND  0.0 <= androidIncludeLdpiTvdpi < 1.0  AND  skipUpscaling >= 1.0,0,0.8253477588871715,1.0,0.7026315789473684,93,41.84557890892029
+4,25.396189919257285,349,android = 1 AND floor = 1 AND antiAliasing = 1 AND threads = 90,floor >= 1.0  AND  antiAliasing >= 1.0  AND  android >= 1.0  AND  threads >= 90.0,0,1.0,1.0,1.0,93,43.076592683792114
+1,20.358139801681567,1648,ios = 1,0.0 <= iosCreateImagesetFolders < 1.0  AND  ios >= 1.0,0,0.6623376623376623,1.0,0.4951456310679611,94,83.14827632904053
+2,36.77560952363406,1212,android = 1 AND floor = 1,android >= 1.0  AND  floor >= 1.0,1,1.0,1.0,1.0,94,55.995054483413696
+3,30.740712432905163,528,androidMipmapInsteadOfDrawable = 1 AND scaleIsHeightDp = 1 AND threads = 90,androidMipmapInsteadOfDrawable >= 1.0  AND  0.0 <= round < 1.0  AND  threads >= 90.0  AND  scaleIsHeightDp >= 1.0,0,0.8027210884353742,1.0,0.6704545454545454,94,42.72555470466614
+4,49.78545900812109,540,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND antiAliasing = 1 AND threads = 90,androidMipmapInsteadOfDrawable >= 1.0  AND  threads >= 90.0  AND  antiAliasing >= 1.0,0,1.0,1.0,1.0,94,42.64027261734009
+1,35.91421724255483,830,win = 1,win >= 1.0  AND  0.0 <= png < 1.0,0,0.9028420356906808,1.0,0.8228915662650602,95,44.02398943901062
+2,20.49216464232846,610,androidMipmapInsteadOfDrawable = 1 AND round = 1,androidMipmapInsteadOfDrawable >= 1.0  AND  round >= 1.0,1,1.0,1.0,1.0,95,64.49426031112671
+3,41.03353440754286,619,floor = 1 AND skipUpscaling = 1 AND threads = 90,floor >= 1.0  AND  skipUpscaling >= 1.0  AND  threads >= 90.0,0,1.0,1.0,1.0,95,42.876631021499634
+4,36.65067955348857,476,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND scaleIsHeightDp = 1 AND skipUpscaling = 1,androidMipmapInsteadOfDrawable >= 1.0  AND  scaleIsHeightDp >= 1.0  AND  0.0 <= bmp < 1.0  AND  skipUpscaling >= 1.0,0,0.908256880733945,1.0,0.8319327731092437,95,43.20802545547485
+1,48.40640409355115,832,iosCreateImagesetFolders = 1,iosCreateImagesetFolders >= 1.0,1,1.0,1.0,1.0,96,70.61444234848022
+2,35.62553775244389,1295,jpeg = 1 AND threads = 90,jpeg >= 1.0  AND  threads >= 90.0,0,1.0,1.0,1.0,96,45.25543928146362
+3,43.88390587786839,924,android = 1 AND scaleIsHeightDp = 1 AND antiAliasing = 1,android >= 1.0  AND  scaleIsHeightDp >= 1.0  AND  antiAliasing >= 1.0,0,1.0,1.0,1.0,96,46.64535570144653
+4,24.509051808559427,394,android = 1 AND androidMipmapInsteadOfDrawable = 1 AND skipUpscaling = 1 AND threads = 10,androidMipmapInsteadOfDrawable >= 1.0  AND  skipUpscaling >= 1.0  AND  10.0 <= threads < 90.0  AND  0.0 <= round < 1.0,0,0.7969465648854962,1.0,0.6624365482233503,96,40.86069369316101
+1,19.378843676806635,1079,bmp = 1,bmp >= 1.0,1,1.0,1.0,1.0,97,79.76352071762085
+2,36.9493315319128,1212,android = 1 AND jpeg = 1,android >= 1.0  AND  jpeg >= 1.0,1,1.0,1.0,1.0,97,64.75940251350403
+3,34.97147481234033,622,android = 1 AND floor = 1 AND androidIncludeLdpiTvdpi = 1,floor >= 1.0  AND  androidIncludeLdpiTvdpi >= 1.0,1,1.0,1.0,1.0,97,57.55196928977966
+4,37.707851620657074,493,android = 1 AND scaleIsHeightDp = 1 AND antiAliasing = 1 AND androidIncludeLdpiTvdpi = 1,scaleIsHeightDp >= 1.0  AND  antiAliasing >= 1.0  AND  androidIncludeLdpiTvdpi >= 1.0,0,1.0,1.0,1.0,97,43.18450331687927
+1,33.74240760680779,1144,png = 1,0.0 <= iosCreateImagesetFolders < 1.0  AND  png >= 1.0,3,0.9313404950957496,1.0,0.8715034965034965,98,87.6728584766388
+2,17.970659950712673,1089,jpeg = 1 AND skipUpscaling = 1,jpeg >= 1.0  AND  skipUpscaling >= 1.0,1,1.0,1.0,1.0,98,71.06853795051575
+3,28.908275178518235,435,android = 1 AND ceil = 1 AND threads = 10,ceil >= 1.0  AND  10.0 <= threads < 90.0  AND  android >= 1.0,0,1.0,1.0,1.0,98,43.13077759742737
+4,29.167958100674092,343,android = 1 AND scaleIsHeightDp = 1 AND floor = 1 AND threads = 90,scaleIsHeightDp >= 1.0  AND  floor >= 1.0  AND  android >= 1.0  AND  threads >= 90.0,0,1.0,1.0,1.0,98,42.82197284698486
+1,27.3012245701186,1144,png = 1,0.0 <= win < 1.0  AND  png >= 1.0,2,0.9313404950957496,1.0,0.8715034965034965,99,78.40864300727844
+2,56.79883073447992,463,gif = 1 AND antiAliasing = 1,gif >= 1.0  AND  antiAliasing >= 1.0,1,1.0,1.0,1.0,99,64.6394431591034
+3,21.62153105913555,712,android = 1 AND skipUpscaling = 1 AND threads = 10,android >= 1.0  AND  10.0 <= threads < 90.0  AND  skipUpscaling >= 1.0  AND  0.0 <= jpeg < 1.0,0,0.7628149435273676,1.0,0.6165730337078652,99,67.81487965583801
+4,35.53330137977779,348,android = 1 AND antiAliasing = 1 AND ceil = 1 AND threads = 90,antiAliasing >= 1.0  AND  ceil >= 1.0  AND  android >= 1.0  AND  threads >= 90.0  AND  0.0 <= png < 1.0,0,0.9039370078740158,1.0,0.8247126436781609,99,42.69916820526123

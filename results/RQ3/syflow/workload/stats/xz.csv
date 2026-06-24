@@ -1,0 +1,2 @@
+num_features,num_samples,sgs_unique,sgs_mean_jaccard,sgs_mean_overlap_coefficient,coverage_mean,coverage_total,rule_features_used,rule_feature_frequency,rule_num_features,rule_length_mean,rule_length_max,rule_length_min
+34,1999,5,0.15738828564693189,0.26605839416058397,0.2734367183591796,0.7933966983491746,"['Multithreading', 'Dict', 'BlockSize', 'bt2', 'Nice', 'Depth', 'Dist', 'hc3']","[('Multithreading', 1), ('Dict', 5), ('BlockSize', 3), ('bt2', 2), ('Nice', 2), ('Depth', 2), ('Dist', 2), ('hc3', 2)]",8,3.8,6.0,2.0

@@ -1,0 +1,301 @@
+n_conditions,sg_mean,sg_cardinality,sg_rule,best_rule,best_rule_idx,f1,precision,recall,seed,runtime
+2,599.8498083947104,288,no_cabac = 1 AND no_mbtree = 1,no_cabac AND no_mbtree,1,1.0,1.0,1.0,0,327.3543691635132
+3,703.4068310452537,144,no_cabac = 1 AND no_deblock = 1 AND no_weightb = 1,no_cabac AND no_weightb,1,0.6666666666666666,0.5,1.0,0,311.1429102420807
+4,476.0814712608604,72,no_8x8dct = 1 AND no_cabac = 1 AND no_fast_pskip = 1 AND no_mbtree = 1,no_8x8dct AND no_cabac AND no_fast_pskip AND no_mbtree,0,1.0,1.0,1.0,0,296.25292921066284
+2,625.3763305131895,192,no_mixed_refs = 1 AND rc_lookahead = 20,no_mixed_refs AND rc_lookahead = 20.00,1,1.0,1.0,1.0,1,343.65465235710144
+3,341.46892290006406,144,no_cabac = 1 AND no_deblock = 1 AND no_mbtree = 1,no_cabac AND no_deblock AND no_mbtree,0,1.0,1.0,1.0,1,348.3215069770813
+4,490.9676505256217,72,no_8x8dct = 1 AND no_cabac = 1 AND no_deblock = 1 AND no_mbtree = 1,no_8x8dct AND no_cabac AND no_deblock AND no_mbtree,0,1.0,1.0,1.0,1,331.5366487503052
+2,691.9514572191806,128,rc_lookahead = 20 AND ref = 9,rc_lookahead = 20.00 AND ref = 9.00,1,1.0,1.0,1.0,10,276.98000717163086
+3,588.7180959715383,96,no_mbtree = 1 AND no_mixed_refs = 1 AND ref = 1,no_mbtree AND no_mixed_refs AND ref = 1.00,3,1.0,1.0,1.0,10,270.47561287879944
+4,573.2735660265138,72,no_8x8dct = 1 AND no_deblock = 1 AND no_mbtree = 1 AND no_mixed_refs = 1,no_8x8dct AND no_mbtree AND no_mixed_refs,0,0.6666666666666666,0.5,1.0,10,271.4339451789856
+2,352.2325357988523,288,no_8x8dct = 1 AND no_fast_pskip = 1,no_8x8dct AND no_fast_pskip,1,1.0,1.0,1.0,11,307.3187110424042
+3,405.06765384167664,96,no_mixed_refs = 1 AND no_weightb = 1 AND ref = 5,no_mixed_refs AND no_weightb AND ref = 5.00,0,1.0,1.0,1.0,11,268.64703130722046
+4,770.1745975740434,72,no_8x8dct = 1 AND no_cabac = 1 AND no_fast_pskip = 1 AND no_weightb = 1,no_8x8dct AND no_cabac AND no_fast_pskip AND no_weightb,1,1.0,1.0,1.0,11,262.8062961101532
+2,740.8677137373041,192,no_mbtree = 1 AND rc_lookahead = 20,no_mbtree AND rc_lookahead = 20.00,1,1.0,1.0,1.0,12,297.92918157577515
+3,552.5846358788672,144,no_cabac = 1 AND no_deblock = 1 AND no_mixed_refs = 1,no_cabac AND no_deblock AND no_mixed_refs,0,1.0,1.0,1.0,12,295.7622537612915
+4,360.6760692156161,72,no_8x8dct = 1 AND no_deblock = 1 AND no_mbtree = 1 AND no_weightb = 1,no_8x8dct AND no_deblock AND no_mbtree AND no_weightb,0,1.0,1.0,1.0,12,301.9204351902008
+2,388.23305089594334,288,no_deblock = 1 AND no_mbtree = 1,no_deblock AND no_mbtree,2,1.0,1.0,1.0,13,304.7195565700531
+3,424.38097573184615,96,no_fast_pskip = 1 AND no_mixed_refs = 1 AND rc_lookahead = 20,no_fast_pskip AND no_mixed_refs AND rc_lookahead = 20.00,0,1.0,1.0,1.0,13,303.29012393951416
+4,560.877647085372,72,no_8x8dct = 1 AND no_cabac = 1 AND no_deblock = 1 AND no_weightb = 1,no_8x8dct AND no_deblock AND no_weightb,0,0.6666666666666666,0.5,1.0,13,302.5914077758789
+2,611.7691573193651,288,no_cabac = 1 AND no_weightb = 1,no_cabac AND no_weightb,1,1.0,1.0,1.0,14,319.4292879104614
+3,423.4368556926783,144,no_cabac = 1 AND no_deblock = 1 AND no_mbtree = 1,no_cabac AND no_deblock AND no_mbtree,1,1.0,1.0,1.0,14,301.04444456100464
+4,393.1587912076627,72,no_cabac = 1 AND no_deblock = 1 AND no_mbtree = 1 AND no_weightb = 1,no_cabac AND no_deblock AND no_mbtree AND no_weightb,0,1.0,1.0,1.0,14,301.41974806785583
+2,407.1599578847967,288,no_mbtree = 1 AND no_weightb = 1,no_mbtree AND no_weightb,2,1.0,1.0,1.0,15,291.1813132762909
+3,347.4512979258946,96,no_8x8dct = 1 AND no_cabac = 1 AND ref = 5,no_8x8dct AND no_cabac AND ref = 5.00,0,1.0,1.0,1.0,15,274.52478313446045
+4,604.9129239814129,72,no_cabac = 1 AND no_deblock = 1 AND no_fast_pskip = 1 AND no_mbtree = 1,no_cabac AND no_deblock AND no_fast_pskip AND no_mbtree,2,1.0,1.0,1.0,15,261.4136047363281
+2,588.9921830265095,128,rc_lookahead = 60 AND ref = 9,rc_lookahead = 60.00 AND ref = 9.00,1,1.0,1.0,1.0,16,258.3348648548126
+3,755.7640459454714,96,no_cabac = 1 AND no_deblock = 1 AND rc_lookahead = 60,no_cabac AND no_deblock AND rc_lookahead = 60.00,1,1.0,1.0,1.0,16,259.1095938682556
+4,652.3796885419691,72,no_8x8dct = 1 AND no_cabac = 1 AND no_mbtree = 1 AND no_weightb = 1,no_8x8dct AND no_cabac AND no_mbtree AND no_weightb,0,1.0,1.0,1.0,16,262.20438170433044
+2,524.8227996797775,288,no_fast_pskip = 1 AND no_mixed_refs = 1,no_fast_pskip AND no_mixed_refs,1,1.0,1.0,1.0,17,282.2031831741333
+3,339.5081702782728,96,no_8x8dct = 1 AND no_weightb = 1 AND ref = 9,no_8x8dct AND no_weightb AND ref = 9.00,0,1.0,1.0,1.0,17,283.61067724227905
+4,776.1322220616106,72,no_cabac = 1 AND no_deblock = 1 AND no_mbtree = 1 AND no_weightb = 1,no_cabac AND no_deblock AND no_mbtree AND no_weightb,1,1.0,1.0,1.0,17,267.785498380661
+2,580.1324121064875,192,no_weightb = 1 AND rc_lookahead = 40,no_weightb AND rc_lookahead = 40.00,1,1.0,1.0,1.0,18,262.0182251930237
+3,320.7024905879857,144,no_cabac = 1 AND no_mixed_refs = 1 AND no_weightb = 1,no_cabac AND no_mixed_refs AND no_weightb,1,1.0,1.0,1.0,18,261.82147455215454
+4,458.0800534290902,72,no_cabac = 1 AND no_deblock = 1 AND no_fast_pskip = 1 AND no_mbtree = 1,no_cabac AND no_deblock AND no_fast_pskip AND no_mbtree,0,1.0,1.0,1.0,18,261.5604956150055
+2,446.3685751615165,192,no_fast_pskip = 1 AND rc_lookahead = 60,no_fast_pskip AND rc_lookahead = 60.00,1,1.0,1.0,1.0,19,265.9799325466156
+3,691.0025315669559,96,no_deblock = 1 AND no_weightb = 1 AND rc_lookahead = 40,no_deblock AND no_weightb AND rc_lookahead = 40.00,0,1.0,1.0,1.0,19,263.7073602676392
+4,499.299170653034,72,no_cabac = 1 AND no_fast_pskip = 1 AND no_mixed_refs = 1 AND no_weightb = 1,no_fast_pskip AND no_weightb AND rc_lookahead != 60.00,0,0.3636363636363636,0.25,0.6666666666666666,19,262.5835053920746
+2,781.8981324452177,128,rc_lookahead = 60 AND ref = 1,rc_lookahead = 60.00 AND ref = 1.00,1,1.0,1.0,1.0,2,273.8870527744293
+3,365.3925022551064,96,no_cabac = 1 AND no_weightb = 1 AND ref = 1,no_cabac AND no_weightb AND ref = 1.00,0,1.0,1.0,1.0,2,277.35178303718567
+4,523.5632875024812,72,no_8x8dct = 1 AND no_deblock = 1 AND no_fast_pskip = 1 AND no_weightb = 1,no_8x8dct AND no_deblock AND no_fast_pskip AND no_weightb,0,1.0,1.0,1.0,2,276.42910957336426
+2,450.7824550010971,288,no_8x8dct = 1 AND no_mixed_refs = 1,no_8x8dct AND no_mixed_refs,1,1.0,1.0,1.0,20,295.71674132347107
+3,308.2079196750285,96,no_8x8dct = 1 AND no_mixed_refs = 1 AND ref = 1,no_8x8dct AND no_weightb AND rc_lookahead != 20.00,0,0.2222222222222222,0.1666666666666666,0.3333333333333333,20,293.40303468704224
+4,427.5487325407678,72,no_cabac = 1 AND no_mbtree = 1 AND no_mixed_refs = 1 AND no_weightb = 1,no_cabac AND no_mbtree AND no_weightb,2,0.6666666666666666,0.5,1.0,20,305.1281108856201
+2,781.2103268697982,288,no_mbtree = 1 AND no_weightb = 1,no_mbtree AND no_weightb,1,1.0,1.0,1.0,21,341.61753034591675
+3,714.4259433608655,96,no_8x8dct = 1 AND no_mbtree = 1 AND rc_lookahead = 20,no_mbtree AND rc_lookahead = 20.00,1,0.6666666666666666,0.5,1.0,21,317.19235849380493
+4,461.35909957625455,72,no_cabac = 1 AND no_fast_pskip = 1 AND no_mbtree = 1 AND no_mixed_refs = 1,no_cabac AND no_fast_pskip AND no_mbtree AND no_mixed_refs,0,1.0,1.0,1.0,21,301.945837020874
+2,670.8654034387779,192,no_mixed_refs = 1 AND ref = 9,no_mixed_refs AND ref = 9.00,1,1.0,1.0,1.0,22,323.00793838500977
+3,702.1887315319897,96,no_8x8dct = 1 AND no_weightb = 1 AND ref = 9,no_8x8dct AND NOT no_deblock AND NOT no_mixed_refs AND rc_lookahead != 60.00,1,0.1666666666666666,0.1666666666666666,0.1666666666666666,22,289.379410982132
+4,529.664145384372,72,no_8x8dct = 1 AND no_mbtree = 1 AND no_mixed_refs = 1 AND no_weightb = 1,no_8x8dct AND no_mbtree AND no_mixed_refs AND no_weightb,0,1.0,1.0,1.0,22,283.4706168174744
+2,647.9609036445124,288,no_fast_pskip = 1 AND no_mixed_refs = 1,no_fast_pskip AND no_mixed_refs,1,1.0,1.0,1.0,23,324.27875995635986
+3,521.4621514327474,144,no_8x8dct = 1 AND no_fast_pskip = 1 AND no_mbtree = 1,no_8x8dct AND no_fast_pskip AND no_mbtree,1,1.0,1.0,1.0,23,309.5888350009918
+4,569.7879290719915,72,no_8x8dct = 1 AND no_mbtree = 1 AND no_mixed_refs = 1 AND no_weightb = 1,no_8x8dct AND no_mbtree AND no_mixed_refs,1,0.6666666666666666,0.5,1.0,23,293.34027886390686
+2,716.0629575295957,288,no_mixed_refs = 1 AND no_weightb = 1,no_mixed_refs AND no_weightb,1,1.0,1.0,1.0,24,364.9769651889801
+3,609.6196911441452,144,no_fast_pskip = 1 AND no_mbtree = 1 AND no_mixed_refs = 1,no_fast_pskip AND no_mbtree AND no_mixed_refs,3,1.0,1.0,1.0,24,374.09016728401184
+4,381.4239828604917,72,no_8x8dct = 1 AND no_cabac = 1 AND no_mixed_refs = 1 AND no_weightb = 1,no_8x8dct AND no_cabac AND no_mixed_refs AND no_weightb,1,1.0,1.0,1.0,24,375.2254567146301
+2,505.67610891648496,288,no_fast_pskip = 1 AND no_weightb = 1,no_fast_pskip AND no_weightb,2,1.0,1.0,1.0,25,339.7533528804779
+3,750.2844238987434,144,no_cabac = 1 AND no_fast_pskip = 1 AND no_mbtree = 1,no_cabac AND no_fast_pskip AND no_mbtree,0,1.0,1.0,1.0,25,312.1475987434387
+4,761.9593808372348,72,no_cabac = 1 AND no_fast_pskip = 1 AND no_mixed_refs = 1 AND no_weightb = 1,no_cabac AND no_fast_pskip AND no_mixed_refs AND no_weightb,1,1.0,1.0,1.0,25,298.8853530883789
+2,287.62635870259567,288,no_8x8dct = 1 AND no_weightb = 1,no_weightb,1,0.6666666666666666,0.5,1.0,26,325.7949187755585
+3,599.0319644450603,96,no_cabac = 1 AND no_mbtree = 1 AND ref = 9,no_cabac AND no_mbtree AND ref = 9.00,0,1.0,1.0,1.0,26,314.4548523426056
+4,323.2884377405243,72,no_deblock = 1 AND no_fast_pskip = 1 AND no_mbtree = 1 AND no_weightb = 1,no_deblock AND no_fast_pskip AND no_mbtree AND no_weightb,0,1.0,1.0,1.0,26,314.89780473709106
+2,349.4883297280059,288,no_deblock = 1 AND no_mixed_refs = 1,no_deblock AND no_mixed_refs,1,1.0,1.0,1.0,27,412.476951122284
+3,700.1837798069288,96,no_mixed_refs = 1 AND no_weightb = 1 AND ref = 5,NOT no_mbtree AND no_mixed_refs AND rc_lookahead != 60.00 AND ref != 1.00,1,0.2857142857142857,0.25,0.3333333333333333,27,404.06791520118713
+4,273.61065695840483,72,no_cabac = 1 AND no_fast_pskip = 1 AND no_mixed_refs = 1 AND no_weightb = 1,NOT no_cabac AND NOT no_fast_pskip,0,0.0,0.0,0.0,27,405.7185823917389
+2,677.2021133592198,288,no_fast_pskip = 1 AND no_mixed_refs = 1,no_fast_pskip AND no_mixed_refs,1,1.0,1.0,1.0,28,264.8276951313019
+3,535.9942804283571,96,no_cabac = 1 AND no_mixed_refs = 1 AND ref = 1,no_cabac AND no_mixed_refs AND ref = 1.00,2,1.0,1.0,1.0,28,261.68926763534546
+4,440.9303207442941,72,no_8x8dct = 1 AND no_cabac = 1 AND no_fast_pskip = 1 AND no_mixed_refs = 1,no_8x8dct AND no_cabac AND no_fast_pskip AND no_mixed_refs,0,1.0,1.0,1.0,28,264.22103691101074
+2,291.5834993808994,288,no_8x8dct = 1 AND no_weightb = 1,NOT no_weightb,0,0.0,0.0,0.0,29,292.53995752334595
+3,381.18683705859394,96,no_cabac = 1 AND no_mixed_refs = 1 AND ref = 9,no_cabac AND no_mixed_refs AND ref = 9.00,1,1.0,1.0,1.0,29,258.20631742477417
+4,591.9151973684671,72,no_fast_pskip = 1 AND no_mbtree = 1 AND no_mixed_refs = 1 AND no_weightb = 1,no_fast_pskip AND no_mbtree AND no_mixed_refs AND no_weightb,1,1.0,1.0,1.0,29,257.21275901794434
+2,774.7128458993335,288,no_cabac = 1 AND no_weightb = 1,no_cabac AND no_weightb,1,1.0,1.0,1.0,3,277.8040442466736
+3,747.4951801912773,144,no_8x8dct = 1 AND no_fast_pskip = 1 AND no_weightb = 1,no_8x8dct AND no_fast_pskip AND no_weightb,1,1.0,1.0,1.0,3,267.0456690788269
+4,598.527762095755,72,no_fast_pskip = 1 AND no_mbtree = 1 AND no_mixed_refs = 1 AND no_weightb = 1,no_fast_pskip AND no_mbtree AND no_mixed_refs AND no_weightb,1,1.0,1.0,1.0,3,277.7606129646301
+2,528.6827945575905,288,no_8x8dct = 1 AND no_mbtree = 1,no_8x8dct AND no_mbtree,1,1.0,1.0,1.0,30,317.5474183559418
+3,658.5662145255363,144,no_cabac = 1 AND no_fast_pskip = 1 AND no_mixed_refs = 1,no_cabac AND no_fast_pskip AND no_mixed_refs,2,1.0,1.0,1.0,30,315.6421363353729
+4,655.2100431859199,72,no_cabac = 1 AND no_deblock = 1 AND no_mbtree = 1 AND no_weightb = 1,no_cabac AND no_deblock AND no_mbtree AND no_weightb,0,1.0,1.0,1.0,30,310.36563301086426
+2,335.1840783379495,192,no_fast_pskip = 1 AND rc_lookahead = 20,no_fast_pskip AND rc_lookahead = 20.00,1,1.0,1.0,1.0,31,310.1878938674927
+3,636.6822345508701,144,no_8x8dct = 1 AND no_fast_pskip = 1 AND no_weightb = 1,no_8x8dct AND no_fast_pskip AND no_weightb,1,1.0,1.0,1.0,31,308.07657623291016
+4,570.3240672961667,72,no_8x8dct = 1 AND no_deblock = 1 AND no_mbtree = 1 AND no_weightb = 1,no_8x8dct AND no_deblock AND no_mbtree AND no_weightb,0,1.0,1.0,1.0,31,308.71125078201294
+2,597.8038156787518,288,no_deblock = 1 AND no_mixed_refs = 1,no_deblock AND no_mixed_refs,1,1.0,1.0,1.0,32,283.0010004043579
+3,631.8086087011166,144,no_8x8dct = 1 AND no_deblock = 1 AND no_weightb = 1,no_8x8dct AND no_deblock AND no_weightb,1,1.0,1.0,1.0,32,245.1524178981781
+4,441.7787820055185,72,no_cabac = 1 AND no_deblock = 1 AND no_mixed_refs = 1 AND no_weightb = 1,no_cabac AND no_deblock AND no_mixed_refs AND no_weightb,0,1.0,1.0,1.0,32,254.15830898284912
+2,672.697219135596,288,no_8x8dct = 1 AND no_weightb = 1,no_8x8dct AND no_weightb,1,1.0,1.0,1.0,33,301.9276251792908
+3,727.4693333185296,144,no_cabac = 1 AND no_fast_pskip = 1 AND no_mixed_refs = 1,NOT no_fast_pskip,0,0.0,0.0,0.0,33,235.34550857543945
+4,782.875662895962,72,no_deblock = 1 AND no_mbtree = 1 AND no_mixed_refs = 1 AND no_weightb = 1,no_deblock AND no_mbtree AND no_mixed_refs AND no_weightb,1,1.0,1.0,1.0,33,230.55373334884644
+2,762.0683124394196,288,no_deblock = 1 AND no_mbtree = 1,no_deblock AND no_mbtree,1,1.0,1.0,1.0,34,304.0490207672119
+3,413.72237752592383,96,no_8x8dct = 1 AND no_deblock = 1 AND ref = 5,no_8x8dct AND no_deblock AND ref = 5.00,0,1.0,1.0,1.0,34,284.10849380493164
+4,302.3099257015048,72,no_8x8dct = 1 AND no_fast_pskip = 1 AND no_mixed_refs = 1 AND no_weightb = 1,no_8x8dct AND no_fast_pskip AND no_mixed_refs,0,0.6666666666666666,0.5,1.0,34,285.2720005512237
+2,341.0940918389235,192,no_mbtree = 1 AND ref = 5,no_mbtree AND ref = 5.00,1,1.0,1.0,1.0,35,289.3713490962982
+3,430.40417167579005,144,no_8x8dct = 1 AND no_deblock = 1 AND no_fast_pskip = 1,NOT no_mixed_refs AND rc_lookahead != 60.00 AND ref != 1.00,0,0.16,0.125,0.2222222222222222,35,256.6984815597534
+4,303.82051397653447,72,no_8x8dct = 1 AND no_cabac = 1 AND no_deblock = 1 AND no_fast_pskip = 1,no_8x8dct AND no_cabac AND no_deblock AND no_fast_pskip,0,1.0,1.0,1.0,35,245.9439287185669
+2,527.1108433229144,192,no_fast_pskip = 1 AND rc_lookahead = 60,no_fast_pskip AND rc_lookahead = 60.00,1,1.0,1.0,1.0,36,330.00326657295227
+3,331.9629353845456,96,no_fast_pskip = 1 AND no_mbtree = 1 AND rc_lookahead = 40,no_fast_pskip AND no_mbtree AND rc_lookahead = 40.00,0,1.0,1.0,1.0,36,327.4225182533264
+4,398.1476108630459,72,no_cabac = 1 AND no_mbtree = 1 AND no_mixed_refs = 1 AND no_weightb = 1,no_cabac AND no_mbtree AND no_mixed_refs AND no_weightb,0,1.0,1.0,1.0,36,327.6389811038971
+2,675.2130942241228,288,no_cabac = 1 AND no_fast_pskip = 1,no_cabac AND no_fast_pskip,1,1.0,1.0,1.0,37,356.20642828941345
+3,795.3734822319898,144,no_deblock = 1 AND no_fast_pskip = 1 AND no_mbtree = 1,no_deblock AND no_fast_pskip AND no_mbtree,1,1.0,1.0,1.0,37,353.59207582473755
+4,276.8477771213254,72,no_8x8dct = 1 AND no_deblock = 1 AND no_mixed_refs = 1 AND no_weightb = 1,NOT no_cabac AND ref != 1.00,2,0.1052631578947368,0.0625,0.3333333333333333,37,355.34973645210266
+2,445.6829324959013,288,no_fast_pskip = 1 AND no_mixed_refs = 1,no_fast_pskip AND no_mixed_refs,1,1.0,1.0,1.0,38,323.1662013530731
+3,732.736946573662,96,no_cabac = 1 AND no_mixed_refs = 1 AND rc_lookahead = 40,no_cabac AND no_mixed_refs AND rc_lookahead = 40.00,1,1.0,1.0,1.0,38,312.73404026031494
+4,578.2842100233047,72,no_8x8dct = 1 AND no_cabac = 1 AND no_mbtree = 1 AND no_mixed_refs = 1,no_8x8dct AND no_cabac AND no_mbtree AND no_mixed_refs,0,1.0,1.0,1.0,38,311.92546129226685
+2,451.358320697551,288,no_8x8dct = 1 AND no_fast_pskip = 1,no_8x8dct AND no_fast_pskip,1,1.0,1.0,1.0,39,270.42991185188293
+3,362.233172004374,96,no_8x8dct = 1 AND no_cabac = 1 AND ref = 5,no_8x8dct AND no_cabac AND ref = 5.00,0,1.0,1.0,1.0,39,259.81037878990173
+4,592.195549768748,72,no_8x8dct = 1 AND no_deblock = 1 AND no_fast_pskip = 1 AND no_weightb = 1,no_8x8dct AND no_deblock AND no_fast_pskip AND no_weightb,2,1.0,1.0,1.0,39,262.9521586894989
+2,629.8132502921009,192,no_mixed_refs = 1 AND rc_lookahead = 40,no_mixed_refs AND rc_lookahead = 40.00,2,1.0,1.0,1.0,4,322.3580250740051
+3,548.3648417657392,144,no_deblock = 1 AND no_mixed_refs = 1 AND no_weightb = 1,no_deblock AND no_mixed_refs AND no_weightb,0,1.0,1.0,1.0,4,279.41980743408203
+4,442.8801319741757,72,no_deblock = 1 AND no_fast_pskip = 1 AND no_mixed_refs = 1 AND no_weightb = 1,no_deblock AND no_fast_pskip AND no_mixed_refs AND no_weightb,3,1.0,1.0,1.0,4,281.2112846374512
+2,466.0594159032158,128,rc_lookahead = 20 AND ref = 1,no_deblock AND NOT no_mbtree AND no_mixed_refs,1,0.1176470588235294,0.1111111111111111,0.125,40,260.6107308864593
+3,522.3953649320079,144,no_8x8dct = 1 AND no_deblock = 1 AND no_mbtree = 1,no_8x8dct AND no_deblock AND no_mbtree,1,1.0,1.0,1.0,40,255.0898642539978
+4,412.6735866640448,72,no_fast_pskip = 1 AND no_mbtree = 1 AND no_mixed_refs = 1 AND no_weightb = 1,no_fast_pskip AND no_mbtree AND no_mixed_refs AND no_weightb,0,1.0,1.0,1.0,40,255.11945104599
+2,490.6488575791801,288,no_8x8dct = 1 AND no_cabac = 1,no_8x8dct AND no_cabac,1,1.0,1.0,1.0,41,270.7077958583832
+3,642.467619518409,64,no_deblock = 1 AND rc_lookahead = 60 AND ref = 1,no_deblock AND rc_lookahead = 60.00 AND ref = 1.00,2,1.0,1.0,1.0,41,248.7567949295044
+4,420.4106727064852,72,no_8x8dct = 1 AND no_deblock = 1 AND no_mixed_refs = 1 AND no_weightb = 1,no_8x8dct AND no_mbtree AND no_mixed_refs AND rc_lookahead != 20.00,0,0.2857142857142857,0.25,0.3333333333333333,41,241.29718780517575
+2,446.14899071154906,192,no_deblock = 1 AND rc_lookahead = 20,no_deblock AND rc_lookahead = 20.00,1,1.0,1.0,1.0,42,401.3263611793518
+3,779.1486608050645,96,no_deblock = 1 AND no_mbtree = 1 AND ref = 9,no_deblock AND no_mbtree AND ref = 9.00,0,1.0,1.0,1.0,42,392.7303054332733
+4,406.627223538748,72,no_cabac = 1 AND no_deblock = 1 AND no_fast_pskip = 1 AND no_mixed_refs = 1,no_cabac AND no_deblock AND no_fast_pskip AND no_mixed_refs,0,1.0,1.0,1.0,42,389.205867767334
+2,377.89693867244176,192,no_mixed_refs = 1 AND rc_lookahead = 20,no_mixed_refs AND rc_lookahead = 20.00,1,1.0,1.0,1.0,43,283.6353199481964
+3,386.8233849263291,96,no_8x8dct = 1 AND no_weightb = 1 AND ref = 9,no_8x8dct AND no_weightb AND ref = 9.00,0,1.0,1.0,1.0,43,279.2602713108063
+4,520.3073437624414,72,no_cabac = 1 AND no_deblock = 1 AND no_fast_pskip = 1 AND no_weightb = 1,no_cabac AND no_deblock AND no_fast_pskip AND no_weightb,0,1.0,1.0,1.0,43,278.58815002441406
+2,372.27529775019934,192,no_8x8dct = 1 AND ref = 5,no_8x8dct AND ref = 5.00,0,1.0,1.0,1.0,44,268.4791386127472
+3,550.7211531282485,64,no_cabac = 1 AND rc_lookahead = 40 AND ref = 9,no_cabac AND rc_lookahead = 40.00 AND ref = 9.00,0,1.0,1.0,1.0,44,247.46750664711
+4,288.532686972845,72,no_8x8dct = 1 AND no_mbtree = 1 AND no_mixed_refs = 1 AND no_weightb = 1,no_deblock AND NOT no_mixed_refs AND rc_lookahead != 20.00,0,0.0,0.0,0.0,44,240.2053594589233
+2,380.7944479529167,288,no_8x8dct = 1 AND no_mbtree = 1,no_8x8dct AND no_mbtree,0,1.0,1.0,1.0,45,395.0387647151947
+3,694.8681022742421,144,no_8x8dct = 1 AND no_mixed_refs = 1 AND no_weightb = 1,no_8x8dct AND no_mixed_refs AND no_weightb,1,1.0,1.0,1.0,45,382.3208711147308
+4,325.21016968903706,72,no_8x8dct = 1 AND no_deblock = 1 AND no_fast_pskip = 1 AND no_mixed_refs = 1,no_8x8dct AND no_deblock AND no_fast_pskip AND no_mixed_refs,1,1.0,1.0,1.0,45,360.2057828903198
+2,693.0086208888273,192,no_fast_pskip = 1 AND ref = 1,no_fast_pskip AND ref = 1.00,1,1.0,1.0,1.0,46,279.28208112716675
+3,750.9494159748851,144,no_8x8dct = 1 AND no_mbtree = 1 AND no_weightb = 1,NOT no_deblock AND NOT no_fast_pskip AND rc_lookahead != 60.00 AND ref != 9.00,0,0.1176470588235294,0.125,0.1111111111111111,46,263.2821843624115
+4,616.39446483216,72,no_cabac = 1 AND no_deblock = 1 AND no_fast_pskip = 1 AND no_mixed_refs = 1,no_cabac AND no_deblock AND no_fast_pskip AND no_mixed_refs,1,1.0,1.0,1.0,46,275.4924530982971
+2,405.4411348933029,192,no_8x8dct = 1 AND ref = 1,no_8x8dct AND ref = 1.00,0,1.0,1.0,1.0,47,304.9345352649689
+3,391.3847437105103,96,no_8x8dct = 1 AND no_cabac = 1 AND rc_lookahead = 60,no_8x8dct AND no_cabac AND rc_lookahead = 60.00,1,1.0,1.0,1.0,47,304.05558133125305
+4,430.9254352123705,72,no_8x8dct = 1 AND no_cabac = 1 AND no_deblock = 1 AND no_fast_pskip = 1,no_deblock AND rc_lookahead != 60.00 AND ref != 1.00,0,0.1951219512195122,0.125,0.4444444444444444,47,304.12701416015625
+2,681.3777090871554,288,no_cabac = 1 AND no_deblock = 1,no_cabac AND no_deblock,1,1.0,1.0,1.0,48,256.99213337898254
+3,462.8300103715312,96,no_cabac = 1 AND no_mixed_refs = 1 AND ref = 9,no_cabac AND no_mixed_refs AND ref = 9.00,0,1.0,1.0,1.0,48,255.29639863967896
+4,493.06615717310655,72,no_cabac = 1 AND no_mbtree = 1 AND no_mixed_refs = 1 AND no_weightb = 1,no_cabac AND no_mbtree AND no_mixed_refs AND no_weightb,1,1.0,1.0,1.0,48,254.5213406085968
+2,590.311014848563,192,no_cabac = 1 AND ref = 5,no_cabac AND ref = 5.00,3,1.0,1.0,1.0,49,267.72486448287964
+3,293.4973493582463,144,no_8x8dct = 1 AND no_cabac = 1 AND no_weightb = 1,NOT no_cabac,0,0.0,0.0,0.0,49,265.03791666030884
+4,368.4254536656624,72,no_8x8dct = 1 AND no_fast_pskip = 1 AND no_mixed_refs = 1 AND no_weightb = 1,no_8x8dct AND no_fast_pskip AND no_mixed_refs AND no_weightb,0,1.0,1.0,1.0,49,266.2534513473511
+2,485.53145295706736,192,no_weightb = 1 AND ref = 5,no_weightb AND ref = 5.00,1,1.0,1.0,1.0,5,344.2121002674103
+3,596.915838596553,96,no_deblock = 1 AND no_weightb = 1 AND ref = 1,no_deblock AND no_weightb AND ref = 1.00,3,1.0,1.0,1.0,5,341.3285434246063
+4,687.8259930053121,72,no_cabac = 1 AND no_fast_pskip = 1 AND no_mixed_refs = 1 AND no_weightb = 1,no_cabac AND no_fast_pskip AND no_weightb,0,0.6666666666666666,0.5,1.0,5,337.0908353328705
+2,558.4153231230404,288,no_fast_pskip = 1 AND no_mixed_refs = 1,no_fast_pskip AND no_mixed_refs,1,1.0,1.0,1.0,50,299.25048327445984
+3,659.6855057691012,64,no_cabac = 1 AND rc_lookahead = 40 AND ref = 1,no_cabac AND rc_lookahead = 40.00 AND ref = 1.00,0,1.0,1.0,1.0,50,296.9478895664215
+4,345.2546343437258,72,no_8x8dct = 1 AND no_cabac = 1 AND no_mixed_refs = 1 AND no_weightb = 1,no_8x8dct AND no_cabac AND no_mixed_refs AND no_weightb,0,1.0,1.0,1.0,50,296.551522731781
+2,467.4678450445708,288,no_8x8dct = 1 AND no_mixed_refs = 1,NOT no_mbtree AND no_weightb AND rc_lookahead != 60.00,0,0.2,0.25,0.1666666666666666,51,271.76519083976746
+3,403.8603812846288,96,no_cabac = 1 AND no_mbtree = 1 AND ref = 1,no_cabac AND no_mbtree AND ref = 1.00,0,1.0,1.0,1.0,51,269.5431129932404
+4,292.4122176446968,72,no_cabac = 1 AND no_fast_pskip = 1 AND no_mbtree = 1 AND no_weightb = 1,no_fast_pskip AND no_mixed_refs AND rc_lookahead != 60.00,0,0.1818181818181818,0.125,0.3333333333333333,51,269.4045190811157
+2,488.803446220963,192,no_weightb = 1 AND ref = 1,no_weightb AND ref = 1.00,1,1.0,1.0,1.0,52,253.02646470069885
+3,425.62389219842265,144,no_cabac = 1 AND no_deblock = 1 AND no_weightb = 1,no_cabac AND no_deblock AND no_weightb,2,1.0,1.0,1.0,52,261.52121138572693
+4,681.2311428481714,72,no_deblock = 1 AND no_fast_pskip = 1 AND no_mixed_refs = 1 AND no_weightb = 1,no_deblock AND no_fast_pskip AND no_mixed_refs AND no_weightb,0,1.0,1.0,1.0,52,261.5235450267792
+2,514.6406027063972,288,no_fast_pskip = 1 AND no_mbtree = 1,no_fast_pskip AND no_mbtree,1,1.0,1.0,1.0,53,270.7451596260071
+3,434.948531924118,96,no_deblock = 1 AND no_mixed_refs = 1 AND ref = 9,no_deblock AND no_mixed_refs AND ref = 9.00,0,1.0,1.0,1.0,53,277.4853799343109
+4,430.938383295457,72,no_8x8dct = 1 AND no_deblock = 1 AND no_mixed_refs = 1 AND no_weightb = 1,no_8x8dct AND no_deblock AND no_weightb,0,0.6666666666666666,0.5,1.0,53,278.12261390686035
+2,782.791651510391,288,no_cabac = 1 AND no_fast_pskip = 1,no_cabac AND no_fast_pskip,1,1.0,1.0,1.0,54,241.3271496295929
+3,316.3197399326819,144,no_8x8dct = 1 AND no_cabac = 1 AND no_deblock = 1,no_8x8dct AND no_cabac AND no_deblock,0,1.0,1.0,1.0,54,237.0579781532288
+4,676.6214832260448,72,no_cabac = 1 AND no_deblock = 1 AND no_mbtree = 1 AND no_mixed_refs = 1,no_cabac AND no_mixed_refs,1,0.4,0.25,1.0,54,229.37402749061584
+2,773.3684730765912,192,no_weightb = 1 AND ref = 5,no_weightb AND ref = 5.00,1,1.0,1.0,1.0,55,240.6493272781372
+3,353.716196185604,144,no_cabac = 1 AND no_deblock = 1 AND no_fast_pskip = 1,no_cabac AND no_deblock AND no_fast_pskip,1,1.0,1.0,1.0,55,229.1187927722931
+4,754.5611676109088,72,no_cabac = 1 AND no_fast_pskip = 1 AND no_mbtree = 1 AND no_weightb = 1,no_cabac AND no_fast_pskip AND no_mbtree AND no_weightb,1,1.0,1.0,1.0,55,227.4863829612732
+2,519.5609083632337,128,rc_lookahead = 60 AND ref = 9,rc_lookahead = 60.00 AND ref = 9.00,1,1.0,1.0,1.0,56,242.09789204597476
+3,357.4949755989516,144,no_8x8dct = 1 AND no_cabac = 1 AND no_weightb = 1,no_8x8dct AND no_cabac AND no_weightb,1,1.0,1.0,1.0,56,231.0997109413147
+4,396.7038989299171,72,no_8x8dct = 1 AND no_cabac = 1 AND no_fast_pskip = 1 AND no_weightb = 1,no_8x8dct AND no_cabac AND no_fast_pskip AND no_weightb,0,1.0,1.0,1.0,56,229.57031655311584
+2,301.55603250401145,192,no_mbtree = 1 AND ref = 5,no_mbtree AND ref = 5.00,4,1.0,1.0,1.0,57,305.082319021225
+3,453.7564007166114,144,no_8x8dct = 1 AND no_cabac = 1 AND no_mixed_refs = 1,no_8x8dct AND no_cabac AND no_mixed_refs,0,1.0,1.0,1.0,57,308.5882465839386
+4,673.608998366305,72,no_8x8dct = 1 AND no_fast_pskip = 1 AND no_mbtree = 1 AND no_weightb = 1,no_8x8dct AND no_fast_pskip AND no_weightb,0,0.6666666666666666,0.5,1.0,57,297.6713500022888
+2,556.4552733279863,288,no_8x8dct = 1 AND no_weightb = 1,no_8x8dct AND no_weightb,1,1.0,1.0,1.0,58,258.92716336250305
+3,597.8718045658495,144,no_mbtree = 1 AND no_mixed_refs = 1 AND no_weightb = 1,no_mbtree AND no_mixed_refs AND no_weightb,0,1.0,1.0,1.0,58,267.7527542114258
+4,792.7111410637426,72,no_8x8dct = 1 AND no_cabac = 1 AND no_mixed_refs = 1 AND no_weightb = 1,no_8x8dct AND no_cabac AND no_mixed_refs AND no_weightb,1,1.0,1.0,1.0,58,268.6837203502655
+2,600.8579745782928,288,no_fast_pskip = 1 AND no_weightb = 1,no_fast_pskip AND no_weightb,1,1.0,1.0,1.0,59,369.09241914749146
+3,760.8862389456558,144,no_fast_pskip = 1 AND no_mbtree = 1 AND no_mixed_refs = 1,no_fast_pskip AND no_mbtree AND no_mixed_refs,1,1.0,1.0,1.0,59,363.9099934101105
+4,474.7057163664024,72,no_cabac = 1 AND no_deblock = 1 AND no_fast_pskip = 1 AND no_weightb = 1,no_cabac AND no_deblock AND no_fast_pskip AND no_weightb,0,1.0,1.0,1.0,59,369.2195773124695
+2,294.94031855519,288,no_cabac = 1 AND no_mbtree = 1,no_cabac AND no_mbtree,3,1.0,1.0,1.0,6,281.71963572502136
+3,710.95897533992,96,no_cabac = 1 AND no_weightb = 1 AND rc_lookahead = 60,no_cabac AND rc_lookahead = 60.00,1,0.6666666666666666,0.5,1.0,6,281.28450632095337
+4,546.462188855261,72,no_8x8dct = 1 AND no_cabac = 1 AND no_deblock = 1 AND no_weightb = 1,no_8x8dct AND no_cabac AND no_deblock AND no_weightb,0,1.0,1.0,1.0,6,281.2794885635376
+2,646.1577733999244,288,no_8x8dct = 1 AND no_deblock = 1,no_8x8dct AND no_deblock,1,1.0,1.0,1.0,60,242.82092690467837
+3,427.672254422402,96,no_mbtree = 1 AND no_weightb = 1 AND rc_lookahead = 60,no_mbtree AND no_weightb,3,0.5,0.3333333333333333,1.0,60,231.89625787734985
+4,449.9860933437392,72,no_cabac = 1 AND no_mbtree = 1 AND no_mixed_refs = 1 AND no_weightb = 1,no_cabac AND no_mbtree AND no_mixed_refs AND no_weightb,0,1.0,1.0,1.0,60,231.89215660095212
+2,318.73014817397075,288,no_cabac = 1 AND no_mixed_refs = 1,no_cabac AND no_mixed_refs,1,1.0,1.0,1.0,61,267.9195671081543
+3,655.2165902165082,64,no_fast_pskip = 1 AND rc_lookahead = 40 AND ref = 1,no_fast_pskip AND rc_lookahead = 40.00,0,0.5,0.3333333333333333,1.0,61,266.7076790332794
+4,355.5222932850502,72,no_8x8dct = 1 AND no_cabac = 1 AND no_mbtree = 1 AND no_weightb = 1,no_8x8dct AND no_cabac AND no_mbtree AND no_weightb,0,1.0,1.0,1.0,61,266.59985733032227
+2,757.9984521423885,192,no_fast_pskip = 1 AND ref = 1,no_fast_pskip AND ref = 1.00,1,1.0,1.0,1.0,62,340.971186876297
+3,719.8480339669304,64,no_8x8dct = 1 AND rc_lookahead = 40 AND ref = 5,no_8x8dct AND no_deblock AND rc_lookahead = 40.00 AND ref = 5.00,2,0.6666666666666666,1.0,0.5,62,339.16413950920105
+4,303.3428942524957,72,no_cabac = 1 AND no_deblock = 1 AND no_mbtree = 1 AND no_mixed_refs = 1,no_cabac AND no_deblock AND no_mbtree AND no_mixed_refs,1,1.0,1.0,1.0,62,338.22948718070984
+2,306.61081237697124,288,no_cabac = 1 AND no_deblock = 1,NOT no_deblock,0,0.0,0.0,0.0,63,258.91514015197754
+3,535.8536438196409,96,no_fast_pskip = 1 AND no_weightb = 1 AND rc_lookahead = 60,no_fast_pskip AND no_weightb AND rc_lookahead = 60.00,0,1.0,1.0,1.0,63,245.0392997264862
+4,683.7088538648784,72,no_8x8dct = 1 AND no_mbtree = 1 AND no_mixed_refs = 1 AND no_weightb = 1,no_8x8dct AND no_mbtree AND no_mixed_refs AND no_weightb,0,1.0,1.0,1.0,63,245.8787190914154
+2,514.3326981142685,288,no_fast_pskip = 1 AND no_weightb = 1,no_fast_pskip AND no_weightb,1,1.0,1.0,1.0,64,271.6962339878082
+3,460.79744601784427,96,no_deblock = 1 AND no_mixed_refs = 1 AND rc_lookahead = 60,no_deblock AND no_mixed_refs AND rc_lookahead = 60.00,0,1.0,1.0,1.0,64,269.5004532337189
+4,710.5704892907501,72,no_8x8dct = 1 AND no_cabac = 1 AND no_fast_pskip = 1 AND no_mbtree = 1,no_mbtree AND NOT no_mixed_refs,0,0.2,0.125,0.5,64,280.4072163105011
+2,568.9058907240552,288,no_cabac = 1 AND no_fast_pskip = 1,no_cabac AND no_fast_pskip,1,1.0,1.0,1.0,65,313.7522015571594
+3,726.4187997356746,144,no_8x8dct = 1 AND no_cabac = 1 AND no_mixed_refs = 1,NOT no_deblock AND NOT no_mbtree AND ref != 9.00,1,0.1428571428571428,0.125,0.1666666666666666,65,304.1189868450165
+4,620.8082579155839,72,no_cabac = 1 AND no_fast_pskip = 1 AND no_mbtree = 1 AND no_mixed_refs = 1,no_cabac AND no_fast_pskip AND no_mbtree AND no_mixed_refs,1,1.0,1.0,1.0,65,307.6079971790314
+2,565.8355261926253,288,no_mixed_refs = 1 AND no_weightb = 1,NOT no_weightb,0,0.0,0.0,0.0,66,329.0968346595764
+3,558.9387262583655,96,no_8x8dct = 1 AND no_weightb = 1 AND rc_lookahead = 40,no_8x8dct AND no_weightb AND rc_lookahead = 40.00,2,1.0,1.0,1.0,66,321.3524513244629
+4,345.691636000288,72,no_8x8dct = 1 AND no_deblock = 1 AND no_fast_pskip = 1 AND no_mixed_refs = 1,no_8x8dct AND no_deblock AND no_fast_pskip AND no_mixed_refs,0,1.0,1.0,1.0,66,326.88861560821533
+2,763.9245094119445,192,no_mixed_refs = 1 AND rc_lookahead = 60,no_mixed_refs AND rc_lookahead = 60.00,1,1.0,1.0,1.0,67,273.8347041606903
+3,515.7095507728559,64,no_cabac = 1 AND rc_lookahead = 40 AND ref = 9,no_cabac AND rc_lookahead = 40.00 AND ref = 9.00,0,1.0,1.0,1.0,67,272.7117848396301
+4,639.7136867549268,72,no_deblock = 1 AND no_fast_pskip = 1 AND no_mbtree = 1 AND no_mixed_refs = 1,no_deblock AND no_fast_pskip AND no_mbtree AND no_mixed_refs,0,1.0,1.0,1.0,67,277.4970707893372
+2,387.4923807596306,192,no_8x8dct = 1 AND rc_lookahead = 60,no_8x8dct AND rc_lookahead = 60.00,0,1.0,1.0,1.0,68,232.5547604560852
+3,775.7930703270891,144,no_8x8dct = 1 AND no_fast_pskip = 1 AND no_mbtree = 1,no_8x8dct AND no_fast_pskip AND no_mbtree,1,1.0,1.0,1.0,68,226.4689922332764
+4,418.9651318627738,72,no_8x8dct = 1 AND no_cabac = 1 AND no_fast_pskip = 1 AND no_mixed_refs = 1,no_8x8dct AND no_cabac AND no_fast_pskip AND no_mixed_refs,0,1.0,1.0,1.0,68,227.01884937286377
+2,387.7731157274041,288,no_8x8dct = 1 AND no_mixed_refs = 1,no_8x8dct AND no_mixed_refs,0,1.0,1.0,1.0,69,357.1604716777801
+3,398.4102011570176,96,no_fast_pskip = 1 AND no_weightb = 1 AND rc_lookahead = 60,no_fast_pskip AND no_weightb AND rc_lookahead = 60.00,0,1.0,1.0,1.0,69,334.4944682121277
+4,779.0744637342013,72,no_8x8dct = 1 AND no_deblock = 1 AND no_fast_pskip = 1 AND no_weightb = 1,no_8x8dct AND no_deblock AND no_fast_pskip AND no_weightb,1,1.0,1.0,1.0,69,345.29641127586365
+2,763.074127686124,288,no_fast_pskip = 1 AND no_mixed_refs = 1,no_fast_pskip AND no_mixed_refs,1,1.0,1.0,1.0,7,334.8996613025665
+3,573.2155075297809,96,no_8x8dct = 1 AND no_deblock = 1 AND rc_lookahead = 60,no_8x8dct AND NOT no_weightb AND ref != 1.00,1,0.2222222222222222,0.1666666666666666,0.3333333333333333,7,334.2396011352539
+4,649.0285624076146,72,no_8x8dct = 1 AND no_cabac = 1 AND no_deblock = 1 AND no_weightb = 1,no_8x8dct AND no_cabac AND no_deblock AND no_weightb,0,1.0,1.0,1.0,7,309.6437089443207
+2,292.57991936970234,192,no_mixed_refs = 1 AND rc_lookahead = 40,no_mixed_refs AND rc_lookahead = 40.00,1,1.0,1.0,1.0,70,283.70557975769043
+3,304.2417049713083,96,no_8x8dct = 1 AND no_fast_pskip = 1 AND rc_lookahead = 20,no_8x8dct AND no_fast_pskip AND rc_lookahead = 20.00,0,1.0,1.0,1.0,70,277.44214844703674
+4,558.1405674973838,72,no_8x8dct = 1 AND no_cabac = 1 AND no_fast_pskip = 1 AND no_weightb = 1,no_8x8dct AND no_cabac AND no_fast_pskip AND no_weightb,0,1.0,1.0,1.0,70,268.1040699481964
+2,420.6366088794351,288,no_mbtree = 1 AND no_mixed_refs = 1,no_mbtree AND no_mixed_refs,1,1.0,1.0,1.0,71,249.42259430885315
+3,419.175468819165,96,no_mixed_refs = 1 AND no_weightb = 1 AND ref = 5,no_mixed_refs AND no_weightb AND ref = 5.00,0,1.0,1.0,1.0,71,242.2746741771698
+4,505.3232822901895,72,no_8x8dct = 1 AND no_cabac = 1 AND no_fast_pskip = 1 AND no_weightb = 1,no_8x8dct AND no_cabac AND NOT no_deblock AND NOT no_mixed_refs,1,0.25,0.25,0.25,71,241.9208686351776
+2,618.0727703575299,288,no_fast_pskip = 1 AND no_mbtree = 1,no_fast_pskip AND no_mbtree,1,1.0,1.0,1.0,72,286.9126811027527
+3,275.27532312178965,96,no_8x8dct = 1 AND no_mbtree = 1 AND rc_lookahead = 60,NOT no_8x8dct AND NOT no_cabac,0,0.0,0.0,0.0,72,285.2953145503998
+4,478.882546017188,72,no_8x8dct = 1 AND no_mbtree = 1 AND no_mixed_refs = 1 AND no_weightb = 1,no_8x8dct AND no_mbtree AND no_mixed_refs AND no_weightb,0,1.0,1.0,1.0,72,268.364444732666
+2,782.0753753342474,288,no_deblock = 1 AND no_mbtree = 1,no_deblock AND no_mbtree,1,1.0,1.0,1.0,73,304.58221411705017
+3,630.1784554755737,96,no_8x8dct = 1 AND no_mbtree = 1 AND ref = 9,no_8x8dct AND no_mbtree AND ref = 9.00,1,1.0,1.0,1.0,73,304.20646381378174
+4,764.7952291849813,72,no_8x8dct = 1 AND no_deblock = 1 AND no_mixed_refs = 1 AND no_weightb = 1,no_8x8dct AND no_deblock AND no_mixed_refs AND no_weightb,1,1.0,1.0,1.0,73,284.9875500202179
+2,758.5387337290048,288,no_cabac = 1 AND no_deblock = 1,no_cabac AND no_deblock,1,1.0,1.0,1.0,74,263.6383378505707
+3,443.9174243792421,64,no_weightb = 1 AND rc_lookahead = 60 AND ref = 5,no_weightb AND rc_lookahead = 60.00 AND ref = 5.00,0,1.0,1.0,1.0,74,261.28923535346985
+4,768.6449729718966,72,no_deblock = 1 AND no_mbtree = 1 AND no_mixed_refs = 1 AND no_weightb = 1,no_deblock AND no_mbtree AND no_mixed_refs AND no_weightb,2,1.0,1.0,1.0,74,249.62756514549253
+2,404.9514830109847,288,no_8x8dct = 1 AND no_mixed_refs = 1,no_8x8dct AND no_mixed_refs,1,1.0,1.0,1.0,75,265.7284257411957
+3,660.7909827544936,144,no_8x8dct = 1 AND no_cabac = 1 AND no_mbtree = 1,no_8x8dct AND no_cabac AND no_mbtree,1,1.0,1.0,1.0,75,252.97225666046145
+4,636.5888666669632,72,no_cabac = 1 AND no_fast_pskip = 1 AND no_mbtree = 1 AND no_weightb = 1,no_cabac AND no_fast_pskip AND no_mbtree AND no_weightb,1,1.0,1.0,1.0,75,265.9229402542114
+2,782.5220206742042,192,no_8x8dct = 1 AND ref = 1,no_8x8dct AND ref = 1.00,1,1.0,1.0,1.0,76,261.0000169277191
+3,327.7302516461737,96,no_deblock = 1 AND no_fast_pskip = 1 AND ref = 9,no_deblock AND no_fast_pskip AND ref = 9.00,2,1.0,1.0,1.0,76,270.1124155521393
+4,454.8519269336616,72,no_8x8dct = 1 AND no_deblock = 1 AND no_fast_pskip = 1 AND no_mbtree = 1,no_8x8dct AND no_deblock AND no_fast_pskip AND no_mbtree,0,1.0,1.0,1.0,76,283.69231605529785
+2,313.2987372228338,192,no_mixed_refs = 1 AND ref = 9,no_mixed_refs AND ref = 9.00,1,1.0,1.0,1.0,77,236.86492085456848
+3,373.343355382123,144,no_8x8dct = 1 AND no_cabac = 1 AND no_mixed_refs = 1,no_8x8dct AND no_cabac AND no_mixed_refs,0,1.0,1.0,1.0,77,235.66787934303284
+4,758.0972462993809,72,no_cabac = 1 AND no_deblock = 1 AND no_fast_pskip = 1 AND no_weightb = 1,no_cabac AND no_fast_pskip AND no_weightb,0,0.6666666666666666,0.5,1.0,77,232.83145689964292
+2,775.483499987623,288,no_deblock = 1 AND no_weightb = 1,no_deblock AND no_weightb,1,1.0,1.0,1.0,78,233.18392372131348
+3,291.622201610992,96,no_cabac = 1 AND no_fast_pskip = 1 AND rc_lookahead = 20,NOT no_fast_pskip AND rc_lookahead != 20.00,0,0.0,0.0,0.0,78,242.99542117118835
+4,425.5284605003196,72,no_8x8dct = 1 AND no_cabac = 1 AND no_deblock = 1 AND no_mixed_refs = 1,no_deblock AND no_mixed_refs AND ref != 9.00,0,0.3636363636363636,0.25,0.6666666666666666,78,244.59376764297485
+2,338.8224713793045,288,no_fast_pskip = 1 AND no_weightb = 1,no_fast_pskip AND no_weightb,1,1.0,1.0,1.0,79,315.02130126953125
+3,511.954554534833,96,no_8x8dct = 1 AND no_mbtree = 1 AND rc_lookahead = 40,no_8x8dct AND no_mbtree AND rc_lookahead = 40.00,1,1.0,1.0,1.0,79,311.6538128852844
+4,580.4212145310009,72,no_cabac = 1 AND no_fast_pskip = 1 AND no_mbtree = 1 AND no_weightb = 1,no_cabac AND no_fast_pskip AND no_mbtree AND no_weightb,0,1.0,1.0,1.0,79,310.94739031791687
+2,773.1747951151269,288,no_cabac = 1 AND no_deblock = 1,no_cabac AND no_deblock,1,1.0,1.0,1.0,8,272.27663946151733
+3,646.4757283737608,96,no_cabac = 1 AND no_mixed_refs = 1 AND ref = 9,no_cabac AND no_mixed_refs AND ref = 9.00,1,1.0,1.0,1.0,8,265.6388614177704
+4,592.0855255714591,72,no_8x8dct = 1 AND no_fast_pskip = 1 AND no_mbtree = 1 AND no_weightb = 1,no_8x8dct AND no_fast_pskip AND no_mbtree AND no_weightb,0,1.0,1.0,1.0,8,263.50208616256714
+2,438.6684529430714,288,no_fast_pskip = 1 AND no_mixed_refs = 1,NOT no_8x8dct AND no_deblock AND NOT no_mbtree AND ref = 1.00,1,0.0714285714285714,0.25,0.0416666666666666,80,296.65543842315674
+3,371.6901284276853,144,no_cabac = 1 AND no_deblock = 1 AND no_fast_pskip = 1,no_8x8dct AND NOT no_mbtree,0,0.1666666666666666,0.125,0.25,80,292.465220451355
+4,789.6720197995248,72,no_8x8dct = 1 AND no_deblock = 1 AND no_fast_pskip = 1 AND no_mixed_refs = 1,no_8x8dct AND no_deblock AND no_fast_pskip AND no_mixed_refs,1,1.0,1.0,1.0,80,278.0958752632141
+2,466.9714486737144,192,no_mixed_refs = 1 AND ref = 9,no_mixed_refs AND ref = 9.00,1,1.0,1.0,1.0,81,305.8630428314209
+3,354.40150008292954,96,no_mixed_refs = 1 AND no_weightb = 1 AND ref = 1,no_mixed_refs AND no_weightb AND ref = 1.00,0,1.0,1.0,1.0,81,304.71190905570984
+4,402.2222993190869,72,no_deblock = 1 AND no_fast_pskip = 1 AND no_mbtree = 1 AND no_mixed_refs = 1,no_deblock AND no_fast_pskip AND no_mbtree AND no_mixed_refs,0,1.0,1.0,1.0,81,298.5823504924774
+2,508.3901673941095,288,no_8x8dct = 1 AND no_weightb = 1,no_8x8dct AND no_weightb,1,1.0,1.0,1.0,82,266.8577275276184
+3,316.5550976511415,144,no_cabac = 1 AND no_deblock = 1 AND no_weightb = 1,no_cabac AND no_deblock AND no_weightb,1,1.0,1.0,1.0,82,265.71932101249695
+4,530.4852505285484,72,no_8x8dct = 1 AND no_cabac = 1 AND no_deblock = 1 AND no_mixed_refs = 1,no_8x8dct AND no_cabac AND no_deblock AND no_mixed_refs,0,1.0,1.0,1.0,82,276.8683981895447
+2,342.0973440402854,288,no_mbtree = 1 AND no_mixed_refs = 1,no_mbtree AND no_mixed_refs,1,1.0,1.0,1.0,83,293.32984018325806
+3,643.6453645571199,96,no_8x8dct = 1 AND no_deblock = 1 AND rc_lookahead = 20,no_8x8dct AND no_deblock AND rc_lookahead = 20.00,0,1.0,1.0,1.0,83,291.3953289985657
+4,331.80018407814,72,no_cabac = 1 AND no_fast_pskip = 1 AND no_mbtree = 1 AND no_weightb = 1,no_cabac AND no_fast_pskip AND no_mbtree AND no_weightb,0,1.0,1.0,1.0,83,284.4399938583374
+2,679.8849430365226,288,no_cabac = 1 AND no_mixed_refs = 1,no_cabac AND no_mixed_refs,1,1.0,1.0,1.0,84,253.637389421463
+3,357.78848952290946,96,no_8x8dct = 1 AND no_mbtree = 1 AND ref = 5,no_8x8dct AND no_mbtree AND ref = 5.00,0,1.0,1.0,1.0,84,254.42037677764893
+4,512.7098164702301,72,no_cabac = 1 AND no_mbtree = 1 AND no_mixed_refs = 1 AND no_weightb = 1,no_cabac AND no_mbtree AND no_mixed_refs AND no_weightb,1,1.0,1.0,1.0,84,255.21323442459104
+2,631.0521683592086,192,no_cabac = 1 AND ref = 1,no_cabac AND ref = 1.00,1,1.0,1.0,1.0,85,235.9532241821289
+3,776.6284720220134,96,no_cabac = 1 AND no_mbtree = 1 AND ref = 5,no_cabac AND no_mbtree AND ref = 5.00,0,1.0,1.0,1.0,85,236.9577617645264
+4,390.4954392191603,72,no_cabac = 1 AND no_mbtree = 1 AND no_mixed_refs = 1 AND no_weightb = 1,no_cabac AND no_mbtree AND no_mixed_refs AND no_weightb,0,1.0,1.0,1.0,85,238.5444037914276
+2,494.9958940325196,288,no_cabac = 1 AND no_deblock = 1,no_cabac AND no_deblock,1,1.0,1.0,1.0,86,251.62524724006653
+3,541.3655801281537,144,no_cabac = 1 AND no_mbtree = 1 AND no_weightb = 1,no_cabac AND no_mbtree AND no_weightb,2,1.0,1.0,1.0,86,253.23083209991452
+4,512.7843696798831,72,no_8x8dct = 1 AND no_cabac = 1 AND no_mbtree = 1 AND no_mixed_refs = 1,no_8x8dct AND no_cabac AND no_mbtree AND no_mixed_refs,0,1.0,1.0,1.0,86,238.1846296787262
+2,761.1124734115929,288,no_deblock = 1 AND no_mbtree = 1,no_deblock AND no_mbtree,1,1.0,1.0,1.0,87,296.31297612190247
+3,432.151178612068,96,no_fast_pskip = 1 AND no_mixed_refs = 1 AND rc_lookahead = 20,no_fast_pskip AND no_mixed_refs AND rc_lookahead = 20.00,2,1.0,1.0,1.0,87,310.6142566204071
+4,504.910062675471,72,no_cabac = 1 AND no_fast_pskip = 1 AND no_mixed_refs = 1 AND no_weightb = 1,no_cabac AND no_fast_pskip AND no_mixed_refs AND no_weightb,1,1.0,1.0,1.0,87,315.1468029022217
+2,533.6781434083197,288,no_8x8dct = 1 AND no_fast_pskip = 1,no_8x8dct AND no_fast_pskip,1,1.0,1.0,1.0,88,315.52084946632385
+3,568.4506853761005,96,no_cabac = 1 AND no_mixed_refs = 1 AND ref = 5,no_mixed_refs AND ref = 5.00,0,0.6666666666666666,0.5,1.0,88,311.764023065567
+4,334.92436479089366,72,no_8x8dct = 1 AND no_mbtree = 1 AND no_mixed_refs = 1 AND no_weightb = 1,no_8x8dct AND no_mbtree AND no_mixed_refs AND no_weightb,0,1.0,1.0,1.0,88,312.0350615978241
+2,598.2757923258218,288,no_8x8dct = 1 AND no_mbtree = 1,no_8x8dct AND no_mbtree,1,1.0,1.0,1.0,89,240.31204342842105
+3,343.1071210934465,96,no_deblock = 1 AND no_weightb = 1 AND rc_lookahead = 20,no_deblock AND no_weightb AND rc_lookahead = 20.00,0,1.0,1.0,1.0,89,240.4224534034729
+4,415.8138039742781,72,no_cabac = 1 AND no_deblock = 1 AND no_fast_pskip = 1 AND no_mixed_refs = 1,no_cabac AND no_fast_pskip,1,0.4,0.25,1.0,89,241.26181077957156
+2,587.0473122340309,192,no_deblock = 1 AND ref = 1,ref = 1.00,2,0.6666666666666666,0.5,1.0,9,275.7619981765747
+3,511.1344912616336,144,no_cabac = 1 AND no_fast_pskip = 1 AND no_mixed_refs = 1,no_cabac AND no_fast_pskip AND no_mixed_refs,3,1.0,1.0,1.0,9,260.9868333339691
+4,450.7667957082252,72,no_cabac = 1 AND no_fast_pskip = 1 AND no_mbtree = 1 AND no_weightb = 1,no_cabac AND no_fast_pskip AND no_mbtree,0,0.6666666666666666,0.5,1.0,9,265.0354857444763
+2,452.61252883258777,192,no_deblock = 1 AND rc_lookahead = 40,no_deblock AND rc_lookahead = 40.00,1,1.0,1.0,1.0,90,286.7553141117096
+3,783.4005551177411,144,no_8x8dct = 1 AND no_cabac = 1 AND no_weightb = 1,no_8x8dct AND no_cabac AND no_weightb,1,1.0,1.0,1.0,90,285.3134264945984
+4,631.7916322741642,72,no_8x8dct = 1 AND no_cabac = 1 AND no_mbtree = 1 AND no_weightb = 1,no_8x8dct AND no_cabac AND no_weightb,0,0.6666666666666666,0.5,1.0,90,295.5210289955139
+2,652.2742067719196,288,no_8x8dct = 1 AND no_cabac = 1,no_8x8dct AND no_cabac,1,1.0,1.0,1.0,91,306.70636224746704
+3,662.3250667670379,144,no_8x8dct = 1 AND no_mbtree = 1 AND no_weightb = 1,no_8x8dct AND no_mbtree AND no_weightb,0,1.0,1.0,1.0,91,307.59193754196167
+4,741.7912965867456,72,no_8x8dct = 1 AND no_deblock = 1 AND no_mixed_refs = 1 AND no_weightb = 1,no_8x8dct AND no_deblock AND no_mixed_refs AND no_weightb,1,1.0,1.0,1.0,91,315.22861075401306
+2,475.80645510786206,192,no_fast_pskip = 1 AND ref = 9,no_fast_pskip AND ref = 9.00,1,1.0,1.0,1.0,92,311.85415291786194
+3,387.3159638560399,96,no_cabac = 1 AND no_deblock = 1 AND rc_lookahead = 20,no_cabac AND no_deblock AND rc_lookahead = 20.00,0,1.0,1.0,1.0,92,310.78862285614014
+4,436.71239358499247,72,no_8x8dct = 1 AND no_fast_pskip = 1 AND no_mbtree = 1 AND no_weightb = 1,NOT no_deblock AND no_mbtree AND ref != 9.00,0,0.1818181818181818,0.125,0.3333333333333333,92,314.0924792289734
+2,683.628199194611,288,no_cabac = 1 AND no_deblock = 1,no_cabac AND no_deblock,1,1.0,1.0,1.0,93,378.6298973560333
+3,602.1317334786268,64,no_fast_pskip = 1 AND rc_lookahead = 60 AND ref = 9,NOT no_8x8dct AND NOT no_mbtree AND rc_lookahead != 20.00,0,0.125,0.0833333333333333,0.25,93,391.7421374320984
+4,464.1011594854513,72,no_8x8dct = 1 AND no_cabac = 1 AND no_mbtree = 1 AND no_weightb = 1,no_8x8dct AND no_cabac AND no_mbtree AND no_weightb,0,1.0,1.0,1.0,93,366.5313811302185
+2,568.3521583312128,288,no_8x8dct = 1 AND no_weightb = 1,no_8x8dct AND no_weightb,1,1.0,1.0,1.0,94,239.8046929836273
+3,452.0499050490391,144,no_fast_pskip = 1 AND no_mbtree = 1 AND no_weightb = 1,no_fast_pskip AND no_mbtree AND no_weightb,0,1.0,1.0,1.0,94,242.3440079689026
+4,525.505388955633,72,no_8x8dct = 1 AND no_deblock = 1 AND no_mixed_refs = 1 AND no_weightb = 1,no_8x8dct AND no_deblock AND no_mixed_refs AND no_weightb,0,1.0,1.0,1.0,94,245.5719802379608
+2,737.7711088249001,192,no_mbtree = 1 AND rc_lookahead = 40,no_cabac AND no_weightb AND rc_lookahead = 40.00,4,0.3333333333333333,0.5,0.25,95,254.34974813461304
+3,791.1975551341343,96,no_deblock = 1 AND no_weightb = 1 AND rc_lookahead = 40,no_deblock AND no_weightb AND rc_lookahead = 40.00,1,1.0,1.0,1.0,95,239.9999475479126
+4,377.0889239480778,72,no_8x8dct = 1 AND no_deblock = 1 AND no_fast_pskip = 1 AND no_mixed_refs = 1,no_8x8dct AND no_deblock AND no_fast_pskip AND no_mixed_refs,0,1.0,1.0,1.0,95,258.648357629776
+2,721.1110046502866,288,no_deblock = 1 AND no_weightb = 1,no_8x8dct AND no_mbtree AND NOT no_mixed_refs AND ref != 9.00,1,0.125,0.25,0.0833333333333333,96,256.1058931350708
+3,565.4019404488777,96,no_mixed_refs = 1 AND no_weightb = 1 AND ref = 9,NOT no_8x8dct AND no_mbtree AND ref != 1.00,0,0.1666666666666666,0.125,0.25,96,255.766138792038
+4,769.7441840112713,72,no_8x8dct = 1 AND no_cabac = 1 AND no_fast_pskip = 1 AND no_mbtree = 1,no_8x8dct AND no_cabac AND no_fast_pskip AND no_mbtree,0,1.0,1.0,1.0,96,246.64218187332156
+2,418.6215012272678,288,no_8x8dct = 1 AND no_fast_pskip = 1,no_8x8dct AND no_fast_pskip,1,1.0,1.0,1.0,97,242.73142266273496
+3,723.8320924940589,96,no_8x8dct = 1 AND no_mbtree = 1 AND rc_lookahead = 20,no_8x8dct AND no_mbtree AND rc_lookahead = 20.00,1,1.0,1.0,1.0,97,232.5205509662628
+4,625.7723345460126,72,no_cabac = 1 AND no_deblock = 1 AND no_fast_pskip = 1 AND no_mixed_refs = 1,no_cabac AND no_deblock AND no_fast_pskip AND no_mixed_refs,0,1.0,1.0,1.0,97,248.9433541297913
+2,319.38538049460914,192,no_mixed_refs = 1 AND rc_lookahead = 40,no_mixed_refs AND rc_lookahead = 40.00,1,1.0,1.0,1.0,98,226.2824466228485
+3,616.9011361546957,96,no_8x8dct = 1 AND no_mixed_refs = 1 AND ref = 9,no_8x8dct AND no_mixed_refs AND ref = 9.00,0,1.0,1.0,1.0,98,233.04697942733765
+4,520.1633285852594,72,no_cabac = 1 AND no_deblock = 1 AND no_fast_pskip = 1 AND no_weightb = 1,no_cabac AND no_deblock AND no_fast_pskip AND no_weightb,0,1.0,1.0,1.0,98,227.39439034461972
+2,395.9443488415177,192,no_mbtree = 1 AND ref = 5,no_mbtree AND ref = 5.00,0,1.0,1.0,1.0,99,227.3384630680084
+3,331.4372548955114,144,no_8x8dct = 1 AND no_deblock = 1 AND no_mbtree = 1,no_8x8dct AND no_deblock AND no_mbtree,0,1.0,1.0,1.0,99,232.55255579948425
+4,448.5585346761047,72,no_deblock = 1 AND no_fast_pskip = 1 AND no_mixed_refs = 1 AND no_weightb = 1,no_deblock AND no_fast_pskip AND no_mixed_refs AND no_weightb,0,1.0,1.0,1.0,99,235.5411925315857

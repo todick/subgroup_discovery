@@ -1,0 +1,6 @@
+rule,sg_samples,sg_coverage,rule_num_predicates,rule_features_used
+Linear1D==0 AND LocalMemory==1 AND bs_1024x1==1,70,0.005190952910641453,3,"['bs_1024x1', 'LocalMemory', 'Linear1D']"
+Linear1D==0 AND LocalMemory==1 AND bs_1024x1==1 AND bs_128x1==0,70,0.005190952910641453,4,"['bs_1024x1', 'LocalMemory', 'Linear1D', 'bs_128x1']"
+bs_128x8==0 AND Linear1D==0 AND LocalMemory==1 AND bs_1024x1==1 AND bs_128x1==0,70,0.005190952910641453,5,"['LocalMemory', 'bs_128x1', 'Linear1D', 'bs_1024x1', 'bs_128x8']"
+bs_128x4==0 AND Linear1D==0 AND LocalMemory==1 AND bs_1024x1==1 AND bs_128x1==0,70,0.005190952910641453,5,"['LocalMemory', 'bs_128x1', 'Linear1D', 'bs_128x4', 'bs_1024x1']"
+bs_128x2==0 AND Linear1D==0 AND LocalMemory==1 AND bs_1024x1==1 AND bs_128x1==0,70,0.005190952910641453,5,"['LocalMemory', 'bs_128x1', 'Linear1D', 'bs_128x2', 'bs_1024x1']"

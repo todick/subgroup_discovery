@@ -1,0 +1,16 @@
+rule,sg_samples,sg_coverage,rule_num_predicates,rule_features_used
+0.0 <= bmp < 1.0  AND  web >= 1.0  AND  0.0 <= ceil < 1.0  AND  0.0 <= gif < 1.0,366,0.054109994086339444,4,"['web', 'ceil', 'bmp', 'gif']"
+web >= 1.0,752,0.11117681845062094,1,['web']
+ios >= 1.0  AND  0.0 <= jpeg < 1.0  AND  threads >= 90.0  AND  0.0 <= floor < 1.0,434,0.0641632170313424,4,"['floor', 'ios', 'threads', 'jpeg']"
+ios >= 1.0  AND  0.0 <= png < 1.0  AND  skipUpscaling >= 1.0  AND  0.0 <= ceil < 1.0,429,0.06342400946185689,4,"['skipUpscaling', 'ios', 'png', 'ceil']"
+ios >= 1.0  AND  0.0 <= scaleIsHeightDp < 1.0,846,0.12507392075694856,2,"['ios', 'scaleIsHeightDp']"
+ios >= 1.0,1648,0.2436428149024246,1,['ios']
+0.0 <= jpeg < 1.0  AND  androidIncludeLdpiTvdpi >= 1.0  AND  threads >= 90.0  AND  0.0 <= round < 1.0  AND  0.0 <= bmp < 1.0,348,0.0514488468361916,5,"['jpeg', 'threads', 'bmp', 'androidIncludeLdpiTvdpi', 'round']"
+0.0 <= scaleIsHeightDp < 1.0  AND  androidIncludeLdpiTvdpi >= 1.0  AND  10.0 <= threads < 90.0,341,0.050413956238911886,3,"['threads', 'androidIncludeLdpiTvdpi', 'scaleIsHeightDp']"
+0.0 <= androidMipmapInsteadOfDrawable < 1.0  AND  androidIncludeLdpiTvdpi >= 1.0  AND  threads >= 90.0,521,0.0770254287403903,3,"['threads', 'androidMipmapInsteadOfDrawable', 'androidIncludeLdpiTvdpi']"
+0.0 <= bmp < 1.0  AND  androidIncludeLdpiTvdpi >= 1.0  AND  0.0 <= gif < 1.0,1219,0.1802188054405677,3,"['gif', 'bmp', 'androidIncludeLdpiTvdpi']"
+0.0 <= android < 1.0  AND  0.0 <= scaleIsHeightDp < 1.0  AND  0.0 <= gif < 1.0,1439,0.21274393849793022,3,"['android', 'scaleIsHeightDp', 'gif']"
+0.0 <= android < 1.0,3230,0.47752808988764045,1,['android']
+0.0 <= androidMipmapInsteadOfDrawable < 1.0  AND  threads >= 90.0,2914,0.43081017149615614,2,"['androidMipmapInsteadOfDrawable', 'threads']"
+0.0 <= gif < 1.0  AND  0.0 <= androidIncludeLdpiTvdpi < 1.0  AND  scaleIsHeightDp >= 1.0  AND  0.0 <= round < 1.0,1376,0.2034299231224128,4,"['gif', 'round', 'androidIncludeLdpiTvdpi', 'scaleIsHeightDp']"
+0.0 <= bmp < 1.0  AND  0.0 <= androidIncludeLdpiTvdpi < 1.0  AND  10.0 <= threads < 90.0,1769,0.261531638083974,3,"['threads', 'bmp', 'androidIncludeLdpiTvdpi']"

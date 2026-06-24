@@ -1,0 +1,6 @@
+rule,sg_samples,sg_coverage,rule_num_predicates,rule_features_used
+x > 9.0 AND BZip2 AND NOT mtOff,1144,0.016666666666666666,3,"['BZip2', 'mtOff', 'x']"
+x > 9.0 AND BZip2 AND NOT mtOff AND Files > 5.0,1040,0.015151515151515152,4,"['BZip2', 'Files', 'mtOff', 'x']"
+x > 9.0 AND BZip2 AND NOT mtOff AND Files > 5.0 AND BlockSize > 1.5,960,0.013986013986013986,5,"['mtOff', 'BZip2', 'BlockSize', 'x', 'Files']"
+x > 9.0 AND BZip2,2288,0.03333333333333333,2,"['BZip2', 'x']"
+x <= 9.0 AND x <= 5.0 AND NOT BZip2 AND NOT Deflate AND NOT PPMd,13728,0.2,5,"['BZip2', 'Deflate', 'x', 'PPMd']"

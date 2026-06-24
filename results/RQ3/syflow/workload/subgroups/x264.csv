@@ -1,0 +1,6 @@
+rule,sg_samples,sg_coverage,rule_num_predicates,rule_features_used
+intra-refresh AND no-psy AND cpu-independent AND no-asm,490,0.15740443302280757,4,"['no-asm', 'intra-refresh', 'cpu-independent', 'no-psy']"
+NOT no-asm,1501,0.48217153870864116,1,['no-asm']
+no-asm,1612,0.5178284612913588,1,['no-asm']
+NOT intra-refresh AND NOT no-psy,1032,0.3315130099582396,2,"['intra-refresh', 'no-psy']"
+intra-refresh AND no-psy AND non-deterministic,678,0.2177963379376807,3,"['non-deterministic', 'intra-refresh', 'no-psy']"

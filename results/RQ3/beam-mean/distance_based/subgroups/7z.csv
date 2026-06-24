@@ -1,0 +1,6 @@
+rule,sg_samples,sg_coverage,rule_num_predicates,rule_features_used
+x==10 AND LZMA==0 AND LZMA2==0 AND PPMd==0,4576,0.06666666666666667,4,"['PPMd', 'LZMA2', 'LZMA', 'x']"
+x==10 AND Deflate==0 AND LZMA==0 AND LZMA2==0 AND PPMd==0,2288,0.03333333333333333,5,"['LZMA2', 'PPMd', 'LZMA', 'Deflate', 'x']"
+BZip2==1 AND x==10,2288,0.03333333333333333,2,"['BZip2', 'x']"
+BZip2==1 AND x==10 AND PPMd==0,2288,0.03333333333333333,3,"['PPMd', 'BZip2', 'x']"
+BZip2==1 AND x==10 AND LZMA2==0,2288,0.03333333333333333,3,"['LZMA2', 'BZip2', 'x']"

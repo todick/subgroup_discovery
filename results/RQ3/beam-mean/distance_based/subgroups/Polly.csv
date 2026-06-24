@@ -1,0 +1,6 @@
+rule,sg_samples,sg_coverage,rule_num_predicates,rule_features_used
+value_based==0 AND parallel_force==0 AND polly_parallel==1,10000,0.16666666666666666,3,"['parallel_force', 'polly_parallel', 'value_based']"
+value_based==0 AND parallel==1,10000,0.16666666666666666,2,"['parallel', 'value_based']"
+value_based==0 AND parallel==1 AND polly_parallel==1,10000,0.16666666666666666,3,"['parallel', 'polly_parallel', 'value_based']"
+value_based==0 AND parallel==1 AND parallel_force==0,10000,0.16666666666666666,3,"['parallel', 'parallel_force', 'value_based']"
+value_based==0 AND parallel==1 AND parallel_force==0 AND polly_parallel==1,10000,0.16666666666666666,4,"['parallel', 'parallel_force', 'value_based', 'polly_parallel']"

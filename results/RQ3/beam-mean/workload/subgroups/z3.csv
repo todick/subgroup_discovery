@@ -1,0 +1,6 @@
+rule,sg_samples,sg_coverage,rule_num_predicates,rule_features_used
+proof==0,522,0.5168316831683168,1,['proof']
+workload==0 AND proof==0,522,0.5168316831683168,2,"['workload', 'proof']"
+debug_ref_count==1 AND proof==0,245,0.24257425742574257,2,"['proof', 'debug_ref_count']"
+workload==0 AND debug_ref_count==1 AND proof==0,245,0.24257425742574257,3,"['proof', 'workload', 'debug_ref_count']"
+well_sorted_check==0 AND proof==0,349,0.3455445544554455,2,"['proof', 'well_sorted_check']"

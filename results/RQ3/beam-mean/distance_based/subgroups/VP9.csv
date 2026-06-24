@@ -1,0 +1,6 @@
+rule,sg_samples,sg_coverage,rule_num_predicates,rule_features_used
+lossless==1,108000,0.5,1,['lossless']
+lossless==1 AND cyclicRefresh==0,81000,0.375,2,"['cyclicRefresh', 'lossless']"
+lossless==1 AND off==0,81000,0.375,2,"['off', 'lossless']"
+lossless==1 AND complexity==0,81000,0.375,2,"['complexity', 'lossless']"
+lossless==1 AND variance==0,81000,0.375,2,"['variance', 'lossless']"

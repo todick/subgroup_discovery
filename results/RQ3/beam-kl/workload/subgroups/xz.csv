@@ -1,0 +1,6 @@
+rule,sg_samples,sg_coverage,rule_num_predicates,rule_features_used
+Nice==0 AND Depth==0 AND Dict==0 AND Dist==0 AND Multithreading==0,453,0.22661330665332666,5,"['Dist', 'Multithreading', 'Dict', 'Nice', 'Depth']"
+Nice==0 AND Depth==0 AND Dist==0 AND Multithreading==0 AND BlockSize==0,463,0.23161580790395198,5,"['BlockSize', 'Dist', 'Multithreading', 'Nice', 'Depth']"
+Nice==0 AND Dict==0 AND Dist==0 AND Multithreading==0 AND hc3==0,381,0.1905952976488244,5,"['Dist', 'Multithreading', 'Dict', 'hc3', 'Nice']"
+Nice==0 AND Depth==0 AND Dict==0 AND Multithreading==0,523,0.26163081540770383,4,"['Multithreading', 'Depth', 'Dict', 'Nice']"
+Nice==0 AND Depth==0 AND Dict==0 AND Multithreading==0 AND workload==0,523,0.26163081540770383,5,"['workload', 'Multithreading', 'Dict', 'Nice', 'Depth']"

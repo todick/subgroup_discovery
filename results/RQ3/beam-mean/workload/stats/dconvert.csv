@@ -1,0 +1,2 @@
+num_features,num_samples,sgs_unique,sgs_mean_jaccard,sgs_mean_overlap_coefficient,coverage_mean,coverage_total,rule_features_used,rule_feature_frequency,rule_num_features,rule_length_mean,rule_length_max,rule_length_min,runtime
+19,6764,1,,,0.2627143701951508,0.2627143701951508,"['androidIncludeLdpiTvdpi', 'android', 'ios', 'web']","[('androidIncludeLdpiTvdpi', 5), ('android', 1), ('ios', 2), ('web', 2)]",4,2.0,3.0,1.0,0.8201920986175537

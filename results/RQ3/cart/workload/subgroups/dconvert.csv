@@ -1,0 +1,6 @@
+rule,sg_samples,sg_coverage,rule_num_predicates,rule_features_used
+NOT android AND NOT win AND ios,1648,0.2436428149024246,3,"['android', 'win', 'ios']"
+NOT android AND NOT win AND NOT ios,752,0.11117681845062094,3,"['android', 'win', 'ios']"
+NOT android AND NOT win AND ios AND threads > 50.0,999,0.14769367238320522,4,"['android', 'win', 'threads', 'ios']"
+android AND androidIncludeLdpiTvdpi,1777,0.2627143701951508,2,"['android', 'androidIncludeLdpiTvdpi']"
+NOT android AND NOT win AND ios AND threads > 50.0 AND NOT bmp,826,0.1221170904790065,5,"['ios', 'win', 'bmp', 'threads', 'android']"

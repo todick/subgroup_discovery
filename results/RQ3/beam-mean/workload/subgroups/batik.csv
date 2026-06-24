@@ -1,0 +1,6 @@
+rule,sg_samples,sg_coverage,rule_num_predicates,rule_features_used
+pdf==0.0 AND resolution==8294400.0,512,0.26680562793121415,2,"['pdf', 'resolution']"
+workload==0.0 AND pdf==0.0 AND resolution==8294400.0,512,0.26680562793121415,3,"['pdf', 'resolution', 'workload']"
+pdf==0.0 AND resolution==8294400.0 AND quality==0.1,384,0.20010422094841063,3,"['pdf', 'quality', 'resolution']"
+workload==0.0 AND pdf==0.0 AND resolution==8294400.0 AND quality==0.1,384,0.20010422094841063,4,"['pdf', 'resolution', 'quality', 'workload']"
+tiff==0.0 AND pdf==0.0 AND resolution==8294400.0,384,0.20010422094841063,3,"['pdf', 'tiff', 'resolution']"

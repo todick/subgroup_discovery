@@ -1,0 +1,6 @@
+rule,sg_samples,sg_coverage,rule_num_predicates,rule_features_used
+no-asm==0,1501,0.48217153870864116,1,['no-asm']
+no-asm==0 AND workload==0,1501,0.48217153870864116,2,"['workload', 'no-asm']"
+cpu-independent==0 AND no-asm==0,1171,0.376164471570832,2,"['cpu-independent', 'no-asm']"
+cpu-independent==0 AND no-asm==0 AND workload==0,1171,0.376164471570832,3,"['workload', 'cpu-independent', 'no-asm']"
+no-asm==0 AND sliced-threads==0,1284,0.4124638612271121,2,"['no-asm', 'sliced-threads']"

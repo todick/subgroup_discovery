@@ -1,0 +1,6 @@
+rule,sg_samples,sg_coverage,rule_num_predicates,rule_features_used
+LocalMemory AND bs_1024x1 AND NOT Linear1D AND NOT Linear2D,53,0.0039302929180571,4,"['LocalMemory', 'Linear2D', 'Linear1D', 'bs_1024x1']"
+NOT LocalMemory AND NOT bs_32x1 AND NOT bs_1024x1 AND pixelPerThread > 1.5 AND NOT bs_512x2,4698,0.34838709677419355,5,"['LocalMemory', 'bs_1024x1', 'pixelPerThread', 'bs_512x2', 'bs_32x1']"
+LocalMemory AND bs_1024x1 AND NOT Linear1D,70,0.005190952910641453,3,"['LocalMemory', 'Linear1D', 'bs_1024x1']"
+NOT LocalMemory AND NOT bs_32x1 AND NOT bs_1024x1 AND pixelPerThread > 1.5,4959,0.36774193548387096,4,"['LocalMemory', 'pixelPerThread', 'bs_32x1', 'bs_1024x1']"
+NOT LocalMemory AND NOT bs_32x1 AND NOT bs_1024x1,6612,0.49032258064516127,3,"['LocalMemory', 'bs_32x1', 'bs_1024x1']"

@@ -1,0 +1,2 @@
+num_features,num_samples,sgs_unique,sgs_mean_jaccard,sgs_mean_overlap_coefficient,coverage_mean,coverage_total,rule_features_used,rule_feature_frequency,rule_num_features,rule_length_mean,rule_length_max,rule_length_min,runtime
+26,3113,5,0.38837066777571005,0.7,0.2824285255380662,0.48217153870864116,"['no-asm', 'cpu-independent', 'no-psy', 'no-mbtree']","[('no-asm', 5), ('cpu-independent', 4), ('no-psy', 2), ('no-mbtree', 1)]",4,2.4,4.0,1.0,0.012676715850830078

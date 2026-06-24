@@ -1,0 +1,2 @@
+num_features,num_samples,sgs_unique,sgs_mean_jaccard,sgs_mean_overlap_coefficient,coverage_mean,coverage_total,rule_features_used,rule_feature_frequency,rule_num_features,rule_length_mean,rule_length_max,rule_length_min,runtime
+17,4196,3,0.5863292700395848,1.0,0.1238481093104544,0.17063870352716873,"['workload', 'Mono', 'Resampling', 'NoReplayGain', 'ReplayGainFast']","[('workload', 2), ('Mono', 5), ('Resampling', 5), ('NoReplayGain', 3), ('ReplayGainFast', 1)]",5,3.2,4.0,2.0,0.6330640316009521

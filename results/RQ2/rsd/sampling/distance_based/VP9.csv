@@ -1,0 +1,800 @@
+sampling_strategy,sample_size,sg_cardinality,sg_rule,best_rule,best_rule_idx,f1,precision,recall,seed
+full,216000,27000,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,AutoAltRef >= 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= good < 1.0  AND  0.0 <= off < 1.0,2.0,0.8571428571428571,1.0,0.75,0
+random_2,34,0,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,,,0.0,0.0,0.0,0
+random_5,85,11,good = 1 AND lossless = 1 AND FrameBoost = 1,AutoAltRef >= 1.0  AND  bitRate < 600.0,0.0,0.0909090909090909,0.0909090909090909,0.0909090909090909,0
+random_10,170,0,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,0
+random_20,340,0,good = 1 AND AutoAltRef = 1 AND lossless = 1,,,0.0,0.0,0.0,0
+2-wise,52,7,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= realtime < 0.5  AND  cyclicRefresh >= 1.0,0.0,0.0,0.0,0.0,0
+3-wise,242,0,realtime = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,0
+4-wise,947,0,good = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,0
+full,216000,27000,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,0.0 <= good < 1.0  AND  AutoAltRef >= 1.0  AND  lossless >= 1.0  AND  4.0 <= Threads < 8.0,3.0,0.5714285714285715,1.0,0.4,10
+random_2,34,4,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,TileColumns >= 1.5  AND  6.0 <= Threads < 8.0,0.0,0.0,0.0,0.0,10
+random_5,85,9,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,0.0 <= AutoAltRef < 1.0  AND  6.0 <= cpuUsed < 8.0,0.0,0.0,0.0,0.0,10
+random_10,170,0,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,,,0.0,0.0,0.0,10
+random_20,340,0,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,,,0.0,0.0,0.0,10
+2-wise,51,3,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,0.0 <= lossless < 1.0  AND  variance >= 0.5,0.0,0.0,0.0,0.0,10
+3-wise,244,0,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,,,0.0,0.0,0.0,10
+4-wise,945,0,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,,,0.0,0.0,0.0,10
+full,216000,27000,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,AutoAltRef >= 1.0  AND  lossless >= 1.0  AND  0.0 <= good < 1.0  AND  constantBitrate >= 0.5,2.0,0.5,1.0,0.3333333333333333,11
+random_2,34,8,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,cpuUsed >= 4.0  AND  bitRate >= 1050.0,0.0,0.0,0.0,0.0,11
+random_5,85,0,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,,,0.0,0.0,0.0,11
+random_10,170,0,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,,,0.0,0.0,0.0,11
+random_20,340,0,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,,,0.0,0.0,0.0,11
+2-wise,51,0,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,,,0.0,0.0,0.0,11
+3-wise,241,0,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,,,0.0,0.0,0.0,11
+4-wise,939,128,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,0.0 <= good < 1.0  AND  AutoAltRef >= 1.0  AND  lossless >= 1.0,0.0,1.0,1.0,1.0,11
+full,216000,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  lossless >= 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= AutoAltRef < 1.0,1.0,0.6666666666666666,1.0,0.5,12
+random_2,34,1,realtime = 1 AND lossless = 1 AND FrameBoost = 1,cpuUsed < 3.0  AND  constrainedQuality >= 0.5,0.0,0.0,0.0,0.0,12
+random_5,85,0,realtime = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,12
+random_10,170,0,realtime = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,12
+random_20,340,0,realtime = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,12
+2-wise,56,4,realtime = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= variableBitrate < 1.0  AND  cpuUsed < 2.0,0.0,0.0,0.0,0.0,12
+3-wise,233,0,realtime = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,12
+4-wise,947,0,realtime = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,12
+full,216000,27000,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= realtime < 1.0  AND  AutoAltRef >= 1.0  AND  FrameBoost >= 1.0  AND  bitRate >= 1200.0,1.0,0.5714285714285715,1.0,0.4,13
+random_2,34,0,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,13
+random_5,85,0,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,13
+random_10,170,0,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,13
+random_20,340,0,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,13
+2-wise,50,5,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= FrameBoost < 1.0  AND  lagInFrames >= 12.0,0.0,0.0,0.0,0.0,13
+3-wise,248,0,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,13
+4-wise,935,0,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,13
+full,216000,27000,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,lossless >= 1.0  AND  FrameBoost >= 1.0  AND  AutoAltRef >= 1.0  AND  variableBitrate >= 0.5,3.0,0.5,1.0,0.3333333333333333,14
+random_2,34,3,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,AutoAltRef >= 1.0  AND  off >= 1.0  AND  0.0 <= good < 1.0,0.0,0.0,0.0,0.0,14
+random_5,85,8,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= constrainedQuality < 1.0  AND  6.0 <= cpuUsed < 8.0,0.0,0.0,0.0,0.0,14
+random_10,170,0,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,14
+random_20,340,0,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,14
+2-wise,50,6,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,750.0 <= bitRate < 1500.0  AND  0.0 <= FrameBoost < 0.5,0.0,0.0,0.0,0.0,14
+3-wise,244,0,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,14
+4-wise,944,113,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,lossless >= 1.0  AND  FrameBoost >= 1.0  AND  AutoAltRef >= 1.0,0.0,1.0,1.0,1.0,14
+full,216000,27000,good = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= realtime < 1.0  AND  FrameBoost >= 1.0  AND  lossless >= 1.0  AND  0.0 <= AutoAltRef < 1.0,4.0,0.6666666666666666,1.0,0.5,15
+random_2,34,0,good = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,15
+random_5,85,0,good = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,15
+random_10,170,0,good = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,15
+random_20,340,0,good = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,15
+2-wise,46,0,good = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,15
+3-wise,242,0,good = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,15
+4-wise,958,133,good = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= realtime < 1.0  AND  lossless >= 1.0  AND  FrameBoost >= 1.0,0.0,1.0,1.0,1.0,15
+full,216000,27000,good = 1 AND AutoAltRef = 1 AND lossless = 1,0.0 <= realtime < 1.0  AND  AutoAltRef >= 1.0  AND  lagInFrames >= 4.0  AND  lossless >= 1.0,1.0,0.8,1.0,0.6666666666666666,16
+random_2,34,0,good = 1 AND AutoAltRef = 1 AND lossless = 1,,,0.0,0.0,0.0,16
+random_5,85,14,good = 1 AND AutoAltRef = 1 AND lossless = 1,cpuUsed >= 8.0  AND  6.0 <= Threads < 10.0,0.0,0.0,0.0,0.0,16
+random_10,170,18,good = 1 AND AutoAltRef = 1 AND lossless = 1,600.0 <= bitRate < 900.0  AND  4.0 <= Threads < 6.0,0.0,0.0,0.0,0.0,16
+random_20,340,0,good = 1 AND AutoAltRef = 1 AND lossless = 1,,,0.0,0.0,0.0,16
+2-wise,58,0,good = 1 AND AutoAltRef = 1 AND lossless = 1,,,0.0,0.0,0.0,16
+3-wise,248,0,good = 1 AND AutoAltRef = 1 AND lossless = 1,,,0.0,0.0,0.0,16
+4-wise,946,0,good = 1 AND AutoAltRef = 1 AND lossless = 1,,,0.0,0.0,0.0,16
+full,216000,27000,good = 1 AND AutoAltRef = 1 AND lossless = 1,0.0 <= realtime < 1.0  AND  AutoAltRef >= 1.0  AND  lossless >= 1.0  AND  0.0 <= constrainedQuality < 0.5,1.0,0.8,1.0,0.6666666666666666,17
+random_2,34,5,good = 1 AND AutoAltRef = 1 AND lossless = 1,cpuUsed >= 7.0,0.0,0.0,0.0,0.0,17
+random_5,85,0,good = 1 AND AutoAltRef = 1 AND lossless = 1,,,0.0,0.0,0.0,17
+random_10,170,0,good = 1 AND AutoAltRef = 1 AND lossless = 1,,,0.0,0.0,0.0,17
+random_20,340,0,good = 1 AND AutoAltRef = 1 AND lossless = 1,,,0.0,0.0,0.0,17
+2-wise,53,8,good = 1 AND AutoAltRef = 1 AND lossless = 1,Threads >= 6.0  AND  2.0 <= cpuUsed < 4.0,0.0,0.0,0.0,0.0,17
+3-wise,243,0,good = 1 AND AutoAltRef = 1 AND lossless = 1,,,0.0,0.0,0.0,17
+4-wise,920,124,good = 1 AND AutoAltRef = 1 AND lossless = 1,0.0 <= realtime < 1.0  AND  lossless >= 1.0  AND  AutoAltRef >= 1.0,0.0,1.0,1.0,1.0,17
+full,216000,27000,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,AutoAltRef >= 1.0  AND  FrameBoost >= 1.0  AND  lossless >= 1.0  AND  cpuUsed >= 4.0,3.0,0.7499999999999999,1.0,0.6,18
+random_2,34,0,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,18
+random_5,85,11,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= realtime < 1.0  AND  1200.0 <= bitRate < 1500.0,0.0,0.0,0.0,0.0,18
+random_10,170,0,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,18
+random_20,340,0,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,18
+2-wise,53,0,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,18
+3-wise,250,0,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,18
+4-wise,971,0,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,18
+full,216000,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  FrameBoost >= 1.0  AND  lossless >= 1.0  AND  0.0 <= complexity < 1.0,3.0,0.8571428571428571,1.0,0.75,19
+random_2,34,4,realtime = 1 AND lossless = 1 AND FrameBoost = 1,Threads < 8.0  AND  0.0 <= lossless < 1.0,0.0,0.0,0.0,0.0,19
+random_5,85,0,realtime = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,19
+random_10,170,0,realtime = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,19
+random_20,340,0,realtime = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,19
+2-wise,54,5,realtime = 1 AND lossless = 1 AND FrameBoost = 1,lossless >= 0.5,4.0,0.303030303030303,0.1785714285714285,1.0,19
+3-wise,247,41,realtime = 1 AND lossless = 1 AND FrameBoost = 1,lossless >= 1.0  AND  4.0 <= Threads < 6.0,0.0,0.2807017543859649,0.5,0.1951219512195122,19
+4-wise,928,0,realtime = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,19
+full,216000,27000,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,AutoAltRef >= 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= good < 1.0  AND  lossless >= 1.0,0.0,0.6666666666666666,1.0,0.5,1
+random_2,34,0,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,1
+random_5,85,0,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,1
+random_10,170,0,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,1
+random_20,340,0,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,1
+2-wise,53,0,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,1
+3-wise,238,0,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,1
+4-wise,931,0,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,1
+full,216000,27000,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,AutoAltRef >= 1.0  AND  600.0 <= bitRate < 1200.0  AND  lossless >= 1.0  AND  FrameBoost >= 1.0,1.0,0.5714285714285715,1.0,0.4,20
+random_2,34,0,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,20
+random_5,85,10,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,Threads < 8.0  AND  bitRate >= 1500.0,0.0,0.0,0.0,0.0,20
+random_10,170,0,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,20
+random_20,340,0,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,20
+2-wise,55,8,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= FrameBoost < 1.0  AND  bitRate >= 1500.0,0.0,0.0,0.0,0.0,20
+3-wise,238,0,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,20
+4-wise,948,131,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,AutoAltRef >= 1.0  AND  FrameBoost >= 1.0  AND  lossless >= 1.0,0.0,1.0,1.0,1.0,20
+full,216000,27000,good = 1 AND lossless = 1 AND FrameBoost = 1,FrameBoost >= 1.0  AND  0.0 <= realtime < 1.0  AND  lossless >= 1.0  AND  bitRate >= 600.0,3.0,0.888888888888889,1.0,0.8,21
+random_2,34,0,good = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,21
+random_5,85,9,good = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  bitRate >= 1500.0,0.0,0.0,0.0,0.0,21
+random_10,170,0,good = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,21
+random_20,340,0,good = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,21
+2-wise,53,7,good = 1 AND lossless = 1 AND FrameBoost = 1,variableBitrate >= 1.0  AND  0.0 <= FrameBoost < 1.0,0.0,0.0,0.0,0.0,21
+3-wise,240,0,good = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,21
+4-wise,930,125,good = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= realtime < 1.0  AND  lossless >= 1.0  AND  FrameBoost >= 1.0  AND  Threads < 10.0,0.0,0.8839285714285714,1.0,0.792,21
+full,216000,27000,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,AutoAltRef >= 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= realtime < 1.0  AND  900.0 <= bitRate < 1500.0,0.0,0.5714285714285715,1.0,0.4,22
+random_2,34,2,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= AutoAltRef < 1.0  AND  1.0 <= cpuUsed < 5.0,0.0,0.0,0.0,0.0,22
+random_5,85,7,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= lagInFrames < 8.0  AND  cpuUsed >= 6.0  AND  0.0 <= FrameBoost < 1.0,0.0,0.0,0.0,0.0,22
+random_10,170,0,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,22
+random_20,340,0,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,22
+2-wise,50,6,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,constrainedQuality >= 1.0  AND  0.0 <= good < 1.0,0.0,0.0,0.0,0.0,22
+3-wise,238,0,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,22
+4-wise,943,129,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= realtime < 1.0  AND  FrameBoost >= 1.0  AND  AutoAltRef >= 1.0,0.0,1.0,1.0,1.0,22
+full,216000,27000,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= realtime < 1.0  AND  AutoAltRef >= 1.0  AND  cpuUsed >= 6.0  AND  FrameBoost >= 1.0,3.0,0.5714285714285715,1.0,0.4,23
+random_2,34,0,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,23
+random_5,85,11,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= variance < 1.0  AND  Threads < 4.0,0.0,0.0999999999999999,0.1111111111111111,0.0909090909090909,23
+random_10,170,0,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,23
+random_20,340,0,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,23
+2-wise,53,4,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,TileColumns < 4.5  AND  complexity >= 0.5,0.0,0.0,0.0,0.0,23
+3-wise,238,0,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,23
+4-wise,939,0,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,23
+full,216000,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  lossless >= 1.0  AND  FrameBoost >= 1.0  AND  2.0 <= cpuUsed < 6.0,1.0,0.5714285714285715,1.0,0.4,24
+random_2,34,5,realtime = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= FrameBoost < 0.5  AND  TileColumns >= 4.5,0.0,0.0,0.0,0.0,24
+random_5,85,0,realtime = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,24
+random_10,170,0,realtime = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,24
+random_20,340,0,realtime = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,24
+2-wise,55,3,realtime = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= AutoAltRef < 1.0  AND  4.0 <= cpuUsed < 7.0,0.0,0.1428571428571428,0.0909090909090909,0.3333333333333333,24
+3-wise,244,0,realtime = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,24
+4-wise,932,0,realtime = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,24
+full,216000,27000,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,AutoAltRef >= 1.0  AND  FrameBoost >= 1.0  AND  1.5 <= TileColumns < 4.5  AND  lossless >= 1.0,1.0,0.5,1.0,0.3333333333333333,25
+random_2,34,0,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,25
+random_5,85,0,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,25
+random_10,170,0,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,25
+random_20,340,0,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,25
+2-wise,52,7,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,cpuUsed < 4.0  AND  0.0 <= good < 1.0  AND  0.0 <= complexity < 1.0,0.0,0.0,0.0,0.0,25
+3-wise,240,0,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,25
+4-wise,951,0,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,25
+full,216000,27000,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,AutoAltRef >= 1.0  AND  FrameBoost >= 1.0  AND  cpuUsed < 4.0  AND  lossless >= 1.0,0.0,0.5714285714285715,1.0,0.4,26
+random_2,34,0,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,26
+random_5,85,8,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= lossless < 0.5  AND  3.0 <= TileColumns < 6.0,0.0,0.0,0.0,0.0,26
+random_10,170,17,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,lagInFrames >= 16.0  AND  6.0 <= cpuUsed < 8.0,0.0,0.0666666666666666,0.0769230769230769,0.0588235294117647,26
+random_20,340,0,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,26
+2-wise,52,0,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,26
+3-wise,241,0,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,26
+4-wise,932,127,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,AutoAltRef >= 1.0  AND  FrameBoost >= 1.0  AND  lossless >= 1.0,0.0,1.0,1.0,1.0,26
+full,216000,27000,good = 1 AND AutoAltRef = 1 AND lossless = 1,0.0 <= realtime < 1.0  AND  lossless >= 1.0  AND  AutoAltRef >= 1.0  AND  0.0 <= cyclicRefresh < 1.0,3.0,0.8571428571428571,1.0,0.75,27
+random_2,34,0,good = 1 AND AutoAltRef = 1 AND lossless = 1,,,0.0,0.0,0.0,27
+random_5,85,0,good = 1 AND AutoAltRef = 1 AND lossless = 1,,,0.0,0.0,0.0,27
+random_10,170,0,good = 1 AND AutoAltRef = 1 AND lossless = 1,,,0.0,0.0,0.0,27
+random_20,340,0,good = 1 AND AutoAltRef = 1 AND lossless = 1,,,0.0,0.0,0.0,27
+2-wise,56,0,good = 1 AND AutoAltRef = 1 AND lossless = 1,,,0.0,0.0,0.0,27
+3-wise,237,0,good = 1 AND AutoAltRef = 1 AND lossless = 1,,,0.0,0.0,0.0,27
+4-wise,946,133,good = 1 AND AutoAltRef = 1 AND lossless = 1,0.0 <= realtime < 1.0  AND  lossless >= 1.0  AND  AutoAltRef >= 1.0,0.0,1.0,1.0,1.0,27
+full,216000,27000,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,AutoAltRef >= 1.0  AND  lossless >= 1.0  AND  0.0 <= good < 1.0  AND  0.0 <= off < 1.0,3.0,0.8571428571428571,1.0,0.75,28
+random_2,34,6,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,0.0 <= lossless < 0.5  AND  0.0 <= FrameBoost < 1.0,0.0,0.0,0.0,0.0,28
+random_5,85,12,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,0.0 <= TileColumns < 3.0  AND  variance >= 1.0,0.0,0.0,0.0,0.0,28
+random_10,170,0,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,,,0.0,0.0,0.0,28
+random_20,340,0,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,,,0.0,0.0,0.0,28
+2-wise,53,0,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,,,0.0,0.0,0.0,28
+3-wise,241,0,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,,,0.0,0.0,0.0,28
+4-wise,941,0,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,,,0.0,0.0,0.0,28
+full,216000,27000,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= realtime < 1.0  AND  AutoAltRef >= 1.0  AND  FrameBoost >= 1.0  AND  bitRate >= 900.0,4.0,0.7499999999999999,1.0,0.6,29
+random_2,34,0,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,29
+random_5,85,0,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,29
+random_10,170,0,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,29
+random_20,340,0,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,29
+2-wise,49,4,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,Threads >= 5.0  AND  8.0 <= lagInFrames < 16.0,0.0,0.0,0.0,0.0,29
+3-wise,239,0,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,29
+4-wise,929,131,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= realtime < 1.0  AND  AutoAltRef >= 1.0  AND  FrameBoost >= 1.0,0.0,1.0,1.0,1.0,29
+full,216000,27000,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,AutoAltRef >= 1.0  AND  lossless >= 1.0  AND  0.0 <= cyclicRefresh < 1.0,4.0,0.6,0.5,0.75,2
+random_2,34,0,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,,,0.0,0.0,0.0,2
+random_5,85,10,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,variableBitrate >= 1.0  AND  cpuUsed < 2.0,0.0,0.0,0.0,0.0,2
+random_10,170,0,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,,,0.0,0.0,0.0,2
+random_20,340,0,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,,,0.0,0.0,0.0,2
+2-wise,53,7,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,bitRate < 900.0  AND  4.0 <= cpuUsed < 8.0,0.0,0.0,0.0,0.0,2
+3-wise,248,0,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,,,0.0,0.0,0.0,2
+4-wise,936,0,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,,,0.0,0.0,0.0,2
+full,216000,27000,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  FrameBoost >= 1.0  AND  AutoAltRef >= 1.0  AND  Threads >= 6.0,3.0,0.7499999999999999,1.0,0.6,30
+random_2,34,6,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,Threads >= 8.0,1.0,0.1,0.0714285714285714,0.1666666666666666,30
+random_5,85,10,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,cpuUsed >= 8.0,1.0,0.074074074074074,0.0588235294117647,0.1,30
+random_10,170,0,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,30
+random_20,340,0,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,30
+2-wise,50,4,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,Threads >= 6.0  AND  3.0 <= TileColumns < 4.5,0.0,0.0,0.0,0.0,30
+3-wise,236,0,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,30
+4-wise,947,123,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,AutoAltRef >= 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= good < 1.0,0.0,1.0,1.0,1.0,30
+full,216000,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  lossless >= 1.0  AND  0.0 <= constantBitrate < 1.0  AND  cpuUsed < 8.0,4.0,0.5161290322580646,0.5,0.5333333333333333,31
+random_2,34,3,realtime = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= lossless < 1.0,0.0,0.0,0.0,0.0,31
+random_5,85,0,realtime = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,31
+random_10,170,0,realtime = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,31
+random_20,340,0,realtime = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,31
+2-wise,53,0,realtime = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,31
+3-wise,230,0,realtime = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,31
+4-wise,960,0,realtime = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,31
+full,216000,27000,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,lossless >= 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= complexity < 1.0  AND  Threads < 10.0,4.0,0.5454545454545454,0.5,0.6,32
+random_2,34,0,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,32
+random_5,85,0,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,32
+random_10,170,0,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,32
+random_20,340,0,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,32
+2-wise,47,0,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,32
+3-wise,241,0,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,32
+4-wise,956,131,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,AutoAltRef >= 1.0  AND  FrameBoost >= 1.0  AND  lossless >= 1.0,0.0,1.0,1.0,1.0,32
+full,216000,27000,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,AutoAltRef >= 1.0  AND  lossless >= 1.0  AND  Threads >= 8.0  AND  FrameBoost >= 1.0,0.0,0.5714285714285715,1.0,0.4,33
+random_2,34,0,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,33
+random_5,85,10,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= realtime < 1.0  AND  variableBitrate >= 1.0,0.0,0.1818181818181818,0.1666666666666666,0.2,33
+random_10,170,21,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= lagInFrames < 8.0  AND  4.0 <= cpuUsed < 8.0  AND  Threads < 10.0,0.0,0.0555555555555555,0.0666666666666666,0.0476190476190476,33
+random_20,340,0,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,33
+2-wise,50,5,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= variance < 1.0  AND  Threads < 4.0,0.0,0.0,0.0,0.0,33
+3-wise,237,0,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,33
+4-wise,944,123,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,AutoAltRef >= 1.0  AND  FrameBoost >= 1.0  AND  lossless >= 1.0  AND  0.0 <= cyclicRefresh < 1.0,0.0,0.8767123287671234,1.0,0.7804878048780488,33
+full,216000,27000,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,AutoAltRef >= 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= realtime < 1.0  AND  lagInFrames >= 12.0,2.0,0.5,1.0,0.3333333333333333,34
+random_2,34,0,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,34
+random_5,85,0,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,34
+random_10,170,0,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,34
+random_20,340,0,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,34
+2-wise,51,0,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,34
+3-wise,239,0,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,34
+4-wise,926,0,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,34
+full,216000,27000,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,lossless >= 1.0  AND  FrameBoost >= 1.0,4.0,0.6666666666666666,0.5,1.0,35
+random_2,34,2,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,3.0 <= Threads < 7.0,1.0,0.1428571428571428,0.0833333333333333,0.5,35
+random_5,85,0,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,35
+random_10,170,0,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,35
+random_20,340,0,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,35
+2-wise,49,0,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,35
+3-wise,244,0,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,35
+4-wise,946,0,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,35
+full,216000,27000,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,AutoAltRef >= 1.0  AND  lossless >= 1.0  AND  900.0 <= bitRate < 1500.0  AND  0.0 <= good < 1.0,3.0,0.5714285714285715,1.0,0.4,36
+random_2,34,7,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,0.0 <= realtime < 1.0  AND  0.0 <= lagInFrames < 8.0,0.0,0.0,0.0,0.0,36
+random_5,85,13,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,0.0 <= AutoAltRef < 1.0  AND  6.0 <= cpuUsed < 8.0,0.0,0.0,0.0,0.0,36
+random_10,170,0,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,,,0.0,0.0,0.0,36
+random_20,340,45,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,0.0 <= good < 1.0  AND  lossless >= 1.0  AND  AutoAltRef >= 1.0,0.0,1.0,1.0,1.0,36
+2-wise,53,0,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,,,0.0,0.0,0.0,36
+3-wise,244,0,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,,,0.0,0.0,0.0,36
+4-wise,957,129,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,0.0 <= good < 1.0  AND  AutoAltRef >= 1.0  AND  lossless >= 1.0,0.0,1.0,1.0,1.0,36
+full,216000,27000,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= realtime < 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= complexity < 1.0,4.0,0.6,0.5,0.75,37
+random_2,34,4,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,cpuUsed >= 6.0  AND  0.0 <= AutoAltRef < 0.5,0.0,0.0,0.0,0.0,37
+random_5,85,11,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,4.0 <= cpuUsed < 6.0  AND  variance >= 1.0,0.0,0.0,0.0,0.0,37
+random_10,170,0,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,37
+random_20,340,0,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,37
+2-wise,51,10,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= constantBitrate < 1.0  AND  5.0 <= cpuUsed < 8.0,0.0,0.0,0.0,0.0,37
+3-wise,240,0,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,37
+4-wise,943,0,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,37
+full,216000,27000,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= realtime < 1.0  AND  FrameBoost >= 1.0  AND  AutoAltRef >= 1.0  AND  2.0 <= cpuUsed < 8.0,3.0,0.7499999999999999,1.0,0.6,38
+random_2,34,6,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= variance < 1.0  AND  4.0 <= Threads < 8.0,1.0,0.3749999999999999,0.3,0.5,38
+random_5,85,12,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= lossless < 1.0  AND  8.0 <= lagInFrames < 16.0,0.0,0.0909090909090909,0.1,0.0833333333333333,38
+random_10,170,0,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,38
+random_20,340,0,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,38
+2-wise,53,8,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= constantBitrate < 1.0  AND  0.0 <= lossless < 1.0,1.0,0.380952380952381,0.3076923076923077,0.5,38
+3-wise,246,0,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,38
+4-wise,937,104,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= realtime < 1.0  AND  FrameBoost >= 1.0  AND  AutoAltRef >= 1.0,0.0,1.0,1.0,1.0,38
+full,216000,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,lossless >= 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= good < 1.0  AND  variableBitrate >= 0.5,2.0,0.5,1.0,0.3333333333333333,39
+random_2,34,2,realtime = 1 AND lossless = 1 AND FrameBoost = 1,3.0 <= cpuUsed < 8.0  AND  0.0 <= FrameBoost < 0.5,0.0,0.0,0.0,0.0,39
+random_5,85,0,realtime = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,39
+random_10,170,0,realtime = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,39
+random_20,340,0,realtime = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,39
+2-wise,53,0,realtime = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,39
+3-wise,242,0,realtime = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,39
+4-wise,950,119,realtime = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  lossless >= 1.0  AND  FrameBoost >= 1.0,0.0,1.0,1.0,1.0,39
+full,216000,27000,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= realtime < 1.0  AND  AutoAltRef >= 1.0  AND  FrameBoost >= 1.0  AND  cpuUsed >= 4.0,4.0,0.7499999999999999,1.0,0.6,3
+random_2,34,0,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,3
+random_5,85,0,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,3
+random_10,170,0,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,3
+random_20,340,0,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,3
+2-wise,50,7,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,Threads < 8.0  AND  cpuUsed >= 8.0,0.0,0.0,0.0,0.0,3
+3-wise,241,0,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,3
+4-wise,927,106,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,AutoAltRef >= 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= realtime < 1.0,0.0,1.0,1.0,1.0,3
+full,216000,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,lossless >= 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= variableBitrate < 0.5  AND  0.0 <= good < 1.0,4.0,0.8,1.0,0.6666666666666666,40
+random_2,34,8,realtime = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  lossless >= 1.0,0.0,1.0,1.0,1.0,40
+random_5,85,19,realtime = 1 AND lossless = 1 AND FrameBoost = 1,8.0 <= lagInFrames < 16.0  AND  TileColumns >= 6.0  AND  0.0 <= FrameBoost < 1.0,0.0,0.0,0.0,0.0,40
+random_10,170,0,realtime = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,40
+random_20,340,0,realtime = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,40
+2-wise,51,0,realtime = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,40
+3-wise,241,0,realtime = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,40
+4-wise,934,127,realtime = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  lossless >= 1.0  AND  FrameBoost >= 1.0,0.0,1.0,1.0,1.0,40
+full,216000,27000,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= realtime < 1.0  AND  AutoAltRef >= 1.0  AND  FrameBoost >= 1.0  AND  Threads < 6.0,0.0,0.5714285714285715,1.0,0.4,41
+random_2,34,4,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,450.0 <= bitRate < 1200.0  AND  0.0 <= AutoAltRef < 1.0,0.0,0.0,0.0,0.0,41
+random_5,85,9,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= lossless < 1.0  AND  variableBitrate >= 1.0,0.0,0.0,0.0,0.0,41
+random_10,170,0,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,41
+random_20,340,0,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,41
+2-wise,50,12,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= AutoAltRef < 1.0  AND  6.0 <= cpuUsed < 8.0,0.0,0.0,0.0,0.0,41
+3-wise,239,0,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,41
+4-wise,928,0,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,41
+full,216000,27000,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,FrameBoost >= 1.0  AND  0.0 <= realtime < 1.0  AND  AutoAltRef >= 1.0  AND  0.0 <= variance < 1.0,2.0,0.8571428571428571,1.0,0.75,42
+random_2,34,0,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,42
+random_5,85,0,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,42
+random_10,170,0,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,42
+random_20,340,0,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,42
+2-wise,56,0,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,42
+3-wise,250,0,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,42
+4-wise,931,111,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= realtime < 1.0  AND  FrameBoost >= 1.0  AND  AutoAltRef >= 1.0,0.0,1.0,1.0,1.0,42
+full,216000,27000,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  AutoAltRef >= 1.0  AND  FrameBoost >= 1.0  AND  Threads < 8.0,3.0,0.7499999999999999,1.0,0.6,43
+random_2,34,0,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,43
+random_5,85,0,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,43
+random_10,170,0,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,43
+random_20,340,0,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,43
+2-wise,57,0,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,43
+3-wise,239,0,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,43
+4-wise,932,119,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  AutoAltRef >= 1.0  AND  FrameBoost >= 1.0,0.0,1.0,1.0,1.0,43
+full,216000,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  lossless >= 1.0  AND  FrameBoost >= 1.0  AND  6.0 <= Threads < 10.0,2.0,0.5714285714285715,1.0,0.4,44
+random_2,34,2,realtime = 1 AND lossless = 1 AND FrameBoost = 1,bitRate >= 900.0  AND  1.0 <= cpuUsed < 6.0,0.0,0.0,0.0,0.0,44
+random_5,85,0,realtime = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,44
+random_10,170,0,realtime = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,44
+random_20,340,0,realtime = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,44
+2-wise,44,5,realtime = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= realtime < 0.5  AND  bitRate < 1050.0,0.0,0.0,0.0,0.0,44
+3-wise,237,0,realtime = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,44
+4-wise,932,0,realtime = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,44
+full,216000,27000,good = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= realtime < 1.0  AND  lossless >= 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= off < 1.0,4.0,0.8571428571428571,1.0,0.75,45
+random_2,34,0,good = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,45
+random_5,85,0,good = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,45
+random_10,170,0,good = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,45
+random_20,340,0,good = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,45
+2-wise,56,0,good = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,45
+3-wise,238,0,good = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,45
+4-wise,935,0,good = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,45
+full,216000,27000,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= realtime < 1.0  AND  FrameBoost >= 1.0  AND  cpuUsed < 8.0,4.0,0.6153846153846154,0.5,0.8,46
+random_2,34,2,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,FrameBoost >= 0.5  AND  5.0 <= Threads < 10.0,0.0,0.0,0.0,0.0,46
+random_5,85,0,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,46
+random_10,170,0,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,46
+random_20,340,0,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,46
+2-wise,49,9,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,Threads >= 6.0  AND  cpuUsed < 2.0,0.0,0.0,0.0,0.0,46
+3-wise,245,0,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,46
+4-wise,948,134,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= realtime < 1.0  AND  FrameBoost >= 1.0  AND  AutoAltRef >= 1.0,0.0,1.0,1.0,1.0,46
+full,216000,27000,good = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= realtime < 1.0  AND  FrameBoost >= 1.0  AND  lossless >= 1.0  AND  0.0 <= AutoAltRef < 1.0,0.0,0.6666666666666666,1.0,0.5,47
+random_2,34,0,good = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,47
+random_5,85,0,good = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,47
+random_10,170,0,good = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,47
+random_20,340,0,good = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,47
+2-wise,53,6,good = 1 AND lossless = 1 AND FrameBoost = 1,TileColumns >= 3.0  AND  bitRate >= 1500.0,0.0,0.0,0.0,0.0,47
+3-wise,246,0,good = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,47
+4-wise,931,0,good = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,47
+full,216000,27000,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,lossless >= 1.0  AND  AutoAltRef >= 1.0  AND  FrameBoost >= 1.0  AND  1.5 <= TileColumns < 4.5,2.0,0.5,1.0,0.3333333333333333,48
+random_2,34,4,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= cyclicRefresh < 0.5  AND  constrainedQuality >= 1.0,0.0,0.1538461538461538,0.1111111111111111,0.25,48
+random_5,85,11,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= FrameBoost < 1.0  AND  900.0 <= bitRate < 1050.0,0.0,0.0,0.0,0.0,48
+random_10,170,0,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,48
+random_20,340,0,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,48
+2-wise,56,11,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,600.0 <= bitRate < 900.0,1.0,0.1904761904761905,0.2,0.1818181818181818,48
+3-wise,244,0,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,48
+4-wise,938,116,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,lossless >= 1.0  AND  FrameBoost >= 1.0  AND  AutoAltRef >= 1.0,0.0,1.0,1.0,1.0,48
+full,216000,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,FrameBoost >= 1.0  AND  0.0 <= good < 1.0  AND  lossless >= 1.0  AND  bitRate < 1200.0,3.0,0.7499999999999999,1.0,0.6,49
+random_2,34,2,realtime = 1 AND lossless = 1 AND FrameBoost = 1,cpuUsed < 8.0  AND  TileColumns >= 1.5  AND  0.0 <= constantBitrate < 0.5,1.0,0.1111111111111111,0.0625,0.5,49
+random_5,85,7,realtime = 1 AND lossless = 1 AND FrameBoost = 1,Threads < 4.0  AND  900.0 <= bitRate < 1350.0,0.0,0.0,0.0,0.0,49
+random_10,170,0,realtime = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,49
+random_20,340,0,realtime = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,49
+2-wise,53,0,realtime = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,49
+3-wise,242,0,realtime = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,49
+4-wise,958,0,realtime = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,49
+full,216000,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,lossless >= 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= good < 1.0  AND  cpuUsed >= 4.0,3.0,0.7499999999999999,1.0,0.6,4
+random_2,34,0,realtime = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,4
+random_5,85,8,realtime = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= FrameBoost < 1.0  AND  cpuUsed < 2.0,0.0,0.0,0.0,0.0,4
+random_10,170,0,realtime = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,4
+random_20,340,0,realtime = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,4
+2-wise,53,5,realtime = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= AutoAltRef < 0.5  AND  4.0 <= lagInFrames < 16.0,0.0,0.1333333333333333,0.1,0.2,4
+3-wise,243,0,realtime = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,4
+4-wise,932,115,realtime = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  FrameBoost >= 1.0  AND  lossless >= 1.0,0.0,1.0,1.0,1.0,4
+full,216000,27000,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  FrameBoost >= 1.0  AND  AutoAltRef >= 1.0  AND  constantBitrate >= 0.5,3.0,0.5,1.0,0.3333333333333333,50
+random_2,34,0,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,50
+random_5,85,0,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,50
+random_10,170,0,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,50
+random_20,340,0,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,50
+2-wise,58,0,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,50
+3-wise,242,0,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,50
+4-wise,948,120,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  AutoAltRef >= 1.0  AND  FrameBoost >= 1.0,0.0,1.0,1.0,1.0,50
+full,216000,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  FrameBoost >= 1.0  AND  lossless >= 1.0  AND  AutoAltRef >= 1.0,4.0,0.6666666666666666,1.0,0.5,51
+random_2,34,0,realtime = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,51
+random_5,85,9,realtime = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= complexity < 1.0  AND  4.0 <= Threads < 6.0,0.0,0.0,0.0,0.0,51
+random_10,170,0,realtime = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,51
+random_20,340,0,realtime = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,51
+2-wise,50,0,realtime = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,51
+3-wise,237,0,realtime = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,51
+4-wise,953,0,realtime = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,51
+full,216000,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  lossless >= 1.0  AND  constrainedQuality >= 1.0  AND  FrameBoost >= 1.0,0.0,0.5,1.0,0.3333333333333333,52
+random_2,34,0,realtime = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,52
+random_5,85,18,realtime = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= constrainedQuality < 1.0  AND  2.0 <= cpuUsed < 4.0,0.0,0.3448275862068966,0.4545454545454545,0.2777777777777778,52
+random_10,170,0,realtime = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,52
+random_20,340,0,realtime = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,52
+2-wise,50,7,realtime = 1 AND lossless = 1 AND FrameBoost = 1,bitRate >= 1500.0,0.0,0.125,0.1111111111111111,0.1428571428571428,52
+3-wise,244,0,realtime = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,52
+4-wise,938,114,realtime = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  lossless >= 1.0  AND  FrameBoost >= 1.0,0.0,1.0,1.0,1.0,52
+full,216000,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  lossless >= 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= cyclicRefresh < 1.0,4.0,0.8571428571428571,1.0,0.75,53
+random_2,34,0,realtime = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,53
+random_5,85,15,realtime = 1 AND lossless = 1 AND FrameBoost = 1,Threads < 4.0  AND  cpuUsed >= 6.0,0.0,0.0,0.0,0.0,53
+random_10,170,0,realtime = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,53
+random_20,340,0,realtime = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,53
+2-wise,52,4,realtime = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= constrainedQuality < 1.0  AND  4.0 <= Threads < 5.0,0.0,0.0,0.0,0.0,53
+3-wise,247,0,realtime = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,53
+4-wise,940,109,realtime = 1 AND lossless = 1 AND FrameBoost = 1,lossless >= 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= good < 1.0,0.0,1.0,1.0,1.0,53
+full,216000,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,lossless >= 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= good < 1.0  AND  cpuUsed >= 6.0,1.0,0.5714285714285715,1.0,0.4,54
+random_2,34,0,realtime = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,54
+random_5,85,13,realtime = 1 AND lossless = 1 AND FrameBoost = 1,off >= 1.0  AND  cpuUsed >= 5.0,0.0,0.0,0.0,0.0,54
+random_10,170,0,realtime = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,54
+random_20,340,0,realtime = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,54
+2-wise,53,0,realtime = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,54
+3-wise,237,0,realtime = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,54
+4-wise,927,0,realtime = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,54
+full,216000,27000,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,AutoAltRef >= 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= good < 1.0  AND  0.0 <= variableBitrate < 0.5,3.0,0.8,1.0,0.6666666666666666,55
+random_2,34,0,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,55
+random_5,85,5,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,constantBitrate >= 1.0  AND  cpuUsed < 2.0  AND  lossless >= 1.0,0.0,0.0,0.0,0.0,55
+random_10,170,0,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,55
+random_20,340,0,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,55
+2-wise,53,0,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,55
+3-wise,244,0,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,55
+4-wise,917,0,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,55
+full,216000,27000,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,AutoAltRef >= 1.0  AND  lossless >= 1.0  AND  FrameBoost >= 1.0  AND  6.0 <= Threads < 8.0,0.0,0.3333333333333333,1.0,0.2,56
+random_2,34,5,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,bitRate < 1500.0  AND  lagInFrames >= 4.0,0.0,0.2105263157894736,0.1428571428571428,0.4,56
+random_5,85,0,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,56
+random_10,170,0,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,56
+random_20,340,0,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,56
+2-wise,54,5,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= variance < 1.0  AND  bitRate < 600.0,0.0,0.0,0.0,0.0,56
+3-wise,237,0,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,56
+4-wise,950,135,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,AutoAltRef >= 1.0  AND  FrameBoost >= 1.0  AND  lossless >= 1.0,0.0,1.0,1.0,1.0,56
+full,216000,27000,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= realtime < 1.0  AND  FrameBoost >= 1.0  AND  AutoAltRef >= 1.0  AND  Threads >= 8.0,3.0,0.5714285714285715,1.0,0.4,57
+random_2,34,0,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,57
+random_5,85,0,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,57
+random_10,170,0,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,57
+random_20,340,0,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,57
+2-wise,52,0,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,57
+3-wise,245,0,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,57
+4-wise,957,110,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= realtime < 1.0  AND  FrameBoost >= 1.0  AND  AutoAltRef >= 1.0,0.0,1.0,1.0,1.0,57
+full,216000,27000,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,0.0 <= good < 1.0  AND  lossless >= 1.0  AND  AutoAltRef >= 1.0  AND  0.0 <= variance < 1.0,3.0,0.8571428571428571,1.0,0.75,58
+random_2,34,0,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,,,0.0,0.0,0.0,58
+random_5,85,8,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,constantBitrate >= 1.0  AND  bitRate < 900.0,0.0,0.0,0.0,0.0,58
+random_10,170,0,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,,,0.0,0.0,0.0,58
+random_20,340,0,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,,,0.0,0.0,0.0,58
+2-wise,51,7,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,0.0 <= AutoAltRef < 1.0  AND  900.0 <= bitRate < 1500.0,0.0,0.0,0.0,0.0,58
+3-wise,243,0,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,,,0.0,0.0,0.0,58
+4-wise,938,0,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,,,0.0,0.0,0.0,58
+full,216000,27000,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,AutoAltRef >= 1.0  AND  lossless >= 1.0  AND  lagInFrames < 12.0  AND  FrameBoost >= 1.0,4.0,0.8,1.0,0.6666666666666666,59
+random_2,34,4,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= FrameBoost < 0.5  AND  bitRate >= 1050.0,0.0,0.0,0.0,0.0,59
+random_5,85,0,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,59
+random_10,170,0,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,59
+random_20,340,0,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,59
+2-wise,47,3,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= variance < 1.0  AND  lagInFrames >= 16.0,0.0,0.1428571428571428,0.0909090909090909,0.3333333333333333,59
+3-wise,235,0,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,59
+4-wise,942,0,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,59
+full,216000,27000,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= realtime < 1.0  AND  FrameBoost >= 1.0  AND  AutoAltRef >= 1.0  AND  variableBitrate >= 0.5,3.0,0.5,1.0,0.3333333333333333,5
+random_2,34,0,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,5
+random_5,85,0,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,5
+random_10,170,0,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,5
+random_20,340,0,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,5
+2-wise,51,4,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= complexity < 0.5  AND  2.0 <= cpuUsed < 4.0,0.0,0.1666666666666666,0.125,0.25,5
+3-wise,238,0,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,5
+4-wise,945,0,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,5
+full,216000,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  lossless >= 1.0  AND  FrameBoost >= 1.0  AND  600.0 <= bitRate < 1500.0,1.0,0.7499999999999999,1.0,0.6,60
+random_2,34,0,realtime = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,60
+random_5,85,10,realtime = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= lossless < 1.0  AND  600.0 <= bitRate < 900.0,0.0,0.0,0.0,0.0,60
+random_10,170,0,realtime = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,60
+random_20,340,0,realtime = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,60
+2-wise,48,4,realtime = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= cyclicRefresh < 1.0  AND  Threads < 4.0,0.0,0.0,0.0,0.0,60
+3-wise,241,0,realtime = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,60
+4-wise,934,122,realtime = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  lossless >= 1.0  AND  0.0 <= off < 1.0  AND  FrameBoost >= 1.0,0.0,0.8703703703703703,1.0,0.7704918032786885,60
+full,216000,27000,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  AutoAltRef >= 1.0  AND  Threads < 10.0,4.0,0.6153846153846154,0.5,0.8,61
+random_2,34,6,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,600.0 <= bitRate < 1200.0  AND  0.0 <= AutoAltRef < 0.5,0.0,0.0,0.0,0.0,61
+random_5,85,0,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,61
+random_10,170,0,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,61
+random_20,340,0,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,61
+2-wise,49,3,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= variance < 0.5  AND  cpuUsed < 2.0,0.0,0.0,0.0,0.0,61
+3-wise,233,0,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,61
+4-wise,941,0,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,61
+full,216000,27000,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,0.0 <= good < 1.0  AND  lossless >= 1.0  AND  AutoAltRef >= 1.0  AND  2.0 <= cpuUsed < 8.0,0.0,0.7499999999999999,1.0,0.6,62
+random_2,34,0,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,,,0.0,0.0,0.0,62
+random_5,85,0,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,,,0.0,0.0,0.0,62
+random_10,170,0,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,,,0.0,0.0,0.0,62
+random_20,340,0,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,,,0.0,0.0,0.0,62
+2-wise,52,6,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,cpuUsed >= 2.0  AND  6.0 <= Threads < 7.0,0.0,0.0,0.0,0.0,62
+3-wise,234,0,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,,,0.0,0.0,0.0,62
+4-wise,933,138,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,AutoAltRef >= 1.0  AND  lossless >= 1.0  AND  0.0 <= good < 1.0,0.0,1.0,1.0,1.0,62
+full,216000,27000,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= realtime < 1.0  AND  FrameBoost >= 1.0  AND  AutoAltRef >= 1.0  AND  600.0 <= bitRate < 1200.0,3.0,0.5714285714285715,1.0,0.4,63
+random_2,34,0,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,63
+random_5,85,12,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  0.0 <= lagInFrames < 8.0  AND  0.0 <= variableBitrate < 1.0,0.0,0.0,0.0,0.0,63
+random_10,170,0,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,63
+random_20,340,0,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,63
+2-wise,51,7,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= realtime < 1.0  AND  cpuUsed >= 1.0,3.0,0.4615384615384615,0.3157894736842105,0.8571428571428571,63
+3-wise,240,0,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,63
+4-wise,957,128,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= realtime < 1.0  AND  FrameBoost >= 1.0  AND  AutoAltRef >= 1.0  AND  lagInFrames >= 8.0,0.0,0.7692307692307693,1.0,0.625,63
+full,216000,27000,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,0.0 <= good < 1.0  AND  AutoAltRef >= 1.0  AND  lossless >= 1.0  AND  4.0 <= cpuUsed < 8.0,1.0,0.5714285714285715,1.0,0.4,64
+random_2,34,2,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,0.0 <= AutoAltRef < 1.0  AND  complexity >= 0.5,0.0,0.0,0.0,0.0,64
+random_5,85,0,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,,,0.0,0.0,0.0,64
+random_10,170,23,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,0.0 <= TileColumns < 3.0  AND  450.0 <= bitRate < 900.0,0.0,0.0,0.0,0.0,64
+random_20,340,0,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,,,0.0,0.0,0.0,64
+2-wise,51,0,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,,,0.0,0.0,0.0,64
+3-wise,241,0,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,,,0.0,0.0,0.0,64
+4-wise,956,0,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,,,0.0,0.0,0.0,64
+full,216000,27000,good = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= realtime < 1.0  AND  FrameBoost >= 1.0  AND  lossless >= 1.0  AND  AutoAltRef >= 1.0,1.0,0.6666666666666666,1.0,0.5,65
+random_2,34,0,good = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,65
+random_5,85,0,good = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,65
+random_10,170,0,good = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,65
+random_20,340,0,good = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,65
+2-wise,50,0,good = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,65
+3-wise,246,0,good = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,65
+4-wise,942,117,good = 1 AND lossless = 1 AND FrameBoost = 1,lossless >= 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= realtime < 1.0  AND  0.0 <= cyclicRefresh < 1.0,0.0,0.9065420560747663,1.0,0.8290598290598291,65
+full,216000,27000,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,lossless >= 1.0  AND  AutoAltRef >= 1.0  AND  FrameBoost >= 1.0  AND  Threads < 8.0,1.0,0.7499999999999999,1.0,0.6,66
+random_2,34,0,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,66
+random_5,85,4,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= realtime < 1.0  AND  900.0 <= bitRate < 1200.0,0.0,0.0,0.0,0.0,66
+random_10,170,0,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,66
+random_20,340,0,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,66
+2-wise,55,7,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= variance < 1.0  AND  Threads < 4.0,1.0,0.2666666666666666,0.25,0.2857142857142857,66
+3-wise,237,0,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,66
+4-wise,924,0,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,66
+full,216000,27000,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  FrameBoost >= 1.0  AND  AutoAltRef >= 1.0  AND  lossless >= 1.0,4.0,0.6666666666666666,1.0,0.5,67
+random_2,34,0,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,67
+random_5,85,0,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,67
+random_10,170,0,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,67
+random_20,340,0,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,67
+2-wise,57,0,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,67
+3-wise,239,0,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,67
+4-wise,953,0,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,67
+full,216000,27000,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,AutoAltRef >= 1.0  AND  lossless >= 1.0  AND  0.0 <= good < 1.0  AND  Threads < 8.0,1.0,0.7499999999999999,1.0,0.6,68
+random_2,34,0,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,,,0.0,0.0,0.0,68
+random_5,85,0,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,,,0.0,0.0,0.0,68
+random_10,170,0,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,,,0.0,0.0,0.0,68
+random_20,340,0,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,,,0.0,0.0,0.0,68
+2-wise,55,0,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,,,0.0,0.0,0.0,68
+3-wise,245,0,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,,,0.0,0.0,0.0,68
+4-wise,950,0,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,,,0.0,0.0,0.0,68
+full,216000,27000,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= realtime < 1.0  AND  FrameBoost >= 1.0  AND  AutoAltRef >= 1.0,4.0,1.0,1.0,1.0,69
+random_2,34,0,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,69
+random_5,85,12,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,constantBitrate >= 1.0  AND  6.0 <= Threads < 8.0,0.0,0.0,0.0,0.0,69
+random_10,170,0,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,69
+random_20,340,0,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,69
+2-wise,54,0,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,69
+3-wise,237,0,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,69
+4-wise,929,0,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,69
+full,216000,27000,good = 1 AND AutoAltRef = 1 AND lossless = 1,AutoAltRef >= 1.0  AND  0.0 <= realtime < 1.0  AND  lossless >= 1.0  AND  cpuUsed < 4.0,2.0,0.5714285714285715,1.0,0.4,6
+random_2,34,6,good = 1 AND AutoAltRef = 1 AND lossless = 1,FrameBoost >= 1.0  AND  6.0 <= Threads < 9.0,0.0,0.0,0.0,0.0,6
+random_5,85,16,good = 1 AND AutoAltRef = 1 AND lossless = 1,AutoAltRef >= 1.0  AND  0.0 <= lagInFrames < 8.0,0.0,0.4516129032258064,0.4666666666666667,0.4375,6
+random_10,170,0,good = 1 AND AutoAltRef = 1 AND lossless = 1,,,0.0,0.0,0.0,6
+random_20,340,0,good = 1 AND AutoAltRef = 1 AND lossless = 1,,,0.0,0.0,0.0,6
+2-wise,50,5,good = 1 AND AutoAltRef = 1 AND lossless = 1,1.0 <= cpuUsed < 5.0  AND  bitRate >= 1200.0,0.0,0.0,0.0,0.0,6
+3-wise,258,0,good = 1 AND AutoAltRef = 1 AND lossless = 1,,,0.0,0.0,0.0,6
+4-wise,944,0,good = 1 AND AutoAltRef = 1 AND lossless = 1,,,0.0,0.0,0.0,6
+full,216000,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  lossless >= 1.0  AND  FrameBoost >= 1.0  AND  Threads < 6.0,3.0,0.5714285714285715,1.0,0.4,70
+random_2,34,0,realtime = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,70
+random_5,85,6,realtime = 1 AND lossless = 1 AND FrameBoost = 1,lagInFrames >= 16.0  AND  cpuUsed < 4.0,0.0,0.0,0.0,0.0,70
+random_10,170,0,realtime = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,70
+random_20,340,0,realtime = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,70
+2-wise,53,3,realtime = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= variableBitrate < 1.0  AND  750.0 <= bitRate < 1200.0,0.0,0.0,0.0,0.0,70
+3-wise,237,0,realtime = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,70
+4-wise,934,117,realtime = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  FrameBoost >= 1.0  AND  lossless >= 1.0  AND  0.0 <= cyclicRefresh < 1.0,0.0,0.8803827751196173,1.0,0.7863247863247863,70
+full,216000,27000,good = 1 AND lossless = 1 AND FrameBoost = 1,lossless >= 1.0  AND  FrameBoost >= 1.0  AND  6.0 <= Threads < 10.0  AND  0.0 <= realtime < 1.0,0.0,0.5714285714285715,1.0,0.4,71
+random_2,34,0,good = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,71
+random_5,85,5,good = 1 AND lossless = 1 AND FrameBoost = 1,complexity >= 1.0  AND  bitRate < 900.0,0.0,0.0,0.0,0.0,71
+random_10,170,0,good = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,71
+random_20,340,0,good = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,71
+2-wise,52,0,good = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,71
+3-wise,240,0,good = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,71
+4-wise,946,126,good = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= realtime < 1.0  AND  FrameBoost >= 1.0  AND  lossless >= 1.0,0.0,1.0,1.0,1.0,71
+full,216000,27000,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,AutoAltRef >= 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= variance < 1.0,4.0,0.6,0.5,0.75,72
+random_2,34,0,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,72
+random_5,85,12,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,lagInFrames >= 12.0  AND  bitRate < 900.0,0.0,0.0,0.0,0.0,72
+random_10,170,0,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,72
+random_20,340,0,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,72
+2-wise,51,0,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,72
+3-wise,237,0,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,72
+4-wise,925,0,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,72
+full,216000,27000,good = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= realtime < 1.0  AND  FrameBoost >= 1.0  AND  lossless >= 1.0  AND  0.0 <= AutoAltRef < 1.0,1.0,0.6666666666666666,1.0,0.5,73
+random_2,34,0,good = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,73
+random_5,85,12,good = 1 AND lossless = 1 AND FrameBoost = 1,lagInFrames >= 16.0  AND  4.0 <= cpuUsed < 8.0,0.0,0.0,0.0,0.0,73
+random_10,170,0,good = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,73
+random_20,340,0,good = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,73
+2-wise,49,6,good = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= variance < 1.0  AND  1200.0 <= bitRate < 1350.0,0.0,0.0,0.0,0.0,73
+3-wise,225,0,good = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,73
+4-wise,930,0,good = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,73
+full,216000,27000,good = 1 AND AutoAltRef = 1 AND lossless = 1,0.0 <= realtime < 1.0  AND  AutoAltRef >= 1.0  AND  lossless >= 1.0  AND  bitRate < 900.0,1.0,0.5714285714285715,1.0,0.4,74
+random_2,34,4,good = 1 AND AutoAltRef = 1 AND lossless = 1,0.0 <= constrainedQuality < 1.0  AND  0.0 <= lagInFrames < 16.0  AND  0.0 <= lossless < 1.0,0.0,0.0,0.0,0.0,74
+random_5,85,14,good = 1 AND AutoAltRef = 1 AND lossless = 1,lossless >= 1.0  AND  bitRate >= 1500.0,0.0,0.0,0.0,0.0,74
+random_10,170,0,good = 1 AND AutoAltRef = 1 AND lossless = 1,,,0.0,0.0,0.0,74
+random_20,340,52,good = 1 AND AutoAltRef = 1 AND lossless = 1,0.0 <= realtime < 1.0  AND  AutoAltRef >= 1.0  AND  lossless >= 1.0,0.0,1.0,1.0,1.0,74
+2-wise,51,0,good = 1 AND AutoAltRef = 1 AND lossless = 1,,,0.0,0.0,0.0,74
+3-wise,244,0,good = 1 AND AutoAltRef = 1 AND lossless = 1,,,0.0,0.0,0.0,74
+4-wise,930,114,good = 1 AND AutoAltRef = 1 AND lossless = 1,AutoAltRef >= 1.0  AND  lossless >= 1.0  AND  0.0 <= realtime < 1.0,0.0,1.0,1.0,1.0,74
+full,216000,27000,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  FrameBoost >= 1.0  AND  AutoAltRef >= 1.0  AND  bitRate < 900.0,3.0,0.5714285714285715,1.0,0.4,75
+random_2,34,0,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,75
+random_5,85,15,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,900.0 <= bitRate < 1200.0,0.0,0.08,0.1,0.0666666666666666,75
+random_10,170,21,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,variableBitrate >= 1.0  AND  4.0 <= cpuUsed < 5.0,0.0,0.0,0.0,0.0,75
+random_20,340,0,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,75
+2-wise,51,0,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,75
+3-wise,237,0,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,75
+4-wise,909,117,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  AutoAltRef >= 1.0  AND  FrameBoost >= 1.0,0.0,1.0,1.0,1.0,75
+full,216000,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  lossless >= 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= AutoAltRef < 1.0,3.0,0.6666666666666666,1.0,0.5,76
+random_2,34,0,realtime = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,76
+random_5,85,0,realtime = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,76
+random_10,170,0,realtime = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,76
+random_20,340,0,realtime = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,76
+2-wise,49,7,realtime = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= variance < 0.5  AND  6.0 <= cpuUsed < 7.0,0.0,0.0,0.0,0.0,76
+3-wise,227,0,realtime = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,76
+4-wise,965,126,realtime = 1 AND lossless = 1 AND FrameBoost = 1,lossless >= 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= good < 1.0,0.0,1.0,1.0,1.0,76
+full,216000,27000,good = 1 AND AutoAltRef = 1 AND lossless = 1,0.0 <= realtime < 1.0  AND  AutoAltRef >= 1.0  AND  lagInFrames < 12.0  AND  bitRate >= 600.0,4.0,0.5161290322580646,0.5,0.5333333333333333,77
+random_2,34,0,good = 1 AND AutoAltRef = 1 AND lossless = 1,,,0.0,0.0,0.0,77
+random_5,85,0,good = 1 AND AutoAltRef = 1 AND lossless = 1,,,0.0,0.0,0.0,77
+random_10,170,0,good = 1 AND AutoAltRef = 1 AND lossless = 1,,,0.0,0.0,0.0,77
+random_20,340,0,good = 1 AND AutoAltRef = 1 AND lossless = 1,,,0.0,0.0,0.0,77
+2-wise,56,3,good = 1 AND AutoAltRef = 1 AND lossless = 1,0.0 <= off < 0.5  AND  5.0 <= Threads < 8.0,0.0,0.0,0.0,0.0,77
+3-wise,236,0,good = 1 AND AutoAltRef = 1 AND lossless = 1,,,0.0,0.0,0.0,77
+4-wise,954,0,good = 1 AND AutoAltRef = 1 AND lossless = 1,,,0.0,0.0,0.0,77
+full,216000,27000,good = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= realtime < 1.0  AND  FrameBoost >= 1.0  AND  lossless >= 1.0  AND  variableBitrate >= 0.5,3.0,0.5,1.0,0.3333333333333333,78
+random_2,34,0,good = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,78
+random_5,85,0,good = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,78
+random_10,170,0,good = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,78
+random_20,340,0,good = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,78
+2-wise,53,6,good = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= off < 1.0  AND  4.0 <= Threads < 10.0,2.0,0.1379310344827586,0.0869565217391304,0.3333333333333333,78
+3-wise,236,31,good = 1 AND lossless = 1 AND FrameBoost = 1,variance >= 1.0  AND  4.0 <= Threads < 6.0,0.0,0.0975609756097561,0.2,0.064516129032258,78
+4-wise,932,107,good = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= realtime < 0.5  AND  lossless >= 1.0  AND  FrameBoost >= 1.0,0.0,1.0,1.0,1.0,78
+full,216000,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,FrameBoost >= 1.0  AND  lossless >= 1.0  AND  0.0 <= good < 1.0  AND  cpuUsed >= 6.0,3.0,0.5714285714285715,1.0,0.4,79
+random_2,34,0,realtime = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,79
+random_5,85,11,realtime = 1 AND lossless = 1 AND FrameBoost = 1,good >= 1.0  AND  bitRate >= 1500.0,0.0,0.0,0.0,0.0,79
+random_10,170,0,realtime = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,79
+random_20,340,0,realtime = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,79
+2-wise,54,0,realtime = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,79
+3-wise,247,0,realtime = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,79
+4-wise,961,0,realtime = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,79
+full,216000,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  lossless >= 1.0  AND  cpuUsed < 8.0  AND  FrameBoost >= 1.0,4.0,0.888888888888889,1.0,0.8,7
+random_2,34,0,realtime = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,7
+random_5,85,14,realtime = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= realtime < 1.0  AND  4.0 <= cpuUsed < 6.0,0.0,0.0,0.0,0.0,7
+random_10,170,0,realtime = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,7
+random_20,340,0,realtime = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,7
+2-wise,50,6,realtime = 1 AND lossless = 1 AND FrameBoost = 1,cyclicRefresh >= 0.5,0.0,0.0,0.0,0.0,7
+3-wise,241,0,realtime = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,7
+4-wise,946,117,realtime = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  lossless >= 1.0  AND  FrameBoost >= 1.0,0.0,1.0,1.0,1.0,7
+full,216000,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  lossless >= 1.0  AND  FrameBoost >= 1.0  AND  900.0 <= bitRate < 1500.0,0.0,0.5714285714285715,1.0,0.4,80
+random_2,34,0,realtime = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,80
+random_5,85,10,realtime = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= constantBitrate < 1.0  AND  bitRate < 600.0,0.0,0.0,0.0,0.0,80
+random_10,170,0,realtime = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,80
+random_20,340,0,realtime = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,80
+2-wise,53,0,realtime = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,80
+3-wise,241,0,realtime = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,80
+4-wise,953,125,realtime = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  FrameBoost >= 1.0  AND  lossless >= 1.0,0.0,1.0,1.0,1.0,80
+full,216000,27000,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= realtime < 1.0  AND  FrameBoost >= 1.0  AND  bitRate >= 600.0,4.0,0.6153846153846154,0.5,0.8,81
+random_2,34,2,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= constrainedQuality < 0.5  AND  lagInFrames >= 12.0,0.0,0.0,0.0,0.0,81
+random_5,85,8,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,4.0 <= Threads < 8.0  AND  4.0 <= cpuUsed < 6.0,0.0,0.0,0.0,0.0,81
+random_10,170,0,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,81
+random_20,340,0,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,81
+2-wise,54,0,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,81
+3-wise,238,0,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,81
+4-wise,930,0,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,81
+full,216000,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,lossless >= 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= constrainedQuality < 0.5  AND  0.0 <= good < 1.0,4.0,0.8,1.0,0.6666666666666666,82
+random_2,34,0,realtime = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,82
+random_5,85,0,realtime = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,82
+random_10,170,0,realtime = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,82
+random_20,340,0,realtime = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,82
+2-wise,50,0,realtime = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,82
+3-wise,243,0,realtime = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,82
+4-wise,949,0,realtime = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,82
+full,216000,27000,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,AutoAltRef >= 1.0  AND  lossless >= 1.0  AND  FrameBoost >= 1.0  AND  600.0 <= bitRate < 1200.0,1.0,0.5714285714285715,1.0,0.4,83
+random_2,34,2,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,cpuUsed < 6.0  AND  cyclicRefresh >= 1.0,0.0,0.0,0.0,0.0,83
+random_5,85,0,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,83
+random_10,170,0,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,83
+random_20,340,0,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,83
+2-wise,50,0,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,83
+3-wise,235,0,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,83
+4-wise,954,130,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,AutoAltRef >= 1.0  AND  lossless >= 1.0  AND  FrameBoost >= 1.0,0.0,1.0,1.0,1.0,83
+full,216000,27000,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,lossless >= 1.0  AND  0.0 <= good < 1.0  AND  AutoAltRef >= 1.0  AND  Threads < 10.0,3.0,0.888888888888889,1.0,0.8,84
+random_2,34,4,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,cpuUsed >= 5.0,2.0,0.1428571428571428,0.1,0.25,84
+random_5,85,0,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,,,0.0,0.0,0.0,84
+random_10,170,0,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,,,0.0,0.0,0.0,84
+random_20,340,0,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,,,0.0,0.0,0.0,84
+2-wise,51,0,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,,,0.0,0.0,0.0,84
+3-wise,246,0,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,,,0.0,0.0,0.0,84
+4-wise,952,122,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,AutoAltRef >= 1.0  AND  lossless >= 1.0  AND  0.0 <= good < 1.0,0.0,1.0,1.0,1.0,84
+full,216000,27000,good = 1 AND AutoAltRef = 1 AND lossless = 1,0.0 <= realtime < 1.0  AND  AutoAltRef >= 1.0  AND  lossless >= 1.0  AND  4.0 <= lagInFrames < 12.0,2.0,0.5,1.0,0.3333333333333333,85
+random_2,34,0,good = 1 AND AutoAltRef = 1 AND lossless = 1,,,0.0,0.0,0.0,85
+random_5,85,12,good = 1 AND AutoAltRef = 1 AND lossless = 1,0.0 <= good < 1.0  AND  bitRate < 600.0,0.0,0.0,0.0,0.0,85
+random_10,170,0,good = 1 AND AutoAltRef = 1 AND lossless = 1,,,0.0,0.0,0.0,85
+random_20,340,0,good = 1 AND AutoAltRef = 1 AND lossless = 1,,,0.0,0.0,0.0,85
+2-wise,52,0,good = 1 AND AutoAltRef = 1 AND lossless = 1,,,0.0,0.0,0.0,85
+3-wise,240,0,good = 1 AND AutoAltRef = 1 AND lossless = 1,,,0.0,0.0,0.0,85
+4-wise,960,130,good = 1 AND AutoAltRef = 1 AND lossless = 1,0.0 <= realtime < 1.0  AND  AutoAltRef >= 1.0  AND  lossless >= 1.0,0.0,1.0,1.0,1.0,85
+full,216000,27000,good = 1 AND lossless = 1 AND FrameBoost = 1,lossless >= 1.0  AND  FrameBoost >= 1.0  AND  Threads < 10.0,4.0,0.6153846153846154,0.5,0.8,86
+random_2,34,0,good = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,86
+random_5,85,12,good = 1 AND lossless = 1 AND FrameBoost = 1,2.0 <= cpuUsed < 4.0  AND  Threads >= 6.0,0.0,0.0,0.0,0.0,86
+random_10,170,0,good = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,86
+random_20,340,0,good = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,86
+2-wise,56,6,good = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= realtime < 1.0  AND  cyclicRefresh >= 0.5,0.0,0.0,0.0,0.0,86
+3-wise,242,0,good = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,86
+4-wise,953,0,good = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,86
+full,216000,27000,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  FrameBoost >= 1.0  AND  AutoAltRef >= 1.0  AND  constrainedQuality >= 0.5,0.0,0.5,1.0,0.3333333333333333,87
+random_2,34,0,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,87
+random_5,85,11,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= TileColumns < 3.0  AND  4.0 <= Threads < 6.0,0.0,0.0,0.0,0.0,87
+random_10,170,0,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,87
+random_20,340,0,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,87
+2-wise,53,0,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,87
+3-wise,247,0,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,87
+4-wise,945,129,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  AutoAltRef >= 1.0  AND  FrameBoost >= 1.0,0.0,1.0,1.0,1.0,87
+full,216000,27000,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,AutoAltRef >= 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= realtime < 1.0  AND  0.0 <= variance < 1.0,4.0,0.8571428571428571,1.0,0.75,88
+random_2,34,0,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,88
+random_5,85,5,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  complexity >= 1.0,0.0,0.0,0.0,0.0,88
+random_10,170,0,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,88
+random_20,340,0,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,88
+2-wise,55,4,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,6.0 <= Threads < 9.0  AND  cyclicRefresh >= 1.0,0.0,0.0,0.0,0.0,88
+3-wise,249,0,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,88
+4-wise,958,126,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= realtime < 1.0  AND  FrameBoost >= 1.0  AND  AutoAltRef >= 1.0,0.0,1.0,1.0,1.0,88
+full,216000,27000,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= realtime < 1.0  AND  FrameBoost >= 1.0  AND  TileColumns >= 1.5  AND  cpuUsed < 8.0,3.0,0.5161290322580646,0.5,0.5333333333333333,89
+random_2,34,0,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,89
+random_5,85,8,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,lagInFrames >= 16.0  AND  2.0 <= cpuUsed < 4.0,0.0,0.0,0.0,0.0,89
+random_10,170,0,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,89
+random_20,340,0,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,89
+2-wise,53,0,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,89
+3-wise,242,0,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,89
+4-wise,941,0,good = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,89
+full,216000,27000,good = 1 AND AutoAltRef = 1 AND lossless = 1,0.0 <= realtime < 1.0  AND  lossless >= 1.0  AND  AutoAltRef >= 1.0  AND  0.0 <= variance < 1.0,4.0,0.8571428571428571,1.0,0.75,8
+random_2,34,0,good = 1 AND AutoAltRef = 1 AND lossless = 1,,,0.0,0.0,0.0,8
+random_5,85,0,good = 1 AND AutoAltRef = 1 AND lossless = 1,,,0.0,0.0,0.0,8
+random_10,170,0,good = 1 AND AutoAltRef = 1 AND lossless = 1,,,0.0,0.0,0.0,8
+random_20,340,0,good = 1 AND AutoAltRef = 1 AND lossless = 1,,,0.0,0.0,0.0,8
+2-wise,48,6,good = 1 AND AutoAltRef = 1 AND lossless = 1,6.0 <= Threads < 9.0  AND  0.0 <= AutoAltRef < 0.5,0.0,0.0,0.0,0.0,8
+3-wise,241,0,good = 1 AND AutoAltRef = 1 AND lossless = 1,,,0.0,0.0,0.0,8
+4-wise,943,125,good = 1 AND AutoAltRef = 1 AND lossless = 1,0.0 <= realtime < 1.0  AND  AutoAltRef >= 1.0  AND  lossless >= 1.0,0.0,1.0,1.0,1.0,8
+full,216000,27000,good = 1 AND AutoAltRef = 1 AND lossless = 1,AutoAltRef >= 1.0  AND  lossless >= 1.0  AND  0.0 <= realtime < 1.0  AND  0.0 <= cyclicRefresh < 1.0,4.0,0.8571428571428571,1.0,0.75,90
+random_5,85,7,good = 1 AND AutoAltRef = 1 AND lossless = 1,0.0 <= constrainedQuality < 1.0  AND  bitRate < 600.0,0.0,0.0952380952380952,0.0714285714285714,0.1428571428571428,90
+random_10,170,0,good = 1 AND AutoAltRef = 1 AND lossless = 1,,,0.0,0.0,0.0,90
+random_20,340,0,good = 1 AND AutoAltRef = 1 AND lossless = 1,,,0.0,0.0,0.0,90
+2-wise,51,5,good = 1 AND AutoAltRef = 1 AND lossless = 1,lagInFrames < 16.0  AND  off >= 1.0,0.0,0.0,0.0,0.0,90
+3-wise,238,0,good = 1 AND AutoAltRef = 1 AND lossless = 1,,,0.0,0.0,0.0,90
+4-wise,957,143,good = 1 AND AutoAltRef = 1 AND lossless = 1,AutoAltRef >= 1.0  AND  lossless >= 1.0  AND  0.0 <= realtime < 1.0,0.0,1.0,1.0,1.0,90
+full,216000,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,lossless >= 1.0  AND  FrameBoost >= 1.0  AND  TileColumns >= 1.5  AND  0.0 <= good < 1.0,3.0,0.8,1.0,0.6666666666666666,91
+random_2,34,0,realtime = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,91
+random_5,85,12,realtime = 1 AND lossless = 1 AND FrameBoost = 1,Threads >= 8.0  AND  2.0 <= cpuUsed < 4.0,0.0,0.0,0.0,0.0,91
+random_10,170,17,realtime = 1 AND lossless = 1 AND FrameBoost = 1,variableBitrate >= 1.0  AND  bitRate >= 1500.0,0.0,0.0714285714285714,0.0909090909090909,0.0588235294117647,91
+random_20,340,0,realtime = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,91
+2-wise,51,7,realtime = 1 AND lossless = 1 AND FrameBoost = 1,TileColumns >= 6.0  AND  0.0 <= cyclicRefresh < 1.0,1.0,0.1,0.0769230769230769,0.1428571428571428,91
+3-wise,245,0,realtime = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,91
+4-wise,949,119,realtime = 1 AND lossless = 1 AND FrameBoost = 1,lossless >= 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= good < 1.0,0.0,1.0,1.0,1.0,91
+full,216000,27000,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,AutoAltRef >= 1.0  AND  lossless >= 1.0  AND  0.0 <= good < 1.0  AND  lagInFrames < 12.0,4.0,0.8,1.0,0.6666666666666666,92
+random_2,34,0,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,,,0.0,0.0,0.0,92
+random_5,85,0,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,,,0.0,0.0,0.0,92
+random_10,170,0,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,,,0.0,0.0,0.0,92
+random_20,340,0,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,,,0.0,0.0,0.0,92
+2-wise,53,7,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,600.0 <= bitRate < 750.0  AND  0.0 <= realtime < 1.0,0.0,0.0,0.0,0.0,92
+3-wise,241,0,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,,,0.0,0.0,0.0,92
+4-wise,935,112,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,0.0 <= good < 1.0  AND  AutoAltRef >= 1.0  AND  lossless >= 1.0,0.0,1.0,1.0,1.0,92
+full,216000,27000,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,0.0 <= good < 1.0  AND  AutoAltRef >= 1.0  AND  lossless >= 1.0  AND  lagInFrames >= 12.0,1.0,0.5,1.0,0.3333333333333333,93
+random_2,34,4,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,4.0 <= Threads < 7.0  AND  1.5 <= TileColumns < 6.0,0.0,0.0,0.0,0.0,93
+random_5,85,5,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,TileColumns >= 3.0  AND  4.0 <= cpuUsed < 6.0,0.0,0.1333333333333333,0.1,0.2,93
+random_10,170,0,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,,,0.0,0.0,0.0,93
+random_20,340,50,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,0.0 <= good < 1.0  AND  lossless >= 1.0  AND  AutoAltRef >= 1.0,0.0,1.0,1.0,1.0,93
+2-wise,52,0,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,,,0.0,0.0,0.0,93
+3-wise,242,0,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,,,0.0,0.0,0.0,93
+4-wise,957,109,realtime = 1 AND AutoAltRef = 1 AND lossless = 1,0.0 <= good < 1.0  AND  AutoAltRef >= 1.0  AND  lossless >= 1.0,0.0,1.0,1.0,1.0,93
+full,216000,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,lossless >= 1.0  AND  FrameBoost >= 1.0  AND  0.0 <= good < 1.0  AND  bitRate >= 600.0,1.0,0.888888888888889,1.0,0.8,94
+random_2,34,6,realtime = 1 AND lossless = 1 AND FrameBoost = 1,Threads < 6.0  AND  TileColumns < 1.5,0.0,0.0,0.0,0.0,94
+random_5,85,13,realtime = 1 AND lossless = 1 AND FrameBoost = 1,complexity >= 1.0  AND  3.0 <= TileColumns < 6.0,0.0,0.0,0.0,0.0,94
+random_10,170,0,realtime = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,94
+random_20,340,0,realtime = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,94
+2-wise,52,0,realtime = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,94
+3-wise,231,0,realtime = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,94
+4-wise,966,112,realtime = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  FrameBoost >= 1.0  AND  lossless >= 1.0,0.0,1.0,1.0,1.0,94
+full,216000,27000,realtime = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  lossless >= 1.0  AND  FrameBoost >= 1.0  AND  TileColumns < 1.5,1.0,0.5,1.0,0.3333333333333333,95
+random_2,34,5,realtime = 1 AND lossless = 1 AND FrameBoost = 1,Threads < 6.0  AND  6.0 <= cpuUsed < 7.0,0.0,0.0,0.0,0.0,95
+random_5,85,10,realtime = 1 AND lossless = 1 AND FrameBoost = 1,variance >= 1.0  AND  4.0 <= cpuUsed < 6.0,0.0,0.0,0.0,0.0,95
+random_10,170,23,realtime = 1 AND lossless = 1 AND FrameBoost = 1,Threads >= 8.0  AND  2.0 <= cpuUsed < 4.0,0.0,0.0,0.0,0.0,95
+random_20,340,0,realtime = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,95
+2-wise,47,5,realtime = 1 AND lossless = 1 AND FrameBoost = 1,TileColumns >= 1.5  AND  cyclicRefresh >= 1.0,0.0,0.0,0.0,0.0,95
+3-wise,246,0,realtime = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,95
+4-wise,957,113,realtime = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  FrameBoost >= 1.0  AND  lossless >= 1.0,0.0,1.0,1.0,1.0,95
+full,216000,27000,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,AutoAltRef >= 1.0  AND  FrameBoost >= 1.0  AND  lossless >= 1.0  AND  4.0 <= Threads < 8.0,3.0,0.5714285714285715,1.0,0.4,96
+random_2,34,0,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,96
+random_5,85,7,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,TileColumns >= 3.0  AND  4.0 <= Threads < 6.0,0.0,0.0,0.0,0.0,96
+random_10,170,18,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,lagInFrames >= 12.0  AND  bitRate < 600.0,0.0,0.1379310344827586,0.1818181818181818,0.1111111111111111,96
+random_20,340,0,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,96
+2-wise,52,0,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,96
+3-wise,242,0,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,96
+4-wise,935,128,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,lossless >= 1.0  AND  FrameBoost >= 1.0  AND  AutoAltRef >= 1.0,0.0,1.0,1.0,1.0,96
+full,216000,27000,good = 1 AND AutoAltRef = 1 AND lossless = 1,0.0 <= realtime < 1.0  AND  AutoAltRef >= 1.0  AND  lossless >= 1.0  AND  6.0 <= Threads < 10.0,2.0,0.5714285714285715,1.0,0.4,97
+random_2,34,4,good = 1 AND AutoAltRef = 1 AND lossless = 1,0.0 <= constrainedQuality < 1.0  AND  lagInFrames < 16.0,1.0,0.125,0.0833333333333333,0.25,97
+random_5,85,10,good = 1 AND AutoAltRef = 1 AND lossless = 1,0.0 <= realtime < 1.0  AND  900.0 <= bitRate < 1200.0,0.0,0.0,0.0,0.0,97
+random_10,170,0,good = 1 AND AutoAltRef = 1 AND lossless = 1,,,0.0,0.0,0.0,97
+random_20,340,0,good = 1 AND AutoAltRef = 1 AND lossless = 1,,,0.0,0.0,0.0,97
+2-wise,47,6,good = 1 AND AutoAltRef = 1 AND lossless = 1,0.0 <= cyclicRefresh < 0.5  AND  bitRate < 1200.0  AND  TileColumns >= 3.0,1.0,0.08,0.0526315789473684,0.1666666666666666,97
+3-wise,250,0,good = 1 AND AutoAltRef = 1 AND lossless = 1,,,0.0,0.0,0.0,97
+4-wise,978,0,good = 1 AND AutoAltRef = 1 AND lossless = 1,,,0.0,0.0,0.0,97
+full,216000,27000,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,AutoAltRef >= 1.0  AND  FrameBoost >= 1.0  AND  TileColumns < 6.0  AND  0.0 <= good < 1.0,1.0,0.8,1.0,0.6666666666666666,98
+random_2,34,0,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,98
+random_5,85,17,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,4.0 <= cpuUsed < 6.0  AND  0.0 <= FrameBoost < 1.0,0.0,0.0,0.0,0.0,98
+random_10,170,0,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,98
+random_20,340,0,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,98
+2-wise,53,7,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= constrainedQuality < 0.5  AND  4.0 <= Threads < 6.0,0.0,0.0,0.0,0.0,98
+3-wise,238,0,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,98
+4-wise,918,121,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  AutoAltRef >= 1.0  AND  FrameBoost >= 1.0,0.0,1.0,1.0,1.0,98
+full,216000,27000,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,0.0 <= good < 1.0  AND  FrameBoost >= 1.0  AND  AutoAltRef >= 1.0  AND  2.0 <= cpuUsed < 6.0,2.0,0.5714285714285715,1.0,0.4,99
+random_2,34,2,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,variance >= 1.0  AND  0.0 <= realtime < 0.5,0.0,0.0,0.0,0.0,99
+random_5,85,0,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,99
+random_10,170,0,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,99
+random_20,340,0,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,99
+2-wise,51,0,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,99
+3-wise,245,0,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,99
+4-wise,954,0,realtime = 1 AND AutoAltRef = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,99
+full,216000,27000,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,AutoAltRef >= 1.0  AND  lossless >= 1.0  AND  FrameBoost >= 1.0  AND  lagInFrames < 4.0,1.0,0.5,1.0,0.3333333333333333,9
+random_2,34,7,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,8.0 <= lagInFrames < 12.0,0.0,0.1052631578947368,0.0833333333333333,0.1428571428571428,9
+random_5,85,0,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,9
+random_10,170,18,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= lagInFrames < 16.0  AND  4.0 <= cpuUsed < 6.0,0.0,0.0,0.0,0.0,9
+random_20,340,0,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,9
+2-wise,54,9,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,0.0 <= FrameBoost < 0.5  AND  6.0 <= cpuUsed < 8.0,0.0,0.0,0.0,0.0,9
+3-wise,247,0,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,9
+4-wise,960,0,AutoAltRef = 1 AND lossless = 1 AND FrameBoost = 1,,,0.0,0.0,0.0,9

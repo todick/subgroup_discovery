@@ -1,0 +1,701 @@
+n_conditions,sg_mean,sg_cardinality,sg_rule,best_rule,best_rule_idx,f1,precision,recall,seed,runtime
+1,23.70171545797716,499,sliced-threads = 1,sliced-threads,0,1.0,1.0,1.0,0,429.6226167678833
+2,85.24030648722034,265,no-dct-decimate = 1 AND sliced-threads = 1,sliced-threads,3,0.6796874999999999,0.7044534412955465,0.6566037735849056,0,415.91232419013977
+3,72.02438868576719,722,intra-refresh = 1 AND no-chroma-me = 1 AND no-weightb = 1,intra-refresh AND no-chroma-me AND no-weightb,1,1.0,1.0,1.0,0,423.04029297828674
+4,67.19148563554356,586,intra-refresh = 1 AND no-deblock = 1 AND no-mixed-refs = 1 AND opencl = 1,intra-refresh AND no-deblock AND no-mixed-refs AND opencl,0,1.0,1.0,1.0,0,404.53665924072266
+5,72.19962722191246,468,no-weightb = 1 AND no-dct-decimate = 1 AND pic-struct = 1 AND cpu-independent = 1 AND no-asm = 1,no-weightb AND no-dct-decimate AND pic-struct AND cpu-independent AND no-asm,0,1.0,1.0,1.0,0,415.9081470966339
+6,58.15396224788845,396,slow-firstpass = 1 AND no-fast-pskip = 1 AND no-chroma-me = 1 AND no-mbtree = 1 AND non-deterministic = 1 AND dts-compress = 1,slow-firstpass AND no-fast-pskip AND no-chroma-me AND no-mbtree AND non-deterministic AND dts-compress,0,1.0,1.0,1.0,0,410.599137544632
+7,60.83979631583268,295,slow-firstpass = 1 AND intra-refresh = 1 AND open-gop = 1 AND no-chroma-me = 1 AND no-mixed-refs = 1 AND cpu-independent = 1 AND no-asm = 1,slow-firstpass AND intra-refresh AND open-gop AND no-chroma-me AND no-mixed-refs AND cpu-independent AND no-asm,0,1.0,1.0,1.0,0,412.79322242736816
+1,55.22519745266851,499,sliced-threads = 1,sliced-threads,1,1.0,1.0,1.0,1,406.48844265937805
+2,53.69881157334618,815,no-fast-pskip = 1 AND cpu-independent = 1,no-fast-pskip AND cpu-independent,1,1.0,1.0,1.0,1,407.6164436340332
+3,53.45826680902704,631,no-fast-pskip = 1 AND no-mixed-refs = 1 AND cpu-independent = 1,no-fast-pskip AND no-mixed-refs AND cpu-independent,0,1.0,1.0,1.0,1,409.9237058162689
+4,79.74474202273568,575,no-scenecut = 1 AND no-psy = 1 AND non-deterministic = 1 AND no-asm = 1,no-scenecut AND no-psy AND non-deterministic AND no-asm,1,1.0,1.0,1.0,1,407.18702459335327
+5,12.114043420151742,524,intra-refresh = 1 AND open-gop = 1 AND tff = 1 AND no-fast-pskip = 1 AND no-8x8dct = 1,intra-refresh AND open-gop AND tff AND no-fast-pskip AND no-8x8dct,1,1.0,1.0,1.0,1,410.6366291046143
+6,60.8772577375239,397,no-scenecut = 1 AND intra-refresh = 1 AND open-gop = 1 AND no-psy = 1 AND no-asm = 1 AND dts-compress = 1,no-scenecut AND intra-refresh AND open-gop AND no-psy AND no-asm AND dts-compress,0,1.0,1.0,1.0,1,423.9157876968384
+7,36.272773367693134,314,slow-firstpass = 1 AND intra-refresh = 1 AND no-cabac = 1 AND no-chroma-me = 1 AND no-mbtree = 1 AND non-deterministic = 1 AND no-asm = 1,slow-firstpass AND intra-refresh AND no-cabac AND no-chroma-me AND no-mbtree AND non-deterministic AND no-asm,0,1.0,1.0,1.0,1,427.1214590072632
+1,39.33980495272595,499,sliced-threads = 1,sliced-threads,0,1.0,1.0,1.0,10,414.9095470905304
+2,76.92208542575258,883,intra-refresh = 1 AND aud = 1,intra-refresh AND NOT aud,1,1.0,1.0,1.0,10,431.3552703857422
+3,28.057986359698777,753,tff = 1 AND non-deterministic = 1 AND opencl = 1,tff AND non-deterministic AND opencl,1,1.0,1.0,1.0,10,431.5144486427307
+4,18.782910011633888,587,open-gop = 1 AND no-weightb = 1 AND no-mbtree = 1 AND opencl = 1,open-gop AND no-weightb AND no-mbtree AND opencl,0,1.0,1.0,1.0,10,411.0583620071411
+5,43.628731734915824,451,slow-firstpass = 1 AND constrained-intra = 1 AND no-mbtree = 1 AND no-asm = 1 AND dts-compress = 1,slow-firstpass AND constrained-intra AND no-mbtree AND no-asm AND dts-compress,0,1.0,1.0,1.0,10,402.32433247566223
+6,8.921813053543566,404,slow-firstpass = 1 AND tff = 1 AND no-mixed-refs = 1 AND no-psy = 1 AND no-weightb = 1 AND no-asm = 1,slow-firstpass AND tff AND no-mixed-refs AND no-psy AND no-weightb AND no-asm,0,1.0,1.0,1.0,10,418.07977652549744
+7,45.86209977035279,332,slow-firstpass = 1 AND no-scenecut = 1 AND no-weightb = 1 AND no-mbtree = 1 AND pic-struct = 1 AND no-asm = 1 AND aud = 1,slow-firstpass AND no-scenecut AND no-weightb AND no-mbtree AND pic-struct AND no-asm AND NOT aud,0,1.0,1.0,1.0,10,395.30616426467896
+1,74.61483926069906,499,sliced-threads = 1,sliced-threads,2,1.0,1.0,1.0,11,403.762419462204
+2,40.85575326443302,856,constrained-intra = 1 AND cpu-independent = 1,constrained-intra AND cpu-independent,0,1.0,1.0,1.0,11,406.9291338920593
+3,23.684728496792964,722,no-8x8dct = 1 AND pic-struct = 1 AND dts-compress = 1,no-8x8dct AND pic-struct AND dts-compress,0,1.0,1.0,1.0,11,403.60563230514526
+4,105.15651938895992,607,no-cabac = 1 AND bff = 1 AND no-mixed-refs = 1 AND non-deterministic = 1,no-cabac AND bff AND no-mixed-refs AND non-deterministic,1,1.0,1.0,1.0,11,393.6907444000244
+5,27.78807084100844,471,intra-refresh = 1 AND tff = 1 AND no-fast-pskip = 1 AND no-mixed-refs = 1 AND no-asm = 1,intra-refresh AND tff AND no-fast-pskip AND no-mixed-refs AND no-asm,0,1.0,1.0,1.0,11,385.2600486278534
+6,50.782124060885,396,slow-firstpass = 1 AND no-chroma-me = 1 AND no-mixed-refs = 1 AND no-dct-decimate = 1 AND non-deterministic = 1 AND cpu-independent = 1,slow-firstpass AND no-chroma-me AND no-mixed-refs AND no-dct-decimate AND non-deterministic AND cpu-independent,0,1.0,1.0,1.0,11,392.36800241470337
+7,101.8559987812986,314,slow-firstpass = 1 AND intra-refresh = 1 AND no-cabac = 1 AND tff = 1 AND bff = 1 AND no-8x8dct = 1 AND dts-compress = 1,slow-firstpass AND intra-refresh AND no-cabac AND tff AND bff AND no-8x8dct AND dts-compress,0,1.0,1.0,1.0,11,392.9023895263672
+1,63.4288800336856,499,sliced-threads = 1,sliced-threads,0,1.0,1.0,1.0,12,414.2185001373291
+2,71.94816620926179,926,no-dct-decimate = 1 AND aud = 1,no-dct-decimate AND NOT aud,1,1.0,1.0,1.0,12,408.9689848423004
+3,57.593533349669656,180,tff = 1 AND bff = 1 AND sliced-threads = 1,tff AND bff AND sliced-threads,0,1.0,1.0,1.0,12,394.5027844905853
+4,20.400768940540647,572,slow-firstpass = 1 AND intra-refresh = 1 AND no-chroma-me = 1 AND opencl = 1,slow-firstpass AND intra-refresh AND no-chroma-me AND opencl,0,1.0,1.0,1.0,12,398.0285918712616
+5,69.46889590533452,407,intra-refresh = 1 AND bff = 1 AND no-chroma-me = 1 AND cpu-independent = 1 AND dts-compress = 1,intra-refresh AND bff AND no-chroma-me AND cpu-independent AND dts-compress,1,1.0,1.0,1.0,12,394.5006303787232
+6,31.6154537870054,376,slow-firstpass = 1 AND no-cabac = 1 AND tff = 1 AND no-fast-pskip = 1 AND no-mbtree = 1 AND pic-struct = 1,slow-firstpass AND no-cabac AND tff AND no-fast-pskip AND no-mbtree AND pic-struct,0,1.0,1.0,1.0,12,385.4886076450348
+7,24.712747855204007,332,slow-firstpass = 1 AND no-scenecut = 1 AND tff = 1 AND no-fast-pskip = 1 AND no-mixed-refs = 1 AND no-weightb = 1 AND no-mbtree = 1,slow-firstpass AND no-scenecut AND tff AND no-fast-pskip AND no-mixed-refs AND no-weightb AND no-mbtree,0,1.0,1.0,1.0,12,400.6843361854553
+1,28.59909404675399,499,sliced-threads = 1,sliced-threads,0,1.0,1.0,1.0,13,399.89615201950073
+2,98.87962742580828,812,no-mixed-refs = 1 AND cpu-independent = 1,no-mixed-refs AND cpu-independent,1,1.0,1.0,1.0,13,387.8055911064148
+3,106.00428267225304,694,no-scenecut = 1 AND no-deblock = 1 AND aud = 1,no-scenecut AND no-deblock AND NOT aud,1,1.0,1.0,1.0,13,401.21364283561707
+4,69.04318755772142,649,open-gop = 1 AND no-cabac = 1 AND constrained-intra = 1 AND no-dct-decimate = 1,open-gop AND no-cabac AND constrained-intra AND no-dct-decimate,1,1.0,1.0,1.0,13,391.8499708175659
+5,25.09158406408351,532,no-scenecut = 1 AND intra-refresh = 1 AND open-gop = 1 AND tff = 1 AND no-psy = 1,no-scenecut AND intra-refresh AND open-gop AND tff AND no-psy,0,1.0,1.0,1.0,13,398.89628982543945
+6,23.284887677745257,348,no-scenecut = 1 AND no-fast-pskip = 1 AND no-8x8dct = 1 AND no-mbtree = 1 AND no-dct-decimate = 1 AND cpu-independent = 1,no-scenecut AND no-fast-pskip AND no-8x8dct AND no-mbtree AND no-dct-decimate AND cpu-independent,0,1.0,1.0,1.0,13,389.7912714481354
+7,23.284887677745257,348,slow-firstpass = 1 AND intra-refresh = 1 AND no-fast-pskip = 1 AND no-8x8dct = 1 AND no-chroma-me = 1 AND no-weightb = 1 AND no-dct-decimate = 1,slow-firstpass AND intra-refresh AND no-fast-pskip AND no-8x8dct AND no-chroma-me AND no-weightb AND no-dct-decimate,0,1.0,1.0,1.0,13,385.4083693027496
+1,82.02083989399871,499,sliced-threads = 1,sliced-threads,0,1.0,1.0,1.0,14,416.5487043857575
+2,42.54886338112725,240,no-mixed-refs = 1 AND sliced-threads = 1,no-mixed-refs AND sliced-threads,0,1.0,1.0,1.0,14,412.8705279827118
+3,107.3851760235244,650,no-chroma-me = 1 AND no-weightb = 1 AND aud = 1,no-chroma-me AND no-weightb AND NOT aud,1,1.0,1.0,1.0,14,411.2089691162109
+4,59.493636629049966,587,intra-refresh = 1 AND pic-struct = 1 AND non-deterministic = 1 AND opencl = 1,intra-refresh AND pic-struct AND non-deterministic AND opencl,0,1.0,1.0,1.0,14,406.6899497509002
+5,36.25986353885322,501,no-deblock = 1 AND no-fast-pskip = 1 AND no-8x8dct = 1 AND no-weightb = 1 AND no-mbtree = 1,no-deblock AND no-fast-pskip AND no-8x8dct AND no-weightb AND no-mbtree,0,1.0,1.0,1.0,14,409.19053840637207
+6,39.78814056607749,335,intra-refresh = 1 AND open-gop = 1 AND no-deblock = 1 AND no-psy = 1 AND no-mbtree = 1 AND dts-compress = 1,intra-refresh AND open-gop AND no-deblock AND no-psy AND no-mbtree AND dts-compress,0,1.0,1.0,1.0,14,407.4411809444428
+7,64.11739438532032,303,slow-firstpass = 1 AND open-gop = 1 AND no-8x8dct = 1 AND no-weightb = 1 AND no-dct-decimate = 1 AND aud = 1 AND dts-compress = 1,slow-firstpass AND open-gop AND no-8x8dct AND no-weightb AND no-dct-decimate AND NOT aud AND dts-compress,3,1.0,1.0,1.0,14,403.9466650485992
+1,86.73574332346541,499,sliced-threads = 1,sliced-threads,1,1.0,1.0,1.0,15,422.13108086586
+2,74.67059968438724,268,no-fast-pskip = 1 AND sliced-threads = 1,slow-firstpass AND no-fast-pskip AND no-weightb AND no-mbtree AND NOT opencl,0,0.1323529411764706,0.1928571428571428,0.1007462686567164,15,419.7040190696716
+3,40.838373090777885,871,non-deterministic = 1 AND aud = 1 AND opencl = 1,non-deterministic AND NOT aud AND opencl,0,1.0,1.0,1.0,15,428.7502927780152
+4,83.9038105053654,591,no-cabac = 1 AND bff = 1 AND no-chroma-me = 1 AND no-mbtree = 1,no-cabac AND bff AND no-chroma-me AND no-mbtree,1,1.0,1.0,1.0,15,417.23754048347473
+5,40.920460746790965,496,intra-refresh = 1 AND open-gop = 1 AND tff = 1 AND pic-struct = 1 AND opencl = 1,intra-refresh AND open-gop AND tff AND pic-struct AND opencl,1,1.0,1.0,1.0,15,412.11763405799866
+6,107.7676298572804,407,no-scenecut = 1 AND bff = 1 AND constrained-intra = 1 AND no-chroma-me = 1 AND dts-compress = 1 AND opencl = 1,no-scenecut AND bff AND constrained-intra AND no-chroma-me AND dts-compress AND opencl,1,1.0,1.0,1.0,15,413.7402687072754
+7,55.773958027499816,247,slow-firstpass = 1 AND open-gop = 1 AND no-deblock = 1 AND no-chroma-me = 1 AND no-weightb = 1 AND cpu-independent = 1 AND dts-compress = 1,slow-firstpass AND open-gop AND no-deblock AND no-chroma-me AND no-weightb AND cpu-independent AND dts-compress,0,1.0,1.0,1.0,15,401.0042271614074
+1,88.69556931456579,499,sliced-threads = 1,sliced-threads,2,1.0,1.0,1.0,16,410.6317622661591
+2,39.76897491620044,917,no-psy = 1 AND dts-compress = 1,no-psy AND dts-compress,0,1.0,1.0,1.0,16,419.564293384552
+3,60.878037894545,783,no-8x8dct = 1 AND no-mixed-refs = 1 AND no-weightb = 1,no-8x8dct AND no-mixed-refs AND no-weightb,1,1.0,1.0,1.0,16,423.98491644859314
+4,12.368275703781933,490,intra-refresh = 1 AND no-deblock = 1 AND no-8x8dct = 1 AND dts-compress = 1,intra-refresh AND no-deblock AND no-8x8dct AND dts-compress,0,1.0,1.0,1.0,16,409.1266453266144
+5,18.184881237480283,476,open-gop = 1 AND no-dct-decimate = 1 AND non-deterministic = 1 AND aud = 1 AND opencl = 1,open-gop AND no-dct-decimate AND non-deterministic AND NOT aud AND opencl,0,1.0,1.0,1.0,16,422.5713813304901
+6,31.858861302653047,433,no-scenecut = 1 AND intra-refresh = 1 AND no-deblock = 1 AND no-mixed-refs = 1 AND no-psy = 1 AND no-dct-decimate = 1,no-scenecut AND intra-refresh AND no-deblock AND no-mixed-refs AND no-psy AND no-dct-decimate,0,1.0,1.0,1.0,16,408.1539626121521
+7,78.19999821702196,312,slow-firstpass = 1 AND intra-refresh = 1 AND no-deblock = 1 AND bff = 1 AND no-chroma-me = 1 AND no-dct-decimate = 1 AND opencl = 1,slow-firstpass AND intra-refresh AND no-deblock AND bff AND no-chroma-me AND no-dct-decimate AND opencl,1,1.0,1.0,1.0,16,414.7014579772949
+1,25.80275026906084,499,sliced-threads = 1,sliced-threads,1,1.0,1.0,1.0,17,440.04020285606384
+2,65.4161597079335,912,no-mbtree = 1 AND dts-compress = 1,no-mbtree AND dts-compress,1,1.0,1.0,1.0,17,443.5560677051544
+3,52.751632480585,796,no-8x8dct = 1 AND no-mixed-refs = 1 AND non-deterministic = 1,no-8x8dct AND no-mixed-refs AND non-deterministic,0,1.0,1.0,1.0,17,439.1235749721527
+4,24.944832917827156,481,no-chroma-me = 1 AND no-mbtree = 1 AND cpu-independent = 1 AND dts-compress = 1,no-chroma-me AND no-mbtree AND cpu-independent AND dts-compress,0,1.0,1.0,1.0,17,427.78468012809753
+5,45.81130815418848,410,bff = 1 AND no-fast-pskip = 1 AND no-weightb = 1 AND no-asm = 1 AND aud = 1,bff AND no-fast-pskip AND no-weightb AND no-asm AND NOT aud,0,1.0,1.0,1.0,17,437.4216284751892
+6,80.88913021097119,384,no-scenecut = 1 AND open-gop = 1 AND constrained-intra = 1 AND no-weightb = 1 AND non-deterministic = 1 AND no-asm = 1,no-scenecut AND open-gop AND constrained-intra AND no-weightb AND non-deterministic AND no-asm,0,1.0,1.0,1.0,17,415.41130685806274
+7,39.99688415842152,262,slow-firstpass = 1 AND intra-refresh = 1 AND constrained-intra = 1 AND no-fast-pskip = 1 AND no-8x8dct = 1 AND no-mbtree = 1 AND cpu-independent = 1,slow-firstpass AND intra-refresh AND constrained-intra AND no-fast-pskip AND no-8x8dct AND no-mbtree AND cpu-independent,0,1.0,1.0,1.0,17,405.4127726554871
+1,87.69357132935323,499,sliced-threads = 1,sliced-threads,1,1.0,1.0,1.0,18,408.4422805309296
+2,89.65765936544115,847,no-dct-decimate = 1 AND cpu-independent = 1,no-dct-decimate AND cpu-independent,1,1.0,1.0,1.0,18,407.0968074798584
+3,54.2675753227586,654,no-deblock = 1 AND no-chroma-me = 1 AND aud = 1,no-deblock AND no-chroma-me AND NOT aud,0,1.0,1.0,1.0,18,401.8542368412018
+4,60.3612093595791,591,no-scenecut = 1 AND intra-refresh = 1 AND no-chroma-me = 1 AND dts-compress = 1,no-scenecut AND intra-refresh AND no-chroma-me AND dts-compress,0,1.0,1.0,1.0,18,398.9025025367737
+5,75.2273015133812,449,intra-refresh = 1 AND tff = 1 AND no-chroma-me = 1 AND no-dct-decimate = 1 AND no-asm = 1,intra-refresh AND tff AND no-chroma-me AND no-dct-decimate AND no-asm,0,1.0,1.0,1.0,18,394.44033193588257
+6,25.33309198628778,317,slow-firstpass = 1 AND no-deblock = 1 AND no-chroma-me = 1 AND no-psy = 1 AND cpu-independent = 1 AND aud = 1,slow-firstpass AND no-deblock AND no-chroma-me AND no-psy AND cpu-independent AND NOT aud,0,1.0,1.0,1.0,18,395.3512873649597
+7,41.46719147934278,302,slow-firstpass = 1 AND no-scenecut = 1 AND intra-refresh = 1 AND no-chroma-me = 1 AND no-psy = 1 AND no-mbtree = 1 AND aud = 1,slow-firstpass AND no-scenecut AND intra-refresh AND no-chroma-me AND no-psy AND no-mbtree AND NOT aud,0,1.0,1.0,1.0,18,395.51612544059753
+1,69.46695679179967,499,sliced-threads = 1,sliced-threads,0,1.0,1.0,1.0,19,406.735199213028
+2,14.8784505238512,916,no-mixed-refs = 1 AND aud = 1,no-mixed-refs AND NOT aud,1,1.0,1.0,1.0,19,398.9064447879791
+3,39.13378643264433,711,intra-refresh = 1 AND bff = 1 AND no-8x8dct = 1,intra-refresh AND bff AND no-8x8dct,0,1.0,1.0,1.0,19,395.9592866897583
+4,89.27758851633433,508,constrained-intra = 1 AND no-weightb = 1 AND cpu-independent = 1 AND no-asm = 1,constrained-intra AND no-weightb AND cpu-independent AND no-asm,1,1.0,1.0,1.0,19,394.81907963752747
+5,32.05811594541161,398,slow-firstpass = 1 AND constrained-intra = 1 AND no-mbtree = 1 AND pic-struct = 1 AND cpu-independent = 1,slow-firstpass AND constrained-intra AND no-mbtree AND pic-struct AND cpu-independent,0,1.0,1.0,1.0,19,398.6092383861542
+6,88.96388883955981,376,intra-refresh = 1 AND bff = 1 AND no-chroma-me = 1 AND pic-struct = 1 AND aud = 1 AND dts-compress = 1,intra-refresh AND bff AND no-chroma-me AND pic-struct AND NOT aud AND dts-compress,1,1.0,1.0,1.0,19,395.8353865146637
+7,45.398403345044144,354,slow-firstpass = 1 AND no-scenecut = 1 AND intra-refresh = 1 AND bff = 1 AND no-asm = 1 AND dts-compress = 1 AND opencl = 1,slow-firstpass AND no-scenecut AND intra-refresh AND bff AND no-asm AND dts-compress AND opencl,0,1.0,1.0,1.0,19,395.96237111091614
+1,7.912075977571574,499,sliced-threads = 1,sliced-threads,1,1.0,1.0,1.0,2,415.92811584472656
+2,62.762873743648846,266,no-weightb = 1 AND sliced-threads = 1,no-weightb AND sliced-threads,0,1.0,1.0,1.0,2,411.2468194961548
+3,46.48061651871871,704,no-deblock = 1 AND no-8x8dct = 1 AND no-asm = 1,no-deblock AND no-8x8dct AND no-asm,0,1.0,1.0,1.0,2,405.5029270648956
+4,70.48984180630272,600,no-chroma-me = 1 AND no-psy = 1 AND pic-struct = 1 AND non-deterministic = 1,no-chroma-me AND no-psy AND pic-struct AND non-deterministic,1,1.0,1.0,1.0,2,404.1783535480499
+5,19.328348594754765,547,no-scenecut = 1 AND intra-refresh = 1 AND no-8x8dct = 1 AND no-chroma-me = 1 AND pic-struct = 1,no-scenecut AND intra-refresh AND no-8x8dct AND no-chroma-me AND pic-struct,0,1.0,1.0,1.0,2,397.3907277584076
+6,27.008677364851764,422,no-scenecut = 1 AND open-gop = 1 AND no-cabac = 1 AND no-mixed-refs = 1 AND no-psy = 1 AND aud = 1,no-scenecut AND open-gop AND no-cabac AND no-mixed-refs AND no-psy AND NOT aud,0,1.0,1.0,1.0,2,393.1631734371185
+7,15.1522726013744,307,slow-firstpass = 1 AND no-scenecut = 1 AND intra-refresh = 1 AND no-chroma-me = 1 AND no-weightb = 1 AND no-dct-decimate = 1 AND aud = 1,slow-firstpass AND no-scenecut AND intra-refresh AND no-chroma-me AND no-weightb AND no-dct-decimate AND NOT aud,0,1.0,1.0,1.0,2,408.4867169857025
+1,91.4961428421589,499,sliced-threads = 1,sliced-threads,2,1.0,1.0,1.0,20,433.540246963501
+2,71.7676490804905,841,no-psy = 1 AND cpu-independent = 1,no-psy AND cpu-independent,1,1.0,1.0,1.0,20,433.8463377952576
+3,69.93358836508969,776,open-gop = 1 AND tff = 1 AND opencl = 1,open-gop AND tff AND opencl,1,1.0,1.0,1.0,20,396.5865466594696
+4,99.38752041264408,587,slow-firstpass = 1 AND no-scenecut = 1 AND no-8x8dct = 1 AND non-deterministic = 1,slow-firstpass AND no-scenecut AND no-8x8dct AND non-deterministic,1,1.0,1.0,1.0,20,405.7299978733063
+5,84.94188967156762,513,no-chroma-me = 1 AND no-psy = 1 AND no-mbtree = 1 AND no-dct-decimate = 1 AND non-deterministic = 1,no-chroma-me AND no-psy AND no-mbtree AND no-dct-decimate AND non-deterministic,1,1.0,1.0,1.0,20,401.4394764900208
+6,64.32367537114904,435,no-scenecut = 1 AND intra-refresh = 1 AND no-deblock = 1 AND bff = 1 AND no-mbtree = 1 AND no-dct-decimate = 1,no-scenecut AND intra-refresh AND no-deblock AND bff AND no-mbtree AND no-dct-decimate,1,1.0,1.0,1.0,20,402.1490354537964
+7,41.76696938328922,294,slow-firstpass = 1 AND intra-refresh = 1 AND no-deblock = 1 AND tff = 1 AND no-dct-decimate = 1 AND non-deterministic = 1 AND cpu-independent = 1,slow-firstpass AND intra-refresh AND no-deblock AND tff AND no-dct-decimate AND non-deterministic AND cpu-independent,0,1.0,1.0,1.0,20,402.42427229881287
+1,69.97194994751212,499,sliced-threads = 1,sliced-threads,1,1.0,1.0,1.0,21,420.07037329673767
+2,102.44757639765878,219,no-psy = 1 AND sliced-threads = 1,no-psy AND sliced-threads,1,1.0,1.0,1.0,21,424.5116090774536
+3,81.97271043073906,623,open-gop = 1 AND tff = 1 AND cpu-independent = 1,open-gop AND tff AND cpu-independent,1,1.0,1.0,1.0,21,417.2046871185303
+4,69.79521389538154,473,no-cabac = 1 AND no-fast-pskip = 1 AND no-8x8dct = 1 AND cpu-independent = 1,no-cabac AND no-fast-pskip AND no-8x8dct AND cpu-independent,1,1.0,1.0,1.0,21,420.0777530670166
+5,46.6673764765136,502,intra-refresh = 1 AND open-gop = 1 AND bff = 1 AND dts-compress = 1 AND opencl = 1,intra-refresh AND open-gop AND bff AND dts-compress AND opencl,0,1.0,1.0,1.0,21,415.1931502819061
+6,25.83080900119695,476,slow-firstpass = 1 AND no-8x8dct = 1 AND no-chroma-me = 1 AND no-mixed-refs = 1 AND pic-struct = 1 AND opencl = 1,slow-firstpass AND no-8x8dct AND no-chroma-me AND no-mixed-refs AND pic-struct AND opencl,0,1.0,1.0,1.0,21,400.6362590789795
+7,17.83115276073285,297,slow-firstpass = 1 AND intra-refresh = 1 AND open-gop = 1 AND no-dct-decimate = 1 AND cpu-independent = 1 AND no-asm = 1 AND aud = 1,slow-firstpass AND intra-refresh AND open-gop AND no-dct-decimate AND cpu-independent AND no-asm AND NOT aud,0,1.0,1.0,1.0,21,396.5243747234345
+1,99.2063195941173,499,sliced-threads = 1,sliced-threads,0,1.0,1.0,1.0,22,422.0265414714813
+2,20.95737027320711,849,no-scenecut = 1 AND cpu-independent = 1,no-scenecut AND cpu-independent,0,1.0,1.0,1.0,22,404.2921371459961
+3,96.18689885243664,756,no-deblock = 1 AND no-mixed-refs = 1 AND no-dct-decimate = 1,no-deblock AND no-mixed-refs AND no-dct-decimate,1,1.0,1.0,1.0,22,398.9415774345398
+4,98.15113497421146,167,no-scenecut = 1 AND intra-refresh = 1 AND bff = 1 AND sliced-threads = 1,no-scenecut AND intra-refresh AND bff AND sliced-threads,1,1.0,1.0,1.0,22,400.53511905670166
+5,99.93343070333724,478,no-scenecut = 1 AND tff = 1 AND bff = 1 AND non-deterministic = 1 AND opencl = 1,no-scenecut AND tff AND bff AND non-deterministic AND opencl,1,1.0,1.0,1.0,22,398.8483259677887
+6,93.55477031655988,336,slow-firstpass = 1 AND open-gop = 1 AND no-8x8dct = 1 AND no-chroma-me = 1 AND no-psy = 1 AND cpu-independent = 1,slow-firstpass AND open-gop AND no-8x8dct AND no-chroma-me AND no-psy AND cpu-independent,1,1.0,1.0,1.0,22,399.8112425804138
+7,74.15344179195465,277,slow-firstpass = 1 AND no-scenecut = 1 AND no-deblock = 1 AND no-8x8dct = 1 AND no-psy = 1 AND no-weightb = 1 AND dts-compress = 1,slow-firstpass AND no-scenecut AND no-deblock AND no-8x8dct AND no-psy AND no-weightb AND dts-compress,1,1.0,1.0,1.0,22,398.1445217132568
+1,70.67888755289214,499,sliced-threads = 1,sliced-threads,0,1.0,1.0,1.0,23,416.25070095062256
+2,45.16142654892206,914,no-chroma-me = 1 AND aud = 1,no-chroma-me AND NOT aud,1,1.0,1.0,1.0,23,412.0286021232605
+3,50.9809004407209,711,intra-refresh = 1 AND no-chroma-me = 1 AND no-asm = 1,intra-refresh AND no-chroma-me AND no-asm,2,1.0,1.0,1.0,23,404.5270869731903
+4,64.91536245661749,559,slow-firstpass = 1 AND intra-refresh = 1 AND no-mbtree = 1 AND pic-struct = 1,slow-firstpass AND intra-refresh AND no-mbtree AND pic-struct,0,1.0,1.0,1.0,23,403.892573595047
+5,30.394059394202998,491,no-deblock = 1 AND tff = 1 AND constrained-intra = 1 AND no-psy = 1 AND opencl = 1,no-deblock AND tff AND constrained-intra AND no-psy AND opencl,0,1.0,1.0,1.0,23,403.6625821590424
+6,95.00188598367303,388,intra-refresh = 1 AND open-gop = 1 AND bff = 1 AND constrained-intra = 1 AND no-8x8dct = 1 AND aud = 1,intra-refresh AND open-gop AND bff AND constrained-intra AND no-8x8dct AND NOT aud,1,1.0,1.0,1.0,23,403.4751732349396
+7,59.487350414514935,326,slow-firstpass = 1 AND open-gop = 1 AND no-mixed-refs = 1 AND no-psy = 1 AND no-mbtree = 1 AND pic-struct = 1 AND opencl = 1,slow-firstpass AND open-gop AND no-mixed-refs AND no-psy AND no-mbtree AND pic-struct AND opencl,0,1.0,1.0,1.0,23,401.05748414993286
+1,46.65826539076031,499,sliced-threads = 1,sliced-threads,0,1.0,1.0,1.0,24,429.230464220047
+2,104.5672377425905,933,intra-refresh = 1 AND no-8x8dct = 1,intra-refresh AND no-8x8dct,1,1.0,1.0,1.0,24,399.654061794281
+3,75.27049221450542,803,slow-firstpass = 1 AND open-gop = 1 AND pic-struct = 1,slow-firstpass AND open-gop AND pic-struct,1,1.0,1.0,1.0,24,404.4665813446045
+4,44.4286369112024,534,no-8x8dct = 1 AND no-psy = 1 AND non-deterministic = 1 AND dts-compress = 1,no-8x8dct AND no-psy AND non-deterministic AND dts-compress,0,1.0,1.0,1.0,24,418.6080629825592
+5,68.84994556488294,424,bff = 1 AND no-chroma-me = 1 AND no-weightb = 1 AND aud = 1 AND dts-compress = 1,bff AND no-chroma-me AND no-weightb AND NOT aud AND dts-compress,0,1.0,1.0,1.0,24,411.9650812149048
+6,89.78623185607617,365,intra-refresh = 1 AND tff = 1 AND constrained-intra = 1 AND no-fast-pskip = 1 AND no-8x8dct = 1 AND aud = 1,intra-refresh AND tff AND constrained-intra AND no-fast-pskip AND no-8x8dct AND NOT aud,1,1.0,1.0,1.0,24,412.3667747974396
+7,105.87455860672314,367,slow-firstpass = 1 AND no-cabac = 1 AND no-fast-pskip = 1 AND no-8x8dct = 1 AND no-mixed-refs = 1 AND no-psy = 1 AND pic-struct = 1,slow-firstpass AND no-cabac AND no-fast-pskip AND no-8x8dct AND no-mixed-refs AND no-psy AND pic-struct,1,1.0,1.0,1.0,24,405.8372800350189
+1,17.592036343167848,499,sliced-threads = 1,sliced-threads,0,1.0,1.0,1.0,25,442.1811399459839
+2,85.08484511557721,239,constrained-intra = 1 AND sliced-threads = 1,constrained-intra AND sliced-threads,0,1.0,1.0,1.0,25,436.4214153289795
+3,59.54254691299094,715,no-scenecut = 1 AND no-8x8dct = 1 AND no-weightb = 1,no-scenecut AND no-8x8dct AND no-weightb,1,1.0,1.0,1.0,25,428.3590438365936
+4,101.6400505507688,554,intra-refresh = 1 AND open-gop = 1 AND constrained-intra = 1 AND cpu-independent = 1,intra-refresh AND open-gop AND constrained-intra AND cpu-independent,1,1.0,1.0,1.0,25,406.40728425979614
+5,105.96118331705206,460,bff = 1 AND no-chroma-me = 1 AND no-psy = 1 AND no-dct-decimate = 1 AND no-asm = 1,bff AND no-chroma-me AND no-psy AND no-dct-decimate AND no-asm,1,1.0,1.0,1.0,25,425.8952646255493
+6,31.444697833064644,383,no-scenecut = 1 AND intra-refresh = 1 AND open-gop = 1 AND no-deblock = 1 AND no-dct-decimate = 1 AND aud = 1,no-scenecut AND intra-refresh AND open-gop AND no-deblock AND no-dct-decimate AND NOT aud,0,1.0,1.0,1.0,25,440.9793927669525
+7,7.505942180275518,327,slow-firstpass = 1 AND intra-refresh = 1 AND no-cabac = 1 AND no-8x8dct = 1 AND no-asm = 1 AND aud = 1 AND opencl = 1,NOT constrained-intra AND NOT no-mixed-refs AND NOT sliced-threads,3,0.0115606936416184,0.007918552036199,0.0214067278287461,25,407.7597522735596
+1,62.60049800864812,499,sliced-threads = 1,sliced-threads,1,1.0,1.0,1.0,26,411.7919023036957
+2,107.28589425216836,812,no-mixed-refs = 1 AND cpu-independent = 1,no-mixed-refs AND cpu-independent,1,1.0,1.0,1.0,26,404.8758850097656
+3,62.17232920935702,740,no-scenecut = 1 AND bff = 1 AND opencl = 1,no-scenecut AND bff AND opencl,1,1.0,1.0,1.0,26,419.4512605667114
+4,84.26638359018021,601,constrained-intra = 1 AND no-dct-decimate = 1 AND non-deterministic = 1 AND no-asm = 1,constrained-intra AND no-dct-decimate AND non-deterministic AND no-asm,1,1.0,1.0,1.0,26,397.14968967437744
+5,92.36666802611268,454,slow-firstpass = 1 AND no-deblock = 1 AND no-fast-pskip = 1 AND no-chroma-me = 1 AND no-weightb = 1,slow-firstpass AND no-deblock AND no-fast-pskip AND no-chroma-me AND no-weightb,1,1.0,1.0,1.0,26,392.50413489341736
+6,23.472158514008527,408,slow-firstpass = 1 AND no-scenecut = 1 AND bff = 1 AND constrained-intra = 1 AND no-psy = 1 AND opencl = 1,slow-firstpass AND no-scenecut AND bff AND constrained-intra AND no-psy AND opencl,0,1.0,1.0,1.0,26,393.8465292453766
+7,72.85247462444578,310,slow-firstpass = 1 AND no-scenecut = 1 AND intra-refresh = 1 AND no-fast-pskip = 1 AND no-mbtree = 1 AND no-asm = 1 AND opencl = 1,slow-firstpass AND no-scenecut AND intra-refresh AND no-fast-pskip AND no-mbtree AND no-asm AND opencl,1,1.0,1.0,1.0,26,390.5498583316803
+1,53.17820942824183,499,sliced-threads = 1,sliced-threads,0,1.0,1.0,1.0,27,408.6847445964813
+2,100.0828305964756,799,no-mbtree = 1 AND cpu-independent = 1,no-mbtree AND cpu-independent,1,1.0,1.0,1.0,27,400.7775845527649
+3,42.94040578329008,687,no-scenecut = 1 AND no-weightb = 1 AND opencl = 1,no-scenecut AND no-weightb AND opencl,1,1.0,1.0,1.0,27,403.02541851997375
+4,94.62708011107748,499,slow-firstpass = 1 AND constrained-intra = 1 AND no-fast-pskip = 1 AND cpu-independent = 1,slow-firstpass AND constrained-intra AND no-fast-pskip AND cpu-independent,1,1.0,1.0,1.0,27,397.3827707767487
+5,65.50961471365748,453,no-scenecut = 1 AND constrained-intra = 1 AND no-mixed-refs = 1 AND no-mbtree = 1 AND opencl = 1,no-scenecut AND constrained-intra AND no-mixed-refs AND no-mbtree AND opencl,1,1.0,1.0,1.0,27,393.9164273738861
+6,37.70727610762594,351,intra-refresh = 1 AND constrained-intra = 1 AND no-fast-pskip = 1 AND no-mixed-refs = 1 AND no-weightb = 1 AND aud = 1,intra-refresh AND constrained-intra AND no-fast-pskip AND no-mixed-refs AND no-weightb AND NOT aud,0,1.0,1.0,1.0,27,389.8113644123077
+7,58.97332478742928,337,slow-firstpass = 1 AND open-gop = 1 AND bff = 1 AND constrained-intra = 1 AND no-chroma-me = 1 AND no-psy = 1 AND non-deterministic = 1,slow-firstpass AND open-gop AND bff AND constrained-intra AND no-chroma-me AND no-psy AND non-deterministic,1,1.0,1.0,1.0,27,391.06967544555664
+1,52.61556504010033,499,sliced-threads = 1,sliced-threads,0,1.0,1.0,1.0,28,405.0679783821106
+2,36.08670388680461,216,cpu-independent = 1 AND sliced-threads = 1,cpu-independent AND sliced-threads,0,1.0,1.0,1.0,28,407.4172537326813
+3,100.1210262060962,814,open-gop = 1 AND no-deblock = 1 AND pic-struct = 1,open-gop AND no-deblock AND pic-struct,1,1.0,1.0,1.0,28,395.04314732551575
+4,92.68015289053984,623,tff = 1 AND no-chroma-me = 1 AND no-weightb = 1 AND no-mbtree = 1,tff AND no-chroma-me AND no-weightb AND no-mbtree,1,1.0,1.0,1.0,28,393.0306961536408
+5,72.44618285160581,436,intra-refresh = 1 AND tff = 1 AND bff = 1 AND cpu-independent = 1 AND no-asm = 1,intra-refresh AND tff AND bff AND cpu-independent AND no-asm,1,1.0,1.0,1.0,28,392.2158501148224
+6,94.36966879429964,347,slow-firstpass = 1 AND no-scenecut = 1 AND constrained-intra = 1 AND no-chroma-me = 1 AND no-mbtree = 1 AND dts-compress = 1,slow-firstpass AND no-scenecut AND constrained-intra AND no-chroma-me AND no-mbtree AND dts-compress,1,1.0,1.0,1.0,28,393.3911743164063
+7,50.46923316847948,320,slow-firstpass = 1 AND no-scenecut = 1 AND intra-refresh = 1 AND no-mixed-refs = 1 AND no-mbtree = 1 AND pic-struct = 1 AND no-asm = 1,slow-firstpass AND no-scenecut AND intra-refresh AND no-mixed-refs AND no-mbtree AND pic-struct AND no-asm,0,1.0,1.0,1.0,28,392.18298268318176
+1,49.005015171537735,499,sliced-threads = 1,sliced-threads,0,1.0,1.0,1.0,29,404.3855381011963
+2,84.19774622588594,884,no-weightb = 1 AND aud = 1,no-weightb AND NOT aud,1,1.0,1.0,1.0,29,387.70886969566345
+3,36.051469034928594,918,no-scenecut = 1 AND intra-refresh = 1 AND constrained-intra = 1,no-scenecut AND intra-refresh AND constrained-intra,0,1.0,1.0,1.0,29,389.1745796203613
+4,10.876396649846251,603,open-gop = 1 AND tff = 1 AND constrained-intra = 1 AND no-psy = 1,open-gop AND tff AND constrained-intra AND no-psy,0,1.0,1.0,1.0,29,383.8526611328125
+5,37.74203689639771,405,no-chroma-me = 1 AND no-weightb = 1 AND no-mbtree = 1 AND cpu-independent = 1 AND dts-compress = 1,no-chroma-me AND no-weightb AND no-mbtree AND cpu-independent AND dts-compress,0,1.0,1.0,1.0,29,386.1795043945313
+6,17.766366067677787,345,no-scenecut = 1 AND no-8x8dct = 1 AND no-psy = 1 AND no-weightb = 1 AND no-asm = 1 AND dts-compress = 1,no-scenecut AND no-8x8dct AND no-psy AND no-weightb AND no-asm AND dts-compress,0,1.0,1.0,1.0,29,386.9729337692261
+7,30.948836703063986,291,slow-firstpass = 1 AND intra-refresh = 1 AND tff = 1 AND no-weightb = 1 AND pic-struct = 1 AND dts-compress = 1 AND opencl = 1,slow-firstpass AND intra-refresh AND tff AND no-weightb AND pic-struct AND dts-compress AND opencl,0,1.0,1.0,1.0,29,386.5359756946564
+1,29.783391427652838,499,sliced-threads = 1,sliced-threads,1,1.0,1.0,1.0,3,403.6993961334229
+2,50.7565235789072,862,open-gop = 1 AND cpu-independent = 1,open-gop AND cpu-independent,0,1.0,1.0,1.0,3,407.0325782299042
+3,86.63930553297931,762,open-gop = 1 AND constrained-intra = 1 AND no-mbtree = 1,open-gop AND constrained-intra AND no-mbtree,1,1.0,1.0,1.0,3,394.8564786911011
+4,37.80974553440476,541,tff = 1 AND no-mixed-refs = 1 AND no-psy = 1 AND dts-compress = 1,tff AND no-mixed-refs AND no-psy AND dts-compress,0,1.0,1.0,1.0,3,398.168154001236
+5,52.200305668703486,533,open-gop = 1 AND no-cabac = 1 AND constrained-intra = 1 AND no-fast-pskip = 1 AND no-psy = 1,open-gop AND no-cabac AND constrained-intra AND no-fast-pskip AND no-psy,0,1.0,1.0,1.0,3,403.4458870887756
+6,56.02815131519857,373,intra-refresh = 1 AND open-gop = 1 AND bff = 1 AND no-mixed-refs = 1 AND no-asm = 1 AND aud = 1,intra-refresh AND open-gop AND bff AND no-mixed-refs AND no-asm AND NOT aud,1,1.0,1.0,1.0,3,403.45107531547546
+7,93.48697807310292,318,slow-firstpass = 1 AND open-gop = 1 AND no-mixed-refs = 1 AND cpu-independent = 1 AND no-asm = 1 AND dts-compress = 1 AND opencl = 1,slow-firstpass AND open-gop AND no-mixed-refs AND cpu-independent AND no-asm AND dts-compress AND opencl,1,1.0,1.0,1.0,3,412.0347256660461
+1,31.09541670550423,499,sliced-threads = 1,sliced-threads,2,1.0,1.0,1.0,30,494.2312026023865
+2,27.603984276127736,817,intra-refresh = 1 AND cpu-independent = 1,intra-refresh AND cpu-independent,1,1.0,1.0,1.0,30,504.30044174194336
+3,87.70366702763164,882,open-gop = 1 AND no-cabac = 1 AND opencl = 1,open-gop AND no-cabac AND opencl,1,1.0,1.0,1.0,30,501.9513659477234
+4,80.47424688730226,634,open-gop = 1 AND no-cabac = 1 AND constrained-intra = 1 AND aud = 1,open-gop AND no-cabac AND constrained-intra AND NOT aud,1,1.0,1.0,1.0,30,489.0383093357086
+5,62.92124625623221,481,bff = 1 AND no-mixed-refs = 1 AND no-weightb = 1 AND no-dct-decimate = 1 AND non-deterministic = 1,bff AND no-mixed-refs AND no-weightb AND no-dct-decimate AND non-deterministic,0,1.0,1.0,1.0,30,486.7106153964996
+6,71.1832684753023,317,no-scenecut = 1 AND tff = 1 AND constrained-intra = 1 AND pic-struct = 1 AND cpu-independent = 1 AND aud = 1,no-scenecut AND tff AND constrained-intra AND pic-struct AND cpu-independent AND NOT aud,0,1.0,1.0,1.0,30,484.02419543266296
+7,84.70145680894838,305,slow-firstpass = 1 AND open-gop = 1 AND no-deblock = 1 AND bff = 1 AND constrained-intra = 1 AND no-weightb = 1 AND dts-compress = 1,slow-firstpass AND open-gop AND no-deblock AND bff AND constrained-intra AND no-weightb AND dts-compress,1,1.0,1.0,1.0,30,481.61456656456
+1,68.85558611378123,499,sliced-threads = 1,sliced-threads,2,1.0,1.0,1.0,31,436.1243481636048
+2,100.39648436961822,268,no-fast-pskip = 1 AND sliced-threads = 1,no-fast-pskip AND sliced-threads,0,1.0,1.0,1.0,31,414.43389105796814
+3,19.496781056443357,837,no-deblock = 1 AND tff = 1 AND opencl = 1,no-deblock AND tff AND opencl,0,1.0,1.0,1.0,31,445.6403324604034
+4,59.90671015933628,621,open-gop = 1 AND no-mixed-refs = 1 AND non-deterministic = 1 AND opencl = 1,open-gop AND no-mixed-refs AND non-deterministic AND opencl,1,1.0,1.0,1.0,31,441.6562957763672
+5,56.69314039368284,545,slow-firstpass = 1 AND no-chroma-me = 1 AND no-mixed-refs = 1 AND non-deterministic = 1 AND opencl = 1,slow-firstpass AND no-chroma-me AND no-mixed-refs AND non-deterministic AND opencl,1,1.0,1.0,1.0,31,418.53150272369385
+6,101.26872113382149,361,no-scenecut = 1 AND no-cabac = 1 AND no-deblock = 1 AND no-fast-pskip = 1 AND no-psy = 1 AND dts-compress = 1,no-scenecut AND no-cabac AND no-deblock AND no-fast-pskip AND no-psy AND dts-compress,1,1.0,1.0,1.0,31,428.35256791114807
+7,54.60785792679988,292,slow-firstpass = 1 AND no-scenecut = 1 AND bff = 1 AND no-fast-pskip = 1 AND no-mbtree = 1 AND pic-struct = 1 AND dts-compress = 1,slow-firstpass AND no-scenecut AND bff AND no-fast-pskip AND no-mbtree AND pic-struct AND dts-compress,1,1.0,1.0,1.0,31,435.6495664119721
+1,10.690298134858056,499,sliced-threads = 1,sliced-threads,0,1.0,1.0,1.0,32,424.4493889808655
+2,81.98804653840865,824,cpu-independent = 1 AND aud = 1,cpu-independent AND NOT aud,1,1.0,1.0,1.0,32,419.71434330940247
+3,43.707491180301545,700,no-chroma-me = 1 AND no-dct-decimate = 1 AND dts-compress = 1,no-chroma-me AND no-dct-decimate AND dts-compress,1,1.0,1.0,1.0,32,416.9587533473969
+4,16.385501863625286,554,tff = 1 AND no-8x8dct = 1 AND no-psy = 1 AND pic-struct = 1,tff AND no-8x8dct AND no-psy AND pic-struct,0,1.0,1.0,1.0,32,424.8530404567719
+5,45.33602662110157,505,no-cabac = 1 AND no-chroma-me = 1 AND non-deterministic = 1 AND aud = 1 AND dts-compress = 1,no-cabac AND no-chroma-me AND non-deterministic AND NOT aud AND dts-compress,0,1.0,1.0,1.0,32,421.505140542984
+6,89.55570098283405,347,intra-refresh = 1 AND constrained-intra = 1 AND no-mbtree = 1 AND no-dct-decimate = 1 AND pic-struct = 1 AND cpu-independent = 1,intra-refresh AND constrained-intra AND no-mbtree AND no-dct-decimate AND pic-struct AND cpu-independent,1,1.0,1.0,1.0,32,418.44128155708313
+7,16.492157445468543,281,slow-firstpass = 1 AND no-deblock = 1 AND tff = 1 AND no-chroma-me = 1 AND no-mixed-refs = 1 AND no-weightb = 1 AND cpu-independent = 1,slow-firstpass AND no-deblock AND tff AND no-chroma-me AND no-mixed-refs AND no-weightb AND cpu-independent,0,1.0,1.0,1.0,32,404.903920173645
+1,94.94731000691952,499,sliced-threads = 1,sliced-threads,1,1.0,1.0,1.0,33,394.1943204402924
+2,43.237139873404175,887,pic-struct = 1 AND cpu-independent = 1,pic-struct AND cpu-independent,1,1.0,1.0,1.0,33,396.2175161838532
+3,64.78918439145798,697,no-fast-pskip = 1 AND no-dct-decimate = 1 AND dts-compress = 1,no-fast-pskip AND no-dct-decimate AND dts-compress,1,1.0,1.0,1.0,33,393.62715554237366
+4,90.09716239794052,560,intra-refresh = 1 AND tff = 1 AND no-fast-pskip = 1 AND opencl = 1,intra-refresh AND tff AND no-fast-pskip AND opencl,1,1.0,1.0,1.0,33,399.7669403553009
+5,16.216845619477994,477,slow-firstpass = 1 AND tff = 1 AND no-psy = 1 AND no-dct-decimate = 1 AND pic-struct = 1,slow-firstpass AND tff AND no-psy AND no-dct-decimate AND pic-struct,0,1.0,1.0,1.0,33,378.55396842956543
+6,40.20287797877914,349,slow-firstpass = 1 AND no-fast-pskip = 1 AND no-mixed-refs = 1 AND no-mbtree = 1 AND non-deterministic = 1 AND cpu-independent = 1,slow-firstpass AND no-fast-pskip AND no-mixed-refs AND no-mbtree AND non-deterministic AND cpu-independent,1,1.0,1.0,1.0,33,389.0033264160156
+7,90.000426393431,287,slow-firstpass = 1 AND intra-refresh = 1 AND open-gop = 1 AND no-chroma-me = 1 AND cpu-independent = 1 AND no-asm = 1 AND opencl = 1,slow-firstpass AND intra-refresh AND open-gop AND no-chroma-me AND cpu-independent AND no-asm AND opencl,1,1.0,1.0,1.0,33,385.3843870162964
+1,78.04461006025569,499,sliced-threads = 1,sliced-threads,1,1.0,1.0,1.0,34,406.4781777858734
+2,24.97960220318696,268,no-fast-pskip = 1 AND sliced-threads = 1,no-fast-pskip AND sliced-threads,0,1.0,1.0,1.0,34,405.7601857185364
+3,73.2395715019134,770,tff = 1 AND no-mixed-refs = 1 AND no-psy = 1,tff AND no-mixed-refs AND no-psy,1,1.0,1.0,1.0,34,389.0417559146881
+4,98.72674164894376,634,no-scenecut = 1 AND no-cabac = 1 AND no-mixed-refs = 1 AND opencl = 1,no-scenecut AND no-cabac AND no-mixed-refs AND opencl,1,1.0,1.0,1.0,34,385.87022733688354
+5,76.73714271726986,451,slow-firstpass = 1 AND no-deblock = 1 AND bff = 1 AND no-dct-decimate = 1 AND dts-compress = 1,slow-firstpass AND no-deblock AND bff AND no-dct-decimate AND dts-compress,0,1.0,1.0,1.0,34,385.72087717056274
+6,67.34233638045549,318,no-scenecut = 1 AND no-deblock = 1 AND no-8x8dct = 1 AND no-mixed-refs = 1 AND no-psy = 1 AND cpu-independent = 1,no-scenecut AND no-deblock AND no-8x8dct AND no-mixed-refs AND no-psy AND cpu-independent,0,1.0,1.0,1.0,34,386.8581373691559
+7,17.170821809861955,368,slow-firstpass = 1 AND open-gop = 1 AND no-cabac = 1 AND no-fast-pskip = 1 AND no-psy = 1 AND no-weightb = 1 AND no-mbtree = 1,slow-firstpass AND open-gop AND no-cabac AND no-fast-pskip AND no-psy AND no-weightb AND no-mbtree,0,1.0,1.0,1.0,34,380.1749479770661
+1,29.631836522089166,499,sliced-threads = 1,sliced-threads,1,1.0,1.0,1.0,35,400.362407207489
+2,94.28291115750471,270,no-scenecut = 1 AND sliced-threads = 1,no-scenecut AND sliced-threads,0,1.0,1.0,1.0,35,409.0056765079498
+3,17.072630981402455,809,no-mixed-refs = 1 AND pic-struct = 1 AND non-deterministic = 1,no-mixed-refs AND pic-struct AND non-deterministic,0,1.0,1.0,1.0,35,410.7508292198181
+4,96.47290079620728,549,intra-refresh = 1 AND no-psy = 1 AND no-weightb = 1 AND non-deterministic = 1,intra-refresh AND no-psy AND no-weightb AND non-deterministic,1,1.0,1.0,1.0,35,398.5794587135315
+5,33.10918736957508,439,no-deblock = 1 AND constrained-intra = 1 AND no-fast-pskip = 1 AND non-deterministic = 1 AND dts-compress = 1,no-deblock AND constrained-intra AND no-fast-pskip AND non-deterministic AND dts-compress,0,1.0,1.0,1.0,35,394.128958940506
+6,52.07303255913335,358,slow-firstpass = 1 AND no-cabac = 1 AND tff = 1 AND no-8x8dct = 1 AND no-weightb = 1 AND non-deterministic = 1,slow-firstpass AND no-cabac AND tff AND no-8x8dct AND no-weightb AND non-deterministic,0,1.0,1.0,1.0,35,400.362673997879
+7,22.05013849193349,257,slow-firstpass = 1 AND no-scenecut = 1 AND tff = 1 AND no-fast-pskip = 1 AND no-psy = 1 AND pic-struct = 1 AND cpu-independent = 1,slow-firstpass AND no-scenecut AND tff AND no-fast-pskip AND no-psy AND pic-struct AND cpu-independent,0,1.0,1.0,1.0,35,398.0982699394226
+1,36.4277690949978,499,sliced-threads = 1,sliced-threads,0,1.0,1.0,1.0,36,417.64089465141296
+2,38.04937639949716,912,no-mbtree = 1 AND dts-compress = 1,no-mbtree AND dts-compress,0,1.0,1.0,1.0,36,421.6240160465241
+3,13.115831588120216,727,bff = 1 AND no-mixed-refs = 1 AND no-weightb = 1,bff AND no-mixed-refs AND no-weightb,1,1.0,1.0,1.0,36,409.9734489917755
+4,19.13331613123857,520,bff = 1 AND no-mbtree = 1 AND aud = 1 AND opencl = 1,bff AND no-mbtree AND NOT aud AND opencl,0,1.0,1.0,1.0,36,412.3128926753998
+5,36.99234303229457,516,no-8x8dct = 1 AND no-mixed-refs = 1 AND no-weightb = 1 AND no-dct-decimate = 1 AND no-asm = 1,no-8x8dct AND no-mixed-refs AND no-weightb AND no-dct-decimate AND no-asm,0,1.0,1.0,1.0,36,410.2974176406861
+6,100.15282129912688,420,slow-firstpass = 1 AND no-cabac = 1 AND tff = 1 AND bff = 1 AND dts-compress = 1 AND opencl = 1,slow-firstpass AND no-cabac AND tff AND bff AND dts-compress AND opencl,1,1.0,1.0,1.0,36,402.646281003952
+7,66.42284305754333,351,slow-firstpass = 1 AND no-scenecut = 1 AND tff = 1 AND constrained-intra = 1 AND aud = 1 AND dts-compress = 1 AND opencl = 1,slow-firstpass AND no-scenecut AND tff AND constrained-intra AND NOT aud AND dts-compress AND opencl,0,1.0,1.0,1.0,36,379.3504583835602
+1,35.68420179438773,499,sliced-threads = 1,sliced-threads,0,1.0,1.0,1.0,37,417.9159941673279
+2,101.51268057698375,266,open-gop = 1 AND sliced-threads = 1,open-gop AND sliced-threads,2,1.0,1.0,1.0,37,407.7535610198975
+3,50.5629464908313,735,intra-refresh = 1 AND tff = 1 AND non-deterministic = 1,intra-refresh AND tff AND non-deterministic,0,1.0,1.0,1.0,37,406.2154128551483
+4,22.42586956280299,528,open-gop = 1 AND constrained-intra = 1 AND no-mbtree = 1 AND aud = 1,open-gop AND constrained-intra AND no-mbtree AND NOT aud,0,1.0,1.0,1.0,37,406.1571462154389
+5,34.25226373095638,414,tff = 1 AND no-fast-pskip = 1 AND no-dct-decimate = 1 AND non-deterministic = 1 AND aud = 1,tff AND no-fast-pskip AND no-dct-decimate AND non-deterministic AND NOT aud,0,1.0,1.0,1.0,37,399.4041187763214
+6,13.652654852965492,346,slow-firstpass = 1 AND no-fast-pskip = 1 AND pic-struct = 1 AND cpu-independent = 1 AND dts-compress = 1 AND opencl = 1,slow-firstpass AND no-fast-pskip AND pic-struct AND cpu-independent AND dts-compress AND opencl,0,1.0,1.0,1.0,37,397.0057888031006
+7,47.82638132764687,334,slow-firstpass = 1 AND intra-refresh = 1 AND open-gop = 1 AND no-mbtree = 1 AND pic-struct = 1 AND non-deterministic = 1 AND no-asm = 1,slow-firstpass AND intra-refresh AND open-gop AND no-mbtree AND pic-struct AND non-deterministic AND no-asm,0,1.0,1.0,1.0,37,391.1076395511627
+1,57.47757489494794,499,sliced-threads = 1,sliced-threads,0,1.0,1.0,1.0,38,413.544668674469
+2,65.39839546770573,289,pic-struct = 1 AND sliced-threads = 1,pic-struct AND sliced-threads,0,1.0,1.0,1.0,38,407.878023147583
+3,106.3295929864115,750,no-dct-decimate = 1 AND dts-compress = 1 AND opencl = 1,no-dct-decimate AND dts-compress AND opencl,1,1.0,1.0,1.0,38,408.2335076332092
+4,79.75137157695077,645,slow-firstpass = 1 AND no-cabac = 1 AND no-asm = 1 AND opencl = 1,slow-firstpass AND no-cabac AND no-asm AND opencl,0,1.0,1.0,1.0,38,406.7160115242005
+5,44.95040004853,457,no-fast-pskip = 1 AND no-8x8dct = 1 AND no-mbtree = 1 AND pic-struct = 1 AND aud = 1,no-fast-pskip AND no-8x8dct AND no-mbtree AND pic-struct AND NOT aud,0,1.0,1.0,1.0,38,391.473295211792
+6,60.73360142004908,367,intra-refresh = 1 AND open-gop = 1 AND no-psy = 1 AND no-mbtree = 1 AND dts-compress = 1 AND opencl = 1,intra-refresh AND open-gop AND no-psy AND no-mbtree AND dts-compress AND opencl,0,1.0,1.0,1.0,38,404.7003145217896
+7,66.22952796161618,321,slow-firstpass = 1 AND no-cabac = 1 AND no-deblock = 1 AND bff = 1 AND no-mbtree = 1 AND pic-struct = 1 AND opencl = 1,slow-firstpass AND no-cabac AND no-deblock AND bff AND no-mbtree AND pic-struct AND opencl,0,1.0,1.0,1.0,38,389.5018081665039
+1,32.91709555372422,499,sliced-threads = 1,sliced-threads,0,1.0,1.0,1.0,39,412.6033773422241
+2,86.3658703904937,883,intra-refresh = 1 AND aud = 1,intra-refresh AND NOT aud,1,1.0,1.0,1.0,39,414.1725058555603
+3,67.769692164556,750,open-gop = 1 AND tff = 1 AND no-dct-decimate = 1,open-gop AND tff AND no-dct-decimate,1,1.0,1.0,1.0,39,417.926655292511
+4,71.20128011369219,605,no-deblock = 1 AND constrained-intra = 1 AND no-mixed-refs = 1 AND no-asm = 1,no-deblock AND constrained-intra AND no-mixed-refs AND no-asm,1,1.0,1.0,1.0,39,428.5838191509247
+5,75.5264690165993,458,intra-refresh = 1 AND open-gop = 1 AND constrained-intra = 1 AND cpu-independent = 1 AND no-asm = 1,intra-refresh AND open-gop AND constrained-intra AND cpu-independent AND no-asm,0,1.0,1.0,1.0,39,412.3216569423676
+6,69.91094070964037,369,slow-firstpass = 1 AND open-gop = 1 AND no-cabac = 1 AND bff = 1 AND no-dct-decimate = 1 AND cpu-independent = 1,slow-firstpass AND open-gop AND no-cabac AND bff AND no-dct-decimate AND cpu-independent,1,1.0,1.0,1.0,39,411.43599033355713
+7,28.91547870877769,317,slow-firstpass = 1 AND no-scenecut = 1 AND no-cabac = 1 AND no-fast-pskip = 1 AND no-psy = 1 AND non-deterministic = 1 AND aud = 1,slow-firstpass AND no-scenecut AND no-cabac AND no-fast-pskip AND no-psy AND non-deterministic AND NOT aud,0,1.0,1.0,1.0,39,403.5432229042053
+1,93.83372698590142,499,sliced-threads = 1,sliced-threads,1,1.0,1.0,1.0,4,397.1520886421204
+2,84.85876830111745,282,no-asm = 1 AND sliced-threads = 1,no-asm AND sliced-threads,2,1.0,1.0,1.0,4,391.539413690567
+3,43.070872873798216,869,no-weightb = 1 AND no-mbtree = 1 AND pic-struct = 1,no-weightb AND no-mbtree AND pic-struct,1,1.0,1.0,1.0,4,402.3042814731598
+4,67.40709530127666,676,slow-firstpass = 1 AND open-gop = 1 AND non-deterministic = 1 AND opencl = 1,slow-firstpass AND open-gop AND non-deterministic AND opencl,1,1.0,1.0,1.0,4,390.6147892475128
+5,83.40896892510263,492,slow-firstpass = 1 AND no-chroma-me = 1 AND no-psy = 1 AND non-deterministic = 1 AND no-asm = 1,slow-firstpass AND no-chroma-me AND no-psy AND non-deterministic AND no-asm,1,1.0,1.0,1.0,4,396.2238371372223
+6,54.77090040103718,423,intra-refresh = 1 AND no-cabac = 1 AND bff = 1 AND aud = 1 AND dts-compress = 1 AND opencl = 1,intra-refresh AND no-cabac AND bff AND NOT aud AND dts-compress AND opencl,0,1.0,1.0,1.0,4,388.69656348228455
+7,17.708175501003076,315,slow-firstpass = 1 AND open-gop = 1 AND no-cabac = 1 AND no-deblock = 1 AND no-chroma-me = 1 AND non-deterministic = 1 AND cpu-independent = 1,slow-firstpass AND open-gop AND no-cabac AND no-deblock AND no-chroma-me AND non-deterministic AND cpu-independent,0,1.0,1.0,1.0,4,410.1894438266754
+1,60.043225215092754,499,sliced-threads = 1,sliced-threads,1,1.0,1.0,1.0,40,414.266131401062
+2,101.40051732048484,847,no-dct-decimate = 1 AND cpu-independent = 1,no-dct-decimate AND cpu-independent,1,1.0,1.0,1.0,40,413.5508494377136
+3,48.96141208587995,687,no-scenecut = 1 AND no-weightb = 1 AND opencl = 1,no-scenecut AND no-weightb AND opencl,0,1.0,1.0,1.0,40,413.4802374839783
+4,90.01559351289261,632,open-gop = 1 AND no-deblock = 1 AND no-8x8dct = 1 AND no-mixed-refs = 1,open-gop AND no-deblock AND no-8x8dct AND no-mixed-refs,1,1.0,1.0,1.0,40,398.340969324112
+5,88.73436738640436,477,slow-firstpass = 1 AND no-scenecut = 1 AND bff = 1 AND no-mixed-refs = 1 AND no-dct-decimate = 1,slow-firstpass AND no-scenecut AND bff AND no-mixed-refs AND no-dct-decimate,1,1.0,1.0,1.0,40,397.70161390304565
+6,77.30736741614209,309,intra-refresh = 1 AND no-fast-pskip = 1 AND no-8x8dct = 1 AND cpu-independent = 1 AND aud = 1 AND opencl = 1,intra-refresh AND no-fast-pskip AND no-8x8dct AND cpu-independent AND NOT aud AND opencl,1,1.0,1.0,1.0,40,391.8821389675141
+7,51.12909925906365,254,slow-firstpass = 1 AND no-deblock = 1 AND tff = 1 AND no-psy = 1 AND no-mbtree = 1 AND cpu-independent = 1 AND aud = 1,slow-firstpass AND no-deblock AND tff AND no-psy AND no-mbtree AND cpu-independent AND NOT aud,0,1.0,1.0,1.0,40,382.1711554527282
+1,58.352360059230925,499,sliced-threads = 1,sliced-threads,0,1.0,1.0,1.0,41,419.210426568985
+2,27.61526271137718,249,no-mbtree = 1 AND sliced-threads = 1,no-mbtree AND sliced-threads,0,1.0,1.0,1.0,41,424.4729645252228
+3,57.98948460008837,727,bff = 1 AND no-mixed-refs = 1 AND no-weightb = 1,bff AND no-mixed-refs AND no-weightb,1,1.0,1.0,1.0,41,411.38825583457947
+4,61.45794142630536,540,slow-firstpass = 1 AND no-deblock = 1 AND no-fast-pskip = 1 AND no-weightb = 1,slow-firstpass AND no-deblock AND no-fast-pskip AND no-weightb,0,1.0,1.0,1.0,41,415.99207377433777
+5,89.36395806782942,468,slow-firstpass = 1 AND open-gop = 1 AND constrained-intra = 1 AND no-mixed-refs = 1 AND no-weightb = 1,slow-firstpass AND open-gop AND constrained-intra AND no-mixed-refs AND no-weightb,1,1.0,1.0,1.0,41,425.8237278461456
+6,52.917022110025854,396,no-scenecut = 1 AND intra-refresh = 1 AND no-fast-pskip = 1 AND no-psy = 1 AND aud = 1 AND dts-compress = 1,no-scenecut AND intra-refresh AND no-fast-pskip AND no-psy AND NOT aud AND dts-compress,0,1.0,1.0,1.0,41,404.7427260875702
+7,31.716429878765428,347,slow-firstpass = 1 AND no-deblock = 1 AND tff = 1 AND constrained-intra = 1 AND no-fast-pskip = 1 AND no-psy = 1 AND no-dct-decimate = 1,slow-firstpass AND no-deblock AND tff AND constrained-intra AND no-fast-pskip AND no-psy AND no-dct-decimate,0,1.0,1.0,1.0,41,402.75709867477417
+1,18.750014318218074,499,sliced-threads = 1,sliced-threads,0,1.0,1.0,1.0,42,438.24296140670776
+2,79.08866425870025,800,no-8x8dct = 1 AND cpu-independent = 1,no-8x8dct AND cpu-independent,1,1.0,1.0,1.0,42,418.132260799408
+3,85.05229466703469,697,intra-refresh = 1 AND non-deterministic = 1 AND aud = 1,intra-refresh AND non-deterministic AND NOT aud,1,1.0,1.0,1.0,42,403.8683931827545
+4,46.81269720381199,621,intra-refresh = 1 AND no-chroma-me = 1 AND no-dct-decimate = 1 AND pic-struct = 1,intra-refresh AND no-chroma-me AND no-dct-decimate AND pic-struct,0,1.0,1.0,1.0,42,401.8265557289124
+5,72.70359323004047,409,slow-firstpass = 1 AND intra-refresh = 1 AND no-deblock = 1 AND no-8x8dct = 1 AND aud = 1,slow-firstpass AND intra-refresh AND no-deblock AND no-8x8dct AND NOT aud,1,1.0,1.0,1.0,42,398.9788336753845
+6,41.71269795842843,393,no-scenecut = 1 AND no-weightb = 1 AND no-mbtree = 1 AND pic-struct = 1 AND non-deterministic = 1 AND aud = 1,no-scenecut AND no-weightb AND no-mbtree AND pic-struct AND non-deterministic AND NOT aud,0,1.0,1.0,1.0,42,401.2078218460083
+7,33.19771520293783,283,slow-firstpass = 1 AND open-gop = 1 AND constrained-intra = 1 AND no-weightb = 1 AND non-deterministic = 1 AND cpu-independent = 1 AND dts-compress = 1,slow-firstpass AND open-gop AND constrained-intra AND no-weightb AND non-deterministic AND cpu-independent AND dts-compress,0,1.0,1.0,1.0,42,392.57729625701904
+1,16.765614012648598,499,sliced-threads = 1,sliced-threads,1,1.0,1.0,1.0,43,420.8490035533905
+2,15.652948673422788,887,pic-struct = 1 AND cpu-independent = 1,pic-struct AND cpu-independent,0,1.0,1.0,1.0,43,407.90555906295776
+3,66.36186417077519,181,open-gop = 1 AND aud = 1 AND sliced-threads = 1,open-gop AND NOT aud AND sliced-threads,0,1.0,1.0,1.0,43,404.7161574363709
+4,13.240728547839137,546,no-scenecut = 1 AND no-fast-pskip = 1 AND no-weightb = 1 AND no-asm = 1,no-scenecut AND no-fast-pskip AND no-weightb AND no-asm,0,1.0,1.0,1.0,43,402.9433467388153
+5,21.655560475350413,453,slow-firstpass = 1 AND no-8x8dct = 1 AND no-weightb = 1 AND non-deterministic = 1 AND opencl = 1,slow-firstpass AND no-8x8dct AND no-weightb AND non-deterministic AND opencl,0,1.0,1.0,1.0,43,407.27436089515686
+6,107.04877232977609,382,slow-firstpass = 1 AND intra-refresh = 1 AND tff = 1 AND bff = 1 AND no-fast-pskip = 1 AND opencl = 1,slow-firstpass AND intra-refresh AND tff AND bff AND no-fast-pskip AND opencl,2,1.0,1.0,1.0,43,397.3415675163269
+7,8.53976083340707,283,slow-firstpass = 1 AND no-scenecut = 1 AND open-gop = 1 AND no-chroma-me = 1 AND no-mixed-refs = 1 AND no-mbtree = 1 AND cpu-independent = 1,no-scenecut AND open-gop AND no-chroma-me AND no-mixed-refs AND no-mbtree AND cpu-independent,0,0.904153354632588,0.8250728862973761,1.0,43,397.4882261753082
+1,24.470658057088283,499,sliced-threads = 1,sliced-threads,0,1.0,1.0,1.0,44,425.1380548477173
+2,32.53509630335595,911,cpu-independent = 1 AND opencl = 1,cpu-independent AND opencl,1,1.0,1.0,1.0,44,420.9689178466797
+3,34.909550086546936,706,open-gop = 1 AND no-dct-decimate = 1 AND no-asm = 1,open-gop AND no-dct-decimate AND no-asm,0,1.0,1.0,1.0,44,423.7044453620911
+4,101.9521070364303,489,no-cabac = 1 AND constrained-intra = 1 AND no-chroma-me = 1 AND cpu-independent = 1,no-cabac AND constrained-intra AND no-chroma-me AND cpu-independent,1,1.0,1.0,1.0,44,438.468138217926
+5,75.35015462392035,453,no-scenecut = 1 AND intra-refresh = 1 AND no-fast-pskip = 1 AND no-mbtree = 1 AND aud = 1,no-scenecut AND intra-refresh AND no-fast-pskip AND no-mbtree AND NOT aud,0,1.0,1.0,1.0,44,424.8723165988922
+6,51.10478996970748,392,slow-firstpass = 1 AND no-8x8dct = 1 AND no-chroma-me = 1 AND no-psy = 1 AND no-weightb = 1 AND dts-compress = 1,slow-firstpass AND no-8x8dct AND no-chroma-me AND no-psy AND no-weightb AND dts-compress,0,1.0,1.0,1.0,44,426.46553087234497
+7,82.3500746606528,347,slow-firstpass = 1 AND intra-refresh = 1 AND open-gop = 1 AND pic-struct = 1 AND non-deterministic = 1 AND aud = 1 AND opencl = 1,slow-firstpass AND intra-refresh AND open-gop AND pic-struct AND non-deterministic AND NOT aud AND opencl,0,1.0,1.0,1.0,44,414.5432963371277
+1,100.1967908252585,499,sliced-threads = 1,sliced-threads,2,1.0,1.0,1.0,45,415.18485975265503
+2,18.130612947535703,841,no-psy = 1 AND cpu-independent = 1,no-psy AND cpu-independent,0,1.0,1.0,1.0,45,427.5741126537323
+3,104.73452740605364,755,no-cabac = 1 AND no-chroma-me = 1 AND opencl = 1,no-cabac AND no-chroma-me AND opencl,1,1.0,1.0,1.0,45,421.2149882316589
+4,71.21620945387109,707,open-gop = 1 AND no-fast-pskip = 1 AND no-chroma-me = 1 AND no-mixed-refs = 1,open-gop AND no-fast-pskip AND no-chroma-me AND no-mixed-refs,0,1.0,1.0,1.0,45,410.2430684566498
+5,92.28369803580198,548,constrained-intra = 1 AND no-chroma-me = 1 AND no-mixed-refs = 1 AND no-weightb = 1 AND no-mbtree = 1,constrained-intra AND no-chroma-me AND no-mixed-refs AND no-weightb AND no-mbtree,1,1.0,1.0,1.0,45,404.3649904727936
+6,101.07043730193332,407,no-scenecut = 1 AND no-cabac = 1 AND tff = 1 AND no-chroma-me = 1 AND no-weightb = 1 AND pic-struct = 1,no-scenecut AND no-cabac AND tff AND no-chroma-me AND no-weightb AND pic-struct,0,1.0,1.0,1.0,45,399.6928889751434
+7,27.532963137736992,275,slow-firstpass = 1 AND intra-refresh = 1 AND no-8x8dct = 1 AND no-chroma-me = 1 AND cpu-independent = 1 AND aud = 1 AND dts-compress = 1,slow-firstpass AND intra-refresh AND no-8x8dct AND no-chroma-me AND cpu-independent AND NOT aud AND dts-compress,0,1.0,1.0,1.0,45,387.5564994812012
+1,30.26575032557815,499,sliced-threads = 1,sliced-threads,0,1.0,1.0,1.0,46,406.0277943611145
+2,98.1120396653708,914,no-chroma-me = 1 AND aud = 1,no-chroma-me AND NOT aud,1,1.0,1.0,1.0,46,408.52414536476135
+3,72.41439194414545,807,no-mixed-refs = 1 AND non-deterministic = 1 AND no-asm = 1,no-mixed-refs AND non-deterministic AND no-asm,1,1.0,1.0,1.0,46,409.89405488967896
+4,70.88453980103995,554,intra-refresh = 1 AND no-chroma-me = 1 AND no-mixed-refs = 1 AND aud = 1,intra-refresh AND no-chroma-me AND no-mixed-refs AND NOT aud,1,1.0,1.0,1.0,46,429.48580598831177
+5,104.84211404699164,446,no-deblock = 1 AND tff = 1 AND no-dct-decimate = 1 AND non-deterministic = 1 AND cpu-independent = 1,no-deblock AND tff AND no-dct-decimate AND non-deterministic AND cpu-independent,1,1.0,1.0,1.0,46,428.7985565662384
+6,47.80116312110098,472,intra-refresh = 1 AND open-gop = 1 AND no-cabac = 1 AND no-mixed-refs = 1 AND no-weightb = 1 AND no-mbtree = 1,intra-refresh AND open-gop AND no-cabac AND no-mixed-refs AND no-weightb AND no-mbtree,0,1.0,1.0,1.0,46,423.5907781124115
+7,101.74465200472356,322,slow-firstpass = 1 AND open-gop = 1 AND no-fast-pskip = 1 AND no-weightb = 1 AND no-mbtree = 1 AND non-deterministic = 1 AND opencl = 1,slow-firstpass AND open-gop AND no-fast-pskip AND no-weightb AND no-mbtree AND non-deterministic AND opencl,1,1.0,1.0,1.0,46,404.8363165855408
+1,31.756626291055703,499,sliced-threads = 1,sliced-threads,2,1.0,1.0,1.0,47,424.4770975112915
+2,88.87022781142774,856,constrained-intra = 1 AND cpu-independent = 1,constrained-intra AND cpu-independent,1,1.0,1.0,1.0,47,397.55825424194336
+3,94.8016883569204,863,slow-firstpass = 1 AND no-chroma-me = 1 AND no-mixed-refs = 1,slow-firstpass AND no-chroma-me AND no-mixed-refs,1,1.0,1.0,1.0,47,396.0471544265747
+4,89.95000669874506,639,slow-firstpass = 1 AND no-scenecut = 1 AND open-gop = 1 AND dts-compress = 1,slow-firstpass AND no-scenecut AND open-gop AND dts-compress,1,1.0,1.0,1.0,47,402.16913986206055
+5,95.5117211096083,440,no-deblock = 1 AND constrained-intra = 1 AND no-chroma-me = 1 AND no-psy = 1 AND non-deterministic = 1,no-deblock AND constrained-intra AND no-chroma-me AND no-psy AND non-deterministic,1,1.0,1.0,1.0,47,407.4018404483795
+6,64.5830312382377,374,slow-firstpass = 1 AND no-cabac = 1 AND tff = 1 AND no-8x8dct = 1 AND non-deterministic = 1 AND no-asm = 1,slow-firstpass AND no-cabac AND tff AND no-8x8dct AND non-deterministic AND no-asm,0,1.0,1.0,1.0,47,394.0521402359009
+7,105.27686190587788,358,slow-firstpass = 1 AND no-cabac = 1 AND no-chroma-me = 1 AND no-mixed-refs = 1 AND no-weightb = 1 AND no-dct-decimate = 1 AND non-deterministic = 1,slow-firstpass AND no-cabac AND no-chroma-me AND no-mixed-refs AND no-weightb AND no-dct-decimate AND non-deterministic,2,1.0,1.0,1.0,47,384.3777387142181
+1,58.2742760414512,499,sliced-threads = 1,sliced-threads,0,1.0,1.0,1.0,48,408.4067144393921
+2,64.52790617041337,819,tff = 1 AND cpu-independent = 1,tff AND cpu-independent,1,1.0,1.0,1.0,48,401.9203395843506
+3,37.93700955585704,760,no-scenecut = 1 AND dts-compress = 1 AND opencl = 1,no-scenecut AND dts-compress AND opencl,0,1.0,1.0,1.0,48,401.7644929885864
+4,58.79527856012504,533,open-gop = 1 AND constrained-intra = 1 AND no-dct-decimate = 1 AND aud = 1,open-gop AND constrained-intra AND no-dct-decimate AND NOT aud,0,1.0,1.0,1.0,48,406.1810357570648
+5,27.13217005970692,447,intra-refresh = 1 AND no-deblock = 1 AND constrained-intra = 1 AND non-deterministic = 1 AND cpu-independent = 1,intra-refresh AND no-deblock AND constrained-intra AND non-deterministic AND cpu-independent,0,1.0,1.0,1.0,48,404.6165852546692
+6,104.9149861735534,406,intra-refresh = 1 AND tff = 1 AND bff = 1 AND no-fast-pskip = 1 AND no-chroma-me = 1 AND opencl = 1,intra-refresh AND tff AND bff AND no-fast-pskip AND no-chroma-me AND opencl,0,1.0,1.0,1.0,48,400.6467981338501
+7,37.3516491655506,270,slow-firstpass = 1 AND no-cabac = 1 AND constrained-intra = 1 AND no-psy = 1 AND no-weightb = 1 AND cpu-independent = 1 AND aud = 1,slow-firstpass AND no-cabac AND constrained-intra AND no-psy AND no-weightb AND cpu-independent AND NOT aud,0,1.0,1.0,1.0,48,393.55258536338806
+1,84.37339035372901,499,sliced-threads = 1,sliced-threads,2,1.0,1.0,1.0,49,411.7818546295166
+2,85.82745401352156,239,constrained-intra = 1 AND sliced-threads = 1,bff AND sliced-threads,1,0.7617107942973522,0.7420634920634921,0.7824267782426778,49,406.5399813652039
+3,104.02596148882152,715,no-mbtree = 1 AND non-deterministic = 1 AND aud = 1,no-mbtree AND non-deterministic AND NOT aud,1,1.0,1.0,1.0,49,405.0255239009857
+4,53.19738834220943,159,slow-firstpass = 1 AND no-scenecut = 1 AND no-cabac = 1 AND sliced-threads = 1,slow-firstpass AND no-scenecut AND no-cabac AND sliced-threads,0,1.0,1.0,1.0,49,408.0125389099121
+5,37.54512274131585,434,slow-firstpass = 1 AND intra-refresh = 1 AND no-dct-decimate = 1 AND no-asm = 1 AND dts-compress = 1,slow-firstpass AND intra-refresh AND no-dct-decimate AND no-asm AND dts-compress,0,1.0,1.0,1.0,49,408.29359674453735
+6,32.968653235649825,353,no-scenecut = 1 AND bff = 1 AND no-mixed-refs = 1 AND no-mbtree = 1 AND no-asm = 1 AND dts-compress = 1,no-scenecut AND bff AND no-mixed-refs AND no-mbtree AND no-asm AND dts-compress,0,1.0,1.0,1.0,49,401.168270111084
+7,19.07800972027143,326,slow-firstpass = 1 AND no-scenecut = 1 AND no-cabac = 1 AND constrained-intra = 1 AND no-fast-pskip = 1 AND no-psy = 1 AND opencl = 1,slow-firstpass AND no-scenecut AND no-cabac AND constrained-intra AND no-fast-pskip AND no-psy AND opencl,0,1.0,1.0,1.0,49,393.3470368385315
+1,84.40575094203692,499,sliced-threads = 1,slow-firstpass AND no-scenecut AND intra-refresh AND tff AND no-chroma-me AND no-mixed-refs AND no-psy AND opencl,2,0.1368821292775665,0.1862068965517241,0.1082164328657314,5,407.6984293460846
+2,94.50886394930842,926,intra-refresh = 1 AND dts-compress = 1,intra-refresh AND dts-compress,1,1.0,1.0,1.0,5,406.8656859397888
+3,38.23979990586558,783,no-scenecut = 1 AND tff = 1 AND pic-struct = 1,no-scenecut AND tff AND pic-struct,0,1.0,1.0,1.0,5,409.235479593277
+4,70.15961886577655,558,intra-refresh = 1 AND bff = 1 AND constrained-intra = 1 AND cpu-independent = 1,intra-refresh AND bff AND constrained-intra AND cpu-independent,1,1.0,1.0,1.0,5,407.6766693592072
+5,33.69925165229593,413,no-cabac = 1 AND no-chroma-me = 1 AND no-dct-decimate = 1 AND pic-struct = 1 AND cpu-independent = 1,no-cabac AND no-chroma-me AND no-dct-decimate AND pic-struct AND cpu-independent,0,1.0,1.0,1.0,5,391.534218788147
+6,45.59047068543077,337,no-scenecut = 1 AND no-deblock = 1 AND tff = 1 AND bff = 1 AND no-mbtree = 1 AND cpu-independent = 1,no-scenecut AND no-deblock AND tff AND bff AND no-mbtree AND cpu-independent,0,1.0,1.0,1.0,5,401.14805912971497
+7,64.87409108954445,333,slow-firstpass = 1 AND open-gop = 1 AND no-cabac = 1 AND no-deblock = 1 AND no-psy = 1 AND no-mbtree = 1 AND pic-struct = 1,slow-firstpass AND open-gop AND no-cabac AND no-deblock AND no-psy AND no-mbtree AND pic-struct,0,1.0,1.0,1.0,5,398.05315685272217
+1,98.9519346369356,499,sliced-threads = 1,sliced-threads,1,1.0,1.0,1.0,50,413.34079003334045
+2,89.53913826670717,239,constrained-intra = 1 AND sliced-threads = 1,constrained-intra AND sliced-threads,1,1.0,1.0,1.0,50,402.0801877975464
+3,103.48690315165484,209,no-scenecut = 1 AND intra-refresh = 1 AND sliced-threads = 1,no-scenecut AND intra-refresh AND sliced-threads,1,1.0,1.0,1.0,50,397.3122305870056
+4,56.22186730608044,578,no-mbtree = 1 AND pic-struct = 1 AND aud = 1 AND opencl = 1,no-mbtree AND pic-struct AND NOT aud AND opencl,1,1.0,1.0,1.0,50,403.9396245479584
+5,102.63392483762992,487,no-cabac = 1 AND no-deblock = 1 AND bff = 1 AND aud = 1 AND opencl = 1,no-cabac AND no-deblock AND bff AND NOT aud AND opencl,1,1.0,1.0,1.0,50,402.0564558506012
+6,74.72480001722417,406,slow-firstpass = 1 AND bff = 1 AND no-chroma-me = 1 AND no-mixed-refs = 1 AND non-deterministic = 1 AND dts-compress = 1,slow-firstpass AND bff AND no-chroma-me AND no-mixed-refs AND non-deterministic AND dts-compress,1,1.0,1.0,1.0,50,412.5898551940918
+7,16.629071577827283,295,slow-firstpass = 1 AND intra-refresh = 1 AND open-gop = 1 AND no-deblock = 1 AND no-8x8dct = 1 AND no-dct-decimate = 1 AND dts-compress = 1,slow-firstpass AND intra-refresh AND open-gop AND no-deblock AND no-8x8dct AND no-dct-decimate AND dts-compress,0,1.0,1.0,1.0,50,412.1190695762634
+1,66.59925378578336,499,sliced-threads = 1,sliced-threads,1,1.0,1.0,1.0,51,411.7684898376465
+2,13.580473494920524,249,no-mbtree = 1 AND sliced-threads = 1,no-mbtree AND sliced-threads,0,1.0,1.0,1.0,51,414.1498627662658
+3,97.7727428188854,677,intra-refresh = 1 AND no-8x8dct = 1 AND no-asm = 1,intra-refresh AND no-8x8dct AND no-asm,1,1.0,1.0,1.0,51,401.5401449203491
+4,8.004122059672909,616,slow-firstpass = 1 AND no-mixed-refs = 1 AND no-psy = 1 AND opencl = 1,NOT no-mixed-refs,0,0.0,0.0,0.0,51,402.89869499206543
+5,84.65659438749543,382,no-8x8dct = 1 AND no-psy = 1 AND no-dct-decimate = 1 AND cpu-independent = 1 AND aud = 1,no-8x8dct AND no-psy AND no-dct-decimate AND cpu-independent AND NOT aud,1,1.0,1.0,1.0,51,399.00741600990295
+6,49.05352884888915,376,slow-firstpass = 1 AND intra-refresh = 1 AND no-mbtree = 1 AND no-dct-decimate = 1 AND no-asm = 1 AND aud = 1,slow-firstpass AND intra-refresh AND no-mbtree AND no-dct-decimate AND no-asm AND NOT aud,0,1.0,1.0,1.0,51,400.4025979042053
+7,11.163094759210304,279,slow-firstpass = 1 AND no-scenecut = 1 AND no-cabac = 1 AND constrained-intra = 1 AND no-chroma-me = 1 AND no-psy = 1 AND cpu-independent = 1,slow-firstpass AND no-scenecut AND no-cabac AND constrained-intra AND no-chroma-me AND no-psy AND cpu-independent,0,1.0,1.0,1.0,51,398.6927328109741
+1,79.62196905341395,499,sliced-threads = 1,sliced-threads,1,1.0,1.0,1.0,52,415.2207095623016
+2,71.18782211694901,926,no-dct-decimate = 1 AND aud = 1,no-dct-decimate AND NOT aud,1,1.0,1.0,1.0,52,401.2958066463471
+3,23.309419745040543,801,no-cabac = 1 AND constrained-intra = 1 AND pic-struct = 1,no-cabac AND constrained-intra AND pic-struct,0,1.0,1.0,1.0,52,397.39110922813416
+4,54.39705995603264,523,no-scenecut = 1 AND tff = 1 AND constrained-intra = 1 AND cpu-independent = 1,no-scenecut AND tff AND constrained-intra AND cpu-independent,1,1.0,1.0,1.0,52,406.4252848625183
+5,101.76380105537078,417,tff = 1 AND no-8x8dct = 1 AND no-chroma-me = 1 AND pic-struct = 1 AND cpu-independent = 1,tff AND no-8x8dct AND no-chroma-me AND pic-struct AND cpu-independent,1,1.0,1.0,1.0,52,417.4496042728424
+6,43.16979102646975,445,slow-firstpass = 1 AND open-gop = 1 AND no-deblock = 1 AND non-deterministic = 1 AND dts-compress = 1 AND opencl = 1,slow-firstpass AND open-gop AND no-deblock AND non-deterministic AND dts-compress AND opencl,0,1.0,1.0,1.0,52,406.000736951828
+7,38.2465808255952,322,slow-firstpass = 1 AND no-scenecut = 1 AND no-deblock = 1 AND tff = 1 AND bff = 1 AND pic-struct = 1 AND aud = 1,slow-firstpass AND no-scenecut AND no-deblock AND tff AND bff AND pic-struct AND NOT aud,0,1.0,1.0,1.0,52,384.1524403095245
+1,85.66880339994019,499,sliced-threads = 1,sliced-threads,2,1.0,1.0,1.0,53,410.70532751083374
+2,10.076909296392897,933,intra-refresh = 1 AND no-8x8dct = 1,intra-refresh AND no-8x8dct,1,1.0,1.0,1.0,53,406.77031993865967
+3,90.46940257920808,852,no-scenecut = 1 AND open-gop = 1 AND no-chroma-me = 1,no-scenecut AND open-gop AND no-chroma-me,1,1.0,1.0,1.0,53,400.0296697616577
+4,19.81060400082102,584,no-psy = 1 AND no-asm = 1 AND dts-compress = 1 AND opencl = 1,no-psy AND no-asm AND dts-compress AND opencl,0,1.0,1.0,1.0,53,402.0171172618866
+5,84.7304504849137,474,constrained-intra = 1 AND no-8x8dct = 1 AND no-chroma-me = 1 AND no-asm = 1 AND aud = 1,constrained-intra AND no-8x8dct AND no-chroma-me AND no-asm AND NOT aud,1,1.0,1.0,1.0,53,406.4213547706604
+6,29.44067847681277,398,slow-firstpass = 1 AND no-scenecut = 1 AND bff = 1 AND no-chroma-me = 1 AND no-mbtree = 1 AND no-dct-decimate = 1,slow-firstpass AND no-scenecut AND bff AND no-chroma-me AND no-mbtree AND no-dct-decimate,0,1.0,1.0,1.0,53,406.76045632362366
+7,82.93213905289906,301,slow-firstpass = 1 AND no-scenecut = 1 AND intra-refresh = 1 AND no-8x8dct = 1 AND no-psy = 1 AND aud = 1 AND opencl = 1,slow-firstpass AND no-scenecut AND intra-refresh AND no-8x8dct AND no-psy AND NOT aud AND opencl,1,1.0,1.0,1.0,53,394.8671398162842
+1,41.03377089291638,499,sliced-threads = 1,sliced-threads,0,1.0,1.0,1.0,54,414.47710490226746
+2,105.81646536076478,856,constrained-intra = 1 AND cpu-independent = 1,constrained-intra AND cpu-independent,1,1.0,1.0,1.0,54,404.84349036216736
+3,89.29895765172444,731,bff = 1 AND no-mixed-refs = 1 AND opencl = 1,bff AND no-mixed-refs AND opencl,1,1.0,1.0,1.0,54,399.63721799850464
+4,80.62591664368918,463,open-gop = 1 AND tff = 1 AND no-8x8dct = 1 AND cpu-independent = 1,open-gop AND tff AND no-8x8dct AND cpu-independent,1,1.0,1.0,1.0,54,397.7878465652466
+5,15.45213248447833,410,no-deblock = 1 AND constrained-intra = 1 AND no-8x8dct = 1 AND cpu-independent = 1 AND no-asm = 1,no-deblock AND constrained-intra AND no-8x8dct AND cpu-independent AND no-asm,0,1.0,1.0,1.0,54,393.955317735672
+6,85.47005380474609,386,intra-refresh = 1 AND open-gop = 1 AND no-8x8dct = 1 AND no-mixed-refs = 1 AND no-asm = 1 AND dts-compress = 1,intra-refresh AND open-gop AND no-8x8dct AND no-mixed-refs AND no-asm AND dts-compress,1,1.0,1.0,1.0,54,396.5500133037567
+7,90.78207333429054,339,slow-firstpass = 1 AND no-cabac = 1 AND no-deblock = 1 AND tff = 1 AND no-mixed-refs = 1 AND non-deterministic = 1 AND no-asm = 1,slow-firstpass AND no-cabac AND no-deblock AND tff AND no-mixed-refs AND non-deterministic AND no-asm,1,1.0,1.0,1.0,54,391.2378680706024
+1,12.35489989513319,499,sliced-threads = 1,sliced-threads,0,1.0,1.0,1.0,55,415.1514308452606
+2,72.0664672154486,911,cpu-independent = 1 AND opencl = 1,cpu-independent AND opencl,1,1.0,1.0,1.0,55,404.00886821746826
+3,36.520510444279175,735,no-deblock = 1 AND no-asm = 1 AND dts-compress = 1,no-deblock AND no-asm AND dts-compress,0,1.0,1.0,1.0,55,421.96752285957336
+4,87.33544842240843,579,no-psy = 1 AND no-weightb = 1 AND no-mbtree = 1 AND dts-compress = 1,no-psy AND no-weightb AND no-mbtree AND dts-compress,1,1.0,1.0,1.0,55,429.8804578781128
+5,71.96755976703083,460,slow-firstpass = 1 AND no-cabac = 1 AND cpu-independent = 1 AND no-asm = 1 AND aud = 1,slow-firstpass AND no-cabac AND cpu-independent AND no-asm AND NOT aud,1,1.0,1.0,1.0,55,439.2309749126434
+6,74.19646643869014,358,slow-firstpass = 1 AND no-deblock = 1 AND bff = 1 AND no-chroma-me = 1 AND no-dct-decimate = 1 AND aud = 1,slow-firstpass AND no-deblock AND bff AND no-chroma-me AND no-dct-decimate AND NOT aud,1,1.0,1.0,1.0,55,402.9773027896881
+7,90.17246364772085,327,slow-firstpass = 1 AND open-gop = 1 AND tff = 1 AND no-fast-pskip = 1 AND no-8x8dct = 1 AND no-dct-decimate = 1 AND non-deterministic = 1,slow-firstpass AND open-gop AND no-fast-pskip AND no-8x8dct AND no-dct-decimate AND non-deterministic,0,0.8934426229508198,0.8074074074074075,1.0,55,411.1840093135834
+1,99.919938645894,499,sliced-threads = 1,sliced-threads,2,1.0,1.0,1.0,56,404.804190158844
+2,60.88450496152375,250,intra-refresh = 1 AND sliced-threads = 1,intra-refresh AND sliced-threads,0,1.0,1.0,1.0,56,415.6166753768921
+3,63.96684993443301,855,no-scenecut = 1 AND tff = 1 AND bff = 1,no-scenecut AND tff AND bff,1,1.0,1.0,1.0,56,427.3767039775848
+4,56.74555659956724,554,no-cabac = 1 AND no-fast-pskip = 1 AND no-dct-decimate = 1 AND opencl = 1,no-cabac AND no-fast-pskip AND no-dct-decimate AND opencl,0,1.0,1.0,1.0,56,428.2605834007263
+5,39.00383631518292,416,slow-firstpass = 1 AND no-scenecut = 1 AND no-psy = 1 AND no-weightb = 1 AND cpu-independent = 1,slow-firstpass AND no-scenecut AND no-psy AND no-weightb AND cpu-independent,0,1.0,1.0,1.0,56,432.80473828315735
+6,10.522127094600112,377,slow-firstpass = 1 AND no-scenecut = 1 AND no-8x8dct = 1 AND no-chroma-me = 1 AND no-mbtree = 1 AND no-asm = 1,slow-firstpass AND no-scenecut AND no-8x8dct AND no-chroma-me AND no-mbtree AND no-asm,0,1.0,1.0,1.0,56,412.9656937122345
+7,11.755731801884142,360,slow-firstpass = 1 AND no-scenecut = 1 AND open-gop = 1 AND no-cabac = 1 AND tff = 1 AND no-fast-pskip = 1 AND non-deterministic = 1,slow-firstpass AND no-scenecut AND open-gop AND no-cabac AND tff AND no-fast-pskip AND non-deterministic,0,1.0,1.0,1.0,56,419.8432369232178
+1,68.34699891791018,499,sliced-threads = 1,sliced-threads,1,1.0,1.0,1.0,57,410.1654944419861
+2,47.892329394579576,883,intra-refresh = 1 AND aud = 1,intra-refresh AND NOT aud,0,1.0,1.0,1.0,57,410.2913091182709
+3,9.64696283612292,764,slow-firstpass = 1 AND tff = 1 AND no-asm = 1,slow-firstpass AND tff AND no-asm,1,1.0,1.0,1.0,57,408.12810826301575
+4,25.69930949646985,657,no-fast-pskip = 1 AND no-8x8dct = 1 AND no-weightb = 1 AND no-dct-decimate = 1,no-fast-pskip AND no-8x8dct AND no-weightb AND no-dct-decimate,0,1.0,1.0,1.0,57,404.476763010025
+5,53.22799597779268,487,slow-firstpass = 1 AND no-scenecut = 1 AND bff = 1 AND dts-compress = 1 AND opencl = 1,slow-firstpass AND no-scenecut AND bff AND dts-compress AND opencl,0,1.0,1.0,1.0,57,402.8612504005432
+6,71.34128318683616,383,intra-refresh = 1 AND no-cabac = 1 AND tff = 1 AND pic-struct = 1 AND no-asm = 1 AND opencl = 1,intra-refresh AND no-cabac AND tff AND pic-struct AND no-asm AND opencl,0,1.0,1.0,1.0,57,394.7052230834961
+7,70.97258649978903,278,slow-firstpass = 1 AND no-cabac = 1 AND no-deblock = 1 AND no-weightb = 1 AND no-mbtree = 1 AND no-dct-decimate = 1 AND cpu-independent = 1,slow-firstpass AND no-cabac AND no-deblock AND no-weightb AND no-mbtree AND no-dct-decimate AND cpu-independent,0,1.0,1.0,1.0,57,383.3556201457977
+1,9.61296289080413,499,sliced-threads = 1,sliced-threads,0,1.0,1.0,1.0,58,493.1977934837341
+2,36.93634862285566,919,no-8x8dct = 1 AND dts-compress = 1,no-8x8dct AND dts-compress,0,1.0,1.0,1.0,58,496.8755624294281
+3,96.91720239034686,704,no-deblock = 1 AND no-8x8dct = 1 AND no-asm = 1,no-deblock AND no-8x8dct AND no-asm,1,1.0,1.0,1.0,58,480.7094652652741
+4,71.02452471254493,158,no-chroma-me = 1 AND no-mixed-refs = 1 AND pic-struct = 1 AND sliced-threads = 1,no-chroma-me AND pic-struct AND sliced-threads,3,0.8977272727272727,0.8144329896907216,1.0,58,482.3438935279846
+5,63.29298743113489,437,no-8x8dct = 1 AND no-mixed-refs = 1 AND no-mbtree = 1 AND non-deterministic = 1 AND cpu-independent = 1,no-8x8dct AND no-mixed-refs AND no-mbtree AND non-deterministic AND cpu-independent,0,1.0,1.0,1.0,58,481.7586257457733
+6,105.0851077235313,390,no-scenecut = 1 AND no-cabac = 1 AND no-deblock = 1 AND no-mixed-refs = 1 AND no-dct-decimate = 1 AND opencl = 1,no-scenecut AND no-cabac AND no-deblock AND no-mixed-refs AND no-dct-decimate AND opencl,0,1.0,1.0,1.0,58,480.3451073169708
+7,31.76966623312345,349,slow-firstpass = 1 AND no-scenecut = 1 AND intra-refresh = 1 AND open-gop = 1 AND no-deblock = 1 AND constrained-intra = 1 AND no-weightb = 1,slow-firstpass AND no-scenecut AND intra-refresh AND open-gop AND no-deblock AND constrained-intra AND no-weightb,0,1.0,1.0,1.0,58,482.1111161708832
+1,107.48127611511968,499,sliced-threads = 1,sliced-threads,1,1.0,1.0,1.0,59,411.1568048000336
+2,9.543216576281337,878,cpu-independent = 1 AND dts-compress = 1,cpu-independent AND dts-compress,1,1.0,1.0,1.0,59,406.59003257751465
+3,29.804447075941923,737,no-deblock = 1 AND no-mixed-refs = 1 AND no-weightb = 1,no-deblock AND no-mixed-refs AND no-weightb,1,1.0,1.0,1.0,59,405.0341260433197
+4,98.07329852237052,573,no-scenecut = 1 AND tff = 1 AND non-deterministic = 1 AND opencl = 1,no-scenecut AND tff AND non-deterministic AND opencl,1,1.0,1.0,1.0,59,397.36586451530457
+5,67.3386114347253,469,no-chroma-me = 1 AND no-mbtree = 1 AND non-deterministic = 1 AND no-asm = 1 AND aud = 1,no-chroma-me AND no-mbtree AND non-deterministic AND no-asm AND NOT aud,0,1.0,1.0,1.0,59,398.3900716304779
+6,50.69754878653726,383,slow-firstpass = 1 AND intra-refresh = 1 AND no-cabac = 1 AND no-psy = 1 AND no-asm = 1 AND opencl = 1,slow-firstpass AND intra-refresh AND no-cabac AND no-psy AND no-asm AND opencl,0,1.0,1.0,1.0,59,406.1412069797516
+7,24.115190080263787,273,slow-firstpass = 1 AND no-scenecut = 1 AND open-gop = 1 AND constrained-intra = 1 AND no-chroma-me = 1 AND no-mbtree = 1 AND cpu-independent = 1,slow-firstpass AND no-scenecut AND open-gop AND constrained-intra AND no-chroma-me AND no-mbtree AND cpu-independent,0,1.0,1.0,1.0,59,394.94515562057495
+1,28.37832866636036,499,sliced-threads = 1,sliced-threads,0,1.0,1.0,1.0,6,403.0939016342163
+2,35.5176274950852,216,cpu-independent = 1 AND sliced-threads = 1,cpu-independent AND sliced-threads,0,1.0,1.0,1.0,6,412.0461056232453
+3,80.11248866600532,701,slow-firstpass = 1 AND no-scenecut = 1 AND no-weightb = 1,slow-firstpass AND no-scenecut AND no-weightb,1,1.0,1.0,1.0,6,409.6196489334106
+4,18.04642683375716,515,no-scenecut = 1 AND constrained-intra = 1 AND cpu-independent = 1 AND opencl = 1,no-scenecut AND constrained-intra AND cpu-independent AND opencl,0,1.0,1.0,1.0,6,404.3234703540802
+5,64.54160969814392,426,slow-firstpass = 1 AND bff = 1 AND constrained-intra = 1 AND no-fast-pskip = 1 AND cpu-independent = 1,slow-firstpass AND bff AND constrained-intra AND no-fast-pskip AND cpu-independent,0,1.0,1.0,1.0,6,381.1279170513153
+6,44.82415840329847,363,intra-refresh = 1 AND bff = 1 AND no-8x8dct = 1 AND no-mixed-refs = 1 AND no-weightb = 1 AND no-asm = 1,intra-refresh AND bff AND no-8x8dct AND no-mixed-refs AND no-weightb AND no-asm,0,1.0,1.0,1.0,6,393.409273147583
+7,9.20072966219855,335,slow-firstpass = 1 AND intra-refresh = 1 AND open-gop = 1 AND tff = 1 AND constrained-intra = 1 AND no-mixed-refs = 1 AND pic-struct = 1,slow-firstpass AND intra-refresh AND open-gop AND tff AND constrained-intra AND no-mixed-refs AND pic-struct,0,1.0,1.0,1.0,6,399.0416502952576
+1,63.80348655203689,499,sliced-threads = 1,sliced-threads,1,1.0,1.0,1.0,60,396.02299213409424
+2,22.4382694951923,847,no-dct-decimate = 1 AND cpu-independent = 1,no-dct-decimate AND cpu-independent,0,1.0,1.0,1.0,60,394.8559482097626
+3,88.51279924144184,796,no-cabac = 1 AND no-deblock = 1 AND no-chroma-me = 1,no-cabac AND no-deblock AND no-chroma-me,1,1.0,1.0,1.0,60,400.65443444252014
+4,78.18743752611546,559,no-scenecut = 1 AND no-chroma-me = 1 AND pic-struct = 1 AND dts-compress = 1,no-scenecut AND no-chroma-me AND pic-struct AND dts-compress,0,1.0,1.0,1.0,60,405.1112244129181
+5,82.1249107971745,451,bff = 1 AND no-dct-decimate = 1 AND no-asm = 1 AND dts-compress = 1 AND opencl = 1,bff AND no-dct-decimate AND no-asm AND dts-compress AND opencl,1,1.0,1.0,1.0,60,394.09527349472046
+6,46.64620595013637,343,intra-refresh = 1 AND no-cabac = 1 AND no-8x8dct = 1 AND no-mbtree = 1 AND pic-struct = 1 AND aud = 1,intra-refresh AND no-cabac AND no-8x8dct AND no-mbtree AND pic-struct AND NOT aud,0,1.0,1.0,1.0,60,401.4630651473999
+7,98.85540599913308,317,slow-firstpass = 1 AND no-cabac = 1 AND tff = 1 AND no-fast-pskip = 1 AND non-deterministic = 1 AND no-asm = 1 AND aud = 1,slow-firstpass AND no-cabac AND tff AND no-fast-pskip AND non-deterministic AND no-asm AND NOT aud,0,1.0,1.0,1.0,60,398.9614293575287
+1,87.55362954952729,499,sliced-threads = 1,sliced-threads,1,1.0,1.0,1.0,61,496.5076432228088
+2,62.27982609115984,243,aud = 1 AND sliced-threads = 1,NOT aud AND sliced-threads,0,1.0,1.0,1.0,61,496.62789940834045
+3,26.818762290431884,755,slow-firstpass = 1 AND no-deblock = 1 AND no-mixed-refs = 1,slow-firstpass AND no-deblock AND no-mixed-refs,0,1.0,1.0,1.0,61,494.37611627578735
+4,76.02328781441854,640,intra-refresh = 1 AND no-cabac = 1 AND constrained-intra = 1 AND no-fast-pskip = 1,intra-refresh AND no-cabac AND constrained-intra AND no-fast-pskip,0,1.0,1.0,1.0,61,488.98822712898254
+5,18.177264865298547,490,intra-refresh = 1 AND open-gop = 1 AND no-8x8dct = 1 AND no-mbtree = 1 AND pic-struct = 1,intra-refresh AND open-gop AND no-8x8dct AND no-mbtree AND pic-struct,0,1.0,1.0,1.0,61,492.3590989112854
+6,84.45199900319452,376,slow-firstpass = 1 AND open-gop = 1 AND no-mbtree = 1 AND no-dct-decimate = 1 AND no-asm = 1 AND dts-compress = 1,slow-firstpass AND open-gop AND no-mbtree AND no-dct-decimate AND no-asm AND dts-compress,1,1.0,1.0,1.0,61,493.9606602191925
+7,92.89183074635424,360,slow-firstpass = 1 AND intra-refresh = 1 AND open-gop = 1 AND no-cabac = 1 AND no-fast-pskip = 1 AND no-chroma-me = 1 AND no-dct-decimate = 1,slow-firstpass AND intra-refresh AND open-gop AND no-cabac AND no-fast-pskip AND no-chroma-me AND no-dct-decimate,1,1.0,1.0,1.0,61,492.4460549354553
+1,37.23619076879481,499,sliced-threads = 1,sliced-threads,0,1.0,1.0,1.0,62,423.136777639389
+2,98.6909376240377,253,no-chroma-me = 1 AND sliced-threads = 1,no-chroma-me AND sliced-threads,0,1.0,1.0,1.0,62,407.5542857646942
+3,64.52191225476004,166,no-fast-pskip = 1 AND no-psy = 1 AND sliced-threads = 1,no-fast-pskip AND no-psy AND sliced-threads,1,1.0,1.0,1.0,62,402.4470195770264
+4,47.52188914391786,583,no-scenecut = 1 AND constrained-intra = 1 AND non-deterministic = 1 AND aud = 1,no-scenecut AND constrained-intra AND non-deterministic AND NOT aud,0,1.0,1.0,1.0,62,401.9496016502381
+5,63.661978528389085,475,intra-refresh = 1 AND tff = 1 AND bff = 1 AND no-psy = 1 AND no-dct-decimate = 1,intra-refresh AND tff AND bff AND no-psy AND no-dct-decimate,0,1.0,1.0,1.0,62,393.80149006843567
+6,11.155648828400226,399,intra-refresh = 1 AND no-cabac = 1 AND no-deblock = 1 AND tff = 1 AND no-mixed-refs = 1 AND aud = 1,intra-refresh AND no-cabac AND no-deblock AND tff AND no-mixed-refs AND NOT aud,0,1.0,1.0,1.0,62,400.8227398395538
+7,91.0120588489728,316,slow-firstpass = 1 AND open-gop = 1 AND constrained-intra = 1 AND no-8x8dct = 1 AND pic-struct = 1 AND non-deterministic = 1 AND dts-compress = 1,slow-firstpass AND open-gop AND constrained-intra AND no-8x8dct AND pic-struct AND non-deterministic AND dts-compress,0,1.0,1.0,1.0,62,394.3666009902954
+1,50.79341867561979,499,sliced-threads = 1,sliced-threads,0,1.0,1.0,1.0,63,436.06622433662415
+2,37.595757206277376,884,no-weightb = 1 AND aud = 1,no-weightb AND NOT aud,0,1.0,1.0,1.0,63,432.5057141780853
+3,19.931597717293485,800,slow-firstpass = 1 AND pic-struct = 1 AND dts-compress = 1,slow-firstpass AND pic-struct AND dts-compress,0,1.0,1.0,1.0,63,442.0113534927368
+4,96.82779436116384,619,no-scenecut = 1 AND intra-refresh = 1 AND tff = 1 AND no-weightb = 1,no-scenecut AND intra-refresh AND tff AND no-weightb,1,1.0,1.0,1.0,63,435.0265049934387
+5,85.76241012872542,421,no-scenecut = 1 AND open-gop = 1 AND no-chroma-me = 1 AND cpu-independent = 1 AND no-asm = 1,no-scenecut AND open-gop AND no-chroma-me AND cpu-independent AND no-asm,1,1.0,1.0,1.0,63,416.6459357738495
+6,73.03839964375071,364,no-scenecut = 1 AND tff = 1 AND constrained-intra = 1 AND no-chroma-me = 1 AND no-dct-decimate = 1 AND aud = 1,no-scenecut AND tff AND constrained-intra AND no-chroma-me AND no-dct-decimate AND NOT aud,1,1.0,1.0,1.0,63,432.9906134605408
+7,107.83912385553518,304,slow-firstpass = 1 AND open-gop = 1 AND no-deblock = 1 AND tff = 1 AND no-psy = 1 AND no-dct-decimate = 1 AND aud = 1,slow-firstpass AND open-gop AND no-deblock AND tff AND no-psy AND no-dct-decimate AND NOT aud,1,1.0,1.0,1.0,63,425.1262714862824
+1,62.8702874044893,499,sliced-threads = 1,sliced-threads,0,1.0,1.0,1.0,64,414.07591819763184
+2,84.44722835124989,282,no-asm = 1 AND sliced-threads = 1,no-asm AND sliced-threads,0,1.0,1.0,1.0,64,427.4766082763672
+3,84.03191209150023,209,no-scenecut = 1 AND intra-refresh = 1 AND sliced-threads = 1,no-scenecut AND intra-refresh AND sliced-threads,4,1.0,1.0,1.0,64,415.1205160617829
+4,77.3969431709195,571,no-deblock = 1 AND tff = 1 AND non-deterministic = 1 AND cpu-independent = 1,no-deblock AND tff AND non-deterministic AND cpu-independent,0,1.0,1.0,1.0,64,396.2794494628906
+5,76.79290022023099,459,no-scenecut = 1 AND bff = 1 AND non-deterministic = 1 AND cpu-independent = 1 AND no-asm = 1,no-scenecut AND bff AND non-deterministic AND cpu-independent AND no-asm,1,1.0,1.0,1.0,64,395.8904609680176
+6,55.74504408549105,352,no-scenecut = 1 AND constrained-intra = 1 AND no-mixed-refs = 1 AND no-weightb = 1 AND no-asm = 1 AND aud = 1,no-scenecut AND constrained-intra AND no-mixed-refs AND no-weightb AND no-asm AND NOT aud,0,1.0,1.0,1.0,64,407.4209854602814
+7,50.3631490642525,325,slow-firstpass = 1 AND no-scenecut = 1 AND no-cabac = 1 AND no-psy = 1 AND no-mbtree = 1 AND pic-struct = 1 AND opencl = 1,slow-firstpass AND no-scenecut AND no-cabac AND no-psy AND no-mbtree AND pic-struct AND opencl,0,1.0,1.0,1.0,64,409.39158940315247
+1,72.63125176674716,499,sliced-threads = 1,sliced-threads,0,1.0,1.0,1.0,65,414.9852786064148
+2,22.040285897256556,258,no-deblock = 1 AND sliced-threads = 1,no-deblock AND sliced-threads,0,1.0,1.0,1.0,65,408.3320531845093
+3,40.80823055924391,728,open-gop = 1 AND tff = 1 AND no-psy = 1,open-gop AND tff AND no-psy,0,1.0,1.0,1.0,65,410.0936031341553
+4,94.45776935729648,579,no-scenecut = 1 AND no-fast-pskip = 1 AND no-psy = 1 AND non-deterministic = 1,no-scenecut AND no-fast-pskip AND no-psy AND non-deterministic,1,1.0,1.0,1.0,65,401.4302716255188
+5,11.583424691805714,534,no-scenecut = 1 AND intra-refresh = 1 AND no-deblock = 1 AND tff = 1 AND no-psy = 1,no-scenecut AND intra-refresh AND no-deblock AND tff AND no-psy,0,1.0,1.0,1.0,65,403.84541368484497
+6,82.83819799135934,448,no-scenecut = 1 AND intra-refresh = 1 AND no-cabac = 1 AND no-fast-pskip = 1 AND no-chroma-me = 1 AND no-weightb = 1,no-scenecut AND intra-refresh AND no-cabac AND no-fast-pskip AND no-chroma-me AND no-weightb,0,1.0,1.0,1.0,65,400.2549633979797
+7,48.95527312563478,355,slow-firstpass = 1 AND no-scenecut = 1 AND open-gop = 1 AND no-dct-decimate = 1 AND pic-struct = 1 AND non-deterministic = 1 AND opencl = 1,slow-firstpass AND no-scenecut AND open-gop AND no-dct-decimate AND pic-struct AND non-deterministic AND opencl,0,1.0,1.0,1.0,65,400.2997808456421
+1,8.920353918960654,499,sliced-threads = 1,sliced-threads,1,1.0,1.0,1.0,66,503.6632204055786
+2,27.175411866923348,253,no-chroma-me = 1 AND sliced-threads = 1,no-chroma-me AND sliced-threads,0,1.0,1.0,1.0,66,488.88548254966736
+3,82.29615892346713,781,no-chroma-me = 1 AND no-dct-decimate = 1 AND non-deterministic = 1,no-chroma-me AND no-dct-decimate AND non-deterministic,1,1.0,1.0,1.0,66,482.70217728614807
+4,102.38640220196557,636,intra-refresh = 1 AND open-gop = 1 AND non-deterministic = 1 AND no-asm = 1,intra-refresh AND open-gop AND non-deterministic AND no-asm,1,1.0,1.0,1.0,66,497.7569019794464
+5,89.97484854014264,515,no-chroma-me = 1 AND no-psy = 1 AND no-dct-decimate = 1 AND pic-struct = 1 AND opencl = 1,no-chroma-me AND no-psy AND no-dct-decimate AND pic-struct AND opencl,1,1.0,1.0,1.0,66,501.73041462898254
+6,44.41754593660562,387,slow-firstpass = 1 AND open-gop = 1 AND no-8x8dct = 1 AND no-chroma-me = 1 AND no-weightb = 1 AND no-asm = 1,slow-firstpass AND open-gop AND no-8x8dct AND no-chroma-me AND no-weightb AND no-asm,0,1.0,1.0,1.0,66,506.6656918525696
+7,97.6045912245608,346,slow-firstpass = 1 AND intra-refresh = 1 AND open-gop = 1 AND no-8x8dct = 1 AND no-chroma-me = 1 AND no-weightb = 1 AND no-mbtree = 1,slow-firstpass AND intra-refresh AND open-gop AND no-8x8dct AND no-chroma-me AND no-weightb AND no-mbtree,1,1.0,1.0,1.0,66,519.790853023529
+1,10.961694046163664,499,sliced-threads = 1,sliced-threads,4,1.0,1.0,1.0,67,412.6099529266357
+2,54.79073373385241,282,no-asm = 1 AND sliced-threads = 1,no-asm AND sliced-threads,0,1.0,1.0,1.0,67,396.7456986904144
+3,105.45839880106747,813,open-gop = 1 AND bff = 1 AND no-fast-pskip = 1,open-gop AND bff AND no-fast-pskip,1,1.0,1.0,1.0,67,417.70163440704346
+4,23.93352769685706,563,bff = 1 AND no-fast-pskip = 1 AND no-mbtree = 1 AND non-deterministic = 1,bff AND no-fast-pskip AND no-mbtree AND non-deterministic,0,1.0,1.0,1.0,67,418.84636783599854
+5,56.28745515252038,492,no-cabac = 1 AND constrained-intra = 1 AND no-dct-decimate = 1 AND pic-struct = 1 AND no-asm = 1,no-cabac AND constrained-intra AND no-dct-decimate AND pic-struct AND no-asm,1,1.0,1.0,1.0,67,396.45513796806335
+6,97.86182506545906,373,slow-firstpass = 1 AND open-gop = 1 AND tff = 1 AND constrained-intra = 1 AND no-fast-pskip = 1 AND dts-compress = 1,slow-firstpass AND open-gop AND tff AND constrained-intra AND no-fast-pskip AND dts-compress,1,1.0,1.0,1.0,67,406.8740003108978
+7,21.842493761174744,348,slow-firstpass = 1 AND no-scenecut = 1 AND intra-refresh = 1 AND no-cabac = 1 AND no-fast-pskip = 1 AND no-mbtree = 1 AND no-dct-decimate = 1,slow-firstpass AND no-scenecut AND intra-refresh AND no-cabac AND no-fast-pskip AND no-mbtree AND no-dct-decimate,0,1.0,1.0,1.0,67,427.57119131088257
+1,37.49523798791415,499,sliced-threads = 1,sliced-threads,0,1.0,1.0,1.0,68,405.59712386131287
+2,17.458387030440853,877,no-weightb = 1 AND dts-compress = 1,no-weightb AND dts-compress,0,1.0,1.0,1.0,68,401.4947476387024
+3,77.18864315423913,713,non-deterministic = 1 AND cpu-independent = 1 AND aud = 1,non-deterministic AND cpu-independent AND NOT aud,1,1.0,1.0,1.0,68,398.4325203895569
+4,79.71276691894262,620,bff = 1 AND constrained-intra = 1 AND no-psy = 1 AND no-mbtree = 1,bff AND constrained-intra AND no-psy AND no-mbtree,0,1.0,1.0,1.0,68,391.7398245334625
+5,23.388746367397488,470,no-scenecut = 1 AND no-8x8dct = 1 AND no-mixed-refs = 1 AND pic-struct = 1 AND dts-compress = 1,no-scenecut AND no-8x8dct AND no-mixed-refs AND pic-struct AND dts-compress,0,1.0,1.0,1.0,68,393.0374238491058
+6,94.96470157979824,399,no-scenecut = 1 AND no-cabac = 1 AND no-deblock = 1 AND pic-struct = 1 AND aud = 1 AND opencl = 1,no-scenecut AND no-cabac AND no-deblock AND pic-struct AND NOT aud AND opencl,1,1.0,1.0,1.0,68,396.2358033657074
+7,78.45679585825265,274,slow-firstpass = 1 AND no-scenecut = 1 AND bff = 1 AND constrained-intra = 1 AND no-fast-pskip = 1 AND cpu-independent = 1 AND dts-compress = 1,slow-firstpass AND no-scenecut AND bff AND constrained-intra AND no-fast-pskip AND cpu-independent AND dts-compress,1,1.0,1.0,1.0,68,388.5064446926117
+1,16.343304841328795,499,sliced-threads = 1,sliced-threads,1,1.0,1.0,1.0,69,421.3813810348511
+2,99.62588151246769,266,no-weightb = 1 AND sliced-threads = 1,no-weightb AND sliced-threads,0,1.0,1.0,1.0,69,412.3308961391449
+3,29.369378818237504,708,intra-refresh = 1 AND bff = 1 AND no-weightb = 1,intra-refresh AND bff AND no-weightb,0,1.0,1.0,1.0,69,436.15979957580566
+4,68.83913475851217,611,intra-refresh = 1 AND no-psy = 1 AND no-weightb = 1 AND pic-struct = 1,intra-refresh AND no-psy AND no-weightb AND pic-struct,1,1.0,1.0,1.0,69,445.55127453804016
+5,32.06207479733289,465,no-fast-pskip = 1 AND no-mixed-refs = 1 AND no-mbtree = 1 AND non-deterministic = 1 AND opencl = 1,no-fast-pskip AND no-mixed-refs AND no-mbtree AND non-deterministic AND opencl,0,1.0,1.0,1.0,69,430.6383519172669
+6,84.0311409142967,364,slow-firstpass = 1 AND constrained-intra = 1 AND no-fast-pskip = 1 AND no-8x8dct = 1 AND no-chroma-me = 1 AND cpu-independent = 1,slow-firstpass AND constrained-intra AND no-fast-pskip AND no-8x8dct AND no-chroma-me AND cpu-independent,1,1.0,1.0,1.0,69,434.9765472412109
+7,29.68955509380762,313,slow-firstpass = 1 AND intra-refresh = 1 AND open-gop = 1 AND tff = 1 AND no-mixed-refs = 1 AND no-dct-decimate = 1 AND dts-compress = 1,slow-firstpass AND intra-refresh AND open-gop AND tff AND no-mixed-refs AND no-dct-decimate AND dts-compress,0,1.0,1.0,1.0,69,408.1108701229096
+1,18.99804901323812,499,sliced-threads = 1,sliced-threads,0,1.0,1.0,1.0,7,413.5767531394959
+2,53.65009731517323,266,no-weightb = 1 AND sliced-threads = 1,no-weightb AND sliced-threads,0,1.0,1.0,1.0,7,408.2461981773377
+3,102.19933300843954,833,slow-firstpass = 1 AND no-scenecut = 1 AND no-cabac = 1,slow-firstpass AND no-scenecut AND no-cabac,1,1.0,1.0,1.0,7,403.31112694740295
+4,19.723370905035548,656,no-cabac = 1 AND no-deblock = 1 AND no-fast-pskip = 1 AND no-mixed-refs = 1,no-cabac AND no-deblock AND no-fast-pskip AND no-mixed-refs,0,1.0,1.0,1.0,7,395.18892073631287
+5,64.46833196339243,446,bff = 1 AND constrained-intra = 1 AND no-weightb = 1 AND no-dct-decimate = 1 AND dts-compress = 1,bff AND constrained-intra AND no-weightb AND no-dct-decimate AND dts-compress,1,1.0,1.0,1.0,7,396.18412733078
+6,52.10255115518594,327,intra-refresh = 1 AND tff = 1 AND no-fast-pskip = 1 AND no-mixed-refs = 1 AND pic-struct = 1 AND cpu-independent = 1,intra-refresh AND tff AND no-fast-pskip AND no-mixed-refs AND pic-struct AND cpu-independent,0,1.0,1.0,1.0,7,396.8059041500092
+7,92.39739894024872,353,slow-firstpass = 1 AND intra-refresh = 1 AND open-gop = 1 AND no-cabac = 1 AND tff = 1 AND no-psy = 1 AND no-dct-decimate = 1,slow-firstpass AND intra-refresh AND open-gop AND no-cabac AND tff AND no-psy AND no-dct-decimate,1,1.0,1.0,1.0,7,396.8319435119629
+1,23.451780933853936,499,sliced-threads = 1,sliced-threads,0,1.0,1.0,1.0,70,433.8842580318451
+2,79.37213215226916,262,no-cabac = 1 AND sliced-threads = 1,no-cabac AND sliced-threads,1,1.0,1.0,1.0,70,428.0500762462616
+3,97.19662395719452,743,no-chroma-me = 1 AND no-weightb = 1 AND no-asm = 1,no-chroma-me AND no-weightb AND no-asm,1,1.0,1.0,1.0,70,431.8145563602448
+4,77.65518635670674,457,intra-refresh = 1 AND no-weightb = 1 AND cpu-independent = 1 AND opencl = 1,intra-refresh AND no-weightb AND cpu-independent AND opencl,1,1.0,1.0,1.0,70,439.47975897789
+5,97.18267458903166,427,no-scenecut = 1 AND no-8x8dct = 1 AND no-mixed-refs = 1 AND no-weightb = 1 AND aud = 1,no-scenecut AND no-8x8dct AND no-mixed-refs AND no-weightb AND NOT aud,1,1.0,1.0,1.0,70,441.16164898872375
+6,107.24824566922042,407,no-scenecut = 1 AND open-gop = 1 AND no-deblock = 1 AND no-mixed-refs = 1 AND pic-struct = 1 AND no-asm = 1,no-scenecut AND open-gop AND no-deblock AND no-mixed-refs AND pic-struct AND no-asm,2,1.0,1.0,1.0,70,438.1101233959198
+7,12.220847262203105,313,slow-firstpass = 1 AND open-gop = 1 AND tff = 1 AND no-fast-pskip = 1 AND no-weightb = 1 AND no-mbtree = 1 AND no-asm = 1,slow-firstpass AND open-gop AND tff AND no-fast-pskip AND no-weightb AND no-mbtree AND no-asm,2,1.0,1.0,1.0,70,426.4287095069885
+1,57.651015317848845,499,sliced-threads = 1,sliced-threads,2,1.0,1.0,1.0,71,423.79013204574585
+2,77.56386149107874,249,no-mbtree = 1 AND sliced-threads = 1,no-mbtree AND sliced-threads,0,1.0,1.0,1.0,71,402.4909734725952
+3,14.133554751337524,823,no-deblock = 1 AND no-dct-decimate = 1 AND pic-struct = 1,no-deblock AND no-dct-decimate AND pic-struct,1,1.0,1.0,1.0,71,424.3386476039887
+4,18.748560522308104,577,intra-refresh = 1 AND tff = 1 AND no-weightb = 1 AND pic-struct = 1,intra-refresh AND tff AND no-weightb AND pic-struct,0,1.0,1.0,1.0,71,404.2477159500122
+5,30.20657648803286,423,no-cabac = 1 AND no-8x8dct = 1 AND no-psy = 1 AND pic-struct = 1 AND dts-compress = 1,no-cabac AND no-8x8dct AND no-psy AND pic-struct AND dts-compress,0,1.0,1.0,1.0,71,418.7469260692597
+6,105.40203489900364,388,intra-refresh = 1 AND no-deblock = 1 AND bff = 1 AND no-8x8dct = 1 AND no-chroma-me = 1 AND opencl = 1,intra-refresh AND no-deblock AND bff AND no-8x8dct AND no-chroma-me AND opencl,1,1.0,1.0,1.0,71,413.5737614631653
+7,34.55045441858876,334,slow-firstpass = 1 AND no-cabac = 1 AND bff = 1 AND no-fast-pskip = 1 AND no-mixed-refs = 1 AND pic-struct = 1 AND non-deterministic = 1,slow-firstpass AND no-cabac AND bff AND no-fast-pskip AND no-mixed-refs AND pic-struct AND non-deterministic,0,1.0,1.0,1.0,71,399.6826820373535
+1,92.48693765119644,499,sliced-threads = 1,sliced-threads,2,1.0,1.0,1.0,72,428.57998394966125
+2,53.900790370306126,926,intra-refresh = 1 AND dts-compress = 1,intra-refresh AND dts-compress,1,1.0,1.0,1.0,72,423.2495391368866
+3,94.47761047980882,792,no-chroma-me = 1 AND no-weightb = 1 AND pic-struct = 1,no-chroma-me AND no-weightb AND pic-struct,1,1.0,1.0,1.0,72,426.154331445694
+4,21.67074297913648,589,open-gop = 1 AND tff = 1 AND constrained-intra = 1 AND dts-compress = 1,open-gop AND tff AND constrained-intra AND dts-compress,0,1.0,1.0,1.0,72,433.86744809150696
+5,17.542027952951695,463,tff = 1 AND no-mixed-refs = 1 AND no-weightb = 1 AND no-dct-decimate = 1 AND opencl = 1,tff AND no-mixed-refs AND no-weightb AND no-dct-decimate AND opencl,0,1.0,1.0,1.0,72,441.54331493377686
+6,78.07894397897476,315,intra-refresh = 1 AND no-cabac = 1 AND bff = 1 AND no-mbtree = 1 AND cpu-independent = 1 AND opencl = 1,intra-refresh AND no-cabac AND bff AND no-mbtree AND cpu-independent AND opencl,1,1.0,1.0,1.0,72,413.1877796649933
+7,77.24997521859187,269,slow-firstpass = 1 AND open-gop = 1 AND tff = 1 AND no-fast-pskip = 1 AND no-chroma-me = 1 AND no-psy = 1 AND cpu-independent = 1,slow-firstpass AND open-gop AND tff AND no-fast-pskip AND no-chroma-me AND no-psy AND cpu-independent,0,1.0,1.0,1.0,72,407.61878848075867
+1,45.351100365472206,499,sliced-threads = 1,sliced-threads,0,1.0,1.0,1.0,73,429.0598521232605
+2,102.53571644251296,252,bff = 1 AND sliced-threads = 1,bff AND sliced-threads,0,1.0,1.0,1.0,73,439.1476318836212
+3,83.34814523746235,690,open-gop = 1 AND no-dct-decimate = 1 AND dts-compress = 1,open-gop AND no-dct-decimate AND dts-compress,1,1.0,1.0,1.0,73,424.9130902290344
+4,16.64638649756372,542,open-gop = 1 AND no-weightb = 1 AND aud = 1 AND opencl = 1,open-gop AND no-weightb AND NOT aud AND opencl,0,1.0,1.0,1.0,73,431.0351798534393
+5,54.227784633732334,447,slow-firstpass = 1 AND tff = 1 AND no-dct-decimate = 1 AND no-asm = 1 AND dts-compress = 1,slow-firstpass AND tff AND no-dct-decimate AND no-asm AND dts-compress,0,1.0,1.0,1.0,73,429.1784286499024
+6,10.228283958364448,402,slow-firstpass = 1 AND no-deblock = 1 AND no-mixed-refs = 1 AND non-deterministic = 1 AND aud = 1 AND opencl = 1,slow-firstpass AND no-deblock AND no-mixed-refs AND non-deterministic AND NOT aud AND opencl,0,1.0,1.0,1.0,73,409.40156078338623
+7,94.74358362918984,306,slow-firstpass = 1 AND no-scenecut = 1 AND no-fast-pskip = 1 AND no-weightb = 1 AND no-dct-decimate = 1 AND pic-struct = 1 AND dts-compress = 1,slow-firstpass AND no-scenecut AND no-fast-pskip AND no-weightb AND no-dct-decimate AND pic-struct AND dts-compress,1,1.0,1.0,1.0,73,407.1967768669128
+1,55.5741465239895,499,sliced-threads = 1,sliced-threads,2,1.0,1.0,1.0,74,412.0521197319031
+2,18.528853256496557,812,no-mixed-refs = 1 AND cpu-independent = 1,no-mixed-refs AND cpu-independent,0,1.0,1.0,1.0,74,425.2093150615692
+3,55.3971761200278,747,intra-refresh = 1 AND bff = 1 AND no-mixed-refs = 1,intra-refresh AND bff AND no-mixed-refs,1,1.0,1.0,1.0,74,408.1204581260681
+4,83.74263519577524,530,intra-refresh = 1 AND no-8x8dct = 1 AND no-chroma-me = 1 AND aud = 1,intra-refresh AND no-8x8dct AND no-chroma-me AND NOT aud,1,1.0,1.0,1.0,74,402.21505641937256
+5,22.86883871701666,440,slow-firstpass = 1 AND tff = 1 AND no-psy = 1 AND no-mbtree = 1 AND opencl = 1,slow-firstpass AND tff AND no-psy AND no-mbtree AND opencl,0,1.0,1.0,1.0,74,399.0256156921387
+6,72.66571391295334,388,slow-firstpass = 1 AND no-scenecut = 1 AND tff = 1 AND constrained-intra = 1 AND no-chroma-me = 1 AND no-dct-decimate = 1,slow-firstpass AND no-scenecut AND tff AND constrained-intra AND no-chroma-me AND no-dct-decimate,3,1.0,1.0,1.0,74,395.18976354599
+7,83.34950960564143,293,slow-firstpass = 1 AND no-scenecut = 1 AND intra-refresh = 1 AND constrained-intra = 1 AND no-chroma-me = 1 AND no-psy = 1 AND cpu-independent = 1,slow-firstpass AND no-scenecut AND intra-refresh AND constrained-intra AND no-chroma-me AND no-psy AND cpu-independent,1,1.0,1.0,1.0,74,392.0886387825012
+1,39.10032438307135,499,sliced-threads = 1,sliced-threads,0,1.0,1.0,1.0,75,405.78493070602417
+2,66.35349167595987,265,no-dct-decimate = 1 AND sliced-threads = 1,no-dct-decimate AND sliced-threads,1,1.0,1.0,1.0,75,399.7185342311859
+3,89.0019484534937,757,no-cabac = 1 AND no-chroma-me = 1 AND no-mbtree = 1,no-cabac AND no-chroma-me AND no-mbtree,1,1.0,1.0,1.0,75,398.3123648166657
+4,34.317393753655764,520,bff = 1 AND no-fast-pskip = 1 AND no-mbtree = 1 AND dts-compress = 1,bff AND no-fast-pskip AND no-mbtree AND dts-compress,0,1.0,1.0,1.0,75,394.2902882099152
+5,73.56317614936256,509,open-gop = 1 AND no-8x8dct = 1 AND no-chroma-me = 1 AND non-deterministic = 1 AND no-asm = 1,open-gop AND no-8x8dct AND no-chroma-me AND non-deterministic AND no-asm,0,1.0,1.0,1.0,75,392.89625787734985
+6,26.408299768034613,337,no-scenecut = 1 AND intra-refresh = 1 AND no-mixed-refs = 1 AND no-weightb = 1 AND cpu-independent = 1 AND dts-compress = 1,no-scenecut AND intra-refresh AND no-mixed-refs AND no-weightb AND cpu-independent AND dts-compress,0,1.0,1.0,1.0,75,393.779445886612
+7,106.86277232552835,268,slow-firstpass = 1 AND intra-refresh = 1 AND tff = 1 AND constrained-intra = 1 AND no-8x8dct = 1 AND no-mbtree = 1 AND aud = 1,slow-firstpass AND intra-refresh AND tff AND constrained-intra AND no-8x8dct AND no-mbtree AND NOT aud,1,1.0,1.0,1.0,75,392.6875894069672
+1,37.16878861287944,499,sliced-threads = 1,sliced-threads,1,1.0,1.0,1.0,76,403.92119312286377
+2,76.94716360751222,298,non-deterministic = 1 AND sliced-threads = 1,non-deterministic AND sliced-threads,3,1.0,1.0,1.0,76,399.783323764801
+3,19.05861194457975,180,pic-struct = 1 AND dts-compress = 1 AND sliced-threads = 1,pic-struct AND dts-compress AND sliced-threads,0,1.0,1.0,1.0,76,400.2637810707092
+4,48.89706210971396,534,open-gop = 1 AND no-weightb = 1 AND no-mbtree = 1 AND aud = 1,open-gop AND no-weightb AND no-mbtree AND NOT aud,0,1.0,1.0,1.0,76,395.9022581577301
+5,74.97848384546384,445,no-dct-decimate = 1 AND cpu-independent = 1 AND no-asm = 1 AND dts-compress = 1 AND opencl = 1,no-dct-decimate AND cpu-independent AND no-asm AND dts-compress AND opencl,1,1.0,1.0,1.0,76,391.43402123451233
+6,14.417250332061462,349,no-scenecut = 1 AND constrained-intra = 1 AND no-weightb = 1 AND non-deterministic = 1 AND aud = 1 AND opencl = 1,no-scenecut AND constrained-intra AND no-weightb AND non-deterministic AND NOT aud AND opencl,0,1.0,1.0,1.0,76,392.0315449237824
+7,61.52539232942973,305,slow-firstpass = 1 AND open-gop = 1 AND tff = 1 AND no-weightb = 1 AND aud = 1 AND dts-compress = 1 AND opencl = 1,slow-firstpass AND open-gop AND tff AND no-weightb AND NOT aud AND dts-compress AND opencl,0,1.0,1.0,1.0,76,387.2292013168335
+1,41.61796251732214,499,sliced-threads = 1,sliced-threads,0,1.0,1.0,1.0,77,420.5759291648865
+2,85.13508779959172,847,no-dct-decimate = 1 AND cpu-independent = 1,no-dct-decimate AND cpu-independent,1,1.0,1.0,1.0,77,418.7731401920319
+3,29.81319289397709,615,tff = 1 AND no-dct-decimate = 1 AND cpu-independent = 1,tff AND no-dct-decimate AND cpu-independent,0,1.0,1.0,1.0,77,414.2532753944397
+4,70.18657611792416,708,tff = 1 AND bff = 1 AND constrained-intra = 1 AND no-mixed-refs = 1,tff AND bff AND constrained-intra AND no-mixed-refs,1,1.0,1.0,1.0,77,410.859988451004
+5,57.88142429052485,556,slow-firstpass = 1 AND no-8x8dct = 1 AND no-chroma-me = 1 AND no-mixed-refs = 1 AND no-asm = 1,slow-firstpass AND no-8x8dct AND no-chroma-me AND no-mixed-refs AND no-asm,0,1.0,1.0,1.0,77,408.3132104873657
+6,57.68243781779751,406,no-scenecut = 1 AND intra-refresh = 1 AND constrained-intra = 1 AND no-mixed-refs = 1 AND no-asm = 1 AND dts-compress = 1,no-scenecut AND intra-refresh AND constrained-intra AND no-mixed-refs AND no-asm AND dts-compress,0,1.0,1.0,1.0,77,398.5782701969147
+7,22.555592797435036,297,slow-firstpass = 1 AND intra-refresh = 1 AND no-deblock = 1 AND no-mixed-refs = 1 AND no-mbtree = 1 AND aud = 1 AND dts-compress = 1,slow-firstpass AND intra-refresh AND no-deblock AND no-mixed-refs AND no-mbtree AND NOT aud AND dts-compress,0,1.0,1.0,1.0,77,396.58413529396057
+1,9.690590398602945,499,sliced-threads = 1,sliced-threads,0,1.0,1.0,1.0,78,409.26526522636414
+2,88.78226094732577,919,no-8x8dct = 1 AND dts-compress = 1,no-8x8dct AND dts-compress,1,1.0,1.0,1.0,78,402.29062938690186
+3,96.48725138275256,841,intra-refresh = 1 AND tff = 1 AND constrained-intra = 1,intra-refresh AND tff AND constrained-intra,1,1.0,1.0,1.0,78,401.1277043819428
+4,16.25888097840626,593,no-cabac = 1 AND no-8x8dct = 1 AND no-dct-decimate = 1 AND non-deterministic = 1,no-cabac AND no-8x8dct AND no-dct-decimate AND non-deterministic,0,1.0,1.0,1.0,78,402.3572988510132
+5,42.23233617599739,491,constrained-intra = 1 AND no-psy = 1 AND no-dct-decimate = 1 AND pic-struct = 1 AND no-asm = 1,constrained-intra AND no-psy AND no-dct-decimate AND pic-struct AND no-asm,0,1.0,1.0,1.0,78,403.5282003879547
+6,42.61669905280617,436,no-scenecut = 1 AND no-cabac = 1 AND no-deblock = 1 AND tff = 1 AND no-chroma-me = 1 AND no-weightb = 1,no-scenecut AND no-cabac AND no-deblock AND tff AND no-chroma-me AND no-weightb,0,1.0,1.0,1.0,78,402.4376859664917
+7,71.61201691690692,273,slow-firstpass = 1 AND intra-refresh = 1 AND no-fast-pskip = 1 AND no-8x8dct = 1 AND no-mbtree = 1 AND pic-struct = 1 AND cpu-independent = 1,slow-firstpass AND intra-refresh AND no-fast-pskip AND no-8x8dct AND no-mbtree AND pic-struct AND cpu-independent,0,1.0,1.0,1.0,78,414.23867535591125
+1,96.45537931981124,499,sliced-threads = 1,sliced-threads,1,1.0,1.0,1.0,79,415.5559275150299
+2,53.67294966818673,919,no-8x8dct = 1 AND dts-compress = 1,no-8x8dct AND dts-compress,1,1.0,1.0,1.0,79,410.1755173206329
+3,19.575120161671773,722,intra-refresh = 1 AND no-8x8dct = 1 AND no-dct-decimate = 1,intra-refresh AND no-8x8dct AND no-dct-decimate,0,1.0,1.0,1.0,79,398.9791357517242
+4,88.22735635841006,556,open-gop = 1 AND cpu-independent = 1 AND no-asm = 1 AND dts-compress = 1,open-gop AND cpu-independent AND no-asm AND dts-compress,1,1.0,1.0,1.0,79,401.6681067943573
+5,76.63992925890922,419,slow-firstpass = 1 AND no-deblock = 1 AND constrained-intra = 1 AND no-weightb = 1 AND aud = 1,slow-firstpass AND no-deblock AND constrained-intra AND no-weightb AND NOT aud,1,1.0,1.0,1.0,79,401.9014458656311
+6,21.19388554633392,387,no-scenecut = 1 AND no-cabac = 1 AND bff = 1 AND no-mixed-refs = 1 AND no-weightb = 1 AND opencl = 1,no-scenecut AND no-cabac AND bff AND no-mixed-refs AND no-weightb AND opencl,0,1.0,1.0,1.0,79,402.5830080509186
+7,32.04618535768444,293,slow-firstpass = 1 AND intra-refresh = 1 AND no-chroma-me = 1 AND no-mixed-refs = 1 AND no-psy = 1 AND no-dct-decimate = 1 AND cpu-independent = 1,slow-firstpass AND intra-refresh AND no-chroma-me AND no-mixed-refs AND no-psy AND no-dct-decimate AND cpu-independent,0,1.0,1.0,1.0,79,400.9799635410309
+1,75.07506602311791,499,sliced-threads = 1,sliced-threads,0,1.0,1.0,1.0,8,404.38276958465576
+2,62.85431258451849,819,tff = 1 AND cpu-independent = 1,tff AND cpu-independent,1,1.0,1.0,1.0,8,399.5497968196869
+3,11.39253767520066,797,no-fast-pskip = 1 AND no-chroma-me = 1 AND no-psy = 1,no-fast-pskip AND no-chroma-me AND no-psy,1,1.0,1.0,1.0,8,398.8952927589417
+4,106.63551270780673,532,tff = 1 AND no-fast-pskip = 1 AND no-weightb = 1 AND non-deterministic = 1,tff AND no-fast-pskip AND no-weightb AND non-deterministic,1,1.0,1.0,1.0,8,392.0690743923187
+5,40.18031754398184,405,open-gop = 1 AND constrained-intra = 1 AND no-psy = 1 AND no-dct-decimate = 1 AND cpu-independent = 1,open-gop AND constrained-intra AND no-psy AND no-dct-decimate AND cpu-independent,0,1.0,1.0,1.0,8,394.0962197780609
+6,43.55353062676472,412,no-scenecut = 1 AND intra-refresh = 1 AND no-cabac = 1 AND no-8x8dct = 1 AND pic-struct = 1 AND opencl = 1,no-scenecut AND intra-refresh AND no-cabac AND no-8x8dct AND pic-struct AND opencl,0,1.0,1.0,1.0,8,384.6740911006928
+7,11.139126226234106,338,slow-firstpass = 1 AND intra-refresh = 1 AND no-deblock = 1 AND tff = 1 AND bff = 1 AND pic-struct = 1 AND non-deterministic = 1,slow-firstpass AND intra-refresh AND no-deblock AND tff AND bff AND pic-struct AND non-deterministic,0,1.0,1.0,1.0,8,389.7664723396301
+1,102.56590738325278,499,sliced-threads = 1,sliced-threads,1,1.0,1.0,1.0,80,397.7644202709198
+2,67.70567711406514,844,bff = 1 AND cpu-independent = 1,bff AND cpu-independent,1,1.0,1.0,1.0,80,400.4977533817291
+3,35.68500134861435,706,bff = 1 AND pic-struct = 1 AND dts-compress = 1,bff AND pic-struct AND dts-compress,0,1.0,1.0,1.0,80,402.38705825805664
+4,50.82231880452838,628,bff = 1 AND no-8x8dct = 1 AND no-chroma-me = 1 AND pic-struct = 1,bff AND no-8x8dct AND no-chroma-me AND pic-struct,0,1.0,1.0,1.0,80,398.565792798996
+5,45.817623227320055,426,tff = 1 AND no-8x8dct = 1 AND pic-struct = 1 AND no-asm = 1 AND aud = 1,tff AND no-8x8dct AND pic-struct AND no-asm AND NOT aud,0,1.0,1.0,1.0,80,393.6727404594421
+6,98.726222190172,390,no-scenecut = 1 AND no-deblock = 1 AND bff = 1 AND no-fast-pskip = 1 AND pic-struct = 1 AND opencl = 1,no-scenecut AND no-deblock AND bff AND no-fast-pskip AND pic-struct AND opencl,1,1.0,1.0,1.0,80,390.1273589134216
+7,75.68837788262982,327,slow-firstpass = 1 AND open-gop = 1 AND no-cabac = 1 AND tff = 1 AND no-mbtree = 1 AND non-deterministic = 1 AND opencl = 1,slow-firstpass AND open-gop AND no-cabac AND tff AND no-mbtree AND non-deterministic AND opencl,0,1.0,1.0,1.0,80,387.6068680286408
+1,50.60794742668928,499,sliced-threads = 1,sliced-threads,0,1.0,1.0,1.0,81,401.4583959579468
+2,13.91025361697418,239,constrained-intra = 1 AND sliced-threads = 1,constrained-intra AND sliced-threads,0,1.0,1.0,1.0,81,397.80268812179565
+3,29.79783507107969,779,bff = 1 AND no-fast-pskip = 1 AND pic-struct = 1,bff AND no-fast-pskip AND pic-struct,0,1.0,1.0,1.0,81,392.4286575317383
+4,86.79477426373649,537,tff = 1 AND constrained-intra = 1 AND no-mbtree = 1 AND aud = 1,tff AND constrained-intra AND no-mbtree AND NOT aud,1,1.0,1.0,1.0,81,389.6064276695252
+5,26.40170329109538,503,slow-firstpass = 1 AND open-gop = 1 AND no-mixed-refs = 1 AND aud = 1 AND opencl = 1,slow-firstpass AND open-gop AND no-mixed-refs AND NOT aud AND opencl,0,1.0,1.0,1.0,81,392.0782916545868
+6,22.13461340686249,395,slow-firstpass = 1 AND no-scenecut = 1 AND no-8x8dct = 1 AND no-chroma-me = 1 AND no-asm = 1 AND opencl = 1,slow-firstpass AND no-scenecut AND no-8x8dct AND no-chroma-me AND no-asm AND opencl,0,1.0,1.0,1.0,81,388.6734371185303
+7,92.76252932281233,309,slow-firstpass = 1 AND open-gop = 1 AND bff = 1 AND constrained-intra = 1 AND no-psy = 1 AND no-mbtree = 1 AND dts-compress = 1,slow-firstpass AND open-gop AND bff AND constrained-intra AND no-psy AND no-mbtree AND dts-compress,0,1.0,1.0,1.0,81,387.3879265785217
+1,57.434199774183725,499,sliced-threads = 1,sliced-threads,1,1.0,1.0,1.0,82,409.3351147174835
+2,38.44311419588809,265,no-dct-decimate = 1 AND sliced-threads = 1,no-dct-decimate AND sliced-threads,0,1.0,1.0,1.0,82,390.3011491298676
+3,81.97343149504013,629,no-fast-pskip = 1 AND no-chroma-me = 1 AND cpu-independent = 1,no-fast-pskip AND no-chroma-me AND cpu-independent,1,1.0,1.0,1.0,82,401.3798215389252
+4,31.25920114342786,584,no-mixed-refs = 1 AND no-psy = 1 AND no-mbtree = 1 AND no-asm = 1,no-mixed-refs AND no-psy AND no-mbtree AND no-asm,1,1.0,1.0,1.0,82,397.8415818214417
+5,15.522837677988004,487,slow-firstpass = 1 AND open-gop = 1 AND bff = 1 AND no-fast-pskip = 1 AND opencl = 1,slow-firstpass AND open-gop AND bff AND no-fast-pskip AND opencl,1,1.0,1.0,1.0,82,396.6948049068451
+6,40.765413197952974,387,intra-refresh = 1 AND constrained-intra = 1 AND no-fast-pskip = 1 AND no-mixed-refs = 1 AND non-deterministic = 1 AND no-asm = 1,intra-refresh AND constrained-intra AND no-fast-pskip AND no-mixed-refs AND non-deterministic AND no-asm,0,1.0,1.0,1.0,82,394.98191928863525
+7,104.1736604644188,340,slow-firstpass = 1 AND no-scenecut = 1 AND open-gop = 1 AND no-cabac = 1 AND no-deblock = 1 AND no-fast-pskip = 1 AND no-weightb = 1,slow-firstpass AND no-scenecut AND open-gop AND no-cabac AND no-deblock AND no-fast-pskip AND no-weightb,1,1.0,1.0,1.0,82,390.0801205635071
+1,27.31972725100188,499,sliced-threads = 1,sliced-threads,0,1.0,1.0,1.0,83,423.1469988822937
+2,26.167744513548925,289,pic-struct = 1 AND sliced-threads = 1,pic-struct AND sliced-threads,0,1.0,1.0,1.0,83,409.85271286964417
+3,15.61365918615873,187,open-gop = 1 AND constrained-intra = 1 AND sliced-threads = 1,open-gop AND constrained-intra AND sliced-threads,0,1.0,1.0,1.0,83,399.8932232856751
+4,95.42422090198636,622,slow-firstpass = 1 AND no-fast-pskip = 1 AND pic-struct = 1 AND non-deterministic = 1,slow-firstpass AND no-fast-pskip AND pic-struct AND non-deterministic,1,1.0,1.0,1.0,83,400.0136349201202
+5,34.291194714961904,435,intra-refresh = 1 AND constrained-intra = 1 AND no-mbtree = 1 AND no-dct-decimate = 1 AND dts-compress = 1,intra-refresh AND constrained-intra AND no-mbtree AND no-dct-decimate AND dts-compress,0,1.0,1.0,1.0,83,403.8729712963104
+6,83.40966106239804,353,intra-refresh = 1 AND no-cabac = 1 AND no-psy = 1 AND no-dct-decimate = 1 AND no-asm = 1 AND opencl = 1,intra-refresh AND no-cabac AND no-psy AND no-dct-decimate AND no-asm AND opencl,1,1.0,1.0,1.0,83,401.10679054260254
+7,53.174967242671805,316,slow-firstpass = 1 AND no-cabac = 1 AND tff = 1 AND no-mixed-refs = 1 AND no-psy = 1 AND non-deterministic = 1 AND aud = 1,slow-firstpass AND no-cabac AND tff AND no-mixed-refs AND no-psy AND non-deterministic AND NOT aud,1,1.0,1.0,1.0,83,401.2505741119385
+1,29.101622433226897,499,sliced-threads = 1,sliced-threads,0,1.0,1.0,1.0,84,417.2930841445923
+2,102.9720724228313,799,no-mbtree = 1 AND cpu-independent = 1,no-mbtree AND cpu-independent,1,1.0,1.0,1.0,84,422.5877983570099
+3,86.07029520017615,652,bff = 1 AND no-mbtree = 1 AND dts-compress = 1,bff AND no-mbtree AND dts-compress,1,1.0,1.0,1.0,84,399.04696774482727
+4,104.65016416604062,610,tff = 1 AND no-mixed-refs = 1 AND no-weightb = 1 AND no-dct-decimate = 1,tff AND no-mixed-refs AND no-weightb AND no-dct-decimate,1,1.0,1.0,1.0,84,399.4770658016205
+5,51.45320412716296,435,no-cabac = 1 AND no-deblock = 1 AND no-8x8dct = 1 AND no-mixed-refs = 1 AND aud = 1,no-cabac AND no-deblock AND no-8x8dct AND no-mixed-refs AND NOT aud,0,1.0,1.0,1.0,84,414.1584763526917
+6,86.96499025992149,352,no-scenecut = 1 AND tff = 1 AND constrained-intra = 1 AND no-chroma-me = 1 AND no-mixed-refs = 1 AND cpu-independent = 1,no-scenecut AND tff AND constrained-intra AND no-chroma-me AND no-mixed-refs AND cpu-independent,1,1.0,1.0,1.0,84,397.5050699710846
+7,68.1423101242022,338,slow-firstpass = 1 AND open-gop = 1 AND no-deblock = 1 AND tff = 1 AND no-mixed-refs = 1 AND non-deterministic = 1 AND opencl = 1,slow-firstpass AND open-gop AND no-deblock AND tff AND no-mixed-refs AND non-deterministic AND opencl,1,1.0,1.0,1.0,84,407.5181088447571
+1,63.56679698930533,499,sliced-threads = 1,sliced-threads,0,1.0,1.0,1.0,85,399.89775037765503
+2,81.00821196038781,289,pic-struct = 1 AND sliced-threads = 1,pic-struct AND sliced-threads,1,1.0,1.0,1.0,85,389.83043360710144
+3,72.39034070743045,741,tff = 1 AND non-deterministic = 1 AND dts-compress = 1,tff AND non-deterministic AND dts-compress,1,1.0,1.0,1.0,85,395.76413226127625
+4,96.76852358143014,514,no-cabac = 1 AND no-deblock = 1 AND cpu-independent = 1 AND no-asm = 1,no-cabac AND no-deblock AND cpu-independent AND no-asm,1,1.0,1.0,1.0,85,397.380069732666
+5,39.1341042885393,427,slow-firstpass = 1 AND no-8x8dct = 1 AND pic-struct = 1 AND cpu-independent = 1 AND no-asm = 1,slow-firstpass AND no-8x8dct AND pic-struct AND cpu-independent AND no-asm,0,1.0,1.0,1.0,85,411.9525694847107
+6,78.66289557050999,424,no-scenecut = 1 AND no-deblock = 1 AND bff = 1 AND no-fast-pskip = 1 AND no-8x8dct = 1 AND no-dct-decimate = 1,no-scenecut AND no-deblock AND bff AND no-fast-pskip AND no-8x8dct AND no-dct-decimate,1,1.0,1.0,1.0,85,390.89878702163696
+7,6.884028753747036,280,slow-firstpass = 1 AND open-gop = 1 AND no-cabac = 1 AND tff = 1 AND no-psy = 1 AND cpu-independent = 1 AND dts-compress = 1,NOT open-gop AND NOT pic-struct AND NOT aud AND NOT dts-compress AND NOT sliced-threads,0,0.0,0.0,0.0,85,394.4340469837189
+1,30.0876500892561,499,sliced-threads = 1,sliced-threads,1,1.0,1.0,1.0,86,443.4385595321655
+2,102.38015252058838,270,opencl = 1 AND sliced-threads = 1,opencl AND sliced-threads,1,1.0,1.0,1.0,86,449.7200059890747
+3,81.65275507645578,720,no-mixed-refs = 1 AND no-weightb = 1 AND opencl = 1,no-mixed-refs AND no-weightb AND opencl,1,1.0,1.0,1.0,86,444.544192314148
+4,21.97851007635952,614,no-scenecut = 1 AND open-gop = 1 AND no-psy = 1 AND non-deterministic = 1,no-scenecut AND open-gop AND no-psy AND non-deterministic,0,1.0,1.0,1.0,86,413.8832075595856
+5,53.87399506412006,418,no-deblock = 1 AND tff = 1 AND bff = 1 AND no-weightb = 1 AND cpu-independent = 1,no-deblock AND tff AND bff AND no-weightb AND cpu-independent,0,1.0,1.0,1.0,86,408.124267578125
+6,101.71957206044176,420,slow-firstpass = 1 AND open-gop = 1 AND constrained-intra = 1 AND no-fast-pskip = 1 AND no-chroma-me = 1 AND pic-struct = 1,slow-firstpass AND open-gop AND constrained-intra AND no-fast-pskip AND no-chroma-me AND pic-struct,1,1.0,1.0,1.0,86,402.4966058731079
+7,91.0489112942221,274,slow-firstpass = 1 AND no-scenecut = 1 AND no-deblock = 1 AND constrained-intra = 1 AND no-8x8dct = 1 AND no-mbtree = 1 AND non-deterministic = 1,slow-firstpass AND no-scenecut AND no-deblock AND constrained-intra AND no-8x8dct AND no-mbtree AND non-deterministic,0,1.0,1.0,1.0,86,407.9559483528137
+1,83.8906483610127,499,sliced-threads = 1,sliced-threads,1,1.0,1.0,1.0,87,485.6988890171051
+2,21.17296474237976,253,no-chroma-me = 1 AND sliced-threads = 1,no-chroma-me AND sliced-threads,0,1.0,1.0,1.0,87,487.8096570968628
+3,27.837368175862352,795,no-chroma-me = 1 AND no-mbtree = 1 AND pic-struct = 1,no-chroma-me AND no-mbtree AND pic-struct,0,1.0,1.0,1.0,87,486.6513912677765
+4,103.00581443840753,547,no-scenecut = 1 AND intra-refresh = 1 AND cpu-independent = 1 AND opencl = 1,no-scenecut AND intra-refresh AND cpu-independent AND opencl,1,1.0,1.0,1.0,87,478.0325946807861
+5,57.468976798877925,547,slow-firstpass = 1 AND open-gop = 1 AND no-cabac = 1 AND no-mixed-refs = 1 AND no-asm = 1,slow-firstpass AND open-gop AND no-cabac AND no-mixed-refs AND no-asm,3,1.0,1.0,1.0,87,479.7272982597351
+6,104.51493395143652,396,slow-firstpass = 1 AND bff = 1 AND no-chroma-me = 1 AND no-psy = 1 AND no-weightb = 1 AND no-asm = 1,slow-firstpass AND bff AND no-chroma-me AND no-psy AND no-weightb AND no-asm,1,1.0,1.0,1.0,87,468.6250007152557
+7,49.03355470405634,313,slow-firstpass = 1 AND intra-refresh = 1 AND open-gop = 1 AND no-deblock = 1 AND no-8x8dct = 1 AND no-asm = 1 AND opencl = 1,slow-firstpass AND intra-refresh AND open-gop AND no-deblock AND no-8x8dct AND no-asm AND opencl,0,1.0,1.0,1.0,87,468.4838285446167
+1,85.77290236941555,499,sliced-threads = 1,sliced-threads,0,1.0,1.0,1.0,88,407.8597121238709
+2,77.79430119901504,289,pic-struct = 1 AND sliced-threads = 1,pic-struct AND sliced-threads,0,1.0,1.0,1.0,88,399.9193172454834
+3,33.20649832740911,675,intra-refresh = 1 AND pic-struct = 1 AND aud = 1,intra-refresh AND pic-struct AND NOT aud,0,1.0,1.0,1.0,88,400.7286784648895
+4,54.08854038605616,631,no-scenecut = 1 AND bff = 1 AND no-fast-pskip = 1 AND no-mixed-refs = 1,no-scenecut AND bff AND no-fast-pskip AND no-mixed-refs,1,1.0,1.0,1.0,88,397.4496555328369
+5,48.82186925228368,503,no-scenecut = 1 AND open-gop = 1 AND bff = 1 AND no-mbtree = 1 AND pic-struct = 1,no-scenecut AND open-gop AND bff AND no-mbtree AND pic-struct,0,1.0,1.0,1.0,88,400.1018834114074
+6,72.32606454182361,356,intra-refresh = 1 AND no-deblock = 1 AND tff = 1 AND no-weightb = 1 AND dts-compress = 1 AND opencl = 1,intra-refresh AND no-deblock AND tff AND no-weightb AND dts-compress AND opencl,0,1.0,1.0,1.0,88,390.59883737564087
+7,86.4915996829467,305,slow-firstpass = 1 AND no-cabac = 1 AND bff = 1 AND constrained-intra = 1 AND no-weightb = 1 AND no-dct-decimate = 1 AND aud = 1,slow-firstpass AND no-cabac AND bff AND constrained-intra AND no-weightb AND no-dct-decimate AND NOT aud,0,1.0,1.0,1.0,88,393.81988310813904
+1,31.796215353333658,499,sliced-threads = 1,sliced-threads,0,1.0,1.0,1.0,89,403.5819020271301
+2,22.847245987155148,926,intra-refresh = 1 AND dts-compress = 1,intra-refresh AND dts-compress,0,1.0,1.0,1.0,89,400.4493453502655
+3,38.807367223694754,802,no-cabac = 1 AND no-deblock = 1 AND no-fast-pskip = 1,no-cabac AND no-deblock AND no-fast-pskip,0,1.0,1.0,1.0,89,403.3982622623444
+4,46.849315050672544,614,no-scenecut = 1 AND tff = 1 AND constrained-intra = 1 AND no-8x8dct = 1,no-scenecut AND tff AND constrained-intra AND no-8x8dct,0,1.0,1.0,1.0,89,408.0760352611542
+5,49.40322903084027,450,no-scenecut = 1 AND open-gop = 1 AND no-dct-decimate = 1 AND no-asm = 1 AND aud = 1,no-scenecut AND open-gop AND no-dct-decimate AND no-asm AND NOT aud,0,1.0,1.0,1.0,89,412.1243839263916
+6,76.17159468054001,417,slow-firstpass = 1 AND no-deblock = 1 AND tff = 1 AND bff = 1 AND no-chroma-me = 1 AND no-asm = 1,slow-firstpass AND no-deblock AND tff AND bff AND no-chroma-me AND no-asm,1,1.0,1.0,1.0,89,413.1744177341461
+7,19.104326397810453,333,slow-firstpass = 1 AND no-scenecut = 1 AND no-mbtree = 1 AND no-dct-decimate = 1 AND non-deterministic = 1 AND no-asm = 1 AND opencl = 1,slow-firstpass AND no-scenecut AND no-mbtree AND no-dct-decimate AND non-deterministic AND no-asm AND opencl,0,1.0,1.0,1.0,89,393.5640296936035
+1,89.85048829390034,499,sliced-threads = 1,sliced-threads,1,1.0,1.0,1.0,9,410.5567619800568
+2,44.324978630905136,932,intra-refresh = 1 AND no-psy = 1,intra-refresh AND no-psy,1,1.0,1.0,1.0,9,412.96607065200806
+3,99.35357387608896,755,no-deblock = 1 AND pic-struct = 1 AND non-deterministic = 1,no-deblock AND pic-struct AND non-deterministic,1,1.0,1.0,1.0,9,408.5506331920624
+4,37.7755985275988,544,no-deblock = 1 AND no-mbtree = 1 AND non-deterministic = 1 AND opencl = 1,no-deblock AND no-mbtree AND non-deterministic AND opencl,0,1.0,1.0,1.0,9,408.8633699417114
+5,53.791524348572736,496,no-deblock = 1 AND no-fast-pskip = 1 AND no-chroma-me = 1 AND no-mbtree = 1 AND pic-struct = 1,no-deblock AND no-fast-pskip AND no-chroma-me AND no-mbtree AND pic-struct,1,1.0,1.0,1.0,9,397.80149126052856
+6,27.672691106463702,378,slow-firstpass = 1 AND no-scenecut = 1 AND no-cabac = 1 AND no-fast-pskip = 1 AND no-mbtree = 1 AND opencl = 1,slow-firstpass AND no-scenecut AND no-cabac AND no-fast-pskip AND no-mbtree AND opencl,0,1.0,1.0,1.0,9,399.5103330612183
+7,96.97030915674996,352,slow-firstpass = 1 AND open-gop = 1 AND no-cabac = 1 AND no-deblock = 1 AND no-chroma-me = 1 AND no-weightb = 1 AND no-dct-decimate = 1,slow-firstpass AND open-gop AND no-cabac AND no-deblock AND no-chroma-me AND no-weightb AND no-dct-decimate,1,1.0,1.0,1.0,9,396.7454454898834
+1,100.22790580460946,499,sliced-threads = 1,sliced-threads,2,1.0,1.0,1.0,90,425.0446367263794
+2,15.842157086942173,917,no-psy = 1 AND dts-compress = 1,no-psy AND dts-compress,0,1.0,1.0,1.0,90,407.1676328182221
+3,32.68255990676858,654,no-8x8dct = 1 AND no-chroma-me = 1 AND cpu-independent = 1,no-8x8dct AND no-chroma-me AND cpu-independent,0,1.0,1.0,1.0,90,417.7579345703125
+4,30.893157976166265,528,slow-firstpass = 1 AND no-scenecut = 1 AND cpu-independent = 1 AND opencl = 1,slow-firstpass AND no-scenecut AND cpu-independent AND opencl,1,1.0,1.0,1.0,90,418.66460156440735
+5,67.1359696147262,512,intra-refresh = 1 AND tff = 1 AND bff = 1 AND constrained-intra = 1 AND dts-compress = 1,intra-refresh AND tff AND bff AND constrained-intra AND dts-compress,1,1.0,1.0,1.0,90,411.88381791114807
+6,61.24869832359296,348,intra-refresh = 1 AND no-fast-pskip = 1 AND non-deterministic = 1 AND cpu-independent = 1 AND no-asm = 1 AND aud = 1,intra-refresh AND no-fast-pskip AND non-deterministic AND cpu-independent AND no-asm AND NOT aud,0,1.0,1.0,1.0,90,395.2283637523651
+7,81.07497895355728,356,slow-firstpass = 1 AND no-deblock = 1 AND bff = 1 AND constrained-intra = 1 AND no-asm = 1 AND dts-compress = 1 AND opencl = 1,slow-firstpass AND no-deblock AND bff AND constrained-intra AND no-asm AND dts-compress AND opencl,1,1.0,1.0,1.0,90,407.5343325138092
+1,24.24491034242076,499,sliced-threads = 1,sliced-threads,0,1.0,1.0,1.0,91,510.64509749412537
+2,44.70094551848113,933,intra-refresh = 1 AND no-8x8dct = 1,intra-refresh AND no-8x8dct,0,1.0,1.0,1.0,91,502.0818004608154
+3,33.67919855551507,697,no-8x8dct = 1 AND aud = 1 AND opencl = 1,no-8x8dct AND NOT aud AND opencl,1,1.0,1.0,1.0,91,493.42296147346497
+4,9.800335089416098,542,open-gop = 1 AND bff = 1 AND no-dct-decimate = 1 AND aud = 1,open-gop AND bff AND no-dct-decimate AND NOT aud,1,1.0,1.0,1.0,91,499.5955605506897
+5,85.06486657807092,440,intra-refresh = 1 AND constrained-intra = 1 AND no-mixed-refs = 1 AND non-deterministic = 1 AND cpu-independent = 1,intra-refresh AND constrained-intra AND no-mixed-refs AND non-deterministic AND cpu-independent,1,1.0,1.0,1.0,91,488.01045393943787
+6,75.6849544251977,414,slow-firstpass = 1 AND no-cabac = 1 AND constrained-intra = 1 AND no-fast-pskip = 1 AND no-8x8dct = 1 AND no-psy = 1,slow-firstpass AND no-cabac AND constrained-intra AND no-fast-pskip AND no-8x8dct AND no-psy,1,1.0,1.0,1.0,91,490.9728381633759
+7,104.57258303514908,292,slow-firstpass = 1 AND no-scenecut = 1 AND tff = 1 AND no-psy = 1 AND no-weightb = 1 AND no-asm = 1 AND dts-compress = 1,slow-firstpass AND no-scenecut AND tff AND no-psy AND no-weightb AND no-asm AND dts-compress,1,1.0,1.0,1.0,91,482.4365248680115
+1,87.44859937866471,499,sliced-threads = 1,sliced-threads,2,1.0,1.0,1.0,92,435.55799531936646
+2,50.38133836206365,912,no-mbtree = 1 AND dts-compress = 1,no-mbtree AND dts-compress,1,1.0,1.0,1.0,92,415.0846083164215
+3,38.97950628481566,720,tff = 1 AND no-dct-decimate = 1 AND opencl = 1,tff AND no-dct-decimate AND opencl,0,1.0,1.0,1.0,92,423.7547183036804
+4,104.87623417129936,520,no-psy = 1 AND cpu-independent = 1 AND no-asm = 1 AND aud = 1,no-psy AND cpu-independent AND no-asm AND NOT aud,1,1.0,1.0,1.0,92,413.0836408138275
+5,15.647678553565616,468,slow-firstpass = 1 AND constrained-intra = 1 AND no-fast-pskip = 1 AND no-chroma-me = 1 AND dts-compress = 1,slow-firstpass AND constrained-intra AND no-fast-pskip AND no-chroma-me AND dts-compress,0,1.0,1.0,1.0,92,419.8352754116058
+6,14.064127671504483,364,intra-refresh = 1 AND constrained-intra = 1 AND no-mixed-refs = 1 AND no-psy = 1 AND pic-struct = 1 AND dts-compress = 1,intra-refresh AND constrained-intra AND no-mixed-refs AND no-psy AND pic-struct AND dts-compress,0,1.0,1.0,1.0,92,435.76128125190735
+7,39.53860085279264,254,slow-firstpass = 1 AND no-deblock = 1 AND tff = 1 AND no-fast-pskip = 1 AND no-mbtree = 1 AND cpu-independent = 1 AND opencl = 1,slow-firstpass AND no-deblock AND tff AND no-fast-pskip AND no-mbtree AND cpu-independent AND opencl,0,1.0,1.0,1.0,92,428.72182178497314
+1,62.09709288445665,499,sliced-threads = 1,sliced-threads,0,1.0,1.0,1.0,93,418.1055002212525
+2,34.38573737938814,883,intra-refresh = 1 AND aud = 1,intra-refresh AND NOT aud,0,1.0,1.0,1.0,93,402.2594237327576
+3,21.03954434191061,763,slow-firstpass = 1 AND no-weightb = 1 AND pic-struct = 1,slow-firstpass AND no-weightb AND pic-struct,0,1.0,1.0,1.0,93,402.20264768600464
+4,51.577581709682335,573,constrained-intra = 1 AND no-fast-pskip = 1 AND no-8x8dct = 1 AND aud = 1,constrained-intra AND no-fast-pskip AND no-8x8dct AND NOT aud,0,1.0,1.0,1.0,93,395.7450795173645
+5,26.811115372001368,365,no-scenecut = 1 AND no-8x8dct = 1 AND no-dct-decimate = 1 AND cpu-independent = 1 AND aud = 1,no-scenecut AND no-8x8dct AND no-dct-decimate AND cpu-independent AND NOT aud,0,1.0,1.0,1.0,93,394.329206943512
+6,100.2264757706282,445,intra-refresh = 1 AND no-cabac = 1 AND non-deterministic = 1 AND aud = 1 AND dts-compress = 1 AND opencl = 1,intra-refresh AND no-cabac AND non-deterministic AND NOT aud AND dts-compress AND opencl,1,1.0,1.0,1.0,93,392.8857419490814
+7,55.22654843943624,308,slow-firstpass = 1 AND no-cabac = 1 AND tff = 1 AND no-weightb = 1 AND no-mbtree = 1 AND no-asm = 1 AND aud = 1,slow-firstpass AND no-cabac AND tff AND no-weightb AND no-mbtree AND no-asm AND NOT aud,4,1.0,1.0,1.0,93,392.0879464149475
+1,96.09009761416092,499,sliced-threads = 1,sliced-threads,1,1.0,1.0,1.0,94,504.19255781173706
+2,23.1246229849716,824,cpu-independent = 1 AND aud = 1,cpu-independent AND NOT aud,0,1.0,1.0,1.0,94,505.8734056949616
+3,39.51020766387704,157,cpu-independent = 1 AND no-asm = 1 AND sliced-threads = 1,cpu-independent AND no-asm AND sliced-threads,0,1.0,1.0,1.0,94,530.4424514770508
+4,86.87329110479442,593,no-mixed-refs = 1 AND no-dct-decimate = 1 AND non-deterministic = 1 AND opencl = 1,no-mixed-refs AND no-dct-decimate AND non-deterministic AND opencl,1,1.0,1.0,1.0,94,514.6975615024567
+5,105.98002731171314,427,open-gop = 1 AND no-psy = 1 AND no-mbtree = 1 AND no-asm = 1 AND aud = 1,NOT no-psy,0,0.0,0.0,0.0,94,499.0286431312561
+6,72.0247750117104,337,no-scenecut = 1 AND tff = 1 AND no-fast-pskip = 1 AND pic-struct = 1 AND no-asm = 1 AND aud = 1,no-scenecut AND tff AND no-fast-pskip AND pic-struct AND no-asm AND NOT aud,0,1.0,1.0,1.0,94,515.8626811504364
+7,80.62284169731652,311,slow-firstpass = 1 AND open-gop = 1 AND no-cabac = 1 AND tff = 1 AND no-fast-pskip = 1 AND no-weightb = 1 AND dts-compress = 1,slow-firstpass AND open-gop AND no-cabac AND tff AND no-fast-pskip AND no-weightb AND dts-compress,4,1.0,1.0,1.0,94,492.63671493530273
+1,8.078301692951754,499,sliced-threads = 1,sliced-threads,1,1.0,1.0,1.0,95,417.14400005340576
+2,57.553837659474674,270,no-scenecut = 1 AND sliced-threads = 1,no-scenecut AND sliced-threads,0,1.0,1.0,1.0,95,403.0291645526886
+3,50.789321817126655,870,no-cabac = 1 AND tff = 1 AND constrained-intra = 1,no-cabac AND tff AND constrained-intra,0,1.0,1.0,1.0,95,397.56445240974426
+4,18.663047013703427,609,no-fast-pskip = 1 AND no-mixed-refs = 1 AND dts-compress = 1 AND opencl = 1,no-fast-pskip AND no-mixed-refs AND dts-compress AND opencl,0,1.0,1.0,1.0,95,397.7041015625
+5,84.14738244833467,485,no-scenecut = 1 AND bff = 1 AND constrained-intra = 1 AND no-mixed-refs = 1 AND dts-compress = 1,no-scenecut AND bff AND constrained-intra AND no-mixed-refs AND dts-compress,1,1.0,1.0,1.0,95,396.53933691978455
+6,75.99269689047793,344,no-scenecut = 1 AND intra-refresh = 1 AND tff = 1 AND no-chroma-me = 1 AND cpu-independent = 1 AND dts-compress = 1,no-scenecut AND intra-refresh AND tff AND no-chroma-me AND cpu-independent AND dts-compress,1,1.0,1.0,1.0,95,400.2291071414948
+7,39.287864139660805,293,slow-firstpass = 1 AND intra-refresh = 1 AND no-deblock = 1 AND constrained-intra = 1 AND no-dct-decimate = 1 AND non-deterministic = 1 AND aud = 1,slow-firstpass AND intra-refresh AND no-deblock AND constrained-intra AND no-dct-decimate AND non-deterministic AND NOT aud,0,1.0,1.0,1.0,95,398.5137150287628
+1,92.48894116902711,499,sliced-threads = 1,sliced-threads,1,1.0,1.0,1.0,96,511.3449189662933
+2,64.68608413428666,243,aud = 1 AND sliced-threads = 1,NOT aud AND sliced-threads,0,1.0,1.0,1.0,96,503.3550918102264
+3,41.66176748889363,761,slow-firstpass = 1 AND no-deblock = 1 AND pic-struct = 1,slow-firstpass AND no-deblock AND pic-struct,0,1.0,1.0,1.0,96,516.9979214668274
+4,34.46739401092226,675,no-scenecut = 1 AND no-cabac = 1 AND tff = 1 AND no-mixed-refs = 1,no-scenecut AND no-cabac AND tff AND no-mixed-refs,0,1.0,1.0,1.0,96,527.9578449726105
+5,56.2135209059764,484,open-gop = 1 AND no-cabac = 1 AND no-fast-pskip = 1 AND no-chroma-me = 1 AND aud = 1,open-gop AND no-cabac AND no-fast-pskip AND no-chroma-me AND NOT aud,2,1.0,1.0,1.0,96,500.4144477844238
+6,40.226777062319904,445,slow-firstpass = 1 AND intra-refresh = 1 AND open-gop = 1 AND bff = 1 AND constrained-intra = 1 AND no-mixed-refs = 1,slow-firstpass AND intra-refresh AND open-gop AND bff AND constrained-intra AND no-mixed-refs,0,1.0,1.0,1.0,96,525.5916805267334
+7,87.73290268212922,349,slow-firstpass = 1 AND no-scenecut = 1 AND open-gop = 1 AND no-deblock = 1 AND pic-struct = 1 AND non-deterministic = 1 AND opencl = 1,slow-firstpass AND no-scenecut AND open-gop AND no-deblock AND pic-struct AND non-deterministic AND opencl,1,1.0,1.0,1.0,96,518.0977947711945
+1,29.96568029301776,499,sliced-threads = 1,sliced-threads,0,1.0,1.0,1.0,97,442.9762892723084
+2,59.78423153152998,265,no-dct-decimate = 1 AND sliced-threads = 1,no-dct-decimate AND sliced-threads,0,1.0,1.0,1.0,97,420.5534663200378
+3,79.28540403576845,758,slow-firstpass = 1 AND open-gop = 1 AND no-psy = 1,slow-firstpass AND open-gop AND no-psy,1,1.0,1.0,1.0,97,418.3529226779938
+4,32.20886385006905,591,no-scenecut = 1 AND bff = 1 AND no-weightb = 1 AND pic-struct = 1,no-scenecut AND bff AND no-weightb AND pic-struct,0,1.0,1.0,1.0,97,413.7549538612366
+5,59.81863476551314,473,open-gop = 1 AND no-fast-pskip = 1 AND no-psy = 1 AND no-dct-decimate = 1 AND non-deterministic = 1,open-gop AND no-fast-pskip AND no-psy AND no-dct-decimate AND non-deterministic,0,1.0,1.0,1.0,97,428.58314538002014
+6,48.49464307492814,318,no-scenecut = 1 AND no-cabac = 1 AND no-fast-pskip = 1 AND no-psy = 1 AND cpu-independent = 1 AND dts-compress = 1,no-scenecut AND no-cabac AND no-fast-pskip AND no-psy AND cpu-independent AND dts-compress,0,1.0,1.0,1.0,97,428.6166424751282
+7,92.21095541977186,265,slow-firstpass = 1 AND intra-refresh = 1 AND no-mixed-refs = 1 AND no-dct-decimate = 1 AND cpu-independent = 1 AND aud = 1 AND opencl = 1,slow-firstpass AND intra-refresh AND no-mixed-refs AND no-dct-decimate AND cpu-independent AND NOT aud AND opencl,0,1.0,1.0,1.0,97,420.3817195892334
+1,49.61040427327771,499,sliced-threads = 1,sliced-threads,0,1.0,1.0,1.0,98,421.4723467826843
+2,25.463076805514632,917,no-psy = 1 AND dts-compress = 1,no-psy AND dts-compress,1,1.0,1.0,1.0,98,406.6314284801483
+3,61.605435144982266,176,bff = 1 AND no-fast-pskip = 1 AND sliced-threads = 1,bff AND no-fast-pskip AND sliced-threads,0,1.0,1.0,1.0,98,393.09765553474426
+4,30.28362703300423,531,intra-refresh = 1 AND no-fast-pskip = 1 AND no-weightb = 1 AND no-asm = 1,intra-refresh AND no-fast-pskip AND no-weightb AND no-asm,0,1.0,1.0,1.0,98,391.3664090633392
+5,32.95311052182388,460,open-gop = 1 AND no-cabac = 1 AND no-deblock = 1 AND constrained-intra = 1 AND cpu-independent = 1,open-gop AND no-cabac AND no-deblock AND constrained-intra AND cpu-independent,0,1.0,1.0,1.0,98,394.4363765716553
+6,64.63283801020607,431,no-scenecut = 1 AND no-cabac = 1 AND tff = 1 AND no-mixed-refs = 1 AND no-dct-decimate = 1 AND pic-struct = 1,no-scenecut AND no-cabac AND tff AND no-mixed-refs AND no-dct-decimate AND pic-struct,0,1.0,1.0,1.0,98,401.3357491493225
+7,38.47831212949009,361,slow-firstpass = 1 AND no-scenecut = 1 AND open-gop = 1 AND no-deblock = 1 AND bff = 1 AND constrained-intra = 1 AND no-8x8dct = 1,slow-firstpass AND no-scenecut AND open-gop AND no-deblock AND bff AND constrained-intra AND no-8x8dct,0,1.0,1.0,1.0,98,394.933518409729
+1,31.89066628886508,499,sliced-threads = 1,sliced-threads,0,1.0,1.0,1.0,99,412.83968114852905
+2,61.97097264625358,265,no-dct-decimate = 1 AND sliced-threads = 1,no-dct-decimate AND sliced-threads,0,1.0,1.0,1.0,99,411.471216917038
+3,11.767428818908762,203,no-scenecut = 1 AND no-cabac = 1 AND sliced-threads = 1,no-scenecut AND no-cabac AND sliced-threads,0,1.0,1.0,1.0,99,407.0498309135437
+4,19.69337982487503,580,slow-firstpass = 1 AND no-scenecut = 1 AND no-deblock = 1 AND no-chroma-me = 1,slow-firstpass AND no-scenecut AND no-deblock AND no-chroma-me,0,1.0,1.0,1.0,99,404.90195631980896
+5,98.67392578294314,533,constrained-intra = 1 AND no-fast-pskip = 1 AND no-mixed-refs = 1 AND no-weightb = 1 AND no-mbtree = 1,constrained-intra AND no-fast-pskip AND no-mixed-refs AND no-weightb AND no-mbtree,1,1.0,1.0,1.0,99,397.6824266910553
+6,105.42164309184028,421,no-scenecut = 1 AND bff = 1 AND constrained-intra = 1 AND no-8x8dct = 1 AND no-mixed-refs = 1 AND no-asm = 1,no-scenecut AND bff AND constrained-intra AND no-8x8dct AND no-mixed-refs AND no-asm,1,1.0,1.0,1.0,99,395.2994616031647
+7,90.54204288690336,306,slow-firstpass = 1 AND no-cabac = 1 AND tff = 1 AND no-8x8dct = 1 AND no-mbtree = 1 AND pic-struct = 1 AND non-deterministic = 1,slow-firstpass AND no-cabac AND tff AND no-8x8dct AND no-mbtree AND pic-struct AND non-deterministic,1,1.0,1.0,1.0,99,394.50255489349365

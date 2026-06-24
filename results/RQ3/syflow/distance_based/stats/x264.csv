@@ -1,0 +1,2 @@
+num_features,num_samples,sgs_unique,sgs_mean_jaccard,sgs_mean_overlap_coefficient,coverage_mean,coverage_total,rule_features_used,rule_feature_frequency,rule_num_features,rule_length_mean,rule_length_max,rule_length_min
+9,1152,4,0.12229437229437229,0.25,0.22916666666666666,0.7083333333333334,"['ref', 'no_fast_pskip', 'no_mbtree', 'no_mixed_refs']","[('ref', 4), ('no_fast_pskip', 1), ('no_mbtree', 4), ('no_mixed_refs', 2)]",4,2.2,3.0,2.0

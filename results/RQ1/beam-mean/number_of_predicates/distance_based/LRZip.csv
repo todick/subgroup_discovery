@@ -1,0 +1,401 @@
+n_conditions,sg_mean,sg_cardinality,sg_rule,best_rule,best_rule_idx,f1,precision,recall,seed,runtime
+1,4719706.5,72,compressionZpaq = 1,compressionZpaq==1,0,1.0,1.0,1.0,0,0.3242301940917969
+2,4065668.4583333335,24,level = 2 AND unlimitedWindowSize = 1,level==2 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,0,0.3585383892059326
+3,961932.7777777778,36,compression = 1 AND compressionLzo = 1 AND unlimitedWindowSize = 1,compression==0 AND disableCompressibilityTesting==0 AND encryption==0 AND level==6,0,0.0,0.0,0.0,0,0.6153538227081299
+4,5059391.866666666,45,compression = 1 AND disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compression==1 AND disableCompressibilityTesting==1 AND encryption==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,0,0.4046182632446289
+1,4951750.902777778,72,compressionGzip = 1,compressionGzip==1,0,1.0,1.0,1.0,1,0.3271102905273437
+2,2292662.7916666665,24,disableCompressibilityTesting = 1 AND level = 8,disableCompressibilityTesting==1 AND level==8,0,1.0,1.0,1.0,1,0.3895471096038818
+3,5198348.972222222,36,compression = 1 AND compressionGzip = 1 AND unlimitedWindowSize = 1,compressionGzip==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,1,0.5606420040130615
+4,2093238.955555556,45,compression = 1 AND disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compression==1 AND disableCompressibilityTesting==1 AND encryption==1 AND unlimitedWindowSize==1,1,1.0,1.0,1.0,1,0.4405922889709472
+1,5411047.722222222,72,compressionGzip = 1,compressionGzip==1,0,1.0,1.0,1.0,10,0.3029258251190185
+2,520410.1111111111,36,compressionGzip = 1 AND disableCompressibilityTesting = 1,compressionBzip2==1 AND disableCompressibilityTesting==0 AND encryption==1 AND level==7 AND unlimitedWindowSize==1,0,0.0,0.0,0.0,10,0.6139485836029053
+3,3365424.333333333,36,compression = 1 AND compressionLrzip = 1 AND unlimitedWindowSize = 1,compressionLrzip==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,10,0.3321170806884765
+4,1009964.1777777778,45,compression = 1 AND disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compressionZpaq==1 AND disableCompressibilityTesting==0 AND encryption==1 AND level==8,0,0.0,0.0,0.0,10,0.4747445583343506
+1,3983802.736111111,72,compressionLrzip = 1,compressionLrzip==1,0,1.0,1.0,1.0,11,0.3105270862579345
+2,3593450.8055555555,36,compressionZpaq = 1 AND unlimitedWindowSize = 1,compressionZpaq==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,11,0.3885421752929687
+3,2182168.611111111,36,compression = 1 AND compressionZpaq = 1 AND disableCompressibilityTesting = 1,compressionZpaq==1 AND disableCompressibilityTesting==1,0,1.0,1.0,1.0,11,0.5047028064727783
+4,3265544.311111111,45,compression = 1 AND disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compression==1 AND disableCompressibilityTesting==1 AND encryption==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,11,0.4234817028045654
+1,1984838.9722222225,72,compressionZpaq = 1,compressionZpaq==1,0,1.0,1.0,1.0,12,0.3232820034027099
+2,2619567.1666666665,24,disableCompressibilityTesting = 1 AND level = 7,disableCompressibilityTesting==1 AND level==7,0,1.0,1.0,1.0,12,0.3635528087615967
+3,2983912.75,36,compression = 1 AND compressionLzo = 1 AND encryption = 1,compressionLzo==1 AND encryption==1,0,1.0,1.0,1.0,12,0.4038319587707519
+4,4327340.066666666,45,compression = 1 AND disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compression==1 AND disableCompressibilityTesting==1 AND encryption==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,12,0.5200347900390625
+1,439027.4305555556,72,compressionLrzip = 1,compression==1 AND compressionBzip2==0 AND compressionLrzip==0 AND compressionZpaq==0 AND disableCompressibilityTesting==0 AND level==5 AND unlimitedWindowSize==0,0,0.0,0.0,0.0,13,0.4564838409423828
+2,4982405.916666667,36,compressionLzo = 1 AND disableCompressibilityTesting = 1,compressionLzo==1 AND disableCompressibilityTesting==1,0,1.0,1.0,1.0,13,0.5395581722259521
+3,2922671.75,36,compression = 1 AND compressionGzip = 1 AND disableCompressibilityTesting = 1,compressionGzip==1 AND disableCompressibilityTesting==1,0,1.0,1.0,1.0,13,0.384615421295166
+4,545352.4,45,compression = 1 AND disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compressionLzo==1 AND encryption==0 AND level==9 AND unlimitedWindowSize==1,0,0.0,0.0,0.0,13,0.4519605636596679
+1,3692839.347222222,72,compressionLrzip = 1,compressionLrzip==1,0,1.0,1.0,1.0,14,0.308666467666626
+2,5180097.25,36,compressionLrzip = 1 AND unlimitedWindowSize = 1,compressionLrzip==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,14,0.3853237628936767
+3,5067127.222222222,36,compression = 1 AND compressionLrzip = 1 AND unlimitedWindowSize = 1,compressionLrzip==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,14,0.5480821132659912
+4,4044376.533333333,45,compression = 1 AND disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compression==1 AND disableCompressibilityTesting==1 AND encryption==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,14,0.3805944919586181
+1,404440.6805555556,72,compressionGzip = 1,compressionLzo==1 AND encryption==1 AND level==5,0,0.0,0.0,0.0,15,0.4279942512512207
+2,854675.0092592592,108,disableCompressibilityTesting = 1 AND unlimitedWindowSize = 1,compressionGzip==1 AND disableCompressibilityTesting==1 AND encryption==0 AND level==4 AND unlimitedWindowSize==0,0,0.0,0.0,0.0,15,0.6408748626708984
+3,4242841.488888889,90,compression = 1 AND disableCompressibilityTesting = 1 AND encryption = 1,compression==1 AND disableCompressibilityTesting==1 AND encryption==1,0,1.0,1.0,1.0,15,0.3870389461517334
+4,699760.3333333334,45,compression = 1 AND disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compressionZpaq==1 AND disableCompressibilityTesting==0 AND level==9 AND unlimitedWindowSize==0,0,0.0,0.0,0.0,15,0.4811489582061767
+1,3122763.333333333,72,compressionLrzip = 1,compressionLrzip==1,0,1.0,1.0,1.0,16,0.3529014587402344
+2,5100709.861111111,36,compressionZpaq = 1 AND encryption = 1,compressionZpaq==1 AND encryption==1,0,1.0,1.0,1.0,16,0.4413514137268066
+3,4853514.777777778,36,compression = 1 AND compressionBzip2 = 1 AND unlimitedWindowSize = 1,compressionBzip2==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,16,0.586763858795166
+4,2146061.288888889,45,compression = 1 AND disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compression==1 AND disableCompressibilityTesting==1 AND encryption==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,16,0.4992153644561767
+1,4684149.027777778,72,compressionGzip = 1,compressionGzip==1,0,1.0,1.0,1.0,17,0.304154634475708
+2,2752064.333333333,36,compressionZpaq = 1 AND disableCompressibilityTesting = 1,compressionZpaq==1 AND disableCompressibilityTesting==1,0,1.0,1.0,1.0,17,0.3322956562042236
+3,2572586.6944444445,36,compression = 1 AND compressionZpaq = 1 AND disableCompressibilityTesting = 1,compressionZpaq==1 AND disableCompressibilityTesting==1,0,1.0,1.0,1.0,17,0.3829851150512695
+4,2039331.822222222,45,compression = 1 AND disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compression==1 AND disableCompressibilityTesting==1 AND encryption==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,17,0.5714306831359863
+1,2865259.847222222,72,compressionLzo = 1,compressionLzo==1,0,1.0,1.0,1.0,18,0.3183283805847168
+2,641382.1111111111,36,compressionLrzip = 1 AND disableCompressibilityTesting = 1,compressionGzip==1 AND encryption==1 AND level==6 AND unlimitedWindowSize==0,0,0.0,0.0,0.0,18,0.4358603954315185
+3,2830132.138888889,36,compression = 1 AND compressionZpaq = 1 AND unlimitedWindowSize = 1,compressionZpaq==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,18,0.5281796455383301
+4,1579084.6222222222,45,compression = 1 AND disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compressionZpaq==1 AND encryption==1 AND level==6 AND unlimitedWindowSize==0,0,0.0,0.0,0.0,18,0.458282470703125
+1,5477028.291666667,72,compressionBzip2 = 1,compressionBzip2==1,0,1.0,1.0,1.0,19,0.3173973560333252
+2,661229.8611111111,36,compressionLrzip = 1 AND disableCompressibilityTesting = 1,compressionBzip2==0 AND compressionGzip==0 AND compressionLrzip==0 AND disableCompressibilityTesting==0 AND encryption==0 AND level==7 AND unlimitedWindowSize==0,0,0.0,0.0,0.0,19,0.6358764171600342
+3,1182637.5555555555,36,compression = 1 AND compressionLzo = 1 AND encryption = 1,compressionGzip==1 AND encryption==0 AND level==7 AND unlimitedWindowSize==1,0,0.0,0.0,0.0,19,0.451535701751709
+4,4694873.155555556,45,compression = 1 AND disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compression==1 AND disableCompressibilityTesting==1 AND encryption==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,19,0.4171297550201416
+1,2154366.4305555555,72,compressionLzo = 1,compressionLzo==1,0,1.0,1.0,1.0,2,0.3196237087249756
+2,4356669.333333333,36,compressionLrzip = 1 AND unlimitedWindowSize = 1,compressionLrzip==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,2,0.3892784118652344
+3,2834400.6944444445,36,compression = 1 AND compressionLzo = 1 AND encryption = 1,compressionLzo==1 AND encryption==1,0,1.0,1.0,1.0,2,0.5501213073730469
+4,4963617.688888889,45,compression = 1 AND disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compression==1 AND disableCompressibilityTesting==1 AND encryption==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,2,0.4017908573150635
+1,5168458.375,72,compressionBzip2 = 1,compressionBzip2==1,0,1.0,1.0,1.0,20,0.3236238956451416
+2,4041778.013888889,72,compression = 1 AND compressionZpaq = 1,compressionZpaq==1,0,1.0,1.0,1.0,20,0.3266117572784424
+3,5421102.388888889,36,compression = 1 AND compressionBzip2 = 1 AND unlimitedWindowSize = 1,compressionBzip2==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,20,0.4116435050964355
+4,4243331.533333333,45,compression = 1 AND disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compression==1 AND disableCompressibilityTesting==1 AND encryption==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,20,0.534522533416748
+1,3179758.1944444445,72,compressionZpaq = 1,compressionZpaq==1,0,1.0,1.0,1.0,21,0.3071713447570801
+2,3288849.1,40,compression = 1 AND level = 9,compression==1 AND level==9,0,1.0,1.0,1.0,21,0.2776916027069092
+3,4171468.9166666665,36,compression = 1 AND compressionLzo = 1 AND encryption = 1,compressionLzo==1 AND encryption==1,0,1.0,1.0,1.0,21,0.3792095184326172
+4,5043536.711111112,45,compression = 1 AND disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compression==1 AND disableCompressibilityTesting==1 AND encryption==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,21,0.4861085414886474
+1,742980.8611111111,72,compressionGzip = 1,compressionLzo==1 AND disableCompressibilityTesting==1 AND encryption==0 AND level==3,0,0.0,0.0,0.0,22,0.4577534198760986
+2,2623246.638888889,36,compressionLrzip = 1 AND disableCompressibilityTesting = 1,compressionLrzip==1 AND disableCompressibilityTesting==1,0,1.0,1.0,1.0,22,0.5287556648254395
+3,600331.5277777778,36,compression = 1 AND compressionLzo = 1 AND unlimitedWindowSize = 1,compressionBzip2==0 AND compressionGzip==0 AND compressionLzo==0 AND compressionZpaq==0 AND disableCompressibilityTesting==1 AND level==4 AND unlimitedWindowSize==0,0,0.0,0.0,0.0,22,0.4919490814208984
+4,707210.7111111111,45,compression = 1 AND disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compressionGzip==1 AND encryption==1 AND level==9 AND unlimitedWindowSize==0,0,0.0,0.0,0.0,22,0.4401452541351318
+1,4724239.986111111,72,compressionZpaq = 1,compressionZpaq==1,0,1.0,1.0,1.0,23,0.3190491199493408
+2,4938794.291666667,72,compression = 1 AND compressionZpaq = 1,compressionZpaq==1,0,1.0,1.0,1.0,23,0.3075473308563232
+3,5073963.638888889,36,compression = 1 AND compressionLrzip = 1 AND encryption = 1,compressionLrzip==1 AND encryption==1,0,1.0,1.0,1.0,23,0.3901207447052002
+4,1411068.4888888889,45,compression = 1 AND disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compressionBzip2==0 AND compressionGzip==0 AND compressionLzo==0 AND disableCompressibilityTesting==0 AND encryption==0 AND level==7 AND unlimitedWindowSize==0,0,0.0,0.0,0.0,23,0.6211278438568115
+1,4367328.638888889,72,compressionGzip = 1,compressionGzip==1,0,1.0,1.0,1.0,24,0.3482058048248291
+2,4964063.472222222,36,compressionLrzip = 1 AND encryption = 1,compressionLrzip==1 AND encryption==1,0,1.0,1.0,1.0,24,0.4073514938354492
+3,376958.3611111111,36,compression = 1 AND compressionGzip = 1 AND disableCompressibilityTesting = 1,compressionLzo==0 AND compressionZpaq==0 AND disableCompressibilityTesting==1 AND encryption==1 AND level==8 AND unlimitedWindowSize==0,1,0.0499999999999999,0.25,0.0277777777777777,24,0.6899673938751221
+4,2851179.6666666665,45,compression = 1 AND disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compression==1 AND disableCompressibilityTesting==1 AND encryption==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,24,0.4684734344482422
+1,4061112.9166666665,72,compressionBzip2 = 1,compressionBzip2==1,0,1.0,1.0,1.0,25,0.3388276100158691
+2,2071001.0277777775,36,compressionGzip = 1 AND unlimitedWindowSize = 1,compressionGzip==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,25,0.3897838592529297
+3,558458.0555555555,36,compression = 1 AND compressionZpaq = 1 AND disableCompressibilityTesting = 1,compressionLrzip==1 AND encryption==0 AND level==6 AND unlimitedWindowSize==0,0,0.0,0.0,0.0,25,0.6673476696014404
+4,2883414.577777778,45,compression = 1 AND disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compression==1 AND disableCompressibilityTesting==1 AND encryption==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,25,0.4511265754699707
+1,802361.3888888889,72,compressionLzo = 1,compression==0 AND encryption==0 AND level==9 AND unlimitedWindowSize==1,0,0.0,0.0,0.0,26,0.4368577003479004
+2,3880493.777777778,36,compressionZpaq = 1 AND encryption = 1,compressionZpaq==1 AND encryption==1,0,1.0,1.0,1.0,26,0.5374479293823242
+3,3541438.8666666667,90,compression = 1 AND disableCompressibilityTesting = 1 AND encryption = 1,compression==1 AND disableCompressibilityTesting==1 AND encryption==1,0,1.0,1.0,1.0,26,0.3973610401153564
+4,1665912.2,45,compression = 1 AND disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compressionLzo==1 AND disableCompressibilityTesting==1 AND encryption==0 AND level==1,0,0.0,0.0,0.0,26,0.438983678817749
+1,4624600.083333333,72,compressionLzo = 1,compressionLzo==1,0,1.0,1.0,1.0,27,0.3258793354034424
+2,4763021.708333333,24,disableCompressibilityTesting = 1 AND level = 9,disableCompressibilityTesting==1 AND level==9,0,1.0,1.0,1.0,27,0.3604931831359863
+3,3545037.8055555555,36,compression = 1 AND compressionZpaq = 1 AND encryption = 1,compressionZpaq==1 AND encryption==1,0,1.0,1.0,1.0,27,0.4084103107452392
+4,5037511.822222223,45,compression = 1 AND disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compression==1 AND disableCompressibilityTesting==1 AND encryption==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,27,0.5458152294158936
+1,5476264.486111111,72,compressionBzip2 = 1,compressionBzip2==1,0,1.0,1.0,1.0,28,0.308021068572998
+2,3061833.6666666665,36,compressionLzo = 1 AND unlimitedWindowSize = 1,compressionLzo==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,28,0.3780164718627929
+3,3875533.222222222,36,compression = 1 AND compressionBzip2 = 1 AND unlimitedWindowSize = 1,compressionBzip2==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,28,0.5237700939178467
+4,2799443.8,45,compression = 1 AND disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compression==1 AND disableCompressibilityTesting==1 AND encryption==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,28,0.3983311653137207
+1,2943124.75,48,level = 6,level==6,0,1.0,1.0,1.0,29,0.2721095085144043
+2,1188378.4722222222,108,disableCompressibilityTesting = 1 AND encryption = 1,compressionLzo==1 AND disableCompressibilityTesting==1 AND encryption==0 AND level==4,0,0.0,0.0,0.0,29,0.4475905895233154
+3,2212329.75,36,compression = 1 AND compressionLzo = 1 AND encryption = 1,compressionLzo==1 AND encryption==1,0,1.0,1.0,1.0,29,0.532076358795166
+4,565469.5333333333,45,compression = 1 AND disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compressionLzo==1 AND encryption==1 AND level==3,0,0.0408163265306122,0.25,0.0222222222222222,29,0.4325301647186279
+1,4674536.472222222,72,compressionZpaq = 1,compressionZpaq==1,0,1.0,1.0,1.0,3,0.3091506958007812
+2,893877.6388888889,36,compressionBzip2 = 1 AND disableCompressibilityTesting = 1,compression==1 AND compressionLrzip==0 AND compressionLzo==0 AND compressionZpaq==0 AND encryption==0 AND level==1 AND unlimitedWindowSize==0,0,0.0499999999999999,0.25,0.0277777777777777,3,0.5994701385498047
+3,5408302.305555556,36,compression = 1 AND compressionLzo = 1 AND unlimitedWindowSize = 1,compressionLzo==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,3,0.3881864547729492
+4,886650.2,45,compression = 1 AND disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compression==1 AND compressionGzip==0 AND compressionLrzip==0 AND disableCompressibilityTesting==0 AND encryption==1 AND level==3 AND unlimitedWindowSize==1,0,0.0,0.0,0.0,3,0.465111494064331
+1,3013855.763888889,72,compressionBzip2 = 1,compressionBzip2==1,0,1.0,1.0,1.0,30,0.3199529647827148
+2,2257935.75,72,compression = 1 AND compressionLzo = 1,compressionLzo==1,0,1.0,1.0,1.0,30,0.3211090564727783
+3,4959795.305555556,36,compression = 1 AND compressionLrzip = 1 AND unlimitedWindowSize = 1,compressionLrzip==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,30,0.4004583358764648
+4,393846.7333333333,45,compression = 1 AND disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compressionBzip2==0 AND compressionGzip==0 AND compressionLzo==0 AND compressionZpaq==0 AND disableCompressibilityTesting==0 AND encryption==1 AND level==6,0,0.0,0.0,0.0,30,0.620262622833252
+1,4567283.625,72,compressionZpaq = 1,compressionZpaq==1,0,1.0,1.0,1.0,31,0.3153195381164551
+2,5346059.013888889,72,compression = 1 AND compressionZpaq = 1,compressionZpaq==1,0,1.0,1.0,1.0,31,0.3040676116943359
+3,2978568.5555555555,36,compression = 1 AND compressionGzip = 1 AND encryption = 1,compressionGzip==1 AND encryption==1,0,1.0,1.0,1.0,31,0.3902356624603271
+4,2394024.066666667,45,compression = 1 AND disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compression==1 AND disableCompressibilityTesting==1 AND encryption==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,31,0.56577467918396
+1,3055298.611111111,72,compressionBzip2 = 1,compressionBzip2==1,0,1.0,1.0,1.0,32,0.3367979526519775
+2,2903850.472222222,108,encryption = 1 AND unlimitedWindowSize = 1,encryption==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,32,0.3855326175689697
+3,4006648.972222222,36,compression = 1 AND compressionZpaq = 1 AND encryption = 1,compressionZpaq==1 AND encryption==1,0,1.0,1.0,1.0,32,0.4118566513061523
+4,2980095.333333333,45,compression = 1 AND disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compression==1 AND disableCompressibilityTesting==1 AND encryption==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,32,0.5833749771118164
+1,3308801.361111111,72,compressionLzo = 1,compressionLzo==1,0,1.0,1.0,1.0,33,0.3163449764251709
+2,4614945.458333333,24,encryption = 1 AND level = 4,encryption==1 AND level==4,0,1.0,1.0,1.0,33,0.3463144302368164
+3,4824465.833333333,36,compression = 1 AND compressionZpaq = 1 AND disableCompressibilityTesting = 1,compressionZpaq==1 AND disableCompressibilityTesting==1,0,1.0,1.0,1.0,33,0.3856539726257324
+4,4839271.955555555,45,compression = 1 AND disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compression==1 AND disableCompressibilityTesting==1 AND encryption==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,33,0.4989664554595947
+1,4793121.125,72,compressionBzip2 = 1,compressionBzip2==1,0,1.0,1.0,1.0,34,0.3252871036529541
+2,3664501.611111111,36,compressionLzo = 1 AND disableCompressibilityTesting = 1,compressionLzo==1 AND disableCompressibilityTesting==1,0,1.0,1.0,1.0,34,0.4015312194824219
+3,3357819.861111111,36,compression = 1 AND compressionZpaq = 1 AND disableCompressibilityTesting = 1,compressionZpaq==1 AND disableCompressibilityTesting==1,0,1.0,1.0,1.0,34,0.3503172397613525
+4,5237072.622222222,45,compression = 1 AND disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compression==1 AND disableCompressibilityTesting==1 AND encryption==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,34,0.5228526592254639
+1,654588.4583333334,72,compressionGzip = 1,compressionLzo==1 AND encryption==1 AND level==2 AND unlimitedWindowSize==0,0,0.0,0.0,0.0,35,0.5177052021026611
+2,4008243.425,40,compression = 1 AND level = 8,compression==1 AND level==8,0,1.0,1.0,1.0,35,0.4390153884887695
+3,4044643.861111111,36,compression = 1 AND compressionBzip2 = 1 AND unlimitedWindowSize = 1,compressionBzip2==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,35,0.4265742301940918
+4,1968390.8,45,compression = 1 AND disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compression==1 AND disableCompressibilityTesting==1 AND encryption==1 AND unlimitedWindowSize==1,1,1.0,1.0,1.0,35,0.4598040580749511
+1,3715281.486111111,72,compressionZpaq = 1,compressionZpaq==1,0,1.0,1.0,1.0,36,0.31817626953125
+2,4398680.25,36,compressionGzip = 1 AND disableCompressibilityTesting = 1,compressionGzip==1 AND disableCompressibilityTesting==1,0,1.0,1.0,1.0,36,0.3765902519226074
+3,1385634.861111111,36,compression = 1 AND compressionBzip2 = 1 AND disableCompressibilityTesting = 1,compression==0 AND disableCompressibilityTesting==1 AND encryption==0 AND level==9 AND unlimitedWindowSize==1,0,0.0,0.0,0.0,36,0.5951874256134033
+4,3054701.8,45,compression = 1 AND disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compression==1 AND disableCompressibilityTesting==1 AND encryption==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,36,0.3991162776947021
+1,1020739.3888888888,72,compressionLzo = 1,compressionBzip2==1 AND encryption==0 AND level==1 AND unlimitedWindowSize==1,0,0.0,0.0,0.0,37,0.4338743686676025
+2,4472630.111111111,36,compressionGzip = 1 AND unlimitedWindowSize = 1,compressionGzip==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,37,0.5012695789337158
+3,1510029.7222222222,36,compression = 1 AND compressionZpaq = 1 AND encryption = 1,compressionGzip==1 AND disableCompressibilityTesting==1 AND level==9,0,0.0,0.0,0.0,37,0.4096658229827881
+4,1794548.3555555556,45,compression = 1 AND disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compressionZpaq==1 AND encryption==1 AND level==8 AND unlimitedWindowSize==0,0,0.0,0.0,0.0,37,0.4677507877349853
+1,3610799.8541666665,48,level = 2,level==2,0,1.0,1.0,1.0,38,0.2762126922607422
+2,1313167.888888889,108,encryption = 1 AND unlimitedWindowSize = 1,compressionGzip==1 AND disableCompressibilityTesting==1 AND encryption==0 AND level==3,0,0.0,0.0,0.0,38,0.4262168407440185
+3,3388247.2666666666,90,compression = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compression==1 AND encryption==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,38,0.5351221561431885
+4,1732051.4,45,compression = 1 AND disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compression==1 AND disableCompressibilityTesting==1 AND encryption==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,38,0.4526829719543457
+1,2110495.3194444445,72,compressionGzip = 1,compressionGzip==1,0,1.0,1.0,1.0,39,0.3139088153839111
+2,4603206.333333333,36,compressionGzip = 1 AND encryption = 1,compressionGzip==1 AND encryption==1,0,1.0,1.0,1.0,39,0.3850798606872558
+3,1216986.0555555555,36,compression = 1 AND compressionZpaq = 1 AND unlimitedWindowSize = 1,compressionBzip2==0 AND compressionGzip==0 AND compressionLrzip==0 AND encryption==0 AND level==1 AND unlimitedWindowSize==0,0,0.0,0.0,0.0,39,0.5744643211364746
+4,2178595.577777778,45,compression = 1 AND disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compression==1 AND disableCompressibilityTesting==1 AND encryption==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,39,0.4163057804107666
+1,4290554.125,72,compressionLrzip = 1,compressionLrzip==1,0,1.0,1.0,1.0,4,0.3137292861938476
+2,4840478.416666667,72,compression = 1 AND compressionZpaq = 1,compressionZpaq==1,0,1.0,1.0,1.0,4,0.3132641315460205
+3,2623119.9444444445,36,compression = 1 AND compressionLrzip = 1 AND encryption = 1,compressionLrzip==1 AND encryption==1,0,1.0,1.0,1.0,4,0.3917491436004638
+4,3301169.644444444,45,compression = 1 AND disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compression==1 AND disableCompressibilityTesting==1 AND encryption==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,4,0.5554606914520264
+1,2414327.1944444445,72,compressionLrzip = 1,compressionLrzip==1,0,1.0,1.0,1.0,40,0.3128719329833984
+2,1168807.7222222222,36,compressionZpaq = 1 AND disableCompressibilityTesting = 1,compressionLrzip==1 AND level==4 AND unlimitedWindowSize==0,0,0.0,0.0,0.0,40,0.5874369144439697
+3,2084807.388888889,36,compression = 1 AND compressionBzip2 = 1 AND encryption = 1,compressionBzip2==1 AND encryption==1,0,1.0,1.0,1.0,40,0.3793909549713135
+4,3871295.733333333,45,compression = 1 AND disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compression==1 AND disableCompressibilityTesting==1 AND encryption==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,40,0.4067435264587402
+1,4395412.458333333,48,level = 1,level==1,0,1.0,1.0,1.0,41,0.2605588436126709
+2,805471.4537037037,108,disableCompressibilityTesting = 1 AND unlimitedWindowSize = 1,compressionBzip2==0 AND compressionGzip==0 AND compressionLzo==0 AND disableCompressibilityTesting==0 AND level==6 AND unlimitedWindowSize==0,0,0.0,0.0,0.0,41,0.4447071552276611
+3,3100151.0,36,compression = 1 AND compressionGzip = 1 AND encryption = 1,compressionGzip==1 AND encryption==1,0,1.0,1.0,1.0,41,0.4750361442565918
+4,3857801.6222222224,45,compression = 1 AND disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compression==1 AND disableCompressibilityTesting==1 AND encryption==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,41,0.4046211242675781
+1,1573279.2083333333,72,compressionZpaq = 1,compressionBzip2==0 AND compressionGzip==0 AND compressionLrzip==0 AND level==1 AND unlimitedWindowSize==1,3,0.0952380952380952,0.3333333333333333,0.0555555555555555,42,0.3860831260681152
+2,5313841.958333333,72,compression = 1 AND compressionBzip2 = 1,compressionBzip2==1,0,1.0,1.0,1.0,42,0.3059115409851074
+3,4361795.916666667,36,compression = 1 AND compressionZpaq = 1 AND unlimitedWindowSize = 1,compressionZpaq==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,42,0.5098271369934082
+4,437368.5111111111,45,compression = 1 AND disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compression==0 AND disableCompressibilityTesting==0 AND level==4 AND unlimitedWindowSize==1,0,0.0,0.0,0.0,42,0.4891324043273926
+1,1331174.125,72,compressionLzo = 1,compressionLzo==1,0,1.0,1.0,1.0,43,0.3378634452819824
+2,5167742.333333333,36,compressionBzip2 = 1 AND encryption = 1,compressionBzip2==1 AND encryption==1,0,1.0,1.0,1.0,43,0.3870456218719482
+3,3941076.733333333,90,compression = 1 AND disableCompressibilityTesting = 1 AND unlimitedWindowSize = 1,compression==1 AND disableCompressibilityTesting==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,43,0.5446121692657471
+4,1350492.2666666666,45,compression = 1 AND disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compression==1 AND compressionGzip==0 AND compressionLzo==0 AND compressionZpaq==0 AND encryption==1 AND level==7 AND unlimitedWindowSize==1,0,0.0816326530612245,0.5,0.0444444444444444,43,0.5040991306304932
+1,5287724.375,48,level = 5,level==5,0,1.0,1.0,1.0,44,0.2760236263275146
+2,3893531.231481481,108,disableCompressibilityTesting = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,44,0.368152379989624
+3,4990000.833333333,36,compression = 1 AND compressionLrzip = 1 AND disableCompressibilityTesting = 1,compressionLrzip==1 AND disableCompressibilityTesting==1,0,1.0,1.0,1.0,44,0.4008140563964844
+4,1700843.9555555556,45,compression = 1 AND disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compressionLrzip==1 AND encryption==0 AND level==2 AND unlimitedWindowSize==1,0,0.0,0.0,0.0,44,0.5913453102111816
+1,4632824.916666667,72,compressionGzip = 1,compressionGzip==1,0,1.0,1.0,1.0,45,0.3154911994934082
+2,2253670.0555555555,72,compression = 1 AND compressionGzip = 1,compressionGzip==1,0,1.0,1.0,1.0,45,0.3134305477142334
+3,1767513.111111111,36,compression = 1 AND compressionGzip = 1 AND encryption = 1,compressionGzip==1 AND encryption==1,1,1.0,1.0,1.0,45,0.3999736309051513
+4,1443517.4666666666,45,compression = 1 AND disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compressionLzo==1 AND disableCompressibilityTesting==1 AND encryption==0 AND level==3 AND unlimitedWindowSize==1,0,0.0,0.0,0.0,45,0.64164137840271
+1,2795530.208333333,72,compressionZpaq = 1,compressionZpaq==1,0,1.0,1.0,1.0,46,0.3127598762512207
+2,3199971.777777778,36,compressionLrzip = 1 AND unlimitedWindowSize = 1,compressionLrzip==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,46,0.3354208469390869
+3,4606275.416666667,36,compression = 1 AND compressionBzip2 = 1 AND disableCompressibilityTesting = 1,compressionBzip2==1 AND disableCompressibilityTesting==1,0,1.0,1.0,1.0,46,0.3839001655578613
+4,1562402.288888889,45,compression = 1 AND disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compression==1 AND disableCompressibilityTesting==1 AND encryption==1 AND unlimitedWindowSize==1,1,1.0,1.0,1.0,46,0.5609948635101318
+1,3118315.375,72,compressionGzip = 1,compressionGzip==1,0,1.0,1.0,1.0,47,0.3088746070861816
+2,5485298.092592592,108,encryption = 1 AND unlimitedWindowSize = 1,encryption==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,47,0.3521528244018554
+3,4733298.944444444,54,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting==1 AND encryption==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,47,0.5308668613433838
+4,3644881.111111111,45,compression = 1 AND disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compression==1 AND disableCompressibilityTesting==1 AND encryption==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,47,0.3950233459472656
+1,5042444.25,48,level = 1,level==1,0,1.0,1.0,1.0,48,0.2587807178497314
+2,1091716.2916666667,72,compression = 1 AND compressionGzip = 1,compressionZpaq==1 AND disableCompressibilityTesting==1 AND encryption==1 AND level==6 AND unlimitedWindowSize==0,0,0.0,0.0,0.0,48,0.5944414138793945
+3,4547768.6,90,compression = 1 AND disableCompressibilityTesting = 1 AND encryption = 1,compression==1 AND disableCompressibilityTesting==1 AND encryption==1,0,1.0,1.0,1.0,48,0.3875777721405029
+4,5167159.977777778,45,compression = 1 AND disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compression==1 AND disableCompressibilityTesting==1 AND encryption==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,48,0.3903419971466064
+1,633204.6388888889,72,compressionLrzip = 1,compression==0 AND encryption==1 AND level==3 AND unlimitedWindowSize==0,0,0.0,0.0,0.0,49,0.4949326515197754
+2,1010423.9629629628,108,disableCompressibilityTesting = 1 AND unlimitedWindowSize = 1,compression==0 AND encryption==1 AND level==1,0,0.0178571428571428,0.25,0.0092592592592592,49,0.5480289459228516
+3,4260177.972222222,36,compression = 1 AND compressionBzip2 = 1 AND disableCompressibilityTesting = 1,compressionBzip2==1 AND disableCompressibilityTesting==1,0,1.0,1.0,1.0,49,0.4010066986083984
+4,2597088.5555555555,45,compression = 1 AND disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compression==1 AND disableCompressibilityTesting==1 AND encryption==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,49,0.4239749908447265
+1,1443508.2222222222,72,compressionZpaq = 1,compressionGzip==0 AND compressionLrzip==0 AND disableCompressibilityTesting==1 AND encryption==1 AND level==8 AND unlimitedWindowSize==1,2,0.0263157894736842,0.25,0.0138888888888888,5,0.3612005710601806
+2,5170704.416666667,36,compressionGzip = 1 AND unlimitedWindowSize = 1,compressionGzip==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,5,0.3881165981292724
+3,4631928.555555556,36,compression = 1 AND compressionZpaq = 1 AND disableCompressibilityTesting = 1,compressionZpaq==1 AND disableCompressibilityTesting==1,0,1.0,1.0,1.0,5,0.4538850784301758
+4,4542929.288888888,45,compression = 1 AND disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compression==1 AND disableCompressibilityTesting==1 AND encryption==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,5,0.3895082473754883
+1,3382640.208333333,48,level = 1,level==1,0,1.0,1.0,1.0,50,0.2761611938476562
+2,2280030.708333333,72,compression = 1 AND compressionGzip = 1,compressionGzip==1,0,1.0,1.0,1.0,50,0.3182597160339355
+3,1965188.1666666667,36,compression = 1 AND compressionLzo = 1 AND unlimitedWindowSize = 1,compressionLzo==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,50,0.4043946266174316
+4,1359055.5333333334,45,compression = 1 AND disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compressionLrzip==1 AND encryption==0 AND level==1 AND unlimitedWindowSize==0,0,0.0,0.0,0.0,50,0.6090891361236572
+1,2364529.861111111,72,compressionLrzip = 1,compressionLrzip==1,0,1.0,1.0,1.0,51,0.336463451385498
+2,1593474.9166666667,36,compressionBzip2 = 1 AND unlimitedWindowSize = 1,compressionBzip2==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,51,0.4295375347137451
+3,2177774.722222222,36,compression = 1 AND compressionBzip2 = 1 AND unlimitedWindowSize = 1,compressionBzip2==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,51,0.5595188140869141
+4,5264049.911111111,45,compression = 1 AND disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compression==1 AND disableCompressibilityTesting==1 AND encryption==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,51,0.427213191986084
+1,1047014.75,48,level = 6,compressionLzo==1 AND disableCompressibilityTesting==0 AND encryption==0 AND level==7 AND unlimitedWindowSize==0,0,0.0,0.0,0.0,52,0.4910306930541992
+2,4649802.888888889,36,compressionLzo = 1 AND unlimitedWindowSize = 1,compressionLzo==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,52,0.4947044849395752
+3,4362537.027777778,36,compression = 1 AND compressionBzip2 = 1 AND encryption = 1,compressionBzip2==1 AND encryption==1,0,1.0,1.0,1.0,52,0.3857765197753906
+4,1449447.7777777778,45,compression = 1 AND disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting==1 AND encryption==1 AND unlimitedWindowSize==1,2,0.9090909090909092,0.8333333333333334,1.0,52,0.4806923866271972
+1,2041338.888888889,72,compressionLrzip = 1,compressionLrzip==1,0,1.0,1.0,1.0,53,0.3111336231231689
+2,3256988.1944444445,36,compressionGzip = 1 AND disableCompressibilityTesting = 1,compressionGzip==1 AND disableCompressibilityTesting==1,0,1.0,1.0,1.0,53,0.3795869350433349
+3,3316464.75,36,compression = 1 AND compressionZpaq = 1 AND encryption = 1,compressionZpaq==1 AND encryption==1,0,1.0,1.0,1.0,53,0.5102462768554688
+4,719967.4888888889,45,compression = 1 AND disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compressionBzip2==1 AND disableCompressibilityTesting==1 AND level==3,0,0.0408163265306122,0.25,0.0222222222222222,53,0.4362716674804687
+1,3052651.736111111,72,compressionZpaq = 1,compressionZpaq==1,0,1.0,1.0,1.0,54,0.3332953453063965
+2,1012606.4166666666,36,compressionZpaq = 1 AND encryption = 1,compression==0 AND disableCompressibilityTesting==1 AND encryption==1 AND level==3 AND unlimitedWindowSize==1,0,0.0,0.0,0.0,54,0.6902961730957031
+3,2148710.861111111,36,compression = 1 AND compressionBzip2 = 1 AND disableCompressibilityTesting = 1,compressionBzip2==1 AND disableCompressibilityTesting==1,0,1.0,1.0,1.0,54,0.3605697154998779
+4,3225716.7333333334,45,compression = 1 AND disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compression==1 AND disableCompressibilityTesting==1 AND encryption==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,54,0.4220705032348633
+1,2807685.9166666665,72,compressionLzo = 1,compressionLzo==1,0,1.0,1.0,1.0,55,0.3147897720336914
+2,2245698.1944444445,72,compression = 1 AND compressionLzo = 1,compressionLzo==1,0,1.0,1.0,1.0,55,0.3070137500762939
+3,431307.7333333333,90,compression = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compression==1 AND compressionBzip2==0 AND compressionGzip==0 AND compressionZpaq==0 AND encryption==0 AND level==8 AND unlimitedWindowSize==1,0,0.0,0.0,0.0,55,0.5884490013122559
+4,2004390.8666666667,45,compression = 1 AND disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compression==1 AND disableCompressibilityTesting==1 AND encryption==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,55,0.4295074939727783
+1,3002136.458333333,48,level = 6,level==6,0,1.0,1.0,1.0,56,0.2637407779693603
+2,2912730.125,24,level = 2 AND unlimitedWindowSize = 1,level==2 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,56,0.3548674583435058
+3,3086448.138888889,36,compression = 1 AND compressionBzip2 = 1 AND disableCompressibilityTesting = 1,compressionBzip2==1 AND disableCompressibilityTesting==1,0,1.0,1.0,1.0,56,0.3812057971954345
+4,1458568.3333333333,45,compression = 1 AND disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compression==1 AND compressionLzo==0 AND compressionZpaq==0 AND encryption==1 AND level==1,0,0.1052631578947368,0.25,0.0666666666666666,56,0.5612752437591553
+1,2191178.597222222,72,compressionLrzip = 1,compressionLrzip==1,0,1.0,1.0,1.0,57,0.3681960105895996
+2,609683.6944444445,36,compressionLrzip = 1 AND unlimitedWindowSize = 1,compressionBzip2==0 AND compressionGzip==0 AND compressionLrzip==0 AND compressionLzo==0 AND encryption==1 AND level==3 AND unlimitedWindowSize==1,0,0.0,0.0,0.0,57,0.634838342666626
+3,4599409.944444444,90,compression = 1 AND disableCompressibilityTesting = 1 AND encryption = 1,compression==1 AND disableCompressibilityTesting==1 AND encryption==1,0,1.0,1.0,1.0,57,0.4288756847381592
+4,4221296.333333333,45,compression = 1 AND disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compression==1 AND disableCompressibilityTesting==1 AND encryption==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,57,0.4614958763122558
+1,621641.9444444445,72,compressionLzo = 1,compressionLrzip==1 AND disableCompressibilityTesting==0 AND level==4,0,0.0,0.0,0.0,58,0.4484808444976806
+2,4251319.583333333,36,compressionBzip2 = 1 AND encryption = 1,compressionBzip2==1 AND encryption==1,0,1.0,1.0,1.0,58,0.5295565128326416
+3,3654151.811111111,90,compression = 1 AND disableCompressibilityTesting = 1 AND encryption = 1,compression==1 AND disableCompressibilityTesting==1 AND encryption==1,0,1.0,1.0,1.0,58,0.3777604103088379
+4,1171380.4222222222,45,compression = 1 AND disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compressionBzip2==1 AND disableCompressibilityTesting==1 AND encryption==0 AND level==2 AND unlimitedWindowSize==0,0,0.0,0.0,0.0,58,0.4305148124694824
+1,3370488.861111111,72,compressionGzip = 1,compressionGzip==1,0,1.0,1.0,1.0,59,0.3127350807189941
+2,2688269.333333333,36,compressionLzo = 1 AND disableCompressibilityTesting = 1,compressionLzo==1 AND disableCompressibilityTesting==1,0,1.0,1.0,1.0,59,0.3832108974456787
+3,2505037.333333333,36,compression = 1 AND compressionGzip = 1 AND unlimitedWindowSize = 1,compressionGzip==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,59,0.3344528675079345
+4,1816867.5111111111,45,compression = 1 AND disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compression==1 AND disableCompressibilityTesting==1 AND encryption==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,59,0.5724105834960938
+1,491549.9444444445,72,compressionGzip = 1,compressionBzip2==1 AND disableCompressibilityTesting==1 AND encryption==0 AND level==4 AND unlimitedWindowSize==1,0,0.0,0.0,0.0,6,0.5055389404296875
+2,3430954.5,40,compression = 1 AND level = 4,compression==1 AND level==4,0,1.0,1.0,1.0,6,0.3916747570037842
+3,2011097.0833333333,36,compression = 1 AND compressionBzip2 = 1 AND disableCompressibilityTesting = 1,compressionBzip2==1 AND disableCompressibilityTesting==1,0,1.0,1.0,1.0,6,0.3937523365020752
+4,2061414.6888888888,45,compression = 1 AND disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compression==1 AND disableCompressibilityTesting==1 AND encryption==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,6,0.4727120399475097
+1,4688290.916666667,48,level = 2,level==2,0,1.0,1.0,1.0,60,0.2584192752838135
+2,963144.8611111112,72,compression = 1 AND compressionZpaq = 1,compressionBzip2==0 AND compressionGzip==0 AND compressionLzo==0 AND disableCompressibilityTesting==1 AND encryption==1 AND level==3 AND unlimitedWindowSize==0,0,0.0266666666666666,0.3333333333333333,0.0138888888888888,60,0.6502549648284912
+3,3172525.8055555555,36,compression = 1 AND compressionBzip2 = 1 AND disableCompressibilityTesting = 1,compressionBzip2==1 AND disableCompressibilityTesting==1,0,1.0,1.0,1.0,60,0.3817651271820068
+4,2837651.333333333,45,compression = 1 AND disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compression==1 AND disableCompressibilityTesting==1 AND encryption==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,60,0.4133210182189941
+1,3363822.4305555555,72,compressionLzo = 1,compressionLzo==1,0,1.0,1.0,1.0,61,0.3071990013122558
+2,2027639.8055555555,36,compressionBzip2 = 1 AND encryption = 1,compressionBzip2==1 AND encryption==1,0,1.0,1.0,1.0,61,0.384946346282959
+3,4967147.444444444,36,compression = 1 AND compressionLzo = 1 AND encryption = 1,compressionLzo==1 AND encryption==1,0,1.0,1.0,1.0,61,0.5017194747924805
+4,2598013.9777777777,45,compression = 1 AND disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compression==1 AND disableCompressibilityTesting==1 AND encryption==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,61,0.4162018299102783
+1,2113938.8194444445,72,compressionLzo = 1,compressionLzo==1,0,1.0,1.0,1.0,62,0.3792269229888916
+2,1314250.5,24,level = 2 AND unlimitedWindowSize = 1,compressionLrzip==1 AND encryption==0 AND level==9 AND unlimitedWindowSize==1,0,0.0,0.0,0.0,62,0.7317397594451904
+3,4676391.277777778,36,compression = 1 AND compressionGzip = 1 AND encryption = 1,compressionGzip==1 AND encryption==1,0,1.0,1.0,1.0,62,0.4761474132537842
+4,3285886.111111111,45,compression = 1 AND disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compression==1 AND disableCompressibilityTesting==1 AND encryption==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,62,0.5082576274871826
+1,1857828.888888889,72,compressionZpaq = 1,compressionZpaq==1,0,1.0,1.0,1.0,63,0.3224697113037109
+2,3474263.5,36,compressionZpaq = 1 AND encryption = 1,compressionZpaq==1 AND encryption==1,0,1.0,1.0,1.0,63,0.391019344329834
+3,3759777.3333333335,54,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting==1 AND encryption==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,63,0.488447904586792
+4,2417016.155555556,45,compression = 1 AND disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compression==1 AND disableCompressibilityTesting==1 AND encryption==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,63,0.4170756340026855
+1,731238.2777777778,72,compressionGzip = 1,compressionZpaq==1 AND level==6 AND unlimitedWindowSize==0,0,0.0,0.0,0.0,64,0.458538293838501
+2,2106450.236111111,72,compression = 1 AND compressionGzip = 1,compressionGzip==1,0,1.0,1.0,1.0,64,0.4336457252502441
+3,1783658.2777777778,36,compression = 1 AND compressionZpaq = 1 AND unlimitedWindowSize = 1,compressionLrzip==1 AND encryption==0 AND level==8 AND unlimitedWindowSize==0,0,0.0,0.0,0.0,64,0.403740644454956
+4,3206740.5555555555,45,compression = 1 AND disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compression==1 AND disableCompressibilityTesting==1 AND encryption==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,64,0.4018537998199463
+1,2354241.763888889,72,compressionLrzip = 1,compressionLrzip==1,0,1.0,1.0,1.0,65,0.3423259258270263
+2,2927867.25,36,compressionBzip2 = 1 AND encryption = 1,compressionBzip2==1 AND encryption==1,0,1.0,1.0,1.0,65,0.4242620468139648
+3,4847911.166666667,36,compression = 1 AND compressionLrzip = 1 AND unlimitedWindowSize = 1,compressionLrzip==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,65,0.5569906234741211
+4,2154599.288888889,45,compression = 1 AND disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compression==1 AND disableCompressibilityTesting==1 AND encryption==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,65,0.4909596443176269
+1,4891133.722222222,72,compressionLzo = 1,compressionLzo==1,0,1.0,1.0,1.0,66,0.3027124404907226
+2,1707114.888888889,36,compressionLrzip = 1 AND disableCompressibilityTesting = 1,compression==0 AND disableCompressibilityTesting==0 AND encryption==1 AND level==3,0,0.0,0.0,0.0,66,0.4308211803436279
+3,2170181.611111111,36,compression = 1 AND compressionLrzip = 1 AND encryption = 1,compressionLrzip==1 AND encryption==1,0,1.0,1.0,1.0,66,0.5472912788391113
+4,4148740.577777778,45,compression = 1 AND disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compression==1 AND disableCompressibilityTesting==1 AND encryption==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,66,0.4050178527832031
+1,5451237.520833333,48,level = 4,level==4,0,1.0,1.0,1.0,67,0.2699577808380127
+2,1108284.0833333333,36,compressionLzo = 1 AND encryption = 1,compressionBzip2==1 AND encryption==1 AND level==8 AND unlimitedWindowSize==0,0,0.0,0.0,0.0,67,0.4381890296936035
+3,923243.5833333334,36,compression = 1 AND compressionLrzip = 1 AND disableCompressibilityTesting = 1,compressionBzip2==1 AND disableCompressibilityTesting==1 AND encryption==1 AND level==2,0,0.0,0.0,0.0,67,0.5895712375640869
+4,5402006.511111111,45,compression = 1 AND disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compression==1 AND disableCompressibilityTesting==1 AND encryption==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,67,0.3989782333374023
+1,1299951.1666666667,72,compressionBzip2 = 1,compressionGzip==1 AND disableCompressibilityTesting==0 AND encryption==1 AND level==9,0,0.0,0.0,0.0,68,0.4021821022033691
+2,3756478.1666666665,72,compression = 1 AND compressionLzo = 1,compressionLzo==1,0,1.0,1.0,1.0,68,0.3189911842346191
+3,4261699.305555556,36,compression = 1 AND compressionLrzip = 1 AND encryption = 1,compressionLrzip==1 AND encryption==1,0,1.0,1.0,1.0,68,0.5588188171386719
+4,2241705.933333333,45,compression = 1 AND disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compression==1 AND disableCompressibilityTesting==1 AND encryption==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,68,0.4226033687591553
+1,3813630.236111111,72,compressionLrzip = 1,compressionLrzip==1,0,1.0,1.0,1.0,69,0.3295478820800781
+2,1719573.25,40,compression = 1 AND level = 7,compressionLrzip==1 AND disableCompressibilityTesting==0 AND encryption==0 AND level==3,0,0.0,0.0,0.0,69,0.4251399040222168
+3,1804237.7333333332,90,compression = 1 AND disableCompressibilityTesting = 1 AND unlimitedWindowSize = 1,compression==1 AND disableCompressibilityTesting==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,69,0.5469708442687988
+4,2930209.7333333334,45,compression = 1 AND disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compression==1 AND disableCompressibilityTesting==1 AND encryption==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,69,0.4376099109649658
+1,3902694.2708333335,48,level = 5,level==5,0,1.0,1.0,1.0,7,0.2631111145019531
+2,3059224.847222222,72,compression = 1 AND compressionLrzip = 1,compressionLrzip==1,0,1.0,1.0,1.0,7,0.301034927368164
+3,388044.9722222223,36,compression = 1 AND compressionLzo = 1 AND unlimitedWindowSize = 1,compression==1 AND compressionLrzip==0 AND compressionLzo==0 AND compressionZpaq==0 AND disableCompressibilityTesting==0 AND level==6 AND unlimitedWindowSize==1,0,0.0,0.0,0.0,7,0.5592143535614014
+4,5199841.2,45,compression = 1 AND disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compression==1 AND disableCompressibilityTesting==1 AND encryption==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,7,0.395106554031372
+1,3441663.013888889,72,compressionZpaq = 1,compressionZpaq==1,0,1.0,1.0,1.0,70,0.3081521987915039
+2,3691855.3333333335,24,disableCompressibilityTesting = 1 AND level = 6,disableCompressibilityTesting==1 AND level==6,0,1.0,1.0,1.0,70,0.3404965400695801
+3,4983478.611111111,36,compression = 1 AND compressionLrzip = 1 AND unlimitedWindowSize = 1,compressionLrzip==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,70,0.3868803977966308
+4,4619583.466666667,45,compression = 1 AND disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compression==1 AND disableCompressibilityTesting==1 AND encryption==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,70,0.5304441452026367
+1,728618.5416666666,72,compressionLrzip = 1,compression==1 AND compressionBzip2==0 AND compressionGzip==0 AND compressionLrzip==0 AND encryption==0 AND level==8 AND unlimitedWindowSize==1,0,0.0,0.0,0.0,71,0.4813973903656006
+2,5426139.208333333,24,level = 4 AND unlimitedWindowSize = 1,level==4 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,71,0.4535336494445801
+3,1327137.7333333334,90,compression = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compressionBzip2==1 AND disableCompressibilityTesting==1 AND encryption==0 AND level==2,0,0.0,0.0,0.0,71,0.4212574958801269
+4,4173458.355555556,45,compression = 1 AND disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compression==1 AND disableCompressibilityTesting==1 AND encryption==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,71,0.3819680213928222
+1,1019609.9027777778,72,compressionBzip2 = 1,compression==1 AND compressionBzip2==0 AND compressionLzo==0 AND compressionZpaq==0 AND disableCompressibilityTesting==0 AND encryption==0 AND level==4,0,0.0,0.0,0.0,72,0.5406408309936523
+2,3648177.722222222,36,compressionZpaq = 1 AND unlimitedWindowSize = 1,compressionZpaq==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,72,0.5532724857330322
+3,5391184.555555556,90,compression = 1 AND disableCompressibilityTesting = 1 AND encryption = 1,compression==1 AND disableCompressibilityTesting==1 AND encryption==1,0,1.0,1.0,1.0,72,0.4131340980529785
+4,405058.0,45,compression = 1 AND disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compressionBzip2==0 AND compressionLrzip==0 AND compressionLzo==0 AND disableCompressibilityTesting==1 AND encryption==0 AND level==1 AND unlimitedWindowSize==1,0,0.0,0.0,0.0,72,0.5567724704742432
+1,3183333.5694444445,72,compressionLzo = 1,compressionLzo==1,0,1.0,1.0,1.0,73,0.3095326423645019
+2,2173446.8055555555,36,compressionBzip2 = 1 AND disableCompressibilityTesting = 1,compressionBzip2==1 AND disableCompressibilityTesting==1,0,1.0,1.0,1.0,73,0.333636999130249
+3,4628326.361111111,36,compression = 1 AND compressionGzip = 1 AND unlimitedWindowSize = 1,compressionGzip==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,73,0.3837790489196777
+4,3463604.822222222,45,compression = 1 AND disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compression==1 AND disableCompressibilityTesting==1 AND encryption==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,73,0.5434792041778564
+1,2855169.6666666665,72,compressionLzo = 1,compressionLzo==1,0,1.0,1.0,1.0,74,0.313023567199707
+2,2544475.083333333,36,compressionLzo = 1 AND encryption = 1,compressionLzo==1 AND encryption==1,0,1.0,1.0,1.0,74,0.3815891742706299
+3,2459443.75,36,compression = 1 AND compressionLzo = 1 AND unlimitedWindowSize = 1,compressionLzo==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,74,0.5386624336242676
+4,5142140.688888889,45,compression = 1 AND disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compression==1 AND disableCompressibilityTesting==1 AND encryption==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,74,0.3967158794403076
+1,403748.2638888889,72,compressionZpaq = 1,compression==1 AND compressionGzip==0 AND compressionLzo==0 AND compressionZpaq==0 AND level==9 AND unlimitedWindowSize==1,0,0.0,0.0,0.0,75,0.5091290473937988
+2,1334379.6666666667,36,compressionLrzip = 1 AND unlimitedWindowSize = 1,compressionBzip2==0 AND compressionLzo==0 AND compressionZpaq==0 AND encryption==1 AND level==8,2,0.0833333333333333,0.1666666666666666,0.0555555555555555,75,0.6517601013183594
+3,2981401.5555555555,36,compression = 1 AND compressionZpaq = 1 AND unlimitedWindowSize = 1,compressionZpaq==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,75,0.3884735107421875
+4,2029511.4222222224,45,compression = 1 AND disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compression==1 AND disableCompressibilityTesting==1 AND encryption==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,75,0.4379212856292724
+1,2198348.395833333,48,level = 2,level==2,0,1.0,1.0,1.0,76,0.2688262462615967
+2,2491497.472222222,36,compressionLzo = 1 AND unlimitedWindowSize = 1,compressionLzo==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,76,0.3899433612823486
+3,2363390.1333333333,90,compression = 1 AND disableCompressibilityTesting = 1 AND unlimitedWindowSize = 1,compression==1 AND disableCompressibilityTesting==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,76,0.5407426357269287
+4,1624385.6,45,compression = 1 AND disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compression==1 AND disableCompressibilityTesting==1 AND encryption==1 AND unlimitedWindowSize==1,1,1.0,1.0,1.0,76,0.4659318923950195
+1,3712305.763888889,72,compressionGzip = 1,compressionGzip==1,0,1.0,1.0,1.0,77,0.3069920539855957
+2,1677246.0555555555,36,compressionBzip2 = 1 AND unlimitedWindowSize = 1,compressionBzip2==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,77,0.3919086456298828
+3,4767652.805555556,36,compression = 1 AND compressionZpaq = 1 AND disableCompressibilityTesting = 1,compressionZpaq==1 AND disableCompressibilityTesting==1,0,1.0,1.0,1.0,77,0.5353999137878418
+4,717046.911111111,45,compression = 1 AND disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compressionLzo==1 AND encryption==0 AND level==1 AND unlimitedWindowSize==0,0,0.0,0.0,0.0,77,0.4441659450531006
+1,2356225.847222222,72,compressionLrzip = 1,compressionLrzip==1,0,1.0,1.0,1.0,78,0.3356938362121582
+2,5355870.166666667,36,compressionLrzip = 1 AND disableCompressibilityTesting = 1,compressionLrzip==1 AND disableCompressibilityTesting==1,0,1.0,1.0,1.0,78,0.4122140407562256
+3,967874.0555555556,54,disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compressionZpaq==1 AND disableCompressibilityTesting==1 AND level==5 AND unlimitedWindowSize==0,0,0.0,0.0,0.0,78,0.6151585578918457
+4,1429123.4666666666,45,compression = 1 AND disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compressionGzip==1 AND disableCompressibilityTesting==1 AND level==9 AND unlimitedWindowSize==0,0,0.0,0.0,0.0,78,0.4804046154022217
+1,2864546.111111111,72,compressionZpaq = 1,compressionZpaq==1,0,1.0,1.0,1.0,79,0.3118247985839844
+2,4234164.259259259,108,encryption = 1 AND unlimitedWindowSize = 1,encryption==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,79,0.3542146682739258
+3,3095675.583333333,36,compression = 1 AND compressionGzip = 1 AND disableCompressibilityTesting = 1,compressionGzip==1 AND disableCompressibilityTesting==1,0,1.0,1.0,1.0,79,0.3863623142242431
+4,1443690.0444444444,45,compression = 1 AND disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compressionLrzip==1 AND disableCompressibilityTesting==0 AND level==6 AND unlimitedWindowSize==0,0,0.0,0.0,0.0,79,0.6201860904693604
+1,3573624.458333333,72,compressionLrzip = 1,compressionLrzip==1,0,1.0,1.0,1.0,8,0.3262300491333008
+2,1911528.4722222225,36,compressionGzip = 1 AND unlimitedWindowSize = 1,compressionGzip==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,8,0.4134631156921386
+3,4942760.194444444,36,compression = 1 AND compressionZpaq = 1 AND encryption = 1,compressionZpaq==1 AND encryption==1,0,1.0,1.0,1.0,8,0.5430452823638916
+4,4568910.844444444,45,compression = 1 AND disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compression==1 AND disableCompressibilityTesting==1 AND encryption==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,8,0.4290835857391357
+1,706761.6111111111,72,compressionZpaq = 1,compressionGzip==1 AND encryption==0 AND level==1 AND unlimitedWindowSize==1,0,0.0,0.0,0.0,80,0.4866225719451904
+2,4276916.277777778,36,compressionLrzip = 1 AND unlimitedWindowSize = 1,compressionLrzip==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,80,0.479050874710083
+3,1609370.9166666667,36,compression = 1 AND compressionBzip2 = 1 AND encryption = 1,compressionBzip2==1 AND encryption==1,1,1.0,1.0,1.0,80,0.4109618663787842
+4,507401.2222222223,45,compression = 1 AND disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compression==1 AND compressionGzip==0 AND compressionLzo==0 AND disableCompressibilityTesting==0 AND encryption==0 AND level==1 AND unlimitedWindowSize==1,0,0.0,0.0,0.0,80,0.4710240364074707
+1,4294075.791666667,72,compressionGzip = 1,compressionGzip==1,0,1.0,1.0,1.0,81,0.3147287368774414
+2,1785026.25,36,compressionZpaq = 1 AND encryption = 1,compressionGzip==1 AND disableCompressibilityTesting==1 AND encryption==1 AND level==4,0,0.0,0.0,0.0,81,0.4115989208221435
+3,3814420.8777777776,90,compression = 1 AND disableCompressibilityTesting = 1 AND unlimitedWindowSize = 1,compression==1 AND disableCompressibilityTesting==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,81,0.521989107131958
+4,5486987.711111112,45,compression = 1 AND disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compression==1 AND disableCompressibilityTesting==1 AND encryption==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,81,0.3921346664428711
+1,1864193.736111111,72,compressionBzip2 = 1,compressionBzip2==1,0,1.0,1.0,1.0,82,0.3043813705444336
+2,5334762.416666667,24,encryption = 1 AND level = 2,encryption==1 AND level==2,0,1.0,1.0,1.0,82,0.3376641273498535
+3,4658824.027777778,36,compression = 1 AND compressionLrzip = 1 AND unlimitedWindowSize = 1,compressionLrzip==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,82,0.373990535736084
+4,3465752.355555556,45,compression = 1 AND disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compression==1 AND disableCompressibilityTesting==1 AND encryption==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,82,0.5128121376037598
+1,4655183.847222222,72,compressionGzip = 1,compressionGzip==1,0,1.0,1.0,1.0,83,0.3151373863220215
+2,5448159.25,72,compression = 1 AND compressionLzo = 1,compressionLzo==1,0,1.0,1.0,1.0,83,0.3153953552246094
+3,4294667.333333333,36,compression = 1 AND compressionLrzip = 1 AND disableCompressibilityTesting = 1,compressionLrzip==1 AND disableCompressibilityTesting==1,0,1.0,1.0,1.0,83,0.3927764892578125
+4,813254.2888888889,45,compression = 1 AND disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compressionBzip2==0 AND compressionLrzip==0 AND compressionLzo==0 AND compressionZpaq==0 AND encryption==0 AND level==7 AND unlimitedWindowSize==1,0,0.0,0.0,0.0,83,0.6257510185241699
+1,5249758.375,72,compressionLrzip = 1,compressionLrzip==1,0,1.0,1.0,1.0,84,0.302701473236084
+2,1957556.25,36,compressionLzo = 1 AND unlimitedWindowSize = 1,compressionLzo==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,84,0.3801915645599365
+3,1612471.2222222222,36,compression = 1 AND compressionGzip = 1 AND encryption = 1,compressionGzip==1 AND encryption==1,0,1.0,1.0,1.0,84,0.5088822841644287
+4,3104644.644444444,45,compression = 1 AND disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compression==1 AND disableCompressibilityTesting==1 AND encryption==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,84,0.4148638248443603
+1,1618735.5277777778,72,compressionBzip2 = 1,compressionBzip2==1,0,1.0,1.0,1.0,85,0.3073031902313232
+2,1627199.5277777778,36,compressionGzip = 1 AND unlimitedWindowSize = 1,compressionZpaq==1 AND disableCompressibilityTesting==1 AND encryption==0 AND level==9,0,0.0,0.0,0.0,85,0.431546688079834
+3,1866606.138888889,36,compression = 1 AND compressionBzip2 = 1 AND unlimitedWindowSize = 1,compressionBzip2==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,85,0.53611159324646
+4,4938738.2,45,compression = 1 AND disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compression==1 AND disableCompressibilityTesting==1 AND encryption==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,85,0.3906877040863037
+1,5462893.069444444,72,compressionZpaq = 1,compressionZpaq==1,0,1.0,1.0,1.0,86,0.3108434677124023
+2,4960568.916666667,108,disableCompressibilityTesting = 1 AND encryption = 1,disableCompressibilityTesting==1 AND encryption==1,0,1.0,1.0,1.0,86,0.3586692810058594
+3,2105533.488888889,90,compression = 1 AND disableCompressibilityTesting = 1 AND encryption = 1,compression==1 AND disableCompressibilityTesting==1 AND encryption==1,0,1.0,1.0,1.0,86,0.5148396492004395
+4,5409485.644444444,45,compression = 1 AND disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compression==1 AND disableCompressibilityTesting==1 AND encryption==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,86,0.3918304443359375
+1,2900082.486111111,72,compressionGzip = 1,compressionGzip==1,0,1.0,1.0,1.0,87,0.3531506061553955
+2,2838775.861111111,36,compressionZpaq = 1 AND encryption = 1,compressionZpaq==1 AND encryption==1,0,1.0,1.0,1.0,87,0.43392014503479
+3,1525036.138888889,36,compression = 1 AND compressionBzip2 = 1 AND unlimitedWindowSize = 1,compression==1 AND compressionBzip2==0 AND compressionLzo==0 AND compressionZpaq==0 AND disableCompressibilityTesting==1 AND level==2 AND unlimitedWindowSize==1,0,0.0,0.0,0.0,87,0.6701042652130127
+4,2354457.688888889,45,compression = 1 AND disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compression==1 AND disableCompressibilityTesting==1 AND encryption==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,87,0.4814674854278564
+1,1802441.736111111,72,compressionLrzip = 1,compressionLrzip==1,0,1.0,1.0,1.0,88,0.3227112293243408
+2,5266645.194444444,36,compressionGzip = 1 AND encryption = 1,compressionGzip==1 AND encryption==1,0,1.0,1.0,1.0,88,0.400442361831665
+3,724026.6555555556,90,compression = 1 AND disableCompressibilityTesting = 1 AND encryption = 1,compressionZpaq==1 AND disableCompressibilityTesting==1 AND encryption==0 AND level==6,0,0.0,0.0,0.0,88,0.5955326557159424
+4,4554489.133333334,45,compression = 1 AND disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compression==1 AND disableCompressibilityTesting==1 AND encryption==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,88,0.4203102588653564
+1,2635120.0416666665,72,compressionBzip2 = 1,compressionBzip2==1,0,1.0,1.0,1.0,89,0.3046190738677978
+2,4050336.398148148,108,disableCompressibilityTesting = 1 AND unlimitedWindowSize = 1,disableCompressibilityTesting==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,89,0.3471431732177734
+3,1494828.638888889,36,compression = 1 AND compressionGzip = 1 AND disableCompressibilityTesting = 1,compressionGzip==1,3,0.6666666666666666,0.5,1.0,89,0.3162102699279785
+4,3242451.0888888887,45,compression = 1 AND disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compression==1 AND disableCompressibilityTesting==1 AND encryption==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,89,0.5332531929016113
+1,5351426.388888889,72,compressionLzo = 1,compressionLzo==1,0,1.0,1.0,1.0,9,0.3118617534637451
+2,2576171.527777778,36,compressionGzip = 1 AND encryption = 1,compressionGzip==1 AND encryption==1,0,1.0,1.0,1.0,9,0.3855659961700439
+3,3672592.5833333335,36,compression = 1 AND compressionZpaq = 1 AND encryption = 1,compressionZpaq==1 AND encryption==1,0,1.0,1.0,1.0,9,0.5027322769165039
+4,3869697.6,45,compression = 1 AND disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compression==1 AND disableCompressibilityTesting==1 AND encryption==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,9,0.4246029853820801
+1,652911.4861111111,72,compressionBzip2 = 1,compressionLrzip==1 AND disableCompressibilityTesting==0 AND encryption==1 AND level==4,0,0.0,0.0,0.0,90,0.4701812267303467
+2,4665189.277777778,36,compressionLrzip = 1 AND unlimitedWindowSize = 1,compressionLrzip==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,90,0.5185868740081787
+3,1082696.9166666667,36,compression = 1 AND compressionLzo = 1 AND unlimitedWindowSize = 1,compressionBzip2==0 AND compressionGzip==0 AND compressionZpaq==0 AND disableCompressibilityTesting==1 AND encryption==0 AND level==3 AND unlimitedWindowSize==1,0,0.0512820512820512,0.3333333333333333,0.0277777777777777,90,0.483389139175415
+4,929456.1777777778,45,compression = 1 AND disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compression==0 AND encryption==1 AND level==7 AND unlimitedWindowSize==1,0,0.0,0.0,0.0,90,0.5051934719085693
+1,4636559.013888889,72,compressionLrzip = 1,compressionLrzip==1,0,1.0,1.0,1.0,91,0.3126499652862549
+2,5359369.416666667,36,compressionBzip2 = 1 AND unlimitedWindowSize = 1,compressionBzip2==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,91,0.3938677310943603
+3,4776790.611111111,36,compression = 1 AND compressionLrzip = 1 AND unlimitedWindowSize = 1,compressionLrzip==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,91,0.5164134502410889
+4,3449238.311111111,45,compression = 1 AND disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compression==1 AND disableCompressibilityTesting==1 AND encryption==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,91,0.4222145080566406
+1,385640.3888888889,72,compressionBzip2 = 1,compressionGzip==0 AND compressionLzo==0 AND compressionZpaq==0 AND disableCompressibilityTesting==0 AND encryption==0 AND level==9 AND unlimitedWindowSize==1,2,0.0266666666666666,0.3333333333333333,0.0138888888888888,92,0.5610926151275635
+2,1810020.0555555555,72,compression = 1 AND compressionBzip2 = 1,compressionBzip2==1,0,1.0,1.0,1.0,92,0.507981538772583
+3,2712703.6944444445,36,compression = 1 AND compressionLzo = 1 AND disableCompressibilityTesting = 1,compressionLzo==1 AND disableCompressibilityTesting==1,0,1.0,1.0,1.0,92,0.435676097869873
+4,3041675.422222222,45,compression = 1 AND disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compression==1 AND disableCompressibilityTesting==1 AND encryption==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,92,0.4760723114013672
+1,5255099.819444444,72,compressionGzip = 1,compressionGzip==1,0,1.0,1.0,1.0,93,0.3013038635253906
+2,2307711.0416666665,72,compression = 1 AND compressionBzip2 = 1,compressionBzip2==1,0,1.0,1.0,1.0,93,0.3027081489562988
+3,4053690.9166666665,36,compression = 1 AND compressionBzip2 = 1 AND disableCompressibilityTesting = 1,compressionBzip2==1 AND disableCompressibilityTesting==1,0,1.0,1.0,1.0,93,0.378993272781372
+4,416054.0,45,compression = 1 AND disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compressionBzip2==1 AND encryption==0 AND level==8 AND unlimitedWindowSize==1,0,0.0,0.0,0.0,93,0.5792028903961182
+1,3907275.402777778,72,compressionLzo = 1,compressionLzo==1,0,1.0,1.0,1.0,94,0.3336412906646728
+2,501649.7962962963,108,encryption = 1 AND unlimitedWindowSize = 1,compressionLrzip==0 AND compressionLzo==0 AND compressionZpaq==0 AND disableCompressibilityTesting==1 AND encryption==0 AND level==6 AND unlimitedWindowSize==0,0,0.0,0.0,0.0,94,0.7031331062316895
+3,3380685.222222222,36,compression = 1 AND compressionZpaq = 1 AND unlimitedWindowSize = 1,compressionZpaq==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,94,0.4175939559936523
+4,3558616.2444444443,45,compression = 1 AND disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compression==1 AND disableCompressibilityTesting==1 AND encryption==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,94,0.4398059844970703
+1,4477474.625,48,level = 7,level==7,0,1.0,1.0,1.0,95,0.2837018966674804
+2,1632485.8333333333,36,compressionZpaq = 1 AND unlimitedWindowSize = 1,compressionZpaq==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,95,0.4345324039459228
+3,1253506.1944444445,36,compression = 1 AND compressionGzip = 1 AND disableCompressibilityTesting = 1,compressionLzo==1 AND encryption==1 AND level==6 AND unlimitedWindowSize==0,0,0.0,0.0,0.0,95,0.6456434726715088
+4,5438868.177777777,45,compression = 1 AND disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compression==1 AND disableCompressibilityTesting==1 AND encryption==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,95,0.426422119140625
+1,3857683.2708333335,48,level = 5,level==5,0,1.0,1.0,1.0,96,0.2523336410522461
+2,865043.1944444445,36,compressionGzip = 1 AND unlimitedWindowSize = 1,compression==0 AND encryption==0 AND level==9 AND unlimitedWindowSize==0,0,0.0,0.0,0.0,96,0.6137948036193848
+3,1166789.888888889,36,compression = 1 AND compressionBzip2 = 1 AND encryption = 1,compressionLzo==1 AND disableCompressibilityTesting==1 AND encryption==0 AND level==3,0,0.0,0.0,0.0,96,0.4574000835418701
+4,2811377.0,45,compression = 1 AND disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compression==1 AND disableCompressibilityTesting==1 AND encryption==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,96,0.4049403667449951
+1,338287.875,72,compressionBzip2 = 1,compressionLzo==1 AND disableCompressibilityTesting==1 AND level==7 AND unlimitedWindowSize==1,0,0.0,0.0,0.0,97,0.4566025733947754
+2,1766151.8472222222,72,compression = 1 AND compressionLrzip = 1,compressionLrzip==1,0,1.0,1.0,1.0,97,0.4648582935333252
+3,1638338.111111111,36,compression = 1 AND compressionLzo = 1 AND disableCompressibilityTesting = 1,compression==0 AND disableCompressibilityTesting==0 AND level==2 AND unlimitedWindowSize==1,0,0.0,0.0,0.0,97,0.4374005794525146
+4,426592.0444444445,45,compression = 1 AND disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compression==1 AND compressionGzip==0 AND compressionLrzip==0 AND encryption==1 AND level==6 AND unlimitedWindowSize==0,0,0.0,0.0,0.0,97,0.499962568283081
+1,4744274.763888889,72,compressionZpaq = 1,compressionZpaq==1,0,1.0,1.0,1.0,98,0.3165957927703857
+2,5482331.444444444,36,compressionZpaq = 1 AND unlimitedWindowSize = 1,compressionZpaq==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,98,0.3959827423095703
+3,746614.6944444445,36,compression = 1 AND compressionZpaq = 1 AND unlimitedWindowSize = 1,compressionGzip==1 AND encryption==0 AND level==9 AND unlimitedWindowSize==0,0,0.0,0.0,0.0,98,0.6256630420684814
+4,3469436.3777777776,45,compression = 1 AND disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compression==1 AND disableCompressibilityTesting==1 AND encryption==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,98,0.3998200893402099
+1,4020208.972222222,72,compressionZpaq = 1,compressionZpaq==1,0,1.0,1.0,1.0,99,0.3576507568359375
+2,1300928.7222222222,108,encryption = 1 AND unlimitedWindowSize = 1,compressionLrzip==1 AND disableCompressibilityTesting==1 AND level==1 AND unlimitedWindowSize==0,0,0.0,0.0,0.0,99,0.6566429138183594
+3,4847582.083333333,36,compression = 1 AND compressionLrzip = 1 AND unlimitedWindowSize = 1,compressionLrzip==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,99,0.4465358257293701
+4,1885608.4222222224,45,compression = 1 AND disableCompressibilityTesting = 1 AND encryption = 1 AND unlimitedWindowSize = 1,compression==1 AND disableCompressibilityTesting==1 AND encryption==1 AND unlimitedWindowSize==1,0,1.0,1.0,1.0,99,0.5229902267456055

@@ -1,0 +1,2 @@
+num_features,num_samples,sgs_unique,sgs_mean_jaccard,sgs_mean_overlap_coefficient,coverage_mean,coverage_total,rule_features_used,rule_feature_frequency,rule_num_features,rule_length_mean,rule_length_max,rule_length_min,runtime
+26,4112,1,,,0.05325875486381323,0.05325875486381323,"['CM', 'TPAQ', 'Huffman', 'ANS1', 'TPAQX', 'Range', 'blocksize', 'FPAQ', 'ANS0']","[('CM', 1), ('TPAQ', 5), ('Huffman', 1), ('ANS1', 1), ('TPAQX', 5), ('Range', 1), ('blocksize', 5), ('FPAQ', 5), ('ANS0', 1)]",9,5.0,5.0,5.0,1.2198164463043213

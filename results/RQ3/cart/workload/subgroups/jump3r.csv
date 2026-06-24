@@ -1,0 +1,6 @@
+rule,sg_samples,sg_coverage,rule_num_predicates,rule_features_used
+Resampling <= 33.0 AND Resampling <= 15.0,1061,0.2528598665395615,2,['Resampling']
+Resampling <= 33.0 AND Resampling <= 15.0 AND NOT Mono,910,0.21687321258341277,3,"['Resampling', 'Mono']"
+Resampling <= 33.0 AND Resampling <= 15.0 AND NOT Mono AND NOT ReplayGainAccurate,595,0.14180171591992374,4,"['Resampling', 'ReplayGainAccurate', 'Mono']"
+Resampling <= 33.0 AND Resampling <= 15.0 AND NOT Mono AND NOT ReplayGainAccurate AND NoRes,349,0.08317445185891326,5,"['Resampling', 'NoRes', 'ReplayGainAccurate', 'Mono']"
+Resampling <= 33.0 AND Resampling <= 15.0 AND Mono,151,0.035986653956148716,3,"['Resampling', 'Mono']"

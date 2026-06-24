@@ -1,0 +1,6 @@
+rule,sg_samples,sg_coverage,rule_num_predicates,rule_features_used
+BZip2==1 AND x==10 AND mtOff==0,1144,0.016666666666666666,3,"['BZip2', 'mtOff', 'x']"
+BZip2==1 AND x==10 AND PPMd==0 AND mtOff==0,1144,0.016666666666666666,4,"['PPMd', 'BZip2', 'mtOff', 'x']"
+BZip2==1 AND x==10 AND LZMA2==0 AND mtOff==0,1144,0.016666666666666666,4,"['LZMA2', 'BZip2', 'mtOff', 'x']"
+BZip2==1 AND x==10 AND LZMA2==0 AND PPMd==0 AND mtOff==0,1144,0.016666666666666666,5,"['x', 'LZMA2', 'PPMd', 'mtOff', 'BZip2']"
+BZip2==1 AND x==10 AND LZMA==0 AND mtOff==0,1144,0.016666666666666666,4,"['BZip2', 'LZMA', 'mtOff', 'x']"

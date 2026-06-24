@@ -1,0 +1,6 @@
+rule,sg_samples,sg_coverage,rule_num_predicates,rule_features_used
+memory_based==1 AND parallel==1,10000,0.16666666666666666,2,"['memory_based', 'parallel']"
+memory_based==1 AND parallel==1 AND parallel_force==0,10000,0.16666666666666666,3,"['memory_based', 'parallel_force', 'parallel']"
+memory_based==1 AND parallel==1 AND parallel_force==0 AND polly_parallel==1,10000,0.16666666666666666,4,"['memory_based', 'parallel_force', 'polly_parallel', 'parallel']"
+memory_based==1 AND value_based==0 AND parallel==1 AND parallel_force==0,10000,0.16666666666666666,4,"['memory_based', 'parallel_force', 'value_based', 'parallel']"
+memory_based==1 AND value_based==0 AND parallel==1 AND parallel_force==0 AND polly_parallel==1,10000,0.16666666666666666,5,"['value_based', 'parallel', 'memory_based', 'parallel_force', 'polly_parallel']"

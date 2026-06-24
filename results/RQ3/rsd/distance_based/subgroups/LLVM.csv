@@ -1,0 +1,16 @@
+rule,sg_samples,sg_coverage,rule_num_predicates,rule_features_used
+0.0 <= gvn < 1.0  AND  0.0 <= inline < 1.0  AND  0.0 <= instcombine < 1.0  AND  0.0 <= licm < 1.0,64,0.0625,4,"['inline', 'instcombine', 'licm', 'gvn']"
+0.0 <= instcombine < 1.0  AND  0.0 <= licm < 1.0  AND  0.0 <= gvn < 1.0,128,0.125,3,"['licm', 'instcombine', 'gvn']"
+instcombine >= 1.0  AND  licm >= 1.0  AND  gvn >= 1.0  AND  inline >= 1.0,64,0.0625,4,"['licm', 'instcombine', 'inline', 'gvn']"
+instcombine >= 1.0  AND  licm >= 1.0  AND  gvn >= 1.0,128,0.125,3,"['licm', 'instcombine', 'gvn']"
+0.0 <= gvn < 1.0  AND  0.0 <= licm < 1.0  AND  inline >= 1.0,128,0.125,3,"['licm', 'gvn', 'inline']"
+inline >= 1.0  AND  instcombine >= 1.0  AND  0.0 <= jump_threading < 1.0,128,0.125,3,"['inline', 'instcombine', 'jump_threading']"
+0.0 <= instcombine < 1.0  AND  0.0 <= licm < 1.0  AND  0.0 <= inline < 1.0,128,0.125,3,"['licm', 'instcombine', 'inline']"
+0.0 <= gvn < 1.0  AND  0.0 <= licm < 1.0,256,0.25,2,"['licm', 'gvn']"
+0.0 <= inline < 1.0  AND  0.0 <= licm < 1.0,256,0.25,2,"['inline', 'licm']"
+0.0 <= gvn < 1.0  AND  0.0 <= inline < 1.0  AND  0.0 <= instcombine < 1.0,128,0.125,3,"['inline', 'instcombine', 'gvn']"
+0.0 <= gvn < 1.0  AND  0.0 <= instcombine < 1.0,256,0.25,2,"['instcombine', 'gvn']"
+0.0 <= gvn < 1.0  AND  0.0 <= inline < 1.0,256,0.25,2,"['inline', 'gvn']"
+inline >= 1.0  AND  0.0 <= instcombine < 1.0  AND  licm >= 1.0,128,0.125,3,"['inline', 'licm', 'instcombine']"
+instcombine >= 1.0,512,0.5,1,['instcombine']
+iv_users >= 1.0,512,0.5,1,['iv_users']

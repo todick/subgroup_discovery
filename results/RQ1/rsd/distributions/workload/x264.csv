@@ -1,0 +1,501 @@
+sg_distribution,sg_cardinality,sg_rule,best_rule,best_rule_idx,f1,precision,recall,seed
+normal,594,bff = 1 AND no-weightb = 1 AND cpu-independent = 1,bff >= 1.0  AND  cpu-independent >= 1.0  AND  no-weightb >= 1.0  AND  no-deblock >= 1.0,0.0,0.8855534709193247,1.0,0.7946127946127947,0
+uniform,603,intra-refresh = 1 AND no-psy = 1 AND cpu-independent = 1,intra-refresh >= 1.0  AND  cpu-independent >= 1.0  AND  no-psy >= 1.0,2.0,1.0,1.0,1.0,0
+bi_modal_split,609,tff = 1 AND no-mixed-refs = 1 AND cpu-independent = 1,tff >= 1.0  AND  no-mixed-refs >= 1.0  AND  cpu-independent >= 1.0,0.0,1.0,1.0,1.0,0
+tri_modal_split,622,slow-firstpass = 1 AND tff = 1 AND cpu-independent = 1,slow-firstpass >= 1.0  AND  cpu-independent >= 1.0  AND  no-dct-decimate >= 1.0  AND  tff >= 1.0,0.0,0.8772563176895307,1.0,0.7813504823151125,0
+power_law,587,tff = 1 AND cpu-independent = 1 AND aud = 1,tff >= 1.0  AND  cpu-independent >= 1.0  AND  aud >= 1.0,0.0,1.0,1.0,1.0,0
+normal,611,open-gop = 1 AND no-mbtree = 1 AND cpu-independent = 1,no-deblock >= 1.0  AND  no-mbtree >= 1.0  AND  cpu-independent >= 1.0  AND  open-gop >= 1.0,0.0,0.8579439252336448,1.0,0.7512274959083469,10
+uniform,611,open-gop = 1 AND no-mbtree = 1 AND cpu-independent = 1,open-gop >= 1.0  AND  no-mbtree >= 1.0  AND  cpu-independent >= 1.0,0.0,1.0,1.0,1.0,10
+bi_modal_split,611,open-gop = 1 AND no-mbtree = 1 AND cpu-independent = 1,open-gop >= 1.0  AND  no-mbtree >= 1.0  AND  cpu-independent >= 1.0  AND  slow-firstpass >= 1.0,1.0,0.8971119133574007,1.0,0.8134206219312602,10
+tri_modal_split,611,open-gop = 1 AND no-mbtree = 1 AND cpu-independent = 1,open-gop >= 1.0  AND  no-mbtree >= 1.0  AND  cpu-independent >= 1.0  AND  dts-compress >= 1.0,0.0,0.8911070780399274,1.0,0.8036006546644845,10
+power_law,611,open-gop = 1 AND no-mbtree = 1 AND cpu-independent = 1,open-gop >= 1.0  AND  no-mbtree >= 1.0  AND  cpu-independent >= 1.0,0.0,1.0,1.0,1.0,10
+normal,575,no-deblock = 1 AND cpu-independent = 1 AND aud = 1,no-deblock >= 1.0  AND  cpu-independent >= 1.0  AND  aud >= 1.0,0.0,1.0,1.0,1.0,11
+uniform,575,no-deblock = 1 AND cpu-independent = 1 AND aud = 1,no-deblock >= 1.0  AND  cpu-independent >= 1.0  AND  aud >= 1.0,0.0,1.0,1.0,1.0,11
+bi_modal_split,575,no-deblock = 1 AND cpu-independent = 1 AND aud = 1,cpu-independent >= 1.0  AND  aud >= 1.0  AND  no-fast-pskip >= 1.0  AND  no-deblock >= 1.0,0.0,0.8430583501006036,1.0,0.7286956521739131,11
+tri_modal_split,575,no-deblock = 1 AND cpu-independent = 1 AND aud = 1,no-deblock >= 1.0  AND  aud >= 1.0  AND  cpu-independent >= 1.0,0.0,1.0,1.0,1.0,11
+power_law,575,no-deblock = 1 AND cpu-independent = 1 AND aud = 1,no-deblock >= 1.0  AND  cpu-independent >= 1.0  AND  aud >= 1.0,0.0,1.0,1.0,1.0,11
+normal,609,no-psy = 1 AND cpu-independent = 1 AND dts-compress = 1,tff >= 1.0  AND  cpu-independent >= 1.0  AND  dts-compress >= 1.0  AND  no-psy >= 1.0,0.0,0.8606173994387277,1.0,0.7553366174055829,12
+uniform,609,no-psy = 1 AND cpu-independent = 1 AND dts-compress = 1,no-psy >= 1.0  AND  cpu-independent >= 1.0  AND  opencl >= 1.0  AND  dts-compress >= 1.0,0.0,0.921169176262179,1.0,0.8538587848932676,12
+bi_modal_split,609,no-psy = 1 AND cpu-independent = 1 AND dts-compress = 1,no-psy >= 1.0  AND  dts-compress >= 1.0  AND  cpu-independent >= 1.0  AND  no-chroma-me >= 1.0,0.0,0.8886861313868614,1.0,0.7996715927750411,12
+tri_modal_split,609,no-psy = 1 AND cpu-independent = 1 AND dts-compress = 1,no-psy >= 1.0  AND  cpu-independent >= 1.0  AND  open-gop >= 1.0  AND  dts-compress >= 1.0,0.0,0.8896991795806747,1.0,0.8013136288998358,12
+power_law,609,no-psy = 1 AND cpu-independent = 1 AND dts-compress = 1,no-psy >= 1.0  AND  dts-compress >= 1.0  AND  cpu-independent >= 1.0,0.0,1.0,1.0,1.0,12
+normal,609,bff = 1 AND no-weightb = 1 AND aud = 1,slow-firstpass >= 1.0  AND  no-weightb >= 1.0  AND  aud >= 1.0  AND  bff >= 1.0,0.0,0.9066427289048474,1.0,0.8292282430213465,13
+uniform,609,bff = 1 AND no-weightb = 1 AND aud = 1,no-weightb >= 1.0  AND  aud >= 1.0  AND  bff >= 1.0,0.0,1.0,1.0,1.0,13
+bi_modal_split,609,bff = 1 AND no-weightb = 1 AND aud = 1,no-weightb >= 1.0  AND  aud >= 1.0  AND  bff >= 1.0  AND  no-mbtree >= 1.0,0.0,0.9163701067615658,1.0,0.8456486042692939,13
+tri_modal_split,0,bff = 1 AND no-weightb = 1 AND aud = 1,,,0.0,0.0,0.0,13
+power_law,609,bff = 1 AND no-weightb = 1 AND aud = 1,bff >= 1.0  AND  no-weightb >= 1.0  AND  aud >= 1.0,0.0,1.0,1.0,1.0,13
+normal,605,no-cabac = 1 AND cpu-independent = 1 AND aud = 1,cpu-independent >= 1.0  AND  aud >= 1.0  AND  no-cabac >= 1.0,0.0,1.0,1.0,1.0,14
+uniform,605,no-cabac = 1 AND cpu-independent = 1 AND aud = 1,no-cabac >= 1.0  AND  cpu-independent >= 1.0  AND  aud >= 1.0  AND  no-chroma-me >= 1.0,0.0,0.8563327032136107,1.0,0.7487603305785124,14
+bi_modal_split,605,no-cabac = 1 AND cpu-independent = 1 AND aud = 1,cpu-independent >= 1.0  AND  aud >= 1.0  AND  no-cabac >= 1.0,4.0,1.0,1.0,1.0,14
+tri_modal_split,605,no-cabac = 1 AND cpu-independent = 1 AND aud = 1,cpu-independent >= 1.0  AND  aud >= 1.0  AND  no-dct-decimate >= 1.0  AND  no-cabac >= 1.0,1.0,0.8681010289990646,1.0,0.7669421487603306,14
+power_law,605,no-cabac = 1 AND cpu-independent = 1 AND aud = 1,no-cabac >= 1.0  AND  cpu-independent >= 1.0  AND  no-deblock >= 1.0  AND  aud >= 1.0,0.0,0.8733705772811917,1.0,0.775206611570248,14
+normal,619,no-mbtree = 1 AND cpu-independent = 1 AND dts-compress = 1,cpu-independent >= 1.0  AND  dts-compress >= 1.0  AND  opencl >= 1.0  AND  no-mbtree >= 1.0,0.0,0.9159369527145358,1.0,0.8449111470113085,15
+uniform,619,no-mbtree = 1 AND cpu-independent = 1 AND dts-compress = 1,slow-firstpass >= 1.0  AND  cpu-independent >= 1.0  AND  no-mbtree >= 1.0  AND  dts-compress >= 1.0,0.0,0.9034543844109832,1.0,0.8239095315024233,15
+bi_modal_split,619,no-mbtree = 1 AND cpu-independent = 1 AND dts-compress = 1,no-mbtree >= 1.0  AND  cpu-independent >= 1.0  AND  dts-compress >= 1.0,0.0,1.0,1.0,1.0,15
+tri_modal_split,619,no-mbtree = 1 AND cpu-independent = 1 AND dts-compress = 1,no-mbtree >= 1.0  AND  cpu-independent >= 1.0  AND  dts-compress >= 1.0,0.0,1.0,1.0,1.0,15
+power_law,619,no-mbtree = 1 AND cpu-independent = 1 AND dts-compress = 1,no-mbtree >= 1.0  AND  cpu-independent >= 1.0  AND  dts-compress >= 1.0,0.0,1.0,1.0,1.0,15
+normal,606,no-cabac = 1 AND no-chroma-me = 1 AND cpu-independent = 1,no-fast-pskip >= 1.0  AND  cpu-independent >= 1.0  AND  no-cabac >= 1.0  AND  no-chroma-me >= 1.0,0.0,0.8694029850746268,1.0,0.768976897689769,16
+uniform,606,no-cabac = 1 AND no-chroma-me = 1 AND cpu-independent = 1,non-deterministic >= 1.0  AND  cpu-independent >= 1.0  AND  no-cabac >= 1.0  AND  no-chroma-me >= 1.0,0.0,0.9433304272013948,1.0,0.8927392739273927,16
+bi_modal_split,606,no-cabac = 1 AND no-chroma-me = 1 AND cpu-independent = 1,no-chroma-me >= 1.0  AND  cpu-independent >= 1.0  AND  no-cabac >= 1.0  AND  slow-firstpass >= 1.0,0.0,0.8951686417502279,1.0,0.8102310231023102,16
+tri_modal_split,606,no-cabac = 1 AND no-chroma-me = 1 AND cpu-independent = 1,no-chroma-me >= 1.0  AND  cpu-independent >= 1.0  AND  no-cabac >= 1.0,0.0,1.0,1.0,1.0,16
+power_law,606,no-cabac = 1 AND no-chroma-me = 1 AND cpu-independent = 1,no-cabac >= 1.0  AND  no-chroma-me >= 1.0  AND  cpu-independent >= 1.0,0.0,1.0,1.0,1.0,16
+normal,596,no-deblock = 1 AND no-mixed-refs = 1 AND cpu-independent = 1,no-mbtree >= 1.0  AND  cpu-independent >= 1.0  AND  no-deblock >= 1.0  AND  no-mixed-refs >= 1.0,0.0,0.8636796949475691,1.0,0.7600671140939598,17
+uniform,596,no-deblock = 1 AND no-mixed-refs = 1 AND cpu-independent = 1,no-mixed-refs >= 1.0  AND  cpu-independent >= 1.0  AND  no-deblock >= 1.0  AND  no-asm >= 1.0,0.0,0.922242314647378,1.0,0.8557046979865772,17
+bi_modal_split,596,no-deblock = 1 AND no-mixed-refs = 1 AND cpu-independent = 1,no-mixed-refs >= 1.0  AND  cpu-independent >= 1.0  AND  no-psy >= 1.0  AND  no-deblock >= 1.0,0.0,0.8911627906976745,1.0,0.8036912751677853,17
+tri_modal_split,596,no-deblock = 1 AND no-mixed-refs = 1 AND cpu-independent = 1,no-mixed-refs >= 1.0  AND  cpu-independent >= 1.0  AND  no-deblock >= 1.0,0.0,1.0,1.0,1.0,17
+power_law,596,no-deblock = 1 AND no-mixed-refs = 1 AND cpu-independent = 1,no-deblock >= 1.0  AND  no-mixed-refs >= 1.0  AND  cpu-independent >= 1.0,0.0,1.0,1.0,1.0,17
+normal,581,intra-refresh = 1 AND no-weightb = 1 AND cpu-independent = 1,no-weightb >= 1.0  AND  cpu-independent >= 1.0  AND  intra-refresh >= 1.0,0.0,1.0,1.0,1.0,18
+uniform,581,intra-refresh = 1 AND no-weightb = 1 AND cpu-independent = 1,no-weightb >= 1.0  AND  cpu-independent >= 1.0  AND  intra-refresh >= 1.0,0.0,1.0,1.0,1.0,18
+bi_modal_split,581,intra-refresh = 1 AND no-weightb = 1 AND cpu-independent = 1,no-weightb >= 1.0  AND  cpu-independent >= 1.0  AND  intra-refresh >= 1.0  AND  no-psy >= 1.0,0.0,0.916044776119403,1.0,0.8450946643717728,18
+tri_modal_split,581,intra-refresh = 1 AND no-weightb = 1 AND cpu-independent = 1,intra-refresh >= 1.0  AND  no-weightb >= 1.0  AND  cpu-independent >= 1.0,0.0,1.0,1.0,1.0,18
+power_law,581,intra-refresh = 1 AND no-weightb = 1 AND cpu-independent = 1,intra-refresh >= 1.0  AND  cpu-independent >= 1.0  AND  no-weightb >= 1.0,0.0,1.0,1.0,1.0,18
+normal,588,no-deblock = 1 AND no-psy = 1 AND cpu-independent = 1,no-deblock >= 1.0  AND  cpu-independent >= 1.0  AND  no-psy >= 1.0,3.0,1.0,1.0,1.0,19
+uniform,588,no-deblock = 1 AND no-psy = 1 AND cpu-independent = 1,no-deblock >= 1.0  AND  no-psy >= 1.0  AND  cpu-independent >= 1.0,0.0,1.0,1.0,1.0,19
+bi_modal_split,588,no-deblock = 1 AND no-psy = 1 AND cpu-independent = 1,no-deblock >= 1.0  AND  no-psy >= 1.0  AND  cpu-independent >= 1.0,0.0,1.0,1.0,1.0,19
+tri_modal_split,588,no-deblock = 1 AND no-psy = 1 AND cpu-independent = 1,no-deblock >= 1.0  AND  no-psy >= 1.0  AND  cpu-independent >= 1.0,3.0,1.0,1.0,1.0,19
+power_law,588,no-deblock = 1 AND no-psy = 1 AND cpu-independent = 1,no-psy >= 1.0  AND  cpu-independent >= 1.0  AND  no-deblock >= 1.0,0.0,1.0,1.0,1.0,19
+normal,605,intra-refresh = 1 AND no-deblock = 1 AND cpu-independent = 1,no-deblock >= 1.0  AND  cpu-independent >= 1.0  AND  intra-refresh >= 1.0,0.0,1.0,1.0,1.0,1
+uniform,605,intra-refresh = 1 AND no-deblock = 1 AND cpu-independent = 1,no-deblock >= 1.0  AND  cpu-independent >= 1.0  AND  intra-refresh >= 1.0,0.0,1.0,1.0,1.0,1
+bi_modal_split,605,intra-refresh = 1 AND no-deblock = 1 AND cpu-independent = 1,intra-refresh >= 1.0  AND  no-deblock >= 1.0  AND  cpu-independent >= 1.0,0.0,1.0,1.0,1.0,1
+tri_modal_split,605,intra-refresh = 1 AND no-deblock = 1 AND cpu-independent = 1,intra-refresh >= 1.0  AND  cpu-independent >= 1.0  AND  0.0 <= sliced-threads < 1.0  AND  no-deblock >= 1.0,0.0,0.9108910891089108,1.0,0.8363636363636363,1
+power_law,0,intra-refresh = 1 AND no-deblock = 1 AND cpu-independent = 1,,,0.0,0.0,0.0,1
+normal,612,intra-refresh = 1 AND no-chroma-me = 1 AND cpu-independent = 1,intra-refresh >= 1.0  AND  cpu-independent >= 1.0  AND  no-chroma-me >= 1.0  AND  constrained-intra >= 1.0,0.0,0.9051878354203936,1.0,0.826797385620915,20
+uniform,612,intra-refresh = 1 AND no-chroma-me = 1 AND cpu-independent = 1,no-chroma-me >= 1.0  AND  cpu-independent >= 1.0  AND  no-weightb >= 1.0  AND  intra-refresh >= 1.0,0.0,0.8687615526802219,1.0,0.7679738562091504,20
+bi_modal_split,612,intra-refresh = 1 AND no-chroma-me = 1 AND cpu-independent = 1,intra-refresh >= 1.0  AND  cpu-independent >= 1.0  AND  no-chroma-me >= 1.0,0.0,1.0,1.0,1.0,20
+tri_modal_split,612,intra-refresh = 1 AND no-chroma-me = 1 AND cpu-independent = 1,no-chroma-me >= 1.0  AND  cpu-independent >= 1.0  AND  intra-refresh >= 1.0,0.0,1.0,1.0,1.0,20
+power_law,612,intra-refresh = 1 AND no-chroma-me = 1 AND cpu-independent = 1,intra-refresh >= 1.0  AND  no-chroma-me >= 1.0  AND  cpu-independent >= 1.0,0.0,1.0,1.0,1.0,20
+normal,592,no-8x8dct = 1 AND cpu-independent = 1 AND dts-compress = 1,bff >= 1.0  AND  cpu-independent >= 1.0  AND  no-8x8dct >= 1.0  AND  dts-compress >= 1.0,0.0,0.8766603415559773,1.0,0.7804054054054054,21
+uniform,592,no-8x8dct = 1 AND cpu-independent = 1 AND dts-compress = 1,no-8x8dct >= 1.0  AND  dts-compress >= 1.0  AND  cpu-independent >= 1.0  AND  no-fast-pskip >= 1.0,0.0,0.8944911297852475,1.0,0.8091216216216216,21
+bi_modal_split,592,no-8x8dct = 1 AND cpu-independent = 1 AND dts-compress = 1,no-8x8dct >= 1.0  AND  cpu-independent >= 1.0  AND  dts-compress >= 1.0,0.0,1.0,1.0,1.0,21
+tri_modal_split,592,no-8x8dct = 1 AND cpu-independent = 1 AND dts-compress = 1,cpu-independent >= 1.0  AND  dts-compress >= 1.0  AND  no-8x8dct >= 1.0,0.0,1.0,1.0,1.0,21
+power_law,592,no-8x8dct = 1 AND cpu-independent = 1 AND dts-compress = 1,no-8x8dct >= 1.0  AND  cpu-independent >= 1.0  AND  dts-compress >= 1.0,0.0,1.0,1.0,1.0,21
+normal,620,no-scenecut = 1 AND no-chroma-me = 1 AND cpu-independent = 1,no-chroma-me >= 1.0  AND  cpu-independent >= 1.0  AND  0.0 <= sliced-threads < 1.0  AND  no-scenecut >= 1.0,0.0,0.900709219858156,1.0,0.8193548387096774,22
+uniform,620,no-scenecut = 1 AND no-chroma-me = 1 AND cpu-independent = 1,no-scenecut >= 1.0  AND  non-deterministic >= 1.0  AND  cpu-independent >= 1.0  AND  no-chroma-me >= 1.0,0.0,0.937446443873179,1.0,0.882258064516129,22
+bi_modal_split,620,no-scenecut = 1 AND no-chroma-me = 1 AND cpu-independent = 1,no-chroma-me >= 1.0  AND  cpu-independent >= 1.0  AND  no-scenecut >= 1.0,4.0,1.0,1.0,1.0,22
+tri_modal_split,620,no-scenecut = 1 AND no-chroma-me = 1 AND cpu-independent = 1,no-scenecut >= 1.0  AND  cpu-independent >= 1.0  AND  constrained-intra >= 1.0  AND  no-chroma-me >= 1.0,0.0,0.907488986784141,1.0,0.8306451612903226,22
+power_law,620,no-scenecut = 1 AND no-chroma-me = 1 AND cpu-independent = 1,no-scenecut >= 1.0  AND  cpu-independent >= 1.0  AND  no-chroma-me >= 1.0,0.0,1.0,1.0,1.0,22
+normal,581,intra-refresh = 1 AND no-8x8dct = 1 AND cpu-independent = 1,intra-refresh >= 1.0  AND  no-8x8dct >= 1.0  AND  cpu-independent >= 1.0,0.0,1.0,1.0,1.0,23
+uniform,581,intra-refresh = 1 AND no-8x8dct = 1 AND cpu-independent = 1,no-8x8dct >= 1.0  AND  cpu-independent >= 1.0  AND  intra-refresh >= 1.0,0.0,1.0,1.0,1.0,23
+bi_modal_split,581,intra-refresh = 1 AND no-8x8dct = 1 AND cpu-independent = 1,intra-refresh >= 1.0  AND  cpu-independent >= 1.0  AND  0.0 <= sliced-threads < 1.0  AND  no-8x8dct >= 1.0,0.0,0.8943862987630828,1.0,0.8089500860585198,23
+tri_modal_split,581,intra-refresh = 1 AND no-8x8dct = 1 AND cpu-independent = 1,no-8x8dct >= 1.0  AND  cpu-independent >= 1.0  AND  0.0 <= sliced-threads < 1.0  AND  intra-refresh >= 1.0,0.0,0.8943862987630828,1.0,0.8089500860585198,23
+power_law,581,intra-refresh = 1 AND no-8x8dct = 1 AND cpu-independent = 1,bff >= 1.0  AND  no-8x8dct >= 1.0  AND  intra-refresh >= 1.0  AND  cpu-independent >= 1.0,0.0,0.8933333333333333,1.0,0.8072289156626506,23
+normal,581,intra-refresh = 1 AND no-8x8dct = 1 AND cpu-independent = 1,cpu-independent >= 1.0  AND  aud >= 1.0  AND  no-8x8dct >= 1.0  AND  intra-refresh >= 1.0,0.0,0.8562992125984252,1.0,0.7487091222030982,24
+uniform,581,intra-refresh = 1 AND no-8x8dct = 1 AND cpu-independent = 1,cpu-independent >= 1.0  AND  0.0 <= sliced-threads < 1.0  AND  no-8x8dct >= 1.0  AND  intra-refresh >= 1.0,0.0,0.8943862987630828,1.0,0.8089500860585198,24
+bi_modal_split,581,intra-refresh = 1 AND no-8x8dct = 1 AND cpu-independent = 1,intra-refresh >= 1.0  AND  no-8x8dct >= 1.0  AND  cpu-independent >= 1.0,0.0,1.0,1.0,1.0,24
+tri_modal_split,0,intra-refresh = 1 AND no-8x8dct = 1 AND cpu-independent = 1,,,0.0,0.0,0.0,24
+power_law,581,intra-refresh = 1 AND no-8x8dct = 1 AND cpu-independent = 1,intra-refresh >= 1.0  AND  no-8x8dct >= 1.0  AND  cpu-independent >= 1.0,0.0,1.0,1.0,1.0,24
+normal,603,intra-refresh = 1 AND no-psy = 1 AND cpu-independent = 1,no-fast-pskip >= 1.0  AND  cpu-independent >= 1.0  AND  no-psy >= 1.0  AND  intra-refresh >= 1.0,0.0,0.886426592797784,1.0,0.7960199004975125,25
+uniform,603,intra-refresh = 1 AND no-psy = 1 AND cpu-independent = 1,bff >= 1.0  AND  cpu-independent >= 1.0  AND  intra-refresh >= 1.0  AND  no-psy >= 1.0,0.0,0.8915441176470589,1.0,0.8043117744610282,25
+bi_modal_split,603,intra-refresh = 1 AND no-psy = 1 AND cpu-independent = 1,constrained-intra >= 1.0  AND  cpu-independent >= 1.0  AND  intra-refresh >= 1.0  AND  no-psy >= 1.0,0.0,0.8895027624309393,1.0,0.8009950248756219,25
+tri_modal_split,603,intra-refresh = 1 AND no-psy = 1 AND cpu-independent = 1,intra-refresh >= 1.0  AND  cpu-independent >= 1.0  AND  no-8x8dct >= 1.0  AND  no-psy >= 1.0,1.0,0.8718428437792329,1.0,0.7728026533996684,25
+power_law,603,intra-refresh = 1 AND no-psy = 1 AND cpu-independent = 1,no-psy >= 1.0  AND  cpu-independent >= 1.0  AND  intra-refresh >= 1.0,0.0,1.0,1.0,1.0,25
+normal,615,bff = 1 AND no-psy = 1 AND cpu-independent = 1,bff >= 1.0  AND  no-psy >= 1.0  AND  cpu-independent >= 1.0  AND  no-scenecut >= 1.0,0.0,0.8958707360861758,1.0,0.8113821138211382,26
+uniform,615,bff = 1 AND no-psy = 1 AND cpu-independent = 1,bff >= 1.0  AND  no-psy >= 1.0  AND  cpu-independent >= 1.0,0.0,1.0,1.0,1.0,26
+bi_modal_split,615,bff = 1 AND no-psy = 1 AND cpu-independent = 1,no-psy >= 1.0  AND  cpu-independent >= 1.0  AND  bff >= 1.0,0.0,1.0,1.0,1.0,26
+tri_modal_split,615,bff = 1 AND no-psy = 1 AND cpu-independent = 1,no-psy >= 1.0  AND  opencl >= 1.0  AND  cpu-independent >= 1.0  AND  bff >= 1.0,0.0,0.8868778280542986,1.0,0.7967479674796748,26
+power_law,0,bff = 1 AND no-psy = 1 AND cpu-independent = 1,,,0.0,0.0,0.0,26
+normal,619,no-mbtree = 1 AND cpu-independent = 1 AND dts-compress = 1,no-mbtree >= 1.0  AND  cpu-independent >= 1.0  AND  dts-compress >= 1.0,0.0,1.0,1.0,1.0,27
+uniform,619,no-mbtree = 1 AND cpu-independent = 1 AND dts-compress = 1,no-mbtree >= 1.0  AND  cpu-independent >= 1.0  AND  dts-compress >= 1.0,0.0,1.0,1.0,1.0,27
+bi_modal_split,619,no-mbtree = 1 AND cpu-independent = 1 AND dts-compress = 1,no-psy >= 1.0  AND  cpu-independent >= 1.0  AND  no-mbtree >= 1.0  AND  dts-compress >= 1.0,0.0,0.8704379562043796,1.0,0.7705977382875606,27
+tri_modal_split,619,no-mbtree = 1 AND cpu-independent = 1 AND dts-compress = 1,no-fast-pskip >= 1.0  AND  cpu-independent >= 1.0  AND  dts-compress >= 1.0  AND  no-mbtree >= 1.0,0.0,0.8579335793357934,1.0,0.7512116316639742,27
+power_law,619,no-mbtree = 1 AND cpu-independent = 1 AND dts-compress = 1,no-mbtree >= 1.0  AND  cpu-independent >= 1.0  AND  0.0 <= pic-struct < 1.0  AND  dts-compress >= 1.0,0.0,0.297111416781293,1.0,0.1744749596122778,27
+normal,581,intra-refresh = 1 AND no-8x8dct = 1 AND cpu-independent = 1,intra-refresh >= 1.0  AND  cpu-independent >= 1.0  AND  no-8x8dct >= 1.0,3.0,1.0,1.0,1.0,28
+uniform,581,intra-refresh = 1 AND no-8x8dct = 1 AND cpu-independent = 1,intra-refresh >= 1.0  AND  no-8x8dct >= 1.0  AND  cpu-independent >= 1.0,0.0,1.0,1.0,1.0,28
+bi_modal_split,581,intra-refresh = 1 AND no-8x8dct = 1 AND cpu-independent = 1,intra-refresh >= 1.0  AND  cpu-independent >= 1.0  AND  no-8x8dct >= 1.0,0.0,1.0,1.0,1.0,28
+tri_modal_split,581,intra-refresh = 1 AND no-8x8dct = 1 AND cpu-independent = 1,intra-refresh >= 1.0  AND  cpu-independent >= 1.0  AND  no-8x8dct >= 1.0,0.0,1.0,1.0,1.0,28
+power_law,581,intra-refresh = 1 AND no-8x8dct = 1 AND cpu-independent = 1,no-8x8dct >= 1.0  AND  cpu-independent >= 1.0  AND  intra-refresh >= 1.0,0.0,1.0,1.0,1.0,28
+normal,621,slow-firstpass = 1 AND no-8x8dct = 1 AND cpu-independent = 1,no-8x8dct >= 1.0  AND  cpu-independent >= 1.0  AND  slow-firstpass >= 1.0,2.0,1.0,1.0,1.0,29
+uniform,621,slow-firstpass = 1 AND no-8x8dct = 1 AND cpu-independent = 1,slow-firstpass >= 1.0  AND  cpu-independent >= 1.0  AND  no-8x8dct >= 1.0,0.0,1.0,1.0,1.0,29
+bi_modal_split,621,slow-firstpass = 1 AND no-8x8dct = 1 AND cpu-independent = 1,slow-firstpass >= 1.0  AND  cpu-independent >= 1.0  AND  no-8x8dct >= 1.0,0.0,1.0,1.0,1.0,29
+tri_modal_split,621,slow-firstpass = 1 AND no-8x8dct = 1 AND cpu-independent = 1,no-8x8dct >= 1.0  AND  cpu-independent >= 1.0  AND  slow-firstpass >= 1.0,0.0,1.0,1.0,1.0,29
+power_law,621,slow-firstpass = 1 AND no-8x8dct = 1 AND cpu-independent = 1,slow-firstpass >= 1.0  AND  cpu-independent >= 1.0  AND  no-8x8dct >= 1.0,0.0,1.0,1.0,1.0,29
+normal,609,tff = 1 AND no-mixed-refs = 1 AND cpu-independent = 1,tff >= 1.0  AND  cpu-independent >= 1.0  AND  no-mixed-refs >= 1.0,3.0,1.0,1.0,1.0,2
+uniform,609,tff = 1 AND no-mixed-refs = 1 AND cpu-independent = 1,tff >= 1.0  AND  no-mixed-refs >= 1.0  AND  cpu-independent >= 1.0,0.0,1.0,1.0,1.0,2
+bi_modal_split,609,tff = 1 AND no-mixed-refs = 1 AND cpu-independent = 1,non-deterministic >= 1.0  AND  cpu-independent >= 1.0  AND  no-mixed-refs >= 1.0  AND  tff >= 1.0,0.0,0.938099389712293,1.0,0.8834154351395731,2
+tri_modal_split,609,tff = 1 AND no-mixed-refs = 1 AND cpu-independent = 1,tff >= 1.0  AND  no-mixed-refs >= 1.0  AND  cpu-independent >= 1.0  AND  open-gop >= 1.0,0.0,0.8835930339138405,1.0,0.7914614121510674,2
+power_law,609,tff = 1 AND no-mixed-refs = 1 AND cpu-independent = 1,tff >= 1.0  AND  no-mixed-refs >= 1.0  AND  no-asm >= 1.0  AND  cpu-independent >= 1.0,0.0,0.925925925925926,1.0,0.8620689655172413,2
+normal,611,open-gop = 1 AND no-mbtree = 1 AND cpu-independent = 1,no-mbtree >= 1.0  AND  no-asm >= 1.0  AND  cpu-independent >= 1.0  AND  open-gop >= 1.0,0.0,0.8911070780399274,1.0,0.8036006546644845,30
+uniform,611,open-gop = 1 AND no-mbtree = 1 AND cpu-independent = 1,open-gop >= 1.0  AND  no-mbtree >= 1.0  AND  cpu-independent >= 1.0,0.0,1.0,1.0,1.0,30
+bi_modal_split,611,open-gop = 1 AND no-mbtree = 1 AND cpu-independent = 1,open-gop >= 1.0  AND  cpu-independent >= 1.0  AND  no-mbtree >= 1.0,0.0,1.0,1.0,1.0,30
+tri_modal_split,611,open-gop = 1 AND no-mbtree = 1 AND cpu-independent = 1,no-mbtree >= 1.0  AND  no-asm >= 1.0  AND  cpu-independent >= 1.0  AND  open-gop >= 1.0,0.0,0.8911070780399274,1.0,0.8036006546644845,30
+power_law,611,open-gop = 1 AND no-mbtree = 1 AND cpu-independent = 1,no-mbtree >= 1.0  AND  cpu-independent >= 1.0  AND  open-gop >= 1.0,0.0,1.0,1.0,1.0,30
+normal,593,intra-refresh = 1 AND no-fast-pskip = 1 AND cpu-independent = 1,no-scenecut >= 1.0  AND  cpu-independent >= 1.0  AND  intra-refresh >= 1.0  AND  no-fast-pskip >= 1.0,0.0,0.943900267141585,1.0,0.893760539629005,31
+uniform,593,intra-refresh = 1 AND no-fast-pskip = 1 AND cpu-independent = 1,intra-refresh >= 1.0  AND  no-fast-pskip >= 1.0  AND  cpu-independent >= 1.0  AND  tff >= 1.0,0.0,0.8874296435272045,1.0,0.7976391231028668,31
+bi_modal_split,593,intra-refresh = 1 AND no-fast-pskip = 1 AND cpu-independent = 1,slow-firstpass >= 1.0  AND  intra-refresh >= 1.0  AND  no-fast-pskip >= 1.0  AND  cpu-independent >= 1.0,0.0,0.8800755429650614,1.0,0.7858347386172007,31
+tri_modal_split,593,intra-refresh = 1 AND no-fast-pskip = 1 AND cpu-independent = 1,no-fast-pskip >= 1.0  AND  cpu-independent >= 1.0  AND  intra-refresh >= 1.0  AND  constrained-intra >= 1.0,0.0,0.908923643054278,1.0,0.8330522765598651,31
+power_law,593,intra-refresh = 1 AND no-fast-pskip = 1 AND cpu-independent = 1,no-fast-pskip >= 1.0  AND  cpu-independent >= 1.0  AND  intra-refresh >= 1.0,0.0,1.0,1.0,1.0,31
+normal,615,tff = 1 AND no-dct-decimate = 1 AND cpu-independent = 1,no-dct-decimate >= 1.0  AND  cpu-independent >= 1.0  AND  tff >= 1.0  AND  no-chroma-me >= 1.0,0.0,0.8968609865470852,1.0,0.8130081300813008,32
+uniform,615,tff = 1 AND no-dct-decimate = 1 AND cpu-independent = 1,tff >= 1.0  AND  no-dct-decimate >= 1.0  AND  cpu-independent >= 1.0,0.0,1.0,1.0,1.0,32
+bi_modal_split,615,tff = 1 AND no-dct-decimate = 1 AND cpu-independent = 1,tff >= 1.0  AND  cpu-independent >= 1.0  AND  no-dct-decimate >= 1.0,0.0,1.0,1.0,1.0,32
+tri_modal_split,615,tff = 1 AND no-dct-decimate = 1 AND cpu-independent = 1,tff >= 1.0  AND  cpu-independent >= 1.0  AND  no-cabac >= 1.0  AND  no-dct-decimate >= 1.0,0.0,0.8838475499092558,1.0,0.791869918699187,32
+power_law,615,tff = 1 AND no-dct-decimate = 1 AND cpu-independent = 1,tff >= 1.0  AND  no-dct-decimate >= 1.0  AND  cpu-independent >= 1.0  AND  0.0 <= no-8x8dct < 1.0,0.0,0.346774193548387,1.0,0.2097560975609756,32
+normal,581,tff = 1 AND no-mbtree = 1 AND cpu-independent = 1,tff >= 1.0  AND  cpu-independent >= 1.0  AND  no-mbtree >= 1.0,0.0,1.0,1.0,1.0,33
+uniform,581,tff = 1 AND no-mbtree = 1 AND cpu-independent = 1,constrained-intra >= 1.0  AND  cpu-independent >= 1.0  AND  tff >= 1.0  AND  no-mbtree >= 1.0,0.0,0.9037735849056604,1.0,0.8244406196213425,33
+bi_modal_split,581,tff = 1 AND no-mbtree = 1 AND cpu-independent = 1,tff >= 1.0  AND  cpu-independent >= 1.0  AND  no-mbtree >= 1.0,0.0,1.0,1.0,1.0,33
+tri_modal_split,581,tff = 1 AND no-mbtree = 1 AND cpu-independent = 1,tff >= 1.0  AND  cpu-independent >= 1.0  AND  no-mbtree >= 1.0,0.0,1.0,1.0,1.0,33
+power_law,581,tff = 1 AND no-mbtree = 1 AND cpu-independent = 1,tff >= 1.0  AND  cpu-independent >= 1.0  AND  no-mbtree >= 1.0,0.0,1.0,1.0,1.0,33
+normal,620,no-fast-pskip = 1 AND no-dct-decimate = 1 AND cpu-independent = 1,no-dct-decimate >= 1.0  AND  cpu-independent >= 1.0  AND  no-fast-pskip >= 1.0,3.0,1.0,1.0,1.0,34
+uniform,620,no-fast-pskip = 1 AND no-dct-decimate = 1 AND cpu-independent = 1,no-fast-pskip >= 1.0  AND  cpu-independent >= 1.0,2.0,0.8641114982578397,0.7607361963190185,1.0,34
+bi_modal_split,620,no-fast-pskip = 1 AND no-dct-decimate = 1 AND cpu-independent = 1,no-fast-pskip >= 1.0  AND  no-dct-decimate >= 1.0  AND  cpu-independent >= 1.0,0.0,1.0,1.0,1.0,34
+tri_modal_split,620,no-fast-pskip = 1 AND no-dct-decimate = 1 AND cpu-independent = 1,no-fast-pskip >= 1.0  AND  cpu-independent >= 1.0  AND  no-dct-decimate >= 1.0,0.0,1.0,1.0,1.0,34
+power_law,620,no-fast-pskip = 1 AND no-dct-decimate = 1 AND cpu-independent = 1,no-dct-decimate >= 1.0  AND  cpu-independent >= 1.0  AND  no-fast-pskip >= 1.0,0.0,1.0,1.0,1.0,34
+normal,621,bff = 1 AND no-dct-decimate = 1 AND cpu-independent = 1,bff >= 1.0  AND  no-dct-decimate >= 1.0  AND  cpu-independent >= 1.0  AND  no-asm >= 1.0,0.0,0.9152838427947598,1.0,0.8438003220611916,35
+uniform,621,bff = 1 AND no-dct-decimate = 1 AND cpu-independent = 1,bff >= 1.0  AND  no-dct-decimate >= 1.0  AND  cpu-independent >= 1.0,0.0,1.0,1.0,1.0,35
+bi_modal_split,621,bff = 1 AND no-dct-decimate = 1 AND cpu-independent = 1,no-dct-decimate >= 1.0  AND  cpu-independent >= 1.0  AND  bff >= 1.0,0.0,1.0,1.0,1.0,35
+tri_modal_split,621,bff = 1 AND no-dct-decimate = 1 AND cpu-independent = 1,bff >= 1.0  AND  no-dct-decimate >= 1.0  AND  cpu-independent >= 1.0,0.0,1.0,1.0,1.0,35
+power_law,621,bff = 1 AND no-dct-decimate = 1 AND cpu-independent = 1,no-dct-decimate >= 1.0  AND  cpu-independent >= 1.0  AND  non-deterministic >= 1.0  AND  bff >= 1.0,0.0,0.9329896907216496,1.0,0.8743961352657005,35
+normal,587,tff = 1 AND no-8x8dct = 1 AND cpu-independent = 1,tff >= 1.0  AND  no-psy >= 1.0  AND  cpu-independent >= 1.0  AND  no-8x8dct >= 1.0,0.0,0.881904761904762,1.0,0.7887563884156729,36
+uniform,587,tff = 1 AND no-8x8dct = 1 AND cpu-independent = 1,no-dct-decimate >= 1.0  AND  cpu-independent >= 1.0  AND  no-8x8dct >= 1.0  AND  tff >= 1.0,0.0,0.9058713886300092,1.0,0.82793867120954,36
+bi_modal_split,0,tff = 1 AND no-8x8dct = 1 AND cpu-independent = 1,,,0.0,0.0,0.0,36
+tri_modal_split,587,tff = 1 AND no-8x8dct = 1 AND cpu-independent = 1,slow-firstpass >= 1.0  AND  cpu-independent >= 1.0  AND  tff >= 1.0  AND  no-8x8dct >= 1.0,0.0,0.880838894184938,1.0,0.787052810902896,36
+power_law,587,tff = 1 AND no-8x8dct = 1 AND cpu-independent = 1,tff >= 1.0  AND  cpu-independent >= 1.0  AND  no-8x8dct >= 1.0,0.0,1.0,1.0,1.0,36
+normal,605,no-scenecut = 1 AND no-mixed-refs = 1 AND cpu-independent = 1,no-mixed-refs >= 1.0  AND  cpu-independent >= 1.0  AND  no-scenecut >= 1.0  AND  pic-struct >= 1.0,0.0,0.9019963702359346,1.0,0.8214876033057851,37
+uniform,605,no-scenecut = 1 AND no-mixed-refs = 1 AND cpu-independent = 1,no-mixed-refs >= 1.0  AND  cpu-independent >= 1.0  AND  no-scenecut >= 1.0,0.0,1.0,1.0,1.0,37
+bi_modal_split,605,no-scenecut = 1 AND no-mixed-refs = 1 AND cpu-independent = 1,no-scenecut >= 1.0  AND  no-mixed-refs >= 1.0  AND  cpu-independent >= 1.0,0.0,1.0,1.0,1.0,37
+tri_modal_split,605,no-scenecut = 1 AND no-mixed-refs = 1 AND cpu-independent = 1,no-scenecut >= 1.0  AND  cpu-independent >= 1.0  AND  no-mixed-refs >= 1.0,0.0,1.0,1.0,1.0,37
+power_law,605,no-scenecut = 1 AND no-mixed-refs = 1 AND cpu-independent = 1,no-mixed-refs >= 1.0  AND  cpu-independent >= 1.0  AND  no-weightb >= 1.0  AND  tff >= 1.0,0.0,0.7214022140221401,0.8162839248434238,0.6462809917355372,37
+normal,584,no-deblock = 1 AND no-fast-pskip = 1 AND cpu-independent = 1,no-deblock >= 1.0  AND  no-fast-pskip >= 1.0  AND  cpu-independent >= 1.0,0.0,1.0,1.0,1.0,38
+uniform,584,no-deblock = 1 AND no-fast-pskip = 1 AND cpu-independent = 1,no-fast-pskip >= 1.0  AND  cpu-independent >= 1.0  AND  no-deblock >= 1.0,0.0,1.0,1.0,1.0,38
+bi_modal_split,584,no-deblock = 1 AND no-fast-pskip = 1 AND cpu-independent = 1,no-deblock >= 1.0  AND  no-fast-pskip >= 1.0  AND  cpu-independent >= 1.0,0.0,1.0,1.0,1.0,38
+tri_modal_split,584,no-deblock = 1 AND no-fast-pskip = 1 AND cpu-independent = 1,no-deblock >= 1.0  AND  no-fast-pskip >= 1.0  AND  cpu-independent >= 1.0,0.0,1.0,1.0,1.0,38
+power_law,584,no-deblock = 1 AND no-fast-pskip = 1 AND cpu-independent = 1,no-deblock >= 1.0  AND  no-fast-pskip >= 1.0  AND  cpu-independent >= 1.0,0.0,1.0,1.0,1.0,38
+normal,602,no-scenecut = 1 AND no-weightb = 1 AND cpu-independent = 1,no-weightb >= 1.0  AND  cpu-independent >= 1.0  AND  no-scenecut >= 1.0,3.0,1.0,1.0,1.0,39
+uniform,602,no-scenecut = 1 AND no-weightb = 1 AND cpu-independent = 1,no-weightb >= 1.0  AND  cpu-independent >= 1.0  AND  0.0 <= sliced-threads < 1.0  AND  no-scenecut >= 1.0,0.0,0.8943985307621672,1.0,0.8089700996677741,39
+bi_modal_split,602,no-scenecut = 1 AND no-weightb = 1 AND cpu-independent = 1,cpu-independent >= 1.0  AND  no-asm >= 1.0  AND  no-weightb >= 1.0  AND  no-scenecut >= 1.0,0.0,0.8974358974358974,1.0,0.813953488372093,39
+tri_modal_split,602,no-scenecut = 1 AND no-weightb = 1 AND cpu-independent = 1,no-scenecut >= 1.0  AND  cpu-independent >= 1.0  AND  no-weightb >= 1.0,0.0,1.0,1.0,1.0,39
+power_law,602,no-scenecut = 1 AND no-weightb = 1 AND cpu-independent = 1,no-scenecut >= 1.0  AND  cpu-independent >= 1.0  AND  no-weightb >= 1.0,0.0,1.0,1.0,1.0,39
+normal,596,no-deblock = 1 AND no-dct-decimate = 1 AND cpu-independent = 1,no-deblock >= 1.0  AND  no-dct-decimate >= 1.0  AND  cpu-independent >= 1.0,3.0,1.0,1.0,1.0,3
+uniform,596,no-deblock = 1 AND no-dct-decimate = 1 AND cpu-independent = 1,no-dct-decimate >= 1.0  AND  cpu-independent >= 1.0  AND  no-deblock >= 1.0,0.0,1.0,1.0,1.0,3
+bi_modal_split,596,no-deblock = 1 AND no-dct-decimate = 1 AND cpu-independent = 1,no-deblock >= 1.0  AND  no-dct-decimate >= 1.0  AND  cpu-independent >= 1.0,0.0,1.0,1.0,1.0,3
+tri_modal_split,596,no-deblock = 1 AND no-dct-decimate = 1 AND cpu-independent = 1,no-dct-decimate >= 1.0  AND  cpu-independent >= 1.0  AND  no-chroma-me >= 1.0  AND  no-deblock >= 1.0,0.0,0.8859813084112149,1.0,0.7953020134228188,3
+power_law,596,no-deblock = 1 AND no-dct-decimate = 1 AND cpu-independent = 1,no-deblock >= 1.0  AND  cpu-independent >= 1.0  AND  no-dct-decimate >= 1.0,0.0,1.0,1.0,1.0,3
+normal,610,no-psy = 1 AND no-mbtree = 1 AND cpu-independent = 1,constrained-intra >= 1.0  AND  cpu-independent >= 1.0  AND  no-mbtree >= 1.0  AND  no-psy >= 1.0,0.0,0.8745387453874538,1.0,0.7770491803278688,40
+uniform,610,no-psy = 1 AND no-mbtree = 1 AND cpu-independent = 1,no-mbtree >= 1.0  AND  cpu-independent >= 1.0  AND  no-psy >= 1.0,0.0,1.0,1.0,1.0,40
+bi_modal_split,610,no-psy = 1 AND no-mbtree = 1 AND cpu-independent = 1,no-mbtree >= 1.0  AND  cpu-independent >= 1.0  AND  no-psy >= 1.0,0.0,1.0,1.0,1.0,40
+tri_modal_split,610,no-psy = 1 AND no-mbtree = 1 AND cpu-independent = 1,no-psy >= 1.0  AND  cpu-independent >= 1.0  AND  no-mbtree >= 1.0,0.0,1.0,1.0,1.0,40
+power_law,0,no-psy = 1 AND no-mbtree = 1 AND cpu-independent = 1,,,0.0,0.0,0.0,40
+normal,575,no-deblock = 1 AND cpu-independent = 1 AND aud = 1,no-deblock >= 1.0  AND  cpu-independent >= 1.0  AND  aud >= 1.0  AND  0.0 <= sliced-threads < 1.0,3.0,0.9140698772426818,1.0,0.8417391304347827,41
+uniform,575,no-deblock = 1 AND cpu-independent = 1 AND aud = 1,no-deblock >= 1.0  AND  aud >= 1.0  AND  cpu-independent >= 1.0  AND  no-8x8dct >= 1.0,0.0,0.8360323886639676,1.0,0.7182608695652174,41
+bi_modal_split,575,no-deblock = 1 AND cpu-independent = 1 AND aud = 1,no-deblock >= 1.0  AND  cpu-independent >= 1.0  AND  aud >= 1.0,0.0,1.0,1.0,1.0,41
+tri_modal_split,575,no-deblock = 1 AND cpu-independent = 1 AND aud = 1,no-deblock >= 1.0  AND  cpu-independent >= 1.0  AND  aud >= 1.0  AND  tff >= 1.0,0.0,0.9171374764595104,1.0,0.8469565217391304,41
+power_law,575,no-deblock = 1 AND cpu-independent = 1 AND aud = 1,cpu-independent >= 1.0  AND  aud >= 1.0  AND  no-deblock >= 1.0,1.0,1.0,1.0,1.0,41
+normal,584,no-deblock = 1 AND no-fast-pskip = 1 AND cpu-independent = 1,no-deblock >= 1.0  AND  no-fast-pskip >= 1.0  AND  cpu-independent >= 1.0,0.0,1.0,1.0,1.0,42
+uniform,584,no-deblock = 1 AND no-fast-pskip = 1 AND cpu-independent = 1,no-deblock >= 1.0  AND  cpu-independent >= 1.0  AND  no-fast-pskip >= 1.0  AND  no-psy >= 1.0,0.0,0.8725868725868726,1.0,0.773972602739726,42
+bi_modal_split,584,no-deblock = 1 AND no-fast-pskip = 1 AND cpu-independent = 1,no-fast-pskip >= 1.0  AND  cpu-independent >= 1.0  AND  no-deblock >= 1.0,0.0,1.0,1.0,1.0,42
+tri_modal_split,584,no-deblock = 1 AND no-fast-pskip = 1 AND cpu-independent = 1,no-deblock >= 1.0  AND  cpu-independent >= 1.0  AND  no-fast-pskip >= 1.0  AND  intra-refresh >= 1.0,0.0,0.8780019212295869,1.0,0.7825342465753424,42
+power_law,584,no-deblock = 1 AND no-fast-pskip = 1 AND cpu-independent = 1,no-fast-pskip >= 1.0  AND  cpu-independent >= 1.0  AND  no-deblock >= 1.0,0.0,1.0,1.0,1.0,42
+normal,570,no-fast-pskip = 1 AND cpu-independent = 1 AND aud = 1,no-fast-pskip >= 1.0  AND  aud >= 1.0  AND  cpu-independent >= 1.0,0.0,1.0,1.0,1.0,43
+uniform,570,no-fast-pskip = 1 AND cpu-independent = 1 AND aud = 1,no-fast-pskip >= 1.0  AND  cpu-independent >= 1.0  AND  aud >= 1.0,0.0,1.0,1.0,1.0,43
+bi_modal_split,570,no-fast-pskip = 1 AND cpu-independent = 1 AND aud = 1,cpu-independent >= 1.0  AND  aud >= 1.0  AND  no-fast-pskip >= 1.0,0.0,1.0,1.0,1.0,43
+tri_modal_split,570,no-fast-pskip = 1 AND cpu-independent = 1 AND aud = 1,no-fast-pskip >= 1.0  AND  cpu-independent >= 1.0  AND  aud >= 1.0,0.0,1.0,1.0,1.0,43
+power_law,570,no-fast-pskip = 1 AND cpu-independent = 1 AND aud = 1,no-fast-pskip >= 1.0  AND  cpu-independent >= 1.0  AND  aud >= 1.0  AND  opencl >= 1.0,0.0,0.9090909090909092,1.0,0.8333333333333334,43
+normal,581,tff = 1 AND no-mbtree = 1 AND cpu-independent = 1,no-dct-decimate >= 1.0  AND  cpu-independent >= 1.0  AND  no-mbtree >= 1.0  AND  tff >= 1.0,0.0,0.9130028063610852,1.0,0.8399311531841652,44
+uniform,581,tff = 1 AND no-mbtree = 1 AND cpu-independent = 1,tff >= 1.0  AND  no-mbtree >= 1.0  AND  cpu-independent >= 1.0  AND  intra-refresh >= 1.0,0.0,0.892278360343184,1.0,0.8055077452667814,44
+bi_modal_split,581,tff = 1 AND no-mbtree = 1 AND cpu-independent = 1,no-mbtree >= 1.0  AND  cpu-independent >= 1.0  AND  tff >= 1.0,0.0,1.0,1.0,1.0,44
+tri_modal_split,581,tff = 1 AND no-mbtree = 1 AND cpu-independent = 1,no-mbtree >= 1.0  AND  cpu-independent >= 1.0  AND  tff >= 1.0,0.0,1.0,1.0,1.0,44
+power_law,581,tff = 1 AND no-mbtree = 1 AND cpu-independent = 1,tff >= 1.0  AND  no-mbtree >= 1.0  AND  cpu-independent >= 1.0,1.0,1.0,1.0,1.0,44
+normal,612,intra-refresh = 1 AND no-chroma-me = 1 AND cpu-independent = 1,intra-refresh >= 1.0  AND  cpu-independent >= 1.0  AND  no-chroma-me >= 1.0,0.0,1.0,1.0,1.0,45
+uniform,612,intra-refresh = 1 AND no-chroma-me = 1 AND cpu-independent = 1,no-chroma-me >= 1.0  AND  cpu-independent >= 1.0  AND  intra-refresh >= 1.0,0.0,1.0,1.0,1.0,45
+bi_modal_split,612,intra-refresh = 1 AND no-chroma-me = 1 AND cpu-independent = 1,intra-refresh >= 1.0  AND  no-chroma-me >= 1.0  AND  cpu-independent >= 1.0,0.0,1.0,1.0,1.0,45
+tri_modal_split,612,intra-refresh = 1 AND no-chroma-me = 1 AND cpu-independent = 1,intra-refresh >= 1.0  AND  cpu-independent >= 1.0  AND  0.0 <= sliced-threads < 1.0  AND  no-chroma-me >= 1.0,0.0,0.9012567324955116,1.0,0.8202614379084967,45
+power_law,612,intra-refresh = 1 AND no-chroma-me = 1 AND cpu-independent = 1,intra-refresh >= 1.0  AND  no-chroma-me >= 1.0  AND  cpu-independent >= 1.0,0.0,1.0,1.0,1.0,45
+normal,618,open-gop = 1 AND no-mixed-refs = 1 AND cpu-independent = 1,no-mixed-refs >= 1.0  AND  cpu-independent >= 1.0  AND  open-gop >= 1.0  AND  no-mbtree >= 1.0,0.0,0.8629254829806808,1.0,0.7588996763754046,46
+uniform,618,open-gop = 1 AND no-mixed-refs = 1 AND cpu-independent = 1,no-mixed-refs >= 1.0  AND  cpu-independent >= 1.0  AND  open-gop >= 1.0  AND  slow-firstpass >= 1.0,0.0,0.9119718309859156,1.0,0.8381877022653722,46
+bi_modal_split,618,open-gop = 1 AND no-mixed-refs = 1 AND cpu-independent = 1,open-gop >= 1.0  AND  no-mixed-refs >= 1.0  AND  cpu-independent >= 1.0,0.0,1.0,1.0,1.0,46
+tri_modal_split,618,open-gop = 1 AND no-mixed-refs = 1 AND cpu-independent = 1,open-gop >= 1.0  AND  no-mixed-refs >= 1.0  AND  cpu-independent >= 1.0,0.0,1.0,1.0,1.0,46
+power_law,618,open-gop = 1 AND no-mixed-refs = 1 AND cpu-independent = 1,no-mixed-refs >= 1.0  AND  cpu-independent >= 1.0  AND  open-gop >= 1.0,0.0,1.0,1.0,1.0,46
+normal,622,no-deblock = 1 AND no-weightb = 1 AND dts-compress = 1,no-scenecut >= 1.0  AND  dts-compress >= 1.0  AND  no-deblock >= 1.0  AND  no-weightb >= 1.0,0.0,0.8912655971479501,1.0,0.8038585209003215,47
+uniform,622,no-deblock = 1 AND no-weightb = 1 AND dts-compress = 1,no-deblock >= 1.0  AND  no-weightb >= 1.0  AND  dts-compress >= 1.0  AND  non-deterministic >= 1.0,0.0,0.9097283085013146,1.0,0.8344051446945338,47
+bi_modal_split,622,no-deblock = 1 AND no-weightb = 1 AND dts-compress = 1,no-deblock >= 1.0  AND  dts-compress >= 1.0  AND  no-weightb >= 1.0,0.0,1.0,1.0,1.0,47
+tri_modal_split,622,no-deblock = 1 AND no-weightb = 1 AND dts-compress = 1,no-deblock >= 1.0  AND  dts-compress >= 1.0  AND  no-weightb >= 1.0,0.0,1.0,1.0,1.0,47
+power_law,0,no-deblock = 1 AND no-weightb = 1 AND dts-compress = 1,,,0.0,0.0,0.0,47
+normal,621,no-deblock = 1 AND no-8x8dct = 1 AND aud = 1,no-8x8dct >= 1.0  AND  aud >= 1.0  AND  open-gop >= 1.0  AND  no-deblock >= 1.0,0.0,0.8940338379341051,1.0,0.8083735909822867,48
+uniform,621,no-deblock = 1 AND no-8x8dct = 1 AND aud = 1,no-deblock >= 1.0  AND  no-8x8dct >= 1.0  AND  aud >= 1.0,0.0,1.0,1.0,1.0,48
+bi_modal_split,621,no-deblock = 1 AND no-8x8dct = 1 AND aud = 1,no-deblock >= 1.0  AND  no-8x8dct >= 1.0  AND  aud >= 1.0,0.0,1.0,1.0,1.0,48
+tri_modal_split,621,no-deblock = 1 AND no-8x8dct = 1 AND aud = 1,no-deblock >= 1.0  AND  no-8x8dct >= 1.0  AND  aud >= 1.0  AND  pic-struct >= 1.0,0.0,0.893048128342246,1.0,0.8067632850241546,48
+power_law,0,no-deblock = 1 AND no-8x8dct = 1 AND aud = 1,,,0.0,0.0,0.0,48
+normal,615,tff = 1 AND no-dct-decimate = 1 AND cpu-independent = 1,no-dct-decimate >= 1.0  AND  cpu-independent >= 1.0  AND  tff >= 1.0,0.0,1.0,1.0,1.0,49
+uniform,615,tff = 1 AND no-dct-decimate = 1 AND cpu-independent = 1,tff >= 1.0  AND  no-dct-decimate >= 1.0  AND  cpu-independent >= 1.0  AND  bff >= 1.0,0.0,0.9027653880463872,1.0,0.8227642276422764,49
+bi_modal_split,615,tff = 1 AND no-dct-decimate = 1 AND cpu-independent = 1,tff >= 1.0  AND  no-dct-decimate >= 1.0  AND  cpu-independent >= 1.0,0.0,1.0,1.0,1.0,49
+tri_modal_split,0,tff = 1 AND no-dct-decimate = 1 AND cpu-independent = 1,,,0.0,0.0,0.0,49
+power_law,615,tff = 1 AND no-dct-decimate = 1 AND cpu-independent = 1,no-dct-decimate >= 1.0  AND  cpu-independent >= 1.0  AND  tff >= 1.0,0.0,1.0,1.0,1.0,49
+normal,611,no-8x8dct = 1 AND no-psy = 1 AND cpu-independent = 1,no-mbtree >= 1.0  AND  cpu-independent >= 1.0  AND  no-psy >= 1.0  AND  no-8x8dct >= 1.0,0.0,0.8747697974217312,1.0,0.7774140752864157,4
+uniform,611,no-8x8dct = 1 AND no-psy = 1 AND cpu-independent = 1,no-8x8dct >= 1.0  AND  no-psy >= 1.0  AND  cpu-independent >= 1.0,0.0,1.0,1.0,1.0,4
+bi_modal_split,611,no-8x8dct = 1 AND no-psy = 1 AND cpu-independent = 1,no-8x8dct >= 1.0  AND  cpu-independent >= 1.0,4.0,0.8660524450744154,0.76375,1.0,4
+tri_modal_split,611,no-8x8dct = 1 AND no-psy = 1 AND cpu-independent = 1,no-psy >= 1.0  AND  cpu-independent >= 1.0  AND  no-8x8dct >= 1.0  AND  no-scenecut >= 1.0,0.0,0.889090909090909,1.0,0.8003273322422259,4
+power_law,611,no-8x8dct = 1 AND no-psy = 1 AND cpu-independent = 1,no-8x8dct >= 1.0  AND  no-psy >= 1.0  AND  cpu-independent >= 1.0,0.0,1.0,1.0,1.0,4
+normal,617,no-8x8dct = 1 AND no-weightb = 1 AND aud = 1,no-weightb >= 1.0  AND  aud >= 1.0  AND  no-8x8dct >= 1.0,2.0,1.0,1.0,1.0,50
+uniform,617,no-8x8dct = 1 AND no-weightb = 1 AND aud = 1,no-8x8dct >= 1.0  AND  no-weightb >= 1.0  AND  aud >= 1.0  AND  no-dct-decimate >= 1.0,0.0,0.9127753303964756,1.0,0.839546191247974,50
+bi_modal_split,617,no-8x8dct = 1 AND no-weightb = 1 AND aud = 1,no-8x8dct >= 1.0  AND  no-weightb >= 1.0  AND  aud >= 1.0,3.0,1.0,1.0,1.0,50
+tri_modal_split,617,no-8x8dct = 1 AND no-weightb = 1 AND aud = 1,no-8x8dct >= 1.0  AND  aud >= 1.0  AND  no-scenecut >= 1.0  AND  no-weightb >= 1.0,0.0,0.8792007266121707,1.0,0.7844408427876823,50
+power_law,617,no-8x8dct = 1 AND no-weightb = 1 AND aud = 1,no-8x8dct >= 1.0  AND  no-weightb >= 1.0  AND  aud >= 1.0,0.0,1.0,1.0,1.0,50
+normal,571,no-deblock = 1 AND no-8x8dct = 1 AND cpu-independent = 1,no-deblock >= 1.0  AND  cpu-independent >= 1.0  AND  no-8x8dct >= 1.0,3.0,1.0,1.0,1.0,51
+uniform,571,no-deblock = 1 AND no-8x8dct = 1 AND cpu-independent = 1,no-deblock >= 1.0  AND  cpu-independent >= 1.0  AND  no-8x8dct >= 1.0,4.0,1.0,1.0,1.0,51
+bi_modal_split,571,no-deblock = 1 AND no-8x8dct = 1 AND cpu-independent = 1,no-deblock >= 1.0  AND  no-8x8dct >= 1.0  AND  cpu-independent >= 1.0,0.0,1.0,1.0,1.0,51
+tri_modal_split,571,no-deblock = 1 AND no-8x8dct = 1 AND cpu-independent = 1,no-8x8dct >= 1.0  AND  cpu-independent >= 1.0  AND  no-deblock >= 1.0  AND  slow-firstpass >= 1.0,0.0,0.8891050583657588,1.0,0.8003502626970228,51
+power_law,571,no-deblock = 1 AND no-8x8dct = 1 AND cpu-independent = 1,no-deblock >= 1.0  AND  cpu-independent >= 1.0  AND  no-8x8dct >= 1.0,0.0,1.0,1.0,1.0,51
+normal,597,open-gop = 1 AND no-8x8dct = 1 AND cpu-independent = 1,open-gop >= 1.0  AND  no-8x8dct >= 1.0  AND  cpu-independent >= 1.0  AND  0.0 <= sliced-threads < 1.0,0.0,0.8964879852125694,1.0,0.8123953098827471,52
+uniform,597,open-gop = 1 AND no-8x8dct = 1 AND cpu-independent = 1,open-gop >= 1.0  AND  no-8x8dct >= 1.0  AND  dts-compress >= 1.0  AND  cpu-independent >= 1.0,0.0,0.8778195488721805,1.0,0.7822445561139029,52
+bi_modal_split,597,open-gop = 1 AND no-8x8dct = 1 AND cpu-independent = 1,open-gop >= 1.0  AND  cpu-independent >= 1.0  AND  no-8x8dct >= 1.0,0.0,1.0,1.0,1.0,52
+tri_modal_split,597,open-gop = 1 AND no-8x8dct = 1 AND cpu-independent = 1,no-dct-decimate >= 1.0  AND  cpu-independent >= 1.0  AND  no-8x8dct >= 1.0  AND  open-gop >= 1.0,0.0,0.8851540616246498,1.0,0.7939698492462312,52
+power_law,597,open-gop = 1 AND no-8x8dct = 1 AND cpu-independent = 1,open-gop >= 1.0  AND  cpu-independent >= 1.0  AND  no-8x8dct >= 1.0  AND  0.0 <= no-dct-decimate < 1.0,0.0,0.3416666666666667,1.0,0.2060301507537688,52
+normal,581,intra-refresh = 1 AND no-8x8dct = 1 AND cpu-independent = 1,no-8x8dct >= 1.0  AND  cpu-independent >= 1.0  AND  intra-refresh >= 1.0,3.0,1.0,1.0,1.0,53
+uniform,581,intra-refresh = 1 AND no-8x8dct = 1 AND cpu-independent = 1,no-8x8dct >= 1.0  AND  cpu-independent >= 1.0  AND  dts-compress >= 1.0  AND  intra-refresh >= 1.0,0.0,0.8816169393647738,1.0,0.7882960413080895,53
+bi_modal_split,581,intra-refresh = 1 AND no-8x8dct = 1 AND cpu-independent = 1,no-8x8dct >= 1.0  AND  cpu-independent >= 1.0  AND  intra-refresh >= 1.0  AND  no-chroma-me >= 1.0,0.0,0.9210770659238626,1.0,0.8537005163511188,53
+tri_modal_split,581,intra-refresh = 1 AND no-8x8dct = 1 AND cpu-independent = 1,intra-refresh >= 1.0  AND  no-chroma-me >= 1.0  AND  cpu-independent >= 1.0  AND  no-8x8dct >= 1.0,0.0,0.9210770659238626,1.0,0.8537005163511188,53
+power_law,581,intra-refresh = 1 AND no-8x8dct = 1 AND cpu-independent = 1,intra-refresh >= 1.0  AND  cpu-independent >= 1.0  AND  pic-struct >= 1.0  AND  no-8x8dct >= 1.0,0.0,0.9109653233364574,1.0,0.8364888123924269,53
+normal,621,bff = 1 AND no-dct-decimate = 1 AND cpu-independent = 1,cpu-independent >= 1.0  AND  no-asm >= 1.0  AND  bff >= 1.0  AND  no-dct-decimate >= 1.0,0.0,0.9152838427947598,1.0,0.8438003220611916,54
+uniform,621,bff = 1 AND no-dct-decimate = 1 AND cpu-independent = 1,bff >= 1.0  AND  no-dct-decimate >= 1.0  AND  cpu-independent >= 1.0,0.0,1.0,1.0,1.0,54
+bi_modal_split,621,bff = 1 AND no-dct-decimate = 1 AND cpu-independent = 1,bff >= 1.0  AND  no-dct-decimate >= 1.0  AND  no-asm >= 1.0  AND  cpu-independent >= 1.0,0.0,0.9152838427947598,1.0,0.8438003220611916,54
+tri_modal_split,621,bff = 1 AND no-dct-decimate = 1 AND cpu-independent = 1,bff >= 1.0  AND  no-dct-decimate >= 1.0  AND  cpu-independent >= 1.0,0.0,1.0,1.0,1.0,54
+power_law,0,bff = 1 AND no-dct-decimate = 1 AND cpu-independent = 1,,,0.0,0.0,0.0,54
+normal,570,no-fast-pskip = 1 AND cpu-independent = 1 AND aud = 1,cpu-independent >= 1.0  AND  dts-compress >= 1.0  AND  no-fast-pskip >= 1.0  AND  aud >= 1.0,0.0,0.9295774647887324,1.0,0.868421052631579,55
+uniform,570,no-fast-pskip = 1 AND cpu-independent = 1 AND aud = 1,no-fast-pskip >= 1.0  AND  cpu-independent >= 1.0  AND  aud >= 1.0,0.0,1.0,1.0,1.0,55
+bi_modal_split,570,no-fast-pskip = 1 AND cpu-independent = 1 AND aud = 1,cpu-independent >= 1.0  AND  aud >= 1.0  AND  no-fast-pskip >= 1.0,0.0,1.0,1.0,1.0,55
+tri_modal_split,570,no-fast-pskip = 1 AND cpu-independent = 1 AND aud = 1,no-fast-pskip >= 1.0  AND  cpu-independent >= 1.0  AND  aud >= 1.0,0.0,1.0,1.0,1.0,55
+power_law,0,no-fast-pskip = 1 AND cpu-independent = 1 AND aud = 1,,,0.0,0.0,0.0,55
+normal,596,no-deblock = 1 AND no-dct-decimate = 1 AND cpu-independent = 1,no-deblock >= 1.0  AND  no-dct-decimate >= 1.0  AND  cpu-independent >= 1.0  AND  no-8x8dct >= 1.0,0.0,0.8786453433678268,1.0,0.7835570469798657,56
+uniform,596,no-deblock = 1 AND no-dct-decimate = 1 AND cpu-independent = 1,no-mbtree >= 1.0  AND  cpu-independent >= 1.0  AND  no-dct-decimate >= 1.0  AND  no-deblock >= 1.0,0.0,0.8849391955098223,1.0,0.7936241610738255,56
+bi_modal_split,596,no-deblock = 1 AND no-dct-decimate = 1 AND cpu-independent = 1,no-deblock >= 1.0  AND  no-dct-decimate >= 1.0  AND  cpu-independent >= 1.0,0.0,1.0,1.0,1.0,56
+tri_modal_split,596,no-deblock = 1 AND no-dct-decimate = 1 AND cpu-independent = 1,no-dct-decimate >= 1.0  AND  cpu-independent >= 1.0  AND  no-deblock >= 1.0  AND  open-gop >= 1.0,0.0,0.8818011257035648,1.0,0.7885906040268457,56
+power_law,596,no-deblock = 1 AND no-dct-decimate = 1 AND cpu-independent = 1,no-deblock >= 1.0  AND  no-dct-decimate >= 1.0  AND  cpu-independent >= 1.0,0.0,1.0,1.0,1.0,56
+normal,617,no-8x8dct = 1 AND no-weightb = 1 AND aud = 1,no-fast-pskip >= 1.0  AND  aud >= 1.0  AND  no-8x8dct >= 1.0  AND  no-weightb >= 1.0,0.0,0.9222707423580788,1.0,0.8557536466774717,57
+uniform,617,no-8x8dct = 1 AND no-weightb = 1 AND aud = 1,no-8x8dct >= 1.0  AND  no-weightb >= 1.0  AND  aud >= 1.0  AND  opencl >= 1.0,0.0,0.8952551477170994,1.0,0.8103727714748784,57
+bi_modal_split,617,no-8x8dct = 1 AND no-weightb = 1 AND aud = 1,no-8x8dct >= 1.0  AND  no-weightb >= 1.0  AND  aud >= 1.0,0.0,1.0,1.0,1.0,57
+tri_modal_split,617,no-8x8dct = 1 AND no-weightb = 1 AND aud = 1,no-cabac >= 1.0  AND  aud >= 1.0  AND  no-weightb >= 1.0  AND  no-8x8dct >= 1.0,0.0,0.8730593607305936,1.0,0.7747163695299838,57
+power_law,617,no-8x8dct = 1 AND no-weightb = 1 AND aud = 1,no-8x8dct >= 1.0  AND  no-weightb >= 1.0  AND  aud >= 1.0  AND  no-asm >= 1.0,0.0,0.9250871080139372,1.0,0.8606158833063209,57
+normal,620,no-scenecut = 1 AND no-dct-decimate = 1 AND cpu-independent = 1,no-scenecut >= 1.0  AND  cpu-independent >= 1.0  AND  no-dct-decimate >= 1.0  AND  no-cabac >= 1.0,0.0,0.8908765652951699,1.0,0.8032258064516129,58
+uniform,620,no-scenecut = 1 AND no-dct-decimate = 1 AND cpu-independent = 1,no-scenecut >= 1.0  AND  cpu-independent >= 1.0  AND  no-dct-decimate >= 1.0  AND  non-deterministic >= 1.0,0.0,0.9282627484874676,1.0,0.8661290322580645,58
+bi_modal_split,620,no-scenecut = 1 AND no-dct-decimate = 1 AND cpu-independent = 1,no-dct-decimate >= 1.0  AND  cpu-independent >= 1.0  AND  no-scenecut >= 1.0  AND  bff >= 1.0,0.0,0.8808664259927798,1.0,0.7870967741935484,58
+tri_modal_split,620,no-scenecut = 1 AND no-dct-decimate = 1 AND cpu-independent = 1,no-scenecut >= 1.0  AND  no-dct-decimate >= 1.0  AND  cpu-independent >= 1.0,0.0,1.0,1.0,1.0,58
+power_law,620,no-scenecut = 1 AND no-dct-decimate = 1 AND cpu-independent = 1,no-dct-decimate >= 1.0  AND  cpu-independent >= 1.0  AND  no-scenecut >= 1.0,0.0,1.0,1.0,1.0,58
+normal,611,no-8x8dct = 1 AND no-psy = 1 AND cpu-independent = 1,no-psy >= 1.0  AND  cpu-independent >= 1.0  AND  no-8x8dct >= 1.0  AND  no-chroma-me >= 1.0,0.0,0.9157054125998224,1.0,0.8445171849427169,59
+uniform,611,no-8x8dct = 1 AND no-psy = 1 AND cpu-independent = 1,no-8x8dct >= 1.0  AND  cpu-independent >= 1.0  AND  no-psy >= 1.0,2.0,1.0,1.0,1.0,59
+bi_modal_split,611,no-8x8dct = 1 AND no-psy = 1 AND cpu-independent = 1,no-8x8dct >= 1.0  AND  no-psy >= 1.0  AND  cpu-independent >= 1.0,0.0,1.0,1.0,1.0,59
+tri_modal_split,611,no-8x8dct = 1 AND no-psy = 1 AND cpu-independent = 1,no-psy >= 1.0  AND  cpu-independent >= 1.0  AND  no-8x8dct >= 1.0  AND  no-asm >= 1.0,1.0,0.8990990990990991,1.0,0.8166939443535188,59
+power_law,611,no-8x8dct = 1 AND no-psy = 1 AND cpu-independent = 1,no-psy >= 1.0  AND  cpu-independent >= 1.0  AND  no-8x8dct >= 1.0,0.0,1.0,1.0,1.0,59
+normal,593,intra-refresh = 1 AND no-fast-pskip = 1 AND cpu-independent = 1,intra-refresh >= 1.0  AND  no-fast-pskip >= 1.0  AND  cpu-independent >= 1.0,0.0,1.0,1.0,1.0,5
+uniform,593,intra-refresh = 1 AND no-fast-pskip = 1 AND cpu-independent = 1,intra-refresh >= 1.0  AND  cpu-independent >= 1.0  AND  no-fast-pskip >= 1.0,0.0,1.0,1.0,1.0,5
+bi_modal_split,593,intra-refresh = 1 AND no-fast-pskip = 1 AND cpu-independent = 1,intra-refresh >= 1.0  AND  no-fast-pskip >= 1.0  AND  cpu-independent >= 1.0  AND  no-dct-decimate >= 1.0,1.0,0.8863849765258216,1.0,0.7959527824620574,5
+tri_modal_split,593,intra-refresh = 1 AND no-fast-pskip = 1 AND cpu-independent = 1,no-fast-pskip >= 1.0  AND  cpu-independent >= 1.0  AND  no-psy >= 1.0  AND  intra-refresh >= 1.0,1.0,0.8946877912395154,1.0,0.8094435075885329,5
+power_law,0,intra-refresh = 1 AND no-fast-pskip = 1 AND cpu-independent = 1,,,0.0,0.0,0.0,5
+normal,570,no-fast-pskip = 1 AND cpu-independent = 1 AND aud = 1,non-deterministic >= 1.0  AND  cpu-independent >= 1.0  AND  aud >= 1.0  AND  no-fast-pskip >= 1.0,0.0,0.9463955637707948,1.0,0.8982456140350877,60
+uniform,570,no-fast-pskip = 1 AND cpu-independent = 1 AND aud = 1,cpu-independent >= 1.0  AND  aud >= 1.0  AND  no-fast-pskip >= 1.0,0.0,1.0,1.0,1.0,60
+bi_modal_split,570,no-fast-pskip = 1 AND cpu-independent = 1 AND aud = 1,cpu-independent >= 1.0  AND  0.0 <= sliced-threads < 1.0  AND  no-fast-pskip >= 1.0  AND  aud >= 1.0,0.0,0.90279114533205,1.0,0.8228070175438597,60
+tri_modal_split,570,no-fast-pskip = 1 AND cpu-independent = 1 AND aud = 1,no-8x8dct >= 1.0  AND  cpu-independent >= 1.0  AND  aud >= 1.0  AND  no-fast-pskip >= 1.0,0.0,0.8899707887049659,1.0,0.8017543859649123,60
+power_law,570,no-fast-pskip = 1 AND cpu-independent = 1 AND aud = 1,no-fast-pskip >= 1.0  AND  cpu-independent >= 1.0  AND  aud >= 1.0,0.0,1.0,1.0,1.0,60
+normal,610,no-chroma-me = 1 AND no-weightb = 1 AND cpu-independent = 1,no-chroma-me >= 1.0  AND  cpu-independent >= 1.0  AND  no-cabac >= 1.0  AND  no-weightb >= 1.0,0.0,0.8755760368663594,1.0,0.7786885245901639,61
+uniform,610,no-chroma-me = 1 AND no-weightb = 1 AND cpu-independent = 1,no-weightb >= 1.0  AND  no-mbtree >= 1.0  AND  cpu-independent >= 1.0  AND  no-chroma-me >= 1.0,0.0,0.9145907473309608,1.0,0.8426229508196721,61
+bi_modal_split,610,no-chroma-me = 1 AND no-weightb = 1 AND cpu-independent = 1,no-chroma-me >= 1.0  AND  cpu-independent >= 1.0  AND  no-weightb >= 1.0  AND  no-fast-pskip >= 1.0,0.0,0.8959276018099547,1.0,0.8114754098360656,61
+tri_modal_split,610,no-chroma-me = 1 AND no-weightb = 1 AND cpu-independent = 1,no-chroma-me >= 1.0  AND  cpu-independent >= 1.0  AND  slow-firstpass >= 1.0  AND  no-weightb >= 1.0,1.0,0.8909090909090909,1.0,0.8032786885245902,61
+power_law,610,no-chroma-me = 1 AND no-weightb = 1 AND cpu-independent = 1,no-chroma-me >= 1.0  AND  cpu-independent >= 1.0  AND  no-weightb >= 1.0,0.0,1.0,1.0,1.0,61
+normal,579,tff = 1 AND no-weightb = 1 AND cpu-independent = 1,tff >= 1.0  AND  cpu-independent >= 1.0  AND  no-weightb >= 1.0,0.0,1.0,1.0,1.0,62
+uniform,579,tff = 1 AND no-weightb = 1 AND cpu-independent = 1,tff >= 1.0  AND  no-weightb >= 1.0  AND  cpu-independent >= 1.0,0.0,1.0,1.0,1.0,62
+bi_modal_split,579,tff = 1 AND no-weightb = 1 AND cpu-independent = 1,tff >= 1.0  AND  cpu-independent >= 1.0  AND  no-weightb >= 1.0  AND  0.0 <= sliced-threads < 1.0,1.0,0.9002849002849003,1.0,0.8186528497409327,62
+tri_modal_split,579,tff = 1 AND no-weightb = 1 AND cpu-independent = 1,no-weightb >= 1.0  AND  cpu-independent >= 1.0  AND  open-gop >= 1.0  AND  tff >= 1.0,0.0,0.8757281553398057,1.0,0.7789291882556131,62
+power_law,0,tff = 1 AND no-weightb = 1 AND cpu-independent = 1,,,0.0,0.0,0.0,62
+normal,592,no-chroma-me = 1 AND cpu-independent = 1 AND aud = 1,no-chroma-me >= 1.0  AND  aud >= 1.0  AND  cpu-independent >= 1.0  AND  intra-refresh >= 1.0,0.0,0.8745247148288973,1.0,0.777027027027027,63
+uniform,592,no-chroma-me = 1 AND cpu-independent = 1 AND aud = 1,no-mbtree >= 1.0  AND  cpu-independent >= 1.0  AND  aud >= 1.0  AND  no-chroma-me >= 1.0,0.0,0.8734538534728831,1.0,0.7753378378378378,63
+bi_modal_split,592,no-chroma-me = 1 AND cpu-independent = 1 AND aud = 1,cpu-independent >= 1.0  AND  aud >= 1.0  AND  no-chroma-me >= 1.0,0.0,1.0,1.0,1.0,63
+tri_modal_split,592,no-chroma-me = 1 AND cpu-independent = 1 AND aud = 1,no-scenecut >= 1.0  AND  cpu-independent >= 1.0  AND  aud >= 1.0  AND  no-chroma-me >= 1.0,0.0,0.8755935422602089,1.0,0.7787162162162162,63
+power_law,0,no-chroma-me = 1 AND cpu-independent = 1 AND aud = 1,,,0.0,0.0,0.0,63
+normal,562,no-deblock = 1 AND no-mbtree = 1 AND cpu-independent = 1,pic-struct >= 1.0  AND  cpu-independent >= 1.0  AND  no-mbtree >= 1.0  AND  no-deblock >= 1.0,0.0,0.9213051823416508,1.0,0.8540925266903915,64
+uniform,562,no-deblock = 1 AND no-mbtree = 1 AND cpu-independent = 1,no-mbtree >= 1.0  AND  pic-struct >= 1.0  AND  cpu-independent >= 1.0  AND  no-deblock >= 1.0,0.0,0.9213051823416508,1.0,0.8540925266903915,64
+bi_modal_split,0,no-deblock = 1 AND no-mbtree = 1 AND cpu-independent = 1,,,0.0,0.0,0.0,64
+tri_modal_split,562,no-deblock = 1 AND no-mbtree = 1 AND cpu-independent = 1,no-deblock >= 1.0  AND  no-mbtree >= 1.0  AND  cpu-independent >= 1.0,0.0,1.0,1.0,1.0,64
+power_law,0,no-deblock = 1 AND no-mbtree = 1 AND cpu-independent = 1,,,0.0,0.0,0.0,64
+normal,594,no-fast-pskip = 1 AND cpu-independent = 1 AND dts-compress = 1,cpu-independent >= 1.0  AND  dts-compress >= 1.0  AND  no-fast-pskip >= 1.0  AND  open-gop >= 1.0,0.0,0.9,1.0,0.8181818181818182,65
+uniform,594,no-fast-pskip = 1 AND cpu-independent = 1 AND dts-compress = 1,cpu-independent >= 1.0  AND  dts-compress >= 1.0  AND  no-fast-pskip >= 1.0,0.0,1.0,1.0,1.0,65
+bi_modal_split,594,no-fast-pskip = 1 AND cpu-independent = 1 AND dts-compress = 1,no-fast-pskip >= 1.0  AND  dts-compress >= 1.0  AND  cpu-independent >= 1.0,0.0,1.0,1.0,1.0,65
+tri_modal_split,594,no-fast-pskip = 1 AND cpu-independent = 1 AND dts-compress = 1,constrained-intra >= 1.0  AND  cpu-independent >= 1.0  AND  dts-compress >= 1.0  AND  no-fast-pskip >= 1.0,0.0,0.8979591836734693,1.0,0.8148148148148148,65
+power_law,594,no-fast-pskip = 1 AND cpu-independent = 1 AND dts-compress = 1,no-fast-pskip >= 1.0  AND  cpu-independent >= 1.0  AND  no-deblock >= 1.0  AND  dts-compress >= 1.0,0.0,0.8565928777670837,1.0,0.7491582491582491,65
+normal,605,no-scenecut = 1 AND no-mixed-refs = 1 AND cpu-independent = 1,pic-struct >= 1.0  AND  cpu-independent >= 1.0  AND  no-mixed-refs >= 1.0  AND  no-scenecut >= 1.0,0.0,0.9019963702359346,1.0,0.8214876033057851,66
+uniform,605,no-scenecut = 1 AND no-mixed-refs = 1 AND cpu-independent = 1,no-scenecut >= 1.0  AND  no-mixed-refs >= 1.0  AND  cpu-independent >= 1.0,0.0,1.0,1.0,1.0,66
+bi_modal_split,605,no-scenecut = 1 AND no-mixed-refs = 1 AND cpu-independent = 1,no-mixed-refs >= 1.0  AND  cpu-independent >= 1.0  AND  no-scenecut >= 1.0,0.0,1.0,1.0,1.0,66
+tri_modal_split,605,no-scenecut = 1 AND no-mixed-refs = 1 AND cpu-independent = 1,no-deblock >= 1.0  AND  no-mixed-refs >= 1.0  AND  cpu-independent >= 1.0  AND  no-scenecut >= 1.0,0.0,0.8817005545286506,1.0,0.7884297520661157,66
+power_law,0,no-scenecut = 1 AND no-mixed-refs = 1 AND cpu-independent = 1,,,0.0,0.0,0.0,66
+normal,581,intra-refresh = 1 AND no-weightb = 1 AND cpu-independent = 1,intra-refresh >= 1.0  AND  no-weightb >= 1.0  AND  cpu-independent >= 1.0,2.0,1.0,1.0,1.0,67
+uniform,581,intra-refresh = 1 AND no-weightb = 1 AND cpu-independent = 1,intra-refresh >= 1.0  AND  no-weightb >= 1.0  AND  cpu-independent >= 1.0  AND  non-deterministic >= 1.0,0.0,0.9280442804428044,1.0,0.8657487091222031,67
+bi_modal_split,0,intra-refresh = 1 AND no-weightb = 1 AND cpu-independent = 1,,,0.0,0.0,0.0,67
+tri_modal_split,0,intra-refresh = 1 AND no-weightb = 1 AND cpu-independent = 1,,,0.0,0.0,0.0,67
+power_law,581,intra-refresh = 1 AND no-weightb = 1 AND cpu-independent = 1,intra-refresh >= 1.0  AND  no-weightb >= 1.0  AND  cpu-independent >= 1.0,0.0,1.0,1.0,1.0,67
+normal,594,intra-refresh = 1 AND no-mbtree = 1 AND cpu-independent = 1,intra-refresh >= 1.0  AND  cpu-independent >= 1.0  AND  no-mixed-refs >= 1.0  AND  no-mbtree >= 1.0,0.0,0.878186968838527,1.0,0.7828282828282829,68
+uniform,594,intra-refresh = 1 AND no-mbtree = 1 AND cpu-independent = 1,intra-refresh >= 1.0  AND  no-mbtree >= 1.0  AND  cpu-independent >= 1.0,0.0,1.0,1.0,1.0,68
+bi_modal_split,0,intra-refresh = 1 AND no-mbtree = 1 AND cpu-independent = 1,,,0.0,0.0,0.0,68
+tri_modal_split,594,intra-refresh = 1 AND no-mbtree = 1 AND cpu-independent = 1,no-mbtree >= 1.0  AND  cpu-independent >= 1.0  AND  intra-refresh >= 1.0,0.0,1.0,1.0,1.0,68
+power_law,0,intra-refresh = 1 AND no-mbtree = 1 AND cpu-independent = 1,,,0.0,0.0,0.0,68
+normal,621,slow-firstpass = 1 AND no-8x8dct = 1 AND cpu-independent = 1,no-8x8dct >= 1.0  AND  cpu-independent >= 1.0  AND  no-scenecut >= 1.0  AND  slow-firstpass >= 1.0,0.0,0.870909090909091,1.0,0.7713365539452496,69
+uniform,621,slow-firstpass = 1 AND no-8x8dct = 1 AND cpu-independent = 1,slow-firstpass >= 1.0  AND  no-8x8dct >= 1.0  AND  cpu-independent >= 1.0  AND  no-chroma-me >= 1.0,0.0,0.9114811568799298,1.0,0.8373590982286635,69
+bi_modal_split,621,slow-firstpass = 1 AND no-8x8dct = 1 AND cpu-independent = 1,slow-firstpass >= 1.0  AND  no-8x8dct >= 1.0  AND  cpu-independent >= 1.0,0.0,1.0,1.0,1.0,69
+tri_modal_split,621,slow-firstpass = 1 AND no-8x8dct = 1 AND cpu-independent = 1,slow-firstpass >= 1.0  AND  cpu-independent >= 1.0  AND  no-8x8dct >= 1.0  AND  0.0 <= sliced-threads < 1.0,0.0,0.9018567639257292,1.0,0.821256038647343,69
+power_law,0,slow-firstpass = 1 AND no-8x8dct = 1 AND cpu-independent = 1,,,0.0,0.0,0.0,69
+normal,617,intra-refresh = 1 AND no-dct-decimate = 1 AND cpu-independent = 1,intra-refresh >= 1.0  AND  no-dct-decimate >= 1.0  AND  cpu-independent >= 1.0  AND  opencl >= 1.0,0.0,0.8852755194218608,1.0,0.7941653160453809,6
+uniform,617,intra-refresh = 1 AND no-dct-decimate = 1 AND cpu-independent = 1,no-dct-decimate >= 1.0  AND  cpu-independent >= 1.0  AND  intra-refresh >= 1.0,3.0,1.0,1.0,1.0,6
+bi_modal_split,617,intra-refresh = 1 AND no-dct-decimate = 1 AND cpu-independent = 1,no-dct-decimate >= 1.0  AND  cpu-independent >= 1.0  AND  intra-refresh >= 1.0,0.0,1.0,1.0,1.0,6
+tri_modal_split,617,intra-refresh = 1 AND no-dct-decimate = 1 AND cpu-independent = 1,open-gop >= 1.0  AND  no-dct-decimate >= 1.0  AND  cpu-independent >= 1.0  AND  intra-refresh >= 1.0,0.0,0.9069973427812222,1.0,0.8298217179902755,6
+power_law,617,intra-refresh = 1 AND no-dct-decimate = 1 AND cpu-independent = 1,intra-refresh >= 1.0  AND  cpu-independent >= 1.0  AND  no-dct-decimate >= 1.0,0.0,1.0,1.0,1.0,6
+normal,594,bff = 1 AND no-weightb = 1 AND cpu-independent = 1,no-weightb >= 1.0  AND  cpu-independent >= 1.0  AND  bff >= 1.0  AND  pic-struct >= 1.0,0.0,0.9209809264305178,1.0,0.8535353535353535,70
+uniform,594,bff = 1 AND no-weightb = 1 AND cpu-independent = 1,no-weightb >= 1.0  AND  cpu-independent >= 1.0  AND  bff >= 1.0,0.0,1.0,1.0,1.0,70
+bi_modal_split,594,bff = 1 AND no-weightb = 1 AND cpu-independent = 1,bff >= 1.0  AND  cpu-independent >= 1.0  AND  no-scenecut >= 1.0  AND  no-weightb >= 1.0,0.0,0.8865979381443299,1.0,0.7962962962962963,70
+tri_modal_split,594,bff = 1 AND no-weightb = 1 AND cpu-independent = 1,bff >= 1.0  AND  cpu-independent >= 1.0  AND  no-weightb >= 1.0  AND  no-scenecut >= 1.0,0.0,0.8865979381443299,1.0,0.7962962962962963,70
+power_law,594,bff = 1 AND no-weightb = 1 AND cpu-independent = 1,no-weightb >= 1.0  AND  cpu-independent >= 1.0  AND  bff >= 1.0,0.0,1.0,1.0,1.0,70
+normal,618,open-gop = 1 AND no-fast-pskip = 1 AND cpu-independent = 1,open-gop >= 1.0  AND  cpu-independent >= 1.0  AND  no-fast-pskip >= 1.0,0.0,1.0,1.0,1.0,71
+uniform,618,open-gop = 1 AND no-fast-pskip = 1 AND cpu-independent = 1,no-fast-pskip >= 1.0  AND  cpu-independent >= 1.0  AND  open-gop >= 1.0,0.0,1.0,1.0,1.0,71
+bi_modal_split,618,open-gop = 1 AND no-fast-pskip = 1 AND cpu-independent = 1,no-mixed-refs >= 1.0  AND  cpu-independent >= 1.0  AND  open-gop >= 1.0  AND  no-fast-pskip >= 1.0,0.0,0.9003558718861211,1.0,0.8187702265372169,71
+tri_modal_split,618,open-gop = 1 AND no-fast-pskip = 1 AND cpu-independent = 1,open-gop >= 1.0  AND  no-mixed-refs >= 1.0  AND  cpu-independent >= 1.0  AND  no-fast-pskip >= 1.0,0.0,0.9003558718861211,1.0,0.8187702265372169,71
+power_law,618,open-gop = 1 AND no-fast-pskip = 1 AND cpu-independent = 1,no-fast-pskip >= 1.0  AND  cpu-independent >= 1.0  AND  open-gop >= 1.0  AND  no-asm >= 1.0,0.0,0.9032830523513752,1.0,0.8236245954692557,71
+normal,620,no-scenecut = 1 AND no-dct-decimate = 1 AND cpu-independent = 1,no-mixed-refs >= 1.0  AND  no-dct-decimate >= 1.0  AND  cpu-independent >= 1.0  AND  no-scenecut >= 1.0,0.0,0.8798554652213189,1.0,0.785483870967742,72
+uniform,620,no-scenecut = 1 AND no-dct-decimate = 1 AND cpu-independent = 1,constrained-intra >= 1.0  AND  no-dct-decimate >= 1.0  AND  cpu-independent >= 1.0  AND  no-scenecut >= 1.0,0.0,0.8828828828828829,1.0,0.7903225806451613,72
+bi_modal_split,620,no-scenecut = 1 AND no-dct-decimate = 1 AND cpu-independent = 1,no-scenecut >= 1.0  AND  no-dct-decimate >= 1.0  AND  cpu-independent >= 1.0,0.0,1.0,1.0,1.0,72
+tri_modal_split,620,no-scenecut = 1 AND no-dct-decimate = 1 AND cpu-independent = 1,no-scenecut >= 1.0  AND  cpu-independent >= 1.0  AND  no-dct-decimate >= 1.0  AND  no-mixed-refs >= 1.0,0.0,0.8798554652213189,1.0,0.785483870967742,72
+power_law,620,no-scenecut = 1 AND no-dct-decimate = 1 AND cpu-independent = 1,no-dct-decimate >= 1.0  AND  cpu-independent >= 1.0  AND  no-scenecut >= 1.0,0.0,1.0,1.0,1.0,72
+normal,609,no-psy = 1 AND cpu-independent = 1 AND dts-compress = 1,cpu-independent >= 1.0  AND  dts-compress >= 1.0  AND  no-psy >= 1.0  AND  no-cabac >= 1.0,0.0,0.8763837638376384,1.0,0.7799671592775042,73
+uniform,609,no-psy = 1 AND cpu-independent = 1 AND dts-compress = 1,tff >= 1.0  AND  dts-compress >= 1.0  AND  cpu-independent >= 1.0  AND  no-psy >= 1.0,0.0,0.8606173994387277,1.0,0.7553366174055829,73
+bi_modal_split,609,no-psy = 1 AND cpu-independent = 1 AND dts-compress = 1,no-psy >= 1.0  AND  cpu-independent >= 1.0  AND  dts-compress >= 1.0,0.0,1.0,1.0,1.0,73
+tri_modal_split,609,no-psy = 1 AND cpu-independent = 1 AND dts-compress = 1,no-psy >= 1.0  AND  cpu-independent >= 1.0  AND  dts-compress >= 1.0  AND  non-deterministic >= 1.0,0.0,0.9445407279029462,1.0,0.8949096880131363,73
+power_law,609,no-psy = 1 AND cpu-independent = 1 AND dts-compress = 1,no-psy >= 1.0  AND  cpu-independent >= 1.0  AND  dts-compress >= 1.0,0.0,1.0,1.0,1.0,73
+normal,607,no-scenecut = 1 AND no-mbtree = 1 AND cpu-independent = 1,no-mbtree >= 1.0  AND  cpu-independent >= 1.0  AND  no-scenecut >= 1.0,3.0,1.0,1.0,1.0,74
+uniform,607,no-scenecut = 1 AND no-mbtree = 1 AND cpu-independent = 1,no-scenecut >= 1.0  AND  no-mbtree >= 1.0  AND  cpu-independent >= 1.0,0.0,1.0,1.0,1.0,74
+bi_modal_split,607,no-scenecut = 1 AND no-mbtree = 1 AND cpu-independent = 1,no-mbtree >= 1.0  AND  cpu-independent >= 1.0  AND  no-scenecut >= 1.0,0.0,1.0,1.0,1.0,74
+tri_modal_split,607,no-scenecut = 1 AND no-mbtree = 1 AND cpu-independent = 1,no-scenecut >= 1.0  AND  cpu-independent >= 1.0  AND  no-mbtree >= 1.0  AND  aud >= 1.0,0.0,0.8654205607476635,1.0,0.7627677100494233,74
+power_law,0,no-scenecut = 1 AND no-mbtree = 1 AND cpu-independent = 1,,,0.0,0.0,0.0,74
+normal,605,no-cabac = 1 AND no-weightb = 1 AND cpu-independent = 1,no-cabac >= 1.0  AND  bff >= 1.0  AND  no-weightb >= 1.0  AND  cpu-independent >= 1.0,0.0,0.8847926267281107,1.0,0.7933884297520661,75
+uniform,605,no-cabac = 1 AND no-weightb = 1 AND cpu-independent = 1,no-weightb >= 1.0  AND  cpu-independent >= 1.0  AND  no-cabac >= 1.0,0.0,1.0,1.0,1.0,75
+bi_modal_split,605,no-cabac = 1 AND no-weightb = 1 AND cpu-independent = 1,no-weightb >= 1.0  AND  cpu-independent >= 1.0  AND  no-mbtree >= 1.0  AND  no-cabac >= 1.0,0.0,0.8969917958067457,1.0,0.8132231404958677,75
+tri_modal_split,605,no-cabac = 1 AND no-weightb = 1 AND cpu-independent = 1,no-cabac >= 1.0  AND  cpu-independent >= 1.0  AND  no-weightb >= 1.0,3.0,1.0,1.0,1.0,75
+power_law,605,no-cabac = 1 AND no-weightb = 1 AND cpu-independent = 1,no-cabac >= 1.0  AND  no-weightb >= 1.0  AND  cpu-independent >= 1.0,0.0,1.0,1.0,1.0,75
+normal,593,no-weightb = 1 AND cpu-independent = 1 AND dts-compress = 1,no-weightb >= 1.0  AND  cpu-independent >= 1.0  AND  dts-compress >= 1.0  AND  aud >= 1.0,0.0,0.9119266055045872,1.0,0.8381112984822934,76
+uniform,593,no-weightb = 1 AND cpu-independent = 1 AND dts-compress = 1,no-weightb >= 1.0  AND  dts-compress >= 1.0  AND  cpu-independent >= 1.0,0.0,1.0,1.0,1.0,76
+bi_modal_split,593,no-weightb = 1 AND cpu-independent = 1 AND dts-compress = 1,no-weightb >= 1.0  AND  cpu-independent >= 1.0  AND  dts-compress >= 1.0,0.0,1.0,1.0,1.0,76
+tri_modal_split,593,no-weightb = 1 AND cpu-independent = 1 AND dts-compress = 1,no-weightb >= 1.0  AND  cpu-independent >= 1.0  AND  dts-compress >= 1.0,0.0,1.0,1.0,1.0,76
+power_law,593,no-weightb = 1 AND cpu-independent = 1 AND dts-compress = 1,cpu-independent >= 1.0  AND  dts-compress >= 1.0  AND  no-weightb >= 1.0,0.0,1.0,1.0,1.0,76
+normal,615,tff = 1 AND no-dct-decimate = 1 AND cpu-independent = 1,tff >= 1.0  AND  no-dct-decimate >= 1.0  AND  cpu-independent >= 1.0  AND  bff >= 1.0,0.0,0.9027653880463872,1.0,0.8227642276422764,77
+uniform,615,tff = 1 AND no-dct-decimate = 1 AND cpu-independent = 1,no-dct-decimate >= 1.0  AND  cpu-independent >= 1.0  AND  aud >= 1.0  AND  tff >= 1.0,0.0,0.8418079096045198,1.0,0.7268292682926829,77
+bi_modal_split,615,tff = 1 AND no-dct-decimate = 1 AND cpu-independent = 1,tff >= 1.0  AND  cpu-independent >= 1.0  AND  no-dct-decimate >= 1.0,0.0,1.0,1.0,1.0,77
+tri_modal_split,615,tff = 1 AND no-dct-decimate = 1 AND cpu-independent = 1,tff >= 1.0  AND  no-dct-decimate >= 1.0  AND  cpu-independent >= 1.0  AND  constrained-intra >= 1.0,0.0,0.8988361683079678,1.0,0.816260162601626,77
+power_law,615,tff = 1 AND no-dct-decimate = 1 AND cpu-independent = 1,tff >= 1.0  AND  cpu-independent >= 1.0  AND  no-dct-decimate >= 1.0,0.0,1.0,1.0,1.0,77
+normal,621,no-cabac = 1 AND no-dct-decimate = 1 AND cpu-independent = 1,no-dct-decimate >= 1.0  AND  cpu-independent >= 1.0  AND  no-mixed-refs >= 1.0  AND  no-cabac >= 1.0,0.0,0.8840970350404312,1.0,0.7922705314009661,78
+uniform,621,no-cabac = 1 AND no-dct-decimate = 1 AND cpu-independent = 1,no-cabac >= 1.0  AND  no-dct-decimate >= 1.0  AND  cpu-independent >= 1.0  AND  pic-struct >= 1.0,0.0,0.9237435008665512,1.0,0.8582930756843801,78
+bi_modal_split,621,no-cabac = 1 AND no-dct-decimate = 1 AND cpu-independent = 1,no-cabac >= 1.0  AND  cpu-independent >= 1.0  AND  0.0 <= sliced-threads < 1.0  AND  no-dct-decimate >= 1.0,0.0,0.896,1.0,0.8115942028985508,78
+tri_modal_split,621,no-cabac = 1 AND no-dct-decimate = 1 AND cpu-independent = 1,no-cabac >= 1.0  AND  no-dct-decimate >= 1.0  AND  cpu-independent >= 1.0,0.0,1.0,1.0,1.0,78
+power_law,621,no-cabac = 1 AND no-dct-decimate = 1 AND cpu-independent = 1,no-dct-decimate >= 1.0  AND  cpu-independent >= 1.0  AND  no-cabac >= 1.0  AND  pic-struct >= 1.0,0.0,0.9237435008665512,1.0,0.8582930756843801,78
+normal,612,bff = 1 AND no-fast-pskip = 1 AND cpu-independent = 1,bff >= 1.0  AND  no-fast-pskip >= 1.0  AND  cpu-independent >= 1.0,0.0,1.0,1.0,1.0,79
+uniform,612,bff = 1 AND no-fast-pskip = 1 AND cpu-independent = 1,bff >= 1.0  AND  no-fast-pskip >= 1.0  AND  cpu-independent >= 1.0,0.0,1.0,1.0,1.0,79
+bi_modal_split,612,bff = 1 AND no-fast-pskip = 1 AND cpu-independent = 1,bff >= 1.0  AND  cpu-independent >= 1.0  AND  no-fast-pskip >= 1.0,0.0,1.0,1.0,1.0,79
+tri_modal_split,612,bff = 1 AND no-fast-pskip = 1 AND cpu-independent = 1,bff >= 1.0  AND  no-fast-pskip >= 1.0  AND  cpu-independent >= 1.0,0.0,1.0,1.0,1.0,79
+power_law,612,bff = 1 AND no-fast-pskip = 1 AND cpu-independent = 1,bff >= 1.0  AND  no-fast-pskip >= 1.0  AND  cpu-independent >= 1.0  AND  aud >= 1.0,0.0,0.8485418626528692,1.0,0.7369281045751634,79
+normal,595,intra-refresh = 1 AND cpu-independent = 1 AND aud = 1,cpu-independent >= 1.0  AND  aud >= 1.0  AND  intra-refresh >= 1.0,0.0,1.0,1.0,1.0,7
+uniform,595,intra-refresh = 1 AND cpu-independent = 1 AND aud = 1,cpu-independent >= 1.0  AND  aud >= 1.0  AND  intra-refresh >= 1.0,0.0,1.0,1.0,1.0,7
+bi_modal_split,595,intra-refresh = 1 AND cpu-independent = 1 AND aud = 1,intra-refresh >= 1.0  AND  cpu-independent >= 1.0  AND  aud >= 1.0,0.0,1.0,1.0,1.0,7
+tri_modal_split,595,intra-refresh = 1 AND cpu-independent = 1 AND aud = 1,cpu-independent >= 1.0  AND  aud >= 1.0  AND  intra-refresh >= 1.0,0.0,1.0,1.0,1.0,7
+power_law,595,intra-refresh = 1 AND cpu-independent = 1 AND aud = 1,intra-refresh >= 1.0  AND  aud >= 1.0  AND  cpu-independent >= 1.0,0.0,1.0,1.0,1.0,7
+normal,594,no-8x8dct = 1 AND no-weightb = 1 AND cpu-independent = 1,no-8x8dct >= 1.0  AND  no-weightb >= 1.0  AND  cpu-independent >= 1.0,0.0,1.0,1.0,1.0,80
+uniform,594,no-8x8dct = 1 AND no-weightb = 1 AND cpu-independent = 1,no-weightb >= 1.0  AND  cpu-independent >= 1.0  AND  no-8x8dct >= 1.0,0.0,1.0,1.0,1.0,80
+bi_modal_split,594,no-8x8dct = 1 AND no-weightb = 1 AND cpu-independent = 1,no-8x8dct >= 1.0  AND  no-weightb >= 1.0  AND  cpu-independent >= 1.0,0.0,1.0,1.0,1.0,80
+tri_modal_split,594,no-8x8dct = 1 AND no-weightb = 1 AND cpu-independent = 1,no-8x8dct >= 1.0  AND  no-weightb >= 1.0  AND  cpu-independent >= 1.0,0.0,1.0,1.0,1.0,80
+power_law,0,no-8x8dct = 1 AND no-weightb = 1 AND cpu-independent = 1,,,0.0,0.0,0.0,80
+normal,601,no-chroma-me = 1 AND no-mbtree = 1 AND cpu-independent = 1,no-chroma-me >= 1.0  AND  no-mbtree >= 1.0  AND  cpu-independent >= 1.0,0.0,1.0,1.0,1.0,81
+uniform,601,no-chroma-me = 1 AND no-mbtree = 1 AND cpu-independent = 1,no-chroma-me >= 1.0  AND  no-mbtree >= 1.0  AND  cpu-independent >= 1.0,0.0,1.0,1.0,1.0,81
+bi_modal_split,601,no-chroma-me = 1 AND no-mbtree = 1 AND cpu-independent = 1,no-psy >= 1.0  AND  no-mbtree >= 1.0  AND  cpu-independent >= 1.0  AND  no-chroma-me >= 1.0,0.0,0.9002744739249771,1.0,0.8186356073211315,81
+tri_modal_split,601,no-chroma-me = 1 AND no-mbtree = 1 AND cpu-independent = 1,no-chroma-me >= 1.0  AND  no-mbtree >= 1.0  AND  slow-firstpass >= 1.0  AND  cpu-independent >= 1.0,0.0,0.8921658986175115,1.0,0.8053244592346089,81
+power_law,601,no-chroma-me = 1 AND no-mbtree = 1 AND cpu-independent = 1,no-chroma-me >= 1.0  AND  no-mbtree >= 1.0  AND  cpu-independent >= 1.0,0.0,1.0,1.0,1.0,81
+normal,562,no-deblock = 1 AND no-mbtree = 1 AND cpu-independent = 1,pic-struct >= 1.0  AND  cpu-independent >= 1.0  AND  no-deblock >= 1.0  AND  no-mbtree >= 1.0,0.0,0.9213051823416508,1.0,0.8540925266903915,82
+uniform,562,no-deblock = 1 AND no-mbtree = 1 AND cpu-independent = 1,no-deblock >= 1.0  AND  no-mbtree >= 1.0  AND  slow-firstpass >= 1.0  AND  cpu-independent >= 1.0,0.0,0.8904244817374136,1.0,0.802491103202847,82
+bi_modal_split,562,no-deblock = 1 AND no-mbtree = 1 AND cpu-independent = 1,no-mbtree >= 1.0  AND  cpu-independent >= 1.0  AND  no-deblock >= 1.0,0.0,1.0,1.0,1.0,82
+tri_modal_split,562,no-deblock = 1 AND no-mbtree = 1 AND cpu-independent = 1,no-deblock >= 1.0  AND  tff >= 1.0  AND  cpu-independent >= 1.0  AND  no-mbtree >= 1.0,0.0,0.9192307692307692,1.0,0.8505338078291815,82
+power_law,0,no-deblock = 1 AND no-mbtree = 1 AND cpu-independent = 1,,,0.0,0.0,0.0,82
+normal,605,no-cabac = 1 AND cpu-independent = 1 AND aud = 1,no-cabac >= 1.0  AND  aud >= 1.0  AND  cpu-independent >= 1.0  AND  no-psy >= 1.0,0.0,0.8733705772811917,1.0,0.775206611570248,83
+uniform,605,no-cabac = 1 AND cpu-independent = 1 AND aud = 1,no-cabac >= 1.0  AND  cpu-independent >= 1.0  AND  aud >= 1.0,0.0,1.0,1.0,1.0,83
+bi_modal_split,605,no-cabac = 1 AND cpu-independent = 1 AND aud = 1,cpu-independent >= 1.0  AND  aud >= 1.0  AND  no-cabac >= 1.0,0.0,1.0,1.0,1.0,83
+tri_modal_split,605,no-cabac = 1 AND cpu-independent = 1 AND aud = 1,no-cabac >= 1.0  AND  non-deterministic >= 1.0  AND  aud >= 1.0  AND  cpu-independent >= 1.0,0.0,0.944153577661431,1.0,0.8942148760330578,83
+power_law,605,no-cabac = 1 AND cpu-independent = 1 AND aud = 1,cpu-independent >= 1.0  AND  aud >= 1.0  AND  intra-refresh >= 1.0  AND  no-cabac >= 1.0,0.0,0.8919413919413919,1.0,0.8049586776859504,83
+normal,596,no-deblock = 1 AND no-dct-decimate = 1 AND cpu-independent = 1,no-dct-decimate >= 1.0  AND  cpu-independent >= 1.0  AND  pic-struct >= 1.0  AND  no-deblock >= 1.0,0.0,0.9376114081996436,1.0,0.8825503355704698,84
+uniform,596,no-deblock = 1 AND no-dct-decimate = 1 AND cpu-independent = 1,no-dct-decimate >= 1.0  AND  cpu-independent >= 1.0  AND  no-deblock >= 1.0,0.0,1.0,1.0,1.0,84
+bi_modal_split,596,no-deblock = 1 AND no-dct-decimate = 1 AND cpu-independent = 1,no-deblock >= 1.0  AND  no-dct-decimate >= 1.0  AND  non-deterministic >= 1.0  AND  cpu-independent >= 1.0,0.0,0.927092709270927,1.0,0.8640939597315436,84
+tri_modal_split,596,no-deblock = 1 AND no-dct-decimate = 1 AND cpu-independent = 1,no-cabac >= 1.0  AND  cpu-independent >= 1.0  AND  no-deblock >= 1.0  AND  no-dct-decimate >= 1.0,0.0,0.8859813084112149,1.0,0.7953020134228188,84
+power_law,596,no-deblock = 1 AND no-dct-decimate = 1 AND cpu-independent = 1,no-deblock >= 1.0  AND  no-dct-decimate >= 1.0  AND  cpu-independent >= 1.0,0.0,1.0,1.0,1.0,84
+normal,621,slow-firstpass = 1 AND no-8x8dct = 1 AND cpu-independent = 1,no-8x8dct >= 1.0  AND  cpu-independent >= 1.0  AND  slow-firstpass >= 1.0,2.0,1.0,1.0,1.0,85
+uniform,621,slow-firstpass = 1 AND no-8x8dct = 1 AND cpu-independent = 1,slow-firstpass >= 1.0  AND  cpu-independent >= 1.0  AND  no-8x8dct >= 1.0,0.0,1.0,1.0,1.0,85
+bi_modal_split,621,slow-firstpass = 1 AND no-8x8dct = 1 AND cpu-independent = 1,no-8x8dct >= 1.0  AND  cpu-independent >= 1.0  AND  slow-firstpass >= 1.0,2.0,1.0,1.0,1.0,85
+tri_modal_split,621,slow-firstpass = 1 AND no-8x8dct = 1 AND cpu-independent = 1,no-8x8dct >= 1.0  AND  cpu-independent >= 1.0  AND  slow-firstpass >= 1.0,2.0,1.0,1.0,1.0,85
+power_law,621,slow-firstpass = 1 AND no-8x8dct = 1 AND cpu-independent = 1,slow-firstpass >= 1.0  AND  cpu-independent >= 1.0  AND  no-8x8dct >= 1.0,0.0,1.0,1.0,1.0,85
+normal,615,intra-refresh = 1 AND tff = 1 AND cpu-independent = 1,tff >= 1.0  AND  cpu-independent >= 1.0  AND  no-weightb >= 1.0  AND  intra-refresh >= 1.0,0.0,0.8547486033519553,1.0,0.7463414634146341,86
+uniform,615,intra-refresh = 1 AND tff = 1 AND cpu-independent = 1,tff >= 1.0  AND  cpu-independent >= 1.0  AND  intra-refresh >= 1.0,2.0,1.0,1.0,1.0,86
+bi_modal_split,615,intra-refresh = 1 AND tff = 1 AND cpu-independent = 1,intra-refresh >= 1.0  AND  cpu-independent >= 1.0  AND  tff >= 1.0,0.0,1.0,1.0,1.0,86
+tri_modal_split,615,intra-refresh = 1 AND tff = 1 AND cpu-independent = 1,intra-refresh >= 1.0  AND  cpu-independent >= 1.0  AND  tff >= 1.0,0.0,1.0,1.0,1.0,86
+power_law,615,intra-refresh = 1 AND tff = 1 AND cpu-independent = 1,intra-refresh >= 1.0  AND  cpu-independent >= 1.0  AND  tff >= 1.0,0.0,1.0,1.0,1.0,86
+normal,619,tff = 1 AND no-weightb = 1 AND aud = 1,no-weightb >= 1.0  AND  aud >= 1.0  AND  tff >= 1.0,0.0,1.0,1.0,1.0,87
+uniform,619,tff = 1 AND no-weightb = 1 AND aud = 1,tff >= 1.0  AND  no-weightb >= 1.0  AND  aud >= 1.0,0.0,1.0,1.0,1.0,87
+bi_modal_split,619,tff = 1 AND no-weightb = 1 AND aud = 1,tff >= 1.0  AND  aud >= 1.0  AND  no-weightb >= 1.0,0.0,1.0,1.0,1.0,87
+tri_modal_split,619,tff = 1 AND no-weightb = 1 AND aud = 1,tff >= 1.0  AND  no-weightb >= 1.0  AND  aud >= 1.0,0.0,1.0,1.0,1.0,87
+power_law,619,tff = 1 AND no-weightb = 1 AND aud = 1,tff >= 1.0  AND  no-weightb >= 1.0  AND  aud >= 1.0  AND  0.0 <= intra-refresh < 1.0,0.0,0.3963730569948187,1.0,0.2471728594507269,87
+normal,617,no-8x8dct = 1 AND no-weightb = 1 AND aud = 1,no-8x8dct >= 1.0  AND  dts-compress >= 1.0  AND  no-weightb >= 1.0  AND  aud >= 1.0,0.0,0.9175438596491228,1.0,0.8476499189627229,88
+uniform,617,no-8x8dct = 1 AND no-weightb = 1 AND aud = 1,no-8x8dct >= 1.0  AND  no-weightb >= 1.0  AND  aud >= 1.0,0.0,1.0,1.0,1.0,88
+bi_modal_split,617,no-8x8dct = 1 AND no-weightb = 1 AND aud = 1,no-8x8dct >= 1.0  AND  aud >= 1.0  AND  0.0 <= sliced-threads < 1.0  AND  no-weightb >= 1.0,0.0,0.902135231316726,1.0,0.8217179902755267,88
+tri_modal_split,617,no-8x8dct = 1 AND no-weightb = 1 AND aud = 1,no-8x8dct >= 1.0  AND  aud >= 1.0  AND  open-gop >= 1.0  AND  no-weightb >= 1.0,0.0,0.8761384335154827,1.0,0.779578606158833,88
+power_law,0,no-8x8dct = 1 AND no-weightb = 1 AND aud = 1,,,0.0,0.0,0.0,88
+normal,622,no-deblock = 1 AND no-weightb = 1 AND dts-compress = 1,no-deblock >= 1.0  AND  dts-compress >= 1.0  AND  constrained-intra >= 1.0  AND  no-weightb >= 1.0,0.0,0.892252894033838,1.0,0.8054662379421221,89
+uniform,622,no-deblock = 1 AND no-weightb = 1 AND dts-compress = 1,no-weightb >= 1.0  AND  dts-compress >= 1.0  AND  no-deblock >= 1.0,0.0,1.0,1.0,1.0,89
+bi_modal_split,622,no-deblock = 1 AND no-weightb = 1 AND dts-compress = 1,no-deblock >= 1.0  AND  dts-compress >= 1.0  AND  no-weightb >= 1.0,0.0,1.0,1.0,1.0,89
+tri_modal_split,622,no-deblock = 1 AND no-weightb = 1 AND dts-compress = 1,no-weightb >= 1.0  AND  dts-compress >= 1.0  AND  no-deblock >= 1.0,0.0,1.0,1.0,1.0,89
+power_law,622,no-deblock = 1 AND no-weightb = 1 AND dts-compress = 1,no-deblock >= 1.0  AND  dts-compress >= 1.0  AND  no-weightb >= 1.0,0.0,1.0,1.0,1.0,89
+normal,620,no-fast-pskip = 1 AND cpu-independent = 1 AND opencl = 1,no-fast-pskip >= 1.0  AND  opencl >= 1.0  AND  cpu-independent >= 1.0,4.0,1.0,1.0,1.0,8
+uniform,620,no-fast-pskip = 1 AND cpu-independent = 1 AND opencl = 1,no-fast-pskip >= 1.0  AND  cpu-independent >= 1.0  AND  opencl >= 1.0,0.0,1.0,1.0,1.0,8
+bi_modal_split,620,no-fast-pskip = 1 AND cpu-independent = 1 AND opencl = 1,cpu-independent >= 1.0  AND  opencl >= 1.0  AND  no-fast-pskip >= 1.0,0.0,1.0,1.0,1.0,8
+tri_modal_split,620,no-fast-pskip = 1 AND cpu-independent = 1 AND opencl = 1,cpu-independent >= 1.0  AND  opencl >= 1.0  AND  no-fast-pskip >= 1.0,0.0,1.0,1.0,1.0,8
+power_law,620,no-fast-pskip = 1 AND cpu-independent = 1 AND opencl = 1,no-fast-pskip >= 1.0  AND  cpu-independent >= 1.0  AND  opencl >= 1.0,0.0,1.0,1.0,1.0,8
+normal,607,no-scenecut = 1 AND no-mbtree = 1 AND cpu-independent = 1,non-deterministic >= 1.0  AND  cpu-independent >= 1.0  AND  no-mbtree >= 1.0  AND  no-scenecut >= 1.0,0.0,0.9350877192982456,1.0,0.8780889621087314,90
+uniform,607,no-scenecut = 1 AND no-mbtree = 1 AND cpu-independent = 1,no-scenecut >= 1.0  AND  no-mbtree >= 1.0  AND  cpu-independent >= 1.0,0.0,1.0,1.0,1.0,90
+bi_modal_split,607,no-scenecut = 1 AND no-mbtree = 1 AND cpu-independent = 1,no-mbtree >= 1.0  AND  cpu-independent >= 1.0  AND  no-scenecut >= 1.0,2.0,1.0,1.0,1.0,90
+tri_modal_split,607,no-scenecut = 1 AND no-mbtree = 1 AND cpu-independent = 1,no-mbtree >= 1.0  AND  cpu-independent >= 1.0  AND  no-8x8dct >= 1.0  AND  no-scenecut >= 1.0,0.0,0.8717472118959109,1.0,0.7726523887973641,90
+power_law,607,no-scenecut = 1 AND no-mbtree = 1 AND cpu-independent = 1,no-mbtree >= 1.0  AND  cpu-independent >= 1.0  AND  no-scenecut >= 1.0,0.0,1.0,1.0,1.0,90
+normal,592,no-chroma-me = 1 AND cpu-independent = 1 AND aud = 1,no-chroma-me >= 1.0  AND  aud >= 1.0  AND  cpu-independent >= 1.0,0.0,1.0,1.0,1.0,91
+uniform,592,no-chroma-me = 1 AND cpu-independent = 1 AND aud = 1,cpu-independent >= 1.0  AND  no-asm >= 1.0  AND  aud >= 1.0  AND  no-chroma-me >= 1.0,0.0,0.9255898366606172,1.0,0.8614864864864865,91
+bi_modal_split,592,no-chroma-me = 1 AND cpu-independent = 1 AND aud = 1,pic-struct >= 1.0  AND  cpu-independent >= 1.0  AND  no-chroma-me >= 1.0  AND  aud >= 1.0,0.0,0.9006499535747446,1.0,0.8192567567567568,91
+tri_modal_split,592,no-chroma-me = 1 AND cpu-independent = 1 AND aud = 1,cpu-independent >= 1.0  AND  aud >= 1.0  AND  0.0 <= sliced-threads < 1.0  AND  no-chroma-me >= 1.0,0.0,0.9067405355493998,1.0,0.8293918918918919,91
+power_law,592,no-chroma-me = 1 AND cpu-independent = 1 AND aud = 1,cpu-independent >= 1.0  AND  aud >= 1.0  AND  no-chroma-me >= 1.0,0.0,1.0,1.0,1.0,91
+normal,621,no-cabac = 1 AND no-dct-decimate = 1 AND cpu-independent = 1,no-dct-decimate >= 1.0  AND  cpu-independent >= 1.0  AND  non-deterministic >= 1.0  AND  no-cabac >= 1.0,0.0,0.9366438356164384,1.0,0.8808373590982287,92
+uniform,621,no-cabac = 1 AND no-dct-decimate = 1 AND cpu-independent = 1,no-cabac >= 1.0  AND  no-dct-decimate >= 1.0  AND  cpu-independent >= 1.0,0.0,1.0,1.0,1.0,92
+bi_modal_split,621,no-cabac = 1 AND no-dct-decimate = 1 AND cpu-independent = 1,no-dct-decimate >= 1.0  AND  cpu-independent >= 1.0  AND  no-cabac >= 1.0,0.0,1.0,1.0,1.0,92
+tri_modal_split,621,no-cabac = 1 AND no-dct-decimate = 1 AND cpu-independent = 1,no-chroma-me >= 1.0  AND  no-dct-decimate >= 1.0  AND  cpu-independent >= 1.0  AND  no-cabac >= 1.0,0.0,0.8750000000000001,1.0,0.7777777777777778,92
+power_law,0,no-cabac = 1 AND no-dct-decimate = 1 AND cpu-independent = 1,,,0.0,0.0,0.0,92
+normal,596,no-dct-decimate = 1 AND cpu-independent = 1 AND aud = 1,cpu-independent >= 1.0  AND  aud >= 1.0  AND  0.0 <= sliced-threads < 1.0  AND  no-dct-decimate >= 1.0,0.0,0.9023941068139965,1.0,0.8221476510067114,93
+uniform,596,no-dct-decimate = 1 AND cpu-independent = 1 AND aud = 1,cpu-independent >= 1.0  AND  aud >= 1.0  AND  no-dct-decimate >= 1.0,0.0,1.0,1.0,1.0,93
+bi_modal_split,596,no-dct-decimate = 1 AND cpu-independent = 1 AND aud = 1,cpu-independent >= 1.0  AND  aud >= 1.0  AND  no-dct-decimate >= 1.0,0.0,1.0,1.0,1.0,93
+tri_modal_split,596,no-dct-decimate = 1 AND cpu-independent = 1 AND aud = 1,no-dct-decimate >= 1.0  AND  aud >= 1.0  AND  no-cabac >= 1.0  AND  cpu-independent >= 1.0,0.0,0.8754716981132076,1.0,0.7785234899328859,93
+power_law,0,no-dct-decimate = 1 AND cpu-independent = 1 AND aud = 1,,,0.0,0.0,0.0,93
+normal,562,no-deblock = 1 AND no-mbtree = 1 AND cpu-independent = 1,no-mbtree >= 1.0  AND  cpu-independent >= 1.0  AND  no-deblock >= 1.0,4.0,1.0,1.0,1.0,94
+uniform,562,no-deblock = 1 AND no-mbtree = 1 AND cpu-independent = 1,constrained-intra >= 1.0  AND  no-mbtree >= 1.0  AND  cpu-independent >= 1.0  AND  no-deblock >= 1.0,0.0,0.9034146341463416,1.0,0.8238434163701067,94
+bi_modal_split,562,no-deblock = 1 AND no-mbtree = 1 AND cpu-independent = 1,no-mbtree >= 1.0  AND  cpu-independent >= 1.0  AND  bff >= 1.0  AND  no-deblock >= 1.0,0.0,0.9012707722385142,1.0,0.8202846975088968,94
+tri_modal_split,562,no-deblock = 1 AND no-mbtree = 1 AND cpu-independent = 1,no-deblock >= 1.0  AND  cpu-independent >= 1.0  AND  slow-firstpass >= 1.0  AND  no-mbtree >= 1.0,1.0,0.8904244817374136,1.0,0.802491103202847,94
+power_law,0,no-deblock = 1 AND no-mbtree = 1 AND cpu-independent = 1,,,0.0,0.0,0.0,94
+normal,597,open-gop = 1 AND no-8x8dct = 1 AND cpu-independent = 1,open-gop >= 1.0  AND  no-8x8dct >= 1.0  AND  cpu-independent >= 1.0,0.0,1.0,1.0,1.0,95
+uniform,597,open-gop = 1 AND no-8x8dct = 1 AND cpu-independent = 1,open-gop >= 1.0  AND  no-8x8dct >= 1.0  AND  cpu-independent >= 1.0,0.0,1.0,1.0,1.0,95
+bi_modal_split,597,open-gop = 1 AND no-8x8dct = 1 AND cpu-independent = 1,no-8x8dct >= 1.0  AND  cpu-independent >= 1.0  AND  no-dct-decimate >= 1.0  AND  open-gop >= 1.0,0.0,0.8851540616246498,1.0,0.7939698492462312,95
+tri_modal_split,597,open-gop = 1 AND no-8x8dct = 1 AND cpu-independent = 1,open-gop >= 1.0  AND  cpu-independent >= 1.0  AND  no-8x8dct >= 1.0  AND  aud >= 1.0,0.0,0.8519230769230769,1.0,0.7420435510887772,95
+power_law,597,open-gop = 1 AND no-8x8dct = 1 AND cpu-independent = 1,no-8x8dct >= 1.0  AND  cpu-independent >= 1.0  AND  open-gop >= 1.0,0.0,1.0,1.0,1.0,95
+normal,608,no-cabac = 1 AND no-psy = 1 AND cpu-independent = 1,no-psy >= 1.0  AND  cpu-independent >= 1.0  AND  no-cabac >= 1.0,0.0,1.0,1.0,1.0,96
+uniform,608,no-cabac = 1 AND no-psy = 1 AND cpu-independent = 1,no-cabac >= 1.0  AND  no-mbtree >= 1.0  AND  cpu-independent >= 1.0  AND  no-psy >= 1.0,0.0,0.862488306828812,1.0,0.7582236842105263,96
+bi_modal_split,608,no-cabac = 1 AND no-psy = 1 AND cpu-independent = 1,no-cabac >= 1.0  AND  no-psy >= 1.0  AND  cpu-independent >= 1.0  AND  no-mbtree >= 1.0,0.0,0.862488306828812,1.0,0.7582236842105263,96
+tri_modal_split,608,no-cabac = 1 AND no-psy = 1 AND cpu-independent = 1,no-cabac >= 1.0  AND  cpu-independent >= 1.0  AND  no-psy >= 1.0,0.0,1.0,1.0,1.0,96
+power_law,608,no-cabac = 1 AND no-psy = 1 AND cpu-independent = 1,no-cabac >= 1.0  AND  no-psy >= 1.0  AND  cpu-independent >= 1.0,0.0,1.0,1.0,1.0,96
+normal,619,no-mbtree = 1 AND cpu-independent = 1 AND dts-compress = 1,no-mbtree >= 1.0  AND  cpu-independent >= 1.0  AND  dts-compress >= 1.0,2.0,1.0,1.0,1.0,97
+uniform,619,no-mbtree = 1 AND cpu-independent = 1 AND dts-compress = 1,no-mbtree >= 1.0  AND  cpu-independent >= 1.0  AND  dts-compress >= 1.0,0.0,1.0,1.0,1.0,97
+bi_modal_split,619,no-mbtree = 1 AND cpu-independent = 1 AND dts-compress = 1,cpu-independent >= 1.0  AND  dts-compress >= 1.0  AND  no-chroma-me >= 1.0  AND  no-mbtree >= 1.0,0.0,0.8745454545454545,1.0,0.777059773828756,97
+tri_modal_split,619,no-mbtree = 1 AND cpu-independent = 1 AND dts-compress = 1,no-mbtree >= 1.0  AND  cpu-independent >= 1.0  AND  aud >= 1.0  AND  dts-compress >= 1.0,0.0,0.9092511013215858,1.0,0.8336025848142165,97
+power_law,0,no-mbtree = 1 AND cpu-independent = 1 AND dts-compress = 1,,,0.0,0.0,0.0,97
+normal,620,no-fast-pskip = 1 AND cpu-independent = 1 AND opencl = 1,bff >= 1.0  AND  cpu-independent >= 1.0  AND  opencl >= 1.0  AND  no-fast-pskip >= 1.0,0.0,0.8747731397459166,1.0,0.7774193548387097,98
+uniform,620,no-fast-pskip = 1 AND cpu-independent = 1 AND opencl = 1,no-fast-pskip >= 1.0  AND  cpu-independent >= 1.0  AND  opencl >= 1.0  AND  slow-firstpass >= 1.0,0.0,0.8938447814451382,1.0,0.8080645161290323,98
+bi_modal_split,620,no-fast-pskip = 1 AND cpu-independent = 1 AND opencl = 1,no-fast-pskip >= 1.0  AND  opencl >= 1.0  AND  cpu-independent >= 1.0,0.0,1.0,1.0,1.0,98
+tri_modal_split,620,no-fast-pskip = 1 AND cpu-independent = 1 AND opencl = 1,cpu-independent >= 1.0  AND  opencl >= 1.0  AND  no-fast-pskip >= 1.0  AND  slow-firstpass >= 1.0,0.0,0.8938447814451382,1.0,0.8080645161290323,98
+power_law,620,no-fast-pskip = 1 AND cpu-independent = 1 AND opencl = 1,no-fast-pskip >= 1.0  AND  cpu-independent >= 1.0  AND  opencl >= 1.0,0.0,1.0,1.0,1.0,98
+normal,611,open-gop = 1 AND no-mbtree = 1 AND cpu-independent = 1,no-mbtree >= 1.0  AND  cpu-independent >= 1.0  AND  open-gop >= 1.0  AND  no-mixed-refs >= 1.0,0.0,0.8685185185185186,1.0,0.7675941080196399,99
+uniform,611,open-gop = 1 AND no-mbtree = 1 AND cpu-independent = 1,open-gop >= 1.0  AND  no-mbtree >= 1.0  AND  cpu-independent >= 1.0,0.0,1.0,1.0,1.0,99
+bi_modal_split,611,open-gop = 1 AND no-mbtree = 1 AND cpu-independent = 1,open-gop >= 1.0  AND  cpu-independent >= 1.0  AND  non-deterministic >= 1.0  AND  no-mbtree >= 1.0,0.0,0.9364664926022628,1.0,0.8805237315875614,99
+tri_modal_split,611,open-gop = 1 AND no-mbtree = 1 AND cpu-independent = 1,no-mbtree >= 1.0  AND  cpu-independent >= 1.0  AND  open-gop >= 1.0,0.0,1.0,1.0,1.0,99
+power_law,611,open-gop = 1 AND no-mbtree = 1 AND cpu-independent = 1,open-gop >= 1.0  AND  no-mbtree >= 1.0  AND  cpu-independent >= 1.0,0.0,1.0,1.0,1.0,99
+normal,556,no-8x8dct = 1 AND cpu-independent = 1 AND aud = 1,no-8x8dct >= 1.0  AND  cpu-independent >= 1.0  AND  aud >= 1.0,0.0,1.0,1.0,1.0,9
+uniform,556,no-8x8dct = 1 AND cpu-independent = 1 AND aud = 1,no-8x8dct >= 1.0  AND  cpu-independent >= 1.0  AND  aud >= 1.0,0.0,1.0,1.0,1.0,9
+bi_modal_split,556,no-8x8dct = 1 AND cpu-independent = 1 AND aud = 1,no-8x8dct >= 1.0  AND  no-weightb >= 1.0  AND  cpu-independent >= 1.0  AND  aud >= 1.0,0.0,0.8676171079429734,1.0,0.7661870503597122,9
+tri_modal_split,556,no-8x8dct = 1 AND cpu-independent = 1 AND aud = 1,no-8x8dct >= 1.0  AND  cpu-independent >= 1.0  AND  aud >= 1.0,0.0,1.0,1.0,1.0,9
+power_law,556,no-8x8dct = 1 AND cpu-independent = 1 AND aud = 1,cpu-independent >= 1.0  AND  aud >= 1.0  AND  no-8x8dct >= 1.0,0.0,1.0,1.0,1.0,9

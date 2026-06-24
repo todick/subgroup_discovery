@@ -1,0 +1,6 @@
+rule,sg_samples,sg_coverage,rule_num_predicates,rule_features_used
+NewRatio > 12.0 AND UseAdaptiveSizePolicy AND SurvivorRatio <= 3.5 AND NewRatio > 24.0,2304,0.011904761904761904,4,"['UseAdaptiveSizePolicy', 'SurvivorRatio', 'NewRatio']"
+NewRatio > 12.0 AND UseAdaptiveSizePolicy AND SurvivorRatio <= 3.5 AND NewRatio > 24.0 AND MaxTenuringThreshold > 7.5,1536,0.007936507936507936,5,"['UseAdaptiveSizePolicy', 'SurvivorRatio', 'NewRatio', 'MaxTenuringThreshold']"
+NewRatio > 12.0 AND UseAdaptiveSizePolicy AND SurvivorRatio > 3.5 AND NewRatio > 24.0,13824,0.07142857142857142,4,"['UseAdaptiveSizePolicy', 'SurvivorRatio', 'NewRatio']"
+NewRatio > 12.0 AND UseAdaptiveSizePolicy AND SurvivorRatio <= 3.5 AND NewRatio > 24.0 AND MaxTenuringThreshold <= 7.5,768,0.003968253968253968,5,"['UseAdaptiveSizePolicy', 'SurvivorRatio', 'NewRatio', 'MaxTenuringThreshold']"
+NewRatio <= 12.0 AND NewRatio <= 6.0 AND NewRatio <= 3.0,64512,0.3333333333333333,3,['NewRatio']

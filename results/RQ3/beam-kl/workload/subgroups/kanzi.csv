@@ -1,0 +1,6 @@
+rule,sg_samples,sg_coverage,rule_num_predicates,rule_features_used
+TPAQX==1 AND ROLZ==1 AND ROLZX==1 AND jobs==8 AND blocksize==1000,19,0.004620622568093385,5,"['blocksize', 'ROLZ', 'ROLZX', 'TPAQX', 'jobs']"
+TPAQX==1 AND ROLZX==1 AND blocksize==1000 AND BWTS==1,80,0.019455252918287938,4,"['BWTS', 'ROLZX', 'blocksize', 'TPAQX']"
+TPAQX==1 AND ROLZX==1 AND blocksize==1000 AND TPAQ==0 AND BWTS==1,80,0.019455252918287938,5,"['BWTS', 'blocksize', 'TPAQ', 'ROLZX', 'TPAQX']"
+TPAQX==1 AND ROLZX==1 AND blocksize==1000 AND workload==0 AND BWTS==1,80,0.019455252918287938,5,"['BWTS', 'workload', 'blocksize', 'ROLZX', 'TPAQX']"
+TPAQX==1 AND ROLZX==1 AND Huffman==0 AND blocksize==1000 AND BWTS==1,80,0.019455252918287938,5,"['BWTS', 'blocksize', 'ROLZX', 'TPAQX', 'Huffman']"

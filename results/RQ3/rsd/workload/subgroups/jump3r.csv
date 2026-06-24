@@ -1,0 +1,16 @@
+rule,sg_samples,sg_coverage,rule_num_predicates,rule_features_used
+0.0 <= Mono < 1.0  AND  Resampling < 22.0  AND  Freeformat >= 1.0  AND  0.0 <= ReplayGainAccurate < 1.0  AND  0.0 <= Stereo < 1.0,225,0.053622497616777884,5,"['ReplayGainAccurate', 'Freeformat', 'Resampling', 'Mono', 'Stereo']"
+0.0 <= MidSideStereo < 1.0  AND  Resampling < 22.0  AND  0.0 <= JointStereo < 0.5  AND  0.0 <= ReplayGainAccurate < 1.0  AND  0.0 <= DualChannels < 1.0,217,0.05171591992373689,5,"['ReplayGainAccurate', 'JointStereo', 'Resampling', 'DualChannels', 'MidSideStereo']"
+Downmix >= 1.0  AND  Resampling < 22.0  AND  NoRes >= 1.0,516,0.12297426120114395,3,"['Resampling', 'Downmix', 'NoRes']"
+ReplayGainAccurate >= 1.0  AND  Resampling >= 48.0  AND  0.0 <= Mono < 1.0  AND  0.0 <= VBRRange < 1.0  AND  0.0 <= DualChannels < 1.0,216,0.05147759771210677,5,"['ReplayGainAccurate', 'VBRRange', 'Resampling', 'Mono', 'DualChannels']"
+Resampling < 22.0  AND  8.0 <= CBR < 320.0  AND  0.0 <= MidSideStereo < 1.0,609,0.14513822688274547,3,"['MidSideStereo', 'Resampling', 'CBR']"
+Mono >= 1.0  AND  Resampling < 44.0,383,0.09127740705433747,2,"['Resampling', 'Mono']"
+0.0 <= Mono < 1.0  AND  Resampling >= 48.0  AND  0.0 <= NoRes < 1.0  AND  0.0 <= VBRRange < 2.0,322,0.0767397521448999,4,"['Resampling', 'Mono', 'VBRRange', 'NoRes']"
+NoRes >= 1.0  AND  22.0 <= Resampling < 44.0  AND  0.0 <= VBRRange < 1.0  AND  0.0 <= ReplayGainAccurate < 1.0  AND  CRC >= 1.0,300,0.07149666348903717,5,"['ReplayGainAccurate', 'NoRes', 'CRC', 'VBRRange', 'Resampling']"
+0.0 <= Mono < 1.0  AND  Resampling >= 48.0,716,0.17063870352716873,2,"['Resampling', 'Mono']"
+0.0 <= DualChannels < 1.0  AND  22.0 <= Resampling < 44.0  AND  0.0 <= Stereo < 1.0  AND  0.0 <= NoReplayGain < 1.0,616,0.14680648236415633,4,"['Stereo', 'Resampling', 'DualChannels', 'NoReplayGain']"
+0.0 <= Stereo < 1.0  AND  Resampling < 44.0  AND  0.0 <= DualChannels < 1.0  AND  8.0 <= CBR < 320.0,1327,0.31625357483317446,4,"['Stereo', 'Resampling', 'CBR', 'DualChannels']"
+SwapBytes >= 1.0  AND  Resampling < 44.0,1414,0.3369876072449952,2,"['Resampling', 'SwapBytes']"
+ReplayGainAccurate >= 1.0  AND  44.0 <= Resampling < 48.0  AND  0.0 <= Mono < 1.0  AND  0.0 <= Stereo < 1.0,253,0.06029551954242136,4,"['ReplayGainAccurate', 'Stereo', 'Resampling', 'Mono']"
+Mono >= 1.0,645,0.15371782650142993,1,['Mono']
+22.0 <= Resampling < 44.0,1404,0.334604385128694,1,['Resampling']

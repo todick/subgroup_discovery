@@ -1,0 +1,6 @@
+rule,sg_samples,sg_coverage,rule_num_predicates,rule_features_used
+PostSmooting==0 AND CGSolver==1 AND PreSmoothing==1 AND cells_50==0,10,0.004340277777777778,4,"['PostSmooting', 'CGSolver', 'cells_50', 'PreSmoothing']"
+PostSmooting==0 AND CGSolver==1 AND LoopSolver==0 AND PreSmoothing==1 AND cells_50==0,10,0.004340277777777778,5,"['PreSmoothing', 'CGSolver', 'cells_50', 'PostSmooting', 'LoopSolver']"
+PostSmooting==0 AND CGSolver==1 AND GradientSolver==0 AND PreSmoothing==1 AND cells_50==0,10,0.004340277777777778,5,"['GradientSolver', 'PreSmoothing', 'CGSolver', 'cells_50', 'PostSmooting']"
+BiCGSTABSolver==0 AND PostSmooting==0 AND CGSolver==1 AND PreSmoothing==1 AND cells_50==0,10,0.004340277777777778,5,"['PostSmooting', 'PreSmoothing', 'CGSolver', 'cells_50', 'BiCGSTABSolver']"
+PostSmooting==0 AND CGSolver==1 AND PreSmoothing==1 AND cells_50==0 AND cells_51==0,8,0.003472222222222222,5,"['PreSmoothing', 'CGSolver', 'cells_50', 'PostSmooting', 'cells_51']"

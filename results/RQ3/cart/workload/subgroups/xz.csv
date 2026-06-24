@@ -1,0 +1,6 @@
+rule,sg_samples,sg_coverage,rule_num_predicates,rule_features_used
+Dict AND hc3 AND BlockSize AND Dist AND Depth,186,0.09304652326163082,5,"['hc3', 'Depth', 'BlockSize', 'Dict', 'Dist']"
+NOT Dict AND NOT Nice AND NOT Multithreading AND NOT Dist,503,0.25162581290645325,4,"['Nice', 'Multithreading', 'Dict', 'Dist']"
+NOT Dict AND NOT Nice AND NOT Multithreading,599,0.29964982491245623,3,"['Nice', 'Multithreading', 'Dict']"
+NOT Dict AND NOT Nice AND NOT Multithreading AND NOT Dist AND bt4,141,0.07053526763381691,5,"['Dict', 'bt4', 'Multithreading', 'Nice', 'Dist']"
+NOT Dict AND NOT Nice AND NOT Multithreading AND NOT Dist AND NOT bt4,362,0.18109054527263632,5,"['Dict', 'bt4', 'Multithreading', 'Nice', 'Dist']"

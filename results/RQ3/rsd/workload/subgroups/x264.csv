@@ -1,0 +1,15 @@
+rule,sg_samples,sg_coverage,rule_num_predicates,rule_features_used
+0.0 <= intra-refresh < 1.0  AND  0.0 <= no-asm < 1.0  AND  cpu-independent >= 1.0,162,0.05203983295856087,3,"['intra-refresh', 'cpu-independent', 'no-asm']"
+cpu-independent >= 1.0  AND  0.0 <= no-asm < 1.0,330,0.10600706713780919,2,"['no-asm', 'cpu-independent']"
+0.0 <= no-mbtree < 1.0  AND  0.0 <= no-asm < 1.0  AND  intra-refresh >= 1.0,250,0.08030838419530999,3,"['intra-refresh', 'no-asm', 'no-mbtree']"
+0.0 <= no-mbtree < 1.0  AND  0.0 <= no-asm < 1.0  AND  0.0 <= non-deterministic < 1.0  AND  0.0 <= sliced-threads < 1.0,615,0.19755862512046257,4,"['non-deterministic', 'no-asm', 'no-mbtree', 'sliced-threads']"
+0.0 <= no-mbtree < 1.0  AND  0.0 <= no-asm < 1.0,959,0.30806296177320913,2,"['no-asm', 'no-mbtree']"
+no-psy >= 1.0  AND  0.0 <= no-asm < 1.0,558,0.1792483135239319,2,"['no-psy', 'no-asm']"
+0.0 <= no-asm < 1.0,1501,0.48217153870864116,1,['no-asm']
+0.0 <= intra-refresh < 1.0  AND  0.0 <= cpu-independent < 1.0  AND  0.0 <= no-dct-decimate < 1.0  AND  0.0 <= no-psy < 1.0,604,0.19402505621586894,4,"['no-dct-decimate', 'intra-refresh', 'no-psy', 'cpu-independent']"
+no-mbtree >= 1.0  AND  cpu-independent >= 1.0  AND  no-psy >= 1.0  AND  intra-refresh >= 1.0  AND  0.0 <= sliced-threads < 1.0,382,0.12271121105043367,5,"['intra-refresh', 'no-mbtree', 'no-psy', 'sliced-threads', 'cpu-independent']"
+constrained-intra >= 1.0  AND  cpu-independent >= 1.0  AND  intra-refresh >= 1.0  AND  0.0 <= sliced-threads < 1.0,520,0.16704143912624478,4,"['intra-refresh', 'constrained-intra', 'cpu-independent', 'sliced-threads']"
+0.0 <= intra-refresh < 1.0  AND  cpu-independent >= 1.0  AND  no-psy >= 1.0,238,0.07645358175393512,3,"['no-psy', 'intra-refresh', 'cpu-independent']"
+0.0 <= no-psy < 1.0  AND  cpu-independent >= 1.0,442,0.14198522325730806,2,"['no-psy', 'cpu-independent']"
+0.0 <= no-psy < 1.0,1606,0.5159010600706714,1,['no-psy']
+0.0 <= cpu-independent < 1.0  AND  0.0 <= sliced-threads < 1.0,1547,0.49694828140057823,2,"['sliced-threads', 'cpu-independent']"

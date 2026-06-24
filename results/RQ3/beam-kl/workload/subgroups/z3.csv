@@ -1,0 +1,6 @@
+rule,sg_samples,sg_coverage,rule_num_predicates,rule_features_used
+debug_ref_count==0 AND proof==1 AND trace==0,96,0.09504950495049505,3,"['debug_ref_count', 'proof', 'trace']"
+workload==0 AND debug_ref_count==0 AND proof==1 AND trace==0,96,0.09504950495049505,4,"['debug_ref_count', 'proof', 'workload', 'trace']"
+well_sorted_check==0 AND debug_ref_count==0 AND proof==1 AND trace==0,70,0.06930693069306931,4,"['debug_ref_count', 'well_sorted_check', 'proof', 'trace']"
+well_sorted_check==0 AND workload==0 AND debug_ref_count==0 AND proof==1 AND trace==0,70,0.06930693069306931,5,"['proof', 'debug_ref_count', 'trace', 'well_sorted_check', 'workload']"
+well_sorted_check==0 AND debug_ref_count==0 AND proof==0 AND stats==0 AND trace==0,63,0.062376237623762376,5,"['proof', 'stats', 'debug_ref_count', 'trace', 'well_sorted_check']"

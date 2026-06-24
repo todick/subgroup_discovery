@@ -1,0 +1,501 @@
+sg_distribution,sg_cardinality,sg_rule,best_rule,best_rule_idx,f1,precision,recall,seed
+normal,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  filterOff >= 1.0  AND  mtOff >= 1.0  AND  HeaderCompressionOff >= 1.0,0,0.6666666666666666,1.0,0.5,0
+uniform,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,mtOff >= 1.0  AND  filterOff >= 1.0  AND  tmOff >= 1.0  AND  50.0 <= Files < 80.0,1,0.4285714285714285,1.0,0.2727272727272727,0
+bi_modal_split,8580,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,mtOff >= 1.0  AND  tmOff >= 1.0  AND  30.0 <= Files < 70.0  AND  HeaderCompressionOff >= 1.0,4,0.5333333333333333,1.0,0.3636363636363636,0
+tri_modal_split,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff >= 1.0  AND  filterOff >= 1.0  AND  Files >= 70.0  AND  tmOff >= 1.0,1,0.5333333333333333,1.0,0.3636363636363636,0
+power_law,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,mtOff >= 1.0  AND  filterOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  LZMA2 >= 1.0,0,0.3333333333333333,1.0,0.2,0
+normal,8580,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  mtOff >= 1.0  AND  x < 3.0,1,0.5,1.0,0.3333333333333333,10
+uniform,8580,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  BlockSize < 1024.0  AND  mtOff >= 1.0,1,0.8695652173913044,1.0,0.7692307692307693,10
+bi_modal_split,8580,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  mtOff >= 1.0  AND  60.0 <= Files < 90.0  AND  HeaderCompressionOff >= 1.0,1,0.4285714285714285,1.0,0.2727272727272727,10
+tri_modal_split,8580,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,mtOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  LZMA >= 1.0  AND  tmOff >= 1.0,0,0.3333333333333333,1.0,0.2,10
+power_law,8580,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  mtOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  x < 6.0,4,0.6666666666666666,1.0,0.5,10
+normal,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff >= 1.0  AND  filterOff >= 1.0  AND  BlockSize >= 128.0  AND  tmOff >= 1.0,0,0.631578947368421,1.0,0.4615384615384615,11
+uniform,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,filterOff >= 1.0  AND  tmOff >= 1.0  AND  x < 7.0  AND  HeaderCompressionOff >= 1.0,0,0.8,1.0,0.6666666666666666,11
+bi_modal_split,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,filterOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  tmOff >= 1.0  AND  2.0 <= x < 7.0,1,0.6666666666666666,1.0,0.5,11
+tri_modal_split,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff >= 1.0  AND  tmOff >= 1.0  AND  Files < 40.0  AND  filterOff >= 1.0,1,0.5333333333333333,1.0,0.3636363636363636,11
+power_law,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  filterOff >= 1.0  AND  2.0 <= x < 10.0,3,0.8,1.0,0.6666666666666666,11
+normal,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  filterOff >= 1.0  AND  mtOff >= 1.0,3,0.6666666666666666,1.0,0.5,12
+uniform,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  filterOff >= 1.0  AND  60.0 <= Files < 100.0,1,0.5333333333333333,1.0,0.3636363636363636,12
+bi_modal_split,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  filterOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  Files < 50.0,0,0.625,1.0,0.4545454545454545,12
+tri_modal_split,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  BlockSize < 8.0  AND  filterOff >= 1.0,0,0.375,1.0,0.2307692307692307,12
+power_law,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff >= 1.0  AND  tmOff >= 1.0  AND  filterOff >= 1.0  AND  50.0 <= Files < 90.0,0,0.5333333333333333,1.0,0.3636363636363636,12
+normal,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  filterOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  BlockSize < 16.0,1,0.4705882352941176,1.0,0.3076923076923077,13
+uniform,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  filterOff >= 1.0  AND  0.0 <= Deflate < 1.0,1,0.888888888888889,1.0,0.8,13
+bi_modal_split,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff >= 1.0  AND  tmOff >= 1.0  AND  filterOff >= 1.0  AND  mtOff >= 1.0,1,0.6666666666666666,1.0,0.5,13
+tri_modal_split,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,filterOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  Files < 40.0  AND  tmOff >= 1.0,1,0.5333333333333333,1.0,0.3636363636363636,13
+power_law,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,filterOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  128.0 <= BlockSize < 2048.0  AND  tmOff >= 1.0,3,0.4705882352941176,1.0,0.3076923076923077,13
+normal,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,filterOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  tmOff >= 1.0  AND  128.0 <= BlockSize < 4096.0,4,0.5555555555555556,1.0,0.3846153846153846,14
+uniform,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,filterOff >= 1.0  AND  tmOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  BlockSize >= 128.0,4,0.631578947368421,1.0,0.4615384615384615,14
+bi_modal_split,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff >= 1.0  AND  tmOff >= 1.0  AND  filterOff >= 1.0  AND  x >= 6.0,1,0.6666666666666666,1.0,0.5,14
+tri_modal_split,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  filterOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  64.0 <= BlockSize < 1024.0,1,0.4705882352941176,1.0,0.3076923076923077,14
+power_law,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,filterOff >= 1.0  AND  tmOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  0.0 <= LZMA2 < 1.0,3,0.888888888888889,1.0,0.8,14
+normal,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  filterOff >= 1.0  AND  Files < 50.0  AND  HeaderCompressionOff >= 1.0,0,0.625,1.0,0.4545454545454545,15
+uniform,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff >= 1.0  AND  filterOff >= 1.0  AND  tmOff >= 1.0  AND  Files >= 40.0,1,0.7777777777777778,1.0,0.6363636363636364,15
+bi_modal_split,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,filterOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  tmOff >= 1.0,0,1.0,1.0,1.0,15
+tri_modal_split,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff >= 1.0  AND  filterOff >= 1.0  AND  tmOff >= 1.0  AND  BlockSize >= 8.0,0,0.8695652173913044,1.0,0.7692307692307693,15
+power_law,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,filterOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  tmOff >= 1.0  AND  BlockSize >= 256.0,3,0.5555555555555556,1.0,0.3846153846153846,15
+normal,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,mtOff >= 1.0  AND  tmOff >= 1.0  AND  filterOff >= 1.0  AND  Files >= 70.0,1,0.5333333333333333,1.0,0.3636363636363636,16
+uniform,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  filterOff >= 1.0  AND  x < 6.0  AND  mtOff >= 1.0,0,0.6666666666666666,1.0,0.5,16
+bi_modal_split,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  mtOff >= 1.0  AND  filterOff >= 1.0  AND  70.0 <= Files < 100.0,1,0.4285714285714285,1.0,0.2727272727272727,16
+tri_modal_split,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  filterOff >= 1.0  AND  mtOff >= 1.0  AND  64.0 <= BlockSize < 1024.0,1,0.4705882352941176,1.0,0.3076923076923077,16
+power_law,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff >= 1.0  AND  mtOff >= 1.0  AND  tmOff >= 1.0  AND  Files < 40.0,0,0.5333333333333333,1.0,0.3636363636363636,16
+normal,8580,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,HeaderCompressionOff >= 1.0  AND  mtOff >= 1.0  AND  Files >= 80.0  AND  tmOff >= 1.0,1,0.4285714285714285,1.0,0.2727272727272727,17
+uniform,8580,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,mtOff >= 1.0  AND  tmOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  2.0 <= x < 7.0,1,0.6666666666666666,1.0,0.5,17
+bi_modal_split,8580,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  mtOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  3.0 <= x < 7.0,1,0.5,1.0,0.3333333333333333,17
+tri_modal_split,8580,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,HeaderCompressionOff >= 1.0  AND  tmOff >= 1.0  AND  mtOff >= 1.0  AND  x >= 7.0,1,0.5,1.0,0.3333333333333333,17
+power_law,8580,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  mtOff >= 1.0  AND  BlockSize >= 16.0,3,0.8181818181818181,1.0,0.6923076923076923,17
+normal,8580,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,HeaderCompressionOff >= 1.0  AND  tmOff >= 1.0  AND  mtOff >= 1.0  AND  2.0 <= BlockSize < 32.0,0,0.4705882352941176,1.0,0.3076923076923077,18
+uniform,8580,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,HeaderCompressionOff >= 1.0  AND  mtOff >= 1.0  AND  20.0 <= Files < 100.0  AND  tmOff >= 1.0,0,0.8421052631578948,1.0,0.7272727272727273,18
+bi_modal_split,8580,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,HeaderCompressionOff >= 1.0  AND  mtOff >= 1.0  AND  0.0 <= filterOff < 1.0  AND  tmOff >= 1.0,0,0.6666666666666666,1.0,0.5,18
+tri_modal_split,8580,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,mtOff >= 1.0  AND  tmOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  Files < 40.0,4,0.5333333333333333,1.0,0.3636363636363636,18
+power_law,8580,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,mtOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  tmOff >= 1.0  AND  Files < 50.0,1,0.625,1.0,0.4545454545454545,18
+normal,8580,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  mtOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  20.0 <= Files < 80.0,1,0.7058823529411764,1.0,0.5454545454545454,19
+uniform,8580,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,mtOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  tmOff >= 1.0  AND  filterOff >= 1.0,2,0.6666666666666666,1.0,0.5,19
+bi_modal_split,8580,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  mtOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  4.0 <= BlockSize < 64.0,1,0.4705882352941176,1.0,0.3076923076923077,19
+tri_modal_split,8580,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,mtOff >= 1.0  AND  tmOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  BlockSize >= 1024.0,0,0.375,1.0,0.2307692307692307,19
+power_law,8580,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  10.0 <= Files < 50.0  AND  mtOff >= 1.0,1,0.5333333333333333,1.0,0.3636363636363636,19
+normal,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,mtOff >= 1.0  AND  tmOff >= 1.0  AND  2.0 <= BlockSize < 32.0  AND  filterOff >= 1.0,0,0.4705882352941176,1.0,0.3076923076923077,1
+uniform,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,mtOff >= 1.0  AND  filterOff >= 1.0  AND  tmOff >= 1.0  AND  20.0 <= Files < 70.0,1,0.625,1.0,0.4545454545454545,1
+bi_modal_split,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff >= 1.0  AND  tmOff >= 1.0  AND  0.0 <= BZip2 < 1.0  AND  mtOff >= 1.0,1,0.888888888888889,1.0,0.8,1
+tri_modal_split,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,mtOff >= 1.0  AND  tmOff >= 1.0  AND  2.0 <= x < 6.0  AND  filterOff >= 1.0,0,0.5,1.0,0.3333333333333333,1
+power_law,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff >= 1.0  AND  mtOff >= 1.0  AND  tmOff >= 1.0  AND  4.0 <= BlockSize < 128.0,0,0.5555555555555556,1.0,0.3846153846153846,1
+normal,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  filterOff >= 1.0  AND  3.0 <= x < 7.0,0,0.5,1.0,0.3333333333333333,20
+uniform,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  filterOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  4.0 <= BlockSize < 256.0,1,0.631578947368421,1.0,0.4615384615384615,20
+bi_modal_split,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff >= 1.0  AND  filterOff >= 1.0  AND  tmOff >= 1.0,2,1.0,1.0,1.0,20
+tri_modal_split,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,filterOff >= 1.0  AND  tmOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  30.0 <= Files < 70.0,1,0.5333333333333333,1.0,0.3636363636363636,20
+power_law,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,filterOff >= 1.0  AND  tmOff >= 1.0  AND  mtOff >= 1.0  AND  HeaderCompressionOff >= 1.0,1,0.6666666666666666,1.0,0.5,20
+normal,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff >= 1.0  AND  tmOff >= 1.0  AND  mtOff >= 1.0  AND  50.0 <= Files < 90.0,1,0.5333333333333333,1.0,0.3636363636363636,21
+uniform,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff >= 1.0  AND  tmOff >= 1.0  AND  mtOff >= 1.0  AND  x >= 6.0,1,0.6666666666666666,1.0,0.5,21
+bi_modal_split,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  filterOff >= 1.0  AND  mtOff >= 1.0  AND  Files < 40.0,1,0.5333333333333333,1.0,0.3636363636363636,21
+tri_modal_split,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,mtOff >= 1.0  AND  filterOff >= 1.0  AND  x < 7.0  AND  tmOff >= 1.0,0,0.8,1.0,0.6666666666666666,21
+power_law,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  mtOff >= 1.0  AND  filterOff >= 1.0  AND  3.0 <= x < 7.0,0,0.5,1.0,0.3333333333333333,21
+normal,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  mtOff >= 1.0  AND  filterOff >= 1.0  AND  Files < 60.0,1,0.7058823529411764,1.0,0.5454545454545454,22
+uniform,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,mtOff >= 1.0  AND  tmOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  filterOff >= 1.0,1,0.6666666666666666,1.0,0.5,22
+bi_modal_split,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  mtOff >= 1.0  AND  6.0 <= x < 10.0  AND  filterOff >= 1.0,1,0.5,1.0,0.3333333333333333,22
+tri_modal_split,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,mtOff >= 1.0  AND  tmOff >= 1.0  AND  filterOff >= 1.0  AND  HeaderCompressionOff >= 1.0,1,0.6666666666666666,1.0,0.5,22
+power_law,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  filterOff >= 1.0  AND  mtOff >= 1.0  AND  64.0 <= BlockSize < 2048.0,1,0.5555555555555556,1.0,0.3846153846153846,22
+normal,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,mtOff >= 1.0  AND  filterOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  3.0 <= x < 10.0,1,0.6666666666666666,1.0,0.5,23
+uniform,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,mtOff >= 1.0  AND  filterOff >= 1.0  AND  BlockSize < 64.0  AND  HeaderCompressionOff >= 1.0,0,0.631578947368421,1.0,0.4615384615384615,23
+bi_modal_split,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,mtOff >= 1.0  AND  filterOff >= 1.0  AND  BlockSize < 16.0  AND  HeaderCompressionOff >= 1.0,1,0.4705882352941176,1.0,0.3076923076923077,23
+tri_modal_split,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,mtOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  4.0 <= x < 8.0  AND  filterOff >= 1.0,0,0.5,1.0,0.3333333333333333,23
+power_law,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,mtOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  20.0 <= Files < 70.0  AND  filterOff >= 1.0,3,0.625,1.0,0.4545454545454545,23
+normal,8580,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,HeaderCompressionOff >= 1.0  AND  mtOff >= 1.0  AND  filterOff >= 1.0  AND  tmOff >= 1.0,0,0.6666666666666666,1.0,0.5,24
+uniform,8580,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  mtOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  x >= 6.0,1,0.6666666666666666,1.0,0.5,24
+bi_modal_split,8580,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,HeaderCompressionOff >= 1.0  AND  tmOff >= 1.0  AND  mtOff >= 1.0  AND  x >= 7.0,1,0.5,1.0,0.3333333333333333,24
+tri_modal_split,8580,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,HeaderCompressionOff >= 1.0  AND  mtOff >= 1.0  AND  BlockSize < 1024.0  AND  tmOff >= 1.0,1,0.8695652173913044,1.0,0.7692307692307693,24
+power_law,8580,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  mtOff >= 1.0  AND  3.0 <= x < 10.0,4,0.6666666666666666,1.0,0.5,24
+normal,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,mtOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  filterOff >= 1.0  AND  Files < 30.0,1,0.4285714285714285,1.0,0.2727272727272727,25
+uniform,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,mtOff >= 1.0  AND  filterOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  6.0 <= x < 10.0,1,0.5,1.0,0.3333333333333333,25
+bi_modal_split,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff >= 1.0  AND  mtOff >= 1.0  AND  filterOff >= 1.0  AND  20.0 <= Files < 60.0,0,0.5333333333333333,1.0,0.3636363636363636,25
+tri_modal_split,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,mtOff >= 1.0  AND  filterOff >= 1.0  AND  x < 3.0  AND  HeaderCompressionOff >= 1.0,0,0.5,1.0,0.3333333333333333,25
+power_law,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff >= 1.0  AND  filterOff >= 1.0  AND  mtOff >= 1.0  AND  128.0 <= BlockSize < 1024.0,0,0.375,1.0,0.2307692307692307,25
+normal,8580,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,HeaderCompressionOff >= 1.0  AND  tmOff >= 1.0  AND  mtOff >= 1.0  AND  BlockSize < 64.0,1,0.631578947368421,1.0,0.4615384615384615,26
+uniform,8580,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,HeaderCompressionOff >= 1.0  AND  tmOff >= 1.0  AND  70.0 <= Files < 100.0  AND  mtOff >= 1.0,0,0.4285714285714285,1.0,0.2727272727272727,26
+bi_modal_split,8580,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,mtOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  30.0 <= Files < 70.0  AND  tmOff >= 1.0,1,0.5333333333333333,1.0,0.3636363636363636,26
+tri_modal_split,8580,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  mtOff >= 1.0  AND  filterOff >= 1.0  AND  HeaderCompressionOff >= 1.0,0,0.6666666666666666,1.0,0.5,26
+power_law,8580,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  mtOff >= 1.0  AND  x >= 8.0  AND  HeaderCompressionOff >= 1.0,1,0.5,1.0,0.3333333333333333,26
+normal,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  filterOff >= 1.0  AND  mtOff >= 1.0  AND  HeaderCompressionOff >= 1.0,0,0.6666666666666666,1.0,0.5,27
+uniform,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,mtOff >= 1.0  AND  filterOff >= 1.0  AND  tmOff >= 1.0  AND  32.0 <= BlockSize < 2048.0,1,0.631578947368421,1.0,0.4615384615384615,27
+bi_modal_split,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,mtOff >= 1.0  AND  tmOff >= 1.0  AND  filterOff >= 1.0  AND  x >= 6.0,0,0.6666666666666666,1.0,0.5,27
+tri_modal_split,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  filterOff >= 1.0  AND  BlockSize < 128.0  AND  mtOff >= 1.0,0,0.7000000000000001,1.0,0.5384615384615384,27
+power_law,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  mtOff >= 1.0  AND  70.0 <= Files < 100.0  AND  filterOff >= 1.0,1,0.4285714285714285,1.0,0.2727272727272727,27
+normal,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,mtOff >= 1.0  AND  tmOff >= 1.0  AND  filterOff >= 1.0  AND  30.0 <= Files < 60.0,1,0.4285714285714285,1.0,0.2727272727272727,28
+uniform,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  mtOff >= 1.0  AND  filterOff >= 1.0  AND  8.0 <= BlockSize < 64.0,0,0.375,1.0,0.2307692307692307,28
+bi_modal_split,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  filterOff >= 1.0  AND  2.0 <= x < 6.0  AND  mtOff >= 1.0,1,0.5,1.0,0.3333333333333333,28
+tri_modal_split,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,mtOff >= 1.0  AND  tmOff >= 1.0  AND  x >= 7.0  AND  filterOff >= 1.0,0,0.5,1.0,0.3333333333333333,28
+power_law,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,mtOff >= 1.0  AND  filterOff >= 1.0  AND  tmOff >= 1.0  AND  0.0 <= HeaderCompressionOff < 1.0,1,0.6666666666666666,1.0,0.5,28
+normal,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,filterOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  tmOff >= 1.0  AND  mtOff >= 1.0,4,0.6666666666666666,1.0,0.5,29
+uniform,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,filterOff >= 1.0  AND  mtOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  Files >= 30.0,1,0.8421052631578948,1.0,0.7272727272727273,29
+bi_modal_split,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,filterOff >= 1.0  AND  mtOff >= 1.0  AND  BlockSize >= 32.0  AND  HeaderCompressionOff >= 1.0,1,0.761904761904762,1.0,0.6153846153846154,29
+tri_modal_split,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,filterOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  Deflate >= 1.0  AND  mtOff >= 1.0,0,0.3333333333333333,1.0,0.2,29
+power_law,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,filterOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  mtOff >= 1.0  AND  tmOff >= 1.0,1,0.6666666666666666,1.0,0.5,29
+normal,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,mtOff >= 1.0  AND  filterOff >= 1.0  AND  tmOff >= 1.0  AND  Files >= 30.0,0,0.8421052631578948,1.0,0.7272727272727273,2
+uniform,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  filterOff >= 1.0  AND  mtOff >= 1.0  AND  Files >= 50.0,0,0.7058823529411764,1.0,0.5454545454545454,2
+bi_modal_split,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,mtOff >= 1.0  AND  filterOff >= 1.0  AND  0.0 <= LZMA < 1.0  AND  tmOff >= 1.0,0,0.888888888888889,1.0,0.8,2
+tri_modal_split,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,mtOff >= 1.0  AND  tmOff >= 1.0  AND  Files < 70.0  AND  filterOff >= 1.0,0,0.7777777777777778,1.0,0.6363636363636364,2
+power_law,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff >= 1.0  AND  mtOff >= 1.0  AND  tmOff >= 1.0  AND  16.0 <= BlockSize < 2048.0,1,0.7000000000000001,1.0,0.5384615384615384,2
+normal,8580,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,mtOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  tmOff >= 1.0  AND  x >= 6.0,4,0.6666666666666666,1.0,0.5,30
+uniform,8580,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,mtOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  tmOff >= 1.0  AND  0.0 <= filterOff < 1.0,1,0.6666666666666666,1.0,0.5,30
+bi_modal_split,8580,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,mtOff >= 1.0  AND  tmOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  filterOff >= 1.0,0,0.6666666666666666,1.0,0.5,30
+tri_modal_split,8580,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  mtOff >= 1.0  AND  Files >= 80.0  AND  HeaderCompressionOff >= 1.0,1,0.4285714285714285,1.0,0.2727272727272727,30
+power_law,8580,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  mtOff >= 1.0  AND  4.0 <= BlockSize < 256.0  AND  HeaderCompressionOff >= 1.0,3,0.631578947368421,1.0,0.4615384615384615,30
+normal,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff >= 1.0  AND  mtOff >= 1.0  AND  0.0 <= BZip2 < 1.0  AND  filterOff >= 1.0,1,0.888888888888889,1.0,0.8,31
+uniform,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,mtOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  BlockSize >= 512.0  AND  filterOff >= 1.0,1,0.4705882352941176,1.0,0.3076923076923077,31
+bi_modal_split,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,filterOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  BlockSize < 256.0  AND  mtOff >= 1.0,1,0.761904761904762,1.0,0.6153846153846154,31
+tri_modal_split,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff >= 1.0  AND  mtOff >= 1.0  AND  filterOff >= 1.0  AND  x >= 3.0,1,0.8,1.0,0.6666666666666666,31
+power_law,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,filterOff >= 1.0  AND  mtOff >= 1.0  AND  Files >= 70.0  AND  HeaderCompressionOff >= 1.0,2,0.5333333333333333,1.0,0.3636363636363636,31
+normal,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,filterOff >= 1.0  AND  mtOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  Files < 30.0,1,0.4285714285714285,1.0,0.2727272727272727,32
+uniform,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff >= 1.0  AND  filterOff >= 1.0  AND  mtOff >= 1.0  AND  BlockSize < 512.0,1,0.8181818181818181,1.0,0.6923076923076923,32
+bi_modal_split,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,mtOff >= 1.0  AND  filterOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  8.0 <= BlockSize < 128.0,1,0.4705882352941176,1.0,0.3076923076923077,32
+tri_modal_split,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff >= 1.0  AND  filterOff >= 1.0  AND  tmOff >= 1.0  AND  mtOff >= 1.0,1,0.6666666666666666,1.0,0.5,32
+power_law,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff >= 1.0  AND  mtOff >= 1.0  AND  4.0 <= x < 7.0  AND  filterOff >= 1.0,1,0.5,1.0,0.3333333333333333,32
+normal,8580,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,HeaderCompressionOff >= 1.0  AND  tmOff >= 1.0  AND  BlockSize < 32.0  AND  mtOff >= 1.0,1,0.5555555555555556,1.0,0.3846153846153846,33
+uniform,8580,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,mtOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  2.0 <= BlockSize < 32.0  AND  tmOff >= 1.0,1,0.4705882352941176,1.0,0.3076923076923077,33
+bi_modal_split,8580,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,mtOff >= 1.0  AND  tmOff >= 1.0  AND  4.0 <= x < 10.0  AND  HeaderCompressionOff >= 1.0,0,0.6666666666666666,1.0,0.5,33
+tri_modal_split,8580,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,HeaderCompressionOff >= 1.0  AND  mtOff >= 1.0  AND  tmOff >= 1.0  AND  0.0 <= BZip2 < 1.0,0,0.888888888888889,1.0,0.8,33
+power_law,8580,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,mtOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  filterOff >= 1.0  AND  tmOff >= 1.0,1,0.6666666666666666,1.0,0.5,33
+normal,8580,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  mtOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  0.0 <= LZMA < 1.0,1,0.888888888888889,1.0,0.8,34
+uniform,8580,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,mtOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  tmOff >= 1.0  AND  filterOff >= 1.0,1,0.6666666666666666,1.0,0.5,34
+bi_modal_split,8580,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,mtOff >= 1.0  AND  tmOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  4.0 <= BlockSize < 64.0,0,0.4705882352941176,1.0,0.3076923076923077,34
+tri_modal_split,8580,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  mtOff >= 1.0  AND  x < 4.0  AND  HeaderCompressionOff >= 1.0,1,0.5,1.0,0.3333333333333333,34
+power_law,8580,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,mtOff >= 1.0  AND  tmOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  30.0 <= Files < 70.0,1,0.5333333333333333,1.0,0.3636363636363636,34
+normal,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  filterOff >= 1.0  AND  mtOff >= 1.0  AND  Files >= 60.0,0,0.625,1.0,0.4545454545454545,35
+uniform,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,mtOff >= 1.0  AND  tmOff >= 1.0  AND  filterOff >= 1.0  AND  Files < 50.0,1,0.625,1.0,0.4545454545454545,35
+bi_modal_split,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  filterOff >= 1.0  AND  BlockSize >= 1024.0  AND  mtOff >= 1.0,0,0.375,1.0,0.2307692307692307,35
+tri_modal_split,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff >= 1.0  AND  tmOff >= 1.0  AND  mtOff >= 1.0  AND  BlockSize < 32.0,1,0.5555555555555556,1.0,0.3846153846153846,35
+power_law,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  filterOff >= 1.0  AND  mtOff >= 1.0  AND  30.0 <= Files < 100.0,4,0.7777777777777778,1.0,0.6363636363636364,35
+normal,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff >= 1.0  AND  filterOff >= 1.0  AND  tmOff >= 1.0  AND  256.0 <= BlockSize < 4096.0,1,0.4705882352941176,1.0,0.3076923076923077,36
+uniform,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  filterOff >= 1.0  AND  BlockSize >= 1024.0,0,0.375,1.0,0.2307692307692307,36
+bi_modal_split,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff >= 1.0  AND  filterOff >= 1.0  AND  tmOff >= 1.0  AND  6.0 <= x < 10.0,1,0.5,1.0,0.3333333333333333,36
+tri_modal_split,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  0.0 <= mtOff < 1.0  AND  filterOff >= 1.0,1,0.6666666666666666,1.0,0.5,36
+power_law,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff >= 1.0  AND  filterOff >= 1.0  AND  tmOff >= 1.0  AND  LZMA2 >= 1.0,0,0.3333333333333333,1.0,0.2,36
+normal,8580,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  mtOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  Files < 60.0,1,0.7058823529411764,1.0,0.5454545454545454,37
+uniform,8580,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  mtOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  0.0 <= Deflate < 1.0,1,0.888888888888889,1.0,0.8,37
+bi_modal_split,8580,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,mtOff >= 1.0  AND  tmOff >= 1.0  AND  16.0 <= BlockSize < 2048.0  AND  HeaderCompressionOff >= 1.0,0,0.7000000000000001,1.0,0.5384615384615384,37
+tri_modal_split,8580,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,mtOff >= 1.0  AND  tmOff >= 1.0  AND  BlockSize >= 512.0  AND  HeaderCompressionOff >= 1.0,1,0.4705882352941176,1.0,0.3076923076923077,37
+power_law,8580,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,mtOff >= 1.0  AND  tmOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  10.0 <= Files < 80.0,3,0.7777777777777778,1.0,0.6363636363636364,37
+normal,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,mtOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  filterOff >= 1.0  AND  BlockSize >= 32.0,0,0.761904761904762,1.0,0.6153846153846154,38
+uniform,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,filterOff >= 1.0  AND  mtOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  Files >= 40.0,1,0.7777777777777778,1.0,0.6363636363636364,38
+bi_modal_split,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,mtOff >= 1.0  AND  filterOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  tmOff >= 1.0,1,0.6666666666666666,1.0,0.5,38
+tri_modal_split,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,filterOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  Files >= 50.0  AND  mtOff >= 1.0,1,0.7058823529411764,1.0,0.5454545454545454,38
+power_law,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,filterOff >= 1.0  AND  mtOff >= 1.0  AND  BlockSize >= 128.0  AND  HeaderCompressionOff >= 1.0,2,0.631578947368421,1.0,0.4615384615384615,38
+normal,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,filterOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  mtOff >= 1.0  AND  BlockSize < 64.0,3,0.631578947368421,1.0,0.4615384615384615,39
+uniform,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,mtOff >= 1.0  AND  filterOff >= 1.0  AND  x >= 2.0  AND  HeaderCompressionOff >= 1.0,1,0.9090909090909092,1.0,0.8333333333333334,39
+bi_modal_split,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,filterOff >= 1.0  AND  mtOff >= 1.0  AND  10.0 <= Files < 80.0  AND  HeaderCompressionOff >= 1.0,1,0.7777777777777778,1.0,0.6363636363636364,39
+tri_modal_split,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,mtOff >= 1.0  AND  filterOff >= 1.0  AND  0.0 <= BZip2 < 1.0  AND  HeaderCompressionOff >= 1.0,0,0.888888888888889,1.0,0.8,39
+power_law,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,mtOff >= 1.0  AND  filterOff >= 1.0  AND  6.0 <= x < 10.0  AND  HeaderCompressionOff >= 1.0,2,0.5,1.0,0.3333333333333333,39
+normal,8580,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,HeaderCompressionOff >= 1.0  AND  mtOff >= 1.0  AND  tmOff >= 1.0  AND  30.0 <= Files < 60.0,0,0.4285714285714285,1.0,0.2727272727272727,3
+uniform,8580,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,mtOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  Files < 30.0  AND  tmOff >= 1.0,0,0.4285714285714285,1.0,0.2727272727272727,3
+bi_modal_split,8580,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  mtOff >= 1.0  AND  x < 10.0,0,0.9090909090909092,1.0,0.8333333333333334,3
+tri_modal_split,8580,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,mtOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  tmOff >= 1.0  AND  3.0 <= x < 7.0,1,0.5,1.0,0.3333333333333333,3
+power_law,8580,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  mtOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  0.0 <= Deflate < 1.0,4,0.888888888888889,1.0,0.8,3
+normal,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  mtOff >= 1.0  AND  filterOff >= 1.0  AND  60.0 <= Files < 90.0,1,0.4285714285714285,1.0,0.2727272727272727,40
+uniform,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  filterOff >= 1.0  AND  16.0 <= BlockSize < 512.0  AND  mtOff >= 1.0,1,0.5555555555555556,1.0,0.3846153846153846,40
+bi_modal_split,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  mtOff >= 1.0  AND  30.0 <= Files < 60.0  AND  filterOff >= 1.0,0,0.4285714285714285,1.0,0.2727272727272727,40
+tri_modal_split,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,mtOff >= 1.0  AND  filterOff >= 1.0  AND  Files < 40.0  AND  tmOff >= 1.0,0,0.5333333333333333,1.0,0.3636363636363636,40
+power_law,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,mtOff >= 1.0  AND  filterOff >= 1.0  AND  tmOff >= 1.0  AND  x < 3.0,3,0.5,1.0,0.3333333333333333,40
+normal,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,mtOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  filterOff >= 1.0  AND  6.0 <= x < 10.0,1,0.5,1.0,0.3333333333333333,41
+uniform,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,filterOff >= 1.0  AND  mtOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  60.0 <= Files < 100.0,1,0.5333333333333333,1.0,0.3636363636363636,41
+bi_modal_split,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,filterOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  Files < 30.0  AND  mtOff >= 1.0,1,0.4285714285714285,1.0,0.2727272727272727,41
+tri_modal_split,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,mtOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  filterOff >= 1.0  AND  2.0 <= BlockSize < 512.0,4,0.761904761904762,1.0,0.6153846153846154,41
+power_law,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,mtOff >= 1.0  AND  filterOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  BlockSize >= 256.0,3,0.5555555555555556,1.0,0.3846153846153846,41
+normal,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,filterOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  mtOff >= 1.0  AND  32.0 <= BlockSize < 2048.0,0,0.631578947368421,1.0,0.4615384615384615,42
+uniform,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,mtOff >= 1.0  AND  filterOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  40.0 <= Files < 100.0,0,0.7058823529411764,1.0,0.5454545454545454,42
+bi_modal_split,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff >= 1.0  AND  mtOff >= 1.0  AND  filterOff >= 1.0  AND  4.0 <= BlockSize < 128.0,1,0.5555555555555556,1.0,0.3846153846153846,42
+tri_modal_split,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,filterOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  4.0 <= BlockSize < 32.0  AND  mtOff >= 1.0,0,0.375,1.0,0.2307692307692307,42
+power_law,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,mtOff >= 1.0  AND  filterOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  2.0 <= x < 7.0,1,0.6666666666666666,1.0,0.5,42
+normal,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  filterOff >= 1.0  AND  x >= 6.0  AND  HeaderCompressionOff >= 1.0,0,0.6666666666666666,1.0,0.5,43
+uniform,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  filterOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  x < 3.0,1,0.5,1.0,0.3333333333333333,43
+bi_modal_split,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,filterOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  60.0 <= Files < 90.0  AND  tmOff >= 1.0,0,0.4285714285714285,1.0,0.2727272727272727,43
+tri_modal_split,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff >= 1.0  AND  tmOff >= 1.0  AND  x < 3.0  AND  filterOff >= 1.0,1,0.5,1.0,0.3333333333333333,43
+power_law,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  filterOff >= 1.0  AND  mtOff >= 1.0,4,0.6666666666666666,1.0,0.5,43
+normal,8580,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,mtOff >= 1.0  AND  tmOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  10.0 <= Files < 80.0,4,0.7777777777777778,1.0,0.6363636363636364,44
+uniform,8580,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,mtOff >= 1.0  AND  tmOff >= 1.0  AND  16.0 <= BlockSize < 128.0  AND  HeaderCompressionOff >= 1.0,0,0.375,1.0,0.2307692307692307,44
+bi_modal_split,8580,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  mtOff >= 1.0  AND  70.0 <= Files < 100.0  AND  HeaderCompressionOff >= 1.0,1,0.4285714285714285,1.0,0.2727272727272727,44
+tri_modal_split,8580,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,mtOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  64.0 <= BlockSize < 2048.0  AND  tmOff >= 1.0,4,0.5555555555555556,1.0,0.3846153846153846,44
+power_law,8580,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  mtOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  Files < 30.0,1,0.4285714285714285,1.0,0.2727272727272727,44
+normal,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,filterOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  tmOff >= 1.0  AND  0.0 <= LZMA < 1.0,1,0.888888888888889,1.0,0.8,45
+uniform,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,filterOff >= 1.0  AND  50.0 <= Files < 100.0  AND  tmOff >= 1.0  AND  HeaderCompressionOff >= 1.0,0,0.625,1.0,0.4545454545454545,45
+bi_modal_split,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  filterOff >= 1.0  AND  6.0 <= x < 10.0,1,0.5,1.0,0.3333333333333333,45
+tri_modal_split,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,filterOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  tmOff >= 1.0  AND  64.0 <= BlockSize < 1024.0,1,0.4705882352941176,1.0,0.3076923076923077,45
+power_law,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,filterOff >= 1.0  AND  tmOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  BlockSize >= 256.0,0,0.5555555555555556,1.0,0.3846153846153846,45
+normal,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,filterOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  mtOff >= 1.0  AND  BlockSize < 256.0,1,0.761904761904762,1.0,0.6153846153846154,46
+uniform,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,filterOff >= 1.0  AND  mtOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  0.0 <= Deflate < 1.0,1,0.888888888888889,1.0,0.8,46
+bi_modal_split,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,mtOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  filterOff >= 1.0  AND  BlockSize >= 32.0,1,0.761904761904762,1.0,0.6153846153846154,46
+tri_modal_split,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,filterOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  30.0 <= Files < 100.0  AND  mtOff >= 1.0,2,0.7777777777777778,1.0,0.6363636363636364,46
+power_law,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,mtOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  filterOff >= 1.0  AND  x < 3.0,2,0.5,1.0,0.3333333333333333,46
+normal,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,mtOff >= 1.0  AND  tmOff >= 1.0  AND  x >= 8.0  AND  filterOff >= 1.0,0,0.5,1.0,0.3333333333333333,47
+uniform,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  mtOff >= 1.0  AND  2.0 <= BlockSize < 128.0  AND  filterOff >= 1.0,3,0.631578947368421,1.0,0.4615384615384615,47
+bi_modal_split,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  filterOff >= 1.0  AND  mtOff >= 1.0  AND  Files >= 80.0,0,0.4285714285714285,1.0,0.2727272727272727,47
+tri_modal_split,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  mtOff >= 1.0  AND  6.0 <= x < 10.0  AND  filterOff >= 1.0,1,0.5,1.0,0.3333333333333333,47
+power_law,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  filterOff >= 1.0  AND  mtOff >= 1.0  AND  BlockSize >= 16.0,4,0.8181818181818181,1.0,0.6923076923076923,47
+normal,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff >= 1.0  AND  filterOff >= 1.0  AND  mtOff >= 1.0  AND  60.0 <= Files < 90.0,1,0.4285714285714285,1.0,0.2727272727272727,48
+uniform,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff >= 1.0  AND  filterOff >= 1.0  AND  mtOff >= 1.0  AND  Files >= 60.0,1,0.625,1.0,0.4545454545454545,48
+bi_modal_split,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,mtOff >= 1.0  AND  filterOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  0.0 <= BZip2 < 1.0,1,0.888888888888889,1.0,0.8,48
+tri_modal_split,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff >= 1.0  AND  mtOff >= 1.0  AND  Files >= 80.0  AND  filterOff >= 1.0,0,0.4285714285714285,1.0,0.2727272727272727,48
+power_law,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,filterOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  mtOff >= 1.0  AND  BlockSize >= 64.0,4,0.7000000000000001,1.0,0.5384615384615384,48
+normal,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,filterOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  mtOff >= 1.0  AND  128.0 <= BlockSize < 2048.0,0,0.4705882352941176,1.0,0.3076923076923077,49
+uniform,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,mtOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  2.0 <= BlockSize < 32.0  AND  filterOff >= 1.0,1,0.4705882352941176,1.0,0.3076923076923077,49
+bi_modal_split,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,mtOff >= 1.0  AND  filterOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  8.0 <= BlockSize < 256.0,0,0.5555555555555556,1.0,0.3846153846153846,49
+tri_modal_split,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff >= 1.0  AND  mtOff >= 1.0  AND  filterOff >= 1.0  AND  Files < 40.0,0,0.5333333333333333,1.0,0.3636363636363636,49
+power_law,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,mtOff >= 1.0  AND  filterOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  16.0 <= BlockSize < 256.0,1,0.4705882352941176,1.0,0.3076923076923077,49
+normal,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff >= 1.0  AND  tmOff >= 1.0  AND  filterOff >= 1.0  AND  0.0 <= Deflate < 1.0,0,0.888888888888889,1.0,0.8,4
+uniform,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff >= 1.0  AND  tmOff >= 1.0  AND  filterOff >= 1.0  AND  16.0 <= BlockSize < 256.0,0,0.4705882352941176,1.0,0.3076923076923077,4
+bi_modal_split,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  filterOff >= 1.0  AND  20.0 <= Files < 70.0  AND  HeaderCompressionOff >= 1.0,0,0.625,1.0,0.4545454545454545,4
+tri_modal_split,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,filterOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  tmOff >= 1.0  AND  128.0 <= BlockSize < 1024.0,0,0.375,1.0,0.2307692307692307,4
+power_law,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,filterOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  tmOff >= 1.0  AND  Files >= 30.0,4,0.8421052631578948,1.0,0.7272727272727273,4
+normal,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,mtOff >= 1.0  AND  filterOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  16.0 <= BlockSize < 512.0,4,0.5555555555555556,1.0,0.3846153846153846,50
+uniform,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,mtOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  BlockSize < 512.0  AND  filterOff >= 1.0,0,0.8181818181818181,1.0,0.6923076923076923,50
+bi_modal_split,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,filterOff >= 1.0  AND  mtOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  4.0 <= BlockSize < 64.0,1,0.4705882352941176,1.0,0.3076923076923077,50
+tri_modal_split,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,mtOff >= 1.0  AND  filterOff >= 1.0  AND  6.0 <= x < 10.0  AND  HeaderCompressionOff >= 1.0,0,0.5,1.0,0.3333333333333333,50
+power_law,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,filterOff >= 1.0  AND  mtOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  256.0 <= BlockSize < 4096.0,1,0.4705882352941176,1.0,0.3076923076923077,50
+normal,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  filterOff >= 1.0  AND  6.0 <= x < 10.0  AND  HeaderCompressionOff >= 1.0,0,0.5,1.0,0.3333333333333333,51
+uniform,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff >= 1.0  AND  tmOff >= 1.0  AND  filterOff >= 1.0  AND  32.0 <= BlockSize < 1024.0,0,0.5555555555555556,1.0,0.3846153846153846,51
+bi_modal_split,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  filterOff >= 1.0  AND  BlockSize >= 256.0  AND  HeaderCompressionOff >= 1.0,1,0.5555555555555556,1.0,0.3846153846153846,51
+tri_modal_split,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff >= 1.0  AND  filterOff >= 1.0  AND  tmOff >= 1.0  AND  40.0 <= Files < 70.0,1,0.4285714285714285,1.0,0.2727272727272727,51
+power_law,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff >= 1.0  AND  tmOff >= 1.0  AND  filterOff >= 1.0  AND  70.0 <= Files < 100.0,1,0.4285714285714285,1.0,0.2727272727272727,51
+normal,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,mtOff >= 1.0  AND  tmOff >= 1.0  AND  filterOff >= 1.0  AND  Files >= 60.0,1,0.625,1.0,0.4545454545454545,52
+uniform,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,mtOff >= 1.0  AND  tmOff >= 1.0  AND  filterOff >= 1.0  AND  20.0 <= Files < 80.0,1,0.7058823529411764,1.0,0.5454545454545454,52
+bi_modal_split,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  mtOff >= 1.0  AND  filterOff >= 1.0  AND  Files < 60.0,2,0.7058823529411764,1.0,0.5454545454545454,52
+tri_modal_split,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  filterOff >= 1.0  AND  Files < 60.0  AND  mtOff >= 1.0,0,0.7058823529411764,1.0,0.5454545454545454,52
+power_law,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  mtOff >= 1.0  AND  filterOff >= 1.0  AND  20.0 <= Files < 60.0,1,0.5333333333333333,1.0,0.3636363636363636,52
+normal,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  filterOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  2.0 <= x < 7.0,0,0.6666666666666666,1.0,0.5,53
+uniform,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,filterOff >= 1.0  AND  tmOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  Files >= 70.0,1,0.5333333333333333,1.0,0.3636363636363636,53
+bi_modal_split,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff >= 1.0  AND  filterOff >= 1.0  AND  tmOff >= 1.0,3,1.0,1.0,1.0,53
+tri_modal_split,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,filterOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  BlockSize < 1024.0  AND  tmOff >= 1.0,0,0.8695652173913044,1.0,0.7692307692307693,53
+power_law,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  filterOff >= 1.0  AND  x < 3.0,1,0.5,1.0,0.3333333333333333,53
+normal,8580,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,HeaderCompressionOff >= 1.0  AND  mtOff >= 1.0  AND  4.0 <= x < 8.0  AND  tmOff >= 1.0,1,0.5,1.0,0.3333333333333333,54
+uniform,8580,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,HeaderCompressionOff >= 1.0  AND  mtOff >= 1.0  AND  tmOff >= 1.0  AND  0.0 <= BZip2 < 1.0,2,0.888888888888889,1.0,0.8,54
+bi_modal_split,8580,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  mtOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  3.0 <= x < 7.0,1,0.5,1.0,0.3333333333333333,54
+tri_modal_split,8580,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,mtOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  tmOff >= 1.0  AND  0.0 <= LZMA < 1.0,1,0.888888888888889,1.0,0.8,54
+power_law,8580,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,HeaderCompressionOff >= 1.0  AND  mtOff >= 1.0  AND  tmOff >= 1.0  AND  x < 6.0,1,0.6666666666666666,1.0,0.5,54
+normal,8580,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,HeaderCompressionOff >= 1.0  AND  mtOff >= 1.0  AND  tmOff >= 1.0  AND  0.0 <= filterOff < 1.0,0,0.6666666666666666,1.0,0.5,55
+uniform,8580,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,mtOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  tmOff >= 1.0  AND  64.0 <= BlockSize < 512.0,0,0.375,1.0,0.2307692307692307,55
+bi_modal_split,8580,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  Files < 60.0  AND  mtOff >= 1.0,1,0.7058823529411764,1.0,0.5454545454545454,55
+tri_modal_split,8580,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  mtOff >= 1.0  AND  6.0 <= x < 10.0  AND  HeaderCompressionOff >= 1.0,0,0.5,1.0,0.3333333333333333,55
+power_law,8580,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  mtOff >= 1.0  AND  filterOff >= 1.0,1,0.6666666666666666,1.0,0.5,55
+normal,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  BlockSize < 32.0  AND  filterOff >= 1.0,1,0.5555555555555556,1.0,0.3846153846153846,56
+uniform,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,filterOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  tmOff >= 1.0  AND  0.0 <= BZip2 < 1.0,1,0.888888888888889,1.0,0.8,56
+bi_modal_split,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  filterOff >= 1.0,3,1.0,1.0,1.0,56
+tri_modal_split,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff >= 1.0  AND  filterOff >= 1.0  AND  tmOff >= 1.0  AND  10.0 <= Files < 50.0,1,0.5333333333333333,1.0,0.3636363636363636,56
+power_law,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  filterOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  20.0 <= Files < 50.0,1,0.4285714285714285,1.0,0.2727272727272727,56
+normal,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,mtOff >= 1.0  AND  tmOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  filterOff >= 1.0,1,0.6666666666666666,1.0,0.5,57
+uniform,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,mtOff >= 1.0  AND  tmOff >= 1.0  AND  filterOff >= 1.0  AND  Files < 70.0,1,0.7777777777777778,1.0,0.6363636363636364,57
+bi_modal_split,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  mtOff >= 1.0  AND  filterOff >= 1.0  AND  x >= 7.0,1,0.5,1.0,0.3333333333333333,57
+tri_modal_split,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff >= 1.0  AND  tmOff >= 1.0  AND  4.0 <= x < 7.0  AND  mtOff >= 1.0,1,0.5,1.0,0.3333333333333333,57
+power_law,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  mtOff >= 1.0  AND  filterOff >= 1.0  AND  HeaderCompressionOff >= 1.0,1,0.6666666666666666,1.0,0.5,57
+normal,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,mtOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  filterOff >= 1.0  AND  40.0 <= Files < 70.0,0,0.4285714285714285,1.0,0.2727272727272727,58
+uniform,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,filterOff >= 1.0  AND  mtOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  Files >= 40.0,2,0.7777777777777778,1.0,0.6363636363636364,58
+bi_modal_split,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,mtOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  filterOff >= 1.0  AND  0.0 <= BZip2 < 1.0,4,0.888888888888889,1.0,0.8,58
+tri_modal_split,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,0.0 <= LZMA2 < 1.0  AND  HeaderCompressionOff >= 1.0  AND  mtOff >= 1.0  AND  filterOff >= 1.0,0,0.888888888888889,1.0,0.8,58
+power_law,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff >= 1.0  AND  filterOff >= 1.0  AND  mtOff >= 1.0  AND  50.0 <= Files < 80.0,1,0.4285714285714285,1.0,0.2727272727272727,58
+normal,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,mtOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  filterOff >= 1.0  AND  2.0 <= x < 7.0,3,0.6666666666666666,1.0,0.5,59
+uniform,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,mtOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  filterOff >= 1.0  AND  x >= 6.0,0,0.6666666666666666,1.0,0.5,59
+bi_modal_split,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff >= 1.0  AND  filterOff >= 1.0  AND  mtOff >= 1.0,0,1.0,1.0,1.0,59
+tri_modal_split,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff >= 1.0  AND  mtOff >= 1.0  AND  0.0 <= LZMA2 < 1.0  AND  filterOff >= 1.0,0,0.888888888888889,1.0,0.8,59
+power_law,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,mtOff >= 1.0  AND  filterOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  10.0 <= Files < 70.0,1,0.7058823529411764,1.0,0.5454545454545454,59
+normal,8580,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,HeaderCompressionOff >= 1.0  AND  mtOff >= 1.0  AND  tmOff >= 1.0  AND  0.0 <= PPMd < 1.0,1,0.888888888888889,1.0,0.8,5
+uniform,8580,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  mtOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  8.0 <= BlockSize < 256.0,1,0.5555555555555556,1.0,0.3846153846153846,5
+bi_modal_split,8580,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  BlockSize >= 128.0  AND  mtOff >= 1.0,0,0.631578947368421,1.0,0.4615384615384615,5
+tri_modal_split,8580,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  mtOff >= 1.0  AND  60.0 <= Files < 90.0,1,0.4285714285714285,1.0,0.2727272727272727,5
+power_law,8580,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,mtOff >= 1.0  AND  tmOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  BlockSize < 32.0,1,0.5555555555555556,1.0,0.3846153846153846,5
+normal,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,mtOff >= 1.0  AND  filterOff >= 1.0  AND  tmOff >= 1.0  AND  0.0 <= PPMd < 1.0,3,0.888888888888889,1.0,0.8,60
+uniform,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,mtOff >= 1.0  AND  tmOff >= 1.0  AND  filterOff >= 1.0  AND  Files < 80.0,4,0.8421052631578948,1.0,0.7272727272727273,60
+bi_modal_split,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  mtOff >= 1.0  AND  0.0 <= HeaderCompressionOff < 1.0  AND  filterOff >= 1.0,0,0.6666666666666666,1.0,0.5,60
+tri_modal_split,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  filterOff >= 1.0  AND  mtOff >= 1.0  AND  8.0 <= BlockSize < 128.0,1,0.4705882352941176,1.0,0.3076923076923077,60
+power_law,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  mtOff >= 1.0  AND  x < 3.0  AND  filterOff >= 1.0,1,0.5,1.0,0.3333333333333333,60
+normal,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  filterOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  BlockSize >= 64.0,1,0.7000000000000001,1.0,0.5384615384615384,61
+uniform,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  0.0 <= mtOff < 1.0  AND  filterOff >= 1.0,0,0.6666666666666666,1.0,0.5,61
+bi_modal_split,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,filterOff >= 1.0  AND  tmOff >= 1.0  AND  Files < 30.0  AND  HeaderCompressionOff >= 1.0,1,0.4285714285714285,1.0,0.2727272727272727,61
+tri_modal_split,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff >= 1.0  AND  filterOff >= 1.0  AND  tmOff >= 1.0  AND  2.0 <= x < 6.0,1,0.5,1.0,0.3333333333333333,61
+power_law,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  filterOff >= 1.0  AND  4.0 <= BlockSize < 64.0,0,0.4705882352941176,1.0,0.3076923076923077,61
+normal,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff >= 1.0  AND  mtOff >= 1.0  AND  tmOff >= 1.0  AND  0.0 <= LZMA2 < 1.0,1,0.888888888888889,1.0,0.8,62
+uniform,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  filterOff >= 1.0  AND  64.0 <= BlockSize < 1024.0  AND  mtOff >= 1.0,1,0.4705882352941176,1.0,0.3076923076923077,62
+bi_modal_split,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  filterOff >= 1.0  AND  mtOff >= 1.0  AND  0.0 <= HeaderCompressionOff < 1.0,1,0.6666666666666666,1.0,0.5,62
+tri_modal_split,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,mtOff >= 1.0  AND  tmOff >= 1.0  AND  filterOff >= 1.0  AND  128.0 <= BlockSize < 1024.0,0,0.375,1.0,0.2307692307692307,62
+power_law,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  mtOff >= 1.0  AND  filterOff >= 1.0  AND  BlockSize >= 64.0,4,0.7000000000000001,1.0,0.5384615384615384,62
+normal,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff >= 1.0  AND  filterOff >= 1.0  AND  x >= 3.0  AND  mtOff >= 1.0,3,0.8,1.0,0.6666666666666666,63
+uniform,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,mtOff >= 1.0  AND  filterOff >= 1.0  AND  256.0 <= BlockSize < 4096.0  AND  HeaderCompressionOff >= 1.0,1,0.4705882352941176,1.0,0.3076923076923077,63
+bi_modal_split,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,filterOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  mtOff >= 1.0  AND  3.0 <= x < 7.0,1,0.5,1.0,0.3333333333333333,63
+tri_modal_split,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,mtOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  x >= 7.0  AND  filterOff >= 1.0,1,0.5,1.0,0.3333333333333333,63
+power_law,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff >= 1.0  AND  mtOff >= 1.0  AND  filterOff >= 1.0  AND  2.0 <= x < 6.0,1,0.5,1.0,0.3333333333333333,63
+normal,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,filterOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  2.0 <= x < 8.0  AND  tmOff >= 1.0,3,0.6666666666666666,1.0,0.5,64
+uniform,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,filterOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  tmOff >= 1.0  AND  BlockSize >= 128.0,0,0.631578947368421,1.0,0.4615384615384615,64
+bi_modal_split,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  2.0 <= x < 10.0  AND  filterOff >= 1.0,1,0.8,1.0,0.6666666666666666,64
+tri_modal_split,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  filterOff >= 1.0  AND  0.0 <= BZip2 < 1.0,0,0.888888888888889,1.0,0.8,64
+power_law,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,filterOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  tmOff >= 1.0  AND  10.0 <= Files < 80.0,2,0.7777777777777778,1.0,0.6363636363636364,64
+normal,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,mtOff >= 1.0  AND  tmOff >= 1.0  AND  filterOff >= 1.0  AND  16.0 <= BlockSize < 2048.0,1,0.7000000000000001,1.0,0.5384615384615384,65
+uniform,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,mtOff >= 1.0  AND  tmOff >= 1.0  AND  filterOff >= 1.0  AND  2.0 <= x < 7.0,1,0.6666666666666666,1.0,0.5,65
+bi_modal_split,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,mtOff >= 1.0  AND  tmOff >= 1.0  AND  filterOff >= 1.0  AND  BlockSize >= 64.0,2,0.7000000000000001,1.0,0.5384615384615384,65
+tri_modal_split,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,mtOff >= 1.0  AND  filterOff >= 1.0  AND  tmOff >= 1.0  AND  3.0 <= x < 7.0,1,0.5,1.0,0.3333333333333333,65
+power_law,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  mtOff >= 1.0  AND  filterOff >= 1.0  AND  20.0 <= Files < 50.0,1,0.4285714285714285,1.0,0.2727272727272727,65
+normal,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff >= 1.0  AND  filterOff >= 1.0  AND  mtOff >= 1.0  AND  BlockSize >= 256.0,1,0.5555555555555556,1.0,0.3846153846153846,66
+uniform,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff >= 1.0  AND  filterOff >= 1.0  AND  mtOff >= 1.0  AND  10.0 <= Files < 40.0,1,0.4285714285714285,1.0,0.2727272727272727,66
+bi_modal_split,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff >= 1.0  AND  mtOff >= 1.0  AND  filterOff >= 1.0  AND  Files < 70.0,1,0.7777777777777778,1.0,0.6363636363636364,66
+tri_modal_split,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,mtOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  x < 4.0  AND  filterOff >= 1.0,0,0.5,1.0,0.3333333333333333,66
+power_law,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff >= 1.0  AND  filterOff >= 1.0  AND  mtOff >= 1.0  AND  BlockSize < 16.0,1,0.4705882352941176,1.0,0.3076923076923077,66
+normal,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,mtOff >= 1.0  AND  tmOff >= 1.0  AND  filterOff >= 1.0  AND  4.0 <= BlockSize < 4096.0,1,0.8695652173913044,1.0,0.7692307692307693,67
+uniform,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  mtOff >= 1.0  AND  filterOff >= 1.0  AND  x >= 7.0,4,0.5,1.0,0.3333333333333333,67
+bi_modal_split,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  filterOff >= 1.0  AND  mtOff >= 1.0  AND  BlockSize >= 32.0,1,0.761904761904762,1.0,0.6153846153846154,67
+tri_modal_split,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff >= 1.0  AND  mtOff >= 1.0  AND  BlockSize < 32.0  AND  tmOff >= 1.0,0,0.5555555555555556,1.0,0.3846153846153846,67
+power_law,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  filterOff >= 1.0  AND  mtOff >= 1.0  AND  Files < 40.0,1,0.5333333333333333,1.0,0.3636363636363636,67
+normal,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,mtOff >= 1.0  AND  filterOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  32.0 <= BlockSize < 512.0,1,0.4705882352941176,1.0,0.3076923076923077,68
+uniform,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff >= 1.0  AND  mtOff >= 1.0  AND  filterOff >= 1.0  AND  2.0 <= BlockSize < 128.0,3,0.631578947368421,1.0,0.4615384615384615,68
+bi_modal_split,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,mtOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  filterOff >= 1.0  AND  Files >= 80.0,0,0.4285714285714285,1.0,0.2727272727272727,68
+tri_modal_split,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,mtOff >= 1.0  AND  filterOff >= 1.0  AND  10.0 <= Files < 40.0  AND  HeaderCompressionOff >= 1.0,1,0.4285714285714285,1.0,0.2727272727272727,68
+power_law,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff >= 1.0  AND  6.0 <= x < 10.0  AND  filterOff >= 1.0  AND  mtOff >= 1.0,0,0.5,1.0,0.3333333333333333,68
+normal,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  6.0 <= x < 10.0  AND  filterOff >= 1.0,0,0.5,1.0,0.3333333333333333,69
+uniform,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  2.0 <= BlockSize < 64.0  AND  filterOff >= 1.0,0,0.5555555555555556,1.0,0.3846153846153846,69
+bi_modal_split,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff >= 1.0  AND  filterOff >= 1.0  AND  x >= 3.0  AND  tmOff >= 1.0,0,0.8,1.0,0.6666666666666666,69
+tri_modal_split,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  filterOff >= 1.0  AND  30.0 <= Files < 90.0,0,0.7058823529411764,1.0,0.5454545454545454,69
+power_law,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,filterOff >= 1.0  AND  tmOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  64.0 <= BlockSize < 2048.0,2,0.5555555555555556,1.0,0.3846153846153846,69
+normal,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,mtOff >= 1.0  AND  filterOff >= 1.0  AND  tmOff >= 1.0  AND  4.0 <= BlockSize < 1024.0,1,0.761904761904762,1.0,0.6153846153846154,6
+uniform,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  filterOff >= 1.0  AND  mtOff >= 1.0  AND  Files >= 50.0,1,0.7058823529411764,1.0,0.5454545454545454,6
+bi_modal_split,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff >= 1.0  AND  tmOff >= 1.0  AND  mtOff >= 1.0  AND  Files < 60.0,1,0.7058823529411764,1.0,0.5454545454545454,6
+tri_modal_split,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,mtOff >= 1.0  AND  filterOff >= 1.0  AND  tmOff >= 1.0  AND  BlockSize >= 8.0,1,0.8695652173913044,1.0,0.7692307692307693,6
+power_law,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff >= 1.0  AND  mtOff >= 1.0  AND  tmOff >= 1.0  AND  Files >= 50.0,4,0.7058823529411764,1.0,0.5454545454545454,6
+normal,8580,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,mtOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  tmOff >= 1.0  AND  3.0 <= x < 7.0,1,0.5,1.0,0.3333333333333333,70
+uniform,8580,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,mtOff >= 1.0  AND  tmOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  0.0 <= LZMA2 < 1.0,1,0.888888888888889,1.0,0.8,70
+bi_modal_split,8580,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  mtOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  Files >= 70.0,4,0.5333333333333333,1.0,0.3636363636363636,70
+tri_modal_split,8580,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,HeaderCompressionOff >= 1.0  AND  tmOff >= 1.0  AND  Files >= 70.0  AND  mtOff >= 1.0,0,0.5333333333333333,1.0,0.3636363636363636,70
+power_law,8580,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,HeaderCompressionOff >= 1.0  AND  mtOff >= 1.0  AND  tmOff >= 1.0  AND  2.0 <= x < 6.0,1,0.5,1.0,0.3333333333333333,70
+normal,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff >= 1.0  AND  mtOff >= 1.0  AND  tmOff >= 1.0  AND  Files < 60.0,3,0.7058823529411764,1.0,0.5454545454545454,71
+uniform,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  filterOff >= 1.0  AND  mtOff >= 1.0  AND  32.0 <= BlockSize < 2048.0,1,0.631578947368421,1.0,0.4615384615384615,71
+bi_modal_split,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff >= 1.0  AND  mtOff >= 1.0  AND  tmOff >= 1.0  AND  Files >= 60.0,0,0.625,1.0,0.4545454545454545,71
+tri_modal_split,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  filterOff >= 1.0  AND  x >= 6.0  AND  mtOff >= 1.0,4,0.6666666666666666,1.0,0.5,71
+power_law,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,mtOff >= 1.0  AND  filterOff >= 1.0  AND  32.0 <= BlockSize < 512.0  AND  tmOff >= 1.0,1,0.4705882352941176,1.0,0.3076923076923077,71
+normal,8580,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  mtOff >= 1.0  AND  x >= 6.0,0,0.6666666666666666,1.0,0.5,72
+uniform,8580,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,0.0 <= Deflate < 1.0  AND  tmOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  mtOff >= 1.0,0,0.888888888888889,1.0,0.8,72
+bi_modal_split,8580,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,mtOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  tmOff >= 1.0  AND  6.0 <= x < 10.0,1,0.5,1.0,0.3333333333333333,72
+tri_modal_split,8580,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  mtOff >= 1.0  AND  32.0 <= BlockSize < 1024.0,1,0.5555555555555556,1.0,0.3846153846153846,72
+power_law,8580,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,mtOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  2.0 <= x < 6.0  AND  tmOff >= 1.0,0,0.5,1.0,0.3333333333333333,72
+normal,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  mtOff >= 1.0  AND  filterOff >= 1.0,0,0.6666666666666666,1.0,0.5,73
+uniform,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,filterOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  tmOff >= 1.0  AND  BlockSize < 64.0,1,0.631578947368421,1.0,0.4615384615384615,73
+bi_modal_split,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff >= 1.0  AND  tmOff >= 1.0  AND  filterOff >= 1.0  AND  x < 3.0,1,0.5,1.0,0.3333333333333333,73
+tri_modal_split,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,filterOff >= 1.0  AND  tmOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  Files >= 70.0,1,0.5333333333333333,1.0,0.3636363636363636,73
+power_law,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,filterOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  tmOff >= 1.0  AND  40.0 <= Files < 80.0,1,0.5333333333333333,1.0,0.3636363636363636,73
+normal,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,mtOff >= 1.0  AND  tmOff >= 1.0  AND  filterOff >= 1.0  AND  0.0 <= LZMA < 1.0,3,0.888888888888889,1.0,0.8,74
+uniform,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,mtOff >= 1.0  AND  filterOff >= 1.0  AND  tmOff >= 1.0  AND  0.0 <= BZip2 < 1.0,1,0.888888888888889,1.0,0.8,74
+bi_modal_split,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,mtOff >= 1.0  AND  tmOff >= 1.0  AND  filterOff >= 1.0  AND  x < 7.0,1,0.8,1.0,0.6666666666666666,74
+tri_modal_split,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff >= 1.0  AND  mtOff >= 1.0  AND  x < 10.0  AND  tmOff >= 1.0,2,0.9090909090909092,1.0,0.8333333333333334,74
+power_law,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,mtOff >= 1.0  AND  filterOff >= 1.0  AND  tmOff >= 1.0  AND  64.0 <= BlockSize < 2048.0,0,0.5555555555555556,1.0,0.3846153846153846,74
+normal,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  mtOff >= 1.0  AND  filterOff >= 1.0  AND  0.0 <= HeaderCompressionOff < 1.0,1,0.6666666666666666,1.0,0.5,75
+uniform,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff >= 1.0  AND  mtOff >= 1.0  AND  2.0 <= x < 6.0  AND  tmOff >= 1.0,1,0.5,1.0,0.3333333333333333,75
+bi_modal_split,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff >= 1.0  AND  tmOff >= 1.0  AND  mtOff >= 1.0  AND  HeaderCompressionOff >= 1.0,1,0.6666666666666666,1.0,0.5,75
+tri_modal_split,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,mtOff >= 1.0  AND  tmOff >= 1.0  AND  filterOff >= 1.0  AND  50.0 <= Files < 100.0,1,0.625,1.0,0.4545454545454545,75
+power_law,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  filterOff >= 1.0  AND  mtOff >= 1.0  AND  128.0 <= BlockSize < 1024.0,0,0.375,1.0,0.2307692307692307,75
+normal,8580,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,HeaderCompressionOff >= 1.0  AND  tmOff >= 1.0  AND  mtOff >= 1.0  AND  4.0 <= BlockSize < 4096.0,1,0.8695652173913044,1.0,0.7692307692307693,76
+uniform,8580,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,mtOff >= 1.0  AND  tmOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  40.0 <= Files < 70.0,1,0.4285714285714285,1.0,0.2727272727272727,76
+bi_modal_split,8580,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  tmOff >= 1.0  AND  mtOff >= 1.0,0,0.6666666666666666,1.0,0.5,76
+tri_modal_split,8580,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  mtOff >= 1.0  AND  16.0 <= BlockSize < 256.0  AND  HeaderCompressionOff >= 1.0,1,0.4705882352941176,1.0,0.3076923076923077,76
+power_law,8580,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,HeaderCompressionOff >= 1.0  AND  mtOff >= 1.0  AND  tmOff >= 1.0  AND  60.0 <= Files < 90.0,0,0.4285714285714285,1.0,0.2727272727272727,76
+normal,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,filterOff >= 1.0  AND  mtOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  x >= 7.0,1,0.5,1.0,0.3333333333333333,77
+uniform,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,mtOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  10.0 <= Files < 60.0  AND  filterOff >= 1.0,1,0.625,1.0,0.4545454545454545,77
+bi_modal_split,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,filterOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  4.0 <= BlockSize < 2048.0  AND  mtOff >= 1.0,0,0.8181818181818181,1.0,0.6923076923076923,77
+tri_modal_split,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,mtOff >= 1.0  AND  filterOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  4.0 <= BlockSize < 32.0,0,0.375,1.0,0.2307692307692307,77
+power_law,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,filterOff >= 1.0  AND  mtOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  Files >= 70.0,3,0.5333333333333333,1.0,0.3636363636363636,77
+normal,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,mtOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  filterOff >= 1.0  AND  0.0 <= LZMA < 1.0,2,0.888888888888889,1.0,0.8,78
+uniform,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,filterOff >= 1.0  AND  mtOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  10.0 <= Files < 60.0,1,0.625,1.0,0.4545454545454545,78
+bi_modal_split,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff >= 1.0  AND  filterOff >= 1.0  AND  Files >= 70.0  AND  mtOff >= 1.0,0,0.5333333333333333,1.0,0.3636363636363636,78
+tri_modal_split,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff >= 1.0  AND  filterOff >= 1.0  AND  mtOff >= 1.0  AND  0.0 <= tmOff < 1.0,0,0.6666666666666666,1.0,0.5,78
+power_law,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,mtOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  filterOff >= 1.0  AND  BlockSize >= 128.0,1,0.631578947368421,1.0,0.4615384615384615,78
+normal,8580,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  mtOff >= 1.0  AND  0.0 <= filterOff < 1.0,1,0.6666666666666666,1.0,0.5,79
+uniform,8580,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,mtOff >= 1.0  AND  tmOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  0.0 <= filterOff < 1.0,0,0.6666666666666666,1.0,0.5,79
+bi_modal_split,8580,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  mtOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  x < 3.0,1,0.5,1.0,0.3333333333333333,79
+tri_modal_split,8580,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,HeaderCompressionOff >= 1.0  AND  tmOff >= 1.0  AND  mtOff >= 1.0  AND  70.0 <= Files < 100.0,1,0.4285714285714285,1.0,0.2727272727272727,79
+power_law,8580,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  mtOff >= 1.0  AND  Files >= 70.0  AND  HeaderCompressionOff >= 1.0,0,0.5333333333333333,1.0,0.3636363636363636,79
+normal,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  filterOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  60.0 <= Files < 100.0,0,0.5333333333333333,1.0,0.3636363636363636,7
+uniform,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff >= 1.0  AND  tmOff >= 1.0  AND  filterOff >= 1.0  AND  Files >= 30.0,1,0.8421052631578948,1.0,0.7272727272727273,7
+bi_modal_split,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,filterOff >= 1.0  AND  tmOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  x < 6.0,4,0.6666666666666666,1.0,0.5,7
+tri_modal_split,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  2.0 <= x < 8.0  AND  filterOff >= 1.0,1,0.6666666666666666,1.0,0.5,7
+power_law,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,filterOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  tmOff >= 1.0  AND  Files < 50.0,3,0.625,1.0,0.4545454545454545,7
+normal,8580,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,HeaderCompressionOff >= 1.0  AND  tmOff >= 1.0  AND  mtOff >= 1.0  AND  x >= 7.0,1,0.5,1.0,0.3333333333333333,80
+uniform,8580,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,mtOff >= 1.0  AND  tmOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  BlockSize < 8.0,0,0.375,1.0,0.2307692307692307,80
+bi_modal_split,8580,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,mtOff >= 1.0  AND  tmOff >= 1.0  AND  BlockSize >= 128.0  AND  HeaderCompressionOff >= 1.0,1,0.631578947368421,1.0,0.4615384615384615,80
+tri_modal_split,8580,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,mtOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  2.0 <= BlockSize < 32.0  AND  tmOff >= 1.0,1,0.4705882352941176,1.0,0.3076923076923077,80
+power_law,8580,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,mtOff >= 1.0  AND  tmOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  32.0 <= BlockSize < 1024.0,3,0.5555555555555556,1.0,0.3846153846153846,80
+normal,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,filterOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  mtOff >= 1.0  AND  0.0 <= Deflate < 1.0,1,0.888888888888889,1.0,0.8,81
+uniform,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff >= 1.0  AND  mtOff >= 1.0  AND  filterOff >= 1.0  AND  tmOff >= 1.0,0,0.6666666666666666,1.0,0.5,81
+bi_modal_split,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,mtOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  50.0 <= Files < 80.0  AND  filterOff >= 1.0,1,0.4285714285714285,1.0,0.2727272727272727,81
+tri_modal_split,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,filterOff >= 1.0  AND  mtOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  3.0 <= x < 7.0,3,0.5,1.0,0.3333333333333333,81
+power_law,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,mtOff >= 1.0  AND  filterOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  x < 3.0,0,0.5,1.0,0.3333333333333333,81
+normal,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,filterOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  tmOff >= 1.0  AND  0.0 <= LZMA2 < 1.0,1,0.888888888888889,1.0,0.8,82
+uniform,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  20.0 <= Files < 70.0  AND  filterOff >= 1.0,1,0.625,1.0,0.4545454545454545,82
+bi_modal_split,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff >= 1.0  AND  tmOff >= 1.0  AND  filterOff >= 1.0  AND  10.0 <= Files < 70.0,1,0.7058823529411764,1.0,0.5454545454545454,82
+tri_modal_split,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff >= 1.0  AND  tmOff >= 1.0  AND  filterOff >= 1.0,0,1.0,1.0,1.0,82
+power_law,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  filterOff >= 1.0  AND  70.0 <= Files < 100.0,1,0.4285714285714285,1.0,0.2727272727272727,82
+normal,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff >= 1.0  AND  filterOff >= 1.0  AND  tmOff >= 1.0  AND  4.0 <= BlockSize < 64.0,1,0.4705882352941176,1.0,0.3076923076923077,83
+uniform,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,filterOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  6.0 <= x < 10.0  AND  tmOff >= 1.0,1,0.5,1.0,0.3333333333333333,83
+bi_modal_split,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,filterOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  tmOff >= 1.0  AND  0.0 <= LZMA2 < 1.0,1,0.888888888888889,1.0,0.8,83
+tri_modal_split,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff >= 1.0  AND  tmOff >= 1.0  AND  filterOff >= 1.0,0,1.0,1.0,1.0,83
+power_law,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  filterOff >= 1.0  AND  x < 3.0,1,0.5,1.0,0.3333333333333333,83
+normal,8580,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  mtOff >= 1.0  AND  20.0 <= Files < 100.0,1,0.8421052631578948,1.0,0.7272727272727273,84
+uniform,8580,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  0.0 <= PPMd < 1.0  AND  mtOff >= 1.0,0,0.888888888888889,1.0,0.8,84
+bi_modal_split,8580,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  mtOff >= 1.0  AND  0.0 <= BZip2 < 1.0  AND  HeaderCompressionOff >= 1.0,1,0.888888888888889,1.0,0.8,84
+tri_modal_split,8580,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,mtOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  tmOff >= 1.0  AND  x < 7.0,0,0.8,1.0,0.6666666666666666,84
+power_law,8580,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,mtOff >= 1.0  AND  tmOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  32.0 <= BlockSize < 1024.0,1,0.5555555555555556,1.0,0.3846153846153846,84
+normal,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff >= 1.0  AND  mtOff >= 1.0  AND  tmOff >= 1.0  AND  BlockSize >= 128.0,0,0.631578947368421,1.0,0.4615384615384615,85
+uniform,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,mtOff >= 1.0  AND  filterOff >= 1.0  AND  tmOff >= 1.0  AND  0.0 <= HeaderCompressionOff < 1.0,1,0.6666666666666666,1.0,0.5,85
+bi_modal_split,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  filterOff >= 1.0  AND  mtOff >= 1.0  AND  BlockSize >= 16.0,1,0.8181818181818181,1.0,0.6923076923076923,85
+tri_modal_split,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,mtOff >= 1.0  AND  tmOff >= 1.0  AND  x >= 3.0  AND  filterOff >= 1.0,3,0.8,1.0,0.6666666666666666,85
+power_law,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff >= 1.0  AND  tmOff >= 1.0  AND  2.0 <= x < 8.0  AND  mtOff >= 1.0,1,0.6666666666666666,1.0,0.5,85
+normal,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,mtOff >= 1.0  AND  filterOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  0.0 <= LZMA < 1.0,1,0.888888888888889,1.0,0.8,86
+uniform,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,mtOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  filterOff >= 1.0  AND  0.0 <= Deflate < 1.0,0,0.888888888888889,1.0,0.8,86
+bi_modal_split,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,mtOff >= 1.0  AND  filterOff >= 1.0  AND  3.0 <= x < 7.0  AND  HeaderCompressionOff >= 1.0,0,0.5,1.0,0.3333333333333333,86
+tri_modal_split,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,filterOff >= 1.0  AND  mtOff >= 1.0  AND  4.0 <= x < 7.0  AND  HeaderCompressionOff >= 1.0,0,0.5,1.0,0.3333333333333333,86
+power_law,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff >= 1.0  AND  mtOff >= 1.0  AND  Files >= 70.0  AND  filterOff >= 1.0,1,0.5333333333333333,1.0,0.3636363636363636,86
+normal,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff >= 1.0  AND  mtOff >= 1.0  AND  filterOff >= 1.0  AND  BlockSize < 128.0,0,0.7000000000000001,1.0,0.5384615384615384,87
+uniform,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,filterOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  mtOff >= 1.0  AND  0.0 <= PPMd < 1.0,1,0.888888888888889,1.0,0.8,87
+bi_modal_split,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,filterOff >= 1.0  AND  mtOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  tmOff >= 1.0,1,0.6666666666666666,1.0,0.5,87
+tri_modal_split,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,filterOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  mtOff >= 1.0  AND  0.0 <= LZMA < 1.0,1,0.888888888888889,1.0,0.8,87
+power_law,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,filterOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  mtOff >= 1.0  AND  20.0 <= Files < 80.0,1,0.7058823529411764,1.0,0.5454545454545454,87
+normal,8580,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,HeaderCompressionOff >= 1.0  AND  tmOff >= 1.0  AND  mtOff >= 1.0  AND  2.0 <= x < 7.0,1,0.6666666666666666,1.0,0.5,88
+uniform,8580,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,HeaderCompressionOff >= 1.0  AND  tmOff >= 1.0  AND  20.0 <= Files < 60.0  AND  mtOff >= 1.0,0,0.5333333333333333,1.0,0.3636363636363636,88
+bi_modal_split,8580,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,HeaderCompressionOff >= 1.0  AND  tmOff >= 1.0  AND  mtOff >= 1.0  AND  10.0 <= Files < 40.0,1,0.4285714285714285,1.0,0.2727272727272727,88
+tri_modal_split,8580,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  40.0 <= Files < 90.0  AND  mtOff >= 1.0,0,0.625,1.0,0.4545454545454545,88
+power_law,8580,HeaderCompressionOff = 1 AND mtOff = 1 AND tmOff = 1,mtOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  tmOff >= 1.0  AND  x < 6.0,4,0.6666666666666666,1.0,0.5,88
+normal,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  mtOff >= 1.0  AND  filterOff >= 1.0  AND  6.0 <= x < 10.0,1,0.5,1.0,0.3333333333333333,89
+uniform,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff >= 1.0  AND  tmOff >= 1.0  AND  2.0 <= BlockSize < 32.0  AND  mtOff >= 1.0,1,0.4705882352941176,1.0,0.3076923076923077,89
+bi_modal_split,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff >= 1.0  AND  mtOff >= 1.0  AND  tmOff >= 1.0  AND  2.0 <= x < 6.0,1,0.5,1.0,0.3333333333333333,89
+tri_modal_split,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff >= 1.0  AND  mtOff >= 1.0  AND  PPMd >= 1.0  AND  tmOff >= 1.0,0,0.3333333333333333,1.0,0.2,89
+power_law,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  mtOff >= 1.0  AND  filterOff >= 1.0  AND  x >= 7.0,1,0.5,1.0,0.3333333333333333,89
+normal,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,filterOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  tmOff >= 1.0  AND  x >= 7.0,1,0.5,1.0,0.3333333333333333,8
+uniform,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  filterOff >= 1.0  AND  6.0 <= x < 10.0,1,0.5,1.0,0.3333333333333333,8
+bi_modal_split,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  10.0 <= Files < 100.0  AND  filterOff >= 1.0,0,0.9,1.0,0.8181818181818182,8
+tri_modal_split,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,filterOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  LZMA >= 1.0  AND  tmOff >= 1.0,0,0.3333333333333333,1.0,0.2,8
+power_law,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,filterOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  tmOff >= 1.0  AND  60.0 <= Files < 100.0,1,0.5333333333333333,1.0,0.3636363636363636,8
+normal,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,filterOff >= 1.0  AND  tmOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  BlockSize >= 64.0,1,0.7000000000000001,1.0,0.5384615384615384,90
+uniform,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,filterOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  tmOff >= 1.0  AND  4.0 <= BlockSize < 64.0,1,0.4705882352941176,1.0,0.3076923076923077,90
+bi_modal_split,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  filterOff >= 1.0  AND  8.0 <= BlockSize < 4096.0  AND  HeaderCompressionOff >= 1.0,0,0.8181818181818181,1.0,0.6923076923076923,90
+tri_modal_split,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff >= 1.0  AND  filterOff >= 1.0  AND  3.0 <= x < 8.0  AND  tmOff >= 1.0,0,0.5,1.0,0.3333333333333333,90
+power_law,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,filterOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  tmOff >= 1.0  AND  50.0 <= Files < 90.0,1,0.5333333333333333,1.0,0.3636363636363636,90
+normal,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff >= 1.0  AND  mtOff >= 1.0  AND  tmOff >= 1.0  AND  64.0 <= BlockSize < 1024.0,1,0.4705882352941176,1.0,0.3076923076923077,91
+uniform,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  mtOff >= 1.0  AND  filterOff >= 1.0  AND  HeaderCompressionOff >= 1.0,1,0.6666666666666666,1.0,0.5,91
+bi_modal_split,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,mtOff >= 1.0  AND  tmOff >= 1.0  AND  filterOff >= 1.0  AND  0.0 <= HeaderCompressionOff < 1.0,0,0.6666666666666666,1.0,0.5,91
+tri_modal_split,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,mtOff >= 1.0  AND  filterOff >= 1.0  AND  32.0 <= BlockSize < 256.0  AND  tmOff >= 1.0,0,0.375,1.0,0.2307692307692307,91
+power_law,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,mtOff >= 1.0  AND  filterOff >= 1.0  AND  x >= 6.0  AND  tmOff >= 1.0,4,0.6666666666666666,1.0,0.5,91
+normal,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,mtOff >= 1.0  AND  filterOff >= 1.0  AND  tmOff >= 1.0  AND  Files < 80.0,1,0.8421052631578948,1.0,0.7272727272727273,92
+uniform,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff >= 1.0  AND  mtOff >= 1.0  AND  8.0 <= BlockSize < 512.0  AND  tmOff >= 1.0,0,0.631578947368421,1.0,0.4615384615384615,92
+bi_modal_split,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff >= 1.0  AND  tmOff >= 1.0  AND  mtOff >= 1.0  AND  10.0 <= Files < 40.0,1,0.4285714285714285,1.0,0.2727272727272727,92
+tri_modal_split,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  filterOff >= 1.0  AND  16.0 <= BlockSize < 1024.0  AND  mtOff >= 1.0,4,0.631578947368421,1.0,0.4615384615384615,92
+power_law,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff >= 1.0  AND  tmOff >= 1.0  AND  mtOff >= 1.0  AND  6.0 <= x < 10.0,1,0.5,1.0,0.3333333333333333,92
+normal,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,mtOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  filterOff >= 1.0  AND  x < 10.0,1,0.9090909090909092,1.0,0.8333333333333334,93
+uniform,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff >= 1.0  AND  filterOff >= 1.0  AND  mtOff >= 1.0  AND  2.0 <= x < 6.0,1,0.5,1.0,0.3333333333333333,93
+bi_modal_split,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff >= 1.0  AND  filterOff >= 1.0  AND  4.0 <= x < 7.0  AND  mtOff >= 1.0,1,0.5,1.0,0.3333333333333333,93
+tri_modal_split,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,filterOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  mtOff >= 1.0  AND  3.0 <= x < 7.0,1,0.5,1.0,0.3333333333333333,93
+power_law,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,filterOff >= 1.0  AND  mtOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  6.0 <= x < 10.0,0,0.5,1.0,0.3333333333333333,93
+normal,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  filterOff >= 1.0  AND  mtOff >= 1.0  AND  x >= 2.0,3,0.9090909090909092,1.0,0.8333333333333334,94
+uniform,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,mtOff >= 1.0  AND  filterOff >= 1.0  AND  2.0 <= BlockSize < 2048.0  AND  tmOff >= 1.0,0,0.8695652173913044,1.0,0.7692307692307693,94
+bi_modal_split,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  mtOff >= 1.0  AND  Files >= 60.0  AND  filterOff >= 1.0,1,0.625,1.0,0.4545454545454545,94
+tri_modal_split,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff >= 1.0  AND  mtOff >= 1.0  AND  2.0 <= x < 6.0  AND  tmOff >= 1.0,0,0.5,1.0,0.3333333333333333,94
+power_law,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,mtOff >= 1.0  AND  tmOff >= 1.0  AND  Files >= 60.0  AND  filterOff >= 1.0,4,0.625,1.0,0.4545454545454545,94
+normal,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,mtOff >= 1.0  AND  tmOff >= 1.0  AND  filterOff >= 1.0  AND  2.0 <= x < 7.0,1,0.6666666666666666,1.0,0.5,95
+uniform,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  mtOff >= 1.0  AND  0.0 <= PPMd < 1.0  AND  filterOff >= 1.0,1,0.888888888888889,1.0,0.8,95
+bi_modal_split,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff >= 1.0  AND  tmOff >= 1.0  AND  mtOff >= 1.0  AND  50.0 <= Files < 80.0,1,0.4285714285714285,1.0,0.2727272727272727,95
+tri_modal_split,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,mtOff >= 1.0  AND  tmOff >= 1.0  AND  16.0 <= BlockSize < 256.0  AND  filterOff >= 1.0,1,0.4705882352941176,1.0,0.3076923076923077,95
+power_law,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff >= 1.0  AND  tmOff >= 1.0  AND  50.0 <= Files < 90.0  AND  mtOff >= 1.0,1,0.5333333333333333,1.0,0.3636363636363636,95
+normal,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,filterOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  tmOff >= 1.0  AND  0.0 <= PPMd < 1.0,4,0.888888888888889,1.0,0.8,96
+uniform,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,filterOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  16.0 <= BlockSize < 1024.0  AND  tmOff >= 1.0,1,0.631578947368421,1.0,0.4615384615384615,96
+bi_modal_split,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,filterOff >= 1.0  AND  tmOff >= 1.0  AND  Files >= 80.0  AND  HeaderCompressionOff >= 1.0,0,0.4285714285714285,1.0,0.2727272727272727,96
+tri_modal_split,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff >= 1.0  AND  tmOff >= 1.0  AND  BlockSize < 64.0  AND  filterOff >= 1.0,1,0.631578947368421,1.0,0.4615384615384615,96
+power_law,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,HeaderCompressionOff >= 1.0  AND  filterOff >= 1.0  AND  tmOff >= 1.0  AND  Files < 30.0,0,0.4285714285714285,1.0,0.2727272727272727,96
+normal,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff >= 1.0  AND  tmOff >= 1.0  AND  mtOff >= 1.0  AND  30.0 <= Files < 80.0,1,0.625,1.0,0.4545454545454545,97
+uniform,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff >= 1.0  AND  mtOff >= 1.0  AND  0.0 <= HeaderCompressionOff < 1.0  AND  tmOff >= 1.0,1,0.6666666666666666,1.0,0.5,97
+bi_modal_split,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,filterOff >= 1.0  AND  tmOff >= 1.0  AND  50.0 <= Files < 90.0  AND  mtOff >= 1.0,1,0.5333333333333333,1.0,0.3636363636363636,97
+tri_modal_split,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,mtOff >= 1.0  AND  filterOff >= 1.0  AND  2.0 <= x < 7.0  AND  tmOff >= 1.0,3,0.6666666666666666,1.0,0.5,97
+power_law,8580,filterOff = 1 AND mtOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  filterOff >= 1.0  AND  mtOff >= 1.0  AND  Files >= 60.0,1,0.625,1.0,0.4545454545454545,97
+normal,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  filterOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  x >= 7.0,1,0.5,1.0,0.3333333333333333,98
+uniform,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  filterOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  0.0 <= mtOff < 1.0,0,0.6666666666666666,1.0,0.5,98
+bi_modal_split,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  filterOff >= 1.0  AND  2.0 <= x < 6.0  AND  HeaderCompressionOff >= 1.0,0,0.5,1.0,0.3333333333333333,98
+tri_modal_split,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,tmOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  filterOff >= 1.0  AND  20.0 <= Files < 50.0,1,0.4285714285714285,1.0,0.2727272727272727,98
+power_law,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND tmOff = 1,filterOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  tmOff >= 1.0  AND  32.0 <= BlockSize < 512.0,1,0.4705882352941176,1.0,0.3076923076923077,98
+normal,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff >= 1.0  AND  mtOff >= 1.0  AND  32.0 <= BlockSize < 2048.0  AND  filterOff >= 1.0,0,0.631578947368421,1.0,0.4615384615384615,99
+uniform,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff >= 1.0  AND  mtOff >= 1.0  AND  filterOff >= 1.0  AND  2.0 <= x < 6.0,1,0.5,1.0,0.3333333333333333,99
+bi_modal_split,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,mtOff >= 1.0  AND  filterOff >= 1.0  AND  4.0 <= BlockSize < 256.0  AND  HeaderCompressionOff >= 1.0,1,0.631578947368421,1.0,0.4615384615384615,99
+tri_modal_split,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff >= 1.0  AND  mtOff >= 1.0  AND  Files >= 70.0  AND  filterOff >= 1.0,0,0.5333333333333333,1.0,0.3636363636363636,99
+power_law,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,mtOff >= 1.0  AND  filterOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  tmOff >= 1.0,0,0.6666666666666666,1.0,0.5,99
+normal,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,mtOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  filterOff >= 1.0  AND  20.0 <= Files < 80.0,1,0.7058823529411764,1.0,0.5454545454545454,9
+uniform,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,HeaderCompressionOff >= 1.0  AND  filterOff >= 1.0  AND  40.0 <= Files < 100.0  AND  mtOff >= 1.0,0,0.7058823529411764,1.0,0.5454545454545454,9
+bi_modal_split,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,mtOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  30.0 <= Files < 70.0  AND  filterOff >= 1.0,4,0.5333333333333333,1.0,0.3636363636363636,9
+tri_modal_split,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,filterOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  128.0 <= BlockSize < 2048.0  AND  mtOff >= 1.0,1,0.4705882352941176,1.0,0.3076923076923077,9
+power_law,8580,HeaderCompressionOff = 1 AND filterOff = 1 AND mtOff = 1,mtOff >= 1.0  AND  filterOff >= 1.0  AND  HeaderCompressionOff >= 1.0  AND  BlockSize >= 128.0,1,0.631578947368421,1.0,0.4615384615384615,9

@@ -1,0 +1,6 @@
+rule,sg_samples,sg_coverage,rule_num_predicates,rule_features_used
+no_8x8dct==0 AND no_cabac==1 AND no_fast_pskip==1 AND no_mbtree==1 AND ref==1,24,0.020833333333333332,5,"['no_8x8dct', 'no_cabac', 'ref', 'no_mbtree', 'no_fast_pskip']"
+no_8x8dct==0 AND no_cabac==1 AND no_fast_pskip==0 AND no_mbtree==1 AND ref==1,24,0.020833333333333332,5,"['no_8x8dct', 'no_cabac', 'ref', 'no_mbtree', 'no_fast_pskip']"
+no_8x8dct==0 AND no_cabac==0 AND no_fast_pskip==0 AND no_mbtree==1 AND ref==1,24,0.020833333333333332,5,"['no_8x8dct', 'no_cabac', 'ref', 'no_mbtree', 'no_fast_pskip']"
+no_8x8dct==0 AND no_cabac==0 AND no_fast_pskip==1 AND no_mbtree==1 AND ref==1,24,0.020833333333333332,5,"['no_8x8dct', 'no_cabac', 'ref', 'no_mbtree', 'no_fast_pskip']"
+no_8x8dct==1 AND no_cabac==1 AND no_fast_pskip==0 AND no_mbtree==1 AND ref==1,24,0.020833333333333332,5,"['no_8x8dct', 'no_cabac', 'ref', 'no_mbtree', 'no_fast_pskip']"
