@@ -31,11 +31,11 @@ We provide results for all methods compared in the paper on real-world data. As 
 
 ## Hyperparameter Sensitivity
 
-To evaluate hyperparameter sensitivity, we conducted a one-at-a-time analysis when seeding 1-3 exceptional subspaces on the `jump3r` subject system while varying one hyperparameter at a time.
+To evaluate hyperparameter sensitivity, we conducted a one-at-a-time analysis by seeding 1-3 exceptional subspaces on the `jump3r` subject system while varying one hyperparameter at a time.
 
 ![image](figures/out/hyperparameter_sensitivity_n1.png)
 
-The figure shows the average F1 score when seeding a single exceptional subspace; results for two and three subspaces can be found in ```figure/out/hyperparameter_sensitivity_*```. Across all tested ranges, F1 scores remain stable, confirming that the hyperparameter values chosen for RQ1 and RQ2 do not sit at a boundary or inflection point for either subgroup discovery method.
+The figure shows the average F1 score when seeding a single exceptional subspace; results for two and three subspaces can be found in ```figure/out/hyperparameter_sensitivity_*```. F1 scores remain largely stable across all tested ranges, with some deterioration only at smaller values of alpha and lambda. Our results confirm that the hyperparameter values chosen for RQ1 and RQ2, which lie above these ranges, do not sit at a boundary or inflection point for either subgroup discovery method.
 
 ## Statistical Tests
 
