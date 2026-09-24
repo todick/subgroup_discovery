@@ -3,7 +3,6 @@ import matplotlib.pyplot as plt
 import matplotlib.colors as mcolors
 import numpy as np
 import pandas as pd
-import pymannkendall as mk
 import seaborn as sns
 import sys
 from pathlib import Path
@@ -22,6 +21,13 @@ from plot_config import (
     load_experiment_results,
     darken_color,
     set_scatter_edgecolors
+)
+from stats_utils import (
+    compare_methods,
+    friedman_per_method,
+    identified_rate,
+    trend_per_method,
+    write_stats_table,
 )
 
 # Initialize plotting style
@@ -697,28 +703,70 @@ def plot_number_of_predicates_avg(full_mode):
     plt.savefig(get_output_path("rq1_number_of_predicates_avg.pdf"), dpi=300, bbox_inches="tight", format="pdf")
     plt.close(fig)
 
-def statistical_significance_trend(experiment_path="scalability_features/workload", target_column="n_features"):
-    """
-    For each method, test for a monotonic trend (e.g., decreasing F1) across ordered groups
-    using the Mann-Kendall test (nonparametric test for monotonic trend).
-    """
-    df = load_experiment_results_multi_method(experiment_path, ["rsd", "beam-kl", "beam-mean", "dfs-mean", "syflow"])
-    methods = df["method"].unique()
-    results = {}
+def load_number_of_subgroups_identified():
+    df = pd.concat([
+        load_experiment_results_multi_method("number_of_subgroups/workload", methods),
+        load_experiment_results_multi_method("number_of_subgroups/distance_based", methods),
+    ])
+    # Same filtering and metric as plot_number_of_subgroups: all seeded subspaces identified
+    df = df[df["casestudy"].isin(df[df["n_groups"] == 3]["casestudy"].unique())]
+    df["identified"] = df[["f1_0", "f1_1", "f1_2"]].sum(axis=1) / df["n_groups"] == 1.0
+    return identified_rate(df, "n_groups")
 
-    for method in methods:
-        method_df = df[df["method"] == method]
-        sorted_df = method_df.sort_values(by=target_column)
-        sorted_df["identified"] = sorted_df.groupby([target_column])["f1"].transform(lambda x: (x == 1.0).sum())
-        grouped = sorted_df.groupby(target_column).agg({"identified": "max"}).reset_index()
-        mk_result = mk.original_test(grouped["identified"], alpha=0.05)
 
-        results[method] = mk_result
-        print(f"Method: {method}")
-        print(mk_result)
-        print("-" * 40)
+def load_identified(experiment):
+    df = pd.concat([
+        load_experiment_results_multi_method(f"{experiment}/workload", methods),
+        load_experiment_results_multi_method(f"{experiment}/distance_based", methods),
+    ])
+    df["identified"] = df["f1"] == 1.0
+    return df
 
-    return results
+
+@cli.command()
+def stats_number_of_subgroups():
+    """Statistical tests for varying the number of seeded subspaces."""
+    long = load_number_of_subgroups_identified()
+    omnibus, pairwise = compare_methods(long, method_names, "n_groups")
+    write_stats_table(omnibus, output_dir, "rq1_number_of_subgroups_friedman", "RQ1 #subgroups: methods (Friedman)")
+    write_stats_table(pairwise, output_dir, "rq1_number_of_subgroups_pairwise", "RQ1 #subgroups: methods (pairwise Wilcoxon, Holm)")
+    # Pre-specified alternative: identification decreases with more seeded subspaces
+    trend = trend_per_method(long, method_names, "n_groups", [1, 2, 3], "decreasing")
+    write_stats_table(trend, output_dir, "rq1_number_of_subgroups_trend", "RQ1 #subgroups: trend per method (Kendall tau + Wilcoxon, Holm)")
+
+
+@cli.command()
+def stats_number_of_predicates():
+    """Statistical tests for varying the number of predicates."""
+    long = identified_rate(load_identified("number_of_predicates"), "n_conditions")
+    omnibus, pairwise = compare_methods(long, method_names, "n_conditions")
+    write_stats_table(omnibus, output_dir, "rq1_number_of_predicates_friedman", "RQ1 #predicates: methods (Friedman)")
+    write_stats_table(pairwise, output_dir, "rq1_number_of_predicates_pairwise", "RQ1 #predicates: methods (pairwise Wilcoxon, Holm)")
+    # Pre-specified alternative: identification decreases with more predicates
+    levels = sorted(long["n_conditions"].unique())
+    trend = trend_per_method(long, method_names, "n_conditions", levels, "decreasing")
+    write_stats_table(trend, output_dir, "rq1_number_of_predicates_trend", "RQ1 #predicates: trend per method (Kendall tau + Wilcoxon, Holm)")
+
+
+@cli.command()
+def stats_distributions():
+    """Statistical tests for varying the performance distribution of the seeded subspace."""
+    long = identified_rate(load_identified("distributions"), "sg_distribution")
+    omnibus, pairwise = compare_methods(long, method_names, "sg_distribution")
+    write_stats_table(omnibus, output_dir, "rq1_distributions_friedman", "RQ1 distributions: methods (Friedman)")
+    write_stats_table(pairwise, output_dir, "rq1_distributions_pairwise", "RQ1 distributions: methods (pairwise Wilcoxon, Holm)")
+    distributions = ["normal", "bi_modal_split", "tri_modal_split", "uniform", "power_law"]
+    effect = friedman_per_method(long, method_names, "sg_distribution", distributions)
+    write_stats_table(effect, output_dir, "rq1_distributions_effect", "RQ1 distributions: effect per method (Friedman, Holm)")
+
+
+@cli.command()
+@click.pass_context
+def stats_all(ctx):
+    """Run all statistical tests for RQ1."""
+    ctx.invoke(stats_number_of_subgroups)
+    ctx.invoke(stats_number_of_predicates)
+    ctx.invoke(stats_distributions)
 
 if __name__ == "__main__":
     cli()

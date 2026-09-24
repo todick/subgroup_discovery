@@ -1,0 +1,16 @@
+\begin{tabular}{llrrrrlrll}
+\toprule
+         method\_a &          method\_b &  n &  median\_a &  median\_b &  statistic &        p &  rank\_biserial & p\_holm & significant \\
+\midrule
+ \textsc{BS-$\mu$} &     \textsc{BS-kl} & 11 &      25.67 &      33.33 &       0.00 & $<$0.001 &           -1.00 &   0.010 &  \checkmark \\
+ \textsc{BS-$\mu$} & \textsc{DFS-$\mu$} & 11 &      25.67 &      25.33 &       0.00 &    0.084 &            0.45 &   0.420 &             \\
+ \textsc{BS-$\mu$} &       \textsc{RSD} & 11 &      25.67 &      31.33 &      28.00 &    0.700 &           -0.15 &   1.000 &             \\
+ \textsc{BS-$\mu$} &    \textsc{Syflow} & 11 &      25.67 &      52.00 &       4.00 &    0.007 &           -0.88 &   0.055 &             \\
+    \textsc{BS-kl} & \textsc{DFS-$\mu$} & 11 &      33.33 &      25.33 &       0.00 & $<$0.001 &            1.00 &   0.010 &  \checkmark \\
+    \textsc{BS-kl} &       \textsc{RSD} & 11 &      33.33 &      31.33 &      30.00 &    0.831 &            0.09 &   1.000 &             \\
+    \textsc{BS-kl} &    \textsc{Syflow} & 11 &      33.33 &      52.00 &      10.00 &    0.042 &           -0.70 &   0.252 &             \\
+\textsc{DFS-$\mu$} &       \textsc{RSD} & 11 &      25.33 &      31.33 &      26.50 &    0.577 &           -0.20 &   1.000 &             \\
+\textsc{DFS-$\mu$} &    \textsc{Syflow} & 11 &      25.33 &      52.00 &       4.00 &    0.007 &           -0.88 &   0.055 &             \\
+      \textsc{RSD} &    \textsc{Syflow} & 11 &      31.33 &      52.00 &      20.50 &    0.278 &           -0.38 &   1.000 &             \\
+\bottomrule
+\end{tabular}

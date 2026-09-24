@@ -1,0 +1,16 @@
+\begin{tabular}{llrrrrlrll}
+\toprule
+         method\_a &          method\_b &  n &  median\_a &  median\_b &  statistic &        p &  rank\_biserial &  p\_holm & significant \\
+\midrule
+ \textsc{BS-$\mu$} &     \textsc{BS-kl} & 56 &      38.50 &      30.50 &     720.00 &    0.551 &           -0.09 &    1.000 &             \\
+ \textsc{BS-$\mu$} & \textsc{DFS-$\mu$} & 56 &      38.50 &      37.43 &     706.00 &    0.842 &           -0.03 &    1.000 &             \\
+ \textsc{BS-$\mu$} &       \textsc{RSD} & 56 &      38.50 &      24.50 &     534.00 &    0.038 &            0.32 &    0.199 &             \\
+ \textsc{BS-$\mu$} &    \textsc{Syflow} & 56 &      38.50 &      63.00 &     446.00 &    0.004 &           -0.44 &    0.037 &  \checkmark \\
+    \textsc{BS-kl} & \textsc{DFS-$\mu$} & 56 &      30.50 &      37.43 &     718.50 &    0.533 &            0.10 &    1.000 &             \\
+    \textsc{BS-kl} &       \textsc{RSD} & 56 &      30.50 &      24.50 &     717.50 &    0.527 &            0.10 &    1.000 &             \\
+    \textsc{BS-kl} &    \textsc{Syflow} & 56 &      30.50 &      63.00 &     462.00 &    0.006 &           -0.42 &    0.045 &  \checkmark \\
+\textsc{DFS-$\mu$} &       \textsc{RSD} & 56 &      37.43 &      24.50 &     536.50 &    0.033 &            0.33 &    0.199 &             \\
+\textsc{DFS-$\mu$} &    \textsc{Syflow} & 56 &      37.43 &      63.00 &     449.00 &    0.005 &           -0.44 &    0.037 &  \checkmark \\
+      \textsc{RSD} &    \textsc{Syflow} & 56 &      24.50 &      63.00 &     218.00 & $<$0.001 &           -0.73 & $<$0.001 &  \checkmark \\
+\bottomrule
+\end{tabular}

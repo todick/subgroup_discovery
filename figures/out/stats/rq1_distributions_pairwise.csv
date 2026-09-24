@@ -1,0 +1,11 @@
+method_a,method_b,n,median_a,median_b,statistic,p,rank_biserial,p_holm,significant
+\textsc{BS-$\mu$},\textsc{BS-kl},15,70.8,53.6,35.0,0.1688232421875,0.4166666666666667,1.0,False
+\textsc{BS-$\mu$},\textsc{DFS-$\mu$},15,70.8,70.8,38.5,0.34228256836432025,-0.275,1.0,False
+\textsc{BS-$\mu$},\textsc{RSD},15,70.8,52.2,34.0,0.15142822265625,0.43333333333333335,1.0,False
+\textsc{BS-$\mu$},\textsc{Syflow},15,70.8,88.6,38.5,0.22930908203125,-0.35833333333333334,1.0,False
+\textsc{BS-kl},\textsc{DFS-$\mu$},15,53.6,70.8,34.0,0.15142822265625,-0.43333333333333335,1.0,False
+\textsc{BS-kl},\textsc{RSD},15,53.6,52.2,45.0,0.42120361328125,0.25,1.0,False
+\textsc{BS-kl},\textsc{Syflow},15,53.6,88.6,11.0,0.00335693359375,-0.8166666666666667,0.03021240234375,True
+\textsc{DFS-$\mu$},\textsc{RSD},15,70.8,52.2,34.0,0.15142822265625,0.43333333333333335,1.0,False
+\textsc{DFS-$\mu$},\textsc{Syflow},15,70.8,88.6,39.0,0.25238037109375,-0.35,1.0,False
+\textsc{RSD},\textsc{Syflow},15,52.2,88.6,0.0,6.103515625e-05,-1.0,0.0006103515625,True

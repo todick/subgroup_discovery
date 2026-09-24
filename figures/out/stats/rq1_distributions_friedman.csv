@@ -1,0 +1,2 @@
+test,n,k,statistic,p,kendall_w,mean \textsc{BS-$\mu$},mean \textsc{BS-kl},mean \textsc{DFS-$\mu$},mean \textsc{RSD},mean \textsc{Syflow}
+Friedman,15,5,15.081081081081075,0.004535970393437898,0.2513513513513513,63.12,46.72,63.26666666666667,39.78666666666666,78.42666666666668

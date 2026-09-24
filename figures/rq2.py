@@ -3,7 +3,6 @@ import matplotlib.pyplot as plt
 from matplotlib.lines import Line2D
 import numpy as np
 import pandas as pd
-import pymannkendall as mk
 import seaborn as sns
 import sys
 from pathlib import Path
@@ -24,6 +23,13 @@ from plot_config import (
     darken_color,
     set_scatter_edgecolors,
     get_edge_colors
+)
+from stats_utils import (
+    compare_methods,
+    identified_rate,
+    kendall_trend_per_method,
+    trend_per_method,
+    write_stats_table,
 )
 
 # Initialize plotting style
@@ -911,38 +917,75 @@ def plot_sampling_avg(with_cart):
     plt.savefig(get_output_path("rq2_sampling_avg.pdf"), dpi=300, format="pdf", bbox_inches="tight")
     plt.close(fig)
 
-def statistical_significance_trend(experiment_path="scalability_features/workload", target_column="n_features"):
+def stats_scalability(experiment_path, target_column):
+    """Kendall's tau-b trend tests for identification and runtime, with seeds as the unit.
+
+    Missing runs (timeouts) count as not identified with the timeout as runtime, matching
+    plot_scalability.
     """
-    For each method, test for a monotonic trend (e.g., decreasing F1) across ordered groups
-    using the Mann-Kendall test (nonparametric test for monotonic trend).
-    """
-    df = load_experiment_results_multi_method(experiment_path, ["rsd", "beam-kl", "beam-mean", "dfs-mean", "syflow"])
-    methods = df["method"].unique()
-    results = {}
+    df = load_experiment_results_multi_method(experiment_path, methods)
+    levels = sorted(df[target_column].unique())
+    seeds = sorted(df["seed"].unique())
+    present_methods = [m for m in method_names if m in set(df["method"])]
+    grid = pd.MultiIndex.from_product([present_methods, levels, seeds], names=["method", target_column, "seed"])
+    df = (
+        df.groupby(["method", target_column, "seed"])
+        .agg(f1=("f1", "first"), runtime=("runtime", "first"))
+        .reindex(grid)
+        .reset_index()
+    )
+    df["identified"] = (df["f1"] == 1.0) * 100.0
+    df["runtime"] = df["runtime"].fillna(14400)
 
-    for method in methods:
-        method_df = df[df["method"] == method]
-        sorted_df = method_df.sort_values(by=target_column)
-        sorted_df["identified"] = sorted_df.groupby([target_column])["f1"].transform(lambda x: (x == 1.0).sum())
-        grouped = sorted_df.groupby(target_column).agg({"identified": "max"}).reset_index()
-        mk_result = mk.original_test(grouped["identified"], alpha=0.05)
+    name = experiment_path.split("/")[0]
+    identified = kendall_trend_per_method(df, method_names, target_column, "identified")
+    write_stats_table(identified, output_dir, f"rq2_{name}_identified", f"RQ2 {name}: identification trend (Kendall tau-b, Holm)")
+    runtime = kendall_trend_per_method(df, method_names, target_column, "runtime")
+    write_stats_table(runtime, output_dir, f"rq2_{name}_runtime", f"RQ2 {name}: runtime trend (Kendall tau-b, Holm)")
 
-        results[method] = mk_result
-        print(f"Method: {method}")
-        print(mk_result)
-        print("-" * 40)
-
-    return results
 
 @cli.command()
-def significance_trend_features():
-    """Test for monotonic trend in F1 scores across number of features."""
-    statistical_significance_trend("scalability_features/workload", "n_features")
+def stats_scalability_features():
+    """Statistical tests for scalability in the number of configuration options."""
+    stats_scalability("scalability_features/workload", "n_features")
+
 
 @cli.command()
-def significance_trend_samples():
-    """Test for monotonic trend in F1 scores across number of samples."""
-    statistical_significance_trend("scalability_samples/workload", "n_samples")
+def stats_scalability_samples():
+    """Statistical tests for scalability in the number of configurations."""
+    stats_scalability("scalability_samples/workload", "n_samples")
+
+
+@cli.command()
+def stats_sampling():
+    """Statistical tests for sampling strategies."""
+    df = load_experiment_results_multi_method("sampling/distance_based", methods)
+    df["sampling_strategy"] = df["sampling_strategy"].astype(str)
+    df["identified"] = df["f1"] == 1.0
+    long = identified_rate(df, "sampling_strategy")
+
+    # Only 7 systems: with one block per system, no Holm-corrected pairwise test could reach
+    # significance, so each (system, strategy) cell is a block instead
+    omnibus, pairwise = compare_methods(long, method_names, "sampling_strategy", level_blocks=True)
+    write_stats_table(omnibus, output_dir, "rq2_sampling_friedman", "RQ2 sampling: methods (Friedman)")
+    write_stats_table(pairwise, output_dir, "rq2_sampling_pairwise", "RQ2 sampling: methods (pairwise Wilcoxon, Holm)")
+
+    # Pre-specified alternative: identification increases with coverage t and with sample size
+    twise_order = ["2-wise", "3-wise", "4-wise"]
+    random_order = ["random_2", "random_5", "random_10", "random_20"]
+    twise = trend_per_method(long, method_names, "sampling_strategy", twise_order, "increasing")
+    write_stats_table(twise, output_dir, "rq2_sampling_twise_trend", "RQ2 sampling: t-wise trend (Kendall tau + Wilcoxon, Holm)")
+    random = trend_per_method(long, method_names, "sampling_strategy", random_order, "increasing")
+    write_stats_table(random, output_dir, "rq2_sampling_random_trend", "RQ2 sampling: random trend (Kendall tau + Wilcoxon, Holm)")
+
+
+@cli.command()
+@click.pass_context
+def stats_all(ctx):
+    """Run all statistical tests for RQ2."""
+    ctx.invoke(stats_sampling)
+    ctx.invoke(stats_scalability_features)
+    ctx.invoke(stats_scalability_samples)
 
 if __name__ == "__main__":
     cli()

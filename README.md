@@ -7,6 +7,9 @@ All datasets, subgroup discovery methods and experiment scripts needed to replic
 
 The ```run.ipynb``` Jupyter Notebook can be used to try various subgroup discovery methods on the data used in the paper.
 
+## Adjustments Following the Rebuttal
+We added statistical tests for all experiments for RQ1 and RQ2. The corresponding scripts and results can be found in the ```figures``` and ```figures/out/stats``` folders. All results included prior to the rebuttal remain unchanged.
+
 ## Folder Structure
 
 - *data*
@@ -33,6 +36,23 @@ To evaluate hyperparameter sensitivity, we conducted a one-at-a-time analysis wh
 ![image](figures/out/hyperparameter_sensitivity_n1.png)
 
 The figure shows the average F1 score when seeding a single exceptional subspace; results for two and three subspaces can be found in ```figure/out/hyperparameter_sensitivity_*```. Across all tested ranges, F1 scores remain stable, confirming that the hyperparameter values chosen for RQ1 and RQ2 do not sit at a boundary or inflection point for either subgroup discovery method.
+
+## Statistical Tests
+
+We test all RQ1 and RQ2 results with a fixed set of tests, implemented in `figures/stats_utils.py`. Run them with
+```
+python figures/rq1.py stats-all
+python figures/rq2.py stats-all
+```
+Each test family is written to `figures/out/stats/<family>.{csv,tex}`. Every test is reported, whether or not it is significant. Effect sizes are reported as numbers, without small/medium/large labels.
+
+- **Metric:** percentage of seeds for which the seeded subspace was identified (F1 = 1), the same metric the figures use. A run that is missing for one method (timeout or crash) counts as not identified. Levels that do not exist for a system (e.g., more predicates than a system supports) are excluded.
+- **Unit of analysis:** subject systems. For the RQ2 sampling method comparison, which covers only 7 systems, each system × sampling strategy combination is a unit (N = 56); units from the same system are correlated, so these p-values are somewhat optimistic. For the scalability experiments, which use a single system, the unit is seeds.
+- **Method comparison** (RQ1 experiments and RQ2 sampling): Friedman omnibus test (effect size Kendall's W), then two-sided Wilcoxon signed-rank tests for all method pairs (effect size: matched-pairs rank-biserial correlation, from −1 to 1, positive when the first method scores higher).
+- **Trends** (#subspaces, #predicates, t-wise coverage, random sample size): for each system, Kendall's τ between the level and the identification rate; then a one-sided Wilcoxon signed-rank test on the τ values across systems. Directions are fixed in advance: identification decreases with #subspaces and #predicates and increases with t and sample size.
+- **Distributions:** Friedman test per method across the five subspace distributions.
+- **Scalability:** Kendall's τ-b between #options (or #configurations) and identification or runtime, per method. Timeouts count as runtime 14400 s.
+- **Multiple comparisons:** Holm–Bonferroni correction within each family (one output file), α = 0.05. We report raw and adjusted p-values.
 
 ## CART
 

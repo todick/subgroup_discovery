@@ -1,0 +1,11 @@
+\begin{tabular}{lrrrrrrrrrlll}
+\toprule
+            method &   n &  mean 1000 &  mean 3000 &  mean 10000 &  mean 30000 &  mean 100000 &  mean 300000 &  mean 1000000 &   tau &        p &  p\_holm & significant \\
+\midrule
+ \textsc{BS-$\mu$} & 700 &      55.00 &      66.00 &       55.00 &       65.00 &        58.00 &        65.00 &         70.00 &  0.06 &    0.074 &    0.074 &             \\
+    \textsc{BS-kl} & 700 &      96.00 &      97.00 &       91.00 &       91.00 &        82.00 &        83.00 &         84.00 & -0.15 & $<$0.001 & $<$0.001 &  \checkmark \\
+\textsc{DFS-$\mu$} & 700 &      47.00 &      54.00 &       50.00 &       59.00 &        29.00 &        10.00 &          1.00 & -0.32 & $<$0.001 & $<$0.001 &  \checkmark \\
+      \textsc{RSD} & 700 &      90.00 &      71.00 &       48.00 &        3.00 &         0.00 &         0.00 &          0.00 & -0.62 & $<$0.001 & $<$0.001 &  \checkmark \\
+   \textsc{Syflow} & 700 &      70.00 &      76.00 &       82.00 &       86.00 &        85.00 &        86.00 &         85.00 &  0.11 & $<$0.001 &    0.002 &  \checkmark \\
+\bottomrule
+\end{tabular}
