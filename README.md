@@ -2,13 +2,13 @@
 
 This repository contains supplementary material for the paper "Finding Exceptional Software Configuration Subspaces with Subgroup Discovery" submitted to ICSE 2027. 
 
+## Adjustments Following the Rebuttal
+We added statistical tests for all experiments for RQ1 and RQ2. The corresponding scripts and results can be found in the ```figures``` and ```figures/out/stats``` folders. All results included prior to the rebuttal remain unchanged.
+
 ## Running Subgroup Discovery
 All datasets, subgroup discovery methods and experiment scripts needed to replicate our evaluation are provided in this repository. The required Python packages are listed in the ```requirements.txt``` file.
 
 The ```run.ipynb``` Jupyter Notebook can be used to try various subgroup discovery methods on the data used in the paper.
-
-## Adjustments Following the Rebuttal
-We added statistical tests for all experiments for RQ1 and RQ2. The corresponding scripts and results can be found in the ```figures``` and ```figures/out/stats``` folders. All results included prior to the rebuttal remain unchanged.
 
 ## Folder Structure
 
